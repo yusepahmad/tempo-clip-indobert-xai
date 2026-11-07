@@ -1,0 +1,87 @@
+{
+  "index": 475,
+  "sample_id": "TMP-D555CCA18147",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "cab51694e8839663040c96ff5d000de5d85e0db11890ac4d470cf543b126b018",
+  "image_sha256": "d555cca18147cc75ceb790e4c2c8520d94bd2d9ba1b4eb9387f719c41e020dae",
+  "transmitted_image_sha256": "d73ada6d20f90ede831dfdf46a6be09d4b491462b142e6d052506b4562108243",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.683144500000001,
+      "total": 10,
+      "remaining": 1.316855499999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.683144499999997,
+      "total": 100,
+      "remaining": 91.3168555,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3653087290003896,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"magical lamp\",\n  \"source_properties\": \"golden, genie-producing vessel associated with 'simsalabim' magic and wish-granting\",\n  \"target_situation\": \"Jokowi's plan to release Abu Bakar Ba'asyir for political gain\",\n  \"mapping\": \"Rubbing the lamp (releasing Ba'asyir) unexpectedly releases a giant genie-like figure that overshadows the seeker.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "epnLaouoFb7i_uMPyOzU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 112,
+      "cost": {
+        "input_tokens_cost_nanodollars": 672000,
+        "output_tokens_cost_nanodollars": 336000
+      },
+      "prompt_tokens": 1344,
+      "total_backend_latency_ms": 1696,
+      "total_tokens": 1456
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6841525,
+      "total": 10,
+      "remaining": 1.3158475000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.684152499999996,
+      "total": 100,
+      "remaining": 91.3158475,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001008,
+  "fields": {
+    "source_object": "magical lamp",
+    "source_properties": "golden, genie-producing vessel associated with 'simsalabim' magic and wish-granting",
+    "target_situation": "Jokowi's plan to release Abu Bakar Ba'asyir for political gain",
+    "mapping": "Rubbing the lamp (releasing Ba'asyir) unexpectedly releases a giant genie-like figure that overshadows the seeker.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: magical lamp\nsource_properties: golden, genie-producing vessel associated with 'simsalabim' magic and wish-granting\ntarget_situation: Jokowi's plan to release Abu Bakar Ba'asyir for political gain\nmapping: Rubbing the lamp (releasing Ba'asyir) unexpectedly releases a giant genie-like figure that overshadows the seeker.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

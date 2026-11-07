@@ -1,0 +1,90 @@
+{
+  "index": 134,
+  "sample_id": "TMP-21DBD0A78372",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a3d0e3cb8669acaf3b41323a460e673a2e0d43f7b3716792c2d9d1595762e4b2",
+  "image_sha256": "21dbd0a7837288e5fdf1e880ee14f65056903f14ba460c9d914a4f7bcab5bb7b",
+  "transmitted_image_sha256": "82d9ca66af1788d2d32cfca5bb96396e1a10a4bbee581aa53201c03178bf23c2",
+  "image_size": [
+    567,
+    753
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2022995,
+      "total": 10,
+      "remaining": 1.7977004999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.202299499999995,
+      "total": 100,
+      "remaining": 91.7977005,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 18.75668353913352,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"source_object\": \"none evident\",\n  \"source_properties\": \"not applicable\",\n  \"target_situation\": \"The illustration depicts Indonesian women in diverse professional and active roles, celebrating their achievements on Kartini Day.\",\n  \"mapping\": \"The relationship is literal rather than analogical. Each figure\u2014such as the scientist with a microscope, the scuba diver, and the doctor\u2014represents women directly participating in specialized fields. These literal portrayals illustrate the headline 'Perempuan Penembus Batas' (Women Breaking Boundaries) by showing them succeeding in various social and professional sectors.\",\n  \"uncertainty\": \"Low. The cover utilizes a literal collage of professions rather than a singular metaphorical object to convey its message.\"\n}\n```",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "n5DLao3DC5_v_uMPm5vQ6AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2756,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2596
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 655500,
+        "output_tokens_cost_nanodollars": 8268000
+      },
+      "prompt_tokens": 1311,
+      "total_backend_latency_ms": 15103,
+      "total_tokens": 4067
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.211223,
+      "total": 10,
+      "remaining": 1.7887769999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.211223000000004,
+      "total": 100,
+      "remaining": 91.788777,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0089235,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "not applicable",
+    "target_situation": "The illustration depicts Indonesian women in diverse professional and active roles, celebrating their achievements on Kartini Day.",
+    "mapping": "The relationship is literal rather than analogical. Each figure\u2014such as the scientist with a microscope, the scuba diver, and the doctor\u2014represents women directly participating in specialized fields. These literal portrayals illustrate the headline 'Perempuan Penembus Batas' (Women Breaking Boundaries) by showing them succeeding in various social and professional sectors.",
+    "uncertainty": "Low. The cover utilizes a literal collage of professions rather than a singular metaphorical object to convey its message."
+  },
+  "explanation": "source_object: none evident\nsource_properties: not applicable\ntarget_situation: The illustration depicts Indonesian women in diverse professional and active roles, celebrating their achievements on Kartini Day.\nmapping: The relationship is literal rather than analogical. Each figure\u2014such as the scientist with a microscope, the scuba diver, and the doctor\u2014represents women directly participating in specialized fields. These literal portrayals illustrate the headline 'Perempuan Penembus Batas' (Women Breaking Boundaries) by showing them succeeding in various social and professional sectors.\nuncertainty: Low. The cover utilizes a literal collage of professions rather than a singular metaphorical object to convey its message.",
+  "finish_reason": "stop",
+  "usable": true
+}

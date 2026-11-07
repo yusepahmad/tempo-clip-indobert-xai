@@ -1,0 +1,87 @@
+{
+  "index": 192,
+  "sample_id": "TMP-4B372E61B60E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c02ac403d0cfc90422cc6922c9afe12112d94f41943b01c0070e936bf9775956",
+  "image_sha256": "4b372e61b60ed9f24ccfbe217ef499b0257a56317e3bacc8ec872ed2a29b4eab",
+  "transmitted_image_sha256": "a927216ad0aa24186bb2180bb7b6e35c3531fafa05c175ba0db54af5eb555965",
+  "image_size": [
+    300,
+    412
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2880365,
+      "total": 10,
+      "remaining": 1.7119634999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.288036500000004,
+      "total": 100,
+      "remaining": 91.7119635,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.656232883222401,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Pinocchio\", \"source_properties\": \"an unnaturally long wooden nose that grows whenever the character tells a lie\", \"target_situation\": \"political corruption allegations involving Akbar Tandjung and misappropriated funds from Bulog\", \"mapping\": \"The elongated nose identifies the politician as a liar, while the receipt taped over his mouth signifies his attempts to suppress incriminating evidence of financial misconduct.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "K5LLasKKNcCS_uMPqPCfqA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661000,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1322,
+      "total_backend_latency_ms": 1453,
+      "total_tokens": 1412
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2889675,
+      "total": 10,
+      "remaining": 1.7110325,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.288967499999998,
+      "total": 100,
+      "remaining": 91.7110325,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000931,
+  "fields": {
+    "source_object": "Pinocchio",
+    "source_properties": "an unnaturally long wooden nose that grows whenever the character tells a lie",
+    "target_situation": "political corruption allegations involving Akbar Tandjung and misappropriated funds from Bulog",
+    "mapping": "The elongated nose identifies the politician as a liar, while the receipt taped over his mouth signifies his attempts to suppress incriminating evidence of financial misconduct.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Pinocchio\nsource_properties: an unnaturally long wooden nose that grows whenever the character tells a lie\ntarget_situation: political corruption allegations involving Akbar Tandjung and misappropriated funds from Bulog\nmapping: The elongated nose identifies the politician as a liar, while the receipt taped over his mouth signifies his attempts to suppress incriminating evidence of financial misconduct.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

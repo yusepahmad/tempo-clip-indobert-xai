@@ -1,0 +1,37 @@
+{
+  "status": "source_and_hash_verified; process_isolation_requirement_not_met",
+  "generator": "docs/server-recovery/2026-10-10/01_notebook/kaggle_e01/full/e01_vlm.py",
+  "generator_sha256": "808dc6c0cb91bc1e628ae1641ecae3d51e355d528e19f0b898bc3d2b451aacef",
+  "model": "Qwen/Qwen3-VL-8B-Instruct",
+  "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+  "metadata_sha256": "430fd28e8fb54386220a1e496065b2b6922aa16ba1bdbc62fa8fb21e42aa2809",
+  "files": {
+    "deskripsi.jsonl": "c75e8df3f9b71d6786462f8d0f1187ebe4234fb8dd079924f3f35707ff1b8cd2",
+    "zeroshot.jsonl": "10c07b06b13fbbf647f2b1ed12a722d9bff8f97caa6b621430d8bc0429ab38c9"
+  },
+  "prompt_hashes_match": true,
+  "generator_row_attributes": [
+    "headline_verified",
+    "image_path",
+    "sample_id",
+    "supporting_text_verified"
+  ],
+  "prompt_a": "Ini sampul Majalah Tempo. Deskripsikan secara literal ilustrasi utamanya dalam 2-4 kalimat bahasa Indonesia: tokoh, hewan, benda, tindakan, latar, dan simbol visual yang tampak beserta hubungan di antaranya. Abaikan logo majalah, tanggal, harga, barcode, dan semua tulisan. Jangan menafsirkan makna politiknya dan jangan menyebut nama tokoh, cukup gambarkan apa yang terlihat.",
+  "prompt_b_template": "Ini sampul Majalah Tempo.\nJudul utama: {judul}\nTeks pendukung: {pendukung}\n\nTentukan domain sumber metafora visual-verbal sampul ini, yaitu dari ranah apa kiasan gambarnya diambil (bukan isu yang dibahas). Pilih tepat satu kode:\nMESIN_INFRASTRUKTUR: Domain sumber berupa mesin, alat kerja, kendaraan, bangunan, infrastruktur, atau mekanisme buatan. Kriteria: ada pemetaan dari fungsi, kerusakan, pengendalian, atau kerja alat/struktur ke isu sasaran. Pembeda: alat yang tampil literal tidak otomatis metafora; alat transaksi/permainan dipilah menurut mekanisme pemetaan dominan.\nPERMAINAN_KONTES: Domain sumber berupa permainan, pertandingan, kompetisi, atau panggung pertunjukan sebagai arena berstrategi. Kriteria: pemetaan memakai menang-kalah, aturan main, pemain, peran, panggung, atau pengaturan pertunjukan. Pembeda: persaingan politik literal bukan metafora; perlu sumber metaforis.\nBENCANA_JERAT: Domain sumber berupa bencana, ancaman, jerat, perangkap, atau keadaan fisik terjepit. Kriteria: pemetaan memakai bahaya, kehancuran, terperangkap, atau tekanan ruang sebagai sumber makna. Pembeda: bencana aktual tanpa pemetaan dapat NON_METAFORA; bagian tubuh dalam jerat dipilah menurut mekanisme dominan.\nHEWAN_TUBUH: Domain sumber berupa hewan, bagian tubuh, atau bentuk dan perilaku biologis. Kriteria: sifat hewan, anatomi, deformasi, atau perilaku tubuh dipetakan ke tokoh atau persoalan. Pembeda: potret manusia atau hewan literal tidak cukup; jika konsumsi tumpang tindih, pilih mekanisme dominan.\nKONSUMSI_TRANSAKSI: Domain sumber berupa makanan, jamuan, selera, jual-beli, pembayaran, atau pertukaran keuntungan. Kriteria: ada pemetaan dari makan, memilih hidangan, berbagi jatah, atau pertukaran nilai ke persoalan sasaran. Pembeda: makanan atau uang literal tidak otomatis metafora; jika hewan merupakan sumber utama, pertimbangkan HEWAN_TUBUH.\nNON_METAFORA: Sampul tanpa pemetaan metaforis visual-verbal. Kriteria: elemen dipahami secara literal dan tidak ada hubungan sumber-sasaran metaforis yang cukup. Pembeda: ketidakpastian pembaca bukan bukti tanpa metafora.\nLAINNYA: Domain sumber metafora yang tidak tercakup lima domain positif lainnya. Kriteria: metafora teridentifikasi tetapi mekanisme sumbernya tidak cocok dengan kategori yang tersedia. Pembeda: berbeda dari NON_METAFORA karena tetap ada pemetaan metaforis; jangan dipakai sebagai tempat semua kasus ambigu.\n\nJawab hanya dengan JSON satu baris: {\"sumber_visual\": \"<benda/adegan yang menjadi sumber kiasan>\", \"domain\": \"<KODE>\", \"alasan\": \"<satu kalimat>\"}",
+  "inputs": {
+    "images": "05_gambar/<image_path basename>",
+    "dataset_csv": "03_data/DATASET_740_TASK2_DOMAIN.csv",
+    "gold_columns_loaded_into_process": true,
+    "gold_columns_passed_to_prompt": false,
+    "prompt_fields": [
+      "image",
+      "headline_verified",
+      "supporting_text_verified",
+      "fixed Task2 codebook"
+    ]
+  },
+  "generated_domain_is_model_output_not_gold": true,
+  "generation_timestamp": "Exact original UTC creation not recorded; recovery copy timestamps are not generation timestamps",
+  "source_visual_exact_code_matches": 0,
+  "note": "Source supports no direct gold-label interpolation. Literal claim labeled CSV never entered process is false: pandas reads full CSV. Static source/hash evidence does not establish every historical runtime dependency or label independence of human-verified headline text."
+}

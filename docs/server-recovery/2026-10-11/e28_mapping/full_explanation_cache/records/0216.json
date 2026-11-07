@@ -1,0 +1,87 @@
+{
+  "index": 216,
+  "sample_id": "TMP-9A415A5E0AFA",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "043c6d45674b60460c041c590e1e14850f27f957069326b17190b75ac7e9d446",
+  "image_sha256": "9a415a5e0afa806bcf6e364fccb2e24b459c36ad60de040d37d26ad9735688c5",
+  "transmitted_image_sha256": "d83f9b01c5c5dfd1ae8bcea833a601c65e7094de3a41e79b1e4071910f9daa85",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3267385,
+      "total": 10,
+      "remaining": 1.6732615000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.326738500000005,
+      "total": 100,
+      "remaining": 91.6732615,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.8315703896805644,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"a slice of layer cake\", \"source_properties\": \"distinct horizontal layers of different colors and textures, served on a plate with a vertical stake\", \"target_situation\": \"archaeological excavation and geological study of Gunung Padang\", \"mapping\": \"The cake's layers represent different soil strata and historical ages. Serving it on a plate suggests the site is being 'consumed' or scrutinized as a potential prize or treasure.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "yZLLauvzDMyV_uMPl4eVaQ",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 100,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681000,
+        "output_tokens_cost_nanodollars": 300000
+      },
+      "prompt_tokens": 1362,
+      "total_backend_latency_ms": 1521,
+      "total_tokens": 1462
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3277195,
+      "total": 10,
+      "remaining": 1.6722804999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.3277195,
+      "total": 100,
+      "remaining": 91.6722805,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000981,
+  "fields": {
+    "source_object": "a slice of layer cake",
+    "source_properties": "distinct horizontal layers of different colors and textures, served on a plate with a vertical stake",
+    "target_situation": "archaeological excavation and geological study of Gunung Padang",
+    "mapping": "The cake's layers represent different soil strata and historical ages. Serving it on a plate suggests the site is being 'consumed' or scrutinized as a potential prize or treasure.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: a slice of layer cake\nsource_properties: distinct horizontal layers of different colors and textures, served on a plate with a vertical stake\ntarget_situation: archaeological excavation and geological study of Gunung Padang\nmapping: The cake's layers represent different soil strata and historical ages. Serving it on a plate suggests the site is being 'consumed' or scrutinized as a potential prize or treasure.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

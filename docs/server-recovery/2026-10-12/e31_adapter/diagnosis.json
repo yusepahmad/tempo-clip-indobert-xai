@@ -1,0 +1,128 @@
+{
+  "status": "exploratory_diagnosis",
+  "samples": 740,
+  "error_samples": 303,
+  "per_class": {
+    "BENCANA_JERAT": {
+      "samples": 100,
+      "errors": 43,
+      "f1": 0.5327102803738317
+    },
+    "HEWAN_TUBUH": {
+      "samples": 90,
+      "errors": 49,
+      "f1": 0.5290322580645161
+    },
+    "KONSUMSI_TRANSAKSI": {
+      "samples": 84,
+      "errors": 33,
+      "f1": 0.5730337078651685
+    },
+    "LAINNYA": {
+      "samples": 63,
+      "errors": 37,
+      "f1": 0.39097744360902253
+    },
+    "MESIN_INFRASTRUKTUR": {
+      "samples": 214,
+      "errors": 73,
+      "f1": 0.6861313868613139
+    },
+    "NON_METAFORA": {
+      "samples": 83,
+      "errors": 33,
+      "f1": 0.6451612903225806
+    },
+    "PERMAINAN_KONTES": {
+      "samples": 106,
+      "errors": 35,
+      "f1": 0.6068376068376068
+    }
+  },
+  "top_confusions": [
+    {
+      "truth": "MESIN_INFRASTRUKTUR",
+      "prediction": "BENCANA_JERAT",
+      "count": 20
+    },
+    {
+      "truth": "MESIN_INFRASTRUKTUR",
+      "prediction": "KONSUMSI_TRANSAKSI",
+      "count": 17
+    },
+    {
+      "truth": "LAINNYA",
+      "prediction": "PERMAINAN_KONTES",
+      "count": 16
+    },
+    {
+      "truth": "BENCANA_JERAT",
+      "prediction": "MESIN_INFRASTRUKTUR",
+      "count": 15
+    },
+    {
+      "truth": "MESIN_INFRASTRUKTUR",
+      "prediction": "LAINNYA",
+      "count": 14
+    },
+    {
+      "truth": "MESIN_INFRASTRUKTUR",
+      "prediction": "PERMAINAN_KONTES",
+      "count": 12
+    },
+    {
+      "truth": "KONSUMSI_TRANSAKSI",
+      "prediction": "PERMAINAN_KONTES",
+      "count": 11
+    },
+    {
+      "truth": "KONSUMSI_TRANSAKSI",
+      "prediction": "MESIN_INFRASTRUKTUR",
+      "count": 11
+    },
+    {
+      "truth": "PERMAINAN_KONTES",
+      "prediction": "LAINNYA",
+      "count": 11
+    },
+    {
+      "truth": "HEWAN_TUBUH",
+      "prediction": "BENCANA_JERAT",
+      "count": 10
+    },
+    {
+      "truth": "HEWAN_TUBUH",
+      "prediction": "LAINNYA",
+      "count": 10
+    },
+    {
+      "truth": "HEWAN_TUBUH",
+      "prediction": "MESIN_INFRASTRUKTUR",
+      "count": 9
+    },
+    {
+      "truth": "PERMAINAN_KONTES",
+      "prediction": "MESIN_INFRASTRUKTUR",
+      "count": 8
+    },
+    {
+      "truth": "MESIN_INFRASTRUKTUR",
+      "prediction": "HEWAN_TUBUH",
+      "count": 8
+    },
+    {
+      "truth": "NON_METAFORA",
+      "prediction": "BENCANA_JERAT",
+      "count": 8
+    }
+  ],
+  "selection": "up to6errors per originalclass, SHA256(42:sample_id) ascending; no confidence filtering",
+  "selected_cases": 42,
+  "original_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "baseline_oof_sha256": "49b5fdfbe5a9669178e4b92b4937713f7ca8d88a8ccaedb53393268b400763e7",
+  "limitations": [
+    "quantitative/text context only; visual causes not yet assessed",
+    "originallabels unchanged; manual annotations excluded",
+    "exploratory OOF inspection/repeated experiment selection bias; no externalholdout"
+  ]
+}

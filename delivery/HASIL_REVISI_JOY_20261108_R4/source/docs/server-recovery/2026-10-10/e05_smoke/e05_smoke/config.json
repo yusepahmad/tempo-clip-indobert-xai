@@ -1,0 +1,18 @@
+{
+  "smoke": true,
+  "seed": 42,
+  "max_epochs": 2,
+  "patience": 5,
+  "visual_lr": 1e-05,
+  "head_lr": 0.001,
+  "batch": 8,
+  "unfrozen_visual_blocks": 2,
+  "text_encoder": "frozen eval",
+  "objective": "weighted CE Task2 only",
+  "epoch_selection": "inner20percent then reinitialize and refit",
+  "data_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "worker_sha256": "f65891ba690447b7e210e30f0d647e05d186b1e116dc7d67cc4f1a149837e153",
+  "notebook_sha256": "64c662893998305decb6495386318e5d3e27478c2c0d0830ec51f2552e1e28c7",
+  "torch": "2.11.0+cu128",
+  "gpu": "Tesla T4"
+}

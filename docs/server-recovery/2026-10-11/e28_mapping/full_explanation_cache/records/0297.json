@@ -1,0 +1,87 @@
+{
+  "index": 297,
+  "sample_id": "TMP-B408B91F1DAD",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "61a7681fee7874426713b8936fd7f4339bef7959d27aae3447a26ff797d9928f",
+  "image_sha256": "b408b91f1dad86043e0c4f78e6bca1721c5d9c5b95e82ef0ffaaca789c2790f9",
+  "transmitted_image_sha256": "ab2f3a447f3453982166f634361dce3d7734d87eccde1c7903c0c276db3ed48a",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4486115,
+      "total": 10,
+      "remaining": 1.5513884999999998,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.448611499999998,
+      "total": 100,
+      "remaining": 91.5513885,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.8939562253654,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"oil drum with reflective liquid\", \"source_properties\": \"A liquid's surface reflects an image that differs from the person looking into it.\", \"target_situation\": \"President Jokowi's early administration being influenced or overshadowed by political figure Surya Paloh.\", \"mapping\": \"Jokowi looks into an oil drum, but instead of his own reflection, he sees Paloh, symbolizing Paloh's pervasive influence over the administration's policies and decisions.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "6ZTLap_BLOGM_uMP0-qD8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 657000,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1314,
+      "total_backend_latency_ms": 3479,
+      "total_tokens": 1420
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4495865,
+      "total": 10,
+      "remaining": 1.5504134999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.449586499999995,
+      "total": 100,
+      "remaining": 91.5504135,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000975,
+  "fields": {
+    "source_object": "oil drum with reflective liquid",
+    "source_properties": "A liquid's surface reflects an image that differs from the person looking into it.",
+    "target_situation": "President Jokowi's early administration being influenced or overshadowed by political figure Surya Paloh.",
+    "mapping": "Jokowi looks into an oil drum, but instead of his own reflection, he sees Paloh, symbolizing Paloh's pervasive influence over the administration's policies and decisions.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: oil drum with reflective liquid\nsource_properties: A liquid's surface reflects an image that differs from the person looking into it.\ntarget_situation: President Jokowi's early administration being influenced or overshadowed by political figure Surya Paloh.\nmapping: Jokowi looks into an oil drum, but instead of his own reflection, he sees Paloh, symbolizing Paloh's pervasive influence over the administration's policies and decisions.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

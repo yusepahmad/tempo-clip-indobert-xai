@@ -1,0 +1,87 @@
+{
+  "index": 709,
+  "sample_id": "TMP-C95A097F92BD",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "58d4ab7c1cb8cf8b869dbb1645ac28746c8c42a8652cadb95251128daed5a1c8",
+  "image_sha256": "c95a097f92bd738ae9c0b97974bbfe2e6a6b4d303eb4c13709240b66f9385d5d",
+  "transmitted_image_sha256": "e7ca76eaf303b9749e62417b729c3da81d3a7e0ff03e2e68a77a2cc98a3921d0",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0301805,
+      "total": 10,
+      "remaining": 0.9698194999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.0301805,
+      "total": 100,
+      "remaining": 90.9698195,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.360811017919332,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"two excavators\",\n  \"source_properties\": \"heavy machinery with mechanical arms and buckets designed to dig and extract resources\",\n  \"target_situation\": \"internal conflict among Nahdlatul Ulama elites over lucrative coal mining concessions\",\n  \"mapping\": \"The excavators represent competing factions fighting to control and extract wealth from a shared religious organization's interests\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "t5_Laun8HqiB_PUPxqbXMA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674000,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1348,
+      "total_backend_latency_ms": 1703,
+      "total_tokens": 1445
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.031145500000001,
+      "total": 10,
+      "remaining": 0.9688544999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.031145499999994,
+      "total": 100,
+      "remaining": 90.9688545,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000965,
+  "fields": {
+    "source_object": "two excavators",
+    "source_properties": "heavy machinery with mechanical arms and buckets designed to dig and extract resources",
+    "target_situation": "internal conflict among Nahdlatul Ulama elites over lucrative coal mining concessions",
+    "mapping": "The excavators represent competing factions fighting to control and extract wealth from a shared religious organization's interests",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: two excavators\nsource_properties: heavy machinery with mechanical arms and buckets designed to dig and extract resources\ntarget_situation: internal conflict among Nahdlatul Ulama elites over lucrative coal mining concessions\nmapping: The excavators represent competing factions fighting to control and extract wealth from a shared religious organization's interests\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

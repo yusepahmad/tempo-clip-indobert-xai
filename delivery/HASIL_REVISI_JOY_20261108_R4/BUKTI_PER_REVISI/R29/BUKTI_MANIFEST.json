@@ -1,0 +1,84 @@
+{
+  "revision_id": "R29",
+  "title": "Backbone dan SigLIP2",
+  "status": "Selesai teknis sesuai tracker; menunggu penilaian pembimbing",
+  "pdf_page": 14,
+  "requested_evidence": "Bukti yang diserahkan. Tabel ablasi backbone per task dengan uji McNemar, dan pernyataan varian CLIP yang dipakai model utama.",
+  "notebook": {
+    "notebook": "02_experiments.ipynb",
+    "heading": "R29 — Backbone dan SigLIP2",
+    "html": "../REFERENSI_NOTEBOOK/02_experiments.html#full-r29"
+  },
+  "notes": [],
+  "files": [
+    {
+      "file": "R29_metrik_per_task.csv",
+      "purpose": "Macro-F1 utama, akurasi, precision/recall, kappa, CI dan scope per task",
+      "sha256": "cab8ac1824176b0de4191db926dcfff58ce604cd93f26da8c7febd4ec6b52be3",
+      "kind": "table_subset",
+      "source": "analysis/metrics.csv",
+      "source_sha256": "8f2757629112c2664acd442b914007587c8da04850ead71b788d04c95e91a0b2",
+      "selector": {
+        "experiments": [
+          "RII_BACKBONE_CLIP_FULL",
+          "RII_BACKBONE_SIGLIP2",
+          "RII_BACKBONE_DINOV2",
+          "M01_clip_indobert",
+          "M02_siglip2_indobert",
+          "M03_dinov2_indobert",
+          "M04_siglip2_adapters"
+        ]
+      },
+      "rows": 21
+    },
+    {
+      "file": "R29_uji_berpasangan.csv",
+      "purpose": "Exact McNemar/Holm untuk akurasi dan CI bootstrap selisih Macro-F1; arah before→after dipertahankan",
+      "sha256": "d392c08f9b087a16babed7c55837e87c4d42127b5505707dcb5326953ec9e516",
+      "kind": "table_subset",
+      "source": "analysis/paired_tests.csv",
+      "source_sha256": "43d1f6822a3a832fdb44af3615cdeb38dec96cd6e4fd25566566afd8cc6d341c",
+      "selector": {
+        "pairs": [
+          [
+            "RII_BACKBONE_CLIP_FULL",
+            "RII_BACKBONE_SIGLIP2"
+          ],
+          [
+            "RII_BACKBONE_CLIP_FULL",
+            "RII_BACKBONE_DINOV2"
+          ],
+          [
+            "M01_clip_indobert",
+            "M02_siglip2_indobert"
+          ]
+        ]
+      },
+      "rows": 9
+    },
+    {
+      "file": "R29_ABLATION_PARITY.md",
+      "purpose": "Varian CLIP ViT-L14 utama dan perbedaan parity antar keluarga",
+      "sha256": "6a69a24402a63b4bc90041fa68fe3fa0677d55c9abc14c162729fa4c37bd29bf",
+      "kind": "copy",
+      "source": "documentation/ABLATION_PARITY.md",
+      "source_sha256": "6a69a24402a63b4bc90041fa68fe3fa0677d55c9abc14c162729fa4c37bd29bf"
+    },
+    {
+      "file": "R29_MAIN_MODEL_DECISION.md",
+      "purpose": "Varian CLIP ViT-L14 utama dan perbedaan parity antar keluarga",
+      "sha256": "f3e86f66deb4aab84bec3492d7dd2a8fa839f0d97c3a28bc10725e52d7eebaa6",
+      "kind": "copy",
+      "source": "documentation/MAIN_MODEL_DECISION.md",
+      "source_sha256": "f3e86f66deb4aab84bec3492d7dd2a8fa839f0d97c3a28bc10725e52d7eebaa6"
+    },
+    {
+      "file": "train_backbone_controls.py",
+      "purpose": "Source kontrol backbone dengan dimensi head/input yang setara",
+      "sha256": "6ee23806fc84992557d2503c5194e9c9ebe29f46b16782d48a997c390524bb96",
+      "kind": "copy",
+      "source": "source/DEMO_XAI_745_FULL/01_notebook/revisi_ii/train_backbone_controls.py",
+      "source_sha256": "6ee23806fc84992557d2503c5194e9c9ebe29f46b16782d48a997c390524bb96"
+    }
+  ]
+}

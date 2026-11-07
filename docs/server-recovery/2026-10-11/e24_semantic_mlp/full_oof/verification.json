@@ -1,0 +1,78 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "macro_f1": 0.5358067460479774,
+  "folds": [
+    {
+      "fold": 1,
+      "params": {
+        "clf__alpha": 1,
+        "clf__balanced": true,
+        "clf__max_iter": 50,
+        "fusion__e5_weight": 0.5
+      },
+      "inner_macro_f1": 0.5314960800447551
+    },
+    {
+      "fold": 2,
+      "params": {
+        "clf__alpha": 1,
+        "clf__balanced": false,
+        "clf__max_iter": 50,
+        "fusion__e5_weight": 2
+      },
+      "inner_macro_f1": 0.5168074575110838
+    },
+    {
+      "fold": 3,
+      "params": {
+        "clf__alpha": 1,
+        "clf__balanced": true,
+        "clf__max_iter": 50,
+        "fusion__e5_weight": 2
+      },
+      "inner_macro_f1": 0.541724030527889
+    },
+    {
+      "fold": 4,
+      "params": {
+        "clf__alpha": 0.01,
+        "clf__balanced": true,
+        "clf__max_iter": 50,
+        "fusion__e5_weight": 0.5
+      },
+      "inner_macro_f1": 0.5285932039970894
+    },
+    {
+      "fold": 5,
+      "params": {
+        "clf__alpha": 0.01,
+        "clf__balanced": false,
+        "clf__max_iter": 50,
+        "fusion__e5_weight": 2
+      },
+      "inner_macro_f1": 0.5258798293084751
+    }
+  ],
+  "verifier_sha256": "691b6ed1d20ee991c394abfb1056f731de9d19a2bfd82c2b47250262148e3694",
+  "sha256": {
+    "protocol.json": "a6a3834e3cfa803d6317b278461093f38b4d80cb17340943587e634c85fe1f89",
+    "metrics.json": "6878b711560428f100e9a04f1c00574266138565a8cb4315fd843de94706bd29",
+    "oof.csv": "edceff32f0d56cbd043ab68ea1cc97b077f6ac4d996e580c2a62479b911a51cd",
+    "fold_1.json": "95bd1fb70895535f26e91a5fed14b2604293221816a3404384338a697539e4d0",
+    "fold_2.json": "9c251e28ed7b658bb4fe13c73a45ff6b27189f61c10d0972a0c73aec9121853a",
+    "fold_3.json": "a3fade85b2931aababd2b4e1bc30f31524bcd2c9857863bee32cdd1679fa5441",
+    "fold_4.json": "edb0a951f04cd026f9616dc59f9375fdacb20b773ea4e9f26088aa3b2e1ff198",
+    "fold_5.json": "324266f51eb3625041c48593bb1bc5c6c4788ee5b99c29715a7a75e4b3d14002"
+  },
+  "checks": [
+    "original740 IDs/truth/baselinefold and pinned inputs/model/sources",
+    "16grid ordering/firstargmax and all selectedinner3 scores reproduced",
+    "all training-only scaler metadata/outerrefits/740 predictions reproduced",
+    "manual seven-class confusion/perclass/MacroF1"
+  ],
+  "limitations": [
+    "full grid not rerun; frozen inputs inherited from previously verified E14",
+    "repeated experiment selection bias remains"
+  ]
+}

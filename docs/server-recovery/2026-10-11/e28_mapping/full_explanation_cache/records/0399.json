@@ -1,0 +1,87 @@
+{
+  "index": 399,
+  "sample_id": "TMP-98EA8DC7AC8C",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "7b673f484a230988a2f843751e921a6eabc4c970a826ac4a34196fde8563f344",
+  "image_sha256": "98ea8dc7ac8c6f0e40b7dbccc19d1ae19acf0805ab2fecd234b3f285cf5a84fa",
+  "transmitted_image_sha256": "784580644da7ffbc2eb1bba6a233f21294791568b1069000328f0ebacce03e66",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.580324000000001,
+      "total": 10,
+      "remaining": 1.419675999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.580324000000005,
+      "total": 100,
+      "remaining": 91.419676,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.152056086342782,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Game of Thrones Hall of Faces\", \"source_properties\": \"A dark stone wall containing niches with disembodied stone faces; stylized font using a vertical line in the 'O'.\", \"target_situation\": \"Political controversy and internal discord involving General Gatot Nurmantyo and other figures regarding 5,000 weapons.\", \"mapping\": \"The faces representing political figures are placed within the niches, suggesting intrigue, shifting identities, and a high-stakes struggle for power akin to the fantasy series' drama.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "g5fLaoiqGaCm_uMPsO6HgA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 118,
+      "cost": {
+        "input_tokens_cost_nanodollars": 664000,
+        "output_tokens_cost_nanodollars": 354000
+      },
+      "prompt_tokens": 1328,
+      "total_backend_latency_ms": 1862,
+      "total_tokens": 1446
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.581342,
+      "total": 10,
+      "remaining": 1.4186580000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.581342000000006,
+      "total": 100,
+      "remaining": 91.418658,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001018,
+  "fields": {
+    "source_object": "Game of Thrones Hall of Faces",
+    "source_properties": "A dark stone wall containing niches with disembodied stone faces; stylized font using a vertical line in the 'O'.",
+    "target_situation": "Political controversy and internal discord involving General Gatot Nurmantyo and other figures regarding 5,000 weapons.",
+    "mapping": "The faces representing political figures are placed within the niches, suggesting intrigue, shifting identities, and a high-stakes struggle for power akin to the fantasy series' drama.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Game of Thrones Hall of Faces\nsource_properties: A dark stone wall containing niches with disembodied stone faces; stylized font using a vertical line in the 'O'.\ntarget_situation: Political controversy and internal discord involving General Gatot Nurmantyo and other figures regarding 5,000 weapons.\nmapping: The faces representing political figures are placed within the niches, suggesting intrigue, shifting identities, and a high-stakes struggle for power akin to the fantasy series' drama.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

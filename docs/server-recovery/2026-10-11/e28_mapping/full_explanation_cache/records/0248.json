@@ -1,0 +1,87 @@
+{
+  "index": 248,
+  "sample_id": "TMP-43D5AF4C7DAD",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8b9314ce0fb606aa25f484a9b36039babe95c728e9d24ce452dd2a758a2cfa8e",
+  "image_sha256": "43d5af4c7dad283a11fe5d870132b60f5c0112d268164aff6ccf57ada002117a",
+  "transmitted_image_sha256": "a0cc13e3f010d08c28b8f0af53a29923cdaaffcb82f061369d66358741c27d75",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.384342,
+      "total": 10,
+      "remaining": 1.6156579999999998,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.384342000000004,
+      "total": 100,
+      "remaining": 91.615658,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.811630319338292,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Star-ranked uniforms\", \"source_properties\": \"Visible shoulder ranks with stars (one and two stars), indicating different high-level military or police seniority.\", \"target_situation\": \"An internal conflict or power struggle between high-ranking officials within an anti-narcotics agency.\", \"mapping\": \"The ranks represent the 'stars' mentioned in the headline, physically pulling on a bag of drugs to symbolize institutional infighting over control or corruption.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "q5PLatneFd6d_uMPq6y2oA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "cost": {
+        "input_tokens_cost_nanodollars": 662000,
+        "output_tokens_cost_nanodollars": 312000
+      },
+      "prompt_tokens": 1324,
+      "total_backend_latency_ms": 1778,
+      "total_tokens": 1428
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.385316,
+      "total": 10,
+      "remaining": 1.6146840000000005,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.385316000000003,
+      "total": 100,
+      "remaining": 91.614684,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000974,
+  "fields": {
+    "source_object": "Star-ranked uniforms",
+    "source_properties": "Visible shoulder ranks with stars (one and two stars), indicating different high-level military or police seniority.",
+    "target_situation": "An internal conflict or power struggle between high-ranking officials within an anti-narcotics agency.",
+    "mapping": "The ranks represent the 'stars' mentioned in the headline, physically pulling on a bag of drugs to symbolize institutional infighting over control or corruption.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Star-ranked uniforms\nsource_properties: Visible shoulder ranks with stars (one and two stars), indicating different high-level military or police seniority.\ntarget_situation: An internal conflict or power struggle between high-ranking officials within an anti-narcotics agency.\nmapping: The ranks represent the 'stars' mentioned in the headline, physically pulling on a bag of drugs to symbolize institutional infighting over control or corruption.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

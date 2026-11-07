@@ -1,0 +1,87 @@
+{
+  "index": 725,
+  "sample_id": "TMP-64B653556BFF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "d434c91459289ae9cc588b13825538dc48bd3219113fb06c7254691b93ce787e",
+  "image_sha256": "64b653556bffe3e970c69788c95434c2adb7a02d0aa43b54fd9eb31f7ab2b080",
+  "transmitted_image_sha256": "722758f38db0eedcb331d1c37297b7befbba8f2620c5a018652762466a3998a8",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.049872,
+      "total": 10,
+      "remaining": 0.9501279999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.049871999999993,
+      "total": 100,
+      "remaining": 90.950128,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3985176561400294,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A genie emerging from smoke\",\n  \"source_properties\": \"A magical entity appearing from the smoke of a lamp, seemingly granting wishes or manifesting objects through supernatural power.\",\n  \"target_situation\": \"Bahlil Lahadalia's relocation of a multi-trillion rupiah fertilizer project.\",\n  \"mapping\": \"The genie's ability to effortlessly summon or move things parallels the minister's unilateral power to shift major industrial projects with massive financial consequences.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "HKDLaoG_Fs7E_PUPtKy7yQo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 116,
+      "cost": {
+        "input_tokens_cost_nanodollars": 685000,
+        "output_tokens_cost_nanodollars": 348000
+      },
+      "prompt_tokens": 1370,
+      "total_backend_latency_ms": 1834,
+      "total_tokens": 1486
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.050905,
+      "total": 10,
+      "remaining": 0.9490949999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.050905,
+      "total": 100,
+      "remaining": 90.949095,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001033,
+  "fields": {
+    "source_object": "A genie emerging from smoke",
+    "source_properties": "A magical entity appearing from the smoke of a lamp, seemingly granting wishes or manifesting objects through supernatural power.",
+    "target_situation": "Bahlil Lahadalia's relocation of a multi-trillion rupiah fertilizer project.",
+    "mapping": "The genie's ability to effortlessly summon or move things parallels the minister's unilateral power to shift major industrial projects with massive financial consequences.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A genie emerging from smoke\nsource_properties: A magical entity appearing from the smoke of a lamp, seemingly granting wishes or manifesting objects through supernatural power.\ntarget_situation: Bahlil Lahadalia's relocation of a multi-trillion rupiah fertilizer project.\nmapping: The genie's ability to effortlessly summon or move things parallels the minister's unilateral power to shift major industrial projects with massive financial consequences.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

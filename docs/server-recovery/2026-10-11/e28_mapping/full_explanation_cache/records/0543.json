@@ -1,0 +1,87 @@
+{
+  "index": 543,
+  "sample_id": "TMP-A3943DCE5B11",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "de934c54fbcaa69ba6c7a0c727898bf8de486a3b2ba7a4812b53b570b5f8c3a2",
+  "image_sha256": "a3943dce5b115f34ca15815cbd0cdfdd58cc78be7b8a651b569c969acf013981",
+  "transmitted_image_sha256": "9534ea953729e54c3b88747138d252dc21d4d1e7926a74ce04b7592504d6f35f",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.782881,
+      "total": 10,
+      "remaining": 1.2171190000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.782881000000003,
+      "total": 100,
+      "remaining": 91.217119,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.0193861266598105,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"net for harvesting oil palm fruit bunches\", \"source_properties\": \"A long-handled tool used to catch heavy fruit bunches, which are leaking currency notes through the mesh.\", \"target_situation\": \"The Indonesian government's attempt to collect unpaid taxes from illegal palm oil plantations in forest areas.\", \"mapping\": \"The net represents tax collection efforts, the fruit represents the palm oil industry, and the falling money symbolizes massive lost tax revenue reaching trillions of rupiah.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "S5vLav_LLp-d_uMPlqrYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677500,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1355,
+      "total_backend_latency_ms": 2460,
+      "total_tokens": 1461
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7838765,
+      "total": 10,
+      "remaining": 1.2161235000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.783876500000005,
+      "total": 100,
+      "remaining": 91.2161235,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009955,
+  "fields": {
+    "source_object": "net for harvesting oil palm fruit bunches",
+    "source_properties": "A long-handled tool used to catch heavy fruit bunches, which are leaking currency notes through the mesh.",
+    "target_situation": "The Indonesian government's attempt to collect unpaid taxes from illegal palm oil plantations in forest areas.",
+    "mapping": "The net represents tax collection efforts, the fruit represents the palm oil industry, and the falling money symbolizes massive lost tax revenue reaching trillions of rupiah.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: net for harvesting oil palm fruit bunches\nsource_properties: A long-handled tool used to catch heavy fruit bunches, which are leaking currency notes through the mesh.\ntarget_situation: The Indonesian government's attempt to collect unpaid taxes from illegal palm oil plantations in forest areas.\nmapping: The net represents tax collection efforts, the fruit represents the palm oil industry, and the falling money symbolizes massive lost tax revenue reaching trillions of rupiah.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

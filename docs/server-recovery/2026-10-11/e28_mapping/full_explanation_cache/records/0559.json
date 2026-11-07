@@ -1,0 +1,87 @@
+{
+  "index": 559,
+  "sample_id": "TMP-5E125F59E54B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "cc85dc7612e25bfeaef1176cc369c740cb77a5f07dc71f23f09378071b500a34",
+  "image_sha256": "5e125f59e54bc79174ca7b00547878d63338bc6d3f3385c00c4bf3ad21fe43c0",
+  "transmitted_image_sha256": "924f9f6e3d0b68f303eab0454a97144cd437a30566cf423985ddc8890d3a611f",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8079965,
+      "total": 10,
+      "remaining": 1.1920035000000002,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.807996500000002,
+      "total": 100,
+      "remaining": 91.1920035,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.985053413081914,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"video progress bar with a noose-like extension\",\n  \"source_properties\": \"A linear tracking bar transitioning into a loop that encircles a silhouette's neck.\",\n  \"target_situation\": \"Digital sexual violence and online exploitation traps.\",\n  \"mapping\": \"The progress bar, representing online media consumption, acts as a snare that tightens around victims.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "upvLatb6JMmb_uMPlY2fwA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678500,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1357,
+      "total_backend_latency_ms": 1737,
+      "total_tokens": 1454
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.808966,
+      "total": 10,
+      "remaining": 1.1910340000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.808965999999998,
+      "total": 100,
+      "remaining": 91.191034,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009695,
+  "fields": {
+    "source_object": "video progress bar with a noose-like extension",
+    "source_properties": "A linear tracking bar transitioning into a loop that encircles a silhouette's neck.",
+    "target_situation": "Digital sexual violence and online exploitation traps.",
+    "mapping": "The progress bar, representing online media consumption, acts as a snare that tightens around victims.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: video progress bar with a noose-like extension\nsource_properties: A linear tracking bar transitioning into a loop that encircles a silhouette's neck.\ntarget_situation: Digital sexual violence and online exploitation traps.\nmapping: The progress bar, representing online media consumption, acts as a snare that tightens around victims.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 668,
+  "sample_id": "TMP-EFA4BB4DA33F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e3bcd1e6b889bee6222c351cbf81beb64c066c9ab052d152799fcc2f358a40fd",
+  "image_sha256": "efa4bb4da33f336c872b3e1c42532507c95d53fbd028083150e10a7f123be388",
+  "transmitted_image_sha256": "bf4343da85e36db5a4bf810248c88a10758bbde3b1bedaad5e5505f95ebbf422",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.953258,
+      "total": 10,
+      "remaining": 1.046742,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.953258000000005,
+      "total": 100,
+      "remaining": 91.046742,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2775004566647112,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"large orchestra\", \"source_properties\": \"Numerous performers with diverse instruments, coordinated by one conductor, requiring precise synchronization and shared space.\", \"target_situation\": \"President Prabowo Subianto's oversized cabinet managing complex restructuring and internal competition.\", \"mapping\": \"The conductor symbolizes the president struggling to harmonize a bloated, chaotic ensemble representing competing ministries and agencies.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "j57Lau70B82i_uMP67qv2Qc",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 672500,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1345,
+      "total_backend_latency_ms": 1664,
+      "total_tokens": 1431
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9541885,
+      "total": 10,
+      "remaining": 1.0458114999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.9541885,
+      "total": 100,
+      "remaining": 91.0458115,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009305,
+  "fields": {
+    "source_object": "large orchestra",
+    "source_properties": "Numerous performers with diverse instruments, coordinated by one conductor, requiring precise synchronization and shared space.",
+    "target_situation": "President Prabowo Subianto's oversized cabinet managing complex restructuring and internal competition.",
+    "mapping": "The conductor symbolizes the president struggling to harmonize a bloated, chaotic ensemble representing competing ministries and agencies.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: large orchestra\nsource_properties: Numerous performers with diverse instruments, coordinated by one conductor, requiring precise synchronization and shared space.\ntarget_situation: President Prabowo Subianto's oversized cabinet managing complex restructuring and internal competition.\nmapping: The conductor symbolizes the president struggling to harmonize a bloated, chaotic ensemble representing competing ministries and agencies.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 153,
+  "sample_id": "TMP-21D78191C977",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f34fd3c7b9ca2232eac7976c0ec65898e4b0b128ed7420c27ecd802e5c0cfcc0",
+  "image_sha256": "21d78191c9777290f9a45688596765211a91bc4527d9d0071e7fbcb4f450327a",
+  "transmitted_image_sha256": "672f2db179963da014428e2ed1004947d38f6471ec72bbdee516f058d8e17de8",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.231535000000001,
+      "total": 10,
+      "remaining": 1.768464999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.231534999999994,
+      "total": 100,
+      "remaining": 91.768465,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4724312950856984,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A massive charging bull being ridden while a figure below tries to lasso it.\",\n  \"source_properties\": \"Unstoppable momentum, overwhelming physical power, and the danger of an ineffective capture attempt.\",\n  \"target_situation\": \"The KPK's failed attempt to arrest a powerful political party secretary general.\",\n  \"mapping\": \"The bull represents the powerful political party, while the small figures are the outmatched KPK investigators.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "I5HLaviXEbeR_uMPm_GWuA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 109,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677500,
+        "output_tokens_cost_nanodollars": 327000
+      },
+      "prompt_tokens": 1355,
+      "total_backend_latency_ms": 1894,
+      "total_tokens": 1464
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2325395,
+      "total": 10,
+      "remaining": 1.7674605000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.232539500000001,
+      "total": 100,
+      "remaining": 91.7674605,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010045,
+  "fields": {
+    "source_object": "A massive charging bull being ridden while a figure below tries to lasso it.",
+    "source_properties": "Unstoppable momentum, overwhelming physical power, and the danger of an ineffective capture attempt.",
+    "target_situation": "The KPK's failed attempt to arrest a powerful political party secretary general.",
+    "mapping": "The bull represents the powerful political party, while the small figures are the outmatched KPK investigators.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A massive charging bull being ridden while a figure below tries to lasso it.\nsource_properties: Unstoppable momentum, overwhelming physical power, and the danger of an ineffective capture attempt.\ntarget_situation: The KPK's failed attempt to arrest a powerful political party secretary general.\nmapping: The bull represents the powerful political party, while the small figures are the outmatched KPK investigators.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

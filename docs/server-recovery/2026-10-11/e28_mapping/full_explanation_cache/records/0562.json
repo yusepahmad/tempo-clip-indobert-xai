@@ -1,0 +1,87 @@
+{
+  "index": 562,
+  "sample_id": "TMP-4274881AF1AD",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5b27add0244f2ccbedc636ee2b798a0f34012c61d796d2f8b6570525c9d7ee4d",
+  "image_sha256": "4274881af1ad58f6fd0297ddb1518ea5f4f596d9394e1381c18f856094291dc8",
+  "transmitted_image_sha256": "e29312f9a7ce477e0f44130a53b5c44226c7942e98fc15bcd434050aa0c42003",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.812377,
+      "total": 10,
+      "remaining": 1.1876230000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.812376999999998,
+      "total": 100,
+      "remaining": 91.187623,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.523770468775183,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"mirage reflection\",\n  \"source_properties\": \"Visual distortion on a distant surface appearing as a shimmering, unstable duplicate of real objects.\",\n  \"target_situation\": \"Bukalapak's multi-trillion rupiah stock listing despite existing financial losses.\",\n  \"mapping\": \"The reflection mirrors the skyline just as the high valuation reflects the company, yet both are framed as potential illusions or 'fatamorgana'.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "0JvLarzcN8fh_uMPvKet6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 109,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679000,
+        "output_tokens_cost_nanodollars": 327000
+      },
+      "prompt_tokens": 1358,
+      "total_backend_latency_ms": 6035,
+      "total_tokens": 1467
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.813383,
+      "total": 10,
+      "remaining": 1.186617,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.813383000000002,
+      "total": 100,
+      "remaining": 91.186617,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001006,
+  "fields": {
+    "source_object": "mirage reflection",
+    "source_properties": "Visual distortion on a distant surface appearing as a shimmering, unstable duplicate of real objects.",
+    "target_situation": "Bukalapak's multi-trillion rupiah stock listing despite existing financial losses.",
+    "mapping": "The reflection mirrors the skyline just as the high valuation reflects the company, yet both are framed as potential illusions or 'fatamorgana'.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: mirage reflection\nsource_properties: Visual distortion on a distant surface appearing as a shimmering, unstable duplicate of real objects.\ntarget_situation: Bukalapak's multi-trillion rupiah stock listing despite existing financial losses.\nmapping: The reflection mirrors the skyline just as the high valuation reflects the company, yet both are framed as potential illusions or 'fatamorgana'.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

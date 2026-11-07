@@ -1,0 +1,87 @@
+{
+  "index": 414,
+  "sample_id": "TMP-4839FCE514AB",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f921063e44a9dd0ecade30e38092635d960e7d9ae00025994c3dd4b2a0029dd3",
+  "image_sha256": "4839fce514abc4faf81c413ef86d2813b9b2cef4f7afde9589a3414924c6c8a3",
+  "transmitted_image_sha256": "1cfba93abf0ba1fa9948a359bb3305516dbec94b9c850649a36d3f7f9f5ef948",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.611077,
+      "total": 10,
+      "remaining": 1.3889230000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.611076999999995,
+      "total": 100,
+      "remaining": 91.388923,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.299144354648888,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Neon sign\",\n  \"source_properties\": \"Bright, glowing letters that can be turned on, off, or reconfigured to display a different name.\",\n  \"target_situation\": \"The transformation and rebranding of the Alexis nightclub amidst changes in city governance.\",\n  \"mapping\": \"Just as a neon sign can change its appearance while maintaining its structure, the nightclub changes its identity to survive political shifts.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "85fLavuSA_bb_uMPure6uAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680000,
+        "output_tokens_cost_nanodollars": 312000
+      },
+      "prompt_tokens": 1360,
+      "total_backend_latency_ms": 1913,
+      "total_tokens": 1464
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.612069,
+      "total": 10,
+      "remaining": 1.387931,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.612069000000005,
+      "total": 100,
+      "remaining": 91.387931,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000992,
+  "fields": {
+    "source_object": "Neon sign",
+    "source_properties": "Bright, glowing letters that can be turned on, off, or reconfigured to display a different name.",
+    "target_situation": "The transformation and rebranding of the Alexis nightclub amidst changes in city governance.",
+    "mapping": "Just as a neon sign can change its appearance while maintaining its structure, the nightclub changes its identity to survive political shifts.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Neon sign\nsource_properties: Bright, glowing letters that can be turned on, off, or reconfigured to display a different name.\ntarget_situation: The transformation and rebranding of the Alexis nightclub amidst changes in city governance.\nmapping: Just as a neon sign can change its appearance while maintaining its structure, the nightclub changes its identity to survive political shifts.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

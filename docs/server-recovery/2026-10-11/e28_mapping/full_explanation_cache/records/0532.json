@@ -1,0 +1,90 @@
+{
+  "index": 532,
+  "sample_id": "TMP-109402532459",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "7f888cb54f12148c18c83304796fcdae95a5511008c7597be860b5087652efa5",
+  "image_sha256": "109402532459f5aa437e946864ea5f9a06aef0d690625dd77231e6947775dd78",
+  "transmitted_image_sha256": "796ebfdac3f6c88b8f7e7338f08723311f3c6bc9c0fe3706da2c01f324cd0e2b",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.761448,
+      "total": 10,
+      "remaining": 1.2385520000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.761448000000001,
+      "total": 100,
+      "remaining": 91.238552,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.821653788909316,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A sniper rifle's telescopic sight or crosshairs.\",\n  \"source_properties\": \"Circular framing, intersecting lines for precise aiming, and the intent to neutralize a specific target.\",\n  \"target_situation\": \"The Indonesian government's legal and financial crackdown on the FPI organization.\",\n  \"mapping\": \"Just as crosshairs pinpoint a target for elimination, the illustration suggests the government has specifically targeted the FPI and its leadership for systematic suppression.\",\n  \"uncertainty\": \"None.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "-5rLasCYF5Kp_uMPhrH00QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 771,
+      "completion_tokens_details": {
+        "reasoning_tokens": 657
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 669500,
+        "output_tokens_cost_nanodollars": 2313000
+      },
+      "prompt_tokens": 1339,
+      "total_backend_latency_ms": 5275,
+      "total_tokens": 2110
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7644305,
+      "total": 10,
+      "remaining": 1.2355695000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.764430500000003,
+      "total": 100,
+      "remaining": 91.2355695,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0029825,
+  "fields": {
+    "source_object": "A sniper rifle's telescopic sight or crosshairs.",
+    "source_properties": "Circular framing, intersecting lines for precise aiming, and the intent to neutralize a specific target.",
+    "target_situation": "The Indonesian government's legal and financial crackdown on the FPI organization.",
+    "mapping": "Just as crosshairs pinpoint a target for elimination, the illustration suggests the government has specifically targeted the FPI and its leadership for systematic suppression.",
+    "uncertainty": "None."
+  },
+  "explanation": "source_object: A sniper rifle's telescopic sight or crosshairs.\nsource_properties: Circular framing, intersecting lines for precise aiming, and the intent to neutralize a specific target.\ntarget_situation: The Indonesian government's legal and financial crackdown on the FPI organization.\nmapping: Just as crosshairs pinpoint a target for elimination, the illustration suggests the government has specifically targeted the FPI and its leadership for systematic suppression.\nuncertainty: None.",
+  "finish_reason": "stop",
+  "usable": true
+}

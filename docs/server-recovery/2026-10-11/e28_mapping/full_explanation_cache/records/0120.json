@@ -1,0 +1,90 @@
+{
+  "index": 120,
+  "sample_id": "TMP-D9F6EBF7B6AB",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ea68775a0cdd2d07a160ed99ddb47c01d784fc2cd015996697a3dd763de1cb78",
+  "image_sha256": "d9f6ebf7b6ab4241684f0f4a73e7a2c52847c6ccba5a65f457e527807316e82d",
+  "transmitted_image_sha256": "9dbe53a7c69cf6686bbab9e71783547916b55756dc6ca0f32eae6df91922e497",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.180425,
+      "total": 10,
+      "remaining": 1.8195750000000004,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.180425,
+      "total": 100,
+      "remaining": 91.819575,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.63586338981986,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n \"source_object\": \"Revolutionary weaponry\",\n \"source_properties\": \"Firmly gripped and thrust upward against a radial background.\",\n \"target_situation\": \"Lekra's cultural activism during the 1965 Indonesian political upheaval.\",\n \"mapping\": \"Paintbrushes and a flute are held like rifles, framing art as a militant tool for political struggle.\",\n \"uncertainty\": \"none\"\n}\n```",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "QpDLavLFBpCa_uMPxb6ruQk",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1291,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1197
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 655000,
+        "output_tokens_cost_nanodollars": 3873000
+      },
+      "prompt_tokens": 1310,
+      "total_backend_latency_ms": 7280,
+      "total_tokens": 2601
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.184953,
+      "total": 10,
+      "remaining": 1.8150469999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.184952999999993,
+      "total": 100,
+      "remaining": 91.815047,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.004528,
+  "fields": {
+    "source_object": "Revolutionary weaponry",
+    "source_properties": "Firmly gripped and thrust upward against a radial background.",
+    "target_situation": "Lekra's cultural activism during the 1965 Indonesian political upheaval.",
+    "mapping": "Paintbrushes and a flute are held like rifles, framing art as a militant tool for political struggle.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Revolutionary weaponry\nsource_properties: Firmly gripped and thrust upward against a radial background.\ntarget_situation: Lekra's cultural activism during the 1965 Indonesian political upheaval.\nmapping: Paintbrushes and a flute are held like rifles, framing art as a militant tool for political struggle.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 380,
+  "sample_id": "TMP-25D663B1ED97",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "6abcb9cf0a0f7392521638da54542ab682e986d87f12a34a74072b5a80a54d6b",
+  "image_sha256": "25d663b1ed9731290923fd763255c327f7450e78961438bdeb3e67db202306e5",
+  "transmitted_image_sha256": "5be629ffcc5dd3dcad929dd8d18671f9c5ba2cbc5f5c047165d04f10b7364d61",
+  "image_size": [
+    505,
+    671
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5566865,
+      "total": 10,
+      "remaining": 1.4433135000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.556686499999998,
+      "total": 100,
+      "remaining": 91.4433135,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.256126486696303,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"costumes and accessories\",\n  \"source_properties\": \"Islamic religious attire like peci, turbans, and scarves being put on or adjusted.\",\n  \"target_situation\": \"Political candidates competing for Muslim voters during the 2017 Jakarta gubernatorial election.\",\n  \"mapping\": \"Candidates use religious clothing as props to perform a pious identity, mirroring how actors change outfits to appeal to a specific audience.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "A5fLarLYJJ-d_uMPsajYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661500,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1323,
+      "total_backend_latency_ms": 1899,
+      "total_tokens": 1429
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.557666,
+      "total": 10,
+      "remaining": 1.4423340000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.557665999999998,
+      "total": 100,
+      "remaining": 91.442334,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009795,
+  "fields": {
+    "source_object": "costumes and accessories",
+    "source_properties": "Islamic religious attire like peci, turbans, and scarves being put on or adjusted.",
+    "target_situation": "Political candidates competing for Muslim voters during the 2017 Jakarta gubernatorial election.",
+    "mapping": "Candidates use religious clothing as props to perform a pious identity, mirroring how actors change outfits to appeal to a specific audience.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: costumes and accessories\nsource_properties: Islamic religious attire like peci, turbans, and scarves being put on or adjusted.\ntarget_situation: Political candidates competing for Muslim voters during the 2017 Jakarta gubernatorial election.\nmapping: Candidates use religious clothing as props to perform a pious identity, mirroring how actors change outfits to appeal to a specific audience.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

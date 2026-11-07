@@ -1,0 +1,90 @@
+{
+  "index": 57,
+  "sample_id": "TMP-965CD909386F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "485f2786b876ddf041ab9284dd54273bd9c4d1acab17e07ef292a72f2e957a21",
+  "image_sha256": "965cd909386f77655d5e8a4d50b86b8b587acadfe6ffd3ad6a0b406caff611e1",
+  "transmitted_image_sha256": "186db9df2849a0a0f68cb494c30fdb4b0d350dc2b7d46265c2490ef68e6d8303",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0887105,
+      "total": 10,
+      "remaining": 1.9112895000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.088710500000005,
+      "total": 100,
+      "remaining": 91.9112895,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.678250453900546,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"source_object\": \"none evident\",\n  \"source_properties\": \"n/a\",\n  \"target_situation\": \"large-scale forest burning involving major corporations\",\n  \"mapping\": \"The illustration depicts the literal subject: thick smoke and haze rising from forest fires. The headline 'ASAP INC.' (Smoke Inc.) uses text to metaphorically frame this literal environmental destruction as a corporate 'product' or industrial output, directly linking the visible smoke to organized corporate activity mentioned in the subtext.\",\n  \"uncertainty\": \"none\"\n}\n```",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "nI7LatCoGoK5_PUPwPPqwQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1357,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1232
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 656500,
+        "output_tokens_cost_nanodollars": 4071000
+      },
+      "prompt_tokens": 1313,
+      "total_backend_latency_ms": 8159,
+      "total_tokens": 2670
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.093437999999999,
+      "total": 10,
+      "remaining": 1.906562000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.093438000000006,
+      "total": 100,
+      "remaining": 91.906562,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0047275,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "n/a",
+    "target_situation": "large-scale forest burning involving major corporations",
+    "mapping": "The illustration depicts the literal subject: thick smoke and haze rising from forest fires. The headline 'ASAP INC.' (Smoke Inc.) uses text to metaphorically frame this literal environmental destruction as a corporate 'product' or industrial output, directly linking the visible smoke to organized corporate activity mentioned in the subtext.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: n/a\ntarget_situation: large-scale forest burning involving major corporations\nmapping: The illustration depicts the literal subject: thick smoke and haze rising from forest fires. The headline 'ASAP INC.' (Smoke Inc.) uses text to metaphorically frame this literal environmental destruction as a corporate 'product' or industrial output, directly linking the visible smoke to organized corporate activity mentioned in the subtext.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

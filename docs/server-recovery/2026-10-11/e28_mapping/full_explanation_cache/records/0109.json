@@ -1,0 +1,87 @@
+{
+  "index": 109,
+  "sample_id": "TMP-389FA48DB15F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f8b7b72c713ff972d2fb599c54821a12fa1fd1eea2b1a3aab59b6a286fec1163",
+  "image_sha256": "389fa48db15fc43556d28d152a5b4594c1df9523e9addf566892a511700d28d9",
+  "transmitted_image_sha256": "8bdd4278f1d5644d5d6e78d225432533cfb2ad153c161ab4787b85d26fc67361",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.167012,
+      "total": 10,
+      "remaining": 1.8329880000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.167012,
+      "total": 100,
+      "remaining": 91.832988,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.053018368780613,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"coin-operated automaton\", \"source_properties\": \"rigid suit, coin slot on the back, money being inserted\", \"target_situation\": \"political candidate funding\", \"mapping\": \"The politician functions like a mechanical puppet or piggy bank, acting only when funded by anonymous external donors.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "-Y_LaobHDe2M_PUPz_vKgQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 71,
+      "cost": {
+        "input_tokens_cost_nanodollars": 666500,
+        "output_tokens_cost_nanodollars": 213000
+      },
+      "prompt_tokens": 1333,
+      "total_backend_latency_ms": 1703,
+      "total_tokens": 1404
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1678915,
+      "total": 10,
+      "remaining": 1.8321085000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.167891499999996,
+      "total": 100,
+      "remaining": 91.8321085,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0008795,
+  "fields": {
+    "source_object": "coin-operated automaton",
+    "source_properties": "rigid suit, coin slot on the back, money being inserted",
+    "target_situation": "political candidate funding",
+    "mapping": "The politician functions like a mechanical puppet or piggy bank, acting only when funded by anonymous external donors.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: coin-operated automaton\nsource_properties: rigid suit, coin slot on the back, money being inserted\ntarget_situation: political candidate funding\nmapping: The politician functions like a mechanical puppet or piggy bank, acting only when funded by anonymous external donors.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

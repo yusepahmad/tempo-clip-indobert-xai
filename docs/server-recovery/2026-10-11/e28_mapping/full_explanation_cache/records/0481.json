@@ -1,0 +1,90 @@
+{
+  "index": 481,
+  "sample_id": "TMP-C445260C87B3",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "15be5cce57edd1032dfeb75fbe9595aecb16ffbef34b42725e06d6aa66a2e665",
+  "image_sha256": "c445260c87b3e50daff967c71d8c8d83a390d093ae06328122d265e72884ecb5",
+  "transmitted_image_sha256": "4617e3948116bc9d14a60ac4319fdb9c8cf932e3e36d3f1fe95e2946e3cde2f7",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.688831,
+      "total": 10,
+      "remaining": 1.3111689999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.688830999999993,
+      "total": 100,
+      "remaining": 91.311169,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.166938695125282,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Coiled barbed wire\", \"source_properties\": \"Sharp, metallic loops designed to encircle, restrict movement, and cause physical injury upon contact.\", \"target_situation\": \"Armed conflict between the TNI and OPM in Nduga, Papua, affecting local civilians.\", \"mapping\": \"The wire encircles the map of Papua, symbolizing how the region is trapped and wounded by militarization and persistent violence.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "npnLau77Duu1_PUPl9nYyQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 947,
+      "completion_tokens_details": {
+        "reasoning_tokens": 851
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 675500,
+        "output_tokens_cost_nanodollars": 2841000
+      },
+      "prompt_tokens": 1351,
+      "total_backend_latency_ms": 5022,
+      "total_tokens": 2298
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6923475,
+      "total": 10,
+      "remaining": 1.3076524999999997,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.692347499999997,
+      "total": 100,
+      "remaining": 91.3076525,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0035165,
+  "fields": {
+    "source_object": "Coiled barbed wire",
+    "source_properties": "Sharp, metallic loops designed to encircle, restrict movement, and cause physical injury upon contact.",
+    "target_situation": "Armed conflict between the TNI and OPM in Nduga, Papua, affecting local civilians.",
+    "mapping": "The wire encircles the map of Papua, symbolizing how the region is trapped and wounded by militarization and persistent violence.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Coiled barbed wire\nsource_properties: Sharp, metallic loops designed to encircle, restrict movement, and cause physical injury upon contact.\ntarget_situation: Armed conflict between the TNI and OPM in Nduga, Papua, affecting local civilians.\nmapping: The wire encircles the map of Papua, symbolizing how the region is trapped and wounded by militarization and persistent violence.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

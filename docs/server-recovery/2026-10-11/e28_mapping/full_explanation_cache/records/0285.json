@@ -1,0 +1,90 @@
+{
+  "index": 285,
+  "sample_id": "TMP-45C69FD51D38",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "707828f5e67e2db29706f9562223b48c6007be7e0ee539e1b4a820798b2ad1a0",
+  "image_sha256": "45c69fd51d38ac13ec151e2acb73cf6edbe9817c2e598951f159f8b1d505788e",
+  "transmitted_image_sha256": "a2cd2de7d8562c7ba02d8abe547853e53008fadc4120117f74d428c3bfb24336",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.431136,
+      "total": 10,
+      "remaining": 1.5688639999999996,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.431135999999995,
+      "total": 100,
+      "remaining": 91.568864,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 10.547888590954244,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"source_object\": \"none evident\",\n  \"source_properties\": \"N/A\",\n  \"target_situation\": \"The celebratory gathering of diverse grassroots volunteers at the presidential palace following Jokowi's election victory.\",\n  \"mapping\": \"The illustration literally depicts the 'relawan' (volunteers) mentioned in the headline, portraying a festive crowd of ordinary citizens at the seat of government.\",\n  \"uncertainty\": \"The artwork uses a literal representational style rather than a concrete visual analogy to convey its message.\"\n}\n```",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "npTLaoaSNf-o_uMPl6-88Q4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1534,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1414
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 660000,
+        "output_tokens_cost_nanodollars": 4602000
+      },
+      "prompt_tokens": 1320,
+      "total_backend_latency_ms": 8478,
+      "total_tokens": 2854
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.436398,
+      "total": 10,
+      "remaining": 1.5636019999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.436397999999997,
+      "total": 100,
+      "remaining": 91.563602,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.005262,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "N/A",
+    "target_situation": "The celebratory gathering of diverse grassroots volunteers at the presidential palace following Jokowi's election victory.",
+    "mapping": "The illustration literally depicts the 'relawan' (volunteers) mentioned in the headline, portraying a festive crowd of ordinary citizens at the seat of government.",
+    "uncertainty": "The artwork uses a literal representational style rather than a concrete visual analogy to convey its message."
+  },
+  "explanation": "source_object: none evident\nsource_properties: N/A\ntarget_situation: The celebratory gathering of diverse grassroots volunteers at the presidential palace following Jokowi's election victory.\nmapping: The illustration literally depicts the 'relawan' (volunteers) mentioned in the headline, portraying a festive crowd of ordinary citizens at the seat of government.\nuncertainty: The artwork uses a literal representational style rather than a concrete visual analogy to convey its message.",
+  "finish_reason": "stop",
+  "usable": true
+}

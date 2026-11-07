@@ -1,0 +1,87 @@
+{
+  "index": 676,
+  "sample_id": "TMP-0353B4BD8BEC",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "547b5fd954b254e6f589c9fd94af3b24065057bb973fb9061ee61458502ebba4",
+  "image_sha256": "0353b4bd8bec94cc173b118af1ab14b13151a25c7491e7866ea943db37af898e",
+  "transmitted_image_sha256": "6b1dd86a5aca1774962a8e4355574c05e5fc59a5e4bcd7a95fa29d13633bf7b9",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.966692,
+      "total": 10,
+      "remaining": 1.033308,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.966691999999995,
+      "total": 100,
+      "remaining": 91.033308,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.5116503462195396,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Chess game\",\n  \"source_properties\": \"Strategic move-making, manipulating pieces on a board, two-sided competition, and tactical interference.\",\n  \"target_situation\": \"President Jokowi influencing Prabowo Subianto's upcoming administration, cabinet formation, and leadership appointments.\",\n  \"mapping\": \"Jokowi's hands move the pieces, representing his interference ('cawe-cawe') in political maneuvers and leadership selection.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "x57LaqaUGL7i_uMPyOzU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 112,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682500,
+        "output_tokens_cost_nanodollars": 336000
+      },
+      "prompt_tokens": 1365,
+      "total_backend_latency_ms": 1906,
+      "total_tokens": 1477
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.967710499999999,
+      "total": 10,
+      "remaining": 1.032289500000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.967710499999995,
+      "total": 100,
+      "remaining": 91.0322895,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0010185,
+  "fields": {
+    "source_object": "Chess game",
+    "source_properties": "Strategic move-making, manipulating pieces on a board, two-sided competition, and tactical interference.",
+    "target_situation": "President Jokowi influencing Prabowo Subianto's upcoming administration, cabinet formation, and leadership appointments.",
+    "mapping": "Jokowi's hands move the pieces, representing his interference ('cawe-cawe') in political maneuvers and leadership selection.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: Chess game\nsource_properties: Strategic move-making, manipulating pieces on a board, two-sided competition, and tactical interference.\ntarget_situation: President Jokowi influencing Prabowo Subianto's upcoming administration, cabinet formation, and leadership appointments.\nmapping: Jokowi's hands move the pieces, representing his interference ('cawe-cawe') in political maneuvers and leadership selection.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,86 @@
+{
+  "index": 365,
+  "sample_id": "TMP-82A2AFB94458",
+  "fold": 2,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "9ae2da630e50cc8b7bb05beb8620b313ccbc5e7fe39cc4472ea56fd5f6c43d4c",
+  "image_sha256": "82a2afb944587bdb28d3d05a416b26f0e984a91af2ddb15fa38bbf0ddc420621",
+  "transmitted_image_sha256": "30d43ef1c04ecda177c16a4d0d0bd9894e364df15ee0662c19a74cfa2413c74a",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 4.808591,
+      "total": 10,
+      "remaining": 5.191409,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 4.808591000000007,
+      "total": 100,
+      "remaining": 95.191409,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 15.234233222901821,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks target, di mana kerumunan massa dipetakan sebagai **arena pertunjukan atau pertandingan besar** dengan aturan dan peran yang terstruktur, kategori yang paling sesuai adalah:\n\n**G**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "KfjKarSuML7i_uMPyOzU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 3055,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3006
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2031000,
+        "output_tokens_cost_nanodollars": 9165000
+      },
+      "prompt_tokens": 4062,
+      "total_backend_latency_ms": 13903,
+      "total_tokens": 7117
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 4.819787,
+      "total": 10,
+      "remaining": 5.180213,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 4.819787000000005,
+      "total": 100,
+      "remaining": 95.180213,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.011196,
+  "code": "G",
+  "strict_code": "INVALID",
+  "parsing_rule": "boundary_single_code",
+  "finish_reason": "stop",
+  "prediction": "PERMAINAN_KONTES"
+}

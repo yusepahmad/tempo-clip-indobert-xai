@@ -1,0 +1,87 @@
+{
+  "index": 41,
+  "sample_id": "TMP-1105540A337F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1c40b720b37e1bee76d342640bd8f754122f74a543f77ee9f33963a9596cbc16",
+  "image_sha256": "1105540a337faf0cf8ec2bdcc41e7b3398e3da9023ceaec5f4dd00f0231739e7",
+  "transmitted_image_sha256": "7c08516792a22e50f411ed6b824dd665231c88be1299b2039afb8c65f4ecd4d0",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.067593,
+      "total": 10,
+      "remaining": 1.9324069999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.067593000000002,
+      "total": 100,
+      "remaining": 91.932407,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.629764172248542,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"framed portraits on a wall\", \"source_properties\": \"Arranging and hanging framed pictures in a specific order or position of honor.\", \"target_situation\": \"Reforming the Presidential Advisory Council into a Supreme Advisory Council to accommodate former presidents.\", \"mapping\": \"Positioning the portraits symbolizes the political maneuvering to create prestigious official roles for past leaders as a reward.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "OY7LapORHfGb_uMPte3s2Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681500,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1363,
+      "total_backend_latency_ms": 1547,
+      "total_tokens": 1449
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0685325,
+      "total": 10,
+      "remaining": 1.9314675000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.068532500000003,
+      "total": 100,
+      "remaining": 91.9314675,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009395,
+  "fields": {
+    "source_object": "framed portraits on a wall",
+    "source_properties": "Arranging and hanging framed pictures in a specific order or position of honor.",
+    "target_situation": "Reforming the Presidential Advisory Council into a Supreme Advisory Council to accommodate former presidents.",
+    "mapping": "Positioning the portraits symbolizes the political maneuvering to create prestigious official roles for past leaders as a reward.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: framed portraits on a wall\nsource_properties: Arranging and hanging framed pictures in a specific order or position of honor.\ntarget_situation: Reforming the Presidential Advisory Council into a Supreme Advisory Council to accommodate former presidents.\nmapping: Positioning the portraits symbolizes the political maneuvering to create prestigious official roles for past leaders as a reward.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,86 @@
+{
+  "tanggal": "2026-10-06",
+  "plan": "docs/plans/2026-10-06-lanjutan-week3-server.md (langkah 1)",
+  "host": "yusep@10.12.1.31",
+  "workspace": "/home/yusep/workspace/learn/DEMO_XAI_745_FULL",
+  "environment": {
+    "python": "3.10.12",
+    "python_sumber": "/usr/bin/python3.10 via `uv venv venv --python /usr/bin/python3.10 --seed`",
+    "torch": "2.14.1+cpu",
+    "transformers": "5.18.0",
+    "open_clip_torch": "3.3.0",
+    "easyocr": "1.7.2",
+    "flask": "3.1.3",
+    "node": "v22.23.2",
+    "gpu": "tidak ada (nvidia-smi gagal: driver tidak berkomunikasi); CPU saja",
+    "pip_freeze": "04_hasil_eksperimen/revisi_week3/server_baseline_20261006/pip_freeze.txt"
+  },
+  "regresi": {
+    "python": {
+      "01_notebook/test_ui_html5.py": "OK 4 test",
+      "01_notebook/test_week3_regressions.py": "OK 4 test",
+      "01_notebook/test_week3_training_audit.py": "OK 1 test (fixture, bukan training nyata)"
+    },
+    "javascript": {
+      "01_notebook/test_loading_ui.js": "exit 0",
+      "01_notebook/test_week3_state.js": "exit 0",
+      "01_notebook/test_workspace_ui.js": "exit 0"
+    }
+  },
+  "server": {
+    "tmux_session": "tempo-ui",
+    "bind": "127.0.0.1:7861",
+    "log": "/home/yusep/workspace/learn/tempo-ui-7861.log",
+    "command": "OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 ../venv/bin/python -u -c \"import torch; torch.set_num_threads(4); from app import app; app.run(host='127.0.0.1', port=7861, debug=False)\" (cwd 02_web_demo)",
+    "startup": "dataset 740 sampul, dimensi fitur 1280, head MTL awal dilatih, siap",
+    "log_traceback": 0
+  },
+  "http_model_nyata": {
+    "script": "01_notebook/verify_week3_http.py, dijalankan dari folder staging agar tidak menimpa bukti historis revisi_week3/{task*,batch_export*,http_verification}.json",
+    "status": "success",
+    "single": [
+      {
+        "task": "task2_domain_sumber",
+        "analysis_id": "ae788af76848468792b4ba33fe353de4",
+        "headline": "AKBAR TERPOJOK SIAPA SENANG",
+        "strategy": "bukti_gabungan_terbatas",
+        "seconds": 39.7
+      },
+      {
+        "task": "task1_issue",
+        "analysis_id": "eab0ee04b18942c899bd7128bdbc1c34",
+        "headline": "HEADLINE FINAL DIEDIT",
+        "strategy": "bukti_gabungan_terbatas",
+        "seconds": 1.8
+      },
+      {
+        "task": "task3_primary_entity_type",
+        "analysis_id": "42b72d5728db403e98bd4db79253d7e1",
+        "headline": "AKBAR TERPOJOK SIAPA SENANG",
+        "strategy": "bukti_gabungan_terbatas",
+        "seconds": 1.6
+      }
+    ],
+    "batch_statuses": [
+      "success",
+      "failed"
+    ],
+    "catatan": "task2 39,7 detik termasuk unduhan pertama CLIP/IndoBERT; output di http/"
+  },
+  "ocr_foto_dosen": {
+    "endpoint": "POST /api/ocr, 06_gambar_revisi/",
+    "hasil": {
+      "04.33.42": "GULA-GULA DEMO BURUH (tepat)",
+      "05.29.27": "VJASWAS RUPIAH (salah; acuan WASWAS RUPIAH; mesin asal VJJASWAS RUPIAH)",
+      "05.31.04": "CUKAI ABAL-ABAL ROKOK ILEGAL (tepat headline)"
+    },
+    "ringkas": "2/3 tepat, sama dengan mesin asal; pembacaan salah WASWAS sedikit berbeda, kemungkinan karena versi pustaka berbeda",
+    "catatan": "pemanggilan pertama 19,6 detik termasuk unduhan model EasyOCR"
+  },
+  "batas_pemeriksaan": [
+    "Akses lewat SSH tunnel dari komputer user belum diuji dari sisi user; server hanya diverifikasi dari localhost",
+    "Bukan review visual browser (langkah 3 plan)",
+    "requirements.txt hanya batas bawah; versi terpasang (mis. transformers 5.x, torch 2.14) lebih baru dari mesin asal sehingga angka tidak dijamin identik bit-per-bit",
+    "Uji skala 740 dan finalize tidak dijalankan (mengacu job/path lama sesuai handoff)"
+  ]
+}

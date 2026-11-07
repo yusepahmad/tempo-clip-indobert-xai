@@ -1,0 +1,87 @@
+{
+  "index": 456,
+  "sample_id": "TMP-C0B533E782E9",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9d3898d4e3c4013ce83627291e15dabeb641de2649a3568b477f8e733970b1d2",
+  "image_sha256": "c0b533e782e941f22d7c66b95ed530141a430e6e1914230368904a62377d8658",
+  "transmitted_image_sha256": "a0ad09321dcf6895913d2a576d914e78016abe7766cf522d9fd7092686b47f03",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.664797,
+      "total": 10,
+      "remaining": 1.335203,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.664796999999993,
+      "total": 100,
+      "remaining": 91.335203,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.584290511906147,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"woodworking and chairs\",\n  \"source_properties\": \"building, repairing, or rearranging furniture using tools like a mallet and square.\",\n  \"target_situation\": \"reshuffling or forming a government cabinet after an election.\",\n  \"mapping\": \"Fixing chairs symbolizes 'repairing' the cabinet by selecting new members and removing corrupt ones.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "B5nLavnWFcfv_uMP5e292Qg",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 684500,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1369,
+      "total_backend_latency_ms": 1857,
+      "total_tokens": 1461
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6657575,
+      "total": 10,
+      "remaining": 1.3342425000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.665757499999998,
+      "total": 100,
+      "remaining": 91.3342425,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009605,
+  "fields": {
+    "source_object": "woodworking and chairs",
+    "source_properties": "building, repairing, or rearranging furniture using tools like a mallet and square.",
+    "target_situation": "reshuffling or forming a government cabinet after an election.",
+    "mapping": "Fixing chairs symbolizes 'repairing' the cabinet by selecting new members and removing corrupt ones.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: woodworking and chairs\nsource_properties: building, repairing, or rearranging furniture using tools like a mallet and square.\ntarget_situation: reshuffling or forming a government cabinet after an election.\nmapping: Fixing chairs symbolizes 'repairing' the cabinet by selecting new members and removing corrupt ones.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

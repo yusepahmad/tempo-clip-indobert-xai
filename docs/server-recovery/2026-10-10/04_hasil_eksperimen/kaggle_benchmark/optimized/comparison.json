@@ -1,0 +1,12 @@
+{
+  "baseline_epoch_seconds": 20.462971085999982,
+  "optimized_epoch_seconds": 15.599108219000016,
+  "time_reduction_percent": 23.76909416799031,
+  "speedup": 1.3118039056281234,
+  "baseline_global_loss": 2.1101532530140235,
+  "optimized_global_loss": 2.1099996776194185,
+  "absolute_loss_difference": 0.0001535753946049212,
+  "estimated_600_epochs_hours": 2.599851369833336,
+  "checks": "All four reports success, encoders updated, finite gradients each step, evaluated 148 total samples",
+  "limitations": "Single paired epoch; not convergence or full-weight equivalence validation. Baseline finite checks enqueue GPU reductions before individual sync unlike original dual benchmark."
+}

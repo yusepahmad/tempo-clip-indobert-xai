@@ -1,0 +1,90 @@
+{
+  "index": 729,
+  "sample_id": "TMP-7C09121DF8E0",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "6545fdca62879bdaea721f5f05907b979e8932f31d513914c3aa5539fcfd1ea9",
+  "image_sha256": "7c09121df8e0f9f3d5c1564a43231b8bfc9d8440d49c8cc44acad15fc1b1c2fb",
+  "transmitted_image_sha256": "2a8c600ab45583f87ea3d85d724f70ebf44577863ddd13d55f54e1b7a22322d4",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.053739,
+      "total": 10,
+      "remaining": 0.9462609999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.053738999999993,
+      "total": 100,
+      "remaining": 90.946261,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.074885151349008,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"a farmer carrying a hoe and corn\",\n  \"source_properties\": \"The hoe is used for cultivation, while the corn represents the tangible output of agricultural labor.\",\n  \"target_situation\": \"Police personnel being tasked with food security, nutrition, and price stabilization programs.\",\n  \"mapping\": \"The officer assumes a farmer's appearance and tools, symbolizing the securitization of agriculture and the displacement of actual farmers.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "MaDLasOMLKiB_PUPxqbXMA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 957,
+      "completion_tokens_details": {
+        "reasoning_tokens": 850
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 680500,
+        "output_tokens_cost_nanodollars": 2871000
+      },
+      "prompt_tokens": 1361,
+      "total_backend_latency_ms": 5568,
+      "total_tokens": 2318
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0572905,
+      "total": 10,
+      "remaining": 0.9427094999999994,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.057290499999993,
+      "total": 100,
+      "remaining": 90.9427095,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0035515,
+  "fields": {
+    "source_object": "a farmer carrying a hoe and corn",
+    "source_properties": "The hoe is used for cultivation, while the corn represents the tangible output of agricultural labor.",
+    "target_situation": "Police personnel being tasked with food security, nutrition, and price stabilization programs.",
+    "mapping": "The officer assumes a farmer's appearance and tools, symbolizing the securitization of agriculture and the displacement of actual farmers.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: a farmer carrying a hoe and corn\nsource_properties: The hoe is used for cultivation, while the corn represents the tangible output of agricultural labor.\ntarget_situation: Police personnel being tasked with food security, nutrition, and price stabilization programs.\nmapping: The officer assumes a farmer's appearance and tools, symbolizing the securitization of agriculture and the displacement of actual farmers.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

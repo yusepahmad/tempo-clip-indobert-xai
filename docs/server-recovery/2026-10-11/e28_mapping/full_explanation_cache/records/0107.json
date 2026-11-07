@@ -1,0 +1,87 @@
+{
+  "index": 107,
+  "sample_id": "TMP-35A64D5130A5",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "43c6913cb96d2b21d9ec7702a060be9121f3a6d7dc069efc6f08164330f65caf",
+  "image_sha256": "35a64d5130a503f79000e22e253511fff1221d25f8a2b9f6cfc4f730e6ce6bcc",
+  "transmitted_image_sha256": "741ac185d838b92e13cf7f730ca22e254dda49018e632b3d74f1cd7897d250fb",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1628355,
+      "total": 10,
+      "remaining": 1.8371645,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.1628355,
+      "total": 100,
+      "remaining": 91.8371645,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.367788981180638,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"airport control tower\",\n  \"source_properties\": \"elevated viewpoint, command center, overseeing complex traffic, signaling distress via 'SOS'\",\n  \"target_situation\": \"governance and financial oversight of state resources\",\n  \"mapping\": \"The tower's role in managing chaotic aircraft movement mirrors the government's responsibility to monitor and control financial irregularities, represented as a state of emergency.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "64_Lao_vBc7E_PUPtKy7yQo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 672500,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1345,
+      "total_backend_latency_ms": 1747,
+      "total_tokens": 1447
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.163814,
+      "total": 10,
+      "remaining": 1.8361859999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.163814000000002,
+      "total": 100,
+      "remaining": 91.836186,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009785,
+  "fields": {
+    "source_object": "airport control tower",
+    "source_properties": "elevated viewpoint, command center, overseeing complex traffic, signaling distress via 'SOS'",
+    "target_situation": "governance and financial oversight of state resources",
+    "mapping": "The tower's role in managing chaotic aircraft movement mirrors the government's responsibility to monitor and control financial irregularities, represented as a state of emergency.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: airport control tower\nsource_properties: elevated viewpoint, command center, overseeing complex traffic, signaling distress via 'SOS'\ntarget_situation: governance and financial oversight of state resources\nmapping: The tower's role in managing chaotic aircraft movement mirrors the government's responsibility to monitor and control financial irregularities, represented as a state of emergency.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,90 @@
+{
+  "index": 534,
+  "sample_id": "TMP-9A54E99488A2",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "97c99700d91fcaaf1b0cd2fcbd1f4311050aa85dd501b4bf2f89070513f5ce87",
+  "image_sha256": "9a54e99488a2895b43f4e17af898b5597dfbc46d589c277822b99570de33d60f",
+  "transmitted_image_sha256": "929a3571da6040bdc701e2fc8df98a1bf5c23e54e6784b23b231226e3fc5cf13",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.765404,
+      "total": 10,
+      "remaining": 1.2345959999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.765404000000004,
+      "total": 100,
+      "remaining": 91.234596,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.589585337787867,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A tropical coconut cocktail\",\n  \"source_properties\": \"A refreshing, garnished beverage meant for consumption and enjoyment.\",\n  \"target_situation\": \"Alleged bribery and job-selling within the Ministry of Villages for personal profit.\",\n  \"mapping\": \"Treating the ministry logo like a consumable drink symbolizes how corrupt officials exploit public institutions for their own 'refreshing' personal gain.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "C5vLar-7HZjM_PUPlq7quAo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 762,
+      "completion_tokens_details": {
+        "reasoning_tokens": 662
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 675000,
+        "output_tokens_cost_nanodollars": 2286000
+      },
+      "prompt_tokens": 1350,
+      "total_backend_latency_ms": 4130,
+      "total_tokens": 2112
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.768365,
+      "total": 10,
+      "remaining": 1.2316350000000007,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.768365000000003,
+      "total": 100,
+      "remaining": 91.231635,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.002961,
+  "fields": {
+    "source_object": "A tropical coconut cocktail",
+    "source_properties": "A refreshing, garnished beverage meant for consumption and enjoyment.",
+    "target_situation": "Alleged bribery and job-selling within the Ministry of Villages for personal profit.",
+    "mapping": "Treating the ministry logo like a consumable drink symbolizes how corrupt officials exploit public institutions for their own 'refreshing' personal gain.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A tropical coconut cocktail\nsource_properties: A refreshing, garnished beverage meant for consumption and enjoyment.\ntarget_situation: Alleged bribery and job-selling within the Ministry of Villages for personal profit.\nmapping: Treating the ministry logo like a consumable drink symbolizes how corrupt officials exploit public institutions for their own 'refreshing' personal gain.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

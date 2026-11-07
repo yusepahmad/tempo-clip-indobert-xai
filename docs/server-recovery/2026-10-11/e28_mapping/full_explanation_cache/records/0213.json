@@ -1,0 +1,87 @@
+{
+  "index": 213,
+  "sample_id": "TMP-E75F28D94B42",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1ac6e9ed05a506d31976688317fbb13c5e9e9ab575cfac2689eec8aed238a9ef",
+  "image_sha256": "e75f28d94b421fcb09380668dde476222395fe13324a118ae9a44cd3ec0aac2b",
+  "transmitted_image_sha256": "c8889b1d959f4cbc4d98f16c2bc33672d42c8ec8db87b8092f293a39209a5f51",
+  "image_size": [
+    482,
+    631
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.323882,
+      "total": 10,
+      "remaining": 1.6761180000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.323881999999998,
+      "total": 100,
+      "remaining": 91.676118,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.121202551294118,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"boxing match\",\n  \"source_properties\": \"two rounds, physical exertion, rest periods, coaching, and a competition between two opponents in a ring\",\n  \"target_situation\": \"the 2012 Jakarta gubernatorial election runoff\",\n  \"mapping\": \"The second round of the election is depicted as a boxing match between candidates, highlighting their exhaustion and political struggle.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "tZLLateDCbXP_uMPiOzhoQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 663000,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1326,
+      "total_backend_latency_ms": 1618,
+      "total_tokens": 1425
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.324842,
+      "total": 10,
+      "remaining": 1.6751579999999997,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.324842000000004,
+      "total": 100,
+      "remaining": 91.675158,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00096,
+  "fields": {
+    "source_object": "boxing match",
+    "source_properties": "two rounds, physical exertion, rest periods, coaching, and a competition between two opponents in a ring",
+    "target_situation": "the 2012 Jakarta gubernatorial election runoff",
+    "mapping": "The second round of the election is depicted as a boxing match between candidates, highlighting their exhaustion and political struggle.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: boxing match\nsource_properties: two rounds, physical exertion, rest periods, coaching, and a competition between two opponents in a ring\ntarget_situation: the 2012 Jakarta gubernatorial election runoff\nmapping: The second round of the election is depicted as a boxing match between candidates, highlighting their exhaustion and political struggle.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

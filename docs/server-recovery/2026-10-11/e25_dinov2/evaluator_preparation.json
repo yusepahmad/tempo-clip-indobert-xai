@@ -1,0 +1,32 @@
+{
+  "status": "parity_passed_full_oof_launched",
+  "fixed_parameter_indices": [
+    0,
+    17,
+    18,
+    100,
+    200,
+    377
+  ],
+  "train": 592,
+  "test": 148,
+  "grid": 378,
+  "pid": 2399666,
+  "starttime": "208261011",
+  "session": "tempo-e25-oof",
+  "checks": [
+    "exact float64 projections/scaler/gamma/rawvsCachedpredictions",
+    "heldout perturbation leaves training fit/kernels unchanged",
+    "imageonly base independence/zeroDINOcontrol",
+    "compile/current featuregate/source hashes"
+  ],
+  "limits": [
+    "no targettestF1 used; fixedparametercases not exhaustive rawgrid",
+    "fullOOF pending"
+  ],
+  "sources": {
+    "evaluate.py": "b28efd745fd5c0a0e84068ca7a1df364671e89502b2c269982dbdb6d2c1bfe52",
+    "evaluate_cached.py": "47aaa313d3aa84666c30dce5c5beaae78544e07b13c6f52cc7ec33bf038ac226",
+    "verify_cached.py": "99e9ff3f1ffa89fdf3ec470c64aec32a4d5297ce69fec1158c40005a31d43b35"
+  }
+}

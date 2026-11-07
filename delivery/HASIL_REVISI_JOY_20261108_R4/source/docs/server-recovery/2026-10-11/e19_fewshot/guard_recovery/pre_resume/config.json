@@ -1,0 +1,35 @@
+{
+  "status": "prepared_no_api_calls",
+  "samples": 740,
+  "model": "google/gemini-3-flash-preview",
+  "protocol": "outer5_task1_seed42_two_cosine_nearest_per_training_class_no_tuning",
+  "examples_per_class": 2,
+  "max_description_chars": 400,
+  "max_reason_chars": 200,
+  "max_headline_chars": 120,
+  "worker_sha256": "1b5f53843afc359dbf8c90d6babf99573f63cc16abab38f715bacf691d1b4562",
+  "csv_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "bge_sha256": "c0d7d1fc9ac42988b0d107a694d7d3b355105f8640f776ace2617eed936495c4",
+  "bge_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "prompt_helper_sha256": "a1731aad122005377bfc5d6801cb70f3ab18fb89129d2ba57d2ab50e5e238cbf",
+  "classes": [
+    "BENCANA_JERAT",
+    "HEWAN_TUBUH",
+    "KONSUMSI_TRANSAKSI",
+    "LAINNYA",
+    "MESIN_INFRASTRUKTUR",
+    "NON_METAFORA",
+    "PERMAINAN_KONTES"
+  ],
+  "inputs_sha256": "66ef704a01a1f47a2f93cf30caa7a269f61e223c2a9cba2beb56bdf8394ad9bb",
+  "min_prompt_chars": 12399,
+  "max_prompt_chars": 13510,
+  "mean_prompt_chars": 13095.272972972973,
+  "checks": [
+    "740 target queries;14 unique examples each;2 per class",
+    "all examples from target outer-training592; none from148 outer-test",
+    "cosine nearest ranking with stable index tie-break",
+    "query prompt invariant under target-label permutation",
+    "target labels absent from input manifest; example labels are training only"
+  ]
+}

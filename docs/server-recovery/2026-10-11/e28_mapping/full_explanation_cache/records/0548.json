@@ -1,0 +1,87 @@
+{
+  "index": 548,
+  "sample_id": "TMP-F0FD1FC28392",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "cb74ee6a85c8e967db65085d891328f77d1dc1511bcb157f451e2510a1780131",
+  "image_sha256": "f0fd1fc283928d12a778a07ac6b86d577b241a98f22545a8328181d9fef9dd86",
+  "transmitted_image_sha256": "7fca315cffc3317367a5a7e623fc051d1124a9335b428c20cec8edffd465417e",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.791285,
+      "total": 10,
+      "remaining": 1.2087149999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.791285000000002,
+      "total": 100,
+      "remaining": 91.208715,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.6079220958054066,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A large rubber stamp with a pig icon\",\n  \"source_properties\": \"Used for certifying or marking something; heavy, cumbersome, and held over a vial.\",\n  \"target_situation\": \"MUI's controversial fatwa regarding the AstraZeneca vaccine's ingredients.\",\n  \"mapping\": \"Stamping 'haram' onto a vaccine vial reflects the religious authority's power to label products.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "bZvLav3tEt7d_uMPq5e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 103,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675000,
+        "output_tokens_cost_nanodollars": 309000
+      },
+      "prompt_tokens": 1350,
+      "total_backend_latency_ms": 2041,
+      "total_tokens": 1453
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.792269,
+      "total": 10,
+      "remaining": 1.2077310000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.792269000000005,
+      "total": 100,
+      "remaining": 91.207731,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000984,
+  "fields": {
+    "source_object": "A large rubber stamp with a pig icon",
+    "source_properties": "Used for certifying or marking something; heavy, cumbersome, and held over a vial.",
+    "target_situation": "MUI's controversial fatwa regarding the AstraZeneca vaccine's ingredients.",
+    "mapping": "Stamping 'haram' onto a vaccine vial reflects the religious authority's power to label products.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A large rubber stamp with a pig icon\nsource_properties: Used for certifying or marking something; heavy, cumbersome, and held over a vial.\ntarget_situation: MUI's controversial fatwa regarding the AstraZeneca vaccine's ingredients.\nmapping: Stamping 'haram' onto a vaccine vial reflects the religious authority's power to label products.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

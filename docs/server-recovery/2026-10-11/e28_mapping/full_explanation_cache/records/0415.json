@@ -1,0 +1,87 @@
+{
+  "index": 415,
+  "sample_id": "TMP-643171237DC7",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "6d899aadadaa04eb6d037e2dcb57b10d8817490e7905aa57249f0b0cd22420d2",
+  "image_sha256": "643171237dc76c5cc03f21f244d1b11dd7fed234780c39f6f4db1ec793a5c978",
+  "transmitted_image_sha256": "5450ed889f5c8ad109f5391183462a5a142417085bd43d4ee61e3b4612d02e7e",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.612069,
+      "total": 10,
+      "remaining": 1.387931,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.612069000000005,
+      "total": 100,
+      "remaining": 91.387931,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.560732615645975,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"rainbow\",\n  \"source_properties\": \"a multi-colored arc in the sky being painted over by figures\",\n  \"target_situation\": \"increasing hostility and violence towards LGBT individuals due to election-year politicization\",\n  \"mapping\": \"Painting over the rainbow symbolizes efforts to erase or suppress LGBT identity and rights\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "-JfLap_tD_bb_uMPure6uAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 88,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673000,
+        "output_tokens_cost_nanodollars": 264000
+      },
+      "prompt_tokens": 1346,
+      "total_backend_latency_ms": 2065,
+      "total_tokens": 1434
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.613006,
+      "total": 10,
+      "remaining": 1.3869939999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.613005999999999,
+      "total": 100,
+      "remaining": 91.386994,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000937,
+  "fields": {
+    "source_object": "rainbow",
+    "source_properties": "a multi-colored arc in the sky being painted over by figures",
+    "target_situation": "increasing hostility and violence towards LGBT individuals due to election-year politicization",
+    "mapping": "Painting over the rainbow symbolizes efforts to erase or suppress LGBT identity and rights",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: rainbow\nsource_properties: a multi-colored arc in the sky being painted over by figures\ntarget_situation: increasing hostility and violence towards LGBT individuals due to election-year politicization\nmapping: Painting over the rainbow symbolizes efforts to erase or suppress LGBT identity and rights\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

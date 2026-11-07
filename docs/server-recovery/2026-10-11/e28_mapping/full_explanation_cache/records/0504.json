@@ -1,0 +1,87 @@
+{
+  "index": 504,
+  "sample_id": "TMP-F58435168E02",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "84b3e59408a26739b2e4e3381cb5d4a9e6d036ef2b4cdbf1aada8ce15d3e1d07",
+  "image_sha256": "f58435168e02dc4d29b0e8800ea4f50f12f7ec936924e248d5790f407221c15a",
+  "transmitted_image_sha256": "51be4a507225714a485f57b712e308d89b525638ae275c1131a4ee771251c230",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.72453,
+      "total": 10,
+      "remaining": 1.2754700000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.724530000000001,
+      "total": 100,
+      "remaining": 91.27547,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.946887122001499,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Pinocchio\",\n  \"source_properties\": \"A character whose nose grows longer whenever he tells a lie.\",\n  \"target_situation\": \"Indonesian parliament members editing the Omnibus Law after its formal approval.\",\n  \"mapping\": \"The long noses on the legislators symbolize the deception and dishonesty involved in altering the bill's text.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "PZrLat7KO8jg_uMPp72C-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 685000,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1370,
+      "total_backend_latency_ms": 1587,
+      "total_tokens": 1460
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.725484999999999,
+      "total": 10,
+      "remaining": 1.274515000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.725485000000006,
+      "total": 100,
+      "remaining": 91.274515,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000955,
+  "fields": {
+    "source_object": "Pinocchio",
+    "source_properties": "A character whose nose grows longer whenever he tells a lie.",
+    "target_situation": "Indonesian parliament members editing the Omnibus Law after its formal approval.",
+    "mapping": "The long noses on the legislators symbolize the deception and dishonesty involved in altering the bill's text.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Pinocchio\nsource_properties: A character whose nose grows longer whenever he tells a lie.\ntarget_situation: Indonesian parliament members editing the Omnibus Law after its formal approval.\nmapping: The long noses on the legislators symbolize the deception and dishonesty involved in altering the bill's text.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

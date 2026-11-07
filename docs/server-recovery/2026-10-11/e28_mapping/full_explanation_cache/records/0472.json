@@ -1,0 +1,87 @@
+{
+  "index": 472,
+  "sample_id": "TMP-D4D2B45E5230",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "4bce145701ffe5b6c958659b0b83118aea24f4b7c185f1a6a8ad7dc7b5281fd6",
+  "image_sha256": "d4d2b45e5230324cfd4d0a4cac2c433761976dacfa250f80ad16bcd8de523b44",
+  "transmitted_image_sha256": "7c40be4c88e8e25e9f67e44d460bc9a3e772bc2b7a5b478de96b955b2dcf6da5",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.680256,
+      "total": 10,
+      "remaining": 1.319744,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.680256,
+      "total": 100,
+      "remaining": 91.319744,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.895434666890651,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"box and arm wrestling\", \"source_properties\": \"Two figures are locked in a physical struggle above an object, mimicking a competitive arm-wrestling posture while holding hands.\", \"target_situation\": \"Political reconciliation between opposing presidential candidates negotiating cabinet positions and parliamentary leadership outside of legal proceedings.\", \"mapping\": \"The physical tension and handclasp represent the simultaneous conflict ('hate') and negotiation ('longing') as they settle their rivalry through political compromise.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "aZnLaujnIduA_PUP-tvEuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "cost": {
+        "input_tokens_cost_nanodollars": 686500,
+        "output_tokens_cost_nanodollars": 312000
+      },
+      "prompt_tokens": 1373,
+      "total_backend_latency_ms": 1790,
+      "total_tokens": 1477
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6812545,
+      "total": 10,
+      "remaining": 1.3187455000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.681254499999994,
+      "total": 100,
+      "remaining": 91.3187455,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009985,
+  "fields": {
+    "source_object": "box and arm wrestling",
+    "source_properties": "Two figures are locked in a physical struggle above an object, mimicking a competitive arm-wrestling posture while holding hands.",
+    "target_situation": "Political reconciliation between opposing presidential candidates negotiating cabinet positions and parliamentary leadership outside of legal proceedings.",
+    "mapping": "The physical tension and handclasp represent the simultaneous conflict ('hate') and negotiation ('longing') as they settle their rivalry through political compromise.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: box and arm wrestling\nsource_properties: Two figures are locked in a physical struggle above an object, mimicking a competitive arm-wrestling posture while holding hands.\ntarget_situation: Political reconciliation between opposing presidential candidates negotiating cabinet positions and parliamentary leadership outside of legal proceedings.\nmapping: The physical tension and handclasp represent the simultaneous conflict ('hate') and negotiation ('longing') as they settle their rivalry through political compromise.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,59 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "scores": {
+    "weighted": {
+      "macro_f1_manual": 0.5662691391334344,
+      "per_class_f1": {
+        "BENCANA_JERAT": 0.5327102803738317,
+        "HEWAN_TUBUH": 0.5290322580645161,
+        "KONSUMSI_TRANSAKSI": 0.5730337078651685,
+        "LAINNYA": 0.39097744360902253,
+        "MESIN_INFRASTRUKTUR": 0.6861313868613139,
+        "NON_METAFORA": 0.6451612903225806,
+        "PERMAINAN_KONTES": 0.6068376068376068
+      }
+    },
+    "nested_selected": {
+      "macro_f1_manual": 0.550917426557633,
+      "per_class_f1": {
+        "BENCANA_JERAT": 0.5114155251141552,
+        "HEWAN_TUBUH": 0.5324675324675324,
+        "KONSUMSI_TRANSAKSI": 0.5777777777777777,
+        "LAINNYA": 0.36231884057971014,
+        "MESIN_INFRASTRUKTUR": 0.6683417085427136,
+        "NON_METAFORA": 0.6193548387096774,
+        "PERMAINAN_KONTES": 0.5847457627118644
+      }
+    }
+  },
+  "checks": [
+    "original data/source/feature/reference hashes",
+    "exact baseline outer splits and original IDs/labels",
+    "chosen parameters belong to predeclared grid",
+    "chosen inner score recomputed on training only",
+    "all 740 weighted predictions reproduced from outer-training refits",
+    "family choice and routed predictions reconstructed",
+    "manual TP/FP/FN and confusion matrices"
+  ],
+  "selected_families": [
+    "weighted",
+    "weighted",
+    "description_reason",
+    "weighted",
+    "semantic_visual"
+  ],
+  "sha256": {
+    "fold_1.json": "b13630b5f4c9501fc873b4500594d602af0ee2cb4f06d94afea5b5d3f8f35e3a",
+    "fold_2.json": "8185b151d4e88e30642df85f653810b397c5a90c71201ac193074b1a6cdd246c",
+    "fold_3.json": "4b1dc102c3e36a8b6a08bd3902a6db28b2337521a78a79a9316dc511014c2d7c",
+    "fold_4.json": "6ca95d126dd7722ebeece464e8efcd72ad94fc54728036bb22f868a776455085",
+    "fold_5.json": "5a8f2ee4fae677e2dae85c477530799bc60cae5cf8f8a3155ceec7b469831edb",
+    "nested_selected.json": "c03a63d1692e5febffec7ebd7b3e84b98b92b6df95f79d03594e5646a427776b",
+    "nested_selected_oof.csv": "c963d4c4b8d826a37f774d5454d6b2b52299774824395a584238947c082fb84d",
+    "protocol.json": "eb2d56e77f51252bd2d817469df6234cb2819e4b66be675be49724bbe4649bdf",
+    "runner.log": "3b49787d8c917a1e6525a970d0b0630c29fa8f352c88c38c4998a563f59f2c5d",
+    "weighted.json": "5017ac7f81e8feeca201bcec1b9cfc44c0b85b59e8b4572b4df90a1f1769bcef",
+    "weighted_oof.csv": "49b5fdfbe5a9669178e4b92b4937713f7ca8d88a8ccaedb53393268b400763e7"
+  }
+}

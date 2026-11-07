@@ -1,0 +1,87 @@
+{
+  "index": 506,
+  "sample_id": "TMP-E73EF04B154C",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9a17e1412c94807e74e55107f2bd64bd5af9f90bb1a33fb917c47c0aeab679e2",
+  "image_sha256": "e73ef04b154cb6a41740eb1fb33d7dba25b0ed7dc77a7bc49c5593d8beb1b0da",
+  "transmitted_image_sha256": "69aeb7da92005eadaa2afb2f3e6c7051e24d3cbf847f13634b4ca18481905b0c",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.72652,
+      "total": 10,
+      "remaining": 1.2734799999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.726519999999994,
+      "total": 100,
+      "remaining": 91.27348,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.471734865102917,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"bitter pills\", \"source_properties\": \"pills are medicinal objects that are often hard to swallow due to their unpleasant bitter taste.\", \"target_situation\": \"Health Minister Terawan's policy changes to the drug procurement system that threaten patients' wellbeing.\", \"mapping\": \"The difficult policy is likened to a 'bitter pill' that patients must painfully endure despite its intended medicinal purpose.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "SZrLaorlKMfR_uMPxMva8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674000,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1348,
+      "total_backend_latency_ms": 1707,
+      "total_tokens": 1441
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.727473,
+      "total": 10,
+      "remaining": 1.2725270000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.727473000000003,
+      "total": 100,
+      "remaining": 91.272527,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000953,
+  "fields": {
+    "source_object": "bitter pills",
+    "source_properties": "pills are medicinal objects that are often hard to swallow due to their unpleasant bitter taste.",
+    "target_situation": "Health Minister Terawan's policy changes to the drug procurement system that threaten patients' wellbeing.",
+    "mapping": "The difficult policy is likened to a 'bitter pill' that patients must painfully endure despite its intended medicinal purpose.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: bitter pills\nsource_properties: pills are medicinal objects that are often hard to swallow due to their unpleasant bitter taste.\ntarget_situation: Health Minister Terawan's policy changes to the drug procurement system that threaten patients' wellbeing.\nmapping: The difficult policy is likened to a 'bitter pill' that patients must painfully endure despite its intended medicinal purpose.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,104 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "macro_f1_manual": 0.5476923710375533,
+  "per_class_f1": {
+    "BENCANA_JERAT": 0.5132743362831859,
+    "HEWAN_TUBUH": 0.5256410256410257,
+    "KONSUMSI_TRANSAKSI": 0.5647058823529412,
+    "LAINNYA": 0.36619718309859156,
+    "MESIN_INFRASTRUKTUR": 0.654911838790932,
+    "NON_METAFORA": 0.6174496644295302,
+    "PERMAINAN_KONTES": 0.5916666666666667
+  },
+  "family_macro_f1_manual": {
+    "description": 0.4497158436910492,
+    "source_reason": 0.49919819459942955,
+    "combined": 0.5316955232106716,
+    "description_reason": 0.5470904510756452,
+    "semantic_visual": 0.5549238660623234
+  },
+  "selection": [
+    {
+      "fold": 1,
+      "family": "semantic_visual"
+    },
+    {
+      "fold": 2,
+      "family": "semantic_visual"
+    },
+    {
+      "fold": 3,
+      "family": "description_reason"
+    },
+    {
+      "fold": 4,
+      "family": "combined"
+    },
+    {
+      "fold": 5,
+      "family": "semantic_visual"
+    }
+  ],
+  "selected_classifiers": {
+    "description": [
+      "SVC()",
+      "SVC()",
+      "SVC()",
+      "SVC()",
+      "SVC()"
+    ],
+    "source_reason": [
+      "SVC()",
+      "SVC()",
+      "SVC()",
+      "SVC()",
+      "SVC()"
+    ],
+    "combined": [
+      "SVC()",
+      "SVC()",
+      "SVC()",
+      "SVC()",
+      "SVC()"
+    ],
+    "description_reason": [
+      "SVC()",
+      "SVC()",
+      "SVC()",
+      "SVC()",
+      "SVC()"
+    ],
+    "semantic_visual": [
+      "SVC()",
+      "SVC()",
+      "SVC()",
+      "SVC()",
+      "SVC()"
+    ]
+  },
+  "checks": [
+    "original data and source/feature hashes",
+    "all six sets of 740 original IDs/labels/baseline folds",
+    "all family and fold scores counted manually",
+    "all class scores and confusion matrices",
+    "nested family chosen only by recorded inner-CV score",
+    "routed predictions exactly match selected families"
+  ],
+  "evaluator_sha256": "d4b44038e46375665069cca2d5f56924ad4d526247f67ccba73be0013a334b06",
+  "sha256": {
+    "combined.json": "af0b25b46c84f8522337d7dd4bc86ec779428f784f028d06c8421ee0e6b00ce7",
+    "combined_oof.csv": "4d91149b9b3e76b2e19ca5b93bbfaae74085d0ad11d175cb2ce3f8a155c2dd0a",
+    "description.json": "5ea2699ba9c06c090e45ac24b9b8a2eb54ed3811a3e5165afe67d67262e2df56",
+    "description_oof.csv": "5bf379c63646ef2ad665c806797b860954db638f938d2c0f13e07d29d72fbe05",
+    "description_reason.json": "1d56d5770805c42687db935e44b29c26334b323b60d1c27326cfc84cf20a952d",
+    "description_reason_oof.csv": "6f0d73d65a1c6153c2c03532639a2906f4ee4e34ad5359b0d00ada7c1fe2821e",
+    "nested_selected.json": "f96617dfb3847235e4ea326ea2231eb619c41d74911593a2ff24c92e0484a4b7",
+    "nested_selected_oof.csv": "d032cee83f7be0f1da12288e7660ee7f351f6d41cc0ec181e4c08f6a7a6549bd",
+    "runner.log": "476000966456e24b6b41752da3e77d617812eae425009d3cfc128adfad7b2837",
+    "semantic_visual.json": "5b0d30f9a4a9133ff5d56aa9031dc4c8f8673cfe5f47a25276f91f4a05e6d658",
+    "semantic_visual_oof.csv": "3bd82576ba00b3dcbf1f66a1fca828e202a424ede42c5b84455f48b45b4bc130",
+    "source_reason.json": "1f80751cc7a09621f1a88b5bded13563caf27c77c42101c9b50622bdffaa7e5d",
+    "source_reason_oof.csv": "fb855d9b9febf170c5385cfbbc7112ff4a02b46714b46615d16f8130f6ec62d4"
+  }
+}

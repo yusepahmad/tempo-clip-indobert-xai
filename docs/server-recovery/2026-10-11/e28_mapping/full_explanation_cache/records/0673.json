@@ -1,0 +1,87 @@
+{
+  "index": 673,
+  "sample_id": "TMP-B30CC4B4D08A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9268b238c17dfc83e0a0883e45ca8c0141546a06edd66d89c8b8127d1b52aa9b",
+  "image_sha256": "b30cc4b4d08aa3558690e90b6c5050cff6b8fe5ac5ed1203ac2b0bbd5dde55d8",
+  "transmitted_image_sha256": "cf45c0d82b94172cc442d3600d296582954d5c37671626d950d6f06f10614309",
+  "image_size": [
+    592,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9637785,
+      "total": 10,
+      "remaining": 1.0362215,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.963778500000004,
+      "total": 100,
+      "remaining": 91.0362215,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.491989408619702,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"eraser\",\n  \"source_properties\": \"a hand-held tool used to rub away or remove markings from a surface\",\n  \"target_situation\": \"removal of PDI-P-affiliated officials due to the rift between Jokowi and Megawati\",\n  \"mapping\": \"The act of erasing the bull logo symbolizes the systematic removal or 'wiping out' of PDI Perjuangan influence.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "tp7LarHKGpKp_uMPhrH00QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681500,
+        "output_tokens_cost_nanodollars": 312000
+      },
+      "prompt_tokens": 1363,
+      "total_backend_latency_ms": 1903,
+      "total_tokens": 1467
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.964772,
+      "total": 10,
+      "remaining": 1.035228,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.964771999999996,
+      "total": 100,
+      "remaining": 91.035228,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009935,
+  "fields": {
+    "source_object": "eraser",
+    "source_properties": "a hand-held tool used to rub away or remove markings from a surface",
+    "target_situation": "removal of PDI-P-affiliated officials due to the rift between Jokowi and Megawati",
+    "mapping": "The act of erasing the bull logo symbolizes the systematic removal or 'wiping out' of PDI Perjuangan influence.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: eraser\nsource_properties: a hand-held tool used to rub away or remove markings from a surface\ntarget_situation: removal of PDI-P-affiliated officials due to the rift between Jokowi and Megawati\nmapping: The act of erasing the bull logo symbolizes the systematic removal or 'wiping out' of PDI Perjuangan influence.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

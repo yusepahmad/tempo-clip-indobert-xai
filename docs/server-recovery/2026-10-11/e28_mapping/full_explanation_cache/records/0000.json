@@ -1,0 +1,91 @@
+{
+  "index": 0,
+  "sample_id": "TMP-8D0A20A6A066",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "95c6af1d43d6e66d99e5fe8670284d8b76acd547d30389bc78e84ce5df629637",
+  "image_sha256": "8d0a20a6a0662531d23fc2eaa0f848db11f71ccaae2b2264cb708cdcb0081d3e",
+  "transmitted_image_sha256": "3c54714cb801a3fa1be27e5a1e60a11e02c70421dafd958d8bd6a5a88e6beb15",
+  "image_size": [
+    300,
+    410
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0131365,
+      "total": 10,
+      "remaining": 1.9868635000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.013136500000002,
+      "total": 100,
+      "remaining": 91.9868635,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.3922911202535033,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"cornered person\", \"source_properties\": \"huddled in a corner, biting nails, wide eyes, anxious expression\", \"target_situation\": \"Akbar's vulnerable political position\", \"mapping\": \"The physical posture of being cornered and showing visible signs of distress represents the politician's feeling of being trapped or under immense pressure.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "zonLapnmH97d_uMP45e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 83,
+      "cost": {
+        "input_tokens_cost_nanodollars": 654500,
+        "output_tokens_cost_nanodollars": 249000
+      },
+      "prompt_tokens": 1309,
+      "total_backend_latency_ms": 1427,
+      "total_tokens": 1392
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.01404,
+      "total": 10,
+      "remaining": 1.9859600000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.014039999999994,
+      "total": 100,
+      "remaining": 91.98596,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009035,
+  "fields": {
+    "source_object": "cornered person",
+    "source_properties": "huddled in a corner, biting nails, wide eyes, anxious expression",
+    "target_situation": "Akbar's vulnerable political position",
+    "mapping": "The physical posture of being cornered and showing visible signs of distress represents the politician's feeling of being trapped or under immense pressure.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: cornered person\nsource_properties: huddled in a corner, biting nails, wide eyes, anxious expression\ntarget_situation: Akbar's vulnerable political position\nmapping: The physical posture of being cornered and showing visible signs of distress represents the politician's feeling of being trapped or under immense pressure.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true,
+  "migration_origin": {
+    "record_sha256": "1354c3793606f44efa1aefa587fce31e46720074dbb70e45faf1c5ecb44259ed",
+    "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "index": 311,
+  "sample_id": "TMP-765BBBAAF8EF",
+  "fold": 3,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "24c6072d20ec63f281be7515b62ca81119ddc7ca56cc8cf59a2bda561f0ddf21",
+  "image_sha256": "765bbbaaf8ef14a0645597046823253f5c065459b2e9b52ba164bae95b446833",
+  "transmitted_image_sha256": "b322ca2077d392a53477037d1595eeaaed2e6805ff8b57f16daf49ad44366496",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 4.5118205,
+      "total": 10,
+      "remaining": 5.4881795,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 4.511820499999999,
+      "total": 100,
+      "remaining": 95.4881795,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.310927200131118,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks tugas:\n\n*   **Deskripsi**: Dua tokoh memegang benda (kartu dan ponsel) yang menampilkan gambar senyum untuk menutupi mulut mereka.\n*   **Sumber dan alasan**: Penggunaan kartu atau ponsel untuk menyembunyikan wajah asli dan menampilkan kesan tertentu digambarkan sebagai **pertukaran nilai atau kesan yang dipilih**, serupa dengan mekanisme dalam **transaksi** sosial atau politik.\n\nDalam contoh training yang diberikan, penggunaan alat seperti ponsel yang dipetakan sebagai instrumen **pertukaran nilai atau transaksi** (seperti pada contoh \"Pilkada ala Orba\") dikategorikan ke dalam kode **E**.\n\nJawab satu kode A sampai G: **E**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "NfbKarmwO5-d_uMPsajYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1434,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1281
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2031500,
+        "output_tokens_cost_nanodollars": 4302000
+      },
+      "prompt_tokens": 4063,
+      "total_backend_latency_ms": 7095,
+      "total_tokens": 5497
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 4.518154,
+      "total": 10,
+      "remaining": 5.481846,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 4.518153999999996,
+      "total": 100,
+      "remaining": 95.481846,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0063335,
+  "code": "E",
+  "strict_code": "INVALID",
+  "parsing_rule": "explicit_prefix_code",
+  "finish_reason": "stop",
+  "prediction": "MESIN_INFRASTRUKTUR"
+}

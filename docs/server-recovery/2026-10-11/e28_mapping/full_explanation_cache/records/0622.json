@@ -1,0 +1,90 @@
+{
+  "index": 622,
+  "sample_id": "TMP-680A069E27D3",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9ae5c07ff260b8153cb696b9dc30bbf6c8fc2a8bb00a5c8a693e25eea86042fc",
+  "image_sha256": "680a069e27d3ee631a3054e480da56e97e982a6a5f3b4c469919887e7798e82f",
+  "transmitted_image_sha256": "ef0a06d9609b27ba0e7d8990caa38c5cf10d28a2a398b7513b2452db06c1b839",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8853535,
+      "total": 10,
+      "remaining": 1.1146464999999992,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.885353499999994,
+      "total": 100,
+      "remaining": 91.1146465,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.038556328974664,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n \"source_object\": \"A balance scale\",\n \"source_properties\": \"A tool used to compare the weight of two objects, traditionally symbolizing legal impartiality and justice.\",\n \"target_situation\": \"Allegations of corruption where a legal official accepted bribes to facilitate nickel mining permits.\",\n \"mapping\": \"The scales of justice are subverted to weigh money instead of truth, depicting law enforcement as a transactional process.\",\n \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Wp3Laoq7K97d_uMPq5e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 867,
+      "completion_tokens_details": {
+        "reasoning_tokens": 770
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 683000,
+        "output_tokens_cost_nanodollars": 2601000
+      },
+      "prompt_tokens": 1366,
+      "total_backend_latency_ms": 5374,
+      "total_tokens": 2233
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8886375,
+      "total": 10,
+      "remaining": 1.1113625000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.888637500000002,
+      "total": 100,
+      "remaining": 91.1113625,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.003284,
+  "fields": {
+    "source_object": "A balance scale",
+    "source_properties": "A tool used to compare the weight of two objects, traditionally symbolizing legal impartiality and justice.",
+    "target_situation": "Allegations of corruption where a legal official accepted bribes to facilitate nickel mining permits.",
+    "mapping": "The scales of justice are subverted to weigh money instead of truth, depicting law enforcement as a transactional process.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A balance scale\nsource_properties: A tool used to compare the weight of two objects, traditionally symbolizing legal impartiality and justice.\ntarget_situation: Allegations of corruption where a legal official accepted bribes to facilitate nickel mining permits.\nmapping: The scales of justice are subverted to weigh money instead of truth, depicting law enforcement as a transactional process.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

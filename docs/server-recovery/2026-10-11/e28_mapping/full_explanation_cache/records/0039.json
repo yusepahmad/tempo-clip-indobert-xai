@@ -1,0 +1,87 @@
+{
+  "index": 39,
+  "sample_id": "TMP-AF3BAC21562D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "2514f3bbcb4c30b00024a3cdbe9a722b49fa99b4d6795c26994e42de5c548174",
+  "image_sha256": "af3bac21562de3621d99afbcb6433a62e8fce060a1d1685ddedebe9932493ede",
+  "transmitted_image_sha256": "9804a53ba6a4bf91397f0a42f953db9b9cde7f4d8fde8bc494ae06bef665e110",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0656145,
+      "total": 10,
+      "remaining": 1.9343854999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.065614499999995,
+      "total": 100,
+      "remaining": 91.9343855,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.49979737913236,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Pinocchio's long wooden nose\",\n  \"source_properties\": \"Protruding from a face, elongated as a physical consequence of lying.\",\n  \"target_situation\": \"The alleged intervention and dishonesty of President Joko Widodo regarding KPK's independence.\",\n  \"mapping\": \"The exaggerated nose connecting the faces represents mutual deception regarding the KPK's weakening.\",\n  \"uncertainty\": \"The left figure's specific identity is not explicitly named in the provided text.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "LI7LaomgHaiB_PUPxqbXMA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 110,
+      "cost": {
+        "input_tokens_cost_nanodollars": 666500,
+        "output_tokens_cost_nanodollars": 330000
+      },
+      "prompt_tokens": 1333,
+      "total_backend_latency_ms": 1583,
+      "total_tokens": 1443
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.066611,
+      "total": 10,
+      "remaining": 1.933389,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.066610999999995,
+      "total": 100,
+      "remaining": 91.933389,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009965,
+  "fields": {
+    "source_object": "Pinocchio's long wooden nose",
+    "source_properties": "Protruding from a face, elongated as a physical consequence of lying.",
+    "target_situation": "The alleged intervention and dishonesty of President Joko Widodo regarding KPK's independence.",
+    "mapping": "The exaggerated nose connecting the faces represents mutual deception regarding the KPK's weakening.",
+    "uncertainty": "The left figure's specific identity is not explicitly named in the provided text."
+  },
+  "explanation": "source_object: Pinocchio's long wooden nose\nsource_properties: Protruding from a face, elongated as a physical consequence of lying.\ntarget_situation: The alleged intervention and dishonesty of President Joko Widodo regarding KPK's independence.\nmapping: The exaggerated nose connecting the faces represents mutual deception regarding the KPK's weakening.\nuncertainty: The left figure's specific identity is not explicitly named in the provided text.",
+  "finish_reason": "stop",
+  "usable": true
+}

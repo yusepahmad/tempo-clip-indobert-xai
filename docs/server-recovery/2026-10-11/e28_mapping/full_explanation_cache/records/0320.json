@@ -1,0 +1,87 @@
+{
+  "index": 320,
+  "sample_id": "TMP-476118274EDF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ac27670aa06d0ca653907292252c3f1c37d3e792e0c7d8b3ca4e8f6714ef5276",
+  "image_sha256": "476118274edf813a51bd06d538382772d34e284a72a616a03ab70602749b8b53",
+  "transmitted_image_sha256": "4a9c7caaee033f1daf627bfc52fc290570c137004448ff6e3e28d41cc32ec05a",
+  "image_size": [
+    469,
+    610
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.478821,
+      "total": 10,
+      "remaining": 1.521179,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.478820999999996,
+      "total": 100,
+      "remaining": 91.521179,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3172926832921803,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"cassette tape\", \"source_properties\": \"magnetic tape spooling out to form words\", \"target_situation\": \"alleged criminalization of KPK leaders based on leaked wiretap transcripts\", \"mapping\": \"The physical tape forming the text 'kriminalisasi KPK' symbolizes how recorded audio evidence (wiretaps) reveals or constructs the narrative of the legal targeting of officials.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "hZXLasfhMZKp_uMPhrH00QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677000,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1354,
+      "total_backend_latency_ms": 1469,
+      "total_tokens": 1444
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.479768,
+      "total": 10,
+      "remaining": 1.520232,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.479768000000007,
+      "total": 100,
+      "remaining": 91.520232,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000947,
+  "fields": {
+    "source_object": "cassette tape",
+    "source_properties": "magnetic tape spooling out to form words",
+    "target_situation": "alleged criminalization of KPK leaders based on leaked wiretap transcripts",
+    "mapping": "The physical tape forming the text 'kriminalisasi KPK' symbolizes how recorded audio evidence (wiretaps) reveals or constructs the narrative of the legal targeting of officials.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: cassette tape\nsource_properties: magnetic tape spooling out to form words\ntarget_situation: alleged criminalization of KPK leaders based on leaked wiretap transcripts\nmapping: The physical tape forming the text 'kriminalisasi KPK' symbolizes how recorded audio evidence (wiretaps) reveals or constructs the narrative of the legal targeting of officials.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 60,
+  "sample_id": "TMP-33CBB073923F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "d54415372cbef5a379e769333f3710cecba2d14665479a9e0b63433c1277c0df",
+  "image_sha256": "33cbb073923f5877744f2dd5a829c75f06f3665a2fecf8c7ce27f7eaeee0b84a",
+  "transmitted_image_sha256": "c697c9b973f058639b8e04652bc9644c200072ee253dcef26b926a4fdae5a182",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.095369999999999,
+      "total": 10,
+      "remaining": 1.904630000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.095370000000003,
+      "total": 100,
+      "remaining": 91.90463,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.995165081229061,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"carousel horse\", \"source_properties\": \"static, sculpted, toy-like appearance, requires coins to operate\", \"target_situation\": \"Prabowo Subianto and Hatta Rajasa's 2014 presidential campaign alliance\", \"mapping\": \"The carousel horse suggests a staged, artificial political 'ride' fueled by money rather than genuine momentum, implying the duo's partnership was a desperate, transactional maneuver.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "t47LapenHLyb_uMP77KhsAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 658500,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1317,
+      "total_backend_latency_ms": 1519,
+      "total_tokens": 1418
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0963315,
+      "total": 10,
+      "remaining": 1.9036685000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.096331500000005,
+      "total": 100,
+      "remaining": 91.9036685,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009615,
+  "fields": {
+    "source_object": "carousel horse",
+    "source_properties": "static, sculpted, toy-like appearance, requires coins to operate",
+    "target_situation": "Prabowo Subianto and Hatta Rajasa's 2014 presidential campaign alliance",
+    "mapping": "The carousel horse suggests a staged, artificial political 'ride' fueled by money rather than genuine momentum, implying the duo's partnership was a desperate, transactional maneuver.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: carousel horse\nsource_properties: static, sculpted, toy-like appearance, requires coins to operate\ntarget_situation: Prabowo Subianto and Hatta Rajasa's 2014 presidential campaign alliance\nmapping: The carousel horse suggests a staged, artificial political 'ride' fueled by money rather than genuine momentum, implying the duo's partnership was a desperate, transactional maneuver.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

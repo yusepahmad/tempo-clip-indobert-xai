@@ -1,0 +1,83 @@
+{
+  "index": 385,
+  "sample_id": "TMP-5836921FE5DD",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "07ace9917690543390441913befd6bb5aa7f58f1d9ec870df8cb38a140644775",
+  "image_sha256": "5836921fe5dd357de9f303cf17d07d38ebe5adc35ae15a47d2dd8d7508a47b56",
+  "transmitted_image_sha256": "1617ab85d1c2bf45a20a262f603b562d1667c8b1f5b6256f57ff6185f7827a1d",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.439323,
+      "total": 10,
+      "remaining": 8.560677,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.4393230000000017,
+      "total": 100,
+      "remaining": 98.560677,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.548432065872476,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks, domain sumber metafora yang digunakan adalah **alat pertanian** (disebutkan sebagai cangkul/garpu tiga tanduk). Dalam sistem klasifikasi yang disediakan, \"alat\" termasuk ke dalam kategori **MESIN_INFRASTRUKTUR**.\n\nAlat tersebut dipetakan untuk menggambarkan mekanisme konflik industri dan perlindungan lingkungan (fungsi kerja alat dipetakan ke kerusakan/pengelolaan lahan).\n\nJawab satu kode A sampai G: **E**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "yNvKarWyEZCa_uMPxb6ruQk",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1603,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1499
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 785000,
+        "output_tokens_cost_nanodollars": 4809000
+      },
+      "prompt_tokens": 1570,
+      "total_backend_latency_ms": 8503,
+      "total_tokens": 3173
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.4449170000000002,
+      "total": 10,
+      "remaining": 8.555083,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.4449170000000038,
+      "total": 100,
+      "remaining": 98.555083,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.005594
+}

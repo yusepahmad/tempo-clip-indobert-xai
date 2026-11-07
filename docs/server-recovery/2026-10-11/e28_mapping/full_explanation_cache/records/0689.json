@@ -1,0 +1,87 @@
+{
+  "index": 689,
+  "sample_id": "TMP-9ACF20C99B49",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c69bf471ad7472fd17d13a350df132081222bf8bab95ddb709dc7a6f8ac306cb",
+  "image_sha256": "9acf20c99b497063ca04057cd6f2cd8b95b06f7f6089c752c1dd2c12456cbae3",
+  "transmitted_image_sha256": "9af35164f61e971c14ea73b3e4eef8b4d4cbec88f462806a91076ebfac6a5eb7",
+  "image_size": [
+    584,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9896095,
+      "total": 10,
+      "remaining": 1.0103904999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.9896095,
+      "total": 100,
+      "remaining": 91.0103905,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.707875377032906,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"overflowing bathtub\", \"source_properties\": \"A person relaxing in a bathtub filled to the brim causes water to spill over onto the floor below.\", \"target_situation\": \"Reckless land conversion in Puncak by wealthy businessmen causes flooding in Jakarta.\", \"mapping\": \"The businessman's indifferent comfort represents exploitative development, while the overflowing water spilling onto the miniature city below symbolizes the resulting downstream floods.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "IJ_LaofsIPGc_uMPhrzdkQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 96,
+      "cost": {
+        "input_tokens_cost_nanodollars": 685000,
+        "output_tokens_cost_nanodollars": 288000
+      },
+      "prompt_tokens": 1370,
+      "total_backend_latency_ms": 4098,
+      "total_tokens": 1466
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9905825,
+      "total": 10,
+      "remaining": 1.0094174999999996,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.990582500000002,
+      "total": 100,
+      "remaining": 91.0094175,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000973,
+  "fields": {
+    "source_object": "overflowing bathtub",
+    "source_properties": "A person relaxing in a bathtub filled to the brim causes water to spill over onto the floor below.",
+    "target_situation": "Reckless land conversion in Puncak by wealthy businessmen causes flooding in Jakarta.",
+    "mapping": "The businessman's indifferent comfort represents exploitative development, while the overflowing water spilling onto the miniature city below symbolizes the resulting downstream floods.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: overflowing bathtub\nsource_properties: A person relaxing in a bathtub filled to the brim causes water to spill over onto the floor below.\ntarget_situation: Reckless land conversion in Puncak by wealthy businessmen causes flooding in Jakarta.\nmapping: The businessman's indifferent comfort represents exploitative development, while the overflowing water spilling onto the miniature city below symbolizes the resulting downstream floods.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

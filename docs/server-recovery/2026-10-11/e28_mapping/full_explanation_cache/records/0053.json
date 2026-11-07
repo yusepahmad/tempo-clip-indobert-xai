@@ -1,0 +1,87 @@
+{
+  "index": 53,
+  "sample_id": "TMP-E4D2FC0FCDEF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "01a6d07ee6e6f24733c779ceba5faaf4a6a802457fa6dddb516b14634656d28b",
+  "image_sha256": "e4d2fc0fcdef5850aaae80a2eccd1648f2b1c47e91469ed5ff4f48424fadaf2c",
+  "transmitted_image_sha256": "c9bd567112a643d8f427f08843a4635de7d3faee59087ef6ac83ed8dca3ba06e",
+  "image_size": [
+    587,
+    760
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.082934,
+      "total": 10,
+      "remaining": 1.9170660000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.082933999999995,
+      "total": 100,
+      "remaining": 91.917066,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9234679862856865,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"airplane window\", \"source_properties\": \"oval frame, transparent pane, interior handle, viewing portal\", \"target_situation\": \"The 2012 Sukhoi Superjet 100 crash in Indonesia\", \"mapping\": \"The hand pressed against the glass represents the final moments and helplessness of those onboard as they witness the terrain before impact.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "hY7LaqWfAdPj_uMPg-OC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 85,
+      "cost": {
+        "input_tokens_cost_nanodollars": 664000,
+        "output_tokens_cost_nanodollars": 255000
+      },
+      "prompt_tokens": 1328,
+      "total_backend_latency_ms": 1550,
+      "total_tokens": 1413
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.083853,
+      "total": 10,
+      "remaining": 1.9161470000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.083853000000005,
+      "total": 100,
+      "remaining": 91.916147,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000919,
+  "fields": {
+    "source_object": "airplane window",
+    "source_properties": "oval frame, transparent pane, interior handle, viewing portal",
+    "target_situation": "The 2012 Sukhoi Superjet 100 crash in Indonesia",
+    "mapping": "The hand pressed against the glass represents the final moments and helplessness of those onboard as they witness the terrain before impact.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: airplane window\nsource_properties: oval frame, transparent pane, interior handle, viewing portal\ntarget_situation: The 2012 Sukhoi Superjet 100 crash in Indonesia\nmapping: The hand pressed against the glass represents the final moments and helplessness of those onboard as they witness the terrain before impact.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

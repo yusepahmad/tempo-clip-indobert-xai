@@ -1,0 +1,87 @@
+{
+  "index": 85,
+  "sample_id": "TMP-0204848C7A5C",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0c9f7d2354d3606b4ea49963fbc9b8082ce447c63e4134a8eb2853f4bcf96701",
+  "image_sha256": "0204848c7a5c58661e4acdb448a10e23c153932256c9032a5dd7ebd543a6b270",
+  "transmitted_image_sha256": "55d21b8a500824baad66550b606e70edc10ac7d3a3520faf1c1903523289d76d",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.126142999999999,
+      "total": 10,
+      "remaining": 1.873857000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.126142999999999,
+      "total": 100,
+      "remaining": 91.873857,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.259018049109727,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"tricycle\", \"source_properties\": \"small, three-wheeled children's toy, pedaled slowly, non-threatening, outmatched by heavy vehicles\", \"target_situation\": \"the arrest of Abdul Qadir Hasan Baraja and the Khilafatul Muslimin movement's ambitions\", \"mapping\": \"The tricycle represents the group's perceived weakness or performative nature against the overwhelming power of the state's military-grade police response.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "V4_LaoHMGsaS_uMPmu6wkA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680000,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1360,
+      "total_backend_latency_ms": 1696,
+      "total_tokens": 1466
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.127141,
+      "total": 10,
+      "remaining": 1.872859,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.127140999999995,
+      "total": 100,
+      "remaining": 91.872859,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000998,
+  "fields": {
+    "source_object": "tricycle",
+    "source_properties": "small, three-wheeled children's toy, pedaled slowly, non-threatening, outmatched by heavy vehicles",
+    "target_situation": "the arrest of Abdul Qadir Hasan Baraja and the Khilafatul Muslimin movement's ambitions",
+    "mapping": "The tricycle represents the group's perceived weakness or performative nature against the overwhelming power of the state's military-grade police response.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: tricycle\nsource_properties: small, three-wheeled children's toy, pedaled slowly, non-threatening, outmatched by heavy vehicles\ntarget_situation: the arrest of Abdul Qadir Hasan Baraja and the Khilafatul Muslimin movement's ambitions\nmapping: The tricycle represents the group's perceived weakness or performative nature against the overwhelming power of the state's military-grade police response.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

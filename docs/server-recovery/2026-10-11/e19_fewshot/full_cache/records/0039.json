@@ -1,0 +1,86 @@
+{
+  "index": 39,
+  "sample_id": "TMP-AF3BAC21562D",
+  "fold": 5,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "498e509a142329aa04301930ad75fe93eec0dba7f5d48bfab87c98346dad5992",
+  "image_sha256": "af3bac21562de3621d99afbcb6433a62e8fce060a1d1685ddedebe9932493ede",
+  "transmitted_image_sha256": "bfa7ba3b88b9cffaae9454e8273956adb8218e9cc44bb0f5b7c4b5839e9cca1f",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.9908665,
+      "total": 10,
+      "remaining": 7.0091335,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.9908664999999957,
+      "total": 100,
+      "remaining": 97.0091335,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 14.272258440963924,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks target, ilustrasi tersebut memetakan **tekanan dan keadaan terjepit** (dalam hal ini, lembaga KPK yang direpresentasikan oleh kain putih berada di antara dua pihak yang saling menekan). Kata kunci \"keterjepitannya\" dan \"tekanan\" secara eksplisit disebutkan dalam definisi kategori A.\n\nJawab: **A**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "C-zKaqGMMJLN_uMPhvbuyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2909,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2827
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2047000,
+        "output_tokens_cost_nanodollars": 8727000
+      },
+      "prompt_tokens": 4094,
+      "total_backend_latency_ms": 13249,
+      "total_tokens": 7003
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 3.0016404999999997,
+      "total": 10,
+      "remaining": 6.9983595,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 3.0016404999999935,
+      "total": 100,
+      "remaining": 96.9983595,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.010774,
+  "code": "A",
+  "strict_code": "INVALID",
+  "parsing_rule": "explicit_prefix_code",
+  "finish_reason": "stop",
+  "prediction": "BENCANA_JERAT"
+}

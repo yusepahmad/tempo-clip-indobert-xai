@@ -1,0 +1,87 @@
+{
+  "index": 602,
+  "sample_id": "TMP-78823FBA6853",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f2cfa4d3a9e816399855a8d3efc12109352811a68c18e76626bb8318c3e0af72",
+  "image_sha256": "78823fba6853e03c12fa33f75c44ddbc8d8541987a344bf2ac261a8c63af58d2",
+  "transmitted_image_sha256": "c54dcb041920f48ba25cf777eaf69dfca0b0db829b2597d8eeff6d3fe9ed6f35",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.859232,
+      "total": 10,
+      "remaining": 1.1407679999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.859232000000006,
+      "total": 100,
+      "remaining": 91.140768,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4168009916320443,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"ember in husks\", \"source_properties\": \"hidden heat, slow-burning fire beneath a calm surface, potential for sudden flare-up\", \"target_situation\": \"strained political relationship between Jokowi and Megawati\", \"mapping\": \"The phrase 'Bara dalam Sekam' suggests simmering, concealed tension and conflict that is not openly visible but threatens to ignite into a major political rift.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "2ZzLaum-GcfR_uMPxMva8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682500,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1365,
+      "total_backend_latency_ms": 2292,
+      "total_tokens": 1459
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8601965,
+      "total": 10,
+      "remaining": 1.1398034999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.8601965,
+      "total": 100,
+      "remaining": 91.1398035,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009645,
+  "fields": {
+    "source_object": "ember in husks",
+    "source_properties": "hidden heat, slow-burning fire beneath a calm surface, potential for sudden flare-up",
+    "target_situation": "strained political relationship between Jokowi and Megawati",
+    "mapping": "The phrase 'Bara dalam Sekam' suggests simmering, concealed tension and conflict that is not openly visible but threatens to ignite into a major political rift.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: ember in husks\nsource_properties: hidden heat, slow-burning fire beneath a calm surface, potential for sudden flare-up\ntarget_situation: strained political relationship between Jokowi and Megawati\nmapping: The phrase 'Bara dalam Sekam' suggests simmering, concealed tension and conflict that is not openly visible but threatens to ignite into a major political rift.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,152 @@
+{
+  "revision_id": "R28",
+  "title": "Prediksi baseline/unimodal",
+  "status": "Selesai teknis sesuai tracker; menunggu penilaian pembimbing",
+  "pdf_page": 14,
+  "requested_evidence": "Bukti yang diserahkan. Empat berkas predictions.csv untuk ablasi unimodal, dan tabel uji McNemar multimodal versus unimodal.",
+  "notebook": {
+    "notebook": "01_baseline.ipynb",
+    "heading": "R28 — Prediksi baseline/unimodal",
+    "html": "../REFERENSI_NOTEBOOK/01_baseline.html#full-r28"
+  },
+  "notes": [],
+  "files": [
+    {
+      "file": "01_majority/predictions.csv",
+      "purpose": "Satu dari empat prediksi canonical baseline; 740 ID × tiga task, model=MAJORITY_TRAIN_FOLD",
+      "sha256": "01cb854af15a5d84fb97b05c9c1f0fcb540ad6738dc4e3c1a017bd580bfad05d",
+      "kind": "copy",
+      "source": "inputs/predictions/MAJORITY_TRAIN_FOLD.csv",
+      "source_sha256": "01cb854af15a5d84fb97b05c9c1f0fcb540ad6738dc4e3c1a017bd580bfad05d"
+    },
+    {
+      "file": "02_image_only/predictions.csv",
+      "purpose": "Satu dari empat prediksi canonical baseline; 740 ID × tiga task, model=RII_FROZEN_IMAGE_ONLY",
+      "sha256": "3ba07d9e65f430e624c172d88ff12b4c430f31763e5ff51f19b2481e892ce039",
+      "kind": "copy",
+      "source": "inputs/predictions/RII_FROZEN_IMAGE_ONLY.csv",
+      "source_sha256": "3ba07d9e65f430e624c172d88ff12b4c430f31763e5ff51f19b2481e892ce039"
+    },
+    {
+      "file": "03_text_supporting/predictions.csv",
+      "purpose": "Satu dari empat prediksi canonical baseline; 740 ID × tiga task, model=RII_FROZEN_TEXT_SUPPORTING",
+      "sha256": "d585d5d808f29f1846a6ba21310db2f310b70d1073f9f1af1baa8456e07aa930",
+      "kind": "copy",
+      "source": "inputs/predictions/RII_FROZEN_TEXT_SUPPORTING.csv",
+      "source_sha256": "d585d5d808f29f1846a6ba21310db2f310b70d1073f9f1af1baa8456e07aa930"
+    },
+    {
+      "file": "04_multimodal/predictions.csv",
+      "purpose": "Satu dari empat prediksi canonical baseline; 740 ID × tiga task, model=RII_FROZEN_MTL_WEIGHTED",
+      "sha256": "ae76fa41a16a723381c506460b157b5c09d26ab02435881c257577d793350034",
+      "kind": "copy",
+      "source": "inputs/predictions/RII_FROZEN_MTL_WEIGHTED.csv",
+      "source_sha256": "ae76fa41a16a723381c506460b157b5c09d26ab02435881c257577d793350034"
+    },
+    {
+      "file": "kontrol_tail_tambahan/01_multimodal/predictions.csv",
+      "purpose": "Kontrol E42-family pada resep baru yang diberi label terpisah; model=RII_TAIL_MTL_WEIGHTED",
+      "sha256": "112f0b48e1ed834a306f5579de19af79c0a03cdb3fb61a4309f57e00ffc6ad1c",
+      "kind": "copy",
+      "source": "inputs/predictions/RII_TAIL_MTL_WEIGHTED.csv",
+      "source_sha256": "112f0b48e1ed834a306f5579de19af79c0a03cdb3fb61a4309f57e00ffc6ad1c"
+    },
+    {
+      "file": "kontrol_tail_tambahan/02_image_only/predictions.csv",
+      "purpose": "Kontrol E42-family pada resep baru yang diberi label terpisah; model=RII_TAIL_IMAGE_ONLY",
+      "sha256": "f46f5255dd3778fe9114809cf91acf763d43e723d7e53434d3f67fa647b0d76c",
+      "kind": "copy",
+      "source": "inputs/predictions/RII_TAIL_IMAGE_ONLY.csv",
+      "source_sha256": "f46f5255dd3778fe9114809cf91acf763d43e723d7e53434d3f67fa647b0d76c"
+    },
+    {
+      "file": "kontrol_tail_tambahan/03_text_supporting/predictions.csv",
+      "purpose": "Kontrol E42-family pada resep baru yang diberi label terpisah; model=RII_TAIL_TEXT_SUPPORTING",
+      "sha256": "956b8b145200b972f4d0ac6fdf0067d53f1055eecd6dd877bc28759255629116",
+      "kind": "copy",
+      "source": "inputs/predictions/RII_TAIL_TEXT_SUPPORTING.csv",
+      "source_sha256": "956b8b145200b972f4d0ac6fdf0067d53f1055eecd6dd877bc28759255629116"
+    },
+    {
+      "file": "kontrol_tail_tambahan/04_majority/predictions.csv",
+      "purpose": "Kontrol E42-family pada resep baru yang diberi label terpisah; model=MAJORITY_TRAIN_FOLD",
+      "sha256": "01cb854af15a5d84fb97b05c9c1f0fcb540ad6738dc4e3c1a017bd580bfad05d",
+      "kind": "copy",
+      "source": "inputs/predictions/MAJORITY_TRAIN_FOLD.csv",
+      "source_sha256": "01cb854af15a5d84fb97b05c9c1f0fcb540ad6738dc4e3c1a017bd580bfad05d"
+    },
+    {
+      "file": "model_utama_historis/predictions.csv",
+      "purpose": "Referensi OOF model utama historis E42; bukan hasil ablation resep baru",
+      "sha256": "26487cbd83b58a077c8be700ccde183d48de29e019f00a0ff6cc97d0c0a07446",
+      "kind": "copy",
+      "source": "inputs/predictions/e42_tail_grid.csv",
+      "source_sha256": "26487cbd83b58a077c8be700ccde183d48de29e019f00a0ff6cc97d0c0a07446"
+    },
+    {
+      "file": "R28_metrik_per_task.csv",
+      "purpose": "Macro-F1 utama, akurasi, precision/recall, kappa, CI dan scope per task",
+      "sha256": "6055ab6c2acbd73a04e92ddc397b7fb53278bb52bafdcb0de14308e3965d23d0",
+      "kind": "table_subset",
+      "source": "analysis/metrics.csv",
+      "source_sha256": "8f2757629112c2664acd442b914007587c8da04850ead71b788d04c95e91a0b2",
+      "selector": {
+        "experiments": [
+          "MAJORITY_TRAIN_FOLD",
+          "RII_FROZEN_IMAGE_ONLY",
+          "RII_FROZEN_TEXT_SUPPORTING",
+          "RII_FROZEN_MTL_WEIGHTED",
+          "RII_TAIL_MTL_WEIGHTED",
+          "RII_TAIL_IMAGE_ONLY",
+          "RII_TAIL_TEXT_SUPPORTING"
+        ]
+      },
+      "rows": 21
+    },
+    {
+      "file": "R28_uji_berpasangan.csv",
+      "purpose": "Exact McNemar/Holm untuk akurasi dan CI bootstrap selisih Macro-F1; arah before→after dipertahankan",
+      "sha256": "d99cde435feace0a0ea09aa4a0c5916e69bd97f5c6295fa08c23c0446797c700",
+      "kind": "table_subset",
+      "source": "analysis/paired_tests.csv",
+      "source_sha256": "43d1f6822a3a832fdb44af3615cdeb38dec96cd6e4fd25566566afd8cc6d341c",
+      "selector": {
+        "pairs": [
+          [
+            "RII_FROZEN_MTL_WEIGHTED",
+            "RII_FROZEN_IMAGE_ONLY"
+          ],
+          [
+            "RII_FROZEN_MTL_WEIGHTED",
+            "RII_FROZEN_TEXT_SUPPORTING"
+          ],
+          [
+            "RII_TAIL_MTL_WEIGHTED",
+            "RII_TAIL_IMAGE_ONLY"
+          ],
+          [
+            "RII_TAIL_MTL_WEIGHTED",
+            "RII_TAIL_TEXT_SUPPORTING"
+          ]
+        ]
+      },
+      "rows": 12
+    },
+    {
+      "file": "R28_HISTORICAL_REPLAY.md",
+      "purpose": "Baseline direplay identik; keluarga frozen dan E42-tail tidak disamakan",
+      "sha256": "af0d206518b7e07ac9d4084c044ade7ff6383c7234ab7dea62fe372ce70d9826",
+      "kind": "copy",
+      "source": "documentation/HISTORICAL_REPLAY.md",
+      "source_sha256": "af0d206518b7e07ac9d4084c044ade7ff6383c7234ab7dea62fe372ce70d9826"
+    },
+    {
+      "file": "R28_ABLATION_PARITY.md",
+      "purpose": "Baseline direplay identik; keluarga frozen dan E42-tail tidak disamakan",
+      "sha256": "6a69a24402a63b4bc90041fa68fe3fa0677d55c9abc14c162729fa4c37bd29bf",
+      "kind": "copy",
+      "source": "documentation/ABLATION_PARITY.md",
+      "source_sha256": "6a69a24402a63b4bc90041fa68fe3fa0677d55c9abc14c162729fa4c37bd29bf"
+    }
+  ]
+}

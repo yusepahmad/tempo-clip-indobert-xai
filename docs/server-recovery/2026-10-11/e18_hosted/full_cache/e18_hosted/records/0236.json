@@ -1,0 +1,83 @@
+{
+  "index": 236,
+  "sample_id": "TMP-43B538F6BC80",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "3a3265a72166eef35fb7a68a40b48dd4a206ff6ac3f2bc813484ef21c4e120b0",
+  "image_sha256": "43b538f6bc80660ca7257e090b36e96ce7cef290f2f7c0c8de047c485acb9803",
+  "transmitted_image_sha256": "b999fc008b1ce4da86f28b32379c8569b28cbe1eef34c7b3fa3fd276b105eed0",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.8786149999999999,
+      "total": 10,
+      "remaining": 9.121385,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.8786149999999964,
+      "total": 100,
+      "remaining": 99.121385,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.5260730679146945,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "A\n\n**Alasan:**\nBerdasarkan deskripsi dan alasan yang diberikan dalam teks, wajah yang terlihat terdistorsi atau \"terjepit\" merupakan metafora visual yang menggambarkan kondisi terancam, terperangkap, atau berada dalam keadaan terjepit secara politis. Dalam pilihan kategori yang tersedia, **keadaan terjepit** secara eksplisit dimasukkan ke dalam domain **A: BENCANA_JERAT**.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "xdTKapS1D-XG_uMP3cfxkAY",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1320,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1234
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 755000,
+        "output_tokens_cost_nanodollars": 3960000
+      },
+      "prompt_tokens": 1510,
+      "total_backend_latency_ms": 6510,
+      "total_tokens": 2830
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.8833300000000008,
+      "total": 10,
+      "remaining": 9.11667,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.8833300000000008,
+      "total": 100,
+      "remaining": 99.11667,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.004715
+}

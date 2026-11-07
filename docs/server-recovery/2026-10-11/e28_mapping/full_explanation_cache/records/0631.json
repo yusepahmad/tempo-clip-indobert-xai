@@ -1,0 +1,87 @@
+{
+  "index": 631,
+  "sample_id": "TMP-F8F480D7343F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "24c5809ec5c95bbc0a09477edfaf3785ba7f813217445af5603e7cf951379a5f",
+  "image_sha256": "f8f480d7343fcfd9e907a44105f8d32a9b954837d615aabfe545bf9956e17a25",
+  "transmitted_image_sha256": "e757a08dd322ccca4cbea7fd62d24124dba6c57a8230eb4f47a2cb924a640a5f",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.897802500000001,
+      "total": 10,
+      "remaining": 1.102197499999999,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.897802499999997,
+      "total": 100,
+      "remaining": 91.1021975,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.658127156086266,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"spray paint\", \"source_properties\": \"Orange pigment, pressure-driven nozzle, permanent graffiti application, dripping liquid.\", \"target_situation\": \"Political figures altering established democratic ideals into partisan or authoritarian structures.\", \"mapping\": \"The act of spraying 'PSI' over 'REFORMASI' symbolizes obscuring original 1998 democratic goals with personal or party branding, suggesting a permanent, messy distortion of the political landscape.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "mJ3LapuvG5-d_uMPlqrYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 100,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677500,
+        "output_tokens_cost_nanodollars": 300000
+      },
+      "prompt_tokens": 1355,
+      "total_backend_latency_ms": 2120,
+      "total_tokens": 1455
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.89878,
+      "total": 10,
+      "remaining": 1.1012199999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.898780000000002,
+      "total": 100,
+      "remaining": 91.10122,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009775,
+  "fields": {
+    "source_object": "spray paint",
+    "source_properties": "Orange pigment, pressure-driven nozzle, permanent graffiti application, dripping liquid.",
+    "target_situation": "Political figures altering established democratic ideals into partisan or authoritarian structures.",
+    "mapping": "The act of spraying 'PSI' over 'REFORMASI' symbolizes obscuring original 1998 democratic goals with personal or party branding, suggesting a permanent, messy distortion of the political landscape.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: spray paint\nsource_properties: Orange pigment, pressure-driven nozzle, permanent graffiti application, dripping liquid.\ntarget_situation: Political figures altering established democratic ideals into partisan or authoritarian structures.\nmapping: The act of spraying 'PSI' over 'REFORMASI' symbolizes obscuring original 1998 democratic goals with personal or party branding, suggesting a permanent, messy distortion of the political landscape.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

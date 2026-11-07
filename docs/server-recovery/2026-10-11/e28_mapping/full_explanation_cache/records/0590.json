@@ -1,0 +1,87 @@
+{
+  "index": 590,
+  "sample_id": "TMP-B4211B26AEDE",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b49c946c0551ba9a1aa5386e4c22f73513c4b75293937e4fb8bcedaf52aaf4f5",
+  "image_sha256": "b4211b26aede62893e40a7f0c1273cd3e40b04772cf6bd8ebbf8fbfc6c6adf87",
+  "transmitted_image_sha256": "99d8727e0d586fecbef22422e79898b926e276e026de61912a312f5693fd5180",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8413275,
+      "total": 10,
+      "remaining": 1.1586724999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.841327500000006,
+      "total": 100,
+      "remaining": 91.1586725,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.6317072701640427,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Rock climbers on a steep cliff\",\n  \"source_properties\": \"Height, precarious grip, physical support through ropes, and imminent danger of falling.\",\n  \"target_situation\": \"Police officers implicated in the Ferdy Sambo murder conspiracy case.\",\n  \"mapping\": \"Climbers holding the rope represent Sambo's supporters; their precarious position symbolizes legal vulnerability and mutual downfall.\",\n  \"uncertainty\": \"None evident.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "hpzLaqyxNrDe_uMP6urskA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680000,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1360,
+      "total_backend_latency_ms": 2102,
+      "total_tokens": 1462
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8423135,
+      "total": 10,
+      "remaining": 1.1576865000000005,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.842313500000003,
+      "total": 100,
+      "remaining": 91.1576865,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000986,
+  "fields": {
+    "source_object": "Rock climbers on a steep cliff",
+    "source_properties": "Height, precarious grip, physical support through ropes, and imminent danger of falling.",
+    "target_situation": "Police officers implicated in the Ferdy Sambo murder conspiracy case.",
+    "mapping": "Climbers holding the rope represent Sambo's supporters; their precarious position symbolizes legal vulnerability and mutual downfall.",
+    "uncertainty": "None evident."
+  },
+  "explanation": "source_object: Rock climbers on a steep cliff\nsource_properties: Height, precarious grip, physical support through ropes, and imminent danger of falling.\ntarget_situation: Police officers implicated in the Ferdy Sambo murder conspiracy case.\nmapping: Climbers holding the rope represent Sambo's supporters; their precarious position symbolizes legal vulnerability and mutual downfall.\nuncertainty: None evident.",
+  "finish_reason": "stop",
+  "usable": true
+}

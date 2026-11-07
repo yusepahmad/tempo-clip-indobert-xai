@@ -1,0 +1,87 @@
+{
+  "index": 379,
+  "sample_id": "TMP-B39D7CC0D502",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "143ac86a69f08553d65b34e2c48b26f39e0c4fba570578f95c0e945beb650eb3",
+  "image_sha256": "b39d7cc0d50259a6fca10bc0a8fb08b8d1c42d24ddda7bd12e7d34df7c9b55d9",
+  "transmitted_image_sha256": "028e3df8b5e8d220ce0b0e2a6309798642d8c952ac5e9cb54f5a0dfc6897ea75",
+  "image_size": [
+    489,
+    650
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.555688,
+      "total": 10,
+      "remaining": 1.444312,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.555688000000004,
+      "total": 100,
+      "remaining": 91.444312,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.501917305868119,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"yellow caution tape\",\n  \"source_properties\": \"bright yellow, translucent, horizontally oriented, partially obscuring the view like a barrier or frame\",\n  \"target_situation\": \"the criminal investigation into Siti Aisyah's involvement in the murder of Kim Jong-nam\",\n  \"mapping\": \"the tape physically marks a crime scene, visually framing the suspect to signify her central role in the legal investigation\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "_ZbLas-tHeGM_uMP0-qD8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 107,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677500,
+        "output_tokens_cost_nanodollars": 321000
+      },
+      "prompt_tokens": 1355,
+      "total_backend_latency_ms": 1564,
+      "total_tokens": 1462
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5566865,
+      "total": 10,
+      "remaining": 1.4433135000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.556686499999998,
+      "total": 100,
+      "remaining": 91.4433135,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009985,
+  "fields": {
+    "source_object": "yellow caution tape",
+    "source_properties": "bright yellow, translucent, horizontally oriented, partially obscuring the view like a barrier or frame",
+    "target_situation": "the criminal investigation into Siti Aisyah's involvement in the murder of Kim Jong-nam",
+    "mapping": "the tape physically marks a crime scene, visually framing the suspect to signify her central role in the legal investigation",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: yellow caution tape\nsource_properties: bright yellow, translucent, horizontally oriented, partially obscuring the view like a barrier or frame\ntarget_situation: the criminal investigation into Siti Aisyah's involvement in the murder of Kim Jong-nam\nmapping: the tape physically marks a crime scene, visually framing the suspect to signify her central role in the legal investigation\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

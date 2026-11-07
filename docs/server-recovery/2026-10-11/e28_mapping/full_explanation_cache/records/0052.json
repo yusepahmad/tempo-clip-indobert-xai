@@ -1,0 +1,87 @@
+{
+  "index": 52,
+  "sample_id": "TMP-D81A205928F5",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "4d004b44d5513b4e0c890face953e1f6709fbe3a579856eeaf52f2aa652eee56",
+  "image_sha256": "d81a205928f5957a06783decf2586d58c61574cf294b42b0dd2d7b8652f3c962",
+  "transmitted_image_sha256": "6c6bea021bab1feae421ec5ec74b4b1078137035d650607ac89187e242c0aad5",
+  "image_size": [
+    393,
+    498
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0819705,
+      "total": 10,
+      "remaining": 1.9180294999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.081970499999997,
+      "total": 100,
+      "remaining": 91.9180295,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.6912466920912266,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"red carpet\", \"source_properties\": \"A ceremonial, prestigious covering unrolled for important figures, here being rolled out directly onto train tracks.\", \"target_situation\": \"An investigation into alleged corruption involving a high-ranking official, Hatta Rajasa, regarding used train procurement.\", \"mapping\": \"Rolling out the carpet on the tracks symbolizes facilitating a path for a powerful figure, but here it leads toward the 'train' of a corruption scandal.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "gI7LaqjSHN7d_uMP3pe24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "cost": {
+        "input_tokens_cost_nanodollars": 651500,
+        "output_tokens_cost_nanodollars": 312000
+      },
+      "prompt_tokens": 1303,
+      "total_backend_latency_ms": 1435,
+      "total_tokens": 1407
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.082934,
+      "total": 10,
+      "remaining": 1.9170660000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.082933999999995,
+      "total": 100,
+      "remaining": 91.917066,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009635,
+  "fields": {
+    "source_object": "red carpet",
+    "source_properties": "A ceremonial, prestigious covering unrolled for important figures, here being rolled out directly onto train tracks.",
+    "target_situation": "An investigation into alleged corruption involving a high-ranking official, Hatta Rajasa, regarding used train procurement.",
+    "mapping": "Rolling out the carpet on the tracks symbolizes facilitating a path for a powerful figure, but here it leads toward the 'train' of a corruption scandal.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: red carpet\nsource_properties: A ceremonial, prestigious covering unrolled for important figures, here being rolled out directly onto train tracks.\ntarget_situation: An investigation into alleged corruption involving a high-ranking official, Hatta Rajasa, regarding used train procurement.\nmapping: Rolling out the carpet on the tracks symbolizes facilitating a path for a powerful figure, but here it leads toward the 'train' of a corruption scandal.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

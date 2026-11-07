@@ -1,0 +1,87 @@
+{
+  "index": 730,
+  "sample_id": "TMP-5D7FBBAA99D8",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "da50757fc3f7f44e06934e1090117798163d1e7762e92d8a4e56831910cd91d4",
+  "image_sha256": "5d7fbbaa99d8655809be4fdb32af7e166351268596deac4c99f7f519bad40a77",
+  "transmitted_image_sha256": "ae0f35c79a128b259aa7c9ba9b4e3235a2ba2d67ac9684910c6ae670f40d123c",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0572905,
+      "total": 10,
+      "remaining": 0.9427094999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.057290499999993,
+      "total": 100,
+      "remaining": 90.9427095,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.855894450098276,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"ship in a bottle\",\n  \"source_properties\": \"a large cargo vessel trapped inside a narrow-necked glass container, held by a person.\",\n  \"target_situation\": \"The Indonesian government's creation of a new agency (Danantara) to monopolize strategic export commodities.\",\n  \"mapping\": \"The bottle represents the restrictive 'command' or monopoly control, squeezing large-scale export trade into a single, narrow channel managed by one authority.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "PaDLasy-NLrG_PUPqtG_4Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 115,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677000,
+        "output_tokens_cost_nanodollars": 345000
+      },
+      "prompt_tokens": 1354,
+      "total_backend_latency_ms": 2233,
+      "total_tokens": 1469
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0583125,
+      "total": 10,
+      "remaining": 0.9416875000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.0583125,
+      "total": 100,
+      "remaining": 90.9416875,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001022,
+  "fields": {
+    "source_object": "ship in a bottle",
+    "source_properties": "a large cargo vessel trapped inside a narrow-necked glass container, held by a person.",
+    "target_situation": "The Indonesian government's creation of a new agency (Danantara) to monopolize strategic export commodities.",
+    "mapping": "The bottle represents the restrictive 'command' or monopoly control, squeezing large-scale export trade into a single, narrow channel managed by one authority.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: ship in a bottle\nsource_properties: a large cargo vessel trapped inside a narrow-necked glass container, held by a person.\ntarget_situation: The Indonesian government's creation of a new agency (Danantara) to monopolize strategic export commodities.\nmapping: The bottle represents the restrictive 'command' or monopoly control, squeezing large-scale export trade into a single, narrow channel managed by one authority.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

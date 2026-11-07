@@ -1,0 +1,87 @@
+{
+  "index": 33,
+  "sample_id": "TMP-3F55CA92724A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bab8f58be0f416f2d6946437877ec8916ff4996f0df1eac78d8ca7ba04dee1ae",
+  "image_sha256": "3f55ca92724a8a4266b89c15c432bebbf2548e50b1269ebf7d8b98465b81ee32",
+  "transmitted_image_sha256": "669383125342e29f5dba40dcc7cb8f4eddb92b6261a60addd57761ae3ec85793",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0563565,
+      "total": 10,
+      "remaining": 1.9436435000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.056356500000007,
+      "total": 100,
+      "remaining": 91.9436435,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.306361621245742,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"iceberg\",\n  \"source_properties\": \"Submerged mass, only a small tip visible above water.\",\n  \"target_situation\": \"Sexual violence in Indonesian universities.\",\n  \"mapping\": \"Visible reports are just the tip; most cases remain hidden and unresolved.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "_Y3LatHFMd7d_uMP3pe24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 77,
+      "cost": {
+        "input_tokens_cost_nanodollars": 666500,
+        "output_tokens_cost_nanodollars": 231000
+      },
+      "prompt_tokens": 1333,
+      "total_backend_latency_ms": 1713,
+      "total_tokens": 1410
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.057254,
+      "total": 10,
+      "remaining": 1.9427459999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.057254,
+      "total": 100,
+      "remaining": 91.942746,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0008975,
+  "fields": {
+    "source_object": "iceberg",
+    "source_properties": "Submerged mass, only a small tip visible above water.",
+    "target_situation": "Sexual violence in Indonesian universities.",
+    "mapping": "Visible reports are just the tip; most cases remain hidden and unresolved.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: iceberg\nsource_properties: Submerged mass, only a small tip visible above water.\ntarget_situation: Sexual violence in Indonesian universities.\nmapping: Visible reports are just the tip; most cases remain hidden and unresolved.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 79,
+  "sample_id": "TMP-F4353CF44DD4",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "48cd1e3b767a47cafc04589299d6131e47a9e88da8218849c467ee4f3f024fe1",
+  "image_sha256": "f4353cf44dd4c6d95f58c482ede18d6b51b4976c50602031d368cd0bb6cd2331",
+  "transmitted_image_sha256": "97135c8bd37e91469c4d898f2c3aa2cb6a2d6283f63aad38d4b6846e77551d44",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.117699,
+      "total": 10,
+      "remaining": 1.882301,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.117699000000002,
+      "total": 100,
+      "remaining": 91.882301,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.321714281104505,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"shrimp seeds\",\n  \"source_properties\": \"small, numerous, edible aquatic larvae being consumed greedily by a central figure\",\n  \"target_situation\": \"corruption in the lobster larvae export policy involving Minister Edhy Prabowo\",\n  \"mapping\": \"Stuffed cheeks and seeds in the mouth symbolize the greedy accumulation of profit by political networks.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Ko_LarShFYK5_PUPwPPqwQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 1766,
+      "total_tokens": 1446
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.118657,
+      "total": 10,
+      "remaining": 1.8813429999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.118656999999999,
+      "total": 100,
+      "remaining": 91.881343,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000958,
+  "fields": {
+    "source_object": "shrimp seeds",
+    "source_properties": "small, numerous, edible aquatic larvae being consumed greedily by a central figure",
+    "target_situation": "corruption in the lobster larvae export policy involving Minister Edhy Prabowo",
+    "mapping": "Stuffed cheeks and seeds in the mouth symbolize the greedy accumulation of profit by political networks.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: shrimp seeds\nsource_properties: small, numerous, edible aquatic larvae being consumed greedily by a central figure\ntarget_situation: corruption in the lobster larvae export policy involving Minister Edhy Prabowo\nmapping: Stuffed cheeks and seeds in the mouth symbolize the greedy accumulation of profit by political networks.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

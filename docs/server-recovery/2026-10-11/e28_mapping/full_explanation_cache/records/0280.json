@@ -1,0 +1,87 @@
+{
+  "index": 280,
+  "sample_id": "TMP-2A678C120B51",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "aabe6bf1533e4a08d09894109067673ff4996a62dc3409fc9b5dcc42b1ce744c",
+  "image_sha256": "2a678c120b51956ae7ea6fce49529b1d595db61acd08a6259d505b151b731cb8",
+  "transmitted_image_sha256": "aa7df950b1d2802f0800341df9a706d47b64815b570dcce209ca3d46c7f14487",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.422111,
+      "total": 10,
+      "remaining": 1.5778890000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.422111000000001,
+      "total": 100,
+      "remaining": 91.577889,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.847952627576888,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Tree stump carving\",\n  \"source_properties\": \"A person uses a mallet and chisel to sculpt a house directly from the wood of a freshly cut tree stump.\",\n  \"target_situation\": \"Corruption and deforestation involving the Bogor Regent and property moguls.\",\n  \"mapping\": \"Cutting down forests (stumps) to build real estate (house) represents the illegal conversion of protected land into property developments through bribery.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "eZTLaq_GOIK5_PUPwPPqwQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 107,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679000,
+        "output_tokens_cost_nanodollars": 321000
+      },
+      "prompt_tokens": 1358,
+      "total_backend_latency_ms": 1907,
+      "total_tokens": 1465
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.423111,
+      "total": 10,
+      "remaining": 1.5768889999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.423111000000006,
+      "total": 100,
+      "remaining": 91.576889,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.001,
+  "fields": {
+    "source_object": "Tree stump carving",
+    "source_properties": "A person uses a mallet and chisel to sculpt a house directly from the wood of a freshly cut tree stump.",
+    "target_situation": "Corruption and deforestation involving the Bogor Regent and property moguls.",
+    "mapping": "Cutting down forests (stumps) to build real estate (house) represents the illegal conversion of protected land into property developments through bribery.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Tree stump carving\nsource_properties: A person uses a mallet and chisel to sculpt a house directly from the wood of a freshly cut tree stump.\ntarget_situation: Corruption and deforestation involving the Bogor Regent and property moguls.\nmapping: Cutting down forests (stumps) to build real estate (house) represents the illegal conversion of protected land into property developments through bribery.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

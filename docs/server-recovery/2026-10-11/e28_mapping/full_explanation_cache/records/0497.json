@@ -1,0 +1,87 @@
+{
+  "index": 497,
+  "sample_id": "TMP-A182263EE6D5",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c3dbcc49ab96e843d958a631b441f54b32a54685c06d4edb479f461f6f86250c",
+  "image_sha256": "a182263ee6d5e676fdd0be166b2999fbf348416a97aa9c9a456eaacec9be5fa5",
+  "transmitted_image_sha256": "eb45d171ca9058adc5331dd057a8992688b6b2965366b178bf3e389de02b1724",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7131595,
+      "total": 10,
+      "remaining": 1.2868405000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.713159500000003,
+      "total": 100,
+      "remaining": 91.2868405,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.443888865876943,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"sniper scope reticle\", \"source_properties\": \"circular sight with crosshairs and light blue indicators used for precision targeting and surveillance\", \"target_situation\": \"investigation into corporations responsible for forest fires\", \"mapping\": \"The scope frames a specific fire hotspot, symbolizing how investigative journalism precisely targets and identifies responsible corporations within vast environmental destruction.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "DZrLasy1FoK5_PUPwPPqwQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 83,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680000,
+        "output_tokens_cost_nanodollars": 249000
+      },
+      "prompt_tokens": 1360,
+      "total_backend_latency_ms": 1838,
+      "total_tokens": 1443
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.714088499999999,
+      "total": 10,
+      "remaining": 1.285911500000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.714088500000003,
+      "total": 100,
+      "remaining": 91.2859115,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000929,
+  "fields": {
+    "source_object": "sniper scope reticle",
+    "source_properties": "circular sight with crosshairs and light blue indicators used for precision targeting and surveillance",
+    "target_situation": "investigation into corporations responsible for forest fires",
+    "mapping": "The scope frames a specific fire hotspot, symbolizing how investigative journalism precisely targets and identifies responsible corporations within vast environmental destruction.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: sniper scope reticle\nsource_properties: circular sight with crosshairs and light blue indicators used for precision targeting and surveillance\ntarget_situation: investigation into corporations responsible for forest fires\nmapping: The scope frames a specific fire hotspot, symbolizing how investigative journalism precisely targets and identifies responsible corporations within vast environmental destruction.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 386,
+  "sample_id": "TMP-826365180F57",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f1ba0d2b9c77d755b3aea018e1674e6819bee16dac963ba2cf7d428fbd576261",
+  "image_sha256": "826365180f57e671fb59b69f98905217f298d2068dc25cb4187cf61efe4e6c2d",
+  "transmitted_image_sha256": "358fa90a393a7deae2792477114e3213f7e2bb89de76282182f5f40d710f1e1e",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5678645,
+      "total": 10,
+      "remaining": 1.4321354999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.567864499999999,
+      "total": 100,
+      "remaining": 91.4321355,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0943507542833686,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"nails and safety pin\",\n  \"source_properties\": \"sharp, metallic, industrial fasteners often used as shrapnel in improvised explosives\",\n  \"target_situation\": \"the aftermath of a suicide bombing attack in Kampung Melayu\",\n  \"mapping\": \"The scattered fasteners represent the lethal fragments from a pressure cooker bomb used in the attack.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "MZfLasLnOLXP_uMPiOzhoQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661500,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1323,
+      "total_backend_latency_ms": 1751,
+      "total_tokens": 1415
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.568802,
+      "total": 10,
+      "remaining": 1.4311980000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.568802000000005,
+      "total": 100,
+      "remaining": 91.431198,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009375,
+  "fields": {
+    "source_object": "nails and safety pin",
+    "source_properties": "sharp, metallic, industrial fasteners often used as shrapnel in improvised explosives",
+    "target_situation": "the aftermath of a suicide bombing attack in Kampung Melayu",
+    "mapping": "The scattered fasteners represent the lethal fragments from a pressure cooker bomb used in the attack.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: nails and safety pin\nsource_properties: sharp, metallic, industrial fasteners often used as shrapnel in improvised explosives\ntarget_situation: the aftermath of a suicide bombing attack in Kampung Melayu\nmapping: The scattered fasteners represent the lethal fragments from a pressure cooker bomb used in the attack.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

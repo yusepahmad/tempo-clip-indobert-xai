@@ -1,0 +1,83 @@
+{
+  "index": 731,
+  "sample_id": "TMP-9E20B84B4493",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "621558667f3b8ccf48b42d3232efbd4b06837ec11aeee236ca410c8e71976ab1",
+  "image_sha256": "9e20b84b44936b0e5d6217c3138a8d9ddb2d146290728cf4e1420d7518e0351e",
+  "transmitted_image_sha256": "8d8e7c4b98b8e7fe8f38a63cc5356e54ea6c203b59981b393724ba492d0bc0d2",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.740188,
+      "total": 10,
+      "remaining": 7.259812,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.7401880000000034,
+      "total": 100,
+      "remaining": 97.259812,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.257665121927857,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks, metafora pada sampul tersebut diklasifikasikan ke dalam domain:\n\n**A: BENCANA_JERAT**\n\n**Alasan:** Teks penjelasan secara eksplisit menyebutkan bahwa bayangan pohon sawit tersebut mencerminkan \"tekanan dan **jerat** sistem agraria\" serta membandingkannya dengan \"**jerat** yang menyebabkan kehancuran atau terperangkap\". Selain itu, tajuk \"Gagal Padi\" merujuk pada situasi kegagalan atau bencana dalam program ketahanan pangan (Food Estate) yang kemudian beralih menjadi ancaman ekspansi perkebunan sawit.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "MOnKap3QKb7i_uMPyOzU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1285,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1147
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 779000,
+        "output_tokens_cost_nanodollars": 3855000
+      },
+      "prompt_tokens": 1558,
+      "total_backend_latency_ms": 7141,
+      "total_tokens": 2843
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.744822,
+      "total": 10,
+      "remaining": 7.255178,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.744821999999999,
+      "total": 100,
+      "remaining": 97.255178,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.004634
+}

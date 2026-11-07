@@ -1,0 +1,90 @@
+{
+  "index": 344,
+  "sample_id": "TMP-961CDB9E31FC",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "52fd8b16ff73d5d08c192fcdc2c20021ddd2797132057fef023d3d2b6d0fd72e",
+  "image_sha256": "961cdb9e31fc31f7c339c4afee55750472c5afe2fae3cdead115a4e5d6e95add",
+  "transmitted_image_sha256": "cd13e500632e0491f4c434d77b3a6599a40a569c4d2a58d5019913aeca7b76da",
+  "image_size": [
+    472,
+    627
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5091535,
+      "total": 10,
+      "remaining": 1.4908465,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.509153499999996,
+      "total": 100,
+      "remaining": 91.4908465,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.042685315012932,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Wooden logs used as rollers\",\n  \"source_properties\": \"Archaic, manual, and labor-intensive tools used to transport heavy loads slowly through constant repositioning.\",\n  \"target_situation\": \"The government's hurried implementation of the Jakarta-Bandung high-speed rail project despite regulatory and financial concerns.\",\n  \"mapping\": \"Moving a high-tech fast train with primitive logs satirizes the project as being forced forward through crude, makeshift methods rather than proper modern planning.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "HpbLavvHIPW6_uMPjdDjYA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 646,
+      "completion_tokens_details": {
+        "reasoning_tokens": 524
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 677000,
+        "output_tokens_cost_nanodollars": 1938000
+      },
+      "prompt_tokens": 1354,
+      "total_backend_latency_ms": 4403,
+      "total_tokens": 2000
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5117685,
+      "total": 10,
+      "remaining": 1.4882314999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.511768500000002,
+      "total": 100,
+      "remaining": 91.4882315,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.002615,
+  "fields": {
+    "source_object": "Wooden logs used as rollers",
+    "source_properties": "Archaic, manual, and labor-intensive tools used to transport heavy loads slowly through constant repositioning.",
+    "target_situation": "The government's hurried implementation of the Jakarta-Bandung high-speed rail project despite regulatory and financial concerns.",
+    "mapping": "Moving a high-tech fast train with primitive logs satirizes the project as being forced forward through crude, makeshift methods rather than proper modern planning.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: Wooden logs used as rollers\nsource_properties: Archaic, manual, and labor-intensive tools used to transport heavy loads slowly through constant repositioning.\ntarget_situation: The government's hurried implementation of the Jakarta-Bandung high-speed rail project despite regulatory and financial concerns.\nmapping: Moving a high-tech fast train with primitive logs satirizes the project as being forced forward through crude, makeshift methods rather than proper modern planning.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

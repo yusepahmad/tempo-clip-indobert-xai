@@ -1,0 +1,87 @@
+{
+  "index": 337,
+  "sample_id": "TMP-FF853720E62F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "58ad1e9b201f35c7bd2354ace6ff4b292bd9329289c149c219f642d0e62ede70",
+  "image_sha256": "ff853720e62f835d3f6ba5a14c8dca00af1f6f1ec59c16b4cff3fabf7d33c048",
+  "transmitted_image_sha256": "2ff4941a41f3c1bcc9272402762f1f782ca9b03483df8d8ae2c8d94384ab0b64",
+  "image_size": [
+    472,
+    625
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.49805,
+      "total": 10,
+      "remaining": 1.5019500000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.498050000000006,
+      "total": 100,
+      "remaining": 91.50195,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.236023365985602,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Police badge\", \"source_properties\": \"Visible under the vest of a figure wearing a KPK jacket; symbolizes police identity and institutional loyalty.\", \"target_situation\": \"Taufiequerachman Ruki leading the Corruption Eradication Commission (KPK) while allegedly weakening it from within to favor external interests.\", \"mapping\": \"The police badge tucked beneath the KPK vest visually represents a conflict of interest, suggesting the subject serves external police agendas while supposedly leading an independent anti-corruption agency.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "75XLaraUNdvJ_uMPvcyw-AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 113,
+      "cost": {
+        "input_tokens_cost_nanodollars": 670000,
+        "output_tokens_cost_nanodollars": 339000
+      },
+      "prompt_tokens": 1340,
+      "total_backend_latency_ms": 1904,
+      "total_tokens": 1453
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.499058999999999,
+      "total": 10,
+      "remaining": 1.500941000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.499059000000003,
+      "total": 100,
+      "remaining": 91.500941,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001009,
+  "fields": {
+    "source_object": "Police badge",
+    "source_properties": "Visible under the vest of a figure wearing a KPK jacket; symbolizes police identity and institutional loyalty.",
+    "target_situation": "Taufiequerachman Ruki leading the Corruption Eradication Commission (KPK) while allegedly weakening it from within to favor external interests.",
+    "mapping": "The police badge tucked beneath the KPK vest visually represents a conflict of interest, suggesting the subject serves external police agendas while supposedly leading an independent anti-corruption agency.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Police badge\nsource_properties: Visible under the vest of a figure wearing a KPK jacket; symbolizes police identity and institutional loyalty.\ntarget_situation: Taufiequerachman Ruki leading the Corruption Eradication Commission (KPK) while allegedly weakening it from within to favor external interests.\nmapping: The police badge tucked beneath the KPK vest visually represents a conflict of interest, suggesting the subject serves external police agendas while supposedly leading an independent anti-corruption agency.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

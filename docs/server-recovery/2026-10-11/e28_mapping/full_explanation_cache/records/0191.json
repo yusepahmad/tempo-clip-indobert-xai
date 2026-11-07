@@ -1,0 +1,87 @@
+{
+  "index": 191,
+  "sample_id": "TMP-A7FF7712FC8B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "da1d2ece3843471dc2c554a5fcfa2f3c1e47ebaa2d0724c8d21e4cfa7ae8aa6f",
+  "image_sha256": "a7ff7712fc8b41041ac998b1afbd4097dc7fe14868c80c81da77518c13c7f452",
+  "transmitted_image_sha256": "66dcfe43f91044ef5fe5dcb904d234dfed223212a76ea58a68c734599518caf7",
+  "image_size": [
+    300,
+    399
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2870585,
+      "total": 10,
+      "remaining": 1.7129414999999995,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.2870585,
+      "total": 100,
+      "remaining": 91.7129415,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2163024619221687,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A pig's head mask\",\n  \"source_properties\": \"Pink, animalistic features associated with greed, filth, and gluttony in various cultures.\",\n  \"target_situation\": \"Corrupt or 'rotten' politicians (Politikus Busuk) and public disdain for them.\",\n  \"mapping\": \"The mask identifies the politician as dehumanized and driven by base, gluttonous instincts.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "J5LLau_-A4Tn_uMP29-q-A8",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 107,
+      "cost": {
+        "input_tokens_cost_nanodollars": 657000,
+        "output_tokens_cost_nanodollars": 321000
+      },
+      "prompt_tokens": 1314,
+      "total_backend_latency_ms": 1911,
+      "total_tokens": 1421
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2880365,
+      "total": 10,
+      "remaining": 1.7119634999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.288036500000004,
+      "total": 100,
+      "remaining": 91.7119635,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000978,
+  "fields": {
+    "source_object": "A pig's head mask",
+    "source_properties": "Pink, animalistic features associated with greed, filth, and gluttony in various cultures.",
+    "target_situation": "Corrupt or 'rotten' politicians (Politikus Busuk) and public disdain for them.",
+    "mapping": "The mask identifies the politician as dehumanized and driven by base, gluttonous instincts.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: A pig's head mask\nsource_properties: Pink, animalistic features associated with greed, filth, and gluttony in various cultures.\ntarget_situation: Corrupt or 'rotten' politicians (Politikus Busuk) and public disdain for them.\nmapping: The mask identifies the politician as dehumanized and driven by base, gluttonous instincts.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 94,
+  "sample_id": "TMP-6325ED9842C7",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "43e32e9e80d68af94e4e473cf3e28b4f9e3aaf55abd1b6ea98ffc29f8a63d272",
+  "image_sha256": "6325ed9842c73c463bc24dd507b2499549f37fc04613f4512bad617061724c80",
+  "transmitted_image_sha256": "d9e7c5a7098de13f2103a9fe9f524f3336d30a83aee7be3687ec65597e72812c",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1349665,
+      "total": 10,
+      "remaining": 1.8650334999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.134966500000004,
+      "total": 100,
+      "remaining": 91.8650335,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.533913393970579,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"smartphone and a selfie-taking pose\",\n  \"source_properties\": \"Handheld device for capturing and broadcasting self-images through digital platforms.\",\n  \"target_situation\": \"Dedi Mulyadi\u2019s political rise through strategic social media content creation.\",\n  \"mapping\": \"The selfie action represents the deliberate production of a viral public persona.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "jI_LaqzTG-XG_uMP3cfxkAY",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680000,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1360,
+      "total_backend_latency_ms": 1507,
+      "total_tokens": 1453
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.135925499999999,
+      "total": 10,
+      "remaining": 1.864074500000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.135925499999999,
+      "total": 100,
+      "remaining": 91.8640745,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000959,
+  "fields": {
+    "source_object": "smartphone and a selfie-taking pose",
+    "source_properties": "Handheld device for capturing and broadcasting self-images through digital platforms.",
+    "target_situation": "Dedi Mulyadi\u2019s political rise through strategic social media content creation.",
+    "mapping": "The selfie action represents the deliberate production of a viral public persona.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: smartphone and a selfie-taking pose\nsource_properties: Handheld device for capturing and broadcasting self-images through digital platforms.\ntarget_situation: Dedi Mulyadi\u2019s political rise through strategic social media content creation.\nmapping: The selfie action represents the deliberate production of a viral public persona.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

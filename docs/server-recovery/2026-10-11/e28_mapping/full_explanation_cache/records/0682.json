@@ -1,0 +1,87 @@
+{
+  "index": 682,
+  "sample_id": "TMP-EB4AE5BE64C1",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "37292044e7ff9b3eb3c1717557023c007ce73b47f50bb6874e2364910c77c54f",
+  "image_sha256": "eb4ae5be64c1fe0a7c5ad8b27bfa1943ffca8759eee15f2caa290c2f70cbe995",
+  "transmitted_image_sha256": "1134f9ede01c540709cc2e202b08f0cb549bbde561dd3471cf435d0f06ce3dff",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9788175,
+      "total": 10,
+      "remaining": 1.0211825,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.978817500000005,
+      "total": 100,
+      "remaining": 91.0211825,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1497473791241646,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Shadow\",\n  \"source_properties\": \"Larger, darker silhouette mimicking the posture of a foreground figure, looming behind and looming large.\",\n  \"target_situation\": \"Hercules' public activities and GRIB Jaya's actions under the political influence of President Prabowo.\",\n  \"mapping\": \"The large saluting shadow represents Prabowo's backing and influence, shielding and magnifying the smaller figure's (Hercules) presence and power.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "9J7LauajC97d_uMPq5e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 112,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675500,
+        "output_tokens_cost_nanodollars": 336000
+      },
+      "prompt_tokens": 1351,
+      "total_backend_latency_ms": 1780,
+      "total_tokens": 1463
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.979829,
+      "total": 10,
+      "remaining": 1.0201709999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.979828999999995,
+      "total": 100,
+      "remaining": 91.020171,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010115,
+  "fields": {
+    "source_object": "Shadow",
+    "source_properties": "Larger, darker silhouette mimicking the posture of a foreground figure, looming behind and looming large.",
+    "target_situation": "Hercules' public activities and GRIB Jaya's actions under the political influence of President Prabowo.",
+    "mapping": "The large saluting shadow represents Prabowo's backing and influence, shielding and magnifying the smaller figure's (Hercules) presence and power.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Shadow\nsource_properties: Larger, darker silhouette mimicking the posture of a foreground figure, looming behind and looming large.\ntarget_situation: Hercules' public activities and GRIB Jaya's actions under the political influence of President Prabowo.\nmapping: The large saluting shadow represents Prabowo's backing and influence, shielding and magnifying the smaller figure's (Hercules) presence and power.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

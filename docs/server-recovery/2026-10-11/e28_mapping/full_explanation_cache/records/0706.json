@@ -1,0 +1,87 @@
+{
+  "index": 706,
+  "sample_id": "TMP-EB0D17226232",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5f8cd899611f90c778f02f59c05d8be19d6eb146e552af15e98aa150c7640f9f",
+  "image_sha256": "eb0d172262324008fb481b6a28d23e972c2410de07f774605a6f23aec8732a19",
+  "transmitted_image_sha256": "7288eaaa8000fa721731e46ef466d95383b7c5a39028d5c2e0c1b2dad93ef10b",
+  "image_size": [
+    598,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0242015,
+      "total": 10,
+      "remaining": 0.9757984999999998,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.024201500000004,
+      "total": 100,
+      "remaining": 90.9757985,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.8272509770467877,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"grocery shopping boxes and basket\",\n  \"source_properties\": \"A person carrying an oversized, unstable stack of boxes, nearly colliding with another shopper.\",\n  \"target_situation\": \"Indonesian national debt interest consuming a quarter of tax revenue due to reckless policies.\",\n  \"mapping\": \"The heavy, unstable boxes represent the burdensome national debt, while the near-collision symbolizes economic instability.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "n5_LasGZHJic_uMP95SR0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 663000,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1326,
+      "total_backend_latency_ms": 1890,
+      "total_tokens": 1427
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0251675,
+      "total": 10,
+      "remaining": 0.9748324999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.025167499999995,
+      "total": 100,
+      "remaining": 90.9748325,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000966,
+  "fields": {
+    "source_object": "grocery shopping boxes and basket",
+    "source_properties": "A person carrying an oversized, unstable stack of boxes, nearly colliding with another shopper.",
+    "target_situation": "Indonesian national debt interest consuming a quarter of tax revenue due to reckless policies.",
+    "mapping": "The heavy, unstable boxes represent the burdensome national debt, while the near-collision symbolizes economic instability.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: grocery shopping boxes and basket\nsource_properties: A person carrying an oversized, unstable stack of boxes, nearly colliding with another shopper.\ntarget_situation: Indonesian national debt interest consuming a quarter of tax revenue due to reckless policies.\nmapping: The heavy, unstable boxes represent the burdensome national debt, while the near-collision symbolizes economic instability.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

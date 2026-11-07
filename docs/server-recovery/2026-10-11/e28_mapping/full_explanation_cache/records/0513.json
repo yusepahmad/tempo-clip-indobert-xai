@@ -1,0 +1,87 @@
+{
+  "index": 513,
+  "sample_id": "TMP-65689630359C",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bda59d8250f0f39d64123eaf515786c9bb80a10460a79ef7803f244d0ce8fbb0",
+  "image_sha256": "65689630359cf56066401e70ec59ac5996376a1f1ec7043ee489ee8fe699e5ef",
+  "transmitted_image_sha256": "10fec2cc99739a95966352dd42b3c45e84d9e8217ea822ec7de65a61adeb1ec7",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7409955,
+      "total": 10,
+      "remaining": 1.2590044999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.740995499999997,
+      "total": 100,
+      "remaining": 91.2590045,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.250053099822253,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"vocalists\", \"source_properties\": \"singing or performing in a group, opening mouths wide as if projecting sound\", \"target_situation\": \"Suspects in a high-profile corruption case providing testimony that implicates their superiors.\", \"mapping\": \"The suspects 'singing' (testifying) metaphorically mirrors physical vocalists, with their coordinated disclosures revealing potentially orchestrated criminal protection or internal conflicts.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "fZrLaoWFBsXh_uMPyN6L8Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681500,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1363,
+      "total_backend_latency_ms": 1927,
+      "total_tokens": 1460
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.741968,
+      "total": 10,
+      "remaining": 1.258032,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.741968,
+      "total": 100,
+      "remaining": 91.258032,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009725,
+  "fields": {
+    "source_object": "vocalists",
+    "source_properties": "singing or performing in a group, opening mouths wide as if projecting sound",
+    "target_situation": "Suspects in a high-profile corruption case providing testimony that implicates their superiors.",
+    "mapping": "The suspects 'singing' (testifying) metaphorically mirrors physical vocalists, with their coordinated disclosures revealing potentially orchestrated criminal protection or internal conflicts.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: vocalists\nsource_properties: singing or performing in a group, opening mouths wide as if projecting sound\ntarget_situation: Suspects in a high-profile corruption case providing testimony that implicates their superiors.\nmapping: The suspects 'singing' (testifying) metaphorically mirrors physical vocalists, with their coordinated disclosures revealing potentially orchestrated criminal protection or internal conflicts.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

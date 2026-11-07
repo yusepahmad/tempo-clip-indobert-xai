@@ -1,0 +1,87 @@
+{
+  "index": 702,
+  "sample_id": "TMP-92E08B6BABE0",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "7242c5e7cbbcaf0676587668e16489157c44f848d743fdc862181518b31bcdf0",
+  "image_sha256": "92e08b6babe00820b721fe94dac53c9a0b5d8decd9489576ab771fb4636e8c7f",
+  "transmitted_image_sha256": "33b0304b4bf986890242d3cd21ebd5bade28df864da83ca4908934c75a7a2c3b",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0203225,
+      "total": 10,
+      "remaining": 0.9796774999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.020322500000006,
+      "total": 100,
+      "remaining": 90.9796775,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.827343690674752,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A faucet dispensing money into a bag.\",\n  \"source_properties\": \"Continuous flow, high volume, easily accessible, filling a private container.\",\n  \"target_situation\": \"The 400 trillion rupiah 'Koperasi Desa Merah Putih' program.\",\n  \"mapping\": \"Effortless flow of public funds into political coffers without clear oversight.\",\n  \"uncertainty\": \"None evident.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "iJ_Lar6sMefU_uMPq5CXyQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 688500,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1377,
+      "total_backend_latency_ms": 1360,
+      "total_tokens": 1474
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.021302,
+      "total": 10,
+      "remaining": 0.9786979999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.021302000000006,
+      "total": 100,
+      "remaining": 90.978698,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009795,
+  "fields": {
+    "source_object": "A faucet dispensing money into a bag.",
+    "source_properties": "Continuous flow, high volume, easily accessible, filling a private container.",
+    "target_situation": "The 400 trillion rupiah 'Koperasi Desa Merah Putih' program.",
+    "mapping": "Effortless flow of public funds into political coffers without clear oversight.",
+    "uncertainty": "None evident."
+  },
+  "explanation": "source_object: A faucet dispensing money into a bag.\nsource_properties: Continuous flow, high volume, easily accessible, filling a private container.\ntarget_situation: The 400 trillion rupiah 'Koperasi Desa Merah Putih' program.\nmapping: Effortless flow of public funds into political coffers without clear oversight.\nuncertainty: None evident.",
+  "finish_reason": "stop",
+  "usable": true
+}

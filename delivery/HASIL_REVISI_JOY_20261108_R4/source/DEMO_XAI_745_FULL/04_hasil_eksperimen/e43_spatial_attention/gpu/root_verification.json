@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "metrics_stdlib": {
+    "task1_issue": {
+      "candidate": 0.46730067691718935,
+      "baseline": 0.4380318985439888
+    },
+    "task2_domain_sumber": {
+      "candidate": 0.42458340094039876,
+      "baseline": 0.3197261392590282
+    },
+    "task3_primary_entity_type": {
+      "candidate": 0.3674592160988203,
+      "baseline": 0.2763519249500637
+    }
+  },
+  "minimum_task_macro_f1": 0.3674592160988203,
+  "delta_task2": 0.10485726168137055,
+  "paired_bootstrap": {
+    "replicates": 2000,
+    "seed": 42,
+    "interval_95": [
+      0.0659629224400663,
+      0.14026701416871
+    ],
+    "limitation": "Exploratory only: overlapping fold training sets and repeated experiment selection are not accounted for"
+  },
+  "diagnosis": {
+    "BENCANA_JERAT": {
+      "count": 100,
+      "correct": 45
+    },
+    "HEWAN_TUBUH": {
+      "count": 90,
+      "correct": 41
+    },
+    "KONSUMSI_TRANSAKSI": {
+      "count": 84,
+      "correct": 20
+    },
+    "LAINNYA": {
+      "count": 63,
+      "correct": 20
+    },
+    "MESIN_INFRASTRUKTUR": {
+      "count": 214,
+      "correct": 102
+    },
+    "NON_METAFORA": {
+      "count": 83,
+      "correct": 53
+    },
+    "PERMAINAN_KONTES": {
+      "count": 106,
+      "correct": 46
+    }
+  },
+  "target_reached": false
+}

@@ -1,0 +1,90 @@
+{
+  "index": 122,
+  "sample_id": "TMP-493226675471",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b09f85370659f7dfa775ad13800add12ef586d69c9ff8464d4e8ec23956e0130",
+  "image_sha256": "493226675471321909c7644c459a2519d367d296a2270bd1f6de0c80ca0dc9f2",
+  "transmitted_image_sha256": "6c1a6de26a19e57c969c1882640fd19e3d8844fa90661c9bd632eaf916868b1e",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1858985,
+      "total": 10,
+      "remaining": 1.8141014999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.185898499999993,
+      "total": 100,
+      "remaining": 91.8141015,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.632468189112842,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A labeled tin can.\",\n  \"source_properties\": \"A commercial vessel featuring branding and official certification marks intended to guarantee the authenticity of its contents.\",\n  \"target_situation\": \"Suspicions that religious authorities are corruptly selling \\\"halal\\\" certification labels.\",\n  \"mapping\": \"Just as the label paradoxically certifies forbidden pork as \\\"halal,\\\" the alleged trade in certifications makes official seals of approval deceptive and contradictory.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "VZDLaoUO35X-4w-YhYXJCw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 922,
+      "completion_tokens_details": {
+        "reasoning_tokens": 812
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 667500,
+        "output_tokens_cost_nanodollars": 2766000
+      },
+      "prompt_tokens": 1335,
+      "total_backend_latency_ms": 5425,
+      "total_tokens": 2257
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.189332,
+      "total": 10,
+      "remaining": 1.8106679999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.189331999999993,
+      "total": 100,
+      "remaining": 91.810668,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0034335,
+  "fields": {
+    "source_object": "A labeled tin can.",
+    "source_properties": "A commercial vessel featuring branding and official certification marks intended to guarantee the authenticity of its contents.",
+    "target_situation": "Suspicions that religious authorities are corruptly selling \"halal\" certification labels.",
+    "mapping": "Just as the label paradoxically certifies forbidden pork as \"halal,\" the alleged trade in certifications makes official seals of approval deceptive and contradictory.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A labeled tin can.\nsource_properties: A commercial vessel featuring branding and official certification marks intended to guarantee the authenticity of its contents.\ntarget_situation: Suspicions that religious authorities are corruptly selling \"halal\" certification labels.\nmapping: Just as the label paradoxically certifies forbidden pork as \"halal,\" the alleged trade in certifications makes official seals of approval deceptive and contradictory.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

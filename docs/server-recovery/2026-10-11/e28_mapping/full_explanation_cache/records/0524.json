@@ -1,0 +1,87 @@
+{
+  "index": 524,
+  "sample_id": "TMP-E02A40ADB71F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c25e2be5b482353a823af303d3aa10b772a5391a2b34ce5fb57b1cea563814f7",
+  "image_sha256": "e02a40adb71f5c09ad9b2c56a0b5e4fdd7b24bba5f8fbd46c9a3a64021dcfc48",
+  "transmitted_image_sha256": "9264ca88873ba67a5e336057fddd4c5717f90695faafb13b8d98707439e6d32a",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.753797,
+      "total": 10,
+      "remaining": 1.2462029999999995,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.753797000000006,
+      "total": 100,
+      "remaining": 91.246203,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3056576871313155,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A zoo or museum display window\",\n  \"source_properties\": \"Contained, artificial environment viewed through glass by spectators in a city.\",\n  \"target_situation\": \"The transformation of Komodo National Park into a premium commercialized tourist attraction.\",\n  \"mapping\": \"Natural habitat is reduced to a curated exhibit for wealthy urban interests.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "yprLap-TIpjM_PUPlq7quAo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678500,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1357,
+      "total_backend_latency_ms": 2008,
+      "total_tokens": 1448
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7547485,
+      "total": 10,
+      "remaining": 1.2452515000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.754748500000005,
+      "total": 100,
+      "remaining": 91.2452515,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009515,
+  "fields": {
+    "source_object": "A zoo or museum display window",
+    "source_properties": "Contained, artificial environment viewed through glass by spectators in a city.",
+    "target_situation": "The transformation of Komodo National Park into a premium commercialized tourist attraction.",
+    "mapping": "Natural habitat is reduced to a curated exhibit for wealthy urban interests.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A zoo or museum display window\nsource_properties: Contained, artificial environment viewed through glass by spectators in a city.\ntarget_situation: The transformation of Komodo National Park into a premium commercialized tourist attraction.\nmapping: Natural habitat is reduced to a curated exhibit for wealthy urban interests.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

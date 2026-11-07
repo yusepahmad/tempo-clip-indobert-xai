@@ -1,0 +1,90 @@
+{
+  "index": 342,
+  "sample_id": "TMP-0D71892CC33C",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "012266ea9c7e04abd5e575e4a4f73aa108d329482b0f7df47cc447fbd509e414",
+  "image_sha256": "0d71892cc33cbef7df23f3f2b5b14975419fd8123461d81a20b1818a92cb1bd6",
+  "transmitted_image_sha256": "1ed320657fe4cf4f6c911f1a9bc6ab65f57d6bc201c49c0cd167563315a7af14",
+  "image_size": [
+    408,
+    542
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.504383,
+      "total": 10,
+      "remaining": 1.4956169999999993,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.504383000000004,
+      "total": 100,
+      "remaining": 91.495617,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.6955825998447835,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A large ink fingerprint.\",\n  \"source_properties\": \"Unique friction ridge patterns used in forensics to identify a specific individual's presence or involvement.\",\n  \"target_situation\": \"The forensic investigation into Bahrun Naim's planning of the Thamrin bombing.\",\n  \"mapping\": \"The fingerprint represents the 'signature' or undeniable evidence left behind, linking Naim's identity\u2014embedded within the print\u2014to the specific planning of the attack.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "EJbLap7VJN7d_uMP2Ze24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1053,
+      "completion_tokens_details": {
+        "reasoning_tokens": 938
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 658000,
+        "output_tokens_cost_nanodollars": 3159000
+      },
+      "prompt_tokens": 1316,
+      "total_backend_latency_ms": 5637,
+      "total_tokens": 2369
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5082,
+      "total": 10,
+      "remaining": 1.4917999999999996,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.508200000000002,
+      "total": 100,
+      "remaining": 91.4918,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.003817,
+  "fields": {
+    "source_object": "A large ink fingerprint.",
+    "source_properties": "Unique friction ridge patterns used in forensics to identify a specific individual's presence or involvement.",
+    "target_situation": "The forensic investigation into Bahrun Naim's planning of the Thamrin bombing.",
+    "mapping": "The fingerprint represents the 'signature' or undeniable evidence left behind, linking Naim's identity\u2014embedded within the print\u2014to the specific planning of the attack.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A large ink fingerprint.\nsource_properties: Unique friction ridge patterns used in forensics to identify a specific individual's presence or involvement.\ntarget_situation: The forensic investigation into Bahrun Naim's planning of the Thamrin bombing.\nmapping: The fingerprint represents the 'signature' or undeniable evidence left behind, linking Naim's identity\u2014embedded within the print\u2014to the specific planning of the attack.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

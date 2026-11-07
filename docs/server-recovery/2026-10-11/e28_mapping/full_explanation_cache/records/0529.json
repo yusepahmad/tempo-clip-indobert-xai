@@ -1,0 +1,87 @@
+{
+  "index": 529,
+  "sample_id": "TMP-701B52ABF42C",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b0c0f7d4a7e47f720d73bb371460b1433a2973e329c2936a16e01fcefcc795a0",
+  "image_sha256": "701b52abf42c33d4e8fd1d0642182e164bd9defb729412187b55b57d20cb7d83",
+  "transmitted_image_sha256": "3a5b7fc5ba5389579a1c782942dd95b50528082af29a02b8ed61a3a9d6af2349",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7585975,
+      "total": 10,
+      "remaining": 1.2414024999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.758597499999993,
+      "total": 100,
+      "remaining": 91.2414025,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.6642990899272263,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"building\", \"source_properties\": \"large, multi-story, classical architecture, toy-like scale\", \"target_situation\": \"Sukanto Tanoto's alleged acquisition of high-value German property using shell companies.\", \"mapping\": \"The building is depicted as a small object Tanoto reclines upon, illustrating the headline 'Mainan Baru' (New Toy).\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "6JrLas_nCMfv_uMP5e292Qg",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 685000,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1370,
+      "total_backend_latency_ms": 1708,
+      "total_tokens": 1460
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7595525,
+      "total": 10,
+      "remaining": 1.2404475000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.759552499999998,
+      "total": 100,
+      "remaining": 91.2404475,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000955,
+  "fields": {
+    "source_object": "building",
+    "source_properties": "large, multi-story, classical architecture, toy-like scale",
+    "target_situation": "Sukanto Tanoto's alleged acquisition of high-value German property using shell companies.",
+    "mapping": "The building is depicted as a small object Tanoto reclines upon, illustrating the headline 'Mainan Baru' (New Toy).",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: building\nsource_properties: large, multi-story, classical architecture, toy-like scale\ntarget_situation: Sukanto Tanoto's alleged acquisition of high-value German property using shell companies.\nmapping: The building is depicted as a small object Tanoto reclines upon, illustrating the headline 'Mainan Baru' (New Toy).\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 684,
+  "sample_id": "TMP-8BDCA9D74817",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "571fec7fff70c39bb7ff66e60b91b7a3b3699173219ac4078582921ba3426f15",
+  "image_sha256": "8bdca9d74817356f5e5a954c3a1fa0d424aa3d3bc5d3f2d2a67b6f4727d5a1e3",
+  "transmitted_image_sha256": "32afab9f6281ea1ebf1ccbe59b78368f403c6b5da4f1bf289f2fe3e3b7d3b49e",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9833585,
+      "total": 10,
+      "remaining": 1.0166415000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.983358499999994,
+      "total": 100,
+      "remaining": 91.0166415,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.956781015265733,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"food tray with a maze\",\n  \"source_properties\": \"A compartmentalized cafeteria tray containing a complex, confusing labyrinth instead of food.\",\n  \"target_situation\": \"The chaotic implementation and internal political maneuvering within Indonesia's free nutritious meal program.\",\n  \"mapping\": \"The maze represents bureaucratic intrigue and confusion, while the tray identifies the specific policy area.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "A5_Las-TE7eR_uMPm_GWuA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 96,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680500,
+        "output_tokens_cost_nanodollars": 288000
+      },
+      "prompt_tokens": 1361,
+      "total_backend_latency_ms": 1597,
+      "total_tokens": 1457
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.984327,
+      "total": 10,
+      "remaining": 1.0156729999999996,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.984326999999993,
+      "total": 100,
+      "remaining": 91.015673,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009685,
+  "fields": {
+    "source_object": "food tray with a maze",
+    "source_properties": "A compartmentalized cafeteria tray containing a complex, confusing labyrinth instead of food.",
+    "target_situation": "The chaotic implementation and internal political maneuvering within Indonesia's free nutritious meal program.",
+    "mapping": "The maze represents bureaucratic intrigue and confusion, while the tray identifies the specific policy area.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: food tray with a maze\nsource_properties: A compartmentalized cafeteria tray containing a complex, confusing labyrinth instead of food.\ntarget_situation: The chaotic implementation and internal political maneuvering within Indonesia's free nutritious meal program.\nmapping: The maze represents bureaucratic intrigue and confusion, while the tray identifies the specific policy area.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

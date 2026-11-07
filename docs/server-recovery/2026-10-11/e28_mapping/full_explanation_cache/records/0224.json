@@ -1,0 +1,87 @@
+{
+  "index": 224,
+  "sample_id": "TMP-6045B035167E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "902782267656c01bf30e39d7fcf61fa1fe77319a97ad4022085721569dc2ec60",
+  "image_sha256": "6045b035167ee60cf5c074db6df66b4df5e94adc6f70e44f5036aa2f5887b895",
+  "transmitted_image_sha256": "c3e14a9e3ef5c44ca85b28bb42dbbec1abbc6e4fd945e09097610188db69398c",
+  "image_size": [
+    606,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3402255,
+      "total": 10,
+      "remaining": 1.6597744999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.340225500000003,
+      "total": 100,
+      "remaining": 91.6597745,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.7398096839897335,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"chess game\", \"source_properties\": \"strategic play, intellect, rules-based competition, pieces with specific roles\", \"target_situation\": \"political leadership and governance of selected regional heads\", \"mapping\": \"The chessboard and pieces represent the strategic maneuvers and thoughtful decision-making required in regional administration, suggesting these leaders are master strategists rather than ordinary officials.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "_pLLaomhG7yb_uMP77KhsAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 642500,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1285,
+      "total_backend_latency_ms": 1758,
+      "total_tokens": 1371
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.341126,
+      "total": 10,
+      "remaining": 1.6588740000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.341126000000003,
+      "total": 100,
+      "remaining": 91.658874,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009005,
+  "fields": {
+    "source_object": "chess game",
+    "source_properties": "strategic play, intellect, rules-based competition, pieces with specific roles",
+    "target_situation": "political leadership and governance of selected regional heads",
+    "mapping": "The chessboard and pieces represent the strategic maneuvers and thoughtful decision-making required in regional administration, suggesting these leaders are master strategists rather than ordinary officials.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: chess game\nsource_properties: strategic play, intellect, rules-based competition, pieces with specific roles\ntarget_situation: political leadership and governance of selected regional heads\nmapping: The chessboard and pieces represent the strategic maneuvers and thoughtful decision-making required in regional administration, suggesting these leaders are master strategists rather than ordinary officials.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

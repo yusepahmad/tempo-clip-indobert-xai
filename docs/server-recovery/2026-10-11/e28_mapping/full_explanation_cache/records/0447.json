@@ -1,0 +1,87 @@
+{
+  "index": 447,
+  "sample_id": "TMP-CE940F6E89FB",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a034a26bedf5251e7ce93ab1fa805c9080d50981a2558100137353b709af7722",
+  "image_sha256": "ce940f6e89fbbc0f95ee2fd712c39afd496f5f4fbf9ba56c2004185e42ac0012",
+  "transmitted_image_sha256": "be8b4e8f8852281fae13755d86a9abf79ce62c47bff63972cad53c4a3f54073d",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6478755,
+      "total": 10,
+      "remaining": 1.3521245000000004,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.647875499999998,
+      "total": 100,
+      "remaining": 91.3521245,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.148199588991702,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"a hand covering the eyes\", \"source_properties\": \"physical obstruction that prevents sight or obscures vision\", \"target_situation\": \"Novel Baswedan's claim that police knew about his attack beforehand\", \"mapping\": \"The hand blinding the subject symbolizes a deliberate attempt to hide the truth or keep the victim/public in the dark regarding the security threat and its perpetrators.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "xJjLaseYFL7i_uMPz_DU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 89,
+      "cost": {
+        "input_tokens_cost_nanodollars": 663000,
+        "output_tokens_cost_nanodollars": 267000
+      },
+      "prompt_tokens": 1326,
+      "total_backend_latency_ms": 2366,
+      "total_tokens": 1415
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6488055,
+      "total": 10,
+      "remaining": 1.3511945,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.648805499999995,
+      "total": 100,
+      "remaining": 91.3511945,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00093,
+  "fields": {
+    "source_object": "a hand covering the eyes",
+    "source_properties": "physical obstruction that prevents sight or obscures vision",
+    "target_situation": "Novel Baswedan's claim that police knew about his attack beforehand",
+    "mapping": "The hand blinding the subject symbolizes a deliberate attempt to hide the truth or keep the victim/public in the dark regarding the security threat and its perpetrators.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: a hand covering the eyes\nsource_properties: physical obstruction that prevents sight or obscures vision\ntarget_situation: Novel Baswedan's claim that police knew about his attack beforehand\nmapping: The hand blinding the subject symbolizes a deliberate attempt to hide the truth or keep the victim/public in the dark regarding the security threat and its perpetrators.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

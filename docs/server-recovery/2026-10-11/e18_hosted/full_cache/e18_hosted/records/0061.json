@@ -1,0 +1,83 @@
+{
+  "index": 61,
+  "sample_id": "TMP-ED5D7EE892F5",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "8f1e17ccc8c5b4911688a6b544f058a91a21dbeb2f3a54aabd9e0ef4a6a0383c",
+  "image_sha256": "ed5d7ee892f5c07c4ffd5f745b642d11d2737d02811e6927397d81cb006ccd10",
+  "transmitted_image_sha256": "7189dd3f157301667af105e6553e6d5280cf65506c09d37f5d959e80c2b2b7ec",
+  "image_size": [
+    294,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.2210555000000003,
+      "total": 10,
+      "remaining": 9.7789445,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.22105550000000562,
+      "total": 100,
+      "remaining": 99.7789445,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 11.29073202284053,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "B\n\n**Alasan:** Berdasarkan deskripsi dan alasan yang diberikan dalam soal, ilustrasi tersebut merupakan potret wajah dan tubuh Muhammad Yamin yang dipetakan ke **perilaku biologis** (seperti ekspresi wajah dan postur tubuh untuk menggambarkan kepribadian). Dalam daftar kategori yang tersedia, domain **HEWAN_TUBUH** secara spesifik mencakup \"anatomi\" atau \"**perilaku biologis** sebagai kiasan\". Oleh karena itu, kode yang paling tepat adalah B.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Xs7Kar_eGPDe_uMPnvjrqQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1976,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1871
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 795500,
+        "output_tokens_cost_nanodollars": 5928000
+      },
+      "prompt_tokens": 1591,
+      "total_backend_latency_ms": 10048,
+      "total_tokens": 3567
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.22777899999999995,
+      "total": 10,
+      "remaining": 9.772221,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.22777899999999818,
+      "total": 100,
+      "remaining": 99.772221,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.0067235
+}

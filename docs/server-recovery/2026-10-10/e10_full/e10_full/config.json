@@ -1,0 +1,28 @@
+{
+  "model": "intfloat/multilingual-e5-base",
+  "revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+  "smoke": false,
+  "data_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "worker_sha256": "de23d4faea22b09f7178cc473c67b0d8c78f80880b268c64a9a6809710a6bb18",
+  "e01_hashes": {
+    "deskripsi.jsonl": "c75e8df3f9b71d6786462f8d0f1187ebe4234fb8dd079924f3f35707ff1b8cd2",
+    "zeroshot.jsonl": "10c07b06b13fbbf647f2b1ed12a722d9bff8f97caa6b621430d8bc0429ab38c9"
+  },
+  "views": "E01 description and source+reason; query prefixes; shared encoder",
+  "pooling": "attention-mask mean per view, concatenate, LayerNorm, dropout0.1, linear7",
+  "trainable": "all encoder and classifier parameters",
+  "encoder_lr": 2e-05,
+  "head_lr": 0.0002,
+  "batch": 8,
+  "max_length": 384,
+  "max_epochs": 12,
+  "patience": 3,
+  "epoch_selection": "inner20percent stratified Task2, reinitialize then outer-training refit",
+  "amp": "float16",
+  "gradient_checkpointing": true,
+  "seed": 42,
+  "warmup": "10percent steps then constant LR",
+  "inner_seed": "42+fold",
+  "torch": "2.11.0+cu128",
+  "gpu": "Tesla T4"
+}

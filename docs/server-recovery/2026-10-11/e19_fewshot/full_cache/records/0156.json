@@ -1,0 +1,86 @@
+{
+  "index": 156,
+  "sample_id": "TMP-9DFB6D54F9C1",
+  "fold": 5,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "f9f9527c9eea301a8c3fa5821d87ab0101401d125eeaad499d5249d5c79f1de9",
+  "image_sha256": "9dfb6d54f9c181bd7f1b9c5bfb66c8ac17f918d62ca178f18ba71edffe670c0a",
+  "transmitted_image_sha256": "83d93c2286878da4caba8f1ab1387ffb900b61a0daa3c94ac25fc8171937cc6d",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 3.6249200000000004,
+      "total": 10,
+      "remaining": 6.37508,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 3.624920000000003,
+      "total": 100,
+      "remaining": 96.37508,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 19.795847254106775,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks target, di mana disebutkan bahwa kapak tersebut \"menggambarkan **ancaman atau bahaya** terhadap hutan, yang merupakan mekanisme metaforis dari domain **bencana/jerat**\", maka kategori yang sesuai adalah:\n\n**A**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "SvDKapraGuXG_uMP3cfxkAY",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 3990,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3930
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2081500,
+        "output_tokens_cost_nanodollars": 11970000
+      },
+      "prompt_tokens": 4163,
+      "total_backend_latency_ms": 18530,
+      "total_tokens": 8153
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 3.6389715000000002,
+      "total": 10,
+      "remaining": 6.3610285,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 3.6389714999999967,
+      "total": 100,
+      "remaining": 96.3610285,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0140515,
+  "code": "A",
+  "strict_code": "INVALID",
+  "parsing_rule": "boundary_single_code",
+  "finish_reason": "stop",
+  "prediction": "BENCANA_JERAT"
+}

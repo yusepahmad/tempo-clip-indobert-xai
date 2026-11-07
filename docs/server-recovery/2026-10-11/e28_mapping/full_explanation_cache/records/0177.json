@@ -1,0 +1,90 @@
+{
+  "index": 177,
+  "sample_id": "TMP-A7072B613993",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "2998496594dcc5fad0e6cb2d0bddc6ab5229f2b88515779dda2355cda0939330",
+  "image_sha256": "a7072b613993309df090e7e0ab06c83bcb09b0822bb0bf1ff0900db3066472e8",
+  "transmitted_image_sha256": "c043015ec4f5a65a1b3424cf093d21b2235f27746b890ca2c62818d83733a6c5",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2688935,
+      "total": 10,
+      "remaining": 1.7311064999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.268893500000004,
+      "total": 100,
+      "remaining": 91.7311065,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.137606219854206,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A heavy, oversized architectural segment shaped like Garuda\u2019s wings.\",\n  \"source_properties\": \"Immense weight and unwieldy proportions of the capital's signature building.\",\n  \"target_situation\": \"The chaotic development of Indonesia's new capital project following leadership resignations.\",\n  \"mapping\": \"Lifting the heavy structure symbolizes the immense burden of sustaining a massive project abandoned by others.\",\n  \"uncertainty\": \"None.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "x5HLaoWIIeXG_uMP3cfxkAY",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 770,
+      "completion_tokens_details": {
+        "reasoning_tokens": 666
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 684000,
+        "output_tokens_cost_nanodollars": 2310000
+      },
+      "prompt_tokens": 1368,
+      "total_backend_latency_ms": 4511,
+      "total_tokens": 2138
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2718875,
+      "total": 10,
+      "remaining": 1.7281125,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.271887500000005,
+      "total": 100,
+      "remaining": 91.7281125,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.002994,
+  "fields": {
+    "source_object": "A heavy, oversized architectural segment shaped like Garuda\u2019s wings.",
+    "source_properties": "Immense weight and unwieldy proportions of the capital's signature building.",
+    "target_situation": "The chaotic development of Indonesia's new capital project following leadership resignations.",
+    "mapping": "Lifting the heavy structure symbolizes the immense burden of sustaining a massive project abandoned by others.",
+    "uncertainty": "None."
+  },
+  "explanation": "source_object: A heavy, oversized architectural segment shaped like Garuda\u2019s wings.\nsource_properties: Immense weight and unwieldy proportions of the capital's signature building.\ntarget_situation: The chaotic development of Indonesia's new capital project following leadership resignations.\nmapping: Lifting the heavy structure symbolizes the immense burden of sustaining a massive project abandoned by others.\nuncertainty: None.",
+  "finish_reason": "stop",
+  "usable": true
+}

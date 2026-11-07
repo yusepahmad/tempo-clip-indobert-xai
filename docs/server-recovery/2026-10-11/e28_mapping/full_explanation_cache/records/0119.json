@@ -1,0 +1,87 @@
+{
+  "index": 119,
+  "sample_id": "TMP-A73AC5511B6F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "50c190f28678f391ae333a732574ad6b431ef5cdc42cfc672e82633aed39de9a",
+  "image_sha256": "a73ac5511b6fdf85db01133ba546f5494e5ae1098a5dfa8e4332847b96091582",
+  "transmitted_image_sha256": "9de78f1488485fff84df326a0d82d8c3fb1fce7b0d88d355abab7eb685188877",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1794505,
+      "total": 10,
+      "remaining": 1.8205495000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.179450500000002,
+      "total": 100,
+      "remaining": 91.8205495,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.598024617880583,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Oil splatters\",\n  \"source_properties\": \"Dark, viscous liquid that stains surfaces and splashes onto nearby objects.\",\n  \"target_situation\": \"A corruption scandal involving the former head of Indonesia's upstream oil and gas regulator.\",\n  \"mapping\": \"The oil splattered on Rudi's face symbolizes being 'stained' by scandal and questions who else will be implicated.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "PJDLasKmLa2u_PUPk7_C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 100,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674500,
+        "output_tokens_cost_nanodollars": 300000
+      },
+      "prompt_tokens": 1349,
+      "total_backend_latency_ms": 1473,
+      "total_tokens": 1449
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.180425,
+      "total": 10,
+      "remaining": 1.8195750000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.180425,
+      "total": 100,
+      "remaining": 91.819575,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009745,
+  "fields": {
+    "source_object": "Oil splatters",
+    "source_properties": "Dark, viscous liquid that stains surfaces and splashes onto nearby objects.",
+    "target_situation": "A corruption scandal involving the former head of Indonesia's upstream oil and gas regulator.",
+    "mapping": "The oil splattered on Rudi's face symbolizes being 'stained' by scandal and questions who else will be implicated.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Oil splatters\nsource_properties: Dark, viscous liquid that stains surfaces and splashes onto nearby objects.\ntarget_situation: A corruption scandal involving the former head of Indonesia's upstream oil and gas regulator.\nmapping: The oil splattered on Rudi's face symbolizes being 'stained' by scandal and questions who else will be implicated.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

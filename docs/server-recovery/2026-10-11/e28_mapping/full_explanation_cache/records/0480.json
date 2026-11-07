@@ -1,0 +1,87 @@
+{
+  "index": 480,
+  "sample_id": "TMP-78D02F615C6F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3645d55629ab0fb77c39fd269295962cfa4fcf385f03ea392d9c3a7ca1bc9c6f",
+  "image_sha256": "78d02f615c6fa5ee6dc6584846b34811dd19bd30ab94fe5fdd3f78507c65077c",
+  "transmitted_image_sha256": "5d4e6724b38349230b323f8220257e8dda652a7d63d13390c383a6e074267e8c",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6879355,
+      "total": 10,
+      "remaining": 1.3120645,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.687935499999995,
+      "total": 100,
+      "remaining": 91.3120645,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.191104575060308,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"clenched fists\",\n  \"source_properties\": \"raised upward, tightly closed, repetitive, numerous, and muscular\",\n  \"target_situation\": \"mass political demonstration or public protest\",\n  \"mapping\": \"Individual physical strength and defiance multiply into collective power and unified resistance\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "l5nLatr9N8jg_uMPp72C-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 80,
+      "cost": {
+        "input_tokens_cost_nanodollars": 655500,
+        "output_tokens_cost_nanodollars": 240000
+      },
+      "prompt_tokens": 1311,
+      "total_backend_latency_ms": 1646,
+      "total_tokens": 1391
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.688831,
+      "total": 10,
+      "remaining": 1.3111689999999996,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.688830999999993,
+      "total": 100,
+      "remaining": 91.311169,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0008955,
+  "fields": {
+    "source_object": "clenched fists",
+    "source_properties": "raised upward, tightly closed, repetitive, numerous, and muscular",
+    "target_situation": "mass political demonstration or public protest",
+    "mapping": "Individual physical strength and defiance multiply into collective power and unified resistance",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: clenched fists\nsource_properties: raised upward, tightly closed, repetitive, numerous, and muscular\ntarget_situation: mass political demonstration or public protest\nmapping: Individual physical strength and defiance multiply into collective power and unified resistance\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

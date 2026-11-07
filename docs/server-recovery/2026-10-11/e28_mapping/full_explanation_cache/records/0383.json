@@ -1,0 +1,90 @@
+{
+  "index": 383,
+  "sample_id": "TMP-0F7EACD8139A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1de859100b050bc1307ce23d7a1ea38bbbd03c9fe5158244e1024a15352b46e5",
+  "image_sha256": "0f7eacd8139a1254dcf98f33e4118f912b663a5452e61deab11820a2d19ed71b",
+  "transmitted_image_sha256": "d950fc55be5c9a6698f1f8dfb523f34be47d69e5f69cb676157259c4bf9d0cb9",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.559615,
+      "total": 10,
+      "remaining": 1.4403849999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.559614999999994,
+      "total": 100,
+      "remaining": 91.440385,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.363899441435933,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A giant mechanical tripod\",\n  \"source_properties\": \"Looming, three-legged, alien-like, and menacing.\",\n  \"target_situation\": \"The Indonesian Parliament's legislative inquiry (angket) against the Corruption Eradication Commission (KPK).\",\n  \"mapping\": \"The tripod's overwhelming scale and destructive nature represent the parliamentary inquiry as a hostile attack aimed at the KPK.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "GJfLarT5Feyb_uMPzeOSwQw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 674,
+      "completion_tokens_details": {
+        "reasoning_tokens": 567
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 662500,
+        "output_tokens_cost_nanodollars": 2022000
+      },
+      "prompt_tokens": 1325,
+      "total_backend_latency_ms": 3976,
+      "total_tokens": 1999
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5622995,
+      "total": 10,
+      "remaining": 1.4377005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.562299499999995,
+      "total": 100,
+      "remaining": 91.4377005,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0026845,
+  "fields": {
+    "source_object": "A giant mechanical tripod",
+    "source_properties": "Looming, three-legged, alien-like, and menacing.",
+    "target_situation": "The Indonesian Parliament's legislative inquiry (angket) against the Corruption Eradication Commission (KPK).",
+    "mapping": "The tripod's overwhelming scale and destructive nature represent the parliamentary inquiry as a hostile attack aimed at the KPK.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A giant mechanical tripod\nsource_properties: Looming, three-legged, alien-like, and menacing.\ntarget_situation: The Indonesian Parliament's legislative inquiry (angket) against the Corruption Eradication Commission (KPK).\nmapping: The tripod's overwhelming scale and destructive nature represent the parliamentary inquiry as a hostile attack aimed at the KPK.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

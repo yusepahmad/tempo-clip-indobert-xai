@@ -1,0 +1,90 @@
+{
+  "index": 446,
+  "sample_id": "TMP-8E31B4D60694",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3bea8c11a4270ff325cfa283d2c0cc4c858de6b42814f3a7a1a5e6767bef62d7",
+  "image_sha256": "8e31b4d60694adc0e43fea74715f9c7969688aeb27a3fa81a56f22fca2f1c3d5",
+  "transmitted_image_sha256": "a354b9a71a4499143037ce919d96742d260f02e0dffc1f13f3017ad35c46e582",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.645044,
+      "total": 10,
+      "remaining": 1.3549559999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.645043999999999,
+      "total": 100,
+      "remaining": 91.354956,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.103364474140108,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A departing train.\",\n  \"source_properties\": \"Moves away on a fixed schedule, leaving behind those who fail to board in time.\",\n  \"target_situation\": \"Political parties excluded from the government cabinet seeking alternative positions or expressing protest.\",\n  \"mapping\": \"The train symbolizes the cabinet formation process; missing it equates to being left out of executive power.\",\n  \"uncertainty\": \"None.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "upjLaui6LZ-d_uMPsajYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 719,
+      "completion_tokens_details": {
+        "reasoning_tokens": 623
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 674500,
+        "output_tokens_cost_nanodollars": 2157000
+      },
+      "prompt_tokens": 1349,
+      "total_backend_latency_ms": 4472,
+      "total_tokens": 2068
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6478755,
+      "total": 10,
+      "remaining": 1.3521245000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.647875499999998,
+      "total": 100,
+      "remaining": 91.3521245,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0028315,
+  "fields": {
+    "source_object": "A departing train.",
+    "source_properties": "Moves away on a fixed schedule, leaving behind those who fail to board in time.",
+    "target_situation": "Political parties excluded from the government cabinet seeking alternative positions or expressing protest.",
+    "mapping": "The train symbolizes the cabinet formation process; missing it equates to being left out of executive power.",
+    "uncertainty": "None."
+  },
+  "explanation": "source_object: A departing train.\nsource_properties: Moves away on a fixed schedule, leaving behind those who fail to board in time.\ntarget_situation: Political parties excluded from the government cabinet seeking alternative positions or expressing protest.\nmapping: The train symbolizes the cabinet formation process; missing it equates to being left out of executive power.\nuncertainty: None.",
+  "finish_reason": "stop",
+  "usable": true
+}

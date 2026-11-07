@@ -1,0 +1,83 @@
+{
+  "index": 725,
+  "sample_id": "TMP-64B653556BFF",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "379d5a79d3748a95b0812dfc7cce5617b240a7885bc8239d1d021c432c963fe8",
+  "image_sha256": "64b653556bffe3e970c69788c95434c2adb7a02d0aa43b54fd9eb31f7ab2b080",
+  "transmitted_image_sha256": "8da2ec9759f626c36b570461340d5c2d1868504908d723d9315b7f3544ff9fe3",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.715451,
+      "total": 10,
+      "remaining": 7.284549,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.7154510000000016,
+      "total": 100,
+      "remaining": 97.284549,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.703135662013665,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "B berdasarkan deskripsi dan alasan yang disediakan dalam teks tersebut. Gambar tersebut menampilkan metafora **HEWAN_TUBUH** karena adanya aspek \"deformasi\" atau \"perilaku biologis\" yang tidak lazim, di mana tubuh tokoh digambarkan seperti jin yang muncul dari asap/aliran cahaya, yang merupakan pemetaan dari anatomi atau perilaku fisik sebagai kiasan politik.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "9OjKatrGFMjg_uMPp72C-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1663,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1584
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 796500,
+        "output_tokens_cost_nanodollars": 4989000
+      },
+      "prompt_tokens": 1593,
+      "total_backend_latency_ms": 8637,
+      "total_tokens": 3256
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.7212365,
+      "total": 10,
+      "remaining": 7.2787635,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.7212365000000034,
+      "total": 100,
+      "remaining": 97.2787635,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.0057855
+}

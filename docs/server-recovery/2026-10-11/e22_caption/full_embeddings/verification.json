@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "dimension": 1024,
+  "verifier_sha256": "ae9b7577496d9c3f49561bbbf8220b9660ccdd41dffcb5b56a62622aa353cb77",
+  "sampled_indices": [
+    0,
+    1,
+    37,
+    123,
+    369,
+    739
+  ],
+  "maximum_absolute_errors": {
+    "caption": 2.7567148208618164e-07,
+    "caption_context": 8.624047040939331e-07
+  },
+  "sha256": {
+    "embeddings.npz": "5c192df7f4ec613bb476397505bf1d0ea10db850e90ca0849c97d5e17f8e69fe",
+    "meta.json": "61806569c9b78cee717d785bccc557dba5b73612d3d28fe8e4cdc2aaa58274de",
+    "protocol.json": "eb22f10eed064a75e1551c4141d1886abd22390b428027d4c0c851c4d780af2a",
+    "input_audit.jsonl": "a2b4a1763729b48a2bc4cac674e8e71b6eb9d642b8e9175ee305a8a591fcb3a2"
+  },
+  "checks": [
+    "fully audited caption740/original inputs and source hashes",
+    "all1480 text/token/truncation audit rows reconstructed",
+    "pinned official model/snapshot hashes and frozen CLS pooling",
+    "all arrays aligned finite float32 unit vectors",
+    "six predeclared indices per view reproduced within1e-5"
+  ],
+  "limitations": [
+    "only12 embeddings independently reproduced, not all1480",
+    "no Task2 quality score"
+  ]
+}

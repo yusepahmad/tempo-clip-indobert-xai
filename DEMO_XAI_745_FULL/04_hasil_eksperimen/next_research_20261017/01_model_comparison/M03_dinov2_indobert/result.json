@@ -1,0 +1,121 @@
+{
+  "schema": "tempo-alt-encoder-joint-v1",
+  "status": "complete",
+  "model_id": "M03_dinov2_indobert",
+  "joint_model": true,
+  "overall_scores": {
+    "task1_issue": 0.4162884277637323,
+    "task2_domain_sumber": 0.3928339322605194,
+    "task3_primary_entity_type": 0.2858855671531618,
+    "min": 0.2858855671531618,
+    "mean": 0.3650026423924711
+  },
+  "fold_details": [
+    {
+      "fold": 1,
+      "selected": {
+        "config": 1,
+        "min": 0.31003603430739834,
+        "mean": 0.3571560216290719
+      },
+      "outer": {
+        "task1_issue": 0.45804427038812,
+        "task2_domain_sumber": 0.391908520550628,
+        "task3_primary_entity_type": 0.30980443974630023,
+        "min": 0.30980443974630023,
+        "mean": 0.3865857435616828
+      }
+    },
+    {
+      "fold": 2,
+      "selected": {
+        "config": 2,
+        "min": 0.26159482240395476,
+        "mean": 0.34203323798989577
+      },
+      "outer": {
+        "task1_issue": 0.4114493407550518,
+        "task2_domain_sumber": 0.3573491988274906,
+        "task3_primary_entity_type": 0.2975878193053766,
+        "min": 0.2975878193053766,
+        "mean": 0.35546211962930635
+      }
+    },
+    {
+      "fold": 3,
+      "selected": {
+        "config": 2,
+        "min": 0.2853371809749348,
+        "mean": 0.3473694325083931
+      },
+      "outer": {
+        "task1_issue": 0.4184183832049119,
+        "task2_domain_sumber": 0.37237459444807997,
+        "task3_primary_entity_type": 0.2749977833510665,
+        "min": 0.2749977833510665,
+        "mean": 0.35526358700135274
+      }
+    },
+    {
+      "fold": 4,
+      "selected": {
+        "config": 2,
+        "min": 0.3100570964351235,
+        "mean": 0.35907680760776134
+      },
+      "outer": {
+        "task1_issue": 0.4169686734408692,
+        "task2_domain_sumber": 0.4542463424226342,
+        "task3_primary_entity_type": 0.2883673274796952,
+        "min": 0.2883673274796952,
+        "mean": 0.38652744778106624
+      }
+    },
+    {
+      "fold": 5,
+      "selected": {
+        "config": 2,
+        "min": 0.30095858698155636,
+        "mean": 0.3572660258567013
+      },
+      "outer": {
+        "task1_issue": 0.40366749555387377,
+        "task2_domain_sumber": 0.3590658031845812,
+        "task3_primary_entity_type": 0.21756732900020742,
+        "min": 0.21756732900020742,
+        "mean": 0.32676687591288744
+      }
+    }
+  ],
+  "configs": [
+    {
+      "hidden": 128,
+      "dropout": 0.2,
+      "lr": 0.001,
+      "wd": 0.0001,
+      "power": 0.0,
+      "smooth": 0.0,
+      "epochs": 35
+    },
+    {
+      "hidden": 192,
+      "dropout": 0.25,
+      "lr": 0.0008,
+      "wd": 0.0002,
+      "power": 0.5,
+      "smooth": 0.05,
+      "epochs": 35
+    },
+    {
+      "hidden": 256,
+      "dropout": 0.3,
+      "lr": 0.0006,
+      "wd": 0.0003,
+      "power": 0.5,
+      "smooth": 0.05,
+      "epochs": 35
+    }
+  ],
+  "seconds": 76.06546401977539,
+  "oof_sha256": "8f2ca53e0b338aedb61fc723c02f14a7dbc5e598e2aedb9a5cc96e1cae6f36ac"
+}

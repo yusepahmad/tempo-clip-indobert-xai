@@ -1,0 +1,113 @@
+{
+  "schema": "tempo-alt-encoder-joint-v1",
+  "model_id": "M02_siglip2_indobert",
+  "joint_model": true,
+  "fold_details": [
+    {
+      "fold": 1,
+      "selected": {
+        "config": 1,
+        "min": 0.3393958800839696,
+        "mean": 0.38512395298343255
+      },
+      "outer": {
+        "task1_issue": 0.46904926838929706,
+        "task2_domain_sumber": 0.4692889988950854,
+        "task3_primary_entity_type": 0.38614811033486585,
+        "min": 0.38614811033486585,
+        "mean": 0.44149545920641614
+      }
+    },
+    {
+      "fold": 2,
+      "selected": {
+        "config": 1,
+        "min": 0.3434064966229457,
+        "mean": 0.3798012385281695
+      },
+      "outer": {
+        "task1_issue": 0.5029491498609147,
+        "task2_domain_sumber": 0.40759650938222375,
+        "task3_primary_entity_type": 0.35259691443661545,
+        "min": 0.35259691443661545,
+        "mean": 0.42104752455991795
+      }
+    },
+    {
+      "fold": 3,
+      "selected": {
+        "config": 1,
+        "min": 0.32664752498319155,
+        "mean": 0.38253371290005184
+      },
+      "outer": {
+        "task1_issue": 0.466544795876885,
+        "task2_domain_sumber": 0.3626826042069945,
+        "task3_primary_entity_type": 0.3364853026230735,
+        "min": 0.3364853026230735,
+        "mean": 0.3885709009023177
+      }
+    },
+    {
+      "fold": 4,
+      "selected": {
+        "config": 2,
+        "min": 0.29196288193346126,
+        "mean": 0.3763604933203652
+      },
+      "outer": {
+        "task1_issue": 0.4978677214280939,
+        "task2_domain_sumber": 0.42565589105722396,
+        "task3_primary_entity_type": 0.38659753096775995,
+        "min": 0.38659753096775995,
+        "mean": 0.43670704781769265
+      }
+    },
+    {
+      "fold": 5,
+      "selected": {
+        "config": 2,
+        "min": 0.3411212811836249,
+        "mean": 0.4077650627662936
+      },
+      "outer": {
+        "task1_issue": 0.47864643638093246,
+        "task2_domain_sumber": 0.4037131471489902,
+        "task3_primary_entity_type": 0.41581447305131514,
+        "min": 0.4037131471489902,
+        "mean": 0.43272468552707927
+      }
+    }
+  ],
+  "configs": [
+    {
+      "hidden": 128,
+      "dropout": 0.2,
+      "lr": 0.001,
+      "wd": 0.0001,
+      "power": 0.0,
+      "smooth": 0.0,
+      "epochs": 35
+    },
+    {
+      "hidden": 192,
+      "dropout": 0.25,
+      "lr": 0.0008,
+      "wd": 0.0002,
+      "power": 0.5,
+      "smooth": 0.05,
+      "epochs": 35
+    },
+    {
+      "hidden": 256,
+      "dropout": 0.3,
+      "lr": 0.0006,
+      "wd": 0.0003,
+      "power": 0.5,
+      "smooth": 0.05,
+      "epochs": 35
+    }
+  ],
+  "source_result": "DEMO_XAI_745_FULL/04_hasil_eksperimen/next_research_20261017/01_model_comparison/M02_siglip2_indobert/result.json",
+  "protocol": "fixed E42 5-fold OOF"
+}

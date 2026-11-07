@@ -1,0 +1,86 @@
+{
+  "index": 441,
+  "sample_id": "TMP-972E885F298A",
+  "fold": 1,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "51bbbeef5c8cd404ceb135b863ab5ebc4cd47a89e7e9795f21e6269adce1eb62",
+  "image_sha256": "972e885f298a4bff1ecaadf7363f39f16c7315c2dbb786ad2ae1d156310fee3c",
+  "transmitted_image_sha256": "8da864081ac65dd7c2ecb541a80a2b7970ca63ec3cea9f068c935bed9b65b1c9",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.209212,
+      "total": 10,
+      "remaining": 4.790788,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.209211999999994,
+      "total": 100,
+      "remaining": 94.790788,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 12.73941761511378,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan pemetaan yang diberikan dalam teks soal (meskipun terdapat sedikit ketidaksesuaian visual antara teks \"makan\" dengan gambar \"jabat tangan\"), fokus utamanya adalah pada **\"suap\"** dan **\"pertukaran keuntungan\"**. Dalam daftar kategori yang disediakan:\n\n*   **C (KONSUMSI_TRANSAKSI)** mencakup kiasan yang berkaitan dengan makanan, jamuan, jual-beli, atau **pertukaran nilai**.\n\nKarena suap perizinan dipetakan sebagai simbol pertukaran keuntungan/nilai dalam konteks korupsi, maka kategori yang paling tepat adalah C.\n\nJawab: **C**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "0PrKatLbBuXG_uMP3cfxkAY",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2578,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2435
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2034000,
+        "output_tokens_cost_nanodollars": 7734000
+      },
+      "prompt_tokens": 4068,
+      "total_backend_latency_ms": 11708,
+      "total_tokens": 6646
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.21898,
+      "total": 10,
+      "remaining": 4.78102,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.218980000000002,
+      "total": 100,
+      "remaining": 94.78102,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.009768,
+  "code": "C",
+  "strict_code": "INVALID",
+  "parsing_rule": "explicit_prefix_code",
+  "finish_reason": "stop",
+  "prediction": "KONSUMSI_TRANSAKSI"
+}

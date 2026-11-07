@@ -1,0 +1,87 @@
+{
+  "index": 687,
+  "sample_id": "TMP-6A7E22F9011D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0ba6ff767a3a83bbeded938d55ac98cf6d652a081bab9308c1f8545a2da3cade",
+  "image_sha256": "6a7e22f9011d6de2d7ed7efd96586cd97e8ef3eae1c6913694bbc5a7ae615e14",
+  "transmitted_image_sha256": "edbe9f243c082e3fb0965d68f1e8246e2c6b32d2fb93f46c321d18575b2e4ab7",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9876355,
+      "total": 10,
+      "remaining": 1.0123645000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.987635499999996,
+      "total": 100,
+      "remaining": 91.0123645,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2489969306625426,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Sawing a person in half magic trick\",\n  \"source_properties\": \"Dividing a single person into separate boxes that can be manipulated independently.\",\n  \"target_situation\": \"A cabinet reshuffle involving the removal or replacement of specific government ministers.\",\n  \"mapping\": \"Splitting the individual's body parts into different boxes symbolizes dismantling or 'stripping down' existing political elements.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "FZ_LarjELK2u_PUPk7_C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679500,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1359,
+      "total_backend_latency_ms": 1686,
+      "total_tokens": 1461
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.988621,
+      "total": 10,
+      "remaining": 1.0113789999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.988620999999995,
+      "total": 100,
+      "remaining": 91.011379,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009855,
+  "fields": {
+    "source_object": "Sawing a person in half magic trick",
+    "source_properties": "Dividing a single person into separate boxes that can be manipulated independently.",
+    "target_situation": "A cabinet reshuffle involving the removal or replacement of specific government ministers.",
+    "mapping": "Splitting the individual's body parts into different boxes symbolizes dismantling or 'stripping down' existing political elements.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Sawing a person in half magic trick\nsource_properties: Dividing a single person into separate boxes that can be manipulated independently.\ntarget_situation: A cabinet reshuffle involving the removal or replacement of specific government ministers.\nmapping: Splitting the individual's body parts into different boxes symbolizes dismantling or 'stripping down' existing political elements.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

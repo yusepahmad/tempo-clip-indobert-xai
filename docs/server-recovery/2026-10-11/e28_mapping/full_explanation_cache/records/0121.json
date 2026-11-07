@@ -1,0 +1,87 @@
+{
+  "index": 121,
+  "sample_id": "TMP-F069AE1D9DBF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "63733983d9d7deacca03b1a75124a43f41a7868ce178edaf895de37e7c434a57",
+  "image_sha256": "f069ae1d9dbf9a28449ae8042315102624254cbc68d1662dacb299a2fd16a962",
+  "transmitted_image_sha256": "7c93354a18b8e3e7490fefefb438cde7773a50bbb5266e1355f7d81f4eac934a",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.184953,
+      "total": 10,
+      "remaining": 1.8150469999999999,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.184952999999993,
+      "total": 100,
+      "remaining": 91.815047,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.2269528061151505,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"subway train\", \"source_properties\": \"shared interior, standing passengers, hanging hand grips, side-by-side positioning\", \"target_situation\": \"political relationship between Megawati and Jokowi\", \"mapping\": \"The shared cabin and parallel handles suggest they are on the same political journey, yet their physical separation reflects the 'simalakama' (dilemma) of their partnership.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "TpDLapyOGe2M_PUPu97KyQo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 663500,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1327,
+      "total_backend_latency_ms": 1830,
+      "total_tokens": 1421
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1858985,
+      "total": 10,
+      "remaining": 1.8141014999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.185898499999993,
+      "total": 100,
+      "remaining": 91.8141015,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009455,
+  "fields": {
+    "source_object": "subway train",
+    "source_properties": "shared interior, standing passengers, hanging hand grips, side-by-side positioning",
+    "target_situation": "political relationship between Megawati and Jokowi",
+    "mapping": "The shared cabin and parallel handles suggest they are on the same political journey, yet their physical separation reflects the 'simalakama' (dilemma) of their partnership.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: subway train\nsource_properties: shared interior, standing passengers, hanging hand grips, side-by-side positioning\ntarget_situation: political relationship between Megawati and Jokowi\nmapping: The shared cabin and parallel handles suggest they are on the same political journey, yet their physical separation reflects the 'simalakama' (dilemma) of their partnership.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

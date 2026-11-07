@@ -1,0 +1,87 @@
+{
+  "index": 489,
+  "sample_id": "TMP-BC62E3D41CF6",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e3f196ec1ccda9ae21131cad566b0d3143dbc84b892899c40d850c6847d34ef3",
+  "image_sha256": "bc62e3d41cf6382751cc0c74d8aad909de05cc16f8442d3c3e3dd454e47b1b5b",
+  "transmitted_image_sha256": "2a15be7ba971c4d29b67d2a6bb5f14ed7070d67e093ac9ff7333484bdc00835a",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7039,
+      "total": 10,
+      "remaining": 1.2960999999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.703900000000004,
+      "total": 100,
+      "remaining": 91.2961,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.613461463712156,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A celebration or toast over a corpse\",\n  \"source_properties\": \"People in formal wear raising wine glasses in celebration while a body lies on a stretcher.\",\n  \"target_situation\": \"Business and government conflict over PPE procurement leading to unprotected medical workers.\",\n  \"mapping\": \"Elites profit or celebrate financial gains while healthcare workers suffer the fatal consequences of supply failures.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "2ZnLaqGSJ_W6_uMPjdDjYA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676500,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1353,
+      "total_backend_latency_ms": 2071,
+      "total_tokens": 1452
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7048735,
+      "total": 10,
+      "remaining": 1.2951265000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.704873500000005,
+      "total": 100,
+      "remaining": 91.2951265,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009735,
+  "fields": {
+    "source_object": "A celebration or toast over a corpse",
+    "source_properties": "People in formal wear raising wine glasses in celebration while a body lies on a stretcher.",
+    "target_situation": "Business and government conflict over PPE procurement leading to unprotected medical workers.",
+    "mapping": "Elites profit or celebrate financial gains while healthcare workers suffer the fatal consequences of supply failures.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: A celebration or toast over a corpse\nsource_properties: People in formal wear raising wine glasses in celebration while a body lies on a stretcher.\ntarget_situation: Business and government conflict over PPE procurement leading to unprotected medical workers.\nmapping: Elites profit or celebrate financial gains while healthcare workers suffer the fatal consequences of supply failures.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,83 @@
+{
+  "index": 334,
+  "sample_id": "TMP-57B568458928",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "68e6db31fbfd5dd8f98670fb3f0494b85d195bac646e4ce75f4b5b359bd5500f",
+  "image_sha256": "57b568458928336f4c9a94a113b2ab05e77826c54267c59907b89c2eee321411",
+  "transmitted_image_sha256": "89335a615a08781f78de31d3cfd62c36bab49b7c553cac9b2f65169ddec79d48",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.2483459999999997,
+      "total": 10,
+      "remaining": 8.751654,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.248345999999998,
+      "total": 100,
+      "remaining": 98.751654,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.627410135930404,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam soal, ilustrasi buku terbuka dengan pemandangan laut tersebut dipahami secara literal sebagai simbol dari sebuah \"cerita\" atau \"laporan\" (sesuai dengan judulnya \"Cerita dari Laut\"). Karena elemen visual tersebut berfungsi sebagai representasi langsung dari isi tulisan tanpa adanya pemetaan dari ranah sumber yang berbeda untuk menjelaskan isu target secara kiasan, maka klasifikasinya adalah:\n\n**F: NON_METAFORA**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "3dnKas65MYqM_uMP54rS0QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 897,
+      "completion_tokens_details": {
+        "reasoning_tokens": 797
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 781500,
+        "output_tokens_cost_nanodollars": 2691000
+      },
+      "prompt_tokens": 1563,
+      "total_backend_latency_ms": 5620,
+      "total_tokens": 2460
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.2518185000000006,
+      "total": 10,
+      "remaining": 8.7481815,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.2518184999999988,
+      "total": 100,
+      "remaining": 98.7481815,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.0034725
+}

@@ -1,0 +1,87 @@
+{
+  "index": 51,
+  "sample_id": "TMP-6272279E614B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "557c9ab4c133822658b49009081d23450f83154bab73cecf0036e6ab8cdb6754",
+  "image_sha256": "6272279e614b1a995059b89a8d03ba1adbc9cae482b705262c9b6cfeb19e23ba",
+  "transmitted_image_sha256": "c5bf6f665f29ee3246dbe0bc4862a9331a26102994925535996478b693f9fd55",
+  "image_size": [
+    300,
+    393
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0808955,
+      "total": 10,
+      "remaining": 1.9191044999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.080895499999997,
+      "total": 100,
+      "remaining": 91.9191045,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9651535721495748,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"The Raising of the Flag on Iwo Jima photograph\",\n  \"source_properties\": \"A group of individuals straining together to hoist a pole upright in a desolate landscape.\",\n  \"target_situation\": \"Internal power struggles or collective efforts within the Golkar political party during a convention.\",\n  \"mapping\": \"The figures mimic the iconic pose, suggesting they are working together or competing to elevate the party's symbol/leadership, represented by the chair on the pole.\",\n  \"uncertainty\": \"The specific identity of each caricature and their precise role in the 2003 convention is not explicitly detailed.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "e47LariTHJ_v_uMPm5vQ6AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 139,
+      "cost": {
+        "input_tokens_cost_nanodollars": 658000,
+        "output_tokens_cost_nanodollars": 417000
+      },
+      "prompt_tokens": 1316,
+      "total_backend_latency_ms": 1981,
+      "total_tokens": 1455
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0819705,
+      "total": 10,
+      "remaining": 1.9180294999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.081970499999997,
+      "total": 100,
+      "remaining": 91.9180295,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.001075,
+  "fields": {
+    "source_object": "The Raising of the Flag on Iwo Jima photograph",
+    "source_properties": "A group of individuals straining together to hoist a pole upright in a desolate landscape.",
+    "target_situation": "Internal power struggles or collective efforts within the Golkar political party during a convention.",
+    "mapping": "The figures mimic the iconic pose, suggesting they are working together or competing to elevate the party's symbol/leadership, represented by the chair on the pole.",
+    "uncertainty": "The specific identity of each caricature and their precise role in the 2003 convention is not explicitly detailed."
+  },
+  "explanation": "source_object: The Raising of the Flag on Iwo Jima photograph\nsource_properties: A group of individuals straining together to hoist a pole upright in a desolate landscape.\ntarget_situation: Internal power struggles or collective efforts within the Golkar political party during a convention.\nmapping: The figures mimic the iconic pose, suggesting they are working together or competing to elevate the party's symbol/leadership, represented by the chair on the pole.\nuncertainty: The specific identity of each caricature and their precise role in the 2003 convention is not explicitly detailed.",
+  "finish_reason": "stop",
+  "usable": true
+}

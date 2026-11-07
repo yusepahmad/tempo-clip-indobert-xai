@@ -1,0 +1,87 @@
+{
+  "index": 298,
+  "sample_id": "TMP-86E805CE9A8D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0abe10c0caed8026934fc0b11657421c2512f2ab49377e70a4765f799d35095e",
+  "image_sha256": "86e805ce9a8d20376165cacf279819084a51f8a34d3ed9299abeb84685b0a6dd",
+  "transmitted_image_sha256": "e287ab0e62f4a6b48701542fc24378413415b9e7a5ec55205b7afae6d5f0d7f4",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4495865,
+      "total": 10,
+      "remaining": 1.5504134999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.449586499999995,
+      "total": 100,
+      "remaining": 91.5504135,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 13.751932555809617,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"black silhouette hand\", \"source_properties\": \"dark, opaque, obscuring, silencing, reaching across the face\", \"target_situation\": \"the cover-up of Munir's murder and intelligence agency secrecy\", \"mapping\": \"the hand represents an external force physically silencing and concealing the victim's identity and story, mirroring institutional efforts to hide the truth of his death.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "8ZTLasvoG4qM_uMP54rS0QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 667500,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1335,
+      "total_backend_latency_ms": 12654,
+      "total_tokens": 1426
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.450527,
+      "total": 10,
+      "remaining": 1.5494730000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.450526999999994,
+      "total": 100,
+      "remaining": 91.549473,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009405,
+  "fields": {
+    "source_object": "black silhouette hand",
+    "source_properties": "dark, opaque, obscuring, silencing, reaching across the face",
+    "target_situation": "the cover-up of Munir's murder and intelligence agency secrecy",
+    "mapping": "the hand represents an external force physically silencing and concealing the victim's identity and story, mirroring institutional efforts to hide the truth of his death.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: black silhouette hand\nsource_properties: dark, opaque, obscuring, silencing, reaching across the face\ntarget_situation: the cover-up of Munir's murder and intelligence agency secrecy\nmapping: the hand represents an external force physically silencing and concealing the victim's identity and story, mirroring institutional efforts to hide the truth of his death.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

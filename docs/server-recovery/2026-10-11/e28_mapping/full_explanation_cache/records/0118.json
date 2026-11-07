@@ -1,0 +1,87 @@
+{
+  "index": 118,
+  "sample_id": "TMP-D8A543A286F4",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "db27409728be9036f338c0be629878008e4c79e4c380a4ea145d9607d2672d8e",
+  "image_sha256": "d8a543a286f4612e4f451b2c6f57ab4cc28ec31285abeae49e3c41e66816cb45",
+  "transmitted_image_sha256": "4faeb688e7f7faf979c1f0bb7981d01a39e90a44bc6a7d79f330ff20eb59ae30",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.178481,
+      "total": 10,
+      "remaining": 1.8215190000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.178481000000005,
+      "total": 100,
+      "remaining": 91.821519,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.221023889258504,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"cigarette pack\", \"source_properties\": \"Gold packaging with white lettering, iconic star-studded arc logo, and health warning box format.\", \"target_situation\": \"Legislative 'smuggling' of a tobacco bill sponsored by the industry, ironic given World No Tobacco Day.\", \"mapping\": \"The cover mimics a cigarette brand's visual identity, turning its promotional design into a critical headline about an industry-backed law.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "NZDLap_NLJ-d_uMPsajYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 672500,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1345,
+      "total_backend_latency_ms": 1689,
+      "total_tokens": 1444
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1794505,
+      "total": 10,
+      "remaining": 1.8205495000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.179450500000002,
+      "total": 100,
+      "remaining": 91.8205495,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009695,
+  "fields": {
+    "source_object": "cigarette pack",
+    "source_properties": "Gold packaging with white lettering, iconic star-studded arc logo, and health warning box format.",
+    "target_situation": "Legislative 'smuggling' of a tobacco bill sponsored by the industry, ironic given World No Tobacco Day.",
+    "mapping": "The cover mimics a cigarette brand's visual identity, turning its promotional design into a critical headline about an industry-backed law.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: cigarette pack\nsource_properties: Gold packaging with white lettering, iconic star-studded arc logo, and health warning box format.\ntarget_situation: Legislative 'smuggling' of a tobacco bill sponsored by the industry, ironic given World No Tobacco Day.\nmapping: The cover mimics a cigarette brand's visual identity, turning its promotional design into a critical headline about an industry-backed law.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

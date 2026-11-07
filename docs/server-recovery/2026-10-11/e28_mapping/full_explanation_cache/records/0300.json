@@ -1,0 +1,87 @@
+{
+  "index": 300,
+  "sample_id": "TMP-016B39956ABA",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9fd9f09fe9fd9a062e483a1b4f62a10ce4d06c8058334c0256b3cd54582fe6cb",
+  "image_sha256": "016b39956abaf8eff2ff4c73707e4bdfc2e5d3634850c19a94396166c288567d",
+  "transmitted_image_sha256": "44d98428891970df55980bb647d2ab3c66e19000cadc8598ea00e483e1f1a1c0",
+  "image_size": [
+    472,
+    633
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.451498,
+      "total": 10,
+      "remaining": 1.5485019999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.451498,
+      "total": 100,
+      "remaining": 91.548502,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1187251079827547,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"none evident\", \"source_properties\": \"literal depiction of a mosque standing amidst a landscape of total destruction\", \"target_situation\": \"the 10th anniversary commemoration of the 2004 tsunami in Aceh, Indonesia\", \"mapping\": \"The image is a literal photograph showing a surviving structure following the natural disaster to illustrate the scale of devastation.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "B5XLaojdG8fh_uMPvKet6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 636000,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1272,
+      "total_backend_latency_ms": 1560,
+      "total_tokens": 1358
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.452392,
+      "total": 10,
+      "remaining": 1.5476080000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.452392000000003,
+      "total": 100,
+      "remaining": 91.547608,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000894,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "literal depiction of a mosque standing amidst a landscape of total destruction",
+    "target_situation": "the 10th anniversary commemoration of the 2004 tsunami in Aceh, Indonesia",
+    "mapping": "The image is a literal photograph showing a surviving structure following the natural disaster to illustrate the scale of devastation.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: literal depiction of a mosque standing amidst a landscape of total destruction\ntarget_situation: the 10th anniversary commemoration of the 2004 tsunami in Aceh, Indonesia\nmapping: The image is a literal photograph showing a surviving structure following the natural disaster to illustrate the scale of devastation.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

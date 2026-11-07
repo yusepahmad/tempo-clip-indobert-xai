@@ -1,0 +1,87 @@
+{
+  "index": 636,
+  "sample_id": "TMP-CBBF3E6FBA95",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "196f15f127b763142f4ef6ba1e71b6594fc1bf3100c640c8e32aebe177c69a92",
+  "image_sha256": "cbbf3e6fba95744ad96759808f32b5abdd219ab2df18485e86e69860fab14b96",
+  "transmitted_image_sha256": "aceb12b34fabf8aff74ccc1d2584ad73fe225a289df7f429223c68b2310b23c4",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9026695,
+      "total": 10,
+      "remaining": 1.0973305,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.902669500000002,
+      "total": 100,
+      "remaining": 91.0973305,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.184363550040871,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"black market trench coat street vendor\", \"source_properties\": \"concealed goods inside a long coat, illicit/shady character, shadowy silhouette, opening coat to reveal clandestine merchandise\", \"target_situation\": \"illegal organ trafficking syndicate in Cambodia\", \"mapping\": \"The figure's coat opens to reveal kidneys on shelves like illicit goods, symbolizing the secretive, shadowy nature of a syndicate selling organs illegally.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "tZ3Lary0GP-o_uMP1rjw6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681000,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1362,
+      "total_backend_latency_ms": 1758,
+      "total_tokens": 1457
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9036355,
+      "total": 10,
+      "remaining": 1.0963645,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.903635499999993,
+      "total": 100,
+      "remaining": 91.0963645,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000966,
+  "fields": {
+    "source_object": "black market trench coat street vendor",
+    "source_properties": "concealed goods inside a long coat, illicit/shady character, shadowy silhouette, opening coat to reveal clandestine merchandise",
+    "target_situation": "illegal organ trafficking syndicate in Cambodia",
+    "mapping": "The figure's coat opens to reveal kidneys on shelves like illicit goods, symbolizing the secretive, shadowy nature of a syndicate selling organs illegally.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: black market trench coat street vendor\nsource_properties: concealed goods inside a long coat, illicit/shady character, shadowy silhouette, opening coat to reveal clandestine merchandise\ntarget_situation: illegal organ trafficking syndicate in Cambodia\nmapping: The figure's coat opens to reveal kidneys on shelves like illicit goods, symbolizing the secretive, shadowy nature of a syndicate selling organs illegally.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

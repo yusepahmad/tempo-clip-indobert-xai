@@ -1,0 +1,87 @@
+{
+  "index": 245,
+  "sample_id": "TMP-34793040AE6B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "51f4802eef0d2408e44399d3bc56f3c53802b453791dd9ba8dd32a024bbfb8d9",
+  "image_sha256": "34793040ae6b3c78ab8c298cf69bbf1023ca0562ed3f83abee6e5bf3fcd07c26",
+  "transmitted_image_sha256": "aec7d2191ebccc596b5bc98c94188ed4aae6fc255c02800d4131a153db3936bf",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3814865,
+      "total": 10,
+      "remaining": 1.6185135000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.381486499999994,
+      "total": 100,
+      "remaining": 91.6185135,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.300684706773609,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A falling, massive three-pointed star\",\n  \"source_properties\": \"Huge, heavy, sharp-pointed, and tipping over due to its immense weight and gravity.\",\n  \"target_situation\": \"The Democratic Party's potential collapse and the need to protect political interests.\",\n  \"mapping\": \"Pramono Edhie's exertion to prop up the falling star represents the desperate effort to prevent the party's downfall.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "mZPLapXGMMCS_uMPqPCfqA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 112,
+      "cost": {
+        "input_tokens_cost_nanodollars": 665000,
+        "output_tokens_cost_nanodollars": 336000
+      },
+      "prompt_tokens": 1330,
+      "total_backend_latency_ms": 1717,
+      "total_tokens": 1442
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3824875,
+      "total": 10,
+      "remaining": 1.6175125000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.382487499999996,
+      "total": 100,
+      "remaining": 91.6175125,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001001,
+  "fields": {
+    "source_object": "A falling, massive three-pointed star",
+    "source_properties": "Huge, heavy, sharp-pointed, and tipping over due to its immense weight and gravity.",
+    "target_situation": "The Democratic Party's potential collapse and the need to protect political interests.",
+    "mapping": "Pramono Edhie's exertion to prop up the falling star represents the desperate effort to prevent the party's downfall.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A falling, massive three-pointed star\nsource_properties: Huge, heavy, sharp-pointed, and tipping over due to its immense weight and gravity.\ntarget_situation: The Democratic Party's potential collapse and the need to protect political interests.\nmapping: Pramono Edhie's exertion to prop up the falling star represents the desperate effort to prevent the party's downfall.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

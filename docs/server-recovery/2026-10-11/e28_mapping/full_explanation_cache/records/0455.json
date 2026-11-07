@@ -1,0 +1,87 @@
+{
+  "index": 455,
+  "sample_id": "TMP-1143C46C5267",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1630f8c841c2243972becd8bb00f3b4408a236cca72eac0e21180cf7318133aa",
+  "image_sha256": "1143c46c5267a3321fe3d8260bb679f934bce9cef30a85ed67f44401d6ec4541",
+  "transmitted_image_sha256": "ec76da5c4972dedb77f2f8b4b1b2b45adacd5b2ecbfd69e96f9d6f91d2459de6",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6638055,
+      "total": 10,
+      "remaining": 1.3361944999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.663805499999995,
+      "total": 100,
+      "remaining": 91.3361945,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.122922819107771,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"electrical meter being manually probed with a stick\",\n  \"source_properties\": \"primitive, improvised tool; high-tech device; precarious physical reach; manual intervention\",\n  \"target_situation\": \"mass power outage affecting one-third of Java, causing chaos for PLN\",\n  \"mapping\": \"Using a simple stick to fix complex electrical infrastructure symbolizes PLN's inadequate, primitive response to a modern technological crisis.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "AZnLaooM3t3-4w_jl7bhCg",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 1711,
+      "total_tokens": 1453
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.664797,
+      "total": 10,
+      "remaining": 1.335203,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.664796999999993,
+      "total": 100,
+      "remaining": 91.335203,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009915,
+  "fields": {
+    "source_object": "electrical meter being manually probed with a stick",
+    "source_properties": "primitive, improvised tool; high-tech device; precarious physical reach; manual intervention",
+    "target_situation": "mass power outage affecting one-third of Java, causing chaos for PLN",
+    "mapping": "Using a simple stick to fix complex electrical infrastructure symbolizes PLN's inadequate, primitive response to a modern technological crisis.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: electrical meter being manually probed with a stick\nsource_properties: primitive, improvised tool; high-tech device; precarious physical reach; manual intervention\ntarget_situation: mass power outage affecting one-third of Java, causing chaos for PLN\nmapping: Using a simple stick to fix complex electrical infrastructure symbolizes PLN's inadequate, primitive response to a modern technological crisis.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 221,
+  "sample_id": "TMP-AB1F0C69E4F3",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9e6e3574f8335d7ab45e12a7fbad459894fb157406200d16ad4ba45f89966285",
+  "image_sha256": "ab1f0c69e4f3446e566f4e9e1d8c08b3b34aee397ed4da6c1b6afc12b5f639b9",
+  "transmitted_image_sha256": "b25c5e2f7dbf4f402869dba8e4b4b418090e77982caf57f5f3195b815ce9559d",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.335658,
+      "total": 10,
+      "remaining": 1.6643419999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.335657999999995,
+      "total": 100,
+      "remaining": 91.664342,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4203236820176244,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"gold panning\", \"source_properties\": \"two people fighting over a single pan containing gold nuggets while laughing\", \"target_situation\": \"a competition between prominent figures for control over gold resources\", \"mapping\": \"the physical struggle over a pan of gold symbolizes a business rivalry for regional mineral wealth\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "6pLLarDFDP7v_uMP-q7MqQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 73,
+      "cost": {
+        "input_tokens_cost_nanodollars": 662500,
+        "output_tokens_cost_nanodollars": 219000
+      },
+      "prompt_tokens": 1325,
+      "total_backend_latency_ms": 1699,
+      "total_tokens": 1398
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3365395,
+      "total": 10,
+      "remaining": 1.6634604999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.3365395,
+      "total": 100,
+      "remaining": 91.6634605,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0008815,
+  "fields": {
+    "source_object": "gold panning",
+    "source_properties": "two people fighting over a single pan containing gold nuggets while laughing",
+    "target_situation": "a competition between prominent figures for control over gold resources",
+    "mapping": "the physical struggle over a pan of gold symbolizes a business rivalry for regional mineral wealth",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: gold panning\nsource_properties: two people fighting over a single pan containing gold nuggets while laughing\ntarget_situation: a competition between prominent figures for control over gold resources\nmapping: the physical struggle over a pan of gold symbolizes a business rivalry for regional mineral wealth\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

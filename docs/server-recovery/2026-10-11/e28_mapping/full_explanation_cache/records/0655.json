@@ -1,0 +1,87 @@
+{
+  "index": 655,
+  "sample_id": "TMP-4929AC965919",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e0ab5a0a38d6808ddb25873493f38fd784edc27e2d9625064d52a180590b79cd",
+  "image_sha256": "4929ac965919b44dce5cfc2d9e5cd2a46b94a9c1de6de5cdb3a1c15f38e38330",
+  "transmitted_image_sha256": "cab01acf7e99c7bc20c93110fbadc9ffafc62e6e970bedac0544824a18ac50ca",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.933931,
+      "total": 10,
+      "remaining": 1.0660690000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.933931000000001,
+      "total": 100,
+      "remaining": 91.066069,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9548320402391255,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"a group huddle\", \"source_properties\": \"A tight circle of people with arms linked around shoulders, facing inward and excluding outsiders.\", \"target_situation\": \"President Jokowi gathering political party support to nominate specific candidates while sidelining others.\", \"mapping\": \"The physical act of huddling symbolizes forming a closed political coalition to consolidate power and block rivals.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "NJ7LaruyI4K5_PUPwPPqwQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 683500,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1367,
+      "total_backend_latency_ms": 1584,
+      "total_tokens": 1453
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9348725,
+      "total": 10,
+      "remaining": 1.0651274999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.934872499999997,
+      "total": 100,
+      "remaining": 91.0651275,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009415,
+  "fields": {
+    "source_object": "a group huddle",
+    "source_properties": "A tight circle of people with arms linked around shoulders, facing inward and excluding outsiders.",
+    "target_situation": "President Jokowi gathering political party support to nominate specific candidates while sidelining others.",
+    "mapping": "The physical act of huddling symbolizes forming a closed political coalition to consolidate power and block rivals.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: a group huddle\nsource_properties: A tight circle of people with arms linked around shoulders, facing inward and excluding outsiders.\ntarget_situation: President Jokowi gathering political party support to nominate specific candidates while sidelining others.\nmapping: The physical act of huddling symbolizes forming a closed political coalition to consolidate power and block rivals.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

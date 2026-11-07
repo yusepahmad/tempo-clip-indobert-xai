@@ -1,0 +1,87 @@
+{
+  "index": 511,
+  "sample_id": "TMP-1C6B21EA33BC",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b0288b49f11cc183a16472490aebf72d5493d0c71959db865e79e8cb28c712db",
+  "image_sha256": "1c6b21ea33bc481818cd2f901dd69cbbfab71066f9a26375b206114aba7685f3",
+  "transmitted_image_sha256": "78fac1dce17e1016f7cb1f691439a262894893a75de7ba349e009fa892025eef",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.739085,
+      "total": 10,
+      "remaining": 1.2609150000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.739085000000003,
+      "total": 100,
+      "remaining": 91.260915,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.330006083007902,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"chess game\", \"source_properties\": \"A strategic board game with checkered patterns, opposing pieces, and calculated maneuvers.\", \"target_situation\": \"Conflicting responses from Indonesian state agencies regarding Rizieq Syihab's mass gatherings.\", \"mapping\": \"State officials are depicted as chess pieces moved across a board, illustrating strategic but disjointed maneuvers controlled by a central figure.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "cprLarzXFIqM_uMP54rS0QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 685000,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1370,
+      "total_backend_latency_ms": 1908,
+      "total_tokens": 1460
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.74004,
+      "total": 10,
+      "remaining": 1.2599599999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.740039999999993,
+      "total": 100,
+      "remaining": 91.25996,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000955,
+  "fields": {
+    "source_object": "chess game",
+    "source_properties": "A strategic board game with checkered patterns, opposing pieces, and calculated maneuvers.",
+    "target_situation": "Conflicting responses from Indonesian state agencies regarding Rizieq Syihab's mass gatherings.",
+    "mapping": "State officials are depicted as chess pieces moved across a board, illustrating strategic but disjointed maneuvers controlled by a central figure.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: chess game\nsource_properties: A strategic board game with checkered patterns, opposing pieces, and calculated maneuvers.\ntarget_situation: Conflicting responses from Indonesian state agencies regarding Rizieq Syihab's mass gatherings.\nmapping: State officials are depicted as chess pieces moved across a board, illustrating strategic but disjointed maneuvers controlled by a central figure.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 347,
+  "sample_id": "TMP-3E830FFE8C58",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "6de716a5734ec30cb3fca33cbef0de26bcb58f1292df1fce5050fb816f94aba5",
+  "image_sha256": "3e830ffe8c5815d3d6ff5d8741a2e55f78d39097f16ded6a2b23d792aaff5a17",
+  "transmitted_image_sha256": "a1851e3c71aabb4d6a089e8e03350999d12e52d76af1fc25d136f68f179997d8",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.513653,
+      "total": 10,
+      "remaining": 1.4863470000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.513653000000005,
+      "total": 100,
+      "remaining": 91.486347,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.570002526976168,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Ridesharing app interface\", \"source_properties\": \"Digital map displaying numerous car icons surrounding a single, distinct vehicle icon.\", \"target_situation\": \"The intense market competition and pressure traditional taxis faced from the rapid expansion of Uber.\", \"mapping\": \"The overwhelming number of Uber cars encircling a lone taxi on the map represents how the ride-sharing service 'surrounded' and threatened the traditional taxi industry's dominance.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "M5bLapLFLduA_PUP-tvEuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 652000,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1304,
+      "total_backend_latency_ms": 2540,
+      "total_tokens": 1405
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.514607999999999,
+      "total": 10,
+      "remaining": 1.485392000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.514607999999996,
+      "total": 100,
+      "remaining": 91.485392,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000955,
+  "fields": {
+    "source_object": "Ridesharing app interface",
+    "source_properties": "Digital map displaying numerous car icons surrounding a single, distinct vehicle icon.",
+    "target_situation": "The intense market competition and pressure traditional taxis faced from the rapid expansion of Uber.",
+    "mapping": "The overwhelming number of Uber cars encircling a lone taxi on the map represents how the ride-sharing service 'surrounded' and threatened the traditional taxi industry's dominance.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Ridesharing app interface\nsource_properties: Digital map displaying numerous car icons surrounding a single, distinct vehicle icon.\ntarget_situation: The intense market competition and pressure traditional taxis faced from the rapid expansion of Uber.\nmapping: The overwhelming number of Uber cars encircling a lone taxi on the map represents how the ride-sharing service 'surrounded' and threatened the traditional taxi industry's dominance.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

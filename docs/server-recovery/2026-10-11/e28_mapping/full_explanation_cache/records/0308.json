@@ -1,0 +1,87 @@
+{
+  "index": 308,
+  "sample_id": "TMP-20EDD5EA976E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a88a6aebae7dc27dcb296b95632e3bc2a9c44f99e136b86d8d369cdbef475784",
+  "image_sha256": "20edd5ea976e73619616cf0979b68cfd4896eb68bb9df05e03f05f7e17ed27b7",
+  "transmitted_image_sha256": "fda4fa194501a6f466c6d2167b3a9dfdb8e2f51122692bc229cb397a93650248",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4619075,
+      "total": 10,
+      "remaining": 1.5380924999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.461907499999995,
+      "total": 100,
+      "remaining": 91.5380925,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3298558900132775,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Auction or arisan gathering\", \"source_properties\": \"Bidding with numbered paddles and a gavel strike to finalize a deal.\", \"target_situation\": \"Ahok versus the DPRD over the city budget and hidden projects.\", \"mapping\": \"Legislators acting as bidders and a gavel holder symbolize the distribution of 'phantom projects' like an illegal auction or social gathering.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "N5XLaoX8JMjg_uMPp72C-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 87,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661500,
+        "output_tokens_cost_nanodollars": 261000
+      },
+      "prompt_tokens": 1323,
+      "total_backend_latency_ms": 1668,
+      "total_tokens": 1410
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.46283,
+      "total": 10,
+      "remaining": 1.5371699999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.462829999999997,
+      "total": 100,
+      "remaining": 91.53717,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009225,
+  "fields": {
+    "source_object": "Auction or arisan gathering",
+    "source_properties": "Bidding with numbered paddles and a gavel strike to finalize a deal.",
+    "target_situation": "Ahok versus the DPRD over the city budget and hidden projects.",
+    "mapping": "Legislators acting as bidders and a gavel holder symbolize the distribution of 'phantom projects' like an illegal auction or social gathering.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Auction or arisan gathering\nsource_properties: Bidding with numbered paddles and a gavel strike to finalize a deal.\ntarget_situation: Ahok versus the DPRD over the city budget and hidden projects.\nmapping: Legislators acting as bidders and a gavel holder symbolize the distribution of 'phantom projects' like an illegal auction or social gathering.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

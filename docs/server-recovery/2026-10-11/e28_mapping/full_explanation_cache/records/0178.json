@@ -1,0 +1,87 @@
+{
+  "index": 178,
+  "sample_id": "TMP-E61A33490AEC",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a37acff9e72786e2e59d2703f5105f549c72f3a3dcf25a5d4370c7ad1d732f98",
+  "image_sha256": "e61a33490aeca986a8fb750c1078752a18126c9def2f41d2194197af56464f04",
+  "transmitted_image_sha256": "d64986cfb88013e240dadbd56e2ad914519ace6a4748fa5fbf3f5098696fc2f1",
+  "image_size": [
+    603,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2718875,
+      "total": 10,
+      "remaining": 1.7281125,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.271887500000005,
+      "total": 100,
+      "remaining": 91.7281125,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4877205826342106,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"none evident\",\n  \"source_properties\": \"The image features a large, red-toned portrait of Mohammad Hoesni Thamrin with a smaller archival image integrated into his clothing.\",\n  \"target_situation\": \"The illustration honors M.H. Thamrin's historical role as an Indonesian independence fighter within the Dutch-formed People's Council.\",\n  \"mapping\": \"This is a literal commemorative portrait; the subject is directly depicted to represent himself and his political legacy.\",\n  \"uncertainty\": \"No visual analogy using an external object or metaphorical action is detected in the composition.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "z5HLaq2vFv2b_uMPj8_lqAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 134,
+      "cost": {
+        "input_tokens_cost_nanodollars": 660500,
+        "output_tokens_cost_nanodollars": 402000
+      },
+      "prompt_tokens": 1321,
+      "total_backend_latency_ms": 2044,
+      "total_tokens": 1455
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.27295,
+      "total": 10,
+      "remaining": 1.7270500000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.272949999999994,
+      "total": 100,
+      "remaining": 91.72705,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0010625,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "The image features a large, red-toned portrait of Mohammad Hoesni Thamrin with a smaller archival image integrated into his clothing.",
+    "target_situation": "The illustration honors M.H. Thamrin's historical role as an Indonesian independence fighter within the Dutch-formed People's Council.",
+    "mapping": "This is a literal commemorative portrait; the subject is directly depicted to represent himself and his political legacy.",
+    "uncertainty": "No visual analogy using an external object or metaphorical action is detected in the composition."
+  },
+  "explanation": "source_object: none evident\nsource_properties: The image features a large, red-toned portrait of Mohammad Hoesni Thamrin with a smaller archival image integrated into his clothing.\ntarget_situation: The illustration honors M.H. Thamrin's historical role as an Indonesian independence fighter within the Dutch-formed People's Council.\nmapping: This is a literal commemorative portrait; the subject is directly depicted to represent himself and his political legacy.\nuncertainty: No visual analogy using an external object or metaphorical action is detected in the composition.",
+  "finish_reason": "stop",
+  "usable": true
+}

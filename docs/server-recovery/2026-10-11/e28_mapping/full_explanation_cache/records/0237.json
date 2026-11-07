@@ -1,0 +1,90 @@
+{
+  "index": 237,
+  "sample_id": "TMP-0F2AB89F2813",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9ab8e26e31c9e760641f8941bf052824bbf9ff900a4909983d81c14e3dcf1853",
+  "image_sha256": "0f2ab89f281378a4a6511e7732f1552a5e949f58f4ae542ac7c5c2ba9c6b05a1",
+  "transmitted_image_sha256": "b2781bed153e0ddbb8cdd6da3e34f570e3f65f583a153852fd0373f16234d371",
+  "image_size": [
+    606,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3599605,
+      "total": 10,
+      "remaining": 1.6400395000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.3599605,
+      "total": 100,
+      "remaining": 91.6400395,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 11.193819391075522,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n \"source_object\": \"mosaic grid\",\n \"source_properties\": \"A single image composed of fragmented squares with differing textures, colors, and artistic renderings.\",\n \"target_situation\": \"The historical narrative of Kartini's life, which contains contrasting 'dark' and 'light' elements.\",\n \"mapping\": \"The varied visual fragments represent diverse facets or interpretations of her history, unified into one complex persona.\",\n \"uncertainty\": \"none\"\n}\n```",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "UpPLauTXNuXG_uMP3cfxkAY",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1503,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1400
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 641500,
+        "output_tokens_cost_nanodollars": 4509000
+      },
+      "prompt_tokens": 1283,
+      "total_backend_latency_ms": 8675,
+      "total_tokens": 2786
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.365111,
+      "total": 10,
+      "remaining": 1.6348889999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.365110999999999,
+      "total": 100,
+      "remaining": 91.634889,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0051505,
+  "fields": {
+    "source_object": "mosaic grid",
+    "source_properties": "A single image composed of fragmented squares with differing textures, colors, and artistic renderings.",
+    "target_situation": "The historical narrative of Kartini's life, which contains contrasting 'dark' and 'light' elements.",
+    "mapping": "The varied visual fragments represent diverse facets or interpretations of her history, unified into one complex persona.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: mosaic grid\nsource_properties: A single image composed of fragmented squares with differing textures, colors, and artistic renderings.\ntarget_situation: The historical narrative of Kartini's life, which contains contrasting 'dark' and 'light' elements.\nmapping: The varied visual fragments represent diverse facets or interpretations of her history, unified into one complex persona.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

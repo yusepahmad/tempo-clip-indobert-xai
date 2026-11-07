@@ -1,0 +1,87 @@
+{
+  "index": 412,
+  "sample_id": "TMP-1DA4BB177AF9",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "dc6960f07e69a0921e33c5ee15d7b236931cc649740d5065c1efba71f704052a",
+  "image_sha256": "1da4bb177af9fa3809cb84467363c8469616c68e527857961def0b0a63f9a0b8",
+  "transmitted_image_sha256": "df4ced351e6909de45edc860a51324b2d522208b24a708acceaec05b9856aa81",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6091055,
+      "total": 10,
+      "remaining": 1.3908945,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.609105499999998,
+      "total": 100,
+      "remaining": 91.3908945,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.832067182287574,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"two figures riding horses\", \"source_properties\": \"Silhouetted, riding toward a horizon side-by-side, mirroring traditional western or epic duel tropes.\", \"target_situation\": \"The 2019 Indonesian presidential election contest between political rivals Prabowo Subianto and Joko Widodo.\", \"mapping\": \"The physical act of riding toward a confrontation mirrors the strategic maneuvering and upcoming electoral 'duel' between these two long-standing opponents.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "6ZfLasybDr7i_uMPyOzU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674500,
+        "output_tokens_cost_nanodollars": 312000
+      },
+      "prompt_tokens": 1349,
+      "total_backend_latency_ms": 1797,
+      "total_tokens": 1453
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.610092,
+      "total": 10,
+      "remaining": 1.3899080000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.610091999999995,
+      "total": 100,
+      "remaining": 91.389908,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009865,
+  "fields": {
+    "source_object": "two figures riding horses",
+    "source_properties": "Silhouetted, riding toward a horizon side-by-side, mirroring traditional western or epic duel tropes.",
+    "target_situation": "The 2019 Indonesian presidential election contest between political rivals Prabowo Subianto and Joko Widodo.",
+    "mapping": "The physical act of riding toward a confrontation mirrors the strategic maneuvering and upcoming electoral 'duel' between these two long-standing opponents.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: two figures riding horses\nsource_properties: Silhouetted, riding toward a horizon side-by-side, mirroring traditional western or epic duel tropes.\ntarget_situation: The 2019 Indonesian presidential election contest between political rivals Prabowo Subianto and Joko Widodo.\nmapping: The physical act of riding toward a confrontation mirrors the strategic maneuvering and upcoming electoral 'duel' between these two long-standing opponents.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

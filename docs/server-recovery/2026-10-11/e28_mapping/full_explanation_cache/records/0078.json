@@ -1,0 +1,87 @@
+{
+  "index": 78,
+  "sample_id": "TMP-0EF0312521B3",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0451a2b6419541aeacb4f5e9d8875a50e585eb1d637267cc248d000f797896eb",
+  "image_sha256": "0ef0312521b3ad8547a1abc782e200af3319295fbf4f37189af9d214c7e203e1",
+  "transmitted_image_sha256": "5b8056933ed503b826560b27336667a42afd8080d385b83f148dcc72bab73efb",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1166865,
+      "total": 10,
+      "remaining": 1.8833134999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.1166865,
+      "total": 100,
+      "remaining": 91.8833135,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1631253813393414,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Scuba diving and snorkeling gear\", \"source_properties\": \"Equipment designed for underwater immersion, including a mask, snorkel, and life vest, used when submerged in deep water.\", \"target_situation\": \"The severe flooding in Jakarta and the perceived failure of Governor Anies Baswedan's flood control programs.\", \"mapping\": \"Dressing the governor in diving gear while he stands in floodwater symbolizes the overwhelming scale of the disaster and his administration's inability to keep the city dry.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "JI_Lao2zNYK5_PUPwPPqwQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 113,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 339000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 1849,
+      "total_tokens": 1460
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.117699,
+      "total": 10,
+      "remaining": 1.882301,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.117699000000002,
+      "total": 100,
+      "remaining": 91.882301,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0010125,
+  "fields": {
+    "source_object": "Scuba diving and snorkeling gear",
+    "source_properties": "Equipment designed for underwater immersion, including a mask, snorkel, and life vest, used when submerged in deep water.",
+    "target_situation": "The severe flooding in Jakarta and the perceived failure of Governor Anies Baswedan's flood control programs.",
+    "mapping": "Dressing the governor in diving gear while he stands in floodwater symbolizes the overwhelming scale of the disaster and his administration's inability to keep the city dry.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Scuba diving and snorkeling gear\nsource_properties: Equipment designed for underwater immersion, including a mask, snorkel, and life vest, used when submerged in deep water.\ntarget_situation: The severe flooding in Jakarta and the perceived failure of Governor Anies Baswedan's flood control programs.\nmapping: Dressing the governor in diving gear while he stands in floodwater symbolizes the overwhelming scale of the disaster and his administration's inability to keep the city dry.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

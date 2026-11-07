@@ -1,0 +1,83 @@
+{
+  "index": 94,
+  "sample_id": "TMP-6325ED9842C7",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "2a37f13e83473c2bec7cf43f5f49ca6d3c843ecad33ab81aaee09f0ca8ad3555",
+  "image_sha256": "6325ed9842c73c463bc24dd507b2499549f37fc04613f4512bad617061724c80",
+  "transmitted_image_sha256": "46fa70e159bc360842dd1ca1600847980417c4881f9ab17298713d4ce134b0ce",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.33380799999999944,
+      "total": 10,
+      "remaining": 9.666192,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.33380800000000477,
+      "total": 100,
+      "remaining": 99.666192,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.633337047183886,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan, ilustrasi orang yang mengambil swafoto (selfie) digunakan untuk memetakan konsep **pentas politik** dan **strategi media sosial** (memviralkan konten). Kata \"pentas\" dalam teks (\"di pentas politik nasional\") dan kata \"pertunjukan\" dalam alasan eksplisit merujuk pada domain sumber berupa pertunjukan atau panggung.\n\nOleh karena itu, ini masuk ke dalam kategori:\n**G: PERMAINAN_KONTES** (permainan, pertandingan, kompetisi atau **pertunjukan** sebagai kiasan).\n\nJawab satu kode A sampai G: **G**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "fs_KavTFG5-d_uMPlqrYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 796,
+      "completion_tokens_details": {
+        "reasoning_tokens": 659
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 766000,
+        "output_tokens_cost_nanodollars": 2388000
+      },
+      "prompt_tokens": 1532,
+      "total_backend_latency_ms": 4585,
+      "total_tokens": 2328
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.33696199999999976,
+      "total": 10,
+      "remaining": 9.663038,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.33696199999999976,
+      "total": 100,
+      "remaining": 99.663038,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.003154
+}

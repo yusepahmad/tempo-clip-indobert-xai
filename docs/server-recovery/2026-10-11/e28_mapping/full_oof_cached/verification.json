@@ -1,0 +1,93 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "macro_f1": 0.5453497246907337,
+  "folds": [
+    {
+      "fold": 1,
+      "params": {
+        "clf__C": 1,
+        "clf__class_weight": "balanced",
+        "clf__gamma": 0.1,
+        "fusion__clip_weight": 1,
+        "fusion__e5_weight": 0.5,
+        "fusion__interpretation_weight": 1,
+        "fusion__mode": "fusion_interpretation"
+      },
+      "inner_macro_f1": 0.5724953123594014
+    },
+    {
+      "fold": 2,
+      "params": {
+        "clf__C": 1,
+        "clf__class_weight": "balanced",
+        "clf__gamma": 0.1,
+        "fusion__clip_weight": 1,
+        "fusion__e5_weight": 0.5,
+        "fusion__interpretation_weight": 1,
+        "fusion__mode": "fusion_interpretation"
+      },
+      "inner_macro_f1": 0.5637154542699206
+    },
+    {
+      "fold": 3,
+      "params": {
+        "clf__C": 10,
+        "clf__class_weight": null,
+        "clf__gamma": 0.1,
+        "fusion__clip_weight": 1,
+        "fusion__e5_weight": 0.5,
+        "fusion__interpretation_weight": 1,
+        "fusion__mode": "fusion_interpretation"
+      },
+      "inner_macro_f1": 0.5740299452797114
+    },
+    {
+      "fold": 4,
+      "params": {
+        "clf__C": 1,
+        "clf__class_weight": "balanced",
+        "clf__gamma": 0.1,
+        "fusion__clip_weight": 1,
+        "fusion__e5_weight": 2,
+        "fusion__interpretation_weight": 0.5,
+        "fusion__mode": "fusion_interpretation"
+      },
+      "inner_macro_f1": 0.5461121378563308
+    },
+    {
+      "fold": 5,
+      "params": {
+        "clf__C": 1,
+        "clf__class_weight": "balanced",
+        "clf__gamma": 0.1,
+        "fusion__clip_weight": 1,
+        "fusion__e5_weight": 0.5,
+        "fusion__interpretation_weight": 1,
+        "fusion__mode": "fusion_interpretation"
+      },
+      "inner_macro_f1": 0.5644931280859086
+    }
+  ],
+  "verifier_sha256": "8877b968d6aafdbb21cae87b7e7e294287733d4bdf6b95acf5adcd2634b237f1",
+  "sha256": {
+    "protocol.json": "1acc820c82e2e5aa325612517cb29a33c085f4b11ffc2bb061d85001dbe12ac9",
+    "metrics.json": "0260c41a4c5b744ee1f5349aad1fed94ad962b993f3a4df0077ea59e38ab48ef",
+    "oof.csv": "8152a820f782c5c67c1f2305162862fc45396e9cf7f5e3f7dbe1b8440a5db970",
+    "fold_1.json": "b3816973bf2ed5e2007dd7def9f80730548ca7ba2961d1ce303952a231e6d96b",
+    "fold_2.json": "721e6656b5ff8e0e0cf66103873d5614dfba3be9be2f022ec69a9ce68bdd3cc5",
+    "fold_3.json": "58f656d4a320e06dd5b1d9ddd18a88f8d1caae731cc2a4abe7761a49b21b7baa",
+    "fold_4.json": "666d5c8e572947344fee60a52849d58d6d0475e00d68a6cb678e60b08666bbc1",
+    "fold_5.json": "6ff40681e1225ab121c3d5a05fcf481628f3a07f58f1bc58737097a505256660"
+  },
+  "checks": [
+    "original740 IDs/truth/baselinefold and pinned inputs/model/sources",
+    "612grid ordering/firstargmax and all selectedinner3 scores reproduced",
+    "all training-only scaler metadata/outerrefits/740 predictions reproduced",
+    "manual seven-class confusion/perclass/MacroF1"
+  ],
+  "limitations": [
+    "full grid not rerun; embeddings reproduced only on predeclared12 view/sample pairs",
+    "repeated experiment selection bias remains"
+  ]
+}

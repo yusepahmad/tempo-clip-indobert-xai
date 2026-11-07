@@ -1,0 +1,87 @@
+{
+  "index": 486,
+  "sample_id": "TMP-FD73551655F6",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bb089e2f15e4a7cf7d40def3600cd1ba68678f80a362540becbc4f8955ae1c9b",
+  "image_sha256": "fd73551655f6d50fda35e9b1b94e181d05e3d157aaa6350d5a4549b85255b9ba",
+  "transmitted_image_sha256": "c0c33552f09468bc7db45ca796d73dfbd810e622da780933a6182396b3151bfb",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7008305,
+      "total": 10,
+      "remaining": 1.2991694999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.700830499999995,
+      "total": 100,
+      "remaining": 91.2991695,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.961467836983502,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A person wearing a Gojek uniform and helmet with Telkomsel logos\",\n  \"source_properties\": \"The uniform is green and black; the person is turned away, making a hand gesture.\",\n  \"target_situation\": \"Telkom's plan to acquire Gojek shares through its subsidiary Telkomsel.\",\n  \"mapping\": \"The Gojek rider wearing Telkomsel branding represents the integration of both companies' operations and identity.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "x5nLatGBLO2M_PUPz_vKgQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 112,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681000,
+        "output_tokens_cost_nanodollars": 336000
+      },
+      "prompt_tokens": 1362,
+      "total_backend_latency_ms": 1760,
+      "total_tokens": 1474
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7018475,
+      "total": 10,
+      "remaining": 1.2981525000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.7018475,
+      "total": 100,
+      "remaining": 91.2981525,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.001017,
+  "fields": {
+    "source_object": "A person wearing a Gojek uniform and helmet with Telkomsel logos",
+    "source_properties": "The uniform is green and black; the person is turned away, making a hand gesture.",
+    "target_situation": "Telkom's plan to acquire Gojek shares through its subsidiary Telkomsel.",
+    "mapping": "The Gojek rider wearing Telkomsel branding represents the integration of both companies' operations and identity.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A person wearing a Gojek uniform and helmet with Telkomsel logos\nsource_properties: The uniform is green and black; the person is turned away, making a hand gesture.\ntarget_situation: Telkom's plan to acquire Gojek shares through its subsidiary Telkomsel.\nmapping: The Gojek rider wearing Telkomsel branding represents the integration of both companies' operations and identity.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 91,
+  "sample_id": "TMP-C121F6A7C586",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "d040a5303a4b92588ef96dc242af2c2a89ea090411ffbb047661abe5b430426a",
+  "image_sha256": "c121f6a7c586e60c330f386517e792b8fe0380299e325bd9876d3b9ee0ae971e",
+  "transmitted_image_sha256": "5f3979cc2ae17cf832375cf5c6c50034fbc4ccd0e86114f2927d86b4cbac2912",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.132138,
+      "total": 10,
+      "remaining": 1.8678620000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.132137999999998,
+      "total": 100,
+      "remaining": 91.867862,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.241392227821052,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"vulnerable body\", \"source_properties\": \"a hole in the torso with a concealed intruder emerging\", \"target_situation\": \"The Indonesian government's National Data Center (PDN) being compromised by hackers.\", \"mapping\": \"The hole represents the fragile digital defenses, and the hidden intruder symbolizes hackers infiltrating and controlling sensitive national data.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "fI_Latv4B8jg_uMPp72C-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 82,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679000,
+        "output_tokens_cost_nanodollars": 246000
+      },
+      "prompt_tokens": 1358,
+      "total_backend_latency_ms": 1700,
+      "total_tokens": 1440
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.133063,
+      "total": 10,
+      "remaining": 1.866937,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.133063000000007,
+      "total": 100,
+      "remaining": 91.866937,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000925,
+  "fields": {
+    "source_object": "vulnerable body",
+    "source_properties": "a hole in the torso with a concealed intruder emerging",
+    "target_situation": "The Indonesian government's National Data Center (PDN) being compromised by hackers.",
+    "mapping": "The hole represents the fragile digital defenses, and the hidden intruder symbolizes hackers infiltrating and controlling sensitive national data.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: vulnerable body\nsource_properties: a hole in the torso with a concealed intruder emerging\ntarget_situation: The Indonesian government's National Data Center (PDN) being compromised by hackers.\nmapping: The hole represents the fragile digital defenses, and the hidden intruder symbolizes hackers infiltrating and controlling sensitive national data.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,90 @@
+{
+  "index": 42,
+  "sample_id": "TMP-05F0849673CB",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "89052eeb65f467e580e54d905d0448acf28c6af9f5dc3d72fca019e9d1ef2c36",
+  "image_sha256": "05f0849673cbb4fc20f176aceb872f1cd00a3311f80b6b1713d2734af896e4f1",
+  "transmitted_image_sha256": "86c0357899648f541768187315d59d7676dc2d4501510b13e5f96e16fb4b4892",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0685325,
+      "total": 10,
+      "remaining": 1.9314675000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.068532500000003,
+      "total": 100,
+      "remaining": 91.9314675,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.838114665355533,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n\"source_object\": \"Binoculars\",\n\"source_properties\": \"Optical tools designed for magnification, surveillance, and focusing on distant, specific targets through glass lenses.\",\n\"target_situation\": \"Former President Jokowi\u2019s active campaigning and strategic focus on the Jakarta and Central Java regional elections.\",\n\"mapping\": \"The binoculars represent Jokowi\u2019s targeted surveillance and intervention, magnifying his political influence to closely monitor and impact specific provincial races.\",\n\"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "P47LatvrDL7i_uMPyOzU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1348,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1246
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 669500,
+        "output_tokens_cost_nanodollars": 4044000
+      },
+      "prompt_tokens": 1339,
+      "total_backend_latency_ms": 7297,
+      "total_tokens": 2687
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.073246,
+      "total": 10,
+      "remaining": 1.9267540000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.073245999999997,
+      "total": 100,
+      "remaining": 91.926754,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0047135,
+  "fields": {
+    "source_object": "Binoculars",
+    "source_properties": "Optical tools designed for magnification, surveillance, and focusing on distant, specific targets through glass lenses.",
+    "target_situation": "Former President Jokowi\u2019s active campaigning and strategic focus on the Jakarta and Central Java regional elections.",
+    "mapping": "The binoculars represent Jokowi\u2019s targeted surveillance and intervention, magnifying his political influence to closely monitor and impact specific provincial races.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Binoculars\nsource_properties: Optical tools designed for magnification, surveillance, and focusing on distant, specific targets through glass lenses.\ntarget_situation: Former President Jokowi\u2019s active campaigning and strategic focus on the Jakarta and Central Java regional elections.\nmapping: The binoculars represent Jokowi\u2019s targeted surveillance and intervention, magnifying his political influence to closely monitor and impact specific provincial races.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

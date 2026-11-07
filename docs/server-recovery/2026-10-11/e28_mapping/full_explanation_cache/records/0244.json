@@ -1,0 +1,90 @@
+{
+  "index": 244,
+  "sample_id": "TMP-3950DA9B1729",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "4daaba265ffba090d7faf566212bdefda5cc5c2cac4f4f96dbc2d564989d8c36",
+  "image_sha256": "3950da9b17295418d671c64685d201a4a4063d0fdb51e86d8dcb8ae107302686",
+  "transmitted_image_sha256": "25df9a9c46ae144b4e6f8e60dfaa2d2bd938d2039a6c3c0e1b5f6b19a73c4002",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3782645,
+      "total": 10,
+      "remaining": 1.6217354999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.3782645,
+      "total": 100,
+      "remaining": 91.6217355,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.767947973217815,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"source_object\": \"A superhero revealing their costume\",\n  \"source_properties\": \"Tearing open outer garments to reveal a concealed, powerful identity underneath.\",\n  \"target_situation\": \"A prisoner maintaining his business empire and influence while behind bars.\",\n  \"mapping\": \"Opening the prison stripes reveals a suit, symbolizing that prisoner status merely hides his ongoing 'super' influence.\",\n  \"uncertainty\": \"None.\"\n}\n```",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "kJPLaprmH6Cm_uMPsO6HgA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 853,
+      "completion_tokens_details": {
+        "reasoning_tokens": 753
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 663000,
+        "output_tokens_cost_nanodollars": 2559000
+      },
+      "prompt_tokens": 1326,
+      "total_backend_latency_ms": 5072,
+      "total_tokens": 2179
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3814865,
+      "total": 10,
+      "remaining": 1.6185135000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.381486499999994,
+      "total": 100,
+      "remaining": 91.6185135,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.003222,
+  "fields": {
+    "source_object": "A superhero revealing their costume",
+    "source_properties": "Tearing open outer garments to reveal a concealed, powerful identity underneath.",
+    "target_situation": "A prisoner maintaining his business empire and influence while behind bars.",
+    "mapping": "Opening the prison stripes reveals a suit, symbolizing that prisoner status merely hides his ongoing 'super' influence.",
+    "uncertainty": "None."
+  },
+  "explanation": "source_object: A superhero revealing their costume\nsource_properties: Tearing open outer garments to reveal a concealed, powerful identity underneath.\ntarget_situation: A prisoner maintaining his business empire and influence while behind bars.\nmapping: Opening the prison stripes reveals a suit, symbolizing that prisoner status merely hides his ongoing 'super' influence.\nuncertainty: None.",
+  "finish_reason": "stop",
+  "usable": true
+}

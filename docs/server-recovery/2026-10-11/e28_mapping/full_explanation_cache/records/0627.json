@@ -1,0 +1,87 @@
+{
+  "index": 627,
+  "sample_id": "TMP-FC626F7FA273",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8fa4bf576ddc210bd7cbe6a6e712e47f2fcef5049791e36c8a5a932028198660",
+  "image_sha256": "fc626f7fa2731707c97c2b377545906b754af4e86c0456539f2284456462a43f",
+  "transmitted_image_sha256": "f9da0a30b18d323e83a5b394e6913f0878c3644a901f71b75afebea587f0fe6e",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8924225,
+      "total": 10,
+      "remaining": 1.1075774999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.892422499999995,
+      "total": 100,
+      "remaining": 91.1075775,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.5868944679386914,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"AI-generated style caricature\",\n  \"source_properties\": \"Exaggerated physical proportions, round shape, and a rigid saluting military figure with stylized, artificial-looking features.\",\n  \"target_situation\": \"Alleged intimidation by authorities to coerce support for specific political candidates during an election cycle.\",\n  \"mapping\": \"The round, jovial figure represents a candidate's 'Gemoy' public persona, while the saluting officer illustrates the underlying command and enforcement.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "fZ3Lata1POfU_uMPq5CXyQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 120,
+      "cost": {
+        "input_tokens_cost_nanodollars": 683000,
+        "output_tokens_cost_nanodollars": 360000
+      },
+      "prompt_tokens": 1366,
+      "total_backend_latency_ms": 2391,
+      "total_tokens": 1486
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8934655,
+      "total": 10,
+      "remaining": 1.1065345000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.893465500000005,
+      "total": 100,
+      "remaining": 91.1065345,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001043,
+  "fields": {
+    "source_object": "AI-generated style caricature",
+    "source_properties": "Exaggerated physical proportions, round shape, and a rigid saluting military figure with stylized, artificial-looking features.",
+    "target_situation": "Alleged intimidation by authorities to coerce support for specific political candidates during an election cycle.",
+    "mapping": "The round, jovial figure represents a candidate's 'Gemoy' public persona, while the saluting officer illustrates the underlying command and enforcement.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: AI-generated style caricature\nsource_properties: Exaggerated physical proportions, round shape, and a rigid saluting military figure with stylized, artificial-looking features.\ntarget_situation: Alleged intimidation by authorities to coerce support for specific political candidates during an election cycle.\nmapping: The round, jovial figure represents a candidate's 'Gemoy' public persona, while the saluting officer illustrates the underlying command and enforcement.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

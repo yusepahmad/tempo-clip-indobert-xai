@@ -1,0 +1,168 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "route": "v2",
+  "macro_f1": 0.37948014866221313,
+  "raw_invalid_predictions": 78,
+  "protocol": "zero_shot_plus_outer_training_majority_fallback",
+  "classes": [
+    "BENCANA_JERAT",
+    "HEWAN_TUBUH",
+    "KONSUMSI_TRANSAKSI",
+    "LAINNYA",
+    "MESIN_INFRASTRUKTUR",
+    "NON_METAFORA",
+    "PERMAINAN_KONTES"
+  ],
+  "confusion_matrix": [
+    [
+      69,
+      4,
+      4,
+      0,
+      13,
+      0,
+      10
+    ],
+    [
+      15,
+      34,
+      11,
+      0,
+      18,
+      1,
+      11
+    ],
+    [
+      6,
+      0,
+      50,
+      0,
+      16,
+      0,
+      12
+    ],
+    [
+      12,
+      11,
+      6,
+      1,
+      11,
+      0,
+      22
+    ],
+    [
+      41,
+      9,
+      16,
+      1,
+      125,
+      1,
+      21
+    ],
+    [
+      30,
+      13,
+      6,
+      0,
+      21,
+      1,
+      12
+    ],
+    [
+      8,
+      4,
+      5,
+      0,
+      12,
+      0,
+      77
+    ]
+  ],
+  "per_class_f1": [
+    0.49110320284697506,
+    0.4121212121212121,
+    0.5494505494505495,
+    0.03076923076923077,
+    0.5813953488372093,
+    0.023255813953488372,
+    0.5682656826568265
+  ],
+  "fallback_policies": {
+    "1": {
+      "label": "MESIN_INFRASTRUKTUR",
+      "counts": {
+        "BENCANA_JERAT": 86,
+        "HEWAN_TUBUH": 64,
+        "KONSUMSI_TRANSAKSI": 69,
+        "LAINNYA": 50,
+        "MESIN_INFRASTRUKTUR": 167,
+        "NON_METAFORA": 71,
+        "PERMAINAN_KONTES": 85
+      },
+      "training_samples": 592,
+      "test_samples": 148
+    },
+    "2": {
+      "label": "MESIN_INFRASTRUKTUR",
+      "counts": {
+        "BENCANA_JERAT": 82,
+        "HEWAN_TUBUH": 68,
+        "KONSUMSI_TRANSAKSI": 64,
+        "LAINNYA": 50,
+        "MESIN_INFRASTRUKTUR": 176,
+        "NON_METAFORA": 62,
+        "PERMAINAN_KONTES": 90
+      },
+      "training_samples": 592,
+      "test_samples": 148
+    },
+    "3": {
+      "label": "MESIN_INFRASTRUKTUR",
+      "counts": {
+        "BENCANA_JERAT": 76,
+        "HEWAN_TUBUH": 74,
+        "KONSUMSI_TRANSAKSI": 67,
+        "LAINNYA": 49,
+        "MESIN_INFRASTRUKTUR": 171,
+        "NON_METAFORA": 68,
+        "PERMAINAN_KONTES": 87
+      },
+      "training_samples": 592,
+      "test_samples": 148
+    },
+    "4": {
+      "label": "MESIN_INFRASTRUKTUR",
+      "counts": {
+        "BENCANA_JERAT": 78,
+        "HEWAN_TUBUH": 79,
+        "KONSUMSI_TRANSAKSI": 68,
+        "LAINNYA": 51,
+        "MESIN_INFRASTRUKTUR": 172,
+        "NON_METAFORA": 64,
+        "PERMAINAN_KONTES": 80
+      },
+      "training_samples": 592,
+      "test_samples": 148
+    },
+    "5": {
+      "label": "MESIN_INFRASTRUKTUR",
+      "counts": {
+        "BENCANA_JERAT": 78,
+        "HEWAN_TUBUH": 75,
+        "KONSUMSI_TRANSAKSI": 68,
+        "LAINNYA": 52,
+        "MESIN_INFRASTRUKTUR": 170,
+        "NON_METAFORA": 67,
+        "PERMAINAN_KONTES": 82
+      },
+      "training_samples": 592,
+      "test_samples": 148
+    }
+  },
+  "verifier_sha256": "bcb8754aa2c9f7b81487b748b102bc307097f076bb5d19b27931000dc501e051",
+  "fallback_source_sha256": "8aea05534122e682399ce422c59cd66fcd2f3ee115655280a6f6b4490a59b6b4",
+  "original_verification_sha256": "dcaf3c2ff5ac31bc9bf0f568afcb121832d13b9e93a8637cbdd3c1b1443ec11a",
+  "oof_sha256": "c6b339a23117a25bde48d4ca8ba34cff57f46e7938f7bdaa5a6b845de6d8065c",
+  "parsed_metrics_sha256": "21787354718c908e347bfc3ac9564aac7b7daf4c9dd05ae80534da2321907a23"
+}

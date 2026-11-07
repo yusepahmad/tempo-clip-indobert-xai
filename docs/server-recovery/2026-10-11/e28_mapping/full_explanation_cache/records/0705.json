@@ -1,0 +1,87 @@
+{
+  "index": 705,
+  "sample_id": "TMP-0F0C6D5016F1",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "beb1c6fdc42b85ada62100c839bee144d6ca601074a89f40b91994a1c3b93f08",
+  "image_sha256": "0f0c6d5016f1d50b5e68c79362f82576c17473a4aa6b0b30aa5addaeb94c5c84",
+  "transmitted_image_sha256": "3e2b392373f1823f15a51e9eee30a8e5a712e1b87a7c6a5c59892491d871d448",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0232075,
+      "total": 10,
+      "remaining": 0.9767925000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.023207499999998,
+      "total": 100,
+      "remaining": 90.9767925,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2311828802339733,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"broom (sapu lidi)\",\n  \"source_properties\": \"A tool used for cleaning, sweeping away dirt, and tidying up a space.\",\n  \"target_situation\": \"Internal reform of the Indonesian National Police (Polri) led by Listyo Sigit Prabowo.\",\n  \"mapping\": \"Holding the broom symbolizes the act of 'cleaning up' corruption or internal issues within the police force.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "mZ_Las_2F8CS_uMPqPCfqA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 1645,
+      "total_tokens": 1458
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0242015,
+      "total": 10,
+      "remaining": 0.9757984999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.024201500000004,
+      "total": 100,
+      "remaining": 90.9757985,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000994,
+  "fields": {
+    "source_object": "broom (sapu lidi)",
+    "source_properties": "A tool used for cleaning, sweeping away dirt, and tidying up a space.",
+    "target_situation": "Internal reform of the Indonesian National Police (Polri) led by Listyo Sigit Prabowo.",
+    "mapping": "Holding the broom symbolizes the act of 'cleaning up' corruption or internal issues within the police force.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: broom (sapu lidi)\nsource_properties: A tool used for cleaning, sweeping away dirt, and tidying up a space.\ntarget_situation: Internal reform of the Indonesian National Police (Polri) led by Listyo Sigit Prabowo.\nmapping: Holding the broom symbolizes the act of 'cleaning up' corruption or internal issues within the police force.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

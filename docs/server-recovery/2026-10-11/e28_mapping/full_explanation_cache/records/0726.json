@@ -1,0 +1,87 @@
+{
+  "index": 726,
+  "sample_id": "TMP-92EB4CDBDEBC",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "61eb6b94d24cc9d8914466f66b3a1d4c9394b52e4ffc8b6e59a20792ed655029",
+  "image_sha256": "92eb4cdbdebc58bc103d9997a383c52791e36b3560274bb093b8b831b32d7fc3",
+  "transmitted_image_sha256": "91cfeb7042843571533a1abd4cf443309e3654d17127df293bd76b74b8220f30",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.050905,
+      "total": 10,
+      "remaining": 0.9490949999999998,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.050905,
+      "total": 100,
+      "remaining": 90.949095,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1597138280048966,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"shadow boxing\", \"source_properties\": \"Small figures behind a large central figure, one holding a sword and another a scale of justice.\", \"target_situation\": \"Internal power struggle between close allies of President Prabowo involving police and prosecutors.\", \"mapping\": \"The hidden figures represent rival factions competing for influence behind the president's back, using legal and enforcement tools as weapons.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "IqDLavqhAoqM_uMP54rS0QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 688000,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1376,
+      "total_backend_latency_ms": 1709,
+      "total_tokens": 1466
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.051863,
+      "total": 10,
+      "remaining": 0.9481369999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.051862999999997,
+      "total": 100,
+      "remaining": 90.948137,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000958,
+  "fields": {
+    "source_object": "shadow boxing",
+    "source_properties": "Small figures behind a large central figure, one holding a sword and another a scale of justice.",
+    "target_situation": "Internal power struggle between close allies of President Prabowo involving police and prosecutors.",
+    "mapping": "The hidden figures represent rival factions competing for influence behind the president's back, using legal and enforcement tools as weapons.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: shadow boxing\nsource_properties: Small figures behind a large central figure, one holding a sword and another a scale of justice.\ntarget_situation: Internal power struggle between close allies of President Prabowo involving police and prosecutors.\nmapping: The hidden figures represent rival factions competing for influence behind the president's back, using legal and enforcement tools as weapons.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

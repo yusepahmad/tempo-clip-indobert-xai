@@ -1,0 +1,87 @@
+{
+  "index": 381,
+  "sample_id": "TMP-AF663325BEE0",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5bb15b16877e0e7e18b19176f8e1ebaf423d54d7d2393af6ce22a6688fb96f73",
+  "image_sha256": "af663325bee0063a143ad5f73909638d14aa2e9b3a5654b3ca31678fa0f555bb",
+  "transmitted_image_sha256": "97999d368f928569893ca58cabf55b9f3517d685225878dc2855dd53ec027825",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.557666,
+      "total": 10,
+      "remaining": 1.4423340000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.557665999999998,
+      "total": 100,
+      "remaining": 91.442334,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.445877378806472,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A pointillist-style mosaic composed of tiny human figures\",\n  \"source_properties\": \"Small individual entities clustered to form a large, recognizable facial profile.\",\n  \"target_situation\": \"Societal division and collective identity during regional elections (Pilkada) in Indonesia.\",\n  \"mapping\": \"Individual citizens' actions and religious identities aggregate to shape the collective national face or social climate.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "CpfLapv8KJ_v_uMPm5vQ6AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "cost": {
+        "input_tokens_cost_nanodollars": 658500,
+        "output_tokens_cost_nanodollars": 312000
+      },
+      "prompt_tokens": 1317,
+      "total_backend_latency_ms": 2105,
+      "total_tokens": 1421
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5586365,
+      "total": 10,
+      "remaining": 1.4413634999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.558636500000006,
+      "total": 100,
+      "remaining": 91.4413635,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009705,
+  "fields": {
+    "source_object": "A pointillist-style mosaic composed of tiny human figures",
+    "source_properties": "Small individual entities clustered to form a large, recognizable facial profile.",
+    "target_situation": "Societal division and collective identity during regional elections (Pilkada) in Indonesia.",
+    "mapping": "Individual citizens' actions and religious identities aggregate to shape the collective national face or social climate.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: A pointillist-style mosaic composed of tiny human figures\nsource_properties: Small individual entities clustered to form a large, recognizable facial profile.\ntarget_situation: Societal division and collective identity during regional elections (Pilkada) in Indonesia.\nmapping: Individual citizens' actions and religious identities aggregate to shape the collective national face or social climate.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

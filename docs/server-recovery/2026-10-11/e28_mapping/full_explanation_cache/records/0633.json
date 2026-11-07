@@ -1,0 +1,87 @@
+{
+  "index": 633,
+  "sample_id": "TMP-602319B1B385",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "71d72fc70ac8185767d7790e0b6709fe34e80f746e5545964acdfa5a9426aa4b",
+  "image_sha256": "602319b1b385af8aa7002dab3e364a74bf1b276314eff359948d1863ceec19d6",
+  "transmitted_image_sha256": "c307568397a534429ce1da3f18208dea74411173b8b5e467bb61033b88eb10b7",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8998065,
+      "total": 10,
+      "remaining": 1.1001934999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.899806499999997,
+      "total": 100,
+      "remaining": 91.1001935,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1767416819930077,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"track and field finish line\", \"source_properties\": \"A final boundary line being physically moved away from runners on a competitive track.\", \"target_situation\": \"Proposed constitutional changes to extend the Indonesian presidential term limit beyond the current two-term cap.\", \"mapping\": \"Moving the finish line represents extending a fixed term limit to delay the official end of power.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "pZ3LaqvrENTh_uMProyGuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673000,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1346,
+      "total_backend_latency_ms": 1782,
+      "total_tokens": 1432
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9007375,
+      "total": 10,
+      "remaining": 1.0992625,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.900737500000005,
+      "total": 100,
+      "remaining": 91.0992625,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000931,
+  "fields": {
+    "source_object": "track and field finish line",
+    "source_properties": "A final boundary line being physically moved away from runners on a competitive track.",
+    "target_situation": "Proposed constitutional changes to extend the Indonesian presidential term limit beyond the current two-term cap.",
+    "mapping": "Moving the finish line represents extending a fixed term limit to delay the official end of power.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: track and field finish line\nsource_properties: A final boundary line being physically moved away from runners on a competitive track.\ntarget_situation: Proposed constitutional changes to extend the Indonesian presidential term limit beyond the current two-term cap.\nmapping: Moving the finish line represents extending a fixed term limit to delay the official end of power.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

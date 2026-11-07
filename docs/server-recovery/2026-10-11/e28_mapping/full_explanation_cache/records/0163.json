@@ -1,0 +1,90 @@
+{
+  "index": 163,
+  "sample_id": "TMP-8114A5CB022A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "06a2448ee4f7d0335548a66a22c2da9a251a7e8fde5f008a02d50fe9bc5e743f",
+  "image_sha256": "8114a5cb022a96c7ad94f7b734c860c1abd471bf85ee37bdb7b35f6957620b63",
+  "transmitted_image_sha256": "383fb22f5aed34010c11dd06dea6990da0335ad3b0522afbab0d7b4c86591cb5",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.245857,
+      "total": 10,
+      "remaining": 1.7541429999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.245857,
+      "total": 100,
+      "remaining": 91.754143,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.078062420710921,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"a dark, heavy fabric or surface layer\",\n  \"source_properties\": \"opaque, obscuring what lies beneath, and being peeled back\",\n  \"target_situation\": \"Indonesia's economic recovery from the COVID-19 pandemic in 2022\",\n  \"mapping\": \"Lifting the dark, industrial shroud represents uncovering a brighter, sustainable economic future as the nation transitions toward recovery.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "aJHLasOFEufU_uMPq5CXyQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1483,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1378
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 683000,
+        "output_tokens_cost_nanodollars": 4449000
+      },
+      "prompt_tokens": 1366,
+      "total_backend_latency_ms": 7652,
+      "total_tokens": 2849
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.250989,
+      "total": 10,
+      "remaining": 1.7490109999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.250989000000004,
+      "total": 100,
+      "remaining": 91.749011,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.005132,
+  "fields": {
+    "source_object": "a dark, heavy fabric or surface layer",
+    "source_properties": "opaque, obscuring what lies beneath, and being peeled back",
+    "target_situation": "Indonesia's economic recovery from the COVID-19 pandemic in 2022",
+    "mapping": "Lifting the dark, industrial shroud represents uncovering a brighter, sustainable economic future as the nation transitions toward recovery.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: a dark, heavy fabric or surface layer\nsource_properties: opaque, obscuring what lies beneath, and being peeled back\ntarget_situation: Indonesia's economic recovery from the COVID-19 pandemic in 2022\nmapping: Lifting the dark, industrial shroud represents uncovering a brighter, sustainable economic future as the nation transitions toward recovery.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

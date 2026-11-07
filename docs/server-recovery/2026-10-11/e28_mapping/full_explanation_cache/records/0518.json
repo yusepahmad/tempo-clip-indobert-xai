@@ -1,0 +1,90 @@
+{
+  "index": 518,
+  "sample_id": "TMP-AE015366F9E0",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8e21d75a01e0e621b9c0985b528822f241e5fd84e7893f879882c43ba89de17a",
+  "image_sha256": "ae015366f9e039dd4f17ccb8f5a9bd0cebd42c50c3dc9f61f1b97c8921317ed6",
+  "transmitted_image_sha256": "474122e6eecfdb5186df669e2e389792b6d188067eb0078d6f9cad33a4f59295",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7457725,
+      "total": 10,
+      "remaining": 1.2542275000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.745772500000001,
+      "total": 100,
+      "remaining": 91.2542275,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.6220550667494535,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n \"source_object\": \"Undercover intelligence operative\",\n \"source_properties\": \"Equipped with a handgun, walkie-talkie, and disguising accessories for covert field operations.\",\n \"target_situation\": \"The National Intelligence Agency's (BIN) controversial involvement in medical COVID-19 testing and pandemic management.\",\n \"mapping\": \"The operative represents BIN's clandestine, security-focused approach infiltrating a medical setting, prioritizing intelligence tactics over standard public health transparency and reporting.\",\n \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "nJrLauu1GKCm_uMPsO6HgA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 861,
+      "completion_tokens_details": {
+        "reasoning_tokens": 748
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 680500,
+        "output_tokens_cost_nanodollars": 2583000
+      },
+      "prompt_tokens": 1361,
+      "total_backend_latency_ms": 5302,
+      "total_tokens": 2222
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.749036,
+      "total": 10,
+      "remaining": 1.2509639999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.749036000000004,
+      "total": 100,
+      "remaining": 91.250964,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0032635,
+  "fields": {
+    "source_object": "Undercover intelligence operative",
+    "source_properties": "Equipped with a handgun, walkie-talkie, and disguising accessories for covert field operations.",
+    "target_situation": "The National Intelligence Agency's (BIN) controversial involvement in medical COVID-19 testing and pandemic management.",
+    "mapping": "The operative represents BIN's clandestine, security-focused approach infiltrating a medical setting, prioritizing intelligence tactics over standard public health transparency and reporting.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Undercover intelligence operative\nsource_properties: Equipped with a handgun, walkie-talkie, and disguising accessories for covert field operations.\ntarget_situation: The National Intelligence Agency's (BIN) controversial involvement in medical COVID-19 testing and pandemic management.\nmapping: The operative represents BIN's clandestine, security-focused approach infiltrating a medical setting, prioritizing intelligence tactics over standard public health transparency and reporting.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 69,
+  "sample_id": "TMP-52FFF9DBAE6B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "7555afe0c6b680d8cb3cb9c88f1872bd01bd768e9a3181af168a2d018e15ae5f",
+  "image_sha256": "52fff9dbae6bdfa5f17424b8171d34acd405264077b4d7b18d333b4961c81e50",
+  "transmitted_image_sha256": "2ec8ab6cff8a367f5a1888a2c952771034acbd0adbdc70c3f979df38f7699e1d",
+  "image_size": [
+    407,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1079235,
+      "total": 10,
+      "remaining": 1.8920765,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.107923499999998,
+      "total": 100,
+      "remaining": 91.8920765,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.781393349170685,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"vultures\", \"source_properties\": \"scavenging birds circling and congregating around a target to feed\", \"target_situation\": \"private merchants and politicians vying for control of the Freeport mine\", \"mapping\": \"the birds' predatory swarming behavior represents various parties strategically circling the valuable gold mine to exploit its resources\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "847Lau30Jv-o_uMPl6-88Q4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 79,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674500,
+        "output_tokens_cost_nanodollars": 237000
+      },
+      "prompt_tokens": 1349,
+      "total_backend_latency_ms": 1421,
+      "total_tokens": 1428
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.108835,
+      "total": 10,
+      "remaining": 1.8911650000000009,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.108835,
+      "total": 100,
+      "remaining": 91.891165,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009115,
+  "fields": {
+    "source_object": "vultures",
+    "source_properties": "scavenging birds circling and congregating around a target to feed",
+    "target_situation": "private merchants and politicians vying for control of the Freeport mine",
+    "mapping": "the birds' predatory swarming behavior represents various parties strategically circling the valuable gold mine to exploit its resources",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: vultures\nsource_properties: scavenging birds circling and congregating around a target to feed\ntarget_situation: private merchants and politicians vying for control of the Freeport mine\nmapping: the birds' predatory swarming behavior represents various parties strategically circling the valuable gold mine to exploit its resources\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

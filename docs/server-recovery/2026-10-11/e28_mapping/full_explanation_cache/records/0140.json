@@ -1,0 +1,87 @@
+{
+  "index": 140,
+  "sample_id": "TMP-295293E78958",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3716e30d24413c32fbe6938f525ec2f8264027b53c8bc412ed966fac5be63217",
+  "image_sha256": "295293e78958380e1fbc7e8a71d34d0ba16bc8f1bbc2bac2a9fae695891a34d4",
+  "transmitted_image_sha256": "5651b788756094cffb9ce5957a1a0d703b809e754689cf9ff1fb2530a2bdf822",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.219145,
+      "total": 10,
+      "remaining": 1.7808550000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.219144999999997,
+      "total": 100,
+      "remaining": 91.780855,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.321836284827441,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Rifle barrel\", \"source_properties\": \"Rigid, metallic, linear, and pointed directly at its target's back.\", \"target_situation\": \"Amir Hamzah writing while under threat of execution by revolutionary youth.\", \"mapping\": \"The rifle's direct, lethal physical positioning mirrors the immediate, fatal threat faced by the poet due to political accusations.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "05DLaoq3FITn_uMP29-q-A8",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 88,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676500,
+        "output_tokens_cost_nanodollars": 264000
+      },
+      "prompt_tokens": 1353,
+      "total_backend_latency_ms": 1642,
+      "total_tokens": 1441
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2200855,
+      "total": 10,
+      "remaining": 1.7799145000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.220085499999996,
+      "total": 100,
+      "remaining": 91.7799145,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009405,
+  "fields": {
+    "source_object": "Rifle barrel",
+    "source_properties": "Rigid, metallic, linear, and pointed directly at its target's back.",
+    "target_situation": "Amir Hamzah writing while under threat of execution by revolutionary youth.",
+    "mapping": "The rifle's direct, lethal physical positioning mirrors the immediate, fatal threat faced by the poet due to political accusations.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Rifle barrel\nsource_properties: Rigid, metallic, linear, and pointed directly at its target's back.\ntarget_situation: Amir Hamzah writing while under threat of execution by revolutionary youth.\nmapping: The rifle's direct, lethal physical positioning mirrors the immediate, fatal threat faced by the poet due to political accusations.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,90 @@
+{
+  "index": 81,
+  "sample_id": "TMP-DD864645C32D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "02d5810ee6759855f9ba9e7f6a5f1f6b565970a77f8bd5b458eae9876949913b",
+  "image_sha256": "dd864645c32db2a10eedb19b0e5d3202a74c270a2b8189ffb2dd6a61fae144d7",
+  "transmitted_image_sha256": "726198b89069648138c8a7aa19ad7c973418b7a25247dd5e129460e9a64319d2",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1196095,
+      "total": 10,
+      "remaining": 1.8803905000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.119609499999996,
+      "total": 100,
+      "remaining": 91.8803905,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.751538755837828,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A makeshift satellite/rocket assembled from a gas tank, water jugs, and a fire extinguisher.\",\n  \"source_properties\": \"Low-tech, domestic, and inherently unfit for orbital flight.\",\n  \"target_situation\": \"A fraudulent (bodong) Rp 10 trillion satellite procurement project causing national chaos.\",\n  \"mapping\": \"The junk-assembled craft represents the 'fake' and unreliable nature of the expensive government project.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Oo_LauW7MOGM_uMP0-qD8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 981,
+      "completion_tokens_details": {
+        "reasoning_tokens": 870
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 684500,
+        "output_tokens_cost_nanodollars": 2943000
+      },
+      "prompt_tokens": 1369,
+      "total_backend_latency_ms": 6113,
+      "total_tokens": 2350
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.123237,
+      "total": 10,
+      "remaining": 1.8767630000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.123237000000003,
+      "total": 100,
+      "remaining": 91.876763,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0036275,
+  "fields": {
+    "source_object": "A makeshift satellite/rocket assembled from a gas tank, water jugs, and a fire extinguisher.",
+    "source_properties": "Low-tech, domestic, and inherently unfit for orbital flight.",
+    "target_situation": "A fraudulent (bodong) Rp 10 trillion satellite procurement project causing national chaos.",
+    "mapping": "The junk-assembled craft represents the 'fake' and unreliable nature of the expensive government project.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A makeshift satellite/rocket assembled from a gas tank, water jugs, and a fire extinguisher.\nsource_properties: Low-tech, domestic, and inherently unfit for orbital flight.\ntarget_situation: A fraudulent (bodong) Rp 10 trillion satellite procurement project causing national chaos.\nmapping: The junk-assembled craft represents the 'fake' and unreliable nature of the expensive government project.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

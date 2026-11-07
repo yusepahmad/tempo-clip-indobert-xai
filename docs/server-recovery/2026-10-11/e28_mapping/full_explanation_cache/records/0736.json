@@ -1,0 +1,87 @@
+{
+  "index": 736,
+  "sample_id": "TMP-B49A0E2496DA",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "616b8576dd2f5f80b03846b08c00fa820dcedd1c7023c81882504a29be2dfca3",
+  "image_sha256": "b49a0e2496da759b9884455253acbda95e4740a78a6f665c409ca837efe0617b",
+  "transmitted_image_sha256": "ee4856b4e5c6cacb00864fcd2f7a9a80028f143405616619265e0fd1ad4cdf20",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0680965,
+      "total": 10,
+      "remaining": 0.9319035000000007,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.068096499999996,
+      "total": 100,
+      "remaining": 90.9319035,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2389885489828885,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"green LPG gas cylinder\",\n  \"source_properties\": \"A pressurized metal container for fuel with a gauge showing a near-empty red level.\",\n  \"target_situation\": \"Indonesia's critical shortage of crude oil and LPG due to a regional conflict.\",\n  \"mapping\": \"The empty cylinder and low gauge represent the precarious depletion of national energy stocks.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Z6DLarS9Euu1_PUPl9nYyQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678000,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1356,
+      "total_backend_latency_ms": 1744,
+      "total_tokens": 1451
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0690595,
+      "total": 10,
+      "remaining": 0.9309405000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.069059499999995,
+      "total": 100,
+      "remaining": 90.9309405,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000963,
+  "fields": {
+    "source_object": "green LPG gas cylinder",
+    "source_properties": "A pressurized metal container for fuel with a gauge showing a near-empty red level.",
+    "target_situation": "Indonesia's critical shortage of crude oil and LPG due to a regional conflict.",
+    "mapping": "The empty cylinder and low gauge represent the precarious depletion of national energy stocks.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: green LPG gas cylinder\nsource_properties: A pressurized metal container for fuel with a gauge showing a near-empty red level.\ntarget_situation: Indonesia's critical shortage of crude oil and LPG due to a regional conflict.\nmapping: The empty cylinder and low gauge represent the precarious depletion of national energy stocks.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 615,
+  "sample_id": "TMP-CC8DF50E6195",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a5029b0fbf42b99011bc412ad5514bb3b8c2c2e23c2be06164f976a3c0a22992",
+  "image_sha256": "cc8df50e6195b7e3f3f23da676df18f13487a08beaeffa0c14a44d445fb4988a",
+  "transmitted_image_sha256": "6471bc82619e21c36793a7ee67537fc452ef00fcac37df7dd8f325a7004b460c",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.878555500000001,
+      "total": 10,
+      "remaining": 1.121444499999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.878555500000004,
+      "total": 100,
+      "remaining": 91.1214445,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.7603252488188446,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"matryoshka dolls\",\n  \"source_properties\": \"nested figures of decreasing size fitting perfectly inside one another to create a singular, repetitive whole\",\n  \"target_situation\": \"President Jokowi\u2019s expanding family political dynasty through his children and son-in-law entering office\",\n  \"mapping\": \"Successive slices of the descendants' faces nest within Jokowi's larger silhouette, symbolizing power being replicated and contained within a single family lineage\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "M53LasbgN_KU_uMPp6OP6Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 114,
+      "cost": {
+        "input_tokens_cost_nanodollars": 687000,
+        "output_tokens_cost_nanodollars": 342000
+      },
+      "prompt_tokens": 1374,
+      "total_backend_latency_ms": 2107,
+      "total_tokens": 1488
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8795845,
+      "total": 10,
+      "remaining": 1.1204155,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.879584500000007,
+      "total": 100,
+      "remaining": 91.1204155,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.001029,
+  "fields": {
+    "source_object": "matryoshka dolls",
+    "source_properties": "nested figures of decreasing size fitting perfectly inside one another to create a singular, repetitive whole",
+    "target_situation": "President Jokowi\u2019s expanding family political dynasty through his children and son-in-law entering office",
+    "mapping": "Successive slices of the descendants' faces nest within Jokowi's larger silhouette, symbolizing power being replicated and contained within a single family lineage",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: matryoshka dolls\nsource_properties: nested figures of decreasing size fitting perfectly inside one another to create a singular, repetitive whole\ntarget_situation: President Jokowi\u2019s expanding family political dynasty through his children and son-in-law entering office\nmapping: Successive slices of the descendants' faces nest within Jokowi's larger silhouette, symbolizing power being replicated and contained within a single family lineage\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

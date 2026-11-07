@@ -1,0 +1,87 @@
+{
+  "index": 287,
+  "sample_id": "TMP-0AF561A93ACB",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "14029a9ec90f595b652a186d04b73f9814b190638f9d6dd42344e6bc0de57c70",
+  "image_sha256": "0af561a93acb0139e20cea138f31133345c9bec9622e381a2f69d5fdbe8212c3",
+  "transmitted_image_sha256": "da999f4666398ea98b8f77cb393ebffe59ca113a28dda4a8838726e1a745ea5e",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4373485,
+      "total": 10,
+      "remaining": 1.5626514999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.437348499999999,
+      "total": 100,
+      "remaining": 91.5626515,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.290171085856855,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"none evident\",\n  \"source_properties\": \"literal black and white portraits; relative scale and positioning of figures\",\n  \"target_situation\": \"Rini Soemarno leading Jokowi's transition team amidst questions about her political backing.\",\n  \"mapping\": \"The illustration uses literal portraits. Rini's large, forward-facing image dominates the foreground, while a smaller Jokowi appears looking down in the background, visualizing her prominent role.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "r5TLaty9ON7d_uMP3pe24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 112,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671500,
+        "output_tokens_cost_nanodollars": 336000
+      },
+      "prompt_tokens": 1343,
+      "total_backend_latency_ms": 1930,
+      "total_tokens": 1455
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.438356,
+      "total": 10,
+      "remaining": 1.5616439999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.438355999999999,
+      "total": 100,
+      "remaining": 91.561644,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010075,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "literal black and white portraits; relative scale and positioning of figures",
+    "target_situation": "Rini Soemarno leading Jokowi's transition team amidst questions about her political backing.",
+    "mapping": "The illustration uses literal portraits. Rini's large, forward-facing image dominates the foreground, while a smaller Jokowi appears looking down in the background, visualizing her prominent role.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: literal black and white portraits; relative scale and positioning of figures\ntarget_situation: Rini Soemarno leading Jokowi's transition team amidst questions about her political backing.\nmapping: The illustration uses literal portraits. Rini's large, forward-facing image dominates the foreground, while a smaller Jokowi appears looking down in the background, visualizing her prominent role.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

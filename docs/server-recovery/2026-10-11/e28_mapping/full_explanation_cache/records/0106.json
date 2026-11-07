@@ -1,0 +1,87 @@
+{
+  "index": 106,
+  "sample_id": "TMP-52754E753462",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bc6ae4dc0c6d793586fa26131fdc06d9838e63bef979c78f3aaec84a9eb9de9e",
+  "image_sha256": "52754e753462880b871f5492aa80b2ee6b03b6219812c7e1db2ebdc2a77f733e",
+  "transmitted_image_sha256": "af436773c119459e234d020b3cd704cd6439edc3f3ab1a3587d1bcc8a84af224",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.161849,
+      "total": 10,
+      "remaining": 1.8381509999999999,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.161849000000004,
+      "total": 100,
+      "remaining": 91.838151,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2362281340174377,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"folded newspaper cover\",\n  \"source_properties\": \"Bends, overlays, and aligns two different surfaces to create a single composite face.\",\n  \"target_situation\": \"Prabowo Subianto supporting Joko Widodo's candidacy for the DKI-1 governorship.\",\n  \"mapping\": \"The folded paper aligns Prabowo's half-face with Jokowi's, symbolizing political backing and shared identity.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "5Y_LasvGDZzd_uMP7MbkuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 668500,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1337,
+      "total_backend_latency_ms": 1763,
+      "total_tokens": 1443
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1628355,
+      "total": 10,
+      "remaining": 1.8371645,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.1628355,
+      "total": 100,
+      "remaining": 91.8371645,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009865,
+  "fields": {
+    "source_object": "folded newspaper cover",
+    "source_properties": "Bends, overlays, and aligns two different surfaces to create a single composite face.",
+    "target_situation": "Prabowo Subianto supporting Joko Widodo's candidacy for the DKI-1 governorship.",
+    "mapping": "The folded paper aligns Prabowo's half-face with Jokowi's, symbolizing political backing and shared identity.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: folded newspaper cover\nsource_properties: Bends, overlays, and aligns two different surfaces to create a single composite face.\ntarget_situation: Prabowo Subianto supporting Joko Widodo's candidacy for the DKI-1 governorship.\nmapping: The folded paper aligns Prabowo's half-face with Jokowi's, symbolizing political backing and shared identity.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

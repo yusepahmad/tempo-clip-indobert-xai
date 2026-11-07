@@ -1,0 +1,15 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "macro_f1_manual": 0.5617121910174216,
+  "manifest_files": 8,
+  "checks": [
+    "all source/result copy hashes",
+    "original740 IDs/truth/folds and seven-class predictions",
+    "all5 training/test indices and fold predictions",
+    "180grid order/first argmax and chosen inner scores match server selected-model audit",
+    "rawzero-shot parsed_v2 feature provenance, not learned fallback OOF",
+    "manual7x7/macroF1"
+  ],
+  "limitation": "Root did not rerun fullgrid or hosted inference; server selected-inner/refit audit inspected."
+}

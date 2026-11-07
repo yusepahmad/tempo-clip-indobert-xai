@@ -1,0 +1,87 @@
+{
+  "index": 201,
+  "sample_id": "TMP-D16B8AB4B007",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b7c0c859f5103a7edbc5328491b2ed144557bb6bc3d836ddac6d9e3ade0ce8bf",
+  "image_sha256": "d16b8ab4b0073467cab72126d9df6e32943eebc6d25ddc1bf543e347460a0df0",
+  "transmitted_image_sha256": "43fca91cfd8da0a4775daac07c3d536db2a29316efc4fb66bda9a641fdcd78ae",
+  "image_size": [
+    300,
+    393
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.305648,
+      "total": 10,
+      "remaining": 1.6943520000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.305648000000005,
+      "total": 100,
+      "remaining": 91.694352,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.549479993991554,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"tug-of-war\", \"source_properties\": \"two opposing sides pulling a central object in opposite directions\", \"target_situation\": \"a political power struggle between two leaders claiming authority\", \"mapping\": \"The presidential chair being pulled by two figures symbolizes the dual claim to presidential power and the resulting political instability.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "aJLLasHaIMXh_uMPyN6L8Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 77,
+      "cost": {
+        "input_tokens_cost_nanodollars": 655500,
+        "output_tokens_cost_nanodollars": 231000
+      },
+      "prompt_tokens": 1311,
+      "total_backend_latency_ms": 1592,
+      "total_tokens": 1388
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3065345,
+      "total": 10,
+      "remaining": 1.6934655000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.306534499999998,
+      "total": 100,
+      "remaining": 91.6934655,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0008865,
+  "fields": {
+    "source_object": "tug-of-war",
+    "source_properties": "two opposing sides pulling a central object in opposite directions",
+    "target_situation": "a political power struggle between two leaders claiming authority",
+    "mapping": "The presidential chair being pulled by two figures symbolizes the dual claim to presidential power and the resulting political instability.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: tug-of-war\nsource_properties: two opposing sides pulling a central object in opposite directions\ntarget_situation: a political power struggle between two leaders claiming authority\nmapping: The presidential chair being pulled by two figures symbolizes the dual claim to presidential power and the resulting political instability.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

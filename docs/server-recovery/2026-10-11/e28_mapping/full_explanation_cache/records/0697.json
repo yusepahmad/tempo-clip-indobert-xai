@@ -1,0 +1,87 @@
+{
+  "index": 697,
+  "sample_id": "TMP-FA36B4DB10D3",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5b3ad3d5b4efe52caa5aaffeb17d79cf6e30236be7a7022c0d2323a3ffd7a9cd",
+  "image_sha256": "fa36b4db10d324bcf97733d7217f29749dea95800d5cdf8575fddf9ca55b2735",
+  "transmitted_image_sha256": "2c781fe67b39774a1eff8ae5e6917989d39d1a92804d954a7a4a715c31e39de5",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.015367,
+      "total": 10,
+      "remaining": 0.9846330000000005,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.015366999999998,
+      "total": 100,
+      "remaining": 90.984633,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.8634912809357047,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"video game controller and console interface\", \"source_properties\": \"a device used by an individual to remotely manipulate, select, and customize wireframe digital characters within a simulation.\", \"target_situation\": \"President Prabowo replacing cabinet members and removing political rivals.\", \"mapping\": \"The controller symbolizes executive power used to mechanically select or remove personnel, treating political figures like replaceable digital avatars in a calculated game.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "a5_LapbCJ97d_uMP3pe24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682000,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1364,
+      "total_backend_latency_ms": 2419,
+      "total_tokens": 1458
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.016331,
+      "total": 10,
+      "remaining": 0.9836690000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.016330999999994,
+      "total": 100,
+      "remaining": 90.983669,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000964,
+  "fields": {
+    "source_object": "video game controller and console interface",
+    "source_properties": "a device used by an individual to remotely manipulate, select, and customize wireframe digital characters within a simulation.",
+    "target_situation": "President Prabowo replacing cabinet members and removing political rivals.",
+    "mapping": "The controller symbolizes executive power used to mechanically select or remove personnel, treating political figures like replaceable digital avatars in a calculated game.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: video game controller and console interface\nsource_properties: a device used by an individual to remotely manipulate, select, and customize wireframe digital characters within a simulation.\ntarget_situation: President Prabowo replacing cabinet members and removing political rivals.\nmapping: The controller symbolizes executive power used to mechanically select or remove personnel, treating political figures like replaceable digital avatars in a calculated game.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

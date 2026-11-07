@@ -1,0 +1,87 @@
+{
+  "index": 96,
+  "sample_id": "TMP-C1864E874619",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "330ffb071dd6b591bf9b4a822f83d76cebd4af5b635f1792fe5dc3a9760c03e3",
+  "image_sha256": "c1864e8746194b4bc1c10b235f6b2afdcaa49e7a75499c049a4502d5c0bea196",
+  "transmitted_image_sha256": "742f0a543855a4f0c111b87684322099133783be06f140feffa727b439759b1d",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.140341,
+      "total": 10,
+      "remaining": 1.8596590000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.140341000000006,
+      "total": 100,
+      "remaining": 91.859659,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0271829371340573,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"vicious animal on a leash\", \"source_properties\": \"ferociously open jaw, sharp teeth, biting tongue, controlled by a master\", \"target_situation\": \"government enactment of controversial criminal procedure laws (KUHAP)\", \"mapping\": \"The law is a dangerous beast used by authorities to aggressively seize or 'bite' targets.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "oI_Latz6H97d_uMP3pe24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 83,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681500,
+        "output_tokens_cost_nanodollars": 249000
+      },
+      "prompt_tokens": 1363,
+      "total_backend_latency_ms": 1632,
+      "total_tokens": 1446
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1412715,
+      "total": 10,
+      "remaining": 1.8587284999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.141271500000002,
+      "total": 100,
+      "remaining": 91.8587285,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009305,
+  "fields": {
+    "source_object": "vicious animal on a leash",
+    "source_properties": "ferociously open jaw, sharp teeth, biting tongue, controlled by a master",
+    "target_situation": "government enactment of controversial criminal procedure laws (KUHAP)",
+    "mapping": "The law is a dangerous beast used by authorities to aggressively seize or 'bite' targets.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: vicious animal on a leash\nsource_properties: ferociously open jaw, sharp teeth, biting tongue, controlled by a master\ntarget_situation: government enactment of controversial criminal procedure laws (KUHAP)\nmapping: The law is a dangerous beast used by authorities to aggressively seize or 'bite' targets.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

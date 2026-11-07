@@ -1,0 +1,87 @@
+{
+  "index": 77,
+  "sample_id": "TMP-B3250B87DD03",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c1caec5a82073abc45797309f9ab26b28246c6306ce4d0bcd90e6ac7300fa5b7",
+  "image_sha256": "b3250b87dd03806bf38889e0898a907ed5b68f6849e886227305fdabbf485394",
+  "transmitted_image_sha256": "0a71f6b96ce83630fdfa499eba141ff0b6cb9a5b94cf65f9515ab55f2bc74f0e",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1157185,
+      "total": 10,
+      "remaining": 1.8842815000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.1157185,
+      "total": 100,
+      "remaining": 91.8842815,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1756016351282597,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"paint roller\",\n  \"source_properties\": \"long-handled tool used to apply a thick layer of paint to cover a surface\",\n  \"target_situation\": \"President Jokowi's appointment of retired generals to cabinet positions to address radicalism\",\n  \"mapping\": \"Using military/police figures to 'paint over' or suppress complex social issues like radicalism\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "II_LaqOGAbye_uMPo--KmQ4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677000,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1354,
+      "total_backend_latency_ms": 1601,
+      "total_tokens": 1451
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1166865,
+      "total": 10,
+      "remaining": 1.8833134999999999,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.1166865,
+      "total": 100,
+      "remaining": 91.8833135,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000968,
+  "fields": {
+    "source_object": "paint roller",
+    "source_properties": "long-handled tool used to apply a thick layer of paint to cover a surface",
+    "target_situation": "President Jokowi's appointment of retired generals to cabinet positions to address radicalism",
+    "mapping": "Using military/police figures to 'paint over' or suppress complex social issues like radicalism",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: paint roller\nsource_properties: long-handled tool used to apply a thick layer of paint to cover a surface\ntarget_situation: President Jokowi's appointment of retired generals to cabinet positions to address radicalism\nmapping: Using military/police figures to 'paint over' or suppress complex social issues like radicalism\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

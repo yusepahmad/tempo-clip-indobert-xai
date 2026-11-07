@@ -1,0 +1,87 @@
+{
+  "index": 175,
+  "sample_id": "TMP-EA709A2E39E5",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "cde13dad770492dd30f37cc08eafa5da3715c5fc4bdae8c51c03486754615e50",
+  "image_sha256": "ea709a2e39e51ab5a086efa9d28e047e1a760d8d18102e2674702b70a0997947",
+  "transmitted_image_sha256": "63fccc509c4f18e6540d5cc42a60f4351cf0b545c64ead85307c94541912cb62",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2668555,
+      "total": 10,
+      "remaining": 1.7331444999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.266855500000005,
+      "total": 100,
+      "remaining": 91.7331445,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.0513767171651125,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Peaky Blinders gang members\",\n  \"source_properties\": \"Early 20th-century newsboy caps, heavy overcoats, waistcoats, and authoritative, swaggering gait.\",\n  \"target_situation\": \"State Secretary Pratikno and associates allegedly acting as powerful enforcers for President Jokowi's political interests.\",\n  \"mapping\": \"The 1920s gangster attire portrays government officials as a ruthless, organized cabal operating outside standard legal boundaries.\",\n  \"uncertainty\": \"None evident.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "u5HLau_3JpLN_uMPhvbuyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 122,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681500,
+        "output_tokens_cost_nanodollars": 366000
+      },
+      "prompt_tokens": 1363,
+      "total_backend_latency_ms": 1747,
+      "total_tokens": 1485
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.267903,
+      "total": 10,
+      "remaining": 1.7320969999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.267903000000004,
+      "total": 100,
+      "remaining": 91.732097,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0010475,
+  "fields": {
+    "source_object": "Peaky Blinders gang members",
+    "source_properties": "Early 20th-century newsboy caps, heavy overcoats, waistcoats, and authoritative, swaggering gait.",
+    "target_situation": "State Secretary Pratikno and associates allegedly acting as powerful enforcers for President Jokowi's political interests.",
+    "mapping": "The 1920s gangster attire portrays government officials as a ruthless, organized cabal operating outside standard legal boundaries.",
+    "uncertainty": "None evident."
+  },
+  "explanation": "source_object: Peaky Blinders gang members\nsource_properties: Early 20th-century newsboy caps, heavy overcoats, waistcoats, and authoritative, swaggering gait.\ntarget_situation: State Secretary Pratikno and associates allegedly acting as powerful enforcers for President Jokowi's political interests.\nmapping: The 1920s gangster attire portrays government officials as a ruthless, organized cabal operating outside standard legal boundaries.\nuncertainty: None evident.",
+  "finish_reason": "stop",
+  "usable": true
+}

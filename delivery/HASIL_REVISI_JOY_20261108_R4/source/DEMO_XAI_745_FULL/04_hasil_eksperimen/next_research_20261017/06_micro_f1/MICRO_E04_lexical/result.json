@@ -1,0 +1,228 @@
+{
+  "schema": "tempo-micro-e04-v1",
+  "status": "complete",
+  "model_contract": "one lexical feature pipeline with three task heads",
+  "input": "headline_verified [SEP] supporting_text_verified",
+  "micro_f1": {
+    "task1_issue": 0.4743243243243243,
+    "task2_domain_sumber": 0.2648648648648649,
+    "task3_primary_entity_type": 0.4472972972972973
+  },
+  "macro_f1_diagnostic": {
+    "task1_issue": 0.4197576507996197,
+    "task2_domain_sumber": 0.20298836057551542,
+    "task3_primary_entity_type": 0.2386735525392593
+  },
+  "minimum_micro_f1": 0.2648648648648649,
+  "all_tasks_at_least_0_70": false,
+  "fold_details": [
+    {
+      "fold": 1,
+      "tasks": {
+        "task1_issue": {
+          "selected": {
+            "candidate": "union_bal",
+            "config": {
+              "kind": "union",
+              "C": 0.5,
+              "balanced": true
+            },
+            "inner_micro_f1": 0.4678852826060948
+          },
+          "outer_micro_f1": 0.49324324324324326
+        },
+        "task2_domain_sumber": {
+          "selected": {
+            "candidate": "union",
+            "config": {
+              "kind": "union",
+              "C": 0.5,
+              "balanced": false
+            },
+            "inner_micro_f1": 0.28722076945427205
+          },
+          "outer_micro_f1": 0.23648648648648649
+        },
+        "task3_primary_entity_type": {
+          "selected": {
+            "candidate": "union_bal",
+            "config": {
+              "kind": "union",
+              "C": 0.5,
+              "balanced": true
+            },
+            "inner_micro_f1": 0.4374797039771659
+          },
+          "outer_micro_f1": 0.3783783783783784
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "tasks": {
+        "task1_issue": {
+          "selected": {
+            "candidate": "union_bal",
+            "config": {
+              "kind": "union",
+              "C": 0.5,
+              "balanced": true
+            },
+            "inner_micro_f1": 0.44084670734416925
+          },
+          "outer_micro_f1": 0.46621621621621623
+        },
+        "task2_domain_sumber": {
+          "selected": {
+            "candidate": "word",
+            "config": {
+              "kind": "word",
+              "C": 0.5,
+              "balanced": false
+            },
+            "inner_micro_f1": 0.32769317540891146
+          },
+          "outer_micro_f1": 0.25675675675675674
+        },
+        "task3_primary_entity_type": {
+          "selected": {
+            "candidate": "word",
+            "config": {
+              "kind": "word",
+              "C": 0.5,
+              "balanced": false
+            },
+            "inner_micro_f1": 0.42904510417200775
+          },
+          "outer_micro_f1": 0.4527027027027027
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "tasks": {
+        "task1_issue": {
+          "selected": {
+            "candidate": "union_bal",
+            "config": {
+              "kind": "union",
+              "C": 0.5,
+              "balanced": true
+            },
+            "inner_micro_f1": 0.4796441573091319
+          },
+          "outer_micro_f1": 0.4864864864864865
+        },
+        "task2_domain_sumber": {
+          "selected": {
+            "candidate": "char",
+            "config": {
+              "kind": "char",
+              "C": 1.0,
+              "balanced": false
+            },
+            "inner_micro_f1": 0.2989967355449589
+          },
+          "outer_micro_f1": 0.24324324324324326
+        },
+        "task3_primary_entity_type": {
+          "selected": {
+            "candidate": "word",
+            "config": {
+              "kind": "word",
+              "C": 0.5,
+              "balanced": false
+            },
+            "inner_micro_f1": 0.44927276145550255
+          },
+          "outer_micro_f1": 0.39864864864864863
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "tasks": {
+        "task1_issue": {
+          "selected": {
+            "candidate": "union_bal",
+            "config": {
+              "kind": "union",
+              "C": 0.5,
+              "balanced": true
+            },
+            "inner_micro_f1": 0.4763455194927276
+          },
+          "outer_micro_f1": 0.4797297297297297
+        },
+        "task2_domain_sumber": {
+          "selected": {
+            "candidate": "word",
+            "config": {
+              "kind": "word",
+              "C": 0.5,
+              "balanced": false
+            },
+            "inner_micro_f1": 0.28206771607786835
+          },
+          "outer_micro_f1": 0.2905405405405405
+        },
+        "task3_primary_entity_type": {
+          "selected": {
+            "candidate": "word",
+            "config": {
+              "kind": "word",
+              "C": 0.5,
+              "balanced": false
+            },
+            "inner_micro_f1": 0.4374797039771659
+          },
+          "outer_micro_f1": 0.5202702702702703
+        }
+      }
+    },
+    {
+      "fold": 5,
+      "tasks": {
+        "task1_issue": {
+          "selected": {
+            "candidate": "union_bal",
+            "config": {
+              "kind": "union",
+              "C": 0.5,
+              "balanced": true
+            },
+            "inner_micro_f1": 0.46462082756498996
+          },
+          "outer_micro_f1": 0.44594594594594594
+        },
+        "task2_domain_sumber": {
+          "selected": {
+            "candidate": "word",
+            "config": {
+              "kind": "word",
+              "C": 0.5,
+              "balanced": false
+            },
+            "inner_micro_f1": 0.2922285460356526
+          },
+          "outer_micro_f1": 0.2972972972972973
+        },
+        "task3_primary_entity_type": {
+          "selected": {
+            "candidate": "char",
+            "config": {
+              "kind": "char",
+              "C": 1.0,
+              "balanced": false
+            },
+            "inner_micro_f1": 0.46450973354526653
+          },
+          "outer_micro_f1": 0.4864864864864865
+        }
+      }
+    }
+  ],
+  "dataset_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "seconds": 36.9771203994751,
+  "predictions_sha256": "1538da3dc21099ab5cc6a02f9a12f69c7822e0d0898c09b8b6426e283dabc2e5"
+}

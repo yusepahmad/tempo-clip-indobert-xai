@@ -1,0 +1,87 @@
+{
+  "index": 318,
+  "sample_id": "TMP-3C807D0C4502",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "605d75d0eff1b447f44012b5dd2ffc4161cfd8377275ac77df3b031e7fcdad24",
+  "image_sha256": "3c807d0c45026834cc95f0efa3503e24e0cdaffc3a585e6606e58d0e8a75a6b3",
+  "transmitted_image_sha256": "63657a018250f410e9d9e203e9f4f5e361234a2918be44858139c5f5169e6a48",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.476886,
+      "total": 10,
+      "remaining": 1.5231139999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.476885999999993,
+      "total": 100,
+      "remaining": 91.523114,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.718562718946487,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"electrical transmission tower\", \"source_properties\": \"lattice structure made of interlocking metal beams that provides support and stability while conducting high-voltage power\", \"target_situation\": \"Dahlan Iskan's corruption charges related to his tenure at state electricity company PLN\", \"mapping\": \"The crumbling tower represents the structural failure of the power grid project under his leadership. His precarious position hanging from the disintegrating metal mirrors the legal risk and instability resulting from breaking administrative rules.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "epXLatyXLf-o_uMP1rjw6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 108,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673000,
+        "output_tokens_cost_nanodollars": 324000
+      },
+      "prompt_tokens": 1346,
+      "total_backend_latency_ms": 1575,
+      "total_tokens": 1454
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.477883,
+      "total": 10,
+      "remaining": 1.5221169999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.477883000000006,
+      "total": 100,
+      "remaining": 91.522117,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000997,
+  "fields": {
+    "source_object": "electrical transmission tower",
+    "source_properties": "lattice structure made of interlocking metal beams that provides support and stability while conducting high-voltage power",
+    "target_situation": "Dahlan Iskan's corruption charges related to his tenure at state electricity company PLN",
+    "mapping": "The crumbling tower represents the structural failure of the power grid project under his leadership. His precarious position hanging from the disintegrating metal mirrors the legal risk and instability resulting from breaking administrative rules.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: electrical transmission tower\nsource_properties: lattice structure made of interlocking metal beams that provides support and stability while conducting high-voltage power\ntarget_situation: Dahlan Iskan's corruption charges related to his tenure at state electricity company PLN\nmapping: The crumbling tower represents the structural failure of the power grid project under his leadership. His precarious position hanging from the disintegrating metal mirrors the legal risk and instability resulting from breaking administrative rules.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

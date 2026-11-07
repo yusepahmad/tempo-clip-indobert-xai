@@ -1,0 +1,87 @@
+{
+  "index": 228,
+  "sample_id": "TMP-C9D2E162AE3C",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "93157f885083c5f469e7d0526d45bdd76e8d49f106ec6fac2e10c5705282cec7",
+  "image_sha256": "c9d2e162ae3c077aebb7ee8699ff8ea2ce55e960defebd370636299c1673dae0",
+  "transmitted_image_sha256": "c66607a6f98658160bb89467737824b03e99e52465e67f5bb3d25ee10e4866de",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.343936,
+      "total": 10,
+      "remaining": 1.6560640000000006,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.343936,
+      "total": 100,
+      "remaining": 91.656064,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.5487757115624845,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"excavator\",\n  \"source_properties\": \"heavy, powerful, industrial machinery used for dredging, digging, and massive physical labor\",\n  \"target_situation\": \"Jokowi's first 100 days as governor facing severe flooding and systemic political problems\",\n  \"mapping\": \"The massive excavator symbolizes the heavy lifting and industrial-scale effort required to tackle Jakarta's problems.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "FJPLarT2D-2M_PUPpv3KiQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 105,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661000,
+        "output_tokens_cost_nanodollars": 315000
+      },
+      "prompt_tokens": 1322,
+      "total_backend_latency_ms": 1893,
+      "total_tokens": 1427
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.344912,
+      "total": 10,
+      "remaining": 1.6550879999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.344911999999994,
+      "total": 100,
+      "remaining": 91.655088,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000976,
+  "fields": {
+    "source_object": "excavator",
+    "source_properties": "heavy, powerful, industrial machinery used for dredging, digging, and massive physical labor",
+    "target_situation": "Jokowi's first 100 days as governor facing severe flooding and systemic political problems",
+    "mapping": "The massive excavator symbolizes the heavy lifting and industrial-scale effort required to tackle Jakarta's problems.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: excavator\nsource_properties: heavy, powerful, industrial machinery used for dredging, digging, and massive physical labor\ntarget_situation: Jokowi's first 100 days as governor facing severe flooding and systemic political problems\nmapping: The massive excavator symbolizes the heavy lifting and industrial-scale effort required to tackle Jakarta's problems.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

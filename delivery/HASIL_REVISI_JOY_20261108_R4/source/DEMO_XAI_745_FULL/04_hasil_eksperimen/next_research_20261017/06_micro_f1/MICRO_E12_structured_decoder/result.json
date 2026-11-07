@@ -1,0 +1,3926 @@
+{
+  "schema": "tempo-micro-e12-v1",
+  "status": "complete",
+  "model_contract": "one fully nested multimodal stack and joint label decoder",
+  "micro_f1": {
+    "task1_issue": 0.5783783783783784,
+    "task2_domain_sumber": 0.5445945945945946,
+    "task3_primary_entity_type": 0.5108108108108108
+  },
+  "macro_f1_diagnostic": {
+    "task1_issue": 0.5167410442759947,
+    "task2_domain_sumber": 0.493538712617653,
+    "task3_primary_entity_type": 0.28722356079432587
+  },
+  "minimum_micro_f1": 0.5108108108108108,
+  "all_tasks_at_least_0_70": false,
+  "control_micro_f1": {
+    "task1_issue": 0.5797297297297297,
+    "task2_domain_sumber": 0.55,
+    "task3_primary_entity_type": 0.5121621621621621
+  },
+  "fold_details": [
+    {
+      "fold": 1,
+      "selected": {
+        "config": {
+          "head": "hierarchical",
+          "strength": 0.25,
+          "pseudocount": 10,
+          "mode": "map"
+        },
+        "micro_f1": {
+          "task1_issue": 0.5658783783783784,
+          "task2_domain_sumber": 0.5523648648648649,
+          "task3_primary_entity_type": 0.5371621621621622
+        },
+        "minimum": 0.5371621621621622,
+        "mean": 0.5518018018018019
+      },
+      "candidates": [
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5591216216216216,
+            "task2_domain_sumber": 0.5540540540540541,
+            "task3_primary_entity_type": 0.5219594594594594
+          },
+          "minimum": 0.5219594594594594,
+          "mean": 0.545045045045045
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5625,
+            "task2_domain_sumber": 0.543918918918919,
+            "task3_primary_entity_type": 0.5304054054054054
+          },
+          "minimum": 0.5304054054054054,
+          "mean": 0.545608108108108
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5608108108108109,
+            "task2_domain_sumber": 0.5523648648648649,
+            "task3_primary_entity_type": 0.518581081081081
+          },
+          "minimum": 0.518581081081081,
+          "mean": 0.543918918918919
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5625,
+            "task2_domain_sumber": 0.5472972972972973,
+            "task3_primary_entity_type": 0.5287162162162162
+          },
+          "minimum": 0.5287162162162162,
+          "mean": 0.5461711711711712
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5641891891891891,
+            "task2_domain_sumber": 0.5523648648648649,
+            "task3_primary_entity_type": 0.5202702702702703
+          },
+          "minimum": 0.5202702702702703,
+          "mean": 0.545608108108108
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5641891891891891,
+            "task2_domain_sumber": 0.5489864864864865,
+            "task3_primary_entity_type": 0.5253378378378378
+          },
+          "minimum": 0.5253378378378378,
+          "mean": 0.5461711711711712
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5591216216216216,
+            "task2_domain_sumber": 0.5506756756756757,
+            "task3_primary_entity_type": 0.518581081081081
+          },
+          "minimum": 0.518581081081081,
+          "mean": 0.5427927927927928
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5591216216216216,
+            "task2_domain_sumber": 0.5388513513513513,
+            "task3_primary_entity_type": 0.527027027027027
+          },
+          "minimum": 0.527027027027027,
+          "mean": 0.5416666666666666
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5472972972972973,
+            "task2_domain_sumber": 0.5236486486486487,
+            "task3_primary_entity_type": 0.5168918918918919
+          },
+          "minimum": 0.5168918918918919,
+          "mean": 0.5292792792792793
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5608108108108109,
+            "task2_domain_sumber": 0.5371621621621622,
+            "task3_primary_entity_type": 0.5287162162162162
+          },
+          "minimum": 0.5287162162162162,
+          "mean": 0.5422297297297297
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5523648648648649,
+            "task2_domain_sumber": 0.5236486486486487,
+            "task3_primary_entity_type": 0.518581081081081
+          },
+          "minimum": 0.518581081081081,
+          "mean": 0.5315315315315315
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5574324324324325,
+            "task2_domain_sumber": 0.5456081081081081,
+            "task3_primary_entity_type": 0.5219594594594594
+          },
+          "minimum": 0.5219594594594594,
+          "mean": 0.5416666666666666
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5574324324324325,
+            "task2_domain_sumber": 0.527027027027027,
+            "task3_primary_entity_type": 0.5202702702702703
+          },
+          "minimum": 0.5202702702702703,
+          "mean": 0.5349099099099099
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5574324324324325,
+            "task2_domain_sumber": 0.518581081081081,
+            "task3_primary_entity_type": 0.5118243243243243
+          },
+          "minimum": 0.5118243243243243,
+          "mean": 0.5292792792792793
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5304054054054054,
+            "task2_domain_sumber": 0.4983108108108108,
+            "task3_primary_entity_type": 0.48986486486486486
+          },
+          "minimum": 0.48986486486486486,
+          "mean": 0.5061936936936937
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5557432432432432,
+            "task2_domain_sumber": 0.5219594594594594,
+            "task3_primary_entity_type": 0.5135135135135135
+          },
+          "minimum": 0.5135135135135135,
+          "mean": 0.5304054054054054
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5337837837837838,
+            "task2_domain_sumber": 0.4966216216216216,
+            "task3_primary_entity_type": 0.49324324324324326
+          },
+          "minimum": 0.49324324324324326,
+          "mean": 0.5078828828828829
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5574324324324325,
+            "task2_domain_sumber": 0.5236486486486487,
+            "task3_primary_entity_type": 0.5168918918918919
+          },
+          "minimum": 0.5168918918918919,
+          "mean": 0.5326576576576577
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5405405405405406,
+            "task2_domain_sumber": 0.48817567567567566,
+            "task3_primary_entity_type": 0.49493243243243246
+          },
+          "minimum": 0.48817567567567566,
+          "mean": 0.5078828828828829
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4831081081081081,
+            "task2_domain_sumber": 0.46114864864864863,
+            "task3_primary_entity_type": 0.40202702702702703
+          },
+          "minimum": 0.40202702702702703,
+          "mean": 0.44876126126126126
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4341216216216216,
+            "task2_domain_sumber": 0.3918918918918919,
+            "task3_primary_entity_type": 0.3597972972972973
+          },
+          "minimum": 0.3597972972972973,
+          "mean": 0.39527027027027023
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4864864864864865,
+            "task2_domain_sumber": 0.46283783783783783,
+            "task3_primary_entity_type": 0.41216216216216217
+          },
+          "minimum": 0.41216216216216217,
+          "mean": 0.4538288288288288
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4358108108108108,
+            "task2_domain_sumber": 0.3935810810810811,
+            "task3_primary_entity_type": 0.36655405405405406
+          },
+          "minimum": 0.36655405405405406,
+          "mean": 0.3986486486486487
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.49324324324324326,
+            "task2_domain_sumber": 0.47466216216216217,
+            "task3_primary_entity_type": 0.44256756756756754
+          },
+          "minimum": 0.44256756756756754,
+          "mean": 0.47015765765765766
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4560810810810811,
+            "task2_domain_sumber": 0.41385135135135137,
+            "task3_primary_entity_type": 0.3902027027027027
+          },
+          "minimum": 0.3902027027027027,
+          "mean": 0.42004504504504503
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5591216216216216,
+            "task2_domain_sumber": 0.5540540540540541,
+            "task3_primary_entity_type": 0.5219594594594594
+          },
+          "minimum": 0.5219594594594594,
+          "mean": 0.545045045045045
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5641891891891891,
+            "task2_domain_sumber": 0.5489864864864865,
+            "task3_primary_entity_type": 0.5320945945945946
+          },
+          "minimum": 0.5320945945945946,
+          "mean": 0.5484234234234234
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5658783783783784,
+            "task2_domain_sumber": 0.5523648648648649,
+            "task3_primary_entity_type": 0.5371621621621622
+          },
+          "minimum": 0.5371621621621622,
+          "mean": 0.5518018018018019
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5625,
+            "task2_domain_sumber": 0.5472972972972973,
+            "task3_primary_entity_type": 0.5320945945945946
+          },
+          "minimum": 0.5320945945945946,
+          "mean": 0.5472972972972974
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5692567567567568,
+            "task2_domain_sumber": 0.5523648648648649,
+            "task3_primary_entity_type": 0.5320945945945946
+          },
+          "minimum": 0.5320945945945946,
+          "mean": 0.5512387387387387
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5625,
+            "task2_domain_sumber": 0.5489864864864865,
+            "task3_primary_entity_type": 0.5287162162162162
+          },
+          "minimum": 0.5287162162162162,
+          "mean": 0.5467342342342342
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5641891891891891,
+            "task2_domain_sumber": 0.5523648648648649,
+            "task3_primary_entity_type": 0.527027027027027
+          },
+          "minimum": 0.527027027027027,
+          "mean": 0.5478603603603603
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5658783783783784,
+            "task2_domain_sumber": 0.5388513513513513,
+            "task3_primary_entity_type": 0.535472972972973
+          },
+          "minimum": 0.535472972972973,
+          "mean": 0.5467342342342343
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5557432432432432,
+            "task2_domain_sumber": 0.5253378378378378,
+            "task3_primary_entity_type": 0.5320945945945946
+          },
+          "minimum": 0.5253378378378378,
+          "mean": 0.5377252252252253
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5641891891891891,
+            "task2_domain_sumber": 0.5388513513513513,
+            "task3_primary_entity_type": 0.5371621621621622
+          },
+          "minimum": 0.5371621621621622,
+          "mean": 0.5467342342342342
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5574324324324325,
+            "task2_domain_sumber": 0.5253378378378378,
+            "task3_primary_entity_type": 0.5320945945945946
+          },
+          "minimum": 0.5253378378378378,
+          "mean": 0.5382882882882883
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5591216216216216,
+            "task2_domain_sumber": 0.5472972972972973,
+            "task3_primary_entity_type": 0.535472972972973
+          },
+          "minimum": 0.535472972972973,
+          "mean": 0.5472972972972973
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5591216216216216,
+            "task2_domain_sumber": 0.5304054054054054,
+            "task3_primary_entity_type": 0.535472972972973
+          },
+          "minimum": 0.5304054054054054,
+          "mean": 0.5416666666666666
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5540540540540541,
+            "task2_domain_sumber": 0.518581081081081,
+            "task3_primary_entity_type": 0.5202702702702703
+          },
+          "minimum": 0.518581081081081,
+          "mean": 0.5309684684684685
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5320945945945946,
+            "task2_domain_sumber": 0.4983108108108108,
+            "task3_primary_entity_type": 0.4983108108108108
+          },
+          "minimum": 0.4983108108108108,
+          "mean": 0.5095720720720721
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5591216216216216,
+            "task2_domain_sumber": 0.5236486486486487,
+            "task3_primary_entity_type": 0.5219594594594594
+          },
+          "minimum": 0.5219594594594594,
+          "mean": 0.5349099099099098
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5388513513513513,
+            "task2_domain_sumber": 0.5,
+            "task3_primary_entity_type": 0.4966216216216216
+          },
+          "minimum": 0.4966216216216216,
+          "mean": 0.5118243243243242
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5591216216216216,
+            "task2_domain_sumber": 0.527027027027027,
+            "task3_primary_entity_type": 0.527027027027027
+          },
+          "minimum": 0.527027027027027,
+          "mean": 0.5377252252252253
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5422297297297297,
+            "task2_domain_sumber": 0.5033783783783784,
+            "task3_primary_entity_type": 0.5033783783783784
+          },
+          "minimum": 0.5033783783783784,
+          "mean": 0.5163288288288288
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4814189189189189,
+            "task2_domain_sumber": 0.46452702702702703,
+            "task3_primary_entity_type": 0.42736486486486486
+          },
+          "minimum": 0.42736486486486486,
+          "mean": 0.45777027027027023
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.43074324324324326,
+            "task2_domain_sumber": 0.3885135135135135,
+            "task3_primary_entity_type": 0.3733108108108108
+          },
+          "minimum": 0.3733108108108108,
+          "mean": 0.3975225225225225
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4814189189189189,
+            "task2_domain_sumber": 0.46790540540540543,
+            "task3_primary_entity_type": 0.4358108108108108
+          },
+          "minimum": 0.4358108108108108,
+          "mean": 0.4617117117117117
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4375,
+            "task2_domain_sumber": 0.3918918918918919,
+            "task3_primary_entity_type": 0.3783783783783784
+          },
+          "minimum": 0.3783783783783784,
+          "mean": 0.40259009009009006
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.49493243243243246,
+            "task2_domain_sumber": 0.46959459459459457,
+            "task3_primary_entity_type": 0.4577702702702703
+          },
+          "minimum": 0.4577702702702703,
+          "mean": 0.47409909909909914
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4543918918918919,
+            "task2_domain_sumber": 0.40878378378378377,
+            "task3_primary_entity_type": 0.40371621621621623
+          },
+          "minimum": 0.40371621621621623,
+          "mean": 0.4222972972972973
+        }
+      ],
+      "outer_micro_f1": {
+        "task1_issue": 0.5743243243243243,
+        "task2_domain_sumber": 0.581081081081081,
+        "task3_primary_entity_type": 0.49324324324324326
+      },
+      "control_micro_f1": {
+        "task1_issue": 0.5675675675675675,
+        "task2_domain_sumber": 0.6013513513513513,
+        "task3_primary_entity_type": 0.49324324324324326
+      }
+    },
+    {
+      "fold": 2,
+      "selected": {
+        "config": {
+          "head": "flat",
+          "strength": 0.25,
+          "pseudocount": 200,
+          "mode": "map"
+        },
+        "micro_f1": {
+          "task1_issue": 0.5540540540540541,
+          "task2_domain_sumber": 0.518581081081081,
+          "task3_primary_entity_type": 0.5118243243243243
+        },
+        "minimum": 0.5118243243243243,
+        "mean": 0.5281531531531531
+      },
+      "candidates": [
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5371621621621622,
+            "task2_domain_sumber": 0.5320945945945946,
+            "task3_primary_entity_type": 0.5016891891891891
+          },
+          "minimum": 0.5016891891891891,
+          "mean": 0.5236486486486487
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5422297297297297,
+            "task2_domain_sumber": 0.5287162162162162,
+            "task3_primary_entity_type": 0.5
+          },
+          "minimum": 0.5,
+          "mean": 0.5236486486486487
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5557432432432432,
+            "task2_domain_sumber": 0.5033783783783784,
+            "task3_primary_entity_type": 0.5101351351351351
+          },
+          "minimum": 0.5033783783783784,
+          "mean": 0.5230855855855855
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5405405405405406,
+            "task2_domain_sumber": 0.5320945945945946,
+            "task3_primary_entity_type": 0.5016891891891891
+          },
+          "minimum": 0.5016891891891891,
+          "mean": 0.5247747747747747
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5557432432432432,
+            "task2_domain_sumber": 0.5050675675675675,
+            "task3_primary_entity_type": 0.5118243243243243
+          },
+          "minimum": 0.5050675675675675,
+          "mean": 0.5242117117117117
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5405405405405406,
+            "task2_domain_sumber": 0.535472972972973,
+            "task3_primary_entity_type": 0.5
+          },
+          "minimum": 0.5,
+          "mean": 0.5253378378378378
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5540540540540541,
+            "task2_domain_sumber": 0.518581081081081,
+            "task3_primary_entity_type": 0.5118243243243243
+          },
+          "minimum": 0.5118243243243243,
+          "mean": 0.5281531531531531
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5506756756756757,
+            "task2_domain_sumber": 0.5202702702702703,
+            "task3_primary_entity_type": 0.49493243243243246
+          },
+          "minimum": 0.49493243243243246,
+          "mean": 0.5219594594594595
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5608108108108109,
+            "task2_domain_sumber": 0.5033783783783784,
+            "task3_primary_entity_type": 0.48817567567567566
+          },
+          "minimum": 0.48817567567567566,
+          "mean": 0.517454954954955
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5523648648648649,
+            "task2_domain_sumber": 0.5219594594594594,
+            "task3_primary_entity_type": 0.4966216216216216
+          },
+          "minimum": 0.4966216216216216,
+          "mean": 0.5236486486486487
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5625,
+            "task2_domain_sumber": 0.5050675675675675,
+            "task3_primary_entity_type": 0.48986486486486486
+          },
+          "minimum": 0.48986486486486486,
+          "mean": 0.5191441441441441
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5472972972972973,
+            "task2_domain_sumber": 0.5219594594594594,
+            "task3_primary_entity_type": 0.5033783783783784
+          },
+          "minimum": 0.5033783783783784,
+          "mean": 0.5242117117117117
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5608108108108109,
+            "task2_domain_sumber": 0.5050675675675675,
+            "task3_primary_entity_type": 0.49155405405405406
+          },
+          "minimum": 0.49155405405405406,
+          "mean": 0.5191441441441441
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5574324324324325,
+            "task2_domain_sumber": 0.5,
+            "task3_primary_entity_type": 0.4983108108108108
+          },
+          "minimum": 0.4983108108108108,
+          "mean": 0.518581081081081
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5472972972972973,
+            "task2_domain_sumber": 0.46452702702702703,
+            "task3_primary_entity_type": 0.47128378378378377
+          },
+          "minimum": 0.46452702702702703,
+          "mean": 0.49436936936936937
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5591216216216216,
+            "task2_domain_sumber": 0.4983108108108108,
+            "task3_primary_entity_type": 0.4983108108108108
+          },
+          "minimum": 0.4983108108108108,
+          "mean": 0.518581081081081
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5472972972972973,
+            "task2_domain_sumber": 0.46621621621621623,
+            "task3_primary_entity_type": 0.47635135135135137
+          },
+          "minimum": 0.46621621621621623,
+          "mean": 0.49662162162162166
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5574324324324325,
+            "task2_domain_sumber": 0.5050675675675675,
+            "task3_primary_entity_type": 0.4983108108108108
+          },
+          "minimum": 0.4983108108108108,
+          "mean": 0.5202702702702703
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5472972972972973,
+            "task2_domain_sumber": 0.4780405405405405,
+            "task3_primary_entity_type": 0.48817567567567566
+          },
+          "minimum": 0.4780405405405405,
+          "mean": 0.5045045045045045
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4966216216216216,
+            "task2_domain_sumber": 0.4577702702702703,
+            "task3_primary_entity_type": 0.4172297297297297
+          },
+          "minimum": 0.4172297297297297,
+          "mean": 0.45720720720720714
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.44594594594594594,
+            "task2_domain_sumber": 0.38513513513513514,
+            "task3_primary_entity_type": 0.375
+          },
+          "minimum": 0.375,
+          "mean": 0.40202702702702703
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5,
+            "task2_domain_sumber": 0.46283783783783783,
+            "task3_primary_entity_type": 0.4206081081081081
+          },
+          "minimum": 0.4206081081081081,
+          "mean": 0.4611486486486487
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.44594594594594594,
+            "task2_domain_sumber": 0.3885135135135135,
+            "task3_primary_entity_type": 0.3783783783783784
+          },
+          "minimum": 0.3783783783783784,
+          "mean": 0.40427927927927926
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5202702702702703,
+            "task2_domain_sumber": 0.4594594594594595,
+            "task3_primary_entity_type": 0.4341216216216216
+          },
+          "minimum": 0.4341216216216216,
+          "mean": 0.47128378378378377
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.46621621621621623,
+            "task2_domain_sumber": 0.3918918918918919,
+            "task3_primary_entity_type": 0.3969594594594595
+          },
+          "minimum": 0.3918918918918919,
+          "mean": 0.41835585585585583
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5371621621621622,
+            "task2_domain_sumber": 0.5320945945945946,
+            "task3_primary_entity_type": 0.5016891891891891
+          },
+          "minimum": 0.5016891891891891,
+          "mean": 0.5236486486486487
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5405405405405406,
+            "task2_domain_sumber": 0.527027027027027,
+            "task3_primary_entity_type": 0.5
+          },
+          "minimum": 0.5,
+          "mean": 0.5225225225225225
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5557432432432432,
+            "task2_domain_sumber": 0.5050675675675675,
+            "task3_primary_entity_type": 0.5050675675675675
+          },
+          "minimum": 0.5050675675675675,
+          "mean": 0.5219594594594594
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5405405405405406,
+            "task2_domain_sumber": 0.5304054054054054,
+            "task3_primary_entity_type": 0.5033783783783784
+          },
+          "minimum": 0.5033783783783784,
+          "mean": 0.5247747747747749
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5557432432432432,
+            "task2_domain_sumber": 0.5118243243243243,
+            "task3_primary_entity_type": 0.5016891891891891
+          },
+          "minimum": 0.5016891891891891,
+          "mean": 0.5230855855855855
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5371621621621622,
+            "task2_domain_sumber": 0.5337837837837838,
+            "task3_primary_entity_type": 0.5033783783783784
+          },
+          "minimum": 0.5033783783783784,
+          "mean": 0.5247747747747749
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5540540540540541,
+            "task2_domain_sumber": 0.5236486486486487,
+            "task3_primary_entity_type": 0.5050675675675675
+          },
+          "minimum": 0.5050675675675675,
+          "mean": 0.5275900900900901
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5523648648648649,
+            "task2_domain_sumber": 0.518581081081081,
+            "task3_primary_entity_type": 0.4966216216216216
+          },
+          "minimum": 0.4966216216216216,
+          "mean": 0.5225225225225225
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5574324324324325,
+            "task2_domain_sumber": 0.5067567567567568,
+            "task3_primary_entity_type": 0.49155405405405406
+          },
+          "minimum": 0.49155405405405406,
+          "mean": 0.5185810810810811
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5506756756756757,
+            "task2_domain_sumber": 0.518581081081081,
+            "task3_primary_entity_type": 0.4983108108108108
+          },
+          "minimum": 0.4983108108108108,
+          "mean": 0.5225225225225224
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5608108108108109,
+            "task2_domain_sumber": 0.5067567567567568,
+            "task3_primary_entity_type": 0.4966216216216216
+          },
+          "minimum": 0.4966216216216216,
+          "mean": 0.5213963963963963
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.543918918918919,
+            "task2_domain_sumber": 0.5202702702702703,
+            "task3_primary_entity_type": 0.5033783783783784
+          },
+          "minimum": 0.5033783783783784,
+          "mean": 0.5225225225225225
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5591216216216216,
+            "task2_domain_sumber": 0.5033783783783784,
+            "task3_primary_entity_type": 0.49493243243243246
+          },
+          "minimum": 0.49493243243243246,
+          "mean": 0.5191441441441441
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5591216216216216,
+            "task2_domain_sumber": 0.5033783783783784,
+            "task3_primary_entity_type": 0.4864864864864865
+          },
+          "minimum": 0.4864864864864865,
+          "mean": 0.5163288288288288
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5422297297297297,
+            "task2_domain_sumber": 0.46114864864864863,
+            "task3_primary_entity_type": 0.4797297297297297
+          },
+          "minimum": 0.46114864864864863,
+          "mean": 0.4943693693693693
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5608108108108109,
+            "task2_domain_sumber": 0.5016891891891891,
+            "task3_primary_entity_type": 0.48817567567567566
+          },
+          "minimum": 0.48817567567567566,
+          "mean": 0.5168918918918919
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5405405405405406,
+            "task2_domain_sumber": 0.46452702702702703,
+            "task3_primary_entity_type": 0.4797297297297297
+          },
+          "minimum": 0.46452702702702703,
+          "mean": 0.49493243243243246
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5574324324324325,
+            "task2_domain_sumber": 0.5135135135135135,
+            "task3_primary_entity_type": 0.49155405405405406
+          },
+          "minimum": 0.49155405405405406,
+          "mean": 0.5208333333333334
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5388513513513513,
+            "task2_domain_sumber": 0.4780405405405405,
+            "task3_primary_entity_type": 0.48817567567567566
+          },
+          "minimum": 0.4780405405405405,
+          "mean": 0.5016891891891891
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.48817567567567566,
+            "task2_domain_sumber": 0.4543918918918919,
+            "task3_primary_entity_type": 0.41385135135135137
+          },
+          "minimum": 0.41385135135135137,
+          "mean": 0.4521396396396396
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4408783783783784,
+            "task2_domain_sumber": 0.38513513513513514,
+            "task3_primary_entity_type": 0.38006756756756754
+          },
+          "minimum": 0.38006756756756754,
+          "mean": 0.40202702702702703
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.49493243243243246,
+            "task2_domain_sumber": 0.4543918918918919,
+            "task3_primary_entity_type": 0.4239864864864865
+          },
+          "minimum": 0.4239864864864865,
+          "mean": 0.45777027027027034
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.44256756756756754,
+            "task2_domain_sumber": 0.38682432432432434,
+            "task3_primary_entity_type": 0.38175675675675674
+          },
+          "minimum": 0.38175675675675674,
+          "mean": 0.40371621621621623
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5084459459459459,
+            "task2_domain_sumber": 0.46452702702702703,
+            "task3_primary_entity_type": 0.44425675675675674
+          },
+          "minimum": 0.44425675675675674,
+          "mean": 0.47240990990990994
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4577702702702703,
+            "task2_domain_sumber": 0.3918918918918919,
+            "task3_primary_entity_type": 0.38344594594594594
+          },
+          "minimum": 0.38344594594594594,
+          "mean": 0.41103603603603606
+        }
+      ],
+      "outer_micro_f1": {
+        "task1_issue": 0.5472972972972973,
+        "task2_domain_sumber": 0.5135135135135135,
+        "task3_primary_entity_type": 0.5675675675675675
+      },
+      "control_micro_f1": {
+        "task1_issue": 0.5337837837837838,
+        "task2_domain_sumber": 0.5135135135135135,
+        "task3_primary_entity_type": 0.5743243243243243
+      }
+    },
+    {
+      "fold": 3,
+      "selected": {
+        "config": {
+          "head": "hierarchical",
+          "strength": 0.0,
+          "pseudocount": 50,
+          "mode": "marginal"
+        },
+        "micro_f1": {
+          "task1_issue": 0.5388513513513513,
+          "task2_domain_sumber": 0.5540540540540541,
+          "task3_primary_entity_type": 0.5422297297297297
+        },
+        "minimum": 0.5388513513513513,
+        "mean": 0.545045045045045
+      },
+      "candidates": [
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5388513513513513,
+            "task2_domain_sumber": 0.5540540540540541,
+            "task3_primary_entity_type": 0.5253378378378378
+          },
+          "minimum": 0.5253378378378378,
+          "mean": 0.5394144144144143
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5337837837837838,
+            "task2_domain_sumber": 0.535472972972973,
+            "task3_primary_entity_type": 0.5236486486486487
+          },
+          "minimum": 0.5236486486486487,
+          "mean": 0.5309684684684685
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5202702702702703,
+            "task2_domain_sumber": 0.5337837837837838,
+            "task3_primary_entity_type": 0.5253378378378378
+          },
+          "minimum": 0.5202702702702703,
+          "mean": 0.5264639639639639
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.535472972972973,
+            "task2_domain_sumber": 0.5422297297297297,
+            "task3_primary_entity_type": 0.5219594594594594
+          },
+          "minimum": 0.5219594594594594,
+          "mean": 0.5332207207207207
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5253378378378378,
+            "task2_domain_sumber": 0.5337837837837838,
+            "task3_primary_entity_type": 0.527027027027027
+          },
+          "minimum": 0.5253378378378378,
+          "mean": 0.5287162162162161
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.535472972972973,
+            "task2_domain_sumber": 0.543918918918919,
+            "task3_primary_entity_type": 0.527027027027027
+          },
+          "minimum": 0.527027027027027,
+          "mean": 0.535472972972973
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5253378378378378,
+            "task2_domain_sumber": 0.5371621621621622,
+            "task3_primary_entity_type": 0.527027027027027
+          },
+          "minimum": 0.5253378378378378,
+          "mean": 0.5298423423423423
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5371621621621622,
+            "task2_domain_sumber": 0.5304054054054054,
+            "task3_primary_entity_type": 0.5236486486486487
+          },
+          "minimum": 0.5236486486486487,
+          "mean": 0.5304054054054054
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5168918918918919,
+            "task2_domain_sumber": 0.518581081081081,
+            "task3_primary_entity_type": 0.5253378378378378
+          },
+          "minimum": 0.5168918918918919,
+          "mean": 0.5202702702702702
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5371621621621622,
+            "task2_domain_sumber": 0.5337837837837838,
+            "task3_primary_entity_type": 0.5287162162162162
+          },
+          "minimum": 0.5287162162162162,
+          "mean": 0.5332207207207208
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5202702702702703,
+            "task2_domain_sumber": 0.5219594594594594,
+            "task3_primary_entity_type": 0.5236486486486487
+          },
+          "minimum": 0.5202702702702703,
+          "mean": 0.5219594594594595
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5388513513513513,
+            "task2_domain_sumber": 0.5388513513513513,
+            "task3_primary_entity_type": 0.5253378378378378
+          },
+          "minimum": 0.5253378378378378,
+          "mean": 0.5343468468468467
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5135135135135135,
+            "task2_domain_sumber": 0.5253378378378378,
+            "task3_primary_entity_type": 0.5202702702702703
+          },
+          "minimum": 0.5135135135135135,
+          "mean": 0.5197072072072072
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5253378378378378,
+            "task2_domain_sumber": 0.5219594594594594,
+            "task3_primary_entity_type": 0.5135135135135135
+          },
+          "minimum": 0.5135135135135135,
+          "mean": 0.5202702702702703
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.48986486486486486,
+            "task2_domain_sumber": 0.48817567567567566,
+            "task3_primary_entity_type": 0.47466216216216217
+          },
+          "minimum": 0.47466216216216217,
+          "mean": 0.48423423423423423
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5253378378378378,
+            "task2_domain_sumber": 0.5202702702702703,
+            "task3_primary_entity_type": 0.5168918918918919
+          },
+          "minimum": 0.5168918918918919,
+          "mean": 0.5208333333333334
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.49155405405405406,
+            "task2_domain_sumber": 0.48986486486486486,
+            "task3_primary_entity_type": 0.47466216216216217
+          },
+          "minimum": 0.47466216216216217,
+          "mean": 0.4853603603603604
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5337837837837838,
+            "task2_domain_sumber": 0.5304054054054054,
+            "task3_primary_entity_type": 0.5219594594594594
+          },
+          "minimum": 0.5219594594594594,
+          "mean": 0.5287162162162161
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.49493243243243246,
+            "task2_domain_sumber": 0.5016891891891891,
+            "task3_primary_entity_type": 0.4780405405405405
+          },
+          "minimum": 0.4780405405405405,
+          "mean": 0.491554054054054
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4797297297297297,
+            "task2_domain_sumber": 0.46452702702702703,
+            "task3_primary_entity_type": 0.4222972972972973
+          },
+          "minimum": 0.4222972972972973,
+          "mean": 0.45551801801801806
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.43243243243243246,
+            "task2_domain_sumber": 0.43243243243243246,
+            "task3_primary_entity_type": 0.36824324324324326
+          },
+          "minimum": 0.36824324324324326,
+          "mean": 0.41103603603603606
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4831081081081081,
+            "task2_domain_sumber": 0.46790540540540543,
+            "task3_primary_entity_type": 0.42736486486486486
+          },
+          "minimum": 0.42736486486486486,
+          "mean": 0.4594594594594595
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.42905405405405406,
+            "task2_domain_sumber": 0.4341216216216216,
+            "task3_primary_entity_type": 0.3716216216216216
+          },
+          "minimum": 0.3716216216216216,
+          "mean": 0.41159909909909914
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.48986486486486486,
+            "task2_domain_sumber": 0.47466216216216217,
+            "task3_primary_entity_type": 0.4527027027027027
+          },
+          "minimum": 0.4527027027027027,
+          "mean": 0.4724099099099099
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4358108108108108,
+            "task2_domain_sumber": 0.4408783783783784,
+            "task3_primary_entity_type": 0.3952702702702703
+          },
+          "minimum": 0.3952702702702703,
+          "mean": 0.42398648648648657
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5388513513513513,
+            "task2_domain_sumber": 0.5540540540540541,
+            "task3_primary_entity_type": 0.5422297297297297
+          },
+          "minimum": 0.5388513513513513,
+          "mean": 0.545045045045045
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5320945945945946,
+            "task2_domain_sumber": 0.5371621621621622,
+            "task3_primary_entity_type": 0.5371621621621622
+          },
+          "minimum": 0.5320945945945946,
+          "mean": 0.5354729729729729
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5287162162162162,
+            "task2_domain_sumber": 0.5287162162162162,
+            "task3_primary_entity_type": 0.527027027027027
+          },
+          "minimum": 0.527027027027027,
+          "mean": 0.5281531531531531
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5371621621621622,
+            "task2_domain_sumber": 0.543918918918919,
+            "task3_primary_entity_type": 0.535472972972973
+          },
+          "minimum": 0.535472972972973,
+          "mean": 0.5388513513513514
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5337837837837838,
+            "task2_domain_sumber": 0.5287162162162162,
+            "task3_primary_entity_type": 0.5320945945945946
+          },
+          "minimum": 0.5287162162162162,
+          "mean": 0.5315315315315315
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5388513513513513,
+            "task2_domain_sumber": 0.543918918918919,
+            "task3_primary_entity_type": 0.5320945945945946
+          },
+          "minimum": 0.5320945945945946,
+          "mean": 0.5382882882882883
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5337837837837838,
+            "task2_domain_sumber": 0.5320945945945946,
+            "task3_primary_entity_type": 0.5371621621621622
+          },
+          "minimum": 0.5320945945945946,
+          "mean": 0.534346846846847
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5405405405405406,
+            "task2_domain_sumber": 0.5320945945945946,
+            "task3_primary_entity_type": 0.535472972972973
+          },
+          "minimum": 0.5320945945945946,
+          "mean": 0.536036036036036
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.527027027027027,
+            "task2_domain_sumber": 0.5168918918918919,
+            "task3_primary_entity_type": 0.518581081081081
+          },
+          "minimum": 0.5168918918918919,
+          "mean": 0.5208333333333334
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5405405405405406,
+            "task2_domain_sumber": 0.5337837837837838,
+            "task3_primary_entity_type": 0.5388513513513513
+          },
+          "minimum": 0.5337837837837838,
+          "mean": 0.5377252252252253
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5236486486486487,
+            "task2_domain_sumber": 0.518581081081081,
+            "task3_primary_entity_type": 0.5202702702702703
+          },
+          "minimum": 0.518581081081081,
+          "mean": 0.5208333333333334
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5405405405405406,
+            "task2_domain_sumber": 0.5388513513513513,
+            "task3_primary_entity_type": 0.535472972972973
+          },
+          "minimum": 0.535472972972973,
+          "mean": 0.5382882882882883
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5168918918918919,
+            "task2_domain_sumber": 0.5236486486486487,
+            "task3_primary_entity_type": 0.5168918918918919
+          },
+          "minimum": 0.5168918918918919,
+          "mean": 0.5191441441441441
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.535472972972973,
+            "task2_domain_sumber": 0.5236486486486487,
+            "task3_primary_entity_type": 0.5135135135135135
+          },
+          "minimum": 0.5135135135135135,
+          "mean": 0.5242117117117117
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.49493243243243246,
+            "task2_domain_sumber": 0.4864864864864865,
+            "task3_primary_entity_type": 0.48817567567567566
+          },
+          "minimum": 0.4864864864864865,
+          "mean": 0.4898648648648649
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5320945945945946,
+            "task2_domain_sumber": 0.5236486486486487,
+            "task3_primary_entity_type": 0.5152027027027027
+          },
+          "minimum": 0.5152027027027027,
+          "mean": 0.5236486486486487
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5,
+            "task2_domain_sumber": 0.48817567567567566,
+            "task3_primary_entity_type": 0.48817567567567566
+          },
+          "minimum": 0.48817567567567566,
+          "mean": 0.4921171171171171
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5337837837837838,
+            "task2_domain_sumber": 0.5337837837837838,
+            "task3_primary_entity_type": 0.5236486486486487
+          },
+          "minimum": 0.5236486486486487,
+          "mean": 0.5304054054054054
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5033783783783784,
+            "task2_domain_sumber": 0.5,
+            "task3_primary_entity_type": 0.49324324324324326
+          },
+          "minimum": 0.49324324324324326,
+          "mean": 0.4988738738738739
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.49155405405405406,
+            "task2_domain_sumber": 0.46790540540540543,
+            "task3_primary_entity_type": 0.42567567567567566
+          },
+          "minimum": 0.42567567567567566,
+          "mean": 0.4617117117117117
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.43074324324324326,
+            "task2_domain_sumber": 0.4375,
+            "task3_primary_entity_type": 0.38006756756756754
+          },
+          "minimum": 0.38006756756756754,
+          "mean": 0.4161036036036036
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4966216216216216,
+            "task2_domain_sumber": 0.46959459459459457,
+            "task3_primary_entity_type": 0.42905405405405406
+          },
+          "minimum": 0.42905405405405406,
+          "mean": 0.46509009009009006
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4358108108108108,
+            "task2_domain_sumber": 0.4408783783783784,
+            "task3_primary_entity_type": 0.38682432432432434
+          },
+          "minimum": 0.38682432432432434,
+          "mean": 0.4211711711711712
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4966216216216216,
+            "task2_domain_sumber": 0.47466216216216217,
+            "task3_primary_entity_type": 0.4543918918918919
+          },
+          "minimum": 0.4543918918918919,
+          "mean": 0.4752252252252252
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4408783783783784,
+            "task2_domain_sumber": 0.44256756756756754,
+            "task3_primary_entity_type": 0.39864864864864863
+          },
+          "minimum": 0.39864864864864863,
+          "mean": 0.42736486486486486
+        }
+      ],
+      "outer_micro_f1": {
+        "task1_issue": 0.6283783783783784,
+        "task2_domain_sumber": 0.5067567567567568,
+        "task3_primary_entity_type": 0.4797297297297297
+      },
+      "control_micro_f1": {
+        "task1_issue": 0.6283783783783784,
+        "task2_domain_sumber": 0.5067567567567568,
+        "task3_primary_entity_type": 0.4527027027027027
+      }
+    },
+    {
+      "fold": 4,
+      "selected": {
+        "config": {
+          "head": "flat",
+          "strength": 0.25,
+          "pseudocount": 10,
+          "mode": "map"
+        },
+        "micro_f1": {
+          "task1_issue": 0.5304054054054054,
+          "task2_domain_sumber": 0.5202702702702703,
+          "task3_primary_entity_type": 0.5202702702702703
+        },
+        "minimum": 0.5202702702702703,
+        "mean": 0.5236486486486487
+      },
+      "candidates": [
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5337837837837838,
+            "task2_domain_sumber": 0.5135135135135135,
+            "task3_primary_entity_type": 0.5236486486486487
+          },
+          "minimum": 0.5135135135135135,
+          "mean": 0.5236486486486487
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5371621621621622,
+            "task2_domain_sumber": 0.5084459459459459,
+            "task3_primary_entity_type": 0.5287162162162162
+          },
+          "minimum": 0.5084459459459459,
+          "mean": 0.5247747747747747
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5304054054054054,
+            "task2_domain_sumber": 0.5202702702702703,
+            "task3_primary_entity_type": 0.5202702702702703
+          },
+          "minimum": 0.5202702702702703,
+          "mean": 0.5236486486486487
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5371621621621622,
+            "task2_domain_sumber": 0.5033783783783784,
+            "task3_primary_entity_type": 0.5337837837837838
+          },
+          "minimum": 0.5033783783783784,
+          "mean": 0.5247747747747747
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5287162162162162,
+            "task2_domain_sumber": 0.5202702702702703,
+            "task3_primary_entity_type": 0.5202702702702703
+          },
+          "minimum": 0.5202702702702703,
+          "mean": 0.5230855855855855
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5304054054054054,
+            "task2_domain_sumber": 0.5033783783783784,
+            "task3_primary_entity_type": 0.5287162162162162
+          },
+          "minimum": 0.5033783783783784,
+          "mean": 0.5208333333333334
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5388513513513513,
+            "task2_domain_sumber": 0.5219594594594594,
+            "task3_primary_entity_type": 0.518581081081081
+          },
+          "minimum": 0.518581081081081,
+          "mean": 0.5264639639639639
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5388513513513513,
+            "task2_domain_sumber": 0.5152027027027027,
+            "task3_primary_entity_type": 0.5236486486486487
+          },
+          "minimum": 0.5152027027027027,
+          "mean": 0.5259009009009009
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.535472972972973,
+            "task2_domain_sumber": 0.5084459459459459,
+            "task3_primary_entity_type": 0.5118243243243243
+          },
+          "minimum": 0.5084459459459459,
+          "mean": 0.518581081081081
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5388513513513513,
+            "task2_domain_sumber": 0.5118243243243243,
+            "task3_primary_entity_type": 0.5253378378378378
+          },
+          "minimum": 0.5118243243243243,
+          "mean": 0.5253378378378378
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5337837837837838,
+            "task2_domain_sumber": 0.5084459459459459,
+            "task3_primary_entity_type": 0.5101351351351351
+          },
+          "minimum": 0.5084459459459459,
+          "mean": 0.517454954954955
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5371621621621622,
+            "task2_domain_sumber": 0.5084459459459459,
+            "task3_primary_entity_type": 0.5337837837837838
+          },
+          "minimum": 0.5084459459459459,
+          "mean": 0.526463963963964
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.535472972972973,
+            "task2_domain_sumber": 0.5135135135135135,
+            "task3_primary_entity_type": 0.5253378378378378
+          },
+          "minimum": 0.5135135135135135,
+          "mean": 0.5247747747747747
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5304054054054054,
+            "task2_domain_sumber": 0.5118243243243243,
+            "task3_primary_entity_type": 0.5101351351351351
+          },
+          "minimum": 0.5101351351351351,
+          "mean": 0.517454954954955
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5202702702702703,
+            "task2_domain_sumber": 0.4797297297297297,
+            "task3_primary_entity_type": 0.4831081081081081
+          },
+          "minimum": 0.4797297297297297,
+          "mean": 0.49436936936936937
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5304054054054054,
+            "task2_domain_sumber": 0.5152027027027027,
+            "task3_primary_entity_type": 0.5135135135135135
+          },
+          "minimum": 0.5135135135135135,
+          "mean": 0.5197072072072072
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5168918918918919,
+            "task2_domain_sumber": 0.47635135135135137,
+            "task3_primary_entity_type": 0.4814189189189189
+          },
+          "minimum": 0.47635135135135137,
+          "mean": 0.491554054054054
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.535472972972973,
+            "task2_domain_sumber": 0.5118243243243243,
+            "task3_primary_entity_type": 0.5202702702702703
+          },
+          "minimum": 0.5118243243243243,
+          "mean": 0.5225225225225225
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.518581081081081,
+            "task2_domain_sumber": 0.4780405405405405,
+            "task3_primary_entity_type": 0.4814189189189189
+          },
+          "minimum": 0.4780405405405405,
+          "mean": 0.4926801801801801
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4983108108108108,
+            "task2_domain_sumber": 0.4375,
+            "task3_primary_entity_type": 0.40371621621621623
+          },
+          "minimum": 0.40371621621621623,
+          "mean": 0.446509009009009
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.43074324324324326,
+            "task2_domain_sumber": 0.36993243243243246,
+            "task3_primary_entity_type": 0.3530405405405405
+          },
+          "minimum": 0.3530405405405405,
+          "mean": 0.38457207207207206
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4983108108108108,
+            "task2_domain_sumber": 0.4391891891891892,
+            "task3_primary_entity_type": 0.40878378378378377
+          },
+          "minimum": 0.40878378378378377,
+          "mean": 0.44876126126126126
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4358108108108108,
+            "task2_domain_sumber": 0.36993243243243246,
+            "task3_primary_entity_type": 0.36655405405405406
+          },
+          "minimum": 0.36655405405405406,
+          "mean": 0.39076576576576577
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5152027027027027,
+            "task2_domain_sumber": 0.4560810810810811,
+            "task3_primary_entity_type": 0.4341216216216216
+          },
+          "minimum": 0.4341216216216216,
+          "mean": 0.4684684684684684
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4408783783783784,
+            "task2_domain_sumber": 0.3733108108108108,
+            "task3_primary_entity_type": 0.38175675675675674
+          },
+          "minimum": 0.3733108108108108,
+          "mean": 0.3986486486486487
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5337837837837838,
+            "task2_domain_sumber": 0.5135135135135135,
+            "task3_primary_entity_type": 0.5388513513513513
+          },
+          "minimum": 0.5135135135135135,
+          "mean": 0.5287162162162162
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5337837837837838,
+            "task2_domain_sumber": 0.5084459459459459,
+            "task3_primary_entity_type": 0.5253378378378378
+          },
+          "minimum": 0.5084459459459459,
+          "mean": 0.5225225225225225
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5371621621621622,
+            "task2_domain_sumber": 0.5152027027027027,
+            "task3_primary_entity_type": 0.5118243243243243
+          },
+          "minimum": 0.5118243243243243,
+          "mean": 0.5213963963963965
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.535472972972973,
+            "task2_domain_sumber": 0.5033783783783784,
+            "task3_primary_entity_type": 0.5253378378378378
+          },
+          "minimum": 0.5033783783783784,
+          "mean": 0.5213963963963963
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.535472972972973,
+            "task2_domain_sumber": 0.518581081081081,
+            "task3_primary_entity_type": 0.5118243243243243
+          },
+          "minimum": 0.5118243243243243,
+          "mean": 0.5219594594594594
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5320945945945946,
+            "task2_domain_sumber": 0.5033783783783784,
+            "task3_primary_entity_type": 0.527027027027027
+          },
+          "minimum": 0.5033783783783784,
+          "mean": 0.5208333333333334
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5405405405405406,
+            "task2_domain_sumber": 0.5202702702702703,
+            "task3_primary_entity_type": 0.5135135135135135
+          },
+          "minimum": 0.5135135135135135,
+          "mean": 0.5247747747747749
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5337837837837838,
+            "task2_domain_sumber": 0.5152027027027027,
+            "task3_primary_entity_type": 0.5135135135135135
+          },
+          "minimum": 0.5135135135135135,
+          "mean": 0.5208333333333334
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5371621621621622,
+            "task2_domain_sumber": 0.5118243243243243,
+            "task3_primary_entity_type": 0.5152027027027027
+          },
+          "minimum": 0.5118243243243243,
+          "mean": 0.5213963963963963
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5405405405405406,
+            "task2_domain_sumber": 0.5135135135135135,
+            "task3_primary_entity_type": 0.5168918918918919
+          },
+          "minimum": 0.5135135135135135,
+          "mean": 0.5236486486486486
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5371621621621622,
+            "task2_domain_sumber": 0.5135135135135135,
+            "task3_primary_entity_type": 0.5168918918918919
+          },
+          "minimum": 0.5135135135135135,
+          "mean": 0.5225225225225225
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5371621621621622,
+            "task2_domain_sumber": 0.5118243243243243,
+            "task3_primary_entity_type": 0.5168918918918919
+          },
+          "minimum": 0.5118243243243243,
+          "mean": 0.5219594594594594
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5371621621621622,
+            "task2_domain_sumber": 0.5168918918918919,
+            "task3_primary_entity_type": 0.5168918918918919
+          },
+          "minimum": 0.5168918918918919,
+          "mean": 0.5236486486486486
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5371621621621622,
+            "task2_domain_sumber": 0.5118243243243243,
+            "task3_primary_entity_type": 0.5152027027027027
+          },
+          "minimum": 0.5118243243243243,
+          "mean": 0.5213963963963963
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5118243243243243,
+            "task2_domain_sumber": 0.4864864864864865,
+            "task3_primary_entity_type": 0.4780405405405405
+          },
+          "minimum": 0.4780405405405405,
+          "mean": 0.4921171171171171
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5337837837837838,
+            "task2_domain_sumber": 0.5152027027027027,
+            "task3_primary_entity_type": 0.518581081081081
+          },
+          "minimum": 0.5152027027027027,
+          "mean": 0.5225225225225225
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5101351351351351,
+            "task2_domain_sumber": 0.4831081081081081,
+            "task3_primary_entity_type": 0.4797297297297297
+          },
+          "minimum": 0.4797297297297297,
+          "mean": 0.4909909909909909
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5405405405405406,
+            "task2_domain_sumber": 0.5152027027027027,
+            "task3_primary_entity_type": 0.5202702702702703
+          },
+          "minimum": 0.5152027027027027,
+          "mean": 0.5253378378378378
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5152027027027027,
+            "task2_domain_sumber": 0.49155405405405406,
+            "task3_primary_entity_type": 0.4864864864864865
+          },
+          "minimum": 0.4864864864864865,
+          "mean": 0.4977477477477478
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5050675675675675,
+            "task2_domain_sumber": 0.44256756756756754,
+            "task3_primary_entity_type": 0.4222972972972973
+          },
+          "minimum": 0.4222972972972973,
+          "mean": 0.45664414414414417
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4391891891891892,
+            "task2_domain_sumber": 0.38006756756756754,
+            "task3_primary_entity_type": 0.375
+          },
+          "minimum": 0.375,
+          "mean": 0.3980855855855856
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5067567567567568,
+            "task2_domain_sumber": 0.4510135135135135,
+            "task3_primary_entity_type": 0.42567567567567566
+          },
+          "minimum": 0.42567567567567566,
+          "mean": 0.4611486486486487
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.44256756756756754,
+            "task2_domain_sumber": 0.3766891891891892,
+            "task3_primary_entity_type": 0.38344594594594594
+          },
+          "minimum": 0.3766891891891892,
+          "mean": 0.40090090090090086
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5168918918918919,
+            "task2_domain_sumber": 0.4594594594594595,
+            "task3_primary_entity_type": 0.44256756756756754
+          },
+          "minimum": 0.44256756756756754,
+          "mean": 0.47297297297297297
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.44932432432432434,
+            "task2_domain_sumber": 0.38006756756756754,
+            "task3_primary_entity_type": 0.40033783783783783
+          },
+          "minimum": 0.38006756756756754,
+          "mean": 0.40990990990990994
+        }
+      ],
+      "outer_micro_f1": {
+        "task1_issue": 0.5608108108108109,
+        "task2_domain_sumber": 0.5608108108108109,
+        "task3_primary_entity_type": 0.5
+      },
+      "control_micro_f1": {
+        "task1_issue": 0.581081081081081,
+        "task2_domain_sumber": 0.5540540540540541,
+        "task3_primary_entity_type": 0.5067567567567568
+      }
+    },
+    {
+      "fold": 5,
+      "selected": {
+        "config": {
+          "head": "hierarchical",
+          "strength": 0.5,
+          "pseudocount": 200,
+          "mode": "marginal"
+        },
+        "micro_f1": {
+          "task1_issue": 0.5456081081081081,
+          "task2_domain_sumber": 0.5472972972972973,
+          "task3_primary_entity_type": 0.5337837837837838
+        },
+        "minimum": 0.5337837837837838,
+        "mean": 0.5422297297297297
+      },
+      "candidates": [
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5489864864864865,
+            "task2_domain_sumber": 0.5472972972972973,
+            "task3_primary_entity_type": 0.5118243243243243
+          },
+          "minimum": 0.5118243243243243,
+          "mean": 0.536036036036036
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5472972972972973,
+            "task2_domain_sumber": 0.5456081081081081,
+            "task3_primary_entity_type": 0.5118243243243243
+          },
+          "minimum": 0.5118243243243243,
+          "mean": 0.5349099099099098
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5506756756756757,
+            "task2_domain_sumber": 0.5371621621621622,
+            "task3_primary_entity_type": 0.518581081081081
+          },
+          "minimum": 0.518581081081081,
+          "mean": 0.5354729729729729
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5472972972972973,
+            "task2_domain_sumber": 0.5472972972972973,
+            "task3_primary_entity_type": 0.5168918918918919
+          },
+          "minimum": 0.5168918918918919,
+          "mean": 0.5371621621621622
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5489864864864865,
+            "task2_domain_sumber": 0.5405405405405406,
+            "task3_primary_entity_type": 0.5168918918918919
+          },
+          "minimum": 0.5168918918918919,
+          "mean": 0.535472972972973
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5456081081081081,
+            "task2_domain_sumber": 0.5489864864864865,
+            "task3_primary_entity_type": 0.5152027027027027
+          },
+          "minimum": 0.5152027027027027,
+          "mean": 0.5365990990990991
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5388513513513513,
+            "task2_domain_sumber": 0.5456081081081081,
+            "task3_primary_entity_type": 0.5202702702702703
+          },
+          "minimum": 0.5202702702702703,
+          "mean": 0.5349099099099099
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5472972972972973,
+            "task2_domain_sumber": 0.543918918918919,
+            "task3_primary_entity_type": 0.5152027027027027
+          },
+          "minimum": 0.5152027027027027,
+          "mean": 0.5354729729729729
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5371621621621622,
+            "task2_domain_sumber": 0.5219594594594594,
+            "task3_primary_entity_type": 0.5118243243243243
+          },
+          "minimum": 0.5118243243243243,
+          "mean": 0.5236486486486486
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5472972972972973,
+            "task2_domain_sumber": 0.5472972972972973,
+            "task3_primary_entity_type": 0.5168918918918919
+          },
+          "minimum": 0.5168918918918919,
+          "mean": 0.5371621621621622
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.535472972972973,
+            "task2_domain_sumber": 0.527027027027027,
+            "task3_primary_entity_type": 0.5084459459459459
+          },
+          "minimum": 0.5084459459459459,
+          "mean": 0.5236486486486487
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.543918918918919,
+            "task2_domain_sumber": 0.543918918918919,
+            "task3_primary_entity_type": 0.5202702702702703
+          },
+          "minimum": 0.5202702702702703,
+          "mean": 0.5360360360360361
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5388513513513513,
+            "task2_domain_sumber": 0.5202702702702703,
+            "task3_primary_entity_type": 0.5152027027027027
+          },
+          "minimum": 0.5152027027027027,
+          "mean": 0.5247747747747747
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.543918918918919,
+            "task2_domain_sumber": 0.5168918918918919,
+            "task3_primary_entity_type": 0.5168918918918919
+          },
+          "minimum": 0.5168918918918919,
+          "mean": 0.5259009009009009
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5422297297297297,
+            "task2_domain_sumber": 0.4814189189189189,
+            "task3_primary_entity_type": 0.47297297297297297
+          },
+          "minimum": 0.47297297297297297,
+          "mean": 0.4988738738738739
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.543918918918919,
+            "task2_domain_sumber": 0.518581081081081,
+            "task3_primary_entity_type": 0.5219594594594594
+          },
+          "minimum": 0.518581081081081,
+          "mean": 0.5281531531531531
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.543918918918919,
+            "task2_domain_sumber": 0.48986486486486486,
+            "task3_primary_entity_type": 0.47466216216216217
+          },
+          "minimum": 0.47466216216216217,
+          "mean": 0.5028153153153153
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5456081081081081,
+            "task2_domain_sumber": 0.5253378378378378,
+            "task3_primary_entity_type": 0.527027027027027
+          },
+          "minimum": 0.5253378378378378,
+          "mean": 0.5326576576576577
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.543918918918919,
+            "task2_domain_sumber": 0.5016891891891891,
+            "task3_primary_entity_type": 0.4864864864864865
+          },
+          "minimum": 0.4864864864864865,
+          "mean": 0.5106981981981983
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.49324324324324326,
+            "task2_domain_sumber": 0.47297297297297297,
+            "task3_primary_entity_type": 0.38344594594594594
+          },
+          "minimum": 0.38344594594594594,
+          "mean": 0.4498873873873874
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4543918918918919,
+            "task2_domain_sumber": 0.4408783783783784,
+            "task3_primary_entity_type": 0.33952702702702703
+          },
+          "minimum": 0.33952702702702703,
+          "mean": 0.41159909909909914
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4983108108108108,
+            "task2_domain_sumber": 0.47466216216216217,
+            "task3_primary_entity_type": 0.3918918918918919
+          },
+          "minimum": 0.3918918918918919,
+          "mean": 0.45495495495495497
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4543918918918919,
+            "task2_domain_sumber": 0.44256756756756754,
+            "task3_primary_entity_type": 0.34121621621621623
+          },
+          "minimum": 0.34121621621621623,
+          "mean": 0.4127252252252252
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5152027027027027,
+            "task2_domain_sumber": 0.4797297297297297,
+            "task3_primary_entity_type": 0.43074324324324326
+          },
+          "minimum": 0.43074324324324326,
+          "mean": 0.4752252252252252
+        },
+        {
+          "config": {
+            "head": "flat",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4814189189189189,
+            "task2_domain_sumber": 0.44594594594594594,
+            "task3_primary_entity_type": 0.3564189189189189
+          },
+          "minimum": 0.3564189189189189,
+          "mean": 0.42792792792792794
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5489864864864865,
+            "task2_domain_sumber": 0.5472972972972973,
+            "task3_primary_entity_type": 0.518581081081081
+          },
+          "minimum": 0.518581081081081,
+          "mean": 0.5382882882882883
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5456081081081081,
+            "task2_domain_sumber": 0.5456081081081081,
+            "task3_primary_entity_type": 0.5253378378378378
+          },
+          "minimum": 0.5253378378378378,
+          "mean": 0.5388513513513513
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5422297297297297,
+            "task2_domain_sumber": 0.5337837837837838,
+            "task3_primary_entity_type": 0.5202702702702703
+          },
+          "minimum": 0.5202702702702703,
+          "mean": 0.5320945945945946
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5456081081081081,
+            "task2_domain_sumber": 0.5472972972972973,
+            "task3_primary_entity_type": 0.527027027027027
+          },
+          "minimum": 0.527027027027027,
+          "mean": 0.5399774774774774
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5422297297297297,
+            "task2_domain_sumber": 0.5388513513513513,
+            "task3_primary_entity_type": 0.5253378378378378
+          },
+          "minimum": 0.5253378378378378,
+          "mean": 0.5354729729729729
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5472972972972973,
+            "task2_domain_sumber": 0.5489864864864865,
+            "task3_primary_entity_type": 0.527027027027027
+          },
+          "minimum": 0.527027027027027,
+          "mean": 0.5411036036036035
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.25,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5388513513513513,
+            "task2_domain_sumber": 0.543918918918919,
+            "task3_primary_entity_type": 0.527027027027027
+          },
+          "minimum": 0.527027027027027,
+          "mean": 0.5365990990990991
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5472972972972973,
+            "task2_domain_sumber": 0.5472972972972973,
+            "task3_primary_entity_type": 0.5304054054054054
+          },
+          "minimum": 0.5304054054054054,
+          "mean": 0.5416666666666666
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.535472972972973,
+            "task2_domain_sumber": 0.5253378378378378,
+            "task3_primary_entity_type": 0.5202702702702703
+          },
+          "minimum": 0.5202702702702703,
+          "mean": 0.5270270270270271
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5489864864864865,
+            "task2_domain_sumber": 0.5472972972972973,
+            "task3_primary_entity_type": 0.5304054054054054
+          },
+          "minimum": 0.5304054054054054,
+          "mean": 0.5422297297297297
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5320945945945946,
+            "task2_domain_sumber": 0.5304054054054054,
+            "task3_primary_entity_type": 0.5168918918918919
+          },
+          "minimum": 0.5168918918918919,
+          "mean": 0.526463963963964
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5456081081081081,
+            "task2_domain_sumber": 0.5472972972972973,
+            "task3_primary_entity_type": 0.5337837837837838
+          },
+          "minimum": 0.5337837837837838,
+          "mean": 0.5422297297297297
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 0.5,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.535472972972973,
+            "task2_domain_sumber": 0.527027027027027,
+            "task3_primary_entity_type": 0.518581081081081
+          },
+          "minimum": 0.518581081081081,
+          "mean": 0.5270270270270271
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5540540540540541,
+            "task2_domain_sumber": 0.518581081081081,
+            "task3_primary_entity_type": 0.527027027027027
+          },
+          "minimum": 0.518581081081081,
+          "mean": 0.5332207207207207
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.543918918918919,
+            "task2_domain_sumber": 0.49155405405405406,
+            "task3_primary_entity_type": 0.46790540540540543
+          },
+          "minimum": 0.46790540540540543,
+          "mean": 0.5011261261261262
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5506756756756757,
+            "task2_domain_sumber": 0.5152027027027027,
+            "task3_primary_entity_type": 0.527027027027027
+          },
+          "minimum": 0.5152027027027027,
+          "mean": 0.5309684684684685
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5456081081081081,
+            "task2_domain_sumber": 0.4966216216216216,
+            "task3_primary_entity_type": 0.46790540540540543
+          },
+          "minimum": 0.46790540540540543,
+          "mean": 0.5033783783783784
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5540540540540541,
+            "task2_domain_sumber": 0.5304054054054054,
+            "task3_primary_entity_type": 0.5219594594594594
+          },
+          "minimum": 0.5219594594594594,
+          "mean": 0.5354729729729729
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 1.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5472972972972973,
+            "task2_domain_sumber": 0.5067567567567568,
+            "task3_primary_entity_type": 0.49324324324324326
+          },
+          "minimum": 0.49324324324324326,
+          "mean": 0.5157657657657657
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.4983108108108108,
+            "task2_domain_sumber": 0.46452702702702703,
+            "task3_primary_entity_type": 0.40709459459459457
+          },
+          "minimum": 0.40709459459459457,
+          "mean": 0.45664414414414417
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 10,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.44932432432432434,
+            "task2_domain_sumber": 0.4375,
+            "task3_primary_entity_type": 0.34121621621621623
+          },
+          "minimum": 0.34121621621621623,
+          "mean": 0.40934684684684686
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5050675675675675,
+            "task2_domain_sumber": 0.46621621621621623,
+            "task3_primary_entity_type": 0.4206081081081081
+          },
+          "minimum": 0.4206081081081081,
+          "mean": 0.46396396396396394
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 50,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.44932432432432434,
+            "task2_domain_sumber": 0.4408783783783784,
+            "task3_primary_entity_type": 0.35135135135135137
+          },
+          "minimum": 0.35135135135135137,
+          "mean": 0.41385135135135137
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "marginal"
+          },
+          "micro_f1": {
+            "task1_issue": 0.5152027027027027,
+            "task2_domain_sumber": 0.4780405405405405,
+            "task3_primary_entity_type": 0.44425675675675674
+          },
+          "minimum": 0.44425675675675674,
+          "mean": 0.4791666666666667
+        },
+        {
+          "config": {
+            "head": "hierarchical",
+            "strength": 2.0,
+            "pseudocount": 200,
+            "mode": "map"
+          },
+          "micro_f1": {
+            "task1_issue": 0.47635135135135137,
+            "task2_domain_sumber": 0.44594594594594594,
+            "task3_primary_entity_type": 0.36993243243243246
+          },
+          "minimum": 0.36993243243243246,
+          "mean": 0.43074324324324326
+        }
+      ],
+      "outer_micro_f1": {
+        "task1_issue": 0.581081081081081,
+        "task2_domain_sumber": 0.5608108108108109,
+        "task3_primary_entity_type": 0.5135135135135135
+      },
+      "control_micro_f1": {
+        "task1_issue": 0.5878378378378378,
+        "task2_domain_sumber": 0.5743243243243243,
+        "task3_primary_entity_type": 0.5337837837837838
+      }
+    }
+  ],
+  "seconds": 665.6898567460012,
+  "predictions_sha256": "a1236e216ab4611bf05f646dfb1ddb61425bcd455d699ff4557b6570af2d32f8"
+}

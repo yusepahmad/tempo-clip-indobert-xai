@@ -1,0 +1,90 @@
+{
+  "index": 265,
+  "sample_id": "TMP-9012CAB68C16",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "731d2c4e2985b007b0d33b9a56ef8dcf00a8a0f6f5d64edd5e48fd01d529807a",
+  "image_sha256": "9012cab68c16406aab383ad23594f8aebd0ea37baf8501e96769804622518ff0",
+  "transmitted_image_sha256": "f2cf3ea1b31e577e9d207971096ed774ff26ae3f5717d2e3654d3c0f769fb370",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.403357,
+      "total": 10,
+      "remaining": 1.5966430000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.403357,
+      "total": 100,
+      "remaining": 91.596643,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.728155449964106,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Television test pattern\",\n  \"source_properties\": \"Standardized vertical colored bars and calibration blocks used for broadcasting signal tests.\",\n  \"target_situation\": \"Political maneuvering within television broadcasting and the selection of regulatory commission members.\",\n  \"mapping\": \"The pattern represents the television medium; politicians peeking from behind the bars symbolize hidden influence and 'games' occurring behind the industry's official surface.\",\n  \"uncertainty\": \"None.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "F5TLasbnPJ_v_uMPm5vQ6AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1121,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1018
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 663000,
+        "output_tokens_cost_nanodollars": 3363000
+      },
+      "prompt_tokens": 1326,
+      "total_backend_latency_ms": 5556,
+      "total_tokens": 2447
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.407383,
+      "total": 10,
+      "remaining": 1.5926170000000006,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.407382999999996,
+      "total": 100,
+      "remaining": 91.592617,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.004026,
+  "fields": {
+    "source_object": "Television test pattern",
+    "source_properties": "Standardized vertical colored bars and calibration blocks used for broadcasting signal tests.",
+    "target_situation": "Political maneuvering within television broadcasting and the selection of regulatory commission members.",
+    "mapping": "The pattern represents the television medium; politicians peeking from behind the bars symbolize hidden influence and 'games' occurring behind the industry's official surface.",
+    "uncertainty": "None."
+  },
+  "explanation": "source_object: Television test pattern\nsource_properties: Standardized vertical colored bars and calibration blocks used for broadcasting signal tests.\ntarget_situation: Political maneuvering within television broadcasting and the selection of regulatory commission members.\nmapping: The pattern represents the television medium; politicians peeking from behind the bars symbolize hidden influence and 'games' occurring behind the industry's official surface.\nuncertainty: None.",
+  "finish_reason": "stop",
+  "usable": true
+}

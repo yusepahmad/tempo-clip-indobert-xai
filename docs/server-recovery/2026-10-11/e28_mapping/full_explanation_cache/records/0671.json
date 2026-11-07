@@ -1,0 +1,90 @@
+{
+  "index": 671,
+  "sample_id": "TMP-81F529129D02",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "2acaff03f1ba3737ddc17d03b21ce21adbdbeecabd3cd13c7f4ad1be744a812b",
+  "image_sha256": "81f529129d02086d783946440ca3a30402c1dc3992f208441b8af63caecd2da4",
+  "transmitted_image_sha256": "f9bb271a468175a27778758cf659ef90c93605696890d35882dad2af111503b8",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9591695,
+      "total": 10,
+      "remaining": 1.0408305000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.959169500000002,
+      "total": 100,
+      "remaining": 91.0408305,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.008727130014449,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n\"source_object\": \"Two men racing toy ships in a narrow stream.\",\n\"source_properties\": \"Crouched, competitive interaction with small vessels in a controlled, artificial waterway.\",\n\"target_situation\": \"Two ministers racing to issue regulations enabling sea sand exports for corporate gain.\",\n\"mapping\": \"Manually pushing toy ships represents the ministers' hands-on manipulation of policy to smooth the way for exports.\",\n\"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "pp7LasCgFcfR_uMPxMva8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 991,
+      "completion_tokens_details": {
+        "reasoning_tokens": 892
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 684500,
+        "output_tokens_cost_nanodollars": 2973000
+      },
+      "prompt_tokens": 1369,
+      "total_backend_latency_ms": 5513,
+      "total_tokens": 2360
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.962827,
+      "total": 10,
+      "remaining": 1.0371729999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.962827000000004,
+      "total": 100,
+      "remaining": 91.037173,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0036575,
+  "fields": {
+    "source_object": "Two men racing toy ships in a narrow stream.",
+    "source_properties": "Crouched, competitive interaction with small vessels in a controlled, artificial waterway.",
+    "target_situation": "Two ministers racing to issue regulations enabling sea sand exports for corporate gain.",
+    "mapping": "Manually pushing toy ships represents the ministers' hands-on manipulation of policy to smooth the way for exports.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Two men racing toy ships in a narrow stream.\nsource_properties: Crouched, competitive interaction with small vessels in a controlled, artificial waterway.\ntarget_situation: Two ministers racing to issue regulations enabling sea sand exports for corporate gain.\nmapping: Manually pushing toy ships represents the ministers' hands-on manipulation of policy to smooth the way for exports.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

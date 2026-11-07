@@ -1,0 +1,87 @@
+{
+  "index": 679,
+  "sample_id": "TMP-AE958A51B10E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "4ab6a799f9efd84880d37b9d5ef146296e3944fdf065d48423607a1ccc078380",
+  "image_sha256": "ae958a51b10e22b10c287037232152f22082c7fc3c1bf55696643a8e5ffb1d1e",
+  "transmitted_image_sha256": "9c81b7dd91d282f3279acf195ec04b6fee999c8549be7d70765ec9c3c5c4762f",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9719045,
+      "total": 10,
+      "remaining": 1.0280954999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.971904499999994,
+      "total": 100,
+      "remaining": 91.0280955,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1804284141398966,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"none evident\",\n  \"source_properties\": \"literal depiction of an older man gesturing while speaking\",\n  \"target_situation\": \"an interview with Sugianto Kusuma, also known as Aguan, regarding his leadership of investors in the Ibu Kota Nusantara project\",\n  \"mapping\": \"the image literally portrays the subject, Aguan, corresponding to the headline 'Aguan Bicara' and the descriptive text about his business activities\",\n  \"uncertainty\": \"no visual analogy is used; the cover uses a standard portrait of the featured individual\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "3J7LavbWH_W6_uMPjdDjYA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 126,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677500,
+        "output_tokens_cost_nanodollars": 378000
+      },
+      "prompt_tokens": 1355,
+      "total_backend_latency_ms": 1887,
+      "total_tokens": 1481
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.97296,
+      "total": 10,
+      "remaining": 1.0270399999999995,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.97296,
+      "total": 100,
+      "remaining": 91.02704,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010555,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "literal depiction of an older man gesturing while speaking",
+    "target_situation": "an interview with Sugianto Kusuma, also known as Aguan, regarding his leadership of investors in the Ibu Kota Nusantara project",
+    "mapping": "the image literally portrays the subject, Aguan, corresponding to the headline 'Aguan Bicara' and the descriptive text about his business activities",
+    "uncertainty": "no visual analogy is used; the cover uses a standard portrait of the featured individual"
+  },
+  "explanation": "source_object: none evident\nsource_properties: literal depiction of an older man gesturing while speaking\ntarget_situation: an interview with Sugianto Kusuma, also known as Aguan, regarding his leadership of investors in the Ibu Kota Nusantara project\nmapping: the image literally portrays the subject, Aguan, corresponding to the headline 'Aguan Bicara' and the descriptive text about his business activities\nuncertainty: no visual analogy is used; the cover uses a standard portrait of the featured individual",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 404,
+  "sample_id": "TMP-DE830D3D9511",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "61713962278e9b2eeb6811dd9d84667d71c741d692bc3c7ca949be7d9ae02d06",
+  "image_sha256": "de830d3d95113f6c9e3114e215b5046255edd06c4e32ecc1db18474087f653e8",
+  "transmitted_image_sha256": "aaeded6d84757cd95cc5b3d1355eda6268ea6a0209672f0b2735db942ddcffdc",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5889655,
+      "total": 10,
+      "remaining": 1.4110344999999995,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.5889655,
+      "total": 100,
+      "remaining": 91.4110345,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.059737457893789,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"QR code\", \"source_properties\": \"A complex pattern of interlocking black and white blocks forming a machine-readable data matrix.\", \"target_situation\": \"The rapid expansion of the digital economy displacing conventional business models.\", \"mapping\": \"Pink figures represent workers physically building or dismantling a landscape of digital data blocks, illustrating how society is actively restructured by digital connectivity.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "qZfLaq7uDf2b_uMPj8_lqAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 669000,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1338,
+      "total_backend_latency_ms": 1737,
+      "total_tokens": 1424
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5898925,
+      "total": 10,
+      "remaining": 1.4101075000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.589892500000005,
+      "total": 100,
+      "remaining": 91.4101075,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000927,
+  "fields": {
+    "source_object": "QR code",
+    "source_properties": "A complex pattern of interlocking black and white blocks forming a machine-readable data matrix.",
+    "target_situation": "The rapid expansion of the digital economy displacing conventional business models.",
+    "mapping": "Pink figures represent workers physically building or dismantling a landscape of digital data blocks, illustrating how society is actively restructured by digital connectivity.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: QR code\nsource_properties: A complex pattern of interlocking black and white blocks forming a machine-readable data matrix.\ntarget_situation: The rapid expansion of the digital economy displacing conventional business models.\nmapping: Pink figures represent workers physically building or dismantling a landscape of digital data blocks, illustrating how society is actively restructured by digital connectivity.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

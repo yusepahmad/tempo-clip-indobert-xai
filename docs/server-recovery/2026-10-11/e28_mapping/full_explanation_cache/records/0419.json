@@ -1,0 +1,87 @@
+{
+  "index": 419,
+  "sample_id": "TMP-726A6F15D97F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "643cd33c5b2fa514efcd579c258d14d2b5d2d36dc9db1130a8865e63341d92a5",
+  "image_sha256": "726a6f15d97f21d1198edab8a11e0bfa94a67acb8ac81de45817ded4ef9929bd",
+  "transmitted_image_sha256": "bc07738bdf706e6419cca934c80b8a4a2de14c169989809626107f798c1583f9",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.61921,
+      "total": 10,
+      "remaining": 1.3807899999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.619209999999995,
+      "total": 100,
+      "remaining": 91.38079,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3066041520796716,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"prison cell and travel luggage\",\n  \"source_properties\": \"Bars intended for confinement; a suitcase and jacket suggesting imminent departure or mobility.\",\n  \"target_situation\": \"Muhammad Nazaruddin's incarceration and potential parole.\",\n  \"mapping\": \"The bars represent his legal imprisonment for corruption, while the suitcase and watch-checking symbolize his anticipated freedom through parole and his continued influence over business from within.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "EpjLarv3Muu1_PUPl9nYyQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679500,
+        "output_tokens_cost_nanodollars": 312000
+      },
+      "prompt_tokens": 1359,
+      "total_backend_latency_ms": 1903,
+      "total_tokens": 1463
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6202015,
+      "total": 10,
+      "remaining": 1.3797984999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.620201499999993,
+      "total": 100,
+      "remaining": 91.3797985,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009915,
+  "fields": {
+    "source_object": "prison cell and travel luggage",
+    "source_properties": "Bars intended for confinement; a suitcase and jacket suggesting imminent departure or mobility.",
+    "target_situation": "Muhammad Nazaruddin's incarceration and potential parole.",
+    "mapping": "The bars represent his legal imprisonment for corruption, while the suitcase and watch-checking symbolize his anticipated freedom through parole and his continued influence over business from within.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: prison cell and travel luggage\nsource_properties: Bars intended for confinement; a suitcase and jacket suggesting imminent departure or mobility.\ntarget_situation: Muhammad Nazaruddin's incarceration and potential parole.\nmapping: The bars represent his legal imprisonment for corruption, while the suitcase and watch-checking symbolize his anticipated freedom through parole and his continued influence over business from within.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

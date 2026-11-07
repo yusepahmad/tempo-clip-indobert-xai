@@ -1,0 +1,401 @@
+{
+  "revision_id": "R4",
+  "title": "Kelayakan metode visual CLIP",
+  "status": "Selesai teknis sesuai tracker; menunggu penilaian pembimbing",
+  "pdf_page": 20,
+  "requested_evidence": "Butir Agustus: Kelayakan metode visual CLIP. Rujukan permintaan pada tabel/ringkasan Revisi II dan bagian terkait R34; bukan kutipan dokumen Agustus asli.",
+  "notebook": {
+    "notebook": "02_experiments.ipynb",
+    "heading": "R4 — Kelayakan metode visual CLIP",
+    "html": "../REFERENSI_NOTEBOOK/02_experiments.html#full-r4"
+  },
+  "notes": [
+    "Bukti kelayakan/implementasi metode visual tersedia. Skor lima manusia dan agreement pada R34/R9 belum tersedia. Peta rollout bukan Grad-CAM atau bukti sebab spesifik kelas."
+  ],
+  "files": [
+    {
+      "file": "R4_XAI_METHOD.md",
+      "purpose": "Kelayakan attention rollout untuk CLIP ViT-L14 dan sifat class-agnostic",
+      "sha256": "7e52e7c82b1191b3fb4409abeec2ff0e138937fc2508c6c924800de69f990579",
+      "kind": "copy",
+      "source": "documentation/XAI_METHOD.md",
+      "source_sha256": "7e52e7c82b1191b3fb4409abeec2ff0e138937fc2508c6c924800de69f990579"
+    },
+    {
+      "file": "R4_MAIN_MODEL_DECISION.md",
+      "purpose": "Kelayakan attention rollout untuk CLIP ViT-L14 dan sifat class-agnostic",
+      "sha256": "f3e86f66deb4aab84bec3492d7dd2a8fa839f0d97c3a28bc10725e52d7eebaa6",
+      "kind": "copy",
+      "source": "documentation/MAIN_MODEL_DECISION.md",
+      "source_sha256": "f3e86f66deb4aab84bec3492d7dd2a8fa839f0d97c3a28bc10725e52d7eebaa6"
+    },
+    {
+      "file": "explain_e42.py",
+      "purpose": "Implementasi actual E42 rollout, LIME kondisional dan deletion",
+      "sha256": "506b95d17f8b697fa2d91398a8d6d6650cff5a3f7e47fd1965543bf6b5261814",
+      "kind": "copy",
+      "source": "source/DEMO_XAI_745_FULL/01_notebook/revisi_ii/explain_e42.py",
+      "source_sha256": "506b95d17f8b697fa2d91398a8d6d6650cff5a3f7e47fd1965543bf6b5261814"
+    },
+    {
+      "file": "xai_e42/TMP-0514AFE1ADC9_original.jpg",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "a12238a8a20da8c860a60c392e5149be8743c01b723fc366e9c56fff6e051068",
+      "kind": "copy",
+      "source": "xai_e42/TMP-0514AFE1ADC9_original.jpg",
+      "source_sha256": "a12238a8a20da8c860a60c392e5149be8743c01b723fc366e9c56fff6e051068"
+    },
+    {
+      "file": "xai_e42/TMP-0514AFE1ADC9_random_blind.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "dc8f5b273b788f6d4ee0f8a0ac0e96ae9b4d1738447b73ba38af5b2686a6f4b8",
+      "kind": "copy",
+      "source": "xai_e42/TMP-0514AFE1ADC9_random_blind.png",
+      "source_sha256": "dc8f5b273b788f6d4ee0f8a0ac0e96ae9b4d1738447b73ba38af5b2686a6f4b8"
+    },
+    {
+      "file": "xai_e42/TMP-0514AFE1ADC9_random_control.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "2613d3ffb52d12cf6e7fab39b1a3fc6afb0730f1a01cbb9c8844ade1d1adbd1a",
+      "kind": "copy",
+      "source": "xai_e42/TMP-0514AFE1ADC9_random_control.png",
+      "source_sha256": "2613d3ffb52d12cf6e7fab39b1a3fc6afb0730f1a01cbb9c8844ade1d1adbd1a"
+    },
+    {
+      "file": "xai_e42/TMP-0514AFE1ADC9_rollout.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "071e0b7424889de63f5ffcef9c13bd0d3a8c2b2a31fe8f1034a5c6198f0a5ee5",
+      "kind": "copy",
+      "source": "xai_e42/TMP-0514AFE1ADC9_rollout.png",
+      "source_sha256": "071e0b7424889de63f5ffcef9c13bd0d3a8c2b2a31fe8f1034a5c6198f0a5ee5"
+    },
+    {
+      "file": "xai_e42/TMP-0514AFE1ADC9_rollout_blind.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "40e4aeb62405261df2e798b6ee6bdefc2e93131f1a60e593fc705b403b69f992",
+      "kind": "copy",
+      "source": "xai_e42/TMP-0514AFE1ADC9_rollout_blind.png",
+      "source_sha256": "40e4aeb62405261df2e798b6ee6bdefc2e93131f1a60e593fc705b403b69f992"
+    },
+    {
+      "file": "xai_e42/TMP-20D70DD55DE3_original.jpg",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "eba46cbe1a5454d2cb12a1cec4cc64c78a907931535c2d0a952cf889f871791c",
+      "kind": "copy",
+      "source": "xai_e42/TMP-20D70DD55DE3_original.jpg",
+      "source_sha256": "eba46cbe1a5454d2cb12a1cec4cc64c78a907931535c2d0a952cf889f871791c"
+    },
+    {
+      "file": "xai_e42/TMP-20D70DD55DE3_random_blind.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "e9e2e0b1019d8cbf7426154c94c86bc3bb384167e0ddf581f64cfcaf49c03243",
+      "kind": "copy",
+      "source": "xai_e42/TMP-20D70DD55DE3_random_blind.png",
+      "source_sha256": "e9e2e0b1019d8cbf7426154c94c86bc3bb384167e0ddf581f64cfcaf49c03243"
+    },
+    {
+      "file": "xai_e42/TMP-20D70DD55DE3_random_control.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "ee6549cf969dbb472cd7c73b2159a4274655957c9360b17ab489bfe1eaed1494",
+      "kind": "copy",
+      "source": "xai_e42/TMP-20D70DD55DE3_random_control.png",
+      "source_sha256": "ee6549cf969dbb472cd7c73b2159a4274655957c9360b17ab489bfe1eaed1494"
+    },
+    {
+      "file": "xai_e42/TMP-20D70DD55DE3_rollout.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "657a378192b549854aaf087b3b18fa4914a31ebbb8ac9a38e03871a0604fec4a",
+      "kind": "copy",
+      "source": "xai_e42/TMP-20D70DD55DE3_rollout.png",
+      "source_sha256": "657a378192b549854aaf087b3b18fa4914a31ebbb8ac9a38e03871a0604fec4a"
+    },
+    {
+      "file": "xai_e42/TMP-20D70DD55DE3_rollout_blind.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "f19b8bef27862369dba60da3e8027084cbfb0229e8f59330cf434c85971b8754",
+      "kind": "copy",
+      "source": "xai_e42/TMP-20D70DD55DE3_rollout_blind.png",
+      "source_sha256": "f19b8bef27862369dba60da3e8027084cbfb0229e8f59330cf434c85971b8754"
+    },
+    {
+      "file": "xai_e42/TMP-3950DA9B1729_original.jpg",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "3f80046a837f719346ad70d3797f493332c2013ccb226cf8c8a0ca38ded6829e",
+      "kind": "copy",
+      "source": "xai_e42/TMP-3950DA9B1729_original.jpg",
+      "source_sha256": "3f80046a837f719346ad70d3797f493332c2013ccb226cf8c8a0ca38ded6829e"
+    },
+    {
+      "file": "xai_e42/TMP-3950DA9B1729_random_blind.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "7272604815fd37a8c2a69ad104fd21005fd8afc477c9f07dcd74030eae951f75",
+      "kind": "copy",
+      "source": "xai_e42/TMP-3950DA9B1729_random_blind.png",
+      "source_sha256": "7272604815fd37a8c2a69ad104fd21005fd8afc477c9f07dcd74030eae951f75"
+    },
+    {
+      "file": "xai_e42/TMP-3950DA9B1729_random_control.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "239b0c89c2d50de12ba0886214a5dc2073d383a4e8690df51b37a369c8b8bfd3",
+      "kind": "copy",
+      "source": "xai_e42/TMP-3950DA9B1729_random_control.png",
+      "source_sha256": "239b0c89c2d50de12ba0886214a5dc2073d383a4e8690df51b37a369c8b8bfd3"
+    },
+    {
+      "file": "xai_e42/TMP-3950DA9B1729_rollout.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "72ef72fc33408734b14f3a59c673a4bec396ab85f8755acb6327153aebcd1369",
+      "kind": "copy",
+      "source": "xai_e42/TMP-3950DA9B1729_rollout.png",
+      "source_sha256": "72ef72fc33408734b14f3a59c673a4bec396ab85f8755acb6327153aebcd1369"
+    },
+    {
+      "file": "xai_e42/TMP-3950DA9B1729_rollout_blind.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "ec2bafcd33ae77dadc459aa24c9af9fb53e17b6d61dd7dee4d6a235969b28277",
+      "kind": "copy",
+      "source": "xai_e42/TMP-3950DA9B1729_rollout_blind.png",
+      "source_sha256": "ec2bafcd33ae77dadc459aa24c9af9fb53e17b6d61dd7dee4d6a235969b28277"
+    },
+    {
+      "file": "xai_e42/TMP-5802D0009C82_original.jpg",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "3c8be5036fe566f05276a63988ea4ce273fc0d166696a898997eff212f07ba7b",
+      "kind": "copy",
+      "source": "xai_e42/TMP-5802D0009C82_original.jpg",
+      "source_sha256": "3c8be5036fe566f05276a63988ea4ce273fc0d166696a898997eff212f07ba7b"
+    },
+    {
+      "file": "xai_e42/TMP-5802D0009C82_random_blind.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "ca9a445593b82dd7cd9779e60b1c7d0bef92e5c1d6a8b63a7b73356c659a4836",
+      "kind": "copy",
+      "source": "xai_e42/TMP-5802D0009C82_random_blind.png",
+      "source_sha256": "ca9a445593b82dd7cd9779e60b1c7d0bef92e5c1d6a8b63a7b73356c659a4836"
+    },
+    {
+      "file": "xai_e42/TMP-5802D0009C82_random_control.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "f84e6ff1948e1929ab1ca186733c10b7db9ec4e2fb7bb5e951374a969d6f1301",
+      "kind": "copy",
+      "source": "xai_e42/TMP-5802D0009C82_random_control.png",
+      "source_sha256": "f84e6ff1948e1929ab1ca186733c10b7db9ec4e2fb7bb5e951374a969d6f1301"
+    },
+    {
+      "file": "xai_e42/TMP-5802D0009C82_rollout.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "5238b98385cff8f73210d371b0abd4c8b30f72dcc843ceb46e44d442e6d0a30d",
+      "kind": "copy",
+      "source": "xai_e42/TMP-5802D0009C82_rollout.png",
+      "source_sha256": "5238b98385cff8f73210d371b0abd4c8b30f72dcc843ceb46e44d442e6d0a30d"
+    },
+    {
+      "file": "xai_e42/TMP-5802D0009C82_rollout_blind.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "53c8630474b799086ef9f84a27b44d1199d42a209ee4a980f9d7b0b24d5c2190",
+      "kind": "copy",
+      "source": "xai_e42/TMP-5802D0009C82_rollout_blind.png",
+      "source_sha256": "53c8630474b799086ef9f84a27b44d1199d42a209ee4a980f9d7b0b24d5c2190"
+    },
+    {
+      "file": "xai_e42/TMP-AE16180EE0D6_original.jpg",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "ab69f51b5efcfe3d568f0f62e41833cbe7e569951f5cc65f645ed2e696042063",
+      "kind": "copy",
+      "source": "xai_e42/TMP-AE16180EE0D6_original.jpg",
+      "source_sha256": "ab69f51b5efcfe3d568f0f62e41833cbe7e569951f5cc65f645ed2e696042063"
+    },
+    {
+      "file": "xai_e42/TMP-AE16180EE0D6_random_blind.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "f00d5e2dff24fb9c3c0c741b1c33c3b0600ef51930756b8c6f00e1590de7e78b",
+      "kind": "copy",
+      "source": "xai_e42/TMP-AE16180EE0D6_random_blind.png",
+      "source_sha256": "f00d5e2dff24fb9c3c0c741b1c33c3b0600ef51930756b8c6f00e1590de7e78b"
+    },
+    {
+      "file": "xai_e42/TMP-AE16180EE0D6_random_control.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "853524c63c4fad47bd26f573a4c25c603f4da7bddd4a388c6a69c21d61d7fe56",
+      "kind": "copy",
+      "source": "xai_e42/TMP-AE16180EE0D6_random_control.png",
+      "source_sha256": "853524c63c4fad47bd26f573a4c25c603f4da7bddd4a388c6a69c21d61d7fe56"
+    },
+    {
+      "file": "xai_e42/TMP-AE16180EE0D6_rollout.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "83899bbe6eb48a09ff77e248197b914d7b0980f9c8c01e7bb5b97737fe8d73b5",
+      "kind": "copy",
+      "source": "xai_e42/TMP-AE16180EE0D6_rollout.png",
+      "source_sha256": "83899bbe6eb48a09ff77e248197b914d7b0980f9c8c01e7bb5b97737fe8d73b5"
+    },
+    {
+      "file": "xai_e42/TMP-AE16180EE0D6_rollout_blind.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "2066a7e9f9a5fd9180e42cd1fcf05aad531b99a3ed02732dd82f69ba9dfa8a1f",
+      "kind": "copy",
+      "source": "xai_e42/TMP-AE16180EE0D6_rollout_blind.png",
+      "source_sha256": "2066a7e9f9a5fd9180e42cd1fcf05aad531b99a3ed02732dd82f69ba9dfa8a1f"
+    },
+    {
+      "file": "xai_e42/TMP-B4159E66B480_original.jpg",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "5496ed6c6cb298752e937f4a08d3399d4f4e1d5150cd433cc50d1ea752fbcb2c",
+      "kind": "copy",
+      "source": "xai_e42/TMP-B4159E66B480_original.jpg",
+      "source_sha256": "5496ed6c6cb298752e937f4a08d3399d4f4e1d5150cd433cc50d1ea752fbcb2c"
+    },
+    {
+      "file": "xai_e42/TMP-B4159E66B480_random_blind.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "d8e0f8fc88c035f876bdc3ad6ff74aceb29361f6d97442d64f0a2d33b63776d2",
+      "kind": "copy",
+      "source": "xai_e42/TMP-B4159E66B480_random_blind.png",
+      "source_sha256": "d8e0f8fc88c035f876bdc3ad6ff74aceb29361f6d97442d64f0a2d33b63776d2"
+    },
+    {
+      "file": "xai_e42/TMP-B4159E66B480_random_control.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "7b8014e4cbd9d486708dd51a8ce0b9008c68d4dfc9edfa5236bbc7c243e56d9a",
+      "kind": "copy",
+      "source": "xai_e42/TMP-B4159E66B480_random_control.png",
+      "source_sha256": "7b8014e4cbd9d486708dd51a8ce0b9008c68d4dfc9edfa5236bbc7c243e56d9a"
+    },
+    {
+      "file": "xai_e42/TMP-B4159E66B480_rollout.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "c99df4967a1e6cdc244d10900fc031a8c5e261f3d1f31dbc659bc17c2a1ddbe3",
+      "kind": "copy",
+      "source": "xai_e42/TMP-B4159E66B480_rollout.png",
+      "source_sha256": "c99df4967a1e6cdc244d10900fc031a8c5e261f3d1f31dbc659bc17c2a1ddbe3"
+    },
+    {
+      "file": "xai_e42/TMP-B4159E66B480_rollout_blind.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "5c1390d4d6bf59157ca4eea82a0862289b1103ea6d06239dc53aa6a11eef5fde",
+      "kind": "copy",
+      "source": "xai_e42/TMP-B4159E66B480_rollout_blind.png",
+      "source_sha256": "5c1390d4d6bf59157ca4eea82a0862289b1103ea6d06239dc53aa6a11eef5fde"
+    },
+    {
+      "file": "xai_e42/TMP-E8E65B336C7E_original.jpg",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "c3cd944653c133649ebd898bed4c61268f2c45ba8b7c4dfd58c238188fc5ae95",
+      "kind": "copy",
+      "source": "xai_e42/TMP-E8E65B336C7E_original.jpg",
+      "source_sha256": "c3cd944653c133649ebd898bed4c61268f2c45ba8b7c4dfd58c238188fc5ae95"
+    },
+    {
+      "file": "xai_e42/TMP-E8E65B336C7E_random_blind.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "09bc629df552464bebafc633f8a88dc4bb3ed672178b8e04d2e8b9105f218e33",
+      "kind": "copy",
+      "source": "xai_e42/TMP-E8E65B336C7E_random_blind.png",
+      "source_sha256": "09bc629df552464bebafc633f8a88dc4bb3ed672178b8e04d2e8b9105f218e33"
+    },
+    {
+      "file": "xai_e42/TMP-E8E65B336C7E_random_control.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "0ef2c80f4e9e3813666799cb8e99bfbe1764715343b2dea929a82aa1e4cf8662",
+      "kind": "copy",
+      "source": "xai_e42/TMP-E8E65B336C7E_random_control.png",
+      "source_sha256": "0ef2c80f4e9e3813666799cb8e99bfbe1764715343b2dea929a82aa1e4cf8662"
+    },
+    {
+      "file": "xai_e42/TMP-E8E65B336C7E_rollout.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "d4bff301b36b91dff79a9d00ed20e794c84b710340eebd8a0d5f5ae1c2aa8da7",
+      "kind": "copy",
+      "source": "xai_e42/TMP-E8E65B336C7E_rollout.png",
+      "source_sha256": "d4bff301b36b91dff79a9d00ed20e794c84b710340eebd8a0d5f5ae1c2aa8da7"
+    },
+    {
+      "file": "xai_e42/TMP-E8E65B336C7E_rollout_blind.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "f024e753da850bb597f03fd8460cc545bd895d10b7496bc8199e1d93e98d39a5",
+      "kind": "copy",
+      "source": "xai_e42/TMP-E8E65B336C7E_rollout_blind.png",
+      "source_sha256": "f024e753da850bb597f03fd8460cc545bd895d10b7496bc8199e1d93e98d39a5"
+    },
+    {
+      "file": "xai_e42/TMP-E9A5F94EF9F7_original.jpg",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "e7e4939641b2f3ff61fd1ba45fc2567741c50ed8d1cd2e8d0c02ff616d108323",
+      "kind": "copy",
+      "source": "xai_e42/TMP-E9A5F94EF9F7_original.jpg",
+      "source_sha256": "e7e4939641b2f3ff61fd1ba45fc2567741c50ed8d1cd2e8d0c02ff616d108323"
+    },
+    {
+      "file": "xai_e42/TMP-E9A5F94EF9F7_random_blind.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "3257c9a09133294e42c28e28346a2b1014dc62969da0c6ea8f11a443fcbc8b64",
+      "kind": "copy",
+      "source": "xai_e42/TMP-E9A5F94EF9F7_random_blind.png",
+      "source_sha256": "3257c9a09133294e42c28e28346a2b1014dc62969da0c6ea8f11a443fcbc8b64"
+    },
+    {
+      "file": "xai_e42/TMP-E9A5F94EF9F7_random_control.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "323dc764b940d7b4b2af2a5f56305bce94e2449cb508ab1c839ea2e2e4a3fa56",
+      "kind": "copy",
+      "source": "xai_e42/TMP-E9A5F94EF9F7_random_control.png",
+      "source_sha256": "323dc764b940d7b4b2af2a5f56305bce94e2449cb508ab1c839ea2e2e4a3fa56"
+    },
+    {
+      "file": "xai_e42/TMP-E9A5F94EF9F7_rollout.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "9e44de96240bc562390afb800923a4d5dc56340b0193ea082329975e53206e73",
+      "kind": "copy",
+      "source": "xai_e42/TMP-E9A5F94EF9F7_rollout.png",
+      "source_sha256": "9e44de96240bc562390afb800923a4d5dc56340b0193ea082329975e53206e73"
+    },
+    {
+      "file": "xai_e42/TMP-E9A5F94EF9F7_rollout_blind.png",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "21a02339b39bd0bae57ebdccb37b10c3845c670218b1b793e5ffe072fbb14fda",
+      "kind": "copy",
+      "source": "xai_e42/TMP-E9A5F94EF9F7_rollout_blind.png",
+      "source_sha256": "21a02339b39bd0bae57ebdccb37b10c3845c670218b1b793e5ffe072fbb14fda"
+    },
+    {
+      "file": "xai_e42/conditional_lime.csv",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "5aad144cf24361b550865ea196790303743cc37ece8d3143c8897a55d2e753d5",
+      "kind": "copy",
+      "source": "xai_e42/conditional_lime.csv",
+      "source_sha256": "5aad144cf24361b550865ea196790303743cc37ece8d3143c8897a55d2e753d5"
+    },
+    {
+      "file": "xai_e42/deletion_faithfulness.csv",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "3730978a1b78e9041c2c3cabf01f68d6505a809ea13ecace35d58d3486139122",
+      "kind": "copy",
+      "source": "xai_e42/deletion_faithfulness.csv",
+      "source_sha256": "3730978a1b78e9041c2c3cabf01f68d6505a809ea13ecace35d58d3486139122"
+    },
+    {
+      "file": "xai_e42/heldout_replay.csv",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "a2649219c307bb7fbe3c4a3998abe607193051ec424e20e531edd74e46de8162",
+      "kind": "copy",
+      "source": "xai_e42/heldout_replay.csv",
+      "source_sha256": "a2649219c307bb7fbe3c4a3998abe607193051ec424e20e531edd74e46de8162"
+    },
+    {
+      "file": "xai_e42/protocol.json",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "7fdaf610a601d7be5b78244e0d7a1095bd095cd1b37f72340f6c8bb716129c08",
+      "kind": "copy",
+      "source": "xai_e42/protocol.json",
+      "source_sha256": "7fdaf610a601d7be5b78244e0d7a1095bd095cd1b37f72340f6c8bb716129c08"
+    },
+    {
+      "file": "xai_e42/verification.json",
+      "purpose": "Bukti actual XAI delapan outerfold-sample, parity, hasil negatif dan kontrol",
+      "sha256": "7cd145fbde5c2ca5481f685ec87140fe516b8e2bb7f4f219f298a9932d787b7b",
+      "kind": "copy",
+      "source": "xai_e42/verification.json",
+      "source_sha256": "7cd145fbde5c2ca5481f685ec87140fe516b8e2bb7f4f219f298a9932d787b7b"
+    }
+  ]
+}

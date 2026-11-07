@@ -1,0 +1,87 @@
+{
+  "index": 190,
+  "sample_id": "TMP-B3C9781E2CBC",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "4e881a6786d4a11c0a7c7be0ba5689333eb4b0c5b758c622aa968d0f60dc8df7",
+  "image_sha256": "b3c9781e2cbc356049678ddebee9fc457e399a70475442d5d7b4fd47af73bdde",
+  "transmitted_image_sha256": "1588ca4a2bc35286e7bd82cbcc8720c6d9bd40d83190cabd5267c8ae0ac87671",
+  "image_size": [
+    300,
+    396
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2860385,
+      "total": 10,
+      "remaining": 1.7139615,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.286038500000004,
+      "total": 100,
+      "remaining": 91.7139615,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9153382889926434,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"An Energizer-style toy battery-powered bunny\",\n  \"source_properties\": \"A mechanical rabbit with a drum that keeps moving indefinitely as long as its battery lasts.\",\n  \"target_situation\": \"Mahathir Mohamad's enduring political career and influence.\",\n  \"mapping\": \"The bunny's relentless 'keep going' motion parallels Mahathir's persistence and longevity in power, as highlighted by the text 'Terus, Terus, dan...'.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "IZLLaqncCPW6_uMPjdDjYA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 121,
+      "cost": {
+        "input_tokens_cost_nanodollars": 657000,
+        "output_tokens_cost_nanodollars": 363000
+      },
+      "prompt_tokens": 1314,
+      "total_backend_latency_ms": 1681,
+      "total_tokens": 1435
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2870585,
+      "total": 10,
+      "remaining": 1.7129414999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.2870585,
+      "total": 100,
+      "remaining": 91.7129415,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.00102,
+  "fields": {
+    "source_object": "An Energizer-style toy battery-powered bunny",
+    "source_properties": "A mechanical rabbit with a drum that keeps moving indefinitely as long as its battery lasts.",
+    "target_situation": "Mahathir Mohamad's enduring political career and influence.",
+    "mapping": "The bunny's relentless 'keep going' motion parallels Mahathir's persistence and longevity in power, as highlighted by the text 'Terus, Terus, dan...'.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: An Energizer-style toy battery-powered bunny\nsource_properties: A mechanical rabbit with a drum that keeps moving indefinitely as long as its battery lasts.\ntarget_situation: Mahathir Mohamad's enduring political career and influence.\nmapping: The bunny's relentless 'keep going' motion parallels Mahathir's persistence and longevity in power, as highlighted by the text 'Terus, Terus, dan...'.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 641,
+  "sample_id": "TMP-7188D0A90E7C",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "54ae02099668f14eaa2b894842940445122f98842582e5f225283cb03d087770",
+  "image_sha256": "7188d0a90e7c1b38285509d3e4bf900e4665bffbae17facbaff8aff75afa97c6",
+  "transmitted_image_sha256": "79cc970a5da424e270383e28e30a7f26d74d1fc8e5f435f11cf93a1a132130c4",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.910601,
+      "total": 10,
+      "remaining": 1.0893990000000002,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.910601,
+      "total": 100,
+      "remaining": 91.089399,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.962798133958131,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Shadow\", \"source_properties\": \"A dark silhouette looming behind and mimicking the subject's posture, often unnoticed by the person casting it.\", \"target_situation\": \"Personnel from Detasemen Khusus 88 illegally stalking and monitoring a prosecutor handling high-profile corruption cases.\", \"mapping\": \"The shadow represents the covert surveillance ('penguntitan') following the official's every move, symbolizing an inescapable, hidden presence interfering with justice.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "1p3LaumIGreR_uMPm_GWuA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "cost": {
+        "input_tokens_cost_nanodollars": 689500,
+        "output_tokens_cost_nanodollars": 312000
+      },
+      "prompt_tokens": 1379,
+      "total_backend_latency_ms": 1579,
+      "total_tokens": 1483
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9116025,
+      "total": 10,
+      "remaining": 1.0883974999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.9116025,
+      "total": 100,
+      "remaining": 91.0883975,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010015,
+  "fields": {
+    "source_object": "Shadow",
+    "source_properties": "A dark silhouette looming behind and mimicking the subject's posture, often unnoticed by the person casting it.",
+    "target_situation": "Personnel from Detasemen Khusus 88 illegally stalking and monitoring a prosecutor handling high-profile corruption cases.",
+    "mapping": "The shadow represents the covert surveillance ('penguntitan') following the official's every move, symbolizing an inescapable, hidden presence interfering with justice.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Shadow\nsource_properties: A dark silhouette looming behind and mimicking the subject's posture, often unnoticed by the person casting it.\ntarget_situation: Personnel from Detasemen Khusus 88 illegally stalking and monitoring a prosecutor handling high-profile corruption cases.\nmapping: The shadow represents the covert surveillance ('penguntitan') following the official's every move, symbolizing an inescapable, hidden presence interfering with justice.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

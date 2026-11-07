@@ -1,0 +1,87 @@
+{
+  "index": 619,
+  "sample_id": "TMP-9EF4CBABC947",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b14cdd6709419085826a3894e5e2f16082181ea3abb823eb400395f4a8be81a4",
+  "image_sha256": "9ef4cbabc947769453c832e7e69ffec47d59761d5b507c9539e1f8a5e220309e",
+  "transmitted_image_sha256": "923350b58f644022f06c36d17aa0073b6dc58815e6a016ad6800a204b8eb49a4",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8824195,
+      "total": 10,
+      "remaining": 1.1175805000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.882419499999997,
+      "total": 100,
+      "remaining": 91.1175805,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1259986949153244,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Conductor and baton\",\n  \"source_properties\": \"A figure leads an ensemble by waving a baton, controlling the tempo and performance.\",\n  \"target_situation\": \"Windu Aji Sutanto directing illegal nickel mining operations involving high-ranking officials.\",\n  \"mapping\": \"The figure orchestrates the corruption scandal like a conductor, with falling money representing the 'performance.'\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Sp3Lap_zI-2M_PUPu97KyQo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 690500,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1381,
+      "total_backend_latency_ms": 1694,
+      "total_tokens": 1482
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.883413000000001,
+      "total": 10,
+      "remaining": 1.116586999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.883413000000004,
+      "total": 100,
+      "remaining": 91.116587,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009935,
+  "fields": {
+    "source_object": "Conductor and baton",
+    "source_properties": "A figure leads an ensemble by waving a baton, controlling the tempo and performance.",
+    "target_situation": "Windu Aji Sutanto directing illegal nickel mining operations involving high-ranking officials.",
+    "mapping": "The figure orchestrates the corruption scandal like a conductor, with falling money representing the 'performance.'",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: Conductor and baton\nsource_properties: A figure leads an ensemble by waving a baton, controlling the tempo and performance.\ntarget_situation: Windu Aji Sutanto directing illegal nickel mining operations involving high-ranking officials.\nmapping: The figure orchestrates the corruption scandal like a conductor, with falling money representing the 'performance.'\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

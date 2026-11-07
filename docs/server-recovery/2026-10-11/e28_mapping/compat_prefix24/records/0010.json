@@ -1,0 +1,91 @@
+{
+  "index": 10,
+  "sample_id": "TMP-D325A4A92EB6",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "106825609b488004e997d185c5429f1386f5a61810d5210b880b90851ed5795b",
+  "image_sha256": "d325a4a92eb6f86bdccc24824925629a7b28d32597dd9415002734a3486bce91",
+  "transmitted_image_sha256": "351813049d61a86812a8abb8829eb4a907028d426c4b310697b61a222cdf680f",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0276325,
+      "total": 10,
+      "remaining": 1.9723675000000007,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.027632499999996,
+      "total": 100,
+      "remaining": 91.9723675,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.197177991271019,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Lego bricks\",\n  \"source_properties\": \"Small interlocking plastic blocks used as toys for building and manipulation.\",\n  \"target_situation\": \"Minister Jero's involvement in the Tangguh gas project and British lobbying.\",\n  \"mapping\": \"Building with toy blocks represents the minister's alleged manipulation of complex gas deals.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "e4rLao6zNbua_uMPhJumwQI",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661000,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1322,
+      "total_backend_latency_ms": 1680,
+      "total_tokens": 1412
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0285635,
+      "total": 10,
+      "remaining": 1.9714364999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.028563500000004,
+      "total": 100,
+      "remaining": 91.9714365,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000931,
+  "fields": {
+    "source_object": "Lego bricks",
+    "source_properties": "Small interlocking plastic blocks used as toys for building and manipulation.",
+    "target_situation": "Minister Jero's involvement in the Tangguh gas project and British lobbying.",
+    "mapping": "Building with toy blocks represents the minister's alleged manipulation of complex gas deals.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Lego bricks\nsource_properties: Small interlocking plastic blocks used as toys for building and manipulation.\ntarget_situation: Minister Jero's involvement in the Tangguh gas project and British lobbying.\nmapping: Building with toy blocks represents the minister's alleged manipulation of complex gas deals.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true,
+  "migration_origin": {
+    "record_sha256": "102da79814cb7116dd0d952a2e0e62c6b4c2ab5ceb791c21b45559bd0eda982d",
+    "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383"
+  }
+}

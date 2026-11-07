@@ -1,0 +1,87 @@
+{
+  "index": 323,
+  "sample_id": "TMP-2C20010F1C6A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1f91772cc2c1d60812973d3fce279727b82a03b8125250a27dcfa0d9d3c719c3",
+  "image_sha256": "2c20010f1c6aa9de728dc29031f7e4ea8d61dfce703d445ae8a76f5960e99984",
+  "transmitted_image_sha256": "ef13947d97b5d0001e4122b27bbed9d7454f6ced0f689b5144ec50ef7e3b6e70",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4836015,
+      "total": 10,
+      "remaining": 1.5163984999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.483601500000006,
+      "total": 100,
+      "remaining": 91.5163985,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.094137703999877,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Little Red Riding Hood and the Big Bad Wolf\", \"source_properties\": \"A wolf disguised as a grandmother waits to trap an innocent girl in a hood.\", \"target_situation\": \"Political efforts to obstruct Tri Rismaharini's leadership in Surabaya by powerful interests.\", \"mapping\": \"Risma is the vulnerable girl; the wolf represents hidden, predatory political forces intent on deception.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "mZXLatm9JoK5_PUPwPPqwQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 667500,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1335,
+      "total_backend_latency_ms": 1428,
+      "total_tokens": 1427
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.484545,
+      "total": 10,
+      "remaining": 1.5154549999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.484544999999997,
+      "total": 100,
+      "remaining": 91.515455,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009435,
+  "fields": {
+    "source_object": "Little Red Riding Hood and the Big Bad Wolf",
+    "source_properties": "A wolf disguised as a grandmother waits to trap an innocent girl in a hood.",
+    "target_situation": "Political efforts to obstruct Tri Rismaharini's leadership in Surabaya by powerful interests.",
+    "mapping": "Risma is the vulnerable girl; the wolf represents hidden, predatory political forces intent on deception.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Little Red Riding Hood and the Big Bad Wolf\nsource_properties: A wolf disguised as a grandmother waits to trap an innocent girl in a hood.\ntarget_situation: Political efforts to obstruct Tri Rismaharini's leadership in Surabaya by powerful interests.\nmapping: Risma is the vulnerable girl; the wolf represents hidden, predatory political forces intent on deception.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

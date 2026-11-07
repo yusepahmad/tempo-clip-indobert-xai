@@ -1,0 +1,87 @@
+{
+  "index": 292,
+  "sample_id": "TMP-76DF5206324A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "de8687ace0888ab6ec1ce4ed7c6cc362907042c3185b84dcc1eea723674284cd",
+  "image_sha256": "76df5206324a96cb7d67b307cf1b428e2a1cb8dd3e0c17547166945e2d4827ed",
+  "transmitted_image_sha256": "8bf95bac8eb45acb354c7a71b2a6bc6f2d4973cfe2a1cbb27c1e0ceba75599c1",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.443911,
+      "total": 10,
+      "remaining": 1.556089,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.443911,
+      "total": 100,
+      "remaining": 91.556089,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3920496902428567,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"hangman game\", \"source_properties\": \"incomplete word puzzle with a hanging human figure\", \"target_situation\": \"the legislative decision on indirect local elections (Pilkada)\", \"mapping\": \"the missing letters in 'PILKADA TIDAK LANGSUNG' suggest the democratic process is being dismantled, threatening political life like the game's losing outcome.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "0ZTLarawDb7i_uMPz_DU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 665000,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1330,
+      "total_backend_latency_ms": 1709,
+      "total_tokens": 1416
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.444834,
+      "total": 10,
+      "remaining": 1.5551659999999998,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.444834,
+      "total": 100,
+      "remaining": 91.555166,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000923,
+  "fields": {
+    "source_object": "hangman game",
+    "source_properties": "incomplete word puzzle with a hanging human figure",
+    "target_situation": "the legislative decision on indirect local elections (Pilkada)",
+    "mapping": "the missing letters in 'PILKADA TIDAK LANGSUNG' suggest the democratic process is being dismantled, threatening political life like the game's losing outcome.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: hangman game\nsource_properties: incomplete word puzzle with a hanging human figure\ntarget_situation: the legislative decision on indirect local elections (Pilkada)\nmapping: the missing letters in 'PILKADA TIDAK LANGSUNG' suggest the democratic process is being dismantled, threatening political life like the game's losing outcome.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

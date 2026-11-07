@@ -1,0 +1,90 @@
+{
+  "index": 599,
+  "sample_id": "TMP-497E7B51BE6B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "af8e371bebce46e60ec4840fa3e4c081ce940e0dc0c2984eacc363ad6a199926",
+  "image_sha256": "497e7b51be6b445062328ef614720262586b6b993c243b78375f6f9de7929342",
+  "transmitted_image_sha256": "f9f2e52427f0b68f93ac7f2a4bd08e96a99668c69a3de728a695758e31d1115c",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8532725,
+      "total": 10,
+      "remaining": 1.1467275000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.853272500000003,
+      "total": 100,
+      "remaining": 91.1467275,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.886721401009709,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n \"source_object\": \"A large industrial hose or nozzle\",\n \"source_properties\": \"Directs a high-pressure, voluminous flow of contents into containers.\",\n \"target_situation\": \"The distribution of government biodiesel subsidies to industry elites.\",\n \"mapping\": \"The hose signifies the mechanism through which massive state funds are funneled specifically into the 'buckets' of crony businessmen, rather than broad public benefit.\",\n \"uncertainty\": \"None\"\n}\n```",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "w5zLasKILt7d_uMP2Ze24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1107,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1003
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 672500,
+        "output_tokens_cost_nanodollars": 3321000
+      },
+      "prompt_tokens": 1345,
+      "total_backend_latency_ms": 6209,
+      "total_tokens": 2452
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.857266,
+      "total": 10,
+      "remaining": 1.1427340000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.857265999999996,
+      "total": 100,
+      "remaining": 91.142734,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0039935,
+  "fields": {
+    "source_object": "A large industrial hose or nozzle",
+    "source_properties": "Directs a high-pressure, voluminous flow of contents into containers.",
+    "target_situation": "The distribution of government biodiesel subsidies to industry elites.",
+    "mapping": "The hose signifies the mechanism through which massive state funds are funneled specifically into the 'buckets' of crony businessmen, rather than broad public benefit.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A large industrial hose or nozzle\nsource_properties: Directs a high-pressure, voluminous flow of contents into containers.\ntarget_situation: The distribution of government biodiesel subsidies to industry elites.\nmapping: The hose signifies the mechanism through which massive state funds are funneled specifically into the 'buckets' of crony businessmen, rather than broad public benefit.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

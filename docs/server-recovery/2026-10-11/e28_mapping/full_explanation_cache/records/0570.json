@@ -1,0 +1,87 @@
+{
+  "index": 570,
+  "sample_id": "TMP-473AF7813654",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8e717aaa7aee835769ed960731ab50be5688829756ea0c8eefaf1ee1b7094f84",
+  "image_sha256": "473af78136549841b0e1d467154a095b1121391db5abc8242dbe96f857025b84",
+  "transmitted_image_sha256": "481b8bf004e83fb0d1c6b1784ba080b906447738b71ec550e52c15055534ca5d",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8201135,
+      "total": 10,
+      "remaining": 1.1798865000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.820113500000005,
+      "total": 100,
+      "remaining": 91.1798865,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.394235892221332,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"shattered apartment buildings\", \"source_properties\": \"gutted interiors, scorched facades, and structural collapse from explosive impact\", \"target_situation\": \"The humanitarian and physical devastation caused by the Russian invasion of Ukraine\", \"mapping\": \"The physical disintegration of domestic spaces mirrors the total destruction of civilian life and the alleged genocide within the conflict\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "CZzLasihE77i_uMPwfDU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 82,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677500,
+        "output_tokens_cost_nanodollars": 246000
+      },
+      "prompt_tokens": 1355,
+      "total_backend_latency_ms": 1672,
+      "total_tokens": 1437
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.821037,
+      "total": 10,
+      "remaining": 1.1789629999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.821037000000004,
+      "total": 100,
+      "remaining": 91.178963,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009235,
+  "fields": {
+    "source_object": "shattered apartment buildings",
+    "source_properties": "gutted interiors, scorched facades, and structural collapse from explosive impact",
+    "target_situation": "The humanitarian and physical devastation caused by the Russian invasion of Ukraine",
+    "mapping": "The physical disintegration of domestic spaces mirrors the total destruction of civilian life and the alleged genocide within the conflict",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: shattered apartment buildings\nsource_properties: gutted interiors, scorched facades, and structural collapse from explosive impact\ntarget_situation: The humanitarian and physical devastation caused by the Russian invasion of Ukraine\nmapping: The physical disintegration of domestic spaces mirrors the total destruction of civilian life and the alleged genocide within the conflict\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

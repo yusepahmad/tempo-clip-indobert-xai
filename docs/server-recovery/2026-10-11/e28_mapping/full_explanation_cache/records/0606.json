@@ -1,0 +1,87 @@
+{
+  "index": 606,
+  "sample_id": "TMP-F802F78F3360",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "56304e93704b84ed4ee05b4d36f0c8bbcb3b1bd8a9c9c2e15084993145371d94",
+  "image_sha256": "f802f78f3360f71d60643607e828cf86e5cab6dda7d893a476b6f2196890bf41",
+  "transmitted_image_sha256": "61b7cb4f6947b8237dce169e3d94c9ee9ee342a6fcdbfbe656e5b51554bb4a96",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8670145,
+      "total": 10,
+      "remaining": 1.1329855000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.867014499999996,
+      "total": 100,
+      "remaining": 91.1329855,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.944711766205728,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"a bed with two separate mattresses and sheets\",\n  \"source_properties\": \"torn down the middle, creating a jagged gap that separates two sleeping figures\",\n  \"target_situation\": \"The deteriorating political alliance between President Jokowi and Surya Paloh\",\n  \"mapping\": \"The split bed symbolizes a fractured partnership where former allies now sleep apart\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "9pzLasahK62u_PUPtb3C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671000,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1342,
+      "total_backend_latency_ms": 1466,
+      "total_tokens": 1434
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8679615,
+      "total": 10,
+      "remaining": 1.1320385000000002,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.867961500000007,
+      "total": 100,
+      "remaining": 91.1320385,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000947,
+  "fields": {
+    "source_object": "a bed with two separate mattresses and sheets",
+    "source_properties": "torn down the middle, creating a jagged gap that separates two sleeping figures",
+    "target_situation": "The deteriorating political alliance between President Jokowi and Surya Paloh",
+    "mapping": "The split bed symbolizes a fractured partnership where former allies now sleep apart",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: a bed with two separate mattresses and sheets\nsource_properties: torn down the middle, creating a jagged gap that separates two sleeping figures\ntarget_situation: The deteriorating political alliance between President Jokowi and Surya Paloh\nmapping: The split bed symbolizes a fractured partnership where former allies now sleep apart\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

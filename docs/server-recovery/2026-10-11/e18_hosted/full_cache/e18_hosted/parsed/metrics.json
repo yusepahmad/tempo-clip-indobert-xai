@@ -1,0 +1,118 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "macro_f1": 0.36114414910597625,
+  "strict_macro_f1": 0.23232829211553427,
+  "invalid_predictions": 194,
+  "rules": {
+    "single_code_with_optional_markup": 287,
+    "explicit_final_prompt_prefix": 222,
+    "unrecognized_or_ambiguous": 194,
+    "code_and_matching_class": 37
+  },
+  "classes": [
+    "BENCANA_JERAT",
+    "HEWAN_TUBUH",
+    "KONSUMSI_TRANSAKSI",
+    "LAINNYA",
+    "MESIN_INFRASTRUKTUR",
+    "NON_METAFORA",
+    "PERMAINAN_KONTES"
+  ],
+  "prediction_columns": [
+    "BENCANA_JERAT",
+    "HEWAN_TUBUH",
+    "KONSUMSI_TRANSAKSI",
+    "LAINNYA",
+    "MESIN_INFRASTRUKTUR",
+    "NON_METAFORA",
+    "PERMAINAN_KONTES",
+    "INVALID"
+  ],
+  "confusion_matrix": [
+    [
+      60,
+      4,
+      3,
+      0,
+      6,
+      0,
+      10,
+      17
+    ],
+    [
+      12,
+      32,
+      8,
+      0,
+      6,
+      0,
+      10,
+      22
+    ],
+    [
+      4,
+      0,
+      41,
+      0,
+      4,
+      0,
+      11,
+      24
+    ],
+    [
+      8,
+      10,
+      5,
+      0,
+      2,
+      0,
+      18,
+      20
+    ],
+    [
+      32,
+      8,
+      7,
+      0,
+      91,
+      0,
+      16,
+      60
+    ],
+    [
+      24,
+      8,
+      5,
+      0,
+      4,
+      0,
+      10,
+      32
+    ],
+    [
+      6,
+      4,
+      5,
+      0,
+      2,
+      0,
+      70,
+      19
+    ]
+  ],
+  "per_class_f1": [
+    0.4878048780487805,
+    0.41025641025641024,
+    0.5189873417721519,
+    0.0,
+    0.5531914893617021,
+    0.0,
+    0.5577689243027888
+  ],
+  "parser_sha256": "b09c360de8d768ad428bccbb7be55615f7bce38e21fe2bcd4a31a45da7bfc9a2",
+  "evaluator_sha256": "aa995b726f529feaec35dc847f02670e87362fd7920d611636cebabd75f1acdc",
+  "strict_verification_sha256": "dcaf3c2ff5ac31bc9bf0f568afcb121832d13b9e93a8637cbdd3c1b1443ec11a",
+  "oof_sha256": "631a9013e121bf9dbd9c7988de3306915bac4fa6fcb596d5207d3f878af54100",
+  "limitation": "Parsing change only; same hosted responses; no new model inference or fitting"
+}

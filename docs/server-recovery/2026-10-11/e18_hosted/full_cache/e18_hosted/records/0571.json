@@ -1,0 +1,83 @@
+{
+  "index": 571,
+  "sample_id": "TMP-6EB89569B170",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "eaf4acc535a4a6747fd9b0242be966068560250ba73614f8bf1829c6c0b06f63",
+  "image_sha256": "6eb89569b1704ee21b7aa8a673940b6a4a90ffe8d27f54f7b3f21c9618cacf8d",
+  "transmitted_image_sha256": "23f78a12a0cbc69060727acacf63b79f585ec82b61472a0422b43e79e3af3684",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.149216,
+      "total": 10,
+      "remaining": 7.850784,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.1492159999999956,
+      "total": 100,
+      "remaining": 97.850784,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.050647123949602,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks (\"infus medis dipetakan sebagai simbol **konsumsi** ganja\"), domain sumber yang paling sesuai adalah:\n\n**C: KONSUMSI_TRANSAKSI**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ZuLKavggzsT89Q-0rLvJCg",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1426,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1379
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 760000,
+        "output_tokens_cost_nanodollars": 4278000
+      },
+      "prompt_tokens": 1520,
+      "total_backend_latency_ms": 7032,
+      "total_tokens": 2946
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.154254,
+      "total": 10,
+      "remaining": 7.845746,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.1542539999999946,
+      "total": 100,
+      "remaining": 97.845746,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.005038
+}

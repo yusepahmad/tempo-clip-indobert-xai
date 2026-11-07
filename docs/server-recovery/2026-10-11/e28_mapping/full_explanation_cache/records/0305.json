@@ -1,0 +1,87 @@
+{
+  "index": 305,
+  "sample_id": "TMP-8C38D6556D99",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c5976e727a6ca8c902d2645ec819e81d74eb507b568127bea0987efd8598ab9e",
+  "image_sha256": "8c38d6556d996a33aa3adab44ce6f7cd2562670a88d2dee891f7bcce59949861",
+  "transmitted_image_sha256": "f6963950b3c1e3f99f99245049388e6192dc1a1022226b71aaa714b47b48301b",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.456176,
+      "total": 10,
+      "remaining": 1.5438240000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.456176,
+      "total": 100,
+      "remaining": 91.543824,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2605664669536054,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"a wide-open, shouting mouth\", \"source_properties\": \"an expansive, dark cavity capable of consuming or containing something entirely within it\", \"target_situation\": \"allegations of political figures acting as obstacles or suppressors to the KPK\", \"mapping\": \"the larger figure's open mouth physically encompasses and dominates the smaller figure, symbolizing control or silencing within the larger political framework\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "IpXLaqCyG5jM_PUPlq7quAo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678500,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1357,
+      "total_backend_latency_ms": 1804,
+      "total_tokens": 1449
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4571305,
+      "total": 10,
+      "remaining": 1.5428695000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.457130500000005,
+      "total": 100,
+      "remaining": 91.5428695,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009545,
+  "fields": {
+    "source_object": "a wide-open, shouting mouth",
+    "source_properties": "an expansive, dark cavity capable of consuming or containing something entirely within it",
+    "target_situation": "allegations of political figures acting as obstacles or suppressors to the KPK",
+    "mapping": "the larger figure's open mouth physically encompasses and dominates the smaller figure, symbolizing control or silencing within the larger political framework",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: a wide-open, shouting mouth\nsource_properties: an expansive, dark cavity capable of consuming or containing something entirely within it\ntarget_situation: allegations of political figures acting as obstacles or suppressors to the KPK\nmapping: the larger figure's open mouth physically encompasses and dominates the smaller figure, symbolizing control or silencing within the larger political framework\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

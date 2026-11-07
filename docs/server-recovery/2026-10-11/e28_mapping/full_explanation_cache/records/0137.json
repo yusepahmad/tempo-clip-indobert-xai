@@ -1,0 +1,87 @@
+{
+  "index": 137,
+  "sample_id": "TMP-E44127A2CF96",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a20009b580fac1ae366b748ae996ad4c1157fe6579183ccab2bd78390e74f5ab",
+  "image_sha256": "e44127a2cf9622c8c144296d424dea74520688707fab25dccbcb2dfd45947c39",
+  "transmitted_image_sha256": "0548fe9fe85d5f3096adc87bfcdc97a2c8237341919cc31c075c30bd50e65453",
+  "image_size": [
+    407,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.216225,
+      "total": 10,
+      "remaining": 1.7837750000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.216224999999994,
+      "total": 100,
+      "remaining": 91.783775,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.5505185509100556,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"watchtower spotlight and stairs\", \"source_properties\": \"A beam of light from a prison tower creates a white staircase for a silhouetted figure.\", \"target_situation\": \"Corruption at Sukamiskin prison allowing inmates to leave for pleasure trips.\", \"mapping\": \"The spotlight beam, meant for security and containment, instead functions as a literal path for inmates to escape and travel freely.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "wpDLapCSGbfc_uMPiPP3wAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 1422,
+      "total_tokens": 1444
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.217177,
+      "total": 10,
+      "remaining": 1.7828230000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.217177000000007,
+      "total": 100,
+      "remaining": 91.782823,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000952,
+  "fields": {
+    "source_object": "watchtower spotlight and stairs",
+    "source_properties": "A beam of light from a prison tower creates a white staircase for a silhouetted figure.",
+    "target_situation": "Corruption at Sukamiskin prison allowing inmates to leave for pleasure trips.",
+    "mapping": "The spotlight beam, meant for security and containment, instead functions as a literal path for inmates to escape and travel freely.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: watchtower spotlight and stairs\nsource_properties: A beam of light from a prison tower creates a white staircase for a silhouetted figure.\ntarget_situation: Corruption at Sukamiskin prison allowing inmates to leave for pleasure trips.\nmapping: The spotlight beam, meant for security and containment, instead functions as a literal path for inmates to escape and travel freely.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

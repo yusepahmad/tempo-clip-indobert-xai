@@ -1,0 +1,87 @@
+{
+  "index": 468,
+  "sample_id": "TMP-13285FA91942",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c0f2751e06ab603de06f40fe05be6bef2043f4acec2fb95179e1a1c037d82535",
+  "image_sha256": "13285fa91942786007ad3c8d54bfcd4b9dfa65dc597723812475a7ab97235280",
+  "transmitted_image_sha256": "11252875ff4b120bcd0f90c8cfe5559e30c2ce892c536561d92815efe29f6e23",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.676381,
+      "total": 10,
+      "remaining": 1.3236190000000008,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.676381000000006,
+      "total": 100,
+      "remaining": 91.323619,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.6868348522111773,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Hot air balloon\",\n  \"source_properties\": \"Ascends and drifts away out of reach from those on the ground.\",\n  \"target_situation\": \"The release of Syafruddin Arsyad Temenggung by the Supreme Court.\",\n  \"mapping\": \"His release allows him to float away from prosecution, hindering the KPK's investigation.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "UJnLarzVOKCm_uMPsO6HgA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 686000,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1372,
+      "total_backend_latency_ms": 2383,
+      "total_tokens": 1467
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.677351999999999,
+      "total": 10,
+      "remaining": 1.322648000000001,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.677351999999999,
+      "total": 100,
+      "remaining": 91.322648,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000971,
+  "fields": {
+    "source_object": "Hot air balloon",
+    "source_properties": "Ascends and drifts away out of reach from those on the ground.",
+    "target_situation": "The release of Syafruddin Arsyad Temenggung by the Supreme Court.",
+    "mapping": "His release allows him to float away from prosecution, hindering the KPK's investigation.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Hot air balloon\nsource_properties: Ascends and drifts away out of reach from those on the ground.\ntarget_situation: The release of Syafruddin Arsyad Temenggung by the Supreme Court.\nmapping: His release allows him to float away from prosecution, hindering the KPK's investigation.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

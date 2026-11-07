@@ -1,0 +1,87 @@
+{
+  "index": 571,
+  "sample_id": "TMP-6EB89569B170",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "92d68348eca70ad194583d7a1c991e23e0c2f5253b747c169c4ded2f4ea439de",
+  "image_sha256": "6eb89569b1704ee21b7aa8a673940b6a4a90ffe8d27f54f7b3f21c9618cacf8d",
+  "transmitted_image_sha256": "80d19bf3830889a0d35d7cbbe8c5f0fb577aeb61d8b91f41d00c0f86ee967d03",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.821037,
+      "total": 10,
+      "remaining": 1.1789629999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.821037000000004,
+      "total": 100,
+      "remaining": 91.178963,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.5062693902291358,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"intravenous (IV) drip bag\",\n  \"source_properties\": \"medical equipment delivering fluid treatment directly into a patient's bloodstream via a hanging pouch and tube\",\n  \"target_situation\": \"The Indonesian government's debate over legalizing marijuana for medical purposes.\",\n  \"mapping\": \"The cannabis leaf shaped like an IV bag represents marijuana being administered as a controlled medical treatment.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "DpzLasC8N9-V_uMPmIWFyQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678500,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1357,
+      "total_backend_latency_ms": 2061,
+      "total_tokens": 1458
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8220185,
+      "total": 10,
+      "remaining": 1.1779814999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.822018499999999,
+      "total": 100,
+      "remaining": 91.1779815,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009815,
+  "fields": {
+    "source_object": "intravenous (IV) drip bag",
+    "source_properties": "medical equipment delivering fluid treatment directly into a patient's bloodstream via a hanging pouch and tube",
+    "target_situation": "The Indonesian government's debate over legalizing marijuana for medical purposes.",
+    "mapping": "The cannabis leaf shaped like an IV bag represents marijuana being administered as a controlled medical treatment.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: intravenous (IV) drip bag\nsource_properties: medical equipment delivering fluid treatment directly into a patient's bloodstream via a hanging pouch and tube\ntarget_situation: The Indonesian government's debate over legalizing marijuana for medical purposes.\nmapping: The cannabis leaf shaped like an IV bag represents marijuana being administered as a controlled medical treatment.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

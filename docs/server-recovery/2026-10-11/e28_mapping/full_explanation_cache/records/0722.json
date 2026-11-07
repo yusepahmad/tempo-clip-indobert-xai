@@ -1,0 +1,87 @@
+{
+  "index": 722,
+  "sample_id": "TMP-BFF5B4440545",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e61ac53ba78102678dcde869b8e9b80e6e1f618c0f330520a399bf86b0e4508a",
+  "image_sha256": "bff5b4440545ee94932840360f1f59927c2845260d0e6a4031557793a3783d17",
+  "transmitted_image_sha256": "d49010918876f374b6b46e6ab2cc723f8f304bb921a6155b4f608b8a95fbea41",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.047025,
+      "total": 10,
+      "remaining": 0.9529750000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.047025000000005,
+      "total": 100,
+      "remaining": 90.952975,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.267354008741677,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Tree roots\",\n  \"source_properties\": \"Underground, branching network, anchor for growth, and life-supporting foundation.\",\n  \"target_situation\": \"Environmental conservation efforts integrated within Islamic boarding schools (pesantren).\",\n  \"mapping\": \"Roots symbolize the deep-seated spiritual and scientific foundation supporting the green movement.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "CqDLaqLkIf2b_uMPj8_lqAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 89,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673000,
+        "output_tokens_cost_nanodollars": 267000
+      },
+      "prompt_tokens": 1346,
+      "total_backend_latency_ms": 1650,
+      "total_tokens": 1435
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.047965,
+      "total": 10,
+      "remaining": 0.9520350000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.047965000000005,
+      "total": 100,
+      "remaining": 90.952035,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00094,
+  "fields": {
+    "source_object": "Tree roots",
+    "source_properties": "Underground, branching network, anchor for growth, and life-supporting foundation.",
+    "target_situation": "Environmental conservation efforts integrated within Islamic boarding schools (pesantren).",
+    "mapping": "Roots symbolize the deep-seated spiritual and scientific foundation supporting the green movement.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: Tree roots\nsource_properties: Underground, branching network, anchor for growth, and life-supporting foundation.\ntarget_situation: Environmental conservation efforts integrated within Islamic boarding schools (pesantren).\nmapping: Roots symbolize the deep-seated spiritual and scientific foundation supporting the green movement.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

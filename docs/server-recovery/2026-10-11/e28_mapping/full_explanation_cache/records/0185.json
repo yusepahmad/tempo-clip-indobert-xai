@@ -1,0 +1,87 @@
+{
+  "index": 185,
+  "sample_id": "TMP-4E997AA14744",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "249d820e438268509381b7bd5135e993ec5e285f6fe391cddbff025148ba3cc4",
+  "image_sha256": "4e997aa147449f636f32d5922a37ee29bd9dcb9d48787149d11c8fab757b3d62",
+  "transmitted_image_sha256": "ad1ebc0b2c797ebdac85ac8269aa2c35f5b926ee717291f8e70bbe0992cc1295",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.278853999999999,
+      "total": 10,
+      "remaining": 1.721146000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.278853999999995,
+      "total": 100,
+      "remaining": 91.721146,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.302539640571922,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"devastated village settlement\", \"source_properties\": \"collapsed wooden houses, scattered debris, mud-covered ruins, and pervasive structural destruction.\", \"target_situation\": \"The government's delayed response and refusal to declare a national disaster in Sumatra.\", \"mapping\": \"The physical wreckage represents the catastrophic consequences of ignoring early warnings and prioritising political prestige over urgent humanitarian needs.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "_JHLaqjLGPGb_uMPte3s2Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 89,
+      "cost": {
+        "input_tokens_cost_nanodollars": 683500,
+        "output_tokens_cost_nanodollars": 267000
+      },
+      "prompt_tokens": 1367,
+      "total_backend_latency_ms": 1539,
+      "total_tokens": 1456
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.279804500000001,
+      "total": 10,
+      "remaining": 1.720195499999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.279804499999997,
+      "total": 100,
+      "remaining": 91.7201955,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009505,
+  "fields": {
+    "source_object": "devastated village settlement",
+    "source_properties": "collapsed wooden houses, scattered debris, mud-covered ruins, and pervasive structural destruction.",
+    "target_situation": "The government's delayed response and refusal to declare a national disaster in Sumatra.",
+    "mapping": "The physical wreckage represents the catastrophic consequences of ignoring early warnings and prioritising political prestige over urgent humanitarian needs.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: devastated village settlement\nsource_properties: collapsed wooden houses, scattered debris, mud-covered ruins, and pervasive structural destruction.\ntarget_situation: The government's delayed response and refusal to declare a national disaster in Sumatra.\nmapping: The physical wreckage represents the catastrophic consequences of ignoring early warnings and prioritising political prestige over urgent humanitarian needs.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

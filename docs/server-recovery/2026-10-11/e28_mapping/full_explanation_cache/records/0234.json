@@ -1,0 +1,90 @@
+{
+  "index": 234,
+  "sample_id": "TMP-AA4D669D101A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ad6a94cb3f2c638038d5a427d4f879dd8b7546c1b9688add5cbff22761538c29",
+  "image_sha256": "aa4d669d101af5c67c9a212eee6fa0506791543f40c82b5de57d22db5bc66658",
+  "transmitted_image_sha256": "0736b7aeb8c26258c924d01c78b7d23c7e35e2a6302d5d00bfded4ff17dd7000",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3517185,
+      "total": 10,
+      "remaining": 1.6482814999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.351718500000004,
+      "total": 100,
+      "remaining": 91.6482815,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 11.416317999362946,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A leaning, distorted building\",\n  \"source_properties\": \"Physically skewed, structurally unsound, and looming ominously over a small figure.\",\n  \"target_situation\": \"A corruption scandal involving a fraudulent building purchase by a regional bank.\",\n  \"mapping\": \"The building's physical 'crookedness' and instability symbolize the illegal and ethically skewed nature of the corrupt real estate deal.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "N5PLatqZJf7v_uMP-q7MqQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1886,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1783
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 668500,
+        "output_tokens_cost_nanodollars": 5658000
+      },
+      "prompt_tokens": 1337,
+      "total_backend_latency_ms": 9906,
+      "total_tokens": 3223
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.358045,
+      "total": 10,
+      "remaining": 1.6419549999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.358045000000004,
+      "total": 100,
+      "remaining": 91.641955,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0063265,
+  "fields": {
+    "source_object": "A leaning, distorted building",
+    "source_properties": "Physically skewed, structurally unsound, and looming ominously over a small figure.",
+    "target_situation": "A corruption scandal involving a fraudulent building purchase by a regional bank.",
+    "mapping": "The building's physical 'crookedness' and instability symbolize the illegal and ethically skewed nature of the corrupt real estate deal.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A leaning, distorted building\nsource_properties: Physically skewed, structurally unsound, and looming ominously over a small figure.\ntarget_situation: A corruption scandal involving a fraudulent building purchase by a regional bank.\nmapping: The building's physical 'crookedness' and instability symbolize the illegal and ethically skewed nature of the corrupt real estate deal.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

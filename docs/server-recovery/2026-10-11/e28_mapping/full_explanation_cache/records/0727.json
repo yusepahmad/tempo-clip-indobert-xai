@@ -1,0 +1,87 @@
+{
+  "index": 727,
+  "sample_id": "TMP-9271BBD5C76A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "00abc27694c06846354e2a045f85e59507e768798d97698640909188dbb115a1",
+  "image_sha256": "9271bbd5c76a53bed20bbac7d6afb6efbc8124601f231c78a4c378947bb51891",
+  "transmitted_image_sha256": "0d221038ae07d347fb5db11d44e8bb457967f0ce23f90c9344529039ce2e01dc",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.051863,
+      "total": 10,
+      "remaining": 0.9481369999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.051862999999997,
+      "total": 100,
+      "remaining": 90.948137,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0625961399637163,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"bank vault\", \"source_properties\": \"massive steel door, small barred window, heavy locking mechanism, secure interior\", \"target_situation\": \"The sudden resignation of the Bank Indonesia Governor due to political pressure and corruption allegations.\", \"mapping\": \"The vault represents the central bank's stability and secrecy; an official exiting into darkness symbolizes institutional collapse and loss of integrity.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "J6DLaoeqKPGb_uMPte3s2Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 88,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 264000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 1616,
+      "total_tokens": 1435
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0528005,
+      "total": 10,
+      "remaining": 0.9471995,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.052800500000004,
+      "total": 100,
+      "remaining": 90.9471995,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009375,
+  "fields": {
+    "source_object": "bank vault",
+    "source_properties": "massive steel door, small barred window, heavy locking mechanism, secure interior",
+    "target_situation": "The sudden resignation of the Bank Indonesia Governor due to political pressure and corruption allegations.",
+    "mapping": "The vault represents the central bank's stability and secrecy; an official exiting into darkness symbolizes institutional collapse and loss of integrity.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: bank vault\nsource_properties: massive steel door, small barred window, heavy locking mechanism, secure interior\ntarget_situation: The sudden resignation of the Bank Indonesia Governor due to political pressure and corruption allegations.\nmapping: The vault represents the central bank's stability and secrecy; an official exiting into darkness symbolizes institutional collapse and loss of integrity.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

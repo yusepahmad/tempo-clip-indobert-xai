@@ -1,0 +1,64 @@
+{
+  "status": "verified",
+  "verified_at": "2026-10-20T11:13:42.012960+00:00",
+  "metrics": {
+    "1": {
+      "task1_issue": {
+        "macro_f1": 0.49461889385689845,
+        "micro_f1": 0.527027027027027,
+        "accuracy": 0.527027027027027,
+        "precision_macro": 0.4905723844513014,
+        "recall_macro": 0.5014712121478035
+      },
+      "task2_domain_sumber": {
+        "macro_f1": 0.4208135744132341,
+        "micro_f1": 0.4527027027027027,
+        "accuracy": 0.4527027027027027,
+        "precision_macro": 0.42442557420838634,
+        "recall_macro": 0.41830711963259387
+      },
+      "task3_primary_entity_type": {
+        "macro_f1": 0.3856956289281086,
+        "micro_f1": 0.5027027027027027,
+        "accuracy": 0.5027027027027027,
+        "precision_macro": 0.39534962756859204,
+        "recall_macro": 0.3851609422588668
+      }
+    },
+    "2": {
+      "task1_issue": {
+        "macro_f1": 0.49525940191422924,
+        "micro_f1": 0.5310810810810811,
+        "accuracy": 0.5310810810810811,
+        "precision_macro": 0.4982683763293556,
+        "recall_macro": 0.494304791245055
+      },
+      "task2_domain_sumber": {
+        "macro_f1": 0.3905411429225763,
+        "micro_f1": 0.4243243243243243,
+        "accuracy": 0.4243243243243243,
+        "precision_macro": 0.3948316621585519,
+        "recall_macro": 0.3876957248344968
+      },
+      "task3_primary_entity_type": {
+        "macro_f1": 0.3884864385219572,
+        "micro_f1": 0.518918918918919,
+        "accuracy": 0.518918918918919,
+        "precision_macro": 0.41128445351588383,
+        "recall_macro": 0.3806830941223408
+      }
+    }
+  },
+  "checks": [
+    "740 unique OOF IDs per arm",
+    "ground-truth/probabilities/metrics",
+    "all 5 nested splits",
+    "train-only multiplicity",
+    "paired identical initialization",
+    "inner-only selection",
+    "epoch/exposure/update counts",
+    "source/protocol hashes"
+  ],
+  "checkpoint_note": "CPU checkpoint reload executed by frozen Kaggle worker; large checkpoint hashes recorded remotely, not downloaded/replayed locally",
+  "result_sha256": "a010cbb0625da82d9df0379aa35bedee271d4b3771a180f921009e4e9c1f189a"
+}

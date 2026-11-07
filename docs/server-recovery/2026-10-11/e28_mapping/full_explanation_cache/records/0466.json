@@ -1,0 +1,87 @@
+{
+  "index": 466,
+  "sample_id": "TMP-CFE7088B76BD",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "d9101457c381618907fdb5eb79a09a24b57e3bde47f39fbe1bc41d14ceb7115b",
+  "image_sha256": "cfe7088b76bd507784b5aa9fd4d02a1940a384a6d8811bc5e984d45aeef070ed",
+  "transmitted_image_sha256": "9d0ec3b52947824b5bc2ebc2bfb24bd135bbd01e5735ea3b48cb3c7218eaac91",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.674412,
+      "total": 10,
+      "remaining": 1.3255879999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.674412000000004,
+      "total": 100,
+      "remaining": 91.325588,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.962076547089964,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Petai (stink bean)\", \"source_properties\": \"A legume pod that appears full from the outside but may contain no seeds (hampa), rendering it empty or hollow.\", \"target_situation\": \"The 2019 Indonesian presidential debate between Joko Widodo and Prabowo Subianto.\", \"mapping\": \"The headline's metaphor likens the debate to an empty petai pod, suggesting the event lacked substance or meaningful content despite its outward appearance.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "RpnLavvqFbuc_uMP2cbk2A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 108,
+      "cost": {
+        "input_tokens_cost_nanodollars": 659500,
+        "output_tokens_cost_nanodollars": 324000
+      },
+      "prompt_tokens": 1319,
+      "total_backend_latency_ms": 1873,
+      "total_tokens": 1427
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6753955,
+      "total": 10,
+      "remaining": 1.3246044999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.675395499999993,
+      "total": 100,
+      "remaining": 91.3246045,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009835,
+  "fields": {
+    "source_object": "Petai (stink bean)",
+    "source_properties": "A legume pod that appears full from the outside but may contain no seeds (hampa), rendering it empty or hollow.",
+    "target_situation": "The 2019 Indonesian presidential debate between Joko Widodo and Prabowo Subianto.",
+    "mapping": "The headline's metaphor likens the debate to an empty petai pod, suggesting the event lacked substance or meaningful content despite its outward appearance.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Petai (stink bean)\nsource_properties: A legume pod that appears full from the outside but may contain no seeds (hampa), rendering it empty or hollow.\ntarget_situation: The 2019 Indonesian presidential debate between Joko Widodo and Prabowo Subianto.\nmapping: The headline's metaphor likens the debate to an empty petai pod, suggesting the event lacked substance or meaningful content despite its outward appearance.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

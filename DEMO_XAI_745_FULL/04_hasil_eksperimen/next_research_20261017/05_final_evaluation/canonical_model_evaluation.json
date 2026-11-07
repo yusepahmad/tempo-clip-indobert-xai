@@ -1,0 +1,82 @@
+{
+  "schema": "tempo-canonical-model-evaluation-v1",
+  "evaluation_scope": "internal 5-fold OOF; not external validation",
+  "selection_rule": "maximum minimum task Macro-F1; mean tie-break",
+  "candidates": [
+    {
+      "model_id": "E42",
+      "task1_issue": 0.5254826236457082,
+      "task2_domain_sumber": 0.3955604325695003,
+      "task3_primary_entity_type": 0.40339840958144335,
+      "minimum": 0.3955604325695003,
+      "mean": 0.44148048859888395,
+      "oof": "/home/yusep/Desktop/Freelance/TA-1-sekripsi-tempo-joy-eau-dia-final/DEMO_XAI_745_FULL/04_hasil_eksperimen/e42_tail_grid/oof.csv"
+    },
+    {
+      "model_id": "M01",
+      "task1_issue": 0.44257133051858244,
+      "task2_domain_sumber": 0.3591851807973905,
+      "task3_primary_entity_type": 0.35811961530463976,
+      "minimum": 0.35811961530463976,
+      "mean": 0.38662537554020426,
+      "oof": "/home/yusep/Desktop/Freelance/TA-1-sekripsi-tempo-joy-eau-dia-final/DEMO_XAI_745_FULL/04_hasil_eksperimen/next_research_20261017/01_model_comparison/M01_clip_indobert/oof.csv"
+    },
+    {
+      "model_id": "M02",
+      "task1_issue": 0.4903934493554062,
+      "task2_domain_sumber": 0.4213420150281383,
+      "task3_primary_entity_type": 0.37493927353581014,
+      "minimum": 0.37493927353581014,
+      "mean": 0.42889157930645155,
+      "oof": "/home/yusep/Desktop/Freelance/TA-1-sekripsi-tempo-joy-eau-dia-final/DEMO_XAI_745_FULL/04_hasil_eksperimen/next_research_20261017/01_model_comparison/M02_siglip2_indobert/oof.csv"
+    },
+    {
+      "model_id": "M03",
+      "task1_issue": 0.4162884277637323,
+      "task2_domain_sumber": 0.3928339322605194,
+      "task3_primary_entity_type": 0.2858855671531618,
+      "minimum": 0.2858855671531618,
+      "mean": 0.3650026423924711,
+      "oof": "/home/yusep/Desktop/Freelance/TA-1-sekripsi-tempo-joy-eau-dia-final/DEMO_XAI_745_FULL/04_hasil_eksperimen/next_research_20261017/01_model_comparison/M03_dinov2_indobert/oof.csv"
+    },
+    {
+      "model_id": "M04",
+      "task1_issue": 0.5037502388290994,
+      "task2_domain_sumber": 0.42220627801814353,
+      "task3_primary_entity_type": 0.3805106025536481,
+      "minimum": 0.3805106025536481,
+      "mean": 0.435489039800297,
+      "oof": "/home/yusep/Desktop/Freelance/TA-1-sekripsi-tempo-joy-eau-dia-final/DEMO_XAI_745_FULL/04_hasil_eksperimen/next_research_20261017/01_model_comparison/M04_siglip2_adapters/oof.csv"
+    },
+    {
+      "model_id": "J01",
+      "task1_issue": 0.5049714276605096,
+      "task2_domain_sumber": 0.385758095336096,
+      "task3_primary_entity_type": 0.37070372692154063,
+      "minimum": 0.37070372692154063,
+      "mean": 0.4204777499727155,
+      "oof": "/home/yusep/Desktop/Freelance/TA-1-sekripsi-tempo-joy-eau-dia-final/DEMO_XAI_745_FULL/04_hasil_eksperimen/next_research_20261017/03_joint_optimization/J01_hierarchical_task2/oof.csv"
+    },
+    {
+      "model_id": "AUG_SELECTED",
+      "task1_issue": 0.47852435254354136,
+      "task2_domain_sumber": 0.42185026933609204,
+      "task3_primary_entity_type": 0.3563930673289346,
+      "minimum": 0.3563930673289346,
+      "mean": 0.41892256306952264,
+      "oof": "/home/yusep/Desktop/Freelance/TA-1-sekripsi-tempo-joy-eau-dia-final/DEMO_XAI_745_FULL/04_hasil_eksperimen/next_research_20261017/02_augmentation/selected_pipeline_oof.csv"
+    }
+  ],
+  "selected": {
+    "model_id": "E42",
+    "task1_issue": 0.5254826236457082,
+    "task2_domain_sumber": 0.3955604325695003,
+    "task3_primary_entity_type": 0.40339840958144335,
+    "minimum": 0.3955604325695003,
+    "mean": 0.44148048859888395,
+    "oof": "/home/yusep/Desktop/Freelance/TA-1-sekripsi-tempo-joy-eau-dia-final/DEMO_XAI_745_FULL/04_hasil_eksperimen/e42_tail_grid/oof.csv"
+  },
+  "required_minimum_each": 0.7,
+  "gate_passed": false,
+  "predictions_sha256": "bc4c55291463106d398cf90c9f796724f7f22595d92668bda324a51e9799b642"
+}

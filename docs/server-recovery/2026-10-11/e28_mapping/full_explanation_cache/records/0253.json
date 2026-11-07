@@ -1,0 +1,87 @@
+{
+  "index": 253,
+  "sample_id": "TMP-4E44064759F3",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3445cdee84250090b331f6cff6339fcbc0909ca58f37c8c3cc07eae19a2e032c",
+  "image_sha256": "4e44064759f3b2fe497cd572d58afb08421d28882fa4265dc8420b26b2a78231",
+  "transmitted_image_sha256": "ea9cf4380ff928555c790a154d24a67c1e9a0270378d10e480f2b7def152e350",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3891845,
+      "total": 10,
+      "remaining": 1.6108154999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.389184499999999,
+      "total": 100,
+      "remaining": 91.6108155,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.869527746923268,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A person leading a bull by a nose ring and rope\",\n  \"source_properties\": \"Physical control, steering a powerful beast, providing direction and stability\",\n  \"target_situation\": \"Megawati Soekarnoputri guiding Joko Widodo (Jokowi) within the PDI-P party\",\n  \"mapping\": \"Leading the bull mirrors Megawati controlling Jokowi's political path and candidacy\",\n  \"uncertainty\": \"None evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "zZPLarqKJbDe_uMP6urskA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 107,
+      "cost": {
+        "input_tokens_cost_nanodollars": 660000,
+        "output_tokens_cost_nanodollars": 321000
+      },
+      "prompt_tokens": 1320,
+      "total_backend_latency_ms": 1709,
+      "total_tokens": 1427
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3901655,
+      "total": 10,
+      "remaining": 1.6098344999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.390165499999995,
+      "total": 100,
+      "remaining": 91.6098345,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000981,
+  "fields": {
+    "source_object": "A person leading a bull by a nose ring and rope",
+    "source_properties": "Physical control, steering a powerful beast, providing direction and stability",
+    "target_situation": "Megawati Soekarnoputri guiding Joko Widodo (Jokowi) within the PDI-P party",
+    "mapping": "Leading the bull mirrors Megawati controlling Jokowi's political path and candidacy",
+    "uncertainty": "None evident"
+  },
+  "explanation": "source_object: A person leading a bull by a nose ring and rope\nsource_properties: Physical control, steering a powerful beast, providing direction and stability\ntarget_situation: Megawati Soekarnoputri guiding Joko Widodo (Jokowi) within the PDI-P party\nmapping: Leading the bull mirrors Megawati controlling Jokowi's political path and candidacy\nuncertainty: None evident",
+  "finish_reason": "stop",
+  "usable": true
+}

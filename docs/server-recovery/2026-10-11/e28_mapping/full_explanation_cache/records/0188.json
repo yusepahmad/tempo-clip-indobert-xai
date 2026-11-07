@@ -1,0 +1,87 @@
+{
+  "index": 188,
+  "sample_id": "TMP-31C860ECD540",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ddbfc0caea48608bd167eb0ac73e819969e3771a6e3f1e1ae11ae25593b20b13",
+  "image_sha256": "31c860ecd54049c669119c739aa23d165bd40adfb33bca7ce0b19da0cc01ef67",
+  "transmitted_image_sha256": "9406ca158187b5aecc6593d21cfec7cda362f422f919eba1f17bdbe423f17497",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.284115,
+      "total": 10,
+      "remaining": 1.715885,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.284115,
+      "total": 100,
+      "remaining": 91.715885,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9943111459724605,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"claw machine\", \"source_properties\": \"mechanical claw controlled by joysticks to pick up specific items from a prize pit\", \"target_situation\": \"President Prabowo selecting a new Finance Minister to support specific economic policies\", \"mapping\": \"The president uses controls to manipulate a crane, symbolizing the process of carefully picking a candidate among many options, like a game of chance and skill.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "FJLLauepOcyY_uMP2cziyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678000,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1356,
+      "total_backend_latency_ms": 1720,
+      "total_tokens": 1448
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.285069,
+      "total": 10,
+      "remaining": 1.714931,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.285068999999993,
+      "total": 100,
+      "remaining": 91.714931,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000954,
+  "fields": {
+    "source_object": "claw machine",
+    "source_properties": "mechanical claw controlled by joysticks to pick up specific items from a prize pit",
+    "target_situation": "President Prabowo selecting a new Finance Minister to support specific economic policies",
+    "mapping": "The president uses controls to manipulate a crane, symbolizing the process of carefully picking a candidate among many options, like a game of chance and skill.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: claw machine\nsource_properties: mechanical claw controlled by joysticks to pick up specific items from a prize pit\ntarget_situation: President Prabowo selecting a new Finance Minister to support specific economic policies\nmapping: The president uses controls to manipulate a crane, symbolizing the process of carefully picking a candidate among many options, like a game of chance and skill.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

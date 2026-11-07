@@ -1,0 +1,87 @@
+{
+  "index": 279,
+  "sample_id": "TMP-D3E9B0795799",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "40e7f5a7e950986a6d6ac90c227f2dcb936774fb8224f46009c8df78392f78f0",
+  "image_sha256": "d3e9b07957990aa5ac1588964897ecc765619b8b9bc6d5c7c8477155415e4537",
+  "transmitted_image_sha256": "a7fbb4955fae7ffadf0d3baf2d9015277d9081f4b81e254079bacfad0d8d564d",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4211665,
+      "total": 10,
+      "remaining": 1.5788335,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.421166499999998,
+      "total": 100,
+      "remaining": 91.5788335,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.237259801942855,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"knitting / unraveling\", \"source_properties\": \"Using a needle to pull and unravel a thread from a woven garment.\", \"target_situation\": \"Former Minister of Religion Suryadharma Ali's alleged embezzlement of haj pilgrim funds.\", \"mapping\": \"Unraveling the pilgrim's white garment into currency symbolizes 'ripping' or draining the pockets of travelers for personal gain.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "cpTLavKvHbeR_uMPm_GWuA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 668500,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1337,
+      "total_backend_latency_ms": 1626,
+      "total_tokens": 1429
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.422111,
+      "total": 10,
+      "remaining": 1.5778890000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.422111000000001,
+      "total": 100,
+      "remaining": 91.577889,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009445,
+  "fields": {
+    "source_object": "knitting / unraveling",
+    "source_properties": "Using a needle to pull and unravel a thread from a woven garment.",
+    "target_situation": "Former Minister of Religion Suryadharma Ali's alleged embezzlement of haj pilgrim funds.",
+    "mapping": "Unraveling the pilgrim's white garment into currency symbolizes 'ripping' or draining the pockets of travelers for personal gain.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: knitting / unraveling\nsource_properties: Using a needle to pull and unravel a thread from a woven garment.\ntarget_situation: Former Minister of Religion Suryadharma Ali's alleged embezzlement of haj pilgrim funds.\nmapping: Unraveling the pilgrim's white garment into currency symbolizes 'ripping' or draining the pockets of travelers for personal gain.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

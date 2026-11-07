@@ -1,0 +1,87 @@
+{
+  "index": 142,
+  "sample_id": "TMP-0ADDE1161F81",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bf0c257776cd0977da68c26cad0f6dfff35a1f52525e597accb4c6debc6f9f22",
+  "image_sha256": "0adde1161f818fba75ae2e872aed73bdc86c895e1e48ef06061d759ec0a84415",
+  "transmitted_image_sha256": "af2f470853a0582533c02786aa34086d7e31e863647c7a05cf885c2aaa8ba9f5",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2210575,
+      "total": 10,
+      "remaining": 1.7789424999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.2210575,
+      "total": 100,
+      "remaining": 91.7789425,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.313120962120593,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Bull sculpture\", \"source_properties\": \"Massive, powerful, metallic charging bull being partially repainted from its original black-metallic color into red and green.\", \"target_situation\": \"PDIP's regional election strategy.\", \"mapping\": \"The bull symbolizes PDIP (whose logo is a bull); painting it red and green represents the party's strategic alliance with Islamic-leaning (green) factions alongside its nationalist (red) base.\", \"uncertainty\": \"None evident.\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "35DLaqP4H_Gb_uMPte3s2Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 659000,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1318,
+      "total_backend_latency_ms": 1792,
+      "total_tokens": 1424
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2220345,
+      "total": 10,
+      "remaining": 1.7779655000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.222034500000007,
+      "total": 100,
+      "remaining": 91.7779655,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000977,
+  "fields": {
+    "source_object": "Bull sculpture",
+    "source_properties": "Massive, powerful, metallic charging bull being partially repainted from its original black-metallic color into red and green.",
+    "target_situation": "PDIP's regional election strategy.",
+    "mapping": "The bull symbolizes PDIP (whose logo is a bull); painting it red and green represents the party's strategic alliance with Islamic-leaning (green) factions alongside its nationalist (red) base.",
+    "uncertainty": "None evident."
+  },
+  "explanation": "source_object: Bull sculpture\nsource_properties: Massive, powerful, metallic charging bull being partially repainted from its original black-metallic color into red and green.\ntarget_situation: PDIP's regional election strategy.\nmapping: The bull symbolizes PDIP (whose logo is a bull); painting it red and green represents the party's strategic alliance with Islamic-leaning (green) factions alongside its nationalist (red) base.\nuncertainty: None evident.",
+  "finish_reason": "stop",
+  "usable": true
+}

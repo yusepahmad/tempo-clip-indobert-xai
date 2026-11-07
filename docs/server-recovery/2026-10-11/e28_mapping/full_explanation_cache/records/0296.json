@@ -1,0 +1,87 @@
+{
+  "index": 296,
+  "sample_id": "TMP-C8D7F6CD5C47",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "90b3713f6902c5b89b9d2063c3b7b1d5f09fdae324d1eb120592002af5dc778c",
+  "image_sha256": "c8d7f6cd5c4763ef8135ac9045f05189139c10b2933282f92b6ac9c7d35d802d",
+  "transmitted_image_sha256": "bf9a649eeffe1a05b08f5e025c69b767f5d8a237ba0ea344521949453f70bc6c",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.447658,
+      "total": 10,
+      "remaining": 1.5523419999999994,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.447658000000004,
+      "total": 100,
+      "remaining": 91.552342,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.325787565205246,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"tiger's roaring head\", \"source_properties\": \"open mouth, sharp teeth, aggressive posture, predator nature\", \"target_situation\": \"the activities of the anonymous Twitter account Triomacan2000\", \"mapping\": \"The fierce tiger's mouth emerging from the Twitter bird symbolizes the aggressive, predatory nature of the anonymous account's influential and threatening social media presence.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "5JTLau74PLyb_uMP77KhsAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677500,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1355,
+      "total_backend_latency_ms": 1493,
+      "total_tokens": 1447
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4486115,
+      "total": 10,
+      "remaining": 1.5513884999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.448611499999998,
+      "total": 100,
+      "remaining": 91.5513885,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009535,
+  "fields": {
+    "source_object": "tiger's roaring head",
+    "source_properties": "open mouth, sharp teeth, aggressive posture, predator nature",
+    "target_situation": "the activities of the anonymous Twitter account Triomacan2000",
+    "mapping": "The fierce tiger's mouth emerging from the Twitter bird symbolizes the aggressive, predatory nature of the anonymous account's influential and threatening social media presence.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: tiger's roaring head\nsource_properties: open mouth, sharp teeth, aggressive posture, predator nature\ntarget_situation: the activities of the anonymous Twitter account Triomacan2000\nmapping: The fierce tiger's mouth emerging from the Twitter bird symbolizes the aggressive, predatory nature of the anonymous account's influential and threatening social media presence.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

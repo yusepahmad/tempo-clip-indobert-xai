@@ -1,0 +1,87 @@
+{
+  "index": 439,
+  "sample_id": "TMP-BFEB0AC6CB30",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1b79c4efd891b4842ec0ff52031de4f94ddf1228335ab9e778b36ce08425a112",
+  "image_sha256": "bfeb0ac6cb300a887d9901e9c49bb5702fa3a65b9c71202ada7104ea669f58a4",
+  "transmitted_image_sha256": "9b957b55ac84a36c1c0647b0c8740691d8d6fe854601fce1fcd6a6412d360a08",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6382605,
+      "total": 10,
+      "remaining": 1.3617395000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.638260500000001,
+      "total": 100,
+      "remaining": 91.3617395,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2026097238995135,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"walking the plank above a large oil tank\",\n  \"source_properties\": \"A person stands precariously on a wooden board extending over a deep, dark container.\",\n  \"target_situation\": \"Former Pertamina CEO Karen Agustiawan's legal jeopardy following her designation as a suspect.\",\n  \"mapping\": \"The plank represents a dangerous transition or forced path leading toward a legal 'abyss'.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "jJjLasLALN7d_uMP2Ze24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 312000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 1677,
+      "total_tokens": 1456
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6392485,
+      "total": 10,
+      "remaining": 1.3607514999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.639248499999994,
+      "total": 100,
+      "remaining": 91.3607515,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000988,
+  "fields": {
+    "source_object": "walking the plank above a large oil tank",
+    "source_properties": "A person stands precariously on a wooden board extending over a deep, dark container.",
+    "target_situation": "Former Pertamina CEO Karen Agustiawan's legal jeopardy following her designation as a suspect.",
+    "mapping": "The plank represents a dangerous transition or forced path leading toward a legal 'abyss'.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: walking the plank above a large oil tank\nsource_properties: A person stands precariously on a wooden board extending over a deep, dark container.\ntarget_situation: Former Pertamina CEO Karen Agustiawan's legal jeopardy following her designation as a suspect.\nmapping: The plank represents a dangerous transition or forced path leading toward a legal 'abyss'.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

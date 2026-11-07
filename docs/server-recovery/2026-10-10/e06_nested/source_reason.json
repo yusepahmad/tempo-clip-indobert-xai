@@ -1,0 +1,194 @@
+{
+  "macro_f1": 0.49652553439638636,
+  "folds": [
+    {
+      "fold": 1,
+      "macro_f1": 0.4768276395912198,
+      "inner_macro_f1": 0.47679220226611285,
+      "params": {
+        "clf": "SVC()",
+        "clf__C": "1",
+        "clf__class_weight": "balanced",
+        "clf__gamma": "scale"
+      }
+    },
+    {
+      "fold": 2,
+      "macro_f1": 0.46561799166841183,
+      "inner_macro_f1": 0.4920238170090782,
+      "params": {
+        "clf": "SVC()",
+        "clf__C": "1",
+        "clf__class_weight": "balanced",
+        "clf__gamma": "scale"
+      }
+    },
+    {
+      "fold": 3,
+      "macro_f1": 0.5335932183758271,
+      "inner_macro_f1": 0.46285490421667913,
+      "params": {
+        "clf": "SVC()",
+        "clf__C": "1",
+        "clf__class_weight": "balanced",
+        "clf__gamma": "0.0003"
+      }
+    },
+    {
+      "fold": 4,
+      "macro_f1": 0.44772335234448773,
+      "inner_macro_f1": 0.47018426915418443,
+      "params": {
+        "clf": "SVC()",
+        "clf__C": "1",
+        "clf__class_weight": "balanced",
+        "clf__gamma": "0.0003"
+      }
+    },
+    {
+      "fold": 5,
+      "macro_f1": 0.5064763385171548,
+      "inner_macro_f1": 0.4631931358425197,
+      "params": {
+        "clf": "SVC()",
+        "clf__C": "1",
+        "clf__class_weight": "balanced",
+        "clf__gamma": "scale"
+      }
+    }
+  ],
+  "classification": {
+    "BENCANA_JERAT": {
+      "precision": 0.4074074074074074,
+      "recall": 0.55,
+      "f1-score": 0.46808510638297873,
+      "support": 100.0
+    },
+    "HEWAN_TUBUH": {
+      "precision": 0.5789473684210527,
+      "recall": 0.36666666666666664,
+      "f1-score": 0.4489795918367347,
+      "support": 90.0
+    },
+    "KONSUMSI_TRANSAKSI": {
+      "precision": 0.5730337078651685,
+      "recall": 0.6071428571428571,
+      "f1-score": 0.5895953757225434,
+      "support": 84.0
+    },
+    "LAINNYA": {
+      "precision": 0.30357142857142855,
+      "recall": 0.2698412698412698,
+      "f1-score": 0.2857142857142857,
+      "support": 63.0
+    },
+    "MESIN_INFRASTRUKTUR": {
+      "precision": 0.67,
+      "recall": 0.6261682242990654,
+      "f1-score": 0.6473429951690821,
+      "support": 214.0
+    },
+    "NON_METAFORA": {
+      "precision": 0.5285714285714286,
+      "recall": 0.4457831325301205,
+      "f1-score": 0.48366013071895425,
+      "support": 83.0
+    },
+    "PERMAINAN_KONTES": {
+      "precision": 0.49624060150375937,
+      "recall": 0.6226415094339622,
+      "f1-score": 0.5523012552301255,
+      "support": 106.0
+    },
+    "accuracy": 0.5310810810810811,
+    "macro avg": {
+      "precision": 0.5082531346200351,
+      "recall": 0.49832052284484885,
+      "f1-score": 0.49652553439638636,
+      "support": 740.0
+    },
+    "weighted avg": {
+      "precision": 0.5404848212028873,
+      "recall": 0.5310810810810811,
+      "f1-score": 0.5296781220737131,
+      "support": 740.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      55,
+      4,
+      4,
+      2,
+      16,
+      9,
+      10
+    ],
+    [
+      13,
+      33,
+      10,
+      5,
+      12,
+      7,
+      10
+    ],
+    [
+      7,
+      2,
+      51,
+      2,
+      11,
+      2,
+      9
+    ],
+    [
+      7,
+      10,
+      5,
+      17,
+      7,
+      2,
+      15
+    ],
+    [
+      31,
+      1,
+      13,
+      14,
+      134,
+      7,
+      14
+    ],
+    [
+      14,
+      6,
+      2,
+      4,
+      11,
+      37,
+      9
+    ],
+    [
+      8,
+      1,
+      4,
+      12,
+      9,
+      6,
+      66
+    ]
+  ],
+  "source_meta": {
+    "model": "intfloat/multilingual-e5-base",
+    "revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+    "csv_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+    "description_sha256": "c75e8df3f9b71d6786462f8d0f1187ebe4234fb8dd079924f3f35707ff1b8cd2",
+    "zeroshot_sha256": "10c07b06b13fbbf647f2b1ed12a722d9bff8f97caa6b621430d8bc0429ab38c9",
+    "samples": 740,
+    "dimension": 768,
+    "prefix": "query:",
+    "pooling": "masked mean then L2",
+    "torch": "2.11.0+cu128"
+  }
+}

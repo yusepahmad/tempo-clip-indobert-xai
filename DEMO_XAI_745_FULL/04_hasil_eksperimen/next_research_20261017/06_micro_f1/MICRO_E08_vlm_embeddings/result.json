@@ -1,0 +1,1108 @@
+{
+  "schema": "tempo-micro-e08-v1",
+  "status": "complete",
+  "model_contract": "one nested-selected frozen embedding view with three classification heads",
+  "micro_f1": {
+    "task1_issue": 0.5554054054054054,
+    "task2_domain_sumber": 0.5378378378378378,
+    "task3_primary_entity_type": 0.48243243243243245
+  },
+  "macro_f1_diagnostic": {
+    "task1_issue": 0.4933529610146559,
+    "task2_domain_sumber": 0.5035163269719524,
+    "task3_primary_entity_type": 0.281753042536166
+  },
+  "minimum_micro_f1": 0.48243243243243245,
+  "all_tasks_at_least_0_70": false,
+  "fold_details": [
+    {
+      "fold": 1,
+      "selected_view": "qwen_bge",
+      "view_inner_micro_f1": {
+        "qwen": {
+          "task1_issue": 0.3192414842161035,
+          "task2_domain_sumber": 0.5067340067340067,
+          "task3_primary_entity_type": 0.40870635286878937
+        },
+        "caption_bge": {
+          "task1_issue": 0.49155685450101694,
+          "task2_domain_sumber": 0.4392230255174418,
+          "task3_primary_entity_type": 0.4678083713616709
+        },
+        "qwen_caption": {
+          "task1_issue": 0.4425900288844451,
+          "task2_domain_sumber": 0.49494094925567006,
+          "task3_primary_entity_type": 0.4256524637235297
+        },
+        "qwen_bge": {
+          "task1_issue": 0.47296142473807445,
+          "task2_domain_sumber": 0.5253636192722486,
+          "task3_primary_entity_type": 0.454365994975132
+        },
+        "all": {
+          "task1_issue": 0.4780119297885796,
+          "task2_domain_sumber": 0.5304312157104035,
+          "task3_primary_entity_type": 0.4054248064400349
+        }
+      },
+      "tasks": {
+        "task1_issue": {
+          "selected_head": {
+            "name": "logreg_c001",
+            "kind": "logreg",
+            "C": 0.01,
+            "class_weight": null,
+            "inner_micro_f1": 0.5219795245175957
+          },
+          "head_candidates": [
+            {
+              "name": "linear_c001",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.47296142473807445
+            },
+            {
+              "name": "linear_c01",
+              "kind": "linear",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.4611427301782632
+            },
+            {
+              "name": "linear_c001_bal",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.47465347211540104
+            },
+            {
+              "name": "logreg_c001",
+              "kind": "logreg",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.5219795245175957
+            },
+            {
+              "name": "logreg_c01",
+              "kind": "logreg",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.4949324035618452
+            },
+            {
+              "name": "rbf_c1",
+              "kind": "rbf",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.26688201815105367
+            },
+            {
+              "name": "rbf_c10",
+              "kind": "rbf",
+              "C": 10.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.4037327590627083
+            }
+          ],
+          "outer_micro_f1": 0.5608108108108109
+        },
+        "task2_domain_sumber": {
+          "selected_head": {
+            "name": "rbf_c10",
+            "kind": "rbf",
+            "C": 10.0,
+            "class_weight": null,
+            "inner_micro_f1": 0.5608282486455075
+          },
+          "head_candidates": [
+            {
+              "name": "linear_c001",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.5253636192722486
+            },
+            {
+              "name": "linear_c01",
+              "kind": "linear",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.5152369720897639
+            },
+            {
+              "name": "linear_c001_bal",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.5236715718949222
+            },
+            {
+              "name": "logreg_c001",
+              "kind": "logreg",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.5557777435950025
+            },
+            {
+              "name": "logreg_c01",
+              "kind": "logreg",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.5371737681382353
+            },
+            {
+              "name": "rbf_c1",
+              "kind": "rbf",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.5135534704062623
+            },
+            {
+              "name": "rbf_c10",
+              "kind": "rbf",
+              "C": 10.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.5608282486455075
+            }
+          ],
+          "outer_micro_f1": 0.5202702702702703
+        },
+        "task3_primary_entity_type": {
+          "selected_head": {
+            "name": "logreg_c01",
+            "kind": "logreg",
+            "C": 0.1,
+            "class_weight": null,
+            "inner_micro_f1": 0.4594335914132868
+          },
+          "head_candidates": [
+            {
+              "name": "linear_c001",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.454365994975132
+            },
+            {
+              "name": "linear_c01",
+              "kind": "linear",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.454365994975132
+            },
+            {
+              "name": "linear_c001_bal",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.4492813071493275
+            },
+            {
+              "name": "logreg_c001",
+              "kind": "logreg",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.45603240527098393
+            },
+            {
+              "name": "logreg_c01",
+              "kind": "logreg",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.4594335914132868
+            },
+            {
+              "name": "rbf_c1",
+              "kind": "rbf",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.4172264096121964
+            },
+            {
+              "name": "rbf_c10",
+              "kind": "rbf",
+              "C": 10.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.44589721239467434
+            }
+          ],
+          "outer_micro_f1": 0.4527027027027027
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "selected_view": "caption_bge",
+      "view_inner_micro_f1": {
+        "qwen": {
+          "task1_issue": 0.3057392879727905,
+          "task2_domain_sumber": 0.5219709788237706,
+          "task3_primary_entity_type": 0.4307884257122836
+        },
+        "caption_bge": {
+          "task1_issue": 0.4712864687483977,
+          "task2_domain_sumber": 0.5117930574783367,
+          "task3_primary_entity_type": 0.4239860534276778
+        },
+        "qwen_caption": {
+          "task1_issue": 0.4104924028781897,
+          "task2_domain_sumber": 0.5253465278845989,
+          "task3_primary_entity_type": 0.43412979199781226
+        },
+        "qwen_bge": {
+          "task1_issue": 0.43918029704831735,
+          "task2_domain_sumber": 0.5286793484763028,
+          "task3_primary_entity_type": 0.4189526397648225
+        },
+        "all": {
+          "task1_issue": 0.4899246269804645,
+          "task2_domain_sumber": 0.5743133535011707,
+          "task3_primary_entity_type": 0.3969987523287015
+        }
+      },
+      "tasks": {
+        "task1_issue": {
+          "selected_head": {
+            "name": "rbf_c10",
+            "kind": "rbf",
+            "C": 10.0,
+            "class_weight": null,
+            "inner_micro_f1": 0.5304226700165786
+          },
+          "head_candidates": [
+            {
+              "name": "linear_c001",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.4712864687483977
+            },
+            {
+              "name": "linear_c01",
+              "kind": "linear",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.4560836794339333
+            },
+            {
+              "name": "linear_c001_bal",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.4712864687483977
+            },
+            {
+              "name": "logreg_c001",
+              "kind": "logreg",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.513510741937138
+            },
+            {
+              "name": "logreg_c01",
+              "kind": "logreg",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.4814302073185322
+            },
+            {
+              "name": "rbf_c1",
+              "kind": "rbf",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.4678938282999197
+            },
+            {
+              "name": "rbf_c10",
+              "kind": "rbf",
+              "C": 10.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.5304226700165786
+            }
+          ],
+          "outer_micro_f1": 0.5067567567567568
+        },
+        "task2_domain_sumber": {
+          "selected_head": {
+            "name": "logreg_c01",
+            "kind": "logreg",
+            "C": 0.1,
+            "class_weight": null,
+            "inner_micro_f1": 0.520210565895845
+          },
+          "head_candidates": [
+            {
+              "name": "linear_c001",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.5117930574783367
+            },
+            {
+              "name": "linear_c01",
+              "kind": "linear",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.5050334136628553
+            },
+            {
+              "name": "linear_c001_bal",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.5134851048556632
+            },
+            {
+              "name": "logreg_c001",
+              "kind": "logreg",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.5185356099061683
+            },
+            {
+              "name": "logreg_c01",
+              "kind": "logreg",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.520210565895845
+            },
+            {
+              "name": "rbf_c1",
+              "kind": "rbf",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.3936232032678733
+            },
+            {
+              "name": "rbf_c10",
+              "kind": "rbf",
+              "C": 10.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.4983079526226734
+            }
+          ],
+          "outer_micro_f1": 0.46621621621621623
+        },
+        "task3_primary_entity_type": {
+          "selected_head": {
+            "name": "rbf_c10",
+            "kind": "rbf",
+            "C": 10.0,
+            "class_weight": null,
+            "inner_micro_f1": 0.494949494949495
+          },
+          "head_candidates": [
+            {
+              "name": "linear_c001",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.4239860534276778
+            },
+            {
+              "name": "linear_c01",
+              "kind": "linear",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.4222940060503513
+            },
+            {
+              "name": "linear_c001_bal",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.42737014818233093
+            },
+            {
+              "name": "logreg_c001",
+              "kind": "logreg",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.45435744928130717
+            },
+            {
+              "name": "logreg_c01",
+              "kind": "logreg",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.442530209027671
+            },
+            {
+              "name": "rbf_c1",
+              "kind": "rbf",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.43749679536481567
+            },
+            {
+              "name": "rbf_c10",
+              "kind": "rbf",
+              "C": 10.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.494949494949495
+            }
+          ],
+          "outer_micro_f1": 0.527027027027027
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "selected_view": "all",
+      "view_inner_micro_f1": {
+        "qwen": {
+          "task1_issue": 0.2972961424738075,
+          "task2_domain_sumber": 0.5389427267599857,
+          "task3_primary_entity_type": 0.4222598232750517
+        },
+        "caption_bge": {
+          "task1_issue": 0.4679536481566939,
+          "task2_domain_sumber": 0.4797467056350306,
+          "task3_primary_entity_type": 0.44084670734416925
+        },
+        "qwen_caption": {
+          "task1_issue": 0.40036575569570493,
+          "task2_domain_sumber": 0.5118956058042352,
+          "task3_primary_entity_type": 0.4425473004153207
+        },
+        "qwen_bge": {
+          "task1_issue": 0.4341212463039874,
+          "task2_domain_sumber": 0.505127416294929,
+          "task3_primary_entity_type": 0.4712693773607479
+        },
+        "all": {
+          "task1_issue": 0.46796219385051874,
+          "task2_domain_sumber": 0.5473516894836691,
+          "task3_primary_entity_type": 0.45265685621015567
+        }
+      },
+      "tasks": {
+        "task1_issue": {
+          "selected_head": {
+            "name": "logreg_c001",
+            "kind": "logreg",
+            "C": 0.01,
+            "class_weight": null,
+            "inner_micro_f1": 0.4730212445948487
+          },
+          "head_candidates": [
+            {
+              "name": "linear_c001",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.46796219385051874
+            },
+            {
+              "name": "linear_c01",
+              "kind": "linear",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.466278692167017
+            },
+            {
+              "name": "linear_c001_bal",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.46796219385051874
+            },
+            {
+              "name": "logreg_c001",
+              "kind": "logreg",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.4730212445948487
+            },
+            {
+              "name": "logreg_c01",
+              "kind": "logreg",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.4730041532071989
+            },
+            {
+              "name": "rbf_c1",
+              "kind": "rbf",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.25675537096856893
+            },
+            {
+              "name": "rbf_c10",
+              "kind": "rbf",
+              "C": 10.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.3834538276162642
+            }
+          ],
+          "outer_micro_f1": 0.6148648648648649
+        },
+        "task2_domain_sumber": {
+          "selected_head": {
+            "name": "logreg_c01",
+            "kind": "logreg",
+            "C": 0.1,
+            "class_weight": null,
+            "inner_micro_f1": 0.5524107402279991
+          },
+          "head_candidates": [
+            {
+              "name": "linear_c001",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.5473516894836691
+            },
+            {
+              "name": "linear_c01",
+              "kind": "linear",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.543967594729016
+            },
+            {
+              "name": "linear_c001_bal",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.5473516894836691
+            },
+            {
+              "name": "logreg_c001",
+              "kind": "logreg",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.5473516894836692
+            },
+            {
+              "name": "logreg_c01",
+              "kind": "logreg",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.5524107402279991
+            },
+            {
+              "name": "rbf_c1",
+              "kind": "rbf",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.5067681895093062
+            },
+            {
+              "name": "rbf_c10",
+              "kind": "rbf",
+              "C": 10.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.5355073578423832
+            }
+          ],
+          "outer_micro_f1": 0.5608108108108109
+        },
+        "task3_primary_entity_type": {
+          "selected_head": {
+            "name": "logreg_c001",
+            "kind": "logreg",
+            "C": 0.01,
+            "class_weight": null,
+            "inner_micro_f1": 0.46785964552462017
+          },
+          "head_candidates": [
+            {
+              "name": "linear_c001",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.45265685621015567
+            },
+            {
+              "name": "linear_c01",
+              "kind": "linear",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.45097335452665405
+            },
+            {
+              "name": "linear_c001_bal",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.44927276145550255
+            },
+            {
+              "name": "logreg_c001",
+              "kind": "logreg",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.46785964552462017
+            },
+            {
+              "name": "logreg_c01",
+              "kind": "logreg",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.46111709309678856
+            },
+            {
+              "name": "rbf_c1",
+              "kind": "rbf",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.44088089011946874
+            },
+            {
+              "name": "rbf_c10",
+              "kind": "rbf",
+              "C": 10.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.4662359636978926
+            }
+          ],
+          "outer_micro_f1": 0.44594594594594594
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "selected_view": "caption_bge",
+      "view_inner_micro_f1": {
+        "qwen": {
+          "task1_issue": 0.35465483942641307,
+          "task2_domain_sumber": 0.520287477140269,
+          "task3_primary_entity_type": 0.37325881488318036
+        },
+        "caption_bge": {
+          "task1_issue": 0.49324890187834347,
+          "task2_domain_sumber": 0.459493411270061,
+          "task3_primary_entity_type": 0.4577500897297852
+        },
+        "qwen_caption": {
+          "task1_issue": 0.4458715753131997,
+          "task2_domain_sumber": 0.5304226700165787,
+          "task3_primary_entity_type": 0.40536498658326064
+        },
+        "qwen_bge": {
+          "task1_issue": 0.46110000170913873,
+          "task2_domain_sumber": 0.5152198807021141,
+          "task3_primary_entity_type": 0.43404433505956347
+        },
+        "all": {
+          "task1_issue": 0.4965817224700473,
+          "task2_domain_sumber": 0.5438650464031175,
+          "task3_primary_entity_type": 0.4205848672853749
+        }
+      },
+      "tasks": {
+        "task1_issue": {
+          "selected_head": {
+            "name": "logreg_c001",
+            "kind": "logreg",
+            "C": 0.01,
+            "class_weight": null,
+            "inner_micro_f1": 0.5118016031721616
+          },
+          "head_candidates": [
+            {
+              "name": "linear_c001",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.49324890187834347
+            },
+            {
+              "name": "linear_c01",
+              "kind": "linear",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.48648071236903717
+            },
+            {
+              "name": "linear_c001_bal",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.4966159052453469
+            },
+            {
+              "name": "logreg_c001",
+              "kind": "logreg",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.5118016031721616
+            },
+            {
+              "name": "logreg_c01",
+              "kind": "logreg",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.5033840947546532
+            },
+            {
+              "name": "rbf_c1",
+              "kind": "rbf",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.4543830863627818
+            },
+            {
+              "name": "rbf_c10",
+              "kind": "rbf",
+              "C": 10.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.5016407732143773
+            }
+          ],
+          "outer_micro_f1": 0.5472972972972973
+        },
+        "task2_domain_sumber": {
+          "selected_head": {
+            "name": "rbf_c10",
+            "kind": "rbf",
+            "C": 10.0,
+            "class_weight": null,
+            "inner_micro_f1": 0.5067852808969561
+          },
+          "head_candidates": [
+            {
+              "name": "linear_c001",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.459493411270061
+            },
+            {
+              "name": "linear_c01",
+              "kind": "linear",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.45273376745457966
+            },
+            {
+              "name": "linear_c001_bal",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.45612640790305764
+            },
+            {
+              "name": "logreg_c001",
+              "kind": "logreg",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.4966500880206464
+            },
+            {
+              "name": "logreg_c01",
+              "kind": "logreg",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.48314789177733336
+            },
+            {
+              "name": "rbf_c1",
+              "kind": "rbf",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.4037242133688834
+            },
+            {
+              "name": "rbf_c10",
+              "kind": "rbf",
+              "C": 10.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.5067852808969561
+            }
+          ],
+          "outer_micro_f1": 0.5405405405405406
+        },
+        "task3_primary_entity_type": {
+          "selected_head": {
+            "name": "rbf_c10",
+            "kind": "rbf",
+            "C": 10.0,
+            "class_weight": null,
+            "inner_micro_f1": 0.4830795262267344
+          },
+          "head_candidates": [
+            {
+              "name": "linear_c001",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.4577500897297852
+            },
+            {
+              "name": "linear_c01",
+              "kind": "linear",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.45267394759780544
+            },
+            {
+              "name": "linear_c001_bal",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.4560665880462835
+            },
+            {
+              "name": "logreg_c001",
+              "kind": "logreg",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.46452682493291625
+            },
+            {
+              "name": "logreg_c01",
+              "kind": "logreg",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.4577500897297852
+            },
+            {
+              "name": "rbf_c1",
+              "kind": "rbf",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.42904510417200775
+            },
+            {
+              "name": "rbf_c10",
+              "kind": "rbf",
+              "C": 10.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.4830795262267344
+            }
+          ],
+          "outer_micro_f1": 0.49324324324324326
+        }
+      }
+    },
+    {
+      "fold": 5,
+      "selected_view": "qwen_bge",
+      "view_inner_micro_f1": {
+        "qwen": {
+          "task1_issue": 0.297253414004683,
+          "task2_domain_sumber": 0.5016749559896767,
+          "task3_primary_entity_type": 0.3867781025141431
+        },
+        "caption_bge": {
+          "task1_issue": 0.5135620161000872,
+          "task2_domain_sumber": 0.4797723427165052,
+          "task3_primary_entity_type": 0.4273530567946811
+        },
+        "qwen_caption": {
+          "task1_issue": 0.4544172691380813,
+          "task2_domain_sumber": 0.5253550735784238,
+          "task3_primary_entity_type": 0.40036575569570493
+        },
+        "qwen_bge": {
+          "task1_issue": 0.4780717496453537,
+          "task2_domain_sumber": 0.5101437385701345,
+          "task3_primary_entity_type": 0.4442820762617717
+        },
+        "all": {
+          "task1_issue": 0.5152967919465381,
+          "task2_domain_sumber": 0.5675366182980396,
+          "task3_primary_entity_type": 0.4205934129791998
+        }
+      },
+      "tasks": {
+        "task1_issue": {
+          "selected_head": {
+            "name": "logreg_c001",
+            "kind": "logreg",
+            "C": 0.01,
+            "class_weight": null,
+            "inner_micro_f1": 0.5254234391290229
+          },
+          "head_candidates": [
+            {
+              "name": "linear_c001",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.4780717496453537
+            },
+            {
+              "name": "linear_c01",
+              "kind": "linear",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.47468765489070064
+            },
+            {
+              "name": "linear_c001_bal",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.4797637970226803
+            },
+            {
+              "name": "logreg_c001",
+              "kind": "logreg",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.5254234391290229
+            },
+            {
+              "name": "logreg_c01",
+              "kind": "logreg",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.5000512741629493
+            },
+            {
+              "name": "rbf_c1",
+              "kind": "rbf",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.2753422550376865
+            },
+            {
+              "name": "rbf_c10",
+              "kind": "rbf",
+              "C": 10.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.4121588131740416
+            }
+          ],
+          "outer_micro_f1": 0.5472972972972973
+        },
+        "task2_domain_sumber": {
+          "selected_head": {
+            "name": "logreg_c001",
+            "kind": "logreg",
+            "C": 0.01,
+            "class_weight": null,
+            "inner_micro_f1": 0.5658616623083628
+          },
+          "head_candidates": [
+            {
+              "name": "linear_c001",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.5101437385701345
+            },
+            {
+              "name": "linear_c01",
+              "kind": "linear",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.49833358970414804
+            },
+            {
+              "name": "linear_c001_bal",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.511835785947461
+            },
+            {
+              "name": "logreg_c001",
+              "kind": "logreg",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.5658616623083628
+            },
+            {
+              "name": "logreg_c01",
+              "kind": "logreg",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.5270471209557505
+            },
+            {
+              "name": "rbf_c1",
+              "kind": "rbf",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.5118016031721616
+            },
+            {
+              "name": "rbf_c10",
+              "kind": "rbf",
+              "C": 10.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.5540344220547266
+            }
+          ],
+          "outer_micro_f1": 0.6013513513513513
+        },
+        "task3_primary_entity_type": {
+          "selected_head": {
+            "name": "logreg_c01",
+            "kind": "logreg",
+            "C": 0.1,
+            "class_weight": null,
+            "inner_micro_f1": 0.4544172691380813
+          },
+          "head_candidates": [
+            {
+              "name": "linear_c001",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.4442820762617717
+            },
+            {
+              "name": "linear_c01",
+              "kind": "linear",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.4476576253225999
+            },
+            {
+              "name": "linear_c001_bal",
+              "kind": "linear",
+              "C": 0.01,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.4425900288844451
+            },
+            {
+              "name": "logreg_c001",
+              "kind": "logreg",
+              "C": 0.01,
+              "class_weight": null,
+              "inner_micro_f1": 0.44763198824112527
+            },
+            {
+              "name": "logreg_c01",
+              "kind": "logreg",
+              "C": 0.1,
+              "class_weight": null,
+              "inner_micro_f1": 0.4544172691380813
+            },
+            {
+              "name": "rbf_c1",
+              "kind": "rbf",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.42567810080500434
+            },
+            {
+              "name": "rbf_c10",
+              "kind": "rbf",
+              "C": 10.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.4476148968534755
+            }
+          ],
+          "outer_micro_f1": 0.49324324324324326
+        }
+      }
+    }
+  ],
+  "dataset_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "feature_sha256": {
+    "docs/server-recovery/2026-10-11/e15_vlm_features/embeddings.npz": "fa3e3d39b1bbb0b0ef447cf3efafa28e72d1924dd8a2151aec775b35ede11685",
+    "docs/server-recovery/2026-10-11/e22_caption/full_embeddings/embeddings.npz": "5c192df7f4ec613bb476397505bf1d0ea10db850e90ca0849c97d5e17f8e69fe",
+    "docs/server-recovery/2026-10-10/e13_bge_m3/e13_bge_m3/embeddings.npz": "c0d7d1fc9ac42988b0d107a694d7d3b355105f8640f776ace2617eed936495c4",
+    "DEMO_XAI_745_FULL/03_data/fitur_clip_indobert_740.npz": "d27cd5dbecfffba3a8bbb96037f3181da20f1c95eb246a7d38a4627a90599e5c"
+  },
+  "seconds": 1840.8689274787903,
+  "predictions_sha256": "ba32796095f96335b4133d62df43ca6a98a9faafdfb1a4cab2d88fc84b61b195"
+}

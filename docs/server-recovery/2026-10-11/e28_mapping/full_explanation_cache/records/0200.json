@@ -1,0 +1,87 @@
+{
+  "index": 200,
+  "sample_id": "TMP-C4BBCF7A620F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "6de1ba6fbc88fc02fdd228c87bed17aed65c5d2b2eb48187bf1f9b7ef406191b",
+  "image_sha256": "c4bbcf7a620ffdd32d5c3ac36eb91bfddd8ec8590dd69a8c4affc25f16d5cd4a",
+  "transmitted_image_sha256": "ec713ee2f4f5134ab467834a47d7fbd52adb585120ac8d72be08007cf706bca6",
+  "image_size": [
+    300,
+    405
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3047245,
+      "total": 10,
+      "remaining": 1.6952754999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.304724500000006,
+      "total": 100,
+      "remaining": 91.6952755,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9602763089351356,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Trojan horse in the shape of a bull\",\n  \"source_properties\": \"A hollow wooden construct containing people, used as a deceptive entry tactic.\",\n  \"target_situation\": \"Political figures in yellow suits emerging from a bull-shaped structure.\",\n  \"mapping\": \"The bull acts as a deceptive vessel for political actors to infiltrate or surprise.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Y5LLarz3Iq2u_PUPk7_C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 638500,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1277,
+      "total_backend_latency_ms": 1628,
+      "total_tokens": 1372
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.305648,
+      "total": 10,
+      "remaining": 1.6943520000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.305648000000005,
+      "total": 100,
+      "remaining": 91.694352,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009235,
+  "fields": {
+    "source_object": "Trojan horse in the shape of a bull",
+    "source_properties": "A hollow wooden construct containing people, used as a deceptive entry tactic.",
+    "target_situation": "Political figures in yellow suits emerging from a bull-shaped structure.",
+    "mapping": "The bull acts as a deceptive vessel for political actors to infiltrate or surprise.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: Trojan horse in the shape of a bull\nsource_properties: A hollow wooden construct containing people, used as a deceptive entry tactic.\ntarget_situation: Political figures in yellow suits emerging from a bull-shaped structure.\nmapping: The bull acts as a deceptive vessel for political actors to infiltrate or surprise.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

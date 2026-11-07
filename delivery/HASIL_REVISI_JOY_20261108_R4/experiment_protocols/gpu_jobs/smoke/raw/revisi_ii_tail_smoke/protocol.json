@@ -1,0 +1,55 @@
+{
+  "schema": "revisi-ii-tail-controlled-v1",
+  "arms": [
+    "RII_TAIL_MTL_WEIGHTED",
+    "RII_TAIL_MTL_UNWEIGHTED",
+    "RII_TAIL_SINGLE_TASK",
+    "RII_TAIL_IMAGE_ONLY",
+    "RII_TAIL_TEXT_SUPPORTING"
+  ],
+  "epochs": [
+    0,
+    2,
+    4,
+    8
+  ],
+  "seed": 42,
+  "selection": "mean task Macro-F1 across two Task2-stratified inner folds seed123, earliest epoch tie",
+  "architecture": "E42 CLIP-L14 full/crop + frozen IndoBERT first10 blocks + trainable last2 +shared256+3heads",
+  "single_task": "3 independent copies, one task loss each, equal architecture and tuning candidates",
+  "inputs": "headline_verified [SEP] supporting_text_verified; frozen E41 cache",
+  "loss": "fixed weighted task CE sum / sum(active weights); class weights train-only except unweighted arm",
+  "config": {
+    "hidden": 256,
+    "dropout": 0.3,
+    "visual_weight": 2.0,
+    "loss_weights": [
+      1.0,
+      2.0,
+      2.0
+    ],
+    "encoder_lr": 2e-05,
+    "head_lr": 0.0003,
+    "weight_decay": 0.01,
+    "batch": 32,
+    "epoch_candidates": [
+      0,
+      2,
+      4,
+      8,
+      12,
+      24
+    ],
+    "seed": 42
+  },
+  "canonical": "GPU FP32 reloaded checkpoint; no AMP or test-epoch selection",
+  "source_sha256": "d997dfc64b293370a7e723ab7b4c380f3da385a30d360998b92b3731ae967a0a",
+  "tail_model_sha256": "1858ad58236e4e09bbd939fe24097c9cc3aa45476bfd608778d1895fb19860c0",
+  "cache_manifest_sha256": "9773684278f995f2d2da4f4c12158568077372270157ca85a0a99a2427829040",
+  "dataset_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "smoke": true,
+  "wall_seconds_limit": 180,
+  "gpu": "Tesla T4",
+  "allocated_gpu_count": 2,
+  "torch": "2.11.0+cu128"
+}

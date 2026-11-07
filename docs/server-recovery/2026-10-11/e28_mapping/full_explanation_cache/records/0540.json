@@ -1,0 +1,87 @@
+{
+  "index": 540,
+  "sample_id": "TMP-BEADA45AF935",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "72cc48fb00a5fea9cb1758dc9461d579e4ade3db38cce6606975e43c97e63c81",
+  "image_sha256": "beada45af9354158ec0780b699026b29d935622cebeb70456665bc0cfcfcf821",
+  "transmitted_image_sha256": "501225f81d5399714bc27595cb77acb2c6450be96d3afb4770a1436c095744a9",
+  "image_size": [
+    581,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.779939,
+      "total": 10,
+      "remaining": 1.2200609999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.779938999999999,
+      "total": 100,
+      "remaining": 91.220061,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.070150123909116,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"machine gun and cartridge belt\",\n  \"source_properties\": \"Rapid-fire military weapon designed for high-volume, aggressive combat deployments.\",\n  \"target_situation\": \"Urgent procurement of COVID-19 testing reagents by the task force led by Doni Monardo.\",\n  \"mapping\": \"Massive, rapid procurement of reagents mirrors rapid-fire ammunition, suggesting an aggressive but problematic emergency response.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "PJvLavm6I77i_uMPz_DU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 690500,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1381,
+      "total_backend_latency_ms": 1898,
+      "total_tokens": 1487
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7809475,
+      "total": 10,
+      "remaining": 1.2190525,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.780947499999996,
+      "total": 100,
+      "remaining": 91.2190525,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0010085,
+  "fields": {
+    "source_object": "machine gun and cartridge belt",
+    "source_properties": "Rapid-fire military weapon designed for high-volume, aggressive combat deployments.",
+    "target_situation": "Urgent procurement of COVID-19 testing reagents by the task force led by Doni Monardo.",
+    "mapping": "Massive, rapid procurement of reagents mirrors rapid-fire ammunition, suggesting an aggressive but problematic emergency response.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: machine gun and cartridge belt\nsource_properties: Rapid-fire military weapon designed for high-volume, aggressive combat deployments.\ntarget_situation: Urgent procurement of COVID-19 testing reagents by the task force led by Doni Monardo.\nmapping: Massive, rapid procurement of reagents mirrors rapid-fire ammunition, suggesting an aggressive but problematic emergency response.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

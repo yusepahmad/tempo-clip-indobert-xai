@@ -1,0 +1,87 @@
+{
+  "index": 712,
+  "sample_id": "TMP-494603ADB43A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "32839bd5009bcae4e87bb0a7b95f0bee5e599d353bb77d3aa57a88a27f10501d",
+  "image_sha256": "494603adb43ab6a5113678ea136155ff8017b271f4161a8f22a045686b151f1d",
+  "transmitted_image_sha256": "6255d1b962920460ae0772653d4dab2f9c0055f7a9d4002db4bc477e9486dc6a",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.033070500000001,
+      "total": 10,
+      "remaining": 0.9669294999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.033070499999994,
+      "total": 100,
+      "remaining": 90.9669295,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.591994007118046,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Empty metal cooking pot\",\n  \"source_properties\": \"Worn, soot-stained, and devoid of food despite being held out for nourishment.\",\n  \"target_situation\": \"The humanitarian crisis and starvation of Gaza's population during the ongoing conflict.\",\n  \"mapping\": \"The empty pot held by a distressed child symbolizes systemic food deprivation and the man-made famine.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "yZ_LasbPIrqi_uMPou_3-Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 2345,
+      "total_tokens": 1451
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0340435,
+      "total": 10,
+      "remaining": 0.9659565000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.034043499999996,
+      "total": 100,
+      "remaining": 90.9659565,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000973,
+  "fields": {
+    "source_object": "Empty metal cooking pot",
+    "source_properties": "Worn, soot-stained, and devoid of food despite being held out for nourishment.",
+    "target_situation": "The humanitarian crisis and starvation of Gaza's population during the ongoing conflict.",
+    "mapping": "The empty pot held by a distressed child symbolizes systemic food deprivation and the man-made famine.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Empty metal cooking pot\nsource_properties: Worn, soot-stained, and devoid of food despite being held out for nourishment.\ntarget_situation: The humanitarian crisis and starvation of Gaza's population during the ongoing conflict.\nmapping: The empty pot held by a distressed child symbolizes systemic food deprivation and the man-made famine.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

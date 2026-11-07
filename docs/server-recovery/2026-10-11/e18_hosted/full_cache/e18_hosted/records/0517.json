@@ -1,0 +1,83 @@
+{
+  "index": 517,
+  "sample_id": "TMP-76682D406748",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "98940afa523e60284033587d1b1f9e53c64681e3d16921866b629533bd6262bd",
+  "image_sha256": "76682d40674871e711502d9123097025375f31c9ba288c57a4aec12c1cef62d6",
+  "transmitted_image_sha256": "c0f5a42aa03ecb6a4bb1bbb709012c9fc20393dc8f515be7d744768097b0830c",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.9550479999999997,
+      "total": 10,
+      "remaining": 8.044952,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.955048000000005,
+      "total": 100,
+      "remaining": 98.044952,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.138365667080507,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi yang diberikan bahwa gambar menampilkan adegan sosial literal tanpa pemetaan metaforis dari elemen visual ke isu sasaran, maka klasifikasinya adalah:\n\n**F**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "i-DKauGoA9-V_uMPmIWFyQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 887,
+      "completion_tokens_details": {
+        "reasoning_tokens": 849
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 795000,
+        "output_tokens_cost_nanodollars": 2661000
+      },
+      "prompt_tokens": 1590,
+      "total_backend_latency_ms": 4891,
+      "total_tokens": 2477
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.9585039999999996,
+      "total": 10,
+      "remaining": 8.041496,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.958504000000005,
+      "total": 100,
+      "remaining": 98.041496,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.003456
+}

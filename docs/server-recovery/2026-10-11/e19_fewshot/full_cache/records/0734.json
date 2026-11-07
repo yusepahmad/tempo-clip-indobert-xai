@@ -1,0 +1,86 @@
+{
+  "index": 734,
+  "sample_id": "TMP-BE9C8FCF0707",
+  "fold": 2,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "aff8bf13098a312e87b7d62c0220131da993964521e285b7c043b8b066383dc7",
+  "image_sha256": "be9c8fcf0707a839cedff3a7eee172a77ea1640f9b5319b165b3d4d63589f56d",
+  "transmitted_image_sha256": "8179d05ff6344d9c051a3e79bd5ad0a27c953af0d0679029ee64daa3bd058ae2",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 6.7972025,
+      "total": 10,
+      "remaining": 3.2027975,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 6.797202499999997,
+      "total": 100,
+      "remaining": 93.2027975,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 20.224849686957896,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan, kategori yang paling tepat untuk ilustrasi sampul Tempo tersebut adalah **A (BENCANA_JERAT)**.\n\n**Alasan:**\nMeskipun \"air keras\" adalah zat kimia, penggunaan metaforisnya dalam konteks ini menekankan pada **ancaman** atau bahaya yang menghantui, yang secara eksplisit disebutkan dalam definisi kategori A (\"ancaman, bencana, perangkap, jerat...\"). Jejak tetesan cairan tersebut memetakan situasi teror yang mengancam, serupa dengan bagaimana \"garis polisi\" atau \"rantai\" dalam contoh kategori A lainnya digunakan sebagai metafora untuk tekanan, jeratan, atau ancaman fisik.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "WzfLavGOIpyS_uMPzNG2yQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 4075,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3929
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2078500,
+        "output_tokens_cost_nanodollars": 12225000
+      },
+      "prompt_tokens": 4157,
+      "total_backend_latency_ms": 19439,
+      "total_tokens": 8232
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 6.811506,
+      "total": 10,
+      "remaining": 3.1884940000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 6.811505999999994,
+      "total": 100,
+      "remaining": 93.188494,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0143035,
+  "code": "INVALID",
+  "strict_code": "INVALID",
+  "parsing_rule": "unrecognized_no_explicit_answer",
+  "finish_reason": "stop",
+  "prediction": "INVALID"
+}

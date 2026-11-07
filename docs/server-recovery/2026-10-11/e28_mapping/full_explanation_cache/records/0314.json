@@ -1,0 +1,87 @@
+{
+  "index": 314,
+  "sample_id": "TMP-17837FF9968E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9c6a12da5ac74b2044c6089d2fde7b2bc13c84abef841d41cef168c1272b725f",
+  "image_sha256": "17837ff9968e67e03b73607576065e6b8c569aecac4b982344c6bf5c03713356",
+  "transmitted_image_sha256": "b3a79e5eccf4fc6a553cba5052da12365d56f3ae00ae63e1a8326e8ebe0828df",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.470819,
+      "total": 10,
+      "remaining": 1.5291809999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.470819000000006,
+      "total": 100,
+      "remaining": 91.529181,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.252526730764657,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"tic-tac-toe game\", \"source_properties\": \"competitive, zero-sum grid game, tactical placement of symbols, two opposing players\", \"target_situation\": \"Jokowi and Jusuf Kalla's conflicting interests in appointing ESDM ministry officials\", \"mapping\": \"The political maneuvering and conflict between the leaders are likened to a strategic game where each move counters the other.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "X5XLauq2Apic_uMP95SR0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673000,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1346,
+      "total_backend_latency_ms": 2197,
+      "total_tokens": 1439
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.471771,
+      "total": 10,
+      "remaining": 1.5282289999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.471771000000004,
+      "total": 100,
+      "remaining": 91.528229,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000952,
+  "fields": {
+    "source_object": "tic-tac-toe game",
+    "source_properties": "competitive, zero-sum grid game, tactical placement of symbols, two opposing players",
+    "target_situation": "Jokowi and Jusuf Kalla's conflicting interests in appointing ESDM ministry officials",
+    "mapping": "The political maneuvering and conflict between the leaders are likened to a strategic game where each move counters the other.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: tic-tac-toe game\nsource_properties: competitive, zero-sum grid game, tactical placement of symbols, two opposing players\ntarget_situation: Jokowi and Jusuf Kalla's conflicting interests in appointing ESDM ministry officials\nmapping: The political maneuvering and conflict between the leaders are likened to a strategic game where each move counters the other.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

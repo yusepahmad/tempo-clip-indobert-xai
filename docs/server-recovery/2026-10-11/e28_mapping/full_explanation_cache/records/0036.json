@@ -1,0 +1,87 @@
+{
+  "index": 36,
+  "sample_id": "TMP-10A8818E5371",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bcd7b7f8adbcc1433457c20f07f6194180c3b26da587b489c2e80eb2d6950e29",
+  "image_sha256": "10a8818e537192ece14cc93670d14eaa3769ab36482665d5f063b351700099bf",
+  "transmitted_image_sha256": "eef073f0680686ebd428036919d00d98ebca51979745fd60ee906b4a208d8e6a",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0592235,
+      "total": 10,
+      "remaining": 1.9407765000000001,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.059223500000002,
+      "total": 100,
+      "remaining": 91.9407765,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.981614019256085,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Arm wrestling\", \"source_properties\": \"Hand-to-hand struggle, physical exertion, sweat, and contrasting mechanical vs. human power.\", \"target_situation\": \"Resistance by Wadas villagers against dam construction involving heavy machinery and state repression.\", \"mapping\": \"The human arm wrestling an excavator's bucket symbolizes the unequal but determined physical and psychological struggle between local citizens and industrial/state forces.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "E47LaqzXHbuc_uMP2cbk2A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 666500,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1333,
+      "total_backend_latency_ms": 1780,
+      "total_tokens": 1427
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.060172,
+      "total": 10,
+      "remaining": 1.9398280000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.060171999999994,
+      "total": 100,
+      "remaining": 91.939828,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009485,
+  "fields": {
+    "source_object": "Arm wrestling",
+    "source_properties": "Hand-to-hand struggle, physical exertion, sweat, and contrasting mechanical vs. human power.",
+    "target_situation": "Resistance by Wadas villagers against dam construction involving heavy machinery and state repression.",
+    "mapping": "The human arm wrestling an excavator's bucket symbolizes the unequal but determined physical and psychological struggle between local citizens and industrial/state forces.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Arm wrestling\nsource_properties: Hand-to-hand struggle, physical exertion, sweat, and contrasting mechanical vs. human power.\ntarget_situation: Resistance by Wadas villagers against dam construction involving heavy machinery and state repression.\nmapping: The human arm wrestling an excavator's bucket symbolizes the unequal but determined physical and psychological struggle between local citizens and industrial/state forces.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

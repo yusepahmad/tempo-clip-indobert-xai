@@ -1,0 +1,29 @@
+revision_id,priority,original_deadline,title,status,evidence,remaining,owner
+R18,P1,31 Oktober 2026,Identitas dan pemetaan kandidat,Selesai,candidate_mapping_36.csv; MAIN_MODEL_DECISION.md,,Paket teknis
+R19,P1,3 November 2026,Pemeringkatan Macro-F1,Selesai,analysis/ranking_36_legacy.csv; analysis/rank_correlation.json,,Paket teknis
+R20,P1,3 November 2026,Diagnosis Task3 dan weighting,Selesai,analysis/task3_entropy.csv; analysis/class_distribution.csv; analysis/paired_tests.csv,,Paket teknis
+R21,P1,9 November 2026,Kesetaraan masukan dan Qwen zero-shot,Berjalan,INPUT_PARITY.md; analysis/metrics.csv,Hasil belum lengkap: RII_QWEN_QLORA_BASIC,Eksperimen GPU/collector
+R22,P1,31 Oktober 2026,Provenance fitur E01,Berjalan,FEATURE_PROVENANCE.json; feature_provenance_20_examples.csv,Generator/hash/prompt tersedia; tuntutan isolasi proses historis dan timestamp penciptaan asli belum dapat dibuktikan.,Peneliti/pembimbing: terima bukti field-flow atau minta regenerasi fitur versi baru
+R23,P1,9 November 2026,Agreement manusia dan riwayat korpus,Berjalan,CORPUS_HISTORY.md; HUMAN_EVIDENCE_SEARCH.json; human_inputs/annotation/,"Alasan umum eksklusi sudah diklarifikasi Joy: kualitas citra buruk sehingga tidak dapat dilabeli, dan menurut Joy pernah disampaikan. Yang belum tersedia: dua set anotasi independen untuk kappa; dokumentasi korpus awal/keputusan per ID dan sensitivitas belum dapat direkonstruksi.",Dua anotator; pemilik data untuk dokumentasi rinci bila tersedia
+R24,P2,10 November 2026,"Macro-F1 utama, akurasi/kappa pendamping",Selesai,analysis/metrics.csv; analysis/per_class.csv; tools/evaluate.py,,Paket teknis
+R25,P2,16 November 2026,CI dan perbandingan berpasangan,Selesai,analysis/metrics.csv; analysis/paired_tests.csv; STATISTICAL_METHOD.md,,Paket teknis
+R26,P2,16 November 2026,Bias seleksi dan jumlah kandidat,Selesai,analysis/ranking_36_legacy.csv; analysis/evaluation_verification.json; SELECTION_BIAS.md,,Paket teknis
+R27,P2,16 November 2026,MTL versus single-task dan loss aktual,Selesai,analysis/metrics.csv; analysis/paired_tests.csv; source/; ABLATION_PARITY.md,,Paket teknis
+R28,P2,16 November 2026,Prediksi baseline/unimodal,Selesai,inputs/predictions/; HISTORICAL_REPLAY.md,,Paket teknis
+R29,P2,23 November 2026,Backbone dan SigLIP2,Selesai,analysis/metrics.csv; analysis/paired_tests.csv; ABLATION_PARITY.md,,Paket teknis
+R30,P2,23 November 2026,Augmentasi dan pemilihan inner,Selesai,AUGMENTATION_AUDIT.md; analysis/metrics.csv; source/,,Paket teknis
+R31,P2,23 November 2026,Kelas penampung dan dekomposisi Task2,Berjalan,analysis/catchall_sensitivity.csv; analysis/task2_decomposed.csv; human_inputs/catchall_review_60.csv,Tabel/codebook/sensitivitas selesai; audit manusia60 sampul dan adjudikasi codebook belum diisi.,Joy/anotator
+R32,P2,23 November 2026,Reproduksi mandiri dan Colab bersih,Berjalan,README.md; requirements.txt; tools/validate_package.py; qa/,Paket dan uji lokal disediakan; bukti Run all Colab bersih belum terverifikasi.,Uji Colab melalui akun pengguna
+R33,P3,24 Desember 2026,Pembingkaian hasil penelitian,Selesai,MANUSKRIP_DRAF.md; HASIL_DAN_TANGGAPAN.md,,Paket teknis
+R34,P3,7 Desember 2026,XAI dan penilai independen,Berjalan,xai_e42/; human_inputs/XAI_RUBRIC.md; human_inputs/xai/,XAI aktual/tes/model replay/rubrik/kontrol tersedia; skor nyata minimal5 penilai independen dan agreement belum tersedia.,Joy/lima penilai independen
+R35,P3,24 Desember 2026,Kriteria komparatif tanpa gate0.70,Selesai,MAIN_MODEL_DECISION.md; STATISTICAL_METHOD.md; tools/evaluate.py,,Paket teknis
+R36,P3,24 Desember 2026,"Keterbatasan, etika, sitasi",Selesai,MANUSKRIP_DRAF.md; REFERENCES.md,,Paket teknis
+R2,Agustus,belum diperbarui,Codebook dan kelas penampung,Selesai,CODEBOOK_REVISI.md; human_inputs/catchall_review_60.csv,,Paket teknis
+R4,Agustus,7 Desember 2026 terkaitR34,Kelayakan metode visual CLIP,Selesai,XAI_METHOD.md; xai_e42/,,Paket teknis
+R6,Agustus,9 November 2026 terkaitR23,Adjudikasi dan eksklusi,Berjalan,CORPUS_HISTORY.md; human_inputs/annotation/,"Alasan umum eksklusi sudah diklarifikasi Joy: kualitas citra buruk sehingga tidak dapat dilabeli, dan menurut Joy pernah disampaikan. Yang belum tersedia: dua set anotasi independen untuk kappa; dokumentasi korpus awal/keputusan per ID dan sensitivitas belum dapat direkonstruksi.",Dua anotator; pemilik data untuk dokumentasi rinci bila tersedia
+R8,Agustus,16 November 2026 terkaitR28,Baseline dan ablasi,Berjalan,HISTORICAL_REPLAY.md; analysis/metrics.csv,"Ablasi/prediksi tersedia; wording lengkap dokumen Agustus asli belum ditemukan, jadi penutupan R8 lama belum dapat dipastikan.",Joy/pembimbing: dokumenAgustus
+R9,Agustus,7 Desember 2026 terkaitR34,Lima penilai independen,Berjalan,human_inputs/XAI_RUBRIC.md; human_inputs/xai/,XAI aktual/tes/model replay/rubrik/kontrol tersedia; skor nyata minimal5 penilai independen dan agreement belum tersedia.,Joy/lima penilai independen
+R12,Agustus,10 November 2026 terkaitR24,Macro-F1 sebagai metrik utama,Selesai,analysis/metrics.csv; tools/evaluate.py,,Paket teknis
+R13,Agustus,24 Desember 2026 terkaitR35,Justifikasi ulang target,Selesai,STATISTICAL_METHOD.md; MANUSKRIP_DRAF.md,,Paket teknis
+R16,Agustus,24 Desember 2026 terkaitR36,Sitasi relevan dan terverifikasi,Selesai,REFERENCES.md,,Paket teknis
+R17,Agustus,24 Desember 2026 terkaitR36,Etika dan penyalahgunaan,Selesai,MANUSKRIP_DRAF.md,,Paket teknis

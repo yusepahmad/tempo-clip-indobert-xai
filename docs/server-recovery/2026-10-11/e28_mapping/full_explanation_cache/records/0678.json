@@ -1,0 +1,87 @@
+{
+  "index": 678,
+  "sample_id": "TMP-20D70DD55DE3",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bc79e775a1424d2f98a0163671c3e23438362b5062eb957acff20ca4be426366",
+  "image_sha256": "20d70dd55de369b8391dbd7464d55c8ad96ae88cf41708ad1af560ff3ab73802",
+  "transmitted_image_sha256": "a33fc0cf79b6bd76e4360600e09fb003f3fb0a20ac3bfc575cc972a61002206e",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.970936,
+      "total": 10,
+      "remaining": 1.029064,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.970935999999995,
+      "total": 100,
+      "remaining": 91.029064,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.138509849086404,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"escalator\",\n  \"source_properties\": \"Automated, effortless mechanical stairs that carry people upward without physical climbing.\",\n  \"target_situation\": \"Politicians and lecturers obtaining professorships through unethical, fast-track methods.\",\n  \"mapping\": \"The escalator represents shortcuts like predatory journals, contrasting with the arduous 'book stairs' of genuine scholarship.\",\n  \"uncertainty\": \"None evident.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "157LasvsB6Cm_uMPsO6HgA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 96,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680500,
+        "output_tokens_cost_nanodollars": 288000
+      },
+      "prompt_tokens": 1361,
+      "total_backend_latency_ms": 1624,
+      "total_tokens": 1457
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9719045,
+      "total": 10,
+      "remaining": 1.0280954999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.971904499999994,
+      "total": 100,
+      "remaining": 91.0280955,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009685,
+  "fields": {
+    "source_object": "escalator",
+    "source_properties": "Automated, effortless mechanical stairs that carry people upward without physical climbing.",
+    "target_situation": "Politicians and lecturers obtaining professorships through unethical, fast-track methods.",
+    "mapping": "The escalator represents shortcuts like predatory journals, contrasting with the arduous 'book stairs' of genuine scholarship.",
+    "uncertainty": "None evident."
+  },
+  "explanation": "source_object: escalator\nsource_properties: Automated, effortless mechanical stairs that carry people upward without physical climbing.\ntarget_situation: Politicians and lecturers obtaining professorships through unethical, fast-track methods.\nmapping: The escalator represents shortcuts like predatory journals, contrasting with the arduous 'book stairs' of genuine scholarship.\nuncertainty: None evident.",
+  "finish_reason": "stop",
+  "usable": true
+}

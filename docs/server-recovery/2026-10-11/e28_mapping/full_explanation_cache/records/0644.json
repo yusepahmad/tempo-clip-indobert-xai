@@ -1,0 +1,87 @@
+{
+  "index": 644,
+  "sample_id": "TMP-569F82FFC7CB",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "282b31ae33d6cf4228e877a5c0fb55503712d3e3df7af30a12daa70af5e5ce7c",
+  "image_sha256": "569f82ffc7cbafc0d79f373b7abc1b97b90c3b1dca38d92554993eeeecd44cdf",
+  "transmitted_image_sha256": "f1968eb856d7720781d4d0962a15d98b1c50eadb19297851f2f36c152ecf7fb7",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.913525,
+      "total": 10,
+      "remaining": 1.086475,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.913525000000007,
+      "total": 100,
+      "remaining": 91.086475,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.230180132202804,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Drake 'Hotline Bling' meme\",\n  \"source_properties\": \"Four-panel grid showing rejection gestures (top) and approval gestures (bottom) to compare choices.\",\n  \"target_situation\": \"PDI Perjuangan's political decision to reject a popular candidate (Anies Baswedan) for less popular ones.\",\n  \"mapping\": \"Gestures of dismissal (top) represent rejecting Anies, while pointing/thumbs-up (bottom) represent choosing alternative party-backed candidates.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "5J3LavC5OP2b_uMPj8_lqAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 126,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 378000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 2154,
+      "total_tokens": 1478
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.914579,
+      "total": 10,
+      "remaining": 1.0854210000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.914579000000003,
+      "total": 100,
+      "remaining": 91.085421,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001054,
+  "fields": {
+    "source_object": "Drake 'Hotline Bling' meme",
+    "source_properties": "Four-panel grid showing rejection gestures (top) and approval gestures (bottom) to compare choices.",
+    "target_situation": "PDI Perjuangan's political decision to reject a popular candidate (Anies Baswedan) for less popular ones.",
+    "mapping": "Gestures of dismissal (top) represent rejecting Anies, while pointing/thumbs-up (bottom) represent choosing alternative party-backed candidates.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Drake 'Hotline Bling' meme\nsource_properties: Four-panel grid showing rejection gestures (top) and approval gestures (bottom) to compare choices.\ntarget_situation: PDI Perjuangan's political decision to reject a popular candidate (Anies Baswedan) for less popular ones.\nmapping: Gestures of dismissal (top) represent rejecting Anies, while pointing/thumbs-up (bottom) represent choosing alternative party-backed candidates.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

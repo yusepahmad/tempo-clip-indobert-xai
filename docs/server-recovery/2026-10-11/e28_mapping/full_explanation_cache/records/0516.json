@@ -1,0 +1,87 @@
+{
+  "index": 516,
+  "sample_id": "TMP-03083B8A31BF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ddeac1ae5c9bc21298427fd91be02568f0b38f0db10e9c5a6220ce901100596c",
+  "image_sha256": "03083b8a31bf598d32004c51757634477d0e0e823b6f856d6659de9feda5314c",
+  "transmitted_image_sha256": "0688d11c70719481c4e2b8468a0a7a9cac23d7c6df5217d784b6792e5511f7bb",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7438625,
+      "total": 10,
+      "remaining": 1.2561374999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.743862500000006,
+      "total": 100,
+      "remaining": 91.2561375,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.6121058268472552,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Trees\",\n  \"source_properties\": \"Sturdy, protective, rooted, upright forms growing together from the soil.\",\n  \"target_situation\": \"Women's collective role in environmental preservation.\",\n  \"mapping\": \"The women are depicted as the trunks of the trees, suggesting they are the foundational, protective strength sustaining the earth's ecosystem.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "j5rLarq7L6iB_PUPxqbXMA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 655500,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1311,
+      "total_backend_latency_ms": 1873,
+      "total_tokens": 1406
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.744803000000001,
+      "total": 10,
+      "remaining": 1.255196999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.744803000000005,
+      "total": 100,
+      "remaining": 91.255197,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009405,
+  "fields": {
+    "source_object": "Trees",
+    "source_properties": "Sturdy, protective, rooted, upright forms growing together from the soil.",
+    "target_situation": "Women's collective role in environmental preservation.",
+    "mapping": "The women are depicted as the trunks of the trees, suggesting they are the foundational, protective strength sustaining the earth's ecosystem.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: Trees\nsource_properties: Sturdy, protective, rooted, upright forms growing together from the soil.\ntarget_situation: Women's collective role in environmental preservation.\nmapping: The women are depicted as the trunks of the trees, suggesting they are the foundational, protective strength sustaining the earth's ecosystem.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

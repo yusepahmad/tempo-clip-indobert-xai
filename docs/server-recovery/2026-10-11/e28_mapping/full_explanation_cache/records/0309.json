@@ -1,0 +1,87 @@
+{
+  "index": 309,
+  "sample_id": "TMP-6114CB175242",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "86fc915d24a9846e088aeb0fd6dbcd371b4730eb7ef9c019aa5a3a1a60081872",
+  "image_sha256": "6114cb175242ef45c1bbd15082d6437dcffd84d1d8bf4f675b41f20abd8c3c49",
+  "transmitted_image_sha256": "73763014a05e2f664dedcd17814a9cf51405964cdc46a848c4d167a45b647a08",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.46283,
+      "total": 10,
+      "remaining": 1.5371699999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.462829999999997,
+      "total": 100,
+      "remaining": 91.53717,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4411160638555884,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"binoculars\",\n  \"source_properties\": \"magnifies distant objects, focuses vision, and narrows the field of view.\",\n  \"target_situation\": \"The investigation of recruitment paths for ISIS members near the Turkish-Syrian border.\",\n  \"mapping\": \"The binoculars represent the magazine's focused investigative lens used to scrutinize and bring clarity to remote, hidden activities.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "PZXLarHcGvW6_uMPjdDjYA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 98,
+      "cost": {
+        "input_tokens_cost_nanodollars": 665000,
+        "output_tokens_cost_nanodollars": 294000
+      },
+      "prompt_tokens": 1330,
+      "total_backend_latency_ms": 1843,
+      "total_tokens": 1428
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.463789,
+      "total": 10,
+      "remaining": 1.5362109999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.463789000000006,
+      "total": 100,
+      "remaining": 91.536211,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000959,
+  "fields": {
+    "source_object": "binoculars",
+    "source_properties": "magnifies distant objects, focuses vision, and narrows the field of view.",
+    "target_situation": "The investigation of recruitment paths for ISIS members near the Turkish-Syrian border.",
+    "mapping": "The binoculars represent the magazine's focused investigative lens used to scrutinize and bring clarity to remote, hidden activities.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: binoculars\nsource_properties: magnifies distant objects, focuses vision, and narrows the field of view.\ntarget_situation: The investigation of recruitment paths for ISIS members near the Turkish-Syrian border.\nmapping: The binoculars represent the magazine's focused investigative lens used to scrutinize and bring clarity to remote, hidden activities.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

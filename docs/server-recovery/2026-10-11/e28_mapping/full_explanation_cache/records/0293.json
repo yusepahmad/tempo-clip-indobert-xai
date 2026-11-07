@@ -1,0 +1,87 @@
+{
+  "index": 293,
+  "sample_id": "TMP-AD48B1596452",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3da23ecc7058e1458ae2a38055c51ba12aab00fc2e3c5adb3bc31553219405b9",
+  "image_sha256": "ad48b159645245380d39b53f7826a24b3d26e62a09f9a027aad9ed184413f98d",
+  "transmitted_image_sha256": "850ab23cee6be1b339aad2b1a96d6472fc65d27c2690fa9585884159112751bf",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.444834,
+      "total": 10,
+      "remaining": 1.5551659999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.444834,
+      "total": 100,
+      "remaining": 91.555166,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9080083509907126,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"none evident\", \"source_properties\": \"grainy, black and white archival portrait photography with high contrast and weathered texture\", \"target_situation\": \"A special edition magazine cover reporting on the life and career of Indonesian general Benny Moerdani.\", \"mapping\": \"The literal archival photo visually represents Moerdani himself, using a vintage aesthetic to signal historical investigation into his past.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "1ZTLap6yO-u1_PUPl9nYyQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 660000,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1320,
+      "total_backend_latency_ms": 1675,
+      "total_tokens": 1410
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.445764,
+      "total": 10,
+      "remaining": 1.5542359999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.445763999999997,
+      "total": 100,
+      "remaining": 91.554236,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00093,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "grainy, black and white archival portrait photography with high contrast and weathered texture",
+    "target_situation": "A special edition magazine cover reporting on the life and career of Indonesian general Benny Moerdani.",
+    "mapping": "The literal archival photo visually represents Moerdani himself, using a vintage aesthetic to signal historical investigation into his past.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: grainy, black and white archival portrait photography with high contrast and weathered texture\ntarget_situation: A special edition magazine cover reporting on the life and career of Indonesian general Benny Moerdani.\nmapping: The literal archival photo visually represents Moerdani himself, using a vintage aesthetic to signal historical investigation into his past.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 530,
+  "sample_id": "TMP-7F38566A74BB",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "fb9e4692b43a6763abb2d70c7dce32c65a44bbcc44b11399c7faf180643b273a",
+  "image_sha256": "7f38566a74bb10e3bd71717cd4c9546f0574ef9ca941b8a3790ead966bb663e2",
+  "transmitted_image_sha256": "5f759ecf480506d435d53d802976613ff108dbf04ead9f7c44fcb8250bce1961",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7595525,
+      "total": 10,
+      "remaining": 1.2404475000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.759552499999998,
+      "total": 100,
+      "remaining": 91.2404475,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3268305328674614,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Scam text message\", \"source_properties\": \"Promises a huge prize but turns out to be a deceptive fraud.\", \"target_situation\": \"A high-ranking official's public announcement of a massive fictitious donation.\", \"mapping\": \"The police chief's celebration of the Rp 2 trillion donation is equated to falling for a digital 'prank' or scam.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "7ZrLavn1MbrG_PUPqtG_4Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 89,
+      "cost": {
+        "input_tokens_cost_nanodollars": 672500,
+        "output_tokens_cost_nanodollars": 267000
+      },
+      "prompt_tokens": 1345,
+      "total_backend_latency_ms": 1795,
+      "total_tokens": 1434
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.760492,
+      "total": 10,
+      "remaining": 1.2395080000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.760492,
+      "total": 100,
+      "remaining": 91.239508,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009395,
+  "fields": {
+    "source_object": "Scam text message",
+    "source_properties": "Promises a huge prize but turns out to be a deceptive fraud.",
+    "target_situation": "A high-ranking official's public announcement of a massive fictitious donation.",
+    "mapping": "The police chief's celebration of the Rp 2 trillion donation is equated to falling for a digital 'prank' or scam.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Scam text message\nsource_properties: Promises a huge prize but turns out to be a deceptive fraud.\ntarget_situation: A high-ranking official's public announcement of a massive fictitious donation.\nmapping: The police chief's celebration of the Rp 2 trillion donation is equated to falling for a digital 'prank' or scam.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

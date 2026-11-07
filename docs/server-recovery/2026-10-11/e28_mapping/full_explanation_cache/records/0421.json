@@ -1,0 +1,87 @@
+{
+  "index": 421,
+  "sample_id": "TMP-2E95453C1AEB",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "26d6ff50d5bbfc82563ae817702d560477c8a3cd9a2fab6ed6c71a1c8e04ddaf",
+  "image_sha256": "2e95453c1aebee3799f91b7694709a86a1cf9bcd740f02a6d7dc90d87f163f98",
+  "transmitted_image_sha256": "f1cf7ce74bbe3265cf64edcd7252a0534db0b18b574993fb8d6d673f4c5863f3",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.621092,
+      "total": 10,
+      "remaining": 1.3789079999999991,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.621092000000004,
+      "total": 100,
+      "remaining": 91.378908,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.098582907114178,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A star-shaped open-pit mine\",\n  \"source_properties\": \"A deep, stepped excavation in the shape of a star, with dump trucks.\",\n  \"target_situation\": \"A dispute over coal land involving high-ranking military and police officials.\",\n  \"mapping\": \"The star shape represents military/police generals ('bintang'), while the pit signifies the mining conflict.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "HpjLap7_C7XP_uMPiOzhoQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678000,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1356,
+      "total_backend_latency_ms": 1656,
+      "total_tokens": 1457
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.622073,
+      "total": 10,
+      "remaining": 1.3779269999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.622073,
+      "total": 100,
+      "remaining": 91.377927,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000981,
+  "fields": {
+    "source_object": "A star-shaped open-pit mine",
+    "source_properties": "A deep, stepped excavation in the shape of a star, with dump trucks.",
+    "target_situation": "A dispute over coal land involving high-ranking military and police officials.",
+    "mapping": "The star shape represents military/police generals ('bintang'), while the pit signifies the mining conflict.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A star-shaped open-pit mine\nsource_properties: A deep, stepped excavation in the shape of a star, with dump trucks.\ntarget_situation: A dispute over coal land involving high-ranking military and police officials.\nmapping: The star shape represents military/police generals ('bintang'), while the pit signifies the mining conflict.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

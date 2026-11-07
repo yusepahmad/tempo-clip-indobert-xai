@@ -1,0 +1,86 @@
+{
+  "index": 530,
+  "sample_id": "TMP-7F38566A74BB",
+  "fold": 1,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "e353d605d638ba556ca80faa6288672e73a172d7d8fe6ff6a56a9b90af8402a2",
+  "image_sha256": "7f38566a74bb10e3bd71717cd4c9546f0574ef9ca941b8a3790ead966bb663e2",
+  "transmitted_image_sha256": "1a5ac0c0ce1eb301c90edde098bfd855378fb3f75ea331d61b6935eedab54d01",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.710662,
+      "total": 10,
+      "remaining": 4.289338,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.710661999999999,
+      "total": 100,
+      "remaining": 94.289338,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.969467970076948,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "C",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Kv7KaqWYMufU_uMPq5CXyQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 713,
+      "completion_tokens_details": {
+        "reasoning_tokens": 712
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2042500,
+        "output_tokens_cost_nanodollars": 2139000
+      },
+      "prompt_tokens": 4085,
+      "total_backend_latency_ms": 3942,
+      "total_tokens": 4798
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.7148435,
+      "total": 10,
+      "remaining": 4.2851565,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.714843500000001,
+      "total": 100,
+      "remaining": 94.2851565,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0041815,
+  "code": "C",
+  "strict_code": "C",
+  "parsing_rule": "boundary_single_code",
+  "finish_reason": "stop",
+  "prediction": "KONSUMSI_TRANSAKSI"
+}

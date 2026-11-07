@@ -1,0 +1,87 @@
+{
+  "index": 487,
+  "sample_id": "TMP-0990AAF579DB",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "fde88de280d65aa244d07d311c86c391b3985460e6ed98de7f46b2e9fdf09d77",
+  "image_sha256": "0990aaf579db0361918b01f56b23574fe85a6a0d2a07aec84a6f5a319e38d9ac",
+  "transmitted_image_sha256": "8fce2101b8e6ac05a9b51657c3d0deaea878112b34c51f42596edd4e3c73a496",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7018475,
+      "total": 10,
+      "remaining": 1.2981525000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.7018475,
+      "total": 100,
+      "remaining": 91.2981525,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1513212569989264,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"puppets and a puppeteer\",\n  \"source_properties\": \"A large figure controls a smaller figure via strings, who in turn controls even smaller figures.\",\n  \"target_situation\": \"The investigation into the attack on Novel Baswedan involving layered control.\",\n  \"mapping\": \"Strings represent hidden command hierarchies where a mastermind (dalang) manipulates perpetrators, suggesting levels of shielded authority.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "zZnLaqylPMaS_uMPmu6wkA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 103,
+      "cost": {
+        "input_tokens_cost_nanodollars": 670500,
+        "output_tokens_cost_nanodollars": 309000
+      },
+      "prompt_tokens": 1341,
+      "total_backend_latency_ms": 1843,
+      "total_tokens": 1444
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.702827,
+      "total": 10,
+      "remaining": 1.2971730000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.702827,
+      "total": 100,
+      "remaining": 91.297173,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009795,
+  "fields": {
+    "source_object": "puppets and a puppeteer",
+    "source_properties": "A large figure controls a smaller figure via strings, who in turn controls even smaller figures.",
+    "target_situation": "The investigation into the attack on Novel Baswedan involving layered control.",
+    "mapping": "Strings represent hidden command hierarchies where a mastermind (dalang) manipulates perpetrators, suggesting levels of shielded authority.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: puppets and a puppeteer\nsource_properties: A large figure controls a smaller figure via strings, who in turn controls even smaller figures.\ntarget_situation: The investigation into the attack on Novel Baswedan involving layered control.\nmapping: Strings represent hidden command hierarchies where a mastermind (dalang) manipulates perpetrators, suggesting levels of shielded authority.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

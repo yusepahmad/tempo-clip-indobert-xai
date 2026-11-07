@@ -1,0 +1,86 @@
+{
+  "index": 136,
+  "sample_id": "TMP-7CAED04CFB88",
+  "fold": 4,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "54c3371239e7cd6d5b6cca16723a31bbcd41c662cbc9d23d0eadf761973c387f",
+  "image_sha256": "7caed04cfb880b074b9eec1550cb08acf93e6f5e5aa5a93d1acc707d1c75aaa1",
+  "transmitted_image_sha256": "8a0585972587b78bc36ca24cbb28916e3ab346914322e06048978a5f06457147",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 3.5109645,
+      "total": 10,
+      "remaining": 6.4890355,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 3.5109645,
+      "total": 100,
+      "remaining": 96.4890355,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.652301650028676,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan perbandingan dengan contoh yang diberikan, gambar tersebut adalah potret wajah literal (hitam-putih) dari tokoh Soe Hok Gie tanpa adanya manipulasi visual, objek tambahan, atau deformasi yang bersifat metaforis secara langsung dalam gambar itu sendiri. Meskipun teksnya mengandung makna tertentu, secara visual ini merupakan kategori:\n\n**F**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "fe_KasquHLua_uMPhJumwQI",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1562,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1487
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2025000,
+        "output_tokens_cost_nanodollars": 4686000
+      },
+      "prompt_tokens": 4050,
+      "total_backend_latency_ms": 7757,
+      "total_tokens": 5612
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 3.5176755,
+      "total": 10,
+      "remaining": 6.4823245,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 3.5176754999999957,
+      "total": 100,
+      "remaining": 96.4823245,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.006711,
+  "code": "F",
+  "strict_code": "INVALID",
+  "parsing_rule": "boundary_single_code",
+  "finish_reason": "stop",
+  "prediction": "NON_METAFORA"
+}

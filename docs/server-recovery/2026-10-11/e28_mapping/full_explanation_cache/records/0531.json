@@ -1,0 +1,87 @@
+{
+  "index": 531,
+  "sample_id": "TMP-16C1967D13CF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "59c130660efe0229f9bf64f52fd4bf17d919ce1d2cdca7115eceb86dd6d67805",
+  "image_sha256": "16c1967d13cf318783aa29fd1fec86be00b2bfa93082f9e926c4b9c2075c5f1d",
+  "transmitted_image_sha256": "c96f3b7136ef98f4408b377042f7ed8af4cf3d5ad606ab52b145e5703722c79e",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.760492,
+      "total": 10,
+      "remaining": 1.2395080000000007,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.760492,
+      "total": 100,
+      "remaining": 91.239508,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.444646474905312,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"controlled demolition\", \"source_properties\": \"Explosives strategically placed to crumble a tall building from within, causing total collapse into dust.\", \"target_situation\": \"The imminent dissolution of the Indonesian Corruption Eradication Commission (KPK) following a Constitutional Court ruling.\", \"mapping\": \"Explosions represent internal leadership interference and legal rulings systematically dismantling the KPK building, symbolizing the institution's complete structural destruction.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "9JrLav6-KMmb_uMPlY2fwA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 665000,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1330,
+      "total_backend_latency_ms": 2055,
+      "total_tokens": 1427
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.761448,
+      "total": 10,
+      "remaining": 1.2385520000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.761448000000001,
+      "total": 100,
+      "remaining": 91.238552,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000956,
+  "fields": {
+    "source_object": "controlled demolition",
+    "source_properties": "Explosives strategically placed to crumble a tall building from within, causing total collapse into dust.",
+    "target_situation": "The imminent dissolution of the Indonesian Corruption Eradication Commission (KPK) following a Constitutional Court ruling.",
+    "mapping": "Explosions represent internal leadership interference and legal rulings systematically dismantling the KPK building, symbolizing the institution's complete structural destruction.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: controlled demolition\nsource_properties: Explosives strategically placed to crumble a tall building from within, causing total collapse into dust.\ntarget_situation: The imminent dissolution of the Indonesian Corruption Eradication Commission (KPK) following a Constitutional Court ruling.\nmapping: Explosions represent internal leadership interference and legal rulings systematically dismantling the KPK building, symbolizing the institution's complete structural destruction.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

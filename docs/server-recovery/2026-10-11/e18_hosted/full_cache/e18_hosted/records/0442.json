@@ -1,0 +1,83 @@
+{
+  "index": 442,
+  "sample_id": "TMP-9BEED4D21BB9",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "291dd3cd3b075c135091d776e5998775e6fbf91f38a5110b069875b671610807",
+  "image_sha256": "9beed4d21bb9fdc2c26ae975fcea5fcf03e60168f5134e14137b56318e57d040",
+  "transmitted_image_sha256": "1463d037a24fe58469cc415627055d301792f426fc74277c47b4a03b544b655e",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.6700894999999996,
+      "total": 10,
+      "remaining": 8.3299105,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.6700895000000031,
+      "total": 100,
+      "remaining": 98.3299105,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.7621786871459335,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks (\"dua tokoh berlari seperti peserta lomba, memetakan dinamika politik sebagai pertandingan strategis dengan elemen kompetisi\"), domain sumber metafora ini adalah **G: PERMAINAN_KONTES**.\n\nPilihan ini sesuai karena visual tokoh yang sedang berlari merepresentasikan kampanye politik sebagai sebuah perlombaan atau kompetisi atletik (pertandingan).\n\nJawab satu kode A sampai G: **G**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "0t3Kap6jFsyY_uMP2cziyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1233,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1138
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 767000,
+        "output_tokens_cost_nanodollars": 3699000
+      },
+      "prompt_tokens": 1534,
+      "total_backend_latency_ms": 6752,
+      "total_tokens": 2767
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.6745555000000003,
+      "total": 10,
+      "remaining": 8.3254445,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.6745554999999968,
+      "total": 100,
+      "remaining": 98.3254445,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.004466
+}

@@ -1,0 +1,87 @@
+{
+  "index": 430,
+  "sample_id": "TMP-1033832C29A9",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bd07bafb8f3f7f67e5358e49636e5de8951d031effb0bf63779fa8e6bb69b81c",
+  "image_sha256": "1033832c29a928cbfaa17b77979e81fcae91a74643c8a957a0d1c6e3be129ade",
+  "transmitted_image_sha256": "6d9d6c3f5ed86976b786acfcfe6cd8a2c5ac9b14a5c9a7225a063e467ff33300",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.629699500000001,
+      "total": 10,
+      "remaining": 1.370300499999999,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.629699500000001,
+      "total": 100,
+      "remaining": 91.3703005,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.874992987141013,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"pie chart\",\n  \"source_properties\": \"circular, divided into segments, being held and bitten by human figures\",\n  \"target_situation\": \"2018 regional election candidates exceeding polling predictions and gaining more votes\",\n  \"mapping\": \"Dividing and eating the pie chart slices represents candidates consuming or 'eroding' expected vote shares.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "U5jLasi-JfDe_uMPnvjrqQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 670000,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1340,
+      "total_backend_latency_ms": 1532,
+      "total_tokens": 1434
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.630651499999999,
+      "total": 10,
+      "remaining": 1.369348500000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.630651499999999,
+      "total": 100,
+      "remaining": 91.3693485,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000952,
+  "fields": {
+    "source_object": "pie chart",
+    "source_properties": "circular, divided into segments, being held and bitten by human figures",
+    "target_situation": "2018 regional election candidates exceeding polling predictions and gaining more votes",
+    "mapping": "Dividing and eating the pie chart slices represents candidates consuming or 'eroding' expected vote shares.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: pie chart\nsource_properties: circular, divided into segments, being held and bitten by human figures\ntarget_situation: 2018 regional election candidates exceeding polling predictions and gaining more votes\nmapping: Dividing and eating the pie chart slices represents candidates consuming or 'eroding' expected vote shares.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

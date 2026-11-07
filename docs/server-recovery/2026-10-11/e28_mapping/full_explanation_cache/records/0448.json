@@ -1,0 +1,87 @@
+{
+  "index": 448,
+  "sample_id": "TMP-46D6973A79D4",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "cd3fb97766a06a84b2825c104930bfb4fffb1463a4fc783a9700cd4f32573835",
+  "image_sha256": "46d6973a79d4327bb202fb84fc28c96cf025bb012da7b1e8d74e143102a822c9",
+  "transmitted_image_sha256": "05274b974856eaeb999f183f6f6567ac0962fc402ed626848882cc8ede482573",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6488055,
+      "total": 10,
+      "remaining": 1.3511945,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.648805499999995,
+      "total": 100,
+      "remaining": 91.3511945,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.48606733372435,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Upside-down financial report\",\n  \"source_properties\": \"Inverted orientation, symbols ($, %, graphs) falling off the page, Garuda logo at the top.\",\n  \"target_situation\": \"Garuda Indonesia's controversial financial statement with unclear revenue reporting.\",\n  \"mapping\": \"Just as an upside-down paper spills its contents, the 'sungsang' (inverted) report suggests irregular, unnatural accounting practices.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ypjLasupL62u_PUPk7_C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 111,
+      "cost": {
+        "input_tokens_cost_nanodollars": 668500,
+        "output_tokens_cost_nanodollars": 333000
+      },
+      "prompt_tokens": 1337,
+      "total_backend_latency_ms": 2290,
+      "total_tokens": 1448
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.649807,
+      "total": 10,
+      "remaining": 1.3501930000000009,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.649806999999996,
+      "total": 100,
+      "remaining": 91.350193,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0010015,
+  "fields": {
+    "source_object": "Upside-down financial report",
+    "source_properties": "Inverted orientation, symbols ($, %, graphs) falling off the page, Garuda logo at the top.",
+    "target_situation": "Garuda Indonesia's controversial financial statement with unclear revenue reporting.",
+    "mapping": "Just as an upside-down paper spills its contents, the 'sungsang' (inverted) report suggests irregular, unnatural accounting practices.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Upside-down financial report\nsource_properties: Inverted orientation, symbols ($, %, graphs) falling off the page, Garuda logo at the top.\ntarget_situation: Garuda Indonesia's controversial financial statement with unclear revenue reporting.\nmapping: Just as an upside-down paper spills its contents, the 'sungsang' (inverted) report suggests irregular, unnatural accounting practices.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

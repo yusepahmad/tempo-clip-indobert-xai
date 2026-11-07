@@ -1,0 +1,68 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "macro_f1": 0.4952155713517192,
+  "folds": [
+    {
+      "fold": 1,
+      "params": {
+        "C": 0.1,
+        "class_weight": "balanced"
+      },
+      "inner_macro_f1": 0.46620551827107315
+    },
+    {
+      "fold": 2,
+      "params": {
+        "C": 0.1,
+        "class_weight": null
+      },
+      "inner_macro_f1": 0.45122813747688006
+    },
+    {
+      "fold": 3,
+      "params": {
+        "C": 0.1,
+        "class_weight": "balanced"
+      },
+      "inner_macro_f1": 0.4487381882447475
+    },
+    {
+      "fold": 4,
+      "params": {
+        "C": 0.1,
+        "class_weight": null
+      },
+      "inner_macro_f1": 0.4466788197381211
+    },
+    {
+      "fold": 5,
+      "params": {
+        "C": 0.1,
+        "class_weight": null
+      },
+      "inner_macro_f1": 0.4925203895894151
+    }
+  ],
+  "verifier_sha256": "6d88fa1d5b5f7b80d6fa814b1118378ac2c8d589bbfeb053775d78a6add5ced3",
+  "sha256": {
+    "protocol.json": "807a73d0aae9f1a0e640ad1e8cce39d2b6d92ea4e1e39a2b602447765b3ad8f0",
+    "metrics.json": "00027d997208064e7f7d89d3d23ef906e1d2e4df5b2551b36056516945805878",
+    "oof.csv": "19918552c0309136f6afd5165d7062a4902c1c3d4514e2cd0704ff15e040b446",
+    "fold_1.json": "53ce1781d42535b47362ba31031a14fa5e7ca3f15e1a5451f838d56df979ec1b",
+    "fold_2.json": "49739e9d55c3d9aae6820c01fb2607bd32bf3d69d7ff1a03fbc0345ecdec7a45",
+    "fold_3.json": "230bb6de61174fa5c0b3f6c17587476f5efc044c4a5e1529fc987764234ee9dc",
+    "fold_4.json": "62834c4e57ea04141f0f8ebc4a684a8cd2782b145c0926ee1b3845e4684a7b06",
+    "fold_5.json": "4bf4f4c95e3607b8fa2e0d1de79e10af0aeba30854750fb974fdbe89b875ce71"
+  },
+  "checks": [
+    "original740 IDs/truth/baselinefold and frozen caption/SigLIP2/DINOv2/base source pins",
+    "6grid ordering/firstargmax; all selected inner3 scores reproduced with StackingClassifier",
+    "independent cross_val_predict training35dim and test scores/coverage/base fits/meta fits match",
+    "all740 predictions and manual seven-class confusion/perclass/MacroF1"
+  ],
+  "limitations": [
+    "full6grid not rerun via StackingClassifier; upstream encoders audited on sampled forwards",
+    "repeated experiment selection bias remains; no external holdout"
+  ]
+}

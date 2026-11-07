@@ -1,0 +1,87 @@
+{
+  "index": 123,
+  "sample_id": "TMP-2C61C2ADA22B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "db8c35aec9ceb8a2f909b9951421c910b43b2e3af83e9d74f97652e3cbd6c44b",
+  "image_sha256": "2c61c2ada22b682da506766be6c807884ce0833cd42330c7a4b43535d8b32f1a",
+  "transmitted_image_sha256": "d2c6b1001f76fd341fe34d243b19ae1cc0d3cb6e308e67885cd29b8e06752767",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.189332,
+      "total": 10,
+      "remaining": 1.8106679999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.189331999999993,
+      "total": 100,
+      "remaining": 91.810668,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.314980322960764,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"a child's swing with cut ropes\",\n  \"source_properties\": \"Ropes provide support and safety; being cut causes an abrupt, dangerous fall.\",\n  \"target_situation\": \"Child sexual abuse within a school environment.\",\n  \"mapping\": \"Large predatory hands sever the protective safety net of a school, leaving vulnerable children unprotected.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "XZDLapz2Kuyb_uMPzeOSwQw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 670000,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1340,
+      "total_backend_latency_ms": 2133,
+      "total_tokens": 1432
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.190278,
+      "total": 10,
+      "remaining": 1.8097220000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.190278000000006,
+      "total": 100,
+      "remaining": 91.809722,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000946,
+  "fields": {
+    "source_object": "a child's swing with cut ropes",
+    "source_properties": "Ropes provide support and safety; being cut causes an abrupt, dangerous fall.",
+    "target_situation": "Child sexual abuse within a school environment.",
+    "mapping": "Large predatory hands sever the protective safety net of a school, leaving vulnerable children unprotected.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: a child's swing with cut ropes\nsource_properties: Ropes provide support and safety; being cut causes an abrupt, dangerous fall.\ntarget_situation: Child sexual abuse within a school environment.\nmapping: Large predatory hands sever the protective safety net of a school, leaving vulnerable children unprotected.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

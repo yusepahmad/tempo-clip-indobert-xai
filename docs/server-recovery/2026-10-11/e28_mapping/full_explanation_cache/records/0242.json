@@ -1,0 +1,90 @@
+{
+  "index": 242,
+  "sample_id": "TMP-4E9F8DFF476D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bf0c08cd2b051f472afc7ec54a522a2e4fd38a642b08acc6efe98ad2996eba2a",
+  "image_sha256": "4e9f8dff476d43bf7e931814e23c25b5df2a2b3c8c0e82617362ad0655904937",
+  "transmitted_image_sha256": "74a72c161e4680b5a974c4843ed49f803c02e793dc46cdd1f1530077f25c4f38",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.37329,
+      "total": 10,
+      "remaining": 1.6267099999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.373289999999997,
+      "total": 100,
+      "remaining": 91.62671,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.175454886164516,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"source_object\": \"none evident\",\n  \"source_properties\": \"n/a\",\n  \"target_situation\": \"The centenary commemoration of Indonesian human rights lawyer Yap Thiam Hien.\",\n  \"mapping\": \"The illustration provides a literal, stylized portrait of Yap Thiam Hien rather than using a visual analogy. The headline's metaphorical use of 'reflecting' (becermin) is represented visually by a direct depiction of the man as an exemplary figure for society to look back upon.\",\n  \"uncertainty\": \"none\"\n}\n```",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "fpPLauyHLrDe_uMP6urskA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1126,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1001
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 659500,
+        "output_tokens_cost_nanodollars": 3378000
+      },
+      "prompt_tokens": 1319,
+      "total_backend_latency_ms": 6678,
+      "total_tokens": 2445
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3773275,
+      "total": 10,
+      "remaining": 1.6226725000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.377327500000007,
+      "total": 100,
+      "remaining": 91.6226725,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0040375,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "n/a",
+    "target_situation": "The centenary commemoration of Indonesian human rights lawyer Yap Thiam Hien.",
+    "mapping": "The illustration provides a literal, stylized portrait of Yap Thiam Hien rather than using a visual analogy. The headline's metaphorical use of 'reflecting' (becermin) is represented visually by a direct depiction of the man as an exemplary figure for society to look back upon.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: n/a\ntarget_situation: The centenary commemoration of Indonesian human rights lawyer Yap Thiam Hien.\nmapping: The illustration provides a literal, stylized portrait of Yap Thiam Hien rather than using a visual analogy. The headline's metaphorical use of 'reflecting' (becermin) is represented visually by a direct depiction of the man as an exemplary figure for society to look back upon.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

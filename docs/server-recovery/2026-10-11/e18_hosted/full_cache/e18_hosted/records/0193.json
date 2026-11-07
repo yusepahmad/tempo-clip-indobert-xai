@@ -1,0 +1,83 @@
+{
+  "index": 193,
+  "sample_id": "TMP-93229C7912BA",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "5e089881f63058dfd2aa2642400824340132253d84a12f17ac4ab52a1330835a",
+  "image_sha256": "93229c7912baa769b0ba961ce1c644a31c597b92acf9d33cb00c5b5e4986ef22",
+  "transmitted_image_sha256": "32c48b35f9bd9a9ded0892fa115030bc8307bbf11af3e07b417acc12c73762f4",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.7082049999999995,
+      "total": 10,
+      "remaining": 9.291795,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.7082050000000066,
+      "total": 100,
+      "remaining": 99.291795,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 11.609905295073986,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks konteks, domain sumber metafora yang diidentifikasi adalah **PERMAINAN_KONTES**.\n\nAlasannya adalah penggunaan istilah \"Bongkar-Pasang\" yang merujuk pada jenis permainan anak-anak (seperti boneka kertas atau balok susun) serta penggambaran tokoh politik yang sedang",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "HNPKauCRI8fh_uMPvKet6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2044,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1967
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 768000,
+        "output_tokens_cost_nanodollars": 6132000
+      },
+      "prompt_tokens": 1536,
+      "total_backend_latency_ms": 10682,
+      "total_tokens": 3580
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.7151049999999994,
+      "total": 10,
+      "remaining": 9.284895,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.7151049999999941,
+      "total": 100,
+      "remaining": 99.284895,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "length",
+  "cost_usd": 0.0069
+}

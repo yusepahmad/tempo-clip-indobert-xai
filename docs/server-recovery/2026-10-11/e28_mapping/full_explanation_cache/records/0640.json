@@ -1,0 +1,87 @@
+{
+  "index": 640,
+  "sample_id": "TMP-E37BF7004DBD",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1f3937c4b1c8b7f72d9af8273622f85c14625b0508799937f991c9340d0ac6e3",
+  "image_sha256": "e37bf7004dbd6256356ba3c07fb9288ef58f1bfd03f8e74d6b9f27b58b3a12c7",
+  "transmitted_image_sha256": "e0516799befa5cb0b5ab15df6ffbcb19a2d7a4b6e7e0f9309bf868f3004189bd",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9096425,
+      "total": 10,
+      "remaining": 1.0903574999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.909642500000004,
+      "total": 100,
+      "remaining": 91.0903575,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.7208592612296343,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"formula E race car\", \"source_properties\": \"sleek aerodynamic vehicle associated with competitive racing, speed, and technical investigation\", \"target_situation\": \"political tension and legal investigation surrounding Formula E\", \"mapping\": \"The race car represents the specific event being investigated, while the oversized figures pointing at it symbolize opposing high-level authorities competing for control and narrative influence over the case.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "0J3LasbrJruc_uMP2cbk2A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 685500,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1371,
+      "total_backend_latency_ms": 1871,
+      "total_tokens": 1462
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.910601,
+      "total": 10,
+      "remaining": 1.0893990000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.910601,
+      "total": 100,
+      "remaining": 91.089399,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009585,
+  "fields": {
+    "source_object": "formula E race car",
+    "source_properties": "sleek aerodynamic vehicle associated with competitive racing, speed, and technical investigation",
+    "target_situation": "political tension and legal investigation surrounding Formula E",
+    "mapping": "The race car represents the specific event being investigated, while the oversized figures pointing at it symbolize opposing high-level authorities competing for control and narrative influence over the case.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: formula E race car\nsource_properties: sleek aerodynamic vehicle associated with competitive racing, speed, and technical investigation\ntarget_situation: political tension and legal investigation surrounding Formula E\nmapping: The race car represents the specific event being investigated, while the oversized figures pointing at it symbolize opposing high-level authorities competing for control and narrative influence over the case.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

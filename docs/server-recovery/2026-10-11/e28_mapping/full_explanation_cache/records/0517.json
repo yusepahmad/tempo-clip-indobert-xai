@@ -1,0 +1,87 @@
+{
+  "index": 517,
+  "sample_id": "TMP-76682D406748",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "2484e40a52af0090e51157b3d8a8883a94d835bbfc12654511e004510daf55b4",
+  "image_sha256": "76682d40674871e711502d9123097025375f31c9ba288c57a4aec12c1cef62d6",
+  "transmitted_image_sha256": "4b811b3e4aee6a59e6ec771b2d76a459a04c599b45a3f475cb0997850b68b4e4",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.744803000000001,
+      "total": 10,
+      "remaining": 1.255196999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.744803000000005,
+      "total": 100,
+      "remaining": 91.255197,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.6025566891767085,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"banana plant\", \"source_properties\": \"broad, protective leaves providing shade and shelter to various living beings underneath.\", \"target_situation\": \"grassroots religious leaders promoting tolerance and equality despite facing severe persecution and threats.\", \"mapping\": \"The plant's canopy acts as a protective space for a diverse community, paralleling how these ustad/ustazah nurture and shield their followers within a local setting.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "lprLasD_KLye_uMPo--KmQ4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 684500,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1369,
+      "total_backend_latency_ms": 1849,
+      "total_tokens": 1464
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7457725,
+      "total": 10,
+      "remaining": 1.2542275000000007,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.745772500000001,
+      "total": 100,
+      "remaining": 91.2542275,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009695,
+  "fields": {
+    "source_object": "banana plant",
+    "source_properties": "broad, protective leaves providing shade and shelter to various living beings underneath.",
+    "target_situation": "grassroots religious leaders promoting tolerance and equality despite facing severe persecution and threats.",
+    "mapping": "The plant's canopy acts as a protective space for a diverse community, paralleling how these ustad/ustazah nurture and shield their followers within a local setting.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: banana plant\nsource_properties: broad, protective leaves providing shade and shelter to various living beings underneath.\ntarget_situation: grassroots religious leaders promoting tolerance and equality despite facing severe persecution and threats.\nmapping: The plant's canopy acts as a protective space for a diverse community, paralleling how these ustad/ustazah nurture and shield their followers within a local setting.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

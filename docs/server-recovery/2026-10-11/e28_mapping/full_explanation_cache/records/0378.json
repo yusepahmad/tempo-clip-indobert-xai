@@ -1,0 +1,87 @@
+{
+  "index": 378,
+  "sample_id": "TMP-6347D0A31336",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ddd3b980fce239ee5403f26139dc7060fd769e1af8331b51a2df76a907275655",
+  "image_sha256": "6347d0a313368a46a44b36d93daec5feabca4fe39f0c563962a54cbcfae04024",
+  "transmitted_image_sha256": "ead3af03dcaf4c0a421ca44eceb4f972fa3d12337eb3def5757ff8bd3491ba85",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.554712,
+      "total": 10,
+      "remaining": 1.4452879999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.554711999999995,
+      "total": 100,
+      "remaining": 91.445288,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1873749690130353,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Interlocking gears\", \"source_properties\": \"Circular toothed wheels meant to rotate together; one gear is jammed by ribbon-like obstructions, stopping the mechanism.\", \"target_situation\": \"An economic slowdown where businesses cannot repay bank loans, causing the financial system to stall.\", \"mapping\": \"The gears represent the interconnected financial sector; the blockage symbolizes bad debts (kredit macet) that halt economic movement and cause distress to individuals.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "9pbLasCjJpOo_uMPmu77-As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 670000,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1340,
+      "total_backend_latency_ms": 1631,
+      "total_tokens": 1442
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.555688,
+      "total": 10,
+      "remaining": 1.444312,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.555688000000004,
+      "total": 100,
+      "remaining": 91.444312,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000976,
+  "fields": {
+    "source_object": "Interlocking gears",
+    "source_properties": "Circular toothed wheels meant to rotate together; one gear is jammed by ribbon-like obstructions, stopping the mechanism.",
+    "target_situation": "An economic slowdown where businesses cannot repay bank loans, causing the financial system to stall.",
+    "mapping": "The gears represent the interconnected financial sector; the blockage symbolizes bad debts (kredit macet) that halt economic movement and cause distress to individuals.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Interlocking gears\nsource_properties: Circular toothed wheels meant to rotate together; one gear is jammed by ribbon-like obstructions, stopping the mechanism.\ntarget_situation: An economic slowdown where businesses cannot repay bank loans, causing the financial system to stall.\nmapping: The gears represent the interconnected financial sector; the blockage symbolizes bad debts (kredit macet) that halt economic movement and cause distress to individuals.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

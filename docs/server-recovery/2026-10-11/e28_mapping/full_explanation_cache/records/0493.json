@@ -1,0 +1,87 @@
+{
+  "index": 493,
+  "sample_id": "TMP-689636F358ED",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a490bff14aab65c9ad05466f424f745c956087def8c19e38dc8490a1ce6a3f0d",
+  "image_sha256": "689636f358edbc78d7a2046c79f3d7944f6c43beea22c15c905ed910bfb40795",
+  "transmitted_image_sha256": "1d2a47b005d3f3f49666c12aa40e381daedcee1dbd49827c5cc98646494b677b",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7093375,
+      "total": 10,
+      "remaining": 1.2906624999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.709337500000004,
+      "total": 100,
+      "remaining": 91.2906625,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3055755691602826,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"rapid test kit\",\n  \"source_properties\": \"a plastic casing, a test strip showing results, and a sloping top surface\",\n  \"target_situation\": \"hundreds of thousands of inaccurate Covid-19 rapid test kits circulating in Indonesia\",\n  \"mapping\": \"People walk along the test kit's edge and slide off, representing the public falling victim to unreliable diagnostic results.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "9ZnLaqXCCYqM_uMP54rS0QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679500,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1359,
+      "total_backend_latency_ms": 1820,
+      "total_tokens": 1461
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.710323,
+      "total": 10,
+      "remaining": 1.2896769999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.710323000000002,
+      "total": 100,
+      "remaining": 91.289677,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009855,
+  "fields": {
+    "source_object": "rapid test kit",
+    "source_properties": "a plastic casing, a test strip showing results, and a sloping top surface",
+    "target_situation": "hundreds of thousands of inaccurate Covid-19 rapid test kits circulating in Indonesia",
+    "mapping": "People walk along the test kit's edge and slide off, representing the public falling victim to unreliable diagnostic results.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: rapid test kit\nsource_properties: a plastic casing, a test strip showing results, and a sloping top surface\ntarget_situation: hundreds of thousands of inaccurate Covid-19 rapid test kits circulating in Indonesia\nmapping: People walk along the test kit's edge and slide off, representing the public falling victim to unreliable diagnostic results.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

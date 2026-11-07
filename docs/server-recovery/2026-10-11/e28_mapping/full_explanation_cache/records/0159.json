@@ -1,0 +1,87 @@
+{
+  "index": 159,
+  "sample_id": "TMP-A49B4754C077",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5d2a7880e306f6c065b3c006da4c3af019354daa42e15aa13ca4583db225a117",
+  "image_sha256": "a49b4754c0771079ec0f92eeb6760790e883175649e6c21d409c5d4d9b2d0e46",
+  "transmitted_image_sha256": "11cf2c24d29ac8fd1fdfbe7b84f561a4a7cd21659f9acc8902019d7bdc776799",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.241895,
+      "total": 10,
+      "remaining": 1.7581050000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.241895,
+      "total": 100,
+      "remaining": 91.758105,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.616357446182519,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"fishing lure\", \"source_properties\": \"A vaccine vial suspended from a thin wire like bait on a line.\", \"target_situation\": \"Inequitable COVID-19 vaccine distribution amid claims of entitled individuals jumping the queue.\", \"mapping\": \"The vial acts as bait, while the reaching hands, bamboo pole, and umbrella symbolize people competing and maneuvering to hook the scarce resource first.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "UZHLapSGK5Kp_uMPhrH00QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 684000,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1368,
+      "total_backend_latency_ms": 1700,
+      "total_tokens": 1460
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.242855,
+      "total": 10,
+      "remaining": 1.7571449999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.242855000000006,
+      "total": 100,
+      "remaining": 91.757145,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00096,
+  "fields": {
+    "source_object": "fishing lure",
+    "source_properties": "A vaccine vial suspended from a thin wire like bait on a line.",
+    "target_situation": "Inequitable COVID-19 vaccine distribution amid claims of entitled individuals jumping the queue.",
+    "mapping": "The vial acts as bait, while the reaching hands, bamboo pole, and umbrella symbolize people competing and maneuvering to hook the scarce resource first.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: fishing lure\nsource_properties: A vaccine vial suspended from a thin wire like bait on a line.\ntarget_situation: Inequitable COVID-19 vaccine distribution amid claims of entitled individuals jumping the queue.\nmapping: The vial acts as bait, while the reaching hands, bamboo pole, and umbrella symbolize people competing and maneuvering to hook the scarce resource first.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 654,
+  "sample_id": "TMP-CFA74D0163A3",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "15a9bcabf8b0608395edf4753a9aa6618c37fdbcd0fe5ffc0ab6046bababf45c",
+  "image_sha256": "cfa74d0163a3f9f0a30c31db0b56ebdd15d056b09688dc97cb6132c4e4249c9f",
+  "transmitted_image_sha256": "27aba1d1d6cf802ae820071a7badbbc98fa3cd1bdf7924a5e168354e01ba0c57",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9329565,
+      "total": 10,
+      "remaining": 1.0670435000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.932956500000003,
+      "total": 100,
+      "remaining": 91.0670435,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3675864380784333,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"chess game\", \"source_properties\": \"Strategic moves, competition between two players, and pieces representing political power on a map-shaped board.\", \"target_situation\": \"The competition between Ridwan Kamil and Pramono Anung for Anies Baswedan's supporters in the Jakarta gubernatorial election.\", \"mapping\": \"Each candidate's strategic maneuvers to win over voters are likened to calculated moves in a high-stakes chess match.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "L57LaqveIeu1_PUPl9nYyQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671500,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1343,
+      "total_backend_latency_ms": 1845,
+      "total_tokens": 1444
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.933931,
+      "total": 10,
+      "remaining": 1.0660690000000006,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.933931000000001,
+      "total": 100,
+      "remaining": 91.066069,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009745,
+  "fields": {
+    "source_object": "chess game",
+    "source_properties": "Strategic moves, competition between two players, and pieces representing political power on a map-shaped board.",
+    "target_situation": "The competition between Ridwan Kamil and Pramono Anung for Anies Baswedan's supporters in the Jakarta gubernatorial election.",
+    "mapping": "Each candidate's strategic maneuvers to win over voters are likened to calculated moves in a high-stakes chess match.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: chess game\nsource_properties: Strategic moves, competition between two players, and pieces representing political power on a map-shaped board.\ntarget_situation: The competition between Ridwan Kamil and Pramono Anung for Anies Baswedan's supporters in the Jakarta gubernatorial election.\nmapping: Each candidate's strategic maneuvers to win over voters are likened to calculated moves in a high-stakes chess match.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

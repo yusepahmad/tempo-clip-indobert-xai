@@ -1,0 +1,87 @@
+{
+  "index": 22,
+  "sample_id": "TMP-6FEDBB21201B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383",
+  "prompt_sha256": "226c6f785eb12f35c91acf83a4ea982f4415eb73f1d21c2f90517c56b920b948",
+  "image_sha256": "6fedbb21201b6120426425eaf4ece3a5a67a6a71873b89905be13bbb2cb280e8",
+  "transmitted_image_sha256": "ff88efceee38457ab267972e3ad775ee579f5da27a141fd322b6fe2712f810c1",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0424045,
+      "total": 10,
+      "remaining": 1.9575955,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.042404500000004,
+      "total": 100,
+      "remaining": 91.9575955,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2464187117293477,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"playing cards\", \"source_properties\": \"Set of face-down options, hidden values, and a player selecting a hand from several possibilities.\", \"target_situation\": \"President Joko Widodo selecting a vice-presidential running mate from multiple candidates.\", \"mapping\": \"The candidates' faces on cards symbolize the tactical choice Jokowi must make, weighing hidden political strengths against visible potential.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "w4rLauCjCJLN_uMPhvbuyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 89,
+      "cost": {
+        "input_tokens_cost_nanodollars": 668000,
+        "output_tokens_cost_nanodollars": 267000
+      },
+      "prompt_tokens": 1336,
+      "total_backend_latency_ms": 1648,
+      "total_tokens": 1425
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0433395,
+      "total": 10,
+      "remaining": 1.9566605,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.043339500000002,
+      "total": 100,
+      "remaining": 91.9566605,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000935,
+  "fields": {
+    "source_object": "playing cards",
+    "source_properties": "Set of face-down options, hidden values, and a player selecting a hand from several possibilities.",
+    "target_situation": "President Joko Widodo selecting a vice-presidential running mate from multiple candidates.",
+    "mapping": "The candidates' faces on cards symbolize the tactical choice Jokowi must make, weighing hidden political strengths against visible potential.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: playing cards\nsource_properties: Set of face-down options, hidden values, and a player selecting a hand from several possibilities.\ntarget_situation: President Joko Widodo selecting a vice-presidential running mate from multiple candidates.\nmapping: The candidates' faces on cards symbolize the tactical choice Jokowi must make, weighing hidden political strengths against visible potential.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

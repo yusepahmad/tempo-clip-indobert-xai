@@ -1,0 +1,87 @@
+{
+  "index": 199,
+  "sample_id": "TMP-695BCE8C6186",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "de51c0af8633b344e66c113635b767bb2214422a680437b3b81fb08c59eb97ab",
+  "image_sha256": "695bce8c61868355f4bbb46c42d35a279388c58c737d3536e63b10217f0e10d7",
+  "transmitted_image_sha256": "8d34504d582395e06589f83b6e61bd65de46e6080adf33e91f989a84c153a9b9",
+  "image_size": [
+    300,
+    393
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.303812,
+      "total": 10,
+      "remaining": 1.6961879999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.303811999999994,
+      "total": 100,
+      "remaining": 91.696188,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.8833675300702453,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"boxing glove on a spring\", \"source_properties\": \"concealed, mechanical extension, sudden forceful impact, automated strike\", \"target_situation\": \"Gus Dur's political counterattack against opponents\", \"mapping\": \"The spring-loaded glove symbolizes Gus Dur's unexpected, forceful political retaliation emerging from a composed posture to strike down his critics.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "XZLLaur1HP-o_uMPl6-88Q4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 85,
+      "cost": {
+        "input_tokens_cost_nanodollars": 657500,
+        "output_tokens_cost_nanodollars": 255000
+      },
+      "prompt_tokens": 1315,
+      "total_backend_latency_ms": 1564,
+      "total_tokens": 1400
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3047245,
+      "total": 10,
+      "remaining": 1.6952754999999993,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.304724500000006,
+      "total": 100,
+      "remaining": 91.6952755,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009125,
+  "fields": {
+    "source_object": "boxing glove on a spring",
+    "source_properties": "concealed, mechanical extension, sudden forceful impact, automated strike",
+    "target_situation": "Gus Dur's political counterattack against opponents",
+    "mapping": "The spring-loaded glove symbolizes Gus Dur's unexpected, forceful political retaliation emerging from a composed posture to strike down his critics.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: boxing glove on a spring\nsource_properties: concealed, mechanical extension, sudden forceful impact, automated strike\ntarget_situation: Gus Dur's political counterattack against opponents\nmapping: The spring-loaded glove symbolizes Gus Dur's unexpected, forceful political retaliation emerging from a composed posture to strike down his critics.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

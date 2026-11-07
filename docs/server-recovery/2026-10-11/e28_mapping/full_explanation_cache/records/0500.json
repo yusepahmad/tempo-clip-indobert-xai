@@ -1,0 +1,90 @@
+{
+  "index": 500,
+  "sample_id": "TMP-D358939300DD",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c335d88bad0af162d3eac29e42d800ccda99015823a4230b85e3a068776761bc",
+  "image_sha256": "d358939300dd262b91f73af95d25889971a2e2f975c8170611ce218f4e77a5a3",
+  "transmitted_image_sha256": "467dd3cf8bac6568b1bb96df66260e767d27274ec6a5fe5b9b0cee3cfd96ad7c",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.718273,
+      "total": 10,
+      "remaining": 1.281727,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.718272999999996,
+      "total": 100,
+      "remaining": 91.281727,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.005098103079945,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A tattered giant monster\",\n  \"source_properties\": \"Massive scale and ragged, deteriorating surface\",\n  \"target_situation\": \"Indonesia's COVID-19 crisis and government response\",\n  \"mapping\": \"Poking the monster symbolizes a provocative, ineffective strategy that aggravates a looming threat.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "I5rLap_kCPKU_uMPp6OP6Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 917,
+      "completion_tokens_details": {
+        "reasoning_tokens": 831
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 670000,
+        "output_tokens_cost_nanodollars": 2751000
+      },
+      "prompt_tokens": 1340,
+      "total_backend_latency_ms": 5508,
+      "total_tokens": 2257
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.721694,
+      "total": 10,
+      "remaining": 1.2783060000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.721694,
+      "total": 100,
+      "remaining": 91.278306,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.003421,
+  "fields": {
+    "source_object": "A tattered giant monster",
+    "source_properties": "Massive scale and ragged, deteriorating surface",
+    "target_situation": "Indonesia's COVID-19 crisis and government response",
+    "mapping": "Poking the monster symbolizes a provocative, ineffective strategy that aggravates a looming threat.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A tattered giant monster\nsource_properties: Massive scale and ragged, deteriorating surface\ntarget_situation: Indonesia's COVID-19 crisis and government response\nmapping: Poking the monster symbolizes a provocative, ineffective strategy that aggravates a looming threat.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

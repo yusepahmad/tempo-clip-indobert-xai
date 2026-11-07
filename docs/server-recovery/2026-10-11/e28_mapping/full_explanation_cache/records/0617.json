@@ -1,0 +1,87 @@
+{
+  "index": 617,
+  "sample_id": "TMP-47DB5FF75350",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9fb8d8ee93f331eeb14fc1701385647e8400826aac7f0ab06867b5d9b66fd5d7",
+  "image_sha256": "47db5ff753508ec70f88336777b7d0b6074c7289e20bc3a43315f54f9ea2651e",
+  "transmitted_image_sha256": "ddb4dc678d24fa911ad7d51cb808698f7e7d47e8d4d0840f2e083855147e1c95",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8805125,
+      "total": 10,
+      "remaining": 1.1194875,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.880512499999995,
+      "total": 100,
+      "remaining": 91.1194875,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.949701478239149,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"cracked surface\",\n  \"source_properties\": \"Hard, rigid, fragmented into deep fissures starting from a central impact point.\",\n  \"target_situation\": \"Anwar Usman's judicial maneuver to enable Gibran Rakabuming Raka's vice-presidential candidacy.\",\n  \"mapping\": \"The judge's gavel strike shatters the constitution's integrity like breaking a solid slab.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "P53LavTrC77i_uMPyOzU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 105,
+      "cost": {
+        "input_tokens_cost_nanodollars": 687500,
+        "output_tokens_cost_nanodollars": 315000
+      },
+      "prompt_tokens": 1375,
+      "total_backend_latency_ms": 1645,
+      "total_tokens": 1480
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.881515,
+      "total": 10,
+      "remaining": 1.1184849999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.881514999999993,
+      "total": 100,
+      "remaining": 91.118485,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010025,
+  "fields": {
+    "source_object": "cracked surface",
+    "source_properties": "Hard, rigid, fragmented into deep fissures starting from a central impact point.",
+    "target_situation": "Anwar Usman's judicial maneuver to enable Gibran Rakabuming Raka's vice-presidential candidacy.",
+    "mapping": "The judge's gavel strike shatters the constitution's integrity like breaking a solid slab.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: cracked surface\nsource_properties: Hard, rigid, fragmented into deep fissures starting from a central impact point.\ntarget_situation: Anwar Usman's judicial maneuver to enable Gibran Rakabuming Raka's vice-presidential candidacy.\nmapping: The judge's gavel strike shatters the constitution's integrity like breaking a solid slab.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

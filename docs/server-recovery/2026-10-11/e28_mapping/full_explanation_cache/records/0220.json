@@ -1,0 +1,90 @@
+{
+  "index": 220,
+  "sample_id": "TMP-91D919444BA3",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "d14be09cc598df9e0eccef40e26a360bcdf4780ba3300e43cb8a05cff67da296",
+  "image_sha256": "91d919444ba35538c719047f3704138e8ff0cb21e3d99385ae49c9298bbe0367",
+  "transmitted_image_sha256": "ee5995e20752c53eebba99dc0beb7a8187777f96d048b1f9ef123b4ce9533c90",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.330574,
+      "total": 10,
+      "remaining": 1.6694259999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.330573999999999,
+      "total": 100,
+      "remaining": 91.669426,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.30242694914341,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"source_object\": \"none evident\",\n  \"source_properties\": \"n/a\",\n  \"target_situation\": \"The legal and political pressure or 'targeting' faced by KPK investigator Novel Baswedan.\",\n  \"mapping\": \"The illustration is a literal portrait of Novel Baswedan, providing a direct visual representation of the person mentioned in the headline without using an external concrete object as an analogy.\",\n  \"uncertainty\": \"none\"\n}\n```",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "3ZLLaqLIOsyV_uMPl4eVaQ",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1475,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1369
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 659000,
+        "output_tokens_cost_nanodollars": 4425000
+      },
+      "prompt_tokens": 1318,
+      "total_backend_latency_ms": 7823,
+      "total_tokens": 2793
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.335658,
+      "total": 10,
+      "remaining": 1.6643419999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.335657999999995,
+      "total": 100,
+      "remaining": 91.664342,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.005084,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "n/a",
+    "target_situation": "The legal and political pressure or 'targeting' faced by KPK investigator Novel Baswedan.",
+    "mapping": "The illustration is a literal portrait of Novel Baswedan, providing a direct visual representation of the person mentioned in the headline without using an external concrete object as an analogy.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: n/a\ntarget_situation: The legal and political pressure or 'targeting' faced by KPK investigator Novel Baswedan.\nmapping: The illustration is a literal portrait of Novel Baswedan, providing a direct visual representation of the person mentioned in the headline without using an external concrete object as an analogy.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

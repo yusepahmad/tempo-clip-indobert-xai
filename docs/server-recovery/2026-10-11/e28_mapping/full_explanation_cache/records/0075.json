@@ -1,0 +1,87 @@
+{
+  "index": 75,
+  "sample_id": "TMP-C62B6E2F9182",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "de4eacd925032834162060197622326ae0425225a97a0cc838bca874f9859d9c",
+  "image_sha256": "c62b6e2f91829be9dbe6c29ba3669aee1322ca838a2cf789190d34b12aa801a4",
+  "transmitted_image_sha256": "533e17858b4df93eca94f3f926fceaed14fc129f08c5450218a60b8a05055b6a",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1137985,
+      "total": 10,
+      "remaining": 1.8862015000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.113798500000001,
+      "total": 100,
+      "remaining": 91.8862015,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2682125186547637,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"sarong\",\n  \"source_properties\": \"A shared piece of traditional fabric being pulled from opposite ends by two people.\",\n  \"target_situation\": \"Two political rivals competing for the electoral support of a specific religious demographic.\",\n  \"mapping\": \"Pulling the sarong represents vying for influence over the 'sarong-wearing' Nahdlatul Ulama community.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "FY_LaqOCG7uc_uMP2cbk2A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 100,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678000,
+        "output_tokens_cost_nanodollars": 300000
+      },
+      "prompt_tokens": 1356,
+      "total_backend_latency_ms": 1746,
+      "total_tokens": 1456
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1147765,
+      "total": 10,
+      "remaining": 1.8852235000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.114776500000005,
+      "total": 100,
+      "remaining": 91.8852235,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000978,
+  "fields": {
+    "source_object": "sarong",
+    "source_properties": "A shared piece of traditional fabric being pulled from opposite ends by two people.",
+    "target_situation": "Two political rivals competing for the electoral support of a specific religious demographic.",
+    "mapping": "Pulling the sarong represents vying for influence over the 'sarong-wearing' Nahdlatul Ulama community.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: sarong\nsource_properties: A shared piece of traditional fabric being pulled from opposite ends by two people.\ntarget_situation: Two political rivals competing for the electoral support of a specific religious demographic.\nmapping: Pulling the sarong represents vying for influence over the 'sarong-wearing' Nahdlatul Ulama community.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

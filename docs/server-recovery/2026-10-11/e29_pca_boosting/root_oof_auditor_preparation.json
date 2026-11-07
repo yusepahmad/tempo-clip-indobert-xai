@@ -1,0 +1,13 @@
+{
+  "status": "preparation_verified",
+  "source_sha256": "039fbabae2e2fd8f4fcfe9288898b24c63ba972b84b0b07015b4c70e8d7934d1",
+  "selftest": "PASS grid64/firsttie/manualF1/4invalidscores/missingfullgate; no final report",
+  "checks": [
+    "local/server compile and source hash",
+    "all64ordering matches actualserver sklearn ParameterGrid",
+    "actualfold1 metadata traincounts/PCA/fixediterations/modelhash formats accepted"
+  ],
+  "limitations": [
+    "fullOOF not available; no scoreverification yet"
+  ]
+}

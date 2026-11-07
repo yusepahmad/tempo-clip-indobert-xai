@@ -1,0 +1,87 @@
+{
+  "index": 61,
+  "sample_id": "TMP-ED5D7EE892F5",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "894a6fce3642d340860e5849349ae9cb08cbdf6557f8954159b0b8b7986c802d",
+  "image_sha256": "ed5d7ee892f5c07c4ffd5f745b642d11d2737d02811e6927397d81cb006ccd10",
+  "transmitted_image_sha256": "adc5cb6b61fc95a93f5232b5c47072e04d338a8128a52c746b43dff1c67e27b3",
+  "image_size": [
+    589,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0963315,
+      "total": 10,
+      "remaining": 1.9036685000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.096331500000005,
+      "total": 100,
+      "remaining": 91.9036685,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.143240494187921,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Portrait painting\",\n  \"source_properties\": \"Hand-rendered texture, somber lighting, formal attire, and a direct, unyielding gaze on a canvas-like background.\",\n  \"target_situation\": \"The historical legacy and complex personality of Indonesian founding figure Muhammad Yamin.\",\n  \"mapping\": \"The detailed, textured painting style captures Yamin's multi-faceted nature as both a revered myth-maker and a controversial, stubborn political actor.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "vo7Lav-hLN7d_uMP2Ze24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 116,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676500,
+        "output_tokens_cost_nanodollars": 348000
+      },
+      "prompt_tokens": 1353,
+      "total_backend_latency_ms": 1899,
+      "total_tokens": 1469
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.097356,
+      "total": 10,
+      "remaining": 1.9026440000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.097356000000005,
+      "total": 100,
+      "remaining": 91.902644,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010245,
+  "fields": {
+    "source_object": "Portrait painting",
+    "source_properties": "Hand-rendered texture, somber lighting, formal attire, and a direct, unyielding gaze on a canvas-like background.",
+    "target_situation": "The historical legacy and complex personality of Indonesian founding figure Muhammad Yamin.",
+    "mapping": "The detailed, textured painting style captures Yamin's multi-faceted nature as both a revered myth-maker and a controversial, stubborn political actor.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: Portrait painting\nsource_properties: Hand-rendered texture, somber lighting, formal attire, and a direct, unyielding gaze on a canvas-like background.\ntarget_situation: The historical legacy and complex personality of Indonesian founding figure Muhammad Yamin.\nmapping: The detailed, textured painting style captures Yamin's multi-faceted nature as both a revered myth-maker and a controversial, stubborn political actor.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

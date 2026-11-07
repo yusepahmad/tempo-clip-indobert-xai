@@ -1,0 +1,87 @@
+{
+  "index": 24,
+  "sample_id": "TMP-251E71CFA264",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "000f8cd2c37c8156cf4ec8ed958ae3aac3dcac39857b8fa6d1d758665dbf3dee",
+  "image_sha256": "251e71cfa2642e1326d28d8d19663f8c405d41d60aea5b8d0c5868430de539d1",
+  "transmitted_image_sha256": "e89c38686c72ecea7e77ef5e17f773147f7943f56568a289dd5cd7f73d018af3",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0477875,
+      "total": 10,
+      "remaining": 1.9522125,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.047787499999998,
+      "total": 100,
+      "remaining": 91.9522125,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.9227730138227344,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"aircraft cockpit\", \"source_properties\": \"Instrument-filled, dark interior with red lighting and opaque, blank windows suggesting a lack of visibility or guidance.\", \"target_situation\": \"The Lion Air JT 610 crash investigation into flight control failures and corporate negligence.\", \"mapping\": \"The blind, dark cockpit symbolizes the pilots' inability to see or control the aircraft due to technical malfunctions that the airline allegedly ignored.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "wY3LaoPCKbqi_uMPjvD3-Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 98,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671500,
+        "output_tokens_cost_nanodollars": 294000
+      },
+      "prompt_tokens": 1343,
+      "total_backend_latency_ms": 2339,
+      "total_tokens": 1441
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.048753,
+      "total": 10,
+      "remaining": 1.9512470000000004,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.048753000000005,
+      "total": 100,
+      "remaining": 91.951247,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009655,
+  "fields": {
+    "source_object": "aircraft cockpit",
+    "source_properties": "Instrument-filled, dark interior with red lighting and opaque, blank windows suggesting a lack of visibility or guidance.",
+    "target_situation": "The Lion Air JT 610 crash investigation into flight control failures and corporate negligence.",
+    "mapping": "The blind, dark cockpit symbolizes the pilots' inability to see or control the aircraft due to technical malfunctions that the airline allegedly ignored.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: aircraft cockpit\nsource_properties: Instrument-filled, dark interior with red lighting and opaque, blank windows suggesting a lack of visibility or guidance.\ntarget_situation: The Lion Air JT 610 crash investigation into flight control failures and corporate negligence.\nmapping: The blind, dark cockpit symbolizes the pilots' inability to see or control the aircraft due to technical malfunctions that the airline allegedly ignored.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

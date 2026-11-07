@@ -1,0 +1,90 @@
+{
+  "index": 351,
+  "sample_id": "TMP-EA299DEF549F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c3fa3e8c524926a8456247e4ef16030e972271d58f5e33d1dcd4d6e4e389e489",
+  "image_sha256": "ea299def549f4840d5552a4663e5e8a20f343e5fa8c3a0ce1a36e90901e52a09",
+  "transmitted_image_sha256": "a9a16966b1248d43725857ef42afb1ac4d99c079daf8840253b60af2a6e9155f",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5175485,
+      "total": 10,
+      "remaining": 1.4824514999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.517548500000004,
+      "total": 100,
+      "remaining": 91.4824515,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.915922928601503,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A note taped to a person's back\",\n  \"source_properties\": \"White paper attached with adhesive tape, positioned where the wearer cannot see it but others can.\",\n  \"target_situation\": \"Luhut's alleged involvement in the Panama Papers scandal regarding offshore shell companies.\",\n  \"mapping\": \"The note acts like a 'Kick Me' sign, representing a public mark of scandal or secret identity that follows him visibly despite being behind his back.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "TZbLat24FdPj_uMP_OKC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 455,
+      "completion_tokens_details": {
+        "reasoning_tokens": 338
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 673000,
+        "output_tokens_cost_nanodollars": 1365000
+      },
+      "prompt_tokens": 1346,
+      "total_backend_latency_ms": 3428,
+      "total_tokens": 1801
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.519586499999999,
+      "total": 10,
+      "remaining": 1.480413500000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.519586500000003,
+      "total": 100,
+      "remaining": 91.4804135,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.002038,
+  "fields": {
+    "source_object": "A note taped to a person's back",
+    "source_properties": "White paper attached with adhesive tape, positioned where the wearer cannot see it but others can.",
+    "target_situation": "Luhut's alleged involvement in the Panama Papers scandal regarding offshore shell companies.",
+    "mapping": "The note acts like a 'Kick Me' sign, representing a public mark of scandal or secret identity that follows him visibly despite being behind his back.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A note taped to a person's back\nsource_properties: White paper attached with adhesive tape, positioned where the wearer cannot see it but others can.\ntarget_situation: Luhut's alleged involvement in the Panama Papers scandal regarding offshore shell companies.\nmapping: The note acts like a 'Kick Me' sign, representing a public mark of scandal or secret identity that follows him visibly despite being behind his back.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

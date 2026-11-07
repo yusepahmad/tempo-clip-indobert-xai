@@ -1,0 +1,90 @@
+{
+  "index": 708,
+  "sample_id": "TMP-91D10E40E8A1",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ae35c834a5f58559033f55e9ebc72c0f6ad858968b8b3a8e3bde962dda5d8996",
+  "image_sha256": "91d10e40e8a1f5a8e92f022a135cba5b8f5160bebe07f5e9f2c6b59515ef2cc5",
+  "transmitted_image_sha256": "c1de9c6d4568780515d903dc11a989a44ca777238f1880b7bad91e658fc5fa39",
+  "image_size": [
+    585,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.026140999999999,
+      "total": 10,
+      "remaining": 0.9738590000000009,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.026140999999996,
+      "total": 100,
+      "remaining": 90.973859,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.297437747009099,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A mosque-shaped beacon or sheltering canopy of light.\",\n  \"source_properties\": \"Emits a broad, radiant glow that pushes back shadows and provides visibility in a dark forest.\",\n  \"target_situation\": \"Inclusive mosques functioning as protective, welcoming community centers for all people.\",\n  \"mapping\": \"Just as a bright lantern provides safety and refuge in darkness, these mosques offer social protection and empowerment to the community.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "rJ_LaoboLfbb_uMPure6uAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1122,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1014
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 3366000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 6529,
+      "total_tokens": 2469
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0301805,
+      "total": 10,
+      "remaining": 0.9698194999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.0301805,
+      "total": 100,
+      "remaining": 90.9698195,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0040395,
+  "fields": {
+    "source_object": "A mosque-shaped beacon or sheltering canopy of light.",
+    "source_properties": "Emits a broad, radiant glow that pushes back shadows and provides visibility in a dark forest.",
+    "target_situation": "Inclusive mosques functioning as protective, welcoming community centers for all people.",
+    "mapping": "Just as a bright lantern provides safety and refuge in darkness, these mosques offer social protection and empowerment to the community.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A mosque-shaped beacon or sheltering canopy of light.\nsource_properties: Emits a broad, radiant glow that pushes back shadows and provides visibility in a dark forest.\ntarget_situation: Inclusive mosques functioning as protective, welcoming community centers for all people.\nmapping: Just as a bright lantern provides safety and refuge in darkness, these mosques offer social protection and empowerment to the community.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

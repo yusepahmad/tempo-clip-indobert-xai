@@ -1,0 +1,87 @@
+{
+  "index": 128,
+  "sample_id": "TMP-526FFEC76F02",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5d1e0b165af2318158ce42fc6558f85af8150ad82ecfd96a8386f9f5f8c45395",
+  "image_sha256": "526ffec76f02d1191bcd2542032e9f8ffd92018c7c05a84bd26c6bbca58572e6",
+  "transmitted_image_sha256": "8ad07addf75e315f98e9666490625464bb0c02c115b32f5f0f8c4be095ccedbd",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1942225,
+      "total": 10,
+      "remaining": 1.8057774999999996,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.194222499999995,
+      "total": 100,
+      "remaining": 91.8057775,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0419671409763396,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"martial artist\", \"source_properties\": \"traditional Pencak Silat attire, low defensive stance, focused expression, ready for combat\", \"target_situation\": \"Jusuf Kalla's political maneuvering against perceived exclusion from decision-making\", \"mapping\": \"The physical 'kuda-kuda' (stance) represents Kalla strengthening his political position and preparing for a confrontation with the Presidential Staff Office.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "d5DLaqDdGP7v_uMP-q7MqQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 1695,
+      "total_tokens": 1444
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.195187,
+      "total": 10,
+      "remaining": 1.8048129999999993,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.195187000000004,
+      "total": 100,
+      "remaining": 91.804813,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009645,
+  "fields": {
+    "source_object": "martial artist",
+    "source_properties": "traditional Pencak Silat attire, low defensive stance, focused expression, ready for combat",
+    "target_situation": "Jusuf Kalla's political maneuvering against perceived exclusion from decision-making",
+    "mapping": "The physical 'kuda-kuda' (stance) represents Kalla strengthening his political position and preparing for a confrontation with the Presidential Staff Office.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: martial artist\nsource_properties: traditional Pencak Silat attire, low defensive stance, focused expression, ready for combat\ntarget_situation: Jusuf Kalla's political maneuvering against perceived exclusion from decision-making\nmapping: The physical 'kuda-kuda' (stance) represents Kalla strengthening his political position and preparing for a confrontation with the Presidential Staff Office.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

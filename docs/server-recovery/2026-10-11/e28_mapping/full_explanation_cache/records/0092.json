@@ -1,0 +1,87 @@
+{
+  "index": 92,
+  "sample_id": "TMP-F0F9ED1CA07B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "34c1ccd615cad1601189f2ed26cfe07d40b53b9699bae57b326c96da3cb3420f",
+  "image_sha256": "f0f9ed1ca07be6639806d4c7bdd1ce262ba7c78e9d967f366ae21bea12cac4a3",
+  "transmitted_image_sha256": "02ebf1b53ed465fc8087587ca057efd960d7afb0a078cfd7c09d35e166c60363",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.133063,
+      "total": 10,
+      "remaining": 1.866937,
+      "refill_at": "2026-10-11 23:35:15.877000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.133063000000007,
+      "total": 100,
+      "remaining": 91.866937,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.5718850269913673,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"industrial oil rig or steel tower structure\",\n  \"source_properties\": \"massive scale, complex iron lattice, elevated platforms, and towering physical height\",\n  \"target_situation\": \"an extensive bribery network involving nearly one trillion rupiah within the judiciary\",\n  \"mapping\": \"the tower represents the immense, complex scale of the corruption hierarchy being built\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "go_Lap_dEPDe_uMPnvjrqQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 684000,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1368,
+      "total_backend_latency_ms": 1462,
+      "total_tokens": 1461
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.134026,
+      "total": 10,
+      "remaining": 1.8659739999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.134026000000006,
+      "total": 100,
+      "remaining": 91.865974,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000963,
+  "fields": {
+    "source_object": "industrial oil rig or steel tower structure",
+    "source_properties": "massive scale, complex iron lattice, elevated platforms, and towering physical height",
+    "target_situation": "an extensive bribery network involving nearly one trillion rupiah within the judiciary",
+    "mapping": "the tower represents the immense, complex scale of the corruption hierarchy being built",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: industrial oil rig or steel tower structure\nsource_properties: massive scale, complex iron lattice, elevated platforms, and towering physical height\ntarget_situation: an extensive bribery network involving nearly one trillion rupiah within the judiciary\nmapping: the tower represents the immense, complex scale of the corruption hierarchy being built\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

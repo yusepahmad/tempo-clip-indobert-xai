@@ -1,0 +1,90 @@
+{
+  "index": 334,
+  "sample_id": "TMP-57B568458928",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e9f250c053c02ddb3372e5de9f9d6f599782f795d2adc61f19c1e065fb4b42de",
+  "image_sha256": "57b568458928336f4c9a94a113b2ab05e77826c54267c59907b89c2eee321411",
+  "transmitted_image_sha256": "6498601112e1a9ec303ff99c57e37342e1d5ab62a3857bd0e5ef0d6468cd294c",
+  "image_size": [
+    472,
+    628
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.493988,
+      "total": 10,
+      "remaining": 1.5060120000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.493988000000002,
+      "total": 100,
+      "remaining": 91.506012,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.399626563768834,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A pop-up book\",\n  \"source_properties\": \"Three-dimensional paper-cut illustrations rising from flat, open pages to create a scene.\",\n  \"target_situation\": \"A special reportage documenting local conservation wisdom and environmental stories from across Indonesia's coasts.\",\n  \"mapping\": \"The pop-up book mirrors how investigative journalism 'brings to life' hidden or distant stories, making abstract environmental concepts tangible.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "15XLaqLeJJKp_uMPhrH00QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 517,
+      "completion_tokens_details": {
+        "reasoning_tokens": 407
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 666000,
+        "output_tokens_cost_nanodollars": 1551000
+      },
+      "prompt_tokens": 1332,
+      "total_backend_latency_ms": 3468,
+      "total_tokens": 1849
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.496205,
+      "total": 10,
+      "remaining": 1.5037950000000002,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.496205000000003,
+      "total": 100,
+      "remaining": 91.503795,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.002217,
+  "fields": {
+    "source_object": "A pop-up book",
+    "source_properties": "Three-dimensional paper-cut illustrations rising from flat, open pages to create a scene.",
+    "target_situation": "A special reportage documenting local conservation wisdom and environmental stories from across Indonesia's coasts.",
+    "mapping": "The pop-up book mirrors how investigative journalism 'brings to life' hidden or distant stories, making abstract environmental concepts tangible.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A pop-up book\nsource_properties: Three-dimensional paper-cut illustrations rising from flat, open pages to create a scene.\ntarget_situation: A special reportage documenting local conservation wisdom and environmental stories from across Indonesia's coasts.\nmapping: The pop-up book mirrors how investigative journalism 'brings to life' hidden or distant stories, making abstract environmental concepts tangible.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

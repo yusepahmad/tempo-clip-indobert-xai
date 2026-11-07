@@ -1,0 +1,87 @@
+{
+  "index": 46,
+  "sample_id": "TMP-32CD8E6A16D5",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "693aa0c9dc92498dde8008ea7fea5bdd073cac4acc9b028eb482cecaf2cb8058",
+  "image_sha256": "32cd8e6a16d556bda5e3886c98e4fb9637fe41dd61bc81a6f8202c1112d3ec37",
+  "transmitted_image_sha256": "f2f2562709eb2a19f3fecee73eb37d6721438e117eeafca39c7d90d294d7af7e",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0761495,
+      "total": 10,
+      "remaining": 1.9238505000000004,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.0761495,
+      "total": 100,
+      "remaining": 91.9238505,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.771740134805441,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Whac-A-Mole arcade game\",\n  \"source_properties\": \"A figure popping out of a hole while a mallet strikes down on it.\",\n  \"target_situation\": \"Legal pressure and allegations of bribery involving Budi Arie and online gambling cases.\",\n  \"mapping\": \"The mallet represents judicial or investigative action attempting to suppress or penalize the figure surfacing from corruption.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "XI7LaoelMbye_uMPo--KmQ4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 668500,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1337,
+      "total_backend_latency_ms": 1752,
+      "total_tokens": 1438
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.077121,
+      "total": 10,
+      "remaining": 1.922879,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.077121000000005,
+      "total": 100,
+      "remaining": 91.922879,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009715,
+  "fields": {
+    "source_object": "Whac-A-Mole arcade game",
+    "source_properties": "A figure popping out of a hole while a mallet strikes down on it.",
+    "target_situation": "Legal pressure and allegations of bribery involving Budi Arie and online gambling cases.",
+    "mapping": "The mallet represents judicial or investigative action attempting to suppress or penalize the figure surfacing from corruption.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Whac-A-Mole arcade game\nsource_properties: A figure popping out of a hole while a mallet strikes down on it.\ntarget_situation: Legal pressure and allegations of bribery involving Budi Arie and online gambling cases.\nmapping: The mallet represents judicial or investigative action attempting to suppress or penalize the figure surfacing from corruption.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

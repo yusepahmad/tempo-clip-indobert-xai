@@ -1,0 +1,83 @@
+{
+  "index": 478,
+  "sample_id": "TMP-81890CFF55BD",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "07a63b63bfe0074d22da681f502570dd250b30e51532cf8eaa970f0e53c84be8",
+  "image_sha256": "81890cff55bddc0d7c7be3fab6466feb2f90ea1b2f8c5316b3424bc7a822a6a4",
+  "transmitted_image_sha256": "816b12e35c028a13ea7c72113952615c382d7a280013f0b70e70b57f453c29f0",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.8037930000000006,
+      "total": 10,
+      "remaining": 8.196207,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.8037929999999989,
+      "total": 100,
+      "remaining": 98.196207,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.72164010698907,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan ilustrasi dan konteks yang diberikan, domain sumber metafora tersebut dapat diklasifikasikan sebagai berikut:\n\n**G: PERMAINAN_KONTES**\n\n**Alasan:**\nKonteks yang menyebutkan \"pelukan politik dipetakan sebagai simbol strategi koalisi dalam arena politik yang bersifat berstrategi dan berpemain\" mengarah pada domain permainan atau kontes. Penggunaan istilah seperti \"merangkul\" untuk \"mempersempit ruang gerak\" lawan dalam sebuah \"koalisi\" menggambarkan politik sebagai sebuah permainan taktis atau pertandingan di mana para aktornya (pemain) melakukan manuver tertentu untuk memenangkan posisi atau melemahkan lawan.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Ed_KavCOMZ-d_uMPsajYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1367,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1225
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 780500,
+        "output_tokens_cost_nanodollars": 4101000
+      },
+      "prompt_tokens": 1561,
+      "total_backend_latency_ms": 7875,
+      "total_tokens": 2928
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.8086745000000004,
+      "total": 10,
+      "remaining": 8.1913255,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.808674499999995,
+      "total": 100,
+      "remaining": 98.1913255,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.0048815
+}

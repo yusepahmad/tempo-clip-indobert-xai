@@ -1,0 +1,87 @@
+{
+  "index": 14,
+  "sample_id": "TMP-CD142C784BAC",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383",
+  "prompt_sha256": "8f0392513210dee23ded6bcf22bf80deb1fb80d8b468c8421c6bf145b8b0f5d9",
+  "image_sha256": "cd142c784bac0eba5eedad1c9aa96b96553b1c6bfc25a81697550c253c5d7c11",
+  "transmitted_image_sha256": "36c99a13de38397c6dc6973401d70383cfcdd25a6bbd315444567d5261937297",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.031386,
+      "total": 10,
+      "remaining": 1.9686140000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.031385999999998,
+      "total": 100,
+      "remaining": 91.968614,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.9517144970595837,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"dump truck\", \"source_properties\": \"raised truck bed tilting and dumping contents\", \"target_situation\": \"President Jokowi removing several ministers from his working cabinet\", \"mapping\": \"Tilting the truck bed to unload contents parallels the president removing and replacing multiple cabinet members simultaneously.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "lYrLaprfGPGb_uMPte3s2Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 69,
+      "cost": {
+        "input_tokens_cost_nanodollars": 659000,
+        "output_tokens_cost_nanodollars": 207000
+      },
+      "prompt_tokens": 1318,
+      "total_backend_latency_ms": 1490,
+      "total_tokens": 1387
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.032252,
+      "total": 10,
+      "remaining": 1.9677480000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.032252,
+      "total": 100,
+      "remaining": 91.967748,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000866,
+  "fields": {
+    "source_object": "dump truck",
+    "source_properties": "raised truck bed tilting and dumping contents",
+    "target_situation": "President Jokowi removing several ministers from his working cabinet",
+    "mapping": "Tilting the truck bed to unload contents parallels the president removing and replacing multiple cabinet members simultaneously.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: dump truck\nsource_properties: raised truck bed tilting and dumping contents\ntarget_situation: President Jokowi removing several ministers from his working cabinet\nmapping: Tilting the truck bed to unload contents parallels the president removing and replacing multiple cabinet members simultaneously.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

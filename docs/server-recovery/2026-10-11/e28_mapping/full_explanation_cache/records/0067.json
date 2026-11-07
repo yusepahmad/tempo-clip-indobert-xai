@@ -1,0 +1,90 @@
+{
+  "index": 67,
+  "sample_id": "TMP-97450CBD8AF6",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9caf5cab6c42bfd56910ea53d173be6f36b17b421eb64c010e33292daccd9e77",
+  "image_sha256": "97450cbd8af658658226c3dbd1a8b0fa877ecf8da1b88d54c07d5d934fae26f6",
+  "transmitted_image_sha256": "32bb3fd9a7d860e89ede030a4248949670f8474ed11a1a120c72c979537c6419",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.102219999999999,
+      "total": 10,
+      "remaining": 1.897780000000001,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.102220000000003,
+      "total": 100,
+      "remaining": 91.89778,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.816655572969466,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"source_object\": \"none evident\",\n  \"source_properties\": \"n/a\",\n  \"target_situation\": \"Ahok's dual political identity and conflicting personas during the 2016 election period.\",\n  \"mapping\": \"The illustration literally depicts two versions of Ahok side-by-side: one in a simple shirt representing his independent, technocratic image, and another in a red suit with a party logo representing political alignment. This directly visualizes the headline 'Two Faces of Ahok' without using an external analogous object.\",\n  \"uncertainty\": \"low\"\n}\n```",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "4o7LauLoD82i_uMP67qv2Qc",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1357,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1221
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 657000,
+        "output_tokens_cost_nanodollars": 4071000
+      },
+      "prompt_tokens": 1314,
+      "total_backend_latency_ms": 7294,
+      "total_tokens": 2671
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.106948,
+      "total": 10,
+      "remaining": 1.8930520000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.106948000000003,
+      "total": 100,
+      "remaining": 91.893052,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.004728,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "n/a",
+    "target_situation": "Ahok's dual political identity and conflicting personas during the 2016 election period.",
+    "mapping": "The illustration literally depicts two versions of Ahok side-by-side: one in a simple shirt representing his independent, technocratic image, and another in a red suit with a party logo representing political alignment. This directly visualizes the headline 'Two Faces of Ahok' without using an external analogous object.",
+    "uncertainty": "low"
+  },
+  "explanation": "source_object: none evident\nsource_properties: n/a\ntarget_situation: Ahok's dual political identity and conflicting personas during the 2016 election period.\nmapping: The illustration literally depicts two versions of Ahok side-by-side: one in a simple shirt representing his independent, technocratic image, and another in a red suit with a party logo representing political alignment. This directly visualizes the headline 'Two Faces of Ahok' without using an external analogous object.\nuncertainty: low",
+  "finish_reason": "stop",
+  "usable": true
+}

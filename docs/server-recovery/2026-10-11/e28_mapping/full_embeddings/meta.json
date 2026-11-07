@@ -1,0 +1,51 @@
+{
+  "status": "complete",
+  "samples": 740,
+  "dimension": 1024,
+  "signature": {
+    "explanations_verification_sha256": "f9e075864aef118f6726592a3cccae7b0221b3e573e7f2328cb19cc6d5720b19",
+    "explanations_sha256": "55f29a7dfa9d45c419cc925f6b262456e125d8e9707d332706da4dee8d287bea",
+    "csv_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+    "worker_sha256": "db6322b69bdcd3ade82e7160c8204c74c013813f193b644cf709a0e1cff6dbd2",
+    "migration_sha256": "794d74e34a80eda7083c0ca5504e2d44c4f2949f6d526eabc98e135a6e16d5c1",
+    "previous_model_preparation_sha256": "6e3a59e8a002a758135f04eab0cbb1bfbdf2b415b05f95d1ffbf4da523387709",
+    "model": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "pooling": "CLS then L2",
+    "prefix": "",
+    "dtype": "float32",
+    "device": "cpu",
+    "threads": 8,
+    "max_length": 1024,
+    "batch": 4,
+    "views": [
+      "interpretation",
+      "interpretation_context"
+    ],
+    "torch": "2.14.1+cpu",
+    "transformers": "5.18.0",
+    "model_snapshot": {
+      "model": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "file_sha256": {
+        "config.json": "26159e7ad065073448460117eb24b7a4572f6f4e78eadff65dc0a11c052449fa",
+        "pytorch_model.bin": "b5e0ce3470abf5ef3831aa1bd5553b486803e83251590ab7ff35a117cf6aad38",
+        "tokenizer.json": "21106b6d7dab2952c1d496fb21d5dc9db75c28ed361a05f5020bbba27810dd08",
+        "tokenizer_config.json": "a62b2b6784f990259fddef5f16388693a8043be4f69179e6a5257eeb3f9abac4",
+        "special_tokens_map.json": "8c785abebea9ae3257b61681b4e6fd8365ceafde980c21970d001e834cf10835",
+        "sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865"
+      },
+      "official_weight_sha256": "b5e0ce3470abf5ef3831aa1bd5553b486803e83251590ab7ff35a117cf6aad38"
+    }
+  },
+  "embeddings_sha256": "31cde64252e9b0e8868ed7c6b892f9ef1e4986016dec7a1ada27e213c6b69f52",
+  "input_audit_sha256": "7050ff1b16021d3d61daea5cac2de2650ea5d41ad62da66b68819f48876a8192",
+  "seconds_by_view": {
+    "interpretation": 172.5996206733398,
+    "interpretation_context": 231.71477288985625
+  },
+  "truncated_by_view": {
+    "interpretation": 0,
+    "interpretation_context": 0
+  }
+}

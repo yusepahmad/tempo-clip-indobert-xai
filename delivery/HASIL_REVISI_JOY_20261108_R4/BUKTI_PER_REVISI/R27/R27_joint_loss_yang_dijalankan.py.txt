@@ -1,0 +1,10 @@
+# Kutipan verbatim worker.py, mulai baris 36; SHA256 7a28a10a5a9590bf67ae72854ec21798e4b1a8d667404143a3294dd0d1766ce1
+def epoch(m,opt,losses,scaler,tr,e,max_steps=None):
+        order=np.array(tr).copy();np.random.default_rng(42+e).shuffle(order);m.train();steps=0
+        for off in range(0,len(order),CFG['batch']):
+            ix=order[off:off+CFG['batch']];opt.zero_grad(set_to_none=True)
+            with torch.autocast('cuda',dtype=torch.float16):
+                p=m(*batch_tensors(z,ix,'cuda'));l=sum(w*losses[t](p[t],torch.tensor(y[t][ix],device='cuda')) for t,w in zip(TASKS,CFG['loss_weights']))/sum(CFG['loss_weights'])
+            assert torch.isfinite(l);scaler.scale(l).backward();scaler.unscale_(opt);nn.utils.clip_grad_norm_(m.parameters(),1.);scaler.step(opt);scaler.update();steps+=1;guard()
+            if max_steps and steps>=max_steps:break
+        return float(l.detach().cpu())

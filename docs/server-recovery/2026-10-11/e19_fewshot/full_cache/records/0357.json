@@ -1,0 +1,86 @@
+{
+  "index": 357,
+  "sample_id": "TMP-E85FDA2EB5BA",
+  "fold": 5,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "ba022efb9d1a72c7650838d9d1671a5e722b4af739d1710bfd7f4bc978d662f6",
+  "image_sha256": "e85fda2eb5ba5b52a74f7b24038893d5dd402af54f430b2d20009c57fd362389",
+  "transmitted_image_sha256": "7d0d376413898bf14d35e75de2ac7e36be35772bcd7143936029e9c7ff180b1c",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 4.7580865,
+      "total": 10,
+      "remaining": 5.2419135,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 4.7580865000000045,
+      "total": 100,
+      "remaining": 95.2419135,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 18.80014813505113,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan \"Sumber dan alasan\" yang diberikan pada bagian target, kategori yang paling sesuai adalah **B: HEWAN_TUBUH**.\n\n**Alasan:**\nMeskipun gambar tersebut secara visual menampilkan tokoh-tokoh muslim dan pesantren secara literal, teks \"Sumber dan alasan\" yang disediakan secara eksplisit menyatakan bahwa tokoh-tokoh tersebut \"**diposisikan seperti hewan atau makhluk** yang terjebak\". Dalam skema klasifikasi ini, penggunaan metafora yang melibatkan \"hewan\" atau \"makhluk\" (biologis) sebagai sumber pemetaan untuk menggambarkan kondisi sosial atau politik masuk ke dalam kategori **B (HEWAN_TUBUH)**. Hal ini sejalan dengan contoh training kode B yang menggunakan metafora babi hitam untuk menggambarkan ancaman atau",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "1vfKar_4F82i_uMP67qv2Qc",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 4092,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3933
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2044000,
+        "output_tokens_cost_nanodollars": 12276000
+      },
+      "prompt_tokens": 4088,
+      "total_backend_latency_ms": 17919,
+      "total_tokens": 8180
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 4.7724065,
+      "total": 10,
+      "remaining": 5.2275935,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 4.772406500000002,
+      "total": 100,
+      "remaining": 95.2275935,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.01432,
+  "code": "INVALID",
+  "strict_code": "INVALID",
+  "parsing_rule": "unrecognized_no_explicit_answer",
+  "finish_reason": "length",
+  "prediction": "INVALID"
+}

@@ -1,0 +1,83 @@
+{
+  "index": 416,
+  "sample_id": "TMP-F800BF04E712",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "1993bd75b8128c18a2a961ef741f994473590a6d54f52b8432cc55dafb60a520",
+  "image_sha256": "f800bf04e71228b312672934fdf11ba4fa4dc54662847af3d5aa55ae9fe364e0",
+  "transmitted_image_sha256": "cb3ae324f4d2515116103d99e1477fcd65f4e37d610004fde48658d5186d7567",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.5601079999999996,
+      "total": 10,
+      "remaining": 8.439892,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.5601079999999996,
+      "total": 100,
+      "remaining": 98.439892,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 10.635350337950513,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "B berdasarkan deskripsi dan alasan yang diberikan dalam teks tersebut. \n\n**Alasan:**\nMeskipun gambar tersebut adalah foto literal dari anak-anak yang menderita, deskripsi tersebut menyatakan bahwa kondisi fisik mereka (anatomi/tubuh yang sangat kurus dan terdegradasi) dipetakan sebagai simbol untuk menggambarkan krisis kesehatan dan kegagalan sistem. Penggunaan \"tubuh yang terdegradasi\" sebagai kiasan untuk kondisi sosial-politik atau krisis wilayah sesuai dengan domain sumber **HEWAN_TUBUH**.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "4NzKaqfwCcfh_uMPvKet6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2009,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1898
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 780000,
+        "output_tokens_cost_nanodollars": 6027000
+      },
+      "prompt_tokens": 1560,
+      "total_backend_latency_ms": 9685,
+      "total_tokens": 3569
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.5669149999999998,
+      "total": 10,
+      "remaining": 8.433085,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.5669149999999945,
+      "total": 100,
+      "remaining": 98.433085,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.006807
+}

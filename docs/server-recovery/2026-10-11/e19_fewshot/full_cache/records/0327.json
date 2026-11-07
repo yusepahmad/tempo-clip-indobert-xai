@@ -1,0 +1,86 @@
+{
+  "index": 327,
+  "sample_id": "TMP-E5A049C2CC9F",
+  "fold": 1,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "b377df47351f9b02a078509174243663d86082c15c8b873bbf669832c4ee673f",
+  "image_sha256": "e5a049c2cc9f69922e03e7ce0ec9cc4cfe574b31193f914b01521ff97e1930e7",
+  "transmitted_image_sha256": "76545f63190df28c4bb9ff6ab74e2cf019f2e20a0a6b2608c37c18037ab84f31",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 4.598294,
+      "total": 10,
+      "remaining": 5.401706,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 4.598293999999996,
+      "total": 100,
+      "remaining": 95.401706,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 10.190620628884062,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "**Sumber dan alasan:** Pose melepas atau memberi hormat dengan topi sebagai simbol perpisahan. Gambar menampilkan subjek utama (Budi Waseso) dalam seragam dinasnya dengan gestur literal yang melambangkan pamit atau perpisahan, sejalan dengan judul \"Wasalam\", tanpa menggunakan elemen kiasan dari domain eksternal seperti hewan, mesin, atau permainan.\n\nJawab satu kode A sampai G: **F**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "yvbKasqBFsjg_uMPp72C-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1804,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1712
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2033000,
+        "output_tokens_cost_nanodollars": 5412000
+      },
+      "prompt_tokens": 4066,
+      "total_backend_latency_ms": 9107,
+      "total_tokens": 5870
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 4.605739,
+      "total": 10,
+      "remaining": 5.394261,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 4.605739,
+      "total": 100,
+      "remaining": 95.394261,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.007445,
+  "code": "F",
+  "strict_code": "INVALID",
+  "parsing_rule": "explicit_prefix_code",
+  "finish_reason": "stop",
+  "prediction": "NON_METAFORA"
+}

@@ -1,0 +1,86 @@
+{
+  "status": "complete",
+  "smoke": false,
+  "fold": 3,
+  "schema": "revisi-ii-qwen-basic-paired-v1",
+  "protocol_sha256": "87ae4ea4ed38068df15a55d7d3c42c696bc0dec1acf5ec0212e9732f31066c66",
+  "source_sha256": "88a80feafa508a260c7f03c3c2660ee5e2a59acc77dc04fceb9d5ac000ee5e4a",
+  "split_sha256": "fa3bdf15f9b7ac8b2bc318ee109251965a6cee3dd632f6e3698574193a057638",
+  "initial_adapter_sha256": "cf90f9cc91563720f1be6f29f8a6d54c07334d7733b182f990935458705f66bb",
+  "adapter_sha256": "c4817d1f403ab31c29cd080c5a3c889653e16db88b1f13e3ab615eef120907ba",
+  "outer_train_samples": 592,
+  "reused_pilot_inner_history": false,
+  "seconds": 4577.037153297,
+  "model_contract": "one shared Qwen3-VL LoRA adapter with three prompted objectives",
+  "selected_epoch": 3,
+  "micro_f1": {
+    "task1_issue": 0.7364864864864865,
+    "task2_domain_sumber": 0.527027027027027,
+    "task3_primary_entity_type": 0.6418918918918919
+  },
+  "macro_f1": {
+    "task1_issue": 0.6936716551422435,
+    "task2_domain_sumber": 0.4328035361610082,
+    "task3_primary_entity_type": 0.599824670964276
+  },
+  "primary_metric": "macro_f1",
+  "input_scope": "image384+headline+supporting only; no E01 features",
+  "epoch_source": "fixed from corresponding rich E14 inner selection; no basic retuning",
+  "samples": 148,
+  "train_samples": 473,
+  "validation_samples": 119,
+  "history": [],
+  "refit_history": [
+    {
+      "epoch": 1,
+      "loss": 1.3545652636956933,
+      "seconds": 1356.9896095370004
+    },
+    {
+      "epoch": 2,
+      "loss": 0.9815311543273777,
+      "seconds": 1357.208232719
+    },
+    {
+      "epoch": 3,
+      "loss": 0.8823326294602609,
+      "seconds": 1358.1311003280007
+    }
+  ],
+  "classes": {
+    "task1_issue": [
+      "corruption_and_bribery",
+      "economy_business_and_state_enterprise",
+      "election_and_political_competition",
+      "environment_and_natural_resources",
+      "human_rights_and_social_conflict",
+      "law_and_justice",
+      "other_issue",
+      "power_and_governance",
+      "public_policy_health_and_disaster",
+      "security_defense_and_terrorism"
+    ],
+    "task2_domain_sumber": [
+      "BENCANA_JERAT",
+      "HEWAN_TUBUH",
+      "KONSUMSI_TRANSAKSI",
+      "LAINNYA",
+      "MESIN_INFRASTRUKTUR",
+      "NON_METAFORA",
+      "PERMAINAN_KONTES"
+    ],
+    "task3_primary_entity_type": [
+      "business",
+      "civil_society_or_media",
+      "government",
+      "individual",
+      "judiciary_or_law_enforcement",
+      "legislature",
+      "multiple_or_other",
+      "political_party"
+    ]
+  },
+  "data_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "input_audit_sha256": "145b2db29c97e247fc107b53a540bded04f1b4f92c6c94a2a009249cdbecd6ea",
+  "predictions_sha256": "e246a46c062f8beaea997f6125aa304dc523252748a9a1736c2d6b4fbad3b836"
+}

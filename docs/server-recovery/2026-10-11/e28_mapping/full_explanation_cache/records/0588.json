@@ -1,0 +1,87 @@
+{
+  "index": 588,
+  "sample_id": "TMP-4B95E7370FF2",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f3862c92627afd583d5c6d4def9b0b2fb60c117fefcf18b0babe31a8abf3d0db",
+  "image_sha256": "4b95e7370ff22dab5f99a6ba379dea58ba0c93aa1d35985660a65e4e366fc9af",
+  "transmitted_image_sha256": "6d438dcda66316a994a5cd9d3863f286061b4b1dbf69acc6e57f0d2248c357b3",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.839338,
+      "total": 10,
+      "remaining": 1.1606620000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.839337999999998,
+      "total": 100,
+      "remaining": 91.160662,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.5683769821189344,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Follow-me-to photography style\",\n  \"source_properties\": \"Point-of-view perspective, leading someone by the hand towards a distant horizon.\",\n  \"target_situation\": \"Prabowo Subianto's early preparations and search for a running mate for the 2024 election.\",\n  \"mapping\": \"Prabowo leads the viewer towards the future year 2024, symbolizing his presidential ambition and political direction.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "e5zLave_E_W6_uMPjdDjYA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 116,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680500,
+        "output_tokens_cost_nanodollars": 348000
+      },
+      "prompt_tokens": 1361,
+      "total_backend_latency_ms": 1704,
+      "total_tokens": 1477
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8403665,
+      "total": 10,
+      "remaining": 1.1596335,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.840366500000002,
+      "total": 100,
+      "remaining": 91.1596335,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010285,
+  "fields": {
+    "source_object": "Follow-me-to photography style",
+    "source_properties": "Point-of-view perspective, leading someone by the hand towards a distant horizon.",
+    "target_situation": "Prabowo Subianto's early preparations and search for a running mate for the 2024 election.",
+    "mapping": "Prabowo leads the viewer towards the future year 2024, symbolizing his presidential ambition and political direction.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Follow-me-to photography style\nsource_properties: Point-of-view perspective, leading someone by the hand towards a distant horizon.\ntarget_situation: Prabowo Subianto's early preparations and search for a running mate for the 2024 election.\nmapping: Prabowo leads the viewer towards the future year 2024, symbolizing his presidential ambition and political direction.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,105 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "macro_f1": 0.5617121910174215,
+  "folds": [
+    {
+      "fold": 1,
+      "inner_scores": [
+        0.5589111010088557,
+        0.5320232380548681,
+        0.5761540469043097
+      ],
+      "predictions_reproduced": 148,
+      "params": {
+        "clf__C": 1,
+        "clf__class_weight": "balanced",
+        "clf__gamma": 0.1,
+        "fusion__e5_weight": 0.5,
+        "fusion__vlm_weight": 0
+      }
+    },
+    {
+      "fold": 2,
+      "inner_scores": [
+        0.5120196349028177,
+        0.6024733396684615,
+        0.5239141810570381
+      ],
+      "predictions_reproduced": 148,
+      "params": {
+        "clf__C": 1,
+        "clf__class_weight": "balanced",
+        "clf__gamma": 0.1,
+        "fusion__e5_weight": 0.5,
+        "fusion__vlm_weight": 0
+      }
+    },
+    {
+      "fold": 3,
+      "inner_scores": [
+        0.5658138541783161,
+        0.5337022028375412,
+        0.5537300654448362
+      ],
+      "predictions_reproduced": 148,
+      "params": {
+        "clf__C": 1,
+        "clf__class_weight": "balanced",
+        "clf__gamma": 0.1,
+        "fusion__e5_weight": 2,
+        "fusion__vlm_weight": 0
+      }
+    },
+    {
+      "fold": 4,
+      "inner_scores": [
+        0.5465163390727782,
+        0.5799480523824424,
+        0.4875076395037952
+      ],
+      "predictions_reproduced": 148,
+      "params": {
+        "clf__C": 1,
+        "clf__class_weight": "balanced",
+        "clf__gamma": 0.1,
+        "fusion__e5_weight": 2,
+        "fusion__vlm_weight": 0
+      }
+    },
+    {
+      "fold": 5,
+      "inner_scores": [
+        0.5543420517104727,
+        0.5336021622487789,
+        0.5286890664732224
+      ],
+      "predictions_reproduced": 148,
+      "params": {
+        "clf__C": 10,
+        "clf__class_weight": null,
+        "clf__gamma": 0.1,
+        "fusion__e5_weight": 2,
+        "fusion__vlm_weight": 0.5
+      }
+    }
+  ],
+  "verifier_sha256": "3d2d904c03e5872e6c71d475cceb0cc16705deea761be855d270d50a87ed95b4",
+  "checks": [
+    "pinned frozen sources; zero-shot categories independently reconstructed from responses",
+    "original740IDs/labels/baseline outer folds",
+    "grid ordering/argmax and selected inner3 CV reproduced; entire grid not rerun",
+    "train-only scalers and refit5 reproduce all740 predictions",
+    "manual confusion/per-class/macroF1 match report/sklearn"
+  ],
+  "sha256": {
+    "fold_1.json": "c90fb7daeb8c35b0eeba3ebbc356d7649f5be6c744a776339fb882a862d3b469",
+    "fold_2.json": "ae23b2f283483b31ff354aa0521dcaa11421bcc98435e8a78058fcd114c16424",
+    "fold_3.json": "cbb8d5d49542eeb5f877030acab9e236926d9910930dea69f9a650aebfb8a478",
+    "fold_4.json": "94a322c1f8cc93913402f43fc78258cbee447c247e34bd8f3fd7f5cb59b074e3",
+    "fold_5.json": "ad3a9764d9784dc941e4391e921cc47daa672b54e5a4a7939958727cf4db28c5",
+    "protocol.json": "f5f479709677f38f711874b37c5e09e51e25ee6d59630175abc53eb5e5ce28f5",
+    "metrics.json": "df6989bb7b21245e95f39ecf8d157f2af26d2b6d3420305c914f606560e76006",
+    "oof.csv": "5952551b53e1a47a1e7e5a0446c3b3e90671a1022067f64d9211c80e171f0773"
+  }
+}

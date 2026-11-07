@@ -1,0 +1,83 @@
+{
+  "index": 235,
+  "sample_id": "TMP-05BFC110D962",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "ce22b8f59fcd05a4be5fa4611be58ad4b5ea7fd013342ad58bd461ac05d2debc",
+  "image_sha256": "05bfc110d962a516169ee41cf662ea220892cb0749ace3cea7bf86b2124d344b",
+  "transmitted_image_sha256": "0b2e3e0ae2d8e8d746305ac1c3414a4bb40f972256f87b7347000190528698ad",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.8717295000000007,
+      "total": 10,
+      "remaining": 9.1282705,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.8717295000000007,
+      "total": 100,
+      "remaining": 99.1282705,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 12.011256291996688,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "BENCANA_JERAT (A)** is the most appropriate classification for the source domain because the rifle, especially with the scratches representing victims, is used as a metaphor for a physical threat, danger, and a tragic event (ancaman/bencana). The description provided specifically mentions it is a symbol of \"bahaya\" (danger) and \"ancaman fisik\" (physical",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ttTKatSpNbua_uMPhJumwQI",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2044,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1967
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 753500,
+        "output_tokens_cost_nanodollars": 6132000
+      },
+      "prompt_tokens": 1507,
+      "total_backend_latency_ms": 10969,
+      "total_tokens": 3551
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.8786149999999999,
+      "total": 10,
+      "remaining": 9.121385,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.8786149999999964,
+      "total": 100,
+      "remaining": 99.121385,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "length",
+  "cost_usd": 0.0068855
+}

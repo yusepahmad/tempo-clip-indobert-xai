@@ -1,0 +1,91 @@
+{
+  "index": 15,
+  "sample_id": "TMP-AF13E8B5E98A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "dbe2199f6d0e09f88c877173ca11937145811c37fc2b371ba53dff9f62447c43",
+  "image_sha256": "af13e8b5e98a25c65814d93814346f6d191be4315646fda9b5b3d0153ce1b481",
+  "transmitted_image_sha256": "8745b5133e565f6235a3c3786956418c854e0dadb733530222ba180e447cd06d",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.032252,
+      "total": 10,
+      "remaining": 1.9677480000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.032252,
+      "total": 100,
+      "remaining": 91.967748,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.860121483914554,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"chiaroscuro lighting\", \"source_properties\": \"stark contrast between deep shadow and highlighted facial features\", \"target_situation\": \"Joko Widodo's internal conflict and political pressure after one year in office\", \"mapping\": \"The heavy shadows symbolize the 'dilemma' and hidden influences mentioned in the text, while the partial light reflects the gravity and complexity of his presidential decision-making.\", \"uncertainty\": \"none evident\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "morLaozfB-2M_PUPpv3KiQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 657000,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1314,
+      "total_backend_latency_ms": 1461,
+      "total_tokens": 1411
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0332,
+      "total": 10,
+      "remaining": 1.9667999999999992,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.033199999999994,
+      "total": 100,
+      "remaining": 91.9668,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000948,
+  "fields": {
+    "source_object": "chiaroscuro lighting",
+    "source_properties": "stark contrast between deep shadow and highlighted facial features",
+    "target_situation": "Joko Widodo's internal conflict and political pressure after one year in office",
+    "mapping": "The heavy shadows symbolize the 'dilemma' and hidden influences mentioned in the text, while the partial light reflects the gravity and complexity of his presidential decision-making.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: chiaroscuro lighting\nsource_properties: stark contrast between deep shadow and highlighted facial features\ntarget_situation: Joko Widodo's internal conflict and political pressure after one year in office\nmapping: The heavy shadows symbolize the 'dilemma' and hidden influences mentioned in the text, while the partial light reflects the gravity and complexity of his presidential decision-making.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true,
+  "migration_origin": {
+    "record_sha256": "271defa8862001b6aa73110dfdbacf3815716f9d6eb83fcdcc8a94206c1849c2",
+    "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383"
+  }
+}

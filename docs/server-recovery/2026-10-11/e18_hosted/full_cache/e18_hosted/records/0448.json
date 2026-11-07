@@ -1,0 +1,83 @@
+{
+  "index": 448,
+  "sample_id": "TMP-46D6973A79D4",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "806aa53f4451a8e793cd00da0cc98b329e01c614896056e0555d06189572a1d6",
+  "image_sha256": "46d6973a79d4327bb202fb84fc28c96cf025bb012da7b1e8d74e143102a822c9",
+  "transmitted_image_sha256": "4084209e6314578b4c9ab7b3d5c6d632b16e104a48c28494b123b368b8003fa3",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.6918559999999996,
+      "total": 10,
+      "remaining": 8.308144,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.6918560000000014,
+      "total": 100,
+      "remaining": 98.308144,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 10.341110560810193,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan judul dan teks pada sampul Tempo tersebut, terdapat penggunaan kata **\"Sungsang\"** (posisi bayi yang tidak normal saat lahir/anatomi) dan **\"Dibedaki\"** (berkaitan dengan riasan wajah/tubuh manusia). Keduanya merujuk pada domain sumber yang berkaitan dengan anatomi atau kondisi biologis manusia untuk menggambarkan ketidakberesan",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "B97KavaLEc7E_PUPtKy7yQo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2044,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1964
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 777000,
+        "output_tokens_cost_nanodollars": 6132000
+      },
+      "prompt_tokens": 1554,
+      "total_backend_latency_ms": 9365,
+      "total_tokens": 3598
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.6987649999999999,
+      "total": 10,
+      "remaining": 8.301235,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.6987649999999945,
+      "total": 100,
+      "remaining": 98.301235,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "length",
+  "cost_usd": 0.006909
+}

@@ -1,0 +1,87 @@
+{
+  "index": 659,
+  "sample_id": "TMP-05201690A1B6",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a48a4b39c32d13b0804d29242c8f712dbb494c2bcace86a6f362188cb747aa0a",
+  "image_sha256": "05201690a1b6f4ffd9df46484bc26a2978390682629f639a13f7d10f081da25d",
+  "transmitted_image_sha256": "9253f858dd5049230ba347aa2e6ac6a5616cdc7a73d4fe0eeb59e743d07f5dab",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9411715,
+      "total": 10,
+      "remaining": 1.0588285000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.941171499999996,
+      "total": 100,
+      "remaining": 91.0588285,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1529207611456513,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Wind-up toy\",\n  \"source_properties\": \"A mechanical key inserted into a figure's back to control its movements.\",\n  \"target_situation\": \"The Indonesian Constitutional Court's loss of independence due to executive and legislative interference.\",\n  \"mapping\": \"The oversized hand turning the key represents external political forces dictating the court's actions.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "UZ7LatfZJ9Pj_uMPg-OC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 96,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671000,
+        "output_tokens_cost_nanodollars": 288000
+      },
+      "prompt_tokens": 1342,
+      "total_backend_latency_ms": 1768,
+      "total_tokens": 1438
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9421305,
+      "total": 10,
+      "remaining": 1.0578695000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.942130500000005,
+      "total": 100,
+      "remaining": 91.0578695,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000959,
+  "fields": {
+    "source_object": "Wind-up toy",
+    "source_properties": "A mechanical key inserted into a figure's back to control its movements.",
+    "target_situation": "The Indonesian Constitutional Court's loss of independence due to executive and legislative interference.",
+    "mapping": "The oversized hand turning the key represents external political forces dictating the court's actions.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Wind-up toy\nsource_properties: A mechanical key inserted into a figure's back to control its movements.\ntarget_situation: The Indonesian Constitutional Court's loss of independence due to executive and legislative interference.\nmapping: The oversized hand turning the key represents external political forces dictating the court's actions.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

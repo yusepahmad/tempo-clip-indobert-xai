@@ -1,0 +1,69 @@
+{
+  "config": {
+    "hidden": 256,
+    "dropout": 0.3,
+    "visual_weight": 2.0,
+    "loss_weights": [
+      1.0,
+      2.0,
+      2.0
+    ],
+    "encoder_lr": 2e-05,
+    "head_lr": 0.0003,
+    "weight_decay": 0.01,
+    "batch": 32,
+    "epoch_candidates": [
+      0,
+      2,
+      4,
+      8,
+      12
+    ],
+    "seed": 42
+  },
+  "classes": {
+    "task1_issue": [
+      "corruption_and_bribery",
+      "economy_business_and_state_enterprise",
+      "election_and_political_competition",
+      "environment_and_natural_resources",
+      "human_rights_and_social_conflict",
+      "law_and_justice",
+      "other_issue",
+      "power_and_governance",
+      "public_policy_health_and_disaster",
+      "security_defense_and_terrorism"
+    ],
+    "task2_domain_sumber": [
+      "BENCANA_JERAT",
+      "HEWAN_TUBUH",
+      "KONSUMSI_TRANSAKSI",
+      "LAINNYA",
+      "MESIN_INFRASTRUKTUR",
+      "NON_METAFORA",
+      "PERMAINAN_KONTES"
+    ],
+    "task3_primary_entity_type": [
+      "business",
+      "civil_society_or_media",
+      "government",
+      "individual",
+      "judiciary_or_law_enforcement",
+      "legislature",
+      "multiple_or_other",
+      "political_party"
+    ]
+  },
+  "cache_manifest_sha256": "9773684278f995f2d2da4f4c12158568077372270157ca85a0a99a2427829040",
+  "worker_sha256": "80c9be6deff2682b424501b8b9a60ceceb907e678a1880c53c76dbee983dbfe3",
+  "model_sha256": "c687a9613362712f3c6f586ab151b6647f4249918ef4116899ce6e3c19b59022",
+  "smoke": false,
+  "allocated_gpu_count": 2,
+  "gpu": "Tesla T4",
+  "gpu_seconds_limit": 1200,
+  "outer": "baselineTask1 rare<5 pooled5foldseed42",
+  "inner": "Task2 stratified2foldseed123; max minimum across-task meaninnerF1; ties earliestepoch",
+  "canonical_evaluation": "serverCPUFP32 all740checkpointOOF; GPUAMP scores provisional",
+  "torch": "2.11.0+cu128",
+  "python": "3.13.15"
+}

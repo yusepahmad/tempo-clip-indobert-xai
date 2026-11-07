@@ -1,0 +1,90 @@
+{
+  "index": 17,
+  "sample_id": "TMP-EF2F7C938395",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383",
+  "prompt_sha256": "162f15bb5ca01b2567bbdf98057eafbdb0234d0a8ccdad88eaa01f2d2118ba74",
+  "image_sha256": "ef2f7c938395b2bde88d91a5934b147d8145c281670dd1709b213a8af9bb8d9f",
+  "transmitted_image_sha256": "54a6240bde448828d8cc6f4e69afea1bca92a16146ca4b23f6691ea61a324227",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0341825,
+      "total": 10,
+      "remaining": 1.9658175,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.0341825,
+      "total": 100,
+      "remaining": 91.9658175,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.626227005850524,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A giant red hand emerging from a suit sleeve.\",\n  \"source_properties\": \"Its massive scale exerts downward pressure and directs two small, struggling figures.\",\n  \"target_situation\": \"The government's selection of a Russian firm for the Tuban refinery involving influential intermediaries.\",\n  \"mapping\": \"The hand represents the dominant power of the state or Pertamina dictating terms to project individuals.\",\n  \"uncertainty\": \"The specific identity of the individuals being pressured is not visually confirmed beyond the text.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "o4rLaregHIKn_uMP9_y56As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1229,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1112
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 669000,
+        "output_tokens_cost_nanodollars": 3687000
+      },
+      "prompt_tokens": 1338,
+      "total_backend_latency_ms": 6154,
+      "total_tokens": 2567
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0385385,
+      "total": 10,
+      "remaining": 1.9614615000000004,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.038538500000001,
+      "total": 100,
+      "remaining": 91.9614615,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.004356,
+  "fields": {
+    "source_object": "A giant red hand emerging from a suit sleeve.",
+    "source_properties": "Its massive scale exerts downward pressure and directs two small, struggling figures.",
+    "target_situation": "The government's selection of a Russian firm for the Tuban refinery involving influential intermediaries.",
+    "mapping": "The hand represents the dominant power of the state or Pertamina dictating terms to project individuals.",
+    "uncertainty": "The specific identity of the individuals being pressured is not visually confirmed beyond the text."
+  },
+  "explanation": "source_object: A giant red hand emerging from a suit sleeve.\nsource_properties: Its massive scale exerts downward pressure and directs two small, struggling figures.\ntarget_situation: The government's selection of a Russian firm for the Tuban refinery involving influential intermediaries.\nmapping: The hand represents the dominant power of the state or Pertamina dictating terms to project individuals.\nuncertainty: The specific identity of the individuals being pressured is not visually confirmed beyond the text.",
+  "finish_reason": "stop",
+  "usable": true
+}

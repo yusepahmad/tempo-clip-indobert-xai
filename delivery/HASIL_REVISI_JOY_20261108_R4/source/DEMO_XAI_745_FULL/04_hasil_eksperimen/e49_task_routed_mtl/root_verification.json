@@ -1,0 +1,502 @@
+{
+  "cache_sha256": "312a130025a20c18f38668293534528fb82072a139c0c1ca41ad8abd23559cd4",
+  "comparison_vs_e42": {
+    "delta_mean": -0.020813514119430443,
+    "delta_min": -0.02608220885572282,
+    "delta_task1": -0.030616283721198845,
+    "delta_task2": 0.0020959272186303335,
+    "delta_task3": -0.03392018585572282
+  },
+  "dataset_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "metrics_stdlib": {
+    "task1_issue": {
+      "baseline": 0.5254826236,
+      "candidate": 0.49486633987880113
+    },
+    "task2_domain_sumber": {
+      "baseline": 0.3955604326,
+      "candidate": 0.39765635981863034
+    },
+    "task3_primary_entity_type": {
+      "baseline": 0.4033984096,
+      "candidate": 0.3694782237442772
+    }
+  },
+  "oof_sha256": "3a92d9f2302cc846d47029c6683e9c53820190fa858b56c4afc4b47f77839ec3",
+  "schema": "tempo-e49-verification-v1",
+  "scores": {
+    "mean_macro_f1": 0.42066697448056956,
+    "minimum_task_macro_f1": 0.3694782237442772,
+    "task1_issue": 0.49486633987880113,
+    "task2_domain_sumber": 0.39765635981863034,
+    "task3_primary_entity_type": 0.3694782237442772
+  },
+  "status": "passed",
+  "task_details": {
+    "task1_issue": {
+      "confusion_matrix": [
+        [
+          106,
+          10,
+          5,
+          4,
+          5,
+          7,
+          2,
+          12,
+          9,
+          0
+        ],
+        [
+          14,
+          44,
+          4,
+          3,
+          0,
+          0,
+          0,
+          10,
+          6,
+          0
+        ],
+        [
+          9,
+          1,
+          73,
+          0,
+          1,
+          1,
+          0,
+          24,
+          0,
+          3
+        ],
+        [
+          5,
+          5,
+          1,
+          22,
+          2,
+          0,
+          1,
+          1,
+          2,
+          0
+        ],
+        [
+          4,
+          3,
+          1,
+          1,
+          25,
+          4,
+          0,
+          4,
+          0,
+          10
+        ],
+        [
+          17,
+          1,
+          5,
+          0,
+          7,
+          15,
+          2,
+          4,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          2,
+          0,
+          5,
+          4,
+          0,
+          0
+        ],
+        [
+          15,
+          6,
+          28,
+          0,
+          6,
+          7,
+          1,
+          60,
+          1,
+          0
+        ],
+        [
+          5,
+          7,
+          3,
+          6,
+          2,
+          2,
+          2,
+          3,
+          37,
+          2
+        ],
+        [
+          3,
+          1,
+          2,
+          2,
+          7,
+          1,
+          1,
+          3,
+          4,
+          12
+        ]
+      ],
+      "labels": [
+        "corruption_and_bribery",
+        "economy_business_and_state_enterprise",
+        "election_and_political_competition",
+        "environment_and_natural_resources",
+        "human_rights_and_social_conflict",
+        "law_and_justice",
+        "other_issue",
+        "power_and_governance",
+        "public_policy_health_and_disaster",
+        "security_defense_and_terrorism"
+      ],
+      "macro_f1": 0.49486633987880113,
+      "per_class": {
+        "corruption_and_bribery": {
+          "f1-score": 0.6253687315634219,
+          "precision": 0.5921787709497207,
+          "recall": 0.6625,
+          "support": 160.0
+        },
+        "economy_business_and_state_enterprise": {
+          "f1-score": 0.5534591194968553,
+          "precision": 0.5641025641025641,
+          "recall": 0.5432098765432098,
+          "support": 81.0
+        },
+        "election_and_political_competition": {
+          "f1-score": 0.6186440677966102,
+          "precision": 0.5887096774193549,
+          "recall": 0.6517857142857143,
+          "support": 112.0
+        },
+        "environment_and_natural_resources": {
+          "f1-score": 0.5714285714285714,
+          "precision": 0.5789473684210527,
+          "recall": 0.5641025641025641,
+          "support": 39.0
+        },
+        "human_rights_and_social_conflict": {
+          "f1-score": 0.45871559633027525,
+          "precision": 0.43859649122807015,
+          "recall": 0.4807692307692308,
+          "support": 52.0
+        },
+        "law_and_justice": {
+          "f1-score": 0.3333333333333333,
+          "precision": 0.40540540540540543,
+          "recall": 0.2830188679245283,
+          "support": 53.0
+        },
+        "other_issue": {
+          "f1-score": 0.35714285714285715,
+          "precision": 0.35714285714285715,
+          "recall": 0.35714285714285715,
+          "support": 14.0
+        },
+        "power_and_governance": {
+          "f1-score": 0.4819277108433735,
+          "precision": 0.48,
+          "recall": 0.4838709677419355,
+          "support": 124.0
+        },
+        "public_policy_health_and_disaster": {
+          "f1-score": 0.5736434108527132,
+          "precision": 0.6166666666666667,
+          "recall": 0.5362318840579711,
+          "support": 69.0
+        },
+        "security_defense_and_terrorism": {
+          "f1-score": 0.375,
+          "precision": 0.42857142857142855,
+          "recall": 0.3333333333333333,
+          "support": 36.0
+        }
+      }
+    },
+    "task2_domain_sumber": {
+      "confusion_matrix": [
+        [
+          39,
+          11,
+          7,
+          5,
+          20,
+          5,
+          13
+        ],
+        [
+          12,
+          28,
+          16,
+          9,
+          13,
+          8,
+          4
+        ],
+        [
+          8,
+          13,
+          19,
+          6,
+          26,
+          4,
+          8
+        ],
+        [
+          11,
+          8,
+          4,
+          9,
+          16,
+          2,
+          13
+        ],
+        [
+          19,
+          14,
+          14,
+          12,
+          126,
+          11,
+          18
+        ],
+        [
+          8,
+          6,
+          5,
+          3,
+          5,
+          53,
+          3
+        ],
+        [
+          7,
+          6,
+          7,
+          7,
+          27,
+          0,
+          52
+        ]
+      ],
+      "labels": [
+        "BENCANA_JERAT",
+        "HEWAN_TUBUH",
+        "KONSUMSI_TRANSAKSI",
+        "LAINNYA",
+        "MESIN_INFRASTRUKTUR",
+        "NON_METAFORA",
+        "PERMAINAN_KONTES"
+      ],
+      "macro_f1": 0.39765635981863034,
+      "per_class": {
+        "BENCANA_JERAT": {
+          "f1-score": 0.38235294117647056,
+          "precision": 0.375,
+          "recall": 0.39,
+          "support": 100.0
+        },
+        "HEWAN_TUBUH": {
+          "f1-score": 0.3181818181818182,
+          "precision": 0.32558139534883723,
+          "recall": 0.3111111111111111,
+          "support": 90.0
+        },
+        "KONSUMSI_TRANSAKSI": {
+          "f1-score": 0.24358974358974358,
+          "precision": 0.2638888888888889,
+          "recall": 0.2261904761904762,
+          "support": 84.0
+        },
+        "LAINNYA": {
+          "f1-score": 0.15789473684210525,
+          "precision": 0.17647058823529413,
+          "recall": 0.14285714285714285,
+          "support": 63.0
+        },
+        "MESIN_INFRASTRUKTUR": {
+          "f1-score": 0.5637583892617449,
+          "precision": 0.5407725321888412,
+          "recall": 0.5887850467289719,
+          "support": 214.0
+        },
+        "NON_METAFORA": {
+          "f1-score": 0.6385542168674698,
+          "precision": 0.6385542168674698,
+          "recall": 0.6385542168674698,
+          "support": 83.0
+        },
+        "PERMAINAN_KONTES": {
+          "f1-score": 0.4792626728110599,
+          "precision": 0.46846846846846846,
+          "recall": 0.49056603773584906,
+          "support": 106.0
+        }
+      }
+    },
+    "task3_primary_entity_type": {
+      "confusion_matrix": [
+        [
+          15,
+          2,
+          14,
+          9,
+          2,
+          0,
+          4,
+          0
+        ],
+        [
+          3,
+          26,
+          7,
+          13,
+          1,
+          2,
+          4,
+          0
+        ],
+        [
+          10,
+          5,
+          36,
+          21,
+          7,
+          0,
+          28,
+          1
+        ],
+        [
+          10,
+          9,
+          19,
+          234,
+          8,
+          2,
+          29,
+          4
+        ],
+        [
+          1,
+          3,
+          6,
+          13,
+          15,
+          0,
+          5,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          7,
+          1,
+          3,
+          4,
+          1
+        ],
+        [
+          5,
+          8,
+          22,
+          34,
+          8,
+          0,
+          40,
+          5
+        ],
+        [
+          2,
+          2,
+          3,
+          10,
+          0,
+          0,
+          8,
+          5
+        ]
+      ],
+      "labels": [
+        "business",
+        "civil_society_or_media",
+        "government",
+        "individual",
+        "judiciary_or_law_enforcement",
+        "legislature",
+        "multiple_or_other",
+        "political_party"
+      ],
+      "macro_f1": 0.3694782237442772,
+      "per_class": {
+        "business": {
+          "f1-score": 0.32608695652173914,
+          "precision": 0.32608695652173914,
+          "recall": 0.32608695652173914,
+          "support": 46.0
+        },
+        "civil_society_or_media": {
+          "f1-score": 0.4642857142857143,
+          "precision": 0.4642857142857143,
+          "recall": 0.4642857142857143,
+          "support": 56.0
+        },
+        "government": {
+          "f1-score": 0.3317972350230415,
+          "precision": 0.3302752293577982,
+          "recall": 0.3333333333333333,
+          "support": 108.0
+        },
+        "individual": {
+          "f1-score": 0.7134146341463414,
+          "precision": 0.6862170087976539,
+          "recall": 0.7428571428571429,
+          "support": 315.0
+        },
+        "judiciary_or_law_enforcement": {
+          "f1-score": 0.3488372093023256,
+          "precision": 0.35714285714285715,
+          "recall": 0.3409090909090909,
+          "support": 44.0
+        },
+        "legislature": {
+          "f1-score": 0.23076923076923078,
+          "precision": 0.42857142857142855,
+          "recall": 0.15789473684210525,
+          "support": 19.0
+        },
+        "multiple_or_other": {
+          "f1-score": 0.32786885245901637,
+          "precision": 0.32786885245901637,
+          "recall": 0.32786885245901637,
+          "support": 122.0
+        },
+        "political_party": {
+          "f1-score": 0.2127659574468085,
+          "precision": 0.29411764705882354,
+          "recall": 0.16666666666666666,
+          "support": 30.0
+        }
+      }
+    }
+  }
+}

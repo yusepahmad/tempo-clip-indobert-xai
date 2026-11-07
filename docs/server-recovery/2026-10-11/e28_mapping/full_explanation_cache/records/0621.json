@@ -1,0 +1,87 @@
+{
+  "index": 621,
+  "sample_id": "TMP-CEEA75E913B4",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "17fdeea6f4d5d835457acbd6520f904fdaccc37831efa4f93d911e8f62ec7fd0",
+  "image_sha256": "ceea75e913b4fa5758c3b4dd455ac646890cee247c8b83993e6c9631c6dfd156",
+  "transmitted_image_sha256": "6d09308a27f00c41d1450d1e557281dba92397bf0a2c762f060bd94c9bdd0ca2",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8843835,
+      "total": 10,
+      "remaining": 1.1156164999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.884383499999998,
+      "total": 100,
+      "remaining": 91.1156165,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.6247607599943876,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"camouflage face paint\",\n  \"source_properties\": \"Green stripes applied to skin, associated with active-duty military service and tactical readiness.\",\n  \"target_situation\": \"Indonesian presidential candidates competing for support from retired military and police generals.\",\n  \"mapping\": \"Applying the paint symbolizes candidates 'wearing' military identity to project strength and gain electoral credibility from retired officers.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "VZ3LasfzB7fc_uMPiPP3wAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 98,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 294000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 2034,
+      "total_tokens": 1450
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8853535,
+      "total": 10,
+      "remaining": 1.1146464999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.885353499999994,
+      "total": 100,
+      "remaining": 91.1146465,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00097,
+  "fields": {
+    "source_object": "camouflage face paint",
+    "source_properties": "Green stripes applied to skin, associated with active-duty military service and tactical readiness.",
+    "target_situation": "Indonesian presidential candidates competing for support from retired military and police generals.",
+    "mapping": "Applying the paint symbolizes candidates 'wearing' military identity to project strength and gain electoral credibility from retired officers.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: camouflage face paint\nsource_properties: Green stripes applied to skin, associated with active-duty military service and tactical readiness.\ntarget_situation: Indonesian presidential candidates competing for support from retired military and police generals.\nmapping: Applying the paint symbolizes candidates 'wearing' military identity to project strength and gain electoral credibility from retired officers.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

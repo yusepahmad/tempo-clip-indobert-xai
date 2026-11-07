@@ -1,0 +1,83 @@
+{
+  "index": 184,
+  "sample_id": "TMP-9A31741D6A32",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "456869b7df9ec745d46f26f2f90af5eab13f172f280be125a70fef492c4af006",
+  "image_sha256": "9a31741d6a32e44ac78d6b10b075291924cdd2779c9c0723a6477eb2a15aeb0c",
+  "transmitted_image_sha256": "f9fb2740dd2821a2bd7fd779cbd812b4e2f5ffcbb928dfcf76587d964f18ae30",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.6644690000000004,
+      "total": 10,
+      "remaining": 9.335531,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.6644689999999969,
+      "total": 100,
+      "remaining": 99.335531,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 13.044446452986449,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan ilustrasi dan konteks yang diberikan, terutama pada bagian deskripsi sumber dan alasan yang menyebutkan pemetaan sifat anonimitas dan peran tersembunyi **\"seperti hewan yang tersembunyi atau bersembunyi dalam kelompok\"** sebagai mekanisme metaforisnya, maka domain sumber yang paling tepat adalah:\n\n**B: HEWAN_TUBUH**\n\nAlasan",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ttLKatiYD8yY_uMP2cziyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2044,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1962
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 783000,
+        "output_tokens_cost_nanodollars": 6132000
+      },
+      "prompt_tokens": 1566,
+      "total_backend_latency_ms": 11865,
+      "total_tokens": 3610
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.6713839999999998,
+      "total": 10,
+      "remaining": 9.328616,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.6713840000000033,
+      "total": 100,
+      "remaining": 99.328616,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "length",
+  "cost_usd": 0.006915
+}

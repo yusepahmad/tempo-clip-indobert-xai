@@ -1,0 +1,94 @@
+{
+  "index": 2,
+  "sample_id": "TMP-FD83C3FCCF0D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "278e320937cd08331436a4253c6fdd182c47eb7198aa757da9d39e522410b9b3",
+  "image_sha256": "fd83c3fccf0d09300dced95f4ba8e89a65aa8be5e1b74cca0b4c249abd1d278a",
+  "transmitted_image_sha256": "2f3df62b0c3776d37676ecbef73acc68ca2187fa187a26763c9489314635fd2e",
+  "image_size": [
+    531,
+    682
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.014979499999999,
+      "total": 10,
+      "remaining": 1.985020500000001,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.014979499999995,
+      "total": 100,
+      "remaining": 91.9850205,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.89532696409151,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Ancient Roman senate and attire\",\n  \"source_properties\": \"Roman togas, stone balconies, and gestures of conspiracy or betrayal among political elites.\",\n  \"target_situation\": \"The Indonesian parliamentary inquiry into the Bank Century scandal.\",\n  \"mapping\": \"Politicians are depicted as Roman conspirators, framing the inquiry as a ruthless power struggle where a sacrificial victim will be chosen from among the elites.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "QYrLaqfCM9Pj_uMPg-OC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 907,
+      "completion_tokens_details": {
+        "reasoning_tokens": 803
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 638500,
+        "output_tokens_cost_nanodollars": 2721000
+      },
+      "prompt_tokens": 1277,
+      "total_backend_latency_ms": 5221,
+      "total_tokens": 2184
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.018339000000001,
+      "total": 10,
+      "remaining": 1.981660999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.018338999999997,
+      "total": 100,
+      "remaining": 91.981661,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0033595,
+  "fields": {
+    "source_object": "Ancient Roman senate and attire",
+    "source_properties": "Roman togas, stone balconies, and gestures of conspiracy or betrayal among political elites.",
+    "target_situation": "The Indonesian parliamentary inquiry into the Bank Century scandal.",
+    "mapping": "Politicians are depicted as Roman conspirators, framing the inquiry as a ruthless power struggle where a sacrificial victim will be chosen from among the elites.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Ancient Roman senate and attire\nsource_properties: Roman togas, stone balconies, and gestures of conspiracy or betrayal among political elites.\ntarget_situation: The Indonesian parliamentary inquiry into the Bank Century scandal.\nmapping: Politicians are depicted as Roman conspirators, framing the inquiry as a ruthless power struggle where a sacrificial victim will be chosen from among the elites.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true,
+  "migration_origin": {
+    "record_sha256": "2b93a2a7ba46560d570388e09f330c47d76800133dd59e7a09148453376a0f31",
+    "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383"
+  }
+}

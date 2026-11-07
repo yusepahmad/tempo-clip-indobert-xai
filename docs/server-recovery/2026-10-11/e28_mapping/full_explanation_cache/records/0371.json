@@ -1,0 +1,87 @@
+{
+  "index": 371,
+  "sample_id": "TMP-F77EA28EE254",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "291dc013fe37369253670eaa6f7b960681abbe30f7f5a317272502c7dea0d5b6",
+  "image_sha256": "f77ea28ee254f1f58013f57fc3b90692c86842db13189bb1819eea50c801cb87",
+  "transmitted_image_sha256": "7456816388c166041ccd35d5c79b84198da4b051991dd6650900cdde8c9a12e4",
+  "image_size": [
+    407,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5417285,
+      "total": 10,
+      "remaining": 1.4582715000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.541728500000005,
+      "total": 100,
+      "remaining": 91.4582715,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.801161837298423,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"porthole with rusted grate\", \"source_properties\": \"Circular metal window, heavy rust, wire mesh obstruction, confined dark space.\", \"target_situation\": \"Indonesian migrant workers trapped and abused as modern slaves on Taiwanese fishing vessels.\", \"mapping\": \"The rusted porthole and mesh symbolize a prison-like confinement at sea, where workers are trapped and isolated.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "yJbLat2yFIK5_PUPwPPqwQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 87,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680000,
+        "output_tokens_cost_nanodollars": 261000
+      },
+      "prompt_tokens": 1360,
+      "total_backend_latency_ms": 1682,
+      "total_tokens": 1447
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5426695,
+      "total": 10,
+      "remaining": 1.4573304999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.542669500000002,
+      "total": 100,
+      "remaining": 91.4573305,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000941,
+  "fields": {
+    "source_object": "porthole with rusted grate",
+    "source_properties": "Circular metal window, heavy rust, wire mesh obstruction, confined dark space.",
+    "target_situation": "Indonesian migrant workers trapped and abused as modern slaves on Taiwanese fishing vessels.",
+    "mapping": "The rusted porthole and mesh symbolize a prison-like confinement at sea, where workers are trapped and isolated.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: porthole with rusted grate\nsource_properties: Circular metal window, heavy rust, wire mesh obstruction, confined dark space.\ntarget_situation: Indonesian migrant workers trapped and abused as modern slaves on Taiwanese fishing vessels.\nmapping: The rusted porthole and mesh symbolize a prison-like confinement at sea, where workers are trapped and isolated.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

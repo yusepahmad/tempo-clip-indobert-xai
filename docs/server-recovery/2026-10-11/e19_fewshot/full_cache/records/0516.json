@@ -1,0 +1,86 @@
+{
+  "index": 516,
+  "sample_id": "TMP-03083B8A31BF",
+  "fold": 3,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "543b4acfd30d466af4fdcacdcd320dd514bbd04da0a8c89632b1cff22127791c",
+  "image_sha256": "03083b8a31bf598d32004c51757634477d0e0e823b6f856d6659de9feda5314c",
+  "transmitted_image_sha256": "8a59fabe357ba9993adfd82e6a7d29cfe844e8a409df13670ded7dfc035bd2e4",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.642865,
+      "total": 10,
+      "remaining": 4.357135,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.6428650000000005,
+      "total": 100,
+      "remaining": 94.357135,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.423361812019721,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "B berdasarkan deskripsi dan alasan yang diberikan dalam teks, karena pemetaan perilaku dan peran sosial perempuan (sebagai \"penjaga\") ke fungsi biologis atau ekologis dalam konteks ini dikategorikan ke dalam domain metafora tersebut.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "tP3KauTBOZLN_uMPhvbuyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1262,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1214
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2032000,
+        "output_tokens_cost_nanodollars": 3786000
+      },
+      "prompt_tokens": 4064,
+      "total_backend_latency_ms": 6144,
+      "total_tokens": 5326
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.648683,
+      "total": 10,
+      "remaining": 4.351317,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.6486830000000054,
+      "total": 100,
+      "remaining": 94.351317,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.005818,
+  "code": "INVALID",
+  "strict_code": "INVALID",
+  "parsing_rule": "unrecognized_no_explicit_answer",
+  "finish_reason": "stop",
+  "prediction": "INVALID"
+}

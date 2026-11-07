@@ -1,0 +1,90 @@
+{
+  "index": 97,
+  "sample_id": "TMP-35D3D723FD99",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0654071a25d862673d91fa935861c17c181b200db5c7982e51deaeb5c477cba8",
+  "image_sha256": "35d3d723fd9978e850f0ffc7eb287e93b039294adca04ed2d29fa48bff5f4b91",
+  "transmitted_image_sha256": "b588acce3a0ac269aac9f96cd3a49b00df9763233bf2542bfb82512573b88021",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1412715,
+      "total": 10,
+      "remaining": 1.8587284999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.141271500000002,
+      "total": 100,
+      "remaining": 91.8587285,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.628836975898594,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Tightrope walker\",\n  \"source_properties\": \"Balancing on a thin, precarious wire using a pole to maintain equilibrium and avoid falling.\",\n  \"target_situation\": \"Political figures competing for influence over stock market authorities and financial regulators.\",\n  \"mapping\": \"Walking the stock chart line like a tightrope symbolizes the risky maneuvering required to control volatile financial markets without losing political footing.\",\n  \"uncertainty\": \"None evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "pY_LaqmUKrfc_uMPiPP3wAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 819,
+      "completion_tokens_details": {
+        "reasoning_tokens": 717
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 683500,
+        "output_tokens_cost_nanodollars": 2457000
+      },
+      "prompt_tokens": 1367,
+      "total_backend_latency_ms": 5071,
+      "total_tokens": 2186
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.144411999999999,
+      "total": 10,
+      "remaining": 1.855588000000001,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.144412000000003,
+      "total": 100,
+      "remaining": 91.855588,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0031405,
+  "fields": {
+    "source_object": "Tightrope walker",
+    "source_properties": "Balancing on a thin, precarious wire using a pole to maintain equilibrium and avoid falling.",
+    "target_situation": "Political figures competing for influence over stock market authorities and financial regulators.",
+    "mapping": "Walking the stock chart line like a tightrope symbolizes the risky maneuvering required to control volatile financial markets without losing political footing.",
+    "uncertainty": "None evident"
+  },
+  "explanation": "source_object: Tightrope walker\nsource_properties: Balancing on a thin, precarious wire using a pole to maintain equilibrium and avoid falling.\ntarget_situation: Political figures competing for influence over stock market authorities and financial regulators.\nmapping: Walking the stock chart line like a tightrope symbolizes the risky maneuvering required to control volatile financial markets without losing political footing.\nuncertainty: None evident",
+  "finish_reason": "stop",
+  "usable": true
+}

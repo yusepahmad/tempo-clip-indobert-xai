@@ -1,0 +1,87 @@
+{
+  "index": 476,
+  "sample_id": "TMP-760382DCCA30",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "db307af51800e81783faabe1cfcb42290b63d57c586fbe5b76b323643f59b46c",
+  "image_sha256": "760382dcca3024b8f6ba98a723a711f2da62957905c6650835a942a62435efac",
+  "transmitted_image_sha256": "9f93801e88acaf3f35454d428315f07a5d4830e68dbaea7ed10746be80bd07f9",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6841525,
+      "total": 10,
+      "remaining": 1.3158475000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.684152499999996,
+      "total": 100,
+      "remaining": 91.3158475,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0584424599073827,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"orange vest\", \"source_properties\": \"clothing item held above a person's head, associated with criminal detention\", \"target_situation\": \"The KPK naming the CEO of the state electricity company (PLN) as a bribery suspect.\", \"mapping\": \"Suspending the vest over the figure represents the imminent legal consequences and official status as a suspect.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "gJnLasCkCuu1_PUPl9nYyQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 85,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682500,
+        "output_tokens_cost_nanodollars": 255000
+      },
+      "prompt_tokens": 1365,
+      "total_backend_latency_ms": 1590,
+      "total_tokens": 1450
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.68509,
+      "total": 10,
+      "remaining": 1.3149099999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.685090000000002,
+      "total": 100,
+      "remaining": 91.31491,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009375,
+  "fields": {
+    "source_object": "orange vest",
+    "source_properties": "clothing item held above a person's head, associated with criminal detention",
+    "target_situation": "The KPK naming the CEO of the state electricity company (PLN) as a bribery suspect.",
+    "mapping": "Suspending the vest over the figure represents the imminent legal consequences and official status as a suspect.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: orange vest\nsource_properties: clothing item held above a person's head, associated with criminal detention\ntarget_situation: The KPK naming the CEO of the state electricity company (PLN) as a bribery suspect.\nmapping: Suspending the vest over the figure represents the imminent legal consequences and official status as a suspect.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

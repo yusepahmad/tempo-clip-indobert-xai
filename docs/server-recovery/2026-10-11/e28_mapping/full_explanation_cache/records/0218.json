@@ -1,0 +1,87 @@
+{
+  "index": 218,
+  "sample_id": "TMP-FBDE3909A54B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "fec27a7ae023d6fadd7a98849962f845490fb98b970eeefc1756a0c47bb1ed44",
+  "image_sha256": "fbde3909a54b6dd98984d698393a61b7efb132fe54dccec9d7efafe785c78309",
+  "transmitted_image_sha256": "3fcceb980978ae2570d6104643d334a899046373276375cd22cf3e62d54a6f25",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.328663,
+      "total": 10,
+      "remaining": 1.6713369999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.328663000000006,
+      "total": 100,
+      "remaining": 91.671337,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.66272786911577,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"none evident\", \"source_properties\": \"N/A\", \"target_situation\": \"Joko Widodo's victory in the 2012 Jakarta gubernatorial election.\", \"mapping\": \"The image is a literal, close-up portrait of Joko Widodo. There is no visual analogy present; the photograph serves as a direct representation of the political figure mentioned in the headline and caption.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "05LLauCuKPKU_uMPp6OP6Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 654500,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1309,
+      "total_backend_latency_ms": 1556,
+      "total_tokens": 1401
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3295935,
+      "total": 10,
+      "remaining": 1.6704065000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.329593500000001,
+      "total": 100,
+      "remaining": 91.6704065,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009305,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "N/A",
+    "target_situation": "Joko Widodo's victory in the 2012 Jakarta gubernatorial election.",
+    "mapping": "The image is a literal, close-up portrait of Joko Widodo. There is no visual analogy present; the photograph serves as a direct representation of the political figure mentioned in the headline and caption.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: N/A\ntarget_situation: Joko Widodo's victory in the 2012 Jakarta gubernatorial election.\nmapping: The image is a literal, close-up portrait of Joko Widodo. There is no visual analogy present; the photograph serves as a direct representation of the political figure mentioned in the headline and caption.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

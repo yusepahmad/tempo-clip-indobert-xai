@@ -1,0 +1,87 @@
+{
+  "index": 526,
+  "sample_id": "TMP-1740BAF1E848",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "91c5079c4eda08948e050b2c2d096ccd4bc095d3f340a8441156ba77f9c186f0",
+  "image_sha256": "1740baf1e848e91f6b6bf08c2773d60c0e60579121b12a77a0dac6d8de38ea2d",
+  "transmitted_image_sha256": "a343ca226fc21eec7c9860b6507c6d5a559dcc08d9884de2cd42847b51a2734b",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.755719,
+      "total": 10,
+      "remaining": 1.2442810000000009,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.755719,
+      "total": 100,
+      "remaining": 91.244281,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.303032977040857,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Whac-A-Mole game\",\n  \"source_properties\": \"Repetitive action of hitting popping-up figures with mallets.\",\n  \"target_situation\": \"Police countering persistent threats from ISIS-radicalized millennial terrorists.\",\n  \"mapping\": \"Mallet-wielding officers strike figures emerging from holes, symbolizing reactive counter-terrorism efforts against recurring threats.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "1ZrLaonaJ5-d_uMPsajYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678000,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1356,
+      "total_backend_latency_ms": 1869,
+      "total_tokens": 1455
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.756694,
+      "total": 10,
+      "remaining": 1.2433060000000005,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.756693999999996,
+      "total": 100,
+      "remaining": 91.243306,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000975,
+  "fields": {
+    "source_object": "Whac-A-Mole game",
+    "source_properties": "Repetitive action of hitting popping-up figures with mallets.",
+    "target_situation": "Police countering persistent threats from ISIS-radicalized millennial terrorists.",
+    "mapping": "Mallet-wielding officers strike figures emerging from holes, symbolizing reactive counter-terrorism efforts against recurring threats.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Whac-A-Mole game\nsource_properties: Repetitive action of hitting popping-up figures with mallets.\ntarget_situation: Police countering persistent threats from ISIS-radicalized millennial terrorists.\nmapping: Mallet-wielding officers strike figures emerging from holes, symbolizing reactive counter-terrorism efforts against recurring threats.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

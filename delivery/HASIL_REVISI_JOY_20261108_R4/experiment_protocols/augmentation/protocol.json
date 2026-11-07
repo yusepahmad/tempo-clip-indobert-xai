@@ -1,0 +1,26 @@
+{
+  "schema": "revisi-ii-augmentation-no-rotation-v1",
+  "seed": 20261101,
+  "source_sha256": "7132e6a74284c6a1df8a29f6e2def35a49da0f6f7e4e6b54c057a5886e70a40b",
+  "legacy_augmentation_source_sha256": "7d0f39fef6c9056e1b7f947c12a47d27655f2cc7eedae61365f659e3030901f9",
+  "transform_source_sha256": "82f5de7fa14d78b2cee2958280efc7946fcb7190bb98df15240e9f5bf7abe49b",
+  "model": "google/siglip2-base-patch16-384",
+  "revision": "f775b65a79762255128c981547af89addcfe0f88",
+  "weight_sha256": "ed72c0ace85020ae610fc817c2538b9cae5a477b012a50859c60af5b3ad30857",
+  "arms": [
+    "RII_A00_CLEAN",
+    "RII_A01_LIGHT",
+    "RII_A02_MODERATE_NO_ROTATION",
+    "RII_A03_LIGHT_SAMPLER"
+  ],
+  "augmentation": "A01 original light; A02 original photometric/jpeg/noise with original rotation RNG draw consumed but rotation zero; no geometric crop",
+  "head": "shared192 LayerNorm GELU dropout0.25 +3heads",
+  "epochs": 35,
+  "batch_size": 32,
+  "optimizer": "AdamW lr8e-4 wd2e-4",
+  "loss": "mean task CE, inverse-sqrt training class weights, smoothing0.05",
+  "exposure": "exactly n training draws/epoch each arm, 50% fixed clean/aug per ID except clean; sampler replacement n draws",
+  "validation_test": "clean features only",
+  "selection": "two inner Task2-stratified folds seed123, mean task Macro-F1; ties declared arm order",
+  "note": "new controlled SigLIP2 family, not historical duplication-based augmentation or E42-tail ablation"
+}

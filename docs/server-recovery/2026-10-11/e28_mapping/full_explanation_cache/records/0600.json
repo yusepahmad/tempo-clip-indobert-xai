@@ -1,0 +1,87 @@
+{
+  "index": 600,
+  "sample_id": "TMP-5D652719FBDD",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "6f21f9040fc7dcd36856339382b1f967527f4556f3bab949a690beef78b771cf",
+  "image_sha256": "5d652719fbddd9d217e2a779756f2b5118e989b8702fca1b51ddce6ca0bae09f",
+  "transmitted_image_sha256": "70a0d73112751c520c5808356b1fb8477688d3b9b351c0b54fcc96c6171a737f",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.857266,
+      "total": 10,
+      "remaining": 1.1427340000000008,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.857265999999996,
+      "total": 100,
+      "remaining": 91.142734,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.565386745147407,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"packing tape\",\n  \"source_properties\": \"adhesive, used for sealing boxes, transparent yet visible\",\n  \"target_situation\": \"misuse of humanitarian aid funds and subsequent government shutdown of operations\",\n  \"mapping\": \"Sealing the ACT box with tape symbolizes the government's action to shut down and 'package up' the foundation's activities due to financial impropriety.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "zpzLat-jEa2u_PUPk7_C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679000,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1358,
+      "total_backend_latency_ms": 2094,
+      "total_tokens": 1460
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.858251,
+      "total": 10,
+      "remaining": 1.1417490000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.858250999999996,
+      "total": 100,
+      "remaining": 91.141749,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000985,
+  "fields": {
+    "source_object": "packing tape",
+    "source_properties": "adhesive, used for sealing boxes, transparent yet visible",
+    "target_situation": "misuse of humanitarian aid funds and subsequent government shutdown of operations",
+    "mapping": "Sealing the ACT box with tape symbolizes the government's action to shut down and 'package up' the foundation's activities due to financial impropriety.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: packing tape\nsource_properties: adhesive, used for sealing boxes, transparent yet visible\ntarget_situation: misuse of humanitarian aid funds and subsequent government shutdown of operations\nmapping: Sealing the ACT box with tape symbolizes the government's action to shut down and 'package up' the foundation's activities due to financial impropriety.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

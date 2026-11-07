@@ -1,0 +1,87 @@
+{
+  "index": 49,
+  "sample_id": "TMP-49F6BEC3C110",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "fa92953311f14228cbd544f54f3f958c63d8c97f507b259ac86335f632e45722",
+  "image_sha256": "49f6bec3c11039168597d0c27a30b4db9470a158e5372ac72cd65e906e634eb2",
+  "transmitted_image_sha256": "e4465b097259c342f058178c4d1ae33d21b8fe2ed9fd9c1801b6077f5dc8cd0a",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0790045,
+      "total": 10,
+      "remaining": 1.9209955,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.079004499999996,
+      "total": 100,
+      "remaining": 91.9209955,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.9537880420684814,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Underwater environment\",\n  \"source_properties\": \"Submersion, rising bubbles, sinking sensation, and lack of air.\",\n  \"target_situation\": \"Indonesia's fiscal crisis characterized by excessive national debt and dwindling government reserves.\",\n  \"mapping\": \"Being underwater symbolizes being overwhelmed and 'drowning' in debt that exceeds financial support.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "b47Laoz3FsyV_uMPl4eVaQ",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 669500,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1339,
+      "total_backend_latency_ms": 1775,
+      "total_tokens": 1431
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.07995,
+      "total": 10,
+      "remaining": 1.9200499999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.079949999999997,
+      "total": 100,
+      "remaining": 91.92005,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009455,
+  "fields": {
+    "source_object": "Underwater environment",
+    "source_properties": "Submersion, rising bubbles, sinking sensation, and lack of air.",
+    "target_situation": "Indonesia's fiscal crisis characterized by excessive national debt and dwindling government reserves.",
+    "mapping": "Being underwater symbolizes being overwhelmed and 'drowning' in debt that exceeds financial support.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Underwater environment\nsource_properties: Submersion, rising bubbles, sinking sensation, and lack of air.\ntarget_situation: Indonesia's fiscal crisis characterized by excessive national debt and dwindling government reserves.\nmapping: Being underwater symbolizes being overwhelmed and 'drowning' in debt that exceeds financial support.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

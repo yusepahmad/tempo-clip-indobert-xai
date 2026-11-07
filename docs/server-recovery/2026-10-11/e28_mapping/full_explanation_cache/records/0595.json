@@ -1,0 +1,87 @@
+{
+  "index": 595,
+  "sample_id": "TMP-C1BF41E6294D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0a29a7b24540d8f1831e42c7dfeef000fac8bd307f8aadfaeea09c8d97b88548",
+  "image_sha256": "c1bf41e6294db4b475daf9cfbcc2c93e143e5565340b8618a1d9c84ecf63ff75",
+  "transmitted_image_sha256": "15e100fd5b3b144df484362386779161ef1ca56c391eaa4cd02f4dc18797be10",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.846191,
+      "total": 10,
+      "remaining": 1.1538090000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.846191000000005,
+      "total": 100,
+      "remaining": 91.153809,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.8519019526429474,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"orchestra\",\n  \"source_properties\": \"conducted by a leader directing musicians playing brass instruments from a score\",\n  \"target_situation\": \"political figures coordinating to propose delaying the 2024 general election\",\n  \"mapping\": \"the conductor represents a central figure orchestrating political party leaders' coordinated public statements\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "pZzLavj0EefU_uMPq5CXyQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682000,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1364,
+      "total_backend_latency_ms": 1748,
+      "total_tokens": 1454
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.847142999999999,
+      "total": 10,
+      "remaining": 1.152857000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.847143000000003,
+      "total": 100,
+      "remaining": 91.152857,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000952,
+  "fields": {
+    "source_object": "orchestra",
+    "source_properties": "conducted by a leader directing musicians playing brass instruments from a score",
+    "target_situation": "political figures coordinating to propose delaying the 2024 general election",
+    "mapping": "the conductor represents a central figure orchestrating political party leaders' coordinated public statements",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: orchestra\nsource_properties: conducted by a leader directing musicians playing brass instruments from a score\ntarget_situation: political figures coordinating to propose delaying the 2024 general election\nmapping: the conductor represents a central figure orchestrating political party leaders' coordinated public statements\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

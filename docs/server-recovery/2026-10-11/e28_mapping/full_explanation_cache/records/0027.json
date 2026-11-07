@@ -1,0 +1,87 @@
+{
+  "index": 27,
+  "sample_id": "TMP-A40C9FB3BF2E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "16f6ed3da1c279188edca806ec6f0b3810d7392b04d19e532a0c0712f3ea9163",
+  "image_sha256": "a40c9fb3bf2e4f39767b4d80aa7d2803234aad46588b3b41a2695227509cfb93",
+  "transmitted_image_sha256": "72267639c83cbfab1ad7cfedead6efc30b67cfdd719ebd6a1afc47a16e349e8a",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0506895,
+      "total": 10,
+      "remaining": 1.9493104999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.050689500000004,
+      "total": 100,
+      "remaining": 91.9493105,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2567958841100335,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Pinocchio's long nose\",\n  \"source_properties\": \"A nose that grows longer physically whenever the character tells a lie.\",\n  \"target_situation\": \"President Jokowi accused by anti-corruption activists of breaking promises regarding the KPK.\",\n  \"mapping\": \"The shadow's long nose symbolizes dishonesty, suggesting the President is lying about his commitments.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "1o3LauC-PP7v_uMP-q7MqQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 670000,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1340,
+      "total_backend_latency_ms": 1436,
+      "total_tokens": 1435
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0516445,
+      "total": 10,
+      "remaining": 1.9483555,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.051644499999995,
+      "total": 100,
+      "remaining": 91.9483555,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000955,
+  "fields": {
+    "source_object": "Pinocchio's long nose",
+    "source_properties": "A nose that grows longer physically whenever the character tells a lie.",
+    "target_situation": "President Jokowi accused by anti-corruption activists of breaking promises regarding the KPK.",
+    "mapping": "The shadow's long nose symbolizes dishonesty, suggesting the President is lying about his commitments.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Pinocchio's long nose\nsource_properties: A nose that grows longer physically whenever the character tells a lie.\ntarget_situation: President Jokowi accused by anti-corruption activists of breaking promises regarding the KPK.\nmapping: The shadow's long nose symbolizes dishonesty, suggesting the President is lying about his commitments.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

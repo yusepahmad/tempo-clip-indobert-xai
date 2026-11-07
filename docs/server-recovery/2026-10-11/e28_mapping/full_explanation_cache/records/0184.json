@@ -1,0 +1,87 @@
+{
+  "index": 184,
+  "sample_id": "TMP-9A31741D6A32",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "283059524aafa9b438304dd473b61894209247a1596ae4ae385adf451fa4ef8d",
+  "image_sha256": "9a31741d6a32e44ac78d6b10b075291924cdd2779c9c0723a6477eb2a15aeb0c",
+  "transmitted_image_sha256": "345cd8a2a414f74bedf271bb4a90f265a6c2a406428617d1ba64caace219b11a",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2779115,
+      "total": 10,
+      "remaining": 1.7220885,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.277911500000002,
+      "total": 100,
+      "remaining": 91.7220885,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.586994701996446,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"camouflage pants\",\n  \"source_properties\": \"Patterns designed for concealment, military association, and blending into surroundings.\",\n  \"target_situation\": \"Infiltration of military elements within civilian protests.\",\n  \"mapping\": \"The camouflage visible beneath the civilian hoodie represents the hidden military presence or 'tentara' influencing the riots.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "85HLarT_PJ-d_uMPlqrYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 88,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678500,
+        "output_tokens_cost_nanodollars": 264000
+      },
+      "prompt_tokens": 1357,
+      "total_backend_latency_ms": 3904,
+      "total_tokens": 1445
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.278853999999999,
+      "total": 10,
+      "remaining": 1.721146000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.278853999999995,
+      "total": 100,
+      "remaining": 91.721146,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009425,
+  "fields": {
+    "source_object": "camouflage pants",
+    "source_properties": "Patterns designed for concealment, military association, and blending into surroundings.",
+    "target_situation": "Infiltration of military elements within civilian protests.",
+    "mapping": "The camouflage visible beneath the civilian hoodie represents the hidden military presence or 'tentara' influencing the riots.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: camouflage pants\nsource_properties: Patterns designed for concealment, military association, and blending into surroundings.\ntarget_situation: Infiltration of military elements within civilian protests.\nmapping: The camouflage visible beneath the civilian hoodie represents the hidden military presence or 'tentara' influencing the riots.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

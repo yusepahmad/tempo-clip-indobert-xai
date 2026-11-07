@@ -1,0 +1,86 @@
+{
+  "index": 293,
+  "sample_id": "TMP-AD48B1596452",
+  "fold": 4,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "b2aa9d157fce64f66aab3368d6ed54b4ab5da32d1b67aebdd529de2d471fbc1f",
+  "image_sha256": "ad48b159645245380d39b53f7826a24b3d26e62a09f9a027aad9ed184413f98d",
+  "transmitted_image_sha256": "d855cb0ca3698d4bd5d0642f2d3860f9f83e48e8990927665392449beec1d4f7",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 4.4085495,
+      "total": 10,
+      "remaining": 5.5914505,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 4.408549500000007,
+      "total": 100,
+      "remaining": 95.5914505,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 19.921778141055256,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks target, ilustrasi tersebut diklasifikasikan ke dalam kategori yang melambangkan keadaan terjepit atau terancam. Meskipun berupa foto hitam putih yang tampak literal, alasan yang disertakan secara eksplisit menyatakan bahwa ekspresi serius, latar belakang gelap, dan teks \"yang belum terungkap\" memetakan subjek ke dalam kondisi tersebut yang sesuai dengan kriteria domain sumber kiasan tertentu.\n\nDalam daftar kategori yang tersedia:\n- **A (BENCANA_JERAT)** mencakup ancaman, jerat, atau keadaan terjepit sebagai kiasan.\n\nKarena teks alasan pada target menyebutkan \"sesuai dengan domain bencana/jerat\", maka kodenya adalah A.\n\nJawab: **A**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "jPXKas2iLJzd_uMP7MbkuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 4088,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3929
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2073000,
+        "output_tokens_cost_nanodollars": 12264000
+      },
+      "prompt_tokens": 4146,
+      "total_backend_latency_ms": 18751,
+      "total_tokens": 8234
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 4.4228865,
+      "total": 10,
+      "remaining": 5.5771135,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 4.422886500000004,
+      "total": 100,
+      "remaining": 95.5771135,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.014337,
+  "code": "A",
+  "strict_code": "INVALID",
+  "parsing_rule": "explicit_prefix_code",
+  "finish_reason": "stop",
+  "prediction": "BENCANA_JERAT"
+}

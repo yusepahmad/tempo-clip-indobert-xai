@@ -1,0 +1,90 @@
+{
+  "index": 257,
+  "sample_id": "TMP-3B5CB69F19B6",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ce304502ee4e45e7450223fcba815d30194a6dba6ecedfacefdb6ad2ebef8760",
+  "image_sha256": "3b5cb69f19b6bd30218fa2ffc844eb235ac4626f502a3c376135a2c35d848970",
+  "transmitted_image_sha256": "d49a190e4dcf42335fea1587548744c0c32986e37bf2e21888b0c3ad9a8a6e78",
+  "image_size": [
+    599,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3930595,
+      "total": 10,
+      "remaining": 1.6069405000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.393059500000007,
+      "total": 100,
+      "remaining": 91.6069405,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.70995485316962,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Dark sunglasses\",\n  \"source_properties\": \"Opaque lenses that hide the wearer's eyes and gaze from others while permitting them to see out.\",\n  \"target_situation\": \"The covert political strategies and intelligence activities of Ali Moertopo during Indonesia's New Order.\",\n  \"mapping\": \"Like sunglasses concealing a person's focus and identity, Moertopo\u2019s secrets represent hidden maneuvers and power plays conducted away from public scrutiny.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "5JPLavakNfGb_uMPte3s2Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 994,
+      "completion_tokens_details": {
+        "reasoning_tokens": 880
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 644000,
+        "output_tokens_cost_nanodollars": 2982000
+      },
+      "prompt_tokens": 1288,
+      "total_backend_latency_ms": 5480,
+      "total_tokens": 2282
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3966855,
+      "total": 10,
+      "remaining": 1.6033144999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.396685500000004,
+      "total": 100,
+      "remaining": 91.6033145,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.003626,
+  "fields": {
+    "source_object": "Dark sunglasses",
+    "source_properties": "Opaque lenses that hide the wearer's eyes and gaze from others while permitting them to see out.",
+    "target_situation": "The covert political strategies and intelligence activities of Ali Moertopo during Indonesia's New Order.",
+    "mapping": "Like sunglasses concealing a person's focus and identity, Moertopo\u2019s secrets represent hidden maneuvers and power plays conducted away from public scrutiny.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: Dark sunglasses\nsource_properties: Opaque lenses that hide the wearer's eyes and gaze from others while permitting them to see out.\ntarget_situation: The covert political strategies and intelligence activities of Ali Moertopo during Indonesia's New Order.\nmapping: Like sunglasses concealing a person's focus and identity, Moertopo\u2019s secrets represent hidden maneuvers and power plays conducted away from public scrutiny.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

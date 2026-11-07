@@ -1,0 +1,90 @@
+{
+  "index": 289,
+  "sample_id": "TMP-24E2B1C69076",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5d91dffa62fc5ce23d8362e4d5a97b9b18a37b8e27bb212ef2e330a8ff856130",
+  "image_sha256": "24e2b1c69076988de0708c26d7165727cb8f9d1872db7e6c5f54462582817b13",
+  "transmitted_image_sha256": "801aa7a10c1aab9cf355d80d6108c9732d66bb09a3cc0f5d9712c599b7fdd99e",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4393135,
+      "total": 10,
+      "remaining": 1.5606864999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.439313499999997,
+      "total": 100,
+      "remaining": 91.5606865,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.458268757909536,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A marketplace crowd offering diverse produce\",\n  \"source_properties\": \"Multiple hands simultaneously presenting different fruits and vegetables to a single individual, demanding a decision.\",\n  \"target_situation\": \"Jokowi facing competing political demands and cabinet appointments during his transition to presidency.\",\n  \"mapping\": \"Selecting specific produce among many options parallels the challenge of prioritizing specific policies or personnel amidst many pressures.\",\n  \"uncertainty\": \"None evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "u5TLavyvHrfc_uMPiPP3wAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 683,
+      "completion_tokens_details": {
+        "reasoning_tokens": 581
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 660000,
+        "output_tokens_cost_nanodollars": 2049000
+      },
+      "prompt_tokens": 1320,
+      "total_backend_latency_ms": 4728,
+      "total_tokens": 2003
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4420225,
+      "total": 10,
+      "remaining": 1.5579774999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.442022499999993,
+      "total": 100,
+      "remaining": 91.5579775,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.002709,
+  "fields": {
+    "source_object": "A marketplace crowd offering diverse produce",
+    "source_properties": "Multiple hands simultaneously presenting different fruits and vegetables to a single individual, demanding a decision.",
+    "target_situation": "Jokowi facing competing political demands and cabinet appointments during his transition to presidency.",
+    "mapping": "Selecting specific produce among many options parallels the challenge of prioritizing specific policies or personnel amidst many pressures.",
+    "uncertainty": "None evident"
+  },
+  "explanation": "source_object: A marketplace crowd offering diverse produce\nsource_properties: Multiple hands simultaneously presenting different fruits and vegetables to a single individual, demanding a decision.\ntarget_situation: Jokowi facing competing political demands and cabinet appointments during his transition to presidency.\nmapping: Selecting specific produce among many options parallels the challenge of prioritizing specific policies or personnel amidst many pressures.\nuncertainty: None evident",
+  "finish_reason": "stop",
+  "usable": true
+}

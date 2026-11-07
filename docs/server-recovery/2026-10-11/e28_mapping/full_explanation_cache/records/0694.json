@@ -1,0 +1,90 @@
+{
+  "index": 694,
+  "sample_id": "TMP-1D234BB85D71",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "308f16a7e607ee96ab41ad6c2cf2afdbdf86e474705feb25ec4d2f77e776c6a0",
+  "image_sha256": "1d234bb85d7169395a245d590b79a3a68a53c99747d66535bf3ee3892cf0efe2",
+  "transmitted_image_sha256": "bfa8159caf2968b8a88d7c99f7717460266f7cfbbdb72180e4544e0c8e47722e",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0071535,
+      "total": 10,
+      "remaining": 0.9928465000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.007153500000001,
+      "total": 100,
+      "remaining": 90.9928465,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.31197112519294,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A protective mantle or cloak.\",\n  \"source_properties\": \"Provides concealment and physical cover, shielding the person beneath it from being seen or caught.\",\n  \"target_situation\": \"A politician allegedly shielded from corruption investigations by influential family connections despite visible evidence.\",\n  \"mapping\": \"The mantle symbolizes the political protection that hides the subject from legal consequences, preventing the investigator from reaching him.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "U5_Lap24Jd7d_uMP2Ze24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1227,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1126
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 683500,
+        "output_tokens_cost_nanodollars": 3681000
+      },
+      "prompt_tokens": 1367,
+      "total_backend_latency_ms": 7833,
+      "total_tokens": 2594
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.011518,
+      "total": 10,
+      "remaining": 0.9884819999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.011517999999995,
+      "total": 100,
+      "remaining": 90.988482,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0043645,
+  "fields": {
+    "source_object": "A protective mantle or cloak.",
+    "source_properties": "Provides concealment and physical cover, shielding the person beneath it from being seen or caught.",
+    "target_situation": "A politician allegedly shielded from corruption investigations by influential family connections despite visible evidence.",
+    "mapping": "The mantle symbolizes the political protection that hides the subject from legal consequences, preventing the investigator from reaching him.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A protective mantle or cloak.\nsource_properties: Provides concealment and physical cover, shielding the person beneath it from being seen or caught.\ntarget_situation: A politician allegedly shielded from corruption investigations by influential family connections despite visible evidence.\nmapping: The mantle symbolizes the political protection that hides the subject from legal consequences, preventing the investigator from reaching him.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

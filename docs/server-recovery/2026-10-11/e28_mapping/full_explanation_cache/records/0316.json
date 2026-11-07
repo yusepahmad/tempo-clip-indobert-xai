@@ -1,0 +1,87 @@
+{
+  "index": 316,
+  "sample_id": "TMP-6A480490BA09",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f91b7e877ae3b294cba645b89748422239e0bb281a7cc5da5fad74730c918706",
+  "image_sha256": "6a480490ba09ee7eba0df61c39bbaff9e908c21b3483927f5b733da2550691d1",
+  "transmitted_image_sha256": "8f5591e87fab97726c2ea909652e530af1062311f9d5f318a1434d9876a1a0d2",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4749835,
+      "total": 10,
+      "remaining": 1.5250164999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.474983499999993,
+      "total": 100,
+      "remaining": 91.5250165,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4630634197965264,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"uprooted oil barrel\", \"source_properties\": \"A heavy, industrial container with deep, tangled roots emerging from its base as it is forcibly tipped over.\", \"target_situation\": \"The closure and investigation of Petral, a Pertamina subsidiary allegedly harboring entrenched corrupt networks.\", \"mapping\": \"Uprooting the barrel represents dismantling the company's corrupt infrastructure; the deep roots symbolize the long-standing, hidden influence of the 'oil and gas mafia' mentioned in the text.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "bZXLavbsO8yY_uMP2cziyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 112,
+      "cost": {
+        "input_tokens_cost_nanodollars": 664000,
+        "output_tokens_cost_nanodollars": 336000
+      },
+      "prompt_tokens": 1328,
+      "total_backend_latency_ms": 1899,
+      "total_tokens": 1440
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4759835,
+      "total": 10,
+      "remaining": 1.5240165,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.475983499999998,
+      "total": 100,
+      "remaining": 91.5240165,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001,
+  "fields": {
+    "source_object": "uprooted oil barrel",
+    "source_properties": "A heavy, industrial container with deep, tangled roots emerging from its base as it is forcibly tipped over.",
+    "target_situation": "The closure and investigation of Petral, a Pertamina subsidiary allegedly harboring entrenched corrupt networks.",
+    "mapping": "Uprooting the barrel represents dismantling the company's corrupt infrastructure; the deep roots symbolize the long-standing, hidden influence of the 'oil and gas mafia' mentioned in the text.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: uprooted oil barrel\nsource_properties: A heavy, industrial container with deep, tangled roots emerging from its base as it is forcibly tipped over.\ntarget_situation: The closure and investigation of Petral, a Pertamina subsidiary allegedly harboring entrenched corrupt networks.\nmapping: Uprooting the barrel represents dismantling the company's corrupt infrastructure; the deep roots symbolize the long-standing, hidden influence of the 'oil and gas mafia' mentioned in the text.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

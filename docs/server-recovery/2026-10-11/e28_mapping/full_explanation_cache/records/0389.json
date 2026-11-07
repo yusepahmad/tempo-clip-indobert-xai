@@ -1,0 +1,87 @@
+{
+  "index": 389,
+  "sample_id": "TMP-3C2834973F58",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b743d738fa9034d4290b411756b019df3b8592086421d85d3745059eb1ce3d18",
+  "image_sha256": "3c2834973f58f4cf6861852119c42de9c161d5235b301d84c8c8b6c3e7cbc533",
+  "transmitted_image_sha256": "071cc1923c63810c8c439383d5ad3e2723610764bbcacc05979847e581b45c23",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5707215,
+      "total": 10,
+      "remaining": 1.4292785000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.570721500000005,
+      "total": 100,
+      "remaining": 91.4292785,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.700107727199793,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"apple balanced on a head\",\n  \"source_properties\": \"a target for an archer, requiring extreme stillness and precision to avoid harm\",\n  \"target_situation\": \"Minister Rini Soemarno facing political scrutiny and auditing from the BPK and PDIP\",\n  \"mapping\": \"the apple symbolizes being in a precarious, targeted position where any mistake is dangerous\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "RZfLaqKhPPW6_uMPjdDjYA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 100,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 300000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 1679,
+      "total_tokens": 1452
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.571697499999999,
+      "total": 10,
+      "remaining": 1.428302500000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.571697499999999,
+      "total": 100,
+      "remaining": 91.4283025,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000976,
+  "fields": {
+    "source_object": "apple balanced on a head",
+    "source_properties": "a target for an archer, requiring extreme stillness and precision to avoid harm",
+    "target_situation": "Minister Rini Soemarno facing political scrutiny and auditing from the BPK and PDIP",
+    "mapping": "the apple symbolizes being in a precarious, targeted position where any mistake is dangerous",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: apple balanced on a head\nsource_properties: a target for an archer, requiring extreme stillness and precision to avoid harm\ntarget_situation: Minister Rini Soemarno facing political scrutiny and auditing from the BPK and PDIP\nmapping: the apple symbolizes being in a precarious, targeted position where any mistake is dangerous\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

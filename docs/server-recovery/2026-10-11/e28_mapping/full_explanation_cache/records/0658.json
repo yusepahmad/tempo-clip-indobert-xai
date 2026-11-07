@@ -1,0 +1,90 @@
+{
+  "index": 658,
+  "sample_id": "TMP-E80AC9FF5503",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b0bff9fab951aea1e49813378f9c0217ee61f975034aded0db780893575684eb",
+  "image_sha256": "e80ac9ff55038ae00f57c91e83161663a9a539df8e93532763fd9eb456163a42",
+  "transmitted_image_sha256": "9166fa6dee2a2d64b7b165968b67ddbf6c1eea331f4a7fbe3656eff71e4f2f6f",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.936893,
+      "total": 10,
+      "remaining": 1.0631070000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.936892999999998,
+      "total": 100,
+      "remaining": 91.063107,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.2978271576575935,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A runner crossing a finish line\",\n  \"source_properties\": \"Running on a track, carrying an object, and breaking a tape.\",\n  \"target_situation\": \"The 2024 Indonesian presidential election results.\",\n  \"mapping\": \"Crossing the finish line signifies winning the election in one round.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Rp7LavmOLrDe_uMP6urskA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1199,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1113
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 681500,
+        "output_tokens_cost_nanodollars": 3597000
+      },
+      "prompt_tokens": 1363,
+      "total_backend_latency_ms": 5955,
+      "total_tokens": 2562
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9411715,
+      "total": 10,
+      "remaining": 1.0588285000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.941171499999996,
+      "total": 100,
+      "remaining": 91.0588285,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0042785,
+  "fields": {
+    "source_object": "A runner crossing a finish line",
+    "source_properties": "Running on a track, carrying an object, and breaking a tape.",
+    "target_situation": "The 2024 Indonesian presidential election results.",
+    "mapping": "Crossing the finish line signifies winning the election in one round.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A runner crossing a finish line\nsource_properties: Running on a track, carrying an object, and breaking a tape.\ntarget_situation: The 2024 Indonesian presidential election results.\nmapping: Crossing the finish line signifies winning the election in one round.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

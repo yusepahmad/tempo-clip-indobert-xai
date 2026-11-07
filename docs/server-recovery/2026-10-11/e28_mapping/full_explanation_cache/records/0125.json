@@ -1,0 +1,87 @@
+{
+  "index": 125,
+  "sample_id": "TMP-283917CADE37",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "76e851113681f1cb313fb27efbacb51a92af5cb9edcadebcd2318f0d93652e81",
+  "image_sha256": "283917cade375b21c1a500d211e9f0c5117ba7f031a7c83dd5068619b0dafade",
+  "transmitted_image_sha256": "5851583f95a8095d5962b4db19c4dd942f9c59e5b6e6b81d52c6f1c0c34c7092",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1912785,
+      "total": 10,
+      "remaining": 1.8087215000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.191278499999996,
+      "total": 100,
+      "remaining": 91.8087215,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.8998201531358063,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Classical column\",\n  \"source_properties\": \"A massive, solid, vertical pillar acting as a physical barrier and support structure.\",\n  \"target_situation\": \"The 2014 Indonesian presidential power transition between SBY and Jokowi.\",\n  \"mapping\": \"The column represents the state's institutional structure which simultaneously connects the outgoing and incoming presidents while acting as a rigid divider during their difficult, uncoordinated transition.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "aJDLaqm1Bu2M_PUPu97KyQo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 109,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674000,
+        "output_tokens_cost_nanodollars": 327000
+      },
+      "prompt_tokens": 1348,
+      "total_backend_latency_ms": 1639,
+      "total_tokens": 1457
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1922795,
+      "total": 10,
+      "remaining": 1.8077205000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.192279499999998,
+      "total": 100,
+      "remaining": 91.8077205,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001001,
+  "fields": {
+    "source_object": "Classical column",
+    "source_properties": "A massive, solid, vertical pillar acting as a physical barrier and support structure.",
+    "target_situation": "The 2014 Indonesian presidential power transition between SBY and Jokowi.",
+    "mapping": "The column represents the state's institutional structure which simultaneously connects the outgoing and incoming presidents while acting as a rigid divider during their difficult, uncoordinated transition.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: Classical column\nsource_properties: A massive, solid, vertical pillar acting as a physical barrier and support structure.\ntarget_situation: The 2014 Indonesian presidential power transition between SBY and Jokowi.\nmapping: The column represents the state's institutional structure which simultaneously connects the outgoing and incoming presidents while acting as a rigid divider during their difficult, uncoordinated transition.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

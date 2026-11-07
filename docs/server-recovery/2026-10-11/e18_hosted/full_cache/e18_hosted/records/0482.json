@@ -1,0 +1,83 @@
+{
+  "index": 482,
+  "sample_id": "TMP-4F50B4226224",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "346cd2015a85b014481b182eca4616ae231d54f3f390a21acbd15fb7c6e4fa64",
+  "image_sha256": "4f50b42262240c24dea79d7b60cd05aeb36f6074036c74f0700a8141c89abe6d",
+  "transmitted_image_sha256": "0c6445af103da01895d90945c015893ed2bbe5106467f43a93dadb04bce03866",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.8218174999999999,
+      "total": 10,
+      "remaining": 8.1781825,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.8218174999999945,
+      "total": 100,
+      "remaining": 98.1781825,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 11.108621292980388,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam soal, domain sumber yang digunakan adalah **syringe (suntikan)**.\n\nDalam kategori yang tersedia:\n*   Suntikan diklasifikasikan sebagai **alat** (medis).\n*   Kategori **E: MESIN_INFRASTRUKTUR** mencakup \"mesin, **alat**, kendaraan, bangunan atau mekanisme buatan",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Od_KauboKvGb_uMPte3s2Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2044,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1962
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 773000,
+        "output_tokens_cost_nanodollars": 6132000
+      },
+      "prompt_tokens": 1546,
+      "total_backend_latency_ms": 9996,
+      "total_tokens": 3590
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.8287224999999996,
+      "total": 10,
+      "remaining": 8.1712775,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.8287224999999978,
+      "total": 100,
+      "remaining": 98.1712775,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "length",
+  "cost_usd": 0.006905
+}

@@ -1,0 +1,87 @@
+{
+  "index": 604,
+  "sample_id": "TMP-8E06C875AE56",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1ec0bbc288e8f2d55f01ef4a1927f8cc7a6d35a578473de16b2ea0a2dbc974fa",
+  "image_sha256": "8e06c875ae562bb02ec2aadbb8c2952a2e8ebc86d2bcce52e5afb338480b2b2d",
+  "transmitted_image_sha256": "b50701ece8211d078dad203cfd24de568073cabd03b0a291d2a0d418c68bbefd",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.86513,
+      "total": 10,
+      "remaining": 1.1348699999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.865129999999994,
+      "total": 100,
+      "remaining": 91.13487,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4145548893138766,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"large drum or fuel tank\", \"source_properties\": \"massive, heavy cylinder being pushed in opposite directions by opposing forces\", \"target_situation\": \"divided government decision-making regarding the relocation of the Pertamina Plumpang fuel depot\", \"mapping\": \"The physical struggle to move the heavy tank represents the political friction between officials with conflicting views on its future.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "65zLaoWsF7fc_uMPiPP3wAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681000,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1362,
+      "total_backend_latency_ms": 1872,
+      "total_tokens": 1448
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.866069,
+      "total": 10,
+      "remaining": 1.1339310000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.866068999999996,
+      "total": 100,
+      "remaining": 91.133931,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000939,
+  "fields": {
+    "source_object": "large drum or fuel tank",
+    "source_properties": "massive, heavy cylinder being pushed in opposite directions by opposing forces",
+    "target_situation": "divided government decision-making regarding the relocation of the Pertamina Plumpang fuel depot",
+    "mapping": "The physical struggle to move the heavy tank represents the political friction between officials with conflicting views on its future.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: large drum or fuel tank\nsource_properties: massive, heavy cylinder being pushed in opposite directions by opposing forces\ntarget_situation: divided government decision-making regarding the relocation of the Pertamina Plumpang fuel depot\nmapping: The physical struggle to move the heavy tank represents the political friction between officials with conflicting views on its future.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

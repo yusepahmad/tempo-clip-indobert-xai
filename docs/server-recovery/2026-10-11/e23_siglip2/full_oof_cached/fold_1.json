@@ -1,0 +1,6541 @@
+{
+  "signature": {
+    "cached_worker_sha256": "ad87b3ef914a0c3b857f0c94432fb4d2723d7efb4b665ccccc79eaf1e00d9ee4",
+    "reference_signature": {
+      "worker_sha256": "de41e071e4dbdbad4cea998bf8ae4816866562e33e1da5f489eefa5b0881ef9c",
+      "helper_sha256": "c117f65e9460bccc4daeba0de9f3af4ee737e7ef65f57d39cca5a0910f8a3ece",
+      "reference": {
+        "worker_sha256": "02588b6fcd4bdbe21be4b17e9d60dcfcdebfbf0b97246056a88b4804febfb6e5",
+        "data_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+        "e5_sha256": "1f0d2b2f346071fa673701847af39e8a22faf9e6a98195734982cd71e99af374",
+        "bge_sha256": "c0d7d1fc9ac42988b0d107a694d7d3b355105f8640f776ace2617eed936495c4",
+        "clip_sha256": "d27cd5dbecfffba3a8bbb96037f3181da20f1c95eb246a7d38a4627a90599e5c",
+        "reference_verification_sha256": "0d91fcf3cc6f365b08547161657679f88ef7df18fe19176bc0a1f61499cd547a",
+        "grid": {
+          "fusion__e5_weight": [
+            0,
+            0.5,
+            1,
+            2
+          ],
+          "fusion__clip_weight": [
+            0,
+            0.5,
+            1,
+            2
+          ],
+          "clf__C": [
+            1,
+            10,
+            100
+          ],
+          "clf__gamma": [
+            "scale",
+            0.1,
+            1
+          ],
+          "clf__class_weight": [
+            null,
+            "balanced"
+          ]
+        },
+        "normalization": "StandardScaler fit per block, L2 per block, then weights",
+        "outer": "Task1 baseline stratified5 seed42",
+        "inner": "Task2 stratified3 seed42",
+        "selection_order": [
+          "description",
+          "source_reason",
+          "combined",
+          "description_reason",
+          "semantic_visual",
+          "weighted"
+        ],
+        "n_jobs": 1
+      },
+      "embedding_verification_sha256": "ec69508ef61c5aeb74351d838576fc968e969204898b24b6a0132b517339dc10",
+      "embedding_meta_sha256": "e9fe15f1eec1604f945d542ab5b97b7555bc294c7860a123aed0605549ce0289",
+      "features_sha256": "a5843bc3056645ed9fa1902639edc5a1345923c79371e8113c93d37cbe6d6e26",
+      "grid": [
+        {
+          "fusion__mode": [
+            "image_only"
+          ],
+          "clf__C": [
+            1,
+            10,
+            100
+          ],
+          "clf__gamma": [
+            "scale",
+            0.1,
+            1
+          ],
+          "clf__class_weight": [
+            null,
+            "balanced"
+          ]
+        },
+        {
+          "fusion__mode": [
+            "fusion"
+          ],
+          "fusion__visual_weight": [
+            0,
+            0.5,
+            1,
+            2,
+            4
+          ],
+          "fusion__e5_weight": [
+            0.5,
+            2
+          ],
+          "fusion__clip_weight": [
+            0,
+            1
+          ],
+          "clf__C": [
+            1,
+            10,
+            100
+          ],
+          "clf__gamma": [
+            "scale",
+            0.1,
+            1
+          ],
+          "clf__class_weight": [
+            null,
+            "balanced"
+          ]
+        }
+      ],
+      "outer": "Task1 baseline5 seed42",
+      "inner": "Task2 stratified3 seed42",
+      "normalization": "training-only per-block StandardScaler/L2 then weights",
+      "n_jobs": 1
+    },
+    "backend": "same float64 training projection/gamma; cached RBF Gram and precomputed SVC"
+  },
+  "fold": 1,
+  "train_indices": [
+    0,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    31,
+    33,
+    34,
+    35,
+    36,
+    37,
+    39,
+    40,
+    41,
+    43,
+    44,
+    45,
+    46,
+    47,
+    49,
+    50,
+    51,
+    52,
+    53,
+    55,
+    57,
+    59,
+    60,
+    61,
+    65,
+    66,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    86,
+    87,
+    88,
+    91,
+    92,
+    93,
+    94,
+    95,
+    97,
+    99,
+    100,
+    102,
+    103,
+    105,
+    106,
+    108,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    119,
+    120,
+    121,
+    122,
+    124,
+    125,
+    126,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    161,
+    162,
+    163,
+    164,
+    165,
+    167,
+    168,
+    169,
+    171,
+    172,
+    173,
+    176,
+    177,
+    178,
+    179,
+    180,
+    182,
+    183,
+    184,
+    185,
+    186,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    201,
+    203,
+    204,
+    206,
+    207,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    226,
+    227,
+    228,
+    229,
+    230,
+    233,
+    235,
+    236,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    249,
+    250,
+    252,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    261,
+    262,
+    263,
+    264,
+    268,
+    269,
+    270,
+    271,
+    273,
+    274,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    285,
+    286,
+    287,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    298,
+    299,
+    300,
+    301,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    324,
+    325,
+    326,
+    328,
+    329,
+    332,
+    333,
+    335,
+    336,
+    338,
+    339,
+    340,
+    341,
+    343,
+    344,
+    345,
+    346,
+    348,
+    349,
+    351,
+    352,
+    353,
+    354,
+    355,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    369,
+    370,
+    371,
+    374,
+    375,
+    376,
+    378,
+    380,
+    381,
+    382,
+    385,
+    386,
+    387,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    415,
+    416,
+    417,
+    419,
+    420,
+    422,
+    423,
+    424,
+    425,
+    426,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    452,
+    453,
+    454,
+    456,
+    457,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    468,
+    471,
+    472,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    486,
+    487,
+    488,
+    489,
+    490,
+    491,
+    492,
+    494,
+    495,
+    496,
+    498,
+    499,
+    500,
+    502,
+    503,
+    504,
+    506,
+    507,
+    508,
+    509,
+    512,
+    513,
+    514,
+    515,
+    516,
+    517,
+    518,
+    520,
+    522,
+    523,
+    524,
+    525,
+    526,
+    527,
+    528,
+    529,
+    532,
+    533,
+    534,
+    535,
+    536,
+    537,
+    538,
+    539,
+    540,
+    541,
+    544,
+    545,
+    547,
+    548,
+    549,
+    550,
+    551,
+    552,
+    553,
+    555,
+    556,
+    557,
+    558,
+    560,
+    562,
+    563,
+    564,
+    565,
+    566,
+    568,
+    569,
+    570,
+    571,
+    573,
+    576,
+    577,
+    578,
+    579,
+    580,
+    581,
+    582,
+    583,
+    584,
+    585,
+    586,
+    588,
+    589,
+    590,
+    591,
+    592,
+    593,
+    594,
+    595,
+    598,
+    599,
+    600,
+    602,
+    603,
+    604,
+    605,
+    606,
+    609,
+    610,
+    611,
+    612,
+    614,
+    615,
+    616,
+    617,
+    618,
+    620,
+    621,
+    622,
+    623,
+    624,
+    626,
+    627,
+    628,
+    629,
+    630,
+    631,
+    632,
+    633,
+    634,
+    636,
+    637,
+    638,
+    639,
+    640,
+    642,
+    643,
+    644,
+    645,
+    646,
+    647,
+    648,
+    649,
+    650,
+    651,
+    652,
+    653,
+    654,
+    655,
+    656,
+    657,
+    660,
+    661,
+    662,
+    663,
+    664,
+    666,
+    667,
+    668,
+    669,
+    670,
+    672,
+    674,
+    678,
+    680,
+    682,
+    683,
+    684,
+    685,
+    688,
+    689,
+    691,
+    693,
+    694,
+    695,
+    696,
+    697,
+    698,
+    699,
+    700,
+    701,
+    702,
+    703,
+    705,
+    706,
+    708,
+    709,
+    710,
+    711,
+    712,
+    713,
+    714,
+    715,
+    716,
+    718,
+    719,
+    720,
+    721,
+    722,
+    723,
+    724,
+    725,
+    726,
+    727,
+    728,
+    729,
+    730,
+    731,
+    732,
+    733,
+    734,
+    735,
+    736,
+    737,
+    738,
+    739
+  ],
+  "test_indices": [
+    1,
+    2,
+    3,
+    17,
+    18,
+    30,
+    32,
+    38,
+    42,
+    48,
+    54,
+    56,
+    58,
+    62,
+    63,
+    64,
+    67,
+    72,
+    84,
+    85,
+    89,
+    90,
+    96,
+    98,
+    101,
+    104,
+    107,
+    109,
+    110,
+    118,
+    123,
+    127,
+    135,
+    143,
+    153,
+    160,
+    166,
+    170,
+    174,
+    175,
+    181,
+    187,
+    199,
+    200,
+    202,
+    205,
+    208,
+    225,
+    231,
+    232,
+    234,
+    237,
+    248,
+    251,
+    253,
+    260,
+    265,
+    266,
+    267,
+    272,
+    275,
+    276,
+    284,
+    288,
+    297,
+    302,
+    323,
+    327,
+    330,
+    331,
+    334,
+    337,
+    342,
+    347,
+    350,
+    356,
+    368,
+    372,
+    373,
+    377,
+    379,
+    383,
+    384,
+    388,
+    389,
+    414,
+    418,
+    421,
+    427,
+    434,
+    441,
+    451,
+    455,
+    458,
+    466,
+    467,
+    469,
+    470,
+    484,
+    485,
+    493,
+    497,
+    501,
+    505,
+    510,
+    511,
+    519,
+    521,
+    530,
+    531,
+    542,
+    543,
+    546,
+    554,
+    559,
+    561,
+    567,
+    572,
+    574,
+    575,
+    587,
+    596,
+    597,
+    601,
+    607,
+    608,
+    613,
+    619,
+    625,
+    635,
+    641,
+    658,
+    659,
+    665,
+    671,
+    673,
+    675,
+    676,
+    677,
+    679,
+    681,
+    686,
+    687,
+    690,
+    692,
+    704,
+    707,
+    717
+  ],
+  "sample_ids": [
+    "TMP-DB65F6B7A1E4",
+    "TMP-FD83C3FCCF0D",
+    "TMP-78163D7E671E",
+    "TMP-EF2F7C938395",
+    "TMP-746C36AC6254",
+    "TMP-FCF235515113",
+    "TMP-59340BC01968",
+    "TMP-A0B2109BF3D7",
+    "TMP-05F0849673CB",
+    "TMP-A1B0E4BAFD57",
+    "TMP-7C711C1E975D",
+    "TMP-CF732D6C4543",
+    "TMP-DB4DF7D314D4",
+    "TMP-521650E4CE72",
+    "TMP-B9EBF3D5D96E",
+    "TMP-29C54F24D6AD",
+    "TMP-97450CBD8AF6",
+    "TMP-C54DEE8E3C8C",
+    "TMP-0B75BE88FB93",
+    "TMP-0204848C7A5C",
+    "TMP-F850B13782C2",
+    "TMP-0E65BBC717B7",
+    "TMP-C1864E874619",
+    "TMP-A96E1B736585",
+    "TMP-5802D0009C82",
+    "TMP-E2A6D3DFE690",
+    "TMP-35A64D5130A5",
+    "TMP-389FA48DB15F",
+    "TMP-C6ED79E3B393",
+    "TMP-D8A543A286F4",
+    "TMP-2C61C2ADA22B",
+    "TMP-4609396B0FD6",
+    "TMP-29B6EFB92183",
+    "TMP-5B340A9C7028",
+    "TMP-21D78191C977",
+    "TMP-4D8F956B6933",
+    "TMP-DD1F130D5EBC",
+    "TMP-52D5F3828E81",
+    "TMP-D1399DF42065",
+    "TMP-EA709A2E39E5",
+    "TMP-5E5FB2B2E5A2",
+    "TMP-70CF6BDC6E3D",
+    "TMP-695BCE8C6186",
+    "TMP-C4BBCF7A620F",
+    "TMP-13B42C205CC9",
+    "TMP-E5D60F2FF98F",
+    "TMP-8306D036B55D",
+    "TMP-E9A3CA6E1931",
+    "TMP-A0409A45221B",
+    "TMP-37F3AA94F6FF",
+    "TMP-AA4D669D101A",
+    "TMP-0F2AB89F2813",
+    "TMP-43D5AF4C7DAD",
+    "TMP-12AFBEB38BFF",
+    "TMP-4E44064759F3",
+    "TMP-E55C47EA102B",
+    "TMP-9012CAB68C16",
+    "TMP-5AB276D5CF8A",
+    "TMP-6082CFFA161F",
+    "TMP-BE2F6B5A4628",
+    "TMP-D71BCF104809",
+    "TMP-42B91B62119A",
+    "TMP-44414040FEFF",
+    "TMP-06560F4A1A52",
+    "TMP-B408B91F1DAD",
+    "TMP-B9CDAA65F5B0",
+    "TMP-2C20010F1C6A",
+    "TMP-E5A049C2CC9F",
+    "TMP-4EB624061B59",
+    "TMP-DB8C7FC78404",
+    "TMP-57B568458928",
+    "TMP-FF853720E62F",
+    "TMP-0D71892CC33C",
+    "TMP-3E830FFE8C58",
+    "TMP-62E3ACE7DFFE",
+    "TMP-CAB6CF99016D",
+    "TMP-2F57839052F1",
+    "TMP-3985D0950FF1",
+    "TMP-B67A8C251281",
+    "TMP-67888B8537DC",
+    "TMP-B39D7CC0D502",
+    "TMP-0F7EACD8139A",
+    "TMP-A5B2082AE0C5",
+    "TMP-FA7EAD61DB20",
+    "TMP-3C2834973F58",
+    "TMP-4839FCE514AB",
+    "TMP-ED88C46A7C4A",
+    "TMP-2E95453C1AEB",
+    "TMP-09D2530C3DBB",
+    "TMP-22897EB13117",
+    "TMP-972E885F298A",
+    "TMP-FE86E66530F8",
+    "TMP-1143C46C5267",
+    "TMP-2A4123CF3D27",
+    "TMP-CFE7088B76BD",
+    "TMP-935B791B506D",
+    "TMP-C168DF5681F7",
+    "TMP-579182AE35FE",
+    "TMP-4C92159CE456",
+    "TMP-61CA38FE1AE8",
+    "TMP-689636F358ED",
+    "TMP-A182263EE6D5",
+    "TMP-02BB4CA168D5",
+    "TMP-4D2C06D9DC33",
+    "TMP-DA0E29A432C2",
+    "TMP-1C6B21EA33BC",
+    "TMP-FE5D7726BBC0",
+    "TMP-B5EA29658DB1",
+    "TMP-7F38566A74BB",
+    "TMP-16C1967D13CF",
+    "TMP-32CC9256EF10",
+    "TMP-A3943DCE5B11",
+    "TMP-CC60500A9536",
+    "TMP-DC634F222185",
+    "TMP-5E125F59E54B",
+    "TMP-450684DBEC47",
+    "TMP-9D4090E326A8",
+    "TMP-EEE734A2EAB9",
+    "TMP-8385624E01E6",
+    "TMP-5601DF7393CA",
+    "TMP-B4B3FED4DD47",
+    "TMP-DDEF1F5E91C5",
+    "TMP-33305D28AC8D",
+    "TMP-538E76DDB84D",
+    "TMP-923E396BC5AF",
+    "TMP-EC2CB55A7B91",
+    "TMP-A10552C5D685",
+    "TMP-9EF4CBABC947",
+    "TMP-7E41049588A8",
+    "TMP-2D6E12C92148",
+    "TMP-7188D0A90E7C",
+    "TMP-E80AC9FF5503",
+    "TMP-05201690A1B6",
+    "TMP-8FA862F936D5",
+    "TMP-81F529129D02",
+    "TMP-B30CC4B4D08A",
+    "TMP-BE5D915E7856",
+    "TMP-0353B4BD8BEC",
+    "TMP-71AD7DBA479A",
+    "TMP-AE958A51B10E",
+    "TMP-4CA1B7BAC040",
+    "TMP-6DD8C16C06B0",
+    "TMP-6A7E22F9011D",
+    "TMP-676FD383BB28",
+    "TMP-537028E7266A",
+    "TMP-67E518E74CE7",
+    "TMP-C3644186F670",
+    "TMP-4CA1A55C4B83"
+  ],
+  "predictions": [
+    "HEWAN_TUBUH",
+    "PERMAINAN_KONTES",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "KONSUMSI_TRANSAKSI",
+    "MESIN_INFRASTRUKTUR",
+    "KONSUMSI_TRANSAKSI",
+    "KONSUMSI_TRANSAKSI",
+    "HEWAN_TUBUH",
+    "KONSUMSI_TRANSAKSI",
+    "MESIN_INFRASTRUKTUR",
+    "KONSUMSI_TRANSAKSI",
+    "NON_METAFORA",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "LAINNYA",
+    "PERMAINAN_KONTES",
+    "KONSUMSI_TRANSAKSI",
+    "MESIN_INFRASTRUKTUR",
+    "LAINNYA",
+    "LAINNYA",
+    "BENCANA_JERAT",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "KONSUMSI_TRANSAKSI",
+    "BENCANA_JERAT",
+    "HEWAN_TUBUH",
+    "BENCANA_JERAT",
+    "KONSUMSI_TRANSAKSI",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "KONSUMSI_TRANSAKSI",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "LAINNYA",
+    "HEWAN_TUBUH",
+    "LAINNYA",
+    "PERMAINAN_KONTES",
+    "HEWAN_TUBUH",
+    "HEWAN_TUBUH",
+    "NON_METAFORA",
+    "LAINNYA",
+    "KONSUMSI_TRANSAKSI",
+    "NON_METAFORA",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "NON_METAFORA",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "HEWAN_TUBUH",
+    "HEWAN_TUBUH",
+    "PERMAINAN_KONTES",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "HEWAN_TUBUH",
+    "LAINNYA",
+    "PERMAINAN_KONTES",
+    "PERMAINAN_KONTES",
+    "PERMAINAN_KONTES",
+    "BENCANA_JERAT",
+    "LAINNYA",
+    "HEWAN_TUBUH",
+    "LAINNYA",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "NON_METAFORA",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "HEWAN_TUBUH",
+    "NON_METAFORA",
+    "HEWAN_TUBUH",
+    "HEWAN_TUBUH",
+    "BENCANA_JERAT",
+    "NON_METAFORA",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "KONSUMSI_TRANSAKSI",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "BENCANA_JERAT",
+    "KONSUMSI_TRANSAKSI",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "KONSUMSI_TRANSAKSI",
+    "PERMAINAN_KONTES",
+    "PERMAINAN_KONTES",
+    "BENCANA_JERAT",
+    "HEWAN_TUBUH",
+    "HEWAN_TUBUH",
+    "BENCANA_JERAT",
+    "BENCANA_JERAT",
+    "BENCANA_JERAT",
+    "KONSUMSI_TRANSAKSI",
+    "HEWAN_TUBUH",
+    "BENCANA_JERAT",
+    "PERMAINAN_KONTES",
+    "NON_METAFORA",
+    "PERMAINAN_KONTES",
+    "KONSUMSI_TRANSAKSI",
+    "BENCANA_JERAT",
+    "BENCANA_JERAT",
+    "KONSUMSI_TRANSAKSI",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "HEWAN_TUBUH",
+    "NON_METAFORA",
+    "KONSUMSI_TRANSAKSI",
+    "LAINNYA",
+    "LAINNYA",
+    "LAINNYA",
+    "HEWAN_TUBUH",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "LAINNYA",
+    "MESIN_INFRASTRUKTUR",
+    "KONSUMSI_TRANSAKSI",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "PERMAINAN_KONTES",
+    "BENCANA_JERAT",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "PERMAINAN_KONTES",
+    "KONSUMSI_TRANSAKSI",
+    "NON_METAFORA",
+    "BENCANA_JERAT",
+    "KONSUMSI_TRANSAKSI",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "NON_METAFORA",
+    "KONSUMSI_TRANSAKSI"
+  ],
+  "grid_params": [
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__mode": "image_only"
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__mode": "image_only"
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__mode": "image_only"
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__mode": "image_only"
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__mode": "image_only"
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__mode": "image_only"
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__mode": "image_only"
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__mode": "image_only"
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__mode": "image_only"
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__mode": "image_only"
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__mode": "image_only"
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__mode": "image_only"
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__mode": "image_only"
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__mode": "image_only"
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__mode": "image_only"
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__mode": "image_only"
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__mode": "image_only"
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__mode": "image_only"
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 1,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 10,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": null,
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": "scale",
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 0.1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 0,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 0.5,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 0.5
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 1
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 2
+    },
+    {
+      "clf__C": 100,
+      "clf__class_weight": "balanced",
+      "clf__gamma": 1,
+      "fusion__clip_weight": 1,
+      "fusion__e5_weight": 2,
+      "fusion__mode": "fusion",
+      "fusion__visual_weight": 4
+    }
+  ],
+  "inner_fold_scores": [
+    [
+      0.23038595895738753,
+      0.23747359755002778,
+      0.2238181770549275
+    ],
+    [
+      0.08634920634920636,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.23038595895738753,
+      0.23747359755002778,
+      0.2238181770549275
+    ],
+    [
+      0.4103271939487784,
+      0.4320719973366116,
+      0.3974404392742648
+    ],
+    [
+      0.31338125045990217,
+      0.35512632344696515,
+      0.25018556150135096
+    ],
+    [
+      0.4103271939487784,
+      0.4320719973366116,
+      0.3974404392742648
+    ],
+    [
+      0.31799156293313136,
+      0.39681806975176076,
+      0.3607959345354303
+    ],
+    [
+      0.4619735151841125,
+      0.3969109497672815,
+      0.38935012113765444
+    ],
+    [
+      0.31799156293313136,
+      0.39681806975176076,
+      0.3607959345354303
+    ],
+    [
+      0.31799156293313136,
+      0.39681806975176076,
+      0.3607959345354303
+    ],
+    [
+      0.47842900054375814,
+      0.3967963321615309,
+      0.4115379947155648
+    ],
+    [
+      0.31799156293313136,
+      0.39681806975176076,
+      0.3607959345354303
+    ],
+    [
+      0.31799156293313136,
+      0.39681806975176076,
+      0.3607959345354303
+    ],
+    [
+      0.4269525221970717,
+      0.38886722193713075,
+      0.3909400051091973
+    ],
+    [
+      0.31799156293313136,
+      0.39681806975176076,
+      0.3607959345354303
+    ],
+    [
+      0.31799156293313136,
+      0.39681806975176076,
+      0.3607959345354303
+    ],
+    [
+      0.4269525221970717,
+      0.38886722193713075,
+      0.3909400051091973
+    ],
+    [
+      0.31799156293313136,
+      0.39681806975176076,
+      0.3607959345354303
+    ],
+    [
+      0.45438902902045214,
+      0.4037811441050644,
+      0.44985905473300436
+    ],
+    [
+      0.41444628093405605,
+      0.39794715922375495,
+      0.43885819369200413
+    ],
+    [
+      0.3560993038391426,
+      0.36883858077068854,
+      0.3882000935016362
+    ],
+    [
+      0.28443134964874095,
+      0.27920719177886744,
+      0.2914958366498538
+    ],
+    [
+      0.259502574719966,
+      0.2570855070855071,
+      0.23812706900942193
+    ],
+    [
+      0.41980750118511534,
+      0.4298456809744436,
+      0.401815518690483
+    ],
+    [
+      0.41729805845269713,
+      0.432973189174959,
+      0.41602074162998537
+    ],
+    [
+      0.40750963043785354,
+      0.39512808560782975,
+      0.4096735468380901
+    ],
+    [
+      0.3758066085322359,
+      0.40385997777028465,
+      0.3846824503258511
+    ],
+    [
+      0.28601625711600137,
+      0.2864285795111038,
+      0.2980164266726351
+    ],
+    [
+      0.3102516672710359,
+      0.2583375774076582,
+      0.3509520140992222
+    ],
+    [
+      0.3036937194929244,
+      0.2563774256354764,
+      0.3606197724304541
+    ],
+    [
+      0.2899315551428227,
+      0.26102943624070385,
+      0.3108865358493036
+    ],
+    [
+      0.28404605730187127,
+      0.26444256581893033,
+      0.2847436725429693
+    ],
+    [
+      0.24975543253738744,
+      0.24996213400468717,
+      0.23911670763583154
+    ],
+    [
+      0.4050622421343134,
+      0.394940201041896,
+      0.379054105842747
+    ],
+    [
+      0.3978519904636902,
+      0.3889084054174203,
+      0.37826188722264037
+    ],
+    [
+      0.39091916538246757,
+      0.39124146469094206,
+      0.379054105842747
+    ],
+    [
+      0.3357321356249353,
+      0.35002208917587424,
+      0.35719546867336993
+    ],
+    [
+      0.29041938952810015,
+      0.26964558352698514,
+      0.30225236665150346
+    ],
+    [
+      0.09971428571428571,
+      0.09799608993157381,
+      0.09997131382673552
+    ],
+    [
+      0.1340882694541231,
+      0.11903389350696143,
+      0.1390190931144242
+    ],
+    [
+      0.231614461867856,
+      0.22162698412698414,
+      0.2174386571146554
+    ],
+    [
+      0.3119227862085005,
+      0.2717680467680467,
+      0.3159657505341806
+    ],
+    [
+      0.15670995670995672,
+      0.13844274886051725,
+      0.14685455866914318
+    ],
+    [
+      0.42753336360689925,
+      0.4410125814744511,
+      0.40540035047088674
+    ],
+    [
+      0.4271941270787491,
+      0.4494785492497163,
+      0.40540035047088674
+    ],
+    [
+      0.4404344838742869,
+      0.42945611805123696,
+      0.41778481072151186
+    ],
+    [
+      0.39874680210802477,
+      0.4061960282085688,
+      0.3923832752091081
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.08502580809765863
+    ],
+    [
+      0.16728419762966915,
+      0.14302926252170559,
+      0.16407764132659533
+    ],
+    [
+      0.203958166132409,
+      0.18651460584233695,
+      0.211077137073342
+    ],
+    [
+      0.2554643020664772,
+      0.2099899711548199,
+      0.262343293960941
+    ],
+    [
+      0.2839325879645367,
+      0.25379011957238207,
+      0.28865290843379127
+    ],
+    [
+      0.1253215456222975,
+      0.11288167368022177,
+      0.13967446823000612
+    ],
+    [
+      0.4077936366281283,
+      0.42395594246617263,
+      0.4145393038250181
+    ],
+    [
+      0.4102919460039095,
+      0.40930787393643525,
+      0.4105309897390464
+    ],
+    [
+      0.4073444888692764,
+      0.40276432658453193,
+      0.4014594503886995
+    ],
+    [
+      0.3357321356249353,
+      0.35002208917587424,
+      0.35719546867336993
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.4189529040919383,
+      0.37105650128206513,
+      0.38715083786422966
+    ],
+    [
+      0.31129250659444135,
+      0.2752733612180617,
+      0.29460714542922944
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.07334428024083196
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.532455337445996,
+      0.5718672150036266,
+      0.5291676317297834
+    ],
+    [
+      0.5323440493932298,
+      0.5707350819693503,
+      0.5421278590911934
+    ],
+    [
+      0.558646412204682,
+      0.519924695859984,
+      0.5203467788442077
+    ],
+    [
+      0.48049689144760893,
+      0.45561106987816496,
+      0.45786810694409324
+    ],
+    [
+      0.43756576313298534,
+      0.44613314769614343,
+      0.4155006918021446
+    ],
+    [
+      0.5386325803994759,
+      0.531056761603496,
+      0.5047738732300835
+    ],
+    [
+      0.5200616252647118,
+      0.5235709513132188,
+      0.5047738732300835
+    ],
+    [
+      0.5292883938422361,
+      0.5097715951369106,
+      0.5200208866802621
+    ],
+    [
+      0.5250939745573999,
+      0.4966933647851464,
+      0.531895932271703
+    ],
+    [
+      0.49539826297345096,
+      0.4610516006569748,
+      0.4596130722820529
+    ],
+    [
+      0.5062291866312442,
+      0.4922490893978934,
+      0.5336816863005216
+    ],
+    [
+      0.5135975805995926,
+      0.49428348804310446,
+      0.5228288616391226
+    ],
+    [
+      0.4690071253965777,
+      0.4670508162719834,
+      0.49618775046250374
+    ],
+    [
+      0.43286030804375225,
+      0.44080549333572655,
+      0.44153773904591925
+    ],
+    [
+      0.4095836597438921,
+      0.4400803362558995,
+      0.41189327771085954
+    ],
+    [
+      0.5162899649876393,
+      0.5085510570466144,
+      0.503539159908917
+    ],
+    [
+      0.5247804797638685,
+      0.5137296994556778,
+      0.5018207768762302
+    ],
+    [
+      0.5278835874458139,
+      0.5105641806318717,
+      0.515446063859259
+    ],
+    [
+      0.5011181860937578,
+      0.4949897364205734,
+      0.5140747691803015
+    ],
+    [
+      0.45892493956207253,
+      0.46485760621320965,
+      0.4661997929031361
+    ],
+    [
+      0.5485187711684868,
+      0.5253434051354798,
+      0.5199992339743822
+    ],
+    [
+      0.553455584100663,
+      0.5604089711571248,
+      0.52754588627904
+    ],
+    [
+      0.5354547986126933,
+      0.5722984828852175,
+      0.5551367239215258
+    ],
+    [
+      0.49180471769768047,
+      0.48050713980779713,
+      0.4998121471398437
+    ],
+    [
+      0.2298704313794857,
+      0.25388195090336513,
+      0.2827687161711631
+    ],
+    [
+      0.5557016536298564,
+      0.5428446842108423,
+      0.5070765222703927
+    ],
+    [
+      0.552583437438485,
+      0.5653386389337108,
+      0.5161018927417318
+    ],
+    [
+      0.5346587518579999,
+      0.5736460763300516,
+      0.5348328877834463
+    ],
+    [
+      0.5434973740404367,
+      0.5225246638024926,
+      0.5355477713109656
+    ],
+    [
+      0.1512262132871032,
+      0.1399788471708091,
+      0.16526021285846615
+    ],
+    [
+      0.5589111010088557,
+      0.5320232380548681,
+      0.5761540469043097
+    ],
+    [
+      0.5814313160254739,
+      0.5467115873462622,
+      0.5602516167766243
+    ],
+    [
+      0.5533727788006659,
+      0.5443919487732966,
+      0.5379819652355076
+    ],
+    [
+      0.496482984676159,
+      0.4745842832406578,
+      0.4780854914648457
+    ],
+    [
+      0.1695874001774623,
+      0.20689952592635064,
+      0.241486670396623
+    ],
+    [
+      0.5186026641940712,
+      0.5348696945616073,
+      0.538245426729002
+    ],
+    [
+      0.5264429884398646,
+      0.5347474202555722,
+      0.5245788707772329
+    ],
+    [
+      0.5361210293324478,
+      0.5696448471861862,
+      0.5490174166844045
+    ],
+    [
+      0.5011181860937578,
+      0.4949897364205734,
+      0.5140747691803015
+    ],
+    [
+      0.12453007518796992,
+      0.10463389656938042,
+      0.14441882336506454
+    ],
+    [
+      0.5024356871959752,
+      0.5128371864647485,
+      0.5224660935962862
+    ],
+    [
+      0.4508512150779684,
+      0.42399186982191805,
+      0.4735230071185783
+    ],
+    [
+      0.1059047619047619,
+      0.0740352874217416,
+      0.11179699465993294
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.035555555555555556
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.035555555555555556
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.05492205850950246
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.09854819976771198
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.035555555555555556
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.035555555555555556
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.035555555555555556
+    ],
+    [
+      0.08524904214559388,
+      0.06235827664399093,
+      0.13191042121432614
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.15005285375745306
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.12148355315429842
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.035555555555555556
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.035555555555555556
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.035555555555555556
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.035555555555555556
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.035555555555555556
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.035555555555555556
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.035555555555555556
+    ],
+    [
+      0.5155520463926491,
+      0.4834919976029462,
+      0.5230383466220057
+    ],
+    [
+      0.5380961664877265,
+      0.5008062208062208,
+      0.5211229884076147
+    ],
+    [
+      0.5272063581266508,
+      0.4672480694405422,
+      0.49863009223540533
+    ],
+    [
+      0.39805846962597535,
+      0.40250103448113717,
+      0.4240103848193136
+    ],
+    [
+      0.3538677315175011,
+      0.4121484734519008,
+      0.363351346052092
+    ],
+    [
+      0.5141596600363336,
+      0.4783424709887752,
+      0.49155809018941227
+    ],
+    [
+      0.5171071264580704,
+      0.4698324024878947,
+      0.48685470827273497
+    ],
+    [
+      0.5090561790249203,
+      0.4803542003792591,
+      0.4942813494939459
+    ],
+    [
+      0.5048182542368588,
+      0.4560043299491139,
+      0.4879293913260288
+    ],
+    [
+      0.4274674213724684,
+      0.4425000462527539,
+      0.4352888223276404
+    ],
+    [
+      0.4542609929347233,
+      0.4070079721085678,
+      0.4637528476093493
+    ],
+    [
+      0.4431818181818182,
+      0.39404555485860443,
+      0.48197556846609696
+    ],
+    [
+      0.41685254142483436,
+      0.396373971767654,
+      0.45274756611147354
+    ],
+    [
+      0.363473921701714,
+      0.38215513468948775,
+      0.4101615156611519
+    ],
+    [
+      0.33082341734704374,
+      0.4136986822701108,
+      0.37155986809166
+    ],
+    [
+      0.5006822587545646,
+      0.4898013750954927,
+      0.5007494508839189
+    ],
+    [
+      0.5005404024180325,
+      0.4758537450544025,
+      0.4981615220736836
+    ],
+    [
+      0.5019602091168551,
+      0.4554614692587287,
+      0.4937104949506684
+    ],
+    [
+      0.4550410552780343,
+      0.4607703603660348,
+      0.474015532441369
+    ],
+    [
+      0.41535750051661935,
+      0.416153899168926,
+      0.421136826253979
+    ],
+    [
+      0.5401993862830672,
+      0.552530710373752,
+      0.5151880837831583
+    ],
+    [
+      0.5420474365046646,
+      0.5578867869597713,
+      0.5446771467434284
+    ],
+    [
+      0.5488203081197922,
+      0.5244145492201109,
+      0.5463510954621082
+    ],
+    [
+      0.5178243082556382,
+      0.46579456349277837,
+      0.4683458879690061
+    ],
+    [
+      0.18775521460370345,
+      0.21550319376406332,
+      0.21655478243713538
+    ],
+    [
+      0.5326647998550591,
+      0.518457280764575,
+      0.49568672714001305
+    ],
+    [
+      0.5245084821034636,
+      0.5304579104643621,
+      0.5023454768616442
+    ],
+    [
+      0.5215075742048482,
+      0.5177289004675069,
+      0.5330359278406179
+    ],
+    [
+      0.48345963349389215,
+      0.45116217116217117,
+      0.5145823083425062
+    ],
+    [
+      0.1512262132871032,
+      0.12312871647478818,
+      0.13203572429812968
+    ],
+    [
+      0.49885209269974184,
+      0.5000879740638872,
+      0.5599771492385439
+    ],
+    [
+      0.5293707711535186,
+      0.5060327843012659,
+      0.5323856475507852
+    ],
+    [
+      0.5444929851128257,
+      0.5060187300393401,
+      0.5119044494622019
+    ],
+    [
+      0.4713895780674516,
+      0.4419495708969393,
+      0.44601459892234063
+    ],
+    [
+      0.16470669170254784,
+      0.16155976268411015,
+      0.1751172275584572
+    ],
+    [
+      0.5201857849501874,
+      0.5031432755388309,
+      0.5031607959821339
+    ],
+    [
+      0.5109202201620279,
+      0.5056016588186708,
+      0.49815434787155166
+    ],
+    [
+      0.5266486691131178,
+      0.5211110238639138,
+      0.522274271005523
+    ],
+    [
+      0.4550410552780343,
+      0.4607703603660348,
+      0.474015532441369
+    ],
+    [
+      0.11591634172279333,
+      0.08483516483516484,
+      0.10585527660725001
+    ],
+    [
+      0.4713005221129155,
+      0.4635359635799467,
+      0.5020521635729008
+    ],
+    [
+      0.4151569977627395,
+      0.3791981509714007,
+      0.4420199600359946
+    ],
+    [
+      0.1059047619047619,
+      0.06235827664399093,
+      0.07334428024083196
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.08524904214559388,
+      0.06235827664399093,
+      0.07334428024083196
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.5155520463926491,
+      0.4834919976029462,
+      0.5230383466220057
+    ],
+    [
+      0.5380961664877265,
+      0.5008062208062208,
+      0.5211229884076147
+    ],
+    [
+      0.5272063581266508,
+      0.4672480694405422,
+      0.49863009223540533
+    ],
+    [
+      0.39805846962597535,
+      0.40250103448113717,
+      0.4240103848193136
+    ],
+    [
+      0.3538677315175011,
+      0.4121484734519008,
+      0.363351346052092
+    ],
+    [
+      0.5141596600363336,
+      0.4783424709887752,
+      0.49155809018941227
+    ],
+    [
+      0.5171071264580704,
+      0.4698324024878947,
+      0.48685470827273497
+    ],
+    [
+      0.5090561790249203,
+      0.4803542003792591,
+      0.4942813494939459
+    ],
+    [
+      0.5048182542368588,
+      0.4560043299491139,
+      0.4879293913260288
+    ],
+    [
+      0.4274674213724684,
+      0.4425000462527539,
+      0.4352888223276404
+    ],
+    [
+      0.4542609929347233,
+      0.4070079721085678,
+      0.4637528476093493
+    ],
+    [
+      0.4431818181818182,
+      0.39404555485860443,
+      0.48197556846609696
+    ],
+    [
+      0.41685254142483436,
+      0.396373971767654,
+      0.45274756611147354
+    ],
+    [
+      0.363473921701714,
+      0.38215513468948775,
+      0.4101615156611519
+    ],
+    [
+      0.33082341734704374,
+      0.4136986822701108,
+      0.37155986809166
+    ],
+    [
+      0.5006822587545646,
+      0.4898013750954927,
+      0.5007494508839189
+    ],
+    [
+      0.5005404024180325,
+      0.4758537450544025,
+      0.4981615220736836
+    ],
+    [
+      0.5019602091168551,
+      0.4554614692587287,
+      0.4937104949506684
+    ],
+    [
+      0.4550410552780343,
+      0.4607703603660348,
+      0.474015532441369
+    ],
+    [
+      0.41535750051661935,
+      0.416153899168926,
+      0.421136826253979
+    ],
+    [
+      0.5313615304103302,
+      0.5499495907659173,
+      0.505907620055479
+    ],
+    [
+      0.5378265906630756,
+      0.5648082307722488,
+      0.531990866518522
+    ],
+    [
+      0.5450216450216451,
+      0.5244145492201109,
+      0.5463510954621082
+    ],
+    [
+      0.5178243082556382,
+      0.46579456349277837,
+      0.4683458879690061
+    ],
+    [
+      0.18775521460370345,
+      0.21550319376406332,
+      0.21655478243713538
+    ],
+    [
+      0.5326647998550591,
+      0.518457280764575,
+      0.49568672714001305
+    ],
+    [
+      0.5245084821034636,
+      0.5304579104643621,
+      0.5023454768616442
+    ],
+    [
+      0.5215075742048482,
+      0.5177289004675069,
+      0.5330359278406179
+    ],
+    [
+      0.48345963349389215,
+      0.45116217116217117,
+      0.5145823083425062
+    ],
+    [
+      0.1512262132871032,
+      0.12312871647478818,
+      0.13203572429812968
+    ],
+    [
+      0.5031912975181231,
+      0.5019072569667405,
+      0.571142211566397
+    ],
+    [
+      0.5293707711535186,
+      0.5060327843012659,
+      0.5323856475507852
+    ],
+    [
+      0.5444929851128257,
+      0.5060187300393401,
+      0.5119044494622019
+    ],
+    [
+      0.4713895780674516,
+      0.4419495708969393,
+      0.44601459892234063
+    ],
+    [
+      0.16470669170254784,
+      0.16155976268411015,
+      0.1751172275584572
+    ],
+    [
+      0.5201857849501874,
+      0.5031432755388309,
+      0.5031607959821339
+    ],
+    [
+      0.5109202201620279,
+      0.5056016588186708,
+      0.49815434787155166
+    ],
+    [
+      0.5266486691131178,
+      0.5211110238639138,
+      0.522274271005523
+    ],
+    [
+      0.4550410552780343,
+      0.4607703603660348,
+      0.474015532441369
+    ],
+    [
+      0.11591634172279333,
+      0.08483516483516484,
+      0.10585527660725001
+    ],
+    [
+      0.4713005221129155,
+      0.4635359635799467,
+      0.5020521635729008
+    ],
+    [
+      0.4151569977627395,
+      0.3791981509714007,
+      0.4420199600359946
+    ],
+    [
+      0.1059047619047619,
+      0.06235827664399093,
+      0.07334428024083196
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.08524904214559388,
+      0.06235827664399093,
+      0.07334428024083196
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.5155520463926491,
+      0.4834919976029462,
+      0.5230383466220057
+    ],
+    [
+      0.5380961664877265,
+      0.5008062208062208,
+      0.5211229884076147
+    ],
+    [
+      0.5272063581266508,
+      0.4672480694405422,
+      0.49863009223540533
+    ],
+    [
+      0.39805846962597535,
+      0.40250103448113717,
+      0.4240103848193136
+    ],
+    [
+      0.3538677315175011,
+      0.4121484734519008,
+      0.363351346052092
+    ],
+    [
+      0.5141596600363336,
+      0.4783424709887752,
+      0.49155809018941227
+    ],
+    [
+      0.5171071264580704,
+      0.4698324024878947,
+      0.48685470827273497
+    ],
+    [
+      0.5090561790249203,
+      0.4803542003792591,
+      0.4942813494939459
+    ],
+    [
+      0.5048182542368588,
+      0.4560043299491139,
+      0.4879293913260288
+    ],
+    [
+      0.4274674213724684,
+      0.4425000462527539,
+      0.4352888223276404
+    ],
+    [
+      0.4542609929347233,
+      0.4070079721085678,
+      0.4637528476093493
+    ],
+    [
+      0.4431818181818182,
+      0.39404555485860443,
+      0.48197556846609696
+    ],
+    [
+      0.41685254142483436,
+      0.396373971767654,
+      0.45274756611147354
+    ],
+    [
+      0.363473921701714,
+      0.38215513468948775,
+      0.4101615156611519
+    ],
+    [
+      0.33082341734704374,
+      0.4136986822701108,
+      0.37155986809166
+    ],
+    [
+      0.5006822587545646,
+      0.4898013750954927,
+      0.5007494508839189
+    ],
+    [
+      0.5005404024180325,
+      0.4758537450544025,
+      0.4981615220736836
+    ],
+    [
+      0.5019602091168551,
+      0.4554614692587287,
+      0.4937104949506684
+    ],
+    [
+      0.4550410552780343,
+      0.4607703603660348,
+      0.474015532441369
+    ],
+    [
+      0.41535750051661935,
+      0.416153899168926,
+      0.421136826253979
+    ],
+    [
+      0.5137607180725265,
+      0.552838400004153,
+      0.5266045220910934
+    ],
+    [
+      0.5357768408615866,
+      0.5660003549676197,
+      0.5353883471545416
+    ],
+    [
+      0.5488203081197922,
+      0.5244145492201109,
+      0.5463510954621082
+    ],
+    [
+      0.5178243082556382,
+      0.46579456349277837,
+      0.4683458879690061
+    ],
+    [
+      0.18775521460370345,
+      0.21550319376406332,
+      0.21655478243713538
+    ],
+    [
+      0.5326647998550591,
+      0.518457280764575,
+      0.49568672714001305
+    ],
+    [
+      0.5245084821034636,
+      0.5304579104643621,
+      0.5023454768616442
+    ],
+    [
+      0.5215075742048482,
+      0.5177289004675069,
+      0.5330359278406179
+    ],
+    [
+      0.48345963349389215,
+      0.45116217116217117,
+      0.5145823083425062
+    ],
+    [
+      0.1512262132871032,
+      0.12312871647478818,
+      0.13203572429812968
+    ],
+    [
+      0.49885209269974184,
+      0.5000879740638872,
+      0.5599771492385439
+    ],
+    [
+      0.5293707711535186,
+      0.5060327843012659,
+      0.5323856475507852
+    ],
+    [
+      0.5444929851128257,
+      0.5060187300393401,
+      0.5119044494622019
+    ],
+    [
+      0.4713895780674516,
+      0.4419495708969393,
+      0.44601459892234063
+    ],
+    [
+      0.16470669170254784,
+      0.16155976268411015,
+      0.1751172275584572
+    ],
+    [
+      0.5201857849501874,
+      0.5031432755388309,
+      0.5031607959821339
+    ],
+    [
+      0.5109202201620279,
+      0.5056016588186708,
+      0.49815434787155166
+    ],
+    [
+      0.5266486691131178,
+      0.5211110238639138,
+      0.522274271005523
+    ],
+    [
+      0.4550410552780343,
+      0.4607703603660348,
+      0.474015532441369
+    ],
+    [
+      0.11591634172279333,
+      0.08483516483516484,
+      0.10585527660725001
+    ],
+    [
+      0.4713005221129155,
+      0.4635359635799467,
+      0.5020521635729008
+    ],
+    [
+      0.4151569977627395,
+      0.3791981509714007,
+      0.4420199600359946
+    ],
+    [
+      0.1059047619047619,
+      0.06235827664399093,
+      0.07334428024083196
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.08524904214559388,
+      0.06235827664399093,
+      0.07334428024083196
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.5155520463926491,
+      0.4834919976029462,
+      0.5230383466220057
+    ],
+    [
+      0.5380961664877265,
+      0.5008062208062208,
+      0.5211229884076147
+    ],
+    [
+      0.5272063581266508,
+      0.4672480694405422,
+      0.49863009223540533
+    ],
+    [
+      0.39805846962597535,
+      0.40250103448113717,
+      0.4240103848193136
+    ],
+    [
+      0.3538677315175011,
+      0.4121484734519008,
+      0.363351346052092
+    ],
+    [
+      0.5141596600363336,
+      0.4783424709887752,
+      0.49155809018941227
+    ],
+    [
+      0.5171071264580704,
+      0.4698324024878947,
+      0.48685470827273497
+    ],
+    [
+      0.5090561790249203,
+      0.4803542003792591,
+      0.4942813494939459
+    ],
+    [
+      0.5048182542368588,
+      0.4560043299491139,
+      0.4879293913260288
+    ],
+    [
+      0.4274674213724684,
+      0.4425000462527539,
+      0.4352888223276404
+    ],
+    [
+      0.4542609929347233,
+      0.4070079721085678,
+      0.4637528476093493
+    ],
+    [
+      0.4431818181818182,
+      0.39404555485860443,
+      0.48197556846609696
+    ],
+    [
+      0.41685254142483436,
+      0.396373971767654,
+      0.45274756611147354
+    ],
+    [
+      0.363473921701714,
+      0.38215513468948775,
+      0.4101615156611519
+    ],
+    [
+      0.33082341734704374,
+      0.4136986822701108,
+      0.37155986809166
+    ],
+    [
+      0.5006822587545646,
+      0.4898013750954927,
+      0.5007494508839189
+    ],
+    [
+      0.5005404024180325,
+      0.4758537450544025,
+      0.4981615220736836
+    ],
+    [
+      0.5019602091168551,
+      0.4554614692587287,
+      0.4937104949506684
+    ],
+    [
+      0.4550410552780343,
+      0.4607703603660348,
+      0.474015532441369
+    ],
+    [
+      0.41535750051661935,
+      0.416153899168926,
+      0.421136826253979
+    ],
+    [
+      0.5137607180725265,
+      0.552838400004153,
+      0.5266045220910934
+    ],
+    [
+      0.5357768408615866,
+      0.5660003549676197,
+      0.5353883471545416
+    ],
+    [
+      0.5488203081197922,
+      0.5244145492201109,
+      0.5463510954621082
+    ],
+    [
+      0.5178243082556382,
+      0.46579456349277837,
+      0.4683458879690061
+    ],
+    [
+      0.18775521460370345,
+      0.21550319376406332,
+      0.21655478243713538
+    ],
+    [
+      0.5326647998550591,
+      0.518457280764575,
+      0.49568672714001305
+    ],
+    [
+      0.5245084821034636,
+      0.5304579104643621,
+      0.5023454768616442
+    ],
+    [
+      0.5215075742048482,
+      0.5177289004675069,
+      0.5330359278406179
+    ],
+    [
+      0.48345963349389215,
+      0.45116217116217117,
+      0.5145823083425062
+    ],
+    [
+      0.1512262132871032,
+      0.12312871647478818,
+      0.13203572429812968
+    ],
+    [
+      0.49885209269974184,
+      0.5000879740638872,
+      0.5599771492385439
+    ],
+    [
+      0.5293707711535186,
+      0.5060327843012659,
+      0.5323856475507852
+    ],
+    [
+      0.5444929851128257,
+      0.5060187300393401,
+      0.5119044494622019
+    ],
+    [
+      0.4713895780674516,
+      0.4419495708969393,
+      0.44601459892234063
+    ],
+    [
+      0.16470669170254784,
+      0.16155976268411015,
+      0.1751172275584572
+    ],
+    [
+      0.5201857849501874,
+      0.5031432755388309,
+      0.5031607959821339
+    ],
+    [
+      0.5109202201620279,
+      0.5056016588186708,
+      0.49815434787155166
+    ],
+    [
+      0.5266486691131178,
+      0.5211110238639138,
+      0.522274271005523
+    ],
+    [
+      0.4550410552780343,
+      0.4607703603660348,
+      0.474015532441369
+    ],
+    [
+      0.11591634172279333,
+      0.08483516483516484,
+      0.10585527660725001
+    ],
+    [
+      0.4713005221129155,
+      0.4635359635799467,
+      0.5020521635729008
+    ],
+    [
+      0.4151569977627395,
+      0.3791981509714007,
+      0.4420199600359946
+    ],
+    [
+      0.1059047619047619,
+      0.06235827664399093,
+      0.07334428024083196
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.08524904214559388,
+      0.06235827664399093,
+      0.07334428024083196
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ],
+    [
+      0.06299212598425197,
+      0.06235827664399093,
+      0.06324110671936758
+    ]
+  ],
+  "best_index": 109,
+  "best_params": {
+    "clf__C": 1,
+    "clf__class_weight": "balanced",
+    "clf__gamma": 0.1,
+    "fusion__clip_weight": 1,
+    "fusion__e5_weight": 0.5,
+    "fusion__mode": "fusion",
+    "fusion__visual_weight": 0.5
+  },
+  "inner_macro_f1": 0.5627981733827868,
+  "selected_inner_fit": [
+    [
+      {
+        "start": 0,
+        "stop": 1536,
+        "weight": 0.5,
+        "mean_sha256": "86dc6709321881cad4c23d4660abde67d2f37353d5115e8c85edc962edbd96c6",
+        "scale_sha256": "542a4c5fe1db98ffbee0dd8c72e92f8ad340821e5740468ccee7614d8a90a89f"
+      },
+      {
+        "start": 1536,
+        "stop": 2560,
+        "weight": 1,
+        "mean_sha256": "660d9c84d0611246212c95d88d17d0d71977bfc5e17abb1f7e509414ed16f30a",
+        "scale_sha256": "3a0c0c4feebb674eb693ed65bd25ed5d458919eb6e0d1d8c9647352357c471ac"
+      },
+      {
+        "start": 2560,
+        "stop": 3072,
+        "weight": 1,
+        "mean_sha256": "2eba91a9faaf62a8098d0d7db983f3ba9bc80667518c11096bf20d43f2d6be42",
+        "scale_sha256": "38bfdf52a78d76f553306dafbd9b9c4917bef1e1be397dcf37444fc5aeab7fb3"
+      },
+      {
+        "start": 3072,
+        "stop": 3840,
+        "weight": 0.5,
+        "mean_sha256": "aa87556bab3200bdc7854a8de7106ec0d61c23faa90cb6fa7552b3d62c9f3295",
+        "scale_sha256": "b43416dd4a483be7119773c13e3158e6af414c132467f1d497cee35aac2e8547"
+      }
+    ],
+    [
+      {
+        "start": 0,
+        "stop": 1536,
+        "weight": 0.5,
+        "mean_sha256": "0ba796bc7725e50fe711ae3264bb5e23266bad1535d06bfb5ab0e4497b68430d",
+        "scale_sha256": "6da25ac4ca472cc25a90df59736e2ff36199f12478d8db3479dee65796f20abd"
+      },
+      {
+        "start": 1536,
+        "stop": 2560,
+        "weight": 1,
+        "mean_sha256": "6b4ea94240391222be352f2a0e6c5d05981b30d286265ae39681739930859946",
+        "scale_sha256": "ab41fd74876157e81bbe83d31977becb1d6cb026918540a6ad5983ec6c5cfa36"
+      },
+      {
+        "start": 2560,
+        "stop": 3072,
+        "weight": 1,
+        "mean_sha256": "dcd04a0402da84aafbfd901a341ffce54f79057d6ac9e7cff9696bbfca1e06ac",
+        "scale_sha256": "ded71a4ad225db2754ff629a6893328f2baea0b8f080605542295c7306d04594"
+      },
+      {
+        "start": 3072,
+        "stop": 3840,
+        "weight": 0.5,
+        "mean_sha256": "60b5b9d2dddbc6b6be6c3faf9792ea299d92d5e9e6f0b0936a6e066a718523c3",
+        "scale_sha256": "ca1109c78a24c57f465295eca272aac6e08aea7d474bddc603ef3cd3f817f100"
+      }
+    ],
+    [
+      {
+        "start": 0,
+        "stop": 1536,
+        "weight": 0.5,
+        "mean_sha256": "1e718f0b55a5d618cf1a7f3e98b57ce68ecd116466f8eb68c2195cd18d346b29",
+        "scale_sha256": "984053f44d4b84292eb064d76037963088499d17b96fe6d899cb00a3f6acb138"
+      },
+      {
+        "start": 1536,
+        "stop": 2560,
+        "weight": 1,
+        "mean_sha256": "2eff155980bcd3bc6044dce09273e3770fa619d6a7ca7787b6d330da0c3bfa37",
+        "scale_sha256": "d3307008337009d0d2a84a6d3a6927254907ff1ce018d020df2244127b2bca6d"
+      },
+      {
+        "start": 2560,
+        "stop": 3072,
+        "weight": 1,
+        "mean_sha256": "11160b8d9a81c6b20dbf268304ed04631e37547bbabc233dff311bd182112ecd",
+        "scale_sha256": "81e960745cd82392a9cb1257a6f65a20315471d7df0daf4a2aed000fc17ea033"
+      },
+      {
+        "start": 3072,
+        "stop": 3840,
+        "weight": 0.5,
+        "mean_sha256": "47b07cd0bd27f7da8670e1575e33d490594bf38f42a5f34da2bdf1214fb14638",
+        "scale_sha256": "01304a3bfb74296fcc40a5337010fdde899f62c525c7b579596545aa5ed23eb7"
+      }
+    ]
+  ],
+  "outer_fit": [
+    {
+      "start": 0,
+      "stop": 1536,
+      "weight": 0.5,
+      "mean_sha256": "e84179245e087b6378dc204b2b6e3907c8bbeee86bf44a24c380f49e41994896",
+      "scale_sha256": "e82301d5f9d30074bf119fdf011a3dc9a1f0859ff5619587e89a6fa6aadc7dd3"
+    },
+    {
+      "start": 1536,
+      "stop": 2560,
+      "weight": 1,
+      "mean_sha256": "6422d23340284d838e6b1f5149ac710d621ebc455382f12d06a135bb0f2451c3",
+      "scale_sha256": "20c77f68b4551faed2e4e71b4b52faca5abe1bf9e2b11e8bde778091f9453316"
+    },
+    {
+      "start": 2560,
+      "stop": 3072,
+      "weight": 1,
+      "mean_sha256": "3db336027d94e08240dfbfb513957f8dbd0b596171e6846b76ca625954aac94d",
+      "scale_sha256": "0ba0109b46358cc44bd9b179e91ceed2a35602cbdbcca672888e9d4c2d8379a1"
+    },
+    {
+      "start": 3072,
+      "stop": 3840,
+      "weight": 0.5,
+      "mean_sha256": "5480eef76a935c3eda7dde3264503f7f7819ab8548cb1f390b491d3123b697a4",
+      "scale_sha256": "6d8c0dff1180a31385387023bd2baacb623f22dded268b4a4af4d924d5fff15a"
+    }
+  ],
+  "seconds": 27.158215265953913
+}

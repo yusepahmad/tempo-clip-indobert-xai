@@ -1,0 +1,87 @@
+{
+  "index": 494,
+  "sample_id": "TMP-31CA5F6B9960",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "613e3c8d711a39f32f3e9693880b2125e686ef1cb7cb0e4c52f5f9a80e362ee6",
+  "image_sha256": "31ca5f6b9960d5070cf5bf05e66b2177519723a98ecc3acc2754eb85d0e9f206",
+  "transmitted_image_sha256": "b97be55232a79b34b0a8d1af57a9976215582feef3bb69f8012bcfbce717f7a9",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.710323,
+      "total": 10,
+      "remaining": 1.2896769999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.710323000000002,
+      "total": 100,
+      "remaining": 91.289677,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.160415202844888,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A military tank\",\n  \"source_properties\": \"Heavily armored, destructive combat vehicle designed for warfare and forceful maneuvers.\",\n  \"target_situation\": \"The Ministry of Defense deploying soldiers to manage agricultural food estates.\",\n  \"mapping\": \"Using warfare tools for farming symbolizes an aggressive, mismatched, and potentially disruptive approach.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "-5nLavLsIrfc_uMPiPP3wAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 89,
+      "cost": {
+        "input_tokens_cost_nanodollars": 666000,
+        "output_tokens_cost_nanodollars": 267000
+      },
+      "prompt_tokens": 1332,
+      "total_backend_latency_ms": 2482,
+      "total_tokens": 1421
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.711256,
+      "total": 10,
+      "remaining": 1.2887439999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.711256000000006,
+      "total": 100,
+      "remaining": 91.288744,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000933,
+  "fields": {
+    "source_object": "A military tank",
+    "source_properties": "Heavily armored, destructive combat vehicle designed for warfare and forceful maneuvers.",
+    "target_situation": "The Ministry of Defense deploying soldiers to manage agricultural food estates.",
+    "mapping": "Using warfare tools for farming symbolizes an aggressive, mismatched, and potentially disruptive approach.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A military tank\nsource_properties: Heavily armored, destructive combat vehicle designed for warfare and forceful maneuvers.\ntarget_situation: The Ministry of Defense deploying soldiers to manage agricultural food estates.\nmapping: Using warfare tools for farming symbolizes an aggressive, mismatched, and potentially disruptive approach.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

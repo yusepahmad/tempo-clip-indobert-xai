@@ -1,0 +1,83 @@
+{
+  "index": 552,
+  "sample_id": "TMP-D42AC600C320",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "f8d5c5d73ade2bf815d02cd2d6c57447c991c320f679d8bbc0e0db885c5681fb",
+  "image_sha256": "d42ac600c3202d5af6bf21030db192b5e0d2ed4877533001569de8defcc03c8b",
+  "transmitted_image_sha256": "5adcc9c449bd27343b3b6cc820a688df5b1d1f8a6aeacfc85177ce1cef2ad722",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.0828214999999997,
+      "total": 10,
+      "remaining": 7.9171785,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.0828214999999943,
+      "total": 100,
+      "remaining": 97.9171785,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.268510139081627,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks, ilustrasi tersebut diklasifikasikan ke dalam:\n\n**A: BENCANA_JERAT**\n\n**Alasan:** Meskipun gambar tersebut merupakan parodi dari momen bersejarah militer (Iwo Jima), alasan yang disertakan menyebutkan bahwa para tentara tersebut mendorong seseorang seolah-olah dalam \"tekanan atau jeratan,\" yang menggambarkan keterpaksaan dalam pengambilan keputusan. Kata \"jerat\" secara eksplisit merupakan bagian dari definisi kategori A.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "wuHKakfJm_7jD5WNn8AN",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1377,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1271
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 778000,
+        "output_tokens_cost_nanodollars": 4131000
+      },
+      "prompt_tokens": 1556,
+      "total_backend_latency_ms": 7192,
+      "total_tokens": 2933
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.0877305,
+      "total": 10,
+      "remaining": 7.9122695,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.0877305000000064,
+      "total": 100,
+      "remaining": 97.9122695,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.004909
+}

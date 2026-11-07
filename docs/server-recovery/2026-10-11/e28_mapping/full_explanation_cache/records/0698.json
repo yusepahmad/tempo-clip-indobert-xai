@@ -1,0 +1,87 @@
+{
+  "index": 698,
+  "sample_id": "TMP-BDDDADCBC85D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "178bfefaf97b7dce3b39653b5320c91e4d0220ab84a485f5bd034c4db70a3a71",
+  "image_sha256": "bdddadcbc85d93a868c22d661206e0666998a91ae6e059185d006a7df70f1e91",
+  "transmitted_image_sha256": "f7c5b8c1cbed3c744a7c8cc6d8f8b74753ad25341ba9355371639a4dde802e98",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.016331,
+      "total": 10,
+      "remaining": 0.9836690000000008,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.016330999999994,
+      "total": 100,
+      "remaining": 90.983669,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.956495631020516,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Ripped paper and a book\", \"source_properties\": \"Tearing sheets from a book, removing recorded content, fragmentation, and physical destruction of printed pages.\", \"target_situation\": \"Minister Fadli Zon's proposal to rewrite history by deleting records of the May 1998 mass rapes.\", \"mapping\": \"Ripping pages out of the '1998' book symbolizes the deliberate erasure or removal of specific historical events from the official narrative.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "cp_LaqLHAt7d_uMP45e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 109,
+      "cost": {
+        "input_tokens_cost_nanodollars": 691000,
+        "output_tokens_cost_nanodollars": 327000
+      },
+      "prompt_tokens": 1382,
+      "total_backend_latency_ms": 2467,
+      "total_tokens": 1491
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.017349,
+      "total": 10,
+      "remaining": 0.9826510000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.017348999999996,
+      "total": 100,
+      "remaining": 90.982651,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.001018,
+  "fields": {
+    "source_object": "Ripped paper and a book",
+    "source_properties": "Tearing sheets from a book, removing recorded content, fragmentation, and physical destruction of printed pages.",
+    "target_situation": "Minister Fadli Zon's proposal to rewrite history by deleting records of the May 1998 mass rapes.",
+    "mapping": "Ripping pages out of the '1998' book symbolizes the deliberate erasure or removal of specific historical events from the official narrative.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Ripped paper and a book\nsource_properties: Tearing sheets from a book, removing recorded content, fragmentation, and physical destruction of printed pages.\ntarget_situation: Minister Fadli Zon's proposal to rewrite history by deleting records of the May 1998 mass rapes.\nmapping: Ripping pages out of the '1998' book symbolizes the deliberate erasure or removal of specific historical events from the official narrative.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

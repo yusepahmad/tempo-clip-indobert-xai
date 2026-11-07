@@ -1,0 +1,90 @@
+{
+  "index": 449,
+  "sample_id": "TMP-2581D8AC2D75",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3d7edd64196c19f65cf32c4ecb1184393952c97b72f906b53d581c8af0cdd5ec",
+  "image_sha256": "2581d8ac2d75db88dd1f5135f84a8140e370f730dcc6785f4a9216de08d6a3c8",
+  "transmitted_image_sha256": "6290306219bd2a3787cb1331378ff29a9237a995dbb275ce4a9613438fc370f1",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.649807,
+      "total": 10,
+      "remaining": 1.3501930000000009,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.649806999999996,
+      "total": 100,
+      "remaining": 91.350193,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 13.940184429753572,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"source_object\": \"Pinocchio's shadow\",\n  \"source_properties\": \"An elongated nose that grows as a physical manifestation of telling a lie.\",\n  \"target_situation\": \"President Jokowi\u2019s indecision and perceived broken promises regarding the issuance of a KPK Perpu.\",\n  \"mapping\": \"The shadow's long nose symbolizes dishonesty, suggesting that the President\u2019s hesitation or stated reasons for his delay are deceptive.\",\n  \"uncertainty\": \"none\"\n}\n```",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "0JjLasiaHcfh_uMPvKet6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2414,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2303
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 679500,
+        "output_tokens_cost_nanodollars": 7242000
+      },
+      "prompt_tokens": 1359,
+      "total_backend_latency_ms": 12847,
+      "total_tokens": 3773
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6577285,
+      "total": 10,
+      "remaining": 1.3422715000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.657728500000005,
+      "total": 100,
+      "remaining": 91.3422715,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0079215,
+  "fields": {
+    "source_object": "Pinocchio's shadow",
+    "source_properties": "An elongated nose that grows as a physical manifestation of telling a lie.",
+    "target_situation": "President Jokowi\u2019s indecision and perceived broken promises regarding the issuance of a KPK Perpu.",
+    "mapping": "The shadow's long nose symbolizes dishonesty, suggesting that the President\u2019s hesitation or stated reasons for his delay are deceptive.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Pinocchio's shadow\nsource_properties: An elongated nose that grows as a physical manifestation of telling a lie.\ntarget_situation: President Jokowi\u2019s indecision and perceived broken promises regarding the issuance of a KPK Perpu.\nmapping: The shadow's long nose symbolizes dishonesty, suggesting that the President\u2019s hesitation or stated reasons for his delay are deceptive.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

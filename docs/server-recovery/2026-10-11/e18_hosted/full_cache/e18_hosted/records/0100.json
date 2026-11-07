@@ -1,0 +1,83 @@
+{
+  "index": 100,
+  "sample_id": "TMP-07121E49BA87",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "ec082f89942c2b04f26281f3cabc2f8ddefdc7849928ef09b2d3bfcbf6179a64",
+  "image_sha256": "07121e49ba87e442c174654b9361d880eda60841666144bf9283eb814f5070ce",
+  "transmitted_image_sha256": "1bf2c88ed11fb7bc340d38deb503d611083257a6d0a7ff48d99291437ac10f0f",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.35204449999999987,
+      "total": 10,
+      "remaining": 9.6479555,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.3520445000000052,
+      "total": 100,
+      "remaining": 99.6479555,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.629627372138202,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi serta \"Sumber dan alasan\" yang diberikan dalam soal, di mana disebutkan bahwa kepala tokoh digantikan oleh **mesin atau objek mekanis** untuk menggambarkan **fungsi mekanis** (pengendalian, struktur buatan), maka domain sumber metafora tersebut diklasifikasikan ke dalam:\n\n**E: MESIN_INFRASTRUKTUR**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "rc_KaqqoHbyb_uMP77KhsAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1689,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1614
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 774000,
+        "output_tokens_cost_nanodollars": 5067000
+      },
+      "prompt_tokens": 1548,
+      "total_backend_latency_ms": 8477,
+      "total_tokens": 3237
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.3578855000000001,
+      "total": 10,
+      "remaining": 9.6421145,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.35788549999999475,
+      "total": 100,
+      "remaining": 99.6421145,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.005841
+}

@@ -1,0 +1,118 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "macro_f1": 0.3832743196075468,
+  "strict_macro_f1": 0.23232829211553427,
+  "invalid_predictions": 78,
+  "rules": {
+    "boundary_single_code": 304,
+    "explicit_prefix_code": 308,
+    "unrecognized_no_explicit_answer": 78,
+    "explicit_matching_code_label": 50
+  },
+  "classes": [
+    "BENCANA_JERAT",
+    "HEWAN_TUBUH",
+    "KONSUMSI_TRANSAKSI",
+    "LAINNYA",
+    "MESIN_INFRASTRUKTUR",
+    "NON_METAFORA",
+    "PERMAINAN_KONTES"
+  ],
+  "prediction_columns": [
+    "BENCANA_JERAT",
+    "HEWAN_TUBUH",
+    "KONSUMSI_TRANSAKSI",
+    "LAINNYA",
+    "MESIN_INFRASTRUKTUR",
+    "NON_METAFORA",
+    "PERMAINAN_KONTES",
+    "INVALID"
+  ],
+  "confusion_matrix": [
+    [
+      69,
+      4,
+      4,
+      0,
+      7,
+      0,
+      10,
+      6
+    ],
+    [
+      15,
+      34,
+      11,
+      0,
+      8,
+      1,
+      11,
+      10
+    ],
+    [
+      6,
+      0,
+      50,
+      0,
+      5,
+      0,
+      12,
+      11
+    ],
+    [
+      12,
+      11,
+      6,
+      1,
+      2,
+      0,
+      22,
+      9
+    ],
+    [
+      41,
+      9,
+      16,
+      1,
+      107,
+      1,
+      21,
+      18
+    ],
+    [
+      30,
+      13,
+      6,
+      0,
+      5,
+      1,
+      12,
+      16
+    ],
+    [
+      8,
+      4,
+      5,
+      0,
+      4,
+      0,
+      77,
+      8
+    ]
+  ],
+  "per_class_f1": [
+    0.49110320284697506,
+    0.4121212121212121,
+    0.5494505494505495,
+    0.03076923076923077,
+    0.6079545454545454,
+    0.023255813953488372,
+    0.5682656826568265
+  ],
+  "parser_sha256": "69fa2bd0f6bc2f1c20bc2cca1470e4f327f249e4e9dfe5d48205cdd708127875",
+  "evaluator_sha256": "b7517336f8d759820565484a170a392ddc40ba7d7b46f69135d6207413f8e50d",
+  "strict_verification_sha256": "dcaf3c2ff5ac31bc9bf0f568afcb121832d13b9e93a8637cbdd3c1b1443ec11a",
+  "oof_sha256": "fe93efaed42c0b7c56608370c38f57af0d74f01ffd41c3b38f76e0b5243baedf",
+  "limitation": "Parsing change only; same hosted responses; no new model inference or fitting"
+}

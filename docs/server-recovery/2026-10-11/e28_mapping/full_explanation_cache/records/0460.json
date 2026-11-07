@@ -1,0 +1,87 @@
+{
+  "index": 460,
+  "sample_id": "TMP-DD95BE040ABF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "4752a05061bcb636970432c41440ff29173e4528970ce900c6c160a2bf53e4ff",
+  "image_sha256": "dd95be040abf164520accf6a08af355a2154a665a5c8a5efb8d60e08a8466a3d",
+  "transmitted_image_sha256": "b631129effb24b6d6234e5c970a7e11111e580cf7eacb0c8b4ae6d276a0d3a71",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.668561,
+      "total": 10,
+      "remaining": 1.3314389999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.668560999999997,
+      "total": 100,
+      "remaining": 91.331439,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1156122740358114,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Ghostly layered portraits\",\n  \"source_properties\": \"Translucent, overlapping, ascending in size, red and white color scheme.\",\n  \"target_situation\": \"The historical contribution of Chinese-Indonesian activists during the early Indonesian independence era.\",\n  \"mapping\": \"Layers represent the passage of time and depth of history, while overlapping figures symbolize unity and shared struggle within national identity.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "HpnLavLOPNvJ_uMPvcyw-AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 669500,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1339,
+      "total_backend_latency_ms": 1791,
+      "total_tokens": 1441
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6695365,
+      "total": 10,
+      "remaining": 1.3304635000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.669536500000007,
+      "total": 100,
+      "remaining": 91.3304635,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009755,
+  "fields": {
+    "source_object": "Ghostly layered portraits",
+    "source_properties": "Translucent, overlapping, ascending in size, red and white color scheme.",
+    "target_situation": "The historical contribution of Chinese-Indonesian activists during the early Indonesian independence era.",
+    "mapping": "Layers represent the passage of time and depth of history, while overlapping figures symbolize unity and shared struggle within national identity.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: Ghostly layered portraits\nsource_properties: Translucent, overlapping, ascending in size, red and white color scheme.\ntarget_situation: The historical contribution of Chinese-Indonesian activists during the early Indonesian independence era.\nmapping: Layers represent the passage of time and depth of history, while overlapping figures symbolize unity and shared struggle within national identity.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

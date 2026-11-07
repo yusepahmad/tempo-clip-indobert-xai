@@ -1,0 +1,87 @@
+{
+  "index": 281,
+  "sample_id": "TMP-48242A9D6801",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1ef8ca66a4d40a0868500abe9cfb7455433a33fb5b37e42a1dfc5de253cd977c",
+  "image_sha256": "48242a9d680164c03961b7e74284cc8437bbf7f3e46f2fa1a7b56e47f3afdf26",
+  "transmitted_image_sha256": "a148f44d0c89452e63a5b9122c0b92fb8d1b85b46b0cdd2a0e6c9d1e13fdab28",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.423111,
+      "total": 10,
+      "remaining": 1.5768889999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.423111000000006,
+      "total": 100,
+      "remaining": 91.576889,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3987652617506683,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"voter's finger with indelible ink\",\n  \"source_properties\": \"A hand with a raised index finger tipped with dripping camouflage-patterned ink.\",\n  \"target_situation\": \"alleged political interference or internal competition within the Indonesian National Armed Forces (TNI).\",\n  \"mapping\": \"The voting ink, traditionally purple, is replaced with military camouflage, suggesting military influence or friction during the election process.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "gJTLapCUGO2M_PUPpv3KiQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 108,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674000,
+        "output_tokens_cost_nanodollars": 324000
+      },
+      "prompt_tokens": 1348,
+      "total_backend_latency_ms": 2104,
+      "total_tokens": 1456
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.424109,
+      "total": 10,
+      "remaining": 1.5758910000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.424109000000001,
+      "total": 100,
+      "remaining": 91.575891,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000998,
+  "fields": {
+    "source_object": "voter's finger with indelible ink",
+    "source_properties": "A hand with a raised index finger tipped with dripping camouflage-patterned ink.",
+    "target_situation": "alleged political interference or internal competition within the Indonesian National Armed Forces (TNI).",
+    "mapping": "The voting ink, traditionally purple, is replaced with military camouflage, suggesting military influence or friction during the election process.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: voter's finger with indelible ink\nsource_properties: A hand with a raised index finger tipped with dripping camouflage-patterned ink.\ntarget_situation: alleged political interference or internal competition within the Indonesian National Armed Forces (TNI).\nmapping: The voting ink, traditionally purple, is replaced with military camouflage, suggesting military influence or friction during the election process.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,83 @@
+{
+  "index": 167,
+  "sample_id": "TMP-64EBB610CB76",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "f8f2051bb9ab387c2021d98e4d89936b0c2bd4af39e959d2fa028bab1e569c8f",
+  "image_sha256": "64ebb610cb76098a44245283e00f6670a212a44ee50317c9ff75af064e655eff",
+  "transmitted_image_sha256": "bb7851c2ec161ecbba0f6cc941f04c27fca8b25568de5fb291a67588bc8ca9cf",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.5986095000000002,
+      "total": 10,
+      "remaining": 9.4013905,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.5986094999999949,
+      "total": 100,
+      "remaining": 99.4013905,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.18796221097,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan ilustrasi yang diberikan, domain sumber metafora pada sampul majalah Tempo tersebut adalah **HEWAN_TUBUH**.\n\n**Alasan:**\nIlustrasi tersebut menggunakan makhluk biologis, yaitu **sapi** (hewan), serta perilaku biologisnya (menghembuskan/mengeluarkan partikel dari mulut yang membentuk simbol Rupiah) sebagai kiasan untuk menggambarkan isu ekonomi dan penanganan wabah PMK (Penyakit Mulut dan Kuku). Penggunaan citra hewan untuk merepresentasikan masalah sosial-politik atau ekonomi termasuk dalam kategori domain sumber metafora hewan atau tubuh.\n\nJawab satu kode A sampai G: **B**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "EtLKatXCGLqi_uMPou_3-Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1400,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1260
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 785500,
+        "output_tokens_cost_nanodollars": 4200000
+      },
+      "prompt_tokens": 1571,
+      "total_backend_latency_ms": 8117,
+      "total_tokens": 2971
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.6035950000000003,
+      "total": 10,
+      "remaining": 9.396405,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.6035949999999985,
+      "total": 100,
+      "remaining": 99.396405,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.0049855
+}

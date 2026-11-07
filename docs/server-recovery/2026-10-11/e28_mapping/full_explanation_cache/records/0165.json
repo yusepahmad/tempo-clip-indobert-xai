@@ -1,0 +1,90 @@
+{
+  "index": 165,
+  "sample_id": "TMP-1CC829877D89",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "2856fc34d96ef89b968a9a519740714ccd8dfd41d8cdd88cdebe650923d18aa9",
+  "image_sha256": "1cc829877d89e618d7ae2add8475124190b353a70960b99e56e6fc7e987e483b",
+  "transmitted_image_sha256": "37cabcf5111941eac0fe3dd09487ff92e2656e620f3a28233efcbc3b7079ea5f",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.251955,
+      "total": 10,
+      "remaining": 1.7480449999999994,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.251954999999995,
+      "total": 100,
+      "remaining": 91.748045,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.881859548855573,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Luxury sports cars and raining banknotes\",\n  \"source_properties\": \"High speed, extreme cost, and effortless arrival of cash.\",\n  \"target_situation\": \"Young individuals suddenly becoming rich through illegal gambling and laundering.\",\n  \"mapping\": \"The fast cars and falling money represent the rapid, showy ascent to wealth gained from illicit, unstable sources.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "eZHLarHWOLua_uMPhJumwQI",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1050,
+      "completion_tokens_details": {
+        "reasoning_tokens": 956
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 3150000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 6295,
+      "total_tokens": 2397
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2557785,
+      "total": 10,
+      "remaining": 1.7442215,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.255778500000005,
+      "total": 100,
+      "remaining": 91.7442215,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0038235,
+  "fields": {
+    "source_object": "Luxury sports cars and raining banknotes",
+    "source_properties": "High speed, extreme cost, and effortless arrival of cash.",
+    "target_situation": "Young individuals suddenly becoming rich through illegal gambling and laundering.",
+    "mapping": "The fast cars and falling money represent the rapid, showy ascent to wealth gained from illicit, unstable sources.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: Luxury sports cars and raining banknotes\nsource_properties: High speed, extreme cost, and effortless arrival of cash.\ntarget_situation: Young individuals suddenly becoming rich through illegal gambling and laundering.\nmapping: The fast cars and falling money represent the rapid, showy ascent to wealth gained from illicit, unstable sources.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 492,
+  "sample_id": "TMP-E8E65B336C7E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "66bd2d886e7a95b6a1c788670af9fcf08d10070e66a74aa6809ca35a5a06d9dd",
+  "image_sha256": "e8e65b336c7e4864bd4022c98945c5ed42e9d6fbf18ff06e557c8f8cf6bf248b",
+  "transmitted_image_sha256": "21698e6b8ccb437207de5e0429d5e1a2e6343e337ef9f44239d0c02e05a93087",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7084135,
+      "total": 10,
+      "remaining": 1.2915864999999993,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.708413500000006,
+      "total": 100,
+      "remaining": 91.2915865,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3706926316954195,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"garlic bulb\",\n  \"source_properties\": \"multiple overlapping skin layers covering internal segments; common food item\",\n  \"target_situation\": \"corruption within Indonesian garlic importation networks involving businessmen and officials\",\n  \"mapping\": \"Peeling back garlic layers represents investigative reporting uncovering hidden collusion and bribery\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "75nLaqjRHPDe_uMPnvjrqQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 83,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675000,
+        "output_tokens_cost_nanodollars": 249000
+      },
+      "prompt_tokens": 1350,
+      "total_backend_latency_ms": 1622,
+      "total_tokens": 1433
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7093375,
+      "total": 10,
+      "remaining": 1.2906624999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.709337500000004,
+      "total": 100,
+      "remaining": 91.2906625,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000924,
+  "fields": {
+    "source_object": "garlic bulb",
+    "source_properties": "multiple overlapping skin layers covering internal segments; common food item",
+    "target_situation": "corruption within Indonesian garlic importation networks involving businessmen and officials",
+    "mapping": "Peeling back garlic layers represents investigative reporting uncovering hidden collusion and bribery",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: garlic bulb\nsource_properties: multiple overlapping skin layers covering internal segments; common food item\ntarget_situation: corruption within Indonesian garlic importation networks involving businessmen and officials\nmapping: Peeling back garlic layers represents investigative reporting uncovering hidden collusion and bribery\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

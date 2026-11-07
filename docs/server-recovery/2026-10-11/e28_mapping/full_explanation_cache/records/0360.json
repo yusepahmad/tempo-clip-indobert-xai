@@ -1,0 +1,90 @@
+{
+  "index": 360,
+  "sample_id": "TMP-760D0F334283",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b9ce1fe491a5f279afc53c6ea31818b5e3333de5a1d1a4d75ecca0cb84fbc402",
+  "image_sha256": "760d0f33428396eec9558383769952c4384d5d6334ef026547abb1afeab12cc6",
+  "transmitted_image_sha256": "5181646825b9577b2e5c4fffc0f83087b6330cfec2a1553036df8280d788403c",
+  "image_size": [
+    587,
+    727
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.528812,
+      "total": 10,
+      "remaining": 1.4711879999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.528812000000002,
+      "total": 100,
+      "remaining": 91.471188,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.405533293262124,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A match and its small flame\",\n  \"source_properties\": \"A tiny, concentrated spark capable of providing light and igniting a larger fire.\",\n  \"target_situation\": \"Chairil Anwar\u2019s literary influence on the Indonesian independence movement.\",\n  \"mapping\": \"The small flame represents Anwar's provocative poetry, which ignited nationalistic passion during dark times.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "iJbLasPGFPW6_uMPjdDjYA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 855,
+      "completion_tokens_details": {
+        "reasoning_tokens": 758
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 660500,
+        "output_tokens_cost_nanodollars": 2565000
+      },
+      "prompt_tokens": 1321,
+      "total_backend_latency_ms": 5025,
+      "total_tokens": 2176
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5320375,
+      "total": 10,
+      "remaining": 1.4679625000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.532037500000001,
+      "total": 100,
+      "remaining": 91.4679625,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0032255,
+  "fields": {
+    "source_object": "A match and its small flame",
+    "source_properties": "A tiny, concentrated spark capable of providing light and igniting a larger fire.",
+    "target_situation": "Chairil Anwar\u2019s literary influence on the Indonesian independence movement.",
+    "mapping": "The small flame represents Anwar's provocative poetry, which ignited nationalistic passion during dark times.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A match and its small flame\nsource_properties: A tiny, concentrated spark capable of providing light and igniting a larger fire.\ntarget_situation: Chairil Anwar\u2019s literary influence on the Indonesian independence movement.\nmapping: The small flame represents Anwar's provocative poetry, which ignited nationalistic passion during dark times.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

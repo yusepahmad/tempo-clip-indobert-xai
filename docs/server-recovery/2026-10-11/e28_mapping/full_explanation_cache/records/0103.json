@@ -1,0 +1,87 @@
+{
+  "index": 103,
+  "sample_id": "TMP-6B03F9BB5183",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bbf4294709aa26d9499cbd1ea8cce0eb0943332a8a87e1d299a9fd2f5c95cbeb",
+  "image_sha256": "6b03f9bb5183839eb7570b44250da1c4404efbb6afe9d47e6295f96639a7bbcb",
+  "transmitted_image_sha256": "39cbddb21c9876f9f3e3b64abe555bd02230d182d2db186201634547d8c847e5",
+  "image_size": [
+    300,
+    393
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.153532,
+      "total": 10,
+      "remaining": 1.8464679999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.153531999999998,
+      "total": 100,
+      "remaining": 91.846468,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.464792873710394,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"vultures\", \"source_properties\": \"scavenging birds circling a dying or dead body\", \"target_situation\": \"The political downfall of Akbar Tanjung at the Senayan legislative complex\", \"mapping\": \"The vultures symbolize political rivals or a looming end, circling as Tanjung's influence collapses, mirrored by the literal 'sunset' (senja kala) setting.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "zo_LasbDDPDe_uMPnvjrqQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 88,
+      "cost": {
+        "input_tokens_cost_nanodollars": 658000,
+        "output_tokens_cost_nanodollars": 264000
+      },
+      "prompt_tokens": 1316,
+      "total_backend_latency_ms": 1709,
+      "total_tokens": 1404
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.154454,
+      "total": 10,
+      "remaining": 1.8455460000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.154454000000001,
+      "total": 100,
+      "remaining": 91.845546,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000922,
+  "fields": {
+    "source_object": "vultures",
+    "source_properties": "scavenging birds circling a dying or dead body",
+    "target_situation": "The political downfall of Akbar Tanjung at the Senayan legislative complex",
+    "mapping": "The vultures symbolize political rivals or a looming end, circling as Tanjung's influence collapses, mirrored by the literal 'sunset' (senja kala) setting.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: vultures\nsource_properties: scavenging birds circling a dying or dead body\ntarget_situation: The political downfall of Akbar Tanjung at the Senayan legislative complex\nmapping: The vultures symbolize political rivals or a looming end, circling as Tanjung's influence collapses, mirrored by the literal 'sunset' (senja kala) setting.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

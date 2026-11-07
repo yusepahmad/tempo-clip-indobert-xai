@@ -1,0 +1,87 @@
+{
+  "index": 28,
+  "sample_id": "TMP-B7ABAAC26532",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e6886d46755c2ec7e3348b2e3da35c78aa77e998df97f7295563c2dae6f5ee86",
+  "image_sha256": "b7abaac26532748f483489c76bf2d0852cd84a419be41f678e4b12ba4278014b",
+  "transmitted_image_sha256": "c8286e826843d86474fba79905a9a4139df35407a1dd888df9b5da3b20b54077",
+  "image_size": [
+    581,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0516445,
+      "total": 10,
+      "remaining": 1.9483555,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.051644499999995,
+      "total": 100,
+      "remaining": 91.9483555,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.103733342140913,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Snakes and Ladders board game\", \"source_properties\": \"A grid with ladders for climbing up and snakes causing falls to lower levels.\", \"target_situation\": \"The fluctuating political career of Basuki Tjahaja Purnama (Ahok).\", \"mapping\": \"Ladders represent his political rises and successes, while snakes and obstacles symbolize his downfall, imprisonment, and challenges.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "3Y3LavaAG_7v_uMP-q7MqQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 669000,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1338,
+      "total_backend_latency_ms": 1576,
+      "total_tokens": 1429
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0525865,
+      "total": 10,
+      "remaining": 1.9474134999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.052586500000004,
+      "total": 100,
+      "remaining": 91.9474135,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000942,
+  "fields": {
+    "source_object": "Snakes and Ladders board game",
+    "source_properties": "A grid with ladders for climbing up and snakes causing falls to lower levels.",
+    "target_situation": "The fluctuating political career of Basuki Tjahaja Purnama (Ahok).",
+    "mapping": "Ladders represent his political rises and successes, while snakes and obstacles symbolize his downfall, imprisonment, and challenges.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Snakes and Ladders board game\nsource_properties: A grid with ladders for climbing up and snakes causing falls to lower levels.\ntarget_situation: The fluctuating political career of Basuki Tjahaja Purnama (Ahok).\nmapping: Ladders represent his political rises and successes, while snakes and obstacles symbolize his downfall, imprisonment, and challenges.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

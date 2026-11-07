@@ -1,0 +1,214 @@
+{
+  "macro_f1": 0.5316955232106716,
+  "folds": [
+    {
+      "fold": 1,
+      "macro_f1": 0.42592409979715457,
+      "inner_macro_f1": 0.5445912732772116,
+      "params": {
+        "clf": "SVC()",
+        "clf__C": "1",
+        "clf__class_weight": "balanced",
+        "clf__gamma": "0.0003"
+      }
+    },
+    {
+      "fold": 2,
+      "macro_f1": 0.529972646251716,
+      "inner_macro_f1": 0.5104833608287314,
+      "params": {
+        "clf": "SVC()",
+        "clf__C": "1",
+        "clf__class_weight": "balanced",
+        "clf__gamma": "0.0003"
+      }
+    },
+    {
+      "fold": 3,
+      "macro_f1": 0.5810639690942078,
+      "inner_macro_f1": 0.516276776842247,
+      "params": {
+        "clf": "SVC()",
+        "clf__C": "1",
+        "clf__class_weight": "balanced",
+        "clf__gamma": "scale"
+      }
+    },
+    {
+      "fold": 4,
+      "macro_f1": 0.5409795744084189,
+      "inner_macro_f1": 0.5377811958776971,
+      "params": {
+        "clf": "SVC()",
+        "clf__C": "1",
+        "clf__class_weight": "balanced",
+        "clf__gamma": "0.0003"
+      }
+    },
+    {
+      "fold": 5,
+      "macro_f1": 0.530836692839468,
+      "inner_macro_f1": 0.5213314714537801,
+      "params": {
+        "clf": "SVC()",
+        "clf__C": "1",
+        "clf__class_weight": "balanced",
+        "clf__gamma": "0.0003"
+      }
+    }
+  ],
+  "classification": {
+    "BENCANA_JERAT": {
+      "precision": 0.4453125,
+      "recall": 0.57,
+      "f1-score": 0.5,
+      "support": 100.0
+    },
+    "HEWAN_TUBUH": {
+      "precision": 0.547945205479452,
+      "recall": 0.4444444444444444,
+      "f1-score": 0.49079754601226994,
+      "support": 90.0
+    },
+    "KONSUMSI_TRANSAKSI": {
+      "precision": 0.5697674418604651,
+      "recall": 0.5833333333333334,
+      "f1-score": 0.5764705882352941,
+      "support": 84.0
+    },
+    "LAINNYA": {
+      "precision": 0.3625,
+      "recall": 0.4603174603174603,
+      "f1-score": 0.40559440559440557,
+      "support": 63.0
+    },
+    "MESIN_INFRASTRUKTUR": {
+      "precision": 0.7150537634408602,
+      "recall": 0.6214953271028038,
+      "f1-score": 0.665,
+      "support": 214.0
+    },
+    "NON_METAFORA": {
+      "precision": 0.6166666666666667,
+      "recall": 0.4457831325301205,
+      "f1-score": 0.5174825174825175,
+      "support": 83.0
+    },
+    "PERMAINAN_KONTES": {
+      "precision": 0.5196850393700787,
+      "recall": 0.6226415094339622,
+      "f1-score": 0.5665236051502146,
+      "support": 106.0
+    },
+    "accuracy": 0.5554054054054054,
+    "macro avg": {
+      "precision": 0.5395615166882176,
+      "recall": 0.5354307438803037,
+      "f1-score": 0.5316955232106716,
+      "support": 740.0
+    },
+    "weighted avg": {
+      "precision": 0.5727509952599129,
+      "recall": 0.5554054054054054,
+      "f1-score": 0.5587301448679571,
+      "support": 740.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      57,
+      7,
+      7,
+      3,
+      14,
+      4,
+      8
+    ],
+    [
+      12,
+      40,
+      8,
+      9,
+      9,
+      6,
+      6
+    ],
+    [
+      6,
+      5,
+      49,
+      6,
+      7,
+      0,
+      11
+    ],
+    [
+      5,
+      6,
+      3,
+      29,
+      3,
+      3,
+      14
+    ],
+    [
+      24,
+      6,
+      16,
+      12,
+      133,
+      7,
+      16
+    ],
+    [
+      15,
+      6,
+      1,
+      7,
+      11,
+      37,
+      6
+    ],
+    [
+      9,
+      3,
+      2,
+      14,
+      9,
+      3,
+      66
+    ]
+  ],
+  "source_meta": {
+    "status": "complete",
+    "model": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "csv_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+    "e01_hashes": {
+      "deskripsi.jsonl": "c75e8df3f9b71d6786462f8d0f1187ebe4234fb8dd079924f3f35707ff1b8cd2",
+      "zeroshot.jsonl": "10c07b06b13fbbf647f2b1ed12a722d9bff8f97caa6b621430d8bc0429ab38c9"
+    },
+    "worker_sha256": "62d4c277db4bbd61fb6b163e6141304cab80caee86795ff6d72a93628379192f",
+    "samples": 740,
+    "dimension": 1024,
+    "prefix": "",
+    "pooling": "CLS then L2",
+    "batch": 8,
+    "max_length": 1024,
+    "dtype": "float16",
+    "input_audit_sha256": "0d7fe6dfdb378b5e617b82f2eb9f82cbd73ba02a6c15131367dd3b6c07c0b192",
+    "embeddings_sha256": "c0d7d1fc9ac42988b0d107a694d7d3b355105f8640f776ace2617eed936495c4",
+    "seconds_by_view": {
+      "description": 3.5316924570000197,
+      "source_reason": 2.0762170630000014,
+      "combined": 6.1739520069999685
+    },
+    "truncated_by_view": {
+      "description": 0,
+      "source_reason": 0,
+      "combined": 0
+    },
+    "peak_cuda_bytes": 1199285248,
+    "torch": "2.11.0+cu128"
+  }
+}

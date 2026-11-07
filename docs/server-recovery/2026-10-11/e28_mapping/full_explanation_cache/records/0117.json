@@ -1,0 +1,87 @@
+{
+  "index": 117,
+  "sample_id": "TMP-0460E5374573",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ba2a40c51e2e4a7d4934c3e20d265c3e89f06a9a98e2b0d2d68d67d2f6ffb751",
+  "image_sha256": "0460e5374573d108d3e3db65fbcb593befadf8d31ffed289cc9854da96597852",
+  "transmitted_image_sha256": "003ec2b9f2170a82748076880cd9729460d656a57f041a1db8a05eebe3dca267",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.177476500000001,
+      "total": 10,
+      "remaining": 1.822523499999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.177476499999997,
+      "total": 100,
+      "remaining": 91.8225235,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.7134528439491987,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"none evident\", \"source_properties\": \"literal depiction of an individual in a yellow shirt and a stadium background\", \"target_situation\": \"Setya Novanto's alleged involvement in managing bribes for the Riau National Sports Week (PON) budget while evading legal consequences.\", \"mapping\": \"The illustration literally depicts the subject, Setya Novanto, with a background representing a sports stadium, directly referencing the PON Riau corruption scandal mentioned in the text.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "L5DLatbgPNvJ_uMPvcyw-AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 109,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677500,
+        "output_tokens_cost_nanodollars": 327000
+      },
+      "prompt_tokens": 1355,
+      "total_backend_latency_ms": 1662,
+      "total_tokens": 1464
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.178481,
+      "total": 10,
+      "remaining": 1.8215190000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.178481000000005,
+      "total": 100,
+      "remaining": 91.821519,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010045,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "literal depiction of an individual in a yellow shirt and a stadium background",
+    "target_situation": "Setya Novanto's alleged involvement in managing bribes for the Riau National Sports Week (PON) budget while evading legal consequences.",
+    "mapping": "The illustration literally depicts the subject, Setya Novanto, with a background representing a sports stadium, directly referencing the PON Riau corruption scandal mentioned in the text.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: literal depiction of an individual in a yellow shirt and a stadium background\ntarget_situation: Setya Novanto's alleged involvement in managing bribes for the Riau National Sports Week (PON) budget while evading legal consequences.\nmapping: The illustration literally depicts the subject, Setya Novanto, with a background representing a sports stadium, directly referencing the PON Riau corruption scandal mentioned in the text.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

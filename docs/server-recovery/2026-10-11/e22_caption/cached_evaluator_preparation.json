@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "grid": 612,
+  "cases_per_fixture": 24,
+  "fixed_indices": [
+    0,
+    30,
+    2,
+    32,
+    4,
+    34,
+    1,
+    31,
+    3,
+    33,
+    5,
+    35,
+    36,
+    546,
+    68,
+    578,
+    100,
+    610,
+    37,
+    547,
+    69,
+    579,
+    101,
+    611
+  ],
+  "fixtures": [
+    "synthetic70float32:56train14test",
+    "originalbase740+syntheticcaption2048:baselinefold1 592train148test"
+  ],
+  "checks": [
+    "exact float64 train/test projection and scaler metadata versus raw pipeline",
+    "gamma equals rawSVC gamma",
+    "raw/cached predictions equal at fixed parameters",
+    "heldout perturbation leaves training fit/kernel unchanged",
+    "missing full-features gate rejects",
+    "server compile and local/server source hashes equal"
+  ],
+  "limits": [
+    "actual caption features not yet complete",
+    "24 fixed cases per fixture; not exhaustive612grid raw audit",
+    "no targettest scores used"
+  ],
+  "sources": {
+    "evaluate.py": "2436276fd51f42a0be511c2eb354782d192a39f653bcecf3ed0b3fb70df19244",
+    "verify_oof.py": "799de21da10816851a43e96f5f0449af534e3e7ece130d4ff284f2c321bb3842",
+    "evaluate_cached.py": "bc3113cce8d7a34b6aca0c5dd3655f8ba371c9f36c03d0562547c3bd34c51b1f",
+    "verify_cached.py": "1880bc76431d13d8e8ba2474b405201538d91f70c2ab4cc1473ec5c3c62abeb2"
+  }
+}

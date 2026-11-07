@@ -1,0 +1,86 @@
+{
+  "index": 287,
+  "sample_id": "TMP-0AF561A93ACB",
+  "fold": 2,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "5912ad9b36f41c9a555892593fad9ff484be9c9ca61f2cd59d522be5b112f9c4",
+  "image_sha256": "0af561a93acb0139e20cea138f31133345c9bec9622e381a2f69d5fdbe8212c3",
+  "transmitted_image_sha256": "06a9076b0274c7b99337f09e62e086821e2d8ec6a4a2eb12675a7fa9aac29fc9",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 4.374096,
+      "total": 10,
+      "remaining": 5.625904,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 4.374095999999994,
+      "total": 100,
+      "remaining": 95.625904,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 11.532160487025976,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks target, di mana disebutkan bahwa potret wajah tokoh dipetakan ke bentuk dan ekspresi tubuh manusia untuk menggambarkan keadaan emosional sesuai dengan \"mekanisme metafora biologis\", maka kategori yang paling tepat adalah:\n\n**B**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "UfXKarr3K5-d_uMPlqrYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2243,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2184
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2079500,
+        "output_tokens_cost_nanodollars": 6729000
+      },
+      "prompt_tokens": 4159,
+      "total_backend_latency_ms": 10451,
+      "total_tokens": 6402
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 4.3829045,
+      "total": 10,
+      "remaining": 5.6170955,
+      "refill_at": "2026-10-11 23:35:15.883000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 4.382904499999995,
+      "total": 100,
+      "remaining": 95.6170955,
+      "refill_at": "2026-11-09 23:35:15.881000"
+    }
+  ],
+  "cost_usd": 0.0088085,
+  "code": "B",
+  "strict_code": "INVALID",
+  "parsing_rule": "boundary_single_code",
+  "finish_reason": "stop",
+  "prediction": "HEWAN_TUBUH"
+}

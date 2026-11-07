@@ -1,0 +1,87 @@
+{
+  "index": 101,
+  "sample_id": "TMP-5802D0009C82",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "46ae8e687bb1b7311ab8cc8d81853ee8f447877a0166907e0caee7f0c30e4d22",
+  "image_sha256": "5802d0009c8239cfe4da5121fd0776e40ab8b705cf17fd6e2fee7f54ed8844c5",
+  "transmitted_image_sha256": "4536eba2ee7e2c928d73dc2e0bcb1fd821c16e132de584f485cbfa42e1f7d1e9",
+  "image_size": [
+    300,
+    393
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1499025,
+      "total": 10,
+      "remaining": 1.8500975000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.149902499999996,
+      "total": 100,
+      "remaining": 91.8500975,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.971238879021257,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"gold panning sieve\", \"source_properties\": \"concave shape, used for filtering, held overhead like a heavy burden\", \"target_situation\": \"government officials at Senayan seeking or receiving grants (hibah)\", \"mapping\": \"The oversized sieve represents the intensive effort to collect 'grants' like gold, simultaneously weighing down the figure and obscuring their vision.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "wo_Lar_bDp-d_uMPsajYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 88,
+      "cost": {
+        "input_tokens_cost_nanodollars": 660500,
+        "output_tokens_cost_nanodollars": 264000
+      },
+      "prompt_tokens": 1321,
+      "total_backend_latency_ms": 1702,
+      "total_tokens": 1409
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.150827,
+      "total": 10,
+      "remaining": 1.8491730000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.150827000000007,
+      "total": 100,
+      "remaining": 91.849173,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009245,
+  "fields": {
+    "source_object": "gold panning sieve",
+    "source_properties": "concave shape, used for filtering, held overhead like a heavy burden",
+    "target_situation": "government officials at Senayan seeking or receiving grants (hibah)",
+    "mapping": "The oversized sieve represents the intensive effort to collect 'grants' like gold, simultaneously weighing down the figure and obscuring their vision.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: gold panning sieve\nsource_properties: concave shape, used for filtering, held overhead like a heavy burden\ntarget_situation: government officials at Senayan seeking or receiving grants (hibah)\nmapping: The oversized sieve represents the intensive effort to collect 'grants' like gold, simultaneously weighing down the figure and obscuring their vision.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

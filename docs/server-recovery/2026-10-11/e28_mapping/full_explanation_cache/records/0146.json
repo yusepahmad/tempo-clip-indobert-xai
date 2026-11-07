@@ -1,0 +1,87 @@
+{
+  "index": 146,
+  "sample_id": "TMP-422D8B04592A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e95c54c5ba82259df441286ede71072ae12b6cd5d69e9fe483f27dfb562c5c64",
+  "image_sha256": "422d8b04592adf7fb547315f4fb43715650352ac4e30a95210b87563b908cd8e",
+  "transmitted_image_sha256": "6a343fa4b8891a4429d13c0bcb99429959d69ad940ce6fa0130b1495e359ccac",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.224885,
+      "total": 10,
+      "remaining": 1.7751149999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.224885,
+      "total": 100,
+      "remaining": 91.775115,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.267543535679579,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Seismogram printout\", \"source_properties\": \"Vertical parallel lines interrupted by chaotic, jagged waveforms representing seismic activity and ground vibration.\", \"target_situation\": \"Disorganized and conflicting disaster response efforts following the Palu earthquake and tsunami.\", \"mapping\": \"The stable vertical lines represent order, while the jagged, overlapping seismographic oscillations symbolize the 'messy' and 'clashing' (bertikai) chaos of the initial relief response.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "9pDLasSRMf-o_uMP1rjw6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 103,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679500,
+        "output_tokens_cost_nanodollars": 309000
+      },
+      "prompt_tokens": 1359,
+      "total_backend_latency_ms": 1722,
+      "total_tokens": 1462
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2258735,
+      "total": 10,
+      "remaining": 1.7741264999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.225873500000006,
+      "total": 100,
+      "remaining": 91.7741265,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009885,
+  "fields": {
+    "source_object": "Seismogram printout",
+    "source_properties": "Vertical parallel lines interrupted by chaotic, jagged waveforms representing seismic activity and ground vibration.",
+    "target_situation": "Disorganized and conflicting disaster response efforts following the Palu earthquake and tsunami.",
+    "mapping": "The stable vertical lines represent order, while the jagged, overlapping seismographic oscillations symbolize the 'messy' and 'clashing' (bertikai) chaos of the initial relief response.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Seismogram printout\nsource_properties: Vertical parallel lines interrupted by chaotic, jagged waveforms representing seismic activity and ground vibration.\ntarget_situation: Disorganized and conflicting disaster response efforts following the Palu earthquake and tsunami.\nmapping: The stable vertical lines represent order, while the jagged, overlapping seismographic oscillations symbolize the 'messy' and 'clashing' (bertikai) chaos of the initial relief response.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

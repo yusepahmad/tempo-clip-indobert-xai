@@ -1,0 +1,87 @@
+{
+  "index": 429,
+  "sample_id": "TMP-E9BBE178B94B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a122df6bdf756797e7a6510fc66af45852f6657c1989ea8a7ed316a5bbce3d20",
+  "image_sha256": "e9bbe178b94b3736987ebe243e54a2ca4a575227aa313f3d4b48a529a0ba779a",
+  "transmitted_image_sha256": "4873ac8b4142005de6f85ca8a8797324fdeef27d4f623e5649bb52ade25d81c7",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6287415,
+      "total": 10,
+      "remaining": 1.3712584999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.628741500000004,
+      "total": 100,
+      "remaining": 91.3712585,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2929197112098336,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"professional soccer players\", \"source_properties\": \"athletic figures in jerseys, celebrating with intense passion and shouting against a stadium backdrop\", \"target_situation\": \"participation and promotion of peaceful Islam by seven Muslim-majority nations at the 2018 World Cup\", \"mapping\": \"The players' visible energy and competitive drive on the world stage represent the active global campaign for peaceful Islam through sports.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "TpjLao-OB8Xh_uMPyN6L8Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673000,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1346,
+      "total_backend_latency_ms": 1684,
+      "total_tokens": 1441
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.629699500000001,
+      "total": 10,
+      "remaining": 1.370300499999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.629699500000001,
+      "total": 100,
+      "remaining": 91.3703005,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000958,
+  "fields": {
+    "source_object": "professional soccer players",
+    "source_properties": "athletic figures in jerseys, celebrating with intense passion and shouting against a stadium backdrop",
+    "target_situation": "participation and promotion of peaceful Islam by seven Muslim-majority nations at the 2018 World Cup",
+    "mapping": "The players' visible energy and competitive drive on the world stage represent the active global campaign for peaceful Islam through sports.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: professional soccer players\nsource_properties: athletic figures in jerseys, celebrating with intense passion and shouting against a stadium backdrop\ntarget_situation: participation and promotion of peaceful Islam by seven Muslim-majority nations at the 2018 World Cup\nmapping: The players' visible energy and competitive drive on the world stage represent the active global campaign for peaceful Islam through sports.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,90 @@
+{
+  "index": 510,
+  "sample_id": "TMP-DA0E29A432C2",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "69c5d981d396dd1afd4cd42b03ff029ce52aa99431fdef19a623a9f14f4ef8a4",
+  "image_sha256": "da0e29a432c21975dd489ef4e6b53de7a32823f55f54259195342d53d89f88cd",
+  "transmitted_image_sha256": "282562271e5ad75fbc6aef0d935780203c83c2309d67b9b4f37bcf2cf9bc07d1",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.735593,
+      "total": 10,
+      "remaining": 1.2644070000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.735592999999994,
+      "total": 100,
+      "remaining": 91.264407,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.826132882852107,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n\"source_object\": \"none evident\",\n\"source_properties\": \"N/A\",\n\"target_situation\": \"The medical emergency and healthcare response during the COVID-19 pandemic.\",\n\"mapping\": \"The illustration provides a literal depiction of doctors and nurses in personal protective equipment working on the pandemic's front lines. Rather than an analogy, it uses direct visual representation of medical personnel and equipment to reflect the emergency situation described in the text.\",\n\"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "aZrLapSdNMXh_uMPyN6L8Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 938,
+      "completion_tokens_details": {
+        "reasoning_tokens": 832
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 678000,
+        "output_tokens_cost_nanodollars": 2814000
+      },
+      "prompt_tokens": 1356,
+      "total_backend_latency_ms": 5212,
+      "total_tokens": 2294
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.739085,
+      "total": 10,
+      "remaining": 1.2609150000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.739085000000003,
+      "total": 100,
+      "remaining": 91.260915,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.003492,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "N/A",
+    "target_situation": "The medical emergency and healthcare response during the COVID-19 pandemic.",
+    "mapping": "The illustration provides a literal depiction of doctors and nurses in personal protective equipment working on the pandemic's front lines. Rather than an analogy, it uses direct visual representation of medical personnel and equipment to reflect the emergency situation described in the text.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: N/A\ntarget_situation: The medical emergency and healthcare response during the COVID-19 pandemic.\nmapping: The illustration provides a literal depiction of doctors and nurses in personal protective equipment working on the pandemic's front lines. Rather than an analogy, it uses direct visual representation of medical personnel and equipment to reflect the emergency situation described in the text.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

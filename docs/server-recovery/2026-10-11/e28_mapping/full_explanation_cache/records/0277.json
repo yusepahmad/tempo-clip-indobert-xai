@@ -1,0 +1,87 @@
+{
+  "index": 277,
+  "sample_id": "TMP-C0913AACB21B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8a6b740319ab5b8b61d24c3d392fe14b7e8381cd867b52b9914aec35f833b778",
+  "image_sha256": "c0913aacb21b58883fc3cbc104749bb2f33aea942e68355e00d6ba719ff4cab2",
+  "transmitted_image_sha256": "2d8ac32c9f2c05664029e5510fd9cc95c2efb0eab067a8accbb0b3543cd546c3",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.419273,
+      "total": 10,
+      "remaining": 1.5807269999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.419273000000004,
+      "total": 100,
+      "remaining": 91.580727,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.4719482976943254,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"hunter in camouflage\", \"source_properties\": \"Hiding among leaves, wearing camouflage, and using binoculars to observe a target from a distance.\", \"target_situation\": \"Jusuf Kalla's political pursuit of the Vice Presidential seat during the 2014 Indonesian election period.\", \"mapping\": \"Camouflage represents strategic political maneuvers; binoculars symbolize scouting or monitoring the political landscape to secure the office.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ZpTLauYczaL-4w_ruq_ZBw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 653500,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1307,
+      "total_backend_latency_ms": 2334,
+      "total_tokens": 1404
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4202175,
+      "total": 10,
+      "remaining": 1.5797825000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.420217500000007,
+      "total": 100,
+      "remaining": 91.5797825,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009445,
+  "fields": {
+    "source_object": "hunter in camouflage",
+    "source_properties": "Hiding among leaves, wearing camouflage, and using binoculars to observe a target from a distance.",
+    "target_situation": "Jusuf Kalla's political pursuit of the Vice Presidential seat during the 2014 Indonesian election period.",
+    "mapping": "Camouflage represents strategic political maneuvers; binoculars symbolize scouting or monitoring the political landscape to secure the office.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: hunter in camouflage\nsource_properties: Hiding among leaves, wearing camouflage, and using binoculars to observe a target from a distance.\ntarget_situation: Jusuf Kalla's political pursuit of the Vice Presidential seat during the 2014 Indonesian election period.\nmapping: Camouflage represents strategic political maneuvers; binoculars symbolize scouting or monitoring the political landscape to secure the office.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

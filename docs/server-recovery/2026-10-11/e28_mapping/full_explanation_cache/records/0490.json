@@ -1,0 +1,87 @@
+{
+  "index": 490,
+  "sample_id": "TMP-F682F50D0927",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3188399d26b2a0169817f09ad7b499aedecc35e5abb9eb85602e16222df1bf13",
+  "image_sha256": "f682f50d09272d5dd294b7d87d74b3b1c5408693cd441fbad7515e455870b60e",
+  "transmitted_image_sha256": "bc2af2d51199038a9e5f352240d3c28089410c7db613d406d4c09cfa0dce94fd",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7048735,
+      "total": 10,
+      "remaining": 1.2951265000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.704873500000005,
+      "total": 100,
+      "remaining": 91.2951265,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.55280255805701,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"building shaped like pants\", \"source_properties\": \"A building structurally forming a pair of pants, featuring open pockets and holes.\", \"target_situation\": \"Financial deficit and systemic fraud within the BPJS healthcare system.\", \"mapping\": \"The 'bolong' (holes) in the garment-shaped building represent financial leaks and missing funds caused by mismanagement and fraud.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "4JnLaorALIKn_uMP9_y56As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 87,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679000,
+        "output_tokens_cost_nanodollars": 261000
+      },
+      "prompt_tokens": 1358,
+      "total_backend_latency_ms": 1842,
+      "total_tokens": 1445
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7058135,
+      "total": 10,
+      "remaining": 1.2941865000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.705813500000005,
+      "total": 100,
+      "remaining": 91.2941865,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00094,
+  "fields": {
+    "source_object": "building shaped like pants",
+    "source_properties": "A building structurally forming a pair of pants, featuring open pockets and holes.",
+    "target_situation": "Financial deficit and systemic fraud within the BPJS healthcare system.",
+    "mapping": "The 'bolong' (holes) in the garment-shaped building represent financial leaks and missing funds caused by mismanagement and fraud.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: building shaped like pants\nsource_properties: A building structurally forming a pair of pants, featuring open pockets and holes.\ntarget_situation: Financial deficit and systemic fraud within the BPJS healthcare system.\nmapping: The 'bolong' (holes) in the garment-shaped building represent financial leaks and missing funds caused by mismanagement and fraud.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

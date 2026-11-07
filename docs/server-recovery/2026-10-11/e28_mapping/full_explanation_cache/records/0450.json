@@ -1,0 +1,87 @@
+{
+  "index": 450,
+  "sample_id": "TMP-9D0EBF2C12EB",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "514f25097855c750c5dece65f919fa29b03a348f912463b03d052d78fc1011a6",
+  "image_sha256": "9d0ebf2c12eba306b8998410285192cce0d4b1b9d73e4c5ec99567ce26b388f4",
+  "transmitted_image_sha256": "1e03734636fbfa0920477602cd515ff69c4d011687a351525a92e6709de97943",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6577285,
+      "total": 10,
+      "remaining": 1.3422715000000007,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.657728500000005,
+      "total": 100,
+      "remaining": 91.3422715,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1277981181629,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A barcode shaped like a sun bear\",\n  \"source_properties\": \"Black and white vertical lines signifying commercial scanning, retail products, and monetary transactions.\",\n  \"target_situation\": \"Illegal wildlife trade allegedly occurring within Taman Safari, an Indonesian conservation institution.\",\n  \"mapping\": \"The barcode's function as a commercial identifier turns the animal into a commodified product for sale.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "4JjLapy-GJ-d_uMPlqrYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673000,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1346,
+      "total_backend_latency_ms": 1906,
+      "total_tokens": 1447
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6587045,
+      "total": 10,
+      "remaining": 1.3412954999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.658704499999999,
+      "total": 100,
+      "remaining": 91.3412955,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000976,
+  "fields": {
+    "source_object": "A barcode shaped like a sun bear",
+    "source_properties": "Black and white vertical lines signifying commercial scanning, retail products, and monetary transactions.",
+    "target_situation": "Illegal wildlife trade allegedly occurring within Taman Safari, an Indonesian conservation institution.",
+    "mapping": "The barcode's function as a commercial identifier turns the animal into a commodified product for sale.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: A barcode shaped like a sun bear\nsource_properties: Black and white vertical lines signifying commercial scanning, retail products, and monetary transactions.\ntarget_situation: Illegal wildlife trade allegedly occurring within Taman Safari, an Indonesian conservation institution.\nmapping: The barcode's function as a commercial identifier turns the animal into a commodified product for sale.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

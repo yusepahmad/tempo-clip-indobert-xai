@@ -1,0 +1,87 @@
+{
+  "index": 40,
+  "sample_id": "TMP-ED63CE30126A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "86c12fab1e063f319f7f4f2d52c335cdfd1f8b9bf9b12008d46de688e85a573f",
+  "image_sha256": "ed63ce30126a9c1ac08e011298e95a71299c3d0d78b3087f6100d0683d0f7016",
+  "transmitted_image_sha256": "8e958cd2a4d61f7fc7ac8616bdf8c2b5a7348cb051cb15d5cfa389d345f2300e",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.066611,
+      "total": 10,
+      "remaining": 1.933389,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.066610999999995,
+      "total": 100,
+      "remaining": 91.933389,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0398579058237374,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"protest placards\", \"source_properties\": \"rectangular signs, handheld, assembled to form a word, distinct rows\", \"target_situation\": \"the 25-year legacy of the 1998 Reformasi movement in Indonesia\", \"mapping\": \"Individual activists and figures hold signs collectively spelling 'REFORMASI', with a dollar sign substituting for 'S', symbolising how the movement's ideals were compromised by power and corruption.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Mo7LapagCsfh_uMPvKet6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "cost": {
+        "input_tokens_cost_nanodollars": 670000,
+        "output_tokens_cost_nanodollars": 312000
+      },
+      "prompt_tokens": 1340,
+      "total_backend_latency_ms": 1544,
+      "total_tokens": 1444
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.067593,
+      "total": 10,
+      "remaining": 1.9324069999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.067593000000002,
+      "total": 100,
+      "remaining": 91.932407,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000982,
+  "fields": {
+    "source_object": "protest placards",
+    "source_properties": "rectangular signs, handheld, assembled to form a word, distinct rows",
+    "target_situation": "the 25-year legacy of the 1998 Reformasi movement in Indonesia",
+    "mapping": "Individual activists and figures hold signs collectively spelling 'REFORMASI', with a dollar sign substituting for 'S', symbolising how the movement's ideals were compromised by power and corruption.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: protest placards\nsource_properties: rectangular signs, handheld, assembled to form a word, distinct rows\ntarget_situation: the 25-year legacy of the 1998 Reformasi movement in Indonesia\nmapping: Individual activists and figures hold signs collectively spelling 'REFORMASI', with a dollar sign substituting for 'S', symbolising how the movement's ideals were compromised by power and corruption.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

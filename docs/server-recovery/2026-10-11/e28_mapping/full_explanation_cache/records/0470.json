@@ -1,0 +1,87 @@
+{
+  "index": 470,
+  "sample_id": "TMP-579182AE35FE",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "d4602ee8b48ee8671c59a42bea3b28e8932336d0a97791f53c0dc3388864c2af",
+  "image_sha256": "579182ae35fe5c861d6e62c65237b3b29c496a861295ea1f83040e174e38c78a",
+  "transmitted_image_sha256": "787db1356bf6e7ed0c933559ece0983ecc23205498d7f317c9f61fb5df75aa13",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6783285,
+      "total": 10,
+      "remaining": 1.3216715000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.678328500000006,
+      "total": 100,
+      "remaining": 91.3216715,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.245651331730187,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Crocodile\",\n  \"source_properties\": \"Powerful jaws, thick scales, predatory nature, and the ability to consume prey.\",\n  \"target_situation\": \"An active police general becoming the head of Indonesia's Anti-Corruption Commission (KPK).\",\n  \"mapping\": \"The crocodile's jaws swallowing the KPK building symbolize the police force consuming or neutralizing the anti-corruption agency.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "XZnLatLcK8mb_uMPlY2fwA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 103,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 309000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 1725,
+      "total_tokens": 1450
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.679311,
+      "total": 10,
+      "remaining": 1.3206889999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.679310999999998,
+      "total": 100,
+      "remaining": 91.320689,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009825,
+  "fields": {
+    "source_object": "Crocodile",
+    "source_properties": "Powerful jaws, thick scales, predatory nature, and the ability to consume prey.",
+    "target_situation": "An active police general becoming the head of Indonesia's Anti-Corruption Commission (KPK).",
+    "mapping": "The crocodile's jaws swallowing the KPK building symbolize the police force consuming or neutralizing the anti-corruption agency.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Crocodile\nsource_properties: Powerful jaws, thick scales, predatory nature, and the ability to consume prey.\ntarget_situation: An active police general becoming the head of Indonesia's Anti-Corruption Commission (KPK).\nmapping: The crocodile's jaws swallowing the KPK building symbolize the police force consuming or neutralizing the anti-corruption agency.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

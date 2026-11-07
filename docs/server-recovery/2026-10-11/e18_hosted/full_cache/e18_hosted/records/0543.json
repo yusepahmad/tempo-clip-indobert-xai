@@ -1,0 +1,83 @@
+{
+  "index": 543,
+  "sample_id": "TMP-A3943DCE5B11",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "4fb93a5714007c8edcba3d1972d1bfbb5780237f27db0304804948b4012086ac",
+  "image_sha256": "a3943dce5b115f34ca15815cbd0cdfdd58cc78be7b8a651b569c969acf013981",
+  "transmitted_image_sha256": "5f95161f69ca72be64b12106bec456cacca9518cbbde2051b9e54083a9d8663e",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.0484505000000004,
+      "total": 10,
+      "remaining": 7.9515495,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.0484505000000013,
+      "total": 100,
+      "remaining": 97.9515495,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 11.038549991091713,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks (\"menggambarkan pertukaran atau penyalahgunaan nilai ekonomi\"), metafora ini diklasifikasikan ke dalam domain sumber:\n\n**C: KONSUMSI_TRANSAKSI**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ceHKaoDxK_-o_uMP1rjw6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1955,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1905
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 767000,
+        "output_tokens_cost_nanodollars": 5865000
+      },
+      "prompt_tokens": 1534,
+      "total_backend_latency_ms": 9941,
+      "total_tokens": 3489
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.0550825,
+      "total": 10,
+      "remaining": 7.9449175,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.0550824999999975,
+      "total": 100,
+      "remaining": 97.9449175,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.006632
+}

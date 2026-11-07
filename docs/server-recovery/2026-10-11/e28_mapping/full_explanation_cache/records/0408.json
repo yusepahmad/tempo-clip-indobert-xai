@@ -1,0 +1,87 @@
+{
+  "index": 408,
+  "sample_id": "TMP-E991338F3ADB",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "443198e6054f22d45da0b06275d29d06e38dc82ea4969f4c3c41102ab7a100b5",
+  "image_sha256": "e991338f3adbb626f477a9bc4d4321ec63b730be98d4b0d0b211fa3db637436e",
+  "transmitted_image_sha256": "d99500fae98e07214770f9e9edc045e047d6bf84fc1fab5d4324dd482b30fd7a",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6024935,
+      "total": 10,
+      "remaining": 1.3975065000000004,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.602493499999994,
+      "total": 100,
+      "remaining": 91.3975065,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1181499459780753,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Speech bubbles\",\n  \"source_properties\": \"Large, round, white containers originating from the mouth, physically held and manipulated like heavy objects.\",\n  \"target_situation\": \"Political figures using specific rhetoric and slogans during the 2019 campaign.\",\n  \"mapping\": \"Words are depicted as tangible, oversized objects that politicians must carefully handle, reflecting their weight and potential impact.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "0JfLatygJNPj_uMPg-OC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 683000,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1366,
+      "total_backend_latency_ms": 1727,
+      "total_tokens": 1467
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6034795,
+      "total": 10,
+      "remaining": 1.3965204999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.603479500000006,
+      "total": 100,
+      "remaining": 91.3965205,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000986,
+  "fields": {
+    "source_object": "Speech bubbles",
+    "source_properties": "Large, round, white containers originating from the mouth, physically held and manipulated like heavy objects.",
+    "target_situation": "Political figures using specific rhetoric and slogans during the 2019 campaign.",
+    "mapping": "Words are depicted as tangible, oversized objects that politicians must carefully handle, reflecting their weight and potential impact.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: Speech bubbles\nsource_properties: Large, round, white containers originating from the mouth, physically held and manipulated like heavy objects.\ntarget_situation: Political figures using specific rhetoric and slogans during the 2019 campaign.\nmapping: Words are depicted as tangible, oversized objects that politicians must carefully handle, reflecting their weight and potential impact.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

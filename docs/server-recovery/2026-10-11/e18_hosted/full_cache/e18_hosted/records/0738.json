@@ -1,0 +1,83 @@
+{
+  "index": 738,
+  "sample_id": "TMP-8110AA71EA4E",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "f3874487febd37961569af57053acf2d7179534eb91a4fb0d40c14f36bdbc9b0",
+  "image_sha256": "8110aa71ea4e38c487246a8b59623212fc684d720c466f7ab63a6a82d28d1629",
+  "transmitted_image_sha256": "741ae38da4b0891ff97ac76b829a367f3321b6707f28d6b8b2820144444688dc",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.7611990000000004,
+      "total": 10,
+      "remaining": 7.238801,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.761199000000005,
+      "total": 100,
+      "remaining": 97.238801,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.744011579081416,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks (\"orang yang terjepit di antara dua mobil... menggambarkan tekanan, perangkap, atau keadaan terjepit\"), domain sumber metafora ini diklasifikasikan sebagai:\n\n**A: BENCANA_JERAT**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "aunKauOtD97d_uMP45e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1274,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1220
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 781000,
+        "output_tokens_cost_nanodollars": 3822000
+      },
+      "prompt_tokens": 1562,
+      "total_backend_latency_ms": 6698,
+      "total_tokens": 2836
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.765802,
+      "total": 10,
+      "remaining": 7.234198,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.7658019999999937,
+      "total": 100,
+      "remaining": 97.234198,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.004603
+}

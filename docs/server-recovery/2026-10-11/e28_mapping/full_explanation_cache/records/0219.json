@@ -1,0 +1,87 @@
+{
+  "index": 219,
+  "sample_id": "TMP-8BF8145B147E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e7f73098da77c789507c0a86c24c1a4d2fe21238f708e71a566d3f3da84cbce8",
+  "image_sha256": "8bf8145b147e5057a886a7d709324251faafcb011007084e2630e0632b858881",
+  "transmitted_image_sha256": "bce84a36763abf6db4c453ee45e511c4aa5e92976a9d17cbf3ca791498da15de",
+  "image_size": [
+    425,
+    556
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3295935,
+      "total": 10,
+      "remaining": 1.6704065000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.329593500000001,
+      "total": 100,
+      "remaining": 91.6704065,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.969583581201732,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Executioner\",\n  \"source_properties\": \"Armed, uniformed figure exercising lethal force and authority over vulnerable, distressed civilians.\",\n  \"target_situation\": \"The 1965-1966 mass killings in Indonesia.\",\n  \"mapping\": \"The soldier's armed presence and the woman's grief represent the state-sanctioned violence and public trauma during the 1965 purges.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "2ZLLau6cBcyY_uMP2cziyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 109,
+      "cost": {
+        "input_tokens_cost_nanodollars": 653500,
+        "output_tokens_cost_nanodollars": 327000
+      },
+      "prompt_tokens": 1307,
+      "total_backend_latency_ms": 1601,
+      "total_tokens": 1416
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.330574,
+      "total": 10,
+      "remaining": 1.6694259999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.330573999999999,
+      "total": 100,
+      "remaining": 91.669426,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009805,
+  "fields": {
+    "source_object": "Executioner",
+    "source_properties": "Armed, uniformed figure exercising lethal force and authority over vulnerable, distressed civilians.",
+    "target_situation": "The 1965-1966 mass killings in Indonesia.",
+    "mapping": "The soldier's armed presence and the woman's grief represent the state-sanctioned violence and public trauma during the 1965 purges.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Executioner\nsource_properties: Armed, uniformed figure exercising lethal force and authority over vulnerable, distressed civilians.\ntarget_situation: The 1965-1966 mass killings in Indonesia.\nmapping: The soldier's armed presence and the woman's grief represent the state-sanctioned violence and public trauma during the 1965 purges.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

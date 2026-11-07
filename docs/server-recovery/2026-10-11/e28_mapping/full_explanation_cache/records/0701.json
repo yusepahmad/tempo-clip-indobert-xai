@@ -1,0 +1,87 @@
+{
+  "index": 701,
+  "sample_id": "TMP-F31233674197",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "999515a7d7a3a5734f58cfe0ccc69140c74403d66a368a826f6d00b432d63346",
+  "image_sha256": "f312336741975c402f5267f66e661863bc0ec8fa948a8555b47f91a27fa362bb",
+  "transmitted_image_sha256": "479be9b738b8aee81adb3bd3b52da4831180ad4841ea6dacac01b9a91a6fd912",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.019314,
+      "total": 10,
+      "remaining": 0.9806860000000004,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.019313999999994,
+      "total": 100,
+      "remaining": 90.980686,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.5553139550611377,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Painting a chess queen green\",\n  \"source_properties\": \"A large chess piece, representing strategic power, being physically recolored with wet green paint.\",\n  \"target_situation\": \"Andi Syamsuddin Arsyad's (Haji Isam) political expansion into the United Development Party (PPP).\",\n  \"mapping\": \"Painting the queen green symbolizes Haji Isam exerting influence to claim or control the green-branded PPP.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "g5_LasKHINvJ_uMPvcyw-AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 113,
+      "cost": {
+        "input_tokens_cost_nanodollars": 669500,
+        "output_tokens_cost_nanodollars": 339000
+      },
+      "prompt_tokens": 1339,
+      "total_backend_latency_ms": 2035,
+      "total_tokens": 1452
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0203225,
+      "total": 10,
+      "remaining": 0.9796774999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.020322500000006,
+      "total": 100,
+      "remaining": 90.9796775,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010085,
+  "fields": {
+    "source_object": "Painting a chess queen green",
+    "source_properties": "A large chess piece, representing strategic power, being physically recolored with wet green paint.",
+    "target_situation": "Andi Syamsuddin Arsyad's (Haji Isam) political expansion into the United Development Party (PPP).",
+    "mapping": "Painting the queen green symbolizes Haji Isam exerting influence to claim or control the green-branded PPP.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Painting a chess queen green\nsource_properties: A large chess piece, representing strategic power, being physically recolored with wet green paint.\ntarget_situation: Andi Syamsuddin Arsyad's (Haji Isam) political expansion into the United Development Party (PPP).\nmapping: Painting the queen green symbolizes Haji Isam exerting influence to claim or control the green-branded PPP.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

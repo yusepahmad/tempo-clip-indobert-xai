@@ -1,0 +1,87 @@
+{
+  "index": 99,
+  "sample_id": "TMP-337C148668CF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8f0e47c1c1fcc4e62e1e99fa091acc461bb49ed17b17137043719f55bf070333",
+  "image_sha256": "337c148668cf4fab89f5f3ac05f4835ead77b0db1f993033ae56cd44c6412296",
+  "transmitted_image_sha256": "185c55435c66f4176800cf32cef16b47edcc463bfc7c770fcf54ed2eac01e925",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1479905,
+      "total": 10,
+      "remaining": 1.8520094999999994,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.147990500000006,
+      "total": 100,
+      "remaining": 91.8520095,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.416367487050593,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"dominoes\",\n  \"source_properties\": \"rectangular tiles lined up so that pushing one causes a sequential collapse.\",\n  \"target_situation\": \"corruption investigation involving Sony Sonjaya dragging down numerous elites and officials.\",\n  \"mapping\": \"One person's arrest (pushing the first tile) triggers a chain reaction of exposing others.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "t4_LaqmdHeu1_PUPl9nYyQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682000,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1364,
+      "total_backend_latency_ms": 1963,
+      "total_tokens": 1456
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1489485,
+      "total": 10,
+      "remaining": 1.8510515000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.148948500000003,
+      "total": 100,
+      "remaining": 91.8510515,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000958,
+  "fields": {
+    "source_object": "dominoes",
+    "source_properties": "rectangular tiles lined up so that pushing one causes a sequential collapse.",
+    "target_situation": "corruption investigation involving Sony Sonjaya dragging down numerous elites and officials.",
+    "mapping": "One person's arrest (pushing the first tile) triggers a chain reaction of exposing others.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: dominoes\nsource_properties: rectangular tiles lined up so that pushing one causes a sequential collapse.\ntarget_situation: corruption investigation involving Sony Sonjaya dragging down numerous elites and officials.\nmapping: One person's arrest (pushing the first tile) triggers a chain reaction of exposing others.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

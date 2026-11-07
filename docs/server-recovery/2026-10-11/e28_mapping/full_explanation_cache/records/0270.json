@@ -1,0 +1,87 @@
+{
+  "index": 270,
+  "sample_id": "TMP-1554E875BB1B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3b15f5104609cfe07de09997524935dfcd486dff7a489f8ce196e6f882cf3d17",
+  "image_sha256": "1554e875bb1bf3db2bff34efce8d30a12fdf9cfc87c7c23db26687da507d7420",
+  "transmitted_image_sha256": "0f2536bb237dbd1fd9afcad4407a50a694bf9fbac85481031e73715d6e3d0518",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4125495,
+      "total": 10,
+      "remaining": 1.5874504999999992,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.412549499999997,
+      "total": 100,
+      "remaining": 91.5874505,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.375686534214765,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"bench\", \"source_properties\": \"A shared wooden seat with individual positions, where occupants sit back-to-back or apart.\", \"target_situation\": \"Political negotiations and distance between key PDI-P figures regarding Jokowi's presidential nomination.\", \"mapping\": \"The physical separation and orientation on the bench mirror the internal political tensions and unspoken dynamics between the leaders.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "PJTLauz8EP-o_uMPl6-88Q4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 88,
+      "cost": {
+        "input_tokens_cost_nanodollars": 669000,
+        "output_tokens_cost_nanodollars": 264000
+      },
+      "prompt_tokens": 1338,
+      "total_backend_latency_ms": 2065,
+      "total_tokens": 1426
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4134825,
+      "total": 10,
+      "remaining": 1.5865174999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.4134825,
+      "total": 100,
+      "remaining": 91.5865175,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000933,
+  "fields": {
+    "source_object": "bench",
+    "source_properties": "A shared wooden seat with individual positions, where occupants sit back-to-back or apart.",
+    "target_situation": "Political negotiations and distance between key PDI-P figures regarding Jokowi's presidential nomination.",
+    "mapping": "The physical separation and orientation on the bench mirror the internal political tensions and unspoken dynamics between the leaders.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: bench\nsource_properties: A shared wooden seat with individual positions, where occupants sit back-to-back or apart.\ntarget_situation: Political negotiations and distance between key PDI-P figures regarding Jokowi's presidential nomination.\nmapping: The physical separation and orientation on the bench mirror the internal political tensions and unspoken dynamics between the leaders.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

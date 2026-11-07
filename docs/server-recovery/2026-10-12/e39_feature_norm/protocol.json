@@ -1,0 +1,183 @@
+{
+  "inputs": {
+    "03_data/DATASET_740_TASK2_DOMAIN.csv": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+    "03_data/fitur_clip_indobert_740.npz": "d27cd5dbecfffba3a8bbb96037f3181da20f1c95eb246a7d38a4627a90599e5c",
+    "01_notebook/e39_feature_norm/run.py": "a4293b6a25a7ec798538b846165a209ae6e2fde309e0edfe45da3e33ad9e8781",
+    "01_notebook/e39_feature_norm/norm_model.py": "cc89943bb2f108ccdc7177418139e533ae3e2829932fb2dfa1453127318adae6",
+    "04_hasil_eksperimen/e36_clip_l14/features.npz": "686b2d83dc5b6466545cb6cebc1acca1c94100e1764811818f9d40c3822186cf",
+    "04_hasil_eksperimen/e36_clip_l14/features_manifest.json": "ef8fa22041a42ee5474b754af86c275d48e0f05557a5906c723f77a29030717d",
+    "04_hasil_eksperimen/e36_clip_l14/feature_verification.json": "5dc8b0604bc02977cee37d2078e828598901d3ee01159dbd0de073f3e4450562",
+    "01_notebook/e33_joint_mtl/model.py": "27eee0d630d04e9b8589b81aafba200102622e2931b69cf5d36a8e7674db0908"
+  },
+  "grid": [
+    {
+      "hidden": 256,
+      "dropout": 0.4,
+      "task2_weight": 1.0,
+      "visual_weight": 1.0,
+      "epochs": 120,
+      "lr": 0.001,
+      "class_power": 1.0,
+      "residual": false,
+      "view": "baseline",
+      "norm": "none"
+    },
+    {
+      "hidden": 256,
+      "dropout": 0.2,
+      "task2_weight": 2.0,
+      "visual_weight": 2.0,
+      "epochs": 120,
+      "lr": 0.001,
+      "class_power": 1.0,
+      "residual": false,
+      "view": "both",
+      "norm": "none"
+    },
+    {
+      "hidden": 256,
+      "dropout": 0.2,
+      "task2_weight": 1.0,
+      "visual_weight": 1.0,
+      "epochs": 120,
+      "lr": 0.001,
+      "class_power": 1.0,
+      "residual": false,
+      "view": "both",
+      "norm": "center"
+    },
+    {
+      "hidden": 256,
+      "dropout": 0.2,
+      "task2_weight": 1.0,
+      "visual_weight": 2.0,
+      "epochs": 120,
+      "lr": 0.001,
+      "class_power": 1.0,
+      "residual": false,
+      "view": "both",
+      "norm": "center"
+    },
+    {
+      "hidden": 256,
+      "dropout": 0.2,
+      "task2_weight": 2.0,
+      "visual_weight": 1.0,
+      "epochs": 120,
+      "lr": 0.001,
+      "class_power": 1.0,
+      "residual": false,
+      "view": "both",
+      "norm": "center"
+    },
+    {
+      "hidden": 256,
+      "dropout": 0.2,
+      "task2_weight": 2.0,
+      "visual_weight": 2.0,
+      "epochs": 120,
+      "lr": 0.001,
+      "class_power": 1.0,
+      "residual": false,
+      "view": "both",
+      "norm": "center"
+    },
+    {
+      "hidden": 256,
+      "dropout": 0.2,
+      "task2_weight": 1.0,
+      "visual_weight": 1.0,
+      "epochs": 120,
+      "lr": 0.001,
+      "class_power": 1.0,
+      "residual": false,
+      "view": "both",
+      "norm": "standard"
+    },
+    {
+      "hidden": 256,
+      "dropout": 0.2,
+      "task2_weight": 1.0,
+      "visual_weight": 2.0,
+      "epochs": 120,
+      "lr": 0.001,
+      "class_power": 1.0,
+      "residual": false,
+      "view": "both",
+      "norm": "standard"
+    },
+    {
+      "hidden": 256,
+      "dropout": 0.2,
+      "task2_weight": 2.0,
+      "visual_weight": 1.0,
+      "epochs": 120,
+      "lr": 0.001,
+      "class_power": 1.0,
+      "residual": false,
+      "view": "both",
+      "norm": "standard"
+    },
+    {
+      "hidden": 256,
+      "dropout": 0.2,
+      "task2_weight": 2.0,
+      "visual_weight": 2.0,
+      "epochs": 120,
+      "lr": 0.001,
+      "class_power": 1.0,
+      "residual": false,
+      "view": "both",
+      "norm": "standard"
+    }
+  ],
+  "classes": {
+    "task1_issue": [
+      "corruption_and_bribery",
+      "economy_business_and_state_enterprise",
+      "election_and_political_competition",
+      "environment_and_natural_resources",
+      "human_rights_and_social_conflict",
+      "law_and_justice",
+      "other_issue",
+      "power_and_governance",
+      "public_policy_health_and_disaster",
+      "security_defense_and_terrorism"
+    ],
+    "task2_domain_sumber": [
+      "BENCANA_JERAT",
+      "HEWAN_TUBUH",
+      "KONSUMSI_TRANSAKSI",
+      "LAINNYA",
+      "MESIN_INFRASTRUKTUR",
+      "NON_METAFORA",
+      "PERMAINAN_KONTES"
+    ],
+    "task3_primary_entity_type": [
+      "business",
+      "civil_society_or_media",
+      "government",
+      "individual",
+      "judiciary_or_law_enforcement",
+      "legislature",
+      "multiple_or_other",
+      "political_party"
+    ]
+  },
+  "outer": "5fold Task1 stratification rare<5 pooled seed42, identical baseline",
+  "inner": "2fold Task2 stratification seed123 on outer train only",
+  "selection": "max mean inner Task2 macro-F1; ties first config",
+  "seed": 42,
+  "torch": "2.14.1+cpu",
+  "sklearn": "1.7.2",
+  "python": "3.10.12",
+  "excluded_inputs": [
+    "source_description",
+    "mapping_note",
+    "primary_entity",
+    "annotator_confidence",
+    "Qwen/E5/BGE features"
+  ],
+  "encoder": "CLIP-B32 CLS control or pinned CLIP-L14 both views + IndoBERT CLS; train-only center/standard/unitnorm",
+  "limitation": "Repeated experiments on same corpus; nested CV is not an independent external holdout"
+}

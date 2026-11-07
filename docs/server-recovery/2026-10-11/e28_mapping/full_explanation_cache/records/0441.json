@@ -1,0 +1,87 @@
+{
+  "index": 441,
+  "sample_id": "TMP-972E885F298A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1e156241aee6476b2f257d0352e3e9f093678d78d97eeaf0f04682ba77590bdf",
+  "image_sha256": "972e885f298a4bff1ecaadf7363f39f16c7315c2dbb786ad2ae1d156310fee3c",
+  "transmitted_image_sha256": "babc9df22166529136c267e27bd059fdbd3e154632d3c81caf449b02d6a78cce",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6402045,
+      "total": 10,
+      "remaining": 1.3597955000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.640204499999996,
+      "total": 100,
+      "remaining": 91.3597955,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.068324154242873,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A handshake forming the letter 'M'\",\n  \"source_properties\": \"Two hands meet and grasp within a blue letterform, set against a yellow circle.\",\n  \"target_situation\": \"The bribery scandal involving Meikarta's permits and the Lippo Group owner.\",\n  \"mapping\": \"The handshake symbolizes a secret, mutually beneficial agreement or deal between two parties.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "mZjLaoicH97d_uMP2Ze24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 683000,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1366,
+      "total_backend_latency_ms": 1613,
+      "total_tokens": 1465
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6411845,
+      "total": 10,
+      "remaining": 1.3588155000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.641184499999994,
+      "total": 100,
+      "remaining": 91.3588155,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.00098,
+  "fields": {
+    "source_object": "A handshake forming the letter 'M'",
+    "source_properties": "Two hands meet and grasp within a blue letterform, set against a yellow circle.",
+    "target_situation": "The bribery scandal involving Meikarta's permits and the Lippo Group owner.",
+    "mapping": "The handshake symbolizes a secret, mutually beneficial agreement or deal between two parties.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A handshake forming the letter 'M'\nsource_properties: Two hands meet and grasp within a blue letterform, set against a yellow circle.\ntarget_situation: The bribery scandal involving Meikarta's permits and the Lippo Group owner.\nmapping: The handshake symbolizes a secret, mutually beneficial agreement or deal between two parties.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

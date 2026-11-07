@@ -1,0 +1,87 @@
+{
+  "index": 539,
+  "sample_id": "TMP-20C2D64AA01D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "160e76682323f890768379819a7f4c029ae238307f13fbc0614d942694c5781e",
+  "image_sha256": "20c2d64aa01d76ade66dce9543939fbb3b47dee11bae952e3173647dbb261433",
+  "transmitted_image_sha256": "fb764d826c93297e1efa673c570aa8af3520cdf22323293d0ffbce2b3d78ae41",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.778972,
+      "total": 10,
+      "remaining": 1.2210280000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.778971999999996,
+      "total": 100,
+      "remaining": 91.221028,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.62359929503873,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Rat\",\n  \"source_properties\": \"Vermin known for scavenging, infestation, and clandestine behavior, here wearing academic regalia.\",\n  \"target_situation\": \"Universities allegedly handing out honorary doctorates carelessly to political and legal elites.\",\n  \"mapping\": \"The rat represents figures unscrupulously obtaining academic titles, symbolizing the degradation of academic integrity through political scavenging.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "NZvLavPGDZzd_uMP7MbkuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 98,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673000,
+        "output_tokens_cost_nanodollars": 294000
+      },
+      "prompt_tokens": 1346,
+      "total_backend_latency_ms": 2122,
+      "total_tokens": 1444
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.779939,
+      "total": 10,
+      "remaining": 1.2200609999999994,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.779938999999999,
+      "total": 100,
+      "remaining": 91.220061,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000967,
+  "fields": {
+    "source_object": "Rat",
+    "source_properties": "Vermin known for scavenging, infestation, and clandestine behavior, here wearing academic regalia.",
+    "target_situation": "Universities allegedly handing out honorary doctorates carelessly to political and legal elites.",
+    "mapping": "The rat represents figures unscrupulously obtaining academic titles, symbolizing the degradation of academic integrity through political scavenging.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Rat\nsource_properties: Vermin known for scavenging, infestation, and clandestine behavior, here wearing academic regalia.\ntarget_situation: Universities allegedly handing out honorary doctorates carelessly to political and legal elites.\nmapping: The rat represents figures unscrupulously obtaining academic titles, symbolizing the degradation of academic integrity through political scavenging.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 375,
+  "sample_id": "TMP-2CC5EC684C07",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8f42dde95c85c0288a76d015416d80f0bd5e944f5c5ab8cf451edc3a92a9eddb",
+  "image_sha256": "2cc5ec684c074bbefca444f658a2e839f2d30affa1e1b62543fb261f9036d41e",
+  "transmitted_image_sha256": "5e50a863d42da65b0ddaa2b06f5de99d7d444c88a33457ec345ac51f1b4a6972",
+  "image_size": [
+    407,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.545526,
+      "total": 10,
+      "remaining": 1.4544739999999994,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.545525999999995,
+      "total": 100,
+      "remaining": 91.454474,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9424186372198164,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Photo booth cutout\",\n  \"source_properties\": \"Silhouetted head and shoulder shapes cut out from a flat surface.\",\n  \"target_situation\": \"The elimination of Agus Yudhoyono from the Jakarta gubernatorial race.\",\n  \"mapping\": \"The empty white silhouettes represent Agus's absence from the competition, leaving a void for remaining candidates to fill.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "3pbLau2OAf-o_uMPl6-88Q4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 672500,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1345,
+      "total_backend_latency_ms": 1671,
+      "total_tokens": 1442
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5464895,
+      "total": 10,
+      "remaining": 1.4535105000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.546489500000007,
+      "total": 100,
+      "remaining": 91.4535105,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009635,
+  "fields": {
+    "source_object": "Photo booth cutout",
+    "source_properties": "Silhouetted head and shoulder shapes cut out from a flat surface.",
+    "target_situation": "The elimination of Agus Yudhoyono from the Jakarta gubernatorial race.",
+    "mapping": "The empty white silhouettes represent Agus's absence from the competition, leaving a void for remaining candidates to fill.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: Photo booth cutout\nsource_properties: Silhouetted head and shoulder shapes cut out from a flat surface.\ntarget_situation: The elimination of Agus Yudhoyono from the Jakarta gubernatorial race.\nmapping: The empty white silhouettes represent Agus's absence from the competition, leaving a void for remaining candidates to fill.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

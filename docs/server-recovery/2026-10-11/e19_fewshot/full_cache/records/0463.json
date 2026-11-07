@@ -1,0 +1,86 @@
+{
+  "index": 463,
+  "sample_id": "TMP-90F516E745B9",
+  "fold": 4,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "7a3fb9ef2e56dfed1b472b600ee203a5d43209b50d3f269abe76ff9c1a7f5fb7",
+  "image_sha256": "90f516e745b90a59614af16bb69219f8583eb99cb7ed95cc980c85f84197cee2",
+  "transmitted_image_sha256": "c97c8f014ade33b22660a4fcb80f622fd7168cc84c4fd51d146c9e513db6ff97",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.3501765,
+      "total": 10,
+      "remaining": 4.6498235,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.350176500000003,
+      "total": 100,
+      "remaining": 94.6498235,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 16.758678194135427,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "B\n\nBerdasarkan deskripsi yang diberikan, metafora yang digunakan bersumber dari **orang utan** (hewan). Dalam kategori yang ditentukan, domain sumber yang mencakup hewan, perilaku biologis, atau anatomi diklasifikasikan ke dalam kode **B (HEWAN_TUBUH)**. Meskipun ilustrasi utamanya adalah tokoh manusia, teks \"Sumber dan alasan\" secara eksplisit menyatakan bahwa perilaku hewan liar (orang utan) digunakan sebagai metafora untuk menggambarkan tokoh tersebut dalam konteks korupsi.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "uvvKaqrhBZ-d_uMPsajYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 3782,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3678
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2079500,
+        "output_tokens_cost_nanodollars": 11346000
+      },
+      "prompt_tokens": 4159,
+      "total_backend_latency_ms": 15159,
+      "total_tokens": 7941
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.363602,
+      "total": 10,
+      "remaining": 4.636398,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.363602,
+      "total": 100,
+      "remaining": 94.636398,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0134255,
+  "code": "B",
+  "strict_code": "INVALID",
+  "parsing_rule": "boundary_single_code",
+  "finish_reason": "stop",
+  "prediction": "HEWAN_TUBUH"
+}

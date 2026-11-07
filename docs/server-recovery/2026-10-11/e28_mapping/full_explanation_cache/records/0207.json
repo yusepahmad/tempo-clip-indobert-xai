@@ -1,0 +1,87 @@
+{
+  "index": 207,
+  "sample_id": "TMP-5DEE5FC13BB8",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "12171021bf754a775275a78b27777d2063106fde01314dc597059b44a100fda6",
+  "image_sha256": "5dee5fc13bb87401de5a12791647c1d3df3abe702bf7aff4c5c4dc47814e4ae4",
+  "transmitted_image_sha256": "6b2cb1336bdebe101331f05fc3b846623fbd732f63532b1b9553f8f5590a53cd",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.315617,
+      "total": 10,
+      "remaining": 1.6843830000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.315617000000003,
+      "total": 100,
+      "remaining": 91.684383,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.840371643193066,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"glowing metal hook\", \"source_properties\": \"Heated to a burning orange glow, sharp, and brandished as a weapon.\", \"target_situation\": \"A violent motor gang spreading terror in the streets.\", \"mapping\": \"The searing heat and aggression of the hook symbolize the intense, destructive violence and fear 'terror' inflicted by the group.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "kJLLasrvJ82i_uMP67qv2Qc",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 85,
+      "cost": {
+        "input_tokens_cost_nanodollars": 662500,
+        "output_tokens_cost_nanodollars": 255000
+      },
+      "prompt_tokens": 1325,
+      "total_backend_latency_ms": 1729,
+      "total_tokens": 1410
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3165345,
+      "total": 10,
+      "remaining": 1.6834655000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.316534500000003,
+      "total": 100,
+      "remaining": 91.6834655,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009175,
+  "fields": {
+    "source_object": "glowing metal hook",
+    "source_properties": "Heated to a burning orange glow, sharp, and brandished as a weapon.",
+    "target_situation": "A violent motor gang spreading terror in the streets.",
+    "mapping": "The searing heat and aggression of the hook symbolize the intense, destructive violence and fear 'terror' inflicted by the group.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: glowing metal hook\nsource_properties: Heated to a burning orange glow, sharp, and brandished as a weapon.\ntarget_situation: A violent motor gang spreading terror in the streets.\nmapping: The searing heat and aggression of the hook symbolize the intense, destructive violence and fear 'terror' inflicted by the group.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

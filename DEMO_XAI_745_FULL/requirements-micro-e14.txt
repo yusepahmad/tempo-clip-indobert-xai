@@ -1,0 +1,14 @@
+# Install separately from baseline venv. CUDA-enabled Torch must be provided.
+# Same GPU software versions as verified MICRO-E14 Kaggle training.
+torch==2.11.0
+transformers==5.17.0
+peft==0.21.2
+bitsandbytes==0.50.2
+accelerate==1.15.0
+numpy
+pandas
+scikit-learn
+pillow
+flask
+# xai_core imports this even though E14 does NOT run CLIP inference/XAI.
+opencv-python-headless

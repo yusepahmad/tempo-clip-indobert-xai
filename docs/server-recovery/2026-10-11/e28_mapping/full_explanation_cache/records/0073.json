@@ -1,0 +1,87 @@
+{
+  "index": 73,
+  "sample_id": "TMP-FB4EF95E9C9A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0b7482c79c0f4e569d86f9b451d936b320049a8809e3839b47a787f5946d3d17",
+  "image_sha256": "fb4ef95e9c9a6c01b418c0ff6af59b3cea0a2dd9114494b649c452e7b2d3db25",
+  "transmitted_image_sha256": "0472e150549d39677c63b0b440a812c6d6e8c82b404b396a37f37b72f742648b",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.111849,
+      "total": 10,
+      "remaining": 1.8881510000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.111849000000007,
+      "total": 100,
+      "remaining": 91.888151,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.8244141368195415,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A smartphone\",\n  \"source_properties\": \"A hand-held digital device that captures and displays subjects within its frame.\",\n  \"target_situation\": \"Young preachers achieving fame through preaching on social media platforms.\",\n  \"mapping\": \"The phone frame represents how social media acts as a modern platform for Islamic dakwah, focusing attention on preachers as they enter the digital sphere.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "CI_LatHsOcfR_uMPxMva8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 100,
+      "cost": {
+        "input_tokens_cost_nanodollars": 670500,
+        "output_tokens_cost_nanodollars": 300000
+      },
+      "prompt_tokens": 1341,
+      "total_backend_latency_ms": 1746,
+      "total_tokens": 1441
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1128195,
+      "total": 10,
+      "remaining": 1.8871804999999995,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.1128195,
+      "total": 100,
+      "remaining": 91.8871805,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009705,
+  "fields": {
+    "source_object": "A smartphone",
+    "source_properties": "A hand-held digital device that captures and displays subjects within its frame.",
+    "target_situation": "Young preachers achieving fame through preaching on social media platforms.",
+    "mapping": "The phone frame represents how social media acts as a modern platform for Islamic dakwah, focusing attention on preachers as they enter the digital sphere.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: A smartphone\nsource_properties: A hand-held digital device that captures and displays subjects within its frame.\ntarget_situation: Young preachers achieving fame through preaching on social media platforms.\nmapping: The phone frame represents how social media acts as a modern platform for Islamic dakwah, focusing attention on preachers as they enter the digital sphere.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

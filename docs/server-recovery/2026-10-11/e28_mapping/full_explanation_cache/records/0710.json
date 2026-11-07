@@ -1,0 +1,87 @@
+{
+  "index": 710,
+  "sample_id": "TMP-7732BA956290",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "cddeddd5d0bf92f7caec80b9f96dc630a2b79f0a78083251881060c74ddebcd0",
+  "image_sha256": "7732ba956290fe342f40ebd383ca748be2c69e6d453c90942d625b9b3a45e3e8",
+  "transmitted_image_sha256": "9a87c764b500fa2ddbebdc92e301d84a290be0512a6f866329f9d40163381b17",
+  "image_size": [
+    581,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.031145500000001,
+      "total": 10,
+      "remaining": 0.9688544999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.031145499999994,
+      "total": 100,
+      "remaining": 90.9688545,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1645561000332236,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"sawing a chair leg\", \"source_properties\": \"cutting through a structural support to cause the person sitting to fall\", \"target_situation\": \"political movement to impeach or remove Vice President Gibran Rakabuming Raka\", \"mapping\": \"The hand sawing the chair leg represents efforts by retired military officers to destabilize and overthrow the Vice President.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "vJ_LaqX6Hb7i_uMPz_DU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677000,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1354,
+      "total_backend_latency_ms": 1637,
+      "total_tokens": 1440
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0320805,
+      "total": 10,
+      "remaining": 0.9679195000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.032080500000006,
+      "total": 100,
+      "remaining": 90.9679195,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000935,
+  "fields": {
+    "source_object": "sawing a chair leg",
+    "source_properties": "cutting through a structural support to cause the person sitting to fall",
+    "target_situation": "political movement to impeach or remove Vice President Gibran Rakabuming Raka",
+    "mapping": "The hand sawing the chair leg represents efforts by retired military officers to destabilize and overthrow the Vice President.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: sawing a chair leg\nsource_properties: cutting through a structural support to cause the person sitting to fall\ntarget_situation: political movement to impeach or remove Vice President Gibran Rakabuming Raka\nmapping: The hand sawing the chair leg represents efforts by retired military officers to destabilize and overthrow the Vice President.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

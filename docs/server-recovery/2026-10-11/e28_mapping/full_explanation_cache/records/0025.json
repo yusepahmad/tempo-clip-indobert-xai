@@ -1,0 +1,87 @@
+{
+  "index": 25,
+  "sample_id": "TMP-3BEBD735F947",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "78da7438599bdfd3f77be74dc474294502553f8f8ec887c0163250045b118532",
+  "image_sha256": "3bebd735f947fd995888fcde1001f5e600a9bd40d8f6f8d379668e64c2e480a9",
+  "transmitted_image_sha256": "a86cbf27453bb7f3ab2c30669617ac3723a88ee6d4d3cf77fc9d0cc65e2731af",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.048753,
+      "total": 10,
+      "remaining": 1.9512470000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.048753000000005,
+      "total": 100,
+      "remaining": 91.951247,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.013296559918672,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"glue or thick adhesive\", \"source_properties\": \"A viscous, sticky, amber-colored substance that traps objects and makes them difficult to remove.\", \"target_situation\": \"Anies Baswedan's controversial 2020 Jakarta budget plan involving irregular projects and grant allocations.\", \"mapping\": \"The sticky glue represents the 'messy' and 'stuck' nature of the budget scandal, trapping the governor in a compromising situation.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "yI3LatSnNJOo_uMPmu77-As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "cost": {
+        "input_tokens_cost_nanodollars": 668000,
+        "output_tokens_cost_nanodollars": 312000
+      },
+      "prompt_tokens": 1336,
+      "total_backend_latency_ms": 1644,
+      "total_tokens": 1440
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.049733,
+      "total": 10,
+      "remaining": 1.9502670000000002,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.049733000000003,
+      "total": 100,
+      "remaining": 91.950267,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00098,
+  "fields": {
+    "source_object": "glue or thick adhesive",
+    "source_properties": "A viscous, sticky, amber-colored substance that traps objects and makes them difficult to remove.",
+    "target_situation": "Anies Baswedan's controversial 2020 Jakarta budget plan involving irregular projects and grant allocations.",
+    "mapping": "The sticky glue represents the 'messy' and 'stuck' nature of the budget scandal, trapping the governor in a compromising situation.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: glue or thick adhesive\nsource_properties: A viscous, sticky, amber-colored substance that traps objects and makes them difficult to remove.\ntarget_situation: Anies Baswedan's controversial 2020 Jakarta budget plan involving irregular projects and grant allocations.\nmapping: The sticky glue represents the 'messy' and 'stuck' nature of the budget scandal, trapping the governor in a compromising situation.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

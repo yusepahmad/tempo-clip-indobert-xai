@@ -1,0 +1,87 @@
+{
+  "index": 195,
+  "sample_id": "TMP-EB4DF96C4D86",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0b19e3a458d2d61dd272e8fbd4c64da53cccc82f8c647436cf1acaf58c7abb57",
+  "image_sha256": "eb4df96c4d868c2064cb15b391089d7be151d23546efed115c2129ff25eb649f",
+  "transmitted_image_sha256": "c08826d5a80db9c33e8d851a17d14e76cbfe7b5dbb8578e75c52d9da1542e5fa",
+  "image_size": [
+    300,
+    411
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.293194,
+      "total": 10,
+      "remaining": 1.7068060000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.293194,
+      "total": 100,
+      "remaining": 91.706806,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.8440420469269156,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Heavy black boot\", \"source_properties\": \"Substantial, hard-soled, poised mid-air above a prone individual, representing crushing force and domination.\", \"target_situation\": \"Reported physical abuse and hazing at a government educational institution in Jatinangor.\", \"mapping\": \"The boot's descending action symbolizes institutional violence, representing the weight of authority used to oppress or torture those underneath it.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "PpLLarCKKJKp_uMPhrH00QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 650500,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1301,
+      "total_backend_latency_ms": 1610,
+      "total_tokens": 1398
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2941355,
+      "total": 10,
+      "remaining": 1.7058645000000006,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.294135499999996,
+      "total": 100,
+      "remaining": 91.7058645,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009415,
+  "fields": {
+    "source_object": "Heavy black boot",
+    "source_properties": "Substantial, hard-soled, poised mid-air above a prone individual, representing crushing force and domination.",
+    "target_situation": "Reported physical abuse and hazing at a government educational institution in Jatinangor.",
+    "mapping": "The boot's descending action symbolizes institutional violence, representing the weight of authority used to oppress or torture those underneath it.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Heavy black boot\nsource_properties: Substantial, hard-soled, poised mid-air above a prone individual, representing crushing force and domination.\ntarget_situation: Reported physical abuse and hazing at a government educational institution in Jatinangor.\nmapping: The boot's descending action symbolizes institutional violence, representing the weight of authority used to oppress or torture those underneath it.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

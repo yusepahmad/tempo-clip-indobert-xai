@@ -1,0 +1,87 @@
+{
+  "index": 700,
+  "sample_id": "TMP-CB06B99188EE",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "278732af3d28b383751def9bcae2903e7a664ba3acf3bcccc7db5f7b1c4c4ee1",
+  "image_sha256": "cb06b99188ee9605c7ec23470b5509cb353158a69360eb6eb606bae0cd3496d8",
+  "transmitted_image_sha256": "fda53affa3d347e95b72cf85c808cbee19c3f06289dfd953fd240685afe0279b",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0183295,
+      "total": 10,
+      "remaining": 0.9816704999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.018329499999993,
+      "total": 100,
+      "remaining": 90.9816705,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3698246986605227,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"children's bookkeeping\",\n  \"source_properties\": \"sitting on the floor, using basic calculators, writing in simple notebooks\",\n  \"target_situation\": \"government manipulation of economic statistics (BPS data)\",\n  \"mapping\": \"Simplistic, informal record-keeping by figures suggests that complex economic data is being crudely 'adjusted' or 'fiddled with' rather than professionally analyzed.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "fZ_LavPoKPDe_uMPnvjrqQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "cost": {
+        "input_tokens_cost_nanodollars": 672500,
+        "output_tokens_cost_nanodollars": 312000
+      },
+      "prompt_tokens": 1345,
+      "total_backend_latency_ms": 1627,
+      "total_tokens": 1449
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.019314,
+      "total": 10,
+      "remaining": 0.9806860000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.019313999999994,
+      "total": 100,
+      "remaining": 90.980686,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009845,
+  "fields": {
+    "source_object": "children's bookkeeping",
+    "source_properties": "sitting on the floor, using basic calculators, writing in simple notebooks",
+    "target_situation": "government manipulation of economic statistics (BPS data)",
+    "mapping": "Simplistic, informal record-keeping by figures suggests that complex economic data is being crudely 'adjusted' or 'fiddled with' rather than professionally analyzed.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: children's bookkeeping\nsource_properties: sitting on the floor, using basic calculators, writing in simple notebooks\ntarget_situation: government manipulation of economic statistics (BPS data)\nmapping: Simplistic, informal record-keeping by figures suggests that complex economic data is being crudely 'adjusted' or 'fiddled with' rather than professionally analyzed.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

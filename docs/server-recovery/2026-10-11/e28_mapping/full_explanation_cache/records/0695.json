@@ -1,0 +1,90 @@
+{
+  "index": 695,
+  "sample_id": "TMP-68386EE1A5FC",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a670adaa80da110928983cf89250cdda8c37f849fdecf9e905db77adc944db16",
+  "image_sha256": "68386ee1a5fc856063041416de318ac595614bd9298db20ad1a9a0213f75bd8c",
+  "transmitted_image_sha256": "a377aad80a1f8b86682f5ce05597d8b8e204c7e1161693a2bd991288d5ba5fad",
+  "image_size": [
+    581,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.011518,
+      "total": 10,
+      "remaining": 0.9884819999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.011517999999995,
+      "total": 100,
+      "remaining": 90.988482,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.7082823025994,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"An oil barrel\",\n  \"source_properties\": \"A rigid, cylindrical metal vessel used for containing and transporting crude oil.\",\n  \"target_situation\": \"Mohammad Riza Chalid\u2019s legal status as a suspect in a corruption case regarding oil imports.\",\n  \"mapping\": \"The barrel acts as a physical trap, symbolizing how the oil industry and its corrupt practices have finally constrained him.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Xp_LaqXQMvbb_uMPure6uAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 730,
+      "completion_tokens_details": {
+        "reasoning_tokens": 627
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 679000,
+        "output_tokens_cost_nanodollars": 2190000
+      },
+      "prompt_tokens": 1358,
+      "total_backend_latency_ms": 4201,
+      "total_tokens": 2088
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.014387,
+      "total": 10,
+      "remaining": 0.9856130000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.014387,
+      "total": 100,
+      "remaining": 90.985613,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.002869,
+  "fields": {
+    "source_object": "An oil barrel",
+    "source_properties": "A rigid, cylindrical metal vessel used for containing and transporting crude oil.",
+    "target_situation": "Mohammad Riza Chalid\u2019s legal status as a suspect in a corruption case regarding oil imports.",
+    "mapping": "The barrel acts as a physical trap, symbolizing how the oil industry and its corrupt practices have finally constrained him.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: An oil barrel\nsource_properties: A rigid, cylindrical metal vessel used for containing and transporting crude oil.\ntarget_situation: Mohammad Riza Chalid\u2019s legal status as a suspect in a corruption case regarding oil imports.\nmapping: The barrel acts as a physical trap, symbolizing how the oil industry and its corrupt practices have finally constrained him.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

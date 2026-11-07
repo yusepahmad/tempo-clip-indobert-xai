@@ -1,0 +1,91 @@
+{
+  "index": 3,
+  "sample_id": "TMP-78163D7E671E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "741ca1019f12a8d082524a249053fca5cfd3d4047325e7c4c0e6facfa26abbad",
+  "image_sha256": "78163d7e671e6999d0020b8dc1da85129a77cb28cfde5da879c2143664b25fc8",
+  "transmitted_image_sha256": "d869f1952e8becd1fae0f9320bb08ab28c2fde17fcbf7892d9375a5a3695aa00",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.018339000000001,
+      "total": 10,
+      "remaining": 1.981660999999999,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.018338999999997,
+      "total": 100,
+      "remaining": 91.981661,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.942528489977121,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"multihanded conductor\", \"source_properties\": \"Conducting an orchestra while hands are bound or holding various items like a quill and cane.\", \"target_situation\": \"A cabinet reshuffle managed by a leader balancing multiple conflicting political interests.\", \"mapping\": \"The conductor represents a leader attempting to orchestrate complex political movements while constrained by behind-the-scenes obligations or alliances.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "T4rLapmuCp-d_uMPsajYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 651500,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1303,
+      "total_backend_latency_ms": 1802,
+      "total_tokens": 1393
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0192605,
+      "total": 10,
+      "remaining": 1.9807395000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.019260500000001,
+      "total": 100,
+      "remaining": 91.9807395,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009215,
+  "fields": {
+    "source_object": "multihanded conductor",
+    "source_properties": "Conducting an orchestra while hands are bound or holding various items like a quill and cane.",
+    "target_situation": "A cabinet reshuffle managed by a leader balancing multiple conflicting political interests.",
+    "mapping": "The conductor represents a leader attempting to orchestrate complex political movements while constrained by behind-the-scenes obligations or alliances.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: multihanded conductor\nsource_properties: Conducting an orchestra while hands are bound or holding various items like a quill and cane.\ntarget_situation: A cabinet reshuffle managed by a leader balancing multiple conflicting political interests.\nmapping: The conductor represents a leader attempting to orchestrate complex political movements while constrained by behind-the-scenes obligations or alliances.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true,
+  "migration_origin": {
+    "record_sha256": "00b8da6c862b42b26bc15b2ecdd8fd98158f317f526f2950a3474a211d3c8963",
+    "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383"
+  }
+}

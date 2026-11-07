@@ -1,0 +1,87 @@
+{
+  "index": 721,
+  "sample_id": "TMP-801C3B686EFB",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b9551237a43c211f913d0bb018ef12ca55c08097a2f23be724d3bb36115b4ad0",
+  "image_sha256": "801c3b686efb4e58c78a60624ee853743af880788e2a18ef40ed0ccef8c43f47",
+  "transmitted_image_sha256": "f7b2353a3b935412d1861c4ab6084fd480a2d00c7c121b8f34cd88fef8e9306e",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.046075,
+      "total": 10,
+      "remaining": 0.9539249999999999,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.046075000000002,
+      "total": 100,
+      "remaining": 90.953925,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.8376017780974507,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"desert landscape\", \"source_properties\": \"cracked, dry, barren earth with discarded clothing and shoes\", \"target_situation\": \"political parties facing a 'famine' or scarcity by being outside the ruling power circle\", \"mapping\": \"The physical dryness and desolation of a desert represent the lack of resources and influence (paceklik) experienced by parties excluded from government power.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "BaDLasDSA62u_PUPk7_C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677000,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1354,
+      "total_backend_latency_ms": 1981,
+      "total_tokens": 1445
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.047025,
+      "total": 10,
+      "remaining": 0.9529750000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.047025000000005,
+      "total": 100,
+      "remaining": 90.952975,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.00095,
+  "fields": {
+    "source_object": "desert landscape",
+    "source_properties": "cracked, dry, barren earth with discarded clothing and shoes",
+    "target_situation": "political parties facing a 'famine' or scarcity by being outside the ruling power circle",
+    "mapping": "The physical dryness and desolation of a desert represent the lack of resources and influence (paceklik) experienced by parties excluded from government power.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: desert landscape\nsource_properties: cracked, dry, barren earth with discarded clothing and shoes\ntarget_situation: political parties facing a 'famine' or scarcity by being outside the ruling power circle\nmapping: The physical dryness and desolation of a desert represent the lack of resources and influence (paceklik) experienced by parties excluded from government power.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 569,
+  "sample_id": "TMP-92C55AD605A4",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "6339006ceb57b944deacc4cb4013be4836dc34fd24688081680227b77d84cab5",
+  "image_sha256": "92c55ad605a419919569c0cc9bf49e0f93a3538c6a18fd7077ddc8ae14d90f55",
+  "transmitted_image_sha256": "ee6e63296908871d44f1c77c0f29c5ca8dc7682c5057c23c495770a16a09ac56",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8191085,
+      "total": 10,
+      "remaining": 1.1808914999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.819108499999999,
+      "total": 100,
+      "remaining": 91.1808915,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1572686177678406,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Scrabble game board and tiles\",\n  \"source_properties\": \"Lettered tiles arranged or held by a hand, forming words on a grid.\",\n  \"target_situation\": \"The organizational restructuring and turmoil within Indonesia's National Research and Innovation Agency (BRIN).\",\n  \"mapping\": \"Spelling 'KISRUH BRIN' with tiles suggests the situation is being manipulated or assembled haphazardly, like a game.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ApzLarfWFtPj_uMPg-OC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 111,
+      "cost": {
+        "input_tokens_cost_nanodollars": 672000,
+        "output_tokens_cost_nanodollars": 333000
+      },
+      "prompt_tokens": 1344,
+      "total_backend_latency_ms": 1554,
+      "total_tokens": 1455
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8201135,
+      "total": 10,
+      "remaining": 1.1798865000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.820113500000005,
+      "total": 100,
+      "remaining": 91.1798865,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.001005,
+  "fields": {
+    "source_object": "Scrabble game board and tiles",
+    "source_properties": "Lettered tiles arranged or held by a hand, forming words on a grid.",
+    "target_situation": "The organizational restructuring and turmoil within Indonesia's National Research and Innovation Agency (BRIN).",
+    "mapping": "Spelling 'KISRUH BRIN' with tiles suggests the situation is being manipulated or assembled haphazardly, like a game.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Scrabble game board and tiles\nsource_properties: Lettered tiles arranged or held by a hand, forming words on a grid.\ntarget_situation: The organizational restructuring and turmoil within Indonesia's National Research and Innovation Agency (BRIN).\nmapping: Spelling 'KISRUH BRIN' with tiles suggests the situation is being manipulated or assembled haphazardly, like a game.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

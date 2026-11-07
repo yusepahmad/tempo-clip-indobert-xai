@@ -1,0 +1,194 @@
+{
+  "macro_f1": 0.5066518832862527,
+  "folds": [
+    {
+      "fold": 1,
+      "macro_f1": 0.46125845547883343,
+      "inner_macro_f1": 0.4912294256759366,
+      "params": {
+        "clf": "SVC()",
+        "clf__C": "1",
+        "clf__class_weight": "balanced",
+        "clf__gamma": "scale"
+      }
+    },
+    {
+      "fold": 2,
+      "macro_f1": 0.49909718456567215,
+      "inner_macro_f1": 0.4657048750578761,
+      "params": {
+        "clf": "SVC()",
+        "clf__C": "1",
+        "clf__class_weight": "balanced",
+        "clf__gamma": "0.0003"
+      }
+    },
+    {
+      "fold": 3,
+      "macro_f1": 0.49513743082477996,
+      "inner_macro_f1": 0.4639368984581648,
+      "params": {
+        "clf": "SVC()",
+        "clf__C": "1",
+        "clf__class_weight": "balanced",
+        "clf__gamma": "scale"
+      }
+    },
+    {
+      "fold": 4,
+      "macro_f1": 0.5218136958863021,
+      "inner_macro_f1": 0.452789206331809,
+      "params": {
+        "clf": "SVC()",
+        "clf__C": "1",
+        "clf__class_weight": "balanced",
+        "clf__gamma": "0.0003"
+      }
+    },
+    {
+      "fold": 5,
+      "macro_f1": 0.5178152522572679,
+      "inner_macro_f1": 0.46947648619050186,
+      "params": {
+        "clf": "SVC()",
+        "clf__C": "1",
+        "clf__class_weight": "balanced",
+        "clf__gamma": "0.0003"
+      }
+    }
+  ],
+  "classification": {
+    "BENCANA_JERAT": {
+      "precision": 0.411214953271028,
+      "recall": 0.44,
+      "f1-score": 0.4251207729468599,
+      "support": 100.0
+    },
+    "HEWAN_TUBUH": {
+      "precision": 0.5409836065573771,
+      "recall": 0.36666666666666664,
+      "f1-score": 0.4370860927152318,
+      "support": 90.0
+    },
+    "KONSUMSI_TRANSAKSI": {
+      "precision": 0.4854368932038835,
+      "recall": 0.5952380952380952,
+      "f1-score": 0.5347593582887701,
+      "support": 84.0
+    },
+    "LAINNYA": {
+      "precision": 0.3181818181818182,
+      "recall": 0.4444444444444444,
+      "f1-score": 0.3708609271523179,
+      "support": 63.0
+    },
+    "MESIN_INFRASTRUKTUR": {
+      "precision": 0.6336633663366337,
+      "recall": 0.5981308411214953,
+      "f1-score": 0.6153846153846154,
+      "support": 214.0
+    },
+    "NON_METAFORA": {
+      "precision": 0.5733333333333334,
+      "recall": 0.5180722891566265,
+      "f1-score": 0.5443037974683544,
+      "support": 83.0
+    },
+    "PERMAINAN_KONTES": {
+      "precision": 0.625,
+      "recall": 0.6132075471698113,
+      "f1-score": 0.6190476190476191,
+      "support": 106.0
+    },
+    "accuracy": 0.5283783783783784,
+    "macro avg": {
+      "precision": 0.5125448529834391,
+      "recall": 0.5108228405424485,
+      "f1-score": 0.5066518832862527,
+      "support": 740.0
+    },
+    "weighted avg": {
+      "precision": 0.5406389196683159,
+      "recall": 0.5283783783783784,
+      "f1-score": 0.5305708387123491,
+      "support": 740.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      44,
+      5,
+      9,
+      6,
+      22,
+      8,
+      6
+    ],
+    [
+      8,
+      33,
+      11,
+      13,
+      12,
+      9,
+      4
+    ],
+    [
+      4,
+      5,
+      50,
+      6,
+      10,
+      0,
+      9
+    ],
+    [
+      6,
+      6,
+      4,
+      28,
+      4,
+      4,
+      11
+    ],
+    [
+      24,
+      7,
+      20,
+      19,
+      128,
+      8,
+      8
+    ],
+    [
+      12,
+      5,
+      4,
+      6,
+      12,
+      43,
+      1
+    ],
+    [
+      9,
+      0,
+      5,
+      10,
+      14,
+      3,
+      65
+    ]
+  ],
+  "source_meta": {
+    "model": "intfloat/multilingual-e5-base",
+    "revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+    "csv_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+    "description_sha256": "c75e8df3f9b71d6786462f8d0f1187ebe4234fb8dd079924f3f35707ff1b8cd2",
+    "zeroshot_sha256": "10c07b06b13fbbf647f2b1ed12a722d9bff8f97caa6b621430d8bc0429ab38c9",
+    "samples": 740,
+    "dimension": 768,
+    "prefix": "query:",
+    "pooling": "masked mean then L2",
+    "torch": "2.11.0+cu128"
+  }
+}

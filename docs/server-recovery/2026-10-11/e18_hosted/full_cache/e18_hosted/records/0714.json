@@ -1,0 +1,83 @@
+{
+  "index": 714,
+  "sample_id": "TMP-B6F6E9960590",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "3617fdc3824ffceaf12e068f1e256b0571aadf9c69c4520e24a6ee35c84c1871",
+  "image_sha256": "b6f6e996059062cefd15ad623e5fb0c8a10f45a8be57747a9b23bc764f474852",
+  "transmitted_image_sha256": "9d5c6180daefcae28b8b924ceb57a90706e1ddb8bd9453dde0ce7427153ea506",
+  "image_size": [
+    294,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.667731,
+      "total": 10,
+      "remaining": 7.332269,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.6677310000000034,
+      "total": 100,
+      "remaining": 97.332269,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 11.639519450021908,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan ilustrasi pada sampul Tempo tersebut:\n\n1.  **Analisis Visual (Domain Sumber):** Ilustrasi tersebut memparodikan lukisan terkenal karya Michelangelo, *\"The Creation of Adam\"* (Penciptaan Adam), yang berada di langit-langit Kapel Sistina. Dalam versi ini, tokoh Megawati dan Prabowo diposisikan mirip dengan Tuhan dan Adam dalam lukisan tersebut.\n2.  **Klasifikasi:** Karena metafora yang digunakan bersumber dari karya seni klasik/ikonografi religius, dan tidak termasuk dalam kategori spesifik seperti Hewan, Mesin, Permainan, atau Bencana, maka kategori yang paling tepat adalah **LAINNYA**. Meskipun teks deskripsi menyebutkan \"permainan strategis\", itu lebih merujuk pada tafsir isu politiknya (domain target), sedangkan **domain sumber** visualnya adalah karya seni.\n\nO",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "hujKaruiC4Tn_uMP29-q-A8",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2044,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1858
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 784000,
+        "output_tokens_cost_nanodollars": 6132000
+      },
+      "prompt_tokens": 1568,
+      "total_backend_latency_ms": 10855,
+      "total_tokens": 3612
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.674647,
+      "total": 10,
+      "remaining": 7.325353,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.674646999999993,
+      "total": 100,
+      "remaining": 97.325353,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "length",
+  "cost_usd": 0.006916
+}

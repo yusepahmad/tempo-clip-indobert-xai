@@ -1,0 +1,87 @@
+{
+  "index": 16,
+  "sample_id": "TMP-015F9748262A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383",
+  "prompt_sha256": "b764f0b51e9d0a3b2471d13312dbd74d5e434f4971bd5641cc7fae8c5729d177",
+  "image_sha256": "015f9748262ad2111d6461c500fbe43004b9c291b4fafc7532bf4322444421ca",
+  "transmitted_image_sha256": "9c9ce052de99588f7cbf025380fbc23bf82d14e821017346417a3cfd0c1fd144",
+  "image_size": [
+    472,
+    627
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0332,
+      "total": 10,
+      "remaining": 1.9667999999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.033199999999994,
+      "total": 100,
+      "remaining": 91.9668,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.92781815957278,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A human back with deep surgical-like scars and a dollar sign.\",\n  \"source_properties\": \"Visible scars on the lower back where kidneys are located; dollar sign indicating commercial value.\",\n  \"target_situation\": \"An illegal kidney transplant brokerage network involving high-priced organ trafficking.\",\n  \"mapping\": \"The scars symbolize the physical removal of organs, while the dollar sign marks the body as a commodity.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "norLao7IJOyb_uMPzeOSwQw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 664500,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1329,
+      "total_backend_latency_ms": 1640,
+      "total_tokens": 1435
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0341825,
+      "total": 10,
+      "remaining": 1.9658175,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.0341825,
+      "total": 100,
+      "remaining": 91.9658175,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009825,
+  "fields": {
+    "source_object": "A human back with deep surgical-like scars and a dollar sign.",
+    "source_properties": "Visible scars on the lower back where kidneys are located; dollar sign indicating commercial value.",
+    "target_situation": "An illegal kidney transplant brokerage network involving high-priced organ trafficking.",
+    "mapping": "The scars symbolize the physical removal of organs, while the dollar sign marks the body as a commodity.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A human back with deep surgical-like scars and a dollar sign.\nsource_properties: Visible scars on the lower back where kidneys are located; dollar sign indicating commercial value.\ntarget_situation: An illegal kidney transplant brokerage network involving high-priced organ trafficking.\nmapping: The scars symbolize the physical removal of organs, while the dollar sign marks the body as a commodity.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 533,
+  "sample_id": "TMP-3952639D7F50",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9aa861358a0284ca3a6d7da070a215e645696482f8b8215df84b903d5eb7ac4a",
+  "image_sha256": "3952639d7f50177dae981c87f6fe4e2549b7f08502991506a70e17b45f5cc87c",
+  "transmitted_image_sha256": "9e70a76ce265522977c4389c2e1d9f03d7f65d7e6fc1bf2d93c11b56a6db9986",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7644305,
+      "total": 10,
+      "remaining": 1.2355695000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.764430500000003,
+      "total": 100,
+      "remaining": 91.2355695,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.304672760888934,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"American Gothic painting\", \"source_properties\": \"Stern-faced farmers in overalls holding a pitchfork/tool before a humble farmhouse.\", \"target_situation\": \"Indonesian officials Prabowo Subianto and Moeldoko managing the 'food estate' project in Kalimantan.\", \"mapping\": \"The iconic pose portrays the officials as simple agrarian workers, masking their political roles while highlighting their control over agricultural land and forest clearing.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "BJvLasjyNv2b_uMPj8_lqAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 98,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679500,
+        "output_tokens_cost_nanodollars": 294000
+      },
+      "prompt_tokens": 1359,
+      "total_backend_latency_ms": 2655,
+      "total_tokens": 1457
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.765404,
+      "total": 10,
+      "remaining": 1.2345959999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.765404000000004,
+      "total": 100,
+      "remaining": 91.234596,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009735,
+  "fields": {
+    "source_object": "American Gothic painting",
+    "source_properties": "Stern-faced farmers in overalls holding a pitchfork/tool before a humble farmhouse.",
+    "target_situation": "Indonesian officials Prabowo Subianto and Moeldoko managing the 'food estate' project in Kalimantan.",
+    "mapping": "The iconic pose portrays the officials as simple agrarian workers, masking their political roles while highlighting their control over agricultural land and forest clearing.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: American Gothic painting\nsource_properties: Stern-faced farmers in overalls holding a pitchfork/tool before a humble farmhouse.\ntarget_situation: Indonesian officials Prabowo Subianto and Moeldoko managing the 'food estate' project in Kalimantan.\nmapping: The iconic pose portrays the officials as simple agrarian workers, masking their political roles while highlighting their control over agricultural land and forest clearing.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

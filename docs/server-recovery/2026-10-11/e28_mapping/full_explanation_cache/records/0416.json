@@ -1,0 +1,87 @@
+{
+  "index": 416,
+  "sample_id": "TMP-F800BF04E712",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "afa1565258ee1ff751cebcadf062964c51dec9272bd33892941d81b612d02ff9",
+  "image_sha256": "f800bf04e71228b312672934fdf11ba4fa4dc54662847af3d5aa55ae9fe364e0",
+  "transmitted_image_sha256": "9d9af88fee48488ec023cfac6f11f4779f1a67222da5a34fc812faa24cc19208",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.613006,
+      "total": 10,
+      "remaining": 1.3869939999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.613005999999999,
+      "total": 100,
+      "remaining": 91.386994,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0476100370287895,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"malnourished children\", \"source_properties\": \"skeletal, suffering, emaciated bodies, and expressions of pain or despair\", \"target_situation\": \"a humanitarian crisis in Asmat, Papua, caused by mismanagement and corruption\", \"mapping\": \"The physical degradation of the children's bodies represents the severe consequences of systemic neglect and the literal impact of disease and starvation.\", \"uncertainty\": \"none evident\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "_ZfLauqfB6Cm_uMPsO6HgA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 670500,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1341,
+      "total_backend_latency_ms": 2014,
+      "total_tokens": 1432
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6139495,
+      "total": 10,
+      "remaining": 1.3860504999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.613949500000004,
+      "total": 100,
+      "remaining": 91.3860505,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009435,
+  "fields": {
+    "source_object": "malnourished children",
+    "source_properties": "skeletal, suffering, emaciated bodies, and expressions of pain or despair",
+    "target_situation": "a humanitarian crisis in Asmat, Papua, caused by mismanagement and corruption",
+    "mapping": "The physical degradation of the children's bodies represents the severe consequences of systemic neglect and the literal impact of disease and starvation.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: malnourished children\nsource_properties: skeletal, suffering, emaciated bodies, and expressions of pain or despair\ntarget_situation: a humanitarian crisis in Asmat, Papua, caused by mismanagement and corruption\nmapping: The physical degradation of the children's bodies represents the severe consequences of systemic neglect and the literal impact of disease and starvation.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

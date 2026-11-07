@@ -1,0 +1,86 @@
+{
+  "index": 514,
+  "sample_id": "TMP-CBF1F6D94754",
+  "fold": 3,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "28e550acdd9b45fd1629f3f2f64ab2c9da6c1f86d6d546199e6ab6be3d9a36f7",
+  "image_sha256": "cbf1f6d9475496b82768801141f562049af30ad26c227e64fd24040fe0eee033",
+  "transmitted_image_sha256": "83569e05eae003979996c66c02dab33903fc2bf3f1972b4237328439bec2d631",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.6290645,
+      "total": 10,
+      "remaining": 4.3709355,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.629064499999998,
+      "total": 100,
+      "remaining": 94.3709355,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 12.633715604897588,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks target, ilustrasi tersebut dipetakan sebagai simbol \"keadaan terjepit\", \"ruang terbatas atau tekanan\", serta \"suasana krisis atau isolasi\". Pemetaan ini menggunakan konsep jeratan atau kondisi terperangkap/tertekan sebagai kiasan untuk menggambarkan suatu isu (dalam konteks ini kemungkinan terkait isolasi pasien Covid-19 atau situasi krisis lainnya).\n\nSesuai dengan kategori yang telah ditentukan:\n**A: BENCANA_JERAT** (karena mencakup ancaman, jerat, atau keadaan terjepit sebagai kiasan).\n\nJawab satu kode A sampai G: **A**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "nf3KaubnOLqi_uMPou_3-Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2458,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2317
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2068500,
+        "output_tokens_cost_nanodollars": 7374000
+      },
+      "prompt_tokens": 4137,
+      "total_backend_latency_ms": 11566,
+      "total_tokens": 6595
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.638507,
+      "total": 10,
+      "remaining": 4.361493,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.638507000000004,
+      "total": 100,
+      "remaining": 94.361493,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0094425,
+  "code": "A",
+  "strict_code": "INVALID",
+  "parsing_rule": "explicit_prefix_code",
+  "finish_reason": "stop",
+  "prediction": "BENCANA_JERAT"
+}

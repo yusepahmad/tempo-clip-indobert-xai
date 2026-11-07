@@ -1,0 +1,87 @@
+{
+  "index": 733,
+  "sample_id": "TMP-1C4F69FF5066",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0d818f6399357defa09fc2ca35d7f8c46e1e9835c3c68d7f86a2975961b0a689",
+  "image_sha256": "1c4f69ff5066e5fbb853e8a66e98e948a0ce74dbdc7cef7205c88990db88065f",
+  "transmitted_image_sha256": "0e3f886df501e7de7f333ae3454563c8058a5e9dc87f1815e10c137b4643d2e4",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.062497,
+      "total": 10,
+      "remaining": 0.9375029999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.062496999999993,
+      "total": 100,
+      "remaining": 90.937503,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.346740521956235,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"wheelbarrow full of coal\", \"source_properties\": \"A heavy load being pushed by one person while another scratches their head in confusion.\", \"target_situation\": \"The conflict between the Energy Minister and PLN over rotating power outages in Java and Bali.\", \"mapping\": \"The coal represents the primary cause of the blackouts, while the act of pushing and questioning illustrates the blame-shifting between officials over supply issues.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "U6DLapn8N7qi_uMPjvD3-Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671500,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1343,
+      "total_backend_latency_ms": 1855,
+      "total_tokens": 1440
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0634595,
+      "total": 10,
+      "remaining": 0.9365404999999996,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.063459499999993,
+      "total": 100,
+      "remaining": 90.9365405,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009625,
+  "fields": {
+    "source_object": "wheelbarrow full of coal",
+    "source_properties": "A heavy load being pushed by one person while another scratches their head in confusion.",
+    "target_situation": "The conflict between the Energy Minister and PLN over rotating power outages in Java and Bali.",
+    "mapping": "The coal represents the primary cause of the blackouts, while the act of pushing and questioning illustrates the blame-shifting between officials over supply issues.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: wheelbarrow full of coal\nsource_properties: A heavy load being pushed by one person while another scratches their head in confusion.\ntarget_situation: The conflict between the Energy Minister and PLN over rotating power outages in Java and Bali.\nmapping: The coal represents the primary cause of the blackouts, while the act of pushing and questioning illustrates the blame-shifting between officials over supply issues.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

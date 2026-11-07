@@ -1,0 +1,87 @@
+{
+  "index": 609,
+  "sample_id": "TMP-FF512A5EECAE",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c1496afd0e1c1e037d8cf2c7270682ef266b14c1168c4219b846acd73bbd5d4c",
+  "image_sha256": "ff512a5eecaeec0eeabdc9905c3ef821a3cf59202053881be5cdfaa14ac09ec9",
+  "transmitted_image_sha256": "71d52beec4b0c7fff6fb84a089a56f10814bbf77df62d462221e29d9bb402828",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8726705,
+      "total": 10,
+      "remaining": 1.1273295,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.872670499999998,
+      "total": 100,
+      "remaining": 91.1273295,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.849748842883855,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"selfie\",\n  \"source_properties\": \"close-up framing, posing for a front-facing camera, casual arm positioning\",\n  \"target_situation\": \"political alliance between Gibran, Prabowo, and Joko Widodo\",\n  \"mapping\": \"The trio's casual, close-knit grouping mimics a shared selfie to suggest private coordination and mutual benefits.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "DJ3LaoPRBp-d_uMPlqrYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 98,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 294000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 2742,
+      "total_tokens": 1450
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8736405,
+      "total": 10,
+      "remaining": 1.1263594999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.873640499999993,
+      "total": 100,
+      "remaining": 91.1263595,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.00097,
+  "fields": {
+    "source_object": "selfie",
+    "source_properties": "close-up framing, posing for a front-facing camera, casual arm positioning",
+    "target_situation": "political alliance between Gibran, Prabowo, and Joko Widodo",
+    "mapping": "The trio's casual, close-knit grouping mimics a shared selfie to suggest private coordination and mutual benefits.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: selfie\nsource_properties: close-up framing, posing for a front-facing camera, casual arm positioning\ntarget_situation: political alliance between Gibran, Prabowo, and Joko Widodo\nmapping: The trio's casual, close-knit grouping mimics a shared selfie to suggest private coordination and mutual benefits.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,90 @@
+{
+  "index": 692,
+  "sample_id": "TMP-537028E7266A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "7b105522244efd70a76fd86740184c98e579a74733314a0314644a9cace4ee65",
+  "image_sha256": "537028e7266a7791a9cee236806eceb8f258001a8a64508ef363dcc9028cc101",
+  "transmitted_image_sha256": "8dee9c62f78bac8b0a291d69a69fdf0a92bba0eea6aa7b5f372fb4b8aa42fc58",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.995706,
+      "total": 10,
+      "remaining": 1.0042939999999998,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.995705999999998,
+      "total": 100,
+      "remaining": 91.004294,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 12.337124308105558,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n \"source_object\": \"A dancer wearing noise-canceling headphones.\",\n \"source_properties\": \"Rhythmic movement, internal focus, and isolation from external sounds.\",\n \"target_situation\": \"The first year of the Prabowo administration's 'Guided Indonesia' consolidation.\",\n \"mapping\": \"The leadership follows its own private rhythm, implementing high-impact policies like the free meal program (depicted as falling food) while remaining insulated from external noise or public criticism.\",\n \"uncertainty\": \"none\"\n}\n```",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "OJ_Lao3GG_-o_uMPl6-88Q4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2015,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1900
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 657000,
+        "output_tokens_cost_nanodollars": 6045000
+      },
+      "prompt_tokens": 1314,
+      "total_backend_latency_ms": 10989,
+      "total_tokens": 3329
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.002407999999999,
+      "total": 10,
+      "remaining": 0.9975920000000009,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.002408000000003,
+      "total": 100,
+      "remaining": 90.997592,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.006702,
+  "fields": {
+    "source_object": "A dancer wearing noise-canceling headphones.",
+    "source_properties": "Rhythmic movement, internal focus, and isolation from external sounds.",
+    "target_situation": "The first year of the Prabowo administration's 'Guided Indonesia' consolidation.",
+    "mapping": "The leadership follows its own private rhythm, implementing high-impact policies like the free meal program (depicted as falling food) while remaining insulated from external noise or public criticism.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A dancer wearing noise-canceling headphones.\nsource_properties: Rhythmic movement, internal focus, and isolation from external sounds.\ntarget_situation: The first year of the Prabowo administration's 'Guided Indonesia' consolidation.\nmapping: The leadership follows its own private rhythm, implementing high-impact policies like the free meal program (depicted as falling food) while remaining insulated from external noise or public criticism.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

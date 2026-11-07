@@ -1,0 +1,77 @@
+{
+  "status": "verified_against_original_protocol_source_checkpoint_hashes",
+  "model": "e42_tail_grid",
+  "model_sha256": "1858ad58236e4e09bbd939fe24097c9cc3aa45476bfd608778d1895fb19860c0",
+  "worker_sha256": "7a28a10a5a9590bf67ae72854ec21798e4b1a8d667404143a3294dd0d1766ce1",
+  "protocol_sha256": "b6a8c7d2cc4b58c5b8eb0fb5f09f8a7ded983011c9b2871e29c07949f63dc73a",
+  "folds": [
+    {
+      "fold": 1,
+      "selected_config": 5,
+      "encoder_lr": 0.0001,
+      "head_lr": 0.0003,
+      "loss_weights": [
+        1.0,
+        2.0,
+        2.0
+      ],
+      "epoch": 12,
+      "checkpoint_sha256": "479217b2f18c1e0b48111eaedfa3341f9d9ddac06dbbf270b2841a7365ff7ed1"
+    },
+    {
+      "fold": 2,
+      "selected_config": 5,
+      "encoder_lr": 0.0001,
+      "head_lr": 0.0003,
+      "loss_weights": [
+        1.0,
+        2.0,
+        2.0
+      ],
+      "epoch": 12,
+      "checkpoint_sha256": "a17e8a2c5ceca4a97b5909799501e3e5d6cef76f4ce70c5923136de46934c3c6"
+    },
+    {
+      "fold": 3,
+      "selected_config": 5,
+      "encoder_lr": 0.0001,
+      "head_lr": 0.0003,
+      "loss_weights": [
+        1.0,
+        2.0,
+        2.0
+      ],
+      "epoch": 2,
+      "checkpoint_sha256": "9a4e8b1ebdcb4a226153ba869710e65efe18e12dd6dd6193540f0105512b81d6"
+    },
+    {
+      "fold": 4,
+      "selected_config": 3,
+      "encoder_lr": 2e-05,
+      "head_lr": 0.0003,
+      "loss_weights": [
+        1.0,
+        2.0,
+        2.0
+      ],
+      "epoch": 8,
+      "checkpoint_sha256": "39a160a3288c7c1a1c9b04f36d6e25b472fa5959b3a16137e1ce441faa31ae48"
+    },
+    {
+      "fold": 5,
+      "selected_config": 4,
+      "encoder_lr": 0.0001,
+      "head_lr": 0.0003,
+      "loss_weights": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "epoch": 8,
+      "checkpoint_sha256": "0c6e5b8c7b12d1c03682733c477372dde48aeb76ed95926371f8bf47423fb69f"
+    }
+  ],
+  "learned_uncertainty": false,
+  "historical_inner_selection": "minimum task Macro-F1",
+  "revision_model_selection": "post-hoc mean task Macro-F1 among eligible architectures"
+}

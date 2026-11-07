@@ -1,0 +1,87 @@
+{
+  "index": 388,
+  "sample_id": "TMP-FA7EAD61DB20",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "71c4751bab7cbdb7837923cebdb6721fd0405b26bea691c58237055582d0a7d9",
+  "image_sha256": "fa7ead61db2098cc5a5c82062d3eabea000c01978bba723b03e093366e6e3ec5",
+  "transmitted_image_sha256": "65dcd4bbc9c3a623fbaf92b83e34e3cd91a12caeb4b005fe13a2f63a1da79a39",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.569775,
+      "total": 10,
+      "remaining": 1.430225,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.569775000000007,
+      "total": 100,
+      "remaining": 91.430225,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.8776808795519173,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"shattered or folded paper figure\", \"source_properties\": \"Angular, geometric facets, monochromatic, fragmented appearance, clenched fists, shouting expression\", \"target_situation\": \"Increased visibility and tension surrounding conservative Muslim movements in Indonesia\", \"mapping\": \"The figure's rigid, fractured geometry mirrors social divisions and ideological hardening, while the aggressive posture represents assertive political protest or perceived 'kriminalisasi'.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "P5fLapLEK5Oo_uMPmu77-As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 664500,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1329,
+      "total_backend_latency_ms": 1658,
+      "total_tokens": 1423
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5707215,
+      "total": 10,
+      "remaining": 1.4292785000000006,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.570721500000005,
+      "total": 100,
+      "remaining": 91.4292785,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009465,
+  "fields": {
+    "source_object": "shattered or folded paper figure",
+    "source_properties": "Angular, geometric facets, monochromatic, fragmented appearance, clenched fists, shouting expression",
+    "target_situation": "Increased visibility and tension surrounding conservative Muslim movements in Indonesia",
+    "mapping": "The figure's rigid, fractured geometry mirrors social divisions and ideological hardening, while the aggressive posture represents assertive political protest or perceived 'kriminalisasi'.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: shattered or folded paper figure\nsource_properties: Angular, geometric facets, monochromatic, fragmented appearance, clenched fists, shouting expression\ntarget_situation: Increased visibility and tension surrounding conservative Muslim movements in Indonesia\nmapping: The figure's rigid, fractured geometry mirrors social divisions and ideological hardening, while the aggressive posture represents assertive political protest or perceived 'kriminalisasi'.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

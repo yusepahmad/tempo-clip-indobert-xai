@@ -1,0 +1,90 @@
+{
+  "index": 211,
+  "sample_id": "TMP-E7C50487EC97",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5a2c8319888324e00ec655db7a620408fa266de02ce92b1c0de9c5ba0fb61cfd",
+  "image_sha256": "e7c50487ec97940ab5f4a8d8c5f15b998e5306a5d211c7a68582384db78f09d0",
+  "transmitted_image_sha256": "99141533796621f4cd9605a3923839c0b3b6401cf3925b6968d155a52d19783b",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3193855,
+      "total": 10,
+      "remaining": 1.6806145000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.319385499999996,
+      "total": 100,
+      "remaining": 91.6806145,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.517898921854794,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A framed portrait being painted\",\n  \"source_properties\": \"A hand uses a brush to manually create a person's face on a canvas.\",\n  \"target_situation\": \"Allegations of forged masterwork paintings in the Oei Hong Djien museum.\",\n  \"mapping\": \"The act of painting a likeness represents the fabrication of fraudulent 'masterpieces' by a forgery syndicate to deceive the art world.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "p5LLao2pGaCm_uMPsO6HgA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 932,
+      "completion_tokens_details": {
+        "reasoning_tokens": 826
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 686000,
+        "output_tokens_cost_nanodollars": 2796000
+      },
+      "prompt_tokens": 1372,
+      "total_backend_latency_ms": 5050,
+      "total_tokens": 2304
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.322867500000001,
+      "total": 10,
+      "remaining": 1.677132499999999,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.322867500000001,
+      "total": 100,
+      "remaining": 91.6771325,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.003482,
+  "fields": {
+    "source_object": "A framed portrait being painted",
+    "source_properties": "A hand uses a brush to manually create a person's face on a canvas.",
+    "target_situation": "Allegations of forged masterwork paintings in the Oei Hong Djien museum.",
+    "mapping": "The act of painting a likeness represents the fabrication of fraudulent 'masterpieces' by a forgery syndicate to deceive the art world.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A framed portrait being painted\nsource_properties: A hand uses a brush to manually create a person's face on a canvas.\ntarget_situation: Allegations of forged masterwork paintings in the Oei Hong Djien museum.\nmapping: The act of painting a likeness represents the fabrication of fraudulent 'masterpieces' by a forgery syndicate to deceive the art world.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,86 @@
+{
+  "index": 642,
+  "sample_id": "TMP-A69407591F6A",
+  "fold": 3,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "847f29e7be19eb0095af19979e5911bea5c7bbb2dac4650c5829604dd9efd0e2",
+  "image_sha256": "a69407591f6a2429985592a0343972b921e86b0bbd5a07ac5e48852c5c66a593",
+  "transmitted_image_sha256": "dfc943e9f0b26870591f7a2cc75167dc453abc770d3cfc7d9d99ef1c33cd8b5a",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 6.299623,
+      "total": 10,
+      "remaining": 3.7003769999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 6.299622999999997,
+      "total": 100,
+      "remaining": 93.700377,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 17.55045593297109,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan perbandingan dengan contoh-contoh yang diberikan, ilustrasi pada sampul tersebut menampilkan adegan ledakan/kebakaran di smelter nikel yang merupakan peristiwa nyata (literal) dari isu yang diberitakan. Penjelasannya menggunakan pola yang sama dengan contoh kategori F, yaitu memetakan kejadian fisik (ledakan) sebagai representasi bahaya dan kehancuran dalam konteks peristiwa tersebut.\n\nJawab satu kode A sampai G: F",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "KQLLaoO4Kr7i_uMPz_DU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 3541,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3445
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2086000,
+        "output_tokens_cost_nanodollars": 10623000
+      },
+      "prompt_tokens": 4172,
+      "total_backend_latency_ms": 16460,
+      "total_tokens": 7713
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 6.312332,
+      "total": 10,
+      "remaining": 3.6876680000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 6.312331999999998,
+      "total": 100,
+      "remaining": 93.687668,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.012709,
+  "code": "F",
+  "strict_code": "INVALID",
+  "parsing_rule": "explicit_prefix_code",
+  "finish_reason": "stop",
+  "prediction": "NON_METAFORA"
+}

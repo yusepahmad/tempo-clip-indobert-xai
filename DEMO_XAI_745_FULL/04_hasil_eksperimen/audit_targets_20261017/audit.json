@@ -1,0 +1,488 @@
+{
+  "annotator_confidence": {
+    "high": 565,
+    "low": 4,
+    "medium": 171
+  },
+  "conflicting_declared_duplicate_groups": [],
+  "conflicting_exact_duplicate_groups": [],
+  "dataset_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "declared_duplicate_groups": 0,
+  "exact_duplicate_hash_groups": 0,
+  "oof_sha256": "bc4c55291463106d398cf90c9f796724f7f22595d92668bda324a51e9799b642",
+  "samples": 740,
+  "schema": "tempo-target-audit-v1",
+  "tasks": {
+    "task1_issue": {
+      "baseline_macro_f1": 0.4380318985439888,
+      "class_counts": {
+        "corruption_and_bribery": 160,
+        "economy_business_and_state_enterprise": 81,
+        "election_and_political_competition": 112,
+        "environment_and_natural_resources": 39,
+        "human_rights_and_social_conflict": 52,
+        "law_and_justice": 53,
+        "other_issue": 14,
+        "power_and_governance": 124,
+        "public_policy_health_and_disaster": 69,
+        "security_defense_and_terrorism": 36
+      },
+      "imbalance_ratio_max_to_min": 11.428571428571429,
+      "joint_vs_baseline_gained_samples": 156,
+      "joint_vs_baseline_lost_samples": 83,
+      "labels": [
+        "corruption_and_bribery",
+        "economy_business_and_state_enterprise",
+        "election_and_political_competition",
+        "environment_and_natural_resources",
+        "human_rights_and_social_conflict",
+        "law_and_justice",
+        "other_issue",
+        "power_and_governance",
+        "public_policy_health_and_disaster",
+        "security_defense_and_terrorism"
+      ],
+      "macro_f1": 0.5254826236457082,
+      "per_class": {
+        "corruption_and_bribery": {
+          "f1-score": 0.6153846153846154,
+          "precision": 0.631578947368421,
+          "recall": 0.6,
+          "support": 160.0
+        },
+        "economy_business_and_state_enterprise": {
+          "f1-score": 0.5833333333333334,
+          "precision": 0.5632183908045977,
+          "recall": 0.6049382716049383,
+          "support": 81.0
+        },
+        "election_and_political_competition": {
+          "f1-score": 0.5818181818181818,
+          "precision": 0.5925925925925926,
+          "recall": 0.5714285714285714,
+          "support": 112.0
+        },
+        "environment_and_natural_resources": {
+          "f1-score": 0.5897435897435898,
+          "precision": 0.5897435897435898,
+          "recall": 0.5897435897435898,
+          "support": 39.0
+        },
+        "human_rights_and_social_conflict": {
+          "f1-score": 0.4727272727272727,
+          "precision": 0.4482758620689655,
+          "recall": 0.5,
+          "support": 52.0
+        },
+        "law_and_justice": {
+          "f1-score": 0.5208333333333334,
+          "precision": 0.5813953488372093,
+          "recall": 0.4716981132075472,
+          "support": 53.0
+        },
+        "other_issue": {
+          "f1-score": 0.3333333333333333,
+          "precision": 0.3125,
+          "recall": 0.35714285714285715,
+          "support": 14.0
+        },
+        "power_and_governance": {
+          "f1-score": 0.49808429118773945,
+          "precision": 0.4744525547445255,
+          "recall": 0.5241935483870968,
+          "support": 124.0
+        },
+        "public_policy_health_and_disaster": {
+          "f1-score": 0.6212121212121212,
+          "precision": 0.6507936507936508,
+          "recall": 0.5942028985507246,
+          "support": 69.0
+        },
+        "security_defense_and_terrorism": {
+          "f1-score": 0.4383561643835616,
+          "precision": 0.43243243243243246,
+          "recall": 0.4444444444444444,
+          "support": 36.0
+        }
+      },
+      "top_confusions": [
+        {
+          "count": 26,
+          "prediction": "power_and_governance",
+          "truth": "election_and_political_competition"
+        },
+        {
+          "count": 22,
+          "prediction": "election_and_political_competition",
+          "truth": "power_and_governance"
+        },
+        {
+          "count": 14,
+          "prediction": "economy_business_and_state_enterprise",
+          "truth": "corruption_and_bribery"
+        },
+        {
+          "count": 13,
+          "prediction": "power_and_governance",
+          "truth": "corruption_and_bribery"
+        },
+        {
+          "count": 13,
+          "prediction": "power_and_governance",
+          "truth": "economy_business_and_state_enterprise"
+        },
+        {
+          "count": 13,
+          "prediction": "corruption_and_bribery",
+          "truth": "election_and_political_competition"
+        },
+        {
+          "count": 10,
+          "prediction": "public_policy_health_and_disaster",
+          "truth": "corruption_and_bribery"
+        },
+        {
+          "count": 10,
+          "prediction": "corruption_and_bribery",
+          "truth": "law_and_justice"
+        },
+        {
+          "count": 10,
+          "prediction": "corruption_and_bribery",
+          "truth": "power_and_governance"
+        },
+        {
+          "count": 9,
+          "prediction": "corruption_and_bribery",
+          "truth": "economy_business_and_state_enterprise"
+        },
+        {
+          "count": 9,
+          "prediction": "human_rights_and_social_conflict",
+          "truth": "power_and_governance"
+        },
+        {
+          "count": 8,
+          "prediction": "law_and_justice",
+          "truth": "corruption_and_bribery"
+        },
+        {
+          "count": 8,
+          "prediction": "economy_business_and_state_enterprise",
+          "truth": "environment_and_natural_resources"
+        },
+        {
+          "count": 8,
+          "prediction": "security_defense_and_terrorism",
+          "truth": "human_rights_and_social_conflict"
+        },
+        {
+          "count": 7,
+          "prediction": "election_and_political_competition",
+          "truth": "corruption_and_bribery"
+        }
+      ]
+    },
+    "task2_domain_sumber": {
+      "baseline_macro_f1": 0.3197261392590282,
+      "class_counts": {
+        "BENCANA_JERAT": 100,
+        "HEWAN_TUBUH": 90,
+        "KONSUMSI_TRANSAKSI": 84,
+        "LAINNYA": 63,
+        "MESIN_INFRASTRUKTUR": 214,
+        "NON_METAFORA": 83,
+        "PERMAINAN_KONTES": 106
+      },
+      "imbalance_ratio_max_to_min": 3.3968253968253967,
+      "joint_vs_baseline_gained_samples": 152,
+      "joint_vs_baseline_lost_samples": 67,
+      "labels": [
+        "BENCANA_JERAT",
+        "HEWAN_TUBUH",
+        "KONSUMSI_TRANSAKSI",
+        "LAINNYA",
+        "MESIN_INFRASTRUKTUR",
+        "NON_METAFORA",
+        "PERMAINAN_KONTES"
+      ],
+      "macro_f1": 0.3955604325695003,
+      "per_class": {
+        "BENCANA_JERAT": {
+          "f1-score": 0.39800995024875624,
+          "precision": 0.39603960396039606,
+          "recall": 0.4,
+          "support": 100.0
+        },
+        "HEWAN_TUBUH": {
+          "f1-score": 0.3170731707317073,
+          "precision": 0.35135135135135137,
+          "recall": 0.28888888888888886,
+          "support": 90.0
+        },
+        "KONSUMSI_TRANSAKSI": {
+          "f1-score": 0.2389937106918239,
+          "precision": 0.25333333333333335,
+          "recall": 0.2261904761904762,
+          "support": 84.0
+        },
+        "LAINNYA": {
+          "f1-score": 0.224,
+          "precision": 0.22580645161290322,
+          "recall": 0.2222222222222222,
+          "support": 63.0
+        },
+        "MESIN_INFRASTRUKTUR": {
+          "f1-score": 0.5657015590200446,
+          "precision": 0.5404255319148936,
+          "recall": 0.5934579439252337,
+          "support": 214.0
+        },
+        "NON_METAFORA": {
+          "f1-score": 0.5952380952380952,
+          "precision": 0.5882352941176471,
+          "recall": 0.6024096385542169,
+          "support": 83.0
+        },
+        "PERMAINAN_KONTES": {
+          "f1-score": 0.42990654205607476,
+          "precision": 0.42592592592592593,
+          "recall": 0.4339622641509434,
+          "support": 106.0
+        }
+      },
+      "top_confusions": [
+        {
+          "count": 26,
+          "prediction": "MESIN_INFRASTRUKTUR",
+          "truth": "KONSUMSI_TRANSAKSI"
+        },
+        {
+          "count": 23,
+          "prediction": "MESIN_INFRASTRUKTUR",
+          "truth": "BENCANA_JERAT"
+        },
+        {
+          "count": 21,
+          "prediction": "MESIN_INFRASTRUKTUR",
+          "truth": "PERMAINAN_KONTES"
+        },
+        {
+          "count": 18,
+          "prediction": "BENCANA_JERAT",
+          "truth": "MESIN_INFRASTRUKTUR"
+        },
+        {
+          "count": 18,
+          "prediction": "PERMAINAN_KONTES",
+          "truth": "MESIN_INFRASTRUKTUR"
+        },
+        {
+          "count": 16,
+          "prediction": "MESIN_INFRASTRUKTUR",
+          "truth": "HEWAN_TUBUH"
+        },
+        {
+          "count": 14,
+          "prediction": "KONSUMSI_TRANSAKSI",
+          "truth": "HEWAN_TUBUH"
+        },
+        {
+          "count": 14,
+          "prediction": "KONSUMSI_TRANSAKSI",
+          "truth": "MESIN_INFRASTRUKTUR"
+        },
+        {
+          "count": 13,
+          "prediction": "BENCANA_JERAT",
+          "truth": "HEWAN_TUBUH"
+        },
+        {
+          "count": 13,
+          "prediction": "PERMAINAN_KONTES",
+          "truth": "KONSUMSI_TRANSAKSI"
+        },
+        {
+          "count": 13,
+          "prediction": "MESIN_INFRASTRUKTUR",
+          "truth": "LAINNYA"
+        },
+        {
+          "count": 13,
+          "prediction": "PERMAINAN_KONTES",
+          "truth": "LAINNYA"
+        },
+        {
+          "count": 13,
+          "prediction": "LAINNYA",
+          "truth": "MESIN_INFRASTRUKTUR"
+        },
+        {
+          "count": 13,
+          "prediction": "NON_METAFORA",
+          "truth": "MESIN_INFRASTRUKTUR"
+        },
+        {
+          "count": 12,
+          "prediction": "HEWAN_TUBUH",
+          "truth": "KONSUMSI_TRANSAKSI"
+        }
+      ]
+    },
+    "task3_primary_entity_type": {
+      "baseline_macro_f1": 0.2763519249500637,
+      "class_counts": {
+        "business": 46,
+        "civil_society_or_media": 56,
+        "government": 108,
+        "individual": 315,
+        "judiciary_or_law_enforcement": 44,
+        "legislature": 19,
+        "multiple_or_other": 122,
+        "political_party": 30
+      },
+      "imbalance_ratio_max_to_min": 16.57894736842105,
+      "joint_vs_baseline_gained_samples": 179,
+      "joint_vs_baseline_lost_samples": 58,
+      "labels": [
+        "business",
+        "civil_society_or_media",
+        "government",
+        "individual",
+        "judiciary_or_law_enforcement",
+        "legislature",
+        "multiple_or_other",
+        "political_party"
+      ],
+      "macro_f1": 0.40339840958144335,
+      "per_class": {
+        "business": {
+          "f1-score": 0.41304347826086957,
+          "precision": 0.41304347826086957,
+          "recall": 0.41304347826086957,
+          "support": 46.0
+        },
+        "civil_society_or_media": {
+          "f1-score": 0.48739495798319327,
+          "precision": 0.4603174603174603,
+          "recall": 0.5178571428571429,
+          "support": 56.0
+        },
+        "government": {
+          "f1-score": 0.4,
+          "precision": 0.40186915887850466,
+          "recall": 0.39814814814814814,
+          "support": 108.0
+        },
+        "individual": {
+          "f1-score": 0.6993865030674846,
+          "precision": 0.6765578635014837,
+          "recall": 0.7238095238095238,
+          "support": 315.0
+        },
+        "judiciary_or_law_enforcement": {
+          "f1-score": 0.4523809523809524,
+          "precision": 0.475,
+          "recall": 0.4318181818181818,
+          "support": 44.0
+        },
+        "legislature": {
+          "f1-score": 0.26666666666666666,
+          "precision": 0.36363636363636365,
+          "recall": 0.21052631578947367,
+          "support": 19.0
+        },
+        "multiple_or_other": {
+          "f1-score": 0.31223628691983124,
+          "precision": 0.3217391304347826,
+          "recall": 0.30327868852459017,
+          "support": 122.0
+        },
+        "political_party": {
+          "f1-score": 0.19607843137254902,
+          "precision": 0.23809523809523808,
+          "recall": 0.16666666666666666,
+          "support": 30.0
+        }
+      },
+      "top_confusions": [
+        {
+          "count": 33,
+          "prediction": "individual",
+          "truth": "multiple_or_other"
+        },
+        {
+          "count": 32,
+          "prediction": "multiple_or_other",
+          "truth": "individual"
+        },
+        {
+          "count": 23,
+          "prediction": "government",
+          "truth": "individual"
+        },
+        {
+          "count": 21,
+          "prediction": "multiple_or_other",
+          "truth": "government"
+        },
+        {
+          "count": 19,
+          "prediction": "individual",
+          "truth": "government"
+        },
+        {
+          "count": 17,
+          "prediction": "government",
+          "truth": "multiple_or_other"
+        },
+        {
+          "count": 13,
+          "prediction": "individual",
+          "truth": "judiciary_or_law_enforcement"
+        },
+        {
+          "count": 12,
+          "prediction": "government",
+          "truth": "business"
+        },
+        {
+          "count": 12,
+          "prediction": "individual",
+          "truth": "business"
+        },
+        {
+          "count": 12,
+          "prediction": "individual",
+          "truth": "political_party"
+        },
+        {
+          "count": 11,
+          "prediction": "business",
+          "truth": "government"
+        },
+        {
+          "count": 11,
+          "prediction": "civil_society_or_media",
+          "truth": "multiple_or_other"
+        },
+        {
+          "count": 10,
+          "prediction": "individual",
+          "truth": "civil_society_or_media"
+        },
+        {
+          "count": 10,
+          "prediction": "multiple_or_other",
+          "truth": "civil_society_or_media"
+        },
+        {
+          "count": 10,
+          "prediction": "individual",
+          "truth": "legislature"
+        }
+      ]
+    }
+  },
+  "unique_ids": 740
+}

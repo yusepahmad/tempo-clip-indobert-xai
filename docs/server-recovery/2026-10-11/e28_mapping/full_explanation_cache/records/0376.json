@@ -1,0 +1,90 @@
+{
+  "index": 376,
+  "sample_id": "TMP-CA0BA20C2620",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bbc8dcc15fd664de23b6d71da2271dca912dbcd45e74d99c0df9cca8d433abb6",
+  "image_sha256": "ca0ba20c262014043d0a26d2159386f9ad95dfb8583cca6be31776f1b0f4115d",
+  "transmitted_image_sha256": "e7516aade41255b139e66c4f27f9fdb5fc18035c06a02b29149d29c2f5a12620",
+  "image_size": [
+    407,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5464895,
+      "total": 10,
+      "remaining": 1.4535105000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.546489500000007,
+      "total": 100,
+      "remaining": 91.4535105,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.559765697922558,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"a splash of dark, muddy liquid\",\n  \"source_properties\": \"a staining contaminant that visibly spoils a clean white shirt\",\n  \"target_situation\": \"a bribery scandal involving the President's brother-in-law\",\n  \"mapping\": \"The splash illustrates the proverb's 'drop of dye' that ruins pure milk, signifying how one relative's scandal tarnishes the President's overall clean reputation.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "45bLauuFGcXh_uMPyN6L8Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 941,
+      "completion_tokens_details": {
+        "reasoning_tokens": 832
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 2823000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 5290,
+      "total_tokens": 2288
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.549986,
+      "total": 10,
+      "remaining": 1.4500139999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.549986000000004,
+      "total": 100,
+      "remaining": 91.450014,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0034965,
+  "fields": {
+    "source_object": "a splash of dark, muddy liquid",
+    "source_properties": "a staining contaminant that visibly spoils a clean white shirt",
+    "target_situation": "a bribery scandal involving the President's brother-in-law",
+    "mapping": "The splash illustrates the proverb's 'drop of dye' that ruins pure milk, signifying how one relative's scandal tarnishes the President's overall clean reputation.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: a splash of dark, muddy liquid\nsource_properties: a staining contaminant that visibly spoils a clean white shirt\ntarget_situation: a bribery scandal involving the President's brother-in-law\nmapping: The splash illustrates the proverb's 'drop of dye' that ruins pure milk, signifying how one relative's scandal tarnishes the President's overall clean reputation.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

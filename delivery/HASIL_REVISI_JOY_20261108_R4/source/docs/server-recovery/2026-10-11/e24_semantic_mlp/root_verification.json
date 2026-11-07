@@ -1,0 +1,18 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "macro_f1": 0.5358067460479774,
+  "server_verification_sha256": "9f6b033e5f995f3db00b558929eaa6628395778a10780027acb2a8f7bc4dd2bc",
+  "checks": [
+    "8copied file hashes and current worker/auditor/helper/fusion sources",
+    "all740 IDs/truth/folds match baseline",
+    "5disjoint592/148partitions and allpredictions",
+    "16grid ordering/firstargmax and selectedinnerauditmeans",
+    "fixedepochs and finite loss metadata",
+    "manual seven-class confusion/perclass/MacroF1"
+  ],
+  "limitations": [
+    "server selectedinner/refit reproduces weights/scalers/predictions; fullgrid not rerun",
+    "repeated experiment selection bias remains"
+  ]
+}

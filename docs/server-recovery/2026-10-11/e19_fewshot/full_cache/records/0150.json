@@ -1,0 +1,86 @@
+{
+  "index": 150,
+  "sample_id": "TMP-11BDDA53FD58",
+  "fold": 2,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "29b4204ce3b68fe1e3ded0c9095765fe566bd703fd1ce1f4da65432838efd347",
+  "image_sha256": "11bdda53fd58d98de4c4e53fe6f751f2e0a6b89f3425f3b5180c611a99eb2f2b",
+  "transmitted_image_sha256": "aede5e5962108c5b9f1091b50f1dae99b5c3c0d115da025c050fe08772353a2d",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 3.590648,
+      "total": 10,
+      "remaining": 6.409352,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 3.5906480000000016,
+      "total": 100,
+      "remaining": 96.409352,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 10.635532844113186,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan perbandingan dengan contoh training, terutama contoh kode F yang menampilkan adegan literal terkait kerusuhan 22 Mei (kasus Tim Mawar dan Rusuh Sarinah), ilustrasi ini merupakan penggambaran literal dari peristiwa yang diberitakan (amuk massa 22 Mei). Meskipun \"Source dan alasan\" menggunakan kata \"dipetakan\", pola pada data training menunjukkan bahwa adegan yang secara langsung menggambarkan peristiwa berita tersebut (tanpa meminjam objek dari domain lain yang tidak terkait secara literal) dikategorikan sebagai non-metaforis.\n\nJawab satu kode A sampai G: **F**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "CPDKauGmGr7i_uMPyOzU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1910,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1781
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2042500,
+        "output_tokens_cost_nanodollars": 5730000
+      },
+      "prompt_tokens": 4085,
+      "total_backend_latency_ms": 9363,
+      "total_tokens": 5995
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 3.5984204999999996,
+      "total": 10,
+      "remaining": 6.4015795,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 3.598420500000003,
+      "total": 100,
+      "remaining": 96.4015795,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0077725,
+  "code": "F",
+  "strict_code": "INVALID",
+  "parsing_rule": "explicit_prefix_code",
+  "finish_reason": "stop",
+  "prediction": "NON_METAFORA"
+}

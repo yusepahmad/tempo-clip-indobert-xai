@@ -1,0 +1,87 @@
+{
+  "index": 299,
+  "sample_id": "TMP-2B2AF1365A85",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "59de3041ae87c16c19640672678f2459f255de44ae1ad0b8a4a4412604403528",
+  "image_sha256": "2b2af1365a859009383c11d9522e7ec250e0e1ddc40529ed046304108588b2f0",
+  "transmitted_image_sha256": "20d95f1961cc9f86fd7ee0c82e49d2c65b7617cfc3fd5ae2f862f85b307f701b",
+  "image_size": [
+    472,
+    621
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.450527,
+      "total": 10,
+      "remaining": 1.5494730000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.450526999999994,
+      "total": 100,
+      "remaining": 91.549473,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.421938505023718,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"none evident\", \"source_properties\": \"literal black and white line art portraits of various individuals\", \"target_situation\": \"The 2014 People of the Year selection featuring Indonesian volunteers.\", \"mapping\": \"The illustration literally depicts the 'Relawan' (volunteers) chosen by the magazine as significant figures of the year through a collage of their portraits.\", \"uncertainty\": \"No visual analogy is evident; the image is a literal representation of the group of people described.\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "AZXLaq6hDMyY_uMP2cziyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 653000,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1306,
+      "total_backend_latency_ms": 2154,
+      "total_tokens": 1412
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.451498,
+      "total": 10,
+      "remaining": 1.5485019999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.451498,
+      "total": 100,
+      "remaining": 91.548502,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000971,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "literal black and white line art portraits of various individuals",
+    "target_situation": "The 2014 People of the Year selection featuring Indonesian volunteers.",
+    "mapping": "The illustration literally depicts the 'Relawan' (volunteers) chosen by the magazine as significant figures of the year through a collage of their portraits.",
+    "uncertainty": "No visual analogy is evident; the image is a literal representation of the group of people described."
+  },
+  "explanation": "source_object: none evident\nsource_properties: literal black and white line art portraits of various individuals\ntarget_situation: The 2014 People of the Year selection featuring Indonesian volunteers.\nmapping: The illustration literally depicts the 'Relawan' (volunteers) chosen by the magazine as significant figures of the year through a collage of their portraits.\nuncertainty: No visual analogy is evident; the image is a literal representation of the group of people described.",
+  "finish_reason": "stop",
+  "usable": true
+}

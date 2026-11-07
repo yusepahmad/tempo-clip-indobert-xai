@@ -1,0 +1,5005 @@
+{
+  "signature": {
+    "worker_sha256": "e5e8fcd4fec00e89b7b9c0bff10699d851f3d5f0062dacf8ee57c84d8a48d3d7",
+    "reference": {
+      "worker_sha256": "2436276fd51f42a0be511c2eb354782d192a39f653bcecf3ed0b3fb70df19244",
+      "helper_sha256": "c117f65e9460bccc4daeba0de9f3af4ee737e7ef65f57d39cca5a0910f8a3ece",
+      "reference": {
+        "worker_sha256": "02588b6fcd4bdbe21be4b17e9d60dcfcdebfbf0b97246056a88b4804febfb6e5",
+        "data_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+        "e5_sha256": "1f0d2b2f346071fa673701847af39e8a22faf9e6a98195734982cd71e99af374",
+        "bge_sha256": "c0d7d1fc9ac42988b0d107a694d7d3b355105f8640f776ace2617eed936495c4",
+        "clip_sha256": "d27cd5dbecfffba3a8bbb96037f3181da20f1c95eb246a7d38a4627a90599e5c",
+        "reference_verification_sha256": "0d91fcf3cc6f365b08547161657679f88ef7df18fe19176bc0a1f61499cd547a",
+        "grid": {
+          "fusion__e5_weight": [
+            0,
+            0.5,
+            1,
+            2
+          ],
+          "fusion__clip_weight": [
+            0,
+            0.5,
+            1,
+            2
+          ],
+          "clf__C": [
+            1,
+            10,
+            100
+          ],
+          "clf__gamma": [
+            "scale",
+            0.1,
+            1
+          ],
+          "clf__class_weight": [
+            null,
+            "balanced"
+          ]
+        },
+        "normalization": "StandardScaler fit per block, L2 per block, then weights",
+        "outer": "Task1 baseline stratified5 seed42",
+        "inner": "Task2 stratified3 seed42",
+        "selection_order": [
+          "description",
+          "source_reason",
+          "combined",
+          "description_reason",
+          "semantic_visual",
+          "weighted"
+        ],
+        "n_jobs": 1
+      },
+      "embedding_verification_sha256": "52fb1fb55dc1579cc3350a3ad1ff157dfc91b6c1794e426d591dda38a331ce6d",
+      "embedding_meta_sha256": "61806569c9b78cee717d785bccc557dba5b73612d3d28fe8e4cdc2aaa58274de",
+      "features_sha256": "1a4ef596714c7371fb1c7190ff4649b9cae1c0a48343965bd670d29b720f8162",
+      "grid": [
+        {
+          "fusion__mode": [
+            "caption_only",
+            "caption_context_only"
+          ],
+          "clf__C": [
+            1,
+            10,
+            100
+          ],
+          "clf__gamma": [
+            "scale",
+            0.1,
+            1
+          ],
+          "clf__class_weight": [
+            null,
+            "balanced"
+          ]
+        },
+        {
+          "fusion__mode": [
+            "fusion_caption",
+            "fusion_context"
+          ],
+          "fusion__caption_weight": [
+            0,
+            0.5,
+            1,
+            2
+          ],
+          "fusion__e5_weight": [
+            0.5,
+            2
+          ],
+          "fusion__clip_weight": [
+            0.5,
+            1
+          ],
+          "clf__C": [
+            1,
+            10,
+            100
+          ],
+          "clf__gamma": [
+            "scale",
+            0.1,
+            1
+          ],
+          "clf__class_weight": [
+            null,
+            "balanced"
+          ]
+        }
+      ],
+      "outer": "Task1 baseline5 seed42",
+      "inner": "Task2 stratified3 seed42",
+      "normalization": "training-only per-block StandardScaler/L2 then weights",
+      "n_jobs": 1
+    },
+    "caption_verification_sha256": "a65ce0ee0d59d6430f0e853e8519831872b6d82e9c5ebfe53f2720c6e1fa0493",
+    "captions_sha256": "a4b8f2dad6c23d0707694f13b998ea07ffb4827ba04650d6dc41417405e29728",
+    "semantic_sha256": "971c89333af0b3d2154d453cd1870950cde7136f173341b469626ca1e98c1783",
+    "texts_sha256": {
+      "caption": "56a7c4d21ee220aa43f5c3ef82f397e4fa3f93b993346e08c4b22c14941ebc54",
+      "context": "bca862c13b1ecc81cd2e8bfbb02fe55a17d2f492e857761f71c7094fcb335a8d"
+    },
+    "grid": [
+      {
+        "semantic_weight": [
+          0
+        ],
+        "lexical_weight": [
+          1
+        ],
+        "view": [
+          "caption",
+          "context"
+        ],
+        "analyzer": [
+          "word",
+          "word_char"
+        ],
+        "C": [
+          0.1,
+          1,
+          10,
+          100
+        ],
+        "kernel": [
+          "linear",
+          "rbf"
+        ],
+        "class_weight": [
+          null,
+          "balanced"
+        ]
+      },
+      {
+        "semantic_weight": [
+          1
+        ],
+        "lexical_weight": [
+          0.5,
+          1,
+          2
+        ],
+        "view": [
+          "caption",
+          "context"
+        ],
+        "analyzer": [
+          "word",
+          "word_char"
+        ],
+        "C": [
+          0.1,
+          1,
+          10,
+          100
+        ],
+        "kernel": [
+          "linear",
+          "rbf"
+        ],
+        "class_weight": [
+          null,
+          "balanced"
+        ]
+      }
+    ],
+    "versions": {
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "sklearn": "1.7.2"
+    },
+    "lexical": "training-only word1:2/max12000; optional char_wb3:5/max24000; min_df1/sublinear; union L2; no SVD",
+    "semantic": "training-only per-block StandardScaler/L2; E5=.5 BGE=1 CLIP=1",
+    "outer": "original Task1 baseline5 seed42",
+    "inner": "Task2 stratified3 seed42; first argmax",
+    "backend": "float64 sparse projection; cached linear/RBF(scale) Gram; precomputed SVC",
+    "n_jobs": 1
+  },
+  "fold": 2,
+  "train_indices": [
+    1,
+    2,
+    3,
+    4,
+    8,
+    11,
+    12,
+    13,
+    14,
+    15,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    44,
+    45,
+    46,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    58,
+    59,
+    60,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    69,
+    70,
+    71,
+    72,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    112,
+    113,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    133,
+    135,
+    136,
+    137,
+    138,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    147,
+    148,
+    149,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    183,
+    184,
+    186,
+    187,
+    188,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    199,
+    200,
+    201,
+    202,
+    203,
+    205,
+    206,
+    207,
+    208,
+    209,
+    211,
+    212,
+    214,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    265,
+    266,
+    267,
+    268,
+    272,
+    274,
+    275,
+    276,
+    277,
+    278,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    288,
+    290,
+    291,
+    292,
+    293,
+    294,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    305,
+    306,
+    307,
+    308,
+    310,
+    311,
+    313,
+    314,
+    318,
+    319,
+    322,
+    323,
+    325,
+    326,
+    327,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    337,
+    339,
+    341,
+    342,
+    344,
+    345,
+    346,
+    347,
+    348,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    376,
+    377,
+    378,
+    379,
+    380,
+    383,
+    384,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    402,
+    403,
+    404,
+    405,
+    407,
+    408,
+    410,
+    411,
+    412,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    430,
+    431,
+    433,
+    434,
+    435,
+    436,
+    437,
+    439,
+    440,
+    441,
+    442,
+    443,
+    445,
+    446,
+    447,
+    451,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    473,
+    474,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    487,
+    488,
+    489,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498,
+    499,
+    500,
+    501,
+    502,
+    503,
+    505,
+    506,
+    508,
+    509,
+    510,
+    511,
+    513,
+    514,
+    515,
+    516,
+    517,
+    518,
+    519,
+    520,
+    521,
+    523,
+    524,
+    525,
+    526,
+    527,
+    528,
+    529,
+    530,
+    531,
+    532,
+    533,
+    534,
+    535,
+    536,
+    537,
+    538,
+    539,
+    542,
+    543,
+    544,
+    546,
+    547,
+    549,
+    550,
+    551,
+    552,
+    554,
+    555,
+    556,
+    558,
+    559,
+    561,
+    562,
+    563,
+    564,
+    567,
+    568,
+    569,
+    570,
+    571,
+    572,
+    574,
+    575,
+    577,
+    578,
+    579,
+    580,
+    581,
+    582,
+    583,
+    587,
+    588,
+    589,
+    590,
+    591,
+    592,
+    594,
+    595,
+    596,
+    597,
+    598,
+    599,
+    600,
+    601,
+    602,
+    603,
+    604,
+    605,
+    606,
+    607,
+    608,
+    609,
+    611,
+    612,
+    613,
+    618,
+    619,
+    621,
+    622,
+    624,
+    625,
+    626,
+    627,
+    629,
+    631,
+    632,
+    634,
+    635,
+    637,
+    638,
+    639,
+    640,
+    641,
+    642,
+    643,
+    644,
+    646,
+    647,
+    648,
+    651,
+    655,
+    657,
+    658,
+    659,
+    660,
+    663,
+    664,
+    665,
+    666,
+    667,
+    668,
+    669,
+    670,
+    671,
+    672,
+    673,
+    674,
+    675,
+    676,
+    677,
+    678,
+    679,
+    680,
+    681,
+    683,
+    685,
+    686,
+    687,
+    689,
+    690,
+    691,
+    692,
+    693,
+    695,
+    696,
+    697,
+    700,
+    701,
+    702,
+    704,
+    706,
+    707,
+    708,
+    709,
+    712,
+    713,
+    714,
+    715,
+    717,
+    718,
+    719,
+    721,
+    723,
+    724,
+    725,
+    726,
+    727,
+    728,
+    729,
+    730,
+    731,
+    732,
+    733,
+    736,
+    739
+  ],
+  "test_indices": [
+    0,
+    5,
+    6,
+    7,
+    9,
+    10,
+    16,
+    21,
+    27,
+    43,
+    47,
+    57,
+    61,
+    68,
+    73,
+    80,
+    87,
+    111,
+    114,
+    125,
+    132,
+    134,
+    139,
+    146,
+    150,
+    151,
+    159,
+    167,
+    182,
+    185,
+    189,
+    198,
+    204,
+    210,
+    213,
+    215,
+    222,
+    229,
+    254,
+    263,
+    264,
+    269,
+    270,
+    271,
+    273,
+    279,
+    287,
+    289,
+    295,
+    296,
+    304,
+    309,
+    312,
+    315,
+    316,
+    317,
+    320,
+    321,
+    324,
+    328,
+    336,
+    338,
+    340,
+    343,
+    349,
+    365,
+    374,
+    375,
+    381,
+    382,
+    385,
+    386,
+    387,
+    401,
+    406,
+    409,
+    413,
+    420,
+    428,
+    429,
+    432,
+    438,
+    444,
+    448,
+    449,
+    450,
+    452,
+    461,
+    471,
+    472,
+    486,
+    490,
+    504,
+    507,
+    512,
+    522,
+    540,
+    541,
+    545,
+    548,
+    553,
+    557,
+    560,
+    565,
+    566,
+    573,
+    576,
+    584,
+    585,
+    586,
+    593,
+    610,
+    614,
+    615,
+    616,
+    617,
+    620,
+    623,
+    628,
+    630,
+    633,
+    636,
+    645,
+    649,
+    650,
+    652,
+    653,
+    654,
+    656,
+    661,
+    662,
+    682,
+    684,
+    688,
+    694,
+    698,
+    699,
+    703,
+    705,
+    710,
+    711,
+    716,
+    720,
+    722,
+    734,
+    735,
+    737,
+    738
+  ],
+  "sample_ids": [
+    "TMP-8D0A20A6A066",
+    "TMP-5586AF81A4A2",
+    "TMP-E2A77C58A55A",
+    "TMP-4650B47F4E32",
+    "TMP-BB454CBBB59B",
+    "TMP-D325A4A92EB6",
+    "TMP-015F9748262A",
+    "TMP-9BB6B842045A",
+    "TMP-A40C9FB3BF2E",
+    "TMP-A7C2547C2143",
+    "TMP-D9959F2ABC93",
+    "TMP-965CD909386F",
+    "TMP-ED5D7EE892F5",
+    "TMP-5C3CDFE23963",
+    "TMP-FB4EF95E9C9A",
+    "TMP-02FBDB1CF070",
+    "TMP-12CDE7C07FEE",
+    "TMP-C0470EF4F455",
+    "TMP-9B1BA3D9A915",
+    "TMP-283917CADE37",
+    "TMP-01279CEA7FCE",
+    "TMP-21DBD0A78372",
+    "TMP-253B0CE0B4F1",
+    "TMP-422D8B04592A",
+    "TMP-11BDDA53FD58",
+    "TMP-6BF67703C16F",
+    "TMP-A49B4754C077",
+    "TMP-64EBB610CB76",
+    "TMP-A2FA1DDA9803",
+    "TMP-4E997AA14744",
+    "TMP-A053EC2C2C16",
+    "TMP-2C60DDA77DAF",
+    "TMP-91E34679C2D8",
+    "TMP-35D822D07459",
+    "TMP-E75F28D94B42",
+    "TMP-0514AFE1ADC9",
+    "TMP-22A18BB1F761",
+    "TMP-6EE27BE05B1F",
+    "TMP-FB8F12ED0740",
+    "TMP-6EE079B382F7",
+    "TMP-4592A51304BF",
+    "TMP-D8E58B4A45EE",
+    "TMP-1554E875BB1B",
+    "TMP-D755AA87B42C",
+    "TMP-1E38E35A4382",
+    "TMP-D3E9B0795799",
+    "TMP-0AF561A93ACB",
+    "TMP-24E2B1C69076",
+    "TMP-4AFB34598385",
+    "TMP-C8D7F6CD5C47",
+    "TMP-72B2587012CA",
+    "TMP-6114CB175242",
+    "TMP-B167E19CCBFE",
+    "TMP-F26804868A39",
+    "TMP-6A480490BA09",
+    "TMP-4870678640CD",
+    "TMP-476118274EDF",
+    "TMP-D16679E2FEFD",
+    "TMP-D735D4559B86",
+    "TMP-5F695E30819B",
+    "TMP-CDEF900A5AFF",
+    "TMP-FDAB88AAD893",
+    "TMP-923DB4E3CCE1",
+    "TMP-CA8AC53E30FE",
+    "TMP-8A1F480265E6",
+    "TMP-82A2AFB94458",
+    "TMP-9C2BA983276E",
+    "TMP-2CC5EC684C07",
+    "TMP-AF663325BEE0",
+    "TMP-F2138669882A",
+    "TMP-5836921FE5DD",
+    "TMP-826365180F57",
+    "TMP-C77D73EB386E",
+    "TMP-468DF9847E0A",
+    "TMP-0B2A0669A876",
+    "TMP-5FB9D89E7E99",
+    "TMP-92F172188EAB",
+    "TMP-6756F77A74A8",
+    "TMP-76784E6C573E",
+    "TMP-E9BBE178B94B",
+    "TMP-BDE7CB543DB5",
+    "TMP-B78F69A48B45",
+    "TMP-1A087BF55BA1",
+    "TMP-46D6973A79D4",
+    "TMP-2581D8AC2D75",
+    "TMP-9D0EBF2C12EB",
+    "TMP-4D3A99615FE8",
+    "TMP-89F581CCE604",
+    "TMP-98BE870B11DF",
+    "TMP-D4D2B45E5230",
+    "TMP-FD73551655F6",
+    "TMP-F682F50D0927",
+    "TMP-F58435168E02",
+    "TMP-408E8FD8A355",
+    "TMP-F78055C69822",
+    "TMP-2A3FE3712ABC",
+    "TMP-BEADA45AF935",
+    "TMP-36E5812E9CC7",
+    "TMP-EF138FDD9533",
+    "TMP-F0FD1FC28392",
+    "TMP-9F0127F0678F",
+    "TMP-CF89ED982263",
+    "TMP-7D1FCBF99FFD",
+    "TMP-8E3E7A8C7D95",
+    "TMP-E8889318838D",
+    "TMP-DA1B53F00128",
+    "TMP-1BF82B3F1272",
+    "TMP-11DCC88BD4D8",
+    "TMP-725B78917A5D",
+    "TMP-43440E36CACE",
+    "TMP-A39B309DF8EB",
+    "TMP-7E88C4D88155",
+    "TMP-84FDD583719E",
+    "TMP-CC8DF50E6195",
+    "TMP-572A4F086A07",
+    "TMP-47DB5FF75350",
+    "TMP-0FB3F8CA2E40",
+    "TMP-223338A7F537",
+    "TMP-8F17E0CACBC2",
+    "TMP-C2CD256DE87B",
+    "TMP-602319B1B385",
+    "TMP-CBBF3E6FBA95",
+    "TMP-5757F45615D7",
+    "TMP-D2D487062AB0",
+    "TMP-E0C9AA340CA0",
+    "TMP-06D6F49C8A91",
+    "TMP-91A00B908099",
+    "TMP-CFA74D0163A3",
+    "TMP-815A19D844DF",
+    "TMP-0DF7B4CFB481",
+    "TMP-D3D8B3C742B4",
+    "TMP-EB4AE5BE64C1",
+    "TMP-8BDCA9D74817",
+    "TMP-0FD69107D32E",
+    "TMP-1D234BB85D71",
+    "TMP-BDDDADCBC85D",
+    "TMP-4E2BAC7F6C40",
+    "TMP-0875C1C0AF91",
+    "TMP-0F0C6D5016F1",
+    "TMP-7732BA956290",
+    "TMP-0763DE3984A6",
+    "TMP-E5B9C5F25BDD",
+    "TMP-8CA8618FE0B9",
+    "TMP-BFF5B4440545",
+    "TMP-BE9C8FCF0707",
+    "TMP-B22AC858A242",
+    "TMP-30C62860BAA1",
+    "TMP-8110AA71EA4E"
+  ],
+  "predictions": [
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "NON_METAFORA",
+    "NON_METAFORA",
+    "NON_METAFORA",
+    "KONSUMSI_TRANSAKSI",
+    "HEWAN_TUBUH",
+    "HEWAN_TUBUH",
+    "HEWAN_TUBUH",
+    "MESIN_INFRASTRUKTUR",
+    "KONSUMSI_TRANSAKSI",
+    "NON_METAFORA",
+    "NON_METAFORA",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "KONSUMSI_TRANSAKSI",
+    "PERMAINAN_KONTES",
+    "KONSUMSI_TRANSAKSI",
+    "KONSUMSI_TRANSAKSI",
+    "LAINNYA",
+    "KONSUMSI_TRANSAKSI",
+    "NON_METAFORA",
+    "BENCANA_JERAT",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "KONSUMSI_TRANSAKSI",
+    "HEWAN_TUBUH",
+    "KONSUMSI_TRANSAKSI",
+    "NON_METAFORA",
+    "HEWAN_TUBUH",
+    "PERMAINAN_KONTES",
+    "HEWAN_TUBUH",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "NON_METAFORA",
+    "KONSUMSI_TRANSAKSI",
+    "HEWAN_TUBUH",
+    "KONSUMSI_TRANSAKSI",
+    "NON_METAFORA",
+    "NON_METAFORA",
+    "MESIN_INFRASTRUKTUR",
+    "LAINNYA",
+    "HEWAN_TUBUH",
+    "PERMAINAN_KONTES",
+    "KONSUMSI_TRANSAKSI",
+    "LAINNYA",
+    "KONSUMSI_TRANSAKSI",
+    "NON_METAFORA",
+    "HEWAN_TUBUH",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "NON_METAFORA",
+    "KONSUMSI_TRANSAKSI",
+    "NON_METAFORA",
+    "NON_METAFORA",
+    "KONSUMSI_TRANSAKSI",
+    "PERMAINAN_KONTES",
+    "PERMAINAN_KONTES",
+    "BENCANA_JERAT",
+    "NON_METAFORA",
+    "BENCANA_JERAT",
+    "NON_METAFORA",
+    "PERMAINAN_KONTES",
+    "PERMAINAN_KONTES",
+    "NON_METAFORA",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "NON_METAFORA",
+    "BENCANA_JERAT",
+    "NON_METAFORA",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "NON_METAFORA",
+    "BENCANA_JERAT",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "HEWAN_TUBUH",
+    "BENCANA_JERAT",
+    "KONSUMSI_TRANSAKSI",
+    "LAINNYA",
+    "HEWAN_TUBUH",
+    "KONSUMSI_TRANSAKSI",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "KONSUMSI_TRANSAKSI",
+    "LAINNYA",
+    "KONSUMSI_TRANSAKSI",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "NON_METAFORA",
+    "MESIN_INFRASTRUKTUR",
+    "HEWAN_TUBUH",
+    "PERMAINAN_KONTES",
+    "LAINNYA",
+    "HEWAN_TUBUH",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "LAINNYA",
+    "HEWAN_TUBUH",
+    "LAINNYA",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "LAINNYA",
+    "KONSUMSI_TRANSAKSI",
+    "PERMAINAN_KONTES",
+    "LAINNYA",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "LAINNYA",
+    "LAINNYA",
+    "BENCANA_JERAT",
+    "PERMAINAN_KONTES",
+    "KONSUMSI_TRANSAKSI",
+    "MESIN_INFRASTRUKTUR",
+    "LAINNYA",
+    "MESIN_INFRASTRUKTUR",
+    "KONSUMSI_TRANSAKSI",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "LAINNYA",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "PERMAINAN_KONTES",
+    "LAINNYA",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "LAINNYA",
+    "BENCANA_JERAT",
+    "KONSUMSI_TRANSAKSI",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR"
+  ],
+  "grid_params": [
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 0,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 0.1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 1,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 10,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": null,
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "linear",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 0.5,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 1,
+      "semantic_weight": 1,
+      "view": "context"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "caption"
+    },
+    {
+      "C": 100,
+      "analyzer": "word_char",
+      "class_weight": "balanced",
+      "kernel": "rbf",
+      "lexical_weight": 2,
+      "semantic_weight": 1,
+      "view": "context"
+    }
+  ],
+  "inner_fold_scores": [
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.03506493506493506
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.03474903474903475
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.034438775510204085
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.034438775510204085
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.04690743046907431
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.059359227561992536
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.034438775510204085
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.034438775510204085
+    ],
+    [
+      0.09085734982149325,
+      0.10793715747168434,
+      0.11634051881622216
+    ],
+    [
+      0.0981425702811245,
+      0.11065800865800865,
+      0.12207142857142858
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.20405258334288007,
+      0.18340402717600393,
+      0.25494184987522994
+    ],
+    [
+      0.2081659719590754,
+      0.19422112279255135,
+      0.2391555373600936
+    ],
+    [
+      0.1627634828443454,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.1603314688375279,
+      0.06584821428571429,
+      0.0790934555640438
+    ],
+    [
+      0.1276909425977749,
+      0.11930110050591979,
+      0.12045887445887446
+    ],
+    [
+      0.098916149068323,
+      0.11791271347248578,
+      0.15390946502057615
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.23209052851909995,
+      0.20485561473933567,
+      0.22131764313428154
+    ],
+    [
+      0.2552464906107633,
+      0.21892539925845117,
+      0.29249089507980025
+    ],
+    [
+      0.17386028167699324,
+      0.07878906441042696,
+      0.0790934555640438
+    ],
+    [
+      0.16754095147163456,
+      0.07878906441042696,
+      0.09121142465887415
+    ],
+    [
+      0.22042801274442997,
+      0.16712668032265152,
+      0.1921133288480227
+    ],
+    [
+      0.17281263709835137,
+      0.19482791149504647,
+      0.19616629836024746
+    ],
+    [
+      0.06498599439775911,
+      0.07532303243878198,
+      0.06584821428571429
+    ],
+    [
+      0.07859143657462986,
+      0.07532303243878198,
+      0.06584821428571429
+    ],
+    [
+      0.22042801274442997,
+      0.16712668032265152,
+      0.1921133288480227
+    ],
+    [
+      0.17281263709835137,
+      0.19482791149504647,
+      0.19616629836024746
+    ],
+    [
+      0.06498599439775911,
+      0.07532303243878198,
+      0.06584821428571429
+    ],
+    [
+      0.07859143657462986,
+      0.07532303243878198,
+      0.06584821428571429
+    ],
+    [
+      0.2226431465643127,
+      0.19481494883855324,
+      0.22591668019369737
+    ],
+    [
+      0.210835995202572,
+      0.22435343548149111,
+      0.23611218327379113
+    ],
+    [
+      0.07910515985050147,
+      0.08394504046677961,
+      0.0790934555640438
+    ],
+    [
+      0.07859143657462986,
+      0.07532303243878198,
+      0.08955779878164581
+    ],
+    [
+      0.2226431465643127,
+      0.19481494883855324,
+      0.22591668019369737
+    ],
+    [
+      0.210835995202572,
+      0.22435343548149111,
+      0.23611218327379113
+    ],
+    [
+      0.07910515985050147,
+      0.08394504046677961,
+      0.0790934555640438
+    ],
+    [
+      0.07859143657462986,
+      0.07532303243878198,
+      0.08955779878164581
+    ],
+    [
+      0.22042801274442997,
+      0.16712668032265152,
+      0.1921133288480227
+    ],
+    [
+      0.17281263709835137,
+      0.19482791149504647,
+      0.19616629836024746
+    ],
+    [
+      0.06498599439775911,
+      0.07532303243878198,
+      0.06584821428571429
+    ],
+    [
+      0.07859143657462986,
+      0.07532303243878198,
+      0.06584821428571429
+    ],
+    [
+      0.22042801274442997,
+      0.16712668032265152,
+      0.1921133288480227
+    ],
+    [
+      0.17281263709835137,
+      0.19482791149504647,
+      0.19616629836024746
+    ],
+    [
+      0.06498599439775911,
+      0.07532303243878198,
+      0.06584821428571429
+    ],
+    [
+      0.07859143657462986,
+      0.07532303243878198,
+      0.06584821428571429
+    ],
+    [
+      0.2226431465643127,
+      0.19481494883855324,
+      0.22591668019369737
+    ],
+    [
+      0.210835995202572,
+      0.22435343548149111,
+      0.23611218327379113
+    ],
+    [
+      0.07910515985050147,
+      0.08394504046677961,
+      0.0790934555640438
+    ],
+    [
+      0.07859143657462986,
+      0.07532303243878198,
+      0.08955779878164581
+    ],
+    [
+      0.2226431465643127,
+      0.19481494883855324,
+      0.22591668019369737
+    ],
+    [
+      0.210835995202572,
+      0.22435343548149111,
+      0.23611218327379113
+    ],
+    [
+      0.07910515985050147,
+      0.08394504046677961,
+      0.0790934555640438
+    ],
+    [
+      0.07859143657462986,
+      0.07532303243878198,
+      0.08955779878164581
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.09260304912478826
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.09260304912478826
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.10050686941443243
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.10050686941443243
+    ],
+    [
+      0.14088941361668633,
+      0.17153093571810984,
+      0.1625295464934087
+    ],
+    [
+      0.15246170631341113,
+      0.18268248726633327,
+      0.1943785152202921
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.5008667807592377,
+      0.5086975578585394,
+      0.5150894979009366
+    ],
+    [
+      0.5008664044619057,
+      0.5086975578585394,
+      0.5078492794763968
+    ],
+    [
+      0.49651699949614553,
+      0.5663459360883641,
+      0.5009399631064247
+    ],
+    [
+      0.5087038831692623,
+      0.5666557319409198,
+      0.4972456307878169
+    ],
+    [
+      0.5125712854529854,
+      0.5197088625660055,
+      0.4862022244104109
+    ],
+    [
+      0.5076272933415791,
+      0.5284597964859127,
+      0.48750583679212384
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.08136094674556214
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.08159545508344182
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.07783829074151656
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.08251516822945394
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.06999999999999999
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.059359227561992536
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.09260304912478826
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.09260304912478826
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.10050686941443243
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.10050686941443243
+    ],
+    [
+      0.14271875665318287,
+      0.17153093571810984,
+      0.18931310819930675
+    ],
+    [
+      0.13640237313706702,
+      0.1904097716631926,
+      0.20833996008701014
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.06584821428571429
+    ],
+    [
+      0.5008664044619057,
+      0.5086975578585394,
+      0.5087969189836762
+    ],
+    [
+      0.5008664044619057,
+      0.5145181122033341,
+      0.5047958571176762
+    ],
+    [
+      0.49608760170734956,
+      0.5729904543607894,
+      0.49659130546733066
+    ],
+    [
+      0.5092201483755544,
+      0.5673745391255651,
+      0.503694835872369
+    ],
+    [
+      0.5144969528679206,
+      0.5030265496597236,
+      0.4693548541079585
+    ],
+    [
+      0.5112102087875854,
+      0.5143025081231062,
+      0.49691689757800944
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.08136094674556214
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.08136094674556214
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.07701318513675494
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.08156343373980457
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.07837610641348958
+    ],
+    [
+      0.0297349709114415,
+      0.021462105969148222,
+      0.05609257365926201
+    ],
+    [
+      0.5044779373750029,
+      0.5097715561307806,
+      0.4994129721025701
+    ],
+    [
+      0.50444345412017,
+      0.5097715561307806,
+      0.49566546500444236
+    ],
+    [
+      0.531782820354249,
+      0.49406453591803096,
+      0.4887742536898525
+    ],
+    [
+      0.529667281716462,
+      0.49551468939224047,
+      0.49768672711845496
+    ],
+    [
+      0.4583868025938753,
+      0.4573872180451128,
+      0.4584980438645793
+    ],
+    [
+      0.4673474116484869,
+      0.43083077006909704,
+      0.44636740407348036
+    ],
+    [
+      0.23418330896469167,
+      0.28182481108849894,
+      0.2624654636784017
+    ],
+    [
+      0.23495358622188237,
+      0.28182481108849894,
+      0.2624654636784017
+    ],
+    [
+      0.1723005565862709,
+      0.2170616942264732,
+      0.1948647135659638
+    ],
+    [
+      0.1723005565862709,
+      0.2170616942264732,
+      0.21343513228906935
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.09260304912478826
+    ],
+    [
+      0.06473214285714286,
+      0.06584821428571429,
+      0.09260304912478826
+    ],
+    [
+      0.49887457693636283,
+      0.5296749381570811,
+      0.499443998087866
+    ],
+    [
+      0.4988866254194588,
+      0.5262439648905815,
+      0.4967063028604678
+    ],
+    [
+      0.5210003281320618,
+      0.49953225880380636,
+      0.49209843375444157
+    ],
+    [
+      0.529667281716462,
+      0.49469849598728544,
+      0.49552359949505675
+    ],
+    [
+      0.4583868025938753,
+      0.4573872180451128,
+      0.4584980438645793
+    ],
+    [
+      0.4673474116484869,
+      0.43083077006909704,
+      0.44636740407348036
+    ],
+    [
+      0.47819365696014865,
+      0.47016900169639303,
+      0.5188453139029752
+    ],
+    [
+      0.4731642353942531,
+      0.47016900169639303,
+      0.5188453139029752
+    ],
+    [
+      0.4279390177830861,
+      0.408968903113797,
+      0.4684276625630009
+    ],
+    [
+      0.43680691211005807,
+      0.4236750057623665,
+      0.4666019174004655
+    ],
+    [
+      0.2911637535518133,
+      0.2791258969341161,
+      0.27452407488178804
+    ],
+    [
+      0.3021042062853909,
+      0.2705976525852302,
+      0.28127902133263977
+    ],
+    [
+      0.5052173221321458,
+      0.506983738694996,
+      0.5029653182378746
+    ],
+    [
+      0.5088493198099109,
+      0.5097715561307806,
+      0.49566546500444236
+    ],
+    [
+      0.5261754156508832,
+      0.50511421945899,
+      0.4884811374492072
+    ],
+    [
+      0.5248658836536084,
+      0.5074003424558498,
+      0.4982206677583176
+    ],
+    [
+      0.49321937336643223,
+      0.4470707304144338,
+      0.4338020144979775
+    ],
+    [
+      0.48838537692316947,
+      0.44056565773676404,
+      0.43104134058936444
+    ],
+    [
+      0.2440330069559826,
+      0.28182481108849894,
+      0.28280355913629324
+    ],
+    [
+      0.23495358622188237,
+      0.28182481108849894,
+      0.2624654636784017
+    ],
+    [
+      0.18388251352933385,
+      0.2170616942264732,
+      0.22168334218278324
+    ],
+    [
+      0.18492097156996415,
+      0.2170616942264732,
+      0.2266811742618194
+    ],
+    [
+      0.06498599439775911,
+      0.06584821428571429,
+      0.10797625823237662
+    ],
+    [
+      0.06498599439775911,
+      0.06584821428571429,
+      0.10797625823237662
+    ],
+    [
+      0.4996611541935283,
+      0.5165504408903894,
+      0.4963382482179474
+    ],
+    [
+      0.5067617754794828,
+      0.5228012427381817,
+      0.4954926026354598
+    ],
+    [
+      0.5221327230010862,
+      0.48808675309100874,
+      0.4920850763778303
+    ],
+    [
+      0.5248658836536084,
+      0.49794485521472137,
+      0.498683461571495
+    ],
+    [
+      0.49321937336643223,
+      0.4470707304144338,
+      0.4338020144979775
+    ],
+    [
+      0.48838537692316947,
+      0.44056565773676404,
+      0.43104134058936444
+    ],
+    [
+      0.47819365696014865,
+      0.48048103644556994,
+      0.5037537388114001
+    ],
+    [
+      0.4731642353942531,
+      0.4736249248734243,
+      0.5037537388114001
+    ],
+    [
+      0.4257918402551221,
+      0.41595573928706125,
+      0.4619821721792165
+    ],
+    [
+      0.4284830520620601,
+      0.4236750057623665,
+      0.4660452739244375
+    ],
+    [
+      0.30361322680537123,
+      0.2895437358468827,
+      0.3179556126211277
+    ],
+    [
+      0.2932544555568553,
+      0.28567545698740165,
+      0.29998528375607114
+    ],
+    [
+      0.4946329436590414,
+      0.5092961309234644,
+      0.5013294735733725
+    ],
+    [
+      0.49917743224610805,
+      0.5092961309234644,
+      0.49447144088316597
+    ],
+    [
+      0.531782820354249,
+      0.49406453591803096,
+      0.4887742536898525
+    ],
+    [
+      0.529667281716462,
+      0.49551468939224047,
+      0.49768672711845496
+    ],
+    [
+      0.4583868025938753,
+      0.4573872180451128,
+      0.4584980438645793
+    ],
+    [
+      0.4673474116484869,
+      0.43083077006909704,
+      0.44636740407348036
+    ],
+    [
+      0.41046013167577744,
+      0.42883090695121145,
+      0.48079865447610143
+    ],
+    [
+      0.41046013167577744,
+      0.4346480343390086,
+      0.46854534002498477
+    ],
+    [
+      0.3716441498677037,
+      0.38758464518324526,
+      0.38058224896215903
+    ],
+    [
+      0.362772134096998,
+      0.37437344206344914,
+      0.38058224896215903
+    ],
+    [
+      0.209607021506335,
+      0.2428529602442646,
+      0.24942089523121935
+    ],
+    [
+      0.2217290318377275,
+      0.2454019221581905,
+      0.2578713493044743
+    ],
+    [
+      0.4946329436590414,
+      0.5092961309234644,
+      0.5013294735733725
+    ],
+    [
+      0.49917743224610805,
+      0.5092961309234644,
+      0.49447144088316597
+    ],
+    [
+      0.531782820354249,
+      0.49406453591803096,
+      0.4887742536898525
+    ],
+    [
+      0.529667281716462,
+      0.49551468939224047,
+      0.49768672711845496
+    ],
+    [
+      0.4583868025938753,
+      0.4573872180451128,
+      0.4584980438645793
+    ],
+    [
+      0.4673474116484869,
+      0.43083077006909704,
+      0.44636740407348036
+    ],
+    [
+      0.41046013167577744,
+      0.42883090695121145,
+      0.48079865447610143
+    ],
+    [
+      0.41046013167577744,
+      0.4346480343390086,
+      0.46854534002498477
+    ],
+    [
+      0.3716441498677037,
+      0.38758464518324526,
+      0.38058224896215903
+    ],
+    [
+      0.362772134096998,
+      0.37437344206344914,
+      0.38058224896215903
+    ],
+    [
+      0.209607021506335,
+      0.2428529602442646,
+      0.24942089523121935
+    ],
+    [
+      0.2217290318377275,
+      0.2454019221581905,
+      0.2578713493044743
+    ],
+    [
+      0.4953723284161843,
+      0.5065180920738207,
+      0.501662690887722
+    ],
+    [
+      0.4987192489727987,
+      0.5084679728461879,
+      0.4937221901339152
+    ],
+    [
+      0.5261754156508832,
+      0.50511421945899,
+      0.4884811374492072
+    ],
+    [
+      0.5248658836536084,
+      0.5074003424558498,
+      0.4982206677583176
+    ],
+    [
+      0.49321937336643223,
+      0.4470707304144338,
+      0.4338020144979775
+    ],
+    [
+      0.48838537692316947,
+      0.44056565773676404,
+      0.43104134058936444
+    ],
+    [
+      0.42154724402245064,
+      0.44103482478262623,
+      0.48079865447610143
+    ],
+    [
+      0.42444862479652745,
+      0.4355537978730279,
+      0.48079865447610143
+    ],
+    [
+      0.3703130355667001,
+      0.4010607569354026,
+      0.40061174503355174
+    ],
+    [
+      0.35842630536508086,
+      0.3976824104542778,
+      0.41151685865529297
+    ],
+    [
+      0.224266108764589,
+      0.24929826759207915,
+      0.2540179708246935
+    ],
+    [
+      0.20946752735442642,
+      0.2605778279691323,
+      0.25483087512508584
+    ],
+    [
+      0.4953723284161843,
+      0.5065180920738207,
+      0.501662690887722
+    ],
+    [
+      0.4987192489727987,
+      0.5084679728461879,
+      0.4937221901339152
+    ],
+    [
+      0.5261754156508832,
+      0.50511421945899,
+      0.4884811374492072
+    ],
+    [
+      0.5248658836536084,
+      0.5074003424558498,
+      0.4982206677583176
+    ],
+    [
+      0.49321937336643223,
+      0.4470707304144338,
+      0.4338020144979775
+    ],
+    [
+      0.48838537692316947,
+      0.44056565773676404,
+      0.43104134058936444
+    ],
+    [
+      0.42154724402245064,
+      0.44103482478262623,
+      0.48079865447610143
+    ],
+    [
+      0.42444862479652745,
+      0.4355537978730279,
+      0.48079865447610143
+    ],
+    [
+      0.3703130355667001,
+      0.4010607569354026,
+      0.40061174503355174
+    ],
+    [
+      0.35842630536508086,
+      0.3976824104542778,
+      0.41151685865529297
+    ],
+    [
+      0.224266108764589,
+      0.24929826759207915,
+      0.2540179708246935
+    ],
+    [
+      0.20946752735442642,
+      0.2605778279691323,
+      0.25483087512508584
+    ],
+    [
+      0.4946329436590414,
+      0.5092961309234644,
+      0.5013294735733725
+    ],
+    [
+      0.49917743224610805,
+      0.5092961309234644,
+      0.49447144088316597
+    ],
+    [
+      0.531782820354249,
+      0.49406453591803096,
+      0.4887742536898525
+    ],
+    [
+      0.529667281716462,
+      0.49551468939224047,
+      0.49768672711845496
+    ],
+    [
+      0.4583868025938753,
+      0.4573872180451128,
+      0.4584980438645793
+    ],
+    [
+      0.4673474116484869,
+      0.43083077006909704,
+      0.44636740407348036
+    ],
+    [
+      0.41046013167577744,
+      0.42883090695121145,
+      0.48079865447610143
+    ],
+    [
+      0.41046013167577744,
+      0.4346480343390086,
+      0.46854534002498477
+    ],
+    [
+      0.3716441498677037,
+      0.38758464518324526,
+      0.38058224896215903
+    ],
+    [
+      0.362772134096998,
+      0.37437344206344914,
+      0.38058224896215903
+    ],
+    [
+      0.209607021506335,
+      0.2428529602442646,
+      0.24942089523121935
+    ],
+    [
+      0.2217290318377275,
+      0.2454019221581905,
+      0.2578713493044743
+    ],
+    [
+      0.4946329436590414,
+      0.5092961309234644,
+      0.5013294735733725
+    ],
+    [
+      0.49917743224610805,
+      0.5092961309234644,
+      0.49447144088316597
+    ],
+    [
+      0.531782820354249,
+      0.49406453591803096,
+      0.4887742536898525
+    ],
+    [
+      0.529667281716462,
+      0.49551468939224047,
+      0.49768672711845496
+    ],
+    [
+      0.4583868025938753,
+      0.4573872180451128,
+      0.4584980438645793
+    ],
+    [
+      0.4673474116484869,
+      0.43083077006909704,
+      0.44636740407348036
+    ],
+    [
+      0.41046013167577744,
+      0.42883090695121145,
+      0.48079865447610143
+    ],
+    [
+      0.41046013167577744,
+      0.4346480343390086,
+      0.46854534002498477
+    ],
+    [
+      0.3716441498677037,
+      0.38758464518324526,
+      0.38058224896215903
+    ],
+    [
+      0.362772134096998,
+      0.37437344206344914,
+      0.38058224896215903
+    ],
+    [
+      0.209607021506335,
+      0.2428529602442646,
+      0.24942089523121935
+    ],
+    [
+      0.2217290318377275,
+      0.2454019221581905,
+      0.2578713493044743
+    ],
+    [
+      0.4953723284161843,
+      0.5065180920738207,
+      0.501662690887722
+    ],
+    [
+      0.4987192489727987,
+      0.5084679728461879,
+      0.4937221901339152
+    ],
+    [
+      0.5261754156508832,
+      0.50511421945899,
+      0.4884811374492072
+    ],
+    [
+      0.5248658836536084,
+      0.5074003424558498,
+      0.4982206677583176
+    ],
+    [
+      0.49321937336643223,
+      0.4470707304144338,
+      0.4338020144979775
+    ],
+    [
+      0.48838537692316947,
+      0.44056565773676404,
+      0.43104134058936444
+    ],
+    [
+      0.42154724402245064,
+      0.44103482478262623,
+      0.48079865447610143
+    ],
+    [
+      0.42444862479652745,
+      0.4355537978730279,
+      0.48079865447610143
+    ],
+    [
+      0.3703130355667001,
+      0.4010607569354026,
+      0.40061174503355174
+    ],
+    [
+      0.35842630536508086,
+      0.3976824104542778,
+      0.41151685865529297
+    ],
+    [
+      0.224266108764589,
+      0.24929826759207915,
+      0.2540179708246935
+    ],
+    [
+      0.20946752735442642,
+      0.2605778279691323,
+      0.25483087512508584
+    ],
+    [
+      0.4953723284161843,
+      0.5065180920738207,
+      0.501662690887722
+    ],
+    [
+      0.4987192489727987,
+      0.5084679728461879,
+      0.4937221901339152
+    ],
+    [
+      0.5261754156508832,
+      0.50511421945899,
+      0.4884811374492072
+    ],
+    [
+      0.5248658836536084,
+      0.5074003424558498,
+      0.4982206677583176
+    ],
+    [
+      0.49321937336643223,
+      0.4470707304144338,
+      0.4338020144979775
+    ],
+    [
+      0.48838537692316947,
+      0.44056565773676404,
+      0.43104134058936444
+    ],
+    [
+      0.42154724402245064,
+      0.44103482478262623,
+      0.48079865447610143
+    ],
+    [
+      0.42444862479652745,
+      0.4355537978730279,
+      0.48079865447610143
+    ],
+    [
+      0.3703130355667001,
+      0.4010607569354026,
+      0.40061174503355174
+    ],
+    [
+      0.35842630536508086,
+      0.3976824104542778,
+      0.41151685865529297
+    ],
+    [
+      0.224266108764589,
+      0.24929826759207915,
+      0.2540179708246935
+    ],
+    [
+      0.20946752735442642,
+      0.2605778279691323,
+      0.25483087512508584
+    ]
+  ],
+  "best_index": 103,
+  "best_params": {
+    "C": 0.1,
+    "analyzer": "word_char",
+    "class_weight": "balanced",
+    "kernel": "linear",
+    "lexical_weight": 1,
+    "semantic_weight": 1,
+    "view": "context"
+  },
+  "inner_macro_f1": 0.5267631744578295,
+  "selected_inner_fit": [
+    {
+      "view": "context",
+      "analyzer": "word_char",
+      "scalers": [
+        {
+          "start": 0,
+          "stop": 1536,
+          "weight": 0.5,
+          "mean_sha256": "145100a387202fbb75dca06bc4257db977608b7a92d3b61031e12adb7c240f26",
+          "scale_sha256": "b174ee291d7805fa9f7415e860bda7fd44f73cf383176822f3979b4293d601be"
+        },
+        {
+          "start": 1536,
+          "stop": 2560,
+          "weight": 1,
+          "mean_sha256": "6eb2c55fa875a0c6852dc548c664ff0277aafca0321edb25f0e3a8e99829d587",
+          "scale_sha256": "b2851b4d51346f0ec6172e7fe925c8ed49481e02c61d983a9fd6e5659c235e72"
+        },
+        {
+          "start": 2560,
+          "stop": 3072,
+          "weight": 1,
+          "mean_sha256": "dbf245dbd3ebb00752b141f5b36beb031fad689ea18a944179005d845e910daa",
+          "scale_sha256": "8a097ed6263c30d30dd9a0782c759a480cc82a81203bf59a6beb250da46b9710"
+        }
+      ],
+      "lexical": [
+        {
+          "dimension": 12000,
+          "vocabulary_sha256": "42b5fccbb25727506c4a31a61cb596792b267631e9abca7c6d1885271ebee86b",
+          "idf_sha256": "73dae9cf8136ffcddf312c306e2d2cfc3fd21413a0f683c675fbfeab7c7fd9b9"
+        },
+        {
+          "dimension": 24000,
+          "vocabulary_sha256": "937e19a887bf931090e25952843ae58d2d669ca3bb51940105289bc38f7a80d5",
+          "idf_sha256": "4514dd7f94fb68948488df738a6ceeb44d4d09df70260b485aece78a23525a53"
+        }
+      ]
+    },
+    {
+      "view": "context",
+      "analyzer": "word_char",
+      "scalers": [
+        {
+          "start": 0,
+          "stop": 1536,
+          "weight": 0.5,
+          "mean_sha256": "5ad030dbcc2e9729bd255caaaadffe395acfeb7eaf90a59f60202f73dfeb1f10",
+          "scale_sha256": "4e477e8912b95ee777e2edaadef8191ebe5e16f56b7ea83f3fa422c8badfde5b"
+        },
+        {
+          "start": 1536,
+          "stop": 2560,
+          "weight": 1,
+          "mean_sha256": "b55bad2dbc77d0c900574001d02927b6b42cac03732613d5e15245107db4ac4a",
+          "scale_sha256": "ac97fb1e4d0faf3aab5487f4ee8a3a296649c7c73a8cf5f1cc34eacce0fb8a91"
+        },
+        {
+          "start": 2560,
+          "stop": 3072,
+          "weight": 1,
+          "mean_sha256": "b355842dc79cda8f28dd46243451e4c06f046e63b7f0328ec5ca0b761086babc",
+          "scale_sha256": "9713996a8ecbecd47b05089a31b38e9b6b8b873ebb9435d226fcfb3fe444ab6f"
+        }
+      ],
+      "lexical": [
+        {
+          "dimension": 12000,
+          "vocabulary_sha256": "886a1313f513b56012099ef5661555c82fc20a89c39b7c019997e9171e6ffcdc",
+          "idf_sha256": "cd44f83b2affb52020c335f01b22ef97a8f7868de05fe9d9ca6757c5683b89e7"
+        },
+        {
+          "dimension": 24000,
+          "vocabulary_sha256": "c62d1d4d9240040f977ee24a0b3890ad09780ce58c8e98e2aeee185043e3a7d3",
+          "idf_sha256": "e81d2bfb5145f27c17eed21151c02ea17d0acbbc4e405a5d4df27fe3bcc67f3f"
+        }
+      ]
+    },
+    {
+      "view": "context",
+      "analyzer": "word_char",
+      "scalers": [
+        {
+          "start": 0,
+          "stop": 1536,
+          "weight": 0.5,
+          "mean_sha256": "f071771ece30ac746b6c74a11202904cba6d35bfbeb6465ef4bfce2e9dc49bef",
+          "scale_sha256": "7ec52b08795f210ea5b2ebe93defe56d4b5804c3787595451b44da1c6c40c0a9"
+        },
+        {
+          "start": 1536,
+          "stop": 2560,
+          "weight": 1,
+          "mean_sha256": "54b7378eb9f278a38c999600958fceefe7ce45399d55d22399461005ee0b5d9c",
+          "scale_sha256": "ff9e5b5c4408f07efaee74a73061b28024ec99e7a6a4bdb839e2c25b656e24b1"
+        },
+        {
+          "start": 2560,
+          "stop": 3072,
+          "weight": 1,
+          "mean_sha256": "3ec2516804c252a076dd5639d91d9f4c58c7f498b91de621d1939ab488977705",
+          "scale_sha256": "c068a1118e6795e23d0a427131ec04ed636923e23f37a600e1544ab5e06d1eb5"
+        }
+      ],
+      "lexical": [
+        {
+          "dimension": 12000,
+          "vocabulary_sha256": "f30e3bb7f064bec7f3b24c0e7c6f262b8d1a6a723126d2b5e1283e6b3bd6b85d",
+          "idf_sha256": "96cf235fda8564e8b83bbf1220a3d01abf4af53e19857b5cc70a3afa57c5dc14"
+        },
+        {
+          "dimension": 24000,
+          "vocabulary_sha256": "47300743a91e0c28508525d89daca2f03d8108a848930a02ea1a3e8875f6fc1a",
+          "idf_sha256": "fe8fa074c873b752a6ffec25d6e07b89d8000cbce22b551bd4d5efe67e502af8"
+        }
+      ]
+    }
+  ],
+  "outer_fit": {
+    "view": "context",
+    "analyzer": "word_char",
+    "scalers": [
+      {
+        "start": 0,
+        "stop": 1536,
+        "weight": 0.5,
+        "mean_sha256": "90f30c60cb9887f9f828ca768b4699c7b00c95a2934c68dd868ae2ec04a5b504",
+        "scale_sha256": "c0d8602acfe6199d8e70974c53f7323981f4dd987f4f58bc0bd48252b7cd825e"
+      },
+      {
+        "start": 1536,
+        "stop": 2560,
+        "weight": 1,
+        "mean_sha256": "bab76a78278900b8c2196dc97bdf47735699356dddae425a10ff77815712a69c",
+        "scale_sha256": "e2283db2e4e9794ce32c6906d0d12f8c269afc1655f8c29f97fdb311ca108718"
+      },
+      {
+        "start": 2560,
+        "stop": 3072,
+        "weight": 1,
+        "mean_sha256": "e03767d9a006af164a3a4ddd346b2ed25553a1c64e81f7ab6af8f3437e39960c",
+        "scale_sha256": "b75375c360ebe45d8795c4d9364ac235dcbb0a96477cabfea061a9e701534ee2"
+      }
+    ],
+    "lexical": [
+      {
+        "dimension": 12000,
+        "vocabulary_sha256": "72de8a544f7dba1ee2c0b8d6c836555f5e9c2612945a524df9db6fe319a7bdca",
+        "idf_sha256": "b4b9036e9a646d86f27a3fa1b696c00cc36bb6a4986189d5d99db7abc21e80fc"
+      },
+      {
+        "dimension": 24000,
+        "vocabulary_sha256": "1cbf2107fcf6d90596faf0e7c0f22f4766c37807e4dda2eff9e6f3fbcf843598",
+        "idf_sha256": "8633839d29c7091f76dc113e7aca7f11a6268a5f36104cac8d66f26cd810a40e"
+      }
+    ]
+  },
+  "seconds": 216.19919777614996
+}

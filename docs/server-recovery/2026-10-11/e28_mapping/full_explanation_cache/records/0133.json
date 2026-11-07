@@ -1,0 +1,87 @@
+{
+  "index": 133,
+  "sample_id": "TMP-41FCF07A1295",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "cda6ebdf9552df8bf07ab36ec667571690876cf290376a91e6b1575e74defff0",
+  "image_sha256": "41fcf07a129528642071e84dfdc6ff363f6d3f80c2bbe69440bb35e3274d0ac7",
+  "transmitted_image_sha256": "219397439c3cb512f23f1c6fb4bbfb3068875d3d98f68d247ca65fe2a1bf839c",
+  "image_size": [
+    472,
+    627
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2013265,
+      "total": 10,
+      "remaining": 1.7986734999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.201326499999993,
+      "total": 100,
+      "remaining": 91.7986735,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4313711836002767,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A large sheet or fabric being pulled from opposite directions\",\n  \"source_properties\": \"Flexible, tensioned, separating or dividing when pulled by two opposing forces.\",\n  \"target_situation\": \"A public conflict between two ministers over the Masela gas project.\",\n  \"mapping\": \"Opposing ministers pulling on the same policy 'fabric' represents government division and tension.\",\n  \"uncertainty\": \"None evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "l5DLarvjKa2u_PUPtb3C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 1570,
+      "total_tokens": 1451
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2022995,
+      "total": 10,
+      "remaining": 1.7977004999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.202299499999995,
+      "total": 100,
+      "remaining": 91.7977005,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000973,
+  "fields": {
+    "source_object": "A large sheet or fabric being pulled from opposite directions",
+    "source_properties": "Flexible, tensioned, separating or dividing when pulled by two opposing forces.",
+    "target_situation": "A public conflict between two ministers over the Masela gas project.",
+    "mapping": "Opposing ministers pulling on the same policy 'fabric' represents government division and tension.",
+    "uncertainty": "None evident"
+  },
+  "explanation": "source_object: A large sheet or fabric being pulled from opposite directions\nsource_properties: Flexible, tensioned, separating or dividing when pulled by two opposing forces.\ntarget_situation: A public conflict between two ministers over the Masela gas project.\nmapping: Opposing ministers pulling on the same policy 'fabric' represents government division and tension.\nuncertainty: None evident",
+  "finish_reason": "stop",
+  "usable": true
+}

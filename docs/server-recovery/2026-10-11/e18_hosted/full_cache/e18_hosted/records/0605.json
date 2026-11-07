@@ -1,0 +1,83 @@
+{
+  "index": 605,
+  "sample_id": "TMP-826F2F98F2F4",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "5328dd7d1e0731488e4e0d3afdb153f91eef0c8728c66c2d92f813ea67a74c76",
+  "image_sha256": "826f2f98f2f449dd0a8b6b23bdd9f43d4048fd4316672f0d262ae627a63efb11",
+  "transmitted_image_sha256": "ca5916112b88676605be1bf832d826b12f6cfa28bed0a3f2c01802f5c3526d8f",
+  "image_size": [
+    307,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.2664105,
+      "total": 10,
+      "remaining": 7.7335895,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.2664105000000063,
+      "total": 100,
+      "remaining": 97.7335895,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 10.439146165037528,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks, ilustrasi tersebut diklasifikasikan sebagai metafora dengan domain sumber **G: PERMAINAN_KONTES**.\n\nAlasannya adalah karena penjelasan tersebut secara eksplisit menyebutkan ketiga tokoh duduk seperti di sebuah \"**panggung**\" dan memosisikan mereka sebagai \"**pemain**\" yang menjalankan \"**peran**\" tertentu dalam arena politik. Dalam kategori metafora, elemen-elemen seperti panggung, pemain, dan peran merupakan bagian dari sub-domain **pertunjukan** yang termasuk ke dalam kategori PERMAINAN_KONTES (permainan, pertandingan, kompetisi, atau pertunjukan).\n\nJawab satu kode A sampai G: **G**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "juPKauHmINTh_uMProyGuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1933,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1786
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 764000,
+        "output_tokens_cost_nanodollars": 5799000
+      },
+      "prompt_tokens": 1528,
+      "total_backend_latency_ms": 9144,
+      "total_tokens": 3461
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.2729735,
+      "total": 10,
+      "remaining": 7.7270265,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.272973500000006,
+      "total": 100,
+      "remaining": 97.7270265,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.006563
+}

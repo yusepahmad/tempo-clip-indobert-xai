@@ -1,0 +1,87 @@
+{
+  "index": 614,
+  "sample_id": "TMP-84FDD583719E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "2977c6da2b8d89c72ef08b7deb445fd6cc550d14116556b14ab9427ac52aa06b",
+  "image_sha256": "84fdd583719e1695f4be33748025c48570410b3af755f914d256dd9d3b22b318",
+  "transmitted_image_sha256": "a164ba28315b7b02476dd6636142d090ff6f45be2fdc2afbfcdc3a438f198270",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.877531,
+      "total": 10,
+      "remaining": 1.1224690000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.877531000000005,
+      "total": 100,
+      "remaining": 91.122469,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.9395811948925257,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"red card\", \"source_properties\": \"held aloft by an official, signifies a severe penalty, ejection from a game, and the power to halt play\", \"target_situation\": \"Megawati Soekarnoputri's influence resulting in Indonesia losing its status as the U-20 World Cup host\", \"mapping\": \"The act of holding up a red card symbolizes exercising authority to effectively disqualify or shut down the event, much like a referee's final disciplinary action.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "K53LaqrdELXP_uMPiOzhoQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 112,
+      "cost": {
+        "input_tokens_cost_nanodollars": 688500,
+        "output_tokens_cost_nanodollars": 336000
+      },
+      "prompt_tokens": 1377,
+      "total_backend_latency_ms": 2598,
+      "total_tokens": 1489
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.878555500000001,
+      "total": 10,
+      "remaining": 1.121444499999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.878555500000004,
+      "total": 100,
+      "remaining": 91.1214445,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010245,
+  "fields": {
+    "source_object": "red card",
+    "source_properties": "held aloft by an official, signifies a severe penalty, ejection from a game, and the power to halt play",
+    "target_situation": "Megawati Soekarnoputri's influence resulting in Indonesia losing its status as the U-20 World Cup host",
+    "mapping": "The act of holding up a red card symbolizes exercising authority to effectively disqualify or shut down the event, much like a referee's final disciplinary action.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: red card\nsource_properties: held aloft by an official, signifies a severe penalty, ejection from a game, and the power to halt play\ntarget_situation: Megawati Soekarnoputri's influence resulting in Indonesia losing its status as the U-20 World Cup host\nmapping: The act of holding up a red card symbolizes exercising authority to effectively disqualify or shut down the event, much like a referee's final disciplinary action.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

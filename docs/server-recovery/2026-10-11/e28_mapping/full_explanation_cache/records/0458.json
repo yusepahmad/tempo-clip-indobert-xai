@@ -1,0 +1,87 @@
+{
+  "index": 458,
+  "sample_id": "TMP-2A4123CF3D27",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "163d3e873dfcde688f284d44be653544c1f82fb1d4dd3ee0de2918f0b2f7f403",
+  "image_sha256": "2a4123cf3d2767ee95eb241db5a5194c87a1c1ac80bce76f649a5255cc0b13d8",
+  "transmitted_image_sha256": "a66a9f83640d34d991d35b993cbc5a2167d8423826e2e12d6a99d140e82c81d0",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6667135,
+      "total": 10,
+      "remaining": 1.3332864999999998,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.6667135,
+      "total": 100,
+      "remaining": 91.3332865,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.508475073147565,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Padang restaurant food display\", \"source_properties\": \"Numerous stacked plates of diverse dishes presented for customers to select their preferred meal.\", \"target_situation\": \"The 2019 Indonesian general election involving multiple political candidates and choices.\", \"mapping\": \"Just as diners choose from many ready dishes in a Padang restaurant, voters must select from various political options presented to them.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "FJnLau76K7uc_uMP2cbk2A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 655500,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1311,
+      "total_backend_latency_ms": 1781,
+      "total_tokens": 1402
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.667642,
+      "total": 10,
+      "remaining": 1.3323579999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.667642,
+      "total": 100,
+      "remaining": 91.332358,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009285,
+  "fields": {
+    "source_object": "Padang restaurant food display",
+    "source_properties": "Numerous stacked plates of diverse dishes presented for customers to select their preferred meal.",
+    "target_situation": "The 2019 Indonesian general election involving multiple political candidates and choices.",
+    "mapping": "Just as diners choose from many ready dishes in a Padang restaurant, voters must select from various political options presented to them.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Padang restaurant food display\nsource_properties: Numerous stacked plates of diverse dishes presented for customers to select their preferred meal.\ntarget_situation: The 2019 Indonesian general election involving multiple political candidates and choices.\nmapping: Just as diners choose from many ready dishes in a Padang restaurant, voters must select from various political options presented to them.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

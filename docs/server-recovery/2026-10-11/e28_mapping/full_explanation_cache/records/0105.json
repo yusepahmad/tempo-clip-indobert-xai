@@ -1,0 +1,90 @@
+{
+  "index": 105,
+  "sample_id": "TMP-D3805851F29E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "96163458d1bc18bf0237903540c8f543a0d3e792df8ff8a17e0bd04aaa144a42",
+  "image_sha256": "d3805851f29ec2f4d301932cbcc996746c6df8ef5a23b8130ab94ddbca531c5e",
+  "transmitted_image_sha256": "7b43cdb3e3e0766d2f88bb670d89bee799649aac428056c3887d8483e2c6c4ec",
+  "image_size": [
+    300,
+    402
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1581905,
+      "total": 10,
+      "remaining": 1.8418095,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.158190500000003,
+      "total": 100,
+      "remaining": 91.8418095,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.714205362368375,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A game of musical chairs\",\n  \"source_properties\": \"Multiple participants scramble and fight over a single, central seat while others are displaced or fall.\",\n  \"target_situation\": \"The 2004 direct presidential election in Indonesia.\",\n  \"mapping\": \"The lone chair symbolizes the presidency. Figures represent candidates aggressively competing to secure the singular position of power, displacing rivals in the process.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "3I_LasfmGpic_uMP95SR0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1006,
+      "completion_tokens_details": {
+        "reasoning_tokens": 902
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 640500,
+        "output_tokens_cost_nanodollars": 3018000
+      },
+      "prompt_tokens": 1281,
+      "total_backend_latency_ms": 5419,
+      "total_tokens": 2287
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.161849,
+      "total": 10,
+      "remaining": 1.8381509999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.161849000000004,
+      "total": 100,
+      "remaining": 91.838151,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0036585,
+  "fields": {
+    "source_object": "A game of musical chairs",
+    "source_properties": "Multiple participants scramble and fight over a single, central seat while others are displaced or fall.",
+    "target_situation": "The 2004 direct presidential election in Indonesia.",
+    "mapping": "The lone chair symbolizes the presidency. Figures represent candidates aggressively competing to secure the singular position of power, displacing rivals in the process.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A game of musical chairs\nsource_properties: Multiple participants scramble and fight over a single, central seat while others are displaced or fall.\ntarget_situation: The 2004 direct presidential election in Indonesia.\nmapping: The lone chair symbolizes the presidency. Figures represent candidates aggressively competing to secure the singular position of power, displacing rivals in the process.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 247,
+  "sample_id": "TMP-86E424864F6F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "128ffbdc5e831846f8b7db755a06e1089d71495f822f411d8932643b8075cf35",
+  "image_sha256": "86e424864f6fedf916b15d9579c838e06af6cbdd55aa2a05c85bd9d1ce2a13eb",
+  "transmitted_image_sha256": "234d6d13cccd2f8c0dca6089e7558b9f931bb8bab2758048612d7533cf75e8ee",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.383434,
+      "total": 10,
+      "remaining": 1.6165660000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.383433999999994,
+      "total": 100,
+      "remaining": 91.616566,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.409744453150779,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"tangled network cables\", \"source_properties\": \"Chaotic, intertwined, messy copper wiring and connectors forming an obstructive mask over a face.\", \"target_situation\": \"A problematic and slow internet procurement project within a government ministry.\", \"mapping\": \"The physical mess and entanglement of cables represent administrative disorder and inefficiency hindering progress.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "pJPLatLoNe2M_PUPz_vKgQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 79,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671000,
+        "output_tokens_cost_nanodollars": 237000
+      },
+      "prompt_tokens": 1342,
+      "total_backend_latency_ms": 1887,
+      "total_tokens": 1421
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.384342,
+      "total": 10,
+      "remaining": 1.6156579999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.384342000000004,
+      "total": 100,
+      "remaining": 91.615658,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000908,
+  "fields": {
+    "source_object": "tangled network cables",
+    "source_properties": "Chaotic, intertwined, messy copper wiring and connectors forming an obstructive mask over a face.",
+    "target_situation": "A problematic and slow internet procurement project within a government ministry.",
+    "mapping": "The physical mess and entanglement of cables represent administrative disorder and inefficiency hindering progress.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: tangled network cables\nsource_properties: Chaotic, intertwined, messy copper wiring and connectors forming an obstructive mask over a face.\ntarget_situation: A problematic and slow internet procurement project within a government ministry.\nmapping: The physical mess and entanglement of cables represent administrative disorder and inefficiency hindering progress.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

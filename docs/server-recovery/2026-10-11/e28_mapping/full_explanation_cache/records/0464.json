@@ -1,0 +1,87 @@
+{
+  "index": 464,
+  "sample_id": "TMP-A4FD4E2953B7",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "fc9851cc71b502b12d94a2409f32c04c439cb35f85efa99b1382bd5a8dfbe29d",
+  "image_sha256": "a4fd4e2953b760d87e818fa8aedc8a9282142d25b4c676d5213f94177bdc5f5f",
+  "transmitted_image_sha256": "47a6cd310cf9004bca9a4e08d941c3877a192791b047c3011a23abd97ab2f90c",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.672483,
+      "total": 10,
+      "remaining": 1.3275170000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.672483,
+      "total": 100,
+      "remaining": 91.327517,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.3740894962102175,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Moses parting the Red Sea\", \"source_properties\": \"Divine power, miraculous opening of an impassable watery path, walking on dry ground through high waves.\", \"target_situation\": \"Businessman Tomy Winata's sudden and influential entry into the massive Blok Masela LNG construction project.\", \"mapping\": \"The parting waves symbolize Winata's power to clear obstacles and secure a path into a multi-billion dollar project, suggesting extraordinary influence.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "OpnLarviFOyb_uMPzeOSwQw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "cost": {
+        "input_tokens_cost_nanodollars": 667000,
+        "output_tokens_cost_nanodollars": 312000
+      },
+      "prompt_tokens": 1334,
+      "total_backend_latency_ms": 1957,
+      "total_tokens": 1438
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.673462,
+      "total": 10,
+      "remaining": 1.3265379999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.673462,
+      "total": 100,
+      "remaining": 91.326538,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000979,
+  "fields": {
+    "source_object": "Moses parting the Red Sea",
+    "source_properties": "Divine power, miraculous opening of an impassable watery path, walking on dry ground through high waves.",
+    "target_situation": "Businessman Tomy Winata's sudden and influential entry into the massive Blok Masela LNG construction project.",
+    "mapping": "The parting waves symbolize Winata's power to clear obstacles and secure a path into a multi-billion dollar project, suggesting extraordinary influence.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Moses parting the Red Sea\nsource_properties: Divine power, miraculous opening of an impassable watery path, walking on dry ground through high waves.\ntarget_situation: Businessman Tomy Winata's sudden and influential entry into the massive Blok Masela LNG construction project.\nmapping: The parting waves symbolize Winata's power to clear obstacles and secure a path into a multi-billion dollar project, suggesting extraordinary influence.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

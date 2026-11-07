@@ -1,0 +1,86 @@
+{
+  "index": 548,
+  "sample_id": "TMP-F0FD1FC28392",
+  "fold": 2,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "eea6aed05872b14fdd91e9fad04efc52c8fcd14eb3d143621ea68268069765a6",
+  "image_sha256": "f0fd1fc283928d12a778a07ac6b86d577b241a98f22545a8328181d9fef9dd86",
+  "transmitted_image_sha256": "f30a0d0af76098753197704272f8aea385390990077bf78cf536a675664033d0",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.8222165,
+      "total": 10,
+      "remaining": 4.1777835,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.822216499999996,
+      "total": 100,
+      "remaining": 94.1777835,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 18.190026991069317,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks target, ilustrasi tersebut menggunakan **hewan (babi)** sebagai mekanisme metafora dominan untuk melambangkan persoalan keagamaan (status haram). Hal ini sesuai dengan kategori:\n\n**B: HEWAN_TUBUH** (hewan, anatomi, deformasi atau perilaku biologis sebagai kiasan).\n\nMeskipun terdapat elemen alat (stempel/dumbbell) dan teks yang merujuk pada transaksi (imbalan) atau permainan (tarik-ulur), alasan yang disediakan secara eksplisit menekankan pada pemetaan sifat hewan babi ke dalam konteks tersebut.\n\nJawab satu kode A sampai G: **B**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "5f7KaoSKF7qi_uMPou_3-Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 3641,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3494
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2057000,
+        "output_tokens_cost_nanodollars": 10923000
+      },
+      "prompt_tokens": 4114,
+      "total_backend_latency_ms": 17140,
+      "total_tokens": 7755
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.8351965,
+      "total": 10,
+      "remaining": 4.1648035,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.835196499999995,
+      "total": 100,
+      "remaining": 94.1648035,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.01298,
+  "code": "B",
+  "strict_code": "INVALID",
+  "parsing_rule": "explicit_prefix_code",
+  "finish_reason": "stop",
+  "prediction": "HEWAN_TUBUH"
+}

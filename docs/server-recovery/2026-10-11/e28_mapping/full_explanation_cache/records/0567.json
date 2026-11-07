@@ -1,0 +1,87 @@
+{
+  "index": 567,
+  "sample_id": "TMP-9D4090E326A8",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "d515dcd95eb8c8feca7c8821bfac1a5f0adc668416f114273b24975e8239d207",
+  "image_sha256": "9d4090e326a82c76b3ad3b9932d2327c888c1895acc7a98ece6b598f9fa5a786",
+  "transmitted_image_sha256": "7c6588b79ba290467ba58825cbec256029d03ed5fcf1b7f498bc899025288c9c",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.817188999999999,
+      "total": 10,
+      "remaining": 1.182811000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.817188999999999,
+      "total": 100,
+      "remaining": 91.182811,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.25154149485752,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"clapperboard\",\n  \"source_properties\": \"striking hinged boards used to mark the start of a film scene\",\n  \"target_situation\": \"unfolding news regarding the investigation into the murder of Brigadier Yosua\",\n  \"mapping\": \"The clapperboard signifies the transition to a new scene or act in a drama.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "9ZvLaqbuE5-d_uMPsajYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 667000,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1334,
+      "total_backend_latency_ms": 1713,
+      "total_tokens": 1426
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.818132,
+      "total": 10,
+      "remaining": 1.1818679999999997,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.818132000000006,
+      "total": 100,
+      "remaining": 91.181868,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000943,
+  "fields": {
+    "source_object": "clapperboard",
+    "source_properties": "striking hinged boards used to mark the start of a film scene",
+    "target_situation": "unfolding news regarding the investigation into the murder of Brigadier Yosua",
+    "mapping": "The clapperboard signifies the transition to a new scene or act in a drama.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: clapperboard\nsource_properties: striking hinged boards used to mark the start of a film scene\ntarget_situation: unfolding news regarding the investigation into the murder of Brigadier Yosua\nmapping: The clapperboard signifies the transition to a new scene or act in a drama.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

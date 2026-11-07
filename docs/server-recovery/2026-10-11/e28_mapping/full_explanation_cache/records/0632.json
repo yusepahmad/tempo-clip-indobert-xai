@@ -1,0 +1,87 @@
+{
+  "index": 632,
+  "sample_id": "TMP-14CF9D535FEA",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "43851ffae79c375ccaec314ad16d60d221abbf31b966a8864060f539ea9ba690",
+  "image_sha256": "14cf9d535fead76b5d177f90d855b1b65129d350421a24165b4b12e5617ed65b",
+  "transmitted_image_sha256": "0bd87c6ff573438f84894883b2b6fa144e95fb8beb42cc8e72a2d755817d709e",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.89878,
+      "total": 10,
+      "remaining": 1.1012199999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.898780000000002,
+      "total": 100,
+      "remaining": 91.10122,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2832792098633945,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"The Beatles' Abbey Road album cover\",\n  \"source_properties\": \"Four iconic figures walking single-file across a zebra-striped street crossing, with the second figure looking back.\",\n  \"target_situation\": \"Tense political dynamics between Indonesian leaders regarding presidential endorsements for the 2024 election.\",\n  \"mapping\": \"The formation mirrors the band members, with political figures replacing musicians to suggest shifting alliances and significant public 'steps'.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "np3LatesMbfc_uMPiPP3wAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 114,
+      "cost": {
+        "input_tokens_cost_nanodollars": 684500,
+        "output_tokens_cost_nanodollars": 342000
+      },
+      "prompt_tokens": 1369,
+      "total_backend_latency_ms": 1718,
+      "total_tokens": 1483
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8998065,
+      "total": 10,
+      "remaining": 1.1001934999999996,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.899806499999997,
+      "total": 100,
+      "remaining": 91.1001935,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010265,
+  "fields": {
+    "source_object": "The Beatles' Abbey Road album cover",
+    "source_properties": "Four iconic figures walking single-file across a zebra-striped street crossing, with the second figure looking back.",
+    "target_situation": "Tense political dynamics between Indonesian leaders regarding presidential endorsements for the 2024 election.",
+    "mapping": "The formation mirrors the band members, with political figures replacing musicians to suggest shifting alliances and significant public 'steps'.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: The Beatles' Abbey Road album cover\nsource_properties: Four iconic figures walking single-file across a zebra-striped street crossing, with the second figure looking back.\ntarget_situation: Tense political dynamics between Indonesian leaders regarding presidential endorsements for the 2024 election.\nmapping: The formation mirrors the band members, with political figures replacing musicians to suggest shifting alliances and significant public 'steps'.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

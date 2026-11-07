@@ -1,0 +1,90 @@
+{
+  "index": 104,
+  "sample_id": "TMP-E2A6D3DFE690",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "de11c95a9be71eafb61e6ff082d9d8eec7c1487cc739d93b7a3220d1f31ea7b3",
+  "image_sha256": "e2a6d3dfe690b3ff5fd3bfc403019d979895b2f6f330bb9db7d761378ab06a00",
+  "transmitted_image_sha256": "32d5ef656553bc86811f365c95dfb9ec94d5e635c0214754bace2f570ea08333",
+  "image_size": [
+    300,
+    393
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.154454,
+      "total": 10,
+      "remaining": 1.8455460000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.154454000000001,
+      "total": 100,
+      "remaining": 91.845546,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.560975942760706,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"a toy action figure with detachable parts\",\n  \"source_properties\": \"a threaded neck acting as a screw-on mount for interchangeable heads\",\n  \"target_situation\": \"the Golkar party's process of selecting a new presidential candidate\",\n  \"mapping\": \"political candidates are depicted as modular, replaceable heads being screwed onto the party's permanent organizational body\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "04_LaoeEKuGM_uMP0-qD8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1026,
+      "completion_tokens_details": {
+        "reasoning_tokens": 928
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 658500,
+        "output_tokens_cost_nanodollars": 3078000
+      },
+      "prompt_tokens": 1317,
+      "total_backend_latency_ms": 5175,
+      "total_tokens": 2343
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1581905,
+      "total": 10,
+      "remaining": 1.8418095,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.158190500000003,
+      "total": 100,
+      "remaining": 91.8418095,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0037365,
+  "fields": {
+    "source_object": "a toy action figure with detachable parts",
+    "source_properties": "a threaded neck acting as a screw-on mount for interchangeable heads",
+    "target_situation": "the Golkar party's process of selecting a new presidential candidate",
+    "mapping": "political candidates are depicted as modular, replaceable heads being screwed onto the party's permanent organizational body",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: a toy action figure with detachable parts\nsource_properties: a threaded neck acting as a screw-on mount for interchangeable heads\ntarget_situation: the Golkar party's process of selecting a new presidential candidate\nmapping: political candidates are depicted as modular, replaceable heads being screwed onto the party's permanent organizational body\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

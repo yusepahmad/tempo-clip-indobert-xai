@@ -1,0 +1,87 @@
+{
+  "index": 274,
+  "sample_id": "TMP-BF0C911F22EA",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "6200e3a3ec490822eb457413e8983036133b06af126e2320143fe9a3615caef9",
+  "image_sha256": "bf0c911f22eafbe175882c6d1e9ea2ad0445cb704ac2dbde88bee3810244c69b",
+  "transmitted_image_sha256": "34aa7b8c8d8a729a05284cb164dd9e112ce0da3eaf2183956371d863420c4d89",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.416302,
+      "total": 10,
+      "remaining": 1.583698,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.416302000000002,
+      "total": 100,
+      "remaining": 91.583698,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0907654613256454,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"declining line graph\",\n  \"source_properties\": \"A sharp, downward-trending red line with jagged peaks and valleys that ends by breaking off.\",\n  \"target_situation\": \"The political or economic influence of Puan Maharani and Jokowi during April 2014.\",\n  \"mapping\": \"The downward, broken graph represents a failing or negative impact ('effect') associated with the figures.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "VJTLavX1G7XP_uMPiOzhoQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 105,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661000,
+        "output_tokens_cost_nanodollars": 315000
+      },
+      "prompt_tokens": 1322,
+      "total_backend_latency_ms": 1717,
+      "total_tokens": 1427
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.417278,
+      "total": 10,
+      "remaining": 1.5827220000000004,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.417277999999996,
+      "total": 100,
+      "remaining": 91.582722,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000976,
+  "fields": {
+    "source_object": "declining line graph",
+    "source_properties": "A sharp, downward-trending red line with jagged peaks and valleys that ends by breaking off.",
+    "target_situation": "The political or economic influence of Puan Maharani and Jokowi during April 2014.",
+    "mapping": "The downward, broken graph represents a failing or negative impact ('effect') associated with the figures.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: declining line graph\nsource_properties: A sharp, downward-trending red line with jagged peaks and valleys that ends by breaking off.\ntarget_situation: The political or economic influence of Puan Maharani and Jokowi during April 2014.\nmapping: The downward, broken graph represents a failing or negative impact ('effect') associated with the figures.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

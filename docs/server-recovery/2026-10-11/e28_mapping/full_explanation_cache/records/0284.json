@@ -1,0 +1,90 @@
+{
+  "index": 284,
+  "sample_id": "TMP-44414040FEFF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ed6d4f8981d5178ebca4a46bcda865e9c0700c8769ac76f960ae5055a80f169c",
+  "image_sha256": "44414040feff4444f85b8e7ec88fb87f456e537197ea8d1d35df174d838975a0",
+  "transmitted_image_sha256": "1688dfee8632b7d48d71b3b43b27765fadb21cd5ff1904649c697c13da1f041b",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4284675,
+      "total": 10,
+      "remaining": 1.5715325,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.428467499999996,
+      "total": 100,
+      "remaining": 91.5715325,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.471543003804982,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"post-match football jersey swap\",\n  \"source_properties\": \"Athletes exchange jerseys after a game to signify mutual respect, sportsmanship, and the end of intense competition.\",\n  \"target_situation\": \"The conclusion of the 2014 Indonesian presidential election between rival candidates Joko Widodo and Prabowo Subianto.\",\n  \"mapping\": \"The political rivals wear each other's name-branded jerseys, mirroring a soccer tradition to symbolize reconciliation and unity after a hard-fought contest.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "lZTLapaPKv-o_uMPl6-88Q4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 668,
+      "completion_tokens_details": {
+        "reasoning_tokens": 544
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 664500,
+        "output_tokens_cost_nanodollars": 2004000
+      },
+      "prompt_tokens": 1329,
+      "total_backend_latency_ms": 3949,
+      "total_tokens": 1997
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.431136,
+      "total": 10,
+      "remaining": 1.5688639999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.431135999999995,
+      "total": 100,
+      "remaining": 91.568864,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0026685,
+  "fields": {
+    "source_object": "post-match football jersey swap",
+    "source_properties": "Athletes exchange jerseys after a game to signify mutual respect, sportsmanship, and the end of intense competition.",
+    "target_situation": "The conclusion of the 2014 Indonesian presidential election between rival candidates Joko Widodo and Prabowo Subianto.",
+    "mapping": "The political rivals wear each other's name-branded jerseys, mirroring a soccer tradition to symbolize reconciliation and unity after a hard-fought contest.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: post-match football jersey swap\nsource_properties: Athletes exchange jerseys after a game to signify mutual respect, sportsmanship, and the end of intense competition.\ntarget_situation: The conclusion of the 2014 Indonesian presidential election between rival candidates Joko Widodo and Prabowo Subianto.\nmapping: The political rivals wear each other's name-branded jerseys, mirroring a soccer tradition to symbolize reconciliation and unity after a hard-fought contest.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

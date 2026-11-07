@@ -1,0 +1,87 @@
+{
+  "index": 202,
+  "sample_id": "TMP-13B42C205CC9",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3c3e1aa0ea4799f67c2088d174db4e2aa19a172584a91261b3fab2a1665aee1a",
+  "image_sha256": "13b42c205cc96eb344145ffa7db99c2c8ee1c5c5baedecacb40c5a75f45b80b5",
+  "transmitted_image_sha256": "ad5613835383f65848a946d714b3abf2ac493b80462457f7dc2e4bb5a902cd70",
+  "image_size": [
+    350,
+    458
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3065345,
+      "total": 10,
+      "remaining": 1.6934655000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.306534499999998,
+      "total": 100,
+      "remaining": 91.6934655,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.473743947222829,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"none evident\",\n  \"source_properties\": \"N/A\",\n  \"target_situation\": \"The role of military officer Sarwo Edhie Wibowo during the 1965 Indonesian mass killings.\",\n  \"mapping\": \"The illustration literally depicts Sarwo Edhie Wibowo in his RPKAD uniform, using a red background and blood-spattered communist symbols to signal the violence and political conflict of 1965.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "bpLLaqD3NfGc_uMPhrzdkQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 117,
+      "cost": {
+        "input_tokens_cost_nanodollars": 667000,
+        "output_tokens_cost_nanodollars": 351000
+      },
+      "prompt_tokens": 1334,
+      "total_backend_latency_ms": 1876,
+      "total_tokens": 1451
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3075525,
+      "total": 10,
+      "remaining": 1.6924475,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.3075525,
+      "total": 100,
+      "remaining": 91.6924475,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001018,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "N/A",
+    "target_situation": "The role of military officer Sarwo Edhie Wibowo during the 1965 Indonesian mass killings.",
+    "mapping": "The illustration literally depicts Sarwo Edhie Wibowo in his RPKAD uniform, using a red background and blood-spattered communist symbols to signal the violence and political conflict of 1965.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: N/A\ntarget_situation: The role of military officer Sarwo Edhie Wibowo during the 1965 Indonesian mass killings.\nmapping: The illustration literally depicts Sarwo Edhie Wibowo in his RPKAD uniform, using a red background and blood-spattered communist symbols to signal the violence and political conflict of 1965.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,90 @@
+{
+  "index": 598,
+  "sample_id": "TMP-2E930CACAE1A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1fcdb8c54d3917854a44be1708614595051a6f1572d02ab8c114a34dec4b6379",
+  "image_sha256": "2e930cacae1a5f9bc4e9bd6cb4de2e7fe32aa45bcb3bbee995e59f16f29e8c38",
+  "transmitted_image_sha256": "58b7eb36180de6271615034e6c53ccbca3a0d5234c20c2882cc914e53734b3ad",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.84907,
+      "total": 10,
+      "remaining": 1.1509300000000007,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.849069999999998,
+      "total": 100,
+      "remaining": 91.15093,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 10.447847913950682,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"source_object\": \"A large bulk carrier ship\",\n  \"source_properties\": \"Massive, heavy, and moving forward steadily across the water.\",\n  \"target_situation\": \"The government's coal export ban and resulting business protests.\",\n  \"mapping\": \"The ship represents the momentum of coal exports or the policy shift. The man's waving gestures symbolize businessmen's futile attempts to stop an unstoppable regulatory decision.\",\n  \"uncertainty\": \"none\"\n}\n```",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "tpzLasSKEduA_PUP-tvEuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1179,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1069
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 665500,
+        "output_tokens_cost_nanodollars": 3537000
+      },
+      "prompt_tokens": 1331,
+      "total_backend_latency_ms": 9112,
+      "total_tokens": 2510
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8532725,
+      "total": 10,
+      "remaining": 1.1467275000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.853272500000003,
+      "total": 100,
+      "remaining": 91.1467275,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0042025,
+  "fields": {
+    "source_object": "A large bulk carrier ship",
+    "source_properties": "Massive, heavy, and moving forward steadily across the water.",
+    "target_situation": "The government's coal export ban and resulting business protests.",
+    "mapping": "The ship represents the momentum of coal exports or the policy shift. The man's waving gestures symbolize businessmen's futile attempts to stop an unstoppable regulatory decision.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A large bulk carrier ship\nsource_properties: Massive, heavy, and moving forward steadily across the water.\ntarget_situation: The government's coal export ban and resulting business protests.\nmapping: The ship represents the momentum of coal exports or the policy shift. The man's waving gestures symbolize businessmen's futile attempts to stop an unstoppable regulatory decision.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

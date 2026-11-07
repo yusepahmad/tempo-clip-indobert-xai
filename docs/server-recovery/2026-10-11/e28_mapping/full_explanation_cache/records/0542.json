@@ -1,0 +1,87 @@
+{
+  "index": 542,
+  "sample_id": "TMP-32CC9256EF10",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "399cddaca56ba3d637eec942bfc5257cc668567f78fd79137c170a5a5bc62221",
+  "image_sha256": "32cc9256ef10dcdd91808af748b71b842acabbaffec1c831cad1b26b26eb9965",
+  "transmitted_image_sha256": "3958200f56e4f6e735ff393f42c87ba1fa4cfa87a7b0c873c231309a877678fa",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7819115,
+      "total": 10,
+      "remaining": 1.2180885000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.781911500000007,
+      "total": 100,
+      "remaining": 91.2180885,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.15243820194155,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Light through prison bars\", \"source_properties\": \"Bars create dark shadows, but a glowing book emits light, overcoming physical confinement.\", \"target_situation\": \"Rehabilitation of drug offenders in prison during Idul Fitri.\", \"mapping\": \"The prison bars represent legal confinement, while the glowing book symbolizes spiritual 'pencerahan' (enlightenment) and 'pertobatan' (repentance) achieved through rehabilitation.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "RpvLarLGMN7d_uMP45e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 672500,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1345,
+      "total_backend_latency_ms": 1566,
+      "total_tokens": 1444
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.782881,
+      "total": 10,
+      "remaining": 1.2171190000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.782881000000003,
+      "total": 100,
+      "remaining": 91.217119,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009695,
+  "fields": {
+    "source_object": "Light through prison bars",
+    "source_properties": "Bars create dark shadows, but a glowing book emits light, overcoming physical confinement.",
+    "target_situation": "Rehabilitation of drug offenders in prison during Idul Fitri.",
+    "mapping": "The prison bars represent legal confinement, while the glowing book symbolizes spiritual 'pencerahan' (enlightenment) and 'pertobatan' (repentance) achieved through rehabilitation.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Light through prison bars\nsource_properties: Bars create dark shadows, but a glowing book emits light, overcoming physical confinement.\ntarget_situation: Rehabilitation of drug offenders in prison during Idul Fitri.\nmapping: The prison bars represent legal confinement, while the glowing book symbolizes spiritual 'pencerahan' (enlightenment) and 'pertobatan' (repentance) achieved through rehabilitation.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

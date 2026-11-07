@@ -1,0 +1,43 @@
+{
+  "worker_sha256": "a4a5c1499155a2e65c01ea2b660656033a257af0a38002a1728b71444dc63dc9",
+  "data_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "e5_sha256": "1f0d2b2f346071fa673701847af39e8a22faf9e6a98195734982cd71e99af374",
+  "bge_sha256": "c0d7d1fc9ac42988b0d107a694d7d3b355105f8640f776ace2617eed936495c4",
+  "clip_sha256": "d27cd5dbecfffba3a8bbb96037f3181da20f1c95eb246a7d38a4627a90599e5c",
+  "strict_verification_sha256": "dcaf3c2ff5ac31bc9bf0f568afcb121832d13b9e93a8637cbdd3c1b1443ec11a",
+  "parsed_metrics_sha256": "21787354718c908e347bfc3ac9564aac7b7daf4c9dd05ae80534da2321907a23",
+  "parsed_oof_sha256": "fe93efaed42c0b7c56608370c38f57af0d74f01ffd41c3b38f76e0b5243baedf",
+  "category_sha256": "292eef3861aa51c813318bd9b1efb52760ebe67a27f681bb0562f2be4b446476",
+  "feature_sha256": "a88de3fbb3a3ad5a849b5b593539a5e0d3de7784a7871c61a4700d41711a26fa",
+  "grid": {
+    "fusion__e5_weight": [
+      0.5,
+      2
+    ],
+    "fusion__vlm_weight": [
+      0,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "clf__C": [
+      1,
+      10,
+      100
+    ],
+    "clf__gamma": [
+      "scale",
+      0.1,
+      1
+    ],
+    "clf__class_weight": [
+      null,
+      "balanced"
+    ]
+  },
+  "outer": "Task1 baseline stratified5 seed42",
+  "inner": "Task2 stratified3 seed42",
+  "normalization": "train-fit StandardScaler/L2 per numeric block; fixed one-hot8 unscaled; then weights",
+  "n_jobs": 1
+}

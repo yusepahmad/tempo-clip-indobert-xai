@@ -1,0 +1,87 @@
+{
+  "index": 330,
+  "sample_id": "TMP-4EB624061B59",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b0c86262f02b90a01272293d39d246cf3ffbf6de7463cfa3041dbcba8d46e73b",
+  "image_sha256": "4eb624061b597680a71e7516679723f47cb8bb2ee6d0fc7d20f49835899e2b9f",
+  "transmitted_image_sha256": "43bb4326cdc2d05874bad59d128122131193f5eb57a8429fa8adf149eaa9f9a2",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4901645,
+      "total": 10,
+      "remaining": 1.5098354999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.490164500000006,
+      "total": 100,
+      "remaining": 91.5098355,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.6955587519332767,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A large sledgehammer\",\n  \"source_properties\": \"Heaviness, blunt force, and its function for demolition or forceful impact.\",\n  \"target_situation\": \"High-ranking officials, including the DPR Speaker, exerting powerful influence over property claim disputes.\",\n  \"mapping\": \"The sledgehammer's destructive physical force symbolizes the heavy-handed political backing used to crush opposition in the Victoria Securities case.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "wpXLaveYMpCa_uMPxb6ruQk",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 672500,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1345,
+      "total_backend_latency_ms": 1738,
+      "total_tokens": 1451
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.491155,
+      "total": 10,
+      "remaining": 1.5088450000000009,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.491155000000006,
+      "total": 100,
+      "remaining": 91.508845,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009905,
+  "fields": {
+    "source_object": "A large sledgehammer",
+    "source_properties": "Heaviness, blunt force, and its function for demolition or forceful impact.",
+    "target_situation": "High-ranking officials, including the DPR Speaker, exerting powerful influence over property claim disputes.",
+    "mapping": "The sledgehammer's destructive physical force symbolizes the heavy-handed political backing used to crush opposition in the Victoria Securities case.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A large sledgehammer\nsource_properties: Heaviness, blunt force, and its function for demolition or forceful impact.\ntarget_situation: High-ranking officials, including the DPR Speaker, exerting powerful influence over property claim disputes.\nmapping: The sledgehammer's destructive physical force symbolizes the heavy-handed political backing used to crush opposition in the Victoria Securities case.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

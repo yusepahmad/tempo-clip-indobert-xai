@@ -1,0 +1,87 @@
+{
+  "index": 231,
+  "sample_id": "TMP-A0409A45221B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "59153455e70960ac519afbc7a53143b8cc0cbb1160a40d6c4c02ce61e34a22c4",
+  "image_sha256": "a0409a45221bf8fbcbeba96844c91f8d448142091a258743e7c0cba6bb72c2b9",
+  "transmitted_image_sha256": "12e98b4eb61572fa8a2b84744a703058cdec989472b0cf73c1d4f6c5c5c13e82",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3489625,
+      "total": 10,
+      "remaining": 1.6510374999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.348962499999999,
+      "total": 100,
+      "remaining": 91.6510375,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2827565842308104,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"shattered glass\", \"source_properties\": \"hard, transparent, fractured into sharp pieces, visibly broken\", \"target_situation\": \"Anas Urbaningrum's leadership and the subsequent internal division of the Democratic Party\", \"mapping\": \"The cracks through Anas's face represent the fragmentation and instability within the political party caused by his situation.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "KJPLasayB5Ca_uMPxb6ruQk",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 84,
+      "cost": {
+        "input_tokens_cost_nanodollars": 658000,
+        "output_tokens_cost_nanodollars": 252000
+      },
+      "prompt_tokens": 1316,
+      "total_backend_latency_ms": 1711,
+      "total_tokens": 1400
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3498725,
+      "total": 10,
+      "remaining": 1.6501275,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.349872500000004,
+      "total": 100,
+      "remaining": 91.6501275,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00091,
+  "fields": {
+    "source_object": "shattered glass",
+    "source_properties": "hard, transparent, fractured into sharp pieces, visibly broken",
+    "target_situation": "Anas Urbaningrum's leadership and the subsequent internal division of the Democratic Party",
+    "mapping": "The cracks through Anas's face represent the fragmentation and instability within the political party caused by his situation.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: shattered glass\nsource_properties: hard, transparent, fractured into sharp pieces, visibly broken\ntarget_situation: Anas Urbaningrum's leadership and the subsequent internal division of the Democratic Party\nmapping: The cracks through Anas's face represent the fragmentation and instability within the political party caused by his situation.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

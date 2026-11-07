@@ -1,0 +1,90 @@
+{
+  "index": 509,
+  "sample_id": "TMP-B09CFDF7EA5E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0c1aefe8a4a2cb899a67a2f8a8972163c8d2d6774fce13f4ecbffa7ac85aa209",
+  "image_sha256": "b09cfdf7ea5e3a3aadab8a5d0cb314c17edb4d7414c8f628d1d14b43675d748f",
+  "transmitted_image_sha256": "47963eaaa14e3db0cfcb448de3516c35d175f017d610a8f042c4b0bbc3d1f6aa",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7310885,
+      "total": 10,
+      "remaining": 1.2689114999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.731088499999998,
+      "total": 100,
+      "remaining": 91.2689115,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.214194713160396,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A tower of planks forming a logo.\",\n  \"source_properties\": \"A stacked structure becomes unstable and collapses when pieces are pulled out from the bottom.\",\n  \"target_situation\": \"The transfer of Bank Bukopin's control from Bosowa Group to Korea\u2019s Kookmin Bank.\",\n  \"mapping\": \"Kookmin\u2019s hand removes a piece of the Bukopin logo, causing the Bosowa figures to lose their footing as their corporate foundation is dismantled.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "X5rLarCJAcfR_uMPxMva8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1275,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1156
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 679500,
+        "output_tokens_cost_nanodollars": 3825000
+      },
+      "prompt_tokens": 1359,
+      "total_backend_latency_ms": 6696,
+      "total_tokens": 2634
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.735593,
+      "total": 10,
+      "remaining": 1.2644070000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.735592999999994,
+      "total": 100,
+      "remaining": 91.264407,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0045045,
+  "fields": {
+    "source_object": "A tower of planks forming a logo.",
+    "source_properties": "A stacked structure becomes unstable and collapses when pieces are pulled out from the bottom.",
+    "target_situation": "The transfer of Bank Bukopin's control from Bosowa Group to Korea\u2019s Kookmin Bank.",
+    "mapping": "Kookmin\u2019s hand removes a piece of the Bukopin logo, causing the Bosowa figures to lose their footing as their corporate foundation is dismantled.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A tower of planks forming a logo.\nsource_properties: A stacked structure becomes unstable and collapses when pieces are pulled out from the bottom.\ntarget_situation: The transfer of Bank Bukopin's control from Bosowa Group to Korea\u2019s Kookmin Bank.\nmapping: Kookmin\u2019s hand removes a piece of the Bukopin logo, causing the Bosowa figures to lose their footing as their corporate foundation is dismantled.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,48 @@
+{
+  "hashes": {
+    "03_data/DATASET_740_TASK2_DOMAIN.csv": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+    "04_hasil_eksperimen/e06_semantic/e06_semantic/embeddings.npz": "1f0d2b2f346071fa673701847af39e8a22faf9e6a98195734982cd71e99af374",
+    "03_data/fitur_clip_indobert_740.npz": "d27cd5dbecfffba3a8bbb96037f3181da20f1c95eb246a7d38a4627a90599e5c",
+    "01_notebook/e11_decision_calibration.py": "d599b1b999de1718ee5e8d49c7a4bbe11890ecb03e9e04d3cd0c9c5671e2766f",
+    "04_hasil_eksperimen/e06_nested/description.json": "8db6e6d1b43da817e77ca018ff2309d33b3f928d4b8f6a922829ba62a09c97ba",
+    "04_hasil_eksperimen/e06_nested/source_reason.json": "18e9b84d66638d66eed77cce965248c449fb47f5045dfeed6b3175e5f59d4b2c",
+    "04_hasil_eksperimen/e06_nested/combined.json": "6d3592a06bb4aab0d30f945ce90fd35e68fab8cebc418b5135fb7a7911bb2412",
+    "04_hasil_eksperimen/e06_nested/description_reason.json": "1de4fa8f39f1713d89a6c97a4b7a206519b95fbdc7e5d6f3305f18d2c1161335",
+    "04_hasil_eksperimen/e06_nested/semantic_visual.json": "912f9408e15c0850729911ea4ca76386c4bc64617700009936526959760bc420"
+  },
+  "sklearn": "1.7.2",
+  "classes": [
+    "BENCANA_JERAT",
+    "HEWAN_TUBUH",
+    "KONSUMSI_TRANSAKSI",
+    "LAINNYA",
+    "MESIN_INFRASTRUKTUR",
+    "NON_METAFORA",
+    "PERMAINAN_KONTES"
+  ],
+  "jobs": 1,
+  "calibration": "sigmoid3fold seed42 ensembleFalse, scaler inside estimator",
+  "bias_crossfit": "3fold Task2 seed1042 on outer-training; conditional E06 inner-selected params",
+  "bias_grid": [
+    -1.0,
+    -0.875,
+    -0.75,
+    -0.625,
+    -0.5,
+    -0.375,
+    -0.25,
+    -0.125,
+    0.0,
+    0.125,
+    0.25,
+    0.375,
+    0.5,
+    0.625,
+    0.75,
+    0.875,
+    1.0
+  ],
+  "bias_rounds": 5,
+  "outer": "baseline integer Task1 seed42 5fold",
+  "main_output": "adjusted prediction; raw control reported separately"
+}

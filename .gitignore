@@ -1,0 +1,29 @@
+# Local environments and runtime artifacts
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+_cache/
+_jobs/
+*.log
+# Credentials and human identities
+.env
+.env.*
+.git-credentials
+.ssh/
+**/coordinator_private/
+**/*PRIVATE*
+**/*private*
+**/REGISTRASI_PARTISIPAN.csv
+**/R22_REVIEW_MANUSIA_20.csv
+**/RIWAYAT_KORPUS_PER_ID.csv
+**/HASIL_ISIAN/
+# Large reproducible artifacts are distributed via Releases
+*.zip
+*.pt
+*.pth
+*.npy
+*.npz
+*.safetensors
+*.bin
+*.onnx

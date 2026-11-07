@@ -1,0 +1,87 @@
+{
+  "index": 7,
+  "sample_id": "TMP-4650B47F4E32",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383",
+  "prompt_sha256": "621f3492149604aa7eff2f76ade320fc505223643af092461c780a4f5cf62fe3",
+  "image_sha256": "4650b47f4e329d5190cb8023434d5486fc85d1dcac7f90025ec83b5cac58b465",
+  "transmitted_image_sha256": "4a044cb5378df5135ae3f6f4796bff02107c9219c111e6728a7804656e5a5cda",
+  "image_size": [
+    413,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.022048,
+      "total": 10,
+      "remaining": 1.9779520000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.022047999999998,
+      "total": 100,
+      "remaining": 91.977952,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.3687745071947575,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"villas in a protected forest\", \"source_properties\": \"expensive, man-made structures built illegally within a lush, protected green national park\", \"target_situation\": \"officials, artists, and politicians illegally occupying land in Mount Halimun-Salak National Park\", \"mapping\": \"The physical intrusion of the buildings into the dense forest represents the illegal land acquisition by powerful individuals in protected areas.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Z4rLaqHKBefU_uMPq5CXyQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 96,
+      "cost": {
+        "input_tokens_cost_nanodollars": 665000,
+        "output_tokens_cost_nanodollars": 288000
+      },
+      "prompt_tokens": 1330,
+      "total_backend_latency_ms": 1502,
+      "total_tokens": 1426
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.023001,
+      "total": 10,
+      "remaining": 1.9769989999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.023000999999994,
+      "total": 100,
+      "remaining": 91.976999,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000953,
+  "fields": {
+    "source_object": "villas in a protected forest",
+    "source_properties": "expensive, man-made structures built illegally within a lush, protected green national park",
+    "target_situation": "officials, artists, and politicians illegally occupying land in Mount Halimun-Salak National Park",
+    "mapping": "The physical intrusion of the buildings into the dense forest represents the illegal land acquisition by powerful individuals in protected areas.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: villas in a protected forest\nsource_properties: expensive, man-made structures built illegally within a lush, protected green national park\ntarget_situation: officials, artists, and politicians illegally occupying land in Mount Halimun-Salak National Park\nmapping: The physical intrusion of the buildings into the dense forest represents the illegal land acquisition by powerful individuals in protected areas.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

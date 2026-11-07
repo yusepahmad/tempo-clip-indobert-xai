@@ -1,0 +1,40 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "dimension": 768,
+  "verifier_sha256": "69d17c74571ccf72e25d77b65962bc93f87ac64e6e6562141fa816e82aa12559",
+  "sampled_indices": [
+    0,
+    1,
+    37,
+    123,
+    369,
+    739
+  ],
+  "maximum_absolute_errors": {
+    "0": 0.0,
+    "1": 0.0,
+    "37": 0.0,
+    "123": 0.0,
+    "369": 0.0,
+    "739": 0.0
+  },
+  "sha256": {
+    "embeddings.npz": "5c44a8043a5a1a76bb8f7508ab2d6529a55435f5b5a4fad9e14a021b5fe4eb98",
+    "meta.json": "08c137771ca71667ebd7187836eb14fb68459d77d48aeb7136e94383b4de87f7",
+    "protocol.json": "b78eed1daf9c660a6d0d655eef0ccc0d736a6fffeddb65cefbe5bec6877e6229",
+    "preparation.json": "3406be208c6e6ccdd4b3f85a60a9da93a3963c5c13e06046c61b5b00f4e54088",
+    "input_audit.jsonl": "d14f9a29d7560be45450f3caa7537339391b873a01c51377a6f0f8cf371e724f"
+  },
+  "checks": [
+    "original740 source/IDs/image-only invariance",
+    "official model/weight/snapshot pins",
+    "all740 original image and processor pixel hashes reconstructed",
+    "aligned finite float32 unit768 features",
+    "predeclared6 features reproduced tolerance1e-5"
+  ],
+  "limitations": [
+    "only6 forward outputs reproduced, not all740",
+    "no Task2 score"
+  ]
+}

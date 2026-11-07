@@ -1,0 +1,87 @@
+{
+  "index": 597,
+  "sample_id": "TMP-33305D28AC8D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "57cacd75831682a4699d73272efde9198984977abf2e0f7a10b90623fe5bc298",
+  "image_sha256": "33305d28ac8de495acd7a5be798ced761647bd3566b878f7ba992d331d7f0fad",
+  "transmitted_image_sha256": "69ecd769ec273bee5c7a241010a93f4be4512d63e4a304b56d9f306e76767879",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8480645,
+      "total": 10,
+      "remaining": 1.1519355000000004,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.848064500000007,
+      "total": 100,
+      "remaining": 91.1519355,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.6980326999910176,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Jean-Claude Van Damme's 'Epic Split' commercial\",\n  \"source_properties\": \"A person performing a precarious leg split between two moving, diverging vehicles.\",\n  \"target_situation\": \"Anies Baswedan's political position supported by a fracturing coalition of three parties.\",\n  \"mapping\": \"The diverging trucks represent political parties splitting over vice-presidential choices, leaving the candidate balancing precariously.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "sJzLaobLNb7i_uMPz_DU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 109,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678500,
+        "output_tokens_cost_nanodollars": 327000
+      },
+      "prompt_tokens": 1357,
+      "total_backend_latency_ms": 2155,
+      "total_tokens": 1466
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.84907,
+      "total": 10,
+      "remaining": 1.1509300000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.849069999999998,
+      "total": 100,
+      "remaining": 91.15093,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010055,
+  "fields": {
+    "source_object": "Jean-Claude Van Damme's 'Epic Split' commercial",
+    "source_properties": "A person performing a precarious leg split between two moving, diverging vehicles.",
+    "target_situation": "Anies Baswedan's political position supported by a fracturing coalition of three parties.",
+    "mapping": "The diverging trucks represent political parties splitting over vice-presidential choices, leaving the candidate balancing precariously.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: Jean-Claude Van Damme's 'Epic Split' commercial\nsource_properties: A person performing a precarious leg split between two moving, diverging vehicles.\ntarget_situation: Anies Baswedan's political position supported by a fracturing coalition of three parties.\nmapping: The diverging trucks represent political parties splitting over vice-presidential choices, leaving the candidate balancing precariously.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

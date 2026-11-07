@@ -1,0 +1,87 @@
+{
+  "index": 452,
+  "sample_id": "TMP-4D3A99615FE8",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "637d587220734f7cda6041ad1973a0b33eb27481b3b1766dd331883b2d99f376",
+  "image_sha256": "4d3a99615fe84f52501d10cda13d173ad5839f4a979fbc2793cbe52d0eca6032",
+  "transmitted_image_sha256": "77a2ddc9c64f94b6dbcf10e46811420efdfed28fe3426c4b09e827380792c731",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.659654,
+      "total": 10,
+      "remaining": 1.3403460000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.659654000000003,
+      "total": 100,
+      "remaining": 91.340346,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4818620523437858,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A glass cloche or bell jar\",\n  \"source_properties\": \"Transparent, protective, and insulating enclosure\",\n  \"target_situation\": \"Indonesia's economy amidst a global recession\",\n  \"mapping\": \"The jar protects a small sapling from falling currency, symbolizing insulation for the domestic economy against global financial instability.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "7JjLauDdK6iB_PUPxqbXMA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 89,
+      "cost": {
+        "input_tokens_cost_nanodollars": 669500,
+        "output_tokens_cost_nanodollars": 267000
+      },
+      "prompt_tokens": 1339,
+      "total_backend_latency_ms": 1716,
+      "total_tokens": 1428
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6605905,
+      "total": 10,
+      "remaining": 1.3394095000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.660590499999998,
+      "total": 100,
+      "remaining": 91.3394095,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009365,
+  "fields": {
+    "source_object": "A glass cloche or bell jar",
+    "source_properties": "Transparent, protective, and insulating enclosure",
+    "target_situation": "Indonesia's economy amidst a global recession",
+    "mapping": "The jar protects a small sapling from falling currency, symbolizing insulation for the domestic economy against global financial instability.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A glass cloche or bell jar\nsource_properties: Transparent, protective, and insulating enclosure\ntarget_situation: Indonesia's economy amidst a global recession\nmapping: The jar protects a small sapling from falling currency, symbolizing insulation for the domestic economy against global financial instability.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

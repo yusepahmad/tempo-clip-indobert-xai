@@ -1,0 +1,30 @@
+{
+  "schema": "revisi-ii-qwen-headline-protocol-v1",
+  "model": "Qwen/Qwen3-VL-8B-Instruct",
+  "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+  "data_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "input_fields": [
+    "image384",
+    "headline_verified"
+  ],
+  "excluded": [
+    "supporting_text_verified",
+    "deskripsi",
+    "sumber_visual",
+    "alasan",
+    "gold in prompt"
+  ],
+  "fixed_epochs": [
+    3,
+    1,
+    3,
+    2,
+    3
+  ],
+  "epoch_source": "historical rich inner-validation choices, conditional paired-input comparison, no outer-test selection",
+  "primary_metric": "macro_f1",
+  "wall_seconds_limit": 32400,
+  "source_sha256": "d98abbf264bc31aaeb4dc43d60fb79ff793645a5844a44fe91cb1da2168011cd",
+  "derived_from_sha256": "88a80feafa508a260c7f03c3c2660ee5e2a59acc77dc04fceb9d5ac000ee5e4a",
+  "smoke": false
+}

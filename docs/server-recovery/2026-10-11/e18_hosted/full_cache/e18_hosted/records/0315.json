@@ -1,0 +1,83 @@
+{
+  "index": 315,
+  "sample_id": "TMP-F26804868A39",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "47b1137fd46d97eaceb5b21761fc85232ee63156a00b38f6d30cb9fc678735ab",
+  "image_sha256": "f26804868a39a965d996c46d5f65414b44f3603b5b9f86ac22f771b63ab9c97c",
+  "transmitted_image_sha256": "9f2ed750779c230b4a78fef99007a1ba91dc04d6e317854723d734e6654ab379",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.1817034999999994,
+      "total": 10,
+      "remaining": 8.8182965,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.1817034999999976,
+      "total": 100,
+      "remaining": 98.8182965,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.470722130034119,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks, domain sumber metafora tersebut adalah:\n\n**G: PERMAINAN_KONTES**\n\n**Alasan:**\nDeskripsi secara eksplisit menyebutkan bahwa meja dan kursi dipetakan sebagai \"**pemain**\" dan \"**panggung**\" dalam \"**permainan** politik\", serta menggambarkan \"**strategi**\" dan \"**arena berstrategi**\". Kata-kata kunci ini (permainan, pemain, panggung/pertunjukan, strategi) merupakan elemen utama dari domain **PERMAINAN_KONTES**. Selain itu, judul tambahan \"Panggung Broadway\" juga memperkuat penggunaan kiasan pertunjukan/permainan. Walaupun garis putus-putus membentuk siluet banteng (hewan), fokus utama pemetaan yang dijelaskan adalah mengenai peran dan strategi dalam sebuah permainan atau pertunjukan kekuasaan.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "KdnKavegKbqi_uMPou_3-Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1403,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1223
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 771000,
+        "output_tokens_cost_nanodollars": 4209000
+      },
+      "prompt_tokens": 1542,
+      "total_backend_latency_ms": 8233,
+      "total_tokens": 2945
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.1866834999999991,
+      "total": 10,
+      "remaining": 8.8133165,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.186683500000001,
+      "total": 100,
+      "remaining": 98.8133165,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.00498
+}

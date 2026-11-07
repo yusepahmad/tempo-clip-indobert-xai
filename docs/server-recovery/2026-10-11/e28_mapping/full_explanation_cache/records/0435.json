@@ -1,0 +1,87 @@
+{
+  "index": 435,
+  "sample_id": "TMP-91238C981D9A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "40eb20d34a20d6fba9e00693a18c1a09cf1da6e8b7f96083a2d9d3e6a3914653",
+  "image_sha256": "91238c981d9a5b36bef523f0deb0568dd05f6251b7bb537ad3167ee28495931a",
+  "transmitted_image_sha256": "85cb480ff764b863aa05ea78aac451c75a156768d6e92f67c41d285a4f59de01",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.634503500000001,
+      "total": 10,
+      "remaining": 1.365496499999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.634503499999994,
+      "total": 100,
+      "remaining": 91.3654965,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.490757620893419,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"flames\", \"source_properties\": \"swirling, vibrant, energetic, upward-reaching red and yellow ribbons\", \"target_situation\": \"Indonesian athletes' success at the Asian Games and preparation for the Tokyo 2020 Olympics\", \"mapping\": \"The dynamic, flowing fire represents the competitive spirit, passion, and momentum of the athletes driving national pride toward the next major global competition.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "c5jLav_UOryb_uMP77KhsAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 668000,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1336,
+      "total_backend_latency_ms": 1795,
+      "total_tokens": 1431
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6354565,
+      "total": 10,
+      "remaining": 1.3645435,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.635456500000004,
+      "total": 100,
+      "remaining": 91.3645435,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000953,
+  "fields": {
+    "source_object": "flames",
+    "source_properties": "swirling, vibrant, energetic, upward-reaching red and yellow ribbons",
+    "target_situation": "Indonesian athletes' success at the Asian Games and preparation for the Tokyo 2020 Olympics",
+    "mapping": "The dynamic, flowing fire represents the competitive spirit, passion, and momentum of the athletes driving national pride toward the next major global competition.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: flames\nsource_properties: swirling, vibrant, energetic, upward-reaching red and yellow ribbons\ntarget_situation: Indonesian athletes' success at the Asian Games and preparation for the Tokyo 2020 Olympics\nmapping: The dynamic, flowing fire represents the competitive spirit, passion, and momentum of the athletes driving national pride toward the next major global competition.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

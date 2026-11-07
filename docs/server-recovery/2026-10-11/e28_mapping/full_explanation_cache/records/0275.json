@@ -1,0 +1,87 @@
+{
+  "index": 275,
+  "sample_id": "TMP-D71BCF104809",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "05aef9060640239ca148890ae3fca9daa4605244918584080313e20c70a2d595",
+  "image_sha256": "d71bcf1048099c220b7cc22e83948cc0a1b9d4aaed7fbfd9b95315a2493ba41b",
+  "transmitted_image_sha256": "f1a1887e37eb83abb8b588e3a880bfc7294108a0eb2468477285d534c84871de",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.417278,
+      "total": 10,
+      "remaining": 1.5827220000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.417277999999996,
+      "total": 100,
+      "remaining": 91.582722,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.423211658373475,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A photo studio backdrop and a silhouette cutout\",\n  \"source_properties\": \"A blank space where a face should be, used for taking portraits with someone else.\",\n  \"target_situation\": \"Joko Widodo's search for a vice-presidential running mate for the 2014 Indonesian election.\",\n  \"mapping\": \"The blank cutout represents the vacant vice-presidential slot next to Jokowi, awaiting a specific individual.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "WZTLavmdI_Gb_uMPte3s2Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 112,
+      "cost": {
+        "input_tokens_cost_nanodollars": 659000,
+        "output_tokens_cost_nanodollars": 336000
+      },
+      "prompt_tokens": 1318,
+      "total_backend_latency_ms": 1854,
+      "total_tokens": 1430
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.418273,
+      "total": 10,
+      "remaining": 1.5817270000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.418273,
+      "total": 100,
+      "remaining": 91.581727,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000995,
+  "fields": {
+    "source_object": "A photo studio backdrop and a silhouette cutout",
+    "source_properties": "A blank space where a face should be, used for taking portraits with someone else.",
+    "target_situation": "Joko Widodo's search for a vice-presidential running mate for the 2014 Indonesian election.",
+    "mapping": "The blank cutout represents the vacant vice-presidential slot next to Jokowi, awaiting a specific individual.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A photo studio backdrop and a silhouette cutout\nsource_properties: A blank space where a face should be, used for taking portraits with someone else.\ntarget_situation: Joko Widodo's search for a vice-presidential running mate for the 2014 Indonesian election.\nmapping: The blank cutout represents the vacant vice-presidential slot next to Jokowi, awaiting a specific individual.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

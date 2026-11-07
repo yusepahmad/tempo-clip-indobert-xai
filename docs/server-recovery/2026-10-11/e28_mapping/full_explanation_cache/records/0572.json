@@ -1,0 +1,90 @@
+{
+  "index": 572,
+  "sample_id": "TMP-EEE734A2EAB9",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "46ee38f7a38c6c3187a37f34da2b6fbbd236f68c821bb7fb6429d6abce5493d6",
+  "image_sha256": "eee734a2eab9102df0ec3db4e9f6d6fd5d5a3505b696ada15f3549b0c8cd59ac",
+  "transmitted_image_sha256": "ad1e7b1f89ff8abc747dc48d86b7374417c0c2a13cd410c1cebdd3a29afdc10a",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8220185,
+      "total": 10,
+      "remaining": 1.1779814999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.822018499999999,
+      "total": 100,
+      "remaining": 91.1779815,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.045877090189606,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A pile of cash\",\n  \"source_properties\": \"Monetary value and physical volume filling a hollow space.\",\n  \"target_situation\": \"Alleged bribery and corruption involving Supreme Court officials.\",\n  \"mapping\": \"Replacing the judge's head with money suggests that greed has supplanted judicial reasoning and ethics, making financial gain the primary driver of their decisions.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "FJzLavjIFeu1_PUPl9nYyQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 712,
+      "completion_tokens_details": {
+        "reasoning_tokens": 615
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 681000,
+        "output_tokens_cost_nanodollars": 2136000
+      },
+      "prompt_tokens": 1362,
+      "total_backend_latency_ms": 4544,
+      "total_tokens": 2074
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8248355,
+      "total": 10,
+      "remaining": 1.1751644999999993,
+      "refill_at": "2026-10-11 23:35:15.875000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.824835500000006,
+      "total": 100,
+      "remaining": 91.1751645,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.002817,
+  "fields": {
+    "source_object": "A pile of cash",
+    "source_properties": "Monetary value and physical volume filling a hollow space.",
+    "target_situation": "Alleged bribery and corruption involving Supreme Court officials.",
+    "mapping": "Replacing the judge's head with money suggests that greed has supplanted judicial reasoning and ethics, making financial gain the primary driver of their decisions.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A pile of cash\nsource_properties: Monetary value and physical volume filling a hollow space.\ntarget_situation: Alleged bribery and corruption involving Supreme Court officials.\nmapping: Replacing the judge's head with money suggests that greed has supplanted judicial reasoning and ethics, making financial gain the primary driver of their decisions.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

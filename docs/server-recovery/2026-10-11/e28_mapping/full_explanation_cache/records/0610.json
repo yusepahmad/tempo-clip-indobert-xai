@@ -1,0 +1,87 @@
+{
+  "index": 610,
+  "sample_id": "TMP-7E88C4D88155",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1dbc193984ee4419909cc14f7c736d96ab7c9d39eb8f59049f1cb68e8f77eafc",
+  "image_sha256": "7e88c4d881556d3d5c2b43b9237c5f274042ead9cb5c4beda0a45232fa69214e",
+  "transmitted_image_sha256": "f04bb9d0825e2228026623d7128f39c87c98833f22dab8e033ddc17f4f0f5dec",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8736405,
+      "total": 10,
+      "remaining": 1.1263594999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.873640499999993,
+      "total": 100,
+      "remaining": 91.1263595,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.762992729898542,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"scarecrow\", \"source_properties\": \"Stuffed figure in a field, arms outstretched on a wooden frame, adorned with money instead of straw.\", \"target_situation\": \"Agriculture Minister Syahrul Yasin Limpo's investigation for corruption and receiving gratifications.\", \"mapping\": \"The scarecrow represents the Minister of Agriculture, with the 'harvest' of money symbolizing the illegal tributes and gratifications he allegedly collected.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "E53LapOXNbeR_uMPm_GWuA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 100,
+      "cost": {
+        "input_tokens_cost_nanodollars": 690000,
+        "output_tokens_cost_nanodollars": 300000
+      },
+      "prompt_tokens": 1380,
+      "total_backend_latency_ms": 2213,
+      "total_tokens": 1480
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8746305,
+      "total": 10,
+      "remaining": 1.1253694999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.874630499999995,
+      "total": 100,
+      "remaining": 91.1253695,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00099,
+  "fields": {
+    "source_object": "scarecrow",
+    "source_properties": "Stuffed figure in a field, arms outstretched on a wooden frame, adorned with money instead of straw.",
+    "target_situation": "Agriculture Minister Syahrul Yasin Limpo's investigation for corruption and receiving gratifications.",
+    "mapping": "The scarecrow represents the Minister of Agriculture, with the 'harvest' of money symbolizing the illegal tributes and gratifications he allegedly collected.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: scarecrow\nsource_properties: Stuffed figure in a field, arms outstretched on a wooden frame, adorned with money instead of straw.\ntarget_situation: Agriculture Minister Syahrul Yasin Limpo's investigation for corruption and receiving gratifications.\nmapping: The scarecrow represents the Minister of Agriculture, with the 'harvest' of money symbolizing the illegal tributes and gratifications he allegedly collected.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 258,
+  "sample_id": "TMP-2C4D8CC27005",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b97413e832528fb7e170a578906bb025e95db3e9250c7287a2d864339b6e5ed8",
+  "image_sha256": "2c4d8cc2700552c667eda2e53e3bcd0e0c620ea1a72e2ab55dfdfedfaceac533",
+  "transmitted_image_sha256": "8eb42d1b9961fe9bf0b0343e6d2a6e750ffb7dec3d1603bffbebf63c7b92b126",
+  "image_size": [
+    537,
+    703
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3966855,
+      "total": 10,
+      "remaining": 1.6033144999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.396685500000004,
+      "total": 100,
+      "remaining": 91.6033145,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.404535446316004,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"price tags\",\n  \"source_properties\": \"Small, white rectangular labels attached to high-end clothing and accessories showing retail value.\",\n  \"target_situation\": \"Corruption allegations involving Ratu Atut Chosiyah's lifestyle and excessive spending.\",\n  \"mapping\": \"The price tags hanging off her designer clothes, bag, and jewelry symbolize her immense wealth and the billions in credit card bills allegedly paid by others.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "75PLavb8C8aS_uMPmu6wkA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 108,
+      "cost": {
+        "input_tokens_cost_nanodollars": 667500,
+        "output_tokens_cost_nanodollars": 324000
+      },
+      "prompt_tokens": 1335,
+      "total_backend_latency_ms": 1859,
+      "total_tokens": 1443
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.397677,
+      "total": 10,
+      "remaining": 1.6023230000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.397677000000002,
+      "total": 100,
+      "remaining": 91.602323,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009915,
+  "fields": {
+    "source_object": "price tags",
+    "source_properties": "Small, white rectangular labels attached to high-end clothing and accessories showing retail value.",
+    "target_situation": "Corruption allegations involving Ratu Atut Chosiyah's lifestyle and excessive spending.",
+    "mapping": "The price tags hanging off her designer clothes, bag, and jewelry symbolize her immense wealth and the billions in credit card bills allegedly paid by others.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: price tags\nsource_properties: Small, white rectangular labels attached to high-end clothing and accessories showing retail value.\ntarget_situation: Corruption allegations involving Ratu Atut Chosiyah's lifestyle and excessive spending.\nmapping: The price tags hanging off her designer clothes, bag, and jewelry symbolize her immense wealth and the billions in credit card bills allegedly paid by others.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,90 @@
+{
+  "index": 557,
+  "sample_id": "TMP-CF89ED982263",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9597b01b6d8110af66f482959770acb8bdaf204e3ecfd89be64297b492b09a8a",
+  "image_sha256": "cf89ed982263da0889e857fdabc9ebd5d618e5d2cb49e028a7850e312d6115cf",
+  "transmitted_image_sha256": "a8eab3b9c4a3aa79a8e579c11de4c78c35e9bc5fe7c0ca1ac6e7ade6691f4297",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8034775,
+      "total": 10,
+      "remaining": 1.1965225000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.8034775,
+      "total": 100,
+      "remaining": 91.1965225,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.559341436251998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A split-open outer mask of a man in religious attire.\",\n  \"source_properties\": \"A hollow facade that can be peeled back or separated to reveal a hidden identity.\",\n  \"target_situation\": \"Extremists infiltrating mainstream religious and political institutions under the guise of piety.\",\n  \"mapping\": \"The religious exterior is a deceptive mask concealing a militant core to facilitate infiltration.\",\n  \"uncertainty\": \"None.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "qZvLauW8PP-o_uMP1rjw6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 962,
+      "completion_tokens_details": {
+        "reasoning_tokens": 861
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 668500,
+        "output_tokens_cost_nanodollars": 2886000
+      },
+      "prompt_tokens": 1337,
+      "total_backend_latency_ms": 6261,
+      "total_tokens": 2299
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.807032,
+      "total": 10,
+      "remaining": 1.1929680000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.807032000000007,
+      "total": 100,
+      "remaining": 91.192968,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0035545,
+  "fields": {
+    "source_object": "A split-open outer mask of a man in religious attire.",
+    "source_properties": "A hollow facade that can be peeled back or separated to reveal a hidden identity.",
+    "target_situation": "Extremists infiltrating mainstream religious and political institutions under the guise of piety.",
+    "mapping": "The religious exterior is a deceptive mask concealing a militant core to facilitate infiltration.",
+    "uncertainty": "None."
+  },
+  "explanation": "source_object: A split-open outer mask of a man in religious attire.\nsource_properties: A hollow facade that can be peeled back or separated to reveal a hidden identity.\ntarget_situation: Extremists infiltrating mainstream religious and political institutions under the guise of piety.\nmapping: The religious exterior is a deceptive mask concealing a militant core to facilitate infiltration.\nuncertainty: None.",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,384 @@
+{
+  "samples": 740,
+  "macro_f1": 0.4748302904710198,
+  "confusion_matrix": [
+    [
+      43,
+      10,
+      9,
+      3,
+      24,
+      4,
+      7
+    ],
+    [
+      14,
+      48,
+      6,
+      5,
+      8,
+      5,
+      4
+    ],
+    [
+      9,
+      9,
+      37,
+      3,
+      13,
+      4,
+      9
+    ],
+    [
+      10,
+      10,
+      2,
+      15,
+      12,
+      2,
+      12
+    ],
+    [
+      23,
+      9,
+      16,
+      10,
+      129,
+      10,
+      17
+    ],
+    [
+      12,
+      6,
+      1,
+      6,
+      15,
+      41,
+      2
+    ],
+    [
+      8,
+      10,
+      7,
+      9,
+      9,
+      2,
+      61
+    ]
+  ],
+  "classification": {
+    "BENCANA_JERAT": {
+      "precision": 0.36134453781512604,
+      "recall": 0.43,
+      "f1-score": 0.3926940639269406,
+      "support": 100.0
+    },
+    "HEWAN_TUBUH": {
+      "precision": 0.47058823529411764,
+      "recall": 0.5333333333333333,
+      "f1-score": 0.5,
+      "support": 90.0
+    },
+    "KONSUMSI_TRANSAKSI": {
+      "precision": 0.47435897435897434,
+      "recall": 0.44047619047619047,
+      "f1-score": 0.4567901234567901,
+      "support": 84.0
+    },
+    "LAINNYA": {
+      "precision": 0.29411764705882354,
+      "recall": 0.23809523809523808,
+      "f1-score": 0.2631578947368421,
+      "support": 63.0
+    },
+    "MESIN_INFRASTRUKTUR": {
+      "precision": 0.6142857142857143,
+      "recall": 0.602803738317757,
+      "f1-score": 0.6084905660377359,
+      "support": 214.0
+    },
+    "NON_METAFORA": {
+      "precision": 0.6029411764705882,
+      "recall": 0.4939759036144578,
+      "f1-score": 0.543046357615894,
+      "support": 83.0
+    },
+    "PERMAINAN_KONTES": {
+      "precision": 0.5446428571428571,
+      "recall": 0.5754716981132075,
+      "f1-score": 0.5596330275229358,
+      "support": 106.0
+    },
+    "accuracy": 0.5054054054054054,
+    "macro avg": {
+      "precision": 0.48032559177517165,
+      "recall": 0.4734508717071692,
+      "f1-score": 0.4748302904710198,
+      "support": 740.0
+    },
+    "weighted avg": {
+      "precision": 0.5082383296353884,
+      "recall": 0.5054054054054054,
+      "f1-score": 0.5051752079231235,
+      "support": 740.0
+    }
+  },
+  "signature": {
+    "worker_sha256": "de56f05b26be0de4b75ac3ea8161eb8874f4da7f562f03eb17ad6d068b4d63da",
+    "transformation_loader_sha256": "7eea9c1ec7f491353f1f64408eb258e7782b1fe49200872f3d8c14cf192cbeb8",
+    "reference": {
+      "worker_sha256": "7eea9c1ec7f491353f1f64408eb258e7782b1fe49200872f3d8c14cf192cbeb8",
+      "helper_sha256": "c117f65e9460bccc4daeba0de9f3af4ee737e7ef65f57d39cca5a0910f8a3ece",
+      "caption_loader_sha256": "2436276fd51f42a0be511c2eb354782d192a39f653bcecf3ed0b3fb70df19244",
+      "reference": {
+        "worker_sha256": "02588b6fcd4bdbe21be4b17e9d60dcfcdebfbf0b97246056a88b4804febfb6e5",
+        "data_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+        "e5_sha256": "1f0d2b2f346071fa673701847af39e8a22faf9e6a98195734982cd71e99af374",
+        "bge_sha256": "c0d7d1fc9ac42988b0d107a694d7d3b355105f8640f776ace2617eed936495c4",
+        "clip_sha256": "d27cd5dbecfffba3a8bbb96037f3181da20f1c95eb246a7d38a4627a90599e5c",
+        "reference_verification_sha256": "0d91fcf3cc6f365b08547161657679f88ef7df18fe19176bc0a1f61499cd547a",
+        "grid": {
+          "fusion__e5_weight": [
+            0,
+            0.5,
+            1,
+            2
+          ],
+          "fusion__clip_weight": [
+            0,
+            0.5,
+            1,
+            2
+          ],
+          "clf__C": [
+            1,
+            10,
+            100
+          ],
+          "clf__gamma": [
+            "scale",
+            0.1,
+            1
+          ],
+          "clf__class_weight": [
+            null,
+            "balanced"
+          ]
+        },
+        "normalization": "StandardScaler fit per block, L2 per block, then weights",
+        "outer": "Task1 baseline stratified5 seed42",
+        "inner": "Task2 stratified3 seed42",
+        "selection_order": [
+          "description",
+          "source_reason",
+          "combined",
+          "description_reason",
+          "semantic_visual",
+          "weighted"
+        ],
+        "n_jobs": 1
+      },
+      "caption_signature": {
+        "worker_sha256": "2436276fd51f42a0be511c2eb354782d192a39f653bcecf3ed0b3fb70df19244",
+        "helper_sha256": "c117f65e9460bccc4daeba0de9f3af4ee737e7ef65f57d39cca5a0910f8a3ece",
+        "reference": {
+          "worker_sha256": "02588b6fcd4bdbe21be4b17e9d60dcfcdebfbf0b97246056a88b4804febfb6e5",
+          "data_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+          "e5_sha256": "1f0d2b2f346071fa673701847af39e8a22faf9e6a98195734982cd71e99af374",
+          "bge_sha256": "c0d7d1fc9ac42988b0d107a694d7d3b355105f8640f776ace2617eed936495c4",
+          "clip_sha256": "d27cd5dbecfffba3a8bbb96037f3181da20f1c95eb246a7d38a4627a90599e5c",
+          "reference_verification_sha256": "0d91fcf3cc6f365b08547161657679f88ef7df18fe19176bc0a1f61499cd547a",
+          "grid": {
+            "fusion__e5_weight": [
+              0,
+              0.5,
+              1,
+              2
+            ],
+            "fusion__clip_weight": [
+              0,
+              0.5,
+              1,
+              2
+            ],
+            "clf__C": [
+              1,
+              10,
+              100
+            ],
+            "clf__gamma": [
+              "scale",
+              0.1,
+              1
+            ],
+            "clf__class_weight": [
+              null,
+              "balanced"
+            ]
+          },
+          "normalization": "StandardScaler fit per block, L2 per block, then weights",
+          "outer": "Task1 baseline stratified5 seed42",
+          "inner": "Task2 stratified3 seed42",
+          "selection_order": [
+            "description",
+            "source_reason",
+            "combined",
+            "description_reason",
+            "semantic_visual",
+            "weighted"
+          ],
+          "n_jobs": 1
+        },
+        "embedding_verification_sha256": "52fb1fb55dc1579cc3350a3ad1ff157dfc91b6c1794e426d591dda38a331ce6d",
+        "embedding_meta_sha256": "61806569c9b78cee717d785bccc557dba5b73612d3d28fe8e4cdc2aaa58274de",
+        "features_sha256": "1a4ef596714c7371fb1c7190ff4649b9cae1c0a48343965bd670d29b720f8162",
+        "grid": [
+          {
+            "fusion__mode": [
+              "caption_only",
+              "caption_context_only"
+            ],
+            "clf__C": [
+              1,
+              10,
+              100
+            ],
+            "clf__gamma": [
+              "scale",
+              0.1,
+              1
+            ],
+            "clf__class_weight": [
+              null,
+              "balanced"
+            ]
+          },
+          {
+            "fusion__mode": [
+              "fusion_caption",
+              "fusion_context"
+            ],
+            "fusion__caption_weight": [
+              0,
+              0.5,
+              1,
+              2
+            ],
+            "fusion__e5_weight": [
+              0.5,
+              2
+            ],
+            "fusion__clip_weight": [
+              0.5,
+              1
+            ],
+            "clf__C": [
+              1,
+              10,
+              100
+            ],
+            "clf__gamma": [
+              "scale",
+              0.1,
+              1
+            ],
+            "clf__class_weight": [
+              null,
+              "balanced"
+            ]
+          }
+        ],
+        "outer": "Task1 baseline5 seed42",
+        "inner": "Task2 stratified3 seed42",
+        "normalization": "training-only per-block StandardScaler/L2 then weights",
+        "n_jobs": 1
+      },
+      "prior_verification_sha256": "6dd4b7b9cc8b4504d8fb6ae9d157eee33d1085f113c96a52f9dfdf30ae52e9fa",
+      "features_sha256": "8416a683e24df9b96ad6d56377a8bf9afcc062e55b16bcba1ca2130f41d113da",
+      "grid": {
+        "fusion__mode": [
+          "semantic",
+          "caption_fusion"
+        ],
+        "fusion__n_components": [
+          32,
+          64
+        ],
+        "clf__max_leaf_nodes": [
+          7,
+          15
+        ],
+        "clf__l2_regularization": [
+          1,
+          10
+        ],
+        "clf__max_iter": [
+          100,
+          300
+        ],
+        "clf__class_weight": [
+          null,
+          "balanced"
+        ]
+      },
+      "outer": "Task1 baseline5 seed42",
+      "inner": "Task2 stratified3 seed42",
+      "sklearn": "1.7.2",
+      "normalization": "training-only per-block StandardScaler/L2 then randomizedPCA",
+      "fixed": {
+        "pca_solver": "randomized",
+        "pca_iterated_power": 4,
+        "pca_power_normalizer": "QR",
+        "pca_whiten": false,
+        "lr": 0.1,
+        "min_samples_leaf": 10,
+        "max_bins": 63,
+        "seed": 42,
+        "early_stopping": false,
+        "threads": 1,
+        "search_processes": 4
+      }
+    },
+    "prior_verification_sha256": "28f3a4938be36f52b2930d7c3e031852b3108819c9e675c29a764c17d79e79e4",
+    "features_sha256": "8416a683e24df9b96ad6d56377a8bf9afcc062e55b16bcba1ca2130f41d113da",
+    "grid": {
+      "fusion__mode": [
+        "semantic",
+        "caption_fusion"
+      ],
+      "fusion__n_components": [
+        64
+      ],
+      "clf__alpha": [
+        0,
+        0.2
+      ],
+      "clf__weight_decay": [
+        0.01,
+        0.1
+      ],
+      "clf__class_weight": [
+        null,
+        "balanced"
+      ]
+    },
+    "outer": "Task1 baseline5 seed42",
+    "inner": "Task2 stratified3 seed42",
+    "sklearn": "1.7.2",
+    "torch": "2.14.1+cpu",
+    "fixed": {
+      "search_processes": 4,
+      "threads": 1,
+      "seed": 42,
+      "bottleneck": 32,
+      "epochs": 200,
+      "lr": 0.01,
+      "optimizer": "AdamW foreachFalse",
+      "normalization": "training-only StandardScaler/L2 sqrtD after BlockPCA64",
+      "early_stopping": false,
+      "dropout": false,
+      "encoder_training": false
+    }
+  },
+  "oof_sha256": "841ac582ff0297d161a14a5cc6879f723456cc4b5bf89532fdaf34b7aabe1217"
+}

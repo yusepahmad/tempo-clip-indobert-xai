@@ -1,0 +1,63 @@
+{
+  "schema": "tempo-micro-e14-deployment-v1",
+  "version": "micro-e14-qlora-v1",
+  "backend": "micro-e14-qlora",
+  "model": "Qwen/Qwen3-VL-8B-Instruct",
+  "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+  "cv_worker_sha256": "cb09acda21117f0acba38233fca382ec9916b08c5c73f297fa0f70c9469003ed",
+  "cv_protocol_sha256": "7b1eb1fdaf8547e842df793726e106b1d29b222b16ef3d9b672388d9d46ec65e",
+  "dataset_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "train_samples": 740,
+  "epochs": 3,
+  "seed_initial": 43,
+  "seed_refit": 42001,
+  "epoch_rule": "median of five inner-validation-selected epochs; no outer-score selection",
+  "inner_selected_epochs": [
+    3,
+    1,
+    3,
+    2,
+    3
+  ],
+  "evaluation": "Not Evaluated: all-data deployment refit is not an OOF model",
+  "definitions": {
+    "task1_issue": {
+      "corruption_and_bribery": "korupsi, suap, gratifikasi, atau penyalahgunaan dana dan jabatan",
+      "economy_business_and_state_enterprise": "ekonomi, bisnis, keuangan, perusahaan, BUMN, pajak, atau perdagangan",
+      "election_and_political_competition": "pemilu, pilkada, kampanye, koalisi, kandidat, atau kompetisi politik",
+      "environment_and_natural_resources": "lingkungan, energi, tambang, hutan, lahan, air, atau sumber daya alam",
+      "human_rights_and_social_conflict": "hak asasi, diskriminasi, kekerasan sosial, buruh, agama, atau konflik masyarakat",
+      "law_and_justice": "hukum, pengadilan, polisi, kejaksaan, penyidikan, atau keadilan",
+      "other_issue": "isu utama di luar sembilan kategori lain",
+      "power_and_governance": "kekuasaan, pemerintahan, kabinet, birokrasi, kebijakan, atau kepemimpinan",
+      "public_policy_health_and_disaster": "kesehatan, pendidikan, layanan publik, bencana, pandemi, atau kebijakan sosial",
+      "security_defense_and_terrorism": "militer, pertahanan, keamanan nasional, intelijen, terorisme, atau perang"
+    },
+    "task2_domain_sumber": {
+      "BENCANA_JERAT": "ancaman, bencana, perangkap, jerat, tekanan, atau keadaan terjepit sebagai kiasan",
+      "HEWAN_TUBUH": "hewan, anatomi, penyakit, deformasi, atau perilaku biologis sebagai kiasan",
+      "KONSUMSI_TRANSAKSI": "makanan, jamuan, selera, jual-beli, uang, atau pertukaran nilai sebagai kiasan",
+      "LAINNYA": "metafora dengan domain sumber selain lima domain metaforis yang disebut",
+      "MESIN_INFRASTRUKTUR": "mesin, alat, kendaraan, bangunan, wadah, atau mekanisme buatan sebagai kiasan",
+      "NON_METAFORA": "adegan literal tanpa pemetaan metaforis",
+      "PERMAINAN_KONTES": "permainan, pertandingan, kompetisi, pertunjukan, atau seni sebagai kiasan"
+    },
+    "task3_primary_entity_type": {
+      "business": "perusahaan swasta, pengusaha, atau organisasi bisnis",
+      "civil_society_or_media": "warga, aktivis, organisasi sipil, media, jurnalis, atau kelompok masyarakat",
+      "government": "pemerintah, presiden sebagai institusi eksekutif, menteri, kabinet, birokrasi, atau lembaga negara umum",
+      "individual": "satu orang tertentu sebagai sasaran utama",
+      "judiciary_or_law_enforcement": "polisi, jaksa, hakim, pengadilan, KPK, atau lembaga penegak hukum",
+      "legislature": "DPR, parlemen, legislator, atau lembaga legislatif",
+      "multiple_or_other": "beberapa tipe sasaran sekaligus atau sasaran yang tidak termasuk kategori lain",
+      "political_party": "partai politik atau organisasi politik partisan"
+    }
+  },
+  "sources": {
+    "fold1/result.json": "d9d6a4032868c554d60bc3bc2575e2ff7b7817d288f6c02052691a536cf0910e",
+    "fold2/result.json": "0ae7e4ad67c28dae7b0fc35e09b9facc9767935a755959432995f14b59db21b5",
+    "fold3/result.json": "81567749c2311174724f7f1dd8769eeef53612c84e41b66487d449b75ccb64f1",
+    "fold4/result.json": "6f4d37d18683f3d7324a1ca02f2492b4eaadf460ffa2167c60ceb80ba8971a96",
+    "fold5/result.json": "c62bc4f35cd06f98141da3bf27feb5515b8ea0283c8dd12068c46c65466fa925"
+  }
+}

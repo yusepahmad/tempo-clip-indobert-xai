@@ -1,0 +1,87 @@
+{
+  "index": 737,
+  "sample_id": "TMP-30C62860BAA1",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "489f01ab9db09cb8e086dece7eff57f37dd81838e75b27bf311c3bca7c32eb40",
+  "image_sha256": "30c62860baa147068bc4bc07e6ced231105dc336e8d1cd7d0617da4d451d773e",
+  "transmitted_image_sha256": "e816ca8dc45015aed57b68e6142bab62b218cbec4a82778c8eae14637daf9d38",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0690595,
+      "total": 10,
+      "remaining": 0.9309405000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.069059499999995,
+      "total": 100,
+      "remaining": 90.9309405,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2031240491196513,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"venetian blinds\",\n  \"source_properties\": \"horizontal slats that can be pried apart to peer through narrow openings\",\n  \"target_situation\": \"a climate of persistent repression and surveillance in Indonesia 2026\",\n  \"mapping\": \"prying the slats open represents an attempt to see or expose hidden truths despite restrictive barriers\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "baDLar-KC7ye_uMPo--KmQ4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 653500,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1307,
+      "total_backend_latency_ms": 1762,
+      "total_tokens": 1400
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.069992,
+      "total": 10,
+      "remaining": 0.9300080000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.069992,
+      "total": 100,
+      "remaining": 90.930008,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009325,
+  "fields": {
+    "source_object": "venetian blinds",
+    "source_properties": "horizontal slats that can be pried apart to peer through narrow openings",
+    "target_situation": "a climate of persistent repression and surveillance in Indonesia 2026",
+    "mapping": "prying the slats open represents an attempt to see or expose hidden truths despite restrictive barriers",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: venetian blinds\nsource_properties: horizontal slats that can be pried apart to peer through narrow openings\ntarget_situation: a climate of persistent repression and surveillance in Indonesia 2026\nmapping: prying the slats open represents an attempt to see or expose hidden truths despite restrictive barriers\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 174,
+  "sample_id": "TMP-D1399DF42065",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c12c6ce84cd27351a820570a035571bd6ab5a932da9c108f891707d13621fe0e",
+  "image_sha256": "d1399df420657c1d20b035745ba68c35143fb3f4ea8ab27e31f328ba75be5749",
+  "transmitted_image_sha256": "a6640b835ff67450170224e167241232b4106c06720320e9bdc9909c0fc75d76",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2659245,
+      "total": 10,
+      "remaining": 1.7340754999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.265924499999997,
+      "total": 100,
+      "remaining": 91.7340755,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0251128510572016,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"ruined Greek-style architectural columns\",\n  \"source_properties\": \"cracked, fragmented, and crumbling structural pillars\",\n  \"target_situation\": \"The alleged erosion of Constitutional Court integrity\",\n  \"mapping\": \"Broken columns represent the collapsing foundations of democratic institutions and law.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "tZHLaoyXBd-V_uMPmIWFyQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 80,
+      "cost": {
+        "input_tokens_cost_nanodollars": 691000,
+        "output_tokens_cost_nanodollars": 240000
+      },
+      "prompt_tokens": 1382,
+      "total_backend_latency_ms": 1552,
+      "total_tokens": 1462
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2668555,
+      "total": 10,
+      "remaining": 1.7331444999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.266855500000005,
+      "total": 100,
+      "remaining": 91.7331445,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000931,
+  "fields": {
+    "source_object": "ruined Greek-style architectural columns",
+    "source_properties": "cracked, fragmented, and crumbling structural pillars",
+    "target_situation": "The alleged erosion of Constitutional Court integrity",
+    "mapping": "Broken columns represent the collapsing foundations of democratic institutions and law.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: ruined Greek-style architectural columns\nsource_properties: cracked, fragmented, and crumbling structural pillars\ntarget_situation: The alleged erosion of Constitutional Court integrity\nmapping: Broken columns represent the collapsing foundations of democratic institutions and law.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

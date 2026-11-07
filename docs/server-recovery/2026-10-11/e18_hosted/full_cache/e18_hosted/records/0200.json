@@ -1,0 +1,83 @@
+{
+  "index": 200,
+  "sample_id": "TMP-C4BBCF7A620F",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "024799dcca6de3d00256d036cf4bfbdec8e2624ef2e37b63e1fd13f38fd957ea",
+  "image_sha256": "c4bbcf7a620ffdd32d5c3ac36eb91bfddd8ec8590dd69a8c4affc25f16d5cd4a",
+  "transmitted_image_sha256": "e9a7f9fafdfc49fbde551b5817df549f2a096f365c50001abfee2073218b66ce",
+  "image_size": [
+    284,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.737088,
+      "total": 10,
+      "remaining": 9.262912,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.737088,
+      "total": 100,
+      "remaining": 99.262912,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.640335805015638,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi yang diberikan, sumber metafora yang digunakan adalah **mesin penghancur** yang berfungsi sebagai kiasan untuk proses pemusnahan buku. Dalam klasifikasi yang tersedia, mesin atau alat mekanis termasuk ke dalam domain:\n\n**E: MESIN_INFRASTRUKTUR**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ZNPKatu1Bbye_uMPo--KmQ4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1605,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1541
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 721000,
+        "output_tokens_cost_nanodollars": 4815000
+      },
+      "prompt_tokens": 1442,
+      "total_backend_latency_ms": 8401,
+      "total_tokens": 3047
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.7426239999999993,
+      "total": 10,
+      "remaining": 9.257376,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.7426240000000064,
+      "total": 100,
+      "remaining": 99.257376,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.005536
+}

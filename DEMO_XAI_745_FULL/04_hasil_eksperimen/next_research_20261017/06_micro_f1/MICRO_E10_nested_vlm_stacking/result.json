@@ -1,0 +1,436 @@
+{
+  "schema": "tempo-micro-e10-v1",
+  "status": "complete",
+  "model_contract": "one nested stack over classic/Qwen/BGE/caption/CLIP views with three task heads",
+  "leakage_control": "all base cross-fit and refit models use outer-training only",
+  "micro_f1": {
+    "task1_issue": 0.581081081081081,
+    "task2_domain_sumber": 0.5594594594594594,
+    "task3_primary_entity_type": 0.527027027027027
+  },
+  "macro_f1_diagnostic": {
+    "task1_issue": 0.5102572963699972,
+    "task2_domain_sumber": 0.5025275194635942,
+    "task3_primary_entity_type": 0.2896410984835537
+  },
+  "minimum_micro_f1": 0.527027027027027,
+  "all_tasks_at_least_0_70": false,
+  "fold_details": [
+    {
+      "fold": 1,
+      "meta_dimensions": 75,
+      "tasks": {
+        "task1_issue": {
+          "selected": {
+            "name": "extra",
+            "inner_micro_f1": 0.5642037977063358
+          },
+          "candidates": [
+            {
+              "name": "lr0.03",
+              "inner_micro_f1": 0.41044112871524036
+            },
+            {
+              "name": "lr0.1",
+              "inner_micro_f1": 0.45269103898545526
+            },
+            {
+              "name": "lr1.0",
+              "inner_micro_f1": 0.48985626142986555
+            },
+            {
+              "name": "extra",
+              "inner_micro_f1": 0.5642037977063358
+            }
+          ],
+          "outer_micro_f1": 0.5878378378378378
+        },
+        "task2_domain_sumber": {
+          "selected": {
+            "name": "extra",
+            "inner_micro_f1": 0.5405578628928883
+          },
+          "candidates": [
+            {
+              "name": "lr0.03",
+              "inner_micro_f1": 0.3091404741150934
+            },
+            {
+              "name": "lr0.1",
+              "inner_micro_f1": 0.45612640790305764
+            },
+            {
+              "name": "lr1.0",
+              "inner_micro_f1": 0.5067681895093062
+            },
+            {
+              "name": "extra",
+              "inner_micro_f1": 0.5405578628928883
+            }
+          ],
+          "outer_micro_f1": 0.6081081081081081
+        },
+        "task3_primary_entity_type": {
+          "selected": {
+            "name": "extra",
+            "inner_micro_f1": 0.5101437385701345
+          },
+          "candidates": [
+            {
+              "name": "lr0.03",
+              "inner_micro_f1": 0.41891845698952296
+            },
+            {
+              "name": "lr0.1",
+              "inner_micro_f1": 0.43583038506896377
+            },
+            {
+              "name": "lr1.0",
+              "inner_micro_f1": 0.48145584440000694
+            },
+            {
+              "name": "extra",
+              "inner_micro_f1": 0.5101437385701345
+            }
+          ],
+          "outer_micro_f1": 0.4797297297297297
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "meta_dimensions": 75,
+      "tasks": {
+        "task1_issue": {
+          "selected": {
+            "name": "extra",
+            "inner_micro_f1": 0.5675280726042148
+          },
+          "candidates": [
+            {
+              "name": "lr0.03",
+              "inner_micro_f1": 0.41892700268334787
+            },
+            {
+              "name": "lr0.1",
+              "inner_micro_f1": 0.45780136389273446
+            },
+            {
+              "name": "lr1.0",
+              "inner_micro_f1": 0.51516006084534
+            },
+            {
+              "name": "extra",
+              "inner_micro_f1": 0.5675280726042148
+            }
+          ],
+          "outer_micro_f1": 0.5472972972972973
+        },
+        "task2_domain_sumber": {
+          "selected": {
+            "name": "extra",
+            "inner_micro_f1": 0.5389427267599856
+          },
+          "candidates": [
+            {
+              "name": "lr0.03",
+              "inner_micro_f1": 0.31081543010477025
+            },
+            {
+              "name": "lr0.1",
+              "inner_micro_f1": 0.4442820762617717
+            },
+            {
+              "name": "lr1.0",
+              "inner_micro_f1": 0.5220478900681945
+            },
+            {
+              "name": "extra",
+              "inner_micro_f1": 0.5389427267599856
+            }
+          ],
+          "outer_micro_f1": 0.5472972972972973
+        },
+        "task3_primary_entity_type": {
+          "selected": {
+            "name": "extra",
+            "inner_micro_f1": 0.5084944196619324
+          },
+          "candidates": [
+            {
+              "name": "lr0.03",
+              "inner_micro_f1": 0.4222940060503512
+            },
+            {
+              "name": "lr0.1",
+              "inner_micro_f1": 0.432420653232836
+            },
+            {
+              "name": "lr1.0",
+              "inner_micro_f1": 0.46960296706489596
+            },
+            {
+              "name": "extra",
+              "inner_micro_f1": 0.5084944196619324
+            }
+          ],
+          "outer_micro_f1": 0.5743243243243243
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "meta_dimensions": 75,
+      "tasks": {
+        "task1_issue": {
+          "selected": {
+            "name": "extra",
+            "inner_micro_f1": 0.5388658155155617
+          },
+          "candidates": [
+            {
+              "name": "lr0.03",
+              "inner_micro_f1": 0.40034011861423036
+            },
+            {
+              "name": "lr0.1",
+              "inner_micro_f1": 0.43918029704831735
+            },
+            {
+              "name": "lr1.0",
+              "inner_micro_f1": 0.4915654001948418
+            },
+            {
+              "name": "extra",
+              "inner_micro_f1": 0.5388658155155617
+            }
+          ],
+          "outer_micro_f1": 0.6081081081081081
+        },
+        "task2_domain_sumber": {
+          "selected": {
+            "name": "extra",
+            "inner_micro_f1": 0.5506759643815481
+          },
+          "candidates": [
+            {
+              "name": "lr0.03",
+              "inner_micro_f1": 0.31927566699140303
+            },
+            {
+              "name": "lr0.1",
+              "inner_micro_f1": 0.43919738843596706
+            },
+            {
+              "name": "lr1.0",
+              "inner_micro_f1": 0.5388572698217368
+            },
+            {
+              "name": "extra",
+              "inner_micro_f1": 0.5506759643815481
+            }
+          ],
+          "outer_micro_f1": 0.5202702702702703
+        },
+        "task3_primary_entity_type": {
+          "selected": {
+            "name": "extra",
+            "inner_micro_f1": 0.5388572698217368
+          },
+          "candidates": [
+            {
+              "name": "lr0.03",
+              "inner_micro_f1": 0.44088089011946874
+            },
+            {
+              "name": "lr0.1",
+              "inner_micro_f1": 0.4526824932916303
+            },
+            {
+              "name": "lr1.0",
+              "inner_micro_f1": 0.5185697926814679
+            },
+            {
+              "name": "extra",
+              "inner_micro_f1": 0.5388572698217368
+            }
+          ],
+          "outer_micro_f1": 0.4797297297297297
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "meta_dimensions": 75,
+      "tasks": {
+        "task1_issue": {
+          "selected": {
+            "name": "extra",
+            "inner_micro_f1": 0.5608282486455075
+          },
+          "candidates": [
+            {
+              "name": "lr0.03",
+              "inner_micro_f1": 0.3901963800440958
+            },
+            {
+              "name": "lr0.1",
+              "inner_micro_f1": 0.4560494966586337
+            },
+            {
+              "name": "lr1.0",
+              "inner_micro_f1": 0.5202703857526193
+            },
+            {
+              "name": "extra",
+              "inner_micro_f1": 0.5608282486455075
+            }
+          ],
+          "outer_micro_f1": 0.5743243243243243
+        },
+        "task2_domain_sumber": {
+          "selected": {
+            "name": "extra",
+            "inner_micro_f1": 0.5438906834845921
+          },
+          "candidates": [
+            {
+              "name": "lr0.03",
+              "inner_micro_f1": 0.29223709172947754
+            },
+            {
+              "name": "lr0.1",
+              "inner_micro_f1": 0.4442051650173478
+            },
+            {
+              "name": "lr1.0",
+              "inner_micro_f1": 0.538840178434087
+            },
+            {
+              "name": "extra",
+              "inner_micro_f1": 0.5438906834845921
+            }
+          ],
+          "outer_micro_f1": 0.5472972972972973
+        },
+        "task3_primary_entity_type": {
+          "selected": {
+            "name": "extra",
+            "inner_micro_f1": 0.5135363790186126
+          },
+          "candidates": [
+            {
+              "name": "lr0.03",
+              "inner_micro_f1": 0.42061050436684955
+            },
+            {
+              "name": "lr0.1",
+              "inner_micro_f1": 0.43753952383394007
+            },
+            {
+              "name": "lr1.0",
+              "inner_micro_f1": 0.5067254610401819
+            },
+            {
+              "name": "extra",
+              "inner_micro_f1": 0.5135363790186126
+            }
+          ],
+          "outer_micro_f1": 0.5472972972972973
+        }
+      }
+    },
+    {
+      "fold": 5,
+      "meta_dimensions": 75,
+      "tasks": {
+        "task1_issue": {
+          "selected": {
+            "name": "extra",
+            "inner_micro_f1": 0.5844827291527799
+          },
+          "candidates": [
+            {
+              "name": "lr0.03",
+              "inner_micro_f1": 0.40205780307303146
+            },
+            {
+              "name": "lr0.1",
+              "inner_micro_f1": 0.44932403561845186
+            },
+            {
+              "name": "lr1.0",
+              "inner_micro_f1": 0.5185868840691176
+            },
+            {
+              "name": "extra",
+              "inner_micro_f1": 0.5844827291527799
+            }
+          ],
+          "outer_micro_f1": 0.5878378378378378
+        },
+        "task2_domain_sumber": {
+          "selected": {
+            "name": "extra",
+            "inner_micro_f1": 0.5591447469620059
+          },
+          "candidates": [
+            {
+              "name": "lr0.03",
+              "inner_micro_f1": 0.2973132338614572
+            },
+            {
+              "name": "lr0.1",
+              "inner_micro_f1": 0.4780375668700542
+            },
+            {
+              "name": "lr1.0",
+              "inner_micro_f1": 0.5304226700165786
+            },
+            {
+              "name": "extra",
+              "inner_micro_f1": 0.5591447469620059
+            }
+          ],
+          "outer_micro_f1": 0.5743243243243243
+        },
+        "task3_primary_entity_type": {
+          "selected": {
+            "name": "extra",
+            "inner_micro_f1": 0.5134936505494881
+          },
+          "candidates": [
+            {
+              "name": "lr0.03",
+              "inner_micro_f1": 0.42567810080500434
+            },
+            {
+              "name": "lr0.1",
+              "inner_micro_f1": 0.430754242936984
+            },
+            {
+              "name": "lr1.0",
+              "inner_micro_f1": 0.47296142473807445
+            },
+            {
+              "name": "extra",
+              "inner_micro_f1": 0.5134936505494881
+            }
+          ],
+          "outer_micro_f1": 0.5540540540540541
+        }
+      }
+    }
+  ],
+  "dataset_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "feature_sha256": {
+    "DEMO_XAI_745_FULL/04_hasil_eksperimen/e41_cached_tail/cache/front_cache.npz": "312a130025a20c18f38668293534528fb82072a139c0c1ca41ad8abd23559cd4",
+    "DEMO_XAI_745_FULL/04_hasil_eksperimen/next_research_20261017/01_model_comparison/M02_siglip2_indobert/features.npz": "71cd0cfe78db5ac2392aa69749b8946da27d7ae9f6f7d0533e49e0f9c18d6fdb",
+    "docs/server-recovery/2026-10-11/e15_vlm_features/embeddings.npz": "fa3e3d39b1bbb0b0ef447cf3efafa28e72d1924dd8a2151aec775b35ede11685",
+    "docs/server-recovery/2026-10-11/e22_caption/full_embeddings/embeddings.npz": "5c192df7f4ec613bb476397505bf1d0ea10db850e90ca0849c97d5e17f8e69fe",
+    "docs/server-recovery/2026-10-10/e13_bge_m3/e13_bge_m3/embeddings.npz": "c0d7d1fc9ac42988b0d107a694d7d3b355105f8640f776ace2617eed936495c4",
+    "DEMO_XAI_745_FULL/03_data/fitur_clip_indobert_740.npz": "d27cd5dbecfffba3a8bbb96037f3181da20f1c95eb246a7d38a4627a90599e5c"
+  },
+  "seconds": 247.419606924057,
+  "predictions_sha256": "deceb803d35180efe4b5254cd59202dc2976816d6f20a87a788c5b4c80194ed2"
+}

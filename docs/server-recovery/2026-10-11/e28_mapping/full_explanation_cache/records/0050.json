@@ -1,0 +1,87 @@
+{
+  "index": 50,
+  "sample_id": "TMP-DDC8F7C43669",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b2c59f3ec435654487fc6d6ee9746413511e75fa5fd11afc252ad22e39d5fe47",
+  "image_sha256": "ddc8f7c43669d7c41b98d2514439a2429c50e46050cf69c20bddf95a3cba9a6e",
+  "transmitted_image_sha256": "7a3a83985446ddcc027f9c91ae1f42ef54d9e39ec1a6a5354bc107e8d2ea223b",
+  "image_size": [
+    300,
+    393
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.07995,
+      "total": 10,
+      "remaining": 1.9200499999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.079949999999997,
+      "total": 100,
+      "remaining": 91.92005,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.7639035270549357,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"matador\", \"source_properties\": \"wielding a green cape to distract or direct a charging bull's aggression\", \"target_situation\": \"Akbar Tanjung navigating a political crisis or legal challenge\", \"mapping\": \"Tanjung uses a specific tactic (symbolized by the 'Raudatul Jannah' cloth) to deflect institutional or public pressure, much like a matador maneuvers a bull.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "dY7LatW2MITn_uMP29-q-A8",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 654500,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1309,
+      "total_backend_latency_ms": 1489,
+      "total_tokens": 1406
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0808955,
+      "total": 10,
+      "remaining": 1.9191044999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.080895499999997,
+      "total": 100,
+      "remaining": 91.9191045,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009455,
+  "fields": {
+    "source_object": "matador",
+    "source_properties": "wielding a green cape to distract or direct a charging bull's aggression",
+    "target_situation": "Akbar Tanjung navigating a political crisis or legal challenge",
+    "mapping": "Tanjung uses a specific tactic (symbolized by the 'Raudatul Jannah' cloth) to deflect institutional or public pressure, much like a matador maneuvers a bull.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: matador\nsource_properties: wielding a green cape to distract or direct a charging bull's aggression\ntarget_situation: Akbar Tanjung navigating a political crisis or legal challenge\nmapping: Tanjung uses a specific tactic (symbolized by the 'Raudatul Jannah' cloth) to deflect institutional or public pressure, much like a matador maneuvers a bull.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

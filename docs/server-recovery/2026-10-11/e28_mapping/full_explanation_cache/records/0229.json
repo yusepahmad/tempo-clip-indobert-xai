@@ -1,0 +1,87 @@
+{
+  "index": 229,
+  "sample_id": "TMP-6EE27BE05B1F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "4977fbd46bf1a44a24f817a49f6bf9ff6ae52d8b9c14c3fd21e0c1e3b7298048",
+  "image_sha256": "6ee27be05b1f8ba95e381ca827030e23e2089604aa4ddb7a93e2d543c862a736",
+  "transmitted_image_sha256": "7a20f54008193e648d4ba1b0ed71f0bd1040c18adc389a726853540f944528be",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.344912,
+      "total": 10,
+      "remaining": 1.6550879999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.344911999999994,
+      "total": 100,
+      "remaining": 91.655088,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.000290076714009,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"cow\", \"source_properties\": \"black and white markings forming a political logo, holding cash in its mouth\", \"target_situation\": \"a bribery scandal involving beef imports and a political party\", \"mapping\": \"The cow represents the beef industry; its markings link it to a specific political party, while the cash symbolizes corruption or illegal payoffs.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "GpPLao-NA5zd_uMP7MbkuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 83,
+      "cost": {
+        "input_tokens_cost_nanodollars": 655500,
+        "output_tokens_cost_nanodollars": 249000
+      },
+      "prompt_tokens": 1311,
+      "total_backend_latency_ms": 1635,
+      "total_tokens": 1394
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3458165,
+      "total": 10,
+      "remaining": 1.6541835000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.345816499999998,
+      "total": 100,
+      "remaining": 91.6541835,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009045,
+  "fields": {
+    "source_object": "cow",
+    "source_properties": "black and white markings forming a political logo, holding cash in its mouth",
+    "target_situation": "a bribery scandal involving beef imports and a political party",
+    "mapping": "The cow represents the beef industry; its markings link it to a specific political party, while the cash symbolizes corruption or illegal payoffs.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: cow\nsource_properties: black and white markings forming a political logo, holding cash in its mouth\ntarget_situation: a bribery scandal involving beef imports and a political party\nmapping: The cow represents the beef industry; its markings link it to a specific political party, while the cash symbolizes corruption or illegal payoffs.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

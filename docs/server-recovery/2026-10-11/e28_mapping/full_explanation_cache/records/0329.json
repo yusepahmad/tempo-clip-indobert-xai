@@ -1,0 +1,87 @@
+{
+  "index": 329,
+  "sample_id": "TMP-A8B3F7BD8B56",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "83a8ec9c370da13a607beff9e3e69c241e74cf923af97087425aa0e810638ef3",
+  "image_sha256": "a8b3f7bd8b56827982839bfefabd64b44731ae6cd0ddbec311d052713038c318",
+  "transmitted_image_sha256": "09b87d17a34d073c6d3127164c38608bff6446e3fc13dd3289948cdbdfa809ba",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.489244,
+      "total": 10,
+      "remaining": 1.5107560000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.489244,
+      "total": 100,
+      "remaining": 91.510756,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.8665062501095235,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"smoke or haze\", \"source_properties\": \"obscuring vision, thick, shifting, difficult to navigate, and pervasive\", \"target_situation\": \"governmental bureaucracy and legal enforcement during recurring crises\", \"mapping\": \"The haze symbolizes a lack of transparency and accountability where officials hide behind obfuscation and blame-shifting, making progress difficult to see.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "vpXLavf0F8fR_uMPxMva8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 83,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671500,
+        "output_tokens_cost_nanodollars": 249000
+      },
+      "prompt_tokens": 1343,
+      "total_backend_latency_ms": 1548,
+      "total_tokens": 1426
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4901645,
+      "total": 10,
+      "remaining": 1.5098354999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.490164500000006,
+      "total": 100,
+      "remaining": 91.5098355,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009205,
+  "fields": {
+    "source_object": "smoke or haze",
+    "source_properties": "obscuring vision, thick, shifting, difficult to navigate, and pervasive",
+    "target_situation": "governmental bureaucracy and legal enforcement during recurring crises",
+    "mapping": "The haze symbolizes a lack of transparency and accountability where officials hide behind obfuscation and blame-shifting, making progress difficult to see.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: smoke or haze\nsource_properties: obscuring vision, thick, shifting, difficult to navigate, and pervasive\ntarget_situation: governmental bureaucracy and legal enforcement during recurring crises\nmapping: The haze symbolizes a lack of transparency and accountability where officials hide behind obfuscation and blame-shifting, making progress difficult to see.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

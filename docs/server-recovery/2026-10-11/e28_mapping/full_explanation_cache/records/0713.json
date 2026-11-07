@@ -1,0 +1,87 @@
+{
+  "index": 713,
+  "sample_id": "TMP-096E9CDC66C8",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "cdcdfa78d4fb253dc7aa738e16ce44bd9357acdd155a15d345cac9d38c119fc3",
+  "image_sha256": "096e9cdc66c842f76822cd737215af8fe608877620ef22a52555c546fab30572",
+  "transmitted_image_sha256": "806bb74261b5c70ed7744c67b3b3b7d11011a23065ad1ad11e61e561526da449",
+  "image_size": [
+    581,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0340435,
+      "total": 10,
+      "remaining": 0.9659565000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.034043499999996,
+      "total": 100,
+      "remaining": 90.9659565,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.791135075967759,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"tentacles\", \"source_properties\": \"long, reaching appendages often associated with grasping or controlling from a distance\", \"target_situation\": \"Indonesian business and political figures controlling gambling operations in Cambodia targeting Indonesian citizens\", \"mapping\": \"The term 'tentakel' (tentacles) in the headline analogizes the far-reaching influence and control these figures exert across borders into the gambling industry.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "z5_Lav3kJPGc_uMPhrzdkQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680000,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1360,
+      "total_backend_latency_ms": 1665,
+      "total_tokens": 1453
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.035002500000001,
+      "total": 10,
+      "remaining": 0.9649974999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.035002500000004,
+      "total": 100,
+      "remaining": 90.9649975,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000959,
+  "fields": {
+    "source_object": "tentacles",
+    "source_properties": "long, reaching appendages often associated with grasping or controlling from a distance",
+    "target_situation": "Indonesian business and political figures controlling gambling operations in Cambodia targeting Indonesian citizens",
+    "mapping": "The term 'tentakel' (tentacles) in the headline analogizes the far-reaching influence and control these figures exert across borders into the gambling industry.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: tentacles\nsource_properties: long, reaching appendages often associated with grasping or controlling from a distance\ntarget_situation: Indonesian business and political figures controlling gambling operations in Cambodia targeting Indonesian citizens\nmapping: The term 'tentakel' (tentacles) in the headline analogizes the far-reaching influence and control these figures exert across borders into the gambling industry.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

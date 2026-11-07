@@ -1,0 +1,87 @@
+{
+  "index": 333,
+  "sample_id": "TMP-77A5A0AE79DA",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0dc3d666f4ce60884c0af747b686788ec713fa95613637ed28b7c176cee7bd2c",
+  "image_sha256": "77a5a0ae79da9088f31e3f1efcc653f717a5169b23ef0a977f8e0358be2cb2a4",
+  "transmitted_image_sha256": "e9174573265bbcf98ec57e8a67fe055195ea79c61881dd324a067390e7ee31bc",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.493083,
+      "total": 10,
+      "remaining": 1.5069169999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.493082999999999,
+      "total": 100,
+      "remaining": 91.506917,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.959519663825631,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"microphone\",\n  \"source_properties\": \"an amplification tool that projects sound to a large audience\",\n  \"target_situation\": \"Bung Tomo's leadership during the Battle of Surabaya\",\n  \"mapping\": \"The microphone projects his voice, amplifying his revolutionary influence over the masses.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "0pXLasDZE5-d_uMPlqrYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 82,
+      "cost": {
+        "input_tokens_cost_nanodollars": 659000,
+        "output_tokens_cost_nanodollars": 246000
+      },
+      "prompt_tokens": 1318,
+      "total_backend_latency_ms": 2576,
+      "total_tokens": 1400
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.493988,
+      "total": 10,
+      "remaining": 1.5060120000000001,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.493988000000002,
+      "total": 100,
+      "remaining": 91.506012,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000905,
+  "fields": {
+    "source_object": "microphone",
+    "source_properties": "an amplification tool that projects sound to a large audience",
+    "target_situation": "Bung Tomo's leadership during the Battle of Surabaya",
+    "mapping": "The microphone projects his voice, amplifying his revolutionary influence over the masses.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: microphone\nsource_properties: an amplification tool that projects sound to a large audience\ntarget_situation: Bung Tomo's leadership during the Battle of Surabaya\nmapping: The microphone projects his voice, amplifying his revolutionary influence over the masses.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,90 @@
+{
+  "index": 135,
+  "sample_id": "TMP-29B6EFB92183",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e86f0d155936074619abad8afbecf5323505936701bcdbe12d6491a0ac3ba310",
+  "image_sha256": "29b6efb921835b31c2b977f2f78a954c27493e654b2062837e5ea2bed82df297",
+  "transmitted_image_sha256": "e3e2888a8a83714f0ae58420e10e4f174b29ecb77a2dfee5e6a5c176979a93fb",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.211223,
+      "total": 10,
+      "remaining": 1.7887769999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.211223000000004,
+      "total": 100,
+      "remaining": 91.788777,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.665361377876252,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A shroud or makeshift stretcher\",\n  \"source_properties\": \"A flexible fabric being pulled in opposite directions by two competing forces.\",\n  \"target_situation\": \"The capture of fugitive Santoso by both military and police forces.\",\n  \"mapping\": \"The physical tug-of-war symbolizes the institutional rivalry and competition for credit between the army and police.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "tJDLavadCr7i_uMPwfDU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1116,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1021
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 663000,
+        "output_tokens_cost_nanodollars": 3348000
+      },
+      "prompt_tokens": 1326,
+      "total_backend_latency_ms": 6119,
+      "total_tokens": 2442
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.215234,
+      "total": 10,
+      "remaining": 1.7847659999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.215233999999995,
+      "total": 100,
+      "remaining": 91.784766,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.004011,
+  "fields": {
+    "source_object": "A shroud or makeshift stretcher",
+    "source_properties": "A flexible fabric being pulled in opposite directions by two competing forces.",
+    "target_situation": "The capture of fugitive Santoso by both military and police forces.",
+    "mapping": "The physical tug-of-war symbolizes the institutional rivalry and competition for credit between the army and police.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A shroud or makeshift stretcher\nsource_properties: A flexible fabric being pulled in opposite directions by two competing forces.\ntarget_situation: The capture of fugitive Santoso by both military and police forces.\nmapping: The physical tug-of-war symbolizes the institutional rivalry and competition for credit between the army and police.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

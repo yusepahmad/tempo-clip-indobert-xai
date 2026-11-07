@@ -1,0 +1,87 @@
+{
+  "index": 295,
+  "sample_id": "TMP-4AFB34598385",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5804eb6ef18b0f0d5713d06d826ba816c730db0fb445318277bc9df579042223",
+  "image_sha256": "4afb34598385633db5fd5f5d41909579ba68426ed41c68ba6589724c72ac6811",
+  "transmitted_image_sha256": "14ab4dbb993663028d2bcc4721538c3df91d871ef5ae89ca464a25936bfe68c0",
+  "image_size": [
+    472,
+    618
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.446709,
+      "total": 10,
+      "remaining": 1.5532909999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.446708999999998,
+      "total": 100,
+      "remaining": 91.553291,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3821091689169407,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"carpentry and raw timber\", \"source_properties\": \"Processing unfinished wood into useful structures through manual labor and physical stamina.\", \"target_situation\": \"The 2014 inauguration of the Indonesian President and Vice President.\", \"mapping\": \"Just as a carpenter transforms logs into products, the new administration's slogan 'Work, Work, Work' frames governance as hardworking, practical construction of the nation.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "4JTLauO5N77i_uMPz_DU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 96,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661000,
+        "output_tokens_cost_nanodollars": 288000
+      },
+      "prompt_tokens": 1322,
+      "total_backend_latency_ms": 1506,
+      "total_tokens": 1418
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.447658,
+      "total": 10,
+      "remaining": 1.5523419999999994,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.447658000000004,
+      "total": 100,
+      "remaining": 91.552342,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000949,
+  "fields": {
+    "source_object": "carpentry and raw timber",
+    "source_properties": "Processing unfinished wood into useful structures through manual labor and physical stamina.",
+    "target_situation": "The 2014 inauguration of the Indonesian President and Vice President.",
+    "mapping": "Just as a carpenter transforms logs into products, the new administration's slogan 'Work, Work, Work' frames governance as hardworking, practical construction of the nation.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: carpentry and raw timber\nsource_properties: Processing unfinished wood into useful structures through manual labor and physical stamina.\ntarget_situation: The 2014 inauguration of the Indonesian President and Vice President.\nmapping: Just as a carpenter transforms logs into products, the new administration's slogan 'Work, Work, Work' frames governance as hardworking, practical construction of the nation.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

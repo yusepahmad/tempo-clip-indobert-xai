@@ -1,0 +1,87 @@
+{
+  "index": 664,
+  "sample_id": "TMP-1CB1F3B3FACF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ea1632998bd83b3e2853f3f96e9696b459189a7e7a706f73d2adf84eea85f5f3",
+  "image_sha256": "1cb1f3b3facf3ffa1c2f1b067954dc5a82972c8cca3bd12a21132c246ca105c4",
+  "transmitted_image_sha256": "a21a03082db0f2a7d28f265ed160eeaa0fe0f0326b6df2994d210ab4e14d67a9",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.949327,
+      "total": 10,
+      "remaining": 1.0506729999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.949326999999997,
+      "total": 100,
+      "remaining": 91.050673,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.9773681010119617,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"agricultural farm\", \"source_properties\": \"Split fields, different crops, competing farmers with hoes, and a barn.\", \"target_situation\": \"Concurrent, potentially conflicting land-use projects by Prabowo Subianto and President Jokowi in Merauke.\", \"mapping\": \"The separate fields represent the rice and sugarcane projects; the characters represent the leaders competing for influence on the same land.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "dp7Lat-gIKCm_uMPsO6HgA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 685500,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1371,
+      "total_backend_latency_ms": 2194,
+      "total_tokens": 1464
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9502915,
+      "total": 10,
+      "remaining": 1.0497084999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.950291500000006,
+      "total": 100,
+      "remaining": 91.0497085,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009645,
+  "fields": {
+    "source_object": "agricultural farm",
+    "source_properties": "Split fields, different crops, competing farmers with hoes, and a barn.",
+    "target_situation": "Concurrent, potentially conflicting land-use projects by Prabowo Subianto and President Jokowi in Merauke.",
+    "mapping": "The separate fields represent the rice and sugarcane projects; the characters represent the leaders competing for influence on the same land.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: agricultural farm\nsource_properties: Split fields, different crops, competing farmers with hoes, and a barn.\ntarget_situation: Concurrent, potentially conflicting land-use projects by Prabowo Subianto and President Jokowi in Merauke.\nmapping: The separate fields represent the rice and sugarcane projects; the characters represent the leaders competing for influence on the same land.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

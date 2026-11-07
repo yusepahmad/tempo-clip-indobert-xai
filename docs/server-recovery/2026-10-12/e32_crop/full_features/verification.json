@@ -1,0 +1,40 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "dimension": 768,
+  "verifier_sha256": "3b36a22c34de1842dd8decdb796ce459257745df1fe12f3072a716347c5f52b7",
+  "sampled_indices": [
+    0,
+    1,
+    37,
+    123,
+    369,
+    739
+  ],
+  "maximum_absolute_errors": {
+    "0": 1.1920928955078125e-07,
+    "1": 2.1979212760925293e-07,
+    "37": 8.940696716308594e-08,
+    "123": 7.799826562404633e-08,
+    "369": 2.384185791015625e-07,
+    "739": 1.30385160446167e-07
+  },
+  "sha256": {
+    "embeddings.npz": "2a94b7069a77e95819a39b40b939b46b777a96c552d54f267d4d9177fa64ccb1",
+    "meta.json": "3a56beaed2c48446d3d0c89bb69c6dd4aabab95ca7f7698a77d9805e302a52c7",
+    "protocol.json": "2b4f3fdd115b947a48fddf2392df6685f3712396f68e3b4722771f1c37647eaa",
+    "preparation.json": "b07980be7c1b4349ccc88c85d29fbfcd23c3f4f9226e7f1e4e9a24d07891cff9",
+    "input_audit.jsonl": "8ffaa0f247ec4dabc27d09001f16abe83cb3322cc2fad58673de89cff6dd63a8"
+  },
+  "checks": [
+    "original740 source/IDs/image-only invariance",
+    "official model/weight/snapshot pins",
+    "all740 original image/cropbox and processor pixel hashes reconstructed",
+    "aligned finite float32 unit768 features",
+    "predeclared6 features reproduced tolerance1e-5"
+  ],
+  "limitations": [
+    "only6 forward outputs reproduced, not all740",
+    "no Task2 score"
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "index": 550,
+  "sample_id": "TMP-8009F2DBDC7B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c4c6ad58729263c88f673dcc874c813d9989d7771a0d2425e7a45d2c99223f55",
+  "image_sha256": "8009f2dbdc7b22b38d05f1588f551a8b89d148a6290c6001eb22cb7e784883a4",
+  "transmitted_image_sha256": "ba65047473325d556d10ea477af3d443eb4d8dc945985dd54c31020e704d30d0",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.793235,
+      "total": 10,
+      "remaining": 1.2067650000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.793234999999996,
+      "total": 100,
+      "remaining": 91.206765,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.507971717976034,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A large, rolling Bitcoin coin\",\n  \"source_properties\": \"Round, metallic, unstable, and currently tipping or rolling over a surface.\",\n  \"target_situation\": \"The volatile cryptocurrency market in Indonesia, which lacks adequate regulatory protection for investors.\",\n  \"mapping\": \"The coin\u2019s precarious roll mirrors the market's instability; figures falling off symbolize investors losing financial footing in a high-risk environment.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "epvLas_UEr7i_uMPz_DU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 720,
+      "completion_tokens_details": {
+        "reasoning_tokens": 613
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 679500,
+        "output_tokens_cost_nanodollars": 2160000
+      },
+      "prompt_tokens": 1359,
+      "total_backend_latency_ms": 5024,
+      "total_tokens": 2079
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7960745,
+      "total": 10,
+      "remaining": 1.2039255000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.796074500000003,
+      "total": 100,
+      "remaining": 91.2039255,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0028395,
+  "fields": {
+    "source_object": "A large, rolling Bitcoin coin",
+    "source_properties": "Round, metallic, unstable, and currently tipping or rolling over a surface.",
+    "target_situation": "The volatile cryptocurrency market in Indonesia, which lacks adequate regulatory protection for investors.",
+    "mapping": "The coin\u2019s precarious roll mirrors the market's instability; figures falling off symbolize investors losing financial footing in a high-risk environment.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A large, rolling Bitcoin coin\nsource_properties: Round, metallic, unstable, and currently tipping or rolling over a surface.\ntarget_situation: The volatile cryptocurrency market in Indonesia, which lacks adequate regulatory protection for investors.\nmapping: The coin\u2019s precarious roll mirrors the market's instability; figures falling off symbolize investors losing financial footing in a high-risk environment.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

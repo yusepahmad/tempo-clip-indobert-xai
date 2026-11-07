@@ -1,0 +1,86 @@
+{
+  "index": 627,
+  "sample_id": "TMP-FC626F7FA273",
+  "fold": 4,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "a7440ad8ccc6eacd6b71a84941a6ede011d8e1799b235f514bb5ea2a1a3ecb92",
+  "image_sha256": "fc626f7fa2731707c97c2b377545906b754af4e86c0456539f2284456462a43f",
+  "transmitted_image_sha256": "2b3fc0ff8c46fa72991333a3613a46a8a224728cc6f4a7f4cd7693eefa076e2e",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 6.2179660000000005,
+      "total": 10,
+      "remaining": 3.7820339999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 6.217966000000004,
+      "total": 100,
+      "remaining": 93.782034,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 16.97785359690897,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan panduan kategori dan deskripsi \"Sumber dan alasan\" yang diberikan untuk target tersebut, jawaban yang tepat adalah:\n\n**A**\n\n**Alasan:**\nKategori **A (BENCANA_JERAT)** mencakup penggunaan kiasan berupa ancaman, perangkap, jerat, atau keadaan terjepit. Dalam bagian \"Sumber dan alasan\" untuk target tersebut, disebutkan secara eksplisit bahwa figur tersebut \"terlihat terjepit dalam tekanan\" dan merefleksikan \"metafora intimidasi dan ancaman\". Kata kunci \"terjepit\", \"ancaman\", dan \"tekanan\" ini secara langsung memetakan ilustrasi tersebut ke dalam domain domain bencana/jerat sesuai dengan definisi kategori A.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "mwHLaonGHcyY_uMP2cziyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 3389,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3241
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2064500,
+        "output_tokens_cost_nanodollars": 10167000
+      },
+      "prompt_tokens": 4129,
+      "total_backend_latency_ms": 15937,
+      "total_tokens": 7518
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 6.2301975,
+      "total": 10,
+      "remaining": 3.7698025,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 6.230197500000003,
+      "total": 100,
+      "remaining": 93.7698025,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0122315,
+  "code": "INVALID",
+  "strict_code": "INVALID",
+  "parsing_rule": "unrecognized_no_explicit_answer",
+  "finish_reason": "stop",
+  "prediction": "INVALID"
+}

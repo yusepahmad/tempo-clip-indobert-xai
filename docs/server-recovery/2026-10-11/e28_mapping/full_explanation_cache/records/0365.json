@@ -1,0 +1,87 @@
+{
+  "index": 365,
+  "sample_id": "TMP-82A2AFB94458",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "cad333f612d56ad2a00e75d650a163cfbf6cec476745ff82c9e1111cf796a56c",
+  "image_sha256": "82a2afb944587bdb28d3d05a416b26f0e984a91af2ddb15fa38bbf0ddc420621",
+  "transmitted_image_sha256": "8e46192aa8e5af94ae7ac195752d1a1682ea570a8dbfa783f09762480fedd0d0",
+  "image_size": [
+    407,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5359185,
+      "total": 10,
+      "remaining": 1.4640815000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.535918499999994,
+      "total": 100,
+      "remaining": 91.4640815,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.7568024159409106,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"lake\", \"source_properties\": \"A large body of water that is contained, still, and reflective, yet capable of profound depth and movement.\", \"target_situation\": \"A massive crowd of people gathered in a city square for a protest on November 4, 2016.\", \"mapping\": \"The dense crowd is visually equated to the surface of a lake, suggesting that popular movements, like water, can be both a calm surface and a powerful, deep force.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ppbLaqKTB8aS_uMPmu6wkA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 111,
+      "cost": {
+        "input_tokens_cost_nanodollars": 657500,
+        "output_tokens_cost_nanodollars": 333000
+      },
+      "prompt_tokens": 1315,
+      "total_backend_latency_ms": 2173,
+      "total_tokens": 1426
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.536909,
+      "total": 10,
+      "remaining": 1.4630910000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.536908999999994,
+      "total": 100,
+      "remaining": 91.463091,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009905,
+  "fields": {
+    "source_object": "lake",
+    "source_properties": "A large body of water that is contained, still, and reflective, yet capable of profound depth and movement.",
+    "target_situation": "A massive crowd of people gathered in a city square for a protest on November 4, 2016.",
+    "mapping": "The dense crowd is visually equated to the surface of a lake, suggesting that popular movements, like water, can be both a calm surface and a powerful, deep force.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: lake\nsource_properties: A large body of water that is contained, still, and reflective, yet capable of profound depth and movement.\ntarget_situation: A massive crowd of people gathered in a city square for a protest on November 4, 2016.\nmapping: The dense crowd is visually equated to the surface of a lake, suggesting that popular movements, like water, can be both a calm surface and a powerful, deep force.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

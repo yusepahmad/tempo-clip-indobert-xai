@@ -1,0 +1,87 @@
+{
+  "index": 312,
+  "sample_id": "TMP-B167E19CCBFE",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3b47faae100ec34eb89e4b547f3bd7ed911979bc2c830ed52dee18bc461d1fa9",
+  "image_sha256": "b167e19ccbfeeb68d0a6ba952a8445b5d29915fc8173fb62814da99831bb812e",
+  "transmitted_image_sha256": "af5905a0d5a0c1ecc2a04f22ef41c4605ac7e7693c9cf93e82a99c5145051d3f",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4689285,
+      "total": 10,
+      "remaining": 1.5310714999999995,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.468928500000004,
+      "total": 100,
+      "remaining": 91.5310715,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0659508667886257,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A soccer ball encased in a block of melting ice\",\n  \"source_properties\": \"Frozen solid, immobilized, cold, and slowly liquefying as it melts\",\n  \"target_situation\": \"The suspension of PSSI, Indonesia's soccer association, due to political maneuvering\",\n  \"mapping\": \"Ice symbolizes the frozen or halted state of Indonesian soccer activities\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "UpXLaovIOf-o_uMPl6-88Q4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 660500,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1321,
+      "total_backend_latency_ms": 1640,
+      "total_tokens": 1418
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.46988,
+      "total": 10,
+      "remaining": 1.5301200000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.469880000000003,
+      "total": 100,
+      "remaining": 91.53012,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009515,
+  "fields": {
+    "source_object": "A soccer ball encased in a block of melting ice",
+    "source_properties": "Frozen solid, immobilized, cold, and slowly liquefying as it melts",
+    "target_situation": "The suspension of PSSI, Indonesia's soccer association, due to political maneuvering",
+    "mapping": "Ice symbolizes the frozen or halted state of Indonesian soccer activities",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A soccer ball encased in a block of melting ice\nsource_properties: Frozen solid, immobilized, cold, and slowly liquefying as it melts\ntarget_situation: The suspension of PSSI, Indonesia's soccer association, due to political maneuvering\nmapping: Ice symbolizes the frozen or halted state of Indonesian soccer activities\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

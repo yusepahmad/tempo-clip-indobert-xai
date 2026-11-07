@@ -1,0 +1,87 @@
+{
+  "index": 346,
+  "sample_id": "TMP-8B63CE73C875",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "807f7b6475037fb0c2e3d494c3d506338665f75bd8029dfd178021a888a866e6",
+  "image_sha256": "8b63ce73c8752c9b7732fcc25e42d926c18134f425f82a075388d723689ce612",
+  "transmitted_image_sha256": "2c1c80dd08ff507fe0fb347ffa007706ea200a3967ff2f2f766966a461f9bf37",
+  "image_size": [
+    500,
+    664
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.512737,
+      "total": 10,
+      "remaining": 1.4872630000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.512737000000001,
+      "total": 100,
+      "remaining": 91.487263,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.303505652118474,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"sliding puzzle\", \"source_properties\": \"disordered tiles, shifting parts, missing piece\", \"target_situation\": \"President Jokowi's cabinet reshuffle\", \"mapping\": \"Moving tiles represent rearranging cabinet members to fix a dysfunctional government structure. The incomplete puzzle mirrors the instability and search for the right configuration amid poor performance and conflict.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "LZbLavLxCN7d_uMP45e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 81,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673000,
+        "output_tokens_cost_nanodollars": 243000
+      },
+      "prompt_tokens": 1346,
+      "total_backend_latency_ms": 2757,
+      "total_tokens": 1427
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.513653,
+      "total": 10,
+      "remaining": 1.4863470000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.513653000000005,
+      "total": 100,
+      "remaining": 91.486347,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000916,
+  "fields": {
+    "source_object": "sliding puzzle",
+    "source_properties": "disordered tiles, shifting parts, missing piece",
+    "target_situation": "President Jokowi's cabinet reshuffle",
+    "mapping": "Moving tiles represent rearranging cabinet members to fix a dysfunctional government structure. The incomplete puzzle mirrors the instability and search for the right configuration amid poor performance and conflict.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: sliding puzzle\nsource_properties: disordered tiles, shifting parts, missing piece\ntarget_situation: President Jokowi's cabinet reshuffle\nmapping: Moving tiles represent rearranging cabinet members to fix a dysfunctional government structure. The incomplete puzzle mirrors the instability and search for the right configuration amid poor performance and conflict.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

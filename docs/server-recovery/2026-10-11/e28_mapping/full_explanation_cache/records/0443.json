@@ -1,0 +1,87 @@
+{
+  "index": 443,
+  "sample_id": "TMP-737C9324FD20",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f5104a6d8b33093f36ae4c3a6210d47b1c27a005ec7abbdd15f7934d90d7b89c",
+  "image_sha256": "737c9324fd207a4a87a39d275eb6e3f451e13ac7e6c836440a94782c5488e900",
+  "transmitted_image_sha256": "36fd3ca6c1b771eb70c9f81b37a6751892342528499d8f4224316c4b861848de",
+  "image_size": [
+    500,
+    664
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.642185,
+      "total": 10,
+      "remaining": 1.3578150000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.642184999999998,
+      "total": 100,
+      "remaining": 91.357815,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.673136561177671,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"axe\", \"source_properties\": \"A tool used for chopping or cutting down trees.\", \"target_situation\": \"Environmental destruction and deforestation by Menara Group in Boven Digoel, Papua.\", \"mapping\": \"The axe lodged in the palm tree represents the active destruction of natural resources for industrial expansion.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "pZjLaprYN5LN_uMPhvbuyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 76,
+      "cost": {
+        "input_tokens_cost_nanodollars": 688000,
+        "output_tokens_cost_nanodollars": 228000
+      },
+      "prompt_tokens": 1376,
+      "total_backend_latency_ms": 1448,
+      "total_tokens": 1452
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.643101,
+      "total": 10,
+      "remaining": 1.3568990000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.643101000000001,
+      "total": 100,
+      "remaining": 91.356899,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000916,
+  "fields": {
+    "source_object": "axe",
+    "source_properties": "A tool used for chopping or cutting down trees.",
+    "target_situation": "Environmental destruction and deforestation by Menara Group in Boven Digoel, Papua.",
+    "mapping": "The axe lodged in the palm tree represents the active destruction of natural resources for industrial expansion.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: axe\nsource_properties: A tool used for chopping or cutting down trees.\ntarget_situation: Environmental destruction and deforestation by Menara Group in Boven Digoel, Papua.\nmapping: The axe lodged in the palm tree represents the active destruction of natural resources for industrial expansion.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

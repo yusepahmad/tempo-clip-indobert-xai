@@ -1,0 +1,87 @@
+{
+  "index": 653,
+  "sample_id": "TMP-91A00B908099",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5259d0b3b253af8fbc5de2b63dd9eb7b6eeb920fd38c0639c6a85e3be1f84b58",
+  "image_sha256": "91a00b9080999262423fb9ed56363620c1af9f96cad9b948b8e6eba3780526ff",
+  "transmitted_image_sha256": "a8299857deea5300211da4d109c545b34ab07209022c3fe58c85d87e1769b31a",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.931982,
+      "total": 10,
+      "remaining": 1.0680180000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.931982000000005,
+      "total": 100,
+      "remaining": 91.068018,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2929101302288473,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Rolling up a carpet-like road\",\n  \"source_properties\": \"A person pulls back a flexible pathway, ending the route for the vehicle on it.\",\n  \"target_situation\": \"Ridwan Kamil and Suswono's decision to not challenge the Jakarta gubernatorial election results.\",\n  \"mapping\": \"The path to victory or legal contest is being removed, physically halting their journey.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "KJ7Lavi5Mt7d_uMP2Ze24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 668500,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1337,
+      "total_backend_latency_ms": 1853,
+      "total_tokens": 1439
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9329565,
+      "total": 10,
+      "remaining": 1.0670435000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.932956500000003,
+      "total": 100,
+      "remaining": 91.0670435,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009745,
+  "fields": {
+    "source_object": "Rolling up a carpet-like road",
+    "source_properties": "A person pulls back a flexible pathway, ending the route for the vehicle on it.",
+    "target_situation": "Ridwan Kamil and Suswono's decision to not challenge the Jakarta gubernatorial election results.",
+    "mapping": "The path to victory or legal contest is being removed, physically halting their journey.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Rolling up a carpet-like road\nsource_properties: A person pulls back a flexible pathway, ending the route for the vehicle on it.\ntarget_situation: Ridwan Kamil and Suswono's decision to not challenge the Jakarta gubernatorial election results.\nmapping: The path to victory or legal contest is being removed, physically halting their journey.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

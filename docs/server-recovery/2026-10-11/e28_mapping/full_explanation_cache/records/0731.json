@@ -1,0 +1,87 @@
+{
+  "index": 731,
+  "sample_id": "TMP-9E20B84B4493",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "75e64c123e6db4288abf990d8d188f409442358b4504fcd1a5f84e721964b1a3",
+  "image_sha256": "9e20b84b44936b0e5d6217c3138a8d9ddb2d146290728cf4e1420d7518e0351e",
+  "transmitted_image_sha256": "a9c685b3b549cb90295cf6858da2be5d950779833b83e70ab77106627b80821a",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0583125,
+      "total": 10,
+      "remaining": 0.9416875000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.0583125,
+      "total": 100,
+      "remaining": 90.9416875,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.6763086966238916,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"mirror reflection\", \"source_properties\": \"optical inversion, symmetric projection across a boundary, visual transformation\", \"target_situation\": \"The transformation of planned rice fields into palm oil plantations in Papua.\", \"mapping\": \"The reflection on the water's surface visually flips the standing figures into palm trees, symbolizing how agricultural projects for 'food barns' (padi) are being subverted into commercial palm oil (sawit) interests.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "RKDLaqugIIK5_PUPwPPqwQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681500,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1363,
+      "total_backend_latency_ms": 1971,
+      "total_tokens": 1464
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.059297,
+      "total": 10,
+      "remaining": 0.9407029999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.059297,
+      "total": 100,
+      "remaining": 90.940703,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009845,
+  "fields": {
+    "source_object": "mirror reflection",
+    "source_properties": "optical inversion, symmetric projection across a boundary, visual transformation",
+    "target_situation": "The transformation of planned rice fields into palm oil plantations in Papua.",
+    "mapping": "The reflection on the water's surface visually flips the standing figures into palm trees, symbolizing how agricultural projects for 'food barns' (padi) are being subverted into commercial palm oil (sawit) interests.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: mirror reflection\nsource_properties: optical inversion, symmetric projection across a boundary, visual transformation\ntarget_situation: The transformation of planned rice fields into palm oil plantations in Papua.\nmapping: The reflection on the water's surface visually flips the standing figures into palm trees, symbolizing how agricultural projects for 'food barns' (padi) are being subverted into commercial palm oil (sawit) interests.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

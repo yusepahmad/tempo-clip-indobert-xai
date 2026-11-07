@@ -1,0 +1,87 @@
+{
+  "index": 370,
+  "sample_id": "TMP-1580E2AACED4",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0e3e9a8bc5f43dd5af24af78056e36b8505ef1c0bfca921889c94a37ed14bc1f",
+  "image_sha256": "1580e2aaced4d9404f6f966a32f20ce35aab0112949e369b8c7723bb8a54bd62",
+  "transmitted_image_sha256": "621a13d62b5156269a00b67afeac8ed0a4cbcfae002e040a079fe57bb350c11b",
+  "image_size": [
+    403,
+    535
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.540765,
+      "total": 10,
+      "remaining": 1.4592349999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.540764999999993,
+      "total": 100,
+      "remaining": 91.459235,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.014762880280614,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A digital timer\",\n  \"source_properties\": \"Displays a countdown mechanism, typically used to trigger an explosion at a set time.\",\n  \"target_situation\": \"A failed female suicide bombing plot orchestrated under the guidance of Bahrun Naim.\",\n  \"mapping\": \"The timer placed over the subject's eyes equates the individual to a weaponized explosive device.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "wpbLau74Ecfv_uMP5e292Qg",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 672500,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1345,
+      "total_backend_latency_ms": 1724,
+      "total_tokens": 1442
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5417285,
+      "total": 10,
+      "remaining": 1.4582715000000004,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.541728500000005,
+      "total": 100,
+      "remaining": 91.4582715,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009635,
+  "fields": {
+    "source_object": "A digital timer",
+    "source_properties": "Displays a countdown mechanism, typically used to trigger an explosion at a set time.",
+    "target_situation": "A failed female suicide bombing plot orchestrated under the guidance of Bahrun Naim.",
+    "mapping": "The timer placed over the subject's eyes equates the individual to a weaponized explosive device.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A digital timer\nsource_properties: Displays a countdown mechanism, typically used to trigger an explosion at a set time.\ntarget_situation: A failed female suicide bombing plot orchestrated under the guidance of Bahrun Naim.\nmapping: The timer placed over the subject's eyes equates the individual to a weaponized explosive device.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

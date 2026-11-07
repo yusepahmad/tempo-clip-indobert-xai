@@ -1,0 +1,87 @@
+{
+  "index": 26,
+  "sample_id": "TMP-3BAA86B86146",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b91d57ebeaee6937558b3313261b0bb366d0bb2754b6243565ec36c5ff0890fe",
+  "image_sha256": "3baa86b86146aba4a922d05b518d83d01cc6d0fe8c8141500d2de740b99a25d1",
+  "transmitted_image_sha256": "c1dfc6da8bddeda7d4fde66598810238f739329fcb8ca0dd434a9ead676404d2",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.049733,
+      "total": 10,
+      "remaining": 1.9502670000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.049733000000003,
+      "total": 100,
+      "remaining": 91.950267,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1141058411449194,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Superhero costume transformation\", \"source_properties\": \"Ripping open an ordinary white shirt to reveal a secret, powerful identity underneath.\", \"target_situation\": \"New, impactful legislative candidates emerging for the 2019 election.\", \"mapping\": \"The act of tearing the shirt symbolizes revealing hidden 'super' qualities or social missions (represented by the DPR-RI emblem) beneath an everyday exterior.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "z43LarjMJZOo_uMPmu77-As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674500,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1349,
+      "total_backend_latency_ms": 1553,
+      "total_tokens": 1443
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0506895,
+      "total": 10,
+      "remaining": 1.9493104999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.050689500000004,
+      "total": 100,
+      "remaining": 91.9493105,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009565,
+  "fields": {
+    "source_object": "Superhero costume transformation",
+    "source_properties": "Ripping open an ordinary white shirt to reveal a secret, powerful identity underneath.",
+    "target_situation": "New, impactful legislative candidates emerging for the 2019 election.",
+    "mapping": "The act of tearing the shirt symbolizes revealing hidden 'super' qualities or social missions (represented by the DPR-RI emblem) beneath an everyday exterior.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Superhero costume transformation\nsource_properties: Ripping open an ordinary white shirt to reveal a secret, powerful identity underneath.\ntarget_situation: New, impactful legislative candidates emerging for the 2019 election.\nmapping: The act of tearing the shirt symbolizes revealing hidden 'super' qualities or social missions (represented by the DPR-RI emblem) beneath an everyday exterior.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

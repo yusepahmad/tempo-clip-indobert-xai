@@ -1,0 +1,87 @@
+{
+  "index": 484,
+  "sample_id": "TMP-4C92159CE456",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "d0aa5128878748ab59db0c66aa301ac36142e8955853e5652f4e2894a2bffb20",
+  "image_sha256": "4c92159ce456709dd85224ded3177166fe0009741b81d1484889c9f5aea4acea",
+  "transmitted_image_sha256": "4e59972f4733dbaddb7d66b0810fc38b3d78570bcd35f3b063904887e2c468e9",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.694268000000001,
+      "total": 10,
+      "remaining": 1.305731999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.694267999999994,
+      "total": 100,
+      "remaining": 91.305732,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.915637285914272,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A figure brandishing a torch while shouting and pointing\",\n  \"source_properties\": \"Illumination from fire, aggressive posture, directing attention through command, and vocal anger.\",\n  \"target_situation\": \"Minister Siti Nurbaya terminating the partnership between Indonesia's Ministry of Environment and WWF.\",\n  \"mapping\": \"The torch-bearer's 'wrath' and directive actions mirror the Minister's decisive, forceful ending of environmental cooperation.\",\n  \"uncertainty\": \"None evident.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "s5nLaoW2M7qi_uMPjvD3-Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 115,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679000,
+        "output_tokens_cost_nanodollars": 345000
+      },
+      "prompt_tokens": 1358,
+      "total_backend_latency_ms": 2253,
+      "total_tokens": 1473
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.695292,
+      "total": 10,
+      "remaining": 1.3047079999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.695291999999995,
+      "total": 100,
+      "remaining": 91.304708,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001024,
+  "fields": {
+    "source_object": "A figure brandishing a torch while shouting and pointing",
+    "source_properties": "Illumination from fire, aggressive posture, directing attention through command, and vocal anger.",
+    "target_situation": "Minister Siti Nurbaya terminating the partnership between Indonesia's Ministry of Environment and WWF.",
+    "mapping": "The torch-bearer's 'wrath' and directive actions mirror the Minister's decisive, forceful ending of environmental cooperation.",
+    "uncertainty": "None evident."
+  },
+  "explanation": "source_object: A figure brandishing a torch while shouting and pointing\nsource_properties: Illumination from fire, aggressive posture, directing attention through command, and vocal anger.\ntarget_situation: Minister Siti Nurbaya terminating the partnership between Indonesia's Ministry of Environment and WWF.\nmapping: The torch-bearer's 'wrath' and directive actions mirror the Minister's decisive, forceful ending of environmental cooperation.\nuncertainty: None evident.",
+  "finish_reason": "stop",
+  "usable": true
+}

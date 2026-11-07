@@ -1,0 +1,87 @@
+{
+  "index": 616,
+  "sample_id": "TMP-572A4F086A07",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "da6a9987ae5a48124bc1f1f978be6ba8d70dc8ac703632330211f92c7a94570c",
+  "image_sha256": "572a4f086a0786d9d052bcf1c6b827124d0f39738a4d30fb3fce599964f79f25",
+  "transmitted_image_sha256": "92c77fa9da8dddcd166b30da086fa1e995562ccd4f9e9c255d762b27d1108f73",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8795845,
+      "total": 10,
+      "remaining": 1.1204155,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.879584500000007,
+      "total": 100,
+      "remaining": 91.1204155,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.7593539212830365,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"truck bed\", \"source_properties\": \"A moving vehicle's cargo area used for transporting groups collectively.\", \"target_situation\": \"Political parties joining a coalition to support a presidential candidate.\", \"mapping\": \"The truck represents a political alliance ('gerbong pendukung'); leaders already on board help pull another politician up, symbolizing collective endorsement.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "OZ3LaqXDA_bb_uMPure6uAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 82,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682000,
+        "output_tokens_cost_nanodollars": 246000
+      },
+      "prompt_tokens": 1364,
+      "total_backend_latency_ms": 1503,
+      "total_tokens": 1446
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8805125,
+      "total": 10,
+      "remaining": 1.1194875,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.880512499999995,
+      "total": 100,
+      "remaining": 91.1194875,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000928,
+  "fields": {
+    "source_object": "truck bed",
+    "source_properties": "A moving vehicle's cargo area used for transporting groups collectively.",
+    "target_situation": "Political parties joining a coalition to support a presidential candidate.",
+    "mapping": "The truck represents a political alliance ('gerbong pendukung'); leaders already on board help pull another politician up, symbolizing collective endorsement.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: truck bed\nsource_properties: A moving vehicle's cargo area used for transporting groups collectively.\ntarget_situation: Political parties joining a coalition to support a presidential candidate.\nmapping: The truck represents a political alliance ('gerbong pendukung'); leaders already on board help pull another politician up, symbolizing collective endorsement.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 716,
+  "sample_id": "TMP-E5B9C5F25BDD",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bbfa886a8843e1df33427676bd5222aa85a9d79baa00ad78a59ae90c6e11388f",
+  "image_sha256": "e5b9c5f25bddd6c49b320648dd9170195c3353ff0991f07034a08b1ff2637854",
+  "transmitted_image_sha256": "8254dcf7e49bff3b6db99318b3c95ffebbf52835174ae7742eb3646ea3934fe5",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.038846,
+      "total": 10,
+      "remaining": 0.9611540000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.038846000000007,
+      "total": 100,
+      "remaining": 90.961154,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.269778229296207,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"tightening belt on a building\",\n  \"source_properties\": \"constricting something large and solid to reduce its volume and mass\",\n  \"target_situation\": \"President Prabowo slashing ministerial budgets to exhaustion\",\n  \"mapping\": \"A belt physically tightening a skyscraper symbolizes drastic government spending cuts and austerity\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "5J_LatL8PPKU_uMPp6OP6Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 85,
+      "cost": {
+        "input_tokens_cost_nanodollars": 666500,
+        "output_tokens_cost_nanodollars": 255000
+      },
+      "prompt_tokens": 1333,
+      "total_backend_latency_ms": 2520,
+      "total_tokens": 1418
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0397675,
+      "total": 10,
+      "remaining": 0.9602325,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.039767499999996,
+      "total": 100,
+      "remaining": 90.9602325,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009215,
+  "fields": {
+    "source_object": "tightening belt on a building",
+    "source_properties": "constricting something large and solid to reduce its volume and mass",
+    "target_situation": "President Prabowo slashing ministerial budgets to exhaustion",
+    "mapping": "A belt physically tightening a skyscraper symbolizes drastic government spending cuts and austerity",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: tightening belt on a building\nsource_properties: constricting something large and solid to reduce its volume and mass\ntarget_situation: President Prabowo slashing ministerial budgets to exhaustion\nmapping: A belt physically tightening a skyscraper symbolizes drastic government spending cuts and austerity\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

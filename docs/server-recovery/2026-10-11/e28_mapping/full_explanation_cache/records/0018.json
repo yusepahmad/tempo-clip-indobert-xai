@@ -1,0 +1,91 @@
+{
+  "index": 18,
+  "sample_id": "TMP-746C36AC6254",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "66e77555bf7ad2f892961d6b033df4ffaf33882bd40c0dd8e75ad9b9eac59bbd",
+  "image_sha256": "746c36ac6254a56b441edea2de0aff1f05a7d51cef5b64cf8bb8abe5485ec15f",
+  "transmitted_image_sha256": "a9e72952fbb8405949503d94518d432274681301e0948a6887bd2f48f9748e46",
+  "image_size": [
+    407,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0385385,
+      "total": 10,
+      "remaining": 1.9614615000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.038538500000001,
+      "total": 100,
+      "remaining": 91.9614615,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.897255230229348,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A giant rolling coin\",\n  \"source_properties\": \"Circular shape, momentum, instability, and a hard surface difficult to balance upon.\",\n  \"target_situation\": \"The Indonesian national economy's outlook for 2017.\",\n  \"mapping\": \"The man struggling to balance on the moving coin represents the difficulty of maintaining economic stability amidst momentum-driven risks.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "rIrLapisK9Pj_uMP_OKC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 100,
+      "cost": {
+        "input_tokens_cost_nanodollars": 656000,
+        "output_tokens_cost_nanodollars": 300000
+      },
+      "prompt_tokens": 1312,
+      "total_backend_latency_ms": 1552,
+      "total_tokens": 1412
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0394945,
+      "total": 10,
+      "remaining": 1.9605055,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.039494500000004,
+      "total": 100,
+      "remaining": 91.9605055,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000956,
+  "fields": {
+    "source_object": "A giant rolling coin",
+    "source_properties": "Circular shape, momentum, instability, and a hard surface difficult to balance upon.",
+    "target_situation": "The Indonesian national economy's outlook for 2017.",
+    "mapping": "The man struggling to balance on the moving coin represents the difficulty of maintaining economic stability amidst momentum-driven risks.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: A giant rolling coin\nsource_properties: Circular shape, momentum, instability, and a hard surface difficult to balance upon.\ntarget_situation: The Indonesian national economy's outlook for 2017.\nmapping: The man struggling to balance on the moving coin represents the difficulty of maintaining economic stability amidst momentum-driven risks.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true,
+  "migration_origin": {
+    "record_sha256": "e43f50cd5b716910a00fd250697dd4ef9286e57d1244aae4fcd9c74288a55c6a",
+    "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383"
+  }
+}

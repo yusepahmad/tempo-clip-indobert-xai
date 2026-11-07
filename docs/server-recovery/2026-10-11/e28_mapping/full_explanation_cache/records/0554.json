@@ -1,0 +1,87 @@
+{
+  "index": 554,
+  "sample_id": "TMP-DC634F222185",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b072e80bca55a22c62aa5c01e71ad5836e917d158f00f1444787b3e52dc8d6fc",
+  "image_sha256": "dc634f222185395d8c26799924d73d4367c757efdee89567aee91a607ddd707f",
+  "transmitted_image_sha256": "7e8f856335f9258ff58d0387b05b1ab55bfd6a00872c5d8a4ba8e82265954d93",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.800585,
+      "total": 10,
+      "remaining": 1.1994150000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.800584999999998,
+      "total": 100,
+      "remaining": 91.199415,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.138842380605638,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"syringes\", \"source_properties\": \"large, sharp, upward-pointing, weapon-like, defensive formation\", \"target_situation\": \"the 2021 COVID-19 vaccination campaign and frontline pandemic response\", \"mapping\": \"The syringes function like protective spears or defensive weaponry, representing vaccination as a tool to fight and block the virus.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "l5vLaou2OO2M_PUPpv3KiQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 87,
+      "cost": {
+        "input_tokens_cost_nanodollars": 665000,
+        "output_tokens_cost_nanodollars": 261000
+      },
+      "prompt_tokens": 1330,
+      "total_backend_latency_ms": 2037,
+      "total_tokens": 1417
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.801511,
+      "total": 10,
+      "remaining": 1.1984890000000004,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.801511000000005,
+      "total": 100,
+      "remaining": 91.198489,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000926,
+  "fields": {
+    "source_object": "syringes",
+    "source_properties": "large, sharp, upward-pointing, weapon-like, defensive formation",
+    "target_situation": "the 2021 COVID-19 vaccination campaign and frontline pandemic response",
+    "mapping": "The syringes function like protective spears or defensive weaponry, representing vaccination as a tool to fight and block the virus.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: syringes\nsource_properties: large, sharp, upward-pointing, weapon-like, defensive formation\ntarget_situation: the 2021 COVID-19 vaccination campaign and frontline pandemic response\nmapping: The syringes function like protective spears or defensive weaponry, representing vaccination as a tool to fight and block the virus.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

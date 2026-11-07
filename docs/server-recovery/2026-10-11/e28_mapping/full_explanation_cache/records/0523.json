@@ -1,0 +1,87 @@
+{
+  "index": 523,
+  "sample_id": "TMP-00E55D6B8B93",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "009f1db2362309b6174a95754e785bf2f0db20f3c7de8053bff0c2d95bf6262f",
+  "image_sha256": "00e55d6b8b9352f834503eb5d436960be004b691997799118c68eadab22f72d6",
+  "transmitted_image_sha256": "fc4324f9b557391ca4a1a920ffd6be9cb1904a82eb27ccc292e711ca0d598930",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7528015,
+      "total": 10,
+      "remaining": 1.2471984999999997,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.752801500000004,
+      "total": 100,
+      "remaining": 91.2471985,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.6073647858574986,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Chalk outline at a crime scene\",\n  \"source_properties\": \"Yellow perimeter tape or chalk marks outlining a body, broken into segments on a surface.\",\n  \"target_situation\": \"The sinking and structural failure of the KRI Nanggala-402 submarine.\",\n  \"mapping\": \"The fragmented outline on the water's surface suggests the vessel was a victim of a crime or negligence.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "xJrLarGYMMjg_uMPp72C-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677500,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1355,
+      "total_backend_latency_ms": 1955,
+      "total_tokens": 1461
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.753797,
+      "total": 10,
+      "remaining": 1.2462029999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.753797000000006,
+      "total": 100,
+      "remaining": 91.246203,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009955,
+  "fields": {
+    "source_object": "Chalk outline at a crime scene",
+    "source_properties": "Yellow perimeter tape or chalk marks outlining a body, broken into segments on a surface.",
+    "target_situation": "The sinking and structural failure of the KRI Nanggala-402 submarine.",
+    "mapping": "The fragmented outline on the water's surface suggests the vessel was a victim of a crime or negligence.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Chalk outline at a crime scene\nsource_properties: Yellow perimeter tape or chalk marks outlining a body, broken into segments on a surface.\ntarget_situation: The sinking and structural failure of the KRI Nanggala-402 submarine.\nmapping: The fragmented outline on the water's surface suggests the vessel was a victim of a crime or negligence.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

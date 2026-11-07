@@ -1,0 +1,87 @@
+{
+  "index": 12,
+  "sample_id": "TMP-ED8AADE36A77",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383",
+  "prompt_sha256": "7e1fab615ca82e1f2ddfc73dacab2e1da8b29161ed70ef231a6da11141721ad2",
+  "image_sha256": "ed8aade36a77d8c27ebaad075ca98d0a7d19e3f78d272b618f921a0c713f4bff",
+  "transmitted_image_sha256": "331f1fdf9fd2492afc509cbd59c3c1e06ec33dbe0fabd586e8a2c7d9daf79f7a",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.029514,
+      "total": 10,
+      "remaining": 1.9704859999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.029514000000006,
+      "total": 100,
+      "remaining": 91.970486,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.7955349483527243,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"whispering\", \"source_properties\": \"close proximity, multiple speakers surrounding one listener, cupped hands, direct ear access\", \"target_situation\": \"President Joko Widodo forming his cabinet under intense pressure from political allies and party figures.\", \"mapping\": \"The physical act of whispering from all sides represents the overwhelming influence and demands exerted by political elites on the President's cabinet selections.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "iIrLaqzgEvDe_uMPnvjrqQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 651000,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1302,
+      "total_backend_latency_ms": 1617,
+      "total_tokens": 1393
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.030438,
+      "total": 10,
+      "remaining": 1.9695619999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.030438000000004,
+      "total": 100,
+      "remaining": 91.969562,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000924,
+  "fields": {
+    "source_object": "whispering",
+    "source_properties": "close proximity, multiple speakers surrounding one listener, cupped hands, direct ear access",
+    "target_situation": "President Joko Widodo forming his cabinet under intense pressure from political allies and party figures.",
+    "mapping": "The physical act of whispering from all sides represents the overwhelming influence and demands exerted by political elites on the President's cabinet selections.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: whispering\nsource_properties: close proximity, multiple speakers surrounding one listener, cupped hands, direct ear access\ntarget_situation: President Joko Widodo forming his cabinet under intense pressure from political allies and party figures.\nmapping: The physical act of whispering from all sides represents the overwhelming influence and demands exerted by political elites on the President's cabinet selections.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

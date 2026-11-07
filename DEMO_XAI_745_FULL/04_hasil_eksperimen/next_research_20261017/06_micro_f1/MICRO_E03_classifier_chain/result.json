@@ -1,0 +1,136 @@
+{
+  "schema": "tempo-micro-e03-v1",
+  "status": "complete",
+  "model_contract": "one multiclass classifier chain; task order selected on inner folds",
+  "micro_f1": {
+    "task1_issue": 0.42162162162162165,
+    "task2_domain_sumber": 0.35945945945945945,
+    "task3_primary_entity_type": 0.4689189189189189
+  },
+  "macro_f1_diagnostic": {
+    "task1_issue": 0.24236953429070351,
+    "task2_domain_sumber": 0.20779605541392618,
+    "task3_primary_entity_type": 0.1736480158311769
+  },
+  "minimum_micro_f1": 0.35945945945945945,
+  "all_tasks_at_least_0_70": false,
+  "fold_details": [
+    {
+      "fold": 1,
+      "selected": {
+        "order": [
+          "task2_domain_sumber",
+          "task1_issue",
+          "task3_primary_entity_type"
+        ],
+        "micro_f1": {
+          "task1_issue": 0.3868208309832675,
+          "task2_domain_sumber": 0.33448700199969233,
+          "task3_primary_entity_type": 0.45272522176075475
+        },
+        "minimum": 0.33448700199969233,
+        "mean": 0.3913443515812382
+      },
+      "outer_micro_f1": {
+        "task1_issue": 0.43243243243243246,
+        "task2_domain_sumber": 0.3783783783783784,
+        "task3_primary_entity_type": 0.49324324324324326
+      }
+    },
+    {
+      "fold": 2,
+      "selected": {
+        "order": [
+          "task1_issue",
+          "task2_domain_sumber",
+          "task3_primary_entity_type"
+        ],
+        "micro_f1": {
+          "task1_issue": 0.3884786955852946,
+          "task2_domain_sumber": 0.35813293681313985,
+          "task3_primary_entity_type": 0.434155429079287
+        },
+        "minimum": 0.35813293681313985,
+        "mean": 0.3935890204925738
+      },
+      "outer_micro_f1": {
+        "task1_issue": 0.3918918918918919,
+        "task2_domain_sumber": 0.33783783783783783,
+        "task3_primary_entity_type": 0.5067567567567568
+      }
+    },
+    {
+      "fold": 3,
+      "selected": {
+        "order": [
+          "task2_domain_sumber",
+          "task1_issue",
+          "task3_primary_entity_type"
+        ],
+        "micro_f1": {
+          "task1_issue": 0.3681826727512007,
+          "task2_domain_sumber": 0.3395289613563725,
+          "task3_primary_entity_type": 0.46282623186176486
+        },
+        "minimum": 0.3395289613563725,
+        "mean": 0.39017928865644597
+      },
+      "outer_micro_f1": {
+        "task1_issue": 0.4594594594594595,
+        "task2_domain_sumber": 0.33783783783783783,
+        "task3_primary_entity_type": 0.40540540540540543
+      }
+    },
+    {
+      "fold": 4,
+      "selected": {
+        "order": [
+          "task2_domain_sumber",
+          "task1_issue",
+          "task3_primary_entity_type"
+        ],
+        "micro_f1": {
+          "task1_issue": 0.3987335281751525,
+          "task2_domain_sumber": 0.3243347177357329,
+          "task3_primary_entity_type": 0.45612640790305764
+        },
+        "minimum": 0.3243347177357329,
+        "mean": 0.39306488460464767
+      },
+      "outer_micro_f1": {
+        "task1_issue": 0.47297297297297297,
+        "task2_domain_sumber": 0.36486486486486486,
+        "task3_primary_entity_type": 0.47297297297297297
+      }
+    },
+    {
+      "fold": 5,
+      "selected": {
+        "order": [
+          "task3_primary_entity_type",
+          "task2_domain_sumber",
+          "task1_issue"
+        ],
+        "micro_f1": {
+          "task1_issue": 0.33100890461296556,
+          "task2_domain_sumber": 0.3293681313985883,
+          "task3_primary_entity_type": 0.4357192910492403
+        },
+        "minimum": 0.3293681313985883,
+        "mean": 0.3653654423535981
+      },
+      "outer_micro_f1": {
+        "task1_issue": 0.35135135135135137,
+        "task2_domain_sumber": 0.3783783783783784,
+        "task3_primary_entity_type": 0.46621621621621623
+      }
+    }
+  ],
+  "dataset_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "feature_sha256": {
+    "clip": "312a130025a20c18f38668293534528fb82072a139c0c1ca41ad8abd23559cd4",
+    "siglip": "71cd0cfe78db5ac2392aa69749b8946da27d7ae9f6f7d0533e49e0f9c18d6fdb"
+  },
+  "seconds": 137.66695618629456,
+  "predictions_sha256": "b563e0d0e417dfcff6921fccc010a5d32e3d1f9c5f5d2b69e9897d431553b2a3"
+}

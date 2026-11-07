@@ -1,0 +1,87 @@
+{
+  "index": 462,
+  "sample_id": "TMP-E7F0D91FD661",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "79d4161818f72de9b44eae74e0d22491a75ef514f6e71632c456ffbda05aaf60",
+  "image_sha256": "e7f0d91fd66148e9850f5f67c1a59aacf337b6bea54c49366f3837fc7ede4748",
+  "transmitted_image_sha256": "07bca196e4790aeba1beb9dc52a0f156288c04ab51363a4152d29a2fb8ce28e8",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6705225,
+      "total": 10,
+      "remaining": 1.3294774999999994,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.670522500000004,
+      "total": 100,
+      "remaining": 91.3294775,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.5034733121283352,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"waste cart\", \"source_properties\": \"A manual cart bearing a radioactive symbol, hauled by a person, emitting toxic-looking green gas.\", \"target_situation\": \"TNI bases in East Java allegedly being used for illegal toxic waste dumping involving soldiers and officials.\", \"mapping\": \"The soldier pulling a cart of hazardous material represents military involvement in transporting and concealing toxic waste at their headquarters.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "LJnLas-xJduA_PUP-tvEuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 683500,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1367,
+      "total_backend_latency_ms": 2005,
+      "total_tokens": 1459
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.671482,
+      "total": 10,
+      "remaining": 1.3285180000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.671481999999997,
+      "total": 100,
+      "remaining": 91.328518,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009595,
+  "fields": {
+    "source_object": "waste cart",
+    "source_properties": "A manual cart bearing a radioactive symbol, hauled by a person, emitting toxic-looking green gas.",
+    "target_situation": "TNI bases in East Java allegedly being used for illegal toxic waste dumping involving soldiers and officials.",
+    "mapping": "The soldier pulling a cart of hazardous material represents military involvement in transporting and concealing toxic waste at their headquarters.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: waste cart\nsource_properties: A manual cart bearing a radioactive symbol, hauled by a person, emitting toxic-looking green gas.\ntarget_situation: TNI bases in East Java allegedly being used for illegal toxic waste dumping involving soldiers and officials.\nmapping: The soldier pulling a cart of hazardous material represents military involvement in transporting and concealing toxic waste at their headquarters.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

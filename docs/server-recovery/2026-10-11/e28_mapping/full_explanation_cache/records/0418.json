@@ -1,0 +1,87 @@
+{
+  "index": 418,
+  "sample_id": "TMP-ED88C46A7C4A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ceb40f37179a1f395fab1dbcf81058d201dccc2eb9c70bd80eee1931abc7f992",
+  "image_sha256": "ed88c46a7c4ac47bb43cdd153f15397ade4c77c2b6e9306c69c63d7b4b3fa863",
+  "transmitted_image_sha256": "d6aab75d3a8d98f52a008841900e4a4505b332c9344dad34898ef6b1b9a38c79",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.618228,
+      "total": 10,
+      "remaining": 1.3817719999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.618228000000002,
+      "total": 100,
+      "remaining": 91.381772,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.128266928717494,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"iceberg\",\n  \"source_properties\": \"A massive structure hidden below the surface, much larger than the visible tip above water.\",\n  \"target_situation\": \"The 1MDB corruption scandal and the seizure of a luxury yacht.\",\n  \"mapping\": \"The yacht represents the visible part of the scandal, while the underwater bank vault symbolizes the vast, hidden scale of the corruption.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "DJjLapypO7eR_uMPm_GWuA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 1966,
+      "total_tokens": 1454
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.61921,
+      "total": 10,
+      "remaining": 1.3807899999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.619209999999995,
+      "total": 100,
+      "remaining": 91.38079,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000982,
+  "fields": {
+    "source_object": "iceberg",
+    "source_properties": "A massive structure hidden below the surface, much larger than the visible tip above water.",
+    "target_situation": "The 1MDB corruption scandal and the seizure of a luxury yacht.",
+    "mapping": "The yacht represents the visible part of the scandal, while the underwater bank vault symbolizes the vast, hidden scale of the corruption.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: iceberg\nsource_properties: A massive structure hidden below the surface, much larger than the visible tip above water.\ntarget_situation: The 1MDB corruption scandal and the seizure of a luxury yacht.\nmapping: The yacht represents the visible part of the scandal, while the underwater bank vault symbolizes the vast, hidden scale of the corruption.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

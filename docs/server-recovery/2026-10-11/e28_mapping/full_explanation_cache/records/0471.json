@@ -1,0 +1,87 @@
+{
+  "index": 471,
+  "sample_id": "TMP-98BE870B11DF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f2f14bda6527bb65c3f541bee0df98fe64a8c008e470770ff590cfefa95b349b",
+  "image_sha256": "98be870b11dfff3ddc7686933a2e045671660f3bd2eff482122d6783dca23f60",
+  "transmitted_image_sha256": "801cd03d4107f0b24e3a9d4542c17a0006f559082d0d679009d4bb757d1c96c9",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.679311,
+      "total": 10,
+      "remaining": 1.3206889999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.679310999999998,
+      "total": 100,
+      "remaining": 91.320689,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4624829101376235,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Bubbles and floating heads\",\n  \"source_properties\": \"Spherical, weightless, numerous, orbiting, dizzying circular motion\",\n  \"target_situation\": \"Multiple bribery allegations involving Ministry of Religious Affairs officials\",\n  \"mapping\": \"Repeated heads symbolize many suspects; orbiting bubbles suggest dizzying corruption surrounding the Minister.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Y5nLavLuIMaS_uMPmu6wkA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675000,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1350,
+      "total_backend_latency_ms": 1964,
+      "total_tokens": 1440
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.680256,
+      "total": 10,
+      "remaining": 1.319744,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.680256,
+      "total": 100,
+      "remaining": 91.319744,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000945,
+  "fields": {
+    "source_object": "Bubbles and floating heads",
+    "source_properties": "Spherical, weightless, numerous, orbiting, dizzying circular motion",
+    "target_situation": "Multiple bribery allegations involving Ministry of Religious Affairs officials",
+    "mapping": "Repeated heads symbolize many suspects; orbiting bubbles suggest dizzying corruption surrounding the Minister.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Bubbles and floating heads\nsource_properties: Spherical, weightless, numerous, orbiting, dizzying circular motion\ntarget_situation: Multiple bribery allegations involving Ministry of Religious Affairs officials\nmapping: Repeated heads symbolize many suspects; orbiting bubbles suggest dizzying corruption surrounding the Minister.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

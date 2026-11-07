@@ -1,0 +1,90 @@
+{
+  "index": 714,
+  "sample_id": "TMP-B6F6E9960590",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5b8203851280858c03983afa88e4dfec331f406d578f229b773170ed2bc83104",
+  "image_sha256": "b6f6e996059062cefd15ad623e5fb0c8a10f45a8be57747a9b23bc764f474852",
+  "transmitted_image_sha256": "fa7c3c2af9658f977432019357557567fce98956cddec168def799a38a750dd6",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.035002500000001,
+      "total": 10,
+      "remaining": 0.9649974999999991,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.035002500000004,
+      "total": 100,
+      "remaining": 90.9649975,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.918674250598997,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Michelangelo's The Creation of Adam fresco\",\n  \"source_properties\": \"Two figures reach toward each other with index fingers nearly touching, one grounded and one floating among clouds.\",\n  \"target_situation\": \"The proposed political coalition between Megawati Soekarnoputri and Prabowo Subianto.\",\n  \"mapping\": \"The iconic gesture of reaching out to touch symbolizes the delicate negotiation and revival of their alliance, framing the political union as a monumental event.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "1p_Laq7BDO2M_PUPpv3KiQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 727,
+      "completion_tokens_details": {
+        "reasoning_tokens": 608
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 680000,
+        "output_tokens_cost_nanodollars": 2181000
+      },
+      "prompt_tokens": 1360,
+      "total_backend_latency_ms": 4426,
+      "total_tokens": 2087
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0378635,
+      "total": 10,
+      "remaining": 0.9621364999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.0378635,
+      "total": 100,
+      "remaining": 90.9621365,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.002861,
+  "fields": {
+    "source_object": "Michelangelo's The Creation of Adam fresco",
+    "source_properties": "Two figures reach toward each other with index fingers nearly touching, one grounded and one floating among clouds.",
+    "target_situation": "The proposed political coalition between Megawati Soekarnoputri and Prabowo Subianto.",
+    "mapping": "The iconic gesture of reaching out to touch symbolizes the delicate negotiation and revival of their alliance, framing the political union as a monumental event.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: Michelangelo's The Creation of Adam fresco\nsource_properties: Two figures reach toward each other with index fingers nearly touching, one grounded and one floating among clouds.\ntarget_situation: The proposed political coalition between Megawati Soekarnoputri and Prabowo Subianto.\nmapping: The iconic gesture of reaching out to touch symbolizes the delicate negotiation and revival of their alliance, framing the political union as a monumental event.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 411,
+  "sample_id": "TMP-3808BBB53456",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "d8310c7f29ef02066a4ebee77339e0ebf575177c042df5f67e0072d4fd024477",
+  "image_sha256": "3808bbb53456f7fa01c18e5cd6c13bbb785f83bbfa203fb319bd7cd63549a636",
+  "transmitted_image_sha256": "b8c599b6c17b9f945dea2a46e0c394ac7f09d4978ee63f1e74f1ef72726733ad",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6081645,
+      "total": 10,
+      "remaining": 1.3918354999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.6081645,
+      "total": 100,
+      "remaining": 91.3918355,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2187612829729915,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"deteriorating vehicles\", \"source_properties\": \"A motorcycle and horse disintegrating into bones and mechanical parts while in motion.\", \"target_situation\": \"Half-hearted political campaigning by supporting parties for presidential candidates.\", \"mapping\": \"The falling apart vehicles symbolize the fracturing, 'half-hearted' support and internal conflicts within political coalitions.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "5JfLarW4Lvbb_uMPure6uAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 82,
+      "cost": {
+        "input_tokens_cost_nanodollars": 695000,
+        "output_tokens_cost_nanodollars": 246000
+      },
+      "prompt_tokens": 1390,
+      "total_backend_latency_ms": 1655,
+      "total_tokens": 1472
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6091055,
+      "total": 10,
+      "remaining": 1.3908945,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.609105499999998,
+      "total": 100,
+      "remaining": 91.3908945,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000941,
+  "fields": {
+    "source_object": "deteriorating vehicles",
+    "source_properties": "A motorcycle and horse disintegrating into bones and mechanical parts while in motion.",
+    "target_situation": "Half-hearted political campaigning by supporting parties for presidential candidates.",
+    "mapping": "The falling apart vehicles symbolize the fracturing, 'half-hearted' support and internal conflicts within political coalitions.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: deteriorating vehicles\nsource_properties: A motorcycle and horse disintegrating into bones and mechanical parts while in motion.\ntarget_situation: Half-hearted political campaigning by supporting parties for presidential candidates.\nmapping: The falling apart vehicles symbolize the fracturing, 'half-hearted' support and internal conflicts within political coalitions.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

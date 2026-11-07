@@ -1,0 +1,90 @@
+{
+  "index": 154,
+  "sample_id": "TMP-B62184F73A22",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "64220e205910391423f0a49a0e4f1f9e0064436f072a7b5a45c92eeb432f02c4",
+  "image_sha256": "b62184f73a22a9ae3337c748c0e98349b1ba7efd99a49e8292da1238ce475062",
+  "transmitted_image_sha256": "94b6f73df60dd07b502a10581c868b1760e52c6871eb9f12baa7a65b39802168",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2325395,
+      "total": 10,
+      "remaining": 1.7674605000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.232539500000001,
+      "total": 100,
+      "remaining": 91.7674605,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.400862684007734,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"a surgical face mask\",\n  \"source_properties\": \"stretched across two mouths, sharing straps, physically binding and muzzling both individuals simultaneously\",\n  \"target_situation\": \"the clumsy, uncoordinated early response to the COVID-19 pandemic by Indonesian government officials\",\n  \"mapping\": \"The single mask tying two men's mouths symbolizes their messy coordination and inability to communicate effectively, reflecting a 'stuttering' and restrictive handling of the crisis.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "KJHLatKkBrfc_uMPiPP3wAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 802,
+      "completion_tokens_details": {
+        "reasoning_tokens": 685
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 674500,
+        "output_tokens_cost_nanodollars": 2406000
+      },
+      "prompt_tokens": 1349,
+      "total_backend_latency_ms": 5229,
+      "total_tokens": 2151
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.23562,
+      "total": 10,
+      "remaining": 1.7643799999999992,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.235619999999997,
+      "total": 100,
+      "remaining": 91.76438,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0030805,
+  "fields": {
+    "source_object": "a surgical face mask",
+    "source_properties": "stretched across two mouths, sharing straps, physically binding and muzzling both individuals simultaneously",
+    "target_situation": "the clumsy, uncoordinated early response to the COVID-19 pandemic by Indonesian government officials",
+    "mapping": "The single mask tying two men's mouths symbolizes their messy coordination and inability to communicate effectively, reflecting a 'stuttering' and restrictive handling of the crisis.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: a surgical face mask\nsource_properties: stretched across two mouths, sharing straps, physically binding and muzzling both individuals simultaneously\ntarget_situation: the clumsy, uncoordinated early response to the COVID-19 pandemic by Indonesian government officials\nmapping: The single mask tying two men's mouths symbolizes their messy coordination and inability to communicate effectively, reflecting a 'stuttering' and restrictive handling of the crisis.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

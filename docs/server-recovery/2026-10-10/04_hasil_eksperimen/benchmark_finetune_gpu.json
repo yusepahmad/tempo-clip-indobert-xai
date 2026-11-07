@@ -1,0 +1,46 @@
+{
+  "purpose": "GPU benchmark only, not scientific evaluation",
+  "gpu": "NVIDIA GeForce GTX 1650 with Max-Q Design",
+  "torch": "2.7.0+cu118",
+  "cuda": "11.8",
+  "vram_gib": 3.999755859375,
+  "dataset_rows": 740,
+  "images_verified": 740,
+  "batch_size": 1,
+  "amp": "float16",
+  "gradient_checkpointing": true,
+  "unused_clip_modules_removed": [
+    "transformer",
+    "token_embedding",
+    "ln_final",
+    "positional_embedding",
+    "text_projection",
+    "logit_scale",
+    "logit_bias",
+    "attn_mask"
+  ],
+  "trainable_parameters": 212624921,
+  "step_seconds": [
+    2.8798440999999,
+    2.005181300000004,
+    1.861570699999902
+  ],
+  "loss": [
+    2.0970053672790527,
+    2.0748698711395264,
+    2.1487631797790527
+  ],
+  "encoder_gradients_valid": {
+    "clip": true,
+    "bert": true
+  },
+  "encoder_weights_updated": {
+    "clip": true,
+    "bert": true
+  },
+  "status": "success",
+  "peak_allocated_gib": 3.4701571464538574,
+  "peak_reserved_gib": 3.771484375,
+  "estimated_train_only_hours_5fold_120epochs": 190.7597653333287,
+  "caveat": "Short extrapolation, batch 1; excludes heat, data loading, evaluation, saving. No class weighting."
+}

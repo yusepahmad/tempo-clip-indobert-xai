@@ -1,0 +1,87 @@
+{
+  "index": 642,
+  "sample_id": "TMP-A69407591F6A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3719aeeb4521078bf35753b75219d1a28d55e0d0a5b3ff009a3d439effcaf8b2",
+  "image_sha256": "a69407591f6a2429985592a0343972b921e86b0bbd5a07ac5e48852c5c66a593",
+  "transmitted_image_sha256": "1a3665a0a45752a0ad331cd437c6827caa8dda1372ae363736b8447cae591e62",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9116025,
+      "total": 10,
+      "remaining": 1.0883974999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.9116025,
+      "total": 100,
+      "remaining": 91.0883975,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.169890304096043,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Magnifying glass\", \"source_properties\": \"Used for detailed inspection to reveal hidden flaws or minute evidence within a specific area.\", \"target_situation\": \"An investigation into a fatal nickel smelter explosion caused by alleged procedural violations.\", \"mapping\": \"The magnifying glass symbolizes investigators scrutinizing the scene of the tragedy to uncover corporate negligence and assign responsibility for the deaths.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "253LatP7FKCm_uMPsO6HgA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 87,
+      "cost": {
+        "input_tokens_cost_nanodollars": 691000,
+        "output_tokens_cost_nanodollars": 261000
+      },
+      "prompt_tokens": 1382,
+      "total_backend_latency_ms": 1725,
+      "total_tokens": 1469
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9125545,
+      "total": 10,
+      "remaining": 1.0874454999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.912554499999999,
+      "total": 100,
+      "remaining": 91.0874455,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000952,
+  "fields": {
+    "source_object": "Magnifying glass",
+    "source_properties": "Used for detailed inspection to reveal hidden flaws or minute evidence within a specific area.",
+    "target_situation": "An investigation into a fatal nickel smelter explosion caused by alleged procedural violations.",
+    "mapping": "The magnifying glass symbolizes investigators scrutinizing the scene of the tragedy to uncover corporate negligence and assign responsibility for the deaths.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Magnifying glass\nsource_properties: Used for detailed inspection to reveal hidden flaws or minute evidence within a specific area.\ntarget_situation: An investigation into a fatal nickel smelter explosion caused by alleged procedural violations.\nmapping: The magnifying glass symbolizes investigators scrutinizing the scene of the tragedy to uncover corporate negligence and assign responsibility for the deaths.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

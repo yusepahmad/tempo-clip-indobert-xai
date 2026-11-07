@@ -1,0 +1,87 @@
+{
+  "index": 495,
+  "sample_id": "TMP-EF67A7ED3AB3",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "47c81294ec2116e2bb9c558064af56b0cd7b63cd2b8054fcb98d418186439fc3",
+  "image_sha256": "ef67a7ed3ab3fa91dbab10255b7d72990f4f18c1efef5b49068b503ac7acb58a",
+  "transmitted_image_sha256": "05eba9bb639d03f5ab670a5d9ad1e6fd2eb48d239541b518728425776adf2a51",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.711256,
+      "total": 10,
+      "remaining": 1.2887439999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.711256000000006,
+      "total": 100,
+      "remaining": 91.288744,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.03323871595785,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Three seated laborers\", \"source_properties\": \"wearing hardhats and masks, slumped posture, sitting on the ground\", \"target_situation\": \"mass layoffs caused by COVID-19\", \"mapping\": \"The workers' idle, dejected pose reflects the millions of laborers facing job loss and business shutdowns during the pandemic.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "AZrLatOUH_bb_uMPure6uAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 80,
+      "cost": {
+        "input_tokens_cost_nanodollars": 672000,
+        "output_tokens_cost_nanodollars": 240000
+      },
+      "prompt_tokens": 1344,
+      "total_backend_latency_ms": 1449,
+      "total_tokens": 1424
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.712168,
+      "total": 10,
+      "remaining": 1.2878319999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.712168000000005,
+      "total": 100,
+      "remaining": 91.287832,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000912,
+  "fields": {
+    "source_object": "Three seated laborers",
+    "source_properties": "wearing hardhats and masks, slumped posture, sitting on the ground",
+    "target_situation": "mass layoffs caused by COVID-19",
+    "mapping": "The workers' idle, dejected pose reflects the millions of laborers facing job loss and business shutdowns during the pandemic.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Three seated laborers\nsource_properties: wearing hardhats and masks, slumped posture, sitting on the ground\ntarget_situation: mass layoffs caused by COVID-19\nmapping: The workers' idle, dejected pose reflects the millions of laborers facing job loss and business shutdowns during the pandemic.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

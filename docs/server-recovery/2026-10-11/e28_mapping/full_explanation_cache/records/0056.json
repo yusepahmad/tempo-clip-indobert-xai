@@ -1,0 +1,87 @@
+{
+  "index": 56,
+  "sample_id": "TMP-CF732D6C4543",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bcbaab1cce24cfe674fe5fcdd0c76a88d34b8cdd47cbe96f73146862d6a9e024",
+  "image_sha256": "cf732d6c4543fb44a39cc9c6eaf2c86c06f718b257b78702564a24f37f47e5ab",
+  "transmitted_image_sha256": "e830b06e67546a3fb3d2071545bb9a5b89e853137c4591c9e5f3bc30aefefae4",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.087785,
+      "total": 10,
+      "remaining": 1.9122149999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.087784999999997,
+      "total": 100,
+      "remaining": 91.912215,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1284733870998025,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"bank passbook and floating numbers\", \"source_properties\": \"a blue bank book with numeric digits flying out of it like smoke or a leak\", \"target_situation\": \"financial embezzlement or security breach at Bank BJB during Aher's administration\", \"mapping\": \"the numbers escaping the book represent money being stolen or drained illegally from the bank's accounts\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "l47LaqDAG-2M_PUPz_vKgQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 88,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661500,
+        "output_tokens_cost_nanodollars": 264000
+      },
+      "prompt_tokens": 1323,
+      "total_backend_latency_ms": 1617,
+      "total_tokens": 1411
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0887105,
+      "total": 10,
+      "remaining": 1.9112895000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.088710500000005,
+      "total": 100,
+      "remaining": 91.9112895,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009255,
+  "fields": {
+    "source_object": "bank passbook and floating numbers",
+    "source_properties": "a blue bank book with numeric digits flying out of it like smoke or a leak",
+    "target_situation": "financial embezzlement or security breach at Bank BJB during Aher's administration",
+    "mapping": "the numbers escaping the book represent money being stolen or drained illegally from the bank's accounts",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: bank passbook and floating numbers\nsource_properties: a blue bank book with numeric digits flying out of it like smoke or a leak\ntarget_situation: financial embezzlement or security breach at Bank BJB during Aher's administration\nmapping: the numbers escaping the book represent money being stolen or drained illegally from the bank's accounts\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 262,
+  "sample_id": "TMP-66380DCF0339",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8d3b0645227d3b0c4ad6dc7619983da035e62111fee3a6f8147cf3661e7e7a2d",
+  "image_sha256": "66380dcf0339f88c660e493c89d9b7b146c4d4935a0c0bca1595cbc29b238a78",
+  "transmitted_image_sha256": "812ad1f5cd4024e892a65a155a905d86fbcc2caf7433ee601d1e33d3e015abdc",
+  "image_size": [
+    579,
+    758
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4005775,
+      "total": 10,
+      "remaining": 1.5994224999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.400577499999997,
+      "total": 100,
+      "remaining": 91.5994225,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4570757830515504,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"pencil sharpener\",\n  \"source_properties\": \"shaving wood into thin, curled strips\",\n  \"target_situation\": \"allegations of financial manipulation or tax evasion involving Asian Agri\",\n  \"mapping\": \"A pencil labeled Asian Agri is being 'shaved' into strips resembling tax receipts or financial documents featuring a man's face.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "BZTLavDnK4Kn_uMP9_y56As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 663500,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1327,
+      "total_backend_latency_ms": 1817,
+      "total_tokens": 1420
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.40152,
+      "total": 10,
+      "remaining": 1.5984800000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.401520000000005,
+      "total": 100,
+      "remaining": 91.59848,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009425,
+  "fields": {
+    "source_object": "pencil sharpener",
+    "source_properties": "shaving wood into thin, curled strips",
+    "target_situation": "allegations of financial manipulation or tax evasion involving Asian Agri",
+    "mapping": "A pencil labeled Asian Agri is being 'shaved' into strips resembling tax receipts or financial documents featuring a man's face.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: pencil sharpener\nsource_properties: shaving wood into thin, curled strips\ntarget_situation: allegations of financial manipulation or tax evasion involving Asian Agri\nmapping: A pencil labeled Asian Agri is being 'shaved' into strips resembling tax receipts or financial documents featuring a man's face.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

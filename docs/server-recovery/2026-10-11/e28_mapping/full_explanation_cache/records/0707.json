@@ -1,0 +1,87 @@
+{
+  "index": 707,
+  "sample_id": "TMP-C3644186F670",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "00aef8b64c71d372b99f79c5b3742d9a575ce64925933cd7400ba43abf76c62e",
+  "image_sha256": "c3644186f670644e39e32339e42bdb13e774dc0915ac0583e899b899cbd2b9d4",
+  "transmitted_image_sha256": "9e8f316769061f4e5d52fd446a51864b5641aa2443da6afe5ccfb07d3917bb6d",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0251675,
+      "total": 10,
+      "remaining": 0.9748324999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.025167499999995,
+      "total": 100,
+      "remaining": 90.9748325,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.7831233008764684,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"bisul (boil/abscess)\",\n  \"source_properties\": \"an accumulation of pressure and infection that eventually ruptures and bursts outward\",\n  \"target_situation\": \"public anger and mass demonstrations against the government\",\n  \"mapping\": \"long-simmering societal frustrations reached a breaking point, resulting in a sudden, intense release of collective outrage\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "pp_Lau_FCsmb_uMPlY2fwA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682500,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1365,
+      "total_backend_latency_ms": 1592,
+      "total_tokens": 1462
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.026140999999999,
+      "total": 10,
+      "remaining": 0.9738590000000009,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.026140999999996,
+      "total": 100,
+      "remaining": 90.973859,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009735,
+  "fields": {
+    "source_object": "bisul (boil/abscess)",
+    "source_properties": "an accumulation of pressure and infection that eventually ruptures and bursts outward",
+    "target_situation": "public anger and mass demonstrations against the government",
+    "mapping": "long-simmering societal frustrations reached a breaking point, resulting in a sudden, intense release of collective outrage",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: bisul (boil/abscess)\nsource_properties: an accumulation of pressure and infection that eventually ruptures and bursts outward\ntarget_situation: public anger and mass demonstrations against the government\nmapping: long-simmering societal frustrations reached a breaking point, resulting in a sudden, intense release of collective outrage\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

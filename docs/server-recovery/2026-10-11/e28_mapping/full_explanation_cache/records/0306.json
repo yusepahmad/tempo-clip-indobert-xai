@@ -1,0 +1,90 @@
+{
+  "index": 306,
+  "sample_id": "TMP-CD0E68CBED03",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "4479dceb015ee22c28968ea22a6073598746d204c40f0353df8029bec65f3ace",
+  "image_sha256": "cd0e68cbed03720d84701b000c84cd97b5966911a26d629b60634391400c26f8",
+  "transmitted_image_sha256": "2c654f76758d0e0916e556facd28599b01adbaedb5e3360f2755100601414f95",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4571305,
+      "total": 10,
+      "remaining": 1.5428695000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.457130500000005,
+      "total": 100,
+      "remaining": 91.5428695,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.606886631343514,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A menacing, oversized shadow with grasping hands.\",\n  \"source_properties\": \"Dark, looming, and capable of physically restraining someone despite being a projection.\",\n  \"target_situation\": \"A police general threatening a KPK investigator to manipulate legal testimony.\",\n  \"mapping\": \"The shadow represents the general's overwhelming and coercive power, trapping the investigator within his own office files.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "J5XLatP6GPW6_uMPjdDjYA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1052,
+      "completion_tokens_details": {
+        "reasoning_tokens": 953
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 678000,
+        "output_tokens_cost_nanodollars": 3156000
+      },
+      "prompt_tokens": 1356,
+      "total_backend_latency_ms": 6246,
+      "total_tokens": 2408
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4609645,
+      "total": 10,
+      "remaining": 1.5390355000000007,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.460964500000003,
+      "total": 100,
+      "remaining": 91.5390355,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.003834,
+  "fields": {
+    "source_object": "A menacing, oversized shadow with grasping hands.",
+    "source_properties": "Dark, looming, and capable of physically restraining someone despite being a projection.",
+    "target_situation": "A police general threatening a KPK investigator to manipulate legal testimony.",
+    "mapping": "The shadow represents the general's overwhelming and coercive power, trapping the investigator within his own office files.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A menacing, oversized shadow with grasping hands.\nsource_properties: Dark, looming, and capable of physically restraining someone despite being a projection.\ntarget_situation: A police general threatening a KPK investigator to manipulate legal testimony.\nmapping: The shadow represents the general's overwhelming and coercive power, trapping the investigator within his own office files.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

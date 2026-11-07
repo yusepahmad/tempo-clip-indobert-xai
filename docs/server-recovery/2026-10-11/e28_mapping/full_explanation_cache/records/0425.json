@@ -1,0 +1,87 @@
+{
+  "index": 425,
+  "sample_id": "TMP-09721E781325",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "88cd081af8a79352f7086ed62f6ac2a6b53c19062d888c3b91de0b06153337c9",
+  "image_sha256": "09721e781325630a3039068cea1f70b7cf6bd13ecfdc5792af4dc8dd75afad50",
+  "transmitted_image_sha256": "b7e2f81d8bdfade46ed2ad4890018ce875869061815e5f4e15af3e040054d857",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.624901,
+      "total": 10,
+      "remaining": 1.3750990000000005,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.624900999999994,
+      "total": 100,
+      "remaining": 91.375099,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2337717809714377,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Audio waveform with profile silhouettes\", \"source_properties\": \"Oscillating electrical signals forming hidden human facial profiles between sound peaks.\", \"target_situation\": \"The investigation of a recorded conversation between government officials.\", \"mapping\": \"The waveform visualizes the 'recording' (halo-halo), while the integrated profiles represent the specific individuals being identified through the audio evidence.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "N5jLarm0FbrG_PUPqtG_4Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 87,
+      "cost": {
+        "input_tokens_cost_nanodollars": 685000,
+        "output_tokens_cost_nanodollars": 261000
+      },
+      "prompt_tokens": 1370,
+      "total_backend_latency_ms": 1729,
+      "total_tokens": 1457
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.625847,
+      "total": 10,
+      "remaining": 1.3741529999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.625846999999993,
+      "total": 100,
+      "remaining": 91.374153,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000946,
+  "fields": {
+    "source_object": "Audio waveform with profile silhouettes",
+    "source_properties": "Oscillating electrical signals forming hidden human facial profiles between sound peaks.",
+    "target_situation": "The investigation of a recorded conversation between government officials.",
+    "mapping": "The waveform visualizes the 'recording' (halo-halo), while the integrated profiles represent the specific individuals being identified through the audio evidence.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Audio waveform with profile silhouettes\nsource_properties: Oscillating electrical signals forming hidden human facial profiles between sound peaks.\ntarget_situation: The investigation of a recorded conversation between government officials.\nmapping: The waveform visualizes the 'recording' (halo-halo), while the integrated profiles represent the specific individuals being identified through the audio evidence.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

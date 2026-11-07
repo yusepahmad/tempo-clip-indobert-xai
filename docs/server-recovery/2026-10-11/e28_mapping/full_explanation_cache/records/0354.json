@@ -1,0 +1,90 @@
+{
+  "index": 354,
+  "sample_id": "TMP-8136CCAB6FED",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "7a0386a4d4618f3ba035f04a821ac041a28a2d7ea3d56bb9642d4b032f2f9e59",
+  "image_sha256": "8136ccab6feda7b5d548b23244d989c264a28c49a4d357ee817de1e85dbf6401",
+  "transmitted_image_sha256": "e42576f654b2e65b3c15cad7fd3f72741a8b27ac94a64bddf7aca2d48a1b41f8",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5215175,
+      "total": 10,
+      "remaining": 1.4784825000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.521517500000002,
+      "total": 100,
+      "remaining": 91.4784825,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.403366230428219,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A painter creating a portrait of a model.\",\n  \"source_properties\": \"The artist looks at one person but paints a different person's face on the canvas.\",\n  \"target_situation\": \"Jokowi considering extending Police Chief Haiti's term while PDI-P pushes for candidate Budi Gunawan.\",\n  \"mapping\": \"The artist (Jokowi) observes the current model (Haiti) but renders another (Gunawan), symbolizing political preference overriding the immediate situation.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "YpbLaovWKrua_uMPhJumwQI",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 618,
+      "completion_tokens_details": {
+        "reasoning_tokens": 495
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 1854000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 3949,
+      "total_tokens": 1965
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.524045000000001,
+      "total": 10,
+      "remaining": 1.475954999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.524045000000001,
+      "total": 100,
+      "remaining": 91.475955,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0025275,
+  "fields": {
+    "source_object": "A painter creating a portrait of a model.",
+    "source_properties": "The artist looks at one person but paints a different person's face on the canvas.",
+    "target_situation": "Jokowi considering extending Police Chief Haiti's term while PDI-P pushes for candidate Budi Gunawan.",
+    "mapping": "The artist (Jokowi) observes the current model (Haiti) but renders another (Gunawan), symbolizing political preference overriding the immediate situation.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A painter creating a portrait of a model.\nsource_properties: The artist looks at one person but paints a different person's face on the canvas.\ntarget_situation: Jokowi considering extending Police Chief Haiti's term while PDI-P pushes for candidate Budi Gunawan.\nmapping: The artist (Jokowi) observes the current model (Haiti) but renders another (Gunawan), symbolizing political preference overriding the immediate situation.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

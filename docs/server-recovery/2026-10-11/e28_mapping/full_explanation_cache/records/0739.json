@@ -1,0 +1,87 @@
+{
+  "index": 739,
+  "sample_id": "TMP-8A703C1DA970",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bfd3929616a4c448f22247cbcfd3b8429ffc63c6e29cb1958e1f22921535a539",
+  "image_sha256": "8a703c1da9700526ddd2336ee1b7649da59f749766a0944fdb3312ccd11eff78",
+  "transmitted_image_sha256": "c49cd3fd66bdd550a184828c9bc31b5f1941278924d36801bad0e0c70687c24b",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.070987,
+      "total": 10,
+      "remaining": 0.9290129999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.070987000000002,
+      "total": 100,
+      "remaining": 90.929013,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2116213627159595,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Jean-Claude Van Damme's 'epic split' stunt\",\n  \"source_properties\": \"Stretching between two moving vehicles, requiring immense balance, strength, and daring to prevent a fall.\",\n  \"target_situation\": \"President Prabowo's attempt to mediate the high-stakes conflict between Israel and Iran.\",\n  \"mapping\": \"Splitting between moving missiles represents the difficulty and risk of balancing opposing geopolitical forces.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "eaDLao7kM77i_uMPyOzU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 110,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682500,
+        "output_tokens_cost_nanodollars": 330000
+      },
+      "prompt_tokens": 1365,
+      "total_backend_latency_ms": 1693,
+      "total_tokens": 1475
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0719995,
+      "total": 10,
+      "remaining": 0.9280004999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.071999500000004,
+      "total": 100,
+      "remaining": 90.9280005,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010125,
+  "fields": {
+    "source_object": "Jean-Claude Van Damme's 'epic split' stunt",
+    "source_properties": "Stretching between two moving vehicles, requiring immense balance, strength, and daring to prevent a fall.",
+    "target_situation": "President Prabowo's attempt to mediate the high-stakes conflict between Israel and Iran.",
+    "mapping": "Splitting between moving missiles represents the difficulty and risk of balancing opposing geopolitical forces.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Jean-Claude Van Damme's 'epic split' stunt\nsource_properties: Stretching between two moving vehicles, requiring immense balance, strength, and daring to prevent a fall.\ntarget_situation: President Prabowo's attempt to mediate the high-stakes conflict between Israel and Iran.\nmapping: Splitting between moving missiles represents the difficulty and risk of balancing opposing geopolitical forces.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

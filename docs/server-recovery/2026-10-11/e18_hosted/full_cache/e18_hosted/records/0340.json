@@ -1,0 +1,83 @@
+{
+  "index": 340,
+  "sample_id": "TMP-923DB4E3CCE1",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "9ba63ff24d99267751bbb9b69ca21efd4ece5891c2093b2ad4d087ce1baea1d0",
+  "image_sha256": "923db4e3cce1a9d3625a25c0a920d82c0e1a964a7c46cc0ffe9a6a59172d4785",
+  "transmitted_image_sha256": "6b742df7115c9380bbe8ef629d2b1f3187458807e243f26749945d045a0fcfa4",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.2702085000000007,
+      "total": 10,
+      "remaining": 8.7297915,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.2702084999999954,
+      "total": 100,
+      "remaining": 98.7297915,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 12.052248453022912,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan analisis visual dan teks pada sampul Tempo tersebut, metafora yang digunakan adalah **A: BENCANA_JERAT**.\n\n**Alasannya:**\n*   **Sumber Metafora:** Kondisi \"tersengat listrik\" (disengat/tersetrum) merupakan suatu bentuk kecelakaan, ancaman fisik, atau bahaya. Dalam klasifikasi ini, elemen bah",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "FNrKaoO-LdPj_uMP_OKC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2044,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1964
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 778000,
+        "output_tokens_cost_nanodollars": 6132000
+      },
+      "prompt_tokens": 1556,
+      "total_backend_latency_ms": 11005,
+      "total_tokens": 3600
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.2771185000000003,
+      "total": 10,
+      "remaining": 8.7228815,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.2771185000000003,
+      "total": 100,
+      "remaining": 98.7228815,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "length",
+  "cost_usd": 0.00691
+}

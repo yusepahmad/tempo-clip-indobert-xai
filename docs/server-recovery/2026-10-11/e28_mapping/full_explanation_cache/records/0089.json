@@ -1,0 +1,87 @@
+{
+  "index": 89,
+  "sample_id": "TMP-F850B13782C2",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ac96eb089946738dc04e84f22e9e72587a53720feafdf8ac64de0a3afee8702e",
+  "image_sha256": "f850b13782c21d8e1e5d578d4437cf57bb5daae8f395009a5675060f06b09666",
+  "transmitted_image_sha256": "f1f1891c845682c177b36764609b8b9a034a8e0d27944a8144a310fc32f9a574",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.130109000000001,
+      "total": 10,
+      "remaining": 1.869890999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.130109000000004,
+      "total": 100,
+      "remaining": 91.869891,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2436436098068953,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A person lifting and rocking a smaller person like a child\",\n  \"source_properties\": \"Nurturing, physical lifting, supporting, and positioning above oneself to display or protect\",\n  \"target_situation\": \"President Widodo promoting his son Gibran's political career as a vice-presidential candidate\",\n  \"mapping\": \"The father's physical lift mimics the political elevation and grooming of his son into power\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "cI_Lau_pJc2i_uMP67qv2Qc",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 110,
+      "cost": {
+        "input_tokens_cost_nanodollars": 683000,
+        "output_tokens_cost_nanodollars": 330000
+      },
+      "prompt_tokens": 1366,
+      "total_backend_latency_ms": 1572,
+      "total_tokens": 1476
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.131122,
+      "total": 10,
+      "remaining": 1.8688780000000005,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.131122000000005,
+      "total": 100,
+      "remaining": 91.868878,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001013,
+  "fields": {
+    "source_object": "A person lifting and rocking a smaller person like a child",
+    "source_properties": "Nurturing, physical lifting, supporting, and positioning above oneself to display or protect",
+    "target_situation": "President Widodo promoting his son Gibran's political career as a vice-presidential candidate",
+    "mapping": "The father's physical lift mimics the political elevation and grooming of his son into power",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A person lifting and rocking a smaller person like a child\nsource_properties: Nurturing, physical lifting, supporting, and positioning above oneself to display or protect\ntarget_situation: President Widodo promoting his son Gibran's political career as a vice-presidential candidate\nmapping: The father's physical lift mimics the political elevation and grooming of his son into power\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

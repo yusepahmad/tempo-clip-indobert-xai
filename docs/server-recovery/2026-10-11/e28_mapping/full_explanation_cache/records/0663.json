@@ -1,0 +1,87 @@
+{
+  "index": 663,
+  "sample_id": "TMP-7839DD0F5755",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f9bdda6b2d85fb21fed5bef352a6818fc8404eb491dc3170582b955654b413c8",
+  "image_sha256": "7839dd0f57557feda15836d02d58df63b3b87b4e4407633eb7b30ba478ea2ed4",
+  "transmitted_image_sha256": "7006c24b4bc060ae477902bd2947b3c55cc04dce5cd619f8baf18a10ea66c87f",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9483335,
+      "total": 10,
+      "remaining": 1.0516664999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.948333500000004,
+      "total": 100,
+      "remaining": 91.0516665,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.355495338793844,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"red telephone receiver\", \"source_properties\": \"held aloft by a large hand, cord trailing, lacks buttons, symbolizing top-down commands\", \"target_situation\": \"President Prabowo Subianto's plan to return regional head elections to local councils (DPRD) rather than direct voting.\", \"mapping\": \"Directing elections through a 'phone call' from central power to councils bypasses public will, just as the object replaces democratic tools.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "cJ7LasXQCqCm_uMPsO6HgA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675500,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1351,
+      "total_backend_latency_ms": 1941,
+      "total_tokens": 1457
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.949327,
+      "total": 10,
+      "remaining": 1.0506729999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.949326999999997,
+      "total": 100,
+      "remaining": 91.050673,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009935,
+  "fields": {
+    "source_object": "red telephone receiver",
+    "source_properties": "held aloft by a large hand, cord trailing, lacks buttons, symbolizing top-down commands",
+    "target_situation": "President Prabowo Subianto's plan to return regional head elections to local councils (DPRD) rather than direct voting.",
+    "mapping": "Directing elections through a 'phone call' from central power to councils bypasses public will, just as the object replaces democratic tools.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: red telephone receiver\nsource_properties: held aloft by a large hand, cord trailing, lacks buttons, symbolizing top-down commands\ntarget_situation: President Prabowo Subianto's plan to return regional head elections to local councils (DPRD) rather than direct voting.\nmapping: Directing elections through a 'phone call' from central power to councils bypasses public will, just as the object replaces democratic tools.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}
