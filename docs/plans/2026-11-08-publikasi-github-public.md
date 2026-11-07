@@ -1,7 +1,7 @@
 # Publikasi Repository GitHub Public
 
 **Tanggal:** 2026-11-08
-**Status:** in-progress
+**Status:** done
 
 ## Tujuan
 Membuat repository GitHub public baru pada akun yusepahmad untuk source dan hasil penelitian yang berada di server .31, sehingga pekerjaan dapat diakses tanpa menulis ke laptop.
@@ -38,4 +38,12 @@ Membuat repository GitHub public baru pada akun yusepahmad untuk source dan hasi
 - Akun yusepahmad cocok dengan konektor GitHub dan credential helper server. Nama repo tempo-clip-indobert-xai tersedia; tidak ada repo lama yang diubah.
 - Salinan public terpisah dibuat. File privat/credential/identitas dan blob besar dikeluarkan; label/fold/prediksi/analisis sama byte demi byte dengan R4.
 - Gitleaks v8.30.1 dengan aturan default dan redaksi100% menandai5246generic-api-key. Seluruh temuan ditinjau menurut struktur JSON:5174hash audit token/numeric counts,62manifest SHA,8base-weight SHA,2angka max_abs_valid_token. Tidak ada credential actionable; tidak ada aturan provider atau perlindungan push yang dibypass.
--26tes lulus pada salinan publik; paket Git publik memverifikasi234metrik/78sumber dan cakupan seluruh bukti. Paket Release sedang diverifikasi terpisah sebelum diunggah.
+-26tes lulus pada salinan publik; paket Git publik memverifikasi234metrik/78sumber dan cakupan seluruh bukti. Paket Release telah lulus verifikasi terpisah dan diunggah.
+
+## Hasil aktual
+- Repository baru public: [yusepahmad/tempo-clip-indobert-xai](https://github.com/yusepahmad/tempo-clip-indobert-xai), branch `main`, snapshot awal `5b3a84bb61936583572f7b8a72b4571fed8efff4`. Tidak ada repo lama yang ditimpa.
+- [Release R4](https://github.com/yusepahmad/tempo-clip-indobert-xai/releases/tag/v2026.11.08-r4) memiliki ZIP publik 449.730.156 byte, checksum SHA-256 dan laporan verifikasi. Tag menunjuk snapshot awal; pembaruan catatan publikasi memakai commit main berikutnya.
+- SHA-256 ZIP: `a2c9a67f7ee02472f76a0581b364dfc96b6c7bd6584cb71a3cac5a090a8d2035`, sama dengan digest asset GitHub. Ketiga asset berstatus uploaded dan digest/ukuran cocok.
+- Ekstraksi ZIP publik lulus Run all tiga notebook, 2.421 hash, 234 metrik dari 78 sumber; 26 tes salinan source publik lulus. Delapan ZIP instrumen manusia dibuat ulang dari formulir kosong yang anonim.
+- Akses tanpa autentikasi memverifikasi repo public, README, branch main, metadata Release, serta unduhan berkas checksum. Laporan lengkap tetap di `qa/PUBLIC_ANONYMOUS_VERIFICATION.json` dan `qa/PUBLIC_RELEASE_PUBLISH_STATE.json` pada server.
+- Status riset snapshot R4 tetap 19/28 selesai teknis. Bukti manusia, Run all Colab aktual dan eksperimen literal citra+judul belum diklaim selesai. Web tidak dipromosikan ke model baru oleh publikasi ini.
