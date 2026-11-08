@@ -5,6 +5,11 @@ Format mengikuti [Keep a Changelog](https://keepachangelog.com/).
 
 ## [Unreleased]
 
+### Changed
+
+- Backend web default menjadi `RII_TAIL_RICH256` CLIP-L14–IndoBERT dengan lima checkpoint asli, inferensi dataset held-out, upload ensemble dan XAI model yang sama. Source launcher, pemasang artefak dengan checksum, manifest/backbone pinned, CPU lock dan panduan reproduksi ditambahkan. Paket model disiapkan sebagai asset Release terpisah dari Git. Replay 740 sampel, API, live encoder/cache parity dan rerata probabilitas ensemble upload lulus lima tes; JavaScript lolos pemeriksaan sintaks. Model penelitian R4 tetap E42 dengan Macro-F1 utama. Plan: [teknis dan publikasi](docs/plans/2026-11-08-tuntaskan-teknis-push-terbaru.md); panduan: [web rich256](docs/WEB_RICH256.md).
+- Launcher Colab publik `docs/COLAB_PUBLIC_R4.ipynb` dan generator `build_public_colab.py` menyediakan unduhan Release R4/checksum otomatis tanpa token atau unggahan. 26 tes source analisis dan Run all ulang tiga notebook dari ekstraksi ZIP publik lulus (2.421 hash, 234 metrik/78 sumber). Status revisi/ketergantungan terbaru dicatat pada `docs/STATUS_REVISI_TERKINI.md`; akses job Kaggle privat literal versi 2 masih membutuhkan autentikasi yang belum tersedia, sehingga tidak ada hasil pengganti, resubmission atau klaim seluruh revisi selesai. Plan: [teknis dan publikasi](docs/plans/2026-11-08-tuntaskan-teknis-push-terbaru.md).
+
 ### Fixed
 
 - Builder revisi lanjutan mempertahankan formulir/riwayat/catatan manusia yang sudah ada ketika memakai R4 sebagai sumber, dengan satu tes regresi tambahan; helper bukti mempertahankan provenance eksternal yang tidak berupa path dalam paket. Tabel R21 membedakan basic supporting dari tuntutan literal citra+judul; worker/manager headline memiliki sumber/prompt terpisah, smoke verified dan ledger anti-duplikasi. Peluncur Colab memakai `requirements-analysis-lock.txt` lengkap. Source terkait: `DEMO_XAI_745_FULL/01_notebook/revisi_ii/{build_technical_delivery.py,followup_r21.py,reports.py,manage_qwen_headline.py,build_colab_followup.py,test_technical_delivery.py}` (plan: [revisi teknis](docs/plans/2026-11-07-selesaikan-revisi-teknis-dan-handoff-manusia.md), [migrasi server](docs/plans/2026-11-08-lanjut-kerja-server31.md)).

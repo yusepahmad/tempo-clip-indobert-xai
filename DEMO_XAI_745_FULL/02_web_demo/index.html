@@ -47,9 +47,8 @@
 <select id="sample"></select>
 <label for="dataHeadline">2. Periksa judul utama</label><input id="dataHeadline" type="text"/><p class="field-help">Samakan dengan judul besar pada sampul. Klik kolom untuk memperbaiki.</p>
 <label for="dataSupporting">Teks pendukung (boleh kosong)</label><textarea class="supporting-text" id="dataSupporting" placeholder="Teks penjelas pada sampul. Boleh beberapa kalimat dan beberapa baris." rows="5"></textarea>
-<details class="protocol-note"><summary>Cara input ini dianalisis</summary><div class="info">
-      Sampul yang dipilih <b>dikeluarkan dari data latih</b> (leave-one-out),
-      jadi model belum pernah melihatnya. Prediksinya dibandingkan dengan label anotator.
+<details class="rich-inputs" id="dataRich" hidden><summary>Keterangan gambar untuk model rich</summary><p class="field-help">Terisi dari observasi visual tanpa label kelas pada dataset. Periksa dan sunting bila perlu.</p><label for="data_description">Deskripsi isi gambar</label><textarea id="data_description" rows="3" maxlength="3000"></textarea><label for="data_source_visual">Objek atau perumpamaan visual</label><textarea id="data_source_visual" rows="3" maxlength="3000"></textarea><label for="data_reason">Alasan berdasarkan gambar</label><textarea id="data_reason" rows="3" maxlength="3000"></textarea></details><details class="protocol-note"><summary>Cara input ini dianalisis</summary><div class="info">
+      <span id="datasetProtocol">Memuat protokol model…</span>
     </div></details></div>
 <div id="modeUnggah" style="display:none">
 <label for="gambar">1. Pilih gambar dari laptop</label>
@@ -60,7 +59,7 @@
 <input id="headline" placeholder="contoh: SKANDAL BNI, SIAPA MENIKMATI?" type="text"/><p class="field-help">Samakan dengan judul besar pada sampul. Klik kolom untuk memperbaiki.</p>
 <label for="supporting">Teks pendukung (boleh kosong)</label>
 <textarea class="supporting-text" id="supporting" placeholder="Teks penjelas pada sampul. Boleh beberapa kalimat dan beberapa baris." rows="5"></textarea>
-<details class="protocol-note"><summary>Cara input ini dianalisis</summary><div class="info">
+<details class="rich-inputs" id="uploadRich" hidden><summary>Keterangan gambar untuk model rich</summary><p class="field-help">Isi ketiga kolom dari gambar yang diunggah. Kolom ini merupakan input model, bukan label jawaban.</p><label for="upload_description">Deskripsi isi gambar</label><textarea id="upload_description" rows="3" maxlength="3000"></textarea><label for="upload_source_visual">Objek atau perumpamaan visual</label><textarea id="upload_source_visual" rows="3" maxlength="3000"></textarea><label for="upload_reason">Alasan berdasarkan gambar</label><textarea id="upload_reason" rows="3" maxlength="3000"></textarea></details><details class="protocol-note"><summary>Cara input ini dianalisis</summary><div class="info">
       Teks pada gambar dibaca otomatis dan mengisi kedua kolom di atas.
       <b>Periksa dan perbaiki bila ada yang salah</b> — pembacaan otomatis pada
       sampul majalah tidak pernah sempurna, dan teks inilah yang dipakai model.
@@ -151,18 +150,14 @@
 <div class="table-scroll" id="verif"></div>
 </div></section></div><div aria-live="polite" class="processing-overlay" hidden="" id="processingOverlay" role="status"><div class="processing-card"><span aria-hidden="true" class="loading-wheel"></span><h2 id="processingTitle">Sedang menganalisis sampul</h2><p id="processingDescription">Prediksi tiga task, peta gambar CLIP, dan kontribusi kata IndoBERT sedang dihitung.</p><span class="processing-note">Tunggu sebentar. Hasil akan tampil otomatis.</span><div aria-hidden="true" class="indeterminate-track"><span></span></div></div></div></section></div></section><div class="kartu secondary-area app-view" hidden="" id="batch" tabindex="0">
 <h2>Analisis banyak sampul</h2>
-<p>Ketiga task batch dataset memakai model MTL yang dilatih pada seluruh 740 sampul (in-sample). Kecocokan satu sampul bukan metrik korpus. Unggahan dibaca OCR lalu menunggu koreksi/konfirmasi headline.</p>
+<p id="batchProtocol">Memuat protokol batch…</p>
 <details open=""><summary>Buka pengaturan batch</summary><label for="batchIds">ID dataset, dipisahkan koma (opsional)</label><textarea id="batchIds" placeholder="sample_id1, sample_id2" rows="2"></textarea><button id="batchAddCurrent" type="button">Tambahkan sampul pilihan</button><label for="batchFiles">Gambar unggahan (opsional)</label><input accept="image/*" id="batchFiles" multiple="" type="file"/><label for="batchMethod">Metode atribusi batch</label><select id="batchMethod"><option value="occlusion">Occlusion (baku batch, lebih cepat)</option><option value="lime">LIME (lebih lambat)</option></select><label for="batchTask">Penjelasan (task) untuk batch</label><select id="batchTask"><option value="task2_domain_sumber">Ranah metafora (Task 2)</option><option value="task1_issue">Topik utama (Task 1)</option><option value="task3_primary_entity_type">Pihak yang disorot (Task 3)</option></select><button id="batchStart" type="button">Mulai batch</button><button id="batchResume" type="button">Lanjutkan job terakhir / ulang item gagal</button></details><div id="batchStatus"></div><div id="batchResults"></div></div><div class="kartu secondary-area app-view" hidden="" id="panduan" tabindex="0">
 <h2>Panduan analisis</h2>
 <p>Demo membantu menelaah topik, ranah metafora, dan jenis pihak yang disorot. Prediksi dan bukti XAI membantu pemeriksaan; periksa headline sebelum analisis.</p>
 <details><summary>Arti tiga task dan katalog kelas</summary><div id="catalog">Memuat katalog…</div></details>
 <p class="kecil">Definisi operasional disusun untuk proyek ini atas instruksi pengguna; label berasal dari dataset. Definisi baru tidak membuktikan label historis atau prediksi benar.</p>
 <details><summary>Model dan hasil evaluasi</summary><div class="warn" id="modelMethodDetails">
-<b>Model utama: multi-task learning CLIP–IndoBERT untuk ketiga task.</b>
-Fitur CLIP ViT-B/32 dan IndoBERT digabungkan ke shared layer 256 unit dengan tiga head yang dilatih bersama menggunakan rata-rata tiga loss. Encoder beku; yang dilatih adalah shared layer dan head.
-Macro-F1 CV historis lima fold pada 740 sampul: <b>Task 1 0,4380; Task 2 0,3197; Task 3 0,2764.</b> Target 0,70 belum tercapai. Skor prediksi softmax belum dikalibrasi sebagai peluang benar.
-Analisis dataset satu sampul melatih ulang head dengan leave-one-out; batch dataset bersifat in-sample; unggahan baru memakai head yang dilatih pada seluruh 740 sampul. Protokol demo ini berbeda dari CV historis.
-Peta visual memakai gradient × activation patch CLIP dari head task pilihan. Peta gabungan merata-ratakan peta tiga task yang dinormalisasi. Bukti kata memakai LIME (120 varian headline) atau occlusion dengan teks pendukung tetap.
+Memuat identitas, skor evaluasi dan protokol model aktif. Skor prediksi belum dikalibrasi sebagai peluang benar.
 </div><p class="kecil">Pembanding historis bernama E14 (Qwen/E5/BGE/CLIP + SVC, Macro-F1 Task 2 0,5663) berbeda dari MICRO-E14 joint QLoRA. Backend aktual ditampilkan pada status model. Kecocokan satu sampul bukan ukuran akurasi korpus.</p></details></div></div>
 <script>
 let daftar = [];
@@ -175,6 +170,20 @@ fetch('/api/models').then(r=>r.json()).then(d=>{
    document.getElementById('modelMethodDetails').textContent=e.textContent+' '+(d.limitation||'');
    return;
  }
+ if(d.backend==='clip-indobert-tail-rich256'){
+   const micro=d.evaluation.micro_f1;
+   const fmt=x=>['task1_issue','task2_domain_sumber','task3_primary_entity_type'].map(t=>Number(x[t]).toFixed(4).replace('.',',')).join(' / ');
+   e.textContent='Model aktif: '+d.candidate+' — CLIP-L14 + IndoBERT, tail terlatih dan tiga head bersama. Micro-F1 OOF Task 1/2/3: '+fmt(micro)+'. Skor prediksi belum dikalibrasi.';
+   document.getElementById('modelMethodDetails').textContent=e.textContent+' Macro-F1: '+fmt(scores)+'. Dipilih post-hoc berdasarkan minimum Micro-F1 tiga task pada 740 OOF di antara kandidat joint CLIP–IndoBERT. Dataset memakai checkpoint outer-fold yang tidak melatih ID tersebut; unggahan memakai rerata probabilitas lima fold, belum dievaluasi terpisah. Input mencakup gambar, judul, teks pendukung dan tiga keterangan visual. XAI melalui model yang sama; bukan bukti kausal.';
+   document.getElementById('datasetProtocol').textContent='Memakai checkpoint outer-fold yang tidak melatih sampul ini, termasuk saat teks disunting. Keterangan gambar terisi dari input evaluasi dan dapat diperiksa. Kecocokan satu sampul bukan metrik korpus.';
+   document.getElementById('batchProtocol').textContent='Batch dataset memakai checkpoint outer-fold masing-masing ID. Untuk gambar baru, gunakan unggah satu gambar dan lengkapi keterangan visual.';
+   for(const id of ['dataRich','uploadRich'])document.getElementById(id).hidden=false;
+   document.getElementById('batchFiles').disabled=true;
+   window.tailRichActive=true;
+   return;
+ }
+ document.getElementById('datasetProtocol').textContent='Baseline: leave-one-out head refit untuk dataset satu sampul.';
+ document.getElementById('batchProtocol').textContent='Baseline batch dataset: head refit seluruh 740 sampul, in-sample. Kecocokan bukan metrik korpus.';
  if(d.backend!=='clip-indobert-mtl' || !scores)throw Error('Identitas model tidak sesuai');
  const metric=Number(scores.task2_domain_sumber).toFixed(4).replace('.',',');
  e.textContent='Model aktif: '+d.version+' — ketiga task satu model MTL CLIP–IndoBERT. Macro-F1 Task 2 CV historis '+metric+'. Encoder beku; shared layer dan tiga head dilatih bersama. Skor belum dikalibrasi.';
@@ -452,6 +461,7 @@ async function analisis(){
     fd.append('sample_id', document.getElementById('sample').value);
     fd.append('headline', document.getElementById('dataHeadline').value);
     fd.append('supporting', document.getElementById('dataSupporting').value);
+    if(window.tailRichActive)for(const k of ['description','source_visual','reason'])fd.append(k,document.getElementById('data_'+k).value);
   } else {
     const gi = document.getElementById('gambar');
     const f = gi._berkas || (gi.files && gi.files[0]);
@@ -461,6 +471,7 @@ async function analisis(){
     fd.append('gambar', f);
     fd.append('headline', hl);
     fd.append('supporting', document.getElementById('supporting').value);
+    if(window.tailRichActive)for(const k of ['description','source_visual','reason'])fd.append(k,document.getElementById('upload_'+k).value);
   }
 
   try{
@@ -718,11 +729,13 @@ function syncDataset(){
  if(!x)return;
  document.getElementById('dataHeadline').value=x.headline;
  document.getElementById('dataSupporting').value=x.supporting || '';
+ for(const k of ['description','source_visual','reason'])document.getElementById('data_'+k).value=(x.rich||{})[k]||'';
  document.getElementById('previewData').src='/api/image/'+encodeURIComponent(x.sample_id);
  invalidateAnalysis();
 }
 document.getElementById('sample').addEventListener('change',syncDataset);
-for(const id of ['task','dataHeadline','dataSupporting','headline','supporting']){
+document.getElementById('gambar').addEventListener('change',()=>{for(const k of ['description','source_visual','reason'])document.getElementById('upload_'+k).value='';});
+for(const id of ['task','dataHeadline','dataSupporting','headline','supporting',...['data','upload'].flatMap(p=>['description','source_visual','reason'].map(k=>p+'_'+k))]){
  document.getElementById(id).addEventListener('input',()=>{if(id in textEditRev)textEditRev[id]++;invalidateAnalysis();});
  document.getElementById(id).addEventListener('change',invalidateAnalysis);
 }
@@ -760,7 +773,7 @@ function simpanBatchId(id){
 }
 function kunciBatch(){
  const sibuk=batchMemulai || jobBerjalan(batchStatusTerakhir);
- for(const id of ['batchStart','batchIds','batchFiles','batchMethod','batchTask','batchAddCurrent']) document.getElementById(id).disabled=sibuk;
+ for(const id of ['batchStart','batchIds','batchFiles','batchMethod','batchTask','batchAddCurrent']) document.getElementById(id).disabled=sibuk || (id==='batchFiles' && window.tailRichActive);
  document.getElementById('batchResume').disabled=sibuk || !batchId;
  document.getElementById('batchStart').textContent=batchMemulai ? 'Membuat job…' : jobBerjalan(batchStatusTerakhir) ? 'Batch sedang berjalan…' : 'Mulai batch';
 }
@@ -790,7 +803,7 @@ document.getElementById('batchStart').onclick=async()=>{
  const status=document.getElementById('batchStatus'), berkas=document.getElementById('batchFiles');
  const fd=new FormData();fd.append('task',document.getElementById('batchTask').value);fd.append('metode_atribusi',document.getElementById('batchMethod').value);
  fd.append('sample_ids',JSON.stringify([...new Set(document.getElementById('batchIds').value.split(',').map(x=>x.trim()).filter(Boolean))]));
- for(const f of berkas.files)fd.append('gambar',f);
+ if(!window.tailRichActive)for(const f of berkas.files)fd.append('gambar',f);
  batchMemulai=true; kunciBatch(); status.textContent='Membuat job batch…';
  try{
   const r=await fetch('/api/batch',{method:'POST',body:fd}), j=await bacaJson(r);

@@ -1,0 +1,53 @@
+{
+  "version": "clip-indobert-tail-rich256-v1",
+  "backend": "clip-indobert-tail-rich256",
+  "candidate": "RII_TAIL_RICH256",
+  "architecture": "CLIP-L14 full/crop + IndoBERT frozen first10/trained last2 + shared256 + three jointly trained heads",
+  "selection": "post-hoc maximum minimum Micro-F1 across three tasks among evaluated joint CLIP–IndoBERT candidates with complete 740 OOF; not best on every task",
+  "evaluation": {
+    "protocol": "five outer folds; original held-out Kaggle FP32 checkpoint predictions; epoch selection inner-only Macro-F1",
+    "samples": 740,
+    "micro_f1": {
+      "task1_issue": 0.49324324324324326,
+      "task2_domain_sumber": 0.5243243243243243,
+      "task3_primary_entity_type": 0.5148648648648648
+    },
+    "macro_f1": {
+      "task1_issue": 0.46191464244885794,
+      "task2_domain_sumber": 0.49668375986054486,
+      "task3_primary_entity_type": 0.4000934237028041
+    }
+  },
+  "protocol_sha256": "ab86219bc690110934f6f3f3cb89e15777a4afef9f0a80c9d915f09c7750afaa",
+  "dataset_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "rich_inputs_sha256": "bd8f42e41d0530d65e6a747bc4018470abbb2f7549966df02fe977b0fabaa72a",
+  "asset_sha256": {
+    "fold1_joint.pt": "44d2f5051a0be7db828b042a4c22c6b94c0d8a1f9d2007c4979f3ce4a86f2522",
+    "fold2_joint.pt": "84669a3149085f9ad270db9aace19fcafd36964c0c4d0fe0c7cead4d32d95ed4",
+    "fold3_joint.pt": "f6a19ac6cf0fbc2a6a77ef5131ae999d1156f77e3e745e5274f4ce318a1986be",
+    "fold4_joint.pt": "eacf076118ee8e63b4a41d59b929aaf51e43eac2d49a87c7d894d158bc3d5864",
+    "fold5_joint.pt": "ee1bc7a12956c2723c4dad0475843c455c1cd8c6120472ea78565bcf8f70f7de",
+    "rich256_front_cache.npz": "038ad8caa268ec663ecdf118023159a1c2ec29fd240a0e36c04ce9a7e5d99d65",
+    "tail_initial.pt": "cfeadc75ea8336eab297eaf831ada3a5c792f83dea1b9b580144b4160a8f812c",
+    "bert_config.json": "7e80b0a123b9ae7147af33cfe855f6ee400fe1fe55aae15ffe41cff298f2e599"
+  },
+  "clip": {
+    "repo": "laion/CLIP-ViT-L-14-laion2B-s32B-b82K",
+    "revision": "1627032197142fbe2a7cfec626f4ced3ae60d07a",
+    "file": "open_clip_pytorch_model.safetensors",
+    "sha256": "7d129ed747e0ed53e82dfcc140382b51be66b56e6a9bdc3258afd2846e3bb019",
+    "bytes": 1710517748
+  },
+  "indobert": {
+    "repo": "indobenchmark/indobert-base-p1",
+    "revision": "c2cd0b51ddce6580eb35263b39b0a1e5fb0a39e2",
+    "files": {
+      "config.json": "c40b372acbdfbde38aa225c6ffdd09d1076904f2445532e2bb7eb92f95fc5954",
+      "pytorch_model.bin": "725fead20c01d47e0192426ac1474eff19e993b52b971c05bca5e96054be41f8",
+      "vocab.txt": "35cfc7be6dc3ec71102248722f352830a8fd89b5a5dadb83d70c2f7794ddbc11",
+      "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+      "tokenizer_config.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    }
+  },
+  "limitation": "Rich benchmark requires visual description/source/reason as well as headline/supporting. Upload descriptions are user supplied; ensemble upload quality is not separately evaluated. Scores are uncalibrated; model selection is exploratory post-hoc."
+}

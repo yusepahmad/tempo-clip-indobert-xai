@@ -49,7 +49,9 @@ python -m unittest -v test_evaluate test_human_agreement test_open_followup test
 - `docs/revisi-ii/`: provenance, keputusan model, definisi task dan instrumen kosong.
 - `docs/plans/` dan `CHANGELOG.md`: rencana dan riwayat perubahan. Catatan server/laptop historis tidak menyatakan deployment publik aktif.
 
-Source web masih default **CLIP-B32–IndoBERT baseline historis**. E42 dan Qwen tidak otomatis menjadi backend web. Repository ini tidak mengklaim web menggunakan model dengan skor tertinggi.
+Source web terbaru memakai **RII_TAIL_RICH256 CLIP-L14–IndoBERT** dengan lima checkpoint asli. Micro-F1 OOF Task 1/2/3: **0.493243 / 0.524324 / 0.514865**. Kandidat web dipilih post-hoc berdasarkan maksimum minimum Micro-F1; E42 tetap model utama penelitian R4 berdasarkan Macro-F1. Dataset memakai checkpoint held-out; upload memakai ensemble lima fold yang belum dievaluasi terpisah. Lihat [panduan web, input rich, pemasangan model dan pengujian](docs/WEB_RICH256.md). Bobot didistribusikan sebagai [asset Release web rich256](https://github.com/yusepahmad/tempo-clip-indobert-xai/releases/tag/v2026.11.08-web-rich256), terpisah dari Git.
+
+[Status revisi dan ketergantungan yang tersisa](docs/STATUS_REVISI_TERKINI.md) menjelaskan pekerjaan Kaggle/penilaian manusia/provenance yang belum dapat ditutup. [Buka launcher R32 di Colab](https://colab.research.google.com/github/yusepahmad/tempo-clip-indobert-xai/blob/main/docs/COLAB_PUBLIC_R4.ipynb) untuk mengunduh Release R4 otomatis dan menjalankan tiga notebook; launcher tersedia belum berarti Colab sudah lulus.
 
 Penilaian manusia belum tersedia: anotasi independen 150 sampul oleh dua anotator, audit 60 sampul, lima penilai XAI, pemeriksaan 20 contoh E01 serta riwayat korpus masih diperlukan. Bukti Run all Colab belum ada; pengujian Linux/server tidak disebut kelulusan Colab.
 
