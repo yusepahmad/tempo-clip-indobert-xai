@@ -1,0 +1,87 @@
+{
+  "index": 547,
+  "sample_id": "TMP-17F3693CEA60",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "d87fc4ea81c72f4a8bab0dc9d34e9e2d77bfc60fdf1e54d255cd81b99c41c344",
+  "image_sha256": "17f3693cea60d4f08f32016859d12a186273692964000f44c895a3f47691c594",
+  "transmitted_image_sha256": "e96dac277c475ed92042f371903636be2e6210df1a497195b3a15b9a6bf348db",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.790337000000001,
+      "total": 10,
+      "remaining": 1.209662999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.790336999999994,
+      "total": 100,
+      "remaining": 91.209663,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4896817561239004,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Heavy press or vise\", \"source_properties\": \"Two massive, opposing physical forces closing in on a smaller, fragile object between them.\", \"target_situation\": \"President Jokowi caught between two powerful military candidates competing for the TNI Commander position.\", \"mapping\": \"The huge generals represent overwhelming political pressure, while Jokowi's small, squeezed posture shows him feeling trapped or pressured by their rivalry.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Z5vLaqDMM7De_uMP6urskA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 672000,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1344,
+      "total_backend_latency_ms": 1995,
+      "total_tokens": 1436
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.791285,
+      "total": 10,
+      "remaining": 1.2087149999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.791285000000002,
+      "total": 100,
+      "remaining": 91.208715,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000948,
+  "fields": {
+    "source_object": "Heavy press or vise",
+    "source_properties": "Two massive, opposing physical forces closing in on a smaller, fragile object between them.",
+    "target_situation": "President Jokowi caught between two powerful military candidates competing for the TNI Commander position.",
+    "mapping": "The huge generals represent overwhelming political pressure, while Jokowi's small, squeezed posture shows him feeling trapped or pressured by their rivalry.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Heavy press or vise\nsource_properties: Two massive, opposing physical forces closing in on a smaller, fragile object between them.\ntarget_situation: President Jokowi caught between two powerful military candidates competing for the TNI Commander position.\nmapping: The huge generals represent overwhelming political pressure, while Jokowi's small, squeezed posture shows him feeling trapped or pressured by their rivalry.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 261,
+  "sample_id": "TMP-E9C0CFB24442",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "226354b00c98fb3499d9f0b197a541987ab383bab2604c4c1897e766a5be98c8",
+  "image_sha256": "e9c0cfb244421791203dc83b5921b8ebca83b4db1f509832df711e20472b6f5a",
+  "transmitted_image_sha256": "b39cbca2c82f8ee8ca96b36d34d374fea8cb23091a7b312adfdf858439d83fa2",
+  "image_size": [
+    496,
+    650
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3996205,
+      "total": 10,
+      "remaining": 1.6003795000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.399620499999997,
+      "total": 100,
+      "remaining": 91.6003795,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.945135914720595,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Game of darts\",\n  \"source_properties\": \"Blindfolded thrower, red dart, target board held by another person.\",\n  \"target_situation\": \"Unregulated allocation of Pertamina oil fields by the Minister of SOEs.\",\n  \"mapping\": \"The blindfold represents reckless decision-making, while the target-holding official bears the risk.\",\n  \"uncertainty\": \"None evident.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "AJTLauiyLbuc_uMP2cbk2A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 96,
+      "cost": {
+        "input_tokens_cost_nanodollars": 669000,
+        "output_tokens_cost_nanodollars": 288000
+      },
+      "prompt_tokens": 1338,
+      "total_backend_latency_ms": 1479,
+      "total_tokens": 1434
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4005775,
+      "total": 10,
+      "remaining": 1.5994224999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.400577499999997,
+      "total": 100,
+      "remaining": 91.5994225,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000957,
+  "fields": {
+    "source_object": "Game of darts",
+    "source_properties": "Blindfolded thrower, red dart, target board held by another person.",
+    "target_situation": "Unregulated allocation of Pertamina oil fields by the Minister of SOEs.",
+    "mapping": "The blindfold represents reckless decision-making, while the target-holding official bears the risk.",
+    "uncertainty": "None evident."
+  },
+  "explanation": "source_object: Game of darts\nsource_properties: Blindfolded thrower, red dart, target board held by another person.\ntarget_situation: Unregulated allocation of Pertamina oil fields by the Minister of SOEs.\nmapping: The blindfold represents reckless decision-making, while the target-holding official bears the risk.\nuncertainty: None evident.",
+  "finish_reason": "stop",
+  "usable": true
+}

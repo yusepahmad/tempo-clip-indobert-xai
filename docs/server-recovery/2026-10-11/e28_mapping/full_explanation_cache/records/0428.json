@@ -1,0 +1,87 @@
+{
+  "index": 428,
+  "sample_id": "TMP-76784E6C573E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c3f11bf26808ffd2c7656e430e43baeb8ca24454957c1e24668e66018682f1dc",
+  "image_sha256": "76784e6c573e28a26099eecf7907d45e0bc08dbb98df98ea96f9e7c70c7942a7",
+  "transmitted_image_sha256": "b088c0a00cf058006cc4e008a62791ec9a65605f34bd6b6366fac129ea5c8c80",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.627768,
+      "total": 10,
+      "remaining": 1.3722320000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.627768000000003,
+      "total": 100,
+      "remaining": 91.372232,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.751909346319735,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"shattering or dissolving material\",\n  \"source_properties\": \"disintegrating into numerous small, sharp-edged fragments that disperse into the air.\",\n  \"target_situation\": \"intense social media conflicts and digital political warfare.\",\n  \"mapping\": \"The individual's shout transforms into sharp hashtags, showing how digital communication fragments civil discourse into aggressive, weaponized political slogans.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "SJjLaqvHKv2b_uMPj8_lqAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 100,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 300000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 1990,
+      "total_tokens": 1447
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6287415,
+      "total": 10,
+      "remaining": 1.3712584999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.628741500000004,
+      "total": 100,
+      "remaining": 91.3712585,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009735,
+  "fields": {
+    "source_object": "shattering or dissolving material",
+    "source_properties": "disintegrating into numerous small, sharp-edged fragments that disperse into the air.",
+    "target_situation": "intense social media conflicts and digital political warfare.",
+    "mapping": "The individual's shout transforms into sharp hashtags, showing how digital communication fragments civil discourse into aggressive, weaponized political slogans.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: shattering or dissolving material\nsource_properties: disintegrating into numerous small, sharp-edged fragments that disperse into the air.\ntarget_situation: intense social media conflicts and digital political warfare.\nmapping: The individual's shout transforms into sharp hashtags, showing how digital communication fragments civil discourse into aggressive, weaponized political slogans.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

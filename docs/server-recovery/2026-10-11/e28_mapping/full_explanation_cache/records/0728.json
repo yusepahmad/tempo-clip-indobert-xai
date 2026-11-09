@@ -1,0 +1,87 @@
+{
+  "index": 728,
+  "sample_id": "TMP-B4159E66B480",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c9da9cbd4fba3fb8c8e58ab03689937b00f09e448efaa64ad593af09ec670c7f",
+  "image_sha256": "b4159e66b48035e82b98cad2bd95d93c583cd78a2c4a5a2931a655dc69c30f74",
+  "transmitted_image_sha256": "3027ee180cac0113e8a71d260abb6e55f63e77337d9a41871d5670d4d43c184f",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0528005,
+      "total": 10,
+      "remaining": 0.9471995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.052800500000004,
+      "total": 100,
+      "remaining": 90.9471995,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3041302389465272,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"none evident\", \"source_properties\": \"not applicable\", \"target_situation\": \"Three figures, including a caricature of President Prabowo and two foreign nationals, sit together on a bench in a jungle setting.\", \"mapping\": \"The illustration literally depicts the individuals described in the headline: foreign lobbyists positioned close to the president, suggesting influence and proximity within his inner circle.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "LKDLavWBM8Xh_uMPyN6L8Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 88,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674500,
+        "output_tokens_cost_nanodollars": 264000
+      },
+      "prompt_tokens": 1349,
+      "total_backend_latency_ms": 1656,
+      "total_tokens": 1437
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.053739,
+      "total": 10,
+      "remaining": 0.9462609999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.053738999999993,
+      "total": 100,
+      "remaining": 90.946261,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009385,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "not applicable",
+    "target_situation": "Three figures, including a caricature of President Prabowo and two foreign nationals, sit together on a bench in a jungle setting.",
+    "mapping": "The illustration literally depicts the individuals described in the headline: foreign lobbyists positioned close to the president, suggesting influence and proximity within his inner circle.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: not applicable\ntarget_situation: Three figures, including a caricature of President Prabowo and two foreign nationals, sit together on a bench in a jungle setting.\nmapping: The illustration literally depicts the individuals described in the headline: foreign lobbyists positioned close to the president, suggesting influence and proximity within his inner circle.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

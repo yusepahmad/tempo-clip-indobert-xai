@@ -1,0 +1,119 @@
+{
+  "cached_worker_sha256": "87cf599e084bd39f171ad7ac393531e2e5938c1e26e3c47607b7b72549de3654",
+  "reference_signature": {
+    "worker_sha256": "cdb88a85e1ceb42f5f8e1f15c5e6c86dd3b82e2a06860a1212df56fc9cc6dc29",
+    "helper_sha256": "c117f65e9460bccc4daeba0de9f3af4ee737e7ef65f57d39cca5a0910f8a3ece",
+    "reference": {
+      "worker_sha256": "02588b6fcd4bdbe21be4b17e9d60dcfcdebfbf0b97246056a88b4804febfb6e5",
+      "data_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+      "e5_sha256": "1f0d2b2f346071fa673701847af39e8a22faf9e6a98195734982cd71e99af374",
+      "bge_sha256": "c0d7d1fc9ac42988b0d107a694d7d3b355105f8640f776ace2617eed936495c4",
+      "clip_sha256": "d27cd5dbecfffba3a8bbb96037f3181da20f1c95eb246a7d38a4627a90599e5c",
+      "reference_verification_sha256": "0d91fcf3cc6f365b08547161657679f88ef7df18fe19176bc0a1f61499cd547a",
+      "grid": {
+        "fusion__e5_weight": [
+          0,
+          0.5,
+          1,
+          2
+        ],
+        "fusion__clip_weight": [
+          0,
+          0.5,
+          1,
+          2
+        ],
+        "clf__C": [
+          1,
+          10,
+          100
+        ],
+        "clf__gamma": [
+          "scale",
+          0.1,
+          1
+        ],
+        "clf__class_weight": [
+          null,
+          "balanced"
+        ]
+      },
+      "normalization": "StandardScaler fit per block, L2 per block, then weights",
+      "outer": "Task1 baseline stratified5 seed42",
+      "inner": "Task2 stratified3 seed42",
+      "selection_order": [
+        "description",
+        "source_reason",
+        "combined",
+        "description_reason",
+        "semantic_visual",
+        "weighted"
+      ],
+      "n_jobs": 1
+    },
+    "embedding_verification_sha256": "04a423366f63aa1ca38069db9f540a9e56ae9f3db7bc9ee86c9f2a70826e90ae",
+    "embedding_meta_sha256": "0b9bd51123472f743654fbd4f1f171e12d73409e5f7bf6bbdd9d66bb42a633a5",
+    "features_sha256": "b75a4d2d988e67ccf8cca37bbceea1fd507e70104dbdfb4f7d58976d95bb4c34",
+    "grid": [
+      {
+        "fusion__mode": [
+          "interpretation_only",
+          "interpretation_context_only"
+        ],
+        "clf__C": [
+          1,
+          10,
+          100
+        ],
+        "clf__gamma": [
+          "scale",
+          0.1,
+          1
+        ],
+        "clf__class_weight": [
+          null,
+          "balanced"
+        ]
+      },
+      {
+        "fusion__mode": [
+          "fusion_interpretation",
+          "fusion_context"
+        ],
+        "fusion__interpretation_weight": [
+          0,
+          0.5,
+          1,
+          2
+        ],
+        "fusion__e5_weight": [
+          0.5,
+          2
+        ],
+        "fusion__clip_weight": [
+          0.5,
+          1
+        ],
+        "clf__C": [
+          1,
+          10,
+          100
+        ],
+        "clf__gamma": [
+          "scale",
+          0.1,
+          1
+        ],
+        "clf__class_weight": [
+          null,
+          "balanced"
+        ]
+      }
+    ],
+    "outer": "Task1 baseline5 seed42",
+    "inner": "Task2 stratified3 seed42",
+    "normalization": "training-only per-block StandardScaler/L2 then weights",
+    "n_jobs": 1
+  },
+  "backend": "same float64 training projection/gamma; cached RBF Gram and precomputed SVC"
+}

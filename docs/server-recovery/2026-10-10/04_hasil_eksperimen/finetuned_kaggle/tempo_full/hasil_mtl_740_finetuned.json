@@ -1,0 +1,155 @@
+{
+  "status": "complete",
+  "config": {
+    "schema": 1,
+    "folds": 5,
+    "epochs": 120,
+    "batch": 16,
+    "lr": 2e-05,
+    "weight_decay": 0.0001,
+    "seed": 42,
+    "world_size": 2,
+    "smoke": false,
+    "data_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+    "notebook_sha256": "64c662893998305decb6495386318e5d3e27478c2c0d0830ec51f2552e1e28c7"
+  },
+  "hasil": {
+    "task1_issue": {
+      "accuracy": 0.5716216216216217,
+      "macro_f1": 0.5139197474982247
+    },
+    "task2_domain_sumber": {
+      "accuracy": 0.34324324324324323,
+      "macro_f1": 0.2460863342467495
+    },
+    "task3_primary_entity_type": {
+      "accuracy": 0.5405405405405406,
+      "macro_f1": 0.3699393127439432
+    }
+  },
+  "fold_metrics": [
+    {
+      "fold": 1,
+      "metrics": {
+        "task1_issue": {
+          "accuracy": 0.5608108108108109,
+          "macro_f1": 0.4674274123205948
+        },
+        "task2_domain_sumber": {
+          "accuracy": 0.36486486486486486,
+          "macro_f1": 0.24605095555158604
+        },
+        "task3_primary_entity_type": {
+          "accuracy": 0.5337837837837838,
+          "macro_f1": 0.33469547368950686
+        }
+      },
+      "smoke": false
+    },
+    {
+      "fold": 2,
+      "metrics": {
+        "task1_issue": {
+          "accuracy": 0.6013513513513513,
+          "macro_f1": 0.5948263344604807
+        },
+        "task2_domain_sumber": {
+          "accuracy": 0.3310810810810811,
+          "macro_f1": 0.2128147016634936
+        },
+        "task3_primary_entity_type": {
+          "accuracy": 0.5945945945945946,
+          "macro_f1": 0.37004149950578524
+        }
+      },
+      "smoke": false
+    },
+    {
+      "fold": 3,
+      "metrics": {
+        "task1_issue": {
+          "accuracy": 0.5743243243243243,
+          "macro_f1": 0.4985538907861894
+        },
+        "task2_domain_sumber": {
+          "accuracy": 0.32432432432432434,
+          "macro_f1": 0.23915182561799103
+        },
+        "task3_primary_entity_type": {
+          "accuracy": 0.46621621621621623,
+          "macro_f1": 0.3113106036909603
+        }
+      },
+      "smoke": false
+    },
+    {
+      "fold": 4,
+      "metrics": {
+        "task1_issue": {
+          "accuracy": 0.5608108108108109,
+          "macro_f1": 0.5057185232766691
+        },
+        "task2_domain_sumber": {
+          "accuracy": 0.3581081081081081,
+          "macro_f1": 0.25302544980092223
+        },
+        "task3_primary_entity_type": {
+          "accuracy": 0.5878378378378378,
+          "macro_f1": 0.5081178030730037
+        }
+      },
+      "smoke": false
+    },
+    {
+      "fold": 5,
+      "metrics": {
+        "task1_issue": {
+          "accuracy": 0.5608108108108109,
+          "macro_f1": 0.4689127297822949
+        },
+        "task2_domain_sumber": {
+          "accuracy": 0.33783783783783783,
+          "macro_f1": 0.25090262632748983
+        },
+        "task3_primary_entity_type": {
+          "accuracy": 0.5202702702702703,
+          "macro_f1": 0.31046176046176044
+        }
+      },
+      "smoke": false
+    }
+  ],
+  "classes": {
+    "task1_issue": [
+      "corruption_and_bribery",
+      "economy_business_and_state_enterprise",
+      "election_and_political_competition",
+      "environment_and_natural_resources",
+      "human_rights_and_social_conflict",
+      "law_and_justice",
+      "other_issue",
+      "power_and_governance",
+      "public_policy_health_and_disaster",
+      "security_defense_and_terrorism"
+    ],
+    "task2_domain_sumber": [
+      "BENCANA_JERAT",
+      "HEWAN_TUBUH",
+      "KONSUMSI_TRANSAKSI",
+      "LAINNYA",
+      "MESIN_INFRASTRUKTUR",
+      "NON_METAFORA",
+      "PERMAINAN_KONTES"
+    ],
+    "task3_primary_entity_type": [
+      "business",
+      "civil_society_or_media",
+      "government",
+      "individual",
+      "judiciary_or_law_enforcement",
+      "legislature",
+      "multiple_or_other",
+      "political_party"
+    ]
+  }
+}

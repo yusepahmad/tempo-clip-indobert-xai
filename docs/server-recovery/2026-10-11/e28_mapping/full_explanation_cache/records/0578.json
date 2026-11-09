@@ -1,0 +1,87 @@
+{
+  "index": 578,
+  "sample_id": "TMP-47A1FD729666",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "efe8876aec2a390605f52641ab2ccd106121386a01b9cfffab4f22661ee1ff91",
+  "image_sha256": "47a1fd729666afe20f1a847c109e48685dcaf391e8b6d95f8cf7f2adbfb927aa",
+  "transmitted_image_sha256": "7a01ceea1f0e0819484b00409f4af00ba6d893d69f915bc18b95e27989f8aeb3",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.82969,
+      "total": 10,
+      "remaining": 1.1703100000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.82969,
+      "total": 100,
+      "remaining": 91.17031,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3919711369089782,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"wrapped gift\", \"source_properties\": \"an object covered in a red decorative outer layer that is being peeled away to reveal what is inside.\", \"target_situation\": \"global energy transition funding for climate mitigation in Indonesia.\", \"mapping\": \"Peeling the red layer symbolizes uncovering the 'green' financial opportunities (US dollars) hidden within global economic challenges to fund climate action.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "PpzLaqzIFM7E_PUPtKy7yQo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 89,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 267000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 1863,
+      "total_tokens": 1441
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.830633,
+      "total": 10,
+      "remaining": 1.1693669999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.830633000000006,
+      "total": 100,
+      "remaining": 91.169367,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000943,
+  "fields": {
+    "source_object": "wrapped gift",
+    "source_properties": "an object covered in a red decorative outer layer that is being peeled away to reveal what is inside.",
+    "target_situation": "global energy transition funding for climate mitigation in Indonesia.",
+    "mapping": "Peeling the red layer symbolizes uncovering the 'green' financial opportunities (US dollars) hidden within global economic challenges to fund climate action.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: wrapped gift\nsource_properties: an object covered in a red decorative outer layer that is being peeled away to reveal what is inside.\ntarget_situation: global energy transition funding for climate mitigation in Indonesia.\nmapping: Peeling the red layer symbolizes uncovering the 'green' financial opportunities (US dollars) hidden within global economic challenges to fund climate action.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

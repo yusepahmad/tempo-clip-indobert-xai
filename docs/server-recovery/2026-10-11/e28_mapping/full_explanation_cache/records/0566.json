@@ -1,0 +1,87 @@
+{
+  "index": 566,
+  "sample_id": "TMP-E8889318838D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "68e9ee413c380939bff44a76ca2dd9bdc74e30552774558b50c8a1fcd224b79e",
+  "image_sha256": "e8889318838d2cb86b23e213cee3a03e2dbb184e62cdc84a1f6c232d699743d6",
+  "transmitted_image_sha256": "7939664cf46fbbda2e64ce839841bcb0e49f4e6749a0058c479792572ef9e476",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.816233,
+      "total": 10,
+      "remaining": 1.1837669999999996,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.816232999999997,
+      "total": 100,
+      "remaining": 91.183767,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.979865957982838,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"large viral particle\", \"source_properties\": \"Spherical, spiked shape occupying central foreground space, physically integrated among a diverse crowd.\", \"target_situation\": \"The transition from a COVID-19 pandemic to an endemic phase in Indonesia.\", \"mapping\": \"The virus's physical presence in the crowd represents its permanent integration into daily life, forcing society to coexist with it despite risks.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "75vLao62FITn_uMP29-q-A8",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680000,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1360,
+      "total_backend_latency_ms": 1742,
+      "total_tokens": 1452
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.817188999999999,
+      "total": 10,
+      "remaining": 1.182811000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.817188999999999,
+      "total": 100,
+      "remaining": 91.182811,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000956,
+  "fields": {
+    "source_object": "large viral particle",
+    "source_properties": "Spherical, spiked shape occupying central foreground space, physically integrated among a diverse crowd.",
+    "target_situation": "The transition from a COVID-19 pandemic to an endemic phase in Indonesia.",
+    "mapping": "The virus's physical presence in the crowd represents its permanent integration into daily life, forcing society to coexist with it despite risks.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: large viral particle\nsource_properties: Spherical, spiked shape occupying central foreground space, physically integrated among a diverse crowd.\ntarget_situation: The transition from a COVID-19 pandemic to an endemic phase in Indonesia.\nmapping: The virus's physical presence in the crowd represents its permanent integration into daily life, forcing society to coexist with it despite risks.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

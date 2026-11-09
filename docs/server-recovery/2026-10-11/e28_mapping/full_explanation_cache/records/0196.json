@@ -1,0 +1,87 @@
+{
+  "index": 196,
+  "sample_id": "TMP-98FBF3176EFF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "90fe7063beb1be954e1fcb7d2352b9438410d4f8b472d49bb4e628ce6a69a672",
+  "image_sha256": "98fbf3176effbd3e2020726844c093c32ae3f30cb44b3825f5cf62ef26ab7606",
+  "transmitted_image_sha256": "083a8b8068632c7480bc42d1e701a56ed1579f9229ec41ce1895adfb481c5d05",
+  "image_size": [
+    300,
+    393
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2941355,
+      "total": 10,
+      "remaining": 1.7058645000000006,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.294135499999996,
+      "total": 100,
+      "remaining": 91.7058645,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.637345117982477,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"flying carpet\", \"source_properties\": \"limited surface area, high altitude, precarious and overcrowded\", \"target_situation\": \"scarcity and competition for Hajj pilgrimage tickets\", \"mapping\": \"The carpet's limited space represents the finite number of travel permits, causing individuals to scramble or fall off as others struggle for access.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Q5LLapKMPLua_uMPhJumwQI",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 81,
+      "cost": {
+        "input_tokens_cost_nanodollars": 657500,
+        "output_tokens_cost_nanodollars": 243000
+      },
+      "prompt_tokens": 1315,
+      "total_backend_latency_ms": 1350,
+      "total_tokens": 1396
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.295036,
+      "total": 10,
+      "remaining": 1.7049640000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.295035999999996,
+      "total": 100,
+      "remaining": 91.704964,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009005,
+  "fields": {
+    "source_object": "flying carpet",
+    "source_properties": "limited surface area, high altitude, precarious and overcrowded",
+    "target_situation": "scarcity and competition for Hajj pilgrimage tickets",
+    "mapping": "The carpet's limited space represents the finite number of travel permits, causing individuals to scramble or fall off as others struggle for access.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: flying carpet\nsource_properties: limited surface area, high altitude, precarious and overcrowded\ntarget_situation: scarcity and competition for Hajj pilgrimage tickets\nmapping: The carpet's limited space represents the finite number of travel permits, causing individuals to scramble or fall off as others struggle for access.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

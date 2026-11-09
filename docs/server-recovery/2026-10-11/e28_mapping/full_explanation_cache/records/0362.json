@@ -1,0 +1,87 @@
+{
+  "index": 362,
+  "sample_id": "TMP-5B544D4D5A32",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a6d0b24e1dfd828544b726d2de7846345841c235c8ccbbfce1a384793774921d",
+  "image_sha256": "5b544d4d5a327806290f3ed3d5755f85a57ff0a1bad4195fde41f60c59fb4c58",
+  "transmitted_image_sha256": "a56df48f7cbd1c98c8672e5cca16d2e1a73eef1ebab93f3fa2a4a12eff1fc97b",
+  "image_size": [
+    407,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5330245,
+      "total": 10,
+      "remaining": 1.4669755000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.533024499999996,
+      "total": 100,
+      "remaining": 91.4669755,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0416296469047666,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"t-shirt graphic\", \"source_properties\": \"A person's face printed onto the front of another person's clothing.\", \"target_situation\": \"Investigating business ties and potential procedural violations involving Tomy Winata and high-ranking police officials.\", \"mapping\": \"The illustration places Winata's face directly on Budi Waseso's uniform, suggesting Waseso is carrying, representing, or centralizing Winata's interests within his official police capacity.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "lpbLaordF9Pj_uMPg-OC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 112,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675000,
+        "output_tokens_cost_nanodollars": 336000
+      },
+      "prompt_tokens": 1350,
+      "total_backend_latency_ms": 2085,
+      "total_tokens": 1462
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5340355,
+      "total": 10,
+      "remaining": 1.4659645000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.534035500000002,
+      "total": 100,
+      "remaining": 91.4659645,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001011,
+  "fields": {
+    "source_object": "t-shirt graphic",
+    "source_properties": "A person's face printed onto the front of another person's clothing.",
+    "target_situation": "Investigating business ties and potential procedural violations involving Tomy Winata and high-ranking police officials.",
+    "mapping": "The illustration places Winata's face directly on Budi Waseso's uniform, suggesting Waseso is carrying, representing, or centralizing Winata's interests within his official police capacity.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: t-shirt graphic\nsource_properties: A person's face printed onto the front of another person's clothing.\ntarget_situation: Investigating business ties and potential procedural violations involving Tomy Winata and high-ranking police officials.\nmapping: The illustration places Winata's face directly on Budi Waseso's uniform, suggesting Waseso is carrying, representing, or centralizing Winata's interests within his official police capacity.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

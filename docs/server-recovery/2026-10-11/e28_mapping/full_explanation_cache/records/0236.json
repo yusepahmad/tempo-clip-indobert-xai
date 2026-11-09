@@ -1,0 +1,87 @@
+{
+  "index": 236,
+  "sample_id": "TMP-43B538F6BC80",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "4ffd7383b2c5a0cca2b061bfe10ccf620489dea412c75d9a3091269b25167ae5",
+  "image_sha256": "43b538f6bc80660ca7257e090b36e96ce7cef290f2f7c0c8de047c485acb9803",
+  "transmitted_image_sha256": "40fa060e6c61583b1b77e416dfd9dba65e1d70d92dfb365ab668b8bf2da299f4",
+  "image_size": [
+    537,
+    703
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3589805,
+      "total": 10,
+      "remaining": 1.6410195000000005,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.358980500000001,
+      "total": 100,
+      "remaining": 91.6410195,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1589060337282717,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Upside-down facial features\",\n  \"source_properties\": \"Inverted eyes and mouth creating a distorted, unnatural, and confusing appearance within a normal facial outline.\",\n  \"target_situation\": \"The public perception and political status of Abraham Samad.\",\n  \"mapping\": \"The inverted features symbolize a chaotic, topsy-turvy situation or a loss of credibility, suggesting things are not as they should be.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "TJPLaoXxB7ye_uMPo--KmQ4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 108,
+      "cost": {
+        "input_tokens_cost_nanodollars": 656000,
+        "output_tokens_cost_nanodollars": 324000
+      },
+      "prompt_tokens": 1312,
+      "total_backend_latency_ms": 1648,
+      "total_tokens": 1420
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3599605,
+      "total": 10,
+      "remaining": 1.6400395000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.3599605,
+      "total": 100,
+      "remaining": 91.6400395,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00098,
+  "fields": {
+    "source_object": "Upside-down facial features",
+    "source_properties": "Inverted eyes and mouth creating a distorted, unnatural, and confusing appearance within a normal facial outline.",
+    "target_situation": "The public perception and political status of Abraham Samad.",
+    "mapping": "The inverted features symbolize a chaotic, topsy-turvy situation or a loss of credibility, suggesting things are not as they should be.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Upside-down facial features\nsource_properties: Inverted eyes and mouth creating a distorted, unnatural, and confusing appearance within a normal facial outline.\ntarget_situation: The public perception and political status of Abraham Samad.\nmapping: The inverted features symbolize a chaotic, topsy-turvy situation or a loss of credibility, suggesting things are not as they should be.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

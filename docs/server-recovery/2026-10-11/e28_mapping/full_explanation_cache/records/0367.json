@@ -1,0 +1,87 @@
+{
+  "index": 367,
+  "sample_id": "TMP-6F33E658E502",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1360fc7931cfa0de1c0a0f22c3d7fe7a372f039d5d5abd62500767c591b0156a",
+  "image_sha256": "6f33e658e502d9c97f8a783eb3020a1970891fa3a1b6940b3f032f1b2de72577",
+  "transmitted_image_sha256": "a8d72e582b9d350169f4df9b95c98c655701f53971603f9c328071279875aa6a",
+  "image_size": [
+    407,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.537870999999999,
+      "total": 10,
+      "remaining": 1.462129000000001,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.537870999999996,
+      "total": 100,
+      "remaining": 91.462129,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.1959907580167055,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Monas (National Monument of Indonesia)\", \"source_properties\": \"High-altitude, iconic stone platform with a golden flame, difficult to scale and maintain.\", \"target_situation\": \"The 2016 Jakarta gubernatorial election (Pilkada) digital campaign battle.\", \"mapping\": \"Candidates use social media platforms like Facebook and Twitter to capture political power, metaphorically 'scaling' Jakarta's central symbol via digital tools.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "sJbLat_gEduA_PUP-tvEuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 669000,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1338,
+      "total_backend_latency_ms": 2849,
+      "total_tokens": 1439
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.538843,
+      "total": 10,
+      "remaining": 1.461157,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.538843,
+      "total": 100,
+      "remaining": 91.461157,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000972,
+  "fields": {
+    "source_object": "Monas (National Monument of Indonesia)",
+    "source_properties": "High-altitude, iconic stone platform with a golden flame, difficult to scale and maintain.",
+    "target_situation": "The 2016 Jakarta gubernatorial election (Pilkada) digital campaign battle.",
+    "mapping": "Candidates use social media platforms like Facebook and Twitter to capture political power, metaphorically 'scaling' Jakarta's central symbol via digital tools.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Monas (National Monument of Indonesia)\nsource_properties: High-altitude, iconic stone platform with a golden flame, difficult to scale and maintain.\ntarget_situation: The 2016 Jakarta gubernatorial election (Pilkada) digital campaign battle.\nmapping: Candidates use social media platforms like Facebook and Twitter to capture political power, metaphorically 'scaling' Jakarta's central symbol via digital tools.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

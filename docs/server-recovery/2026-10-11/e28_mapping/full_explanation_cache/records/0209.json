@@ -1,0 +1,87 @@
+{
+  "index": 209,
+  "sample_id": "TMP-8296399A9191",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8f81394b8d1bb00f1203babb85811f09398a17dee4ddcbd47d86badb3438c211",
+  "image_sha256": "8296399a919108f0b72d4c1ba6ec78663c72e989272ed6c6a80d05f494342bad",
+  "transmitted_image_sha256": "f7fb3d5c2c73b81fbebff33223115ea7683eb84f1f3ce182ee3534a002b6f51b",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3175015,
+      "total": 10,
+      "remaining": 1.6824984999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.317501500000006,
+      "total": 100,
+      "remaining": 91.6824985,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.763276543933898,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"none evident\", \"source_properties\": \"literal aerial photograph of a large-scale building construction site in a rural, hilly landscape\", \"target_situation\": \"an investigative report about financial balances from the Hambalang project found in the Democratic Party's treasury\", \"mapping\": \"The image is a literal representation of the Hambalang sports complex project site mentioned in the headline.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "nZLLauKFO7rG_PUPqtG_4Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 89,
+      "cost": {
+        "input_tokens_cost_nanodollars": 655500,
+        "output_tokens_cost_nanodollars": 267000
+      },
+      "prompt_tokens": 1311,
+      "total_backend_latency_ms": 1700,
+      "total_tokens": 1400
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.318424,
+      "total": 10,
+      "remaining": 1.6815759999999997,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.318423999999993,
+      "total": 100,
+      "remaining": 91.681576,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009225,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "literal aerial photograph of a large-scale building construction site in a rural, hilly landscape",
+    "target_situation": "an investigative report about financial balances from the Hambalang project found in the Democratic Party's treasury",
+    "mapping": "The image is a literal representation of the Hambalang sports complex project site mentioned in the headline.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: literal aerial photograph of a large-scale building construction site in a rural, hilly landscape\ntarget_situation: an investigative report about financial balances from the Hambalang project found in the Democratic Party's treasury\nmapping: The image is a literal representation of the Hambalang sports complex project site mentioned in the headline.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 303,
+  "sample_id": "TMP-F4375AE220CD",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "140b69252f8b650dc2a641c5474f661ff299ec3836359d876cc79dc587e71399",
+  "image_sha256": "f4375ae220cd6117b330d43422ce6f7c14c1f0074b87d956ac1abf1a78d51488",
+  "transmitted_image_sha256": "e655be2a2af96a0c21ea0080fc82a8945bae7c00c0a82351b16fa7dec5953ae2",
+  "image_size": [
+    472,
+    621
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4542455,
+      "total": 10,
+      "remaining": 1.5457544999999993,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.454245499999999,
+      "total": 100,
+      "remaining": 91.5457545,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.771888846065849,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"safe deposit box\", \"source_properties\": \"concealed inside the body, heavy metal, drawer-like opening mechanism, secure storage\", \"target_situation\": \"Budi Gunawan's alleged use of false documents to hide illicit wealth and assets.\", \"mapping\": \"The safe embedded in the police officer's back represents the 'rekening gendut' (fat account) being physically hidden within his person through deceptive means.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "F5XLar-cHf7v_uMP-q7MqQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671500,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1343,
+      "total_backend_latency_ms": 1469,
+      "total_tokens": 1445
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.455223,
+      "total": 10,
+      "remaining": 1.5447769999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.455223000000004,
+      "total": 100,
+      "remaining": 91.544777,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009775,
+  "fields": {
+    "source_object": "safe deposit box",
+    "source_properties": "concealed inside the body, heavy metal, drawer-like opening mechanism, secure storage",
+    "target_situation": "Budi Gunawan's alleged use of false documents to hide illicit wealth and assets.",
+    "mapping": "The safe embedded in the police officer's back represents the 'rekening gendut' (fat account) being physically hidden within his person through deceptive means.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: safe deposit box\nsource_properties: concealed inside the body, heavy metal, drawer-like opening mechanism, secure storage\ntarget_situation: Budi Gunawan's alleged use of false documents to hide illicit wealth and assets.\nmapping: The safe embedded in the police officer's back represents the 'rekening gendut' (fat account) being physically hidden within his person through deceptive means.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

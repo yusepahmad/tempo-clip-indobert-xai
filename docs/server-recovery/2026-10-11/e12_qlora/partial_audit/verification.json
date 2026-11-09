@@ -1,0 +1,39 @@
+{
+  "status": "partial_folds_verified",
+  "folds": [
+    {
+      "fold": 1,
+      "samples": 148,
+      "selected_epoch": 3,
+      "fold_macro_f1": 0.5265211669819665
+    },
+    {
+      "fold": 2,
+      "samples": 148,
+      "selected_epoch": 2,
+      "fold_macro_f1": 0.5533934467820908
+    }
+  ],
+  "aggregate_samples_required": 740,
+  "aggregate_score_available": false,
+  "aggregator_sha256": "2a45f0d2ce01bd8ec32466b135c5ebb9b49fb8f4e3292ebebc107b459d2bb569",
+  "checks": [
+    "same aggregator checks through each fold; final concatenation intentionally not executed",
+    "original IDs/labels/baseline outer and inner splits",
+    "epoch selection/patience/refit history",
+    "configuration/input/model/source hashes and invariant fold protocol",
+    "probability bounds/sums/argmax and per-fold F1"
+  ],
+  "sha256": {
+    "fold1/e12_fold1/config.json": "9c680760cd1d3f796d5376fcb152b9692e23ea807f60d3727ae3561e8064b036",
+    "fold1/e12_fold1/metrics.json": "72cd29f73c3902af20194341f231f7dc994bb5a8d4cbeecf7dec0326e9cc0454",
+    "fold1/e12_fold1/history.jsonl": "f259a5c3e807bab8fa8c7590540d2231d9a30d170648c11137705048a621d702",
+    "fold1/e12_fold1/input_audit.jsonl": "bc2d8c067db3a8ba0f5260cfe9039fe03b278f22255e7cb1a960591111402909",
+    "fold1/e12_fold1/oof.csv": "1ee22db2b4b10f81a695eb063c850e1f2514238f1e3ee08e0e0e97aff4a3418a",
+    "fold2/e12_fold2/config.json": "0a495b053ae60a15d383971e683b03fa74d2f834d987bd3c884c0ccfc0cb7f81",
+    "fold2/e12_fold2/metrics.json": "1b52b6608cb3eb782b20de4d355487c5fdd5d98fb2ebcc4af3ba045a88bdd9a6",
+    "fold2/e12_fold2/history.jsonl": "bdc1ee2128550d85b3e529cfabc7a376610fdfeeaceaa716b7a13e50bab6e7fc",
+    "fold2/e12_fold2/input_audit.jsonl": "bc2d8c067db3a8ba0f5260cfe9039fe03b278f22255e7cb1a960591111402909",
+    "fold2/e12_fold2/oof.csv": "aeb35bdc1434865973f8607f2c52425b7d8e8aafc82b0c28e377e4cbd13454a7"
+  }
+}

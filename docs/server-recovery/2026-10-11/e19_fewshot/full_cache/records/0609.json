@@ -1,0 +1,86 @@
+{
+  "index": 609,
+  "sample_id": "TMP-FF512A5EECAE",
+  "fold": 3,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "0ce98721085121dbc0773392c9fecdf82749397028455e3462b0d02f15feef80",
+  "image_sha256": "ff512a5eecaeec0eeabdc9905c3ef821a3cf59202053881be5cdfaa14ac09ec9",
+  "transmitted_image_sha256": "52813762324295879fa6fcc15d59f594f5f1afc20687f59b9d896137d2b16baa",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 6.1355,
+      "total": 10,
+      "remaining": 3.8644999999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 6.135499999999993,
+      "total": 100,
+      "remaining": 93.8645,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 11.435352029046044,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan, ilustrasi tersebut dapat diklasifikasikan ke dalam kategori berikut:\n\n**C: KONSUMSI_TRANSAKSI**\n\n**Alasan:**\nSumber metafora dalam ilustrasi ini adalah gestur tangan yang mengangkat jari-jari, yang dipetakan sebagai tindakan \"memilih\" atau \"membagi jatah\". Penggunaan istilah \"jatah\" (yang berkaitan dengan konsumsi/pembagian porsi) serta \"pertukaran nilai politik\" sangat erat kaitannya dengan domain **KONSUMSI_TRANSAKSI**. Selain itu, teks pendukung menyebutkan adanya \"janji kompensasi\", yang merupakan kiasan dari proses transaksi atau jual-beli politik dalam rangka mendapatkan dukungan.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "CAHLauLWCt6d_uMPq6y2oA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2128,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1974
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2057000,
+        "output_tokens_cost_nanodollars": 6384000
+      },
+      "prompt_tokens": 4114,
+      "total_backend_latency_ms": 10219,
+      "total_tokens": 6242
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 6.143941,
+      "total": 10,
+      "remaining": 3.856059,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 6.143940999999998,
+      "total": 100,
+      "remaining": 93.856059,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.008441,
+  "code": "INVALID",
+  "strict_code": "INVALID",
+  "parsing_rule": "unrecognized_no_explicit_answer",
+  "finish_reason": "stop",
+  "prediction": "INVALID"
+}

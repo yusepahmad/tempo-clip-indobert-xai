@@ -1,0 +1,87 @@
+{
+  "index": 527,
+  "sample_id": "TMP-C534A5445C77",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "7313913445d9893d27dea1cdd352587c8ea2a16be312bd12665c36a6cc18bd83",
+  "image_sha256": "c534a5445c77561fa11e109cf5554e0823671bb49fd1dce6c09b6d3555c49c35",
+  "transmitted_image_sha256": "c4dc2ee120eab48784da24688f5ae0b8be241ddadfd4e6417bd3d7bb88d3c59e",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.756694,
+      "total": 10,
+      "remaining": 1.2433060000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.756693999999996,
+      "total": 100,
+      "remaining": 91.243306,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0435288860462606,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"lasso\",\n  \"source_properties\": \"a long, red, looped rope used for catching or restraining from a distance\",\n  \"target_situation\": \"The Indonesian government's aggressive new strategy to collect unpaid BLBI debts from various individuals\",\n  \"mapping\": \"A government official uses the rope to capture and pull in debtors like Tommy Soeharto\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "3JrLavfgCMyV_uMPl4eVaQ",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 96,
+      "cost": {
+        "input_tokens_cost_nanodollars": 683000,
+        "output_tokens_cost_nanodollars": 288000
+      },
+      "prompt_tokens": 1366,
+      "total_backend_latency_ms": 1763,
+      "total_tokens": 1462
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.757665,
+      "total": 10,
+      "remaining": 1.2423350000000006,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.757665000000003,
+      "total": 100,
+      "remaining": 91.242335,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000971,
+  "fields": {
+    "source_object": "lasso",
+    "source_properties": "a long, red, looped rope used for catching or restraining from a distance",
+    "target_situation": "The Indonesian government's aggressive new strategy to collect unpaid BLBI debts from various individuals",
+    "mapping": "A government official uses the rope to capture and pull in debtors like Tommy Soeharto",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: lasso\nsource_properties: a long, red, looped rope used for catching or restraining from a distance\ntarget_situation: The Indonesian government's aggressive new strategy to collect unpaid BLBI debts from various individuals\nmapping: A government official uses the rope to capture and pull in debtors like Tommy Soeharto\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

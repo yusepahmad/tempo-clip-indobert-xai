@@ -1,0 +1,87 @@
+{
+  "index": 522,
+  "sample_id": "TMP-2A3FE3712ABC",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3a6a27744cff7283509c0e2d6a8771c165ea87681bcc5d120f02bf9917584d10",
+  "image_sha256": "2a3fe3712abc3ea0f4302160b1e4eca3b3eb8f2d6515ba095018c5607aa9adf1",
+  "transmitted_image_sha256": "66991ed855edc3ebe5d5d9f95481542c5aa23d8dc5babedb1598cdaa94e33c26",
+  "image_size": [
+    574,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7518495,
+      "total": 10,
+      "remaining": 1.2481504999999995,
+      "refill_at": "2026-10-11 23:35:15.875000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.751849500000006,
+      "total": 100,
+      "remaining": 91.2481505,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4481868599541485,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"orchestra\",\n  \"source_properties\": \"A conductor leads numerous musicians performing in synchronized unison under a singular direction.\",\n  \"target_situation\": \"Systematic coordination of social media 'buzzers' by government insiders to shape public opinion.\",\n  \"mapping\": \"The conductor symbolizes palace insiders directing anonymous accounts, represented as musicians with bird-like heads, to amplify messages.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "vprLau3wKt7d_uMP3pe24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 655000,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1310,
+      "total_backend_latency_ms": 1958,
+      "total_tokens": 1409
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7528015,
+      "total": 10,
+      "remaining": 1.2471984999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.752801500000004,
+      "total": 100,
+      "remaining": 91.2471985,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000952,
+  "fields": {
+    "source_object": "orchestra",
+    "source_properties": "A conductor leads numerous musicians performing in synchronized unison under a singular direction.",
+    "target_situation": "Systematic coordination of social media 'buzzers' by government insiders to shape public opinion.",
+    "mapping": "The conductor symbolizes palace insiders directing anonymous accounts, represented as musicians with bird-like heads, to amplify messages.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: orchestra\nsource_properties: A conductor leads numerous musicians performing in synchronized unison under a singular direction.\ntarget_situation: Systematic coordination of social media 'buzzers' by government insiders to shape public opinion.\nmapping: The conductor symbolizes palace insiders directing anonymous accounts, represented as musicians with bird-like heads, to amplify messages.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

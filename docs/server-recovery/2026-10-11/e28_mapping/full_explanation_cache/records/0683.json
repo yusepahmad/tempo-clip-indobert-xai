@@ -1,0 +1,90 @@
+{
+  "index": 683,
+  "sample_id": "TMP-74DD4C85C2AB",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ca36d2c1373ec71da197b004d84b12b6a678eb3b8521f7071ca1335f33240c2c",
+  "image_sha256": "74dd4c85c2abde526a69dbde3b7c86181c5b4eddc9f28e5706e6e7e83b5815c8",
+  "transmitted_image_sha256": "ef401a316bddb4bde407fcda252fa51602af25c6237869f1445dbdcea587af7d",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.979829,
+      "total": 10,
+      "remaining": 1.0201709999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.979828999999995,
+      "total": 100,
+      "remaining": 91.020171,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.836656450293958,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n\"source_object\": \"flames\",\n\"source_properties\": \"Intense heat, destructive spread, and consuming nature.\",\n\"target_situation\": \"Former President Joko Widodo facing global corruption allegations without political defense.\",\n\"mapping\": \"The controversy and international scrutiny are visualized as fire, representing the 'heat' of scandal and being 'under fire' politically.\",\n\"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "-Z7LaqPRN7qi_uMPou_3-Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 950,
+      "completion_tokens_details": {
+        "reasoning_tokens": 862
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 679500,
+        "output_tokens_cost_nanodollars": 2850000
+      },
+      "prompt_tokens": 1359,
+      "total_backend_latency_ms": 5511,
+      "total_tokens": 2309
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9833585,
+      "total": 10,
+      "remaining": 1.0166415000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.983358499999994,
+      "total": 100,
+      "remaining": 91.0166415,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0035295,
+  "fields": {
+    "source_object": "flames",
+    "source_properties": "Intense heat, destructive spread, and consuming nature.",
+    "target_situation": "Former President Joko Widodo facing global corruption allegations without political defense.",
+    "mapping": "The controversy and international scrutiny are visualized as fire, representing the 'heat' of scandal and being 'under fire' politically.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: flames\nsource_properties: Intense heat, destructive spread, and consuming nature.\ntarget_situation: Former President Joko Widodo facing global corruption allegations without political defense.\nmapping: The controversy and international scrutiny are visualized as fire, representing the 'heat' of scandal and being 'under fire' politically.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

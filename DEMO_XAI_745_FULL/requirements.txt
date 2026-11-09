@@ -1,0 +1,41 @@
+# Pustaka yang dibutuhkan aplikasi web dan notebook. Python 3.10 atau 3.11.
+#
+# PyTorch versi CPU dipasang dari indeks terpisah:
+#   pip install --extra-index-url https://download.pytorch.org/whl/cpu torch torchvision
+#
+# Lalu sisanya:
+#   pip install -r requirements.txt
+#
+# Berkas ini batas bawah versi. Opsional:
+#   requirements-lock-linux.txt           versi persis yang lulus seluruh test (Linux, 6 Okt 2026)
+#   requirements-verification.txt         hanya untuk test/verifikasi HTTP dan HTML5
+#   requirements-browser.txt              hanya untuk smoke/test browser (Playwright)
+#   requirements-training-windows.lock.txt snapshot lingkungan training GPU Windows (riwayat)
+
+transformers>=4.40
+open_clip_torch>=2.24
+scikit-learn>=1.3
+pandas>=2.0
+pillow>=10.0
+matplotlib>=3.7
+
+# hanya untuk notebook
+jupyter>=1.0
+
+# hanya untuk aplikasi web
+flask>=3.0
+
+# hanya untuk pembacaan teks sampul otomatis (OCR) di aplikasi web.
+# Dipilih setelah uji banding pada sampul asli; lihat
+# 01_notebook/uji_banding_ocr.py dan 04_hasil_eksperimen/uji_banding_ocr.json.
+easyocr>=1.7
+
+# dibutuhkan hanya bila ingin menjalankan ulang pembanding TrOCR
+# pada uji_banding_ocr.py (tidak dipakai aplikasi).
+sentencepiece>=0.2
+
+# atribusi kata dengan LIME (revisi R4): metode baku analisis satu sampul
+# (120 varian). Occlusion — baku untuk batch dan cadangan bila LIME gagal —
+# tidak membutuhkan pustaka tambahan.
+# Lihat 01_notebook/uji_banding_atribusi.py
+lime>=0.2

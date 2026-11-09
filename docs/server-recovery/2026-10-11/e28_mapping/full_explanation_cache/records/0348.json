@@ -1,0 +1,87 @@
+{
+  "index": 348,
+  "sample_id": "TMP-B28245732A65",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "2fb6f75dcd36c519a560b8be5740420473fb3972e2d68a600e3a240f9a932821",
+  "image_sha256": "b28245732a656a7b59e345d8ae5b1fffe797e73bef2cb1f30f07a1324e6cf2f4",
+  "transmitted_image_sha256": "2842d4e35623959c1e863ab6f803727d20d5d1842538cfa668655162243831e4",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.514607999999999,
+      "total": 10,
+      "remaining": 1.485392000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.514607999999996,
+      "total": 100,
+      "remaining": 91.485392,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.912151030264795,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A yellow retractable tape measure\",\n  \"source_properties\": \"Thin, flexible, and extendable metal strip overhanging a cliff's edge.\",\n  \"target_situation\": \"An official facing scrutiny over the 'Sumber Waras' land acquisition project.\",\n  \"mapping\": \"The official balancing on the tape measure's tip symbolizes precarious legal or political standing.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "OpbLapPzE97d_uMPq5e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 655000,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1310,
+      "total_backend_latency_ms": 2536,
+      "total_tokens": 1407
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.515554,
+      "total": 10,
+      "remaining": 1.4844460000000002,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.515553999999995,
+      "total": 100,
+      "remaining": 91.484446,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000946,
+  "fields": {
+    "source_object": "A yellow retractable tape measure",
+    "source_properties": "Thin, flexible, and extendable metal strip overhanging a cliff's edge.",
+    "target_situation": "An official facing scrutiny over the 'Sumber Waras' land acquisition project.",
+    "mapping": "The official balancing on the tape measure's tip symbolizes precarious legal or political standing.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A yellow retractable tape measure\nsource_properties: Thin, flexible, and extendable metal strip overhanging a cliff's edge.\ntarget_situation: An official facing scrutiny over the 'Sumber Waras' land acquisition project.\nmapping: The official balancing on the tape measure's tip symbolizes precarious legal or political standing.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

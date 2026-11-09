@@ -1,0 +1,87 @@
+{
+  "index": 272,
+  "sample_id": "TMP-BE2F6B5A4628",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "7b93a541fa2163d47be9c3022f0d4dced6054a8f49ac1d7d7b4eeae4f05666ab",
+  "image_sha256": "be2f6b5a462840684f3c69578aebea58af393b7515c4bf25014f8d3c536d8ab3",
+  "transmitted_image_sha256": "1e16b0990c4dbae27dacafe575497e24a0faeb41a16b47e9b29759fa1eab127d",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.414424,
+      "total": 10,
+      "remaining": 1.5855759999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.414423999999997,
+      "total": 100,
+      "remaining": 91.585576,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.013591428287327,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"TV screen with cartoon animals\", \"source_properties\": \"Anthropomorphic animals like a karate-garbed teddy bear and a laughing horse emerging from a television frame.\", \"target_situation\": \"Negative political campaigning and public mudslinging between rival factions.\", \"mapping\": \"The exaggerated, performative actions of cartoon animals symbolize the noisy, aggressive, and sometimes absurd nature of 'black campaigns' (kampanye hitam) broadcasted to the public.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "SJTLar_CKJjM_PUPlq7quAo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 103,
+      "cost": {
+        "input_tokens_cost_nanodollars": 672500,
+        "output_tokens_cost_nanodollars": 309000
+      },
+      "prompt_tokens": 1345,
+      "total_backend_latency_ms": 1827,
+      "total_tokens": 1448
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4154055,
+      "total": 10,
+      "remaining": 1.5845944999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.415405500000006,
+      "total": 100,
+      "remaining": 91.5845945,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009815,
+  "fields": {
+    "source_object": "TV screen with cartoon animals",
+    "source_properties": "Anthropomorphic animals like a karate-garbed teddy bear and a laughing horse emerging from a television frame.",
+    "target_situation": "Negative political campaigning and public mudslinging between rival factions.",
+    "mapping": "The exaggerated, performative actions of cartoon animals symbolize the noisy, aggressive, and sometimes absurd nature of 'black campaigns' (kampanye hitam) broadcasted to the public.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: TV screen with cartoon animals\nsource_properties: Anthropomorphic animals like a karate-garbed teddy bear and a laughing horse emerging from a television frame.\ntarget_situation: Negative political campaigning and public mudslinging between rival factions.\nmapping: The exaggerated, performative actions of cartoon animals symbolize the noisy, aggressive, and sometimes absurd nature of 'black campaigns' (kampanye hitam) broadcasted to the public.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

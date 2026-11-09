@@ -1,0 +1,90 @@
+{
+  "index": 407,
+  "sample_id": "TMP-D1669FA90B27",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "feba8782a0070406364d7b7d59c5e2c4d3a0b54b353d6aa0f31fe99d92c40387",
+  "image_sha256": "d1669fa90b27136f70726ba94118dca7c451af37e7ec050a0cdbed9810f721ae",
+  "transmitted_image_sha256": "95e17edcb87caf1e965bb291e687d2d1fd7f2d672398829f7fa790e05f07462a",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.598013,
+      "total": 10,
+      "remaining": 1.401987,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.598012999999995,
+      "total": 100,
+      "remaining": 91.401987,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.862499721813947,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"source_object\": \"A standard plastic water bottle\",\n  \"source_properties\": \"Transparent, mundane, and appearing safe for consumption.\",\n  \"target_situation\": \"The production and distribution of lethal liquid drugs disguised as common beverages.\",\n  \"mapping\": \"The bottle's innocuous appearance masks the deadly substance within, just as deceptive liquid drugs hide their lethality.\",\n  \"uncertainty\": \"none\"\n}\n```",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "xZfLaqfjMPDe_uMPnvjrqQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1270,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1172
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 670500,
+        "output_tokens_cost_nanodollars": 3810000
+      },
+      "prompt_tokens": 1341,
+      "total_backend_latency_ms": 7538,
+      "total_tokens": 2611
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6024935,
+      "total": 10,
+      "remaining": 1.3975065000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.602493499999994,
+      "total": 100,
+      "remaining": 91.3975065,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0044805,
+  "fields": {
+    "source_object": "A standard plastic water bottle",
+    "source_properties": "Transparent, mundane, and appearing safe for consumption.",
+    "target_situation": "The production and distribution of lethal liquid drugs disguised as common beverages.",
+    "mapping": "The bottle's innocuous appearance masks the deadly substance within, just as deceptive liquid drugs hide their lethality.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A standard plastic water bottle\nsource_properties: Transparent, mundane, and appearing safe for consumption.\ntarget_situation: The production and distribution of lethal liquid drugs disguised as common beverages.\nmapping: The bottle's innocuous appearance masks the deadly substance within, just as deceptive liquid drugs hide their lethality.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

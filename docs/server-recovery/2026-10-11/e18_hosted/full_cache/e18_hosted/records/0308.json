@@ -1,0 +1,83 @@
+{
+  "index": 308,
+  "sample_id": "TMP-20EDD5EA976E",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "85b27da38f226f7a5ea536f820cacbc5c68443310e1267d1fb452d2bdd50d8d4",
+  "image_sha256": "20edd5ea976e73619616cf0979b68cfd4896eb68bb9df05e03f05f7e17ed27b7",
+  "transmitted_image_sha256": "7ab59189dba79fce78c4edfb4c08490f04d60691ba3647f01fdb0a8d113a9751",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.1549575,
+      "total": 10,
+      "remaining": 8.8450425,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.1549574999999948,
+      "total": 100,
+      "remaining": 98.8450425,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 12.324026668909937,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan teks pada sampul Tempo tersebut, metafora yang digunakan adalah **Arisan** (pada teks) dan **Lelang** (pada ilustrasi visual dengan palu hakim dan nomor penawar). \n\nKedua konsep ini, baik arisan maupun proses lelang/penawaran, dipahami sebagai sebuah bentuk aktivitas sosial atau kompetisi yang memiliki aturan main tertentu untuk mendapatkan sesuatu (proyek). Dalam kategori yang disediakan, \"arisan\" dan \"kompetisi\" (lelang) paling tepat masuk ke dalam domain sumber **PERMAINAN_KONTES**.\n\nPenjelasan tambahan:\n*   **Arisan** dalam konteks ini adalah metafora untuk pembagian proyek yang diatur secara bergilir layaknya sebuah permainan sosial.\n*   **Lelang** (visualisasi di gambar) adalah bentuk kompetisi atau kontes untuk memperebutkan sesuatu.\n*   Deskripsi pada soal juga secara eksplisit menyebutkan arisan sebagai \"bentuk permainan atau kegiatan sosial\".\n\nOleh karena itu, jawabannya adalah:\n**G**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "4tjKaq6dIv-o_uMP1rjw6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1855,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1635
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 766000,
+        "output_tokens_cost_nanodollars": 5565000
+      },
+      "prompt_tokens": 1532,
+      "total_backend_latency_ms": 11172,
+      "total_tokens": 3387
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.1612884999999995,
+      "total": 10,
+      "remaining": 8.8387115,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.1612884999999977,
+      "total": 100,
+      "remaining": 98.8387115,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.006331
+}

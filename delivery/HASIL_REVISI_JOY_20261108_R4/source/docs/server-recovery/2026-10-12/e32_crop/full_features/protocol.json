@@ -1,0 +1,33 @@
+{
+  "worker_sha256": "74ac86d0f1a49fd007d090c6215c37f153e35a1b80862a6ff49889d2117a8e46",
+  "csv_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "model_snapshot": {
+    "model": "google/siglip2-base-patch16-384",
+    "revision": "f775b65a79762255128c981547af89addcfe0f88",
+    "file_sha256": {
+      "config.json": "b1b2481aa448d0cd29001bcf5244e72fa8f916dd8348bd18abf9e5533105b96c",
+      "preprocessor_config.json": "fb2817d3523ca3b666c859f15320c7138416bc38ffc515e2963f78c868c51c90",
+      "model.safetensors": "ed72c0ace85020ae610fc817c2538b9cae5a477b012a50859c60af5b3ad30857"
+    },
+    "weight_sha256": "ed72c0ace85020ae610fc817c2538b9cae5a477b012a50859c60af5b3ad30857",
+    "processor": "AutoImageProcessor use_fast=False"
+  },
+  "device": "cpu",
+  "dtype": "float32",
+  "threads": 8,
+  "batch": 4,
+  "image_size": 384,
+  "pooling": "get_image_features.pooler_output then L2",
+  "crop_fractions": [
+    0.05,
+    0.12,
+    0.95,
+    0.93
+  ],
+  "input_fields": [
+    "sample_id",
+    "image_path"
+  ],
+  "torch": "2.14.1+cpu",
+  "transformers": "5.18.0"
+}

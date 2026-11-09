@@ -1,0 +1,87 @@
+{
+  "index": 498,
+  "sample_id": "TMP-1E2E9CED41D5",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "286dc2c8d5564cddb8cfe39bd4f9140c10c7706d4d1f762bff182df35b1d6f83",
+  "image_sha256": "1e2e9ced41d5396b10953a8bf8cbd604bb3b8aa968a4b58f59dc1e40a7feac0b",
+  "transmitted_image_sha256": "fe2c20123cf3e7e83fe2735d06e29ca9318038b6f3567358d71780f8991208f6",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.714088499999999,
+      "total": 10,
+      "remaining": 1.285911500000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.714088500000003,
+      "total": 100,
+      "remaining": 91.2859115,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3452344853430986,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"children's hand-gun game\", \"source_properties\": \"mimicked pistol shape, pointing fingers, imaginary shootout, conflicting rules/outcomes\", \"target_situation\": \"conflicting accounts of a fatal shooting involving police and FPI members\", \"mapping\": \"Like children playing 'bang-bang' with finger guns, both groups present contradictory narratives of an armed confrontation, leaving the actual truth disputed.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "FJrLaowlioz-4w_nitLRAQ",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 96,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677000,
+        "output_tokens_cost_nanodollars": 288000
+      },
+      "prompt_tokens": 1354,
+      "total_backend_latency_ms": 1863,
+      "total_tokens": 1450
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7150535,
+      "total": 10,
+      "remaining": 1.2849465000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.715053499999996,
+      "total": 100,
+      "remaining": 91.2849465,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000965,
+  "fields": {
+    "source_object": "children's hand-gun game",
+    "source_properties": "mimicked pistol shape, pointing fingers, imaginary shootout, conflicting rules/outcomes",
+    "target_situation": "conflicting accounts of a fatal shooting involving police and FPI members",
+    "mapping": "Like children playing 'bang-bang' with finger guns, both groups present contradictory narratives of an armed confrontation, leaving the actual truth disputed.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: children's hand-gun game\nsource_properties: mimicked pistol shape, pointing fingers, imaginary shootout, conflicting rules/outcomes\ntarget_situation: conflicting accounts of a fatal shooting involving police and FPI members\nmapping: Like children playing 'bang-bang' with finger guns, both groups present contradictory narratives of an armed confrontation, leaving the actual truth disputed.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

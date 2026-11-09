@@ -1,0 +1,83 @@
+{
+  "index": 690,
+  "sample_id": "TMP-676FD383BB28",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "6a7dc35b49aa02ef1972becf46c30db822c1ca1535546ba3f4c96a7e87ebf56f",
+  "image_sha256": "676fd383bb28cf5dab3bec0b0f835c5a17a2a61ed1cff9979bbbe1de046f83d9",
+  "transmitted_image_sha256": "283881633ec1800d203ca5c739d4cfb3cffccae0d09bbdc29c74b8a7fbaa94ed",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.5786695,
+      "total": 10,
+      "remaining": 7.4213305,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.5786695000000037,
+      "total": 100,
+      "remaining": 97.4213305,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.26014356687665,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan teks pada sampul Tempo tersebut, domain sumber metaforanya diklasifikasikan sebagai:\n\n**A: BENCANA_JERAT**\n\n**Alasan:**\n1.  **Linguistik:** Terdapat penggunaan kata kiasan \"**Terjepit** Utang\" pada sub-judul di bagian atas. Kata \"terjepit\" merupakan kiasan yang merujuk pada kondisi terperangkap atau dalam jeratan masalah (jerat/trap).\n2.  **Visual dan Konteks Deskripsi:** Deskripsi yang diberikan menyebutkan pria dengan alat tersebut (cangkul/palu) sebagai simbol \"**ancaman** atau bahaya (**jerat**)\" terhadap keamanan pangan. Dalam kategori klasifikasi yang disediakan, \"ancaman\" dan \"keadaan terjepit\" secara eksplisit masuk ke dalam kelompok **A: BENCANA_JERAT**.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "qufKaoS7EpOo_uMPmu77-As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1608,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1422
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 772500,
+        "output_tokens_cost_nanodollars": 4824000
+      },
+      "prompt_tokens": 1545,
+      "total_backend_latency_ms": 8414,
+      "total_tokens": 3153
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.5842660000000004,
+      "total": 10,
+      "remaining": 7.415734,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.5842659999999995,
+      "total": 100,
+      "remaining": 97.415734,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.0055965
+}

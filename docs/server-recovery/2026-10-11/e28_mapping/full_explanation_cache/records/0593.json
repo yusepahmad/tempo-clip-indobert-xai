@@ -1,0 +1,87 @@
+{
+  "index": 593,
+  "sample_id": "TMP-A39B309DF8EB",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "026546b81b23d799cb14c0fe876f153cefc9125090d53941e76950bb902deef5",
+  "image_sha256": "a39b309df8eb5bb9132152eb3ed4dfab26ee179bf1a1697c664c908f1491dfc2",
+  "transmitted_image_sha256": "0c86bc6ad1392b9a92da3d9ef9c8f6963305e1cf9d13f3a2bed3e2b4b24d116e",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8442295,
+      "total": 10,
+      "remaining": 1.1557704999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.844229499999997,
+      "total": 100,
+      "remaining": 91.1557705,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.190439749043435,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"driving a car\", \"source_properties\": \"A driver controls steering while a passenger in the front seat looks away and a back-seat passenger leans forward.\", \"target_situation\": \"The internal conflict within PDI Perjuangan regarding Ganjar Pranowo's 2024 presidential candidacy and Joko Widodo's role.\", \"mapping\": \"Widodo is depicted 'steering' the political direction, while the party leader looks away in disapproval as Ganjar waits in the back seat.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "mJzLar2dFYqM_uMP54rS0QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 113,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675500,
+        "output_tokens_cost_nanodollars": 339000
+      },
+      "prompt_tokens": 1351,
+      "total_backend_latency_ms": 1741,
+      "total_tokens": 1464
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.845244000000001,
+      "total": 10,
+      "remaining": 1.154755999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.845243999999994,
+      "total": 100,
+      "remaining": 91.154756,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010145,
+  "fields": {
+    "source_object": "driving a car",
+    "source_properties": "A driver controls steering while a passenger in the front seat looks away and a back-seat passenger leans forward.",
+    "target_situation": "The internal conflict within PDI Perjuangan regarding Ganjar Pranowo's 2024 presidential candidacy and Joko Widodo's role.",
+    "mapping": "Widodo is depicted 'steering' the political direction, while the party leader looks away in disapproval as Ganjar waits in the back seat.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: driving a car\nsource_properties: A driver controls steering while a passenger in the front seat looks away and a back-seat passenger leans forward.\ntarget_situation: The internal conflict within PDI Perjuangan regarding Ganjar Pranowo's 2024 presidential candidacy and Joko Widodo's role.\nmapping: Widodo is depicted 'steering' the political direction, while the party leader looks away in disapproval as Ganjar waits in the back seat.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

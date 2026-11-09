@@ -1,0 +1,87 @@
+{
+  "index": 665,
+  "sample_id": "TMP-8FA862F936D5",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "2e0f13fda1e62e4c7e8e4aa91e3feb67ccb3890453d73a5c91ddbc3576d7c8f4",
+  "image_sha256": "8fa862f936d534930ab78126dd3f9a4430e4a495b15ab934f63281e43fd4d208",
+  "transmitted_image_sha256": "5e90d67e4f5ebb0b28ba65fccab941d9a8f3dd8b71007f286e4ed922a53cc09b",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9502915,
+      "total": 10,
+      "remaining": 1.0497084999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.950291500000006,
+      "total": 100,
+      "remaining": 91.0497085,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4412143458612263,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"red fingerprint\", \"source_properties\": \"Distinctive ridges and whorls used for identification, investigation, and linking a person to a crime or scene.\", \"target_situation\": \"The KPK re-investigating Hasto Kristiyanto's alleged involvement in corruption and the Harun Masiku case.\", \"mapping\": \"The fingerprint's ridges form Hasto's face, symbolizing the investigative hunt for his identity and culpability within the legal system.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "fZ7Latf6I8yV_uMPl4eVaQ",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 692500,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1385,
+      "total_backend_latency_ms": 2216,
+      "total_tokens": 1491
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.951302,
+      "total": 10,
+      "remaining": 1.048698,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.951301999999998,
+      "total": 100,
+      "remaining": 91.048698,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010105,
+  "fields": {
+    "source_object": "red fingerprint",
+    "source_properties": "Distinctive ridges and whorls used for identification, investigation, and linking a person to a crime or scene.",
+    "target_situation": "The KPK re-investigating Hasto Kristiyanto's alleged involvement in corruption and the Harun Masiku case.",
+    "mapping": "The fingerprint's ridges form Hasto's face, symbolizing the investigative hunt for his identity and culpability within the legal system.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: red fingerprint\nsource_properties: Distinctive ridges and whorls used for identification, investigation, and linking a person to a crime or scene.\ntarget_situation: The KPK re-investigating Hasto Kristiyanto's alleged involvement in corruption and the Harun Masiku case.\nmapping: The fingerprint's ridges form Hasto's face, symbolizing the investigative hunt for his identity and culpability within the legal system.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

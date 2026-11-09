@@ -1,0 +1,83 @@
+{
+  "index": 608,
+  "sample_id": "TMP-EC2CB55A7B91",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "348a75e188941f637b617ddc5b2b35fd54a0854f800673723f981ffab60dd0d0",
+  "image_sha256": "ec2cb55a7b91e4aca38df8c12b00c01c7d8fd27b7bb407b2a975ab1f3cc182a9",
+  "transmitted_image_sha256": "c8a22b956b43bb21f0dd8a435615e5447992d29e1ce19d8bf8ec983c19e83468",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.2839919999999996,
+      "total": 10,
+      "remaining": 7.716008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.283991999999998,
+      "total": 100,
+      "remaining": 97.716008,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 10.982032222906128,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan analisis visual pada sampul Tempo tersebut:\n\n1.  **Analisis Judul dan Gambar**: Judul \"GERILYA UNTUK PUTRA MAHKOTA\" menggunakan istilah dari ranah **monarki/kerajaan** (Putra Mahkota) dan **militer/peperangan** (Gerilya). Secara visual, ilustrasi menampilkan pot",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "sOPKatz3H97d_uMP45e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2044,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1965
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 785000,
+        "output_tokens_cost_nanodollars": 6132000
+      },
+      "prompt_tokens": 1570,
+      "total_backend_latency_ms": 9922,
+      "total_tokens": 3614
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.290909,
+      "total": 10,
+      "remaining": 7.709091,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.290908999999999,
+      "total": 100,
+      "remaining": 97.709091,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "length",
+  "cost_usd": 0.006917
+}

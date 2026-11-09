@@ -1,0 +1,87 @@
+{
+  "index": 205,
+  "sample_id": "TMP-E5D60F2FF98F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "72ac070d8db6586bd121fa52c672917c972e6f02fc1a00d1a67c5cf93608fde1",
+  "image_sha256": "e5d60f2ff98f0e484707595f5ce157daa16d2a1eda93fcb998f9e2e7063f9bcb",
+  "transmitted_image_sha256": "460da6cd64de283582528739565618c63ea7deb9e4f276df681049ea0a3eb7d9",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.313715,
+      "total": 10,
+      "remaining": 1.6862849999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.313715000000002,
+      "total": 100,
+      "remaining": 91.686285,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.8844769899733365,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"blood splatter\", \"source_properties\": \"viscous, dark brown liquid, unevenly sprayed, staining a surface\", \"target_situation\": \"criminal activities associated with John Kei\", \"mapping\": \"The bloodstains on the subject's face symbolize his direct involvement in violent, criminal acts as a 'gangster,' visually branding him with the mark of his alleged crimes.\", \"uncertainty\": \"none evident\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "hJLLaruXFqiB_PUPxqbXMA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661500,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1323,
+      "total_backend_latency_ms": 1762,
+      "total_tokens": 1414
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3146495,
+      "total": 10,
+      "remaining": 1.6853505000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.314649500000002,
+      "total": 100,
+      "remaining": 91.6853505,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009345,
+  "fields": {
+    "source_object": "blood splatter",
+    "source_properties": "viscous, dark brown liquid, unevenly sprayed, staining a surface",
+    "target_situation": "criminal activities associated with John Kei",
+    "mapping": "The bloodstains on the subject's face symbolize his direct involvement in violent, criminal acts as a 'gangster,' visually branding him with the mark of his alleged crimes.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: blood splatter\nsource_properties: viscous, dark brown liquid, unevenly sprayed, staining a surface\ntarget_situation: criminal activities associated with John Kei\nmapping: The bloodstains on the subject's face symbolize his direct involvement in violent, criminal acts as a 'gangster,' visually branding him with the mark of his alleged crimes.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

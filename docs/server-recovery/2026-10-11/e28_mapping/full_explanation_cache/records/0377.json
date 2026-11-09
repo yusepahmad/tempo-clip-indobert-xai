@@ -1,0 +1,90 @@
+{
+  "index": 377,
+  "sample_id": "TMP-67888B8537DC",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b06f38d9fad799b3b7ecc96b8aa7f5ec745a1bb4dcede157110df614c3ce692e",
+  "image_sha256": "67888b8537dcfe69836122a32d6990584bcd84825236c4d878c507c38b9641a0",
+  "transmitted_image_sha256": "e9fd6398c49f1209a4300d9b18626dfd467e9b200056f1b991557e0c15010d0e",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.549986,
+      "total": 10,
+      "remaining": 1.4500139999999995,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.549986000000004,
+      "total": 100,
+      "remaining": 91.450014,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.014693980105221,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A jagged line graph\",\n  \"source_properties\": \"High peaks and deep valleys plotted against a grid\",\n  \"target_situation\": \"Economic inequality between wealthy elites and impoverished workers\",\n  \"mapping\": \"Vertical height represents social standing. Wealthy figures reside at the peaks while laborers occupy the valleys, visualizing the 'gaping' wealth gap mentioned in the text.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "7JbLarW5DP7v_uMP-q7MqQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1353,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1255
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 667000,
+        "output_tokens_cost_nanodollars": 4059000
+      },
+      "prompt_tokens": 1334,
+      "total_backend_latency_ms": 7013,
+      "total_tokens": 2687
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.554712,
+      "total": 10,
+      "remaining": 1.4452879999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.554711999999995,
+      "total": 100,
+      "remaining": 91.445288,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.004726,
+  "fields": {
+    "source_object": "A jagged line graph",
+    "source_properties": "High peaks and deep valleys plotted against a grid",
+    "target_situation": "Economic inequality between wealthy elites and impoverished workers",
+    "mapping": "Vertical height represents social standing. Wealthy figures reside at the peaks while laborers occupy the valleys, visualizing the 'gaping' wealth gap mentioned in the text.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A jagged line graph\nsource_properties: High peaks and deep valleys plotted against a grid\ntarget_situation: Economic inequality between wealthy elites and impoverished workers\nmapping: Vertical height represents social standing. Wealthy figures reside at the peaks while laborers occupy the valleys, visualizing the 'gaping' wealth gap mentioned in the text.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

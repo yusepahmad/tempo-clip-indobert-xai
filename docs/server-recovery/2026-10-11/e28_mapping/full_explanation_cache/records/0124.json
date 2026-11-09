@@ -1,0 +1,87 @@
+{
+  "index": 124,
+  "sample_id": "TMP-089DAA6E4E5D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0c6448ea9aef378fff085ff1fbcfc0b484a1393884a3e360dc6de49dc461df5d",
+  "image_sha256": "089daa6e4e5d59566e4d82db15917ab1225786c1dde6bca9c41922c0348f6855",
+  "transmitted_image_sha256": "783d6ad44387a6c659f86d6242c1b21c549eacf2ab493fd4a2e633dc6a4ea4f5",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.190278,
+      "total": 10,
+      "remaining": 1.8097220000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.190278000000006,
+      "total": 100,
+      "remaining": 91.809722,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.414198409765959,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"tic-tac-toe game board\",\n  \"source_properties\": \"A three-by-three grid for alternating play where players attempt to create winning lines.\",\n  \"target_situation\": \"Multiple forms of political interference occurring during the final moments of an election campaign.\",\n  \"mapping\": \"Icons representing money, intimidation, and military force occupy grid spaces like game pieces, suggesting strategic, competitive maneuvering to dominate the political landscape.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Y5DLauq6Ec7E_PUPtKy7yQo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 110,
+      "cost": {
+        "input_tokens_cost_nanodollars": 670500,
+        "output_tokens_cost_nanodollars": 330000
+      },
+      "prompt_tokens": 1341,
+      "total_backend_latency_ms": 1816,
+      "total_tokens": 1451
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1912785,
+      "total": 10,
+      "remaining": 1.8087215000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.191278499999996,
+      "total": 100,
+      "remaining": 91.8087215,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0010005,
+  "fields": {
+    "source_object": "tic-tac-toe game board",
+    "source_properties": "A three-by-three grid for alternating play where players attempt to create winning lines.",
+    "target_situation": "Multiple forms of political interference occurring during the final moments of an election campaign.",
+    "mapping": "Icons representing money, intimidation, and military force occupy grid spaces like game pieces, suggesting strategic, competitive maneuvering to dominate the political landscape.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: tic-tac-toe game board\nsource_properties: A three-by-three grid for alternating play where players attempt to create winning lines.\ntarget_situation: Multiple forms of political interference occurring during the final moments of an election campaign.\nmapping: Icons representing money, intimidation, and military force occupy grid spaces like game pieces, suggesting strategic, competitive maneuvering to dominate the political landscape.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

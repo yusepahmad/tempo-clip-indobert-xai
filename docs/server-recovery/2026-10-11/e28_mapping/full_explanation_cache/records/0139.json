@@ -1,0 +1,87 @@
+{
+  "index": 139,
+  "sample_id": "TMP-253B0CE0B4F1",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5039c7d996c08fe850732d538802e6187709d86186fd15c7ae62fcd5f33795b1",
+  "image_sha256": "253b0ce0b4f1d67cd94313561ab2eda735f4b8fb2855e75e1979c8548b8e717a",
+  "transmitted_image_sha256": "eb6823431b1fda6714e54212e69c852096ea0c71baa41d8a4129c49f6d6e5e1a",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2181705,
+      "total": 10,
+      "remaining": 1.7818295000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.2181705,
+      "total": 100,
+      "remaining": 91.7818295,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.9362810351885855,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"tangled ball of thread\", \"source_properties\": \"messy, complex, interconnected, difficult to unravel, needing a hand to pull a strand\", \"target_situation\": \"The complex investigation into the network behind the acid attack on investigator Novel Baswedan.\", \"mapping\": \"The scribble-like head represents a convoluted criminal network; the hand pulling a thread illustrates the effort to find a lead and unravel the mystery.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "zZDLao2mFb7i_uMPz_DU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677500,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1355,
+      "total_backend_latency_ms": 1844,
+      "total_tokens": 1454
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.219145,
+      "total": 10,
+      "remaining": 1.7808550000000007,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.219144999999997,
+      "total": 100,
+      "remaining": 91.780855,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009745,
+  "fields": {
+    "source_object": "tangled ball of thread",
+    "source_properties": "messy, complex, interconnected, difficult to unravel, needing a hand to pull a strand",
+    "target_situation": "The complex investigation into the network behind the acid attack on investigator Novel Baswedan.",
+    "mapping": "The scribble-like head represents a convoluted criminal network; the hand pulling a thread illustrates the effort to find a lead and unravel the mystery.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: tangled ball of thread\nsource_properties: messy, complex, interconnected, difficult to unravel, needing a hand to pull a strand\ntarget_situation: The complex investigation into the network behind the acid attack on investigator Novel Baswedan.\nmapping: The scribble-like head represents a convoluted criminal network; the hand pulling a thread illustrates the effort to find a lead and unravel the mystery.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

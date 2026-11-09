@@ -1,0 +1,83 @@
+{
+  "index": 351,
+  "sample_id": "TMP-EA299DEF549F",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "24b289fee577dfa6a71b6f0c074c2e122349dcd615344e07f9c807529307fc32",
+  "image_sha256": "ea299def549f4840d5552a4663e5e8a20f343e5fa8c3a0ce1a36e90901e52a09",
+  "transmitted_image_sha256": "2f225737f83359bc112fc33cd6df9ae2b4043778e747ed72ed668d14367a69e0",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.3141765000000003,
+      "total": 10,
+      "remaining": 8.6858235,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.314176500000002,
+      "total": 100,
+      "remaining": 98.6858235,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 12.425994512159377,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan ilustrasi dan alasan yang diberikan dalam deskripsi Anda, domain sumber metafora tersebut diklasifikasikan sebagai:\n\n**E: MESIN_INFRASTRUKTUR**\n\n**Alasan:**\nMeskipun secara visual hanya berupa kertas yang menempel, penjelasan dalam \"Sumber dan alasan\" Anda secara eksplisit menghubungkannya dengan \"mekanisme infrastruktur korupsi",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "hdrKaqnOAf7v_uMP-q7MqQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2044,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1964
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 771000,
+        "output_tokens_cost_nanodollars": 6132000
+      },
+      "prompt_tokens": 1542,
+      "total_backend_latency_ms": 10959,
+      "total_tokens": 3586
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.3210794999999997,
+      "total": 10,
+      "remaining": 8.6789205,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.3210794999999962,
+      "total": 100,
+      "remaining": 98.6789205,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "length",
+  "cost_usd": 0.006903
+}

@@ -1,0 +1,87 @@
+{
+  "index": 637,
+  "sample_id": "TMP-476C6F625B95",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "cbf646fab3cafb50ffa9654e04a135604ca320f63774568f224b331cef883430",
+  "image_sha256": "476c6f625b95bd6435a5431bb2f9b70ca7ffe93808933e765dfe40aefdd798cb",
+  "transmitted_image_sha256": "5085f1a97806e978998ae33606373ac366311945b1a6ea0017b565d1d437c273",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9036355,
+      "total": 10,
+      "remaining": 1.0963645,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.903635499999993,
+      "total": 100,
+      "remaining": 91.0963645,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2314809830859303,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"red carpet rolls\",\n  \"source_properties\": \"long, unwinding fabric strips providing a designated, prestigious path\",\n  \"target_situation\": \"political candidacy paths for Sandiaga Uno and Erick Thohir\",\n  \"mapping\": \"The unwinding carpets symbolize prepared political trajectories being laid out for them.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "u53Laou-HqCm_uMPsO6HgA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 87,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682500,
+        "output_tokens_cost_nanodollars": 261000
+      },
+      "prompt_tokens": 1365,
+      "total_backend_latency_ms": 1740,
+      "total_tokens": 1452
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.904579,
+      "total": 10,
+      "remaining": 1.095421,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.904578999999998,
+      "total": 100,
+      "remaining": 91.095421,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009435,
+  "fields": {
+    "source_object": "red carpet rolls",
+    "source_properties": "long, unwinding fabric strips providing a designated, prestigious path",
+    "target_situation": "political candidacy paths for Sandiaga Uno and Erick Thohir",
+    "mapping": "The unwinding carpets symbolize prepared political trajectories being laid out for them.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: red carpet rolls\nsource_properties: long, unwinding fabric strips providing a designated, prestigious path\ntarget_situation: political candidacy paths for Sandiaga Uno and Erick Thohir\nmapping: The unwinding carpets symbolize prepared political trajectories being laid out for them.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

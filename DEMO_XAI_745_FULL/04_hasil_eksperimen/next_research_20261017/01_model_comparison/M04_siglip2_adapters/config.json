@@ -1,0 +1,160 @@
+{
+  "schema": "tempo-m04-siglip-adapters-v1",
+  "joint_model": true,
+  "fold_details": [
+    {
+      "fold": 1,
+      "selected": {
+        "config": 1,
+        "min": 0.32701321097086394,
+        "mean": 0.37732704227329633
+      },
+      "config": {
+        "shared": 256,
+        "adapter": 96,
+        "drop": 0.25,
+        "lr": 0.0006,
+        "wd": 0.0003,
+        "power": 0.5,
+        "smooth": 0.05,
+        "loss": [
+          1,
+          1.25,
+          1.25
+        ],
+        "epochs": 40
+      },
+      "outer": {
+        "task1_issue": 0.5160845416287925,
+        "task2_domain_sumber": 0.47738523159854596,
+        "task3_primary_entity_type": 0.3452992587138929,
+        "min": 0.3452992587138929,
+        "mean": 0.4462563439804104
+      }
+    },
+    {
+      "fold": 2,
+      "selected": {
+        "config": 0,
+        "min": 0.32851700074502954,
+        "mean": 0.3845678267935355
+      },
+      "config": {
+        "shared": 192,
+        "adapter": 64,
+        "drop": 0.2,
+        "lr": 0.0008,
+        "wd": 0.0002,
+        "power": 0.5,
+        "smooth": 0.05,
+        "loss": [
+          1,
+          1,
+          1
+        ],
+        "epochs": 40
+      },
+      "outer": {
+        "task1_issue": 0.4381607762751233,
+        "task2_domain_sumber": 0.46905817952643486,
+        "task3_primary_entity_type": 0.39158125934452687,
+        "min": 0.39158125934452687,
+        "mean": 0.43293340504869504
+      }
+    },
+    {
+      "fold": 3,
+      "selected": {
+        "config": 0,
+        "min": 0.3516362328608566,
+        "mean": 0.39495932391617167
+      },
+      "config": {
+        "shared": 192,
+        "adapter": 64,
+        "drop": 0.2,
+        "lr": 0.0008,
+        "wd": 0.0002,
+        "power": 0.5,
+        "smooth": 0.05,
+        "loss": [
+          1,
+          1,
+          1
+        ],
+        "epochs": 40
+      },
+      "outer": {
+        "task1_issue": 0.5318928107068184,
+        "task2_domain_sumber": 0.3250039050457944,
+        "task3_primary_entity_type": 0.334233497870693,
+        "min": 0.3250039050457944,
+        "mean": 0.397043404541102
+      }
+    },
+    {
+      "fold": 4,
+      "selected": {
+        "config": 0,
+        "min": 0.3338576727316464,
+        "mean": 0.3774509841510471
+      },
+      "config": {
+        "shared": 192,
+        "adapter": 64,
+        "drop": 0.2,
+        "lr": 0.0008,
+        "wd": 0.0002,
+        "power": 0.5,
+        "smooth": 0.05,
+        "loss": [
+          1,
+          1,
+          1
+        ],
+        "epochs": 40
+      },
+      "outer": {
+        "task1_issue": 0.5303599319422444,
+        "task2_domain_sumber": 0.4119178554722985,
+        "task3_primary_entity_type": 0.48980430087033855,
+        "min": 0.4119178554722985,
+        "mean": 0.4773606960949605
+      }
+    },
+    {
+      "fold": 5,
+      "selected": {
+        "config": 2,
+        "min": 0.34688933268893746,
+        "mean": 0.4138351307797117
+      },
+      "config": {
+        "shared": 192,
+        "adapter": 96,
+        "drop": 0.3,
+        "lr": 0.0006,
+        "wd": 0.0002,
+        "power": 0.4,
+        "smooth": 0.08,
+        "loss": [
+          1,
+          1.5,
+          1.5
+        ],
+        "epochs": 40
+      },
+      "outer": {
+        "task1_issue": 0.4802003853469373,
+        "task2_domain_sumber": 0.3849591244887997,
+        "task3_primary_entity_type": 0.3834968121652904,
+        "min": 0.3834968121652904,
+        "mean": 0.41621877400034246
+      }
+    }
+  ],
+  "dataset_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "protocol_sha256": "3d496533fcbda913c82eaa2b580d0d7807f80b1d3526bdffcca29e8f2d605e85",
+  "source_result": "DEMO_XAI_745_FULL/04_hasil_eksperimen/next_research_20261017/01_model_comparison/M04_siglip2_adapters/result.json",
+  "protocol": "fixed E42 5-fold OOF"
+}

@@ -1,0 +1,90 @@
+{
+  "index": 417,
+  "sample_id": "TMP-AA5DC5C56766",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "7d7c121586c3ab5b9ef4a8c1dc9112d5af4df5f9d9b2ca1e77a03b272b9725f1",
+  "image_sha256": "aa5dc5c56766a11a8550332cd65257c379ce4855f6ec49d88908ea3f343692a3",
+  "transmitted_image_sha256": "069bb4e58d2c7f8b1dfa2a38c35bc5b9de5c5e7a9e71207d867d8e915eefe563",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6139495,
+      "total": 10,
+      "remaining": 1.3860504999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.613949500000004,
+      "total": 100,
+      "remaining": 91.3860505,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.5082714688032866,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A ceremonial torch bowl and a match.\",\n  \"source_properties\": \"Using a single, fragile match to ignite a large, important ceremonial vessel.\",\n  \"target_situation\": \"The Indonesian government's frantic, chaotic preparations and financial struggles for the Asian Games.\",\n  \"mapping\": \"The precarious act of lighting a major torch with one match symbolizes desperate, high-stakes last-minute efforts.\",\n  \"uncertainty\": \"None.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ApjLaq26Ju2M_PUPu97KyQo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1202,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1098
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 672500,
+        "output_tokens_cost_nanodollars": 3606000
+      },
+      "prompt_tokens": 1345,
+      "total_backend_latency_ms": 6641,
+      "total_tokens": 2547
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.618228,
+      "total": 10,
+      "remaining": 1.3817719999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.618228000000002,
+      "total": 100,
+      "remaining": 91.381772,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0042785,
+  "fields": {
+    "source_object": "A ceremonial torch bowl and a match.",
+    "source_properties": "Using a single, fragile match to ignite a large, important ceremonial vessel.",
+    "target_situation": "The Indonesian government's frantic, chaotic preparations and financial struggles for the Asian Games.",
+    "mapping": "The precarious act of lighting a major torch with one match symbolizes desperate, high-stakes last-minute efforts.",
+    "uncertainty": "None."
+  },
+  "explanation": "source_object: A ceremonial torch bowl and a match.\nsource_properties: Using a single, fragile match to ignite a large, important ceremonial vessel.\ntarget_situation: The Indonesian government's frantic, chaotic preparations and financial struggles for the Asian Games.\nmapping: The precarious act of lighting a major torch with one match symbolizes desperate, high-stakes last-minute efforts.\nuncertainty: None.",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 394,
+  "sample_id": "TMP-724B98A81B07",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c51d42086c3d5172bb09fcb243060eccf04a97d4a79523a0647e2ca9c7783162",
+  "image_sha256": "724b98a81b075f11c71ece260a320779093ee81fec4a3e2aef593ac7cfb754e5",
+  "transmitted_image_sha256": "624808f4d5a505f4fcccbfa36548868a5d07d7fa94be772c91484a61c776b484",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5755275,
+      "total": 10,
+      "remaining": 1.4244725000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.575527500000007,
+      "total": 100,
+      "remaining": 91.4244725,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.429762181825936,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A burial plot or open grave\",\n  \"source_properties\": \"A deep, rectangular cavity dug into the ground, symbolizing finality and concealment.\",\n  \"target_situation\": \"The mysterious death of Johannes Marliem, a key witness in a major corruption case.\",\n  \"mapping\": \"The figure stands at the edge of a deep pit, representing the literal and metaphorical 'grave' surrounding his suspicious death.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ZpfLaqjaAtvJ_uMPvcyw-AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 108,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675500,
+        "output_tokens_cost_nanodollars": 324000
+      },
+      "prompt_tokens": 1351,
+      "total_backend_latency_ms": 1715,
+      "total_tokens": 1459
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.576527,
+      "total": 10,
+      "remaining": 1.4234729999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.576526999999999,
+      "total": 100,
+      "remaining": 91.423473,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009995,
+  "fields": {
+    "source_object": "A burial plot or open grave",
+    "source_properties": "A deep, rectangular cavity dug into the ground, symbolizing finality and concealment.",
+    "target_situation": "The mysterious death of Johannes Marliem, a key witness in a major corruption case.",
+    "mapping": "The figure stands at the edge of a deep pit, representing the literal and metaphorical 'grave' surrounding his suspicious death.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: A burial plot or open grave\nsource_properties: A deep, rectangular cavity dug into the ground, symbolizing finality and concealment.\ntarget_situation: The mysterious death of Johannes Marliem, a key witness in a major corruption case.\nmapping: The figure stands at the edge of a deep pit, representing the literal and metaphorical 'grave' surrounding his suspicious death.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

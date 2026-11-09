@@ -1,0 +1,87 @@
+{
+  "index": 168,
+  "sample_id": "TMP-4140AFDA8511",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e4ea58582593d8d99d6a2790fa1ef156464174c79e317aa80bfbdb9d80290933",
+  "image_sha256": "4140afda8511b2e2252f73d8b06a5f9b2d82e6abaebfcab47835fc5de291fefb",
+  "transmitted_image_sha256": "edc89a1f0a6627f826b8bcf87785cec6c97e552f593e5e9aedd2c04f862d1b6d",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2577325,
+      "total": 10,
+      "remaining": 1.7422675000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.257732500000003,
+      "total": 100,
+      "remaining": 91.7422675,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9554610457271338,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"mirror reflection\", \"source_properties\": \"Inversion and hidden contrast; above the surface appears harmonious, while the watery reflection reveals a different, conflicting reality.\", \"target_situation\": \"The strained relationship between General Andika Perkasa and General Dudung Abdurachman within the TNI.\", \"mapping\": \"The heart-shaped hand gesture above signifies public unity, whereas the reflection of boxing gloves depicts an underlying, hidden conflict or rivalry.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "j5HLaoGjL8fR_uMPxMva8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674000,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1348,
+      "total_backend_latency_ms": 1756,
+      "total_tokens": 1450
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2587125,
+      "total": 10,
+      "remaining": 1.7412875000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.258712500000001,
+      "total": 100,
+      "remaining": 91.7412875,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00098,
+  "fields": {
+    "source_object": "mirror reflection",
+    "source_properties": "Inversion and hidden contrast; above the surface appears harmonious, while the watery reflection reveals a different, conflicting reality.",
+    "target_situation": "The strained relationship between General Andika Perkasa and General Dudung Abdurachman within the TNI.",
+    "mapping": "The heart-shaped hand gesture above signifies public unity, whereas the reflection of boxing gloves depicts an underlying, hidden conflict or rivalry.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: mirror reflection\nsource_properties: Inversion and hidden contrast; above the surface appears harmonious, while the watery reflection reveals a different, conflicting reality.\ntarget_situation: The strained relationship between General Andika Perkasa and General Dudung Abdurachman within the TNI.\nmapping: The heart-shaped hand gesture above signifies public unity, whereas the reflection of boxing gloves depicts an underlying, hidden conflict or rivalry.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

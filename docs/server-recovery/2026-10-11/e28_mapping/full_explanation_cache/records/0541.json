@@ -1,0 +1,87 @@
+{
+  "index": 541,
+  "sample_id": "TMP-36E5812E9CC7",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c25ffb17518a50817864eae4d9181bc8a149ec61c1bd685468d4f4dbf3caf0d2",
+  "image_sha256": "36e5812e9cc7a3de52b70092f105b1adbefa7a8b07072abce5c280464f83efb9",
+  "transmitted_image_sha256": "8142e96ae7443e3a1ec9c8d1a89c1be1e8ab86936cb02898b18f0cdd0cc5de5f",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7809475,
+      "total": 10,
+      "remaining": 1.2190525,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.780947499999996,
+      "total": 100,
+      "remaining": 91.2190525,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9003199227154255,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"ukulele\", \"source_properties\": \"small musical instrument, portable, produces harmony, associated with leisure or artistry\", \"target_situation\": \"The multifaceted character and personal integrity of General Hoegeng Iman Santoso, former Indonesian Police Chief.\", \"mapping\": \"The ukulele symbolizes Hoegeng's humble, artistic nature and personal integrity, contrasting his formal, authoritative military role to suggest a harmonious, human leadership style.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "QZvLav6hJcaS_uMPmu6wkA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 667000,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1334,
+      "total_backend_latency_ms": 1727,
+      "total_tokens": 1433
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7819115,
+      "total": 10,
+      "remaining": 1.2180885000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.781911500000007,
+      "total": 100,
+      "remaining": 91.2180885,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000964,
+  "fields": {
+    "source_object": "ukulele",
+    "source_properties": "small musical instrument, portable, produces harmony, associated with leisure or artistry",
+    "target_situation": "The multifaceted character and personal integrity of General Hoegeng Iman Santoso, former Indonesian Police Chief.",
+    "mapping": "The ukulele symbolizes Hoegeng's humble, artistic nature and personal integrity, contrasting his formal, authoritative military role to suggest a harmonious, human leadership style.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: ukulele\nsource_properties: small musical instrument, portable, produces harmony, associated with leisure or artistry\ntarget_situation: The multifaceted character and personal integrity of General Hoegeng Iman Santoso, former Indonesian Police Chief.\nmapping: The ukulele symbolizes Hoegeng's humble, artistic nature and personal integrity, contrasting his formal, authoritative military role to suggest a harmonious, human leadership style.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

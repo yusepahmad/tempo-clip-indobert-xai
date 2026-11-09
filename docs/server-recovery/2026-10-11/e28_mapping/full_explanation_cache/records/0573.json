@@ -1,0 +1,87 @@
+{
+  "index": 573,
+  "sample_id": "TMP-DA1B53F00128",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e0cf290a6a03d4618253726e0693404a50d065880adba345e3a00d9cf7392d6f",
+  "image_sha256": "da1b53f00128564cef8d044950ac15d36d0956a6c560fdbef2e63d26d30e50dc",
+  "transmitted_image_sha256": "82b510ef26dfc0e6479869b6cce56d1c32d48150cf3ec902a5123cdf955a76f7",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8248355,
+      "total": 10,
+      "remaining": 1.1751644999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.824835500000006,
+      "total": 100,
+      "remaining": 91.1751645,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.585316718090326,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"shimmering leather executive office chair\", \"source_properties\": \"empty, high-backed, dark, polished, and sparkling with highlights\", \"target_situation\": \"cabinet reshuffle involving the replacement of ministers and appointments of new deputies\", \"mapping\": \"The vacant, shiny chair represents ministerial positions being offered or traded as political commodities to satisfy party leaders.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "HZzLavCMI9Th_uMProyGuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682000,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1364,
+      "total_backend_latency_ms": 2366,
+      "total_tokens": 1450
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8257755,
+      "total": 10,
+      "remaining": 1.1742244999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.825775500000006,
+      "total": 100,
+      "remaining": 91.1742245,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.00094,
+  "fields": {
+    "source_object": "shimmering leather executive office chair",
+    "source_properties": "empty, high-backed, dark, polished, and sparkling with highlights",
+    "target_situation": "cabinet reshuffle involving the replacement of ministers and appointments of new deputies",
+    "mapping": "The vacant, shiny chair represents ministerial positions being offered or traded as political commodities to satisfy party leaders.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: shimmering leather executive office chair\nsource_properties: empty, high-backed, dark, polished, and sparkling with highlights\ntarget_situation: cabinet reshuffle involving the replacement of ministers and appointments of new deputies\nmapping: The vacant, shiny chair represents ministerial positions being offered or traded as political commodities to satisfy party leaders.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

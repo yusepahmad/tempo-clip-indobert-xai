@@ -1,0 +1,87 @@
+{
+  "index": 549,
+  "sample_id": "TMP-BBF947E559EC",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "46cdec18b74f7a1161828bd7dc0cb17b46a5877b6e303685d1213e2960302ef3",
+  "image_sha256": "bbf947e559ec121537792e1c5593db73cb90fac44f88fe70e14455909763b37c",
+  "transmitted_image_sha256": "989ebeeb866215df6626657d2499a34e5bf781630ca39097bf0d45d8b866bd90",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.792269,
+      "total": 10,
+      "remaining": 1.2077310000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.792269000000005,
+      "total": 100,
+      "remaining": 91.207731,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.8697368800640106,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"bouquet toss\", \"source_properties\": \"A person throws flowers backward to a group of eager competitors hoping to catch them.\", \"target_situation\": \"Indonesian politicians seeking the 2024 presidency by leveraging government programs and seeking official endorsement.\", \"mapping\": \"President Jokowi acts as the bride throwing a bouquet (endorsement/power), while candidates compete to be the one who catches it.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "dJvLaoS_DbeR_uMPm_GWuA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 684000,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1368,
+      "total_backend_latency_ms": 2154,
+      "total_tokens": 1462
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.793235,
+      "total": 10,
+      "remaining": 1.2067650000000008,
+      "refill_at": "2026-10-11 23:35:15.878000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.793234999999996,
+      "total": 100,
+      "remaining": 91.206765,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000966,
+  "fields": {
+    "source_object": "bouquet toss",
+    "source_properties": "A person throws flowers backward to a group of eager competitors hoping to catch them.",
+    "target_situation": "Indonesian politicians seeking the 2024 presidency by leveraging government programs and seeking official endorsement.",
+    "mapping": "President Jokowi acts as the bride throwing a bouquet (endorsement/power), while candidates compete to be the one who catches it.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: bouquet toss\nsource_properties: A person throws flowers backward to a group of eager competitors hoping to catch them.\ntarget_situation: Indonesian politicians seeking the 2024 presidency by leveraging government programs and seeking official endorsement.\nmapping: President Jokowi acts as the bride throwing a bouquet (endorsement/power), while candidates compete to be the one who catches it.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

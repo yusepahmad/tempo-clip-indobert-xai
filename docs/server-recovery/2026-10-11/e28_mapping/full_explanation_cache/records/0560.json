@@ -1,0 +1,90 @@
+{
+  "index": 560,
+  "sample_id": "TMP-7D1FCBF99FFD",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "dcac1fd4ff1f7219d23bb93060a30d94c0a7a7bc53bc917aa3b822363c976fa8",
+  "image_sha256": "7d1fcbf99ffd2e9fd1aff153b5d0291d28208668a8a9ce3b352798ada136e8f1",
+  "transmitted_image_sha256": "aad66668de11fa61119d52a4bd8a5d1b353b9344b301400ebd13f723ba4aad52",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.808966,
+      "total": 10,
+      "remaining": 1.1910340000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.808965999999998,
+      "total": 100,
+      "remaining": 91.191034,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.116209703031927,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"a PCR swab\",\n  \"source_properties\": \"Long, white medical tool with a handle twisted into a dollar sign symbol.\",\n  \"target_situation\": \"Mandatory PCR testing requirements for travel and the associated financial profits for business interests.\",\n  \"mapping\": \"The swab\u2019s handle is shaped like a dollar sign, equating the medical testing process directly with monetary profit.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "wJvLatOzMNTh_uMProyGuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 601,
+      "completion_tokens_details": {
+        "reasoning_tokens": 502
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 675000,
+        "output_tokens_cost_nanodollars": 1803000
+      },
+      "prompt_tokens": 1350,
+      "total_backend_latency_ms": 4000,
+      "total_tokens": 1951
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.811444,
+      "total": 10,
+      "remaining": 1.1885560000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.811443999999995,
+      "total": 100,
+      "remaining": 91.188556,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.002478,
+  "fields": {
+    "source_object": "a PCR swab",
+    "source_properties": "Long, white medical tool with a handle twisted into a dollar sign symbol.",
+    "target_situation": "Mandatory PCR testing requirements for travel and the associated financial profits for business interests.",
+    "mapping": "The swab\u2019s handle is shaped like a dollar sign, equating the medical testing process directly with monetary profit.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: a PCR swab\nsource_properties: Long, white medical tool with a handle twisted into a dollar sign symbol.\ntarget_situation: Mandatory PCR testing requirements for travel and the associated financial profits for business interests.\nmapping: The swab\u2019s handle is shaped like a dollar sign, equating the medical testing process directly with monetary profit.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

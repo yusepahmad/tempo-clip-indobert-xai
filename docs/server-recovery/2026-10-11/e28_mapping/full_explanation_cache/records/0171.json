@@ -1,0 +1,87 @@
+{
+  "index": 171,
+  "sample_id": "TMP-CC078AF7E339",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c551083b65ba238dd50eb68816e43cd618ac8d2fcfac57d926ff73d3e80e461c",
+  "image_sha256": "cc078af7e339fb473f3bbbb95a2dbb8c87bb877dbdee1f18092855fa07b59bca",
+  "transmitted_image_sha256": "53df05d22e00c26fc459b5f270c484ad4004e7beb7f11b1402cb9f51c27463a0",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.260624,
+      "total": 10,
+      "remaining": 1.739376,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.260624000000007,
+      "total": 100,
+      "remaining": 91.739376,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.996155454777181,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Tetris video game\",\n  \"source_properties\": \"Falling geometric blocks of various shapes being fitted together into a confined space.\",\n  \"target_situation\": \"Massive holiday homecoming (mudik) after a period of economic hardship.\",\n  \"mapping\": \"Falling blocks represent baggage and money being precariously stacked onto a vehicle.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "oJHLav7_OLDe_uMP6urskA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679500,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1359,
+      "total_backend_latency_ms": 1524,
+      "total_tokens": 1449
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2615735,
+      "total": 10,
+      "remaining": 1.7384264999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.261573499999997,
+      "total": 100,
+      "remaining": 91.7384265,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009495,
+  "fields": {
+    "source_object": "Tetris video game",
+    "source_properties": "Falling geometric blocks of various shapes being fitted together into a confined space.",
+    "target_situation": "Massive holiday homecoming (mudik) after a period of economic hardship.",
+    "mapping": "Falling blocks represent baggage and money being precariously stacked onto a vehicle.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Tetris video game\nsource_properties: Falling geometric blocks of various shapes being fitted together into a confined space.\ntarget_situation: Massive holiday homecoming (mudik) after a period of economic hardship.\nmapping: Falling blocks represent baggage and money being precariously stacked onto a vehicle.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

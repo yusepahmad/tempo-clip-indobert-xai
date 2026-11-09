@@ -1,0 +1,87 @@
+{
+  "index": 35,
+  "sample_id": "TMP-1A5862984B3D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "029c029d85c209289fd3695a75e4b607bb4677dd171b7a61d71db872182b984d",
+  "image_sha256": "1a5862984b3d99be52d550c31afa683c846673e056cc97331d39b0c5bc58efbc",
+  "transmitted_image_sha256": "a8dc45d5355dbc62561903bdea2ce629229f636fc1bec1aa7fc0fe0a0d1c8fde",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0582245,
+      "total": 10,
+      "remaining": 1.9417755000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.058224499999994,
+      "total": 100,
+      "remaining": 91.9417755,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.79326944379136,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A palanquin-like luxury car\",\n  \"source_properties\": \"A heavy, premium vehicle carried on poles by common people while an elite figure celebrates inside.\",\n  \"target_situation\": \"The charity organization Aksi Cepat Tanggap (ACT) misusing public donations for personal enrichment.\",\n  \"mapping\": \"The car represents luxury lifestyles funded by the physical labor and donations of the masses, who carry the weight.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "DY7LatmuMd6d_uMPq6y2oA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 110,
+      "cost": {
+        "input_tokens_cost_nanodollars": 669000,
+        "output_tokens_cost_nanodollars": 330000
+      },
+      "prompt_tokens": 1338,
+      "total_backend_latency_ms": 1837,
+      "total_tokens": 1448
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0592235,
+      "total": 10,
+      "remaining": 1.9407765000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.059223500000002,
+      "total": 100,
+      "remaining": 91.9407765,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000999,
+  "fields": {
+    "source_object": "A palanquin-like luxury car",
+    "source_properties": "A heavy, premium vehicle carried on poles by common people while an elite figure celebrates inside.",
+    "target_situation": "The charity organization Aksi Cepat Tanggap (ACT) misusing public donations for personal enrichment.",
+    "mapping": "The car represents luxury lifestyles funded by the physical labor and donations of the masses, who carry the weight.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A palanquin-like luxury car\nsource_properties: A heavy, premium vehicle carried on poles by common people while an elite figure celebrates inside.\ntarget_situation: The charity organization Aksi Cepat Tanggap (ACT) misusing public donations for personal enrichment.\nmapping: The car represents luxury lifestyles funded by the physical labor and donations of the masses, who carry the weight.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

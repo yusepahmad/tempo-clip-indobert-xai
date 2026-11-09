@@ -1,0 +1,87 @@
+{
+  "index": 326,
+  "sample_id": "TMP-E09FCDE5C640",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ae530ba15e62000322aaaf667657577c6ea1e8dd2dfd3436f519b44f56a4efd0",
+  "image_sha256": "e09fcde5c640cf57709e1f6d89adcb23e04c8c461dbaa022e445e21acc8e9868",
+  "transmitted_image_sha256": "d16b4e645a308e03b3f15aa0257c6f5356961ede1f7f04fd8eeb8dedb5862c96",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4864055,
+      "total": 10,
+      "remaining": 1.5135945,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.486405500000004,
+      "total": 100,
+      "remaining": 91.5135945,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4710742188617587,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Industrial worker with sledgehammer\",\n  \"source_properties\": \"Sturdy build, gripping a heavy sledgehammer, gaze fixed ahead, socialist realism aesthetic.\",\n  \"target_situation\": \"Large-scale arrival of Chinese laborers into Indonesia's workforce.\",\n  \"mapping\": \"The worker's strength and tool represent a powerful, unstoppable force entering the labor market.\",\n  \"uncertainty\": \"None evident.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "rJXLapmtC5Ca_uMPxb6ruQk",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 98,
+      "cost": {
+        "input_tokens_cost_nanodollars": 663000,
+        "output_tokens_cost_nanodollars": 294000
+      },
+      "prompt_tokens": 1326,
+      "total_backend_latency_ms": 2139,
+      "total_tokens": 1424
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4873625,
+      "total": 10,
+      "remaining": 1.5126375000000003,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.487362500000003,
+      "total": 100,
+      "remaining": 91.5126375,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000957,
+  "fields": {
+    "source_object": "Industrial worker with sledgehammer",
+    "source_properties": "Sturdy build, gripping a heavy sledgehammer, gaze fixed ahead, socialist realism aesthetic.",
+    "target_situation": "Large-scale arrival of Chinese laborers into Indonesia's workforce.",
+    "mapping": "The worker's strength and tool represent a powerful, unstoppable force entering the labor market.",
+    "uncertainty": "None evident."
+  },
+  "explanation": "source_object: Industrial worker with sledgehammer\nsource_properties: Sturdy build, gripping a heavy sledgehammer, gaze fixed ahead, socialist realism aesthetic.\ntarget_situation: Large-scale arrival of Chinese laborers into Indonesia's workforce.\nmapping: The worker's strength and tool represent a powerful, unstoppable force entering the labor market.\nuncertainty: None evident.",
+  "finish_reason": "stop",
+  "usable": true
+}

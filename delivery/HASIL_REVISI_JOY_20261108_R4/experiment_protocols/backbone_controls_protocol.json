@@ -1,0 +1,22 @@
+{
+  "schema": "revisi-ii-frozen-backbone-parity-v1",
+  "arms": [
+    "RII_BACKBONE_CLIP_FULL",
+    "RII_BACKBONE_SIGLIP2",
+    "RII_BACKBONE_DINOV2"
+  ],
+  "input_dimension": 1536,
+  "image_dimension": 768,
+  "text": "same frozen IndoBERT mean768 for every arm",
+  "recipe": "fixed shared256 ReLU dropout0.4, weighted CE equal tasks, AdamW1e-3/wd1e-4, 120 full-batch epochs, seed42",
+  "tuning": "none; no outer-test parameter selection",
+  "source_sha256": "6ee23806fc84992557d2503c5194e9c9ebe29f46b16782d48a997c390524bb96",
+  "fit_source_sha256": "c0f34550675e7f9785cb39f86a037ed88c7c16be926d8f23693986635660c333",
+  "text_cache_sha256": "312a130025a20c18f38668293534528fb82072a139c0c1ca41ad8abd23559cd4",
+  "visual_features": {
+    "RII_BACKBONE_CLIP_FULL": "686b2d83dc5b6466545cb6cebc1acca1c94100e1764811818f9d40c3822186cf",
+    "RII_BACKBONE_SIGLIP2": "71cd0cfe78db5ac2392aa69749b8946da27d7ae9f6f7d0533e49e0f9c18d6fdb",
+    "RII_BACKBONE_DINOV2": "a7a1c0a549a00c8d13003d6e8f672837d67f56cf4772803f48d6247c37ba1c19"
+  },
+  "limitation": "encoder-native resolutions/pretraining differ by definition; CLIP full only, not E42 full+crop/trainable text tail"
+}

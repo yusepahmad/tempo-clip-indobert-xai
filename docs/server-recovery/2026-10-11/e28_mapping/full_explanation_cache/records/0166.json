@@ -1,0 +1,87 @@
+{
+  "index": 166,
+  "sample_id": "TMP-DD1F130D5EBC",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a9b26d30a5b1b752122ffa30041d5ef857b0e87f5b89f6df2a79d9612404bcbf",
+  "image_sha256": "dd1f130d5ebc1012dded3867174de330fa657897c836d9a6e517a99dfa37536a",
+  "transmitted_image_sha256": "2491ca3793b7a3bec8374c7fd175f6282aed2f4ef4ed95595d9dfb13abd6c4a5",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2557785,
+      "total": 10,
+      "remaining": 1.7442215,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.255778500000005,
+      "total": 100,
+      "remaining": 91.7442215,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.8388693211600184,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"polycarbonate water gallon\", \"source_properties\": \"ribbed cylindrical structure, semi-transparent plastic, stackable shape\", \"target_situation\": \"microplastics ingested from bottled mineral water\", \"mapping\": \"The gallon's distinctive structural ridges replace human abdominal muscles, visualizing how plastic containers physically integrate into and contaminate the human body through consumption.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "hJHLatTBCN7d_uMP45e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 83,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676500,
+        "output_tokens_cost_nanodollars": 249000
+      },
+      "prompt_tokens": 1353,
+      "total_backend_latency_ms": 1778,
+      "total_tokens": 1436
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.256704,
+      "total": 10,
+      "remaining": 1.7432960000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.256704,
+      "total": 100,
+      "remaining": 91.743296,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009255,
+  "fields": {
+    "source_object": "polycarbonate water gallon",
+    "source_properties": "ribbed cylindrical structure, semi-transparent plastic, stackable shape",
+    "target_situation": "microplastics ingested from bottled mineral water",
+    "mapping": "The gallon's distinctive structural ridges replace human abdominal muscles, visualizing how plastic containers physically integrate into and contaminate the human body through consumption.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: polycarbonate water gallon\nsource_properties: ribbed cylindrical structure, semi-transparent plastic, stackable shape\ntarget_situation: microplastics ingested from bottled mineral water\nmapping: The gallon's distinctive structural ridges replace human abdominal muscles, visualizing how plastic containers physically integrate into and contaminate the human body through consumption.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

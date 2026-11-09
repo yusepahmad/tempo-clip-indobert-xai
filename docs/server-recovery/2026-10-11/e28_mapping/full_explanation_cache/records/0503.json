@@ -1,0 +1,87 @@
+{
+  "index": 503,
+  "sample_id": "TMP-49BC07F8724A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b7f1eb48f54f15ef00827c7a8c831b87db38ffd5e825a6eb2158596b91dfbc7b",
+  "image_sha256": "49bc07f8724a7b55b3e00fe3eb8b60df671f8cf0a7a08fa943dd1293a5334d87",
+  "transmitted_image_sha256": "3c974aadb5f070b41fdeeee2857765e65f9a71ed17e5c6711a0490207778bdf3",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.723585,
+      "total": 10,
+      "remaining": 1.276415,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.723585,
+      "total": 100,
+      "remaining": 91.276415,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3575647231191397,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"red virus structure\", \"source_properties\": \"large, spiky, red spherical mass with protruded surface proteins\", \"target_situation\": \"The global COVID-19 pandemic and collective public response\", \"mapping\": \"The spiky red structure visually represents the SARS-CoV-2 virus, acting as a looming physical threat that people must unite against to combat.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "N5rLavGEGPKU_uMPp6OP6Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 88,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681000,
+        "output_tokens_cost_nanodollars": 264000
+      },
+      "prompt_tokens": 1362,
+      "total_backend_latency_ms": 1585,
+      "total_tokens": 1450
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.72453,
+      "total": 10,
+      "remaining": 1.2754700000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.724530000000001,
+      "total": 100,
+      "remaining": 91.27547,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000945,
+  "fields": {
+    "source_object": "red virus structure",
+    "source_properties": "large, spiky, red spherical mass with protruded surface proteins",
+    "target_situation": "The global COVID-19 pandemic and collective public response",
+    "mapping": "The spiky red structure visually represents the SARS-CoV-2 virus, acting as a looming physical threat that people must unite against to combat.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: red virus structure\nsource_properties: large, spiky, red spherical mass with protruded surface proteins\ntarget_situation: The global COVID-19 pandemic and collective public response\nmapping: The spiky red structure visually represents the SARS-CoV-2 virus, acting as a looming physical threat that people must unite against to combat.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

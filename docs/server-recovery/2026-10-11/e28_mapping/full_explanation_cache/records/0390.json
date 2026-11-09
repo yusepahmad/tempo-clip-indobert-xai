@@ -1,0 +1,87 @@
+{
+  "index": 390,
+  "sample_id": "TMP-573921A3AC60",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f4046cefe67d1c0c508f35c5fbdf58fe7fc76c8884fc5f30edfeede147d41f70",
+  "image_sha256": "573921a3ac60d773f81e98a5adceb1317a59e5f9788b8578f792c095e15d464b",
+  "transmitted_image_sha256": "57f956141d96ca20bc9425e30f6b844940514e0bb505efab098fa59d70d6693f",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.571697499999999,
+      "total": 10,
+      "remaining": 1.428302500000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.571697499999999,
+      "total": 100,
+      "remaining": 91.4283025,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4088771301321685,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"trash can\", \"source_properties\": \"A vessel for waste or discarded items, often associated with foul odors and filth.\", \"target_situation\": \"A plan to weaken the KPK involving DPR special committee members, police, and former investigators.\", \"mapping\": \"The trash can symbolizes the 'dirty' nature of the political maneuvers and scandals, suggesting the people involved belong in the garbage.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "TZfLarnuIt7d_uMPq5e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678000,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1356,
+      "total_backend_latency_ms": 1826,
+      "total_tokens": 1447
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5726485,
+      "total": 10,
+      "remaining": 1.4273515000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.5726485,
+      "total": 100,
+      "remaining": 91.4273515,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000951,
+  "fields": {
+    "source_object": "trash can",
+    "source_properties": "A vessel for waste or discarded items, often associated with foul odors and filth.",
+    "target_situation": "A plan to weaken the KPK involving DPR special committee members, police, and former investigators.",
+    "mapping": "The trash can symbolizes the 'dirty' nature of the political maneuvers and scandals, suggesting the people involved belong in the garbage.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: trash can\nsource_properties: A vessel for waste or discarded items, often associated with foul odors and filth.\ntarget_situation: A plan to weaken the KPK involving DPR special committee members, police, and former investigators.\nmapping: The trash can symbolizes the 'dirty' nature of the political maneuvers and scandals, suggesting the people involved belong in the garbage.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

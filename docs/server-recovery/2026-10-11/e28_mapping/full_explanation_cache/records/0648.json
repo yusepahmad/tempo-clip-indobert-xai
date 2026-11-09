@@ -1,0 +1,87 @@
+{
+  "index": 648,
+  "sample_id": "TMP-C80EFFF00BCB",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "fdd447c1906235bc59d1cebcf9232c42e8d8542a3018851a9b532f169903fb78",
+  "image_sha256": "c80efff00bcbd55310785bc7331a0e297fa1b9ae976d10a161ec5a179e83e48e",
+  "transmitted_image_sha256": "5b2e25e60da2949752ac16ff1a95992e106560cb3b418abf0fd5dcd874b4d793",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.917499,
+      "total": 10,
+      "remaining": 1.0825010000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.917499000000007,
+      "total": 100,
+      "remaining": 91.082501,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1384537192061543,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"mirror\", \"source_properties\": \"Reflects an image; shows a person looking at an idealized version of another.\", \"target_situation\": \"President Joko Widodo reportedly influencing and grooming family members for the 2024 regional elections.\", \"mapping\": \"The act of adjusting a reflection symbolizes the President's role in shaping and dictating his political successors' careers.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "_J3LaryNLrye_uMPo--KmQ4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681000,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1362,
+      "total_backend_latency_ms": 1596,
+      "total_tokens": 1452
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.91845,
+      "total": 10,
+      "remaining": 1.08155,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.918450000000007,
+      "total": 100,
+      "remaining": 91.08155,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000951,
+  "fields": {
+    "source_object": "mirror",
+    "source_properties": "Reflects an image; shows a person looking at an idealized version of another.",
+    "target_situation": "President Joko Widodo reportedly influencing and grooming family members for the 2024 regional elections.",
+    "mapping": "The act of adjusting a reflection symbolizes the President's role in shaping and dictating his political successors' careers.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: mirror\nsource_properties: Reflects an image; shows a person looking at an idealized version of another.\ntarget_situation: President Joko Widodo reportedly influencing and grooming family members for the 2024 regional elections.\nmapping: The act of adjusting a reflection symbolizes the President's role in shaping and dictating his political successors' careers.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

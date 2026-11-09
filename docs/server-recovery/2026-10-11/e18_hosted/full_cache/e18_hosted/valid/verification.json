@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "routes": {
+    "strict": {
+      "macro_f1": 0.25213090184940357,
+      "raw_invalid_predictions": 453
+    },
+    "v1": {
+      "macro_f1": 0.3646079161269622,
+      "raw_invalid_predictions": 194
+    },
+    "v2": {
+      "macro_f1": 0.37948014866221313,
+      "raw_invalid_predictions": 78
+    }
+  },
+  "verifier_sha256": "bcb8754aa2c9f7b81487b748b102bc307097f076bb5d19b27931000dc501e051",
+  "fallback_source_sha256": "8aea05534122e682399ce422c59cd66fcd2f3ee115655280a6f6b4490a59b6b4",
+  "checks": [
+    "all740 final predictions are seven known classes; raw answers retained",
+    "each fallback selected solely by592 outer-training counts; tie alphabetic",
+    "all strict/v1/v2 decoders reproduced from immutable response cache",
+    "all740 original IDs/labels/folds and manual7x7/macroF1 checked"
+  ],
+  "sha256": {
+    "strict/oof.csv": "e58d9640ed2612b16effce64209e6bbe8e7418c30b735040aa99a61bb10a2549",
+    "strict/metrics.json": "0bc8ae3d96c5ec5555a12bc9cb990ae09da36f155aa855d44b66695a8c7d2ec0",
+    "v1/oof.csv": "309de83bfbbe630394bd8fb2b62c8627381e752656c4d85a8ae584e2a4a8244f",
+    "v1/metrics.json": "ffec1783a5833d122dc1cca33af7b897259d647c482836a3224d5259670eba30",
+    "v2/oof.csv": "c6b339a23117a25bde48d4ca8ba34cff57f46e7938f7bdaa5a6b845de6d8065c",
+    "v2/metrics.json": "dd46d16f600ca3e1ef572191c1bae22080612da4228c992303fa0ca8cc523ba7"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "index": 465,
+  "sample_id": "TMP-8AC51021F344",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "92d9d7fff338210e086e9b702fd646eb9a2f1ba4975243f285211d8ba3543859",
+  "image_sha256": "8ac51021f34449f0c72239c04d50222da53c1e6db2ae2991c140f80cc447f44c",
+  "transmitted_image_sha256": "1b408c24cabf21414769d8bc114a692d36917e4703ee2b605ea72d376e2e4f23",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.673462,
+      "total": 10,
+      "remaining": 1.3265379999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.673462,
+      "total": 100,
+      "remaining": 91.326538,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4304443686269224,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"football match\", \"source_properties\": \"A referee blowing a whistle and gesturing to penalize aggressive, shouting players in team uniforms.\", \"target_situation\": \"Political figures contesting election results and threatening mass mobilization.\", \"mapping\": \"The electoral commission acts as an arbiter enforcing rules against a political camp that is aggressively protesting official results, much like athletes disputing a referee's call.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "P5nLao3lLrDe_uMP6urskA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674000,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1348,
+      "total_backend_latency_ms": 1830,
+      "total_tokens": 1440
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.674412,
+      "total": 10,
+      "remaining": 1.3255879999999998,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.674412000000004,
+      "total": 100,
+      "remaining": 91.325588,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00095,
+  "fields": {
+    "source_object": "football match",
+    "source_properties": "A referee blowing a whistle and gesturing to penalize aggressive, shouting players in team uniforms.",
+    "target_situation": "Political figures contesting election results and threatening mass mobilization.",
+    "mapping": "The electoral commission acts as an arbiter enforcing rules against a political camp that is aggressively protesting official results, much like athletes disputing a referee's call.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: football match\nsource_properties: A referee blowing a whistle and gesturing to penalize aggressive, shouting players in team uniforms.\ntarget_situation: Political figures contesting election results and threatening mass mobilization.\nmapping: The electoral commission acts as an arbiter enforcing rules against a political camp that is aggressively protesting official results, much like athletes disputing a referee's call.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

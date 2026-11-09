@@ -1,0 +1,87 @@
+{
+  "index": 688,
+  "sample_id": "TMP-0FD69107D32E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "2306a349378f59e436ba387abe3421da3b0c2b08684a5b5b5f7debe12c72bc12",
+  "image_sha256": "0fd69107d32ea07f7ba60abd4b65be54e5087c807cd8e60dcd8d7a101c6287b4",
+  "transmitted_image_sha256": "2d072d1ef23dfc2d945e72d467a24837c2f4e5f67995a1f2cf47294f78234f9f",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.988621,
+      "total": 10,
+      "remaining": 1.0113789999999998,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.988620999999995,
+      "total": 100,
+      "remaining": 91.011379,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4838290070183575,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"excavator\", \"source_properties\": \"A large, heavy-duty construction machine designed for digging, scooping, and moving earth with powerful mechanical force.\", \"target_situation\": \"Minister Bahlil Lahadalia issuing nickel mining permits in Raja Ampat, allegedly violating environmental management laws.\", \"mapping\": \"The excavator's destructive capacity for digging symbolizes the environmental damage caused by mining activities authorized by the minister's policy decisions.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Gp_LavDkN-yb_uMPzeOSwQw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 103,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679500,
+        "output_tokens_cost_nanodollars": 309000
+      },
+      "prompt_tokens": 1359,
+      "total_backend_latency_ms": 1903,
+      "total_tokens": 1462
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9896095,
+      "total": 10,
+      "remaining": 1.0103904999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.9896095,
+      "total": 100,
+      "remaining": 91.0103905,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009885,
+  "fields": {
+    "source_object": "excavator",
+    "source_properties": "A large, heavy-duty construction machine designed for digging, scooping, and moving earth with powerful mechanical force.",
+    "target_situation": "Minister Bahlil Lahadalia issuing nickel mining permits in Raja Ampat, allegedly violating environmental management laws.",
+    "mapping": "The excavator's destructive capacity for digging symbolizes the environmental damage caused by mining activities authorized by the minister's policy decisions.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: excavator\nsource_properties: A large, heavy-duty construction machine designed for digging, scooping, and moving earth with powerful mechanical force.\ntarget_situation: Minister Bahlil Lahadalia issuing nickel mining permits in Raja Ampat, allegedly violating environmental management laws.\nmapping: The excavator's destructive capacity for digging symbolizes the environmental damage caused by mining activities authorized by the minister's policy decisions.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

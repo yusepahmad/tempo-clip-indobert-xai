@@ -1,0 +1,87 @@
+{
+  "index": 645,
+  "sample_id": "TMP-5757F45615D7",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "2feb2d493f02923385a7513fca94de92d52b3157c8a39e4987805806aa495694",
+  "image_sha256": "5757f45615d77cd3c09ebee786a246acfb7494f716e8e7a24592e4e95c1b2430",
+  "transmitted_image_sha256": "e4c84fa0f9c2d30cdebd44916b6da6da681e724d6284dc61f03a297ea9d9e60f",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.914579,
+      "total": 10,
+      "remaining": 1.0854210000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.914579000000003,
+      "total": 100,
+      "remaining": 91.085421,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3361904229968786,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Ropes tied to a building\", \"source_properties\": \"Tensioned lines being pulled downward by people's weight and effort to potentially collapse or move a massive structure.\", \"target_situation\": \"Initiating a legislative inquiry into election fraud.\", \"mapping\": \"Pulling the ropes represents Megawati and Jusuf Kalla driving the 'hak angket' (right of inquiry) to challenge the parliamentary establishment's status quo regarding the 2024 election results.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "653LapK3BeGM_uMP0-qD8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 111,
+      "cost": {
+        "input_tokens_cost_nanodollars": 685500,
+        "output_tokens_cost_nanodollars": 333000
+      },
+      "prompt_tokens": 1371,
+      "total_backend_latency_ms": 1857,
+      "total_tokens": 1482
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9155975,
+      "total": 10,
+      "remaining": 1.0844024999999995,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.915597500000004,
+      "total": 100,
+      "remaining": 91.0844025,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0010185,
+  "fields": {
+    "source_object": "Ropes tied to a building",
+    "source_properties": "Tensioned lines being pulled downward by people's weight and effort to potentially collapse or move a massive structure.",
+    "target_situation": "Initiating a legislative inquiry into election fraud.",
+    "mapping": "Pulling the ropes represents Megawati and Jusuf Kalla driving the 'hak angket' (right of inquiry) to challenge the parliamentary establishment's status quo regarding the 2024 election results.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Ropes tied to a building\nsource_properties: Tensioned lines being pulled downward by people's weight and effort to potentially collapse or move a massive structure.\ntarget_situation: Initiating a legislative inquiry into election fraud.\nmapping: Pulling the ropes represents Megawati and Jusuf Kalla driving the 'hak angket' (right of inquiry) to challenge the parliamentary establishment's status quo regarding the 2024 election results.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

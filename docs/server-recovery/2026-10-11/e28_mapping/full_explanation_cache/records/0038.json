@@ -1,0 +1,90 @@
+{
+  "index": 38,
+  "sample_id": "TMP-A0B2109BF3D7",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e7417b169b4ae27c41a272c3835bc11fe335ff52ab2a6449abc22274e421a1d9",
+  "image_sha256": "a0b2109bf3d7c077df2e6bfb0d167593a93d2071a8633a769d05fe388458170d",
+  "transmitted_image_sha256": "647e15fa0453495028f3abc9269a89403a8697ecc973df7220e3a719c292f9f5",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0611305,
+      "total": 10,
+      "remaining": 1.9388694999999991,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.061130500000004,
+      "total": 100,
+      "remaining": 91.9388695,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.14245677459985,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A front-loading washing machine\",\n  \"source_properties\": \"Its function is to agitate and clean soiled laundry, removing stains to make items look new.\",\n  \"target_situation\": \"Alleged money laundering by Indosurya after a multi-trillion rupiah embezzlement scandal.\",\n  \"mapping\": \"The machine's cleaning function mirrors 'money laundering,' where 'dirty' illicit cash is processed to appear legal and clean.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "IY7LarOXLa2u_PUPtb3C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1272,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1161
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 668000,
+        "output_tokens_cost_nanodollars": 3816000
+      },
+      "prompt_tokens": 1336,
+      "total_backend_latency_ms": 6322,
+      "total_tokens": 2608
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0656145,
+      "total": 10,
+      "remaining": 1.9343854999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.065614499999995,
+      "total": 100,
+      "remaining": 91.9343855,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.004484,
+  "fields": {
+    "source_object": "A front-loading washing machine",
+    "source_properties": "Its function is to agitate and clean soiled laundry, removing stains to make items look new.",
+    "target_situation": "Alleged money laundering by Indosurya after a multi-trillion rupiah embezzlement scandal.",
+    "mapping": "The machine's cleaning function mirrors 'money laundering,' where 'dirty' illicit cash is processed to appear legal and clean.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A front-loading washing machine\nsource_properties: Its function is to agitate and clean soiled laundry, removing stains to make items look new.\ntarget_situation: Alleged money laundering by Indosurya after a multi-trillion rupiah embezzlement scandal.\nmapping: The machine's cleaning function mirrors 'money laundering,' where 'dirty' illicit cash is processed to appear legal and clean.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

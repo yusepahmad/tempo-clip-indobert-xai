@@ -1,0 +1,86 @@
+{
+  "index": 439,
+  "sample_id": "TMP-BFEB0AC6CB30",
+  "fold": 3,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "35e4feffc06026adebf69d0d58a4520838e71b2c3aa77d5e49571d03c565ff60",
+  "image_sha256": "bfeb0ac6cb300a887d9901e9c49bb5702fa3a65b9c71202ada7104ea669f58a4",
+  "transmitted_image_sha256": "0d0458616f66b17a82428da9a9388629306eec1547cdb246c2c5b2c84c5ab9c1",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.196472,
+      "total": 10,
+      "remaining": 4.803528,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.196472,
+      "total": 100,
+      "remaining": 94.803528,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 11.326644042972475,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan ilustrasi dan deskripsi yang diberikan, metafora utama menggunakan **tangki minyak** yang sangat besar sebagai simbol untuk **infrastruktur energi** dan transaksi industri minyak (Pertamina). Penggunaan objek buatan manusia seperti tangki atau wadah industri ini dikategorikan ke dalam ranah mesin dan prasarana.\n\nMeskipun terdapat elemen \"ancaman\" (berjalan di atas papan dengan todongan senjata), fokus sumber metafora yang dijelaskan dalam teks adalah \"kotak minyak atau tangki besar\" yang merepresentasikan mekanisme infrastruktur energi yang menjerat tokoh tersebut. Hal ini sejalan dengan contoh training kategori E yang menggunakan simbol seperti pompa bensin atau tangki/pipa untuk menggambarkan isu serupa.\n\nJawab satu kode A sampai G: **E**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "u_rKauKEBZ-d_uMPlqrYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2115,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1956
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2083500,
+        "output_tokens_cost_nanodollars": 6345000
+      },
+      "prompt_tokens": 4167,
+      "total_backend_latency_ms": 10259,
+      "total_tokens": 6282
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.2049005,
+      "total": 10,
+      "remaining": 4.7950995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.204900499999994,
+      "total": 100,
+      "remaining": 94.7950995,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0084285,
+  "code": "E",
+  "strict_code": "INVALID",
+  "parsing_rule": "explicit_prefix_code",
+  "finish_reason": "stop",
+  "prediction": "MESIN_INFRASTRUKTUR"
+}

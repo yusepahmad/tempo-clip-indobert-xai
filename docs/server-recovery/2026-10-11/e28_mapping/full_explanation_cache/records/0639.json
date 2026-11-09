@@ -1,0 +1,87 @@
+{
+  "index": 639,
+  "sample_id": "TMP-CBB8CD2A33FE",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "900270cae810f37f05be2ff8a0f74f50191af515ddc4b4788749d41c3652d1e7",
+  "image_sha256": "cbb8cd2a33fe684e61dd8660f161c19a480dd8252bdb8e338f9d1a2a8ec3a38b",
+  "transmitted_image_sha256": "e01ec53b0fabc6a1704cdf175ac1c027339cb7da723511d146ccd104cb7ac573",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.908675,
+      "total": 10,
+      "remaining": 1.0913249999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.908675000000002,
+      "total": 100,
+      "remaining": 91.091325,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.327849423047155,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"badminton game\", \"source_properties\": \"Rackets and shuttles used for back-and-forth volleys; banknotes falling like shuttles.\", \"target_situation\": \"Corruption allegations involving Minister Syahrul Yasin Limpo and KPK Chairman Firli Bahuri.\", \"mapping\": \"The sport illustrates the back-and-forth exchange of accusations and illicit money between the two officials.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "yp3LauD2EYqM_uMP54rS0QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 688500,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1377,
+      "total_backend_latency_ms": 1837,
+      "total_tokens": 1470
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9096425,
+      "total": 10,
+      "remaining": 1.0903574999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.909642500000004,
+      "total": 100,
+      "remaining": 91.0903575,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009675,
+  "fields": {
+    "source_object": "badminton game",
+    "source_properties": "Rackets and shuttles used for back-and-forth volleys; banknotes falling like shuttles.",
+    "target_situation": "Corruption allegations involving Minister Syahrul Yasin Limpo and KPK Chairman Firli Bahuri.",
+    "mapping": "The sport illustrates the back-and-forth exchange of accusations and illicit money between the two officials.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: badminton game\nsource_properties: Rackets and shuttles used for back-and-forth volleys; banknotes falling like shuttles.\ntarget_situation: Corruption allegations involving Minister Syahrul Yasin Limpo and KPK Chairman Firli Bahuri.\nmapping: The sport illustrates the back-and-forth exchange of accusations and illicit money between the two officials.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

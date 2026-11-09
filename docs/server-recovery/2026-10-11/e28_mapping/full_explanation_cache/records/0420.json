@@ -1,0 +1,87 @@
+{
+  "index": 420,
+  "sample_id": "TMP-6756F77A74A8",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bd1e04f64e4f2456238c62c80c35cb3edb1fb0c08022b3491d8d373dc7f77fec",
+  "image_sha256": "6756f77a74a8ad9a0c205ef662c5afb3752e25fcb3352c7c7f521347475cadda",
+  "transmitted_image_sha256": "8cbea7c75df6ddd69a9e3ea88ef3516c6a2f58e26c0575c3997dfc780592fe52",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6202015,
+      "total": 10,
+      "remaining": 1.3797984999999997,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.620201499999993,
+      "total": 100,
+      "remaining": 91.3797985,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.299825503025204,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"none evident\", \"source_properties\": \"n/a\", \"target_situation\": \"Gatyo Nurmantyo's political aspirations for the 2019 presidential election.\", \"mapping\": \"The cover depicts the subject literally through a close-up portrait, lacking a visual analogy.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "GJjLaoq6LsyV_uMPl4eVaQ",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 74,
+      "cost": {
+        "input_tokens_cost_nanodollars": 668500,
+        "output_tokens_cost_nanodollars": 222000
+      },
+      "prompt_tokens": 1337,
+      "total_backend_latency_ms": 2221,
+      "total_tokens": 1411
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.621092,
+      "total": 10,
+      "remaining": 1.3789079999999991,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.621092000000004,
+      "total": 100,
+      "remaining": 91.378908,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0008905,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "n/a",
+    "target_situation": "Gatyo Nurmantyo's political aspirations for the 2019 presidential election.",
+    "mapping": "The cover depicts the subject literally through a close-up portrait, lacking a visual analogy.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: n/a\ntarget_situation: Gatyo Nurmantyo's political aspirations for the 2019 presidential election.\nmapping: The cover depicts the subject literally through a close-up portrait, lacking a visual analogy.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

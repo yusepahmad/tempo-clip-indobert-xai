@@ -1,0 +1,90 @@
+{
+  "index": 670,
+  "sample_id": "TMP-330519367E37",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "763a6de62949c3a38f734f95a92c51121bc35ecc4d452e5e73353309d65e5223",
+  "image_sha256": "330519367e37792e41995290dad955486fcc50ab0ea5d209215f4c5a7835e84c",
+  "transmitted_image_sha256": "d9dce8e2276f028133c0abbb35566cc208d88218500fe665b4d7978637c2e00e",
+  "image_size": [
+    585,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.955108,
+      "total": 10,
+      "remaining": 1.0448920000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.955107999999996,
+      "total": 100,
+      "remaining": 91.044892,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.924501483794302,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A demonic or monstrous figure\",\n  \"source_properties\": \"Blue skin, a glowing yellow eye, and a hand partially concealing the face.\",\n  \"target_situation\": \"The ten-year presidency of Joko Widodo and the alleged erosion of democratic reforms.\",\n  \"mapping\": \"The partial mask suggests a deceptive facade slipping to reveal malevolent 'sins' beneath the official public image.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "m57Lavm9DJCa_uMPxb6ruQk",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1130,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1028
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 671500,
+        "output_tokens_cost_nanodollars": 3390000
+      },
+      "prompt_tokens": 1343,
+      "total_backend_latency_ms": 6389,
+      "total_tokens": 2473
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9591695,
+      "total": 10,
+      "remaining": 1.0408305000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.959169500000002,
+      "total": 100,
+      "remaining": 91.0408305,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0040615,
+  "fields": {
+    "source_object": "A demonic or monstrous figure",
+    "source_properties": "Blue skin, a glowing yellow eye, and a hand partially concealing the face.",
+    "target_situation": "The ten-year presidency of Joko Widodo and the alleged erosion of democratic reforms.",
+    "mapping": "The partial mask suggests a deceptive facade slipping to reveal malevolent 'sins' beneath the official public image.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A demonic or monstrous figure\nsource_properties: Blue skin, a glowing yellow eye, and a hand partially concealing the face.\ntarget_situation: The ten-year presidency of Joko Widodo and the alleged erosion of democratic reforms.\nmapping: The partial mask suggests a deceptive facade slipping to reveal malevolent 'sins' beneath the official public image.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

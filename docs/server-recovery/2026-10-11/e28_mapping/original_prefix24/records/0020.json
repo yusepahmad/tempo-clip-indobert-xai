@@ -1,0 +1,87 @@
+{
+  "index": 20,
+  "sample_id": "TMP-7198DCE59856",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383",
+  "prompt_sha256": "b99cb1f17e78ef3ee382abc746eeecbb7df51f69e8418491b94dea7f7818371a",
+  "image_sha256": "7198dce59856682dbc8d667cbde3eec032d1b96211d5b03d79a9a428a2e710ea",
+  "transmitted_image_sha256": "70b5e00d300dae686fc63430a7fda8a8084f2c1b20797456b8101010c2425757",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0404585,
+      "total": 10,
+      "remaining": 1.9595415000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.0404585,
+      "total": 100,
+      "remaining": 91.9595415,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.460055849980563,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"comic book style telephone call\",\n  \"source_properties\": \"A speech bubble, expressive comic-strip lines, and a red receiver being gripped tightly.\",\n  \"target_situation\": \"Rizieq Shihab attempting to negotiate or threaten the Indonesian government from overseas.\",\n  \"mapping\": \"The telephone represents his communication from abroad, while the dramatic comic aesthetic emphasizes the performative and high-stakes nature of his 'reconciliation or revolution' ultimatum.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "t4rLasfmLNuA_PUP-tvEuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 114,
+      "cost": {
+        "input_tokens_cost_nanodollars": 666000,
+        "output_tokens_cost_nanodollars": 342000
+      },
+      "prompt_tokens": 1332,
+      "total_backend_latency_ms": 1755,
+      "total_tokens": 1446
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0414665,
+      "total": 10,
+      "remaining": 1.9585334999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.041466499999999,
+      "total": 100,
+      "remaining": 91.9585335,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001008,
+  "fields": {
+    "source_object": "comic book style telephone call",
+    "source_properties": "A speech bubble, expressive comic-strip lines, and a red receiver being gripped tightly.",
+    "target_situation": "Rizieq Shihab attempting to negotiate or threaten the Indonesian government from overseas.",
+    "mapping": "The telephone represents his communication from abroad, while the dramatic comic aesthetic emphasizes the performative and high-stakes nature of his 'reconciliation or revolution' ultimatum.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: comic book style telephone call\nsource_properties: A speech bubble, expressive comic-strip lines, and a red receiver being gripped tightly.\ntarget_situation: Rizieq Shihab attempting to negotiate or threaten the Indonesian government from overseas.\nmapping: The telephone represents his communication from abroad, while the dramatic comic aesthetic emphasizes the performative and high-stakes nature of his 'reconciliation or revolution' ultimatum.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

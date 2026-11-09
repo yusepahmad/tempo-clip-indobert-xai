@@ -1,0 +1,87 @@
+{
+  "index": 366,
+  "sample_id": "TMP-D11C9ED546F4",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bdf7638149c3b4e20b5005a0bcc273220762ad5475b85520cd871de49498b75b",
+  "image_sha256": "d11c9ed546f475e969ad3a558e9c9eadf38962d289ec50b92580d9ea0cf7c927",
+  "transmitted_image_sha256": "a3d6ee87e072ec5a9b93b19f4d3e87be04fc7929dde599a161eb6781c4084311",
+  "image_size": [
+    407,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.536909,
+      "total": 10,
+      "remaining": 1.4630910000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.536908999999994,
+      "total": 100,
+      "remaining": 91.463091,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.877887599170208,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Gavel\",\n  \"source_properties\": \"T-shaped wooden tool used by judges to strike a surface and signal a legal decision.\",\n  \"target_situation\": \"The legal naming of the incumbent governor as a suspect in a blasphemy case.\",\n  \"mapping\": \"The crowd forms a gavel, representing mass public pressure forcing a judicial blow against the politician.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "q5bLatHEGtuA_PUP-tvEuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671000,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1342,
+      "total_backend_latency_ms": 1588,
+      "total_tokens": 1439
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.537870999999999,
+      "total": 10,
+      "remaining": 1.462129000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.537870999999996,
+      "total": 100,
+      "remaining": 91.462129,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000962,
+  "fields": {
+    "source_object": "Gavel",
+    "source_properties": "T-shaped wooden tool used by judges to strike a surface and signal a legal decision.",
+    "target_situation": "The legal naming of the incumbent governor as a suspect in a blasphemy case.",
+    "mapping": "The crowd forms a gavel, representing mass public pressure forcing a judicial blow against the politician.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: Gavel\nsource_properties: T-shaped wooden tool used by judges to strike a surface and signal a legal decision.\ntarget_situation: The legal naming of the incumbent governor as a suspect in a blasphemy case.\nmapping: The crowd forms a gavel, representing mass public pressure forcing a judicial blow against the politician.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

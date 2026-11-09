@@ -1,0 +1,87 @@
+{
+  "index": 76,
+  "sample_id": "TMP-1BB83B6EF19B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "2fb928b181689d3b9df4f839fb5a3bd54602961c6291ea597c2cfb8b3fd56bf8",
+  "image_sha256": "1bb83b6ef19b7c0d3e8b251abb3d05d0bbe4bc7ad6d5904e409b380c2f84a409",
+  "transmitted_image_sha256": "53b9c15da79a68c6fb66d1ad0bab48d2177607bf6abca09e1035a02c15d1f016",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1147765,
+      "total": 10,
+      "remaining": 1.8852235000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.114776500000005,
+      "total": 100,
+      "remaining": 91.8852235,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.040685124695301,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"tandem bicycle\",\n  \"source_properties\": \"two seats, one frame, pedaling in unison, shared direction\",\n  \"target_situation\": \"political coalition between former rivals Jokowi and Prabowo\",\n  \"mapping\": \"The bicycle represents their shared governance; both must coordinate to move forward.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Go_LapL8K-u1_PUPl9nYyQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 84,
+      "cost": {
+        "input_tokens_cost_nanodollars": 690000,
+        "output_tokens_cost_nanodollars": 252000
+      },
+      "prompt_tokens": 1380,
+      "total_backend_latency_ms": 1368,
+      "total_tokens": 1464
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1157185,
+      "total": 10,
+      "remaining": 1.8842815000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.1157185,
+      "total": 100,
+      "remaining": 91.8842815,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000942,
+  "fields": {
+    "source_object": "tandem bicycle",
+    "source_properties": "two seats, one frame, pedaling in unison, shared direction",
+    "target_situation": "political coalition between former rivals Jokowi and Prabowo",
+    "mapping": "The bicycle represents their shared governance; both must coordinate to move forward.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: tandem bicycle\nsource_properties: two seats, one frame, pedaling in unison, shared direction\ntarget_situation: political coalition between former rivals Jokowi and Prabowo\nmapping: The bicycle represents their shared governance; both must coordinate to move forward.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

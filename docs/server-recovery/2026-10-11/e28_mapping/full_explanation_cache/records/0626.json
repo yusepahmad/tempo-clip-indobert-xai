@@ -1,0 +1,87 @@
+{
+  "index": 626,
+  "sample_id": "TMP-AE16180EE0D6",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "18dc94423eb91c1783ccaf6ba265a389b36b4a519adc6bb3b9ebe7c61022235e",
+  "image_sha256": "ae16180ee0d666592d538fd9dfd535ff16d8aa611e27143a6730876fa1da414c",
+  "transmitted_image_sha256": "ab51299f3d4317546db237a6ca05ce1eb935124ce7613d220aa4cb47265ceb4a",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.891485,
+      "total": 10,
+      "remaining": 1.1085150000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.891485000000003,
+      "total": 100,
+      "remaining": 91.108515,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.478651341050863,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"mirror and car interior\", \"source_properties\": \"A rear-view mirror framing figures as they walk away into a distant, gloomy landscape.\", \"target_situation\": \"The deteriorating political alliance between President Jokowi and Surya Paloh's NasDem Party.\", \"mapping\": \"Reflecting on figures moving away symbolizes a relationship being left behind or viewed in retrospect.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "eJ3LasDiB8aS_uMPmu6wkA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679500,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1359,
+      "total_backend_latency_ms": 2589,
+      "total_tokens": 1445
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8924225,
+      "total": 10,
+      "remaining": 1.1075774999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.892422499999995,
+      "total": 100,
+      "remaining": 91.1075775,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009375,
+  "fields": {
+    "source_object": "mirror and car interior",
+    "source_properties": "A rear-view mirror framing figures as they walk away into a distant, gloomy landscape.",
+    "target_situation": "The deteriorating political alliance between President Jokowi and Surya Paloh's NasDem Party.",
+    "mapping": "Reflecting on figures moving away symbolizes a relationship being left behind or viewed in retrospect.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: mirror and car interior\nsource_properties: A rear-view mirror framing figures as they walk away into a distant, gloomy landscape.\ntarget_situation: The deteriorating political alliance between President Jokowi and Surya Paloh's NasDem Party.\nmapping: Reflecting on figures moving away symbolizes a relationship being left behind or viewed in retrospect.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

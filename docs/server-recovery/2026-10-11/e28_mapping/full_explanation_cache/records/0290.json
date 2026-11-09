@@ -1,0 +1,87 @@
+{
+  "index": 290,
+  "sample_id": "TMP-B4BC16A30F46",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "aa821d3156aa582b1bcc175f415b9548181d7aaa4698e288b405b9723de55e03",
+  "image_sha256": "b4bc16a30f46f20200dc31d68d3296af13416644d0732b91c08e1e77c4d86531",
+  "transmitted_image_sha256": "a9bdd8fac0f5cb59e00e2d3dc5f18cb1841025af496a640d88aa0370263219b3",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4420225,
+      "total": 10,
+      "remaining": 1.5579774999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.442022499999993,
+      "total": 100,
+      "remaining": 91.5579775,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.8680421127937734,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"White powder within a human head\", \"source_properties\": \"Powdery substance being revealed as a hollow space by lifting a police cap.\", \"target_situation\": \"Indonesian police officers suspected of involvement in a drug syndicate in Malaysia.\", \"mapping\": \"The white powder inside the officer's head represents narcotics, illustrating the internal corruption within the police force.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "xZTLatcsk6j-4w-a7vv4Cw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673000,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1346,
+      "total_backend_latency_ms": 1369,
+      "total_tokens": 1432
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4429535,
+      "total": 10,
+      "remaining": 1.5570465000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.442953500000002,
+      "total": 100,
+      "remaining": 91.5570465,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000931,
+  "fields": {
+    "source_object": "White powder within a human head",
+    "source_properties": "Powdery substance being revealed as a hollow space by lifting a police cap.",
+    "target_situation": "Indonesian police officers suspected of involvement in a drug syndicate in Malaysia.",
+    "mapping": "The white powder inside the officer's head represents narcotics, illustrating the internal corruption within the police force.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: White powder within a human head\nsource_properties: Powdery substance being revealed as a hollow space by lifting a police cap.\ntarget_situation: Indonesian police officers suspected of involvement in a drug syndicate in Malaysia.\nmapping: The white powder inside the officer's head represents narcotics, illustrating the internal corruption within the police force.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

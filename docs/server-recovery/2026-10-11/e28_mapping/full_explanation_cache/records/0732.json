@@ -1,0 +1,90 @@
+{
+  "index": 732,
+  "sample_id": "TMP-97A1C0EAFB94",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "6087f1f66ec6bc885c1e2e8568840ac608a9f91679affac8e8c37adf571d7a99",
+  "image_sha256": "97a1c0eafb9465a33b6d21add11a19b4f817d2fed3ca0cd8d040ad3b721eaf74",
+  "transmitted_image_sha256": "997b868ce472b3f4f41b13f24804867f126602345e57bc07bb605baf328fa231",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.059297,
+      "total": 10,
+      "remaining": 0.9407029999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.059297,
+      "total": 100,
+      "remaining": 90.940703,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.9465257013216615,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A heavy metal safe\",\n  \"source_properties\": \"A secure, locked container designed to hide and protect valuables from outside view or access.\",\n  \"target_situation\": \"A high-ranking official allegedly hiding a business empire and laundering money through secret identities.\",\n  \"mapping\": \"The safe symbolizes the concealment of illicit wealth; figures emerging from it represent the exposure of hidden financial schemes.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "S6DLavLbE-2M_PUPu97KyQo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 839,
+      "completion_tokens_details": {
+        "reasoning_tokens": 737
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 683000,
+        "output_tokens_cost_nanodollars": 2517000
+      },
+      "prompt_tokens": 1366,
+      "total_backend_latency_ms": 4574,
+      "total_tokens": 2205
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.062497,
+      "total": 10,
+      "remaining": 0.9375029999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.062496999999993,
+      "total": 100,
+      "remaining": 90.937503,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0032,
+  "fields": {
+    "source_object": "A heavy metal safe",
+    "source_properties": "A secure, locked container designed to hide and protect valuables from outside view or access.",
+    "target_situation": "A high-ranking official allegedly hiding a business empire and laundering money through secret identities.",
+    "mapping": "The safe symbolizes the concealment of illicit wealth; figures emerging from it represent the exposure of hidden financial schemes.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A heavy metal safe\nsource_properties: A secure, locked container designed to hide and protect valuables from outside view or access.\ntarget_situation: A high-ranking official allegedly hiding a business empire and laundering money through secret identities.\nmapping: The safe symbolizes the concealment of illicit wealth; figures emerging from it represent the exposure of hidden financial schemes.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

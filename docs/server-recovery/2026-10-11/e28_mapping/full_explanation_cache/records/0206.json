@@ -1,0 +1,87 @@
+{
+  "index": 206,
+  "sample_id": "TMP-AEEC2302339F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5cf41fb23912a5061d701f4ced548d21605678a8747f5d0fa6260feee7d096f7",
+  "image_sha256": "aeec2302339f62d4f131be6459eb1b1d774cf285f438ff595005c6d58b560175",
+  "transmitted_image_sha256": "867a19127af44cd9e62afc96069ac32c24c08b4f1b5d5d04896f00e54dac8181",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3146495,
+      "total": 10,
+      "remaining": 1.6853505000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.314649500000002,
+      "total": 100,
+      "remaining": 91.6853505,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.4981415821239352,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Crowdsurfing\",\n  \"source_properties\": \"A person is carried horizontally above a crowd by their extended, uplifted hands.\",\n  \"target_situation\": \"Political interference or influence from central authorities in Jakarta over the Aceh region.\",\n  \"mapping\": \"The man being carried represents Jakarta's interests, supported or manipulated by the many hands (people/forces) below.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "iZLLaoDXJZzd_uMP7MbkuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 664500,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1329,
+      "total_backend_latency_ms": 1539,
+      "total_tokens": 1430
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.315617,
+      "total": 10,
+      "remaining": 1.6843830000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.315617000000003,
+      "total": 100,
+      "remaining": 91.684383,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009675,
+  "fields": {
+    "source_object": "Crowdsurfing",
+    "source_properties": "A person is carried horizontally above a crowd by their extended, uplifted hands.",
+    "target_situation": "Political interference or influence from central authorities in Jakarta over the Aceh region.",
+    "mapping": "The man being carried represents Jakarta's interests, supported or manipulated by the many hands (people/forces) below.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Crowdsurfing\nsource_properties: A person is carried horizontally above a crowd by their extended, uplifted hands.\ntarget_situation: Political interference or influence from central authorities in Jakarta over the Aceh region.\nmapping: The man being carried represents Jakarta's interests, supported or manipulated by the many hands (people/forces) below.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 556,
+  "sample_id": "TMP-856F77A0D060",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "23e06b7b9de517f7862c71fe82f9c71b90f1da2cf7f3a84573e5d57912280f4f",
+  "image_sha256": "856f77a0d060a797c508c9dc410bcb5a321d0dfeb0a87999d47da5bcfcad2821",
+  "transmitted_image_sha256": "80ab363f1c9ab62310472ce46abd06e6a79a73605fd3c85ee4cc4e8d302ae68a",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.802533,
+      "total": 10,
+      "remaining": 1.1974669999999996,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.802532999999997,
+      "total": 100,
+      "remaining": 91.197467,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.5635585887357593,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"ocean waves\",\n  \"source_properties\": \"Submerging, overwhelming force, and immense volume that drowns individuals.\",\n  \"target_situation\": \"A secondary surge of COVID-19 infections overwhelming Indonesia's health system.\",\n  \"mapping\": \"Numerous virus particles act like water, drowning the figure in a surge.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "opvLarfQJs2i_uMP67qv2Qc",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674500,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1349,
+      "total_backend_latency_ms": 1919,
+      "total_tokens": 1439
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8034775,
+      "total": 10,
+      "remaining": 1.1965225000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.8034775,
+      "total": 100,
+      "remaining": 91.1965225,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009445,
+  "fields": {
+    "source_object": "ocean waves",
+    "source_properties": "Submerging, overwhelming force, and immense volume that drowns individuals.",
+    "target_situation": "A secondary surge of COVID-19 infections overwhelming Indonesia's health system.",
+    "mapping": "Numerous virus particles act like water, drowning the figure in a surge.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: ocean waves\nsource_properties: Submerging, overwhelming force, and immense volume that drowns individuals.\ntarget_situation: A secondary surge of COVID-19 infections overwhelming Indonesia's health system.\nmapping: Numerous virus particles act like water, drowning the figure in a surge.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

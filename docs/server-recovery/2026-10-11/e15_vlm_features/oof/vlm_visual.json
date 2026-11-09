@@ -1,0 +1,252 @@
+{
+  "macro_f1": 0.5154439288673007,
+  "folds": [
+    {
+      "fold": 1,
+      "macro_f1": 0.5023675858830606,
+      "inner_macro_f1": 0.5250178142244393,
+      "params": {
+        "clf": "LogisticRegression(max_iter=3000)",
+        "clf__C": "0.01",
+        "clf__class_weight": "None"
+      }
+    },
+    {
+      "fold": 2,
+      "macro_f1": 0.49744693057946066,
+      "inner_macro_f1": 0.529985549211704,
+      "params": {
+        "clf": "LogisticRegression(max_iter=3000)",
+        "clf__C": "0.01",
+        "clf__class_weight": "balanced"
+      }
+    },
+    {
+      "fold": 3,
+      "macro_f1": 0.5073696145124716,
+      "inner_macro_f1": 0.5092622266444339,
+      "params": {
+        "clf": "LogisticRegression(max_iter=3000)",
+        "clf__C": "0.01",
+        "clf__class_weight": "balanced"
+      }
+    },
+    {
+      "fold": 4,
+      "macro_f1": 0.5032138208565887,
+      "inner_macro_f1": 0.5115665252025411,
+      "params": {
+        "clf": "LogisticRegression(max_iter=3000)",
+        "clf__C": "0.01",
+        "clf__class_weight": "balanced"
+      }
+    },
+    {
+      "fold": 5,
+      "macro_f1": 0.5229755842299396,
+      "inner_macro_f1": 0.5212434734917248,
+      "params": {
+        "clf": "LogisticRegression(max_iter=3000)",
+        "clf__C": "0.01",
+        "clf__class_weight": "balanced"
+      }
+    }
+  ],
+  "classification": {
+    "BENCANA_JERAT": {
+      "precision": 0.43243243243243246,
+      "recall": 0.48,
+      "f1-score": 0.4549763033175355,
+      "support": 100.0
+    },
+    "HEWAN_TUBUH": {
+      "precision": 0.4634146341463415,
+      "recall": 0.4222222222222222,
+      "f1-score": 0.4418604651162791,
+      "support": 90.0
+    },
+    "KONSUMSI_TRANSAKSI": {
+      "precision": 0.5104166666666666,
+      "recall": 0.5833333333333334,
+      "f1-score": 0.5444444444444444,
+      "support": 84.0
+    },
+    "LAINNYA": {
+      "precision": 0.32142857142857145,
+      "recall": 0.2857142857142857,
+      "f1-score": 0.3025210084033613,
+      "support": 63.0
+    },
+    "MESIN_INFRASTRUKTUR": {
+      "precision": 0.6699507389162561,
+      "recall": 0.6355140186915887,
+      "f1-score": 0.6522781774580336,
+      "support": 214.0
+    },
+    "NON_METAFORA": {
+      "precision": 0.6410256410256411,
+      "recall": 0.6024096385542169,
+      "f1-score": 0.6211180124223602,
+      "support": 83.0
+    },
+    "PERMAINAN_KONTES": {
+      "precision": 0.5701754385964912,
+      "recall": 0.6132075471698113,
+      "f1-score": 0.5909090909090909,
+      "support": 106.0
+    },
+    "accuracy": 0.5459459459459459,
+    "macro avg": {
+      "precision": 0.5155491604589143,
+      "recall": 0.5174858636693511,
+      "f1-score": 0.5154439288673007,
+      "support": 740.0
+    },
+    "weighted avg": {
+      "precision": 0.5474172204606069,
+      "recall": 0.5459459459459459,
+      "f1-score": 0.5457215104032467,
+      "support": 740.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      48,
+      15,
+      3,
+      1,
+      19,
+      5,
+      9
+    ],
+    [
+      10,
+      38,
+      12,
+      6,
+      12,
+      5,
+      7
+    ],
+    [
+      5,
+      3,
+      49,
+      2,
+      14,
+      4,
+      7
+    ],
+    [
+      9,
+      7,
+      7,
+      18,
+      6,
+      5,
+      11
+    ],
+    [
+      19,
+      11,
+      19,
+      10,
+      136,
+      7,
+      12
+    ],
+    [
+      13,
+      2,
+      1,
+      7,
+      7,
+      50,
+      3
+    ],
+    [
+      7,
+      6,
+      5,
+      12,
+      9,
+      2,
+      65
+    ]
+  ],
+  "source_meta": {
+    "status": "complete",
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "csv_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+    "e01_hashes": {
+      "deskripsi.jsonl": "c75e8df3f9b71d6786462f8d0f1187ebe4234fb8dd079924f3f35707ff1b8cd2",
+      "zeroshot.jsonl": "10c07b06b13fbbf647f2b1ed12a722d9bff8f97caa6b621430d8bc0429ab38c9"
+    },
+    "worker_sha256": "30a2c29b499c75879192c1dcc0b0b47570fb293d3dd12718f449984b06cda4cd",
+    "prompt_helper_sha256": "a1731aad122005377bfc5d6801cb70f3ab18fb89129d2ba57d2ab50e5e238cbf",
+    "samples": 740,
+    "dimension": 4096,
+    "pooling": [
+      "last token L2",
+      "mean last128 non-image/video text positions L2"
+    ],
+    "frozen": true,
+    "dtype": "float16",
+    "max_image_side": 384,
+    "max_tokens": 2048,
+    "device_map": {
+      "model.visual": "0",
+      "model.language_model.embed_tokens": "0",
+      "model.language_model.layers.0": "0",
+      "model.language_model.layers.1": "0",
+      "model.language_model.layers.2": "0",
+      "model.language_model.layers.3": "0",
+      "model.language_model.layers.4": "0",
+      "model.language_model.layers.5": "0",
+      "model.language_model.layers.6": "0",
+      "model.language_model.layers.7": "0",
+      "model.language_model.layers.8": "0",
+      "model.language_model.layers.9": "0",
+      "model.language_model.layers.10": "0",
+      "model.language_model.layers.11": "0",
+      "model.language_model.layers.12": "0",
+      "model.language_model.layers.13": "0",
+      "model.language_model.layers.14": "1",
+      "model.language_model.layers.15": "1",
+      "model.language_model.layers.16": "1",
+      "model.language_model.layers.17": "1",
+      "model.language_model.layers.18": "1",
+      "model.language_model.layers.19": "1",
+      "model.language_model.layers.20": "1",
+      "model.language_model.layers.21": "1",
+      "model.language_model.layers.22": "1",
+      "model.language_model.layers.23": "1",
+      "model.language_model.layers.24": "1",
+      "model.language_model.layers.25": "1",
+      "model.language_model.layers.26": "1",
+      "model.language_model.layers.27": "1",
+      "model.language_model.layers.28": "1",
+      "model.language_model.layers.29": "1",
+      "model.language_model.layers.30": "1",
+      "model.language_model.layers.31": "1",
+      "model.language_model.layers.32": "1",
+      "model.language_model.layers.33": "1",
+      "model.language_model.layers.34": "1",
+      "model.language_model.layers.35": "1",
+      "model.language_model.norm": "1",
+      "model.language_model.rotary_emb": "1",
+      "lm_head": "1"
+    },
+    "peak_cuda_bytes": [
+      8103475200,
+      10016338944
+    ],
+    "seconds_all_inference": 723.8900827270002,
+    "embeddings_sha256": "fa3e3d39b1bbb0b0ef447cf3efafa28e72d1924dd8a2151aec775b35ede11685",
+    "input_audit_sha256": "e1cc20326c2d6f501d319decf318ca0fb4f94839e05ef63dfd1d5872728fa9a6",
+    "torch": "2.11.0+cu128"
+  },
+  "evaluator_sha256": "79aad74a2bbf656f660514ee626fa40a4b06544ceaff1623483e2cb63f456fa7",
+  "oof_sha256": "f33ca9ffb59eaa704e225c4b273e2b6d8e568d1d244653a154360e5addea8083"
+}

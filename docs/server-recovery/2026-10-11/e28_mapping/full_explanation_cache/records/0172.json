@@ -1,0 +1,87 @@
+{
+  "index": 172,
+  "sample_id": "TMP-A63C723D4BEE",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "47214407065a2e7134adb3099dd2f99648472127af59f528e0a945ab17e01bda",
+  "image_sha256": "a63c723d4bee8ae4f01fcd0414bb80486433c6cf4a3d256d132a2941b34f63b3",
+  "transmitted_image_sha256": "b1a8c1d216ca340420bd2519cf65baa5568c0efe280078b66a9a2c903fdb7eb5",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2615735,
+      "total": 10,
+      "remaining": 1.7384264999999992,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.261573499999997,
+      "total": 100,
+      "remaining": 91.7384265,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.297262622974813,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"barcode\",\n  \"source_properties\": \"A series of parallel lines etched into sand by a rake, used for commercial identification and pricing.\",\n  \"target_situation\": \"The Indonesian government's controversial new policy allowing the commercial mining and export of sea sand.\",\n  \"mapping\": \"Raking the sand into a barcode symbolizes commodifying nature, turning public environmental resources into commercial assets for sale.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ppHLarqdJbrG_PUPqtG_4Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 103,
+      "cost": {
+        "input_tokens_cost_nanodollars": 685500,
+        "output_tokens_cost_nanodollars": 309000
+      },
+      "prompt_tokens": 1371,
+      "total_backend_latency_ms": 1654,
+      "total_tokens": 1474
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.262568,
+      "total": 10,
+      "remaining": 1.737432,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.262568000000002,
+      "total": 100,
+      "remaining": 91.737432,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009945,
+  "fields": {
+    "source_object": "barcode",
+    "source_properties": "A series of parallel lines etched into sand by a rake, used for commercial identification and pricing.",
+    "target_situation": "The Indonesian government's controversial new policy allowing the commercial mining and export of sea sand.",
+    "mapping": "Raking the sand into a barcode symbolizes commodifying nature, turning public environmental resources into commercial assets for sale.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: barcode\nsource_properties: A series of parallel lines etched into sand by a rake, used for commercial identification and pricing.\ntarget_situation: The Indonesian government's controversial new policy allowing the commercial mining and export of sea sand.\nmapping: Raking the sand into a barcode symbolizes commodifying nature, turning public environmental resources into commercial assets for sale.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 249,
+  "sample_id": "TMP-03BF269E287C",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e9033c4dc71f41dffad4464936a4164d6cb23ebb952b90fc4df5f166dc39aa29",
+  "image_sha256": "03bf269e287c2aac496aec15c3079d99a30241f75df9dd654c97f7d07e2b9b9e",
+  "transmitted_image_sha256": "6d55aca7ec3ec16ff33825da859df33734366d84dd69fc22537753310fb1220b",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.385316,
+      "total": 10,
+      "remaining": 1.6146840000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.385316000000003,
+      "total": 100,
+      "remaining": 91.614684,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.612789398059249,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"mobile street performance rig\", \"source_properties\": \"Improvised, makeshift, mobile musical ensemble using a handcart and speakers for spontaneous entertainment.\", \"target_situation\": \"The sudden, high-profile political rise and popularity of Joko Widodo (Jokowi) in 2013.\", \"mapping\": \"The makeshift, 'on-the-go' nature of the street band mirrors Jokowi's unconventional, grassroots political style and the 'sudden' momentum of his public image.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "sZPLar-hCtTh_uMProyGuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 114,
+      "cost": {
+        "input_tokens_cost_nanodollars": 653500,
+        "output_tokens_cost_nanodollars": 342000
+      },
+      "prompt_tokens": 1307,
+      "total_backend_latency_ms": 2019,
+      "total_tokens": 1421
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3863115,
+      "total": 10,
+      "remaining": 1.6136885000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.386311500000005,
+      "total": 100,
+      "remaining": 91.6136885,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009955,
+  "fields": {
+    "source_object": "mobile street performance rig",
+    "source_properties": "Improvised, makeshift, mobile musical ensemble using a handcart and speakers for spontaneous entertainment.",
+    "target_situation": "The sudden, high-profile political rise and popularity of Joko Widodo (Jokowi) in 2013.",
+    "mapping": "The makeshift, 'on-the-go' nature of the street band mirrors Jokowi's unconventional, grassroots political style and the 'sudden' momentum of his public image.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: mobile street performance rig\nsource_properties: Improvised, makeshift, mobile musical ensemble using a handcart and speakers for spontaneous entertainment.\ntarget_situation: The sudden, high-profile political rise and popularity of Joko Widodo (Jokowi) in 2013.\nmapping: The makeshift, 'on-the-go' nature of the street band mirrors Jokowi's unconventional, grassroots political style and the 'sudden' momentum of his public image.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

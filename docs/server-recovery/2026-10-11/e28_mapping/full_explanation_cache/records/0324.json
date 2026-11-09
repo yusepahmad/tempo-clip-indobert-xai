@@ -1,0 +1,87 @@
+{
+  "index": 324,
+  "sample_id": "TMP-D735D4559B86",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "64335617263772fa7a0a2ea81f8968e54972d85aa24e4bc18c4e7ef4877cfe23",
+  "image_sha256": "d735d4559b8610a652a1dfc069a26358e06de7b6750b56e075a66b0b7703eeba",
+  "transmitted_image_sha256": "12852e731755cdd9720c8d1df7ba74a15e8513fa0854f19e7e595103de93ead8",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.484545,
+      "total": 10,
+      "remaining": 1.5154549999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.484544999999997,
+      "total": 100,
+      "remaining": 91.515455,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.870272973086685,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"none evident\", \"source_properties\": \"literal depiction of a historical figure in traditional Javanese royal attire\", \"target_situation\": \"a special independence day edition honoring Sultan Hamengku Buwono IX's contributions to the Republic of Indonesia\", \"mapping\": \"The image literally portrays the subject of the headline, using his portrait to signify his historical importance and personal sacrifice for the nation.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "n5XLaoSfMZKp_uMPhrH00QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 660500,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1321,
+      "total_backend_latency_ms": 1730,
+      "total_tokens": 1415
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4854875,
+      "total": 10,
+      "remaining": 1.5145125000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.485487500000005,
+      "total": 100,
+      "remaining": 91.5145125,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009425,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "literal depiction of a historical figure in traditional Javanese royal attire",
+    "target_situation": "a special independence day edition honoring Sultan Hamengku Buwono IX's contributions to the Republic of Indonesia",
+    "mapping": "The image literally portrays the subject of the headline, using his portrait to signify his historical importance and personal sacrifice for the nation.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: literal depiction of a historical figure in traditional Javanese royal attire\ntarget_situation: a special independence day edition honoring Sultan Hamengku Buwono IX's contributions to the Republic of Indonesia\nmapping: The image literally portrays the subject of the headline, using his portrait to signify his historical importance and personal sacrifice for the nation.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 561,
+  "sample_id": "TMP-450684DBEC47",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b223ee80655b70c48592f14756d3d59de26486490f474ac3b55c5d55265ee470",
+  "image_sha256": "450684dbec477f9138ad1fc138140c821c3265e5ef88268537b078002f259f6f",
+  "transmitted_image_sha256": "86b545058caa9f0162ac1ccaec42ca5aceca983ee8d5536a0ab3777dfb63a7f9",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.811444,
+      "total": 10,
+      "remaining": 1.1885560000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.811443999999995,
+      "total": 100,
+      "remaining": 91.188556,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.058799776248634,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Rat\",\n  \"source_properties\": \"Infestation and scavenging behavior, associated with decay and lack of integrity.\",\n  \"target_situation\": \"University rectors escaping sanctions for alleged plagiarism and academic misconduct.\",\n  \"mapping\": \"The rat symbolizes corruption within academia, where leaders prioritize rankings over ethical research.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "yJvLaoS-Bbqi_uMPjvD3-Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 85,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678000,
+        "output_tokens_cost_nanodollars": 255000
+      },
+      "prompt_tokens": 1356,
+      "total_backend_latency_ms": 5565,
+      "total_tokens": 1441
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.812377,
+      "total": 10,
+      "remaining": 1.1876230000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.812376999999998,
+      "total": 100,
+      "remaining": 91.187623,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000933,
+  "fields": {
+    "source_object": "Rat",
+    "source_properties": "Infestation and scavenging behavior, associated with decay and lack of integrity.",
+    "target_situation": "University rectors escaping sanctions for alleged plagiarism and academic misconduct.",
+    "mapping": "The rat symbolizes corruption within academia, where leaders prioritize rankings over ethical research.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Rat\nsource_properties: Infestation and scavenging behavior, associated with decay and lack of integrity.\ntarget_situation: University rectors escaping sanctions for alleged plagiarism and academic misconduct.\nmapping: The rat symbolizes corruption within academia, where leaders prioritize rankings over ethical research.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

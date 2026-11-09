@@ -1,0 +1,87 @@
+{
+  "index": 715,
+  "sample_id": "TMP-1D6C8F476F42",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "51488ad449e4a2f8f39cda8ddbc66d06b2e5040305a9ce3a0bb67927b9e01d6a",
+  "image_sha256": "1d6c8f476f4262ad8a94bb33d6b2263a0a13d9c679f3ba2c1f720d0f894ce006",
+  "transmitted_image_sha256": "4e20abb6be04b86d784bbf7f791300fbdc8c63b0c65478d6f3a8e38ddd1245d6",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0378635,
+      "total": 10,
+      "remaining": 0.9621364999999997,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.0378635,
+      "total": 100,
+      "remaining": 90.9621365,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3963815020397305,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"stacked blocks or dominoes\",\n  \"source_properties\": \"Arranged upright but unstable, easily tipped over by a single external push.\",\n  \"target_situation\": \"Erick Thohir's leadership or tenure over the BUMN (state-owned enterprises).\",\n  \"mapping\": \"A finger pushing the blocks represents pressure or removal, causing the structure and the figure clinging to it to collapse.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "3p_LaqKqHuGM_uMP0-qD8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 664500,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1329,
+      "total_backend_latency_ms": 2011,
+      "total_tokens": 1435
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.038846,
+      "total": 10,
+      "remaining": 0.9611540000000005,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.038846000000007,
+      "total": 100,
+      "remaining": 90.961154,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009825,
+  "fields": {
+    "source_object": "stacked blocks or dominoes",
+    "source_properties": "Arranged upright but unstable, easily tipped over by a single external push.",
+    "target_situation": "Erick Thohir's leadership or tenure over the BUMN (state-owned enterprises).",
+    "mapping": "A finger pushing the blocks represents pressure or removal, causing the structure and the figure clinging to it to collapse.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: stacked blocks or dominoes\nsource_properties: Arranged upright but unstable, easily tipped over by a single external push.\ntarget_situation: Erick Thohir's leadership or tenure over the BUMN (state-owned enterprises).\nmapping: A finger pushing the blocks represents pressure or removal, causing the structure and the figure clinging to it to collapse.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

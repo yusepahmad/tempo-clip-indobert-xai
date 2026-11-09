@@ -1,0 +1,83 @@
+{
+  "index": 342,
+  "sample_id": "TMP-0D71892CC33C",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "66e1c4ed86b631888e06f8589059b2e7fd2dbcbdd0a38b3c940c17b5093bc547",
+  "image_sha256": "0d71892cc33cbef7df23f3f2b5b14975419fd8123461d81a20b1818a92cb1bd6",
+  "transmitted_image_sha256": "213e96af4ff39771f5593048a74a715a9fd2dea3055ca488a253ca54b696f5eb",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.2797669999999997,
+      "total": 10,
+      "remaining": 8.720233,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.2797670000000068,
+      "total": 100,
+      "remaining": 98.720233,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.217284662183374,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "B Berdasarkan deskripsi yang diberikan, ilustrasi sidik jari yang membentuk wajah dipetakan sebagai simbol pelaku yang \"terperangkap\" dalam skema kejahatan, serta menggambarkan tekanan dan bahaya. Hal ini sesuai dengan domain sumber **A: BENCANA_JERAT**, yang mencakup kiasan tentang perangkap, jerat, atau keadaan terjepit.\n\nJawab: A",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "KtrKat2rKNvJ_uMPvcyw-AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1168,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1087
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 772000,
+        "output_tokens_cost_nanodollars": 3504000
+      },
+      "prompt_tokens": 1544,
+      "total_backend_latency_ms": 7166,
+      "total_tokens": 2712
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.2840430000000005,
+      "total": 10,
+      "remaining": 8.715957,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.284042999999997,
+      "total": 100,
+      "remaining": 98.715957,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.004276
+}

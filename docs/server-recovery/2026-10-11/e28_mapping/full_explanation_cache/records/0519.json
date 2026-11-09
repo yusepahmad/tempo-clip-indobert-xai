@@ -1,0 +1,87 @@
+{
+  "index": 519,
+  "sample_id": "TMP-FE5D7726BBC0",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "13e9856701107238295f7399fa3f040dfb5af5d9af41a67f9e420a3bfdadefba",
+  "image_sha256": "fe5d7726bbc00adfd7856c3fd59343becf85b2b16b71b44454f20503255a4fd3",
+  "transmitted_image_sha256": "1a16b6df65f1649d969a8e2284e3ec4ad59f1cf1cfea127cec8e8a3b0cb8c6dc",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.749036,
+      "total": 10,
+      "remaining": 1.2509639999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.749036000000004,
+      "total": 100,
+      "remaining": 91.250964,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.689509215764701,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Photographic mosaic\",\n  \"source_properties\": \"Small individual portraits tiles tiled together to form a larger composite image of a person.\",\n  \"target_situation\": \"The collective contribution of numerous healthcare workers and individuals during the 2020 COVID-19 pandemic.\",\n  \"mapping\": \"Individual tiles represent diverse frontline workers; together they construct a unified 'heroic' figure, symbolizing collective effort.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "pprLarmjD9vJ_uMPvcyw-AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 655000,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1310,
+      "total_backend_latency_ms": 2753,
+      "total_tokens": 1416
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.750009,
+      "total": 10,
+      "remaining": 1.2499909999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.750009000000006,
+      "total": 100,
+      "remaining": 91.249991,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000973,
+  "fields": {
+    "source_object": "Photographic mosaic",
+    "source_properties": "Small individual portraits tiles tiled together to form a larger composite image of a person.",
+    "target_situation": "The collective contribution of numerous healthcare workers and individuals during the 2020 COVID-19 pandemic.",
+    "mapping": "Individual tiles represent diverse frontline workers; together they construct a unified 'heroic' figure, symbolizing collective effort.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Photographic mosaic\nsource_properties: Small individual portraits tiles tiled together to form a larger composite image of a person.\ntarget_situation: The collective contribution of numerous healthcare workers and individuals during the 2020 COVID-19 pandemic.\nmapping: Individual tiles represent diverse frontline workers; together they construct a unified 'heroic' figure, symbolizing collective effort.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

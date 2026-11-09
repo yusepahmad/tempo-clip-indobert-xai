@@ -1,0 +1,87 @@
+{
+  "index": 382,
+  "sample_id": "TMP-F2138669882A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5c65cc3e638648affea741d4904b034bbb07eab7b37d1cbf413cb75758422e99",
+  "image_sha256": "f2138669882a467b833aa3a68b29024cccf84c00eb039f772e3715de6253e6d4",
+  "transmitted_image_sha256": "08e4ea5a12f1021bca8286b1249f2f1a55f8f9bb7153b17af15208b61b025d4f",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5586365,
+      "total": 10,
+      "remaining": 1.4413634999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.558636500000006,
+      "total": 100,
+      "remaining": 91.4413635,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2819165978580713,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Matryoshka dolls\", \"source_properties\": \"Stacked wooden figurines of decreasing size that nest inside one another, creating a single larger figure.\", \"target_situation\": \"The reopening of the long-standing BLBI corruption case involving businessman Sjamsul Nursalim and linked officials.\", \"mapping\": \"Nesting multiple smaller faces inside a larger figure's clothing mirrors how one investigation uncovers layers of hidden individuals and interconnected bribery.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "EJfLarC4MvKU_uMPp6OP6Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675500,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1351,
+      "total_backend_latency_ms": 1664,
+      "total_tokens": 1452
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.559615,
+      "total": 10,
+      "remaining": 1.4403849999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.559614999999994,
+      "total": 100,
+      "remaining": 91.440385,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009785,
+  "fields": {
+    "source_object": "Matryoshka dolls",
+    "source_properties": "Stacked wooden figurines of decreasing size that nest inside one another, creating a single larger figure.",
+    "target_situation": "The reopening of the long-standing BLBI corruption case involving businessman Sjamsul Nursalim and linked officials.",
+    "mapping": "Nesting multiple smaller faces inside a larger figure's clothing mirrors how one investigation uncovers layers of hidden individuals and interconnected bribery.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Matryoshka dolls\nsource_properties: Stacked wooden figurines of decreasing size that nest inside one another, creating a single larger figure.\ntarget_situation: The reopening of the long-standing BLBI corruption case involving businessman Sjamsul Nursalim and linked officials.\nmapping: Nesting multiple smaller faces inside a larger figure's clothing mirrors how one investigation uncovers layers of hidden individuals and interconnected bribery.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

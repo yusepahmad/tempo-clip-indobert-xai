@@ -1,0 +1,87 @@
+{
+  "index": 343,
+  "sample_id": "TMP-CA8AC53E30FE",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a81a2a65d14ea30f5d116595068b66edf412ec8eff025c6bdcf4f3b00f4a906a",
+  "image_sha256": "ca8ac53e30feddcf563381f9cc747a5466a0dab915cee6af76047e0fd711f4d0",
+  "transmitted_image_sha256": "9eaf40de023496018fa03bd3ca786cbba5f6b5acd62a888df75f8ad925d1d20c",
+  "image_size": [
+    472,
+    627
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5082,
+      "total": 10,
+      "remaining": 1.4917999999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.508200000000002,
+      "total": 100,
+      "remaining": 91.4918,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.763290662318468,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Bandaged wounds\",\n  \"source_properties\": \"Physical dressings covering multiple traumatic injuries on a bare torso.\",\n  \"target_situation\": \"The physical and emotional aftermath of the Thamrin terrorist attack on a police officer.\",\n  \"mapping\": \"The bandages literally represent the officer's survival and the severity of the violence he endured during the shooting.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "GZbLapndL5LN_uMPhvbuyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 668500,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1337,
+      "total_backend_latency_ms": 1659,
+      "total_tokens": 1432
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5091535,
+      "total": 10,
+      "remaining": 1.4908465,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.509153499999996,
+      "total": 100,
+      "remaining": 91.4908465,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009535,
+  "fields": {
+    "source_object": "Bandaged wounds",
+    "source_properties": "Physical dressings covering multiple traumatic injuries on a bare torso.",
+    "target_situation": "The physical and emotional aftermath of the Thamrin terrorist attack on a police officer.",
+    "mapping": "The bandages literally represent the officer's survival and the severity of the violence he endured during the shooting.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: Bandaged wounds\nsource_properties: Physical dressings covering multiple traumatic injuries on a bare torso.\ntarget_situation: The physical and emotional aftermath of the Thamrin terrorist attack on a police officer.\nmapping: The bandages literally represent the officer's survival and the severity of the violence he endured during the shooting.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

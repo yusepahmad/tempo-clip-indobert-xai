@@ -1,0 +1,87 @@
+{
+  "index": 286,
+  "sample_id": "TMP-D4FED9F40080",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "427a22cdc1fd8369a9d67a3bbb11936277e08cd4ff53e4c17dddaab9c4e40323",
+  "image_sha256": "d4fed9f400802e1b580f1a7c4c226c419aff812c28d76f0461b4cafb5a4e8178",
+  "transmitted_image_sha256": "4aa3f55d59049303d7f9ecad3b2644e4d5940287b925526e3d02b16e903ec4e4",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.436398,
+      "total": 10,
+      "remaining": 1.5636019999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.436397999999997,
+      "total": 100,
+      "remaining": 91.563602,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.7647978998720646,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"The Voice talent show set\",\n  \"source_properties\": \"High-backed red chairs, judge buzzers, spotlight, and a shadowy contestant silhouette.\",\n  \"target_situation\": \"Jokowi and Jusuf Kalla selecting their cabinet ministers.\",\n  \"mapping\": \"Political leaders act as judges, auditioning anonymous candidates for government positions.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "qpTLapC1DPbb_uMPure6uAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671500,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1343,
+      "total_backend_latency_ms": 1629,
+      "total_tokens": 1436
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4373485,
+      "total": 10,
+      "remaining": 1.5626514999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.437348499999999,
+      "total": 100,
+      "remaining": 91.5626515,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009505,
+  "fields": {
+    "source_object": "The Voice talent show set",
+    "source_properties": "High-backed red chairs, judge buzzers, spotlight, and a shadowy contestant silhouette.",
+    "target_situation": "Jokowi and Jusuf Kalla selecting their cabinet ministers.",
+    "mapping": "Political leaders act as judges, auditioning anonymous candidates for government positions.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: The Voice talent show set\nsource_properties: High-backed red chairs, judge buzzers, spotlight, and a shadowy contestant silhouette.\ntarget_situation: Jokowi and Jusuf Kalla selecting their cabinet ministers.\nmapping: Political leaders act as judges, auditioning anonymous candidates for government positions.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

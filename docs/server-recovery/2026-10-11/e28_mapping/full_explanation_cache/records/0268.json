@@ -1,0 +1,87 @@
+{
+  "index": 268,
+  "sample_id": "TMP-BC2634DCADA5",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "81d7e4d7487bb76c6f9a000385e08836a8739119757f5d7be8dbb3f6c608e777",
+  "image_sha256": "bc2634dcada5802ea16d3fa25ff21c8cbcb1ed59aaf55538cc6a1deac0ad7ee3",
+  "transmitted_image_sha256": "40645b1f86806bb47e4e39a67ae6250dcda48c5a56682fffb1ac4c11e74edad7",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4092915,
+      "total": 10,
+      "remaining": 1.5907084999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.409291499999995,
+      "total": 100,
+      "remaining": 91.5907085,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.7339862626977265,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"sack race\", \"source_properties\": \"A person stands inside a large, heavy burlap bag at a starting line, struggling to move forward while holding its edges.\", \"target_situation\": \"A political figure's involvement in an illegal rice importation scandal.\", \"mapping\": \"The sack of rice, representing the illegal imports, becomes a burden the official must carry as he 'competes' in a political race, symbolized by the 'START' line.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "LZTLasG-Ms7E_PUPtKy7yQo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 105,
+      "cost": {
+        "input_tokens_cost_nanodollars": 667000,
+        "output_tokens_cost_nanodollars": 315000
+      },
+      "prompt_tokens": 1334,
+      "total_backend_latency_ms": 1861,
+      "total_tokens": 1439
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4102735,
+      "total": 10,
+      "remaining": 1.5897264999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.410273500000002,
+      "total": 100,
+      "remaining": 91.5897265,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000982,
+  "fields": {
+    "source_object": "sack race",
+    "source_properties": "A person stands inside a large, heavy burlap bag at a starting line, struggling to move forward while holding its edges.",
+    "target_situation": "A political figure's involvement in an illegal rice importation scandal.",
+    "mapping": "The sack of rice, representing the illegal imports, becomes a burden the official must carry as he 'competes' in a political race, symbolized by the 'START' line.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: sack race\nsource_properties: A person stands inside a large, heavy burlap bag at a starting line, struggling to move forward while holding its edges.\ntarget_situation: A political figure's involvement in an illegal rice importation scandal.\nmapping: The sack of rice, representing the illegal imports, becomes a burden the official must carry as he 'competes' in a political race, symbolized by the 'START' line.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

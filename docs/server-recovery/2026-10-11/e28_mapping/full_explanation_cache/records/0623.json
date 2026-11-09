@@ -1,0 +1,87 @@
+{
+  "index": 623,
+  "sample_id": "TMP-223338A7F537",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "af7303419e50e65307f65ae3fcd14d91f529365e56d9bee115c3e76d03a14b0c",
+  "image_sha256": "223338a7f5376a7380789e6c2041cebcc4ce1b63931ce97282d84c66a0cf918a",
+  "transmitted_image_sha256": "2c56fbb0490005337ae925cfbccc4502dc79b1b81570fe7e7421e3b4c2467cf8",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8886375,
+      "total": 10,
+      "remaining": 1.1113625000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.888637500000002,
+      "total": 100,
+      "remaining": 91.1113625,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.14385055936873,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Finger guns\", \"source_properties\": \"Hand gestures mimicking pistols, pointed threateningly at each other's heads.\", \"target_situation\": \"The legal conflict and mutual criminal investigations between the Indonesian National Police and the KPK.\", \"mapping\": \"Pointing fingers like guns symbolizes reciprocal legal attacks and accusations between the two powerful institutions.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ZJ3Laqf7DKiB_PUPxqbXMA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 79,
+      "cost": {
+        "input_tokens_cost_nanodollars": 687500,
+        "output_tokens_cost_nanodollars": 237000
+      },
+      "prompt_tokens": 1375,
+      "total_backend_latency_ms": 2584,
+      "total_tokens": 1454
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.889562,
+      "total": 10,
+      "remaining": 1.1104380000000003,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.889561999999998,
+      "total": 100,
+      "remaining": 91.110438,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009245,
+  "fields": {
+    "source_object": "Finger guns",
+    "source_properties": "Hand gestures mimicking pistols, pointed threateningly at each other's heads.",
+    "target_situation": "The legal conflict and mutual criminal investigations between the Indonesian National Police and the KPK.",
+    "mapping": "Pointing fingers like guns symbolizes reciprocal legal attacks and accusations between the two powerful institutions.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Finger guns\nsource_properties: Hand gestures mimicking pistols, pointed threateningly at each other's heads.\ntarget_situation: The legal conflict and mutual criminal investigations between the Indonesian National Police and the KPK.\nmapping: Pointing fingers like guns symbolizes reciprocal legal attacks and accusations between the two powerful institutions.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

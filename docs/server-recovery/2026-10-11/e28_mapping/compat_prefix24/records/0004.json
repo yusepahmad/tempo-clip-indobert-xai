@@ -1,0 +1,91 @@
+{
+  "index": 4,
+  "sample_id": "TMP-EC1AFE264B60",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a56c7c0101a34e2c5f8b23d123ab18cf9f029d6f647351dae417b4816b0d9668",
+  "image_sha256": "ec1afe264b60fcde3d4dde5f198212b8ffaf77974b6e5808b347eac209594b28",
+  "transmitted_image_sha256": "0c7521586ec31714263a81775e8c76f451b2ddb64c7ead1127750a3c44033782",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0192605,
+      "total": 10,
+      "remaining": 1.9807395000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.019260500000001,
+      "total": 100,
+      "remaining": 91.9807395,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9525261698290706,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"rolled banknote\", \"source_properties\": \"Tubular shape used to snort lines of powdered drugs.\", \"target_situation\": \"The drug trade in Kampung Ambon.\", \"mapping\": \"The banknote forms a line through the word 'NARKOBA', visually mimicking the act of snorting cocaine or heroin, illustrating the drug-centric nature of the location.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "VIrLav_fMZ_v_uMPm5vQ6AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 663000,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1326,
+      "total_backend_latency_ms": 1668,
+      "total_tokens": 1412
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0201815,
+      "total": 10,
+      "remaining": 1.9798185000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.020181500000007,
+      "total": 100,
+      "remaining": 91.9798185,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000921,
+  "fields": {
+    "source_object": "rolled banknote",
+    "source_properties": "Tubular shape used to snort lines of powdered drugs.",
+    "target_situation": "The drug trade in Kampung Ambon.",
+    "mapping": "The banknote forms a line through the word 'NARKOBA', visually mimicking the act of snorting cocaine or heroin, illustrating the drug-centric nature of the location.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: rolled banknote\nsource_properties: Tubular shape used to snort lines of powdered drugs.\ntarget_situation: The drug trade in Kampung Ambon.\nmapping: The banknote forms a line through the word 'NARKOBA', visually mimicking the act of snorting cocaine or heroin, illustrating the drug-centric nature of the location.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true,
+  "migration_origin": {
+    "record_sha256": "5fa600a631e02dd4e294e5af33044580bd7a69594d401945b1f24357d42b0f14",
+    "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383"
+  }
+}

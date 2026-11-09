@@ -1,0 +1,87 @@
+{
+  "index": 152,
+  "sample_id": "TMP-7700B02AEB5D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "69b315a90ddd74e59b5986fea2c03d656d187b09b5f685adaf114493a7362ece",
+  "image_sha256": "7700b02aeb5d6021b5f597ec31f805c6921500da20fef9ac0d1a2fb07d86faae",
+  "transmitted_image_sha256": "84d0d97403f33819a851e6009c08c6662606c7344c6281b3cd381d433927c8a8",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2305885,
+      "total": 10,
+      "remaining": 1.7694115000000004,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.230588499999996,
+      "total": 100,
+      "remaining": 91.7694115,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.837798964232206,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"overloaded pickup truck\", \"source_properties\": \"A small vehicle burdened with an unstable, towering heap of personal belongings and household items.\", \"target_situation\": \"Ma'ruf Amin's transition into the Vice Presidency and associated familial/business complications.\", \"mapping\": \"The precarious cargo symbolizes the significant political, personal, and ethical baggage accompanying the leader's move into power.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "HZHLar3rOc2i_uMP67qv2Qc",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 1798,
+      "total_tokens": 1438
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.231535000000001,
+      "total": 10,
+      "remaining": 1.768464999999999,
+      "refill_at": "2026-10-11 23:35:15.876000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.231534999999994,
+      "total": 100,
+      "remaining": 91.768465,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009465,
+  "fields": {
+    "source_object": "overloaded pickup truck",
+    "source_properties": "A small vehicle burdened with an unstable, towering heap of personal belongings and household items.",
+    "target_situation": "Ma'ruf Amin's transition into the Vice Presidency and associated familial/business complications.",
+    "mapping": "The precarious cargo symbolizes the significant political, personal, and ethical baggage accompanying the leader's move into power.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: overloaded pickup truck\nsource_properties: A small vehicle burdened with an unstable, towering heap of personal belongings and household items.\ntarget_situation: Ma'ruf Amin's transition into the Vice Presidency and associated familial/business complications.\nmapping: The precarious cargo symbolizes the significant political, personal, and ethical baggage accompanying the leader's move into power.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

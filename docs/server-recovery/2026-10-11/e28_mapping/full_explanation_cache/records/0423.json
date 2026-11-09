@@ -1,0 +1,87 @@
+{
+  "index": 423,
+  "sample_id": "TMP-8F25CC087788",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "186a1fd89b8495dfa612aeb49601fa96b9f032a5a2d70d28a5e9e0fdba8a2e52",
+  "image_sha256": "8f25cc08778808a4f82c0a0c9161f3f14b248472d3446d9eb478b8740fb9e540",
+  "transmitted_image_sha256": "9a0b1a5bd7be75fa7b93071dfbca3b260a29782ed9583b96dcc4f0bdf3f8c9ea",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.623001,
+      "total": 10,
+      "remaining": 1.3769989999999996,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.623001000000002,
+      "total": 100,
+      "remaining": 91.376999,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3343596369959414,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Two-headed horse\", \"source_properties\": \"A single body with two heads facing opposite directions, each ridden by a person looking outward.\", \"target_situation\": \"An unusual alliance between Indonesian political rivals Jokowi and Prabowo.\", \"mapping\": \"The fused horse bodies represent an awkward political union, while opposing heads symbolize divergent goals or mutual suspicion despite being joined.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "KpjLatWzGJjM_PUPlq7quAo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 87,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679000,
+        "output_tokens_cost_nanodollars": 261000
+      },
+      "prompt_tokens": 1358,
+      "total_backend_latency_ms": 1872,
+      "total_tokens": 1445
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.623941,
+      "total": 10,
+      "remaining": 1.3760589999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.623941000000002,
+      "total": 100,
+      "remaining": 91.376059,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00094,
+  "fields": {
+    "source_object": "Two-headed horse",
+    "source_properties": "A single body with two heads facing opposite directions, each ridden by a person looking outward.",
+    "target_situation": "An unusual alliance between Indonesian political rivals Jokowi and Prabowo.",
+    "mapping": "The fused horse bodies represent an awkward political union, while opposing heads symbolize divergent goals or mutual suspicion despite being joined.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Two-headed horse\nsource_properties: A single body with two heads facing opposite directions, each ridden by a person looking outward.\ntarget_situation: An unusual alliance between Indonesian political rivals Jokowi and Prabowo.\nmapping: The fused horse bodies represent an awkward political union, while opposing heads symbolize divergent goals or mutual suspicion despite being joined.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

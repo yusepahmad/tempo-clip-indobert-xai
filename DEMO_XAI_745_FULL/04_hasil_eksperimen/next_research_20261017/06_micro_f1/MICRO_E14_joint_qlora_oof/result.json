@@ -1,0 +1,145 @@
+{
+  "schema": "tempo-e14-oof-v1",
+  "status": "complete",
+  "samples": 740,
+  "outer_folds": 5,
+  "model_contract": "one shared Qwen3-VL LoRA adapter per outer fold; identical joint training/selection/refit protocol",
+  "micro_f1": {
+    "task1_issue": 0.7202702702702702,
+    "task2_domain_sumber": 0.5662162162162162,
+    "task3_primary_entity_type": 0.6675675675675675
+  },
+  "macro_f1_diagnostic": {
+    "task1_issue": 0.6733214996531947,
+    "task2_domain_sumber": 0.5102816959701791,
+    "task3_primary_entity_type": 0.5954802971709425
+  },
+  "minimum_micro_f1": 0.5662162162162162,
+  "all_tasks_at_least_0_70": false,
+  "protocol_sha256": "7b1eb1fdaf8547e842df793726e106b1d29b222b16ef3d9b672388d9d46ec65e",
+  "source_sha256": "cb09acda21117f0acba38233fca382ec9916b08c5c73f297fa0f70c9469003ed",
+  "predictions_sha256": "65590694cb53049daf266e491a447be49ebeba42a9d707147bfad80e50746167",
+  "fold_details": [
+    {
+      "status": "verified",
+      "fold": 1,
+      "samples": 148,
+      "selected_epoch": 3,
+      "micro_f1": {
+        "task1_issue": 0.6959459459459459,
+        "task2_domain_sumber": 0.6081081081081081,
+        "task3_primary_entity_type": 0.6486486486486487
+      },
+      "protocol_sha256": "7b1eb1fdaf8547e842df793726e106b1d29b222b16ef3d9b672388d9d46ec65e",
+      "source_sha256": "cb09acda21117f0acba38233fca382ec9916b08c5c73f297fa0f70c9469003ed",
+      "checks": [
+        "all 148 outer IDs",
+        "dataset labels",
+        "inner/test disjoint",
+        "inner epoch selection",
+        "exact refit epochs",
+        "probability argmax",
+        "micro equals accuracy",
+        "protocol/source/data/predictions/audit hashes"
+      ],
+      "note": "adapter hash recorded remotely; large checkpoint not downloaded by default"
+    },
+    {
+      "status": "verified",
+      "fold": 2,
+      "samples": 148,
+      "selected_epoch": 1,
+      "micro_f1": {
+        "task1_issue": 0.7432432432432432,
+        "task2_domain_sumber": 0.5202702702702703,
+        "task3_primary_entity_type": 0.668918918918919
+      },
+      "protocol_sha256": "7b1eb1fdaf8547e842df793726e106b1d29b222b16ef3d9b672388d9d46ec65e",
+      "source_sha256": "cb09acda21117f0acba38233fca382ec9916b08c5c73f297fa0f70c9469003ed",
+      "checks": [
+        "all 148 outer IDs",
+        "dataset labels",
+        "inner/test disjoint",
+        "inner epoch selection",
+        "exact refit epochs",
+        "probability argmax",
+        "micro equals accuracy",
+        "protocol/source/data/predictions/audit hashes"
+      ],
+      "note": "adapter hash recorded remotely; large checkpoint not downloaded by default"
+    },
+    {
+      "status": "verified",
+      "fold": 3,
+      "samples": 148,
+      "selected_epoch": 3,
+      "micro_f1": {
+        "task1_issue": 0.7297297297297297,
+        "task2_domain_sumber": 0.5540540540540541,
+        "task3_primary_entity_type": 0.6283783783783784
+      },
+      "protocol_sha256": "7b1eb1fdaf8547e842df793726e106b1d29b222b16ef3d9b672388d9d46ec65e",
+      "source_sha256": "cb09acda21117f0acba38233fca382ec9916b08c5c73f297fa0f70c9469003ed",
+      "checks": [
+        "all 148 outer IDs",
+        "dataset labels",
+        "inner/test disjoint",
+        "inner epoch selection",
+        "exact refit epochs",
+        "probability argmax",
+        "micro equals accuracy",
+        "protocol/source/data/predictions/audit hashes"
+      ],
+      "note": "adapter hash recorded remotely; large checkpoint not downloaded by default"
+    },
+    {
+      "status": "verified",
+      "fold": 4,
+      "samples": 148,
+      "selected_epoch": 2,
+      "micro_f1": {
+        "task1_issue": 0.7094594594594594,
+        "task2_domain_sumber": 0.5540540540540541,
+        "task3_primary_entity_type": 0.7094594594594594
+      },
+      "protocol_sha256": "7b1eb1fdaf8547e842df793726e106b1d29b222b16ef3d9b672388d9d46ec65e",
+      "source_sha256": "cb09acda21117f0acba38233fca382ec9916b08c5c73f297fa0f70c9469003ed",
+      "checks": [
+        "all 148 outer IDs",
+        "dataset labels",
+        "inner/test disjoint",
+        "inner epoch selection",
+        "exact refit epochs",
+        "probability argmax",
+        "micro equals accuracy",
+        "protocol/source/data/predictions/audit hashes"
+      ],
+      "note": "adapter hash recorded remotely; large checkpoint not downloaded by default"
+    },
+    {
+      "status": "verified",
+      "fold": 5,
+      "samples": 148,
+      "selected_epoch": 3,
+      "micro_f1": {
+        "task1_issue": 0.722972972972973,
+        "task2_domain_sumber": 0.5945945945945946,
+        "task3_primary_entity_type": 0.6824324324324325
+      },
+      "protocol_sha256": "7b1eb1fdaf8547e842df793726e106b1d29b222b16ef3d9b672388d9d46ec65e",
+      "source_sha256": "cb09acda21117f0acba38233fca382ec9916b08c5c73f297fa0f70c9469003ed",
+      "checks": [
+        "all 148 outer IDs",
+        "dataset labels",
+        "inner/test disjoint",
+        "inner epoch selection",
+        "exact refit epochs",
+        "probability argmax",
+        "micro equals accuracy",
+        "protocol/source/data/predictions/audit hashes"
+      ],
+      "note": "adapter hash recorded remotely; large checkpoint not downloaded by default"
+    }
+  ],
+  "limitation": "internal repeated-corpus CV; not independent acceptance data"
+}

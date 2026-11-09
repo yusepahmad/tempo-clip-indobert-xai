@@ -1,0 +1,83 @@
+{
+  "index": 400,
+  "sample_id": "TMP-06D9CB5ACC85",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "e468b266334bfb3f9e92ee480072a60ebd31aaeb486414d40ad06653ceb3ece9",
+  "image_sha256": "06d9cb5acc859aa071e3e01a01a7fd08ba4d71031122c52db9bb087f0ea6bd9b",
+  "transmitted_image_sha256": "b43da68dc4cee7ea6b2a3056c6386ad9e84f81eb07f3d2d575fc9c48e7061afe",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.4972814999999997,
+      "total": 10,
+      "remaining": 8.5027185,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.4972814999999997,
+      "total": 100,
+      "remaining": 98.5027185,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 10.177522959886119,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks, metafora tersebut menggunakan **senjata api** yang dipetakan sebagai **alat kerja** atau **mekanisme buatan** untuk menggambarkan proses pengadaan yang bermasalah.\n\nDalam klasifikasi domain sumber metafora:\n*   **E: MESIN_INFRASTRUKTUR** mencakup mesin, **alat**, kendaraan, bangunan, atau **mekanisme buatan** sebagai kiasan.\n\nAlasan dalam teks secara eksplisit menyebutkan \"senjata api dipetakan sebagai alat kerja... menggambarkan mekanisme dan fungsi alat buatan\", yang sangat sesuai dengan definisi domain E.\n\nJawab satu kode A sampai G: **E**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "UdzKau2FMp-d_uMPsajYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1830,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1685
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 761500,
+        "output_tokens_cost_nanodollars": 5490000
+      },
+      "prompt_tokens": 1523,
+      "total_backend_latency_ms": 8714,
+      "total_tokens": 3353
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.5035329999999991,
+      "total": 10,
+      "remaining": 8.496467,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.5035330000000044,
+      "total": 100,
+      "remaining": 98.496467,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.0062515
+}

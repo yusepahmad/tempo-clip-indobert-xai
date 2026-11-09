@@ -1,0 +1,87 @@
+{
+  "index": 21,
+  "sample_id": "TMP-9BB6B842045A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383",
+  "prompt_sha256": "402ea76a3c34cffe61c2111e57a4a9d08bebd06222ea76d3e07ba456900493af",
+  "image_sha256": "9bb6b842045a7660731553011ccc1e6ba4f653270c041fcf447fc54dab436b42",
+  "transmitted_image_sha256": "9ef1ff9fe6a629073fca1acbb90477cb8c36c8b7a606a59e3ad9cc79aa941c86",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0414665,
+      "total": 10,
+      "remaining": 1.9585334999999997,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.041466499999999,
+      "total": 100,
+      "remaining": 91.9585335,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9806616199202836,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"correction tape (tip-ex)\", \"source_properties\": \"Small, hand-held applicator used for opaque, dry covering of ink to erase errors.\", \"target_situation\": \"KPK investigators allegedly removing evidence of bribery involving beef importers and officials.\", \"mapping\": \"The cow's white patches represent areas erased by correction tape, symbolizing the removal of incriminating documents or evidence.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "vorLap7vDd-V_uMPmIWFyQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 668000,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1336,
+      "total_backend_latency_ms": 1476,
+      "total_tokens": 1426
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0424045,
+      "total": 10,
+      "remaining": 1.9575955,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.042404500000004,
+      "total": 100,
+      "remaining": 91.9575955,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000938,
+  "fields": {
+    "source_object": "correction tape (tip-ex)",
+    "source_properties": "Small, hand-held applicator used for opaque, dry covering of ink to erase errors.",
+    "target_situation": "KPK investigators allegedly removing evidence of bribery involving beef importers and officials.",
+    "mapping": "The cow's white patches represent areas erased by correction tape, symbolizing the removal of incriminating documents or evidence.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: correction tape (tip-ex)\nsource_properties: Small, hand-held applicator used for opaque, dry covering of ink to erase errors.\ntarget_situation: KPK investigators allegedly removing evidence of bribery involving beef importers and officials.\nmapping: The cow's white patches represent areas erased by correction tape, symbolizing the removal of incriminating documents or evidence.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

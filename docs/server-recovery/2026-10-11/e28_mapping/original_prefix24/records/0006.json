@@ -1,0 +1,87 @@
+{
+  "index": 6,
+  "sample_id": "TMP-E2A77C58A55A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383",
+  "prompt_sha256": "895d1b539a6d0bfe28f81ecfba684fc0e2a6596f4f9be5bc18f067dcdf3bb813",
+  "image_sha256": "e2a77c58a55a310a38efedced459ae07cf3858e6b519f90095f78217cdb93541",
+  "transmitted_image_sha256": "44b5368b85db19a9ae405c641dd13f29f5c64981282c380c1d377c9da6917521",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.021108,
+      "total": 10,
+      "remaining": 1.978892,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.021107999999998,
+      "total": 100,
+      "remaining": 91.978892,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.25564484205097,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Red ink or paint drips\",\n  \"source_properties\": \"Liquid, viscous, dripping downward from specific points, vibrant red color suggesting blood.\",\n  \"target_situation\": \"The sacrificial life and martyr status of General Soedirman during the revolution.\",\n  \"mapping\": \"The drips simulate bleeding wounds on the neck and shoulder, symbolizing martyrdom and sacrifice.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "YIrLapbGPLXP_uMPiOzhoQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 655000,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1310,
+      "total_backend_latency_ms": 1524,
+      "total_tokens": 1405
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.022048,
+      "total": 10,
+      "remaining": 1.9779520000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.022047999999998,
+      "total": 100,
+      "remaining": 91.977952,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.00094,
+  "fields": {
+    "source_object": "Red ink or paint drips",
+    "source_properties": "Liquid, viscous, dripping downward from specific points, vibrant red color suggesting blood.",
+    "target_situation": "The sacrificial life and martyr status of General Soedirman during the revolution.",
+    "mapping": "The drips simulate bleeding wounds on the neck and shoulder, symbolizing martyrdom and sacrifice.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Red ink or paint drips\nsource_properties: Liquid, viscous, dripping downward from specific points, vibrant red color suggesting blood.\ntarget_situation: The sacrificial life and martyr status of General Soedirman during the revolution.\nmapping: The drips simulate bleeding wounds on the neck and shoulder, symbolizing martyrdom and sacrifice.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

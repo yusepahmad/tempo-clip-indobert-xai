@@ -1,0 +1,49 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "views": 3,
+  "dimension": 1024,
+  "checks": [
+    "finite normalized embeddings",
+    "exact original IDs",
+    "source/data/E01/NPZ/audit hashes",
+    "all 2220 input text hashes reconstructed"
+  ],
+  "meta": {
+    "status": "complete",
+    "model": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "csv_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+    "e01_hashes": {
+      "deskripsi.jsonl": "c75e8df3f9b71d6786462f8d0f1187ebe4234fb8dd079924f3f35707ff1b8cd2",
+      "zeroshot.jsonl": "10c07b06b13fbbf647f2b1ed12a722d9bff8f97caa6b621430d8bc0429ab38c9"
+    },
+    "worker_sha256": "62d4c277db4bbd61fb6b163e6141304cab80caee86795ff6d72a93628379192f",
+    "samples": 740,
+    "dimension": 1024,
+    "prefix": "",
+    "pooling": "CLS then L2",
+    "batch": 8,
+    "max_length": 1024,
+    "dtype": "float16",
+    "input_audit_sha256": "0d7fe6dfdb378b5e617b82f2eb9f82cbd73ba02a6c15131367dd3b6c07c0b192",
+    "embeddings_sha256": "c0d7d1fc9ac42988b0d107a694d7d3b355105f8640f776ace2617eed936495c4",
+    "seconds_by_view": {
+      "description": 3.5316924570000197,
+      "source_reason": 2.0762170630000014,
+      "combined": 6.1739520069999685
+    },
+    "truncated_by_view": {
+      "description": 0,
+      "source_reason": 0,
+      "combined": 0
+    },
+    "peak_cuda_bytes": 1199285248,
+    "torch": "2.11.0+cu128"
+  },
+  "sha256": {
+    "input_audit.jsonl": "0d7fe6dfdb378b5e617b82f2eb9f82cbd73ba02a6c15131367dd3b6c07c0b192",
+    "meta.json": "4a106e96fd6893f5a26f71feccb7d43f277c886a914b8a2db9634de49ed43117",
+    "embeddings.npz": "c0d7d1fc9ac42988b0d107a694d7d3b355105f8640f776ace2617eed936495c4"
+  }
+}

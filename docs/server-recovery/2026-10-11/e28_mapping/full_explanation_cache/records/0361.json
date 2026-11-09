@@ -1,0 +1,87 @@
+{
+  "index": 361,
+  "sample_id": "TMP-C4A4F6F62C6A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "143456a29bdb2105d02657e8dadcbb8d03eb22acdfc65310f9dbc3768df85dc6",
+  "image_sha256": "c4a4f6f62c6a5ec0eabefe519dbf62317f287c74b5d07c6cee72a9102b20b0f5",
+  "transmitted_image_sha256": "2b01406bd70d961fc685776ab54fde8ac02d509a3543a5aa148be800a4bc23a4",
+  "image_size": [
+    407,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5320375,
+      "total": 10,
+      "remaining": 1.4679625000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.532037500000001,
+      "total": 100,
+      "remaining": 91.4679625,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.6220244173891842,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A split portrait with contrasting costumes and passports\",\n  \"source_properties\": \"Divided down the center, featuring an Indonesian peci and passport versus a US top hat and passport.\",\n  \"target_situation\": \"Arcandra Tahar's dual citizenship controversy while serving as an Indonesian minister.\",\n  \"mapping\": \"The split imagery illustrates the minister's conflicting national identities and legal statuses across two different countries.\",\n  \"uncertainty\": \"None evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "kJbLapuCFcyV_uMPl4eVaQ",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 108,
+      "cost": {
+        "input_tokens_cost_nanodollars": 663000,
+        "output_tokens_cost_nanodollars": 324000
+      },
+      "prompt_tokens": 1326,
+      "total_backend_latency_ms": 2450,
+      "total_tokens": 1434
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5330245,
+      "total": 10,
+      "remaining": 1.4669755000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.533024499999996,
+      "total": 100,
+      "remaining": 91.4669755,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000987,
+  "fields": {
+    "source_object": "A split portrait with contrasting costumes and passports",
+    "source_properties": "Divided down the center, featuring an Indonesian peci and passport versus a US top hat and passport.",
+    "target_situation": "Arcandra Tahar's dual citizenship controversy while serving as an Indonesian minister.",
+    "mapping": "The split imagery illustrates the minister's conflicting national identities and legal statuses across two different countries.",
+    "uncertainty": "None evident"
+  },
+  "explanation": "source_object: A split portrait with contrasting costumes and passports\nsource_properties: Divided down the center, featuring an Indonesian peci and passport versus a US top hat and passport.\ntarget_situation: Arcandra Tahar's dual citizenship controversy while serving as an Indonesian minister.\nmapping: The split imagery illustrates the minister's conflicting national identities and legal statuses across two different countries.\nuncertainty: None evident",
+  "finish_reason": "stop",
+  "usable": true
+}

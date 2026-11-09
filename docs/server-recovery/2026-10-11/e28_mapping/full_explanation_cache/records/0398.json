@@ -1,0 +1,87 @@
+{
+  "index": 398,
+  "sample_id": "TMP-4BB4EA194A5D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "29687656d8c0612cb025d1e03f55e14405e38a4c35b75425b6f1630743c64a78",
+  "image_sha256": "4bb4ea194a5df4ee3c712cf64017bc4361064abbe32dd342fd330e60252cca91",
+  "transmitted_image_sha256": "3bc07ba8282ece6d535edac4949ddc5e3445698b6b133c9ddd60f028536522a6",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5794015,
+      "total": 10,
+      "remaining": 1.4205985000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.579401500000003,
+      "total": 100,
+      "remaining": 91.4205985,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.58410157635808,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"an underwater escape act\", \"source_properties\": \"chains, padlocks, being upside down, and air bubbles underwater\", \"target_situation\": \"Setya Novanto's attempts to evade legal prosecution\", \"mapping\": \"Chains and padlocks represent legal charges; the upside-down position symbolizes a desperate, high-stakes maneuver to escape accountability.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "fJfLapyXNcXh_uMPyN6L8Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 87,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661500,
+        "output_tokens_cost_nanodollars": 261000
+      },
+      "prompt_tokens": 1323,
+      "total_backend_latency_ms": 1635,
+      "total_tokens": 1410
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.580324000000001,
+      "total": 10,
+      "remaining": 1.419675999999999,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.580324000000005,
+      "total": 100,
+      "remaining": 91.419676,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009225,
+  "fields": {
+    "source_object": "an underwater escape act",
+    "source_properties": "chains, padlocks, being upside down, and air bubbles underwater",
+    "target_situation": "Setya Novanto's attempts to evade legal prosecution",
+    "mapping": "Chains and padlocks represent legal charges; the upside-down position symbolizes a desperate, high-stakes maneuver to escape accountability.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: an underwater escape act\nsource_properties: chains, padlocks, being upside down, and air bubbles underwater\ntarget_situation: Setya Novanto's attempts to evade legal prosecution\nmapping: Chains and padlocks represent legal charges; the upside-down position symbolizes a desperate, high-stakes maneuver to escape accountability.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

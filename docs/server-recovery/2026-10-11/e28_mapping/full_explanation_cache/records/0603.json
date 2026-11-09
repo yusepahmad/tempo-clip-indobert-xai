@@ -1,0 +1,90 @@
+{
+  "index": 603,
+  "sample_id": "TMP-590C61257F84",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "eeeb4a086985610f048475947152c1cf822d702ab52243704aefb8b39b4802d5",
+  "image_sha256": "590c61257f84208acd5a0092ac8c965aad9837588bf758b42affd90e5af7ed59",
+  "transmitted_image_sha256": "415e369499cc5489edb676ee9ed12c2b55b84eb9cf6521977a098859de62da5b",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8601965,
+      "total": 10,
+      "remaining": 1.1398034999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.8601965,
+      "total": 100,
+      "remaining": 91.1398035,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.888338061980903,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Stylized toy-like figurines or caricatures.\",\n  \"source_properties\": \"Exaggerated features, smooth plastic-like texture, and being physically crowded or manipulated into a cramped space.\",\n  \"target_situation\": \"The highly managed and performative Indonesian presidential debates.\",\n  \"mapping\": \"The candidates are depicted as molded toys, suggesting their debate performances are artificial, scripted acts ('debat-debatan') polished and directed by their support teams.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "35zLapT6Me2M_PUPz_vKgQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1420,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1304
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 4260000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 8268,
+      "total_tokens": 2767
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.86513,
+      "total": 10,
+      "remaining": 1.1348699999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.865129999999994,
+      "total": 100,
+      "remaining": 91.13487,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0049335,
+  "fields": {
+    "source_object": "Stylized toy-like figurines or caricatures.",
+    "source_properties": "Exaggerated features, smooth plastic-like texture, and being physically crowded or manipulated into a cramped space.",
+    "target_situation": "The highly managed and performative Indonesian presidential debates.",
+    "mapping": "The candidates are depicted as molded toys, suggesting their debate performances are artificial, scripted acts ('debat-debatan') polished and directed by their support teams.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Stylized toy-like figurines or caricatures.\nsource_properties: Exaggerated features, smooth plastic-like texture, and being physically crowded or manipulated into a cramped space.\ntarget_situation: The highly managed and performative Indonesian presidential debates.\nmapping: The candidates are depicted as molded toys, suggesting their debate performances are artificial, scripted acts ('debat-debatan') polished and directed by their support teams.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

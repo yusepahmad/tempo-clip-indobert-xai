@@ -1,0 +1,90 @@
+{
+  "index": 649,
+  "sample_id": "TMP-D2D487062AB0",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f462eeb96fb4d1c3d24f5d2bbbba8877f33d0655b0a5376e3fa9012a05712105",
+  "image_sha256": "d2d487062ab0c756a162cbce8bf66a5210f528259d349c20816ee8d26e10156c",
+  "transmitted_image_sha256": "9183f16b3d15595214c984358d8030d54ee5d62340bde4f9d2194b8dd24bf49b",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.91845,
+      "total": 10,
+      "remaining": 1.08155,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.918450000000007,
+      "total": 100,
+      "remaining": 91.08155,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.037406017072499,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A lighted vanity mirror with cosmetic tools.\",\n  \"source_properties\": \"Applying makeup physically hides imperfections and enhances features to craft a specific, often artificial, visual identity.\",\n  \"target_situation\": \"Government agencies conducting orchestrated campaigns to improve a leader's public image before their term ends.\",\n  \"mapping\": \"The act of 'polishing' one's face with makeup symbolizes the deliberate effort to 'polish' political reputation and mask flaws.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "AZ7LasWSJp_v_uMPm5vQ6AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1094,
+      "completion_tokens_details": {
+        "reasoning_tokens": 980
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 678000,
+        "output_tokens_cost_nanodollars": 3282000
+      },
+      "prompt_tokens": 1356,
+      "total_backend_latency_ms": 5551,
+      "total_tokens": 2450
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.92241,
+      "total": 10,
+      "remaining": 1.0775900000000007,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.92241,
+      "total": 100,
+      "remaining": 91.07759,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.00396,
+  "fields": {
+    "source_object": "A lighted vanity mirror with cosmetic tools.",
+    "source_properties": "Applying makeup physically hides imperfections and enhances features to craft a specific, often artificial, visual identity.",
+    "target_situation": "Government agencies conducting orchestrated campaigns to improve a leader's public image before their term ends.",
+    "mapping": "The act of 'polishing' one's face with makeup symbolizes the deliberate effort to 'polish' political reputation and mask flaws.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A lighted vanity mirror with cosmetic tools.\nsource_properties: Applying makeup physically hides imperfections and enhances features to craft a specific, often artificial, visual identity.\ntarget_situation: Government agencies conducting orchestrated campaigns to improve a leader's public image before their term ends.\nmapping: The act of 'polishing' one's face with makeup symbolizes the deliberate effort to 'polish' political reputation and mask flaws.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

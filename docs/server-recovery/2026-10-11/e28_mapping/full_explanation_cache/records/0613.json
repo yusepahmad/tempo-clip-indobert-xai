@@ -1,0 +1,87 @@
+{
+  "index": 613,
+  "sample_id": "TMP-A10552C5D685",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "65a8c59c6361a2aaaaee2c242c276a322d18277e8fc6be5dec237e39d1d37964",
+  "image_sha256": "a10552c5d6851ac8e015b3a55fdbcb9f3a22338f13666212fa23953dc0e6a4c0",
+  "transmitted_image_sha256": "8af7f3337fad9a1dd3092889ddf97d4bc3a1c100604dce946a5409da086f46df",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8765205,
+      "total": 10,
+      "remaining": 1.1234795000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.876520499999998,
+      "total": 100,
+      "remaining": 91.1234795,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.954957899171859,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"red scooter\", \"source_properties\": \"A motorized two-wheeled vehicle steered with handlebars, carrying a driver and a passenger seated behind.\", \"target_situation\": \"Iriana Jokowi's active political maneuvering to position her son, Gibran Rakabuming Raka, as a 2024 vice-presidential candidate.\", \"mapping\": \"Steering the scooter symbolizes the mother's proactive leadership and control in navigating her son's political career path.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "JZ3LaoD5IcyV_uMPl4eVaQ",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 110,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680500,
+        "output_tokens_cost_nanodollars": 330000
+      },
+      "prompt_tokens": 1361,
+      "total_backend_latency_ms": 1747,
+      "total_tokens": 1471
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.877531,
+      "total": 10,
+      "remaining": 1.1224690000000006,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.877531000000005,
+      "total": 100,
+      "remaining": 91.122469,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010105,
+  "fields": {
+    "source_object": "red scooter",
+    "source_properties": "A motorized two-wheeled vehicle steered with handlebars, carrying a driver and a passenger seated behind.",
+    "target_situation": "Iriana Jokowi's active political maneuvering to position her son, Gibran Rakabuming Raka, as a 2024 vice-presidential candidate.",
+    "mapping": "Steering the scooter symbolizes the mother's proactive leadership and control in navigating her son's political career path.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: red scooter\nsource_properties: A motorized two-wheeled vehicle steered with handlebars, carrying a driver and a passenger seated behind.\ntarget_situation: Iriana Jokowi's active political maneuvering to position her son, Gibran Rakabuming Raka, as a 2024 vice-presidential candidate.\nmapping: Steering the scooter symbolizes the mother's proactive leadership and control in navigating her son's political career path.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

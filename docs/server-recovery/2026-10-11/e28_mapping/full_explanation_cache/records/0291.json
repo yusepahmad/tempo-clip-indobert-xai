@@ -1,0 +1,87 @@
+{
+  "index": 291,
+  "sample_id": "TMP-589A327F9AE8",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f0d35a9bd0c1b0a545a8ab6ee8b69d714d0b9b7917633f32a1acf7984a8e902c",
+  "image_sha256": "589a327f9ae82bf0a91091aa7edd60db292948c127190a5539dc7eac3f41bd73",
+  "transmitted_image_sha256": "25b62fdf6e298388286c1b44f26bd81e590868c9415c2bd956facc49e8768c28",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4429535,
+      "total": 10,
+      "remaining": 1.5570465000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.442953500000002,
+      "total": 100,
+      "remaining": 91.5570465,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.22372712707147,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"limousines as office chairs\", \"source_properties\": \"luxury vehicles with sunroofs, configured around a meeting table like furniture\", \"target_situation\": \"a high-stakes 18 trillion rupiah meeting involving powerful political or business elites\", \"mapping\": \"The luxury cars represent the immense wealth and elite status of participants, while their arrangement around a table suggests formal, secretive, and high-value negotiations.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ypTLaqieG4Tn_uMP29-q-A8",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 666500,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1333,
+      "total_backend_latency_ms": 1790,
+      "total_tokens": 1430
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.443911,
+      "total": 10,
+      "remaining": 1.556089,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.443911,
+      "total": 100,
+      "remaining": 91.556089,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009575,
+  "fields": {
+    "source_object": "limousines as office chairs",
+    "source_properties": "luxury vehicles with sunroofs, configured around a meeting table like furniture",
+    "target_situation": "a high-stakes 18 trillion rupiah meeting involving powerful political or business elites",
+    "mapping": "The luxury cars represent the immense wealth and elite status of participants, while their arrangement around a table suggests formal, secretive, and high-value negotiations.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: limousines as office chairs\nsource_properties: luxury vehicles with sunroofs, configured around a meeting table like furniture\ntarget_situation: a high-stakes 18 trillion rupiah meeting involving powerful political or business elites\nmapping: The luxury cars represent the immense wealth and elite status of participants, while their arrangement around a table suggests formal, secretive, and high-value negotiations.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

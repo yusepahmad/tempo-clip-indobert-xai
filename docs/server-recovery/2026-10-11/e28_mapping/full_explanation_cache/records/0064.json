@@ -1,0 +1,87 @@
+{
+  "index": 64,
+  "sample_id": "TMP-29C54F24D6AD",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f7355558b116c1ba31f5fcdc55481c12fc90aaca357bca6cb9a117fd022f0164",
+  "image_sha256": "29c54f24d6ad11199a5edfd7d684ce5632f2d0b02edd332ecc875878edd0ff1b",
+  "transmitted_image_sha256": "9c49647aceed13c071d346105d43db85c87f957da9b5697fb6f240ed501ef8f7",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.099315,
+      "total": 10,
+      "remaining": 1.9006849999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.099315000000004,
+      "total": 100,
+      "remaining": 91.900685,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.6165603660047054,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"question mark\",\n  \"source_properties\": \"Curved shape ending in a point, symbolizing uncertainty, mystery, or unanswered inquiries.\",\n  \"target_situation\": \"Investigation into the Hercules C-130B plane crash in Medan.\",\n  \"mapping\": \"The question mark visualizes the unknown causes and suspicious circumstances, such as stowaways, surrounding the crash.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "zo7LapbJJreR_uMPm_GWuA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 98,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671500,
+        "output_tokens_cost_nanodollars": 294000
+      },
+      "prompt_tokens": 1343,
+      "total_backend_latency_ms": 1525,
+      "total_tokens": 1441
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1002805,
+      "total": 10,
+      "remaining": 1.8997194999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.100280499999997,
+      "total": 100,
+      "remaining": 91.8997195,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009655,
+  "fields": {
+    "source_object": "question mark",
+    "source_properties": "Curved shape ending in a point, symbolizing uncertainty, mystery, or unanswered inquiries.",
+    "target_situation": "Investigation into the Hercules C-130B plane crash in Medan.",
+    "mapping": "The question mark visualizes the unknown causes and suspicious circumstances, such as stowaways, surrounding the crash.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: question mark\nsource_properties: Curved shape ending in a point, symbolizing uncertainty, mystery, or unanswered inquiries.\ntarget_situation: Investigation into the Hercules C-130B plane crash in Medan.\nmapping: The question mark visualizes the unknown causes and suspicious circumstances, such as stowaways, surrounding the crash.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 212,
+  "sample_id": "TMP-58FD16850790",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "6431a561a62b3c0c2fd4e58575065a05a2d65f4e5b016e4843f0de1d421f5fe5",
+  "image_sha256": "58fd16850790985d247af6f4b376c67facb2a2437572eb56b347fa70aef3b5ee",
+  "transmitted_image_sha256": "9ac971389c5094ab31cb8e5a0d096f370b6aad24aa73a5d54c0ee0c91040b01e",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.322867500000001,
+      "total": 10,
+      "remaining": 1.677132499999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.322867500000001,
+      "total": 100,
+      "remaining": 91.6771325,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.88826240086928,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Rehal (Quran stand) with stacked cash\",\n  \"source_properties\": \"A traditional wooden stand meant for supporting a holy book, instead holding piles of money.\",\n  \"target_situation\": \"Corruption within a government project for procuring copies of the Al-Quran.\",\n  \"mapping\": \"The rehal, designed for religious reverence, represents the holy book procurement project, while the money replaces the scripture to symbolize profit-driven corruption.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "sJLLaouJBeyb_uMPzeOSwQw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 112,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678500,
+        "output_tokens_cost_nanodollars": 336000
+      },
+      "prompt_tokens": 1357,
+      "total_backend_latency_ms": 1768,
+      "total_tokens": 1469
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.323882,
+      "total": 10,
+      "remaining": 1.6761180000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.323881999999998,
+      "total": 100,
+      "remaining": 91.676118,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0010145,
+  "fields": {
+    "source_object": "Rehal (Quran stand) with stacked cash",
+    "source_properties": "A traditional wooden stand meant for supporting a holy book, instead holding piles of money.",
+    "target_situation": "Corruption within a government project for procuring copies of the Al-Quran.",
+    "mapping": "The rehal, designed for religious reverence, represents the holy book procurement project, while the money replaces the scripture to symbolize profit-driven corruption.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Rehal (Quran stand) with stacked cash\nsource_properties: A traditional wooden stand meant for supporting a holy book, instead holding piles of money.\ntarget_situation: Corruption within a government project for procuring copies of the Al-Quran.\nmapping: The rehal, designed for religious reverence, represents the holy book procurement project, while the money replaces the scripture to symbolize profit-driven corruption.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

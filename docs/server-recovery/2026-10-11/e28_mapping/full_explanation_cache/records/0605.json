@@ -1,0 +1,87 @@
+{
+  "index": 605,
+  "sample_id": "TMP-826F2F98F2F4",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "386218f6c8631251df98139a25f56872e2f37fa5a18ad4203d22a7c57dcc5e2a",
+  "image_sha256": "826f2f98f2f449dd0a8b6b23bdd9f43d4048fd4316672f0d262ae627a63efb11",
+  "transmitted_image_sha256": "37f420f83cac2ac01a4fb0c58e7bcc79b63b50897f803ed7f4fa0db8bbd77930",
+  "image_size": [
+    614,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.866069,
+      "total": 10,
+      "remaining": 1.1339310000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.866068999999996,
+      "total": 100,
+      "remaining": 91.133931,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.512041802983731,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Raja Ampat landscape\", \"source_properties\": \"Iconic conical karst islands emerging from turquoise water, representing the geographical and symbolic heart of Papua.\", \"target_situation\": \"The historical and political integration of Papua into Indonesia by three key figures.\", \"mapping\": \"The three men sit before the islands they represent, their foundational roles mirroring the solid, emerging peaks of the Papuan landscape they sought to integrate.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "8ZzLaoCIKMaS_uMPmu6wkA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 654500,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1309,
+      "total_backend_latency_ms": 1774,
+      "total_tokens": 1406
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8670145,
+      "total": 10,
+      "remaining": 1.1329855000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.867014499999996,
+      "total": 100,
+      "remaining": 91.1329855,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009455,
+  "fields": {
+    "source_object": "Raja Ampat landscape",
+    "source_properties": "Iconic conical karst islands emerging from turquoise water, representing the geographical and symbolic heart of Papua.",
+    "target_situation": "The historical and political integration of Papua into Indonesia by three key figures.",
+    "mapping": "The three men sit before the islands they represent, their foundational roles mirroring the solid, emerging peaks of the Papuan landscape they sought to integrate.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Raja Ampat landscape\nsource_properties: Iconic conical karst islands emerging from turquoise water, representing the geographical and symbolic heart of Papua.\ntarget_situation: The historical and political integration of Papua into Indonesia by three key figures.\nmapping: The three men sit before the islands they represent, their foundational roles mirroring the solid, emerging peaks of the Papuan landscape they sought to integrate.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

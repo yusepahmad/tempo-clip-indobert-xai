@@ -1,0 +1,87 @@
+{
+  "index": 32,
+  "sample_id": "TMP-59340BC01968",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5516de559094371ce3dbd508a6aa72d2a25c1fe9bcea92b94d223af412542995",
+  "image_sha256": "59340bc019686b4e474499718664c6c8da2ca4e6a7dde8c8a469c77c8f7461d2",
+  "transmitted_image_sha256": "c1ef19aa54d80acb1f8ce0b06194c589c36b7a3236bc480174336143bf26179d",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.055409000000001,
+      "total": 10,
+      "remaining": 1.944590999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.055408999999997,
+      "total": 100,
+      "remaining": 91.944591,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.407346253748983,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"rats\",\n  \"source_properties\": \"vermin that scurry, scavenge, and cause decay within structures\",\n  \"target_situation\": \"alleged tax bribery involving a high-ranking official\",\n  \"mapping\": \"rats scavenging among falling money symbolize corrupt officials secretly draining public funds from the crumbling integrity of a government building\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "-I3LaouNCvDe_uMPnvjrqQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674500,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1349,
+      "total_backend_latency_ms": 1875,
+      "total_tokens": 1440
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0563565,
+      "total": 10,
+      "remaining": 1.9436435000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.056356500000007,
+      "total": 100,
+      "remaining": 91.9436435,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009475,
+  "fields": {
+    "source_object": "rats",
+    "source_properties": "vermin that scurry, scavenge, and cause decay within structures",
+    "target_situation": "alleged tax bribery involving a high-ranking official",
+    "mapping": "rats scavenging among falling money symbolize corrupt officials secretly draining public funds from the crumbling integrity of a government building",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: rats\nsource_properties: vermin that scurry, scavenge, and cause decay within structures\ntarget_situation: alleged tax bribery involving a high-ranking official\nmapping: rats scavenging among falling money symbolize corrupt officials secretly draining public funds from the crumbling integrity of a government building\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

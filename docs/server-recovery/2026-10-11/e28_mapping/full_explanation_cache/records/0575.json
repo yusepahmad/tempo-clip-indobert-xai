@@ -1,0 +1,87 @@
+{
+  "index": 575,
+  "sample_id": "TMP-5601DF7393CA",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "6c22ba78c63a907419a2d601aa9230b12b126169abd54c6bba5a88e4941f7fa2",
+  "image_sha256": "5601df7393ca3cf7cdc4086e83693a9737f91f5aaed9c3e5bd23ab7aa3c8ddd6",
+  "transmitted_image_sha256": "e6ec8156be6a60801740d11896f89534f5aec54f7a21c5f99ce76d9a77894e0e",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8267665,
+      "total": 10,
+      "remaining": 1.1732335000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.826766500000005,
+      "total": 100,
+      "remaining": 91.1732335,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.8500776859000325,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Three fingers and multiple hands\",\n  \"source_properties\": \"A hand showing two fingers joined by another hand showing one finger, supported by others.\",\n  \"target_situation\": \"Political movement pushing for a third presidential term for Joko Widodo.\",\n  \"mapping\": \"Combining fingers to create three symbolizes the effort to manufacture a third term mandate.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "LJzLarqTMpic_uMP95SR0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682000,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1364,
+      "total_backend_latency_ms": 1847,
+      "total_tokens": 1456
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8277245,
+      "total": 10,
+      "remaining": 1.1722754999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.827724500000002,
+      "total": 100,
+      "remaining": 91.1722755,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000958,
+  "fields": {
+    "source_object": "Three fingers and multiple hands",
+    "source_properties": "A hand showing two fingers joined by another hand showing one finger, supported by others.",
+    "target_situation": "Political movement pushing for a third presidential term for Joko Widodo.",
+    "mapping": "Combining fingers to create three symbolizes the effort to manufacture a third term mandate.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Three fingers and multiple hands\nsource_properties: A hand showing two fingers joined by another hand showing one finger, supported by others.\ntarget_situation: Political movement pushing for a third presidential term for Joko Widodo.\nmapping: Combining fingers to create three symbolizes the effort to manufacture a third term mandate.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

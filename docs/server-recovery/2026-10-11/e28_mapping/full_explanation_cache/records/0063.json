@@ -1,0 +1,87 @@
+{
+  "index": 63,
+  "sample_id": "TMP-B9EBF3D5D96E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b05314fbe4008be272baa17265ca27ee31cb1c0795efc9c664a8ebd06246bd7a",
+  "image_sha256": "b9ebf3d5d96e2fe3f3d88c0351d85b0bd5ef4f949c94654d975731f0eb4f1ba2",
+  "transmitted_image_sha256": "5b9098e2b8d42f1f5e16c42ab11cdc26170fd93e85ee3aed75c54eabbd23c5ce",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.098336,
+      "total": 10,
+      "remaining": 1.9016640000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.098336000000003,
+      "total": 100,
+      "remaining": 91.901664,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9645997467450798,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"pinball machine\",\n  \"source_properties\": \"slanted board, bouncing ball, bumpers, and flippers controlled by an external player\",\n  \"target_situation\": \"Jokowi navigating political pressure from coalition leaders regarding the Budi Gunawan nomination\",\n  \"mapping\": \"Jokowi is the ball being bounced between political interests (bumpers) while flippers manipulate his direction.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "yY7LaraIHP-o_uMPl6-88Q4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 103,
+      "cost": {
+        "input_tokens_cost_nanodollars": 670000,
+        "output_tokens_cost_nanodollars": 309000
+      },
+      "prompt_tokens": 1340,
+      "total_backend_latency_ms": 1537,
+      "total_tokens": 1443
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.099315,
+      "total": 10,
+      "remaining": 1.9006849999999993,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.099315000000004,
+      "total": 100,
+      "remaining": 91.900685,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000979,
+  "fields": {
+    "source_object": "pinball machine",
+    "source_properties": "slanted board, bouncing ball, bumpers, and flippers controlled by an external player",
+    "target_situation": "Jokowi navigating political pressure from coalition leaders regarding the Budi Gunawan nomination",
+    "mapping": "Jokowi is the ball being bounced between political interests (bumpers) while flippers manipulate his direction.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: pinball machine\nsource_properties: slanted board, bouncing ball, bumpers, and flippers controlled by an external player\ntarget_situation: Jokowi navigating political pressure from coalition leaders regarding the Budi Gunawan nomination\nmapping: Jokowi is the ball being bounced between political interests (bumpers) while flippers manipulate his direction.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

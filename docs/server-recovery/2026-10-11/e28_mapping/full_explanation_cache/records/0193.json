@@ -1,0 +1,87 @@
+{
+  "index": 193,
+  "sample_id": "TMP-93229C7912BA",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c039d19cfbc9d6cde319ce263b1c5d0ea4afe491b0c48a86daf573c3b7bcf16c",
+  "image_sha256": "93229c7912baa769b0ba961ce1c644a31c597b92acf9d33cb00c5b5e4986ef22",
+  "transmitted_image_sha256": "2af90c872abefffa4a12a0a1c5fadcb55a4d6330aab22e45b5d9532a5cca5b01",
+  "image_size": [
+    300,
+    393
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2889675,
+      "total": 10,
+      "remaining": 1.7110325,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.288967499999998,
+      "total": 100,
+      "remaining": 91.7110325,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.931411212310195,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"fishing/campaigning in muddy water\",\n  \"source_properties\": \"Murky, dark water filled with debris, making visibility difficult while opportunistic figures navigate it by boat.\",\n  \"target_situation\": \"Political opportunism during a crisis or disaster.\",\n  \"mapping\": \"The murky floodwater represents a chaotic public crisis where politicians use the turmoil to 'fish' for popularity or political gain.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "MZLLau6bAreR_uMPm_GWuA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 103,
+      "cost": {
+        "input_tokens_cost_nanodollars": 655500,
+        "output_tokens_cost_nanodollars": 309000
+      },
+      "prompt_tokens": 1311,
+      "total_backend_latency_ms": 1617,
+      "total_tokens": 1414
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.289932,
+      "total": 10,
+      "remaining": 1.7100679999999997,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.289931999999993,
+      "total": 100,
+      "remaining": 91.710068,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009645,
+  "fields": {
+    "source_object": "fishing/campaigning in muddy water",
+    "source_properties": "Murky, dark water filled with debris, making visibility difficult while opportunistic figures navigate it by boat.",
+    "target_situation": "Political opportunism during a crisis or disaster.",
+    "mapping": "The murky floodwater represents a chaotic public crisis where politicians use the turmoil to 'fish' for popularity or political gain.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: fishing/campaigning in muddy water\nsource_properties: Murky, dark water filled with debris, making visibility difficult while opportunistic figures navigate it by boat.\ntarget_situation: Political opportunism during a crisis or disaster.\nmapping: The murky floodwater represents a chaotic public crisis where politicians use the turmoil to 'fish' for popularity or political gain.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

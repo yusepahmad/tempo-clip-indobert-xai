@@ -1,0 +1,93 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "macro_f1": 0.5385617683922208,
+  "folds": [
+    {
+      "fold": 1,
+      "params": {
+        "C": 0.1,
+        "analyzer": "word_char",
+        "class_weight": "balanced",
+        "kernel": "linear",
+        "lexical_weight": 1,
+        "semantic_weight": 1,
+        "view": "context"
+      },
+      "inner_macro_f1": 0.5494701110355344
+    },
+    {
+      "fold": 2,
+      "params": {
+        "C": 0.1,
+        "analyzer": "word_char",
+        "class_weight": "balanced",
+        "kernel": "linear",
+        "lexical_weight": 1,
+        "semantic_weight": 1,
+        "view": "context"
+      },
+      "inner_macro_f1": 0.5267631744578295
+    },
+    {
+      "fold": 3,
+      "params": {
+        "C": 0.1,
+        "analyzer": "word_char",
+        "class_weight": "balanced",
+        "kernel": "linear",
+        "lexical_weight": 2,
+        "semantic_weight": 1,
+        "view": "caption"
+      },
+      "inner_macro_f1": 0.5245355458650998
+    },
+    {
+      "fold": 4,
+      "params": {
+        "C": 1,
+        "analyzer": "word",
+        "class_weight": null,
+        "kernel": "linear",
+        "lexical_weight": 1,
+        "semantic_weight": 1,
+        "view": "caption"
+      },
+      "inner_macro_f1": 0.5077714758576861
+    },
+    {
+      "fold": 5,
+      "params": {
+        "C": 1,
+        "analyzer": "word_char",
+        "class_weight": "balanced",
+        "kernel": "rbf",
+        "lexical_weight": 0.5,
+        "semantic_weight": 1,
+        "view": "caption"
+      },
+      "inner_macro_f1": 0.5289982304379232
+    }
+  ],
+  "verifier_sha256": "875cc2f5f6490b3d3282c47269009913674dc27e935f037e5fc398d25dcab284",
+  "sha256": {
+    "protocol.json": "a5fe8b0e2448f53ec449b8f85729f849bfd7595e49c23b0bb9d1b0f4d12c2104",
+    "metrics.json": "c16425e0abe603fbcd4837798ef6b9b7da951deffc02e87f57cf817e614162a3",
+    "oof.csv": "fb70ed385b79393df898fbf9ff7efd61fdb28baa19ce4f3ae8e6628aefcc979a",
+    "fold_1.json": "095e4aaa0e4779e8dbab24a469e4c78cf340e9a2e392125a2e86e70a51f20b77",
+    "fold_2.json": "42cdae96512cbb743a917258636ebab77b2f6493ae5b22255424a04bdf6d91fc",
+    "fold_3.json": "bc5a7d2e6405c63e7a7d1f85f5b5f1572bb70c7a1fbe0898f5a898af577bd800",
+    "fold_4.json": "9830114782ffcff813572dbcd7e787e403657d06239261e9e226fd4538b4536d",
+    "fold_5.json": "479584e18d7d6d9a89786e6489f112ff9dd07ec46b1350414ef9ad1a3e833358"
+  },
+  "checks": [
+    "original740 IDs/truth/baselinefold and pinned caption/features/sources",
+    "256grid ordering/firstargmax; all selected inner3 scores reproduced with raw sparse SVC",
+    "training-only vocabularies/IDF/scalers/outerrefits/all740 predictions reproduced",
+    "manual seven-class confusion/perclass/MacroF1"
+  ],
+  "limitations": [
+    "full grid not rerun with raw SVC; repeated experiment selection bias remains",
+    "caption semantics not certified; upstream encoder reproduction sampled12view/sample pairs"
+  ]
+}

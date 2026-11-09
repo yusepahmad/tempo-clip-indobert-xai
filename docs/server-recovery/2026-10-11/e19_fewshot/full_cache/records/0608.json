@@ -1,0 +1,86 @@
+{
+  "index": 608,
+  "sample_id": "TMP-EC2CB55A7B91",
+  "fold": 1,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "1cdcaf3c4ff6cfd3aa8651e7a49cd63fc09c1b5f86b7edfc59c4a349c71aa6ba",
+  "image_sha256": "ec2cb55a7b91e4aca38df8c12b00c01c7d8fd27b7bb407b2a975ab1f3cc182a9",
+  "transmitted_image_sha256": "c8a22b956b43bb21f0dd8a435615e5447992d29e1ce19d8bf8ec983c19e83468",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 6.1211665,
+      "total": 10,
+      "remaining": 3.8788335,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 6.121166500000001,
+      "total": 100,
+      "remaining": 93.8788335,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 20.005381046095863,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "ORA): ... Judul dan teks: Mengapa Rini Soemarno Pepesan Kosong Gugatan Prabowo; Setengah Hati Batasi Subsidi BBM. Mengepalai tim transisi pemerint\"\n    *   Wait, that's not it.\n    *   Let's look for \"Gerilya\" in the examples.\n    *   Example for D (LAINNYA): \"Judul dan teks: Gerilya untuk Putra Mahkota Peluang Gibran Rakabuming Raka...\" -> THIS IS THE ONE.\n    *   Let's look at its description: \"Dua figur manusia berdiri di depan sebuah gerbang besi...\". This does NOT match the image.\n    *   Wait, the prompt says \"gambar yang disert",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "8QDLaviqH8jg_uMPp72C-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 4092,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3933
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2057500,
+        "output_tokens_cost_nanodollars": 12276000
+      },
+      "prompt_tokens": 4115,
+      "total_backend_latency_ms": 18987,
+      "total_tokens": 8207
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 6.1355,
+      "total": 10,
+      "remaining": 3.8644999999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 6.135499999999993,
+      "total": 100,
+      "remaining": 93.8645,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0143335,
+  "code": "INVALID",
+  "strict_code": "INVALID",
+  "parsing_rule": "unrecognized_no_explicit_answer",
+  "finish_reason": "length",
+  "prediction": "INVALID"
+}

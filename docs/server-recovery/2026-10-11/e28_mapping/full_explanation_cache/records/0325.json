@@ -1,0 +1,87 @@
+{
+  "index": 325,
+  "sample_id": "TMP-E9D77A3E543B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0a0a2db5fdd0afc691b103bdb7515d784dadb8e1a3fa5011ddea5942e041c01a",
+  "image_sha256": "e9d77a3e543b8aed65e6d29040abe6a836a4b9765ea403cd37188f6520abeeca",
+  "transmitted_image_sha256": "8ef61f66b6a0b23245a46635abef8e3cc67bd29089c5ca6536a444ce6356f01f",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4854875,
+      "total": 10,
+      "remaining": 1.5145125000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.485487500000005,
+      "total": 100,
+      "remaining": 91.5145125,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.291414103005081,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"boxing ring\", \"source_properties\": \"enclosed space defined by elastic ropes and corner posts for combat\", \"target_situation\": \"Rizal Ramli's confrontational role and controversial statements within the political arena\", \"mapping\": \"The ropes and corner post frame Ramli as a fighter in a ring, highlighting his combative political style.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ppXLao6qKs2i_uMP67qv2Qc",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 84,
+      "cost": {
+        "input_tokens_cost_nanodollars": 666000,
+        "output_tokens_cost_nanodollars": 252000
+      },
+      "prompt_tokens": 1332,
+      "total_backend_latency_ms": 1731,
+      "total_tokens": 1416
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4864055,
+      "total": 10,
+      "remaining": 1.5135945,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.486405500000004,
+      "total": 100,
+      "remaining": 91.5135945,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000918,
+  "fields": {
+    "source_object": "boxing ring",
+    "source_properties": "enclosed space defined by elastic ropes and corner posts for combat",
+    "target_situation": "Rizal Ramli's confrontational role and controversial statements within the political arena",
+    "mapping": "The ropes and corner post frame Ramli as a fighter in a ring, highlighting his combative political style.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: boxing ring\nsource_properties: enclosed space defined by elastic ropes and corner posts for combat\ntarget_situation: Rizal Ramli's confrontational role and controversial statements within the political arena\nmapping: The ropes and corner post frame Ramli as a fighter in a ring, highlighting his combative political style.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,90 @@
+{
+  "index": 155,
+  "sample_id": "TMP-06FEDE8D6956",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "638422e50cade06fe3c01318fc358a1f2f3d76159fb6d0196c1448529186b0cf",
+  "image_sha256": "06fede8d6956ab449ff9559e9100184b4d9486c57ec340238933157ffac77a0f",
+  "transmitted_image_sha256": "b1021d81e4e6283f99af9ed5b62f26e6c958918a82986a7bb0d47bcc37a83d7f",
+  "image_size": [
+    583,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.23562,
+      "total": 10,
+      "remaining": 1.7643799999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.235619999999997,
+      "total": 100,
+      "remaining": 91.76438,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.492247893009335,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n \"source_object\": \"A barber trimming a giant coronavirus particle's spikes.\",\n \"source_properties\": \"Precision cutting and grooming to manage growth while wearing protective gear.\",\n \"target_situation\": \"Implementing 'new normal' protocols to restart business activities during the pandemic.\",\n \"mapping\": \"Trimming spikes symbolizes attempting to safely manage and control viral risks to allow economic reopening.\",\n \"uncertainty\": \"None.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "MZHLapHzMuu1_PUPl9nYyQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 909,
+      "completion_tokens_details": {
+        "reasoning_tokens": 818
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 680500,
+        "output_tokens_cost_nanodollars": 2727000
+      },
+      "prompt_tokens": 1361,
+      "total_backend_latency_ms": 5243,
+      "total_tokens": 2270
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2390275,
+      "total": 10,
+      "remaining": 1.7609724999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.239027500000006,
+      "total": 100,
+      "remaining": 91.7609725,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0034075,
+  "fields": {
+    "source_object": "A barber trimming a giant coronavirus particle's spikes.",
+    "source_properties": "Precision cutting and grooming to manage growth while wearing protective gear.",
+    "target_situation": "Implementing 'new normal' protocols to restart business activities during the pandemic.",
+    "mapping": "Trimming spikes symbolizes attempting to safely manage and control viral risks to allow economic reopening.",
+    "uncertainty": "None."
+  },
+  "explanation": "source_object: A barber trimming a giant coronavirus particle's spikes.\nsource_properties: Precision cutting and grooming to manage growth while wearing protective gear.\ntarget_situation: Implementing 'new normal' protocols to restart business activities during the pandemic.\nmapping: Trimming spikes symbolizes attempting to safely manage and control viral risks to allow economic reopening.\nuncertainty: None.",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,90 @@
+{
+  "index": 638,
+  "sample_id": "TMP-5AAA4BD2B9F9",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8158b840d24cc0064ec3ec5d1a99d304616e6abd51314a2c8d0782ad84cf0358",
+  "image_sha256": "5aaa4bd2b9f9fbfc82451d46ec458a346671184b9560b851fb619d3ca808161a",
+  "transmitted_image_sha256": "f92c927b3e855de5b61ba99c35e443de834f27dbf7fd2258d4f484858a8e5375",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.904579,
+      "total": 10,
+      "remaining": 1.095421,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.904578999999998,
+      "total": 100,
+      "remaining": 91.095421,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.876089443918318,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n\"source_object\": \"An oversized book\",\n\"source_properties\": \"Held by a giant, it dwarfs the person standing on its pages, signifying overwhelming power and scale.\",\n\"target_situation\": \"The government's maneuver in issuing a sudden regulation for the complex Job Creation Omnibus Law.\",\n\"mapping\": \"The giant state figure manipulates the massive law book like a stage prop, leaving the common citizen powerless inside.\",\n\"uncertainty\": \"None evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "wJ3Lapq9H77i_uMPyOzU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1139,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1037
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 679000,
+        "output_tokens_cost_nanodollars": 3417000
+      },
+      "prompt_tokens": 1358,
+      "total_backend_latency_ms": 6444,
+      "total_tokens": 2497
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.908675,
+      "total": 10,
+      "remaining": 1.0913249999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.908675000000002,
+      "total": 100,
+      "remaining": 91.091325,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.004096,
+  "fields": {
+    "source_object": "An oversized book",
+    "source_properties": "Held by a giant, it dwarfs the person standing on its pages, signifying overwhelming power and scale.",
+    "target_situation": "The government's maneuver in issuing a sudden regulation for the complex Job Creation Omnibus Law.",
+    "mapping": "The giant state figure manipulates the massive law book like a stage prop, leaving the common citizen powerless inside.",
+    "uncertainty": "None evident"
+  },
+  "explanation": "source_object: An oversized book\nsource_properties: Held by a giant, it dwarfs the person standing on its pages, signifying overwhelming power and scale.\ntarget_situation: The government's maneuver in issuing a sudden regulation for the complex Job Creation Omnibus Law.\nmapping: The giant state figure manipulates the massive law book like a stage prop, leaving the common citizen powerless inside.\nuncertainty: None evident",
+  "finish_reason": "stop",
+  "usable": true
+}

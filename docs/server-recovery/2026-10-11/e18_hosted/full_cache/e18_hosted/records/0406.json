@@ -1,0 +1,83 @@
+{
+  "index": 406,
+  "sample_id": "TMP-0B2A0669A876",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "7737e2cfaf8edc262eb22cbe3917984eba562623a0349172346937506c380bbf",
+  "image_sha256": "0b2a0669a8769193c5d8450469b2f5528b395d1f4146859b66d547c5fd5c3c6f",
+  "transmitted_image_sha256": "bcca97691c0c1c86272803c1a254fbd5b4c9725d6b207ec2bebad4cd6c56b1eb",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.5190219999999997,
+      "total": 10,
+      "remaining": 8.480978,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.5190220000000068,
+      "total": 100,
+      "remaining": 98.480978,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.829610203159973,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "B berdasarkan deskripsi yang diberikan, yaitu tindakan menutup mulut dan ekspresi wajah yang intens dipetakan sebagai perilaku biologis yang menggambarkan tekanan atau krisis. Domain sumber \"perilaku biologis\" termasuk dalam kategori **B: HEWAN_TUBUH** (hewan, anatomi, deformasi atau perilaku biologis sebagai kiasan).",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "hdzKapKnCpjM_PUPlq7quAo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1395,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1324
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 786500,
+        "output_tokens_cost_nanodollars": 4185000
+      },
+      "prompt_tokens": 1573,
+      "total_backend_latency_ms": 6839,
+      "total_tokens": 2968
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.5239934999999996,
+      "total": 10,
+      "remaining": 8.4760065,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.523993500000003,
+      "total": 100,
+      "remaining": 98.4760065,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.0049715
+}

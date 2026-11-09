@@ -1,0 +1,87 @@
+{
+  "index": 608,
+  "sample_id": "TMP-EC2CB55A7B91",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8905ee48b21fad9ae080b2bec558e13bed2fa2e4b366b66055e69b99504a2ae4",
+  "image_sha256": "ec2cb55a7b91e4aca38df8c12b00c01c7d8fd27b7bb407b2a975ab1f3cc182a9",
+  "transmitted_image_sha256": "73b8db833f35dc087e43d5f746b22e3fa3fc510f0ebe422724cc7d4ab9add693",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8717125,
+      "total": 10,
+      "remaining": 1.1282875000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.871712500000001,
+      "total": 100,
+      "remaining": 91.1282875,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1267993268556893,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"shadow\", \"source_properties\": \"dark silhouette cast behind an object, mirroring its form while appearing detached or influential\", \"target_situation\": \"political influence and dynastic succession\", \"mapping\": \"The shadow, resembling President Jokowi, looms behind Gibran Rakabuming Raka, symbolizing the father's backing and influence in securing his son's vice-presidential candidacy.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "BZ3LaruWIMXh_uMPyN6L8Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682000,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1364,
+      "total_backend_latency_ms": 1611,
+      "total_tokens": 1456
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8726705,
+      "total": 10,
+      "remaining": 1.1273295,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.872670499999998,
+      "total": 100,
+      "remaining": 91.1273295,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000958,
+  "fields": {
+    "source_object": "shadow",
+    "source_properties": "dark silhouette cast behind an object, mirroring its form while appearing detached or influential",
+    "target_situation": "political influence and dynastic succession",
+    "mapping": "The shadow, resembling President Jokowi, looms behind Gibran Rakabuming Raka, symbolizing the father's backing and influence in securing his son's vice-presidential candidacy.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: shadow\nsource_properties: dark silhouette cast behind an object, mirroring its form while appearing detached or influential\ntarget_situation: political influence and dynastic succession\nmapping: The shadow, resembling President Jokowi, looms behind Gibran Rakabuming Raka, symbolizing the father's backing and influence in securing his son's vice-presidential candidacy.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 341,
+  "sample_id": "TMP-43D21C82CC1A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "cc9f1fc46d360da2ac7f67bf4c07bdc4605aa5221c90d0987a9af651538c3dc4",
+  "image_sha256": "43d21c82cc1a4467c44c024746fe6fd14f8773e69636e4c8b06766c7331d2fcc",
+  "transmitted_image_sha256": "9d3ff2a9cb8b7dcd42c192a0b0a8dd10dd1591beff1cf6896f13cb166a6c8a23",
+  "image_size": [
+    407,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.503434,
+      "total": 10,
+      "remaining": 1.4965659999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.503433999999999,
+      "total": 100,
+      "remaining": 91.496566,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3768913531675935,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"none evident\",\n  \"source_properties\": \"literal depiction of an armed confrontation on a public road\",\n  \"target_situation\": \"The 2016 Jakarta terrorist attacks and human trafficking investigations.\",\n  \"mapping\": \"The cover literally shows a perpetrator pointing a firearm at a police officer.\",\n  \"uncertainty\": \"The image is documentary, showing the actual event rather than a symbolic analogy.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "CpbLapqaOqCm_uMPsO6HgA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 658000,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1316,
+      "total_backend_latency_ms": 1994,
+      "total_tokens": 1413
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.504383,
+      "total": 10,
+      "remaining": 1.4956169999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.504383000000004,
+      "total": 100,
+      "remaining": 91.495617,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000949,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "literal depiction of an armed confrontation on a public road",
+    "target_situation": "The 2016 Jakarta terrorist attacks and human trafficking investigations.",
+    "mapping": "The cover literally shows a perpetrator pointing a firearm at a police officer.",
+    "uncertainty": "The image is documentary, showing the actual event rather than a symbolic analogy."
+  },
+  "explanation": "source_object: none evident\nsource_properties: literal depiction of an armed confrontation on a public road\ntarget_situation: The 2016 Jakarta terrorist attacks and human trafficking investigations.\nmapping: The cover literally shows a perpetrator pointing a firearm at a police officer.\nuncertainty: The image is documentary, showing the actual event rather than a symbolic analogy.",
+  "finish_reason": "stop",
+  "usable": true
+}

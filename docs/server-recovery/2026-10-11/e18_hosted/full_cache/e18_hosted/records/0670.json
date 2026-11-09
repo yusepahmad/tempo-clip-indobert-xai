@@ -1,0 +1,83 @@
+{
+  "index": 670,
+  "sample_id": "TMP-330519367E37",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "37bf6ddbbeaf2a679a66559bb702d65eecbacecbf4cef444caae467b61fb5a4e",
+  "image_sha256": "330519367e37792e41995290dad955486fcc50ab0ea5d209215f4c5a7835e84c",
+  "transmitted_image_sha256": "ddc28b8bdb5e4888906a1837a76772848db90e0e09783b69ddbac1196023e340",
+  "image_size": [
+    292,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.507836,
+      "total": 10,
+      "remaining": 7.492164,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.5078359999999975,
+      "total": 100,
+      "remaining": 97.492164,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.844180763000622,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "B Based on the image and the provided context, the classification is:\n\n**A** (BENCANA_JERAT)\n\n**Alasan:** Teks pada sampul secara eksplisit menyebutkan \"Nawacita menjadi **bencana** yang berlipat ganda\". Selain itu, deskripsi alasan yang diberikan dalam soal menyatakan bahwa ilustrasi tersebut dipetakan ke domain **bencana** dan bahaya, yang sesuai dengan kategori A (ancaman, bencana, perangkap, jerat). Penekanan pada \"Nawadosa\" (Sembilan Dosa) juga memperkuat tema kemalangan atau kondisi negatif yang masuk dalam ranah ancaman/bencana bagi demokrasi.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "3-XKarX2Hcmb_uMPlY2fwA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1374,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1231
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 773000,
+        "output_tokens_cost_nanodollars": 4122000
+      },
+      "prompt_tokens": 1546,
+      "total_backend_latency_ms": 7777,
+      "total_tokens": 2920
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.5127309999999996,
+      "total": 10,
+      "remaining": 7.487269,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.5127310000000023,
+      "total": 100,
+      "remaining": 97.487269,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.004895
+}

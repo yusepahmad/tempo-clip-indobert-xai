@@ -1,0 +1,87 @@
+{
+  "index": 699,
+  "sample_id": "TMP-4E2BAC7F6C40",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f420fd567252637ed7e7d40f0060ad3a52cb53d86d0786cd0d9bfa917ede7693",
+  "image_sha256": "4e2bac7f6c40a441299ff5760ee0c1066ff2b1ce83ddd0d580e593d1c35720ae",
+  "transmitted_image_sha256": "a2fabb9aee57b00b7bc5e6ec6184086611d8d42232962810c33734cd72d16237",
+  "image_size": [
+    581,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.017349,
+      "total": 10,
+      "remaining": 0.9826510000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.017348999999996,
+      "total": 100,
+      "remaining": 90.982651,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.8949207672849298,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"green plastic toy soldiers\",\n  \"source_properties\": \"Small, rigid, mass-produced figures being manually positioned by a larger, dominant hand.\",\n  \"target_situation\": \"The Indonesian military's regained 'dwifungsi' role and political maneuvers under leadership.\",\n  \"mapping\": \"Moving toy soldiers across a cityscape mimics controlling military personnel like pawns in politics.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "d5_LapPENdPj_uMPg-OC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 100,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680500,
+        "output_tokens_cost_nanodollars": 300000
+      },
+      "prompt_tokens": 1361,
+      "total_backend_latency_ms": 1457,
+      "total_tokens": 1461
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0183295,
+      "total": 10,
+      "remaining": 0.9816704999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.018329499999993,
+      "total": 100,
+      "remaining": 90.9816705,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009805,
+  "fields": {
+    "source_object": "green plastic toy soldiers",
+    "source_properties": "Small, rigid, mass-produced figures being manually positioned by a larger, dominant hand.",
+    "target_situation": "The Indonesian military's regained 'dwifungsi' role and political maneuvers under leadership.",
+    "mapping": "Moving toy soldiers across a cityscape mimics controlling military personnel like pawns in politics.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: green plastic toy soldiers\nsource_properties: Small, rigid, mass-produced figures being manually positioned by a larger, dominant hand.\ntarget_situation: The Indonesian military's regained 'dwifungsi' role and political maneuvers under leadership.\nmapping: Moving toy soldiers across a cityscape mimics controlling military personnel like pawns in politics.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

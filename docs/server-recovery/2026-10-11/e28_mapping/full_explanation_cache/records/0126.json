@@ -1,0 +1,87 @@
+{
+  "index": 126,
+  "sample_id": "TMP-EDC23D99278C",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "53d29fb9b37d65fb680318451a416fadcdb718aac58b080894d6ce3eee4ec7b9",
+  "image_sha256": "edc23d99278c6ea902eeb0f20c6f8ae01c8189144c2aed6a42b136aa35ecaa0f",
+  "transmitted_image_sha256": "742a62c3a6e611e317c356a1906cff92c8325bdeceef31243696749b21629528",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1922795,
+      "total": 10,
+      "remaining": 1.8077205000000003,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.192279499999998,
+      "total": 100,
+      "remaining": 91.8077205,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9272483810782433,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"marionette puppeteer\",\n  \"source_properties\": \"controlling movements of figures below using wooden crosses and strings\",\n  \"target_situation\": \"Setya Novanto's alleged manipulation and bribery in Indonesian political processes\",\n  \"mapping\": \"The puppeteer's strings represent illegal control over legislative outcomes and elections\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "bZDLapGbJb7i_uMPwfDU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678000,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1356,
+      "total_backend_latency_ms": 1651,
+      "total_tokens": 1447
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1932305,
+      "total": 10,
+      "remaining": 1.8067694999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.193230499999999,
+      "total": 100,
+      "remaining": 91.8067695,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000951,
+  "fields": {
+    "source_object": "marionette puppeteer",
+    "source_properties": "controlling movements of figures below using wooden crosses and strings",
+    "target_situation": "Setya Novanto's alleged manipulation and bribery in Indonesian political processes",
+    "mapping": "The puppeteer's strings represent illegal control over legislative outcomes and elections",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: marionette puppeteer\nsource_properties: controlling movements of figures below using wooden crosses and strings\ntarget_situation: Setya Novanto's alleged manipulation and bribery in Indonesian political processes\nmapping: The puppeteer's strings represent illegal control over legislative outcomes and elections\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

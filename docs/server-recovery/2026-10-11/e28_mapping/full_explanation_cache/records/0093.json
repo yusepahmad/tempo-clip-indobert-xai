@@ -1,0 +1,87 @@
+{
+  "index": 93,
+  "sample_id": "TMP-FF41B8F74B37",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "89c2a572618bea84b2a080333d84b98cceb408c89c7888a539d4043287527476",
+  "image_sha256": "ff41b8f74b3731be26092b211230df278f478db4a9b0c693c1e15175e8ec6381",
+  "transmitted_image_sha256": "bf90d531c3dba969de2a7c961d348adb3f6e4788f02e33fdd470aed05224f8fe",
+  "image_size": [
+    581,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.134026,
+      "total": 10,
+      "remaining": 1.8659739999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.134026000000006,
+      "total": 100,
+      "remaining": 91.865974,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.722567221149802,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"construction crane\",\n  \"source_properties\": \"heavy machinery, lifting and rearranging massive blocks\",\n  \"target_situation\": \"restructuring Indonesian state-owned enterprises (BUMN) under a new management entity\",\n  \"mapping\": \"Rearranging blocks mirrors the disruptive top-down overhaul of BUMN assets and management.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ho_LaoOlM7qi_uMPou_3-Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 88,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676500,
+        "output_tokens_cost_nanodollars": 264000
+      },
+      "prompt_tokens": 1353,
+      "total_backend_latency_ms": 1423,
+      "total_tokens": 1441
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1349665,
+      "total": 10,
+      "remaining": 1.8650334999999991,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.134966500000004,
+      "total": 100,
+      "remaining": 91.8650335,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009405,
+  "fields": {
+    "source_object": "construction crane",
+    "source_properties": "heavy machinery, lifting and rearranging massive blocks",
+    "target_situation": "restructuring Indonesian state-owned enterprises (BUMN) under a new management entity",
+    "mapping": "Rearranging blocks mirrors the disruptive top-down overhaul of BUMN assets and management.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: construction crane\nsource_properties: heavy machinery, lifting and rearranging massive blocks\ntarget_situation: restructuring Indonesian state-owned enterprises (BUMN) under a new management entity\nmapping: Rearranging blocks mirrors the disruptive top-down overhaul of BUMN assets and management.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 675,
+  "sample_id": "TMP-BE5D915E7856",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "19e8e41c7291d77a1bacf28e395f658f502975026cc99d7d80027c57ca80ad1c",
+  "image_sha256": "be5d915e78562a7ede6f7da8a2c4bf71d268fcd17a3c39bce99c5d91a5aaddf2",
+  "transmitted_image_sha256": "a09d99d5ae9743ee838a222be3a08d7e7de0cb5caab1ef12dd989a283d36e474",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.965736,
+      "total": 10,
+      "remaining": 1.0342640000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.965736000000007,
+      "total": 100,
+      "remaining": 91.034264,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.4730034838430583,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"queue of people\", \"source_properties\": \"ordered line, waiting to reach a desk, transactional activity, architectural pillars\", \"target_situation\": \"political distribution of ministerial positions by Prabowo Subianto to supporting parties\", \"mapping\": \"People lining up to register at a desk represent political figures seeking government appointments. The bureaucratic setting mirrors the transactional nature of expanding the cabinet to accommodate allies.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "wZ7Lau3YIK2u_PUPk7_C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677000,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1354,
+      "total_backend_latency_ms": 1601,
+      "total_tokens": 1447
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.966692,
+      "total": 10,
+      "remaining": 1.033308,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.966691999999995,
+      "total": 100,
+      "remaining": 91.033308,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000956,
+  "fields": {
+    "source_object": "queue of people",
+    "source_properties": "ordered line, waiting to reach a desk, transactional activity, architectural pillars",
+    "target_situation": "political distribution of ministerial positions by Prabowo Subianto to supporting parties",
+    "mapping": "People lining up to register at a desk represent political figures seeking government appointments. The bureaucratic setting mirrors the transactional nature of expanding the cabinet to accommodate allies.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: queue of people\nsource_properties: ordered line, waiting to reach a desk, transactional activity, architectural pillars\ntarget_situation: political distribution of ministerial positions by Prabowo Subianto to supporting parties\nmapping: People lining up to register at a desk represent political figures seeking government appointments. The bureaucratic setting mirrors the transactional nature of expanding the cabinet to accommodate allies.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

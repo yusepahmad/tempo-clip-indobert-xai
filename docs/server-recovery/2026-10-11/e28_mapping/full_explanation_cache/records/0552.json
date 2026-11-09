@@ -1,0 +1,87 @@
+{
+  "index": 552,
+  "sample_id": "TMP-D42AC600C320",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "7e9ecd3ad62e112ce8187dfdf901ffa6eb1b1d73b5d9eb3aab92abcc39d0e187",
+  "image_sha256": "d42ac600c3202d5af6bf21030db192b5e0d2ed4877533001569de8defcc03c8b",
+  "transmitted_image_sha256": "93526b4c65f92b55e6f126cb145bea2706f2aea45e2bdfe5335a5e1b9f2eea75",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.797036,
+      "total": 10,
+      "remaining": 1.2029639999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.797036000000006,
+      "total": 100,
+      "remaining": 91.202964,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3865066063590348,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Raising the Flag on Iwo Jima photograph\",\n  \"source_properties\": \"Group effort to hoist a monumental symbolic object atop a hill.\",\n  \"target_situation\": \"The development and promotion of the Nusantara vaccine by military forces.\",\n  \"mapping\": \"Soldiers raising a giant syringe replaces Marines raising the American flag.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "iZvLapPqN_De_uMPnvjrqQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 89,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 267000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 1765,
+      "total_tokens": 1436
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7979765,
+      "total": 10,
+      "remaining": 1.2020234999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.797976500000004,
+      "total": 100,
+      "remaining": 91.2020235,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009405,
+  "fields": {
+    "source_object": "Raising the Flag on Iwo Jima photograph",
+    "source_properties": "Group effort to hoist a monumental symbolic object atop a hill.",
+    "target_situation": "The development and promotion of the Nusantara vaccine by military forces.",
+    "mapping": "Soldiers raising a giant syringe replaces Marines raising the American flag.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Raising the Flag on Iwo Jima photograph\nsource_properties: Group effort to hoist a monumental symbolic object atop a hill.\ntarget_situation: The development and promotion of the Nusantara vaccine by military forces.\nmapping: Soldiers raising a giant syringe replaces Marines raising the American flag.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

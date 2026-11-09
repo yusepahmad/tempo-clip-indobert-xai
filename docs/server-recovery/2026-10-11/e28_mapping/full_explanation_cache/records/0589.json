@@ -1,0 +1,87 @@
+{
+  "index": 589,
+  "sample_id": "TMP-68D51DE214D3",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "7a054a0f389d8b7bbf2c0f36a0dc02f885899de0057e9b6fc3849bbe67b2f4d8",
+  "image_sha256": "68d51de214d30377dbb104430253b8d9270341b30e2d972c9b829b0ea6574611",
+  "transmitted_image_sha256": "7b6ac33b85b639e4ddbb509907b15e341b87736e448d7d9d817ec9d4a6b9272e",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8403665,
+      "total": 10,
+      "remaining": 1.1596335,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.840366500000002,
+      "total": 100,
+      "remaining": 91.1596335,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.185420298948884,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"open-pit mine with deep spiral tiers\",\n  \"source_properties\": \"a giant hole in the earth that swallows individuals who try to climb out\",\n  \"target_situation\": \"officials, politicians, and businessmen exploiting weak laws to mine nickel in Sulawesi\",\n  \"mapping\": \"The pit represents the destructive environmental and legal abyss created by their collaboration.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "gZzLauShApjM_PUPlq7quAo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 670000,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1340,
+      "total_backend_latency_ms": 1765,
+      "total_tokens": 1437
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8413275,
+      "total": 10,
+      "remaining": 1.1586724999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.841327500000006,
+      "total": 100,
+      "remaining": 91.1586725,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000961,
+  "fields": {
+    "source_object": "open-pit mine with deep spiral tiers",
+    "source_properties": "a giant hole in the earth that swallows individuals who try to climb out",
+    "target_situation": "officials, politicians, and businessmen exploiting weak laws to mine nickel in Sulawesi",
+    "mapping": "The pit represents the destructive environmental and legal abyss created by their collaboration.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: open-pit mine with deep spiral tiers\nsource_properties: a giant hole in the earth that swallows individuals who try to climb out\ntarget_situation: officials, politicians, and businessmen exploiting weak laws to mine nickel in Sulawesi\nmapping: The pit represents the destructive environmental and legal abyss created by their collaboration.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

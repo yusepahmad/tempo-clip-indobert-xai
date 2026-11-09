@@ -1,0 +1,87 @@
+{
+  "index": 403,
+  "sample_id": "TMP-B5FC710B3D30",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "17b7487e7a7d5eec292034d6082f1200d6015214a0f9d245bd1b8889ff873727",
+  "image_sha256": "b5fc710b3d300ed397f1d95b3b4c74fe861628b3fb1a55a77e397fc0737b8b21",
+  "transmitted_image_sha256": "712f03e3d8a6c7b484a158fb1901fddfd1cc7d9efe3fe5d524daeb14d7cebf36",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5879825,
+      "total": 10,
+      "remaining": 1.4120174999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.587982499999995,
+      "total": 100,
+      "remaining": 91.4120175,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.11279548285529,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Academy Award (Oscar) statues\",\n  \"source_properties\": \"Trophies awarded for excellence in acting and cinematic performance.\",\n  \"target_situation\": \"Setya Novanto's disappearance before an attempted arrest by the KPK.\",\n  \"mapping\": \"Novanto's actions are depicted as a dramatic performance, suggesting his 'disappearance' was staged acting to evade capture.\",\n  \"uncertainty\": \"None evident.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "opfLatq7Me2M_PUPu97KyQo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 103,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674000,
+        "output_tokens_cost_nanodollars": 309000
+      },
+      "prompt_tokens": 1348,
+      "total_backend_latency_ms": 2658,
+      "total_tokens": 1451
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5889655,
+      "total": 10,
+      "remaining": 1.4110344999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.5889655,
+      "total": 100,
+      "remaining": 91.4110345,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000983,
+  "fields": {
+    "source_object": "Academy Award (Oscar) statues",
+    "source_properties": "Trophies awarded for excellence in acting and cinematic performance.",
+    "target_situation": "Setya Novanto's disappearance before an attempted arrest by the KPK.",
+    "mapping": "Novanto's actions are depicted as a dramatic performance, suggesting his 'disappearance' was staged acting to evade capture.",
+    "uncertainty": "None evident."
+  },
+  "explanation": "source_object: Academy Award (Oscar) statues\nsource_properties: Trophies awarded for excellence in acting and cinematic performance.\ntarget_situation: Setya Novanto's disappearance before an attempted arrest by the KPK.\nmapping: Novanto's actions are depicted as a dramatic performance, suggesting his 'disappearance' was staged acting to evade capture.\nuncertainty: None evident.",
+  "finish_reason": "stop",
+  "usable": true
+}

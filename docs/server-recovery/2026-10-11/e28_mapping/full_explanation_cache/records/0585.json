@@ -1,0 +1,87 @@
+{
+  "index": 585,
+  "sample_id": "TMP-725B78917A5D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "658de3acde1ca8466c45b705956d814adb5fca3672c2334faa655bc350e0d5e9",
+  "image_sha256": "725b78917a5ddec460440a238e123aab3de394427d6a151579dae03e0d5f4ca9",
+  "transmitted_image_sha256": "ee03cbeb4ca23299db94be89bd0f3183cdd5fdf0d9dba1623adadf28bc018b33",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.83644,
+      "total": 10,
+      "remaining": 1.1635600000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.836439999999996,
+      "total": 100,
+      "remaining": 91.16356,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.740175754763186,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Hydroelectric dam spillway\", \"source_properties\": \"Massive scale, controlling and channeling vast volumes of water, physical barrier structure.\", \"target_situation\": \"Luhut Pandjaitan's alleged influence over the Kayan hydroelectric megaproject and green industrial zone.\", \"mapping\": \"A towering figure's hands manipulate the dam's gates, symbolizing how powerful officials control the flow of energy resources and industrial development.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "aJzLaq-4Ad7d_uMP45e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 689000,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1378,
+      "total_backend_latency_ms": 1984,
+      "total_tokens": 1479
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.837432,
+      "total": 10,
+      "remaining": 1.1625680000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.837432000000007,
+      "total": 100,
+      "remaining": 91.162568,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000992,
+  "fields": {
+    "source_object": "Hydroelectric dam spillway",
+    "source_properties": "Massive scale, controlling and channeling vast volumes of water, physical barrier structure.",
+    "target_situation": "Luhut Pandjaitan's alleged influence over the Kayan hydroelectric megaproject and green industrial zone.",
+    "mapping": "A towering figure's hands manipulate the dam's gates, symbolizing how powerful officials control the flow of energy resources and industrial development.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Hydroelectric dam spillway\nsource_properties: Massive scale, controlling and channeling vast volumes of water, physical barrier structure.\ntarget_situation: Luhut Pandjaitan's alleged influence over the Kayan hydroelectric megaproject and green industrial zone.\nmapping: A towering figure's hands manipulate the dam's gates, symbolizing how powerful officials control the flow of energy resources and industrial development.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

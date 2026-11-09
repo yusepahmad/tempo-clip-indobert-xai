@@ -1,0 +1,76 @@
+{
+  "status": "complete",
+  "smoke": true,
+  "fold": 1,
+  "schema": "revisi-ii-qwen-basic-paired-v1",
+  "protocol_sha256": "a97e18aa15a44520b4a36db000a9089a4e2a9c7d0772b8f81887b07b73f19039",
+  "source_sha256": "88a80feafa508a260c7f03c3c2660ee5e2a59acc77dc04fceb9d5ac000ee5e4a",
+  "split_sha256": "beeff1f08db726848a665e895c74a8792ffc2d96ab9d87190b645aeb910cd6f1",
+  "initial_adapter_sha256": "670b053913183d8159f96ed7e9fee15981c6eaa207b11a1469515c9297cf895e",
+  "adapter_sha256": "4233ffb417f1fd33d9ac49a1d54a653e731ef8d61ccb6e2a8acfc806270388e8",
+  "outer_train_samples": 8,
+  "reused_pilot_inner_history": false,
+  "seconds": 170.487665334,
+  "model_contract": "one shared Qwen3-VL LoRA adapter with three prompted objectives",
+  "selected_epoch": 1,
+  "micro_f1": {
+    "task1_issue": 0.75,
+    "task2_domain_sumber": 0.75,
+    "task3_primary_entity_type": 0.25
+  },
+  "macro_f1": {
+    "task1_issue": 0.18,
+    "task2_domain_sumber": 0.2571428571428572,
+    "task3_primary_entity_type": 0.125
+  },
+  "primary_metric": "macro_f1",
+  "input_scope": "image384+headline+supporting only; no E01 features",
+  "epoch_source": "fixed from corresponding rich E14 inner selection; no basic retuning",
+  "samples": 4,
+  "train_samples": 8,
+  "validation_samples": 4,
+  "history": [],
+  "refit_history": [
+    {
+      "epoch": 1,
+      "loss": 3.7052921288222933,
+      "seconds": 19.333364425999946
+    }
+  ],
+  "classes": {
+    "task1_issue": [
+      "corruption_and_bribery",
+      "economy_business_and_state_enterprise",
+      "election_and_political_competition",
+      "environment_and_natural_resources",
+      "human_rights_and_social_conflict",
+      "law_and_justice",
+      "other_issue",
+      "power_and_governance",
+      "public_policy_health_and_disaster",
+      "security_defense_and_terrorism"
+    ],
+    "task2_domain_sumber": [
+      "BENCANA_JERAT",
+      "HEWAN_TUBUH",
+      "KONSUMSI_TRANSAKSI",
+      "LAINNYA",
+      "MESIN_INFRASTRUKTUR",
+      "NON_METAFORA",
+      "PERMAINAN_KONTES"
+    ],
+    "task3_primary_entity_type": [
+      "business",
+      "civil_society_or_media",
+      "government",
+      "individual",
+      "judiciary_or_law_enforcement",
+      "legislature",
+      "multiple_or_other",
+      "political_party"
+    ]
+  },
+  "data_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "input_audit_sha256": "8b46d66f81eda9ba307cfdea1849728a5bda76bc83eee82130dbee6280e9247e",
+  "predictions_sha256": "bf4e2b1c28e942fbff7c8f34a77065a3a856d8509d7c571a83e2333f5e410d30"
+}

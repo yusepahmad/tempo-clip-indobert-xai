@@ -1,0 +1,90 @@
+{
+  "index": 734,
+  "sample_id": "TMP-BE9C8FCF0707",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "114d8ec47b97e5f5ba72b9dc66d185a0a47985314beb185d5fcbe7164a931f2a",
+  "image_sha256": "be9c8fcf0707a839cedff3a7eee172a77ea1640f9b5319b165b3d4d63589f56d",
+  "transmitted_image_sha256": "5fa82f3266b8116cd10260481239385a29ec0f4f1c7fdf7ecfcef118c06a7c52",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0634595,
+      "total": 10,
+      "remaining": 0.9365404999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.063459499999993,
+      "total": 100,
+      "remaining": 90.9365405,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.688347133342177,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Trail of green liquid droplets\",\n  \"source_properties\": \"Viscous and staining, creating a literal path that links a perpetrator to their actions.\",\n  \"target_situation\": \"Military intelligence officials' alleged involvement in an organized acid attack against a human rights activist.\",\n  \"mapping\": \"The trail of 'air keras' (acid) leads directly to the figure's feet, symbolizing how evidence ties the state apparatus to the crime.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "WKDLarCQDt-V_uMPmIWFyQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 981,
+      "completion_tokens_details": {
+        "reasoning_tokens": 868
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 682500,
+        "output_tokens_cost_nanodollars": 2943000
+      },
+      "prompt_tokens": 1365,
+      "total_backend_latency_ms": 5101,
+      "total_tokens": 2346
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.067085,
+      "total": 10,
+      "remaining": 0.9329149999999995,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.067085000000006,
+      "total": 100,
+      "remaining": 90.932915,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0036255,
+  "fields": {
+    "source_object": "Trail of green liquid droplets",
+    "source_properties": "Viscous and staining, creating a literal path that links a perpetrator to their actions.",
+    "target_situation": "Military intelligence officials' alleged involvement in an organized acid attack against a human rights activist.",
+    "mapping": "The trail of 'air keras' (acid) leads directly to the figure's feet, symbolizing how evidence ties the state apparatus to the crime.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: Trail of green liquid droplets\nsource_properties: Viscous and staining, creating a literal path that links a perpetrator to their actions.\ntarget_situation: Military intelligence officials' alleged involvement in an organized acid attack against a human rights activist.\nmapping: The trail of 'air keras' (acid) leads directly to the figure's feet, symbolizing how evidence ties the state apparatus to the crime.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

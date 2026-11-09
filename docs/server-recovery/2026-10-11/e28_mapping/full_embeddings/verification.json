@@ -1,0 +1,35 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "dimension": 1024,
+  "verifier_sha256": "c5dcc231a58bbff6154b2159d8d9ccf866b1992bdb517215541157b2de59d869",
+  "sampled_indices": [
+    0,
+    1,
+    37,
+    123,
+    369,
+    739
+  ],
+  "maximum_absolute_errors": {
+    "interpretation": 9.313225746154785e-08,
+    "interpretation_context": 1.2293457984924316e-07
+  },
+  "sha256": {
+    "embeddings.npz": "31cde64252e9b0e8868ed7c6b892f9ef1e4986016dec7a1ada27e213c6b69f52",
+    "meta.json": "0b9bd51123472f743654fbd4f1f171e12d73409e5f7bf6bbdd9d66bb42a633a5",
+    "protocol.json": "32d4416d6ff8b0df3b0501414808e757a7f2505ba75b67b7e33e246aa919a389",
+    "input_audit.jsonl": "7050ff1b16021d3d61daea5cac2de2650ea5d41ad62da66b68819f48876a8192"
+  },
+  "checks": [
+    "fully audited explanation740/original inputs and source hashes",
+    "all1480 text/token/truncation audit rows reconstructed",
+    "pinned official model/snapshot hashes and frozen CLS pooling",
+    "all arrays aligned finite float32 unit vectors",
+    "six predeclared indices per view reproduced within1e-5"
+  ],
+  "limitations": [
+    "only12 embeddings independently reproduced, not all1480",
+    "no Task2 quality score"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "index": 359,
+  "sample_id": "TMP-F35727B4ABEF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ef2c3d3e8a3924034c2c027b2f5b075ecea3d6756e3cbe9365f94387681a99d4",
+  "image_sha256": "f35727b4abefbc791f3fbf8ccb45fbac3ff9d690e2628466e9e381aae29f3810",
+  "transmitted_image_sha256": "d97a3882959266d5b2c2e01ecf63ac6fbbda20c1bc016710e5be5647d0718c7f",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.527848,
+      "total": 10,
+      "remaining": 1.4721519999999995,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.527848000000006,
+      "total": 100,
+      "remaining": 91.472152,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.144211602862924,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"industrial structure or building silhouettes\",\n  \"source_properties\": \"layered, tiered architectural profiles with cranes, signifying construction, planning, and systematic assembly.\",\n  \"target_situation\": \"Sri Mulyani Indrawati's return as Finance Minister to rebuild the Indonesian economy.\",\n  \"mapping\": \"The construction imagery merges with her face, suggesting she is the architect or foundation of national economic restructuring.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "gpbLaoboNcjg_uMPp72C-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "cost": {
+        "input_tokens_cost_nanodollars": 652000,
+        "output_tokens_cost_nanodollars": 312000
+      },
+      "prompt_tokens": 1304,
+      "total_backend_latency_ms": 2260,
+      "total_tokens": 1408
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.528812,
+      "total": 10,
+      "remaining": 1.4711879999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.528812000000002,
+      "total": 100,
+      "remaining": 91.471188,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000964,
+  "fields": {
+    "source_object": "industrial structure or building silhouettes",
+    "source_properties": "layered, tiered architectural profiles with cranes, signifying construction, planning, and systematic assembly.",
+    "target_situation": "Sri Mulyani Indrawati's return as Finance Minister to rebuild the Indonesian economy.",
+    "mapping": "The construction imagery merges with her face, suggesting she is the architect or foundation of national economic restructuring.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: industrial structure or building silhouettes\nsource_properties: layered, tiered architectural profiles with cranes, signifying construction, planning, and systematic assembly.\ntarget_situation: Sri Mulyani Indrawati's return as Finance Minister to rebuild the Indonesian economy.\nmapping: The construction imagery merges with her face, suggesting she is the architect or foundation of national economic restructuring.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

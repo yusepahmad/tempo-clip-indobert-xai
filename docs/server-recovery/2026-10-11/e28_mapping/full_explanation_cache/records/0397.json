@@ -1,0 +1,87 @@
+{
+  "index": 397,
+  "sample_id": "TMP-5FF9033A8731",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "2b2d61c1aeaffcdd10b5ce61ddf86deee18ea0f5b86dc45a7418ffac48aadb10",
+  "image_sha256": "5ff9033a8731d8d840499438637be3b5e5bc0120fc3bdd5d62bf6d7404870687",
+  "transmitted_image_sha256": "3b4ce5bb4c35fceba002989f69ba92729980bcbf55f17ff850222200d3f03e2c",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.57846,
+      "total": 10,
+      "remaining": 1.4215400000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.578460000000007,
+      "total": 100,
+      "remaining": 91.42154,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.6798437288962305,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Bolt cutters\",\n  \"source_properties\": \"Handheld tool designed for forcefully cutting through heavy metal chains, padlocks, or wire fencing.\",\n  \"target_situation\": \"A political figure bypassing or breaking established regulations regarding artificial islands.\",\n  \"mapping\": \"Using the tool to cut a fence symbolizes forcefully overcoming legal barriers and restrictions to gain access.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "d5fLarLhBLDe_uMP6urskA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 659500,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1319,
+      "total_backend_latency_ms": 2062,
+      "total_tokens": 1413
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5794015,
+      "total": 10,
+      "remaining": 1.4205985000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.579401500000003,
+      "total": 100,
+      "remaining": 91.4205985,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009415,
+  "fields": {
+    "source_object": "Bolt cutters",
+    "source_properties": "Handheld tool designed for forcefully cutting through heavy metal chains, padlocks, or wire fencing.",
+    "target_situation": "A political figure bypassing or breaking established regulations regarding artificial islands.",
+    "mapping": "Using the tool to cut a fence symbolizes forcefully overcoming legal barriers and restrictions to gain access.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Bolt cutters\nsource_properties: Handheld tool designed for forcefully cutting through heavy metal chains, padlocks, or wire fencing.\ntarget_situation: A political figure bypassing or breaking established regulations regarding artificial islands.\nmapping: Using the tool to cut a fence symbolizes forcefully overcoming legal barriers and restrictions to gain access.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

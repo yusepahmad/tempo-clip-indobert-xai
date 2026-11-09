@@ -1,0 +1,87 @@
+{
+  "index": 628,
+  "sample_id": "TMP-8F17E0CACBC2",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ea30b12349400c64dd31bd83c2ceb06e5bfe284a52fe25f5505b61dc0c2c0ecc",
+  "image_sha256": "8f17e0cacbc2e1ecdd7865564227763be1bf8791cfd77e90da41776748cd157d",
+  "transmitted_image_sha256": "6bdfe56c68449fdb439b7170eef6ff81bd9cfaa993ebc5c211419581b47c74cc",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8934655,
+      "total": 10,
+      "remaining": 1.1065345000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.893465500000005,
+      "total": 100,
+      "remaining": 91.1065345,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.312438524328172,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"kitchen sink\",\n  \"source_properties\": \"A space where items are washed away or replaced through a drain.\",\n  \"target_situation\": \"Muhaimin Iskandar replacing Agus Harimurti Yudhoyono as a vice-presidential candidate.\",\n  \"mapping\": \"The sink symbolizes the political selection process where one candidate is 'washed out' while another remains.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "g53Lar7nMbyb_uMP77KhsAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 100,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680500,
+        "output_tokens_cost_nanodollars": 300000
+      },
+      "prompt_tokens": 1361,
+      "total_backend_latency_ms": 2747,
+      "total_tokens": 1461
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.894446,
+      "total": 10,
+      "remaining": 1.1055539999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.894446000000002,
+      "total": 100,
+      "remaining": 91.105554,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009805,
+  "fields": {
+    "source_object": "kitchen sink",
+    "source_properties": "A space where items are washed away or replaced through a drain.",
+    "target_situation": "Muhaimin Iskandar replacing Agus Harimurti Yudhoyono as a vice-presidential candidate.",
+    "mapping": "The sink symbolizes the political selection process where one candidate is 'washed out' while another remains.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: kitchen sink\nsource_properties: A space where items are washed away or replaced through a drain.\ntarget_situation: Muhaimin Iskandar replacing Agus Harimurti Yudhoyono as a vice-presidential candidate.\nmapping: The sink symbolizes the political selection process where one candidate is 'washed out' while another remains.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

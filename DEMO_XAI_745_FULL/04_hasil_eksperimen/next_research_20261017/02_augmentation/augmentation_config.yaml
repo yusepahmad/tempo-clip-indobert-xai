@@ -1,0 +1,30 @@
+schema: tempo-augmentation-config-v1
+seed: 20261018
+scope: training_fold_only
+validation_test_transform: encoder_native_clean
+variants:
+  A00_none:
+    transforms: []
+    sampler: random
+  A01_light:
+    brightness: [0.92, 1.08]
+    contrast: [0.92, 1.08]
+    jpeg_quality: [88, 96]
+    gaussian_noise_sigma: 1.5
+    rotation_degrees: 0
+    sampler: random
+  A02_moderate:
+    brightness: [0.85, 1.15]
+    contrast: [0.85, 1.15]
+    jpeg_quality: [78, 90]
+    gaussian_noise_sigma: 3.0
+    rotation_degrees: [-2, 2]
+    sampler: random
+  A03_light_sampler:
+    inherits: A01_light
+    sampler: inverse_sqrt_joint_class_frequency
+constraints:
+  - never augment validation or outer-test images
+  - regenerate visual features on-the-fly for augmented training images
+  - do not crop headline or inject label-derived transform parameters
+  - compare A01 and sampler-only before attributing an A03 effect

@@ -1,0 +1,83 @@
+{
+  "index": 514,
+  "sample_id": "TMP-CBF1F6D94754",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "2377b68e7eb7fa0834a5fdbf741accc8b836398c0d14d79d515f7499f0b68895",
+  "image_sha256": "cbf1f6d9475496b82768801141f562049af30ad26c227e64fd24040fe0eee033",
+  "transmitted_image_sha256": "83569e05eae003979996c66c02dab33903fc2bf3f1972b4237328439bec2d631",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.9432489999999998,
+      "total": 10,
+      "remaining": 8.056751,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.9432489999999945,
+      "total": 100,
+      "remaining": 98.056751,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 10.091789522906765,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi \"Sumber dan alasan\" yang diberikan dalam soal, yaitu penggunaan simbol **\"keadaan terjepit\"**, **\"ruang terbatas atau tekanan\"**, serta pemetaan terhadap **\"suasana krisis\"**, maka metafora ini diklasifikasikan ke dalam domain:\n\n**A: BENCANA_JERAT**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "bODKarGlJN7d_uMPq5e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1808,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1738
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 778500,
+        "output_tokens_cost_nanodollars": 5424000
+      },
+      "prompt_tokens": 1557,
+      "total_backend_latency_ms": 9046,
+      "total_tokens": 3365
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.9494515000000003,
+      "total": 10,
+      "remaining": 8.0505485,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.949451499999995,
+      "total": 100,
+      "remaining": 98.0505485,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.0062025
+}

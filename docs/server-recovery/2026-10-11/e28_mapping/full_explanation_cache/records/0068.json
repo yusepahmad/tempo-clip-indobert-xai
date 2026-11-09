@@ -1,0 +1,87 @@
+{
+  "index": 68,
+  "sample_id": "TMP-5C3CDFE23963",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "df3c028cd3c721afc5d1951dabb4144cb65460a2f200de023cad3a739c94aa20",
+  "image_sha256": "5c3cdfe23963ec652408e961c85031d6ae3353097ab5e49ca935392df530d58f",
+  "transmitted_image_sha256": "06e326435a2ec6936d28628ad46bb88915021298821e4c1d16066780305148c8",
+  "image_size": [
+    407,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.106948,
+      "total": 10,
+      "remaining": 1.8930520000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.106948000000003,
+      "total": 100,
+      "remaining": 91.893052,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0278429142199457,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"paper shredder\", \"source_properties\": \"mechanically cuts whole documents into narrow, disconnected strips, making information illegible and destroying the original form.\", \"target_situation\": \"The investigation into the death of Munir, where crucial evidence or truths are being systematically destroyed or ignored by authorities.\", \"mapping\": \"Feeding the portrait into the shredder represents the deliberate destruction of justice and memory regarding Munir, turning a cohesive case into unusable fragments.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "7Y7LatOmPKiB_PUPxqbXMA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "cost": {
+        "input_tokens_cost_nanodollars": 663500,
+        "output_tokens_cost_nanodollars": 312000
+      },
+      "prompt_tokens": 1327,
+      "total_backend_latency_ms": 1720,
+      "total_tokens": 1431
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1079235,
+      "total": 10,
+      "remaining": 1.8920765,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.107923499999998,
+      "total": 100,
+      "remaining": 91.8920765,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009755,
+  "fields": {
+    "source_object": "paper shredder",
+    "source_properties": "mechanically cuts whole documents into narrow, disconnected strips, making information illegible and destroying the original form.",
+    "target_situation": "The investigation into the death of Munir, where crucial evidence or truths are being systematically destroyed or ignored by authorities.",
+    "mapping": "Feeding the portrait into the shredder represents the deliberate destruction of justice and memory regarding Munir, turning a cohesive case into unusable fragments.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: paper shredder\nsource_properties: mechanically cuts whole documents into narrow, disconnected strips, making information illegible and destroying the original form.\ntarget_situation: The investigation into the death of Munir, where crucial evidence or truths are being systematically destroyed or ignored by authorities.\nmapping: Feeding the portrait into the shredder represents the deliberate destruction of justice and memory regarding Munir, turning a cohesive case into unusable fragments.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

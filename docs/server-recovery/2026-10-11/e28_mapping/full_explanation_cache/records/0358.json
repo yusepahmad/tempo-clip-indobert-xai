@@ -1,0 +1,87 @@
+{
+  "index": 358,
+  "sample_id": "TMP-7E4ED8390034",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1ae9bcdc686cd6be4f7ec666df29fc7ee6c99ebe79e704952469e97a31c10bae",
+  "image_sha256": "7e4ed8390034fae6ec5c65746e39c846e9879dd8d3a0d1286602d13f0fabc429",
+  "transmitted_image_sha256": "94fd1d54db7c159a5b9f8dcdf39315697af65ca35abd3384dcf6ad240b14356f",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.526927,
+      "total": 10,
+      "remaining": 1.4730729999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.526927,
+      "total": 100,
+      "remaining": 91.473073,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.352785408962518,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Pok\u00e9mon Go mobile game\",\n  \"source_properties\": \"Scanning environment via smartphone, locating digital characters, and catching them using Pok\u00e9 Balls.\",\n  \"target_situation\": \"Indonesian cabinet reshuffle under President Jokowi.\",\n  \"mapping\": \"Selecting or removing ministers is likened to hunting and catching Pok\u00e9mon characters in a game.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "fZbLauKHCcaS_uMPmu6wkA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 88,
+      "cost": {
+        "input_tokens_cost_nanodollars": 657000,
+        "output_tokens_cost_nanodollars": 264000
+      },
+      "prompt_tokens": 1314,
+      "total_backend_latency_ms": 2064,
+      "total_tokens": 1402
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.527848,
+      "total": 10,
+      "remaining": 1.4721519999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.527848000000006,
+      "total": 100,
+      "remaining": 91.472152,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000921,
+  "fields": {
+    "source_object": "Pok\u00e9mon Go mobile game",
+    "source_properties": "Scanning environment via smartphone, locating digital characters, and catching them using Pok\u00e9 Balls.",
+    "target_situation": "Indonesian cabinet reshuffle under President Jokowi.",
+    "mapping": "Selecting or removing ministers is likened to hunting and catching Pok\u00e9mon characters in a game.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Pok\u00e9mon Go mobile game\nsource_properties: Scanning environment via smartphone, locating digital characters, and catching them using Pok\u00e9 Balls.\ntarget_situation: Indonesian cabinet reshuffle under President Jokowi.\nmapping: Selecting or removing ministers is likened to hunting and catching Pok\u00e9mon characters in a game.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

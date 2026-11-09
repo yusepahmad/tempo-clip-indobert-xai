@@ -1,0 +1,48 @@
+{
+  "status": "exploratory_visual_review",
+  "cases": 42,
+  "sheets": 7,
+  "image_identity": "server checked all42 originalSHA256 before rendering contact sheets",
+  "sheet_sha256": {
+    "BENCANA_JERAT.jpg": "4983d9c3effc14947d5791043e17c86d8e3d8882f085b30905366f505ddca157",
+    "HEWAN_TUBUH.jpg": "6f6f8057a5a9014cd315d2b6e728d1f5197fae25ffda84b2e901f09f14d64d22",
+    "KONSUMSI_TRANSAKSI.jpg": "029ddbba7e84551f514f9da2bff63de56201cbfadbee43b7e54d96dda5401cac",
+    "LAINNYA.jpg": "a440f3abd9e5bb1c20819744e6f1f190fd97d0a63edccba312775590b8a9ceca",
+    "MESIN_INFRASTRUKTUR.jpg": "f3befec00fed2879e0cabc6780fdb780c069b83fc596eb3adb7f49705755cc18",
+    "NON_METAFORA.jpg": "105fe07ac5205a6f693e731aff81f1fbc6aaf27e357976e42709b05d19044f52",
+    "PERMAINAN_KONTES.jpg": "d0ae4b56f2a7e30dd381ef886c17dd747d1cac3f185e0402e0623f0f62ad6c58"
+  },
+  "observations": [
+    {
+      "sample_id": "TMP-A7C2547C2143",
+      "observation": "HEWAN_TUBUH: tentakel tampak pada tokoh di mobil; prediksi MESIN_INFRASTRUKTUR. Kandidat objek sumber kecil bersaing dengan kendaraan yang dominan."
+    },
+    {
+      "sample_id": "TMP-0460E5374573",
+      "observation": "NON_METAFORA: potret tokoh; prediksi HEWAN_TUBUH. Kehadiran tubuh manusia saja belum cukup membedakan domain metafora dari potret literal."
+    },
+    {
+      "sample_id": "TMP-E9BBE178B94B",
+      "observation": "NON_METAFORA: kolase pemain sepakbola; prediksi PERMAINAN_KONTES. Topik olahraga dapat hadir sebagai berita literal."
+    },
+    {
+      "sample_id": "TMP-815A19D844DF",
+      "observation": "BENCANA_JERAT: tokoh pada tali di antara pohon; prediksi PERMAINAN_KONTES. Beberapa objek/aksi mendukung pembacaan berbeda."
+    },
+    {
+      "sample_id": "TMP-F45926301B64",
+      "observation": "LAINNYA: rangkaian evolusi tokoh; prediksi HEWAN_TUBUH. Contoh LAINNYA secara visual heterogen."
+    },
+    {
+      "sample_id": "TMP-6C080EFC7360",
+      "observation": "KONSUMSI_TRANSAKSI: katalog belanja senjata; prediksi MESIN_INFRASTRUKTUR. Relasi transaksi dapat lebih menentukan daripada identitas objek."
+    }
+  ],
+  "interpretation": "Dugaan konflik objek literal/topik/relasi metafora; tidak membuktikan sebab kegagalan encoder atau label salah. Adapter diluncurkan dengan grid yang dibekukan sebelum review; tidak membuat rule dari outer errors.",
+  "limitations": [
+    "6error perclass bukan sampel representatif semua data",
+    "contact sheet mengecilkan detail; bukan anotasi pakar",
+    "originallabels unchanged; no manual notes used as model features",
+    "repeatedOOF inspection/selection bias remains"
+  ]
+}

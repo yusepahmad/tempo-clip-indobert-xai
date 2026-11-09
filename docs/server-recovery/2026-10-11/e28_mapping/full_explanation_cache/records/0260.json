@@ -1,0 +1,87 @@
+{
+  "index": 260,
+  "sample_id": "TMP-E55C47EA102B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9e628d23263ec188cb67d63c7901cd800b3b5690f6df400e0f0d48381f92838e",
+  "image_sha256": "e55c47ea102b1cfdda37876362ee252bc6c136abba3c03d9fe6a5dbfc125c686",
+  "transmitted_image_sha256": "5b01e9e4c674f0a735ac814a3a68cd276d52c0ef92a602f4808b81dd80ce70b5",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3986745,
+      "total": 10,
+      "remaining": 1.6013254999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.398674499999998,
+      "total": 100,
+      "remaining": 91.6013255,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.67592776985839,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"optical illusion\", \"source_properties\": \"dual silhouettes sharing a boundary where one face's profile forms the negative space of another\", \"target_situation\": \"Aburizal Bakrie's political strategy regarding Megawati Soekarnoputri\", \"mapping\": \"The interlocking profiles suggest their political fates are inseparable; one's actions and presence directly define the space and options available to the other.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "-pPLasToLt7d_uMPq5e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 96,
+      "cost": {
+        "input_tokens_cost_nanodollars": 658000,
+        "output_tokens_cost_nanodollars": 288000
+      },
+      "prompt_tokens": 1316,
+      "total_backend_latency_ms": 1678,
+      "total_tokens": 1412
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3996205,
+      "total": 10,
+      "remaining": 1.6003795000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.399620499999997,
+      "total": 100,
+      "remaining": 91.6003795,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000946,
+  "fields": {
+    "source_object": "optical illusion",
+    "source_properties": "dual silhouettes sharing a boundary where one face's profile forms the negative space of another",
+    "target_situation": "Aburizal Bakrie's political strategy regarding Megawati Soekarnoputri",
+    "mapping": "The interlocking profiles suggest their political fates are inseparable; one's actions and presence directly define the space and options available to the other.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: optical illusion\nsource_properties: dual silhouettes sharing a boundary where one face's profile forms the negative space of another\ntarget_situation: Aburizal Bakrie's political strategy regarding Megawati Soekarnoputri\nmapping: The interlocking profiles suggest their political fates are inseparable; one's actions and presence directly define the space and options available to the other.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

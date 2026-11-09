@@ -1,0 +1,87 @@
+{
+  "index": 243,
+  "sample_id": "TMP-901B3B078B93",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "873d6a858a426e0d26d6c6a512fc6ae06fbc29dd733c299488cd8d77f04edbcb",
+  "image_sha256": "901b3b078b93a4e3249268e236fb693f3db10f8231dda32fa4e0487ef7103cbc",
+  "transmitted_image_sha256": "cf188cd7921e80ca65cf2c63a3e2066f1de02d390459e74a4f2fb1917f8b72e0",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3773275,
+      "total": 10,
+      "remaining": 1.6226725000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.377327500000007,
+      "total": 100,
+      "remaining": 91.6226725,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.349907584954053,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"prison gate\", \"source_properties\": \"A heavy, studded, metallic door with a small barred window, acting as a boundary between confinement and freedom.\", \"target_situation\": \"A politician emerging from a secretive visit or involvement with those inside a prison.\", \"mapping\": \"The physical door represents the barrier of secrecy shielding information ('secrets') held within the prison from the public eye.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ipPLaouyFOyb_uMPzeOSwQw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 664000,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1328,
+      "total_backend_latency_ms": 1822,
+      "total_tokens": 1419
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3782645,
+      "total": 10,
+      "remaining": 1.6217354999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.3782645,
+      "total": 100,
+      "remaining": 91.6217355,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000937,
+  "fields": {
+    "source_object": "prison gate",
+    "source_properties": "A heavy, studded, metallic door with a small barred window, acting as a boundary between confinement and freedom.",
+    "target_situation": "A politician emerging from a secretive visit or involvement with those inside a prison.",
+    "mapping": "The physical door represents the barrier of secrecy shielding information ('secrets') held within the prison from the public eye.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: prison gate\nsource_properties: A heavy, studded, metallic door with a small barred window, acting as a boundary between confinement and freedom.\ntarget_situation: A politician emerging from a secretive visit or involvement with those inside a prison.\nmapping: The physical door represents the barrier of secrecy shielding information ('secrets') held within the prison from the public eye.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

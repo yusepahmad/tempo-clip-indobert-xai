@@ -1,0 +1,86 @@
+{
+  "index": 457,
+  "sample_id": "TMP-D60E7B54C360",
+  "fold": 4,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "907939a6a3d37a7974adf8e32f89bfd87fb28eba25038ff5a4baa4559eed5763",
+  "image_sha256": "d60e7b54c3607665a9ec31ee0f47b3628b3403e5fcd5e8c13269954e2bfbb8d1",
+  "transmitted_image_sha256": "e7abc0adc527d7e88d836c0e15462bd46252e7d4d54a108ffdb2e1a02a4f9d9a",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.296874,
+      "total": 10,
+      "remaining": 4.703126,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.2968740000000025,
+      "total": 100,
+      "remaining": 94.703126,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 18.737676923163235,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "B\n\n**Alasan:**\nBerdasarkan contoh training, sampul dengan judul \"di pelupuk mata\" (seperti pada contoh Omicron) diklasifikasikan ke dalam kode **B (HEWAN_TUBUH)**. Hal ini dikarenakan metafora yang digunakan bersumber dari anatomi tubuh manusia (pelupuk mata) sebagai titik fokus atau lokasi simbolis dari isu yang diangkat (dalam hal ini, ancaman terorisme). Meskipun teks alasan menyebutkan adanya mekanisme ancaman atau jerat, domain sumber utamanya tetaplah anatomi tubuh, yang sesuai dengan definisi kategori B.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ZPvKaqrLBZyS_uMPzNG2yQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 4052,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3928
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2086500,
+        "output_tokens_cost_nanodollars": 12156000
+      },
+      "prompt_tokens": 4173,
+      "total_backend_latency_ms": 17791,
+      "total_tokens": 8225
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.3111165,
+      "total": 10,
+      "remaining": 4.6888835,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.311116499999997,
+      "total": 100,
+      "remaining": 94.6888835,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0142425,
+  "code": "B",
+  "strict_code": "INVALID",
+  "parsing_rule": "boundary_single_code",
+  "finish_reason": "stop",
+  "prediction": "HEWAN_TUBUH"
+}

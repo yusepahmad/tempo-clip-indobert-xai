@@ -1,0 +1,87 @@
+{
+  "index": 328,
+  "sample_id": "TMP-5F695E30819B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f20b62ffea2cd48ab503ac9421779034caca3edc5fadc4ea130aca3c92e2dd6e",
+  "image_sha256": "5f695e30819bd1db272e88239abffd29d7700f5872c7ccfda8b13cdb17f1d2bc",
+  "transmitted_image_sha256": "a3bebc968a11c9e173f3472eaa1a25f5a96bd03a85149b9f2511cab2e4211fbd",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4883265,
+      "total": 10,
+      "remaining": 1.5116735000000006,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.4883265,
+      "total": 100,
+      "remaining": 91.5116735,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.5347376908175647,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"painted stage prop\", \"source_properties\": \"a flat wooden facade supported by struts, mimicking a grand stone building\", \"target_situation\": \"corruption within the Hajj pilgrimage management involving politicians and deceptive practices\", \"mapping\": \"The facade represents the deceptive, superficial appearance of legitimate Hajj services, hiding fraudulent activities or inadequate facilities underneath.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "uJXLauihA_7v_uMP-q7MqQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 82,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671500,
+        "output_tokens_cost_nanodollars": 246000
+      },
+      "prompt_tokens": 1343,
+      "total_backend_latency_ms": 1884,
+      "total_tokens": 1425
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.489244,
+      "total": 10,
+      "remaining": 1.5107560000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.489244,
+      "total": 100,
+      "remaining": 91.510756,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009175,
+  "fields": {
+    "source_object": "painted stage prop",
+    "source_properties": "a flat wooden facade supported by struts, mimicking a grand stone building",
+    "target_situation": "corruption within the Hajj pilgrimage management involving politicians and deceptive practices",
+    "mapping": "The facade represents the deceptive, superficial appearance of legitimate Hajj services, hiding fraudulent activities or inadequate facilities underneath.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: painted stage prop\nsource_properties: a flat wooden facade supported by struts, mimicking a grand stone building\ntarget_situation: corruption within the Hajj pilgrimage management involving politicians and deceptive practices\nmapping: The facade represents the deceptive, superficial appearance of legitimate Hajj services, hiding fraudulent activities or inadequate facilities underneath.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

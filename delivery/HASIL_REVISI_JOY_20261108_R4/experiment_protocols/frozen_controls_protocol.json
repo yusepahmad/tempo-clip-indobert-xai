@@ -1,0 +1,41 @@
+{
+  "schema": "revisi-ii-frozen-control-v1",
+  "seed": 42,
+  "epochs": 120,
+  "batch": "full training fold",
+  "optimizer": "AdamW lr0.001 wd0.0001",
+  "head": "1280/input ->256 ReLU dropout0.4 ->3 heads",
+  "class_weights": "inverse training counts only",
+  "selection": "fixed recipe; no selection on outer test",
+  "purpose": "recover baseline ablations; not E42 trainable-tail ablations",
+  "arms": {
+    "RII_FROZEN_MTL_WEIGHTED": [
+      "both",
+      true,
+      false
+    ],
+    "RII_FROZEN_MTL_UNWEIGHTED": [
+      "both",
+      false,
+      false
+    ],
+    "RII_FROZEN_IMAGE_ONLY": [
+      "image",
+      true,
+      false
+    ],
+    "RII_FROZEN_TEXT_SUPPORTING": [
+      "text",
+      true,
+      false
+    ],
+    "RII_FROZEN_SINGLE_TASK": [
+      "both",
+      true,
+      true
+    ]
+  },
+  "dataset_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "features_sha256": "d27cd5dbecfffba3a8bbb96037f3181da20f1c95eb246a7d38a4627a90599e5c",
+  "source_sha256": "c0f34550675e7f9785cb39f86a037ed88c7c16be926d8f23693986635660c333"
+}

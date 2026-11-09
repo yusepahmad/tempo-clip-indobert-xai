@@ -1,0 +1,3778 @@
+{
+  "signature": {
+    "worker_sha256": "d1e9330e8f62cce1431b2affdd74e99858fe08ea447a0fabb8cca57c8f32e20f",
+    "input_helper_sha256": "c117f65e9460bccc4daeba0de9f3af4ee737e7ef65f57d39cca5a0910f8a3ece",
+    "e14_source_sha256": "02588b6fcd4bdbe21be4b17e9d60dcfcdebfbf0b97246056a88b4804febfb6e5",
+    "reference": {
+      "worker_sha256": "02588b6fcd4bdbe21be4b17e9d60dcfcdebfbf0b97246056a88b4804febfb6e5",
+      "data_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+      "e5_sha256": "1f0d2b2f346071fa673701847af39e8a22faf9e6a98195734982cd71e99af374",
+      "bge_sha256": "c0d7d1fc9ac42988b0d107a694d7d3b355105f8640f776ace2617eed936495c4",
+      "clip_sha256": "d27cd5dbecfffba3a8bbb96037f3181da20f1c95eb246a7d38a4627a90599e5c",
+      "reference_verification_sha256": "0d91fcf3cc6f365b08547161657679f88ef7df18fe19176bc0a1f61499cd547a",
+      "grid": {
+        "fusion__e5_weight": [
+          0,
+          0.5,
+          1,
+          2
+        ],
+        "fusion__clip_weight": [
+          0,
+          0.5,
+          1,
+          2
+        ],
+        "clf__C": [
+          1,
+          10,
+          100
+        ],
+        "clf__gamma": [
+          "scale",
+          0.1,
+          1
+        ],
+        "clf__class_weight": [
+          null,
+          "balanced"
+        ]
+      },
+      "normalization": "StandardScaler fit per block, L2 per block, then weights",
+      "outer": "Task1 baseline stratified5 seed42",
+      "inner": "Task2 stratified3 seed42",
+      "selection_order": [
+        "description",
+        "source_reason",
+        "combined",
+        "description_reason",
+        "semantic_visual",
+        "weighted"
+      ],
+      "n_jobs": 1
+    },
+    "text_sources": {
+      "deskripsi.jsonl": "c75e8df3f9b71d6786462f8d0f1187ebe4234fb8dd079924f3f35707ff1b8cd2",
+      "zeroshot.jsonl": "10c07b06b13fbbf647f2b1ed12a722d9bff8f97caa6b621430d8bc0429ab38c9"
+    },
+    "texts_sha256": "b6fdd3be527009afcd998e8c69a1beac266180fdbc6e3b62a95fd6865a0ee375",
+    "feature_sha256": "971c89333af0b3d2154d453cd1870950cde7136f173341b469626ca1e98c1783",
+    "grid": {
+      "e5_weight": [
+        0.5,
+        2
+      ],
+      "clip_weight": [
+        0.5,
+        1
+      ],
+      "gamma": [
+        0.1,
+        1
+      ],
+      "lexical_weight": [
+        0,
+        0.25,
+        1,
+        4
+      ],
+      "C": [
+        1,
+        10,
+        100
+      ],
+      "class_weight": [
+        null,
+        "balanced"
+      ]
+    },
+    "tfidf": {
+      "min_df": 2,
+      "sublinear_tf": true
+    },
+    "launch_e20_verification_sha256": "1e59a7cbd7d0a6f3d946eeda7af951c162022a7fa0b80e5378fa35a3217c95a8",
+    "text_fields": "E01 description/source/reason; original headline/support only",
+    "kernel": "(RBF weighted block squared distance + lambda*cosine TFIDF)/(1+lambda)",
+    "outer": "Task1 baseline5 seed42",
+    "inner": "Task2 stratified3 seed42",
+    "n_jobs": 1
+  },
+  "fold": 4,
+  "train_indices": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    15,
+    16,
+    17,
+    18,
+    19,
+    21,
+    23,
+    25,
+    27,
+    29,
+    30,
+    32,
+    33,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    52,
+    53,
+    54,
+    56,
+    57,
+    58,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    76,
+    79,
+    80,
+    81,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    92,
+    93,
+    94,
+    96,
+    97,
+    98,
+    99,
+    101,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    114,
+    115,
+    116,
+    118,
+    119,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    134,
+    135,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    170,
+    171,
+    172,
+    174,
+    175,
+    176,
+    178,
+    179,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    189,
+    195,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    204,
+    205,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    215,
+    216,
+    218,
+    219,
+    221,
+    222,
+    224,
+    225,
+    227,
+    229,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    243,
+    244,
+    245,
+    246,
+    248,
+    249,
+    251,
+    252,
+    253,
+    254,
+    256,
+    257,
+    259,
+    260,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    275,
+    276,
+    277,
+    279,
+    280,
+    281,
+    282,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    292,
+    295,
+    296,
+    297,
+    299,
+    300,
+    301,
+    302,
+    304,
+    305,
+    308,
+    309,
+    311,
+    312,
+    313,
+    315,
+    316,
+    317,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    342,
+    343,
+    345,
+    346,
+    347,
+    349,
+    350,
+    351,
+    352,
+    355,
+    356,
+    357,
+    359,
+    360,
+    361,
+    362,
+    363,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    379,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    395,
+    396,
+    397,
+    398,
+    400,
+    401,
+    402,
+    404,
+    405,
+    406,
+    408,
+    409,
+    410,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    426,
+    427,
+    428,
+    429,
+    431,
+    432,
+    434,
+    435,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    454,
+    455,
+    456,
+    458,
+    461,
+    464,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    475,
+    477,
+    478,
+    479,
+    482,
+    484,
+    485,
+    486,
+    487,
+    490,
+    492,
+    493,
+    494,
+    495,
+    497,
+    498,
+    500,
+    501,
+    503,
+    504,
+    505,
+    506,
+    507,
+    509,
+    510,
+    511,
+    512,
+    513,
+    514,
+    516,
+    517,
+    518,
+    519,
+    521,
+    522,
+    523,
+    527,
+    528,
+    529,
+    530,
+    531,
+    532,
+    533,
+    534,
+    535,
+    536,
+    538,
+    539,
+    540,
+    541,
+    542,
+    543,
+    544,
+    545,
+    546,
+    547,
+    548,
+    549,
+    550,
+    551,
+    553,
+    554,
+    557,
+    558,
+    559,
+    560,
+    561,
+    565,
+    566,
+    567,
+    570,
+    571,
+    572,
+    573,
+    574,
+    575,
+    576,
+    578,
+    579,
+    580,
+    581,
+    582,
+    583,
+    584,
+    585,
+    586,
+    587,
+    588,
+    589,
+    590,
+    592,
+    593,
+    594,
+    595,
+    596,
+    597,
+    598,
+    599,
+    600,
+    601,
+    603,
+    604,
+    605,
+    606,
+    607,
+    608,
+    609,
+    610,
+    611,
+    612,
+    613,
+    614,
+    615,
+    616,
+    617,
+    618,
+    619,
+    620,
+    621,
+    622,
+    623,
+    624,
+    625,
+    626,
+    628,
+    629,
+    630,
+    631,
+    633,
+    634,
+    635,
+    636,
+    637,
+    638,
+    640,
+    641,
+    642,
+    644,
+    645,
+    646,
+    647,
+    648,
+    649,
+    650,
+    651,
+    652,
+    653,
+    654,
+    655,
+    656,
+    657,
+    658,
+    659,
+    661,
+    662,
+    664,
+    665,
+    667,
+    668,
+    670,
+    671,
+    672,
+    673,
+    674,
+    675,
+    676,
+    677,
+    678,
+    679,
+    681,
+    682,
+    684,
+    686,
+    687,
+    688,
+    690,
+    691,
+    692,
+    693,
+    694,
+    695,
+    696,
+    697,
+    698,
+    699,
+    700,
+    701,
+    702,
+    703,
+    704,
+    705,
+    706,
+    707,
+    708,
+    709,
+    710,
+    711,
+    712,
+    713,
+    714,
+    716,
+    717,
+    719,
+    720,
+    721,
+    722,
+    723,
+    724,
+    728,
+    729,
+    730,
+    732,
+    734,
+    735,
+    736,
+    737,
+    738,
+    739
+  ],
+  "test_indices": [
+    4,
+    14,
+    20,
+    22,
+    24,
+    26,
+    28,
+    31,
+    34,
+    35,
+    36,
+    51,
+    55,
+    59,
+    75,
+    77,
+    78,
+    82,
+    91,
+    95,
+    100,
+    102,
+    113,
+    117,
+    120,
+    121,
+    133,
+    136,
+    137,
+    148,
+    158,
+    168,
+    169,
+    173,
+    177,
+    180,
+    188,
+    190,
+    191,
+    192,
+    193,
+    194,
+    196,
+    203,
+    206,
+    214,
+    217,
+    220,
+    223,
+    226,
+    228,
+    230,
+    242,
+    247,
+    250,
+    255,
+    258,
+    261,
+    274,
+    278,
+    283,
+    291,
+    293,
+    294,
+    298,
+    303,
+    306,
+    307,
+    310,
+    314,
+    318,
+    325,
+    341,
+    344,
+    348,
+    353,
+    354,
+    358,
+    364,
+    378,
+    380,
+    393,
+    394,
+    399,
+    403,
+    407,
+    411,
+    412,
+    425,
+    430,
+    433,
+    436,
+    453,
+    457,
+    459,
+    460,
+    462,
+    463,
+    465,
+    473,
+    474,
+    476,
+    480,
+    481,
+    483,
+    488,
+    489,
+    491,
+    496,
+    499,
+    502,
+    508,
+    515,
+    520,
+    524,
+    525,
+    526,
+    537,
+    552,
+    555,
+    556,
+    562,
+    563,
+    564,
+    568,
+    569,
+    577,
+    591,
+    602,
+    627,
+    632,
+    639,
+    643,
+    660,
+    663,
+    666,
+    669,
+    680,
+    683,
+    685,
+    689,
+    715,
+    718,
+    725,
+    726,
+    727,
+    731,
+    733
+  ],
+  "sample_ids": [
+    "TMP-EC1AFE264B60",
+    "TMP-CD142C784BAC",
+    "TMP-7198DCE59856",
+    "TMP-6FEDBB21201B",
+    "TMP-251E71CFA264",
+    "TMP-3BAA86B86146",
+    "TMP-B7ABAAC26532",
+    "TMP-EF68E29B88C5",
+    "TMP-AEDE5F5EB6F1",
+    "TMP-1A5862984B3D",
+    "TMP-10A8818E5371",
+    "TMP-6272279E614B",
+    "TMP-5EB47C851781",
+    "TMP-DCCAA3222C5B",
+    "TMP-C62B6E2F9182",
+    "TMP-B3250B87DD03",
+    "TMP-0EF0312521B3",
+    "TMP-A2FB22BEA055",
+    "TMP-C121F6A7C586",
+    "TMP-05D189ECE0C8",
+    "TMP-07121E49BA87",
+    "TMP-6A2B7C7F8D10",
+    "TMP-6C080EFC7360",
+    "TMP-0460E5374573",
+    "TMP-D9F6EBF7B6AB",
+    "TMP-F069AE1D9DBF",
+    "TMP-41FCF07A1295",
+    "TMP-7CAED04CFB88",
+    "TMP-E44127A2CF96",
+    "TMP-1EF49983B649",
+    "TMP-F45926301B64",
+    "TMP-4140AFDA8511",
+    "TMP-A02E76A91E5D",
+    "TMP-84F3014D30E6",
+    "TMP-A7072B613993",
+    "TMP-0A2D6056CCA0",
+    "TMP-31C860ECD540",
+    "TMP-B3C9781E2CBC",
+    "TMP-A7FF7712FC8B",
+    "TMP-4B372E61B60E",
+    "TMP-93229C7912BA",
+    "TMP-E104A11EEAB8",
+    "TMP-98FBF3176EFF",
+    "TMP-BC4FB3279D70",
+    "TMP-AEEC2302339F",
+    "TMP-6FE403AD2921",
+    "TMP-B772B4711410",
+    "TMP-91D919444BA3",
+    "TMP-FE31403E3DA1",
+    "TMP-FF18775D38E3",
+    "TMP-C9D2E162AE3C",
+    "TMP-602FC52935F6",
+    "TMP-4E9F8DFF476D",
+    "TMP-86E424864F6F",
+    "TMP-274E1F097FE7",
+    "TMP-F52DDE3E6F28",
+    "TMP-2C4D8CC27005",
+    "TMP-E9C0CFB24442",
+    "TMP-BF0C911F22EA",
+    "TMP-182841319783",
+    "TMP-3F97F2E39756",
+    "TMP-589A327F9AE8",
+    "TMP-AD48B1596452",
+    "TMP-515377D1A845",
+    "TMP-86E805CE9A8D",
+    "TMP-F4375AE220CD",
+    "TMP-CD0E68CBED03",
+    "TMP-810B83E62115",
+    "TMP-4231169897C1",
+    "TMP-17837FF9968E",
+    "TMP-3C807D0C4502",
+    "TMP-E9D77A3E543B",
+    "TMP-43D21C82CC1A",
+    "TMP-961CDB9E31FC",
+    "TMP-B28245732A65",
+    "TMP-06CD6CE1BAF6",
+    "TMP-8136CCAB6FED",
+    "TMP-7E4ED8390034",
+    "TMP-C3E6AE3D90B6",
+    "TMP-6347D0A31336",
+    "TMP-25D663B1ED97",
+    "TMP-06CAB1B32D7C",
+    "TMP-724B98A81B07",
+    "TMP-98EA8DC7AC8C",
+    "TMP-B5FC710B3D30",
+    "TMP-D1669FA90B27",
+    "TMP-3808BBB53456",
+    "TMP-1DA4BB177AF9",
+    "TMP-09721E781325",
+    "TMP-1033832C29A9",
+    "TMP-D7DFE8EB575E",
+    "TMP-EFC406A9CF90",
+    "TMP-758796F60BC6",
+    "TMP-D60E7B54C360",
+    "TMP-75243768862D",
+    "TMP-DD95BE040ABF",
+    "TMP-E7F0D91FD661",
+    "TMP-90F516E745B9",
+    "TMP-8AC51021F344",
+    "TMP-85C208276747",
+    "TMP-0C0E1B72F18D",
+    "TMP-760382DCCA30",
+    "TMP-78D02F615C6F",
+    "TMP-C445260C87B3",
+    "TMP-A176C2B83D3E",
+    "TMP-C388AC969E5D",
+    "TMP-BC62E3D41CF6",
+    "TMP-575A3BEA2F6A",
+    "TMP-861D7DC84EAC",
+    "TMP-8727D13AACEE",
+    "TMP-A6C6B271AF6D",
+    "TMP-E885379FE6E3",
+    "TMP-E254831AA10D",
+    "TMP-B843E49F6F2F",
+    "TMP-E02A40ADB71F",
+    "TMP-70D8CDBCF548",
+    "TMP-1740BAF1E848",
+    "TMP-4DBFA76C7B5B",
+    "TMP-D42AC600C320",
+    "TMP-67D344FE05F8",
+    "TMP-856F77A0D060",
+    "TMP-4274881AF1AD",
+    "TMP-F33A5754DCAC",
+    "TMP-4492052F8677",
+    "TMP-73BA47897468",
+    "TMP-92C55AD605A4",
+    "TMP-DCDA4B4577DE",
+    "TMP-14F7201BCC8D",
+    "TMP-78823FBA6853",
+    "TMP-FC626F7FA273",
+    "TMP-14CF9D535FEA",
+    "TMP-CBB8CD2A33FE",
+    "TMP-964573F53CCA",
+    "TMP-4781A007EA87",
+    "TMP-7839DD0F5755",
+    "TMP-C6F070C953D9",
+    "TMP-8E0654B0E204",
+    "TMP-D98C9C536D78",
+    "TMP-74DD4C85C2AB",
+    "TMP-F32D8D2250DE",
+    "TMP-9ACF20C99B49",
+    "TMP-1D6C8F476F42",
+    "TMP-D945F14820D4",
+    "TMP-64B653556BFF",
+    "TMP-92EB4CDBDEBC",
+    "TMP-9271BBD5C76A",
+    "TMP-9E20B84B4493",
+    "TMP-1C4F69FF5066"
+  ],
+  "predictions": [
+    "NON_METAFORA",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "LAINNYA",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "HEWAN_TUBUH",
+    "PERMAINAN_KONTES",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "BENCANA_JERAT",
+    "NON_METAFORA",
+    "LAINNYA",
+    "KONSUMSI_TRANSAKSI",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "NON_METAFORA",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "NON_METAFORA",
+    "PERMAINAN_KONTES",
+    "HEWAN_TUBUH",
+    "HEWAN_TUBUH",
+    "KONSUMSI_TRANSAKSI",
+    "PERMAINAN_KONTES",
+    "PERMAINAN_KONTES",
+    "KONSUMSI_TRANSAKSI",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "KONSUMSI_TRANSAKSI",
+    "NON_METAFORA",
+    "LAINNYA",
+    "MESIN_INFRASTRUKTUR",
+    "NON_METAFORA",
+    "MESIN_INFRASTRUKTUR",
+    "KONSUMSI_TRANSAKSI",
+    "NON_METAFORA",
+    "HEWAN_TUBUH",
+    "NON_METAFORA",
+    "KONSUMSI_TRANSAKSI",
+    "KONSUMSI_TRANSAKSI",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "LAINNYA",
+    "KONSUMSI_TRANSAKSI",
+    "NON_METAFORA",
+    "LAINNYA",
+    "NON_METAFORA",
+    "KONSUMSI_TRANSAKSI",
+    "BENCANA_JERAT",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "NON_METAFORA",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "PERMAINAN_KONTES",
+    "PERMAINAN_KONTES",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "NON_METAFORA",
+    "PERMAINAN_KONTES",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "LAINNYA",
+    "HEWAN_TUBUH",
+    "PERMAINAN_KONTES",
+    "LAINNYA",
+    "BENCANA_JERAT",
+    "NON_METAFORA",
+    "HEWAN_TUBUH",
+    "BENCANA_JERAT",
+    "NON_METAFORA",
+    "MESIN_INFRASTRUKTUR",
+    "HEWAN_TUBUH",
+    "PERMAINAN_KONTES",
+    "NON_METAFORA",
+    "PERMAINAN_KONTES",
+    "BENCANA_JERAT",
+    "NON_METAFORA",
+    "BENCANA_JERAT",
+    "NON_METAFORA",
+    "MESIN_INFRASTRUKTUR",
+    "KONSUMSI_TRANSAKSI",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "HEWAN_TUBUH",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "KONSUMSI_TRANSAKSI",
+    "LAINNYA",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "LAINNYA",
+    "LAINNYA",
+    "LAINNYA",
+    "PERMAINAN_KONTES",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "KONSUMSI_TRANSAKSI",
+    "BENCANA_JERAT",
+    "MESIN_INFRASTRUKTUR",
+    "BENCANA_JERAT",
+    "BENCANA_JERAT",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "PERMAINAN_KONTES",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR",
+    "MESIN_INFRASTRUKTUR"
+  ],
+  "grid_params": [
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 100,
+      "class_weight": null,
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 0.5,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 0.5,
+      "gamma": 1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 0.1,
+      "lexical_weight": 4
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 0.25
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 1
+    },
+    {
+      "C": 100,
+      "class_weight": "balanced",
+      "clip_weight": 1,
+      "e5_weight": 2,
+      "gamma": 1,
+      "lexical_weight": 4
+    }
+  ],
+  "inner_fold_scores": [
+    [
+      0.0851565044111628,
+      0.07582385535141441,
+      0.07457449382915222
+    ],
+    [
+      0.14085646847251884,
+      0.12382644468591944,
+      0.14617950619330644
+    ],
+    [
+      0.2196376111837736,
+      0.21451820825883125,
+      0.27003663003663003
+    ],
+    [
+      0.3307986417483585,
+      0.300809683367891,
+      0.33904036867798376
+    ],
+    [
+      0.2291756884031562,
+      0.19970196604579168,
+      0.2328965822771132
+    ],
+    [
+      0.25245287077999196,
+      0.25794850916025364,
+      0.2830668383858398
+    ],
+    [
+      0.3420775759485437,
+      0.3310430831500949,
+      0.3367068283837057
+    ],
+    [
+      0.3728714027606627,
+      0.36385777457206026,
+      0.3584812346816924
+    ],
+    [
+      0.4225971789666788,
+      0.3671257505042794,
+      0.39224286451177204
+    ],
+    [
+      0.4059523480271883,
+      0.37471115371314756,
+      0.39255560554530616
+    ],
+    [
+      0.3662534585178038,
+      0.4113041888339124,
+      0.3886561631335324
+    ],
+    [
+      0.384908911041102,
+      0.3980180265894551,
+      0.38203313470951394
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.1396865889212828,
+      0.12610358578100514,
+      0.20955705185527346
+    ],
+    [
+      0.3210708304350646,
+      0.2864484322124645,
+      0.3303621493054482
+    ],
+    [
+      0.13148178749682507,
+      0.11938532403557035,
+      0.0854119425547997
+    ],
+    [
+      0.19296052879243208,
+      0.14578833178361109,
+      0.14359444804928437
+    ],
+    [
+      0.2718643425539977,
+      0.2456962072321746,
+      0.2787742338961851
+    ],
+    [
+      0.3461805995489446,
+      0.317511109163203,
+      0.3569201660731932
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.07457449382915222
+    ],
+    [
+      0.20161641722132664,
+      0.15330823103576072,
+      0.2556742796374133
+    ],
+    [
+      0.32978835133897416,
+      0.3022848455621565,
+      0.3315143364018979
+    ],
+    [
+      0.4179247339961626,
+      0.3565088781035625,
+      0.3917311325057032
+    ],
+    [
+      0.39292677250191016,
+      0.35766993807363867,
+      0.3855906078156829
+    ],
+    [
+      0.38287834571380247,
+      0.4141199191837138,
+      0.3698529012382169
+    ],
+    [
+      0.39063246292032544,
+      0.4071085817002333,
+      0.368349973643968
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.1396865889212828,
+      0.12610358578100514,
+      0.20955705185527346
+    ],
+    [
+      0.3210708304350646,
+      0.2864484322124645,
+      0.3303621493054482
+    ],
+    [
+      0.5329829741973587,
+      0.5420821647733266,
+      0.48115555266661403
+    ],
+    [
+      0.5334525820667021,
+      0.5633042331867716,
+      0.5056583927350387
+    ],
+    [
+      0.5057790451220264,
+      0.5445733535895776,
+      0.45243123029401716
+    ],
+    [
+      0.493208120339854,
+      0.5272931413035827,
+      0.46490633575834944
+    ],
+    [
+      0.4270700476621883,
+      0.4114845418220007,
+      0.38161164179594026
+    ],
+    [
+      0.4184382160463872,
+      0.4472790617955783,
+      0.41332184947994965
+    ],
+    [
+      0.4832616013624987,
+      0.507794167326132,
+      0.43768014914631453
+    ],
+    [
+      0.4660224419583897,
+      0.5169300907771907,
+      0.45847623084313793
+    ],
+    [
+      0.5384735823916332,
+      0.587453303036248,
+      0.48016930193226776
+    ],
+    [
+      0.5297205789466152,
+      0.5924282293125854,
+      0.4905125014759566
+    ],
+    [
+      0.5330689813093102,
+      0.5755598724559489,
+      0.48701216370389305
+    ],
+    [
+      0.4928920257239557,
+      0.5415190058912572,
+      0.46973606900423176
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.07495242277850973,
+      0.06498599439775911,
+      0.0854119425547997
+    ],
+    [
+      0.3812708154705419,
+      0.4126998530809783,
+      0.3551041585837166
+    ],
+    [
+      0.46507982850175544,
+      0.5155447917375847,
+      0.4289033584567315
+    ],
+    [
+      0.5076575890231052,
+      0.5452769102316495,
+      0.49583981026412133
+    ],
+    [
+      0.5320354387148043,
+      0.5928498588503036,
+      0.5218751077713342
+    ],
+    [
+      0.5160010335218123,
+      0.572386207735662,
+      0.4598053687167922
+    ],
+    [
+      0.4838736851709858,
+      0.5384447550354856,
+      0.4475254189956209
+    ],
+    [
+      0.0638655462184874,
+      0.07582385535141441,
+      0.06411698537682789
+    ],
+    [
+      0.20611119152152588,
+      0.1904763936007425,
+      0.24058413251961638
+    ],
+    [
+      0.3912964793732198,
+      0.4465121278950478,
+      0.3800253949551537
+    ],
+    [
+      0.46145188077961186,
+      0.5155447917375847,
+      0.4398650158855551
+    ],
+    [
+      0.5465163390727782,
+      0.5799480523824424,
+      0.4875076395037952
+    ],
+    [
+      0.5302798498327406,
+      0.5667701599011005,
+      0.48743687561059784
+    ],
+    [
+      0.5219196878350318,
+      0.5596291696931355,
+      0.46689375607514416
+    ],
+    [
+      0.4970643296901024,
+      0.5415190058912572,
+      0.458521798366947
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.07495242277850973,
+      0.06498599439775911,
+      0.0854119425547997
+    ],
+    [
+      0.3812708154705419,
+      0.4126998530809783,
+      0.3551041585837166
+    ],
+    [
+      0.46507982850175544,
+      0.5155447917375847,
+      0.4289033584567315
+    ],
+    [
+      0.5252668151339248,
+      0.4985505428091378,
+      0.4668474537658146
+    ],
+    [
+      0.5145892783225458,
+      0.5341037355314537,
+      0.48588653583318864
+    ],
+    [
+      0.48633111277037916,
+      0.5160395305010489,
+      0.45474790495908507
+    ],
+    [
+      0.4832369372787491,
+      0.4991166030838568,
+      0.4465728429982729
+    ],
+    [
+      0.39159236347460585,
+      0.3498251122311272,
+      0.3854582066988082
+    ],
+    [
+      0.41446283194851397,
+      0.4039843578531552,
+      0.4043260822376164
+    ],
+    [
+      0.41658980639137616,
+      0.4649590691816699,
+      0.3852751197255867
+    ],
+    [
+      0.44364790955553574,
+      0.46696255045868895,
+      0.4377207861406468
+    ],
+    [
+      0.5132529655218732,
+      0.5130987225104872,
+      0.47472726417756045
+    ],
+    [
+      0.5145251500101788,
+      0.501387098964684,
+      0.48746980676328505
+    ],
+    [
+      0.5223237074729742,
+      0.5173215630061604,
+      0.46953140861359616
+    ],
+    [
+      0.48651180736204863,
+      0.5094182584019983,
+      0.43680302925585945
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.07469899595883847,
+      0.06498599439775911,
+      0.07457449382915222
+    ],
+    [
+      0.3345018531710425,
+      0.30545516452194915,
+      0.330861129942909
+    ],
+    [
+      0.41972767929968624,
+      0.4536646308680196,
+      0.40738312313137237
+    ],
+    [
+      0.5503915828654505,
+      0.4717146320122948,
+      0.4850108103682613
+    ],
+    [
+      0.5010088457661764,
+      0.5070106845904985,
+      0.4977300203901188
+    ],
+    [
+      0.484348085521212,
+      0.5139921456410818,
+      0.4513636976051404
+    ],
+    [
+      0.46474969622564416,
+      0.4970643449161733,
+      0.45672384183973697
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.1715073681501025,
+      0.14878790631966674,
+      0.20780355141235793
+    ],
+    [
+      0.3505821956369858,
+      0.38964661353823915,
+      0.3436278512581375
+    ],
+    [
+      0.43647087606271284,
+      0.4544029901244536,
+      0.4117420129834069
+    ],
+    [
+      0.517774108620662,
+      0.5142423853724164,
+      0.4824501126114029
+    ],
+    [
+      0.5031424724310646,
+      0.5111026323173774,
+      0.5039944601329195
+    ],
+    [
+      0.49259063409748904,
+      0.5119522612155095,
+      0.4500236164539458
+    ],
+    [
+      0.4888742511874174,
+      0.4953117347289126,
+      0.44425981886656324
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.07469899595883847,
+      0.06498599439775911,
+      0.07457449382915222
+    ],
+    [
+      0.3345018531710425,
+      0.3032764635842097,
+      0.330861129942909
+    ],
+    [
+      0.41972767929968624,
+      0.4536646308680196,
+      0.40738312313137237
+    ],
+    [
+      0.5062995873146835,
+      0.504390913804135,
+      0.48193431999966885
+    ],
+    [
+      0.5140596008286152,
+      0.5341037355314537,
+      0.48588653583318864
+    ],
+    [
+      0.48633111277037916,
+      0.5160395305010489,
+      0.45474790495908507
+    ],
+    [
+      0.4832369372787491,
+      0.4991166030838568,
+      0.4465728429982729
+    ],
+    [
+      0.39159236347460585,
+      0.3498251122311272,
+      0.3854582066988082
+    ],
+    [
+      0.41446283194851397,
+      0.4039843578531552,
+      0.4043260822376164
+    ],
+    [
+      0.41658980639137616,
+      0.4649590691816699,
+      0.3852751197255867
+    ],
+    [
+      0.44364790955553574,
+      0.46696255045868895,
+      0.4377207861406468
+    ],
+    [
+      0.5132529655218732,
+      0.5130987225104872,
+      0.47472726417756045
+    ],
+    [
+      0.5145251500101788,
+      0.501387098964684,
+      0.48746980676328505
+    ],
+    [
+      0.5223237074729742,
+      0.5173215630061604,
+      0.46953140861359616
+    ],
+    [
+      0.48651180736204863,
+      0.5094182584019983,
+      0.43680302925585945
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.07469899595883847,
+      0.06498599439775911,
+      0.07457449382915222
+    ],
+    [
+      0.3345018531710425,
+      0.30545516452194915,
+      0.330861129942909
+    ],
+    [
+      0.41972767929968624,
+      0.4536646308680196,
+      0.40738312313137237
+    ],
+    [
+      0.5436087721802008,
+      0.47669598778742284,
+      0.4822899963514588
+    ],
+    [
+      0.5010088457661764,
+      0.5070106845904985,
+      0.4977300203901188
+    ],
+    [
+      0.484348085521212,
+      0.5139921456410818,
+      0.4513636976051404
+    ],
+    [
+      0.46474969622564416,
+      0.4970643449161733,
+      0.45672384183973697
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.1715073681501025,
+      0.14878790631966674,
+      0.20780355141235793
+    ],
+    [
+      0.3505821956369858,
+      0.38964661353823915,
+      0.3436278512581375
+    ],
+    [
+      0.43647087606271284,
+      0.4544029901244536,
+      0.4117420129834069
+    ],
+    [
+      0.517774108620662,
+      0.5142423853724164,
+      0.4824501126114029
+    ],
+    [
+      0.5031424724310646,
+      0.5111026323173774,
+      0.5039944601329195
+    ],
+    [
+      0.49259063409748904,
+      0.5119522612155095,
+      0.4500236164539458
+    ],
+    [
+      0.4888742511874174,
+      0.4953117347289126,
+      0.44425981886656324
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.07469899595883847,
+      0.06498599439775911,
+      0.07457449382915222
+    ],
+    [
+      0.3345018531710425,
+      0.3032764635842097,
+      0.330861129942909
+    ],
+    [
+      0.41972767929968624,
+      0.4536646308680196,
+      0.40738312313137237
+    ],
+    [
+      0.5202467534765671,
+      0.5005913591356684,
+      0.4668474537658146
+    ],
+    [
+      0.5145892783225458,
+      0.5341037355314537,
+      0.48588653583318864
+    ],
+    [
+      0.48633111277037916,
+      0.5160395305010489,
+      0.45474790495908507
+    ],
+    [
+      0.4832369372787491,
+      0.4991166030838568,
+      0.4465728429982729
+    ],
+    [
+      0.39159236347460585,
+      0.3498251122311272,
+      0.3854582066988082
+    ],
+    [
+      0.41446283194851397,
+      0.4039843578531552,
+      0.4043260822376164
+    ],
+    [
+      0.41658980639137616,
+      0.4649590691816699,
+      0.3852751197255867
+    ],
+    [
+      0.44364790955553574,
+      0.46696255045868895,
+      0.4377207861406468
+    ],
+    [
+      0.5132529655218732,
+      0.5130987225104872,
+      0.47472726417756045
+    ],
+    [
+      0.5145251500101788,
+      0.501387098964684,
+      0.48746980676328505
+    ],
+    [
+      0.5223237074729742,
+      0.5173215630061604,
+      0.46953140861359616
+    ],
+    [
+      0.48651180736204863,
+      0.5094182584019983,
+      0.43680302925585945
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.07469899595883847,
+      0.06498599439775911,
+      0.07457449382915222
+    ],
+    [
+      0.3345018531710425,
+      0.30545516452194915,
+      0.330861129942909
+    ],
+    [
+      0.41972767929968624,
+      0.4536646308680196,
+      0.40738312313137237
+    ],
+    [
+      0.5503915828654505,
+      0.4717146320122948,
+      0.4850108103682613
+    ],
+    [
+      0.5010088457661764,
+      0.5070106845904985,
+      0.4977300203901188
+    ],
+    [
+      0.484348085521212,
+      0.5139921456410818,
+      0.4513636976051404
+    ],
+    [
+      0.46474969622564416,
+      0.4970643449161733,
+      0.45672384183973697
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.1715073681501025,
+      0.14878790631966674,
+      0.20780355141235793
+    ],
+    [
+      0.3505821956369858,
+      0.38964661353823915,
+      0.3436278512581375
+    ],
+    [
+      0.43647087606271284,
+      0.4544029901244536,
+      0.4117420129834069
+    ],
+    [
+      0.517774108620662,
+      0.5142423853724164,
+      0.4824501126114029
+    ],
+    [
+      0.5031424724310646,
+      0.5111026323173774,
+      0.5039944601329195
+    ],
+    [
+      0.49259063409748904,
+      0.5119522612155095,
+      0.4500236164539458
+    ],
+    [
+      0.4888742511874174,
+      0.4953117347289126,
+      0.44425981886656324
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.07469899595883847,
+      0.06498599439775911,
+      0.07457449382915222
+    ],
+    [
+      0.3345018531710425,
+      0.3032764635842097,
+      0.330861129942909
+    ],
+    [
+      0.41972767929968624,
+      0.4536646308680196,
+      0.40738312313137237
+    ],
+    [
+      0.5202467534765671,
+      0.5005913591356684,
+      0.4668474537658146
+    ],
+    [
+      0.5145892783225458,
+      0.5341037355314537,
+      0.48588653583318864
+    ],
+    [
+      0.48633111277037916,
+      0.5160395305010489,
+      0.45474790495908507
+    ],
+    [
+      0.4832369372787491,
+      0.4991166030838568,
+      0.4465728429982729
+    ],
+    [
+      0.39159236347460585,
+      0.3498251122311272,
+      0.3854582066988082
+    ],
+    [
+      0.41446283194851397,
+      0.4039843578531552,
+      0.4043260822376164
+    ],
+    [
+      0.41658980639137616,
+      0.4649590691816699,
+      0.3852751197255867
+    ],
+    [
+      0.44364790955553574,
+      0.46696255045868895,
+      0.4377207861406468
+    ],
+    [
+      0.5132529655218732,
+      0.5130987225104872,
+      0.47472726417756045
+    ],
+    [
+      0.5145251500101788,
+      0.501387098964684,
+      0.48746980676328505
+    ],
+    [
+      0.5223237074729742,
+      0.5173215630061604,
+      0.46953140861359616
+    ],
+    [
+      0.48651180736204863,
+      0.5094182584019983,
+      0.43680302925585945
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.07469899595883847,
+      0.06498599439775911,
+      0.07457449382915222
+    ],
+    [
+      0.3345018531710425,
+      0.30545516452194915,
+      0.330861129942909
+    ],
+    [
+      0.41972767929968624,
+      0.4536646308680196,
+      0.40738312313137237
+    ],
+    [
+      0.5503915828654505,
+      0.4717146320122948,
+      0.4850108103682613
+    ],
+    [
+      0.5010088457661764,
+      0.5070106845904985,
+      0.4977300203901188
+    ],
+    [
+      0.484348085521212,
+      0.5139921456410818,
+      0.4513636976051404
+    ],
+    [
+      0.46474969622564416,
+      0.4970643449161733,
+      0.45672384183973697
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.1715073681501025,
+      0.14878790631966674,
+      0.20780355141235793
+    ],
+    [
+      0.3505821956369858,
+      0.38964661353823915,
+      0.3436278512581375
+    ],
+    [
+      0.43647087606271284,
+      0.4544029901244536,
+      0.4117420129834069
+    ],
+    [
+      0.517774108620662,
+      0.5142423853724164,
+      0.4824501126114029
+    ],
+    [
+      0.5031424724310646,
+      0.5111026323173774,
+      0.5039944601329195
+    ],
+    [
+      0.49259063409748904,
+      0.5119522612155095,
+      0.4500236164539458
+    ],
+    [
+      0.4888742511874174,
+      0.4953117347289126,
+      0.44425981886656324
+    ],
+    [
+      0.0638655462184874,
+      0.06498599439775911,
+      0.06411698537682789
+    ],
+    [
+      0.07469899595883847,
+      0.06498599439775911,
+      0.07457449382915222
+    ],
+    [
+      0.3345018531710425,
+      0.3032764635842097,
+      0.330861129942909
+    ],
+    [
+      0.41972767929968624,
+      0.4536646308680196,
+      0.40738312313137237
+    ]
+  ],
+  "best_index": 49,
+  "inner_macro_f1": 0.5489201351121474,
+  "best_params": {
+    "C": 1,
+    "class_weight": "balanced",
+    "clip_weight": 1,
+    "e5_weight": 0.5,
+    "gamma": 0.1,
+    "lexical_weight": 0.25
+  },
+  "inner_fit": [
+    {
+      "training_indices_sha256": "7836107a51abaf35641a3353760fd67bc663aca28d40c9eb5c613febab571519",
+      "training_samples": 394,
+      "numeric": [
+        {
+          "mean_sha256": "8b2e581ca517ce5631e3e591b83e0b3fe7505508e4268c513dfd7d720f597800",
+          "scale_sha256": "9b16113555688da53c1fea99f3c9b40f0d320944d4b0b427c8d2d21aab734f0c"
+        },
+        {
+          "mean_sha256": "9991a218ebf7176612c8acea1d47b2bff42bf53b1a37ad0f3942a6904e229fab",
+          "scale_sha256": "1c31e66f9eb04f1b6d3eb406e8605f51ed75912c642b66a9296806b35e23353f"
+        },
+        {
+          "mean_sha256": "f69cd34eaa72cc8b50c8b48f4f2053305fd71e2e943498c6ba9b90a85c349b17",
+          "scale_sha256": "3b53b434ecd50187a7ba6deeb20279c1d50aaf021189301a00ad539578221f79"
+        }
+      ],
+      "lexical": [
+        {
+          "vocabulary_sha256": "385e396c0566738cc418b5cb7ad13bff7e9461e14776490d51d67e48b8f9dc9e",
+          "idf_sha256": "a98daca2b8873faff70cd25cbad5afc4c106c5fe25b6f9e4b4b6d555f6e52016",
+          "features": 8189
+        },
+        {
+          "vocabulary_sha256": "3b8636495eb0e285b8c2e9038758ea4682ae46ba1890b1b16d0f68ca05e97187",
+          "idf_sha256": "aaec4cf4a8d218534fbfab3533e27c56ec7c5f4b83352c3145449d67aae0d80e",
+          "features": 23129
+        }
+      ]
+    },
+    {
+      "training_indices_sha256": "4796cf972534f317ef54d7eb7379793b61fd7274674b98a65349d65a6145d5b7",
+      "training_samples": 395,
+      "numeric": [
+        {
+          "mean_sha256": "865eba4220f23897c37b61c798dc0e7bc6193b2b8bd3bf614f7f08a6a2984156",
+          "scale_sha256": "1b7cd40e8d0f525aeceb04a09950fac5924dd4a194b44ce75eb6173fbe5ac473"
+        },
+        {
+          "mean_sha256": "749ea1a5c4f2d57644b6dbd1432a674fe345b17882ec2c5b94d14e70b95ea37c",
+          "scale_sha256": "dcb124dd6081cfe0904660856b13f81087cda5b1b0b4ac421cdb19f2473ab53a"
+        },
+        {
+          "mean_sha256": "b38caaff59923d4e7fbe904beef564fe143b2abc8b4f30ccd2bc2503d7e7ec60",
+          "scale_sha256": "6f761160d51a1d1551c3b394f297d9573fcee1cd8fa637d0b65802d0931ce614"
+        }
+      ],
+      "lexical": [
+        {
+          "vocabulary_sha256": "d70ba142cbf57ae916196dddb3ff2f3e56d155bd891d9978fcc2408ba7ac04a5",
+          "idf_sha256": "52ae06a6d96c0982a70a81546c69e8bf9c1f778cdc772b531d8caa6ed61ea804",
+          "features": 8303
+        },
+        {
+          "vocabulary_sha256": "da0b344ac2b04b6f46cac85a518837e24e14a55323764fa076760c0ce98da68e",
+          "idf_sha256": "b5fb6f4f9f26f4ca7da15838ab531696f55ddc4b0096cbd1d9856b6aa3c135b5",
+          "features": 23101
+        }
+      ]
+    },
+    {
+      "training_indices_sha256": "be44630b130cb4375087934adee07f906846445e3586d0e0f50b90f27867341a",
+      "training_samples": 395,
+      "numeric": [
+        {
+          "mean_sha256": "f5f55bcc1879f302fba20fe27a1057cfcd20880e171dbfd70f3c7f50cf0d9948",
+          "scale_sha256": "5345e55129688abf2737ef5c7db7bcec55d4c785a6867ec5ccb6e718bf4ff06d"
+        },
+        {
+          "mean_sha256": "82e2bff0234ec2a9b2bd20a3d1847dc671e9aa627d4616140d38a1a5314ea385",
+          "scale_sha256": "dca3221b6280c4e114c9cb27e152a838b5a71ccb2d0daff4698d8cabd85b901a"
+        },
+        {
+          "mean_sha256": "a6e834bed177dd7c69ea9fad2ff9161c5e3ad245d0dbbff96dd36f12bb34ed49",
+          "scale_sha256": "7e96b2891845ec9654a2cdc947c522a0cb63146256646a695f8dc6cce9068b0c"
+        }
+      ],
+      "lexical": [
+        {
+          "vocabulary_sha256": "2cd0c24b9d3814e67ebb2ae2c656969d1b498bfada9510ba7e11231ebb49a0c8",
+          "idf_sha256": "2ade68323cc4dd20063a4b899df83b8cdb1e2d3ceeab07feb32a660078f38f22",
+          "features": 8292
+        },
+        {
+          "vocabulary_sha256": "533040138bf8878a27a6fad4f276408970467e251fb03827f7b9aedd489ee5cf",
+          "idf_sha256": "fd8f1516dd4cfb3533594424ab049cd1f28a55fbde32e352aeb8e1a1dadefa13",
+          "features": 23303
+        }
+      ]
+    }
+  ],
+  "outer_fit": {
+    "training_indices_sha256": "4c9ab9a6fb1f901163d23855cf8326107490eb9dd03c09f9ec98da8ca52ef503",
+    "training_samples": 592,
+    "numeric": [
+      {
+        "mean_sha256": "3165ea01d8a43ff80ffc809b30f93e040bfa630ca3bc0f12c4f1b70f8bbd01f0",
+        "scale_sha256": "45cccfdd0a2526bbdd822eaec4b677c6badd39d79c1ce9dbc34eeb992b086b0a"
+      },
+      {
+        "mean_sha256": "03998f5fb3e518f94714115047c6854b1c727a92fb7e40ab53435634840cdd7d",
+        "scale_sha256": "fcb9f40f02a002a64a9a755dfd5bb7b35b54bf3b302afa8bddf01e2c0941acfb"
+      },
+      {
+        "mean_sha256": "81b5dc804505c9b57442d89cfc829f436a2593767a101966fc7c7979ccc19aee",
+        "scale_sha256": "9d6cd343dea6fc288129fdcc3c26d747a2cef9eb3b929fc8c1cbe75f66b218a8"
+      }
+    ],
+    "lexical": [
+      {
+        "vocabulary_sha256": "ad88693a3e123e46e48cee9771c987fb8e53558906e9e89a93bbefb28c1da793",
+        "idf_sha256": "c74f8ccdb49b1733876c419c232fb4ed72ab6e837d870aaede3230aaf6123b11",
+        "features": 11642
+      },
+      {
+        "vocabulary_sha256": "f362c4a0173992d8103953b912bdc250e308887f33d347dc40e84b9d8b2b3c28",
+        "idf_sha256": "9dd96f590bd98e1a2ee77b3aa295a633b12ca9cae987411b6bfe15e40494ada9",
+        "features": 24000
+      }
+    ]
+  },
+  "seconds": 17.552257149014622
+}

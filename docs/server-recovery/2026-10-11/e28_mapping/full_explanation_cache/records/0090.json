@@ -1,0 +1,87 @@
+{
+  "index": 90,
+  "sample_id": "TMP-0E65BBC717B7",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c207ffdc00224842ee307e70959861c57de0275021b8a91bb63a3135a2385261",
+  "image_sha256": "0e65bbc717b7272a62f2c119e939e1b8cc02b1d1b13e1a44414c2696f9efd612",
+  "transmitted_image_sha256": "1c295a9426fdb745419619b08e7ea889ad59f4f1371912473ecf3bd15545daf0",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.131122,
+      "total": 10,
+      "remaining": 1.8688780000000005,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.131122000000005,
+      "total": 100,
+      "remaining": 91.868878,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.267941521946341,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Robotic exoskeleton or cockpit\",\n  \"source_properties\": \"A person inside a larger mechanical frame controlling its movements and functions through internal levers.\",\n  \"target_situation\": \"Jokowi's political intervention in Prabowo Subianto's future administration and electoral outcomes.\",\n  \"mapping\": \"Jokowi operates the Prabowo figure like a pilot, exerting hidden control over his actions and coalition-building.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "dY_LavCUGpic_uMP95SR0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 108,
+      "cost": {
+        "input_tokens_cost_nanodollars": 692000,
+        "output_tokens_cost_nanodollars": 324000
+      },
+      "prompt_tokens": 1384,
+      "total_backend_latency_ms": 1787,
+      "total_tokens": 1492
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.132138,
+      "total": 10,
+      "remaining": 1.8678620000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.132137999999998,
+      "total": 100,
+      "remaining": 91.867862,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.001016,
+  "fields": {
+    "source_object": "Robotic exoskeleton or cockpit",
+    "source_properties": "A person inside a larger mechanical frame controlling its movements and functions through internal levers.",
+    "target_situation": "Jokowi's political intervention in Prabowo Subianto's future administration and electoral outcomes.",
+    "mapping": "Jokowi operates the Prabowo figure like a pilot, exerting hidden control over his actions and coalition-building.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Robotic exoskeleton or cockpit\nsource_properties: A person inside a larger mechanical frame controlling its movements and functions through internal levers.\ntarget_situation: Jokowi's political intervention in Prabowo Subianto's future administration and electoral outcomes.\nmapping: Jokowi operates the Prabowo figure like a pilot, exerting hidden control over his actions and coalition-building.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

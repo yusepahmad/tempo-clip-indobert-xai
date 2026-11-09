@@ -1,0 +1,87 @@
+{
+  "index": 48,
+  "sample_id": "TMP-A1B0E4BAFD57",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bf65382179f9733601b915e9be9bd264b8d09e14d41c79fed2b81a2fa4c6218c",
+  "image_sha256": "a1b0e4bafd57017474333576e0d671fa91b8ad1ad4bed31145340c80b330a9e7",
+  "transmitted_image_sha256": "cf92a63c91f424c078c33f7e82fbdaf0e38f8c2e9d5df0a565778e74b291dee4",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0780365,
+      "total": 10,
+      "remaining": 1.9219635000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.078036499999996,
+      "total": 100,
+      "remaining": 91.9219635,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.7781424848362803,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"miniature shipping container\",\n  \"source_properties\": \"small, handheld size, recognizable industrial design, typically used for heavy bulk transport\",\n  \"target_situation\": \"bribery involving customs officials and illegal import logistics\",\n  \"mapping\": \"The physical shrinking of the container symbolizes how large-scale smuggling operations are easily 'handed over' or concealed through illicit cash transactions.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "aI7LauKwE7qi_uMPou_3-Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671000,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1342,
+      "total_backend_latency_ms": 1603,
+      "total_tokens": 1441
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0790045,
+      "total": 10,
+      "remaining": 1.9209955,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.079004499999996,
+      "total": 100,
+      "remaining": 91.9209955,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000968,
+  "fields": {
+    "source_object": "miniature shipping container",
+    "source_properties": "small, handheld size, recognizable industrial design, typically used for heavy bulk transport",
+    "target_situation": "bribery involving customs officials and illegal import logistics",
+    "mapping": "The physical shrinking of the container symbolizes how large-scale smuggling operations are easily 'handed over' or concealed through illicit cash transactions.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: miniature shipping container\nsource_properties: small, handheld size, recognizable industrial design, typically used for heavy bulk transport\ntarget_situation: bribery involving customs officials and illegal import logistics\nmapping: The physical shrinking of the container symbolizes how large-scale smuggling operations are easily 'handed over' or concealed through illicit cash transactions.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

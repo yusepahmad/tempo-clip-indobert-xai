@@ -1,0 +1,87 @@
+{
+  "index": 115,
+  "sample_id": "TMP-E9A5F94EF9F7",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bf6fd4c4d3beda0bf91028022124061c8a06e9f5b37c10bbada4e729b68ce5d9",
+  "image_sha256": "e9a5f94ef9f7e273edbcd708d53dec68c9433f6fa4eb45b8e9f5fe3e2b02ee4d",
+  "transmitted_image_sha256": "269cddca4f32e54f2db89e117587aabd1722bd03f5bb7c165c245decf986afbc",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.175568,
+      "total": 10,
+      "remaining": 1.8244319999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.175567999999998,
+      "total": 100,
+      "remaining": 91.824432,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3246206007897854,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"pixelation or digital disintegration\", \"source_properties\": \"A solid form breaking apart into small, square black and white fragments resembling digital pixels.\", \"target_situation\": \"A supreme judge allegedly accepting bribes in a case involving 30 containers of smuggled BlackBerry devices.\", \"mapping\": \"The judge's silhouette disintegrates into BlackBerry phones and digital pixels, suggesting his integrity and legal standing are being dissolved or compromised by the electronic contraband.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "JJDLaufpDMfh_uMPvKet6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 668000,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1336,
+      "total_backend_latency_ms": 1921,
+      "total_tokens": 1437
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.176539,
+      "total": 10,
+      "remaining": 1.823461,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.176539000000005,
+      "total": 100,
+      "remaining": 91.823461,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000971,
+  "fields": {
+    "source_object": "pixelation or digital disintegration",
+    "source_properties": "A solid form breaking apart into small, square black and white fragments resembling digital pixels.",
+    "target_situation": "A supreme judge allegedly accepting bribes in a case involving 30 containers of smuggled BlackBerry devices.",
+    "mapping": "The judge's silhouette disintegrates into BlackBerry phones and digital pixels, suggesting his integrity and legal standing are being dissolved or compromised by the electronic contraband.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: pixelation or digital disintegration\nsource_properties: A solid form breaking apart into small, square black and white fragments resembling digital pixels.\ntarget_situation: A supreme judge allegedly accepting bribes in a case involving 30 containers of smuggled BlackBerry devices.\nmapping: The judge's silhouette disintegrates into BlackBerry phones and digital pixels, suggesting his integrity and legal standing are being dissolved or compromised by the electronic contraband.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

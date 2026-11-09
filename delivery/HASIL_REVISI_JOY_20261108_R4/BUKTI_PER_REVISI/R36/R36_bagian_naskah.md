@@ -1,0 +1,3 @@
+## Keterbatasan
+Korpus dipakai berulang untuk pemilihan banyak konfigurasi; kandidat terpilih dapat optimistis. Data berasal dari satu penerbit sehingga kerangka editorialnya tidak mewakili seluruh pers Indonesia. Label adalah interpretasi manusia; agreement belum terukur. Riwayat penyusutan belum lengkap. Crop/resize pada encoder dapat membuang teks/komposisi, dan pembanding Qwen dibatasi citra384 piksel. Opsi jawaban Qwen tetap dalam urutan yang sama sehingga bias posisi belum dikontrol. Fold 1 rich E14 memakai reuseinnerpilot dan batas3 epoch ditentukan setelah riwayat6 epoch; outer test tidak dipakai, tetapi keputusan pilot tetap menjadi keterbatasan desain. Semua temuan adalah internal repeated-corpus evaluation, bukan independent acceptance.
+

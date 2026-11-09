@@ -1,0 +1,87 @@
+{
+  "index": 349,
+  "sample_id": "TMP-8A1F480265E6",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "349c9eda87f9e96306e359bf544be343ab8e0fb5960f06a87d5d2eeacdc60d16",
+  "image_sha256": "8a1f480265e6dfe07b3d11413038850ee7f6d785ca3f5435c5c04437e3f68eb9",
+  "transmitted_image_sha256": "78e27de257b16d15f07d81fe48f5681e2962d5cb0471a7c31955d24c170d16b6",
+  "image_size": [
+    472,
+    628
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.515554,
+      "total": 10,
+      "remaining": 1.4844460000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.515553999999995,
+      "total": 100,
+      "remaining": 91.484446,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.304630788974464,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"fishing net\",\n  \"source_properties\": \"a mesh tool designed to capture, entangle, and restrain aquatic life by being cast over or around it\",\n  \"target_situation\": \"political conflict aimed at restraining Minister Susi Pudjiastuti's aggressive policies against illegal fishing\",\n  \"mapping\": \"the net emerging from the Minister's hair symbolizes efforts to 'trap' or restrict her actions, echoing the headline 'Meringkus Susi' (Nabbing Susi)\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "QJbLaojBNf-o_uMP1rjw6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 123,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 369000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 1765,
+      "total_tokens": 1470
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5165965,
+      "total": 10,
+      "remaining": 1.4834034999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.516596500000006,
+      "total": 100,
+      "remaining": 91.4834035,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0010425,
+  "fields": {
+    "source_object": "fishing net",
+    "source_properties": "a mesh tool designed to capture, entangle, and restrain aquatic life by being cast over or around it",
+    "target_situation": "political conflict aimed at restraining Minister Susi Pudjiastuti's aggressive policies against illegal fishing",
+    "mapping": "the net emerging from the Minister's hair symbolizes efforts to 'trap' or restrict her actions, echoing the headline 'Meringkus Susi' (Nabbing Susi)",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: fishing net\nsource_properties: a mesh tool designed to capture, entangle, and restrain aquatic life by being cast over or around it\ntarget_situation: political conflict aimed at restraining Minister Susi Pudjiastuti's aggressive policies against illegal fishing\nmapping: the net emerging from the Minister's hair symbolizes efforts to 'trap' or restrict her actions, echoing the headline 'Meringkus Susi' (Nabbing Susi)\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

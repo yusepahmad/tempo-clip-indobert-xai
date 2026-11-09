@@ -1,0 +1,87 @@
+{
+  "index": 467,
+  "sample_id": "TMP-935B791B506D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "85f31b6ea1430bd1a901c541a0d3aa0b1b87a1b785dc3f9e897f836b351d820c",
+  "image_sha256": "935b791b506d8698edb47ff0c57dd26d74a5079d277c3fe34c3d088dcbd7530a",
+  "transmitted_image_sha256": "b683b7176601314b6292af325db24c54acdbee51294e0310f1a29d1267d5f0bc",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6753955,
+      "total": 10,
+      "remaining": 1.3246044999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.675395499999993,
+      "total": 100,
+      "remaining": 91.3246045,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0369461346417665,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"broken office chair\", \"source_properties\": \"disassembled components, missing support, person floating or falling without a seat\", \"target_situation\": \"The potential dissolution of the Ministry of State-Owned Enterprises (BUMN) due to the creation of a 'superholding' company.\", \"mapping\": \"The falling person and dismantled chair represent the instability and loss of institutional structure (the Ministry) as its functions are transferred elsewhere.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "S5nLapmIGK2u_PUPtb3C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 100,
+      "cost": {
+        "input_tokens_cost_nanodollars": 685500,
+        "output_tokens_cost_nanodollars": 300000
+      },
+      "prompt_tokens": 1371,
+      "total_backend_latency_ms": 1555,
+      "total_tokens": 1471
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.676381,
+      "total": 10,
+      "remaining": 1.3236190000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.676381000000006,
+      "total": 100,
+      "remaining": 91.323619,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009855,
+  "fields": {
+    "source_object": "broken office chair",
+    "source_properties": "disassembled components, missing support, person floating or falling without a seat",
+    "target_situation": "The potential dissolution of the Ministry of State-Owned Enterprises (BUMN) due to the creation of a 'superholding' company.",
+    "mapping": "The falling person and dismantled chair represent the instability and loss of institutional structure (the Ministry) as its functions are transferred elsewhere.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: broken office chair\nsource_properties: disassembled components, missing support, person floating or falling without a seat\ntarget_situation: The potential dissolution of the Ministry of State-Owned Enterprises (BUMN) due to the creation of a 'superholding' company.\nmapping: The falling person and dismantled chair represent the instability and loss of institutional structure (the Ministry) as its functions are transferred elsewhere.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

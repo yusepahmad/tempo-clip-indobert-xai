@@ -1,0 +1,87 @@
+{
+  "index": 445,
+  "sample_id": "TMP-ED47D3563217",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "d60a8437d090513cd70f7f6c92e8554a0435f184b89d62bea04e6979a908ecaf",
+  "image_sha256": "ed47d3563217198a94241ce82a76e9e392a774a255867b4bfcd462f87902d797",
+  "transmitted_image_sha256": "509cd436505cfbd330d9bddce7be128cfce07d4ca025196b240c0fd1e06abde9",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.644037,
+      "total": 10,
+      "remaining": 1.3559629999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.644036999999997,
+      "total": 100,
+      "remaining": 91.355963,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.428013916127384,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Upside-down posters\",\n  \"source_properties\": \"Inverted orientation, making images difficult to view or read normally.\",\n  \"target_situation\": \"Anxiety regarding 'Golput' (voter abstention) in the 2019 Indonesian election.\",\n  \"mapping\": \"Inverted posters symbolize a disrupted democratic process where voters' disengagement or 'turning away' creates a confusing, dysfunctional political landscape.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "s5jLasO1J7qi_uMPou_3-Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 111,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674000,
+        "output_tokens_cost_nanodollars": 333000
+      },
+      "prompt_tokens": 1348,
+      "total_backend_latency_ms": 2215,
+      "total_tokens": 1459
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.645044,
+      "total": 10,
+      "remaining": 1.3549559999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.645043999999999,
+      "total": 100,
+      "remaining": 91.354956,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.001007,
+  "fields": {
+    "source_object": "Upside-down posters",
+    "source_properties": "Inverted orientation, making images difficult to view or read normally.",
+    "target_situation": "Anxiety regarding 'Golput' (voter abstention) in the 2019 Indonesian election.",
+    "mapping": "Inverted posters symbolize a disrupted democratic process where voters' disengagement or 'turning away' creates a confusing, dysfunctional political landscape.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: Upside-down posters\nsource_properties: Inverted orientation, making images difficult to view or read normally.\ntarget_situation: Anxiety regarding 'Golput' (voter abstention) in the 2019 Indonesian election.\nmapping: Inverted posters symbolize a disrupted democratic process where voters' disengagement or 'turning away' creates a confusing, dysfunctional political landscape.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 391,
+  "sample_id": "TMP-26E110CA86C9",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "050182e4a495142edc0729d7f05828f1f8e63a8efe033afe0b0404de05d495b3",
+  "image_sha256": "26e110ca86c998ce66dbbf73a0b9b788acfb764f79cdc3f92377ea687b4fa6cc",
+  "transmitted_image_sha256": "875629b8939c1a7d0c9aa621a464035e31d953d51262755630a4c19a2a60508c",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5726485,
+      "total": 10,
+      "remaining": 1.4273515000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.5726485,
+      "total": 100,
+      "remaining": 91.4273515,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.079728255048394,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A group messaging application interface\",\n  \"source_properties\": \"Displays notifications of members leaving a group and someone being promoted to administrator.\",\n  \"target_situation\": \"Setya Novanto's isolation or abandonment within his political circle.\",\n  \"mapping\": \"Notifications of members leaving mirror political allies distancing themselves, leaving him alone in control.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "VJfLauHyBcCS_uMPqPCfqA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661000,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1322,
+      "total_backend_latency_ms": 1555,
+      "total_tokens": 1415
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5735885,
+      "total": 10,
+      "remaining": 1.4264115000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.5735885,
+      "total": 100,
+      "remaining": 91.4264115,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.00094,
+  "fields": {
+    "source_object": "A group messaging application interface",
+    "source_properties": "Displays notifications of members leaving a group and someone being promoted to administrator.",
+    "target_situation": "Setya Novanto's isolation or abandonment within his political circle.",
+    "mapping": "Notifications of members leaving mirror political allies distancing themselves, leaving him alone in control.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A group messaging application interface\nsource_properties: Displays notifications of members leaving a group and someone being promoted to administrator.\ntarget_situation: Setya Novanto's isolation or abandonment within his political circle.\nmapping: Notifications of members leaving mirror political allies distancing themselves, leaving him alone in control.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

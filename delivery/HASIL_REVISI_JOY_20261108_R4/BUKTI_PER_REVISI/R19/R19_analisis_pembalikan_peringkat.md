@@ -1,0 +1,3 @@
+# Analisis pembalikan peringkat
+
+Pada 36 nama kandidat historis, MICRO_E11_hierarchical_task3 berada di peringkat 1 menurut minimum akurasi, tetapi menjadi peringkat 32 menurut minimum Macro-F1: turun 31 posisi. Ini menunjukkan akurasi dan Macro-F1 dapat mengarahkan keputusan berbeda pada kelas timpang. Minimum dipertahankan untuk audit PDF; keputusan utama revisi memakai per-task dan mean Macro-F1 kandidat CLIP–IndoBERT yang layak. E42 dipilih post-hoc pada korpus berulang, sehingga bukan validasi eksternal. Tabel memuat alias/signature; 36 nama bukan 36 eksperimen independen. Spearman dihitung dengan tied ranks dan berbeda dari angka 0,050 dalam PDF; nilai aktual ada pada R19_korelasi_peringkat.json.

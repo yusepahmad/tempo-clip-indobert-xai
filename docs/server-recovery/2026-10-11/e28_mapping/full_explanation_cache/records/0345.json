@@ -1,0 +1,87 @@
+{
+  "index": 345,
+  "sample_id": "TMP-F7AF734C86A0",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "09d8b202cff1d44fe292d1a15238c79a34045f2cfa85b93f3d77d0ae4700b9a8",
+  "image_sha256": "f7af734c86a02e8db16db4d2c24688d677a7d491bb3e7e5d63046e228d960665",
+  "transmitted_image_sha256": "45282af936e6a4368bbf5623a9b544372786e19fed0135f8187b26d1e016447a",
+  "image_size": [
+    472,
+    599
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5117685,
+      "total": 10,
+      "remaining": 1.4882314999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.511768500000002,
+      "total": 100,
+      "remaining": 91.4882315,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.334519853815436,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"theater stage\", \"source_properties\": \"A location with \\\"behind the scenes\\\" (di belakang panggung) areas where hidden preparations and activities occur out of public sight.\", \"target_situation\": \"Investigative journalism into public interest stories like \\\"fat bank accounts\\\" and painting forgery rings.\", \"mapping\": \"The illustration depicts the hidden, complex processes and \\\"behind the scenes\\\" stories that Tempo reporters uncovered while investigating scandals normally obscured from public view.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "J5bLaojFEK2u_PUPtb3C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 105,
+      "cost": {
+        "input_tokens_cost_nanodollars": 653500,
+        "output_tokens_cost_nanodollars": 315000
+      },
+      "prompt_tokens": 1307,
+      "total_backend_latency_ms": 2611,
+      "total_tokens": 1412
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.512737,
+      "total": 10,
+      "remaining": 1.4872630000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.512737000000001,
+      "total": 100,
+      "remaining": 91.487263,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009685,
+  "fields": {
+    "source_object": "theater stage",
+    "source_properties": "A location with \"behind the scenes\" (di belakang panggung) areas where hidden preparations and activities occur out of public sight.",
+    "target_situation": "Investigative journalism into public interest stories like \"fat bank accounts\" and painting forgery rings.",
+    "mapping": "The illustration depicts the hidden, complex processes and \"behind the scenes\" stories that Tempo reporters uncovered while investigating scandals normally obscured from public view.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: theater stage\nsource_properties: A location with \"behind the scenes\" (di belakang panggung) areas where hidden preparations and activities occur out of public sight.\ntarget_situation: Investigative journalism into public interest stories like \"fat bank accounts\" and painting forgery rings.\nmapping: The illustration depicts the hidden, complex processes and \"behind the scenes\" stories that Tempo reporters uncovered while investigating scandals normally obscured from public view.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

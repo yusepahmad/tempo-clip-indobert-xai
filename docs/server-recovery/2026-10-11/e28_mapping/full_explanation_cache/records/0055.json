@@ -1,0 +1,90 @@
+{
+  "index": 55,
+  "sample_id": "TMP-5EB47C851781",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "90a1237289ad95eecc04a70ea40b4d3291593d3d383b82c6d856154d07993242",
+  "image_sha256": "5eb47c85178112c63a442edc2b09cc96d0c589225a4929caf6f591c310b03fd5",
+  "transmitted_image_sha256": "c071f9e133335695da62f35f5a0ee20b0a54e476ab644d1d50703e5de93391ea",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.08475,
+      "total": 10,
+      "remaining": 1.9152500000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.08475,
+      "total": 100,
+      "remaining": 91.91525,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.539591592736542,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Industrial piping and a red control valve.\",\n  \"source_properties\": \"Interconnected pipes for fluid transport; a mechanical valve used to shut off flow.\",\n  \"target_situation\": \"The legal termination of BP Migas, an oil and gas regulatory body.\",\n  \"mapping\": \"Closing the valve symbolizes the court's decision to shut down the agency, halting its regulatory functions and existence.\",\n  \"uncertainty\": \"None.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "j47Larn3Cuyb_uMPzeOSwQw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 793,
+      "completion_tokens_details": {
+        "reasoning_tokens": 690
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 656000,
+        "output_tokens_cost_nanodollars": 2379000
+      },
+      "prompt_tokens": 1312,
+      "total_backend_latency_ms": 4640,
+      "total_tokens": 2105
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.087785,
+      "total": 10,
+      "remaining": 1.9122149999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.087784999999997,
+      "total": 100,
+      "remaining": 91.912215,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.003035,
+  "fields": {
+    "source_object": "Industrial piping and a red control valve.",
+    "source_properties": "Interconnected pipes for fluid transport; a mechanical valve used to shut off flow.",
+    "target_situation": "The legal termination of BP Migas, an oil and gas regulatory body.",
+    "mapping": "Closing the valve symbolizes the court's decision to shut down the agency, halting its regulatory functions and existence.",
+    "uncertainty": "None."
+  },
+  "explanation": "source_object: Industrial piping and a red control valve.\nsource_properties: Interconnected pipes for fluid transport; a mechanical valve used to shut off flow.\ntarget_situation: The legal termination of BP Migas, an oil and gas regulatory body.\nmapping: Closing the valve symbolizes the court's decision to shut down the agency, halting its regulatory functions and existence.\nuncertainty: None.",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 576,
+  "sample_id": "TMP-1BF82B3F1272",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ca401510b7c37f8e7d6066030c97484f236f813bd50c3982d101c38a80576a37",
+  "image_sha256": "1bf82b3f1272a4e7d41dd6a906f0fef5f7ab32235834de3a00a00a46e780d039",
+  "transmitted_image_sha256": "98bb1a3d62a7c7b4299cbac8f1857843db01a34dc8a56d68301d104cb8dfd2a0",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8277245,
+      "total": 10,
+      "remaining": 1.1722754999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.827724500000002,
+      "total": 100,
+      "remaining": 91.1722755,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.7997958417981863,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"bare, leafless trees\", \"source_properties\": \"stark, silhouetted branches devoid of foliage, creating a somber, skeletal atmosphere under a night sky\", \"target_situation\": \"the failing social forestry program exploited for profit by volunteers and corporations\", \"mapping\": \"the barren forest visually represents the stalled restoration and environmental degradation caused by opportunistic entities draining resources for profit\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "MpzLaua9OuXG_uMP3cfxkAY",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 2064,
+      "total_tokens": 1444
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8286765,
+      "total": 10,
+      "remaining": 1.1713234999999997,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.8286765,
+      "total": 100,
+      "remaining": 91.1713235,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000952,
+  "fields": {
+    "source_object": "bare, leafless trees",
+    "source_properties": "stark, silhouetted branches devoid of foliage, creating a somber, skeletal atmosphere under a night sky",
+    "target_situation": "the failing social forestry program exploited for profit by volunteers and corporations",
+    "mapping": "the barren forest visually represents the stalled restoration and environmental degradation caused by opportunistic entities draining resources for profit",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: bare, leafless trees\nsource_properties: stark, silhouetted branches devoid of foliage, creating a somber, skeletal atmosphere under a night sky\ntarget_situation: the failing social forestry program exploited for profit by volunteers and corporations\nmapping: the barren forest visually represents the stalled restoration and environmental degradation caused by opportunistic entities draining resources for profit\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

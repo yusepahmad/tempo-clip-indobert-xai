@@ -1,0 +1,87 @@
+{
+  "index": 478,
+  "sample_id": "TMP-81890CFF55BD",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bca05bacb6435a2f454e9645f22d8a5a877e37cc63ecf97f90ef67e195a360a6",
+  "image_sha256": "81890cff55bddc0d7c7be3fab6466feb2f90ea1b2f8c5316b3424bc7a822a6a4",
+  "transmitted_image_sha256": "3f956432d7a0e8630cf86794251b2510133d0b1b9f0c264537d18e63543ca314",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6860405,
+      "total": 10,
+      "remaining": 1.3139594999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.686040500000004,
+      "total": 100,
+      "remaining": 91.3139595,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0168576519936323,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"shaking hands\", \"source_properties\": \"physical contact between two parties, typically used to seal a deal, agreement, or reconciliation.\", \"target_situation\": \"Megawati and Prabowo forming a political alliance against Surya Paloh.\", \"mapping\": \"The physical act of Megawati and Prabowo shaking hands visualizes their political embrace and cooperation to consolidate power within the coalition.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "i5nLasHxGd7d_uMPq5e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 685500,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1371,
+      "total_backend_latency_ms": 1538,
+      "total_tokens": 1461
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.686996,
+      "total": 10,
+      "remaining": 1.3130039999999994,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.686995999999994,
+      "total": 100,
+      "remaining": 91.313004,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009555,
+  "fields": {
+    "source_object": "shaking hands",
+    "source_properties": "physical contact between two parties, typically used to seal a deal, agreement, or reconciliation.",
+    "target_situation": "Megawati and Prabowo forming a political alliance against Surya Paloh.",
+    "mapping": "The physical act of Megawati and Prabowo shaking hands visualizes their political embrace and cooperation to consolidate power within the coalition.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: shaking hands\nsource_properties: physical contact between two parties, typically used to seal a deal, agreement, or reconciliation.\ntarget_situation: Megawati and Prabowo forming a political alliance against Surya Paloh.\nmapping: The physical act of Megawati and Prabowo shaking hands visualizes their political embrace and cooperation to consolidate power within the coalition.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

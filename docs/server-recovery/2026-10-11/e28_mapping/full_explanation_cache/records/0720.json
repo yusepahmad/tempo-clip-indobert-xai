@@ -1,0 +1,90 @@
+{
+  "index": 720,
+  "sample_id": "TMP-8CA8618FE0B9",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f237e6a052430ce00738f367f6bff87bf4354297f1125923e3badef5fa798f92",
+  "image_sha256": "8ca8618fe0b9b4ecc3d588903db42e6068d482509baf5072cdfdb958ab3d99af",
+  "transmitted_image_sha256": "29f63e575d100bf44411e5269e0e4b1d67a209e078ec50ea764a1f5df557b4a8",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0426695,
+      "total": 10,
+      "remaining": 0.9573304999999994,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.042669500000002,
+      "total": 100,
+      "remaining": 90.9573305,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.116573797073215,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A lit match and a trail of gunpowder leading to a KPU ballot box.\",\n  \"source_properties\": \"Gunpowder is highly flammable; lighting a trail creates a rapid fire that leads to an explosion at the destination.\",\n  \"target_situation\": \"Political elites proposing indirect regional elections, which threatens to dismantle existing democratic voting systems.\",\n  \"mapping\": \"Lighting the powder trail represents initiating a controversial policy that could lead to the explosive destruction of established democratic institutions.\",\n  \"uncertainty\": \"None evident.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "-5_Lat2yCPW6_uMPjdDjYA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 910,
+      "completion_tokens_details": {
+        "reasoning_tokens": 792
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 675500,
+        "output_tokens_cost_nanodollars": 2730000
+      },
+      "prompt_tokens": 1351,
+      "total_backend_latency_ms": 5605,
+      "total_tokens": 2261
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.046075,
+      "total": 10,
+      "remaining": 0.9539249999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.046075000000002,
+      "total": 100,
+      "remaining": 90.953925,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0034055,
+  "fields": {
+    "source_object": "A lit match and a trail of gunpowder leading to a KPU ballot box.",
+    "source_properties": "Gunpowder is highly flammable; lighting a trail creates a rapid fire that leads to an explosion at the destination.",
+    "target_situation": "Political elites proposing indirect regional elections, which threatens to dismantle existing democratic voting systems.",
+    "mapping": "Lighting the powder trail represents initiating a controversial policy that could lead to the explosive destruction of established democratic institutions.",
+    "uncertainty": "None evident."
+  },
+  "explanation": "source_object: A lit match and a trail of gunpowder leading to a KPU ballot box.\nsource_properties: Gunpowder is highly flammable; lighting a trail creates a rapid fire that leads to an explosion at the destination.\ntarget_situation: Political elites proposing indirect regional elections, which threatens to dismantle existing democratic voting systems.\nmapping: Lighting the powder trail represents initiating a controversial policy that could lead to the explosive destruction of established democratic institutions.\nuncertainty: None evident.",
+  "finish_reason": "stop",
+  "usable": true
+}

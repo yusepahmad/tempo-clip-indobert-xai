@@ -1,0 +1,87 @@
+{
+  "index": 565,
+  "sample_id": "TMP-8E3E7A8C7D95",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c3d5c1561f835ef4b2433a3d49ceb9c26cc7aafe225ccfcfd5210f66b0b2c7ac",
+  "image_sha256": "8e3e7a8c7d95ceb529d875f8779c3d4c1c423184e787f44a19007f5f9ed7b588",
+  "transmitted_image_sha256": "0073c925de3c3a2268489716d52230e741c5c6a050b9c9a8da759a950e835e95",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8152955,
+      "total": 10,
+      "remaining": 1.1847045000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.815295500000005,
+      "total": 100,
+      "remaining": 91.1847045,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3803862589411438,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"blueprints\",\n  \"source_properties\": \"Unrolled, large-scale paper plans showing a design yet to be built.\",\n  \"target_situation\": \"Planning the new national capital city amidst political disagreements among government ministers.\",\n  \"mapping\": \"The rolled blueprints represent the ambitious proposal for the new capital project.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "6pvLauyFJpLN_uMPhvbuyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 87,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676500,
+        "output_tokens_cost_nanodollars": 261000
+      },
+      "prompt_tokens": 1353,
+      "total_backend_latency_ms": 1636,
+      "total_tokens": 1440
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.816233,
+      "total": 10,
+      "remaining": 1.1837669999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.816232999999997,
+      "total": 100,
+      "remaining": 91.183767,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009375,
+  "fields": {
+    "source_object": "blueprints",
+    "source_properties": "Unrolled, large-scale paper plans showing a design yet to be built.",
+    "target_situation": "Planning the new national capital city amidst political disagreements among government ministers.",
+    "mapping": "The rolled blueprints represent the ambitious proposal for the new capital project.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: blueprints\nsource_properties: Unrolled, large-scale paper plans showing a design yet to be built.\ntarget_situation: Planning the new national capital city amidst political disagreements among government ministers.\nmapping: The rolled blueprints represent the ambitious proposal for the new capital project.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

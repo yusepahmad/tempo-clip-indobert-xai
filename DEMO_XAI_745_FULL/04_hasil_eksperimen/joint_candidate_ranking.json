@@ -1,0 +1,233 @@
+{
+  "schema": "tempo-joint-candidate-ranking-v1",
+  "selection_rule": "descending minimum Macro-F1 across the same model's three tasks; descending mean as tie-breaker",
+  "warning": "Repeated experiments on the same corpus create selection bias; this is not external validation.",
+  "excluded": {
+    "E33-E35": "reported historically but canonical root-verification artifacts are absent from the current result tree",
+    "E45": "full experiment not completed",
+    "Task2-only candidates": "not eligible for a joint three-task model decision"
+  },
+  "candidates": [
+    {
+      "model_id": "E42",
+      "status": "passed",
+      "samples": 740,
+      "protocol": "verified OOF predictions on the fixed 740-sample corpus",
+      "metrics": {
+        "task1_issue": 0.5254826236457082,
+        "task2_domain_sumber": 0.3955604325695003,
+        "task3_primary_entity_type": 0.4033984095814434
+      },
+      "minimum_macro_f1": 0.3955604325695003,
+      "mean_macro_f1": 0.44148048859888395,
+      "all_tasks_at_least_0_70": false,
+      "source": "04_hasil_eksperimen/e42_tail_grid/root_verification.json",
+      "source_sha256": "c9a5346743ee459bbfaeba920d7393d0076e1b833973f48ffc2748843ac6fe98",
+      "rank_by_minimum_then_mean": 1
+    },
+    {
+      "model_id": "E44",
+      "status": "passed",
+      "samples": 740,
+      "protocol": "verified OOF predictions on the fixed 740-sample corpus",
+      "metrics": {
+        "task1_issue": 0.5255298854521111,
+        "task2_domain_sumber": 0.39368581964813126,
+        "task3_primary_entity_type": 0.4038332679063952
+      },
+      "minimum_macro_f1": 0.39368581964813126,
+      "mean_macro_f1": 0.44101632433554583,
+      "all_tasks_at_least_0_70": false,
+      "source": "04_hasil_eksperimen/e44_focal_tail/root_verification.json",
+      "source_sha256": "57683303349ee77dd8f0f0aac05bc903a07853b8808ffa375b5d55e0e6722078",
+      "rank_by_minimum_then_mean": 2
+    },
+    {
+      "model_id": "E41",
+      "status": "passed",
+      "samples": 740,
+      "protocol": "verified OOF predictions on the fixed 740-sample corpus",
+      "metrics": {
+        "task1_issue": 0.495725624055955,
+        "task2_domain_sumber": 0.4206737615962957,
+        "task3_primary_entity_type": 0.3856956289281086
+      },
+      "minimum_macro_f1": 0.3856956289281086,
+      "mean_macro_f1": 0.43403167152678646,
+      "all_tasks_at_least_0_70": false,
+      "source": "04_hasil_eksperimen/e41_cached_tail/gpu/root_verification.json",
+      "source_sha256": "7580508e2b7dca762cd49a6803064032e2122c7fed0bcd87baf482acbcbd89bc",
+      "rank_by_minimum_then_mean": 3
+    },
+    {
+      "model_id": "E47",
+      "status": "passed",
+      "samples": 740,
+      "protocol": "verified OOF predictions on the fixed 740-sample corpus",
+      "metrics": {
+        "task1_issue": 0.4564508755957856,
+        "task2_domain_sumber": 0.42484872807321133,
+        "task3_primary_entity_type": 0.37594748717414106
+      },
+      "minimum_macro_f1": 0.37594748717414106,
+      "mean_macro_f1": 0.4190823636143793,
+      "all_tasks_at_least_0_70": false,
+      "source": "04_hasil_eksperimen/e47_task_relations/root_verification.json",
+      "source_sha256": "ee24ca482cd410a2e20c6e7a291ed157fdf698bd7ce0d4a2bfef3447a26b0994",
+      "rank_by_minimum_then_mean": 4
+    },
+    {
+      "model_id": "E38",
+      "status": "passed",
+      "samples": 740,
+      "protocol": "verified OOF predictions on the fixed 740-sample corpus",
+      "metrics": {
+        "task1_issue": 0.48350927743702055,
+        "task2_domain_sumber": 0.4054966017319787,
+        "task3_primary_entity_type": 0.37465096761044686
+      },
+      "minimum_macro_f1": 0.37465096761044686,
+      "mean_macro_f1": 0.421218948926482,
+      "all_tasks_at_least_0_70": false,
+      "source": "04_hasil_eksperimen/e38_l14_token/root_verification.json",
+      "source_sha256": "88da82dc488810e7a1e2e41e9c6eade12c217edd57f3dd3f77fb6438d746a7fc",
+      "rank_by_minimum_then_mean": 5
+    },
+    {
+      "model_id": "E40",
+      "status": "passed",
+      "samples": 740,
+      "protocol": "verified OOF predictions on the fixed 740-sample corpus",
+      "metrics": {
+        "task1_issue": 0.4616703799564094,
+        "task2_domain_sumber": 0.4182965385052512,
+        "task3_primary_entity_type": 0.37359144114400833
+      },
+      "minimum_macro_f1": 0.37359144114400833,
+      "mean_macro_f1": 0.417852786535223,
+      "all_tasks_at_least_0_70": false,
+      "source": "04_hasil_eksperimen/e40_balanced_mmoe/root_verification.json",
+      "source_sha256": "2b39d6d2521d48d090f3f3724c1b56e51f4a1985bd4879fad9aa21409328cf7b",
+      "rank_by_minimum_then_mean": 6
+    },
+    {
+      "model_id": "E49",
+      "status": "passed",
+      "samples": 740,
+      "protocol": "verified OOF predictions on the fixed 740-sample corpus",
+      "metrics": {
+        "task1_issue": 0.49486633987880113,
+        "task2_domain_sumber": 0.39765635981863034,
+        "task3_primary_entity_type": 0.3694782237442772
+      },
+      "minimum_macro_f1": 0.3694782237442772,
+      "mean_macro_f1": 0.42066697448056956,
+      "all_tasks_at_least_0_70": false,
+      "source": "04_hasil_eksperimen/e49_task_routed_mtl/root_verification.json",
+      "source_sha256": "62a33cf3926ec4bad0e8f962626e1fd08f3b7666b9d58bac27b331825a29195a",
+      "rank_by_minimum_then_mean": 7
+    },
+    {
+      "model_id": "E43",
+      "status": "passed",
+      "samples": 740,
+      "protocol": "verified OOF predictions on the fixed 740-sample corpus",
+      "metrics": {
+        "task1_issue": 0.46730067691718935,
+        "task2_domain_sumber": 0.42458340094039876,
+        "task3_primary_entity_type": 0.3674592160988203
+      },
+      "minimum_macro_f1": 0.3674592160988203,
+      "mean_macro_f1": 0.4197810979854695,
+      "all_tasks_at_least_0_70": false,
+      "source": "04_hasil_eksperimen/e43_spatial_attention/gpu/root_verification.json",
+      "source_sha256": "9bbb54ce8501c4afb5232c43b50f2c8895a5650cec00a5ab5eb959f3e8019369",
+      "rank_by_minimum_then_mean": 8
+    },
+    {
+      "model_id": "E46",
+      "status": "passed",
+      "samples": 740,
+      "protocol": "verified OOF predictions on the fixed 740-sample corpus",
+      "metrics": {
+        "task1_issue": 0.4574594089576397,
+        "task2_domain_sumber": 0.41784551726374614,
+        "task3_primary_entity_type": 0.35335800489881736
+      },
+      "minimum_macro_f1": 0.35335800489881736,
+      "mean_macro_f1": 0.4095543103734011,
+      "all_tasks_at_least_0_70": false,
+      "source": "04_hasil_eksperimen/e46_label_smoothing/root_verification.json",
+      "source_sha256": "b8ab44b4e37c41f8cdd29aa3bedb15ae5076cf49658653abfaf1e6858120f952",
+      "rank_by_minimum_then_mean": 9
+    },
+    {
+      "model_id": "E36",
+      "status": "passed",
+      "samples": 740,
+      "protocol": "verified OOF predictions on the fixed 740-sample corpus",
+      "metrics": {
+        "task1_issue": 0.4177581099841574,
+        "task2_domain_sumber": 0.43152153264363907,
+        "task3_primary_entity_type": 0.34549634020026876
+      },
+      "minimum_macro_f1": 0.34549634020026876,
+      "mean_macro_f1": 0.39825866094268836,
+      "all_tasks_at_least_0_70": false,
+      "source": "04_hasil_eksperimen/e36_clip_l14/root_verification.json",
+      "source_sha256": "9e4fe337595d9b34b0883934a8a2c000f0bc8706384ed2d43c4480e2935bd2ac",
+      "rank_by_minimum_then_mean": 10
+    },
+    {
+      "model_id": "E37",
+      "status": "passed",
+      "samples": 740,
+      "protocol": "verified OOF predictions on the fixed 740-sample corpus",
+      "metrics": {
+        "task1_issue": 0.48511260538451273,
+        "task2_domain_sumber": 0.3692446110998053,
+        "task3_primary_entity_type": 0.34432550371463444
+      },
+      "minimum_macro_f1": 0.34432550371463444,
+      "mean_macro_f1": 0.39956090673298417,
+      "all_tasks_at_least_0_70": false,
+      "source": "04_hasil_eksperimen/e37_token_pool/root_verification.json",
+      "source_sha256": "bd070ef7b7b0901f2fb85de36e288bf3da9145cdcbb187e90c040f99b9c75df2",
+      "rank_by_minimum_then_mean": 11
+    },
+    {
+      "model_id": "E39",
+      "status": "passed",
+      "samples": 740,
+      "protocol": "verified OOF predictions on the fixed 740-sample corpus",
+      "metrics": {
+        "task1_issue": 0.43036000178604095,
+        "task2_domain_sumber": 0.43475706210751486,
+        "task3_primary_entity_type": 0.33661942578682974
+      },
+      "minimum_macro_f1": 0.33661942578682974,
+      "mean_macro_f1": 0.40057882989346183,
+      "all_tasks_at_least_0_70": false,
+      "source": "04_hasil_eksperimen/e39_feature_norm/root_verification.json",
+      "source_sha256": "f2898ec4cf37e9260cfd1444155a38a9d4f085e0b6f04d270cf1f9aa659a013e",
+      "rank_by_minimum_then_mean": 12
+    },
+    {
+      "model_id": "baseline-delivery",
+      "status": "passed",
+      "samples": 740,
+      "protocol": "verified OOF predictions on the fixed 740-sample corpus",
+      "metrics": {
+        "task1_issue": 0.4380318985439888,
+        "task2_domain_sumber": 0.3197261392590282,
+        "task3_primary_entity_type": 0.2763519249500637
+      },
+      "minimum_macro_f1": 0.2763519249500637,
+      "mean_macro_f1": 0.34470332091769357,
+      "all_tasks_at_least_0_70": false,
+      "source": "04_hasil_eksperimen/hasil_mtl_740_task2domain.json",
+      "source_sha256": "d55ef1dc8ef9ca2b889983add64ed304863a5b4dadaaaeaba9eec701cb2c3105",
+      "rank_by_minimum_then_mean": 13
+    }
+  ]
+}

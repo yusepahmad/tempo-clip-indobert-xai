@@ -1,0 +1,87 @@
+{
+  "index": 488,
+  "sample_id": "TMP-C388AC969E5D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "db9aadea56fa262f51cdf0e2142be0c5f5194632cb584015bb3845f53a2e0188",
+  "image_sha256": "c388ac969e5defeeda64a13dac168ceae0ce54de74a237080135139d32faf785",
+  "transmitted_image_sha256": "6039331bacf32b760228b94c9343870b34f94c9b7b69f64da03962d1d33bcd16",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.702827,
+      "total": 10,
+      "remaining": 1.2971730000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.702827,
+      "total": 100,
+      "remaining": 91.297173,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4237344935536385,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Banknote currency\",\n  \"source_properties\": \"Geometric guilloche patterns, high numerical value (75.000.000.000.000), security features like watermarks and barcodes.\",\n  \"target_situation\": \"President Joko Widodo's allocation of 75 trillion rupiah for health spending during the COVID-19 pandemic.\",\n  \"mapping\": \"The illustration replaces historical figures with medical workers, framing the massive government budget directly as the literal and metaphorical background of the healthcare crisis.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "05nLasO2PMmb_uMPlY2fwA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 131,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680000,
+        "output_tokens_cost_nanodollars": 393000
+      },
+      "prompt_tokens": 1360,
+      "total_backend_latency_ms": 1647,
+      "total_tokens": 1491
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7039,
+      "total": 10,
+      "remaining": 1.2960999999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.703900000000004,
+      "total": 100,
+      "remaining": 91.2961,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.001073,
+  "fields": {
+    "source_object": "Banknote currency",
+    "source_properties": "Geometric guilloche patterns, high numerical value (75.000.000.000.000), security features like watermarks and barcodes.",
+    "target_situation": "President Joko Widodo's allocation of 75 trillion rupiah for health spending during the COVID-19 pandemic.",
+    "mapping": "The illustration replaces historical figures with medical workers, framing the massive government budget directly as the literal and metaphorical background of the healthcare crisis.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Banknote currency\nsource_properties: Geometric guilloche patterns, high numerical value (75.000.000.000.000), security features like watermarks and barcodes.\ntarget_situation: President Joko Widodo's allocation of 75 trillion rupiah for health spending during the COVID-19 pandemic.\nmapping: The illustration replaces historical figures with medical workers, framing the massive government budget directly as the literal and metaphorical background of the healthcare crisis.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 521,
+  "sample_id": "TMP-B5EA29658DB1",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "199505312d2255f39d29b069bc700491ae831d2c5e35ee296cb9cca1c4f7987c",
+  "image_sha256": "b5ea29658db13e8394d43167109428e1f200ebbbf270e21ea9d57f7d35b69537",
+  "transmitted_image_sha256": "c5c203e4c6674b4cfa280ba9a3fcc78e8ba1cb8b1a166e91afe624dbcd5a7315",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7509765,
+      "total": 10,
+      "remaining": 1.2490234999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.750976499999993,
+      "total": 100,
+      "remaining": 91.2490235,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.77283790288493,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"pirates with treasure\", \"source_properties\": \"characters looting a treasure chest on a ship\", \"target_situation\": \"corruption involving illegal lobster larvae export profits\", \"mapping\": \"the officials are depicted as pirates raiding resources for personal wealth\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "tZrLaozkMuyb_uMPzeOSwQw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 63,
+      "cost": {
+        "input_tokens_cost_nanodollars": 684000,
+        "output_tokens_cost_nanodollars": 189000
+      },
+      "prompt_tokens": 1368,
+      "total_backend_latency_ms": 4099,
+      "total_tokens": 1431
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7518495,
+      "total": 10,
+      "remaining": 1.2481504999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.751849500000006,
+      "total": 100,
+      "remaining": 91.2481505,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000873,
+  "fields": {
+    "source_object": "pirates with treasure",
+    "source_properties": "characters looting a treasure chest on a ship",
+    "target_situation": "corruption involving illegal lobster larvae export profits",
+    "mapping": "the officials are depicted as pirates raiding resources for personal wealth",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: pirates with treasure\nsource_properties: characters looting a treasure chest on a ship\ntarget_situation: corruption involving illegal lobster larvae export profits\nmapping: the officials are depicted as pirates raiding resources for personal wealth\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

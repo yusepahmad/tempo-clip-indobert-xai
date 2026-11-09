@@ -1,0 +1,86 @@
+{
+  "index": 502,
+  "sample_id": "TMP-A6C6B271AF6D",
+  "fold": 4,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "b4ddff358493704077ac5dc60a1e1e9564cd84f1fb004322a95395891d73a00d",
+  "image_sha256": "a6c6b271af6d9e865ebb3d44473f6171b48ee4d32464c5515769d65d6a815961",
+  "transmitted_image_sha256": "aca3dcf64fda391928fa820077e09c5f5c20d0aea26e10bcae6307633f2b9bab",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.55788,
+      "total": 10,
+      "remaining": 4.44212,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.557879999999997,
+      "total": 100,
+      "remaining": 94.44212,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 20.348664394114166,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan perbandingan dengan contoh training yang diberikan:\n\nIlustrasi tersebut menampilkan subjek utama yang sesuai dengan topik bahasan (dokter dalam edisi khusus kemerdekaan/sejarah perjuangan). Meskipun terdapat elemen simbolis seperti bendera dan pose heroik yang menggambarkan \"tekanan dan risiko\", penggambaran ini bersifat representasi literal dari peran historis atau tugas mereka (adegan tenaga medis). Hal ini selaras dengan contoh **F (NON_METAFORA)**, di mana tenaga kesehatan yang digambarkan berada di \"garis depan\" atau orang yang melakukan aksi \"perlawanan\" (seperti contoh mengangkat tinju) diklasifikasikan sebagai non-metafora karena menampilkan adegan literal tanpa pemetaan ke domain sumber lain yang eksotis (seperti hewan, mesin, atau permainan).\n\nJawab satu kode A sampai G: **F**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Hf3KatG-FcCS_uMPqPCfqA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 3280,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3100
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2046500,
+        "output_tokens_cost_nanodollars": 9840000
+      },
+      "prompt_tokens": 4093,
+      "total_backend_latency_ms": 19299,
+      "total_tokens": 7373
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.5697665,
+      "total": 10,
+      "remaining": 4.4302335,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.5697665,
+      "total": 100,
+      "remaining": 94.4302335,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0118865,
+  "code": "F",
+  "strict_code": "INVALID",
+  "parsing_rule": "explicit_prefix_code",
+  "finish_reason": "stop",
+  "prediction": "NON_METAFORA"
+}

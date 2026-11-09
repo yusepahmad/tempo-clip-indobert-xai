@@ -1,0 +1,87 @@
+{
+  "index": 738,
+  "sample_id": "TMP-8110AA71EA4E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ffe7b1b545c3bcdc47d404a12f77c1cc167685f2dfdf7cc770be3d333d4e6df1",
+  "image_sha256": "8110aa71ea4e38c487246a8b59623212fc684d720c466f7ab63a6a82d28d1629",
+  "transmitted_image_sha256": "a86fdfda7379ce285f13910fead22e57d2ec454a05ecc54ff2ccf51a8b563272",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.069992,
+      "total": 10,
+      "remaining": 0.9300080000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.069992,
+      "total": 100,
+      "remaining": 90.930008,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.311759621836245,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A person stepping between two different vehicles\",\n  \"source_properties\": \"Handcuffed man stepping from a clean white official van into a rusty green prison-style van.\",\n  \"target_situation\": \"The arrest of nutritional agency officials for corruption.\",\n  \"mapping\": \"The physical transition from the 'Badan Gizi Nasional' van to the prison van represents the arrest and legal consequences for the corrupt officials.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "cqDLaoWjJe2M_PUPpv3KiQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 107,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674000,
+        "output_tokens_cost_nanodollars": 321000
+      },
+      "prompt_tokens": 1348,
+      "total_backend_latency_ms": 2157,
+      "total_tokens": 1455
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.070987,
+      "total": 10,
+      "remaining": 0.9290129999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.070987000000002,
+      "total": 100,
+      "remaining": 90.929013,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000995,
+  "fields": {
+    "source_object": "A person stepping between two different vehicles",
+    "source_properties": "Handcuffed man stepping from a clean white official van into a rusty green prison-style van.",
+    "target_situation": "The arrest of nutritional agency officials for corruption.",
+    "mapping": "The physical transition from the 'Badan Gizi Nasional' van to the prison van represents the arrest and legal consequences for the corrupt officials.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A person stepping between two different vehicles\nsource_properties: Handcuffed man stepping from a clean white official van into a rusty green prison-style van.\ntarget_situation: The arrest of nutritional agency officials for corruption.\nmapping: The physical transition from the 'Badan Gizi Nasional' van to the prison van represents the arrest and legal consequences for the corrupt officials.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

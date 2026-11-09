@@ -1,0 +1,87 @@
+{
+  "index": 208,
+  "sample_id": "TMP-8306D036B55D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "6204466fee88d849010a42c12d7f0a468b1fea43a0c19cc9148edf1aab146661",
+  "image_sha256": "8306d036b55d0cb1212be6d0a5b61c0e200982cafbe401cfac6aada4628c1364",
+  "transmitted_image_sha256": "212f6cdfba130409bcfccc7575ebbcab8fa41ee47947e8c0ea7b8ae2afb92283",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3165345,
+      "total": 10,
+      "remaining": 1.6834655000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.316534500000003,
+      "total": 100,
+      "remaining": 91.6834655,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2949106409214437,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"crucifixion\", \"source_properties\": \"arms outstretched sideways, body elevated above a crowd, supported by multiple people\", \"target_situation\": \"The public controversy and intense media scrutiny surrounding Lady Gaga's canceled Indonesian concert.\", \"mapping\": \"Gaga's posture and elevation mimic a religious martyr or sacrificial figure, suggesting she is being persecuted or symbolically crucified by conflicting societal forces represented by the surrounding figures.\", \"uncertainty\": \"none evident\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "lpLLatWnK4Kn_uMP9_y56As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 670000,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1340,
+      "total_backend_latency_ms": 1744,
+      "total_tokens": 1439
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3175015,
+      "total": 10,
+      "remaining": 1.6824984999999995,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.317501500000006,
+      "total": 100,
+      "remaining": 91.6824985,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000967,
+  "fields": {
+    "source_object": "crucifixion",
+    "source_properties": "arms outstretched sideways, body elevated above a crowd, supported by multiple people",
+    "target_situation": "The public controversy and intense media scrutiny surrounding Lady Gaga's canceled Indonesian concert.",
+    "mapping": "Gaga's posture and elevation mimic a religious martyr or sacrificial figure, suggesting she is being persecuted or symbolically crucified by conflicting societal forces represented by the surrounding figures.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: crucifixion\nsource_properties: arms outstretched sideways, body elevated above a crowd, supported by multiple people\ntarget_situation: The public controversy and intense media scrutiny surrounding Lady Gaga's canceled Indonesian concert.\nmapping: Gaga's posture and elevation mimic a religious martyr or sacrificial figure, suggesting she is being persecuted or symbolically crucified by conflicting societal forces represented by the surrounding figures.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

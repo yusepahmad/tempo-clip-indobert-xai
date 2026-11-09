@@ -1,0 +1,87 @@
+{
+  "index": 477,
+  "sample_id": "TMP-2B8BD7B19D27",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ea829fc8dacf9eb98ba8a1f0516d40bfe1219997d23a408d3cb9d88e6a4fe090",
+  "image_sha256": "2b8bd7b19d272947ed9f3ad11c98f92b225e9684ff7ce8adcacc375737acff49",
+  "transmitted_image_sha256": "24eeacc1e040e37727f487d6106eb6e8d97f478ca87edae51f5b53cb12866efc",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.68509,
+      "total": 10,
+      "remaining": 1.3149099999999994,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.685090000000002,
+      "total": 100,
+      "remaining": 91.31491,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0370225431397557,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"stage spotlight\", \"source_properties\": \"A bright cone of light illuminating a stage floor with red roses.\", \"target_situation\": \"Celebrities transitioning from show business to religious life, potentially for public image or profit.\", \"mapping\": \"Stepping out of the spotlight represents leaving the entertainment industry's glamor, while the religious attire suggests a new, possibly performative, identity.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "hpnLau2fHrfc_uMPiPP3wAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674500,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1349,
+      "total_backend_latency_ms": 1607,
+      "total_tokens": 1441
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6860405,
+      "total": 10,
+      "remaining": 1.3139594999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.686040500000004,
+      "total": 100,
+      "remaining": 91.3139595,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009505,
+  "fields": {
+    "source_object": "stage spotlight",
+    "source_properties": "A bright cone of light illuminating a stage floor with red roses.",
+    "target_situation": "Celebrities transitioning from show business to religious life, potentially for public image or profit.",
+    "mapping": "Stepping out of the spotlight represents leaving the entertainment industry's glamor, while the religious attire suggests a new, possibly performative, identity.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: stage spotlight\nsource_properties: A bright cone of light illuminating a stage floor with red roses.\ntarget_situation: Celebrities transitioning from show business to religious life, potentially for public image or profit.\nmapping: Stepping out of the spotlight represents leaving the entertainment industry's glamor, while the religious attire suggests a new, possibly performative, identity.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

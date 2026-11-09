@@ -1,0 +1,87 @@
+{
+  "index": 437,
+  "sample_id": "TMP-F73493FF4DA7",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8dd1b1401a472b07d7d003c78e366912a0915f3c736622b555c4021caa15076f",
+  "image_sha256": "f73493ff4da786331d8ecfba6665fe9f60a311819ea8d808bc4886000989c7f5",
+  "transmitted_image_sha256": "5a67ebee9775dcf5ed7e7498cabb99ac158d934b6a89800dfe5fc17dd3f6ff33",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.636357,
+      "total": 10,
+      "remaining": 1.3636429999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.636357000000004,
+      "total": 100,
+      "remaining": 91.363643,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.5910140527412295,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Open-pit mine with excavators\",\n  \"source_properties\": \"Vast, circular terraced excavation with heavy machinery digging and hauling material.\",\n  \"target_situation\": \"Corruption investigation involving a former Governor and mining divestiture funds.\",\n  \"mapping\": \"The terraces form a face, suggesting digging through personal affairs to find hidden wealth.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "f5jLar3WN62u_PUPtb3C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 683500,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1367,
+      "total_backend_latency_ms": 1794,
+      "total_tokens": 1460
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6373195,
+      "total": 10,
+      "remaining": 1.3626804999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.637319500000004,
+      "total": 100,
+      "remaining": 91.3626805,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009625,
+  "fields": {
+    "source_object": "Open-pit mine with excavators",
+    "source_properties": "Vast, circular terraced excavation with heavy machinery digging and hauling material.",
+    "target_situation": "Corruption investigation involving a former Governor and mining divestiture funds.",
+    "mapping": "The terraces form a face, suggesting digging through personal affairs to find hidden wealth.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Open-pit mine with excavators\nsource_properties: Vast, circular terraced excavation with heavy machinery digging and hauling material.\ntarget_situation: Corruption investigation involving a former Governor and mining divestiture funds.\nmapping: The terraces form a face, suggesting digging through personal affairs to find hidden wealth.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

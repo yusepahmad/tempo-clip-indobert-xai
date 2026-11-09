@@ -1,0 +1,90 @@
+{
+  "index": 630,
+  "sample_id": "TMP-C2CD256DE87B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3ddfba952c17d684b12b8e7a678dc3fc891fef0e36ba311114ae0c4030354d24",
+  "image_sha256": "c2cd256de87bd656b5b18993516753f479daa83e400dbdf0116077dc1b2d818e",
+  "transmitted_image_sha256": "cc5335bc89cdf0ba9f1e98505deca55a8964e0b11f1bb31a046402510c326c5e",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8954115,
+      "total": 10,
+      "remaining": 1.1045885000000002,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.895411499999994,
+      "total": 100,
+      "remaining": 91.1045885,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.7123232441954315,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A spilled oil drum\",\n  \"source_properties\": \"Round, metallic, and containing a slippery substance that causes a person to lose their footing.\",\n  \"target_situation\": \"Corruption allegations involving palm oil funds and internal party efforts to remove a politician from power.\",\n  \"mapping\": \"The slippery oil represents the corruption case, which causes the politician to lose his political balance and 'slip' toward an exit.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "kJ3Las69L8fv_uMP5e292Qg",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 568,
+      "completion_tokens_details": {
+        "reasoning_tokens": 461
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 687000,
+        "output_tokens_cost_nanodollars": 1704000
+      },
+      "prompt_tokens": 1374,
+      "total_backend_latency_ms": 4120,
+      "total_tokens": 1942
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.897802500000001,
+      "total": 10,
+      "remaining": 1.102197499999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.897802499999997,
+      "total": 100,
+      "remaining": 91.1021975,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.002391,
+  "fields": {
+    "source_object": "A spilled oil drum",
+    "source_properties": "Round, metallic, and containing a slippery substance that causes a person to lose their footing.",
+    "target_situation": "Corruption allegations involving palm oil funds and internal party efforts to remove a politician from power.",
+    "mapping": "The slippery oil represents the corruption case, which causes the politician to lose his political balance and 'slip' toward an exit.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A spilled oil drum\nsource_properties: Round, metallic, and containing a slippery substance that causes a person to lose their footing.\ntarget_situation: Corruption allegations involving palm oil funds and internal party efforts to remove a politician from power.\nmapping: The slippery oil represents the corruption case, which causes the politician to lose his political balance and 'slip' toward an exit.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

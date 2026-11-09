@@ -1,0 +1,91 @@
+{
+  "index": 19,
+  "sample_id": "TMP-9B3A5CE29697",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "642d4e61b863c7320e94fc5183bdb22d578f7521de3af1e65934c0f12b4e678d",
+  "image_sha256": "9b3a5ce2969790c24bbe8401e221a2402f3a26c0c3a23acedaf8c1984b6ef12c",
+  "transmitted_image_sha256": "63b5d20cc3f8ed0eda080403fd8e865c8e272cac2a78f2a0db800f71781d9d82",
+  "image_size": [
+    407,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0394945,
+      "total": 10,
+      "remaining": 1.9605055,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.039494500000004,
+      "total": 100,
+      "remaining": 91.9605055,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.860146202147007,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Cakes or communal feast food\",\n  \"source_properties\": \"Bite-sized portions being shared and eaten by a group.\",\n  \"target_situation\": \"Corruption involving the electronic ID card (e-KTP) project budget.\",\n  \"mapping\": \"Characters hold e-KTP cards with bite marks, treating state funds like a shared feast to be consumed.\",\n  \"uncertainty\": \"None evident.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "sorLaprrHp-d_uMPlqrYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 100,
+      "cost": {
+        "input_tokens_cost_nanodollars": 664000,
+        "output_tokens_cost_nanodollars": 300000
+      },
+      "prompt_tokens": 1328,
+      "total_backend_latency_ms": 1743,
+      "total_tokens": 1428
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0404585,
+      "total": 10,
+      "remaining": 1.9595415000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.0404585,
+      "total": 100,
+      "remaining": 91.9595415,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000964,
+  "fields": {
+    "source_object": "Cakes or communal feast food",
+    "source_properties": "Bite-sized portions being shared and eaten by a group.",
+    "target_situation": "Corruption involving the electronic ID card (e-KTP) project budget.",
+    "mapping": "Characters hold e-KTP cards with bite marks, treating state funds like a shared feast to be consumed.",
+    "uncertainty": "None evident."
+  },
+  "explanation": "source_object: Cakes or communal feast food\nsource_properties: Bite-sized portions being shared and eaten by a group.\ntarget_situation: Corruption involving the electronic ID card (e-KTP) project budget.\nmapping: Characters hold e-KTP cards with bite marks, treating state funds like a shared feast to be consumed.\nuncertainty: None evident.",
+  "finish_reason": "stop",
+  "usable": true,
+  "migration_origin": {
+    "record_sha256": "76bb9fb5a626103330f25c91b717d6f829e37e00354bb1985da3f34ac5a9c3dd",
+    "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383"
+  }
+}

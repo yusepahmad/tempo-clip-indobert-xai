@@ -1,0 +1,87 @@
+{
+  "index": 629,
+  "sample_id": "TMP-79FE207C0E70",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "55f83ad8eb9cd856c5aef0dd7a209331019be055def799e473bd989a2b6be4c7",
+  "image_sha256": "79fe207c0e70cf167abd8921aaa9ce4fcb7ae6b7c1444f33b1acf541616aab4e",
+  "transmitted_image_sha256": "0be8f2edebed1540487cbd82238c1680e351e03ec4e8b5226dff7246e38cd7e5",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.894446,
+      "total": 10,
+      "remaining": 1.1055539999999997,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.894446000000002,
+      "total": 100,
+      "remaining": 91.105554,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.481542160268873,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"bull and its leash\",\n  \"source_properties\": \"large, powerful animal; controlled by a rope held by a handler\",\n  \"target_situation\": \"political party leadership and candidate nomination\",\n  \"mapping\": \"The bull represents the party (PDIP); the handler's control mirrors the leader's power to guide and nominate a candidate.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ip3LaozMHq2u_PUPk7_C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680500,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1361,
+      "total_backend_latency_ms": 2079,
+      "total_tokens": 1456
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8954115,
+      "total": 10,
+      "remaining": 1.1045885000000002,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.895411499999994,
+      "total": 100,
+      "remaining": 91.1045885,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009655,
+  "fields": {
+    "source_object": "bull and its leash",
+    "source_properties": "large, powerful animal; controlled by a rope held by a handler",
+    "target_situation": "political party leadership and candidate nomination",
+    "mapping": "The bull represents the party (PDIP); the handler's control mirrors the leader's power to guide and nominate a candidate.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: bull and its leash\nsource_properties: large, powerful animal; controlled by a rope held by a handler\ntarget_situation: political party leadership and candidate nomination\nmapping: The bull represents the party (PDIP); the handler's control mirrors the leader's power to guide and nominate a candidate.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

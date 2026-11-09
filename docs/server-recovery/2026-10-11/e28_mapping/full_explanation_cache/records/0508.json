@@ -1,0 +1,90 @@
+{
+  "index": 508,
+  "sample_id": "TMP-E885379FE6E3",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "d20e92162d26b077458e85bb0e10fe3fd65c9860e102b04a60827a11e35e3384",
+  "image_sha256": "e885379fe6e305db5a7c486960a59eaaa8d42ebe06257e362c6d8c1877154e2f",
+  "transmitted_image_sha256": "0abdb56582ac9dace706963afb58f5ebeaa59911cc37e1e18ddbf6e562dac436",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7284305,
+      "total": 10,
+      "remaining": 1.2715695,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.728430500000002,
+      "total": 100,
+      "remaining": 91.2715695,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.635329036042094,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A social aid distribution bag (bansos)\",\n  \"source_properties\": \"Flexible container for essential goods, easily torn or gnawed through by pests like rats.\",\n  \"target_situation\": \"Political elites embezzling social assistance funds intended for public relief during a crisis.\",\n  \"mapping\": \"Just as rats gnaw holes in a bag to steal food, corrupt officials siphon off public resources from aid programs for personal or party gain.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "VprLaoK4LJCa_uMPxb6ruQk",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 660,
+      "completion_tokens_details": {
+        "reasoning_tokens": 549
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 678000,
+        "output_tokens_cost_nanodollars": 1980000
+      },
+      "prompt_tokens": 1356,
+      "total_backend_latency_ms": 4049,
+      "total_tokens": 2016
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7310885,
+      "total": 10,
+      "remaining": 1.2689114999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.731088499999998,
+      "total": 100,
+      "remaining": 91.2689115,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.002658,
+  "fields": {
+    "source_object": "A social aid distribution bag (bansos)",
+    "source_properties": "Flexible container for essential goods, easily torn or gnawed through by pests like rats.",
+    "target_situation": "Political elites embezzling social assistance funds intended for public relief during a crisis.",
+    "mapping": "Just as rats gnaw holes in a bag to steal food, corrupt officials siphon off public resources from aid programs for personal or party gain.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A social aid distribution bag (bansos)\nsource_properties: Flexible container for essential goods, easily torn or gnawed through by pests like rats.\ntarget_situation: Political elites embezzling social assistance funds intended for public relief during a crisis.\nmapping: Just as rats gnaw holes in a bag to steal food, corrupt officials siphon off public resources from aid programs for personal or party gain.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

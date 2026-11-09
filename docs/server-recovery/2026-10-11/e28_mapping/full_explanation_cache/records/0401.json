@@ -1,0 +1,87 @@
+{
+  "index": 401,
+  "sample_id": "TMP-468DF9847E0A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c40d634b06df9eb864c6a574c6f96864f3a6796de12b1ec0fd575d9f6f6f6f86",
+  "image_sha256": "468df9847e0a0089f20badd27325f95e596fdc8b35c8a03962cd39d86907b058",
+  "transmitted_image_sha256": "ee8d57f5c1e14af075444b42642815381ab696cbb3b77ddf99e73379be8c4e8d",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5823195,
+      "total": 10,
+      "remaining": 1.4176804999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.582319499999997,
+      "total": 100,
+      "remaining": 91.4176805,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.206764691043645,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"walls\", \"source_properties\": \"two vertical stone columns narrow enough to be braced against with hands and feet\", \"target_situation\": \"Setya Novanto's legal maneuvering against the KPK's efforts to name him a suspect\", \"mapping\": \"The subject suspends himself between the columns to avoid falling, symbolizing Novanto's attempts to stay above prosecution through political and legal leverage.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "kJfLasqoA-fU_uMPq5CXyQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675000,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1350,
+      "total_backend_latency_ms": 1856,
+      "total_tokens": 1445
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5832795,
+      "total": 10,
+      "remaining": 1.4167205000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.583279500000003,
+      "total": 100,
+      "remaining": 91.4167205,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00096,
+  "fields": {
+    "source_object": "walls",
+    "source_properties": "two vertical stone columns narrow enough to be braced against with hands and feet",
+    "target_situation": "Setya Novanto's legal maneuvering against the KPK's efforts to name him a suspect",
+    "mapping": "The subject suspends himself between the columns to avoid falling, symbolizing Novanto's attempts to stay above prosecution through political and legal leverage.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: walls\nsource_properties: two vertical stone columns narrow enough to be braced against with hands and feet\ntarget_situation: Setya Novanto's legal maneuvering against the KPK's efforts to name him a suspect\nmapping: The subject suspends himself between the columns to avoid falling, symbolizing Novanto's attempts to stay above prosecution through political and legal leverage.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 252,
+  "sample_id": "TMP-182D7B04D848",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b6433c7ec7e13cac1aeee6262ee4ff55ece528ba39e6c3f379a4c80c0bd20035",
+  "image_sha256": "182d7b04d84831c54c376a119ee46e2f45b275d7d969e5a003a9e4543216281f",
+  "transmitted_image_sha256": "788f9fe209ef7d918847942cd2e6116237fa214a9e2d1b8716a548e618468a75",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.388211,
+      "total": 10,
+      "remaining": 1.611789,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.388210999999998,
+      "total": 100,
+      "remaining": 91.611789,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.8227359880693257,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"gold command baton\", \"source_properties\": \"golden, four-star insignia, cylindrical handle, ornate top, associated with military authority and high rank.\", \"target_situation\": \"The appointment of General Moeldoko as military commander while possessing significant wealth of unclear origin.\", \"mapping\": \"The baton's golden color symbolizes his 'tajir' (wealthy) status, while its form represents his official military command and authority.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "xpPLasukLpjM_PUPlq7quAo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 670500,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1341,
+      "total_backend_latency_ms": 2172,
+      "total_tokens": 1442
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3891845,
+      "total": 10,
+      "remaining": 1.6108154999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.389184499999999,
+      "total": 100,
+      "remaining": 91.6108155,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009735,
+  "fields": {
+    "source_object": "gold command baton",
+    "source_properties": "golden, four-star insignia, cylindrical handle, ornate top, associated with military authority and high rank.",
+    "target_situation": "The appointment of General Moeldoko as military commander while possessing significant wealth of unclear origin.",
+    "mapping": "The baton's golden color symbolizes his 'tajir' (wealthy) status, while its form represents his official military command and authority.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: gold command baton\nsource_properties: golden, four-star insignia, cylindrical handle, ornate top, associated with military authority and high rank.\ntarget_situation: The appointment of General Moeldoko as military commander while possessing significant wealth of unclear origin.\nmapping: The baton's golden color symbolizes his 'tajir' (wealthy) status, while its form represents his official military command and authority.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 80,
+  "sample_id": "TMP-02FBDB1CF070",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "deb12129bb071c8d34244a6db1c0e96b0927692beb3d57c8a467d5cddf9867d3",
+  "image_sha256": "02fbdb1cf070567c5ced10f0cfeb6db06d7bc36f223269bc581f6e0aa8c5f8f7",
+  "transmitted_image_sha256": "cf22071521ecaa879a117302a75014a6d041a30a53df203c420c009b3588d9d4",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.118657,
+      "total": 10,
+      "remaining": 1.8813429999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.118656999999999,
+      "total": 100,
+      "remaining": 91.881343,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.605877736117691,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"helicopters\", \"source_properties\": \"airborne vehicles dropping physical objects from the sky over a wide area\", \"target_situation\": \"PT Dirgantara Indonesia's distribution of hundreds of billions of rupiah to military and ministry officials\", \"mapping\": \"The act of helicopters raining money represents the aerospace company's widespread and indiscriminate financial payoffs to numerous high-ranking individuals.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "M4_LateHNZKp_uMPhrH00QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682500,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1365,
+      "total_backend_latency_ms": 2118,
+      "total_tokens": 1455
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1196095,
+      "total": 10,
+      "remaining": 1.8803905000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.119609499999996,
+      "total": 100,
+      "remaining": 91.8803905,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009525,
+  "fields": {
+    "source_object": "helicopters",
+    "source_properties": "airborne vehicles dropping physical objects from the sky over a wide area",
+    "target_situation": "PT Dirgantara Indonesia's distribution of hundreds of billions of rupiah to military and ministry officials",
+    "mapping": "The act of helicopters raining money represents the aerospace company's widespread and indiscriminate financial payoffs to numerous high-ranking individuals.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: helicopters\nsource_properties: airborne vehicles dropping physical objects from the sky over a wide area\ntarget_situation: PT Dirgantara Indonesia's distribution of hundreds of billions of rupiah to military and ministry officials\nmapping: The act of helicopters raining money represents the aerospace company's widespread and indiscriminate financial payoffs to numerous high-ranking individuals.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

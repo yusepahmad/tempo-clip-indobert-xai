@@ -1,0 +1,87 @@
+{
+  "index": 400,
+  "sample_id": "TMP-06D9CB5ACC85",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "66827e7535ab191e2de56821966e898749db93e863b42b26e482581f1d2c838a",
+  "image_sha256": "06d9cb5acc859aa071e3e01a01a7fd08ba4d71031122c52db9bb087f0ea6bd9b",
+  "transmitted_image_sha256": "68131f7da10d0ed79d38d208d99ad1efd904a116b6545299e43741a5e0f9ff99",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.581342,
+      "total": 10,
+      "remaining": 1.4186580000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.581342000000006,
+      "total": 100,
+      "remaining": 91.418658,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4620263618417084,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"grenade launchers\",\n  \"source_properties\": \"weapons designed to project explosives, which can backfire or strike the user if mishandled.\",\n  \"target_situation\": \"an irregular procurement process for grenade launchers for the Indonesian National Police's Mobile Brigade.\",\n  \"mapping\": \"The physical weapon symbolizes the corrupt procurement scheme, implying that the illicit deal will ultimately harm the officials involved.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "iZfLapnOIZ-d_uMPlqrYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671500,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1343,
+      "total_backend_latency_ms": 1747,
+      "total_tokens": 1445
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5823195,
+      "total": 10,
+      "remaining": 1.4176804999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.582319499999997,
+      "total": 100,
+      "remaining": 91.4176805,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009775,
+  "fields": {
+    "source_object": "grenade launchers",
+    "source_properties": "weapons designed to project explosives, which can backfire or strike the user if mishandled.",
+    "target_situation": "an irregular procurement process for grenade launchers for the Indonesian National Police's Mobile Brigade.",
+    "mapping": "The physical weapon symbolizes the corrupt procurement scheme, implying that the illicit deal will ultimately harm the officials involved.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: grenade launchers\nsource_properties: weapons designed to project explosives, which can backfire or strike the user if mishandled.\ntarget_situation: an irregular procurement process for grenade launchers for the Indonesian National Police's Mobile Brigade.\nmapping: The physical weapon symbolizes the corrupt procurement scheme, implying that the illicit deal will ultimately harm the officials involved.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,90 @@
+{
+  "index": 454,
+  "sample_id": "TMP-B0869295E786",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "be348cabe40d1bb18cb21ec3a2e07eab7eaadb122cf4904ff9aa2ccfff6b744d",
+  "image_sha256": "b0869295e78697e67905a5b21190bbbd35b86213ac2512f824c0b1aeaedd49da",
+  "transmitted_image_sha256": "dc5529c89830dff3ab39c6781cf99a620beb502944cfd8d6be1f65e5881d49e8",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6615515,
+      "total": 10,
+      "remaining": 1.3384485000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.661551500000002,
+      "total": 100,
+      "remaining": 91.3384485,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.128681558184326,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A broken umbrella\",\n  \"source_properties\": \"Shredded, inverted, and failing to provide protection against a storm.\",\n  \"target_situation\": \"The financial crisis and mismanagement within Jiwasraya insurance company.\",\n  \"mapping\": \"An umbrella symbolizes financial protection; its broken state represents how the company failed to safeguard its clients' investments during a crisis.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "-ZjLatzJKpCa_uMPxb6ruQk",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 527,
+      "completion_tokens_details": {
+        "reasoning_tokens": 430
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 673000,
+        "output_tokens_cost_nanodollars": 1581000
+      },
+      "prompt_tokens": 1346,
+      "total_backend_latency_ms": 3447,
+      "total_tokens": 1873
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6638055,
+      "total": 10,
+      "remaining": 1.3361944999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.663805499999995,
+      "total": 100,
+      "remaining": 91.3361945,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.002254,
+  "fields": {
+    "source_object": "A broken umbrella",
+    "source_properties": "Shredded, inverted, and failing to provide protection against a storm.",
+    "target_situation": "The financial crisis and mismanagement within Jiwasraya insurance company.",
+    "mapping": "An umbrella symbolizes financial protection; its broken state represents how the company failed to safeguard its clients' investments during a crisis.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A broken umbrella\nsource_properties: Shredded, inverted, and failing to provide protection against a storm.\ntarget_situation: The financial crisis and mismanagement within Jiwasraya insurance company.\nmapping: An umbrella symbolizes financial protection; its broken state represents how the company failed to safeguard its clients' investments during a crisis.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

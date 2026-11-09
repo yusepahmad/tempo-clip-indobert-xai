@@ -1,0 +1,49 @@
+{
+  "revision_id": "R2",
+  "title": "Codebook dan kelas penampung",
+  "status": "Selesai teknis sesuai tracker; menunggu penilaian pembimbing",
+  "pdf_page": 16,
+  "requested_evidence": "Butir Agustus: Codebook dan kelas penampung. Rujukan permintaan pada tabel/ringkasan Revisi II dan bagian terkait R31; bukan kutipan dokumen Agustus asli.",
+  "notebook": {
+    "notebook": "01_baseline.ipynb",
+    "heading": "R2 — Codebook dan kelas penampung",
+    "html": "../REFERENSI_NOTEBOOK/01_baseline.html#full-r2"
+  },
+  "notes": [
+    "Definisi codebook selesai secara teknis. Audit 60 sampul dan adjudikasi manusia tetap tercatat pada R31 yang terbuka."
+  ],
+  "files": [
+    {
+      "file": "R2_CODEBOOK_REVISI.md",
+      "purpose": "Definisi operasional label tiga task dan kelas penampung; bukan hasil adjudikasi manusia baru",
+      "sha256": "72778d5d8db9f719465d26319734f638ce02c4b3ecdae1dda74551e010b4a8cc",
+      "kind": "copy",
+      "source": "documentation/CODEBOOK_REVISI.md",
+      "source_sha256": "72778d5d8db9f719465d26319734f638ce02c4b3ecdae1dda74551e010b4a8cc"
+    },
+    {
+      "file": "R2_TASK_DEFINITIONS.json",
+      "purpose": "Definisi operasional label tiga task dan kelas penampung; bukan hasil adjudikasi manusia baru",
+      "sha256": "5c14e39e9767622fd811e4052fa2ff7752f174f63ad0b1ce59a4ff483ec3d6cc",
+      "kind": "copy",
+      "source": "documentation/TASK_DEFINITIONS.json",
+      "source_sha256": "5c14e39e9767622fd811e4052fa2ff7752f174f63ad0b1ce59a4ff483ec3d6cc"
+    },
+    {
+      "file": "R2_sensitivitas_kelas_penampung.csv",
+      "purpose": "Sensitivitas eksplisit; primary tetap semua kelas",
+      "sha256": "4b74ccf4e602c8696e8c386b94cafe7c0abddbf0979521f5a65f7c1f5e9ba48c",
+      "kind": "table_subset",
+      "source": "analysis/catchall_sensitivity.csv",
+      "source_sha256": "f95a6031e8a57699eea926f7f1b1f9115c816d82808d9fc5dc20c2119bb4dfdd",
+      "selector": {
+        "experiments": [
+          "e42_tail_grid",
+          "BASELINE_CLIP_INDoBERT",
+          "MICRO_E14_joint_qlora_oof"
+        ]
+      },
+      "rows": 9
+    }
+  ]
+}

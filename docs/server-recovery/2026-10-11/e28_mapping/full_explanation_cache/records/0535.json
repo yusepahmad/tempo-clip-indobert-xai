@@ -1,0 +1,90 @@
+{
+  "index": 535,
+  "sample_id": "TMP-62AD9ECE5DA7",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f3450cee647231d05ae7fe8ad65ed976338e354b23a2b4b22af1a0a5a4ed031b",
+  "image_sha256": "62ad9ece5da7dd8b20197f57ff534f317769479ea905d1117d191927d74aa95f",
+  "transmitted_image_sha256": "ac615b4fa4fc4c7f1f7ee54c7b91bd33915ba468d5158ece9d5aba1e5f722498",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.768365,
+      "total": 10,
+      "remaining": 1.2316350000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.768365000000003,
+      "total": 100,
+      "remaining": 91.231635,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.228169672191143,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A heraldic emblem or coat of arms\",\n  \"source_properties\": \"A protective shield, wings of status, and a flexing bicep representing raw physical power.\",\n  \"target_situation\": \"Paramilitary community organizations (ormas) involved in political-business interests and violent territorial disputes.\",\n  \"mapping\": \"The emblem's symbols of institutionalized strength and defense represent how these groups project authority and legitimacy through force.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "FJvLau_AC7eR_uMPm_GWuA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 823,
+      "completion_tokens_details": {
+        "reasoning_tokens": 712
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 675000,
+        "output_tokens_cost_nanodollars": 2469000
+      },
+      "prompt_tokens": 1350,
+      "total_backend_latency_ms": 4751,
+      "total_tokens": 2173
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.771509,
+      "total": 10,
+      "remaining": 1.228491,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.771508999999995,
+      "total": 100,
+      "remaining": 91.228491,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.003144,
+  "fields": {
+    "source_object": "A heraldic emblem or coat of arms",
+    "source_properties": "A protective shield, wings of status, and a flexing bicep representing raw physical power.",
+    "target_situation": "Paramilitary community organizations (ormas) involved in political-business interests and violent territorial disputes.",
+    "mapping": "The emblem's symbols of institutionalized strength and defense represent how these groups project authority and legitimacy through force.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A heraldic emblem or coat of arms\nsource_properties: A protective shield, wings of status, and a flexing bicep representing raw physical power.\ntarget_situation: Paramilitary community organizations (ormas) involved in political-business interests and violent territorial disputes.\nmapping: The emblem's symbols of institutionalized strength and defense represent how these groups project authority and legitimacy through force.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

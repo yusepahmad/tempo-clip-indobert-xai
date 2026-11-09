@@ -1,0 +1,87 @@
+{
+  "index": 322,
+  "sample_id": "TMP-2A50DAEE5D77",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "893137a7bab3c1529bf8aec42a20418159da3a1b40d7ba153797a3a3ad0718be",
+  "image_sha256": "2a50daee5d77388e42a6600196a5e4aee25fcca66a9948da30bc41329ca598cf",
+  "transmitted_image_sha256": "c25bab0e2b76861a5b9281558c2e58e6689965285208ef537e7423b83357b9f0",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.482688,
+      "total": 10,
+      "remaining": 1.5173120000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.482687999999996,
+      "total": 100,
+      "remaining": 91.517312,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3474190807901323,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"eye with a tear\", \"source_properties\": \"A stylized human eye shedding a single tear that flows downwards.\", \"target_situation\": \"The violent social conflict and tragic unrest in Tolikara.\", \"mapping\": \"The tear's path traces the geographical outline of the region, symbolizing sorrow, tragedy, and pain resulting from the reported situation.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "kpXLarOAOsaS_uMPmu6wkA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 84,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661500,
+        "output_tokens_cost_nanodollars": 252000
+      },
+      "prompt_tokens": 1323,
+      "total_backend_latency_ms": 1893,
+      "total_tokens": 1407
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4836015,
+      "total": 10,
+      "remaining": 1.5163984999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.483601500000006,
+      "total": 100,
+      "remaining": 91.5163985,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009135,
+  "fields": {
+    "source_object": "eye with a tear",
+    "source_properties": "A stylized human eye shedding a single tear that flows downwards.",
+    "target_situation": "The violent social conflict and tragic unrest in Tolikara.",
+    "mapping": "The tear's path traces the geographical outline of the region, symbolizing sorrow, tragedy, and pain resulting from the reported situation.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: eye with a tear\nsource_properties: A stylized human eye shedding a single tear that flows downwards.\ntarget_situation: The violent social conflict and tragic unrest in Tolikara.\nmapping: The tear's path traces the geographical outline of the region, symbolizing sorrow, tragedy, and pain resulting from the reported situation.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

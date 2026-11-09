@@ -1,0 +1,87 @@
+{
+  "index": 225,
+  "sample_id": "TMP-E9A3CA6E1931",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1fbdf6ea573087fd367f5f95e233a7a7a41151853e5ec0ba8bbfd61cf90c84ae",
+  "image_sha256": "e9a3ca6e19314a97d043fd3b9f7683eb3c0aeabf6c39bb8de53115dca2c42c67",
+  "transmitted_image_sha256": "82cf5b150e2ff6b284d6c69597785d5be83671c5f5bc9653dbf7dc50f9e65828",
+  "image_size": [
+    283,
+    371
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.341126,
+      "total": 10,
+      "remaining": 1.6588740000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.341126000000003,
+      "total": 100,
+      "remaining": 91.658874,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.214969762135297,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"big-game fishing\",\n  \"source_properties\": \"Anglers on a boat proudly holding an oversized, record-breaking catch with their bare hands.\",\n  \"target_situation\": \"Three Mallarangeng brothers implicated in a high-profile corruption scandal involving massive amounts of money.\",\n  \"mapping\": \"Large money rolls and bags substitute for fish, framing illicit wealth as a trophy catch.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ApPLaoe_POfU_uMPq5CXyQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 103,
+      "cost": {
+        "input_tokens_cost_nanodollars": 654000,
+        "output_tokens_cost_nanodollars": 309000
+      },
+      "prompt_tokens": 1308,
+      "total_backend_latency_ms": 2053,
+      "total_tokens": 1411
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.342089,
+      "total": 10,
+      "remaining": 1.6579110000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.342089000000001,
+      "total": 100,
+      "remaining": 91.657911,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000963,
+  "fields": {
+    "source_object": "big-game fishing",
+    "source_properties": "Anglers on a boat proudly holding an oversized, record-breaking catch with their bare hands.",
+    "target_situation": "Three Mallarangeng brothers implicated in a high-profile corruption scandal involving massive amounts of money.",
+    "mapping": "Large money rolls and bags substitute for fish, framing illicit wealth as a trophy catch.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: big-game fishing\nsource_properties: Anglers on a boat proudly holding an oversized, record-breaking catch with their bare hands.\ntarget_situation: Three Mallarangeng brothers implicated in a high-profile corruption scandal involving massive amounts of money.\nmapping: Large money rolls and bags substitute for fish, framing illicit wealth as a trophy catch.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

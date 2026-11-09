@@ -1,0 +1,83 @@
+{
+  "index": 576,
+  "sample_id": "TMP-1BF82B3F1272",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "bc6fdb21f0fefecdbaf35bb6c87347f678f09b30284492a6e394f480d995aed1",
+  "image_sha256": "1bf82b3f1272a4e7d41dd6a906f0fef5f7ab32235834de3a00a00a46e780d039",
+  "transmitted_image_sha256": "8bbbe4fd61d87af1af840ae07defa2bdbd3930fcf1a77ce8f8b98cfa8e188b12",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.1702624999999998,
+      "total": 10,
+      "remaining": 7.8297375,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.170262500000007,
+      "total": 100,
+      "remaining": 97.8297375,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 10.560259988997132,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi \"Sumber dan alasan\" yang diberikan, yaitu bahwa \"Gambar hutan sosial dipetakan sebagai **arena transaksi keuntungan**\", sejalan dengan penggunaan kata \"mengeruk keuntungan\" dalam teks, maka domain sumber metafora ini diklasifikasikan ke dalam kategori transaksi atau pertukaran nilai.\n\nJawab satu kode A sampai G: **C**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "mOLKavXhBd7d_uMPq5e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2040,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1965
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 765000,
+        "output_tokens_cost_nanodollars": 6120000
+      },
+      "prompt_tokens": 1530,
+      "total_backend_latency_ms": 9272,
+      "total_tokens": 3570
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.1771475000000002,
+      "total": 10,
+      "remaining": 7.8228525,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.177147500000004,
+      "total": 100,
+      "remaining": 97.8228525,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.006885
+}

@@ -1,0 +1,87 @@
+{
+  "index": 546,
+  "sample_id": "TMP-CC60500A9536",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b227611744e468686ee7ebdfa737654e59b0ca1bd3dea50789bde6a8afef784b",
+  "image_sha256": "cc60500a953677043d717286aa61d7ed7bb37ed2bca984ba865a24bd2ac82970",
+  "transmitted_image_sha256": "37d2fe7f4de44a9e2d7033dffac9808e4015cccb1ad0d32140064b8ce89a049b",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7893875,
+      "total": 10,
+      "remaining": 1.2106124999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.789387500000004,
+      "total": 100,
+      "remaining": 91.2106125,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3312837248668075,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"hotel\",\n  \"source_properties\": \"a commercial building for transient lodging with an entrance awning, luggage carts, and staff\",\n  \"target_situation\": \"privileged individuals bypassing mandatory COVID-19 quarantine rules after traveling abroad\",\n  \"mapping\": \"The hotel represents a quarantine facility being treated like a casual, optional residence by elites.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "YpvLaqfuHbuc_uMP2cbk2A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 2012,
+      "total_tokens": 1439
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.790337000000001,
+      "total": 10,
+      "remaining": 1.209662999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.790336999999994,
+      "total": 100,
+      "remaining": 91.209663,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009495,
+  "fields": {
+    "source_object": "hotel",
+    "source_properties": "a commercial building for transient lodging with an entrance awning, luggage carts, and staff",
+    "target_situation": "privileged individuals bypassing mandatory COVID-19 quarantine rules after traveling abroad",
+    "mapping": "The hotel represents a quarantine facility being treated like a casual, optional residence by elites.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: hotel\nsource_properties: a commercial building for transient lodging with an entrance awning, luggage carts, and staff\ntarget_situation: privileged individuals bypassing mandatory COVID-19 quarantine rules after traveling abroad\nmapping: The hotel represents a quarantine facility being treated like a casual, optional residence by elites.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

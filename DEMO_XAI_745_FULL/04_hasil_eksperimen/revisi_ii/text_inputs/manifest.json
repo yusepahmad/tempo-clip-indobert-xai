@@ -1,0 +1,66 @@
+{
+  "schema": "revisi-ii-text-inputs-v1",
+  "status": "complete",
+  "model": "indobenchmark/indobert-base-p1",
+  "revision": "c2cd0b51ddce6580eb35263b39b0a1e5fb0a39e2",
+  "model_hashes": {
+    "config.json": "c40b372acbdfbde38aa225c6ffdd09d1076904f2445532e2bb7eb92f95fc5954",
+    "pytorch_model.bin": "725fead20c01d47e0192426ac1474eff19e993b52b971c05bca5e96054be41f8",
+    "vocab.txt": "35cfc7be6dc3ec71102248722f352830a8fd89b5a5dadb83d70c2f7794ddbc11",
+    "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+    "tokenizer_config.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  "source_sha256": "bbaeeeb3ee1ac9772ea252e800337d2833c97dc3c3837bf661e9129e9df61687",
+  "input_fields": [
+    "sample_id",
+    "headline_verified",
+    "supporting_text_verified",
+    "deskripsi",
+    "sumber_visual",
+    "alasan"
+  ],
+  "prohibited_fields": [
+    "task1_issue",
+    "task2_domain_sumber",
+    "task3_primary_entity_type",
+    "domain",
+    "task2_source_description",
+    "task2_mapping_note"
+  ],
+  "label_csv_columns_read": [
+    "sample_id",
+    "headline_verified",
+    "supporting_text_verified"
+  ],
+  "dataset_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "e01_hashes": {
+    "deskripsi.jsonl": "c75e8df3f9b71d6786462f8d0f1187ebe4234fb8dd079924f3f35707ff1b8cd2",
+    "zeroshot.jsonl": "10c07b06b13fbbf647f2b1ed12a722d9bff8f97caa6b621430d8bc0429ab38c9"
+  },
+  "variants": [
+    {
+      "variant": "headline",
+      "samples": 740,
+      "max_length": 128,
+      "truncated_samples": 0,
+      "original_tokens_min": 3,
+      "original_tokens_max": 26,
+      "sha256": "1517a59db69e8f4691933b02f55d3b4a43025f4a4a6e72e909a2fc1efa06c829"
+    },
+    {
+      "variant": "rich",
+      "samples": 740,
+      "max_length": 128,
+      "truncated_samples": 736,
+      "original_tokens_min": 110,
+      "original_tokens_max": 242,
+      "sha256": "e047d6ee7f76386971f6172c7963e1d6b36b82f6adf4c979cc286105ed7bbabc"
+    }
+  ],
+  "files": {
+    "label_blind_inputs.jsonl": "bd8f42e41d0530d65e6a747bc4018470abbb2f7549966df02fe977b0fabaa72a",
+    "headline_front_cache.npz": "1517a59db69e8f4691933b02f55d3b4a43025f4a4a6e72e909a2fc1efa06c829",
+    "rich_front_cache.npz": "e047d6ee7f76386971f6172c7963e1d6b36b82f6adf4c979cc286105ed7bbabc"
+  },
+  "seconds": 290.6541068890001
+}

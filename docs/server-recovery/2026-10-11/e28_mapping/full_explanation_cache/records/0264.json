@@ -1,0 +1,87 @@
+{
+  "index": 264,
+  "sample_id": "TMP-4592A51304BF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "26973b8658e0cc145465795796ce6a8c58dc02d977d1bdd5e4844fed10aef784",
+  "image_sha256": "4592a51304bf258817fd3c95155b6afd259549b1d0f3edc33bb658ef1ca475e1",
+  "transmitted_image_sha256": "d228aed7bbac490b74ae0779849fdefbb199db3cbb6f32cd107e75c13b418a12",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.402434,
+      "total": 10,
+      "remaining": 1.5975660000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.402434,
+      "total": 100,
+      "remaining": 91.597566,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.6351170078851283,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"overturned vehicle\", \"source_properties\": \"an upside-down car with an exposed wheel, signifying chaos and violent disruption\", \"target_situation\": \"the Malari incident and subsequent political repression\", \"mapping\": \"The physical destruction of the vehicle serves as a concrete manifestation of the 'rusuh politik' (political riot) and the breakdown of order.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "EJTLar6HHPGb_uMPte3s2Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 665000,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1330,
+      "total_backend_latency_ms": 2168,
+      "total_tokens": 1416
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.403357,
+      "total": 10,
+      "remaining": 1.5966430000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.403357,
+      "total": 100,
+      "remaining": 91.596643,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000923,
+  "fields": {
+    "source_object": "overturned vehicle",
+    "source_properties": "an upside-down car with an exposed wheel, signifying chaos and violent disruption",
+    "target_situation": "the Malari incident and subsequent political repression",
+    "mapping": "The physical destruction of the vehicle serves as a concrete manifestation of the 'rusuh politik' (political riot) and the breakdown of order.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: overturned vehicle\nsource_properties: an upside-down car with an exposed wheel, signifying chaos and violent disruption\ntarget_situation: the Malari incident and subsequent political repression\nmapping: The physical destruction of the vehicle serves as a concrete manifestation of the 'rusuh politik' (political riot) and the breakdown of order.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,86 @@
+{
+  "index": 68,
+  "sample_id": "TMP-5C3CDFE23963",
+  "fold": 2,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "663a0daeb40c7ade169ab6b8ed18969ab51a29cf6b3979ad8c7fc0a424e3df4e",
+  "image_sha256": "5c3cdfe23963ec652408e961c85031d6ae3353097ab5e49ca935392df530d58f",
+  "transmitted_image_sha256": "9ecc1c84a0b020d40f3920b84ef55a838c9ea6a2fee7a9bc1767cb488085bac1",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 3.1491205000000004,
+      "total": 10,
+      "remaining": 6.8508795,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 3.149120499999995,
+      "total": 100,
+      "remaining": 96.8508795,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 15.169914816040546,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan analisis ilustrasi sampul Tempo tersebut, berikut adalah klasifikasinya:\n\nIlustrasi utama menampilkan **mesin penghancur kertas** (shredder) yang sedang menghancurkan dokumen berisi wajah Munir, serta sebuah **tangan memegang garpu** yang seolah-olah hendak mengonsumsi potongan kertas tersebut. Meskipun ada elemen garpu (konsumsi), fokus mekanis utama dari penghancuran bukti/identitas ini menggunakan alat buatan manusia.\n\nSesuai dengan panduan dalam teks target yang menyebutkan pemetaan \"mekanisme... ke isu keadilan\" dan mengacu pada domain \"**mesin/infrastruktur**\", maka kategori yang tepat adalah:\n\nJawab: **E**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "F-3KateMPPKU_uMPp6OP6Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 3115,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2965
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2043500,
+        "output_tokens_cost_nanodollars": 9345000
+      },
+      "prompt_tokens": 4087,
+      "total_backend_latency_ms": 13585,
+      "total_tokens": 7202
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 3.1605090000000002,
+      "total": 10,
+      "remaining": 6.839491,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 3.1605090000000047,
+      "total": 100,
+      "remaining": 96.839491,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0113885,
+  "code": "E",
+  "strict_code": "INVALID",
+  "parsing_rule": "explicit_prefix_code",
+  "finish_reason": "stop",
+  "prediction": "MESIN_INFRASTRUKTUR"
+}

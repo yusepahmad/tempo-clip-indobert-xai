@@ -1,0 +1,181 @@
+{
+  "schema": "tempo-sprint2-augmentation-v1",
+  "status": "complete",
+  "encoder": "google/siglip2-base-patch16-384",
+  "revision": "f775b65a79762255128c981547af89addcfe0f88",
+  "dataset_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "results": {
+    "A00_none": {
+      "task1_issue": 0.48332202022830256,
+      "task2_domain_sumber": 0.43065024119624756,
+      "task3_primary_entity_type": 0.35953132648131964,
+      "min": 0.35953132648131964,
+      "mean": 0.4245011959686233
+    },
+    "A01_light": {
+      "task1_issue": 0.46957846811284404,
+      "task2_domain_sumber": 0.4275568511678685,
+      "task3_primary_entity_type": 0.3663193980649219,
+      "min": 0.3663193980649219,
+      "mean": 0.42115157244854484
+    },
+    "A02_moderate": {
+      "task1_issue": 0.4808395111106301,
+      "task2_domain_sumber": 0.4271600067689832,
+      "task3_primary_entity_type": 0.3307082102812653,
+      "min": 0.3307082102812653,
+      "mean": 0.4129025760536262
+    },
+    "A03_light_sampler": {
+      "task1_issue": 0.4691887518692995,
+      "task2_domain_sumber": 0.4284383243812043,
+      "task3_primary_entity_type": 0.35559021205978536,
+      "min": 0.35559021205978536,
+      "mean": 0.41773909610342974
+    },
+    "selected_pipeline": {
+      "task1_issue": 0.47852435254354136,
+      "task2_domain_sumber": 0.42185026933609204,
+      "task3_primary_entity_type": 0.3563930673289346,
+      "min": 0.3563930673289346,
+      "mean": 0.41892256306952264
+    }
+  },
+  "fold_details": [
+    {
+      "fold": 1,
+      "inner": [
+        {
+          "variant": "A00_none",
+          "min": 0.301237660199601,
+          "mean": 0.37295782775059133
+        },
+        {
+          "variant": "A01_light",
+          "min": 0.3496635335727847,
+          "mean": 0.38625014070124136
+        },
+        {
+          "variant": "A02_moderate",
+          "min": 0.34900784891001707,
+          "mean": 0.383774750057761
+        },
+        {
+          "variant": "A03_light_sampler",
+          "min": 0.3291207778265133,
+          "mean": 0.38411702922054114
+        }
+      ],
+      "selected_variant": "A01_light"
+    },
+    {
+      "fold": 2,
+      "inner": [
+        {
+          "variant": "A00_none",
+          "min": 0.3352692485428612,
+          "mean": 0.40126657359939566
+        },
+        {
+          "variant": "A01_light",
+          "min": 0.33338687066779715,
+          "mean": 0.3972026841570422
+        },
+        {
+          "variant": "A02_moderate",
+          "min": 0.3018310734010445,
+          "mean": 0.37442870222684216
+        },
+        {
+          "variant": "A03_light_sampler",
+          "min": 0.3277666580040568,
+          "mean": 0.38531226328829377
+        }
+      ],
+      "selected_variant": "A00_none"
+    },
+    {
+      "fold": 3,
+      "inner": [
+        {
+          "variant": "A00_none",
+          "min": 0.3326279212822201,
+          "mean": 0.4114037225824147
+        },
+        {
+          "variant": "A01_light",
+          "min": 0.33178332768653224,
+          "mean": 0.4055934008441308
+        },
+        {
+          "variant": "A02_moderate",
+          "min": 0.3324075357935241,
+          "mean": 0.40456450067147404
+        },
+        {
+          "variant": "A03_light_sampler",
+          "min": 0.32036574473714613,
+          "mean": 0.39806496535574315
+        }
+      ],
+      "selected_variant": "A00_none"
+    },
+    {
+      "fold": 4,
+      "inner": [
+        {
+          "variant": "A00_none",
+          "min": 0.35321657519601984,
+          "mean": 0.39454211210826257
+        },
+        {
+          "variant": "A01_light",
+          "min": 0.3082337420927315,
+          "mean": 0.38814464225571826
+        },
+        {
+          "variant": "A02_moderate",
+          "min": 0.316054686415018,
+          "mean": 0.3760285666743483
+        },
+        {
+          "variant": "A03_light_sampler",
+          "min": 0.30507541498085927,
+          "mean": 0.3896951718290617
+        }
+      ],
+      "selected_variant": "A00_none"
+    },
+    {
+      "fold": 5,
+      "inner": [
+        {
+          "variant": "A00_none",
+          "min": 0.3033197462594455,
+          "mean": 0.39322498175730364
+        },
+        {
+          "variant": "A01_light",
+          "min": 0.2988735889522993,
+          "mean": 0.39358022522235636
+        },
+        {
+          "variant": "A02_moderate",
+          "min": 0.31759226214159697,
+          "mean": 0.40055207458972003
+        },
+        {
+          "variant": "A03_light_sampler",
+          "min": 0.32180443768781175,
+          "mean": 0.3995953112519765
+        }
+      ],
+      "selected_variant": "A03_light_sampler"
+    }
+  ],
+  "features": {
+    "clean": "bdf3b9b33f80b93c9cad5ce55876a129724c309c68f04aa7e4608985b196afc7",
+    "light": "2c7df010488f36e5cff35c53c2cce8455aba3b29ca9123347b0144a92454e98f",
+    "moderate": "614f922dcb1d76328f81b5998037c107d8dc3c7e8152c7bf167d360211d8d724"
+  }
+}

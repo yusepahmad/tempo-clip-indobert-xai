@@ -1,0 +1,87 @@
+{
+  "index": 374,
+  "sample_id": "TMP-9C2BA983276E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f83cc5d173de9ca58bca8635e342bbcaa83e996bd6193a3bc1159a524a840f11",
+  "image_sha256": "9c2ba983276e3567398a5bdc786fea0dfe53deab6875d14b2e491940512a4088",
+  "transmitted_image_sha256": "2ff3ff5955bff899572bc62e6d520397975be41e9550f185d525d849f5d35fc0",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5445995,
+      "total": 10,
+      "remaining": 1.4554004999999997,
+      "refill_at": "2026-10-11 23:35:15.881000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.544599500000004,
+      "total": 100,
+      "remaining": 91.4554005,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.541307203937322,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"chessboard\", \"source_properties\": \"a grid-based surface for strategic movement where pieces are positioned and shifted to gain advantage.\", \"target_situation\": \"Indonesian political leaders maneuvering and positioning candidates during the Jakarta gubernatorial election.\", \"mapping\": \"The checkered floor represents the political arena; figures placing or moving tiles symbolize leaders strategically positioning themselves and their interests.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "15bLatG4J82i_uMP67qv2Qc",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 85,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671500,
+        "output_tokens_cost_nanodollars": 255000
+      },
+      "prompt_tokens": 1343,
+      "total_backend_latency_ms": 1711,
+      "total_tokens": 1428
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.545526,
+      "total": 10,
+      "remaining": 1.4544739999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.545525999999995,
+      "total": 100,
+      "remaining": 91.454474,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009265,
+  "fields": {
+    "source_object": "chessboard",
+    "source_properties": "a grid-based surface for strategic movement where pieces are positioned and shifted to gain advantage.",
+    "target_situation": "Indonesian political leaders maneuvering and positioning candidates during the Jakarta gubernatorial election.",
+    "mapping": "The checkered floor represents the political arena; figures placing or moving tiles symbolize leaders strategically positioning themselves and their interests.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: chessboard\nsource_properties: a grid-based surface for strategic movement where pieces are positioned and shifted to gain advantage.\ntarget_situation: Indonesian political leaders maneuvering and positioning candidates during the Jakarta gubernatorial election.\nmapping: The checkered floor represents the political arena; figures placing or moving tiles symbolize leaders strategically positioning themselves and their interests.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 170,
+  "sample_id": "TMP-52D5F3828E81",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "892d149a4ec7346704fbfa8de18e05c3cf9b13430385ed717ced0a4e7730c5a1",
+  "image_sha256": "52d5f3828e815b92b274a65f6461c8cf46abfe520dd23446bbb4e7307abda58a",
+  "transmitted_image_sha256": "7c5ed148c21cbd62060f717a4b85200507df4710ff655bf473f4cd4aa9baab56",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2596835,
+      "total": 10,
+      "remaining": 1.7403165000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.259683499999994,
+      "total": 100,
+      "remaining": 91.7403165,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1110971961170435,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"cupped hands and an excavator\", \"source_properties\": \"Hands hold a heap of soil; an excavator digs atop the pile.\", \"target_situation\": \"Illegal nickel mining in Sulawesi protected by officials and omnibus laws.\", \"mapping\": \"Cupped hands represent the 'protection' provided by officials and laws, enabling illegal mining activities (the excavator) to thrive and profit.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "m5HLatu0D_Gb_uMPte3s2Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 89,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 267000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 1634,
+      "total_tokens": 1436
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.260624,
+      "total": 10,
+      "remaining": 1.739376,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.260624000000007,
+      "total": 100,
+      "remaining": 91.739376,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009405,
+  "fields": {
+    "source_object": "cupped hands and an excavator",
+    "source_properties": "Hands hold a heap of soil; an excavator digs atop the pile.",
+    "target_situation": "Illegal nickel mining in Sulawesi protected by officials and omnibus laws.",
+    "mapping": "Cupped hands represent the 'protection' provided by officials and laws, enabling illegal mining activities (the excavator) to thrive and profit.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: cupped hands and an excavator\nsource_properties: Hands hold a heap of soil; an excavator digs atop the pile.\ntarget_situation: Illegal nickel mining in Sulawesi protected by officials and omnibus laws.\nmapping: Cupped hands represent the 'protection' provided by officials and laws, enabling illegal mining activities (the excavator) to thrive and profit.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

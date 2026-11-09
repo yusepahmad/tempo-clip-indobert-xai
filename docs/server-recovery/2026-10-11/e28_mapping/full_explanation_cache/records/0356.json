@@ -1,0 +1,87 @@
+{
+  "index": 356,
+  "sample_id": "TMP-CAB6CF99016D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c40e008d550240b65e08b1ed91a882520d7d48e276c68cf3018a642a87cfc8df",
+  "image_sha256": "cab6cf99016d26f3de7cf3549caf90bd6aece79a61228a96624a66256456b391",
+  "transmitted_image_sha256": "e9a8b2dfa70f1bacd642347b007ebc22eb2e08099342ee718f5027b41cc317b9",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5250585,
+      "total": 10,
+      "remaining": 1.4749415,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.5250585,
+      "total": 100,
+      "remaining": 91.4749415,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.673673497978598,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"butcher shop\",\n  \"source_properties\": \"carcasses, white apron, large cleaver, blood stains\",\n  \"target_situation\": \"government official managing failed meat price controls and controversial imports\",\n  \"mapping\": \"A butcher\u2019s bloody tools and apron symbolize the messy, aggressive handling of meat trade policies.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "cZbLaqLoCN7d_uMP2Ze24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 672000,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1344,
+      "total_backend_latency_ms": 1954,
+      "total_tokens": 1435
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5260035,
+      "total": 10,
+      "remaining": 1.4739965000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.526003500000002,
+      "total": 100,
+      "remaining": 91.4739965,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000945,
+  "fields": {
+    "source_object": "butcher shop",
+    "source_properties": "carcasses, white apron, large cleaver, blood stains",
+    "target_situation": "government official managing failed meat price controls and controversial imports",
+    "mapping": "A butcher\u2019s bloody tools and apron symbolize the messy, aggressive handling of meat trade policies.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: butcher shop\nsource_properties: carcasses, white apron, large cleaver, blood stains\ntarget_situation: government official managing failed meat price controls and controversial imports\nmapping: A butcher\u2019s bloody tools and apron symbolize the messy, aggressive handling of meat trade policies.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

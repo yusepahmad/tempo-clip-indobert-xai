@@ -1,0 +1,87 @@
+{
+  "index": 656,
+  "sample_id": "TMP-815A19D844DF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "874f51bc69a70c6058491efce985473515b1b7ea36d3fcf6ef4a34fc00160462",
+  "image_sha256": "815a19d844dfcaf7104a9e186faee5f17b32b364c002a4ffffdb3e545bb69203",
+  "transmitted_image_sha256": "daba849dbc88965ed66dd372dded5526bb1db1cfd0e7284b2bbcf4445ef8ccd8",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9348725,
+      "total": 10,
+      "remaining": 1.0651274999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.934872499999997,
+      "total": 100,
+      "remaining": 91.0651275,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.323867838829756,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Aerial roots and vines of a banyan tree\",\n  \"source_properties\": \"Descending from above, providing unstable or precarious handholds for climbing toward the top.\",\n  \"target_situation\": \"Political figures competing for leadership within the Golkar Party (symbolized by the banyan).\",\n  \"mapping\": \"Climbing the hanging roots represents the difficult, contested struggle to reach the party's 'pucuk' (peak/summit).\",\n  \"uncertainty\": \"None evident.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Op7LarXrEv-o_uMPl6-88Q4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 117,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677000,
+        "output_tokens_cost_nanodollars": 351000
+      },
+      "prompt_tokens": 1354,
+      "total_backend_latency_ms": 1973,
+      "total_tokens": 1471
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9359005,
+      "total": 10,
+      "remaining": 1.0640994999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.935900500000002,
+      "total": 100,
+      "remaining": 91.0640995,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001028,
+  "fields": {
+    "source_object": "Aerial roots and vines of a banyan tree",
+    "source_properties": "Descending from above, providing unstable or precarious handholds for climbing toward the top.",
+    "target_situation": "Political figures competing for leadership within the Golkar Party (symbolized by the banyan).",
+    "mapping": "Climbing the hanging roots represents the difficult, contested struggle to reach the party's 'pucuk' (peak/summit).",
+    "uncertainty": "None evident."
+  },
+  "explanation": "source_object: Aerial roots and vines of a banyan tree\nsource_properties: Descending from above, providing unstable or precarious handholds for climbing toward the top.\ntarget_situation: Political figures competing for leadership within the Golkar Party (symbolized by the banyan).\nmapping: Climbing the hanging roots represents the difficult, contested struggle to reach the party's 'pucuk' (peak/summit).\nuncertainty: None evident.",
+  "finish_reason": "stop",
+  "usable": true
+}

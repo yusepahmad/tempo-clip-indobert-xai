@@ -1,0 +1,87 @@
+{
+  "index": 558,
+  "sample_id": "TMP-3762FE3409B1",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "589fb108da0876232ef7da825c0af291bdb9d57d86bc2de6d2e46d36e3b9a18e",
+  "image_sha256": "3762fe3409b192c26164e749e071162dcaf1510cdce1cd5c0e3009385b920427",
+  "transmitted_image_sha256": "d95155c7d5f37d3f347608c2b15b6801ced02d714c7334966d46aee4b2f86187",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.807032,
+      "total": 10,
+      "remaining": 1.1929680000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.807032000000007,
+      "total": 100,
+      "remaining": 91.192968,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.795763291884214,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"surfing a tsunami wave of rice\", \"source_properties\": \"High, overwhelming wave of grains; people in suits gliding effortlessly; farmers below being swept away.\", \"target_situation\": \"Government rice import policy and its socio-political impact.\", \"mapping\": \"The massive rice wave represents a flood of imports. Elite politicians surf it for profit or political gain, while vulnerable farmers are crushed by the resulting economic tide.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "tpvLaudiks3-4w-G9u7IAQ",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 1694,
+      "total_tokens": 1444
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8079965,
+      "total": 10,
+      "remaining": 1.1920035000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.807996500000002,
+      "total": 100,
+      "remaining": 91.1920035,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009645,
+  "fields": {
+    "source_object": "surfing a tsunami wave of rice",
+    "source_properties": "High, overwhelming wave of grains; people in suits gliding effortlessly; farmers below being swept away.",
+    "target_situation": "Government rice import policy and its socio-political impact.",
+    "mapping": "The massive rice wave represents a flood of imports. Elite politicians surf it for profit or political gain, while vulnerable farmers are crushed by the resulting economic tide.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: surfing a tsunami wave of rice\nsource_properties: High, overwhelming wave of grains; people in suits gliding effortlessly; farmers below being swept away.\ntarget_situation: Government rice import policy and its socio-political impact.\nmapping: The massive rice wave represents a flood of imports. Elite politicians surf it for profit or political gain, while vulnerable farmers are crushed by the resulting economic tide.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

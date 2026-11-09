@@ -1,0 +1,87 @@
+{
+  "index": 227,
+  "sample_id": "TMP-446701C490AF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "65b58d8c97301c354d513afb5dd76948d548255f522bbf5e6fc3bdb2ba506128",
+  "image_sha256": "446701c490afb875cae2d4a4feb38f2feadfd8f303937b40ef1929418432de3a",
+  "transmitted_image_sha256": "c76e7beefb9893f3e9d16f8523e81368b42f6f89c6c9c7c2613e5945d0929adc",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.343002,
+      "total": 10,
+      "remaining": 1.6569979999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.343001999999998,
+      "total": 100,
+      "remaining": 91.656998,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.8224915508180857,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"red carpet rolling up\",\n  \"source_properties\": \"A red carpet forming steps then rolling backwards, withdrawing the path forward.\",\n  \"target_situation\": \"The abolition of International Standard School Initiatives (RSBI) in Indonesia.\",\n  \"mapping\": \"The rolling carpet symbolizes the removal of an elite educational pathway once available.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "DpPLarKMGa2u_PUPtb3C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 89,
+      "cost": {
+        "input_tokens_cost_nanodollars": 667000,
+        "output_tokens_cost_nanodollars": 267000
+      },
+      "prompt_tokens": 1334,
+      "total_backend_latency_ms": 1616,
+      "total_tokens": 1423
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.343936,
+      "total": 10,
+      "remaining": 1.6560640000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.343936,
+      "total": 100,
+      "remaining": 91.656064,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000934,
+  "fields": {
+    "source_object": "red carpet rolling up",
+    "source_properties": "A red carpet forming steps then rolling backwards, withdrawing the path forward.",
+    "target_situation": "The abolition of International Standard School Initiatives (RSBI) in Indonesia.",
+    "mapping": "The rolling carpet symbolizes the removal of an elite educational pathway once available.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: red carpet rolling up\nsource_properties: A red carpet forming steps then rolling backwards, withdrawing the path forward.\ntarget_situation: The abolition of International Standard School Initiatives (RSBI) in Indonesia.\nmapping: The rolling carpet symbolizes the removal of an elite educational pathway once available.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

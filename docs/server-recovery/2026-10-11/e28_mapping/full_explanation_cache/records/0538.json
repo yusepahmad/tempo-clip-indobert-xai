@@ -1,0 +1,90 @@
+{
+  "index": 538,
+  "sample_id": "TMP-419181D99BF3",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "92f7f4473fa766245e272639234d5b2958f0e4984691c98deff3e63233ccc42b",
+  "image_sha256": "419181d99bf3b82ed79b4118a8dfb9188a7c5c86bc9e8eb8cf0eee33ff30eee3",
+  "transmitted_image_sha256": "d4eaeb66afea44f63f0af9323db8e80cfc0cfc2ea14a78c08293398f2346e6fd",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7734645,
+      "total": 10,
+      "remaining": 1.2265355000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.773464500000003,
+      "total": 100,
+      "remaining": 91.2265355,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 11.179556798189878,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"none evident\",\n  \"source_properties\": \"n/a\",\n  \"target_situation\": \"The Indonesian military (TNI) assault on Papua's Kiwirok District against pro-independence militias.\",\n  \"mapping\": \"The illustration literally depicts the conflict: a military helicopter represents state force, while figures fleeing on a hillside and an armed observer represent the local struggle and human impact.\",\n  \"uncertainty\": \"The imagery appears to be a direct literal representation of the reported military operation rather than an analogy.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "KJvLatTRId7d_uMP2Ze24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1611,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1490
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 674500,
+        "output_tokens_cost_nanodollars": 4833000
+      },
+      "prompt_tokens": 1349,
+      "total_backend_latency_ms": 9194,
+      "total_tokens": 2960
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.778972,
+      "total": 10,
+      "remaining": 1.2210280000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.778971999999996,
+      "total": 100,
+      "remaining": 91.221028,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0055075,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "n/a",
+    "target_situation": "The Indonesian military (TNI) assault on Papua's Kiwirok District against pro-independence militias.",
+    "mapping": "The illustration literally depicts the conflict: a military helicopter represents state force, while figures fleeing on a hillside and an armed observer represent the local struggle and human impact.",
+    "uncertainty": "The imagery appears to be a direct literal representation of the reported military operation rather than an analogy."
+  },
+  "explanation": "source_object: none evident\nsource_properties: n/a\ntarget_situation: The Indonesian military (TNI) assault on Papua's Kiwirok District against pro-independence militias.\nmapping: The illustration literally depicts the conflict: a military helicopter represents state force, while figures fleeing on a hillside and an armed observer represent the local struggle and human impact.\nuncertainty: The imagery appears to be a direct literal representation of the reported military operation rather than an analogy.",
+  "finish_reason": "stop",
+  "usable": true
+}

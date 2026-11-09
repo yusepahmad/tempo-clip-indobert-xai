@@ -1,0 +1,83 @@
+{
+  "index": 159,
+  "sample_id": "TMP-A49B4754C077",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "62581aae0ceadb1cc780c3747e83b0ef12fd18a48356c9c70b5b0f7f89f9829b",
+  "image_sha256": "a49b4754c0771079ec0f92eeb6760790e883175649e6c21d409c5d4d9b2d0e46",
+  "transmitted_image_sha256": "229d4957db6b4d902905e94321a5582104c0c76b4ffb1a245995735cfb7dc27b",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.5704165000000003,
+      "total": 10,
+      "remaining": 9.4295835,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.5704164999999932,
+      "total": 100,
+      "remaining": 99.4295835,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.874219072982669,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan ilustrasi dan konteks yang diberikan, klasifikasi domain sumber metaforanya adalah:\n\n**G: PERMAINAN_KONTES**\n\n**Alasan:**\nIlustrasi tersebut menampilkan adegan sekelompok orang yang berlomba-lomba atau bersaing (kontes) untuk mendapatkan objek yang tergantung (vaksin), mirip dengan suasana dalam perlombaan tradisional (seperti panjat pinang atau menangkap objek dengan alat). Judul \"SALING SALIP\" juga merupakan istilah yang lazim digunakan dalam konteks balapan atau kompetisi untuk mendahului satu sama lain. Secara visual, penggunaan alat-alat seperti penggaruk bambu dan payung untuk menggapai \"hadiah\" tersebut memperkuat kesan adanya sebuah permainan atau kontes memperebutkan sesuatu.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "y9HKap3aNsjg_uMPp72C-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1395,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1231
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 801000,
+        "output_tokens_cost_nanodollars": 4185000
+      },
+      "prompt_tokens": 1602,
+      "total_backend_latency_ms": 7845,
+      "total_tokens": 2997
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.5754024999999992,
+      "total": 10,
+      "remaining": 9.4245975,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.5754024999999956,
+      "total": 100,
+      "remaining": 99.4245975,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.004986
+}

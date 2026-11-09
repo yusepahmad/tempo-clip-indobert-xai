@@ -1,0 +1,87 @@
+{
+  "index": 83,
+  "sample_id": "TMP-77D980C9B522",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a85d746a91f5c65c518835fb6392854f1faee1cd57cf29f479f011ae5b2238dc",
+  "image_sha256": "77d980c9b522e04f764a48aca53deb7622dbdd56209889af85df31f016264f42",
+  "transmitted_image_sha256": "cf4f62d0218e5ea19ba1cae60271940d82466389dc1839428f5acce2b77727b3",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.124211,
+      "total": 10,
+      "remaining": 1.8757889999999993,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.124211000000003,
+      "total": 100,
+      "remaining": 91.875789,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4487314526923,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Relay race\",\n  \"source_properties\": \"Athletes in motion on a track, passing a baton to the next runner.\",\n  \"target_situation\": \"Political succession within the PDI-P party for the 2024 presidential election.\",\n  \"mapping\": \"Jokowi holds a baton representing power, while Puan and Ganjar scramble to receive it.\",\n  \"uncertainty\": \"None evident.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "S4_LaoW4Mr7i_uMPyOzU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675000,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1350,
+      "total_backend_latency_ms": 1815,
+      "total_tokens": 1452
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.125192,
+      "total": 10,
+      "remaining": 1.8748079999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.125191999999998,
+      "total": 100,
+      "remaining": 91.874808,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000981,
+  "fields": {
+    "source_object": "Relay race",
+    "source_properties": "Athletes in motion on a track, passing a baton to the next runner.",
+    "target_situation": "Political succession within the PDI-P party for the 2024 presidential election.",
+    "mapping": "Jokowi holds a baton representing power, while Puan and Ganjar scramble to receive it.",
+    "uncertainty": "None evident."
+  },
+  "explanation": "source_object: Relay race\nsource_properties: Athletes in motion on a track, passing a baton to the next runner.\ntarget_situation: Political succession within the PDI-P party for the 2024 presidential election.\nmapping: Jokowi holds a baton representing power, while Puan and Ganjar scramble to receive it.\nuncertainty: None evident.",
+  "finish_reason": "stop",
+  "usable": true
+}

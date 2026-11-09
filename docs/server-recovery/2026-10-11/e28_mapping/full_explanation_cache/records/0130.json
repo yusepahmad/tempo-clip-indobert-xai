@@ -1,0 +1,87 @@
+{
+  "index": 130,
+  "sample_id": "TMP-E9506ABAD7B4",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "00db988a196e25af0dde245f3df2cf0a90c8eca510d7ab51e7181ed8426d1c05",
+  "image_sha256": "e9506abad7b4e5f3cdd63c67810d50c36ede7c83a32a691e57265bcd0872be7a",
+  "transmitted_image_sha256": "d4dc18b01a14331f30950aed05da91a65f3143ae72e63c46d1f91123a8dd1759",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1961275,
+      "total": 10,
+      "remaining": 1.8038725000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.196127500000003,
+      "total": 100,
+      "remaining": 91.8038725,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.7348213880322874,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"cow-shaped piggy bank\",\n  \"source_properties\": \"hollow container, animal shape, coin slot, designed for gathering and holding money\",\n  \"target_situation\": \"alleged corruption involving social assistance (bansos) funds being redirected for personal gain\",\n  \"mapping\": \"The piggy bank represents the collection of public funds, while the cow shape suggests wealth or resources being 'milked' or hoarded.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "hJDLasu2CJ_v_uMPm5vQ6AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 110,
+      "cost": {
+        "input_tokens_cost_nanodollars": 662500,
+        "output_tokens_cost_nanodollars": 330000
+      },
+      "prompt_tokens": 1325,
+      "total_backend_latency_ms": 1671,
+      "total_tokens": 1435
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.19712,
+      "total": 10,
+      "remaining": 1.80288,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.197119999999998,
+      "total": 100,
+      "remaining": 91.80288,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009925,
+  "fields": {
+    "source_object": "cow-shaped piggy bank",
+    "source_properties": "hollow container, animal shape, coin slot, designed for gathering and holding money",
+    "target_situation": "alleged corruption involving social assistance (bansos) funds being redirected for personal gain",
+    "mapping": "The piggy bank represents the collection of public funds, while the cow shape suggests wealth or resources being 'milked' or hoarded.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: cow-shaped piggy bank\nsource_properties: hollow container, animal shape, coin slot, designed for gathering and holding money\ntarget_situation: alleged corruption involving social assistance (bansos) funds being redirected for personal gain\nmapping: The piggy bank represents the collection of public funds, while the cow shape suggests wealth or resources being 'milked' or hoarded.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 582,
+  "sample_id": "TMP-41443546B71C",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "659a76d5c22a372f0526e42093b24c8561f0eb1be154da35b650dd09d428256e",
+  "image_sha256": "41443546b71cb04bae7a9cedc3a9fc4c871c387eeb908cd5bb6e6fd596be56bc",
+  "transmitted_image_sha256": "1a33829253115966ae77c75f18a364d23a76440a6cfd154d1284082bc678c5e1",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.833462,
+      "total": 10,
+      "remaining": 1.1665379999999992,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.833461999999997,
+      "total": 100,
+      "remaining": 91.166538,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.9343927302397788,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"shredded police insignia\", \"source_properties\": \"Police epaulettes and rank stars are shown falling off the uniform, appearing detached and scattered around the figure.\", \"target_situation\": \"A high-ranking police general, Teddy Minahasa, faces criminal allegations and professional disgrace for involvement in drug trafficking.\", \"mapping\": \"The falling insignia physically represent the stripping of rank, loss of authority, and moral degradation of the officer due to illegal actions.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "VJzLapWPMf2b_uMPj8_lqAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679500,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1359,
+      "total_backend_latency_ms": 2435,
+      "total_tokens": 1465
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8344595,
+      "total": 10,
+      "remaining": 1.1655405000000005,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.834459499999994,
+      "total": 100,
+      "remaining": 91.1655405,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009975,
+  "fields": {
+    "source_object": "shredded police insignia",
+    "source_properties": "Police epaulettes and rank stars are shown falling off the uniform, appearing detached and scattered around the figure.",
+    "target_situation": "A high-ranking police general, Teddy Minahasa, faces criminal allegations and professional disgrace for involvement in drug trafficking.",
+    "mapping": "The falling insignia physically represent the stripping of rank, loss of authority, and moral degradation of the officer due to illegal actions.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: shredded police insignia\nsource_properties: Police epaulettes and rank stars are shown falling off the uniform, appearing detached and scattered around the figure.\ntarget_situation: A high-ranking police general, Teddy Minahasa, faces criminal allegations and professional disgrace for involvement in drug trafficking.\nmapping: The falling insignia physically represent the stripping of rank, loss of authority, and moral degradation of the officer due to illegal actions.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

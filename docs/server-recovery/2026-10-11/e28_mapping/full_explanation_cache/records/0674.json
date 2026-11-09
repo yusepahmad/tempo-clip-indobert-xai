@@ -1,0 +1,87 @@
+{
+  "index": 674,
+  "sample_id": "TMP-2D95D44B50B5",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f8c180ee06361f5c1973a49582c18b83697a926737b6e055f2dbe0b012d5aca9",
+  "image_sha256": "2d95d44b50b5084f8eed74b8deb6dfe90928c183bd4e2872ba96e3229d51fc5a",
+  "transmitted_image_sha256": "6012fdd3d414812979b9838c12d9ec5dd96b9b31de7d00675c5a17dae9cfa26a",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.964772,
+      "total": 10,
+      "remaining": 1.035228,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.964771999999996,
+      "total": 100,
+      "remaining": 91.035228,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3135215430520475,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Empty red office chairs\",\n  \"source_properties\": \"Vacant seating around a long, boardroom-style table with one slumped figure.\",\n  \"target_situation\": \"The fractured Jokowi cabinet amidst ministers resigning or opposing the President's political stance.\",\n  \"mapping\": \"The vacant chairs physically represent cabinet positions left empty by ministers planning to resign.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "vJ7LarXyGt7d_uMPq5e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682000,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1364,
+      "total_backend_latency_ms": 1722,
+      "total_tokens": 1458
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.965736,
+      "total": 10,
+      "remaining": 1.0342640000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.965736000000007,
+      "total": 100,
+      "remaining": 91.034264,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000964,
+  "fields": {
+    "source_object": "Empty red office chairs",
+    "source_properties": "Vacant seating around a long, boardroom-style table with one slumped figure.",
+    "target_situation": "The fractured Jokowi cabinet amidst ministers resigning or opposing the President's political stance.",
+    "mapping": "The vacant chairs physically represent cabinet positions left empty by ministers planning to resign.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Empty red office chairs\nsource_properties: Vacant seating around a long, boardroom-style table with one slumped figure.\ntarget_situation: The fractured Jokowi cabinet amidst ministers resigning or opposing the President's political stance.\nmapping: The vacant chairs physically represent cabinet positions left empty by ministers planning to resign.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

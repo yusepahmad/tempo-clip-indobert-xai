@@ -1,0 +1,87 @@
+{
+  "index": 339,
+  "sample_id": "TMP-4D1E8B159822",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "03846eb1a23249009a626caa272593a8c24a332b8d8bb10acaad7c07990217f0",
+  "image_sha256": "4d1e8b159822c26de9c393edf37867522c28f35148ad08e9c3b232fc21d0c405",
+  "transmitted_image_sha256": "4f9559118ec41d4a3d42076cbd3f21c6555f77d4e3e76d6d564ebd0db252caf3",
+  "image_size": [
+    472,
+    627
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5000255,
+      "total": 10,
+      "remaining": 1.4999745000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.500025500000007,
+      "total": 100,
+      "remaining": 91.4999745,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.5174262379296124,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"crane hook\", \"source_properties\": \"A heavy lifting mechanism with a hook, cable, and pulleys used to hoist containers.\", \"target_situation\": \"R.J. Lino's legal downfall following a corruption investigation into port container crane procurement.\", \"mapping\": \"The crane, central to the corruption case, is shown physically upending the suspect, turning his world upside down.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "_ZXLapDyIJLN_uMPhvbuyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679500,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1359,
+      "total_backend_latency_ms": 1565,
+      "total_tokens": 1452
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.500984,
+      "total": 10,
+      "remaining": 1.4990159999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.500984000000003,
+      "total": 100,
+      "remaining": 91.499016,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009585,
+  "fields": {
+    "source_object": "crane hook",
+    "source_properties": "A heavy lifting mechanism with a hook, cable, and pulleys used to hoist containers.",
+    "target_situation": "R.J. Lino's legal downfall following a corruption investigation into port container crane procurement.",
+    "mapping": "The crane, central to the corruption case, is shown physically upending the suspect, turning his world upside down.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: crane hook\nsource_properties: A heavy lifting mechanism with a hook, cable, and pulleys used to hoist containers.\ntarget_situation: R.J. Lino's legal downfall following a corruption investigation into port container crane procurement.\nmapping: The crane, central to the corruption case, is shown physically upending the suspect, turning his world upside down.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

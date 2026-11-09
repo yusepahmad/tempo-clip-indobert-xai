@@ -1,0 +1,90 @@
+{
+  "index": 385,
+  "sample_id": "TMP-5836921FE5DD",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0c10d8835a9d1a810c7fa3fc50ed2303b8c39cba20459179323a629317d5e873",
+  "image_sha256": "5836921fe5dd357de9f303cf17d07d38ebe5adc35ae15a47d2dd8d7508a47b56",
+  "transmitted_image_sha256": "5e469f8151ef2ebf3f6d0aff0d2e5d2abbb85dacb87633678a7df5ac7f302663",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5632235,
+      "total": 10,
+      "remaining": 1.4367765000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.563223500000007,
+      "total": 100,
+      "remaining": 91.4367765,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.29449411900714,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Grant Wood's painting 'American Gothic', featuring a farmer holding a pitchfork.\",\n  \"source_properties\": \"A stern duo representing traditional agrarian values and the defensive protection of their land.\",\n  \"target_situation\": \"A conflict between two government ministers over peatland protection and industrial interests.\",\n  \"mapping\": \"The ministers mimic the iconic pose; Nurbaya wielding the pitchfork symbolizes her role defending environmental land regulations during this stern policy dispute.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "J5fLaubcBOGM_uMP0-qD8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1322,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1207
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 675000,
+        "output_tokens_cost_nanodollars": 3966000
+      },
+      "prompt_tokens": 1350,
+      "total_backend_latency_ms": 7593,
+      "total_tokens": 2672
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5678645,
+      "total": 10,
+      "remaining": 1.4321354999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.567864499999999,
+      "total": 100,
+      "remaining": 91.4321355,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.004641,
+  "fields": {
+    "source_object": "Grant Wood's painting 'American Gothic', featuring a farmer holding a pitchfork.",
+    "source_properties": "A stern duo representing traditional agrarian values and the defensive protection of their land.",
+    "target_situation": "A conflict between two government ministers over peatland protection and industrial interests.",
+    "mapping": "The ministers mimic the iconic pose; Nurbaya wielding the pitchfork symbolizes her role defending environmental land regulations during this stern policy dispute.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: Grant Wood's painting 'American Gothic', featuring a farmer holding a pitchfork.\nsource_properties: A stern duo representing traditional agrarian values and the defensive protection of their land.\ntarget_situation: A conflict between two government ministers over peatland protection and industrial interests.\nmapping: The ministers mimic the iconic pose; Nurbaya wielding the pitchfork symbolizes her role defending environmental land regulations during this stern policy dispute.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

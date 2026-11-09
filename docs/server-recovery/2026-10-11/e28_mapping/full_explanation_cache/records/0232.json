@@ -1,0 +1,87 @@
+{
+  "index": 232,
+  "sample_id": "TMP-37F3AA94F6FF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1ccd808cbcb16852c464da08daf2d251e1f1a899ac5a77b12861c4cb211a3af7",
+  "image_sha256": "37f3aa94f6ffd3c479da91b935715b719ec443022996da746c71114ee269770c",
+  "transmitted_image_sha256": "01c3029e53f18b3dd650f954928038e1aadcc9940937c306a7d6316419a8f1d1",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3498725,
+      "total": 10,
+      "remaining": 1.6501275,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.349872500000004,
+      "total": 100,
+      "remaining": 91.6501275,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.933293820358813,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"none evident\", \"source_properties\": \"n/a\", \"target_situation\": \"The investigation of four politicians allegedly involved in a simulator project corruption case involving bribery.\", \"mapping\": \"The illustration uses a literal portraiture approach, presenting the individuals mentioned in the headline without employing a visual analogy or metaphorical object.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "LZPLat2HBefU_uMPq5CXyQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 77,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678500,
+        "output_tokens_cost_nanodollars": 231000
+      },
+      "prompt_tokens": 1357,
+      "total_backend_latency_ms": 1421,
+      "total_tokens": 1434
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.350782,
+      "total": 10,
+      "remaining": 1.6492179999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.350781999999995,
+      "total": 100,
+      "remaining": 91.649218,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009095,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "n/a",
+    "target_situation": "The investigation of four politicians allegedly involved in a simulator project corruption case involving bribery.",
+    "mapping": "The illustration uses a literal portraiture approach, presenting the individuals mentioned in the headline without employing a visual analogy or metaphorical object.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: n/a\ntarget_situation: The investigation of four politicians allegedly involved in a simulator project corruption case involving bribery.\nmapping: The illustration uses a literal portraiture approach, presenting the individuals mentioned in the headline without employing a visual analogy or metaphorical object.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

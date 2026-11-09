@@ -1,0 +1,87 @@
+{
+  "index": 352,
+  "sample_id": "TMP-F675BF3CCEDC",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "d69c326515bc062962b5e90f7471a65d7e7f059611a42c5d0fdb9e12d537fbc1",
+  "image_sha256": "f675bf3ccedcacd89aad0dfc7494f07c1ee68fc029767e47eb2293070648e793",
+  "transmitted_image_sha256": "ee87fd4d6c292781bd5d69dca77ca543d78110f6db0528b438bf4486cb6b2e0b",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.519586499999999,
+      "total": 10,
+      "remaining": 1.480413500000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.519586500000003,
+      "total": 100,
+      "remaining": 91.4804135,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.6726994239725173,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A cyclic diagram or flowchart\",\n  \"source_properties\": \"Heads connected by directional arrows forming circular and branching paths of interaction.\",\n  \"target_situation\": \"Various political figures competing for recognition and influence during a hostage release.\",\n  \"mapping\": \"Arrows show the complex, multi-directional flow of influence and credit-seeking among the individuals.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "VZbLaqnFJ97d_uMP3pe24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 662000,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1324,
+      "total_backend_latency_ms": 2165,
+      "total_tokens": 1418
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5205305,
+      "total": 10,
+      "remaining": 1.4794695000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.520530500000007,
+      "total": 100,
+      "remaining": 91.4794695,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000944,
+  "fields": {
+    "source_object": "A cyclic diagram or flowchart",
+    "source_properties": "Heads connected by directional arrows forming circular and branching paths of interaction.",
+    "target_situation": "Various political figures competing for recognition and influence during a hostage release.",
+    "mapping": "Arrows show the complex, multi-directional flow of influence and credit-seeking among the individuals.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A cyclic diagram or flowchart\nsource_properties: Heads connected by directional arrows forming circular and branching paths of interaction.\ntarget_situation: Various political figures competing for recognition and influence during a hostage release.\nmapping: Arrows show the complex, multi-directional flow of influence and credit-seeking among the individuals.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

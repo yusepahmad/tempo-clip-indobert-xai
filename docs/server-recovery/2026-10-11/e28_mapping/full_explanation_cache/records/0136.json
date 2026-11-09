@@ -1,0 +1,87 @@
+{
+  "index": 136,
+  "sample_id": "TMP-7CAED04CFB88",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5982a681bdddf363fe455a7ef04424c3a1c16cf03d858772f76f07221ffaf897",
+  "image_sha256": "7caed04cfb880b074b9eec1550cb08acf93e6f5e5aa5a93d1acc707d1c75aaa1",
+  "transmitted_image_sha256": "d14e3ef642237e5938b451968bedea5beff001131e6b48d64067f5ba5f0f21fb",
+  "image_size": [
+    407,
+    534
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.215234,
+      "total": 10,
+      "remaining": 1.7847659999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.215233999999995,
+      "total": 100,
+      "remaining": 91.784766,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9053525337949395,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"none evident\",\n  \"source_properties\": \"literal black and white portrait photograph of a young man with a serious expression\",\n  \"target_situation\": \"The 2016 coverage of Soe Hok Gie and newly discovered hidden letters\",\n  \"mapping\": \"The image literally depicts Soe Hok Gie, the subject of the featured story.\",\n  \"uncertainty\": \"No visual analogy is evident; the portrait is a literal depiction of the subject.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "vZDLap-FF8yY_uMP2cziyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 110,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661000,
+        "output_tokens_cost_nanodollars": 330000
+      },
+      "prompt_tokens": 1322,
+      "total_backend_latency_ms": 1600,
+      "total_tokens": 1432
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.216225,
+      "total": 10,
+      "remaining": 1.7837750000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.216224999999994,
+      "total": 100,
+      "remaining": 91.783775,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000991,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "literal black and white portrait photograph of a young man with a serious expression",
+    "target_situation": "The 2016 coverage of Soe Hok Gie and newly discovered hidden letters",
+    "mapping": "The image literally depicts Soe Hok Gie, the subject of the featured story.",
+    "uncertainty": "No visual analogy is evident; the portrait is a literal depiction of the subject."
+  },
+  "explanation": "source_object: none evident\nsource_properties: literal black and white portrait photograph of a young man with a serious expression\ntarget_situation: The 2016 coverage of Soe Hok Gie and newly discovered hidden letters\nmapping: The image literally depicts Soe Hok Gie, the subject of the featured story.\nuncertainty: No visual analogy is evident; the portrait is a literal depiction of the subject.",
+  "finish_reason": "stop",
+  "usable": true
+}

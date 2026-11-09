@@ -1,0 +1,87 @@
+{
+  "index": 273,
+  "sample_id": "TMP-1E38E35A4382",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "edb1daa80b302b7c1628184de021002e7dada78c1654949093d043bf52a39dbf",
+  "image_sha256": "1e38e35a438271db7adf516146ca3beb4704753d9964d5ca2044d682e0594838",
+  "transmitted_image_sha256": "278bb90ed006294b030f5a38ca9d84d9c5ff932c8f49ded7ddf2c4da2f1e287b",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4154055,
+      "total": 10,
+      "remaining": 1.5845944999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.415405500000006,
+      "total": 100,
+      "remaining": 91.5845945,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.8243331499397755,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"flute players\", \"source_properties\": \"playing instruments to charm or lead a crowd\", \"target_situation\": \"political coalition building during an election period\", \"mapping\": \"Politicians act like flute players, using persuasive rhetoric to charm and mobilize a noisy, diverse crowd of followers or allies.\", \"uncertainty\": \"none evident\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "T5TLav2RE8fR_uMPxMva8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 75,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671500,
+        "output_tokens_cost_nanodollars": 225000
+      },
+      "prompt_tokens": 1343,
+      "total_backend_latency_ms": 1878,
+      "total_tokens": 1418
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.416302,
+      "total": 10,
+      "remaining": 1.583698,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.416302000000002,
+      "total": 100,
+      "remaining": 91.583698,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0008965,
+  "fields": {
+    "source_object": "flute players",
+    "source_properties": "playing instruments to charm or lead a crowd",
+    "target_situation": "political coalition building during an election period",
+    "mapping": "Politicians act like flute players, using persuasive rhetoric to charm and mobilize a noisy, diverse crowd of followers or allies.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: flute players\nsource_properties: playing instruments to charm or lead a crowd\ntarget_situation: political coalition building during an election period\nmapping: Politicians act like flute players, using persuasive rhetoric to charm and mobilize a noisy, diverse crowd of followers or allies.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,246 @@
+{
+  "samples": 740,
+  "macro_f1": 0.5453497246907337,
+  "confusion_matrix": [
+    [
+      50,
+      6,
+      8,
+      3,
+      23,
+      3,
+      7
+    ],
+    [
+      9,
+      43,
+      8,
+      10,
+      10,
+      6,
+      4
+    ],
+    [
+      5,
+      2,
+      45,
+      4,
+      14,
+      1,
+      13
+    ],
+    [
+      5,
+      4,
+      3,
+      26,
+      7,
+      5,
+      13
+    ],
+    [
+      16,
+      8,
+      20,
+      14,
+      143,
+      5,
+      8
+    ],
+    [
+      10,
+      4,
+      2,
+      4,
+      10,
+      49,
+      4
+    ],
+    [
+      7,
+      5,
+      4,
+      12,
+      12,
+      1,
+      65
+    ]
+  ],
+  "classification": {
+    "BENCANA_JERAT": {
+      "precision": 0.49019607843137253,
+      "recall": 0.5,
+      "f1-score": 0.49504950495049505,
+      "support": 100.0
+    },
+    "HEWAN_TUBUH": {
+      "precision": 0.5972222222222222,
+      "recall": 0.4777777777777778,
+      "f1-score": 0.5308641975308642,
+      "support": 90.0
+    },
+    "KONSUMSI_TRANSAKSI": {
+      "precision": 0.5,
+      "recall": 0.5357142857142857,
+      "f1-score": 0.5172413793103449,
+      "support": 84.0
+    },
+    "LAINNYA": {
+      "precision": 0.3561643835616438,
+      "recall": 0.4126984126984127,
+      "f1-score": 0.38235294117647056,
+      "support": 63.0
+    },
+    "MESIN_INFRASTRUKTUR": {
+      "precision": 0.6529680365296804,
+      "recall": 0.6682242990654206,
+      "f1-score": 0.6605080831408776,
+      "support": 214.0
+    },
+    "NON_METAFORA": {
+      "precision": 0.7,
+      "recall": 0.5903614457831325,
+      "f1-score": 0.6405228758169934,
+      "support": 83.0
+    },
+    "PERMAINAN_KONTES": {
+      "precision": 0.5701754385964912,
+      "recall": 0.6132075471698113,
+      "f1-score": 0.5909090909090909,
+      "support": 106.0
+    },
+    "accuracy": 0.5689189189189189,
+    "macro avg": {
+      "precision": 0.5523894513344871,
+      "recall": 0.5425691097441201,
+      "f1-score": 0.5453497246907337,
+      "support": 740.0
+    },
+    "weighted avg": {
+      "precision": 0.5749752977244601,
+      "recall": 0.5689189189189189,
+      "f1-score": 0.5702266642572105,
+      "support": 740.0
+    }
+  },
+  "signature": {
+    "cached_worker_sha256": "87cf599e084bd39f171ad7ac393531e2e5938c1e26e3c47607b7b72549de3654",
+    "reference_signature": {
+      "worker_sha256": "cdb88a85e1ceb42f5f8e1f15c5e6c86dd3b82e2a06860a1212df56fc9cc6dc29",
+      "helper_sha256": "c117f65e9460bccc4daeba0de9f3af4ee737e7ef65f57d39cca5a0910f8a3ece",
+      "reference": {
+        "worker_sha256": "02588b6fcd4bdbe21be4b17e9d60dcfcdebfbf0b97246056a88b4804febfb6e5",
+        "data_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+        "e5_sha256": "1f0d2b2f346071fa673701847af39e8a22faf9e6a98195734982cd71e99af374",
+        "bge_sha256": "c0d7d1fc9ac42988b0d107a694d7d3b355105f8640f776ace2617eed936495c4",
+        "clip_sha256": "d27cd5dbecfffba3a8bbb96037f3181da20f1c95eb246a7d38a4627a90599e5c",
+        "reference_verification_sha256": "0d91fcf3cc6f365b08547161657679f88ef7df18fe19176bc0a1f61499cd547a",
+        "grid": {
+          "fusion__e5_weight": [
+            0,
+            0.5,
+            1,
+            2
+          ],
+          "fusion__clip_weight": [
+            0,
+            0.5,
+            1,
+            2
+          ],
+          "clf__C": [
+            1,
+            10,
+            100
+          ],
+          "clf__gamma": [
+            "scale",
+            0.1,
+            1
+          ],
+          "clf__class_weight": [
+            null,
+            "balanced"
+          ]
+        },
+        "normalization": "StandardScaler fit per block, L2 per block, then weights",
+        "outer": "Task1 baseline stratified5 seed42",
+        "inner": "Task2 stratified3 seed42",
+        "selection_order": [
+          "description",
+          "source_reason",
+          "combined",
+          "description_reason",
+          "semantic_visual",
+          "weighted"
+        ],
+        "n_jobs": 1
+      },
+      "embedding_verification_sha256": "04a423366f63aa1ca38069db9f540a9e56ae9f3db7bc9ee86c9f2a70826e90ae",
+      "embedding_meta_sha256": "0b9bd51123472f743654fbd4f1f171e12d73409e5f7bf6bbdd9d66bb42a633a5",
+      "features_sha256": "b75a4d2d988e67ccf8cca37bbceea1fd507e70104dbdfb4f7d58976d95bb4c34",
+      "grid": [
+        {
+          "fusion__mode": [
+            "interpretation_only",
+            "interpretation_context_only"
+          ],
+          "clf__C": [
+            1,
+            10,
+            100
+          ],
+          "clf__gamma": [
+            "scale",
+            0.1,
+            1
+          ],
+          "clf__class_weight": [
+            null,
+            "balanced"
+          ]
+        },
+        {
+          "fusion__mode": [
+            "fusion_interpretation",
+            "fusion_context"
+          ],
+          "fusion__interpretation_weight": [
+            0,
+            0.5,
+            1,
+            2
+          ],
+          "fusion__e5_weight": [
+            0.5,
+            2
+          ],
+          "fusion__clip_weight": [
+            0.5,
+            1
+          ],
+          "clf__C": [
+            1,
+            10,
+            100
+          ],
+          "clf__gamma": [
+            "scale",
+            0.1,
+            1
+          ],
+          "clf__class_weight": [
+            null,
+            "balanced"
+          ]
+        }
+      ],
+      "outer": "Task1 baseline5 seed42",
+      "inner": "Task2 stratified3 seed42",
+      "normalization": "training-only per-block StandardScaler/L2 then weights",
+      "n_jobs": 1
+    },
+    "backend": "same float64 training projection/gamma; cached RBF Gram and precomputed SVC"
+  },
+  "oof_sha256": "8152a820f782c5c67c1f2305162862fc45396e9cf7f5e3f7dbe1b8440a5db970"
+}

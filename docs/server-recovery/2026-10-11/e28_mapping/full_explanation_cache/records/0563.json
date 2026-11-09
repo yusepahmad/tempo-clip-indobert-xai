@@ -1,0 +1,87 @@
+{
+  "index": 563,
+  "sample_id": "TMP-F33A5754DCAC",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8407710972f74811c25062742ae686f559324b4d416a9d05a19fd8ec95e678bf",
+  "image_sha256": "f33a5754dcac29e099f051c250abc84c5af43a62d7b5f7df7796347dfae5be06",
+  "transmitted_image_sha256": "4f91484ebf626daf5283f044db1211b49b651e3f56c00464f5b774486cde3aaf",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.813383,
+      "total": 10,
+      "remaining": 1.186617,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.813383000000002,
+      "total": 100,
+      "remaining": 91.186617,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.346543713938445,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"boxing match\", \"source_properties\": \"two contestants wearing gloves in a ring, overseen by a larger figure leaning on ropes\", \"target_situation\": \"internal leadership conflict within the United Development Party (PPP) ahead of the 2024 election\", \"mapping\": \"The boxers represent feuding party elites, the ring symbolizes their political arena, and the large hands suggest external influence or oversight.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "2pvLas6YFZOo_uMPmu77-As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 672500,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1345,
+      "total_backend_latency_ms": 6804,
+      "total_tokens": 1440
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8143405,
+      "total": 10,
+      "remaining": 1.1856594999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.8143405,
+      "total": 100,
+      "remaining": 91.1856595,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009575,
+  "fields": {
+    "source_object": "boxing match",
+    "source_properties": "two contestants wearing gloves in a ring, overseen by a larger figure leaning on ropes",
+    "target_situation": "internal leadership conflict within the United Development Party (PPP) ahead of the 2024 election",
+    "mapping": "The boxers represent feuding party elites, the ring symbolizes their political arena, and the large hands suggest external influence or oversight.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: boxing match\nsource_properties: two contestants wearing gloves in a ring, overseen by a larger figure leaning on ropes\ntarget_situation: internal leadership conflict within the United Development Party (PPP) ahead of the 2024 election\nmapping: The boxers represent feuding party elites, the ring symbolizes their political arena, and the large hands suggest external influence or oversight.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,42 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "macro_f1_manual": 0.49091247767012647,
+  "per_class_f1": {
+    "BENCANA_JERAT": 0.41964285714285715,
+    "HEWAN_TUBUH": 0.4772727272727273,
+    "KONSUMSI_TRANSAKSI": 0.5368421052631579,
+    "LAINNYA": 0.3492063492063492,
+    "MESIN_INFRASTRUKTUR": 0.6377551020408163,
+    "NON_METAFORA": 0.49032258064516127,
+    "PERMAINAN_KONTES": 0.5253456221198156
+  },
+  "selected_epochs": [
+    5,
+    4,
+    4,
+    5,
+    6
+  ],
+  "checks": [
+    "original data/source hashes",
+    "baseline outer folds",
+    "exact inner splits and epoch selection",
+    "encoder/head changed",
+    "finite normalized probabilities",
+    "argmax predictions",
+    "unique original IDs and labels",
+    "manual TP/FP/FN score"
+  ],
+  "sha256": {
+    "config.json": "d09aeb14f23b3fec8ea4094e5948d78149cb9d520c47b12214420dda82b531ef",
+    "fold_1.json": "e2ba31e132e2e1796dabdd3e52c9dcdf56165d12ed526d92b1e8d4ac6c193d94",
+    "fold_2.json": "b5353cbbf3c1d55aa5eb797861f14204891b53151f07ae8371cf022cb2fe4240",
+    "fold_3.json": "a22ec3e88639cad6c058e091a77af11ae5d63fd707cca46a28e7aae15dda870b",
+    "fold_4.json": "6b12c862e1e73f7671cec34e93cac78b9f136e75785baefbfa7068ab46d2115c",
+    "fold_5.json": "fcab258dddf2fc13e65daeffab030e2b182728aa3e9aeb2eb8cfb4e63302691a",
+    "history.jsonl": "0304a3d5241851fd42d786ea66d9b5e2bf2631788e61446f9706a07096b17a45",
+    "metrics.json": "b9fcb000b85385c796c5a36c4f2925c733f46ad4a62d0665d0f60098a98d1dda",
+    "oof.csv": "e9267f66e1c1f2ddbd092bd8e5d34eca0a737eed976d440293950878ab29e687"
+  }
+}

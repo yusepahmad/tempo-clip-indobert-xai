@@ -1,0 +1,87 @@
+{
+  "index": 271,
+  "sample_id": "TMP-D755AA87B42C",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "d0fdade86df2935779531fa304bc37c3c06adfc771f8a94537f16e19879f1c0b",
+  "image_sha256": "d755aa87b42c12fcfbf2385da12c7ecf2771250f04eaab2e17b327ab3ae53dd5",
+  "transmitted_image_sha256": "469ba6888c1205eb50e74094520eb066618c9f7d21cfce356e20bb2a3123741b",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4134825,
+      "total": 10,
+      "remaining": 1.5865174999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.4134825,
+      "total": 100,
+      "remaining": 91.5865175,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.034643785096705,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Sack\", \"source_properties\": \"A puncture hole reveals hidden internal contents; typically used to hide objects.\", \"target_situation\": \"Voters' uncertainty about political candidates' backgrounds during the 2014 Indonesian legislative elections.\", \"mapping\": \"The hole in the white space mimics a torn sack, suggesting transparency and exposing candidates' true identities to counter public cynicism.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "QpTLatGUCKCm_uMPsO6HgA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671500,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1343,
+      "total_backend_latency_ms": 1713,
+      "total_tokens": 1433
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.414424,
+      "total": 10,
+      "remaining": 1.5855759999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.414423999999997,
+      "total": 100,
+      "remaining": 91.585576,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009415,
+  "fields": {
+    "source_object": "Sack",
+    "source_properties": "A puncture hole reveals hidden internal contents; typically used to hide objects.",
+    "target_situation": "Voters' uncertainty about political candidates' backgrounds during the 2014 Indonesian legislative elections.",
+    "mapping": "The hole in the white space mimics a torn sack, suggesting transparency and exposing candidates' true identities to counter public cynicism.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Sack\nsource_properties: A puncture hole reveals hidden internal contents; typically used to hide objects.\ntarget_situation: Voters' uncertainty about political candidates' backgrounds during the 2014 Indonesian legislative elections.\nmapping: The hole in the white space mimics a torn sack, suggesting transparency and exposing candidates' true identities to counter public cynicism.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

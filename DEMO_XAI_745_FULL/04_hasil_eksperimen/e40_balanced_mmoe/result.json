@@ -1,0 +1,188 @@
+{
+  "status": "completed",
+  "metrics": {
+    "task1_issue": {
+      "macro_f1": 0.4616703799564095,
+      "accuracy": 0.48783783783783785
+    },
+    "task2_domain_sumber": {
+      "macro_f1": 0.4182965385052512,
+      "accuracy": 0.4337837837837838
+    },
+    "task3_primary_entity_type": {
+      "macro_f1": 0.37359144114400833,
+      "accuracy": 0.4864864864864865
+    }
+  },
+  "baseline": {
+    "task1_issue": {
+      "macro_f1": 0.4380318985439888,
+      "accuracy": 0.4554054054054054
+    },
+    "task2_domain_sumber": {
+      "macro_f1": 0.3197261392590282,
+      "accuracy": 0.3202702702702703
+    },
+    "task3_primary_entity_type": {
+      "macro_f1": 0.2763519249500637,
+      "accuracy": 0.3554054054054054
+    }
+  },
+  "historical": {
+    "task1_issue": {
+      "accuracy": 0.4554054054054054,
+      "macro_f1": 0.4380318985439888
+    },
+    "task2_domain_sumber": {
+      "accuracy": 0.3202702702702703,
+      "macro_f1": 0.3197261392590282
+    },
+    "task3_primary_entity_type": {
+      "accuracy": 0.3554054054054054,
+      "macro_f1": 0.2763519249500637
+    }
+  },
+  "baseline_identical": true,
+  "seconds": 850.6671775477007,
+  "selected_configs": [
+    23,
+    14,
+    22,
+    21,
+    17
+  ],
+  "per_class": {
+    "BENCANA_JERAT": {
+      "precision": 0.3761467889908257,
+      "recall": 0.41,
+      "f1-score": 0.3923444976076555,
+      "support": 100.0
+    },
+    "HEWAN_TUBUH": {
+      "precision": 0.449438202247191,
+      "recall": 0.4444444444444444,
+      "f1-score": 0.44692737430167595,
+      "support": 90.0
+    },
+    "KONSUMSI_TRANSAKSI": {
+      "precision": 0.23469387755102042,
+      "recall": 0.27380952380952384,
+      "f1-score": 0.25274725274725274,
+      "support": 84.0
+    },
+    "LAINNYA": {
+      "precision": 0.2191780821917808,
+      "recall": 0.25396825396825395,
+      "f1-score": 0.23529411764705882,
+      "support": 63.0
+    },
+    "MESIN_INFRASTRUKTUR": {
+      "precision": 0.5574712643678161,
+      "recall": 0.4532710280373832,
+      "f1-score": 0.5,
+      "support": 214.0
+    },
+    "NON_METAFORA": {
+      "precision": 0.632183908045977,
+      "recall": 0.6626506024096386,
+      "f1-score": 0.6470588235294118,
+      "support": 83.0
+    },
+    "PERMAINAN_KONTES": {
+      "precision": 0.44545454545454544,
+      "recall": 0.46226415094339623,
+      "f1-score": 0.4537037037037037,
+      "support": 106.0
+    },
+    "accuracy": 0.4337837837837838,
+    "macro avg": {
+      "precision": 0.4163666669784509,
+      "recall": 0.42291542908751995,
+      "f1-score": 0.4182965385052512,
+      "support": 740.0
+    },
+    "weighted avg": {
+      "precision": 0.4467228631816328,
+      "recall": 0.4337837837837838,
+      "f1-score": 0.43825768518376224,
+      "support": 740.0
+    }
+  },
+  "confusion": [
+    [
+      41,
+      8,
+      13,
+      5,
+      21,
+      6,
+      6
+    ],
+    [
+      8,
+      40,
+      14,
+      9,
+      7,
+      6,
+      6
+    ],
+    [
+      10,
+      13,
+      23,
+      6,
+      20,
+      1,
+      11
+    ],
+    [
+      10,
+      2,
+      7,
+      16,
+      10,
+      5,
+      13
+    ],
+    [
+      26,
+      11,
+      27,
+      18,
+      97,
+      12,
+      23
+    ],
+    [
+      8,
+      5,
+      2,
+      5,
+      6,
+      55,
+      2
+    ],
+    [
+      6,
+      10,
+      12,
+      14,
+      13,
+      2,
+      49
+    ]
+  ],
+  "oof_sha256": "c67ef94b6990e83ad87a089346c1ecb96fda35ff2f4be38905eb56a54d8d5bd7",
+  "target_reached": false,
+  "duplicate_audit": {
+    "image_sha256": {
+      "cross_fold_group_count": 0,
+      "groups": []
+    },
+    "duplicate_group_id": {
+      "cross_fold_group_count": 0,
+      "groups": []
+    }
+  }
+}

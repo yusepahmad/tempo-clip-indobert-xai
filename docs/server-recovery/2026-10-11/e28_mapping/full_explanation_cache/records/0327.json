@@ -1,0 +1,87 @@
+{
+  "index": 327,
+  "sample_id": "TMP-E5A049C2CC9F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "515da1d900784126610a4bc730d19c9063647cdf758e73e318573664ff0f7da3",
+  "image_sha256": "e5a049c2cc9f69922e03e7ce0ec9cc4cfe574b31193f914b01521ff97e1930e7",
+  "transmitted_image_sha256": "03aa4283e172c1b9c14434fb8afdef3a63fa722c8a538b6d91e9deacb8d74e80",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4873625,
+      "total": 10,
+      "remaining": 1.5126375000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.487362500000003,
+      "total": 100,
+      "remaining": 91.5126375,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.687656858935952,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"military/police salute\", \"source_properties\": \"A formal gesture of departure, farewell, or respect given by a uniformed officer.\", \"target_situation\": \"The removal or departure of Police General Budi Waseso from his official position.\", \"mapping\": \"The physical act of saluting corresponds to the headline's 'wasalam' (farewell), symbolizing Waseso's exit from his post following controversial actions.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "spXLauCgEtTh_uMProyGuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661000,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1322,
+      "total_backend_latency_ms": 2274,
+      "total_tokens": 1423
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4883265,
+      "total": 10,
+      "remaining": 1.5116735000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.4883265,
+      "total": 100,
+      "remaining": 91.5116735,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000964,
+  "fields": {
+    "source_object": "military/police salute",
+    "source_properties": "A formal gesture of departure, farewell, or respect given by a uniformed officer.",
+    "target_situation": "The removal or departure of Police General Budi Waseso from his official position.",
+    "mapping": "The physical act of saluting corresponds to the headline's 'wasalam' (farewell), symbolizing Waseso's exit from his post following controversial actions.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: military/police salute\nsource_properties: A formal gesture of departure, farewell, or respect given by a uniformed officer.\ntarget_situation: The removal or departure of Police General Budi Waseso from his official position.\nmapping: The physical act of saluting corresponds to the headline's 'wasalam' (farewell), symbolizing Waseso's exit from his post following controversial actions.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

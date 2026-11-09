@@ -1,0 +1,36 @@
+{
+  "status": "verified_before_submission",
+  "observed_at": "2026-11-02T06:58:44.690366+00:00",
+  "quota": [
+    {
+      "resource": "GPU",
+      "used": "1.82h",
+      "remaining": "28.18h",
+      "total": "30.00h",
+      "refreshAt": "2026-11-07T00:00:00"
+    },
+    {
+      "resource": "TPU",
+      "used": "0.00h",
+      "remaining": "20.00h",
+      "total": "20.00h",
+      "refreshAt": "2026-11-07T00:00:00"
+    }
+  ],
+  "smoke": {
+    "status": "verified",
+    "source_sha256": "88a80feafa508a260c7f03c3c2660ee5e2a59acc77dc04fceb9d5ac000ee5e4a",
+    "protocol_sha256": "a97e18aa15a44520b4a36db000a9089a4e2a9c7d0772b8f81887b07b73f19039",
+    "samples": 4,
+    "mode": "smoke"
+  },
+  "source_sha256": "88a80feafa508a260c7f03c3c2660ee5e2a59acc77dc04fceb9d5ac000ee5e4a",
+  "wall_seconds_limit": 32400,
+  "max_allocated_gpu_hours": 18,
+  "no_purchase": true,
+  "estimate_wall_hours": [
+    5,
+    9
+  ],
+  "estimate_basis": "smoke 19.33s/8 training rows, 592 rows x 12 total fold-epochs; plus preprocessing, load, heldout inference and overhead; not a completion guarantee"
+}

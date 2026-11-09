@@ -1,0 +1,87 @@
+{
+  "index": 47,
+  "sample_id": "TMP-D9959F2ABC93",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "03a9e483093b2ace5b7f5ddfa8553dae44366974b698b3a66aff163e0bad581c",
+  "image_sha256": "d9959f2abc9338fd0f5626eb83b9ea7bfbd7499c87794d1c898ce2070660f778",
+  "transmitted_image_sha256": "1da09f7091ddd9ffc4ba7e4244944f62b865c17c87caf9a581e0dff810b5c574",
+  "image_size": [
+    593,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.077121,
+      "total": 10,
+      "remaining": 1.922879,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.077121000000005,
+      "total": 100,
+      "remaining": 91.922879,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.213759106118232,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"large metal safe\", \"source_properties\": \"a heavy, locked storage container that obscures contents and is difficult to open\", \"target_situation\": \"mutual obstruction between police and prosecutors investigating corruption\", \"mapping\": \"The safe symbolizes inaccessible evidence or cases being 'locked away' by rival authorities, preventing transparency and legal progress.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Yo7LavqVJJjM_PUPlq7quAo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 79,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678500,
+        "output_tokens_cost_nanodollars": 237000
+      },
+      "prompt_tokens": 1357,
+      "total_backend_latency_ms": 1733,
+      "total_tokens": 1436
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0780365,
+      "total": 10,
+      "remaining": 1.9219635000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.078036499999996,
+      "total": 100,
+      "remaining": 91.9219635,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009155,
+  "fields": {
+    "source_object": "large metal safe",
+    "source_properties": "a heavy, locked storage container that obscures contents and is difficult to open",
+    "target_situation": "mutual obstruction between police and prosecutors investigating corruption",
+    "mapping": "The safe symbolizes inaccessible evidence or cases being 'locked away' by rival authorities, preventing transparency and legal progress.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: large metal safe\nsource_properties: a heavy, locked storage container that obscures contents and is difficult to open\ntarget_situation: mutual obstruction between police and prosecutors investigating corruption\nmapping: The safe symbolizes inaccessible evidence or cases being 'locked away' by rival authorities, preventing transparency and legal progress.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

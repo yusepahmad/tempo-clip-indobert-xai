@@ -1,0 +1,87 @@
+{
+  "index": 474,
+  "sample_id": "TMP-0C0E1B72F18D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f8d6a601dee6f14de871c73a228ab0decbc51f4e4f2bd50693bac15e624ea25c",
+  "image_sha256": "0c0e1b72f18d3421f973416c1b392e513bd81a61d0e1f9a203af4ecf5ee7a207",
+  "transmitted_image_sha256": "3746cc745b191fb4f796d8f313c9b3198a2a007684e6fec8d48d08d1e2ca7721",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6821925,
+      "total": 10,
+      "remaining": 1.3178075000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.6821925,
+      "total": 100,
+      "remaining": 91.3178075,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.256950180977583,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"toy story characters\", \"source_properties\": \"Small plastic action figures being held, manipulated, and positioned by an unseen giant hand.\", \"target_situation\": \"Erick Thohir restructuring high-ranking SOE officials and key company leaders.\", \"mapping\": \"Officials are depicted as toys manipulated by Thohir's hands, illustrating his control and power to reshuffle personnel at will.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "dJnLarTACf7v_uMP-q7MqQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673000,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1346,
+      "total_backend_latency_ms": 1731,
+      "total_tokens": 1439
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.683144500000001,
+      "total": 10,
+      "remaining": 1.316855499999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.683144499999997,
+      "total": 100,
+      "remaining": 91.3168555,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000952,
+  "fields": {
+    "source_object": "toy story characters",
+    "source_properties": "Small plastic action figures being held, manipulated, and positioned by an unseen giant hand.",
+    "target_situation": "Erick Thohir restructuring high-ranking SOE officials and key company leaders.",
+    "mapping": "Officials are depicted as toys manipulated by Thohir's hands, illustrating his control and power to reshuffle personnel at will.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: toy story characters\nsource_properties: Small plastic action figures being held, manipulated, and positioned by an unseen giant hand.\ntarget_situation: Erick Thohir restructuring high-ranking SOE officials and key company leaders.\nmapping: Officials are depicted as toys manipulated by Thohir's hands, illustrating his control and power to reshuffle personnel at will.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

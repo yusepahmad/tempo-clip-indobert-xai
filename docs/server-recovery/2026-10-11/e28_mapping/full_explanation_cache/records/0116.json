@@ -1,0 +1,87 @@
+{
+  "index": 116,
+  "sample_id": "TMP-D1D369C683A1",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b7a65c0d00ccad27c225c99a5b82b50d35bf7943c279928c854191d09716c577",
+  "image_sha256": "d1d369c683a18f9ae57a5eb801928c942690ca09cef8c4a3b2f16e660e1ea957",
+  "transmitted_image_sha256": "62b8dafe6059d1affeed8a02f88166a4dbef8d2cef95f093d7da4315f6b3d82b",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.176539,
+      "total": 10,
+      "remaining": 1.823461,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.176539000000005,
+      "total": 100,
+      "remaining": 91.823461,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.441845883615315,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"flooded street\", \"source_properties\": \"Submerged, crowded, turbulent, and destructive water covering a residential area.\", \"target_situation\": \"The 2013 Jakarta flood crisis in the Pluit district.\", \"mapping\": \"The physical inundation of the street represents the dire current history ('riwayatmu kini') and socio-political challenges facing the Pluit neighborhood.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "KpDLaqb0F-2M_PUPz_vKgQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661500,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1323,
+      "total_backend_latency_ms": 1736,
+      "total_tokens": 1415
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.177476500000001,
+      "total": 10,
+      "remaining": 1.822523499999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.177476499999997,
+      "total": 100,
+      "remaining": 91.8225235,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009375,
+  "fields": {
+    "source_object": "flooded street",
+    "source_properties": "Submerged, crowded, turbulent, and destructive water covering a residential area.",
+    "target_situation": "The 2013 Jakarta flood crisis in the Pluit district.",
+    "mapping": "The physical inundation of the street represents the dire current history ('riwayatmu kini') and socio-political challenges facing the Pluit neighborhood.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: flooded street\nsource_properties: Submerged, crowded, turbulent, and destructive water covering a residential area.\ntarget_situation: The 2013 Jakarta flood crisis in the Pluit district.\nmapping: The physical inundation of the street represents the dire current history ('riwayatmu kini') and socio-political challenges facing the Pluit neighborhood.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

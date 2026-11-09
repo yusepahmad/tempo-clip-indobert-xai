@@ -1,0 +1,87 @@
+{
+  "index": 634,
+  "sample_id": "TMP-9C0ACA96D01B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9669db1e1ea9595f28308318f44dd9df4dc6ffe782e3e301f10035e4fa03e787",
+  "image_sha256": "9c0aca96d01b803e27a7fa8917d0897fc257a404fb0f2168a665543ab4b71125",
+  "transmitted_image_sha256": "5dceecf650fccde2ad993a6891eb31fa5ff31a86b2af5e8019db4376f7aa5ef1",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9007375,
+      "total": 10,
+      "remaining": 1.0992625,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.900737500000005,
+      "total": 100,
+      "remaining": 91.0992625,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.394005893729627,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"hidden basement with vault\", \"source_properties\": \"Subterranean levels, concealed by a simple house, containing high-value assets and a heavy safe door.\", \"target_situation\": \"Tax official Rafael Alun Trisambodo's alleged concealment of unexplained wealth beyond his known property.\", \"mapping\": \"The modest surface house represents his public persona, while the hidden levels symbolize vast, illegally obtained assets like luxury vehicles and hidden funds.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "qp3Lauq-Fb7i_uMPz_DU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 684500,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1369,
+      "total_backend_latency_ms": 1962,
+      "total_tokens": 1471
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.901728,
+      "total": 10,
+      "remaining": 1.0982719999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.901728000000006,
+      "total": 100,
+      "remaining": 91.098272,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009905,
+  "fields": {
+    "source_object": "hidden basement with vault",
+    "source_properties": "Subterranean levels, concealed by a simple house, containing high-value assets and a heavy safe door.",
+    "target_situation": "Tax official Rafael Alun Trisambodo's alleged concealment of unexplained wealth beyond his known property.",
+    "mapping": "The modest surface house represents his public persona, while the hidden levels symbolize vast, illegally obtained assets like luxury vehicles and hidden funds.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: hidden basement with vault\nsource_properties: Subterranean levels, concealed by a simple house, containing high-value assets and a heavy safe door.\ntarget_situation: Tax official Rafael Alun Trisambodo's alleged concealment of unexplained wealth beyond his known property.\nmapping: The modest surface house represents his public persona, while the hidden levels symbolize vast, illegally obtained assets like luxury vehicles and hidden funds.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

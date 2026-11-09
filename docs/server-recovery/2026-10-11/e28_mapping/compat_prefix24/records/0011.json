@@ -1,0 +1,91 @@
+{
+  "index": 11,
+  "sample_id": "TMP-26EB95FA7B37",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b5662f4ebd5229a229cf1efa3f652ad9d229ae4c36319da2396e0328ec50cfdb",
+  "image_sha256": "26eb95fa7b3703024dc2263fec26a77f0f69946d7e714ed83155e1e24e62e2ea",
+  "transmitted_image_sha256": "b306dc153e3a17a1db93b495b36ad29dd42de36a8285b8452d5c33544a1afbf1",
+  "image_size": [
+    472,
+    621
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0285635,
+      "total": 10,
+      "remaining": 1.9714364999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.028563500000004,
+      "total": 100,
+      "remaining": 91.9714365,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3771529332734644,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"chicken-patterned noodle bowls\", \"source_properties\": \"Street food staples associated with communal eating and everyday public accessibility.\", \"target_situation\": \"The 2014 Indonesian presidential election involving the candidates Bowo, Joko, Hatta, and Kalla.\", \"mapping\": \"Candidates are depicted like common people at a food stall, suggesting their political merits should be scrutinized like everyday choices before voting.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "gYrLaujROd7d_uMP45e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 96,
+      "cost": {
+        "input_tokens_cost_nanodollars": 662500,
+        "output_tokens_cost_nanodollars": 288000
+      },
+      "prompt_tokens": 1325,
+      "total_backend_latency_ms": 1571,
+      "total_tokens": 1421
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.029514,
+      "total": 10,
+      "remaining": 1.9704859999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.029514000000006,
+      "total": 100,
+      "remaining": 91.970486,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009505,
+  "fields": {
+    "source_object": "chicken-patterned noodle bowls",
+    "source_properties": "Street food staples associated with communal eating and everyday public accessibility.",
+    "target_situation": "The 2014 Indonesian presidential election involving the candidates Bowo, Joko, Hatta, and Kalla.",
+    "mapping": "Candidates are depicted like common people at a food stall, suggesting their political merits should be scrutinized like everyday choices before voting.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: chicken-patterned noodle bowls\nsource_properties: Street food staples associated with communal eating and everyday public accessibility.\ntarget_situation: The 2014 Indonesian presidential election involving the candidates Bowo, Joko, Hatta, and Kalla.\nmapping: Candidates are depicted like common people at a food stall, suggesting their political merits should be scrutinized like everyday choices before voting.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true,
+  "migration_origin": {
+    "record_sha256": "e290a1ecc86771f4cc1be4c3fcde3779f2bfa94a3d9e78a92c4a45149e62374e",
+    "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383"
+  }
+}

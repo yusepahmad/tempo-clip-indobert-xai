@@ -1,0 +1,87 @@
+{
+  "index": 368,
+  "sample_id": "TMP-2F57839052F1",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ce8ee1d56a58243e03fa71538329d3384fb6c7f1af6bff812262a1665cdec257",
+  "image_sha256": "2f57839052f1cc7ef57fc5b1c201fa9fbb4f12e71392269b22702376f88908df",
+  "transmitted_image_sha256": "1ce03f69635e4d6a27c0491cec57ae608b262a0f20a6eeafb0b6041eb053e67b",
+  "image_size": [
+    407,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.538843,
+      "total": 10,
+      "remaining": 1.461157,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.538843,
+      "total": 100,
+      "remaining": 91.461157,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.168225951958448,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"raindrops on a glass surface\", \"source_properties\": \"Small, scattered droplets blurring the clear view of the background scene.\", \"target_situation\": \"Mass prayer gathering at Monas amidst allegations of treasonous acts.\", \"mapping\": \"The 'setitik' (speck/drop) of treasonous intent blurs the public's perception of the large-scale religious event.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "t5bLarunB7fc_uMPiPP3wAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 659000,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1318,
+      "total_backend_latency_ms": 1967,
+      "total_tokens": 1411
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.539781,
+      "total": 10,
+      "remaining": 1.4602190000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.539781000000005,
+      "total": 100,
+      "remaining": 91.460219,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000938,
+  "fields": {
+    "source_object": "raindrops on a glass surface",
+    "source_properties": "Small, scattered droplets blurring the clear view of the background scene.",
+    "target_situation": "Mass prayer gathering at Monas amidst allegations of treasonous acts.",
+    "mapping": "The 'setitik' (speck/drop) of treasonous intent blurs the public's perception of the large-scale religious event.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: raindrops on a glass surface\nsource_properties: Small, scattered droplets blurring the clear view of the background scene.\ntarget_situation: Mass prayer gathering at Monas amidst allegations of treasonous acts.\nmapping: The 'setitik' (speck/drop) of treasonous intent blurs the public's perception of the large-scale religious event.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

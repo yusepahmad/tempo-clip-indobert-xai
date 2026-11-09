@@ -1,0 +1,23 @@
+{
+  "schema": "tempo-micro-e07-smoke-v1",
+  "kaggle_kernel": "research-account/tempo-micro-e07-joint-qlora-smoke",
+  "kaggle_version": 4,
+  "model": "Qwen/Qwen3-VL-8B-Instruct",
+  "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+  "model_contract": "one shared Qwen3-VL LoRA adapter with three prompted objectives",
+  "lora": {
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj"]
+  },
+  "smoke": true,
+  "fold": 1,
+  "inner_train_samples": 48,
+  "inner_validation_samples": 24,
+  "outer_test_samples": 24,
+  "max_epochs": 2,
+  "selection_metric": "minimum validation micro-F1 across three tasks",
+  "selected_epoch": 1,
+  "eligible_as_final_oof": false
+}

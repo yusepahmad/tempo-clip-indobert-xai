@@ -1,0 +1,90 @@
+{
+  "index": 230,
+  "sample_id": "TMP-602FC52935F6",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b2237fa671c0f924faefbe761b1549a59002226a40bb1fa4cbba9e898abfaee8",
+  "image_sha256": "602fc52935f66eaa0564a1c9489fa1ffffa91dcc4326487565d5d2777fbe7746",
+  "transmitted_image_sha256": "319200c045269f4fe13ea175722e2182400871583499574715d2b09ef99f9bd8",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3458165,
+      "total": 10,
+      "remaining": 1.6541835000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.345816499999998,
+      "total": 100,
+      "remaining": 91.6541835,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.478435677010566,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A charcoal grill with sizzling, scorched meat.\",\n  \"source_properties\": \"Extreme heat, the process of being charred or 'burnt,' and meat being the central item cooked.\",\n  \"target_situation\": \"PKS party officials entangled in a beef import bribery investigation.\",\n  \"mapping\": \"The physical heat and burning of meat symbolize the damaging legal consequences and public 'heat' of the corruption case involving imported beef.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "H5PLarqaL_7v_uMP-q7MqQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 826,
+      "completion_tokens_details": {
+        "reasoning_tokens": 718
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 668000,
+        "output_tokens_cost_nanodollars": 2478000
+      },
+      "prompt_tokens": 1336,
+      "total_backend_latency_ms": 4880,
+      "total_tokens": 2162
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3489625,
+      "total": 10,
+      "remaining": 1.6510374999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.348962499999999,
+      "total": 100,
+      "remaining": 91.6510375,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.003146,
+  "fields": {
+    "source_object": "A charcoal grill with sizzling, scorched meat.",
+    "source_properties": "Extreme heat, the process of being charred or 'burnt,' and meat being the central item cooked.",
+    "target_situation": "PKS party officials entangled in a beef import bribery investigation.",
+    "mapping": "The physical heat and burning of meat symbolize the damaging legal consequences and public 'heat' of the corruption case involving imported beef.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A charcoal grill with sizzling, scorched meat.\nsource_properties: Extreme heat, the process of being charred or 'burnt,' and meat being the central item cooked.\ntarget_situation: PKS party officials entangled in a beef import bribery investigation.\nmapping: The physical heat and burning of meat symbolize the damaging legal consequences and public 'heat' of the corruption case involving imported beef.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,90 @@
+{
+  "index": 283,
+  "sample_id": "TMP-3F97F2E39756",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "27912db067c3ab3b15a476aa2eb0938e7821c52b2c0859ec42ca172053ba09a5",
+  "image_sha256": "3f97f2e39756d64db10cf68ec21a0cccb657f4ba2deedf7a1f32129e258a76c7",
+  "transmitted_image_sha256": "e21cc86677621bc9d14e2a14656279939e5b6a7826acfb29b2b5e0830cc81a5b",
+  "image_size": [
+    472,
+    613
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.425096,
+      "total": 10,
+      "remaining": 1.574904,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.425095999999996,
+      "total": 100,
+      "remaining": 91.574904,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.562554634176195,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A celebratory crowd lift\",\n  \"source_properties\": \"Multiple hands physically supporting and elevating a single individual above the level of the crowd.\",\n  \"target_situation\": \"Jokowi's political rise and victory in the 2014 presidential election.\",\n  \"mapping\": \"The lifting action represents the collective power of the people's support physically elevating a leader to the presidency.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "jZTLas-CD-yb_uMPzeOSwQw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 904,
+      "completion_tokens_details": {
+        "reasoning_tokens": 801
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 659500,
+        "output_tokens_cost_nanodollars": 2712000
+      },
+      "prompt_tokens": 1319,
+      "total_backend_latency_ms": 5098,
+      "total_tokens": 2223
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4284675,
+      "total": 10,
+      "remaining": 1.5715325,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.428467499999996,
+      "total": 100,
+      "remaining": 91.5715325,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0033715,
+  "fields": {
+    "source_object": "A celebratory crowd lift",
+    "source_properties": "Multiple hands physically supporting and elevating a single individual above the level of the crowd.",
+    "target_situation": "Jokowi's political rise and victory in the 2014 presidential election.",
+    "mapping": "The lifting action represents the collective power of the people's support physically elevating a leader to the presidency.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A celebratory crowd lift\nsource_properties: Multiple hands physically supporting and elevating a single individual above the level of the crowd.\ntarget_situation: Jokowi's political rise and victory in the 2014 presidential election.\nmapping: The lifting action represents the collective power of the people's support physically elevating a leader to the presidency.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

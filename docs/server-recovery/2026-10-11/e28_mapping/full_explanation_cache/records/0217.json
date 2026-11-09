@@ -1,0 +1,87 @@
+{
+  "index": 217,
+  "sample_id": "TMP-B772B4711410",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8fa51ffe44ca0ad20a70bfe5864c06b7b867b3d6435de7acdd960a8fb09f0020",
+  "image_sha256": "b772b4711410bf8d5ce8f659d449a36f809b39ae8a1c71d9897ffdbd1f6ffd36",
+  "transmitted_image_sha256": "4e661f05498660efef26d6261baba5417b35e9db964d55710d4598cf5345b9b0",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3277195,
+      "total": 10,
+      "remaining": 1.6722804999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.3277195,
+      "total": 100,
+      "remaining": 91.6722805,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.06172010069713,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"tsunami\", \"source_properties\": \"A massive wave made of cascading numbers and corporate names that is disintegrating or crashing forward.\", \"target_situation\": \"The overwhelming financial debt crisis facing the Bakrie Group's various business entities.\", \"mapping\": \"The wave's overwhelming scale and destructive force represent the magnitude of debt, while the fragmentation into numerical data suggests a chaotic financial collapse.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "zZLLaqe8N5_v_uMPm5vQ6AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661500,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1323,
+      "total_backend_latency_ms": 1659,
+      "total_tokens": 1417
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.328663,
+      "total": 10,
+      "remaining": 1.6713369999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.328663000000006,
+      "total": 100,
+      "remaining": 91.671337,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009435,
+  "fields": {
+    "source_object": "tsunami",
+    "source_properties": "A massive wave made of cascading numbers and corporate names that is disintegrating or crashing forward.",
+    "target_situation": "The overwhelming financial debt crisis facing the Bakrie Group's various business entities.",
+    "mapping": "The wave's overwhelming scale and destructive force represent the magnitude of debt, while the fragmentation into numerical data suggests a chaotic financial collapse.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: tsunami\nsource_properties: A massive wave made of cascading numbers and corporate names that is disintegrating or crashing forward.\ntarget_situation: The overwhelming financial debt crisis facing the Bakrie Group's various business entities.\nmapping: The wave's overwhelming scale and destructive force represent the magnitude of debt, while the fragmentation into numerical data suggests a chaotic financial collapse.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

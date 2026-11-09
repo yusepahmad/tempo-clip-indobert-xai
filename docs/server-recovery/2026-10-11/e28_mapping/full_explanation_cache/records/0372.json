@@ -1,0 +1,87 @@
+{
+  "index": 372,
+  "sample_id": "TMP-3985D0950FF1",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "fb5d7b6e297045a02aaf670759304eb2f84b75729bb2e589e1b93c567a0ad5bc",
+  "image_sha256": "3985d0950ff10f3fb9bf281a6455837266262f7fdce5b210372baa13a8dbb527",
+  "transmitted_image_sha256": "6be3a1209db5768ffe34c128e6f6d8460281a8d264dc9616582a590136eca105",
+  "image_size": [
+    407,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5426695,
+      "total": 10,
+      "remaining": 1.4573304999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.542669500000002,
+      "total": 100,
+      "remaining": 91.4573305,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.622366655152291,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"human brain\",\n  \"source_properties\": \"complex organ, processing hub, containing diverse structures, supported by physical labor\",\n  \"target_situation\": \"strategic preparation for political debates\",\n  \"mapping\": \"The brain symbolizes the intense intellectual planning and complex strategy behind gubernatorial debates, supported by the behind-the-scenes work of campaign teams.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "zJbLaoiGKJ-d_uMPsajYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 1643,
+      "total_tokens": 1445
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5436245,
+      "total": 10,
+      "remaining": 1.4563755,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.543624500000007,
+      "total": 100,
+      "remaining": 91.4563755,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000955,
+  "fields": {
+    "source_object": "human brain",
+    "source_properties": "complex organ, processing hub, containing diverse structures, supported by physical labor",
+    "target_situation": "strategic preparation for political debates",
+    "mapping": "The brain symbolizes the intense intellectual planning and complex strategy behind gubernatorial debates, supported by the behind-the-scenes work of campaign teams.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: human brain\nsource_properties: complex organ, processing hub, containing diverse structures, supported by physical labor\ntarget_situation: strategic preparation for political debates\nmapping: The brain symbolizes the intense intellectual planning and complex strategy behind gubernatorial debates, supported by the behind-the-scenes work of campaign teams.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

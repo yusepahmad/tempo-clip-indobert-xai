@@ -1,0 +1,87 @@
+{
+  "index": 54,
+  "sample_id": "TMP-7C711C1E975D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "625596599d9c409dccbc6e746a254daca5c01cba554f20b15ccd7fee9904384e",
+  "image_sha256": "7c711c1e975d171a9efce6aba2a2c0f2a901d785d4ed981320ffd0a24f72442d",
+  "transmitted_image_sha256": "08686a48956198be99e330a7e88b472448ec5cf4852908ab018ea9e9ca99e32d",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.083853,
+      "total": 10,
+      "remaining": 1.9161470000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.083853000000005,
+      "total": 100,
+      "remaining": 91.916147,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0573558839969337,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"traffic stop\", \"source_properties\": \"A person writing a ticket while the driver reacts with anger or resistance.\", \"target_situation\": \"The KPK investigating a driving simulator project involving police officials.\", \"mapping\": \"Writing a ticket represents legal scrutiny and enforcement; the driver's angry reaction parallels institutional resistance to the investigation.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "iY7Lava2O8CS_uMPqPCfqA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 79,
+      "cost": {
+        "input_tokens_cost_nanodollars": 660000,
+        "output_tokens_cost_nanodollars": 237000
+      },
+      "prompt_tokens": 1320,
+      "total_backend_latency_ms": 1459,
+      "total_tokens": 1399
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.08475,
+      "total": 10,
+      "remaining": 1.9152500000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.08475,
+      "total": 100,
+      "remaining": 91.91525,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000897,
+  "fields": {
+    "source_object": "traffic stop",
+    "source_properties": "A person writing a ticket while the driver reacts with anger or resistance.",
+    "target_situation": "The KPK investigating a driving simulator project involving police officials.",
+    "mapping": "Writing a ticket represents legal scrutiny and enforcement; the driver's angry reaction parallels institutional resistance to the investigation.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: traffic stop\nsource_properties: A person writing a ticket while the driver reacts with anger or resistance.\ntarget_situation: The KPK investigating a driving simulator project involving police officials.\nmapping: Writing a ticket represents legal scrutiny and enforcement; the driver's angry reaction parallels institutional resistance to the investigation.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

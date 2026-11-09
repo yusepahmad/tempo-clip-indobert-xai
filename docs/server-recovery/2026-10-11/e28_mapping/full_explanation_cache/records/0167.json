@@ -1,0 +1,87 @@
+{
+  "index": 167,
+  "sample_id": "TMP-64EBB610CB76",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0aa1732cdd36d0dda50cab68e7c78b6d80f2551ae203518c498f57f6f6281eed",
+  "image_sha256": "64ebb610cb76098a44245283e00f6670a212a44ee50317c9ff75af064e655eff",
+  "transmitted_image_sha256": "a2b01aee9ebe8dce9a2c7bb3aec88b758f98c875567a62a0d95d3927431e9d30",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.256704,
+      "total": 10,
+      "remaining": 1.7432960000000008,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.256704,
+      "total": 100,
+      "remaining": 91.743296,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4586255131289363,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"cow wearing a medical mask\", \"source_properties\": \"A ruminant animal tethered with rope, wearing a protective face mask improperly positioned below its mouth while sneezing or coughing droplets.\", \"target_situation\": \"The Indonesian Ministry of Agriculture's failed response to the Foot and Mouth Disease (PMK) outbreak.\", \"mapping\": \"The misplaced mask symbolizes the government's ineffective, 'negligent' regulations that failed to contain the viral spread, leaving livestock vulnerable while specific industries profited from the crisis.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ipHLaoyGBIqM_uMP54rS0QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 116,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680500,
+        "output_tokens_cost_nanodollars": 348000
+      },
+      "prompt_tokens": 1361,
+      "total_backend_latency_ms": 1833,
+      "total_tokens": 1477
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2577325,
+      "total": 10,
+      "remaining": 1.7422675000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.257732500000003,
+      "total": 100,
+      "remaining": 91.7422675,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010285,
+  "fields": {
+    "source_object": "cow wearing a medical mask",
+    "source_properties": "A ruminant animal tethered with rope, wearing a protective face mask improperly positioned below its mouth while sneezing or coughing droplets.",
+    "target_situation": "The Indonesian Ministry of Agriculture's failed response to the Foot and Mouth Disease (PMK) outbreak.",
+    "mapping": "The misplaced mask symbolizes the government's ineffective, 'negligent' regulations that failed to contain the viral spread, leaving livestock vulnerable while specific industries profited from the crisis.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: cow wearing a medical mask\nsource_properties: A ruminant animal tethered with rope, wearing a protective face mask improperly positioned below its mouth while sneezing or coughing droplets.\ntarget_situation: The Indonesian Ministry of Agriculture's failed response to the Foot and Mouth Disease (PMK) outbreak.\nmapping: The misplaced mask symbolizes the government's ineffective, 'negligent' regulations that failed to contain the viral spread, leaving livestock vulnerable while specific industries profited from the crisis.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

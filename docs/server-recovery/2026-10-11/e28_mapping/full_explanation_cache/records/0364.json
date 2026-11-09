@@ -1,0 +1,87 @@
+{
+  "index": 364,
+  "sample_id": "TMP-C3E6AE3D90B6",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8c743230698e0b8fd27490d88f1760c7356ae46483b62f6d2213d2417c91ad3d",
+  "image_sha256": "c3e6ae3d90b64fa7466a6225948357c51d39fa51fa13b2f33341ce2153ca8b02",
+  "transmitted_image_sha256": "4d355e1b8547610dcc7c0f9e59523a1348f493c6652cea2ed5b00de4d5c9c48b",
+  "image_size": [
+    407,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5349565,
+      "total": 10,
+      "remaining": 1.4650435000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.534956500000007,
+      "total": 100,
+      "remaining": 91.4650435,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.7497856630943716,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Heavy objects and juggling stones\", \"source_properties\": \"Cumbersome, weighty pillars and small stones being tossed or balanced with strain.\", \"target_situation\": \"Large-scale loans granted to the Bakrie Group despite previous credit analyst rejection.\", \"mapping\": \"The figures struggle to manage massive financial burdens (pillars) and smaller obligations (stones), illustrating the risky balancing act of syndicating enormous debt.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "oJbLaoKZIuXG_uMP3cfxkAY",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680000,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1360,
+      "total_backend_latency_ms": 1532,
+      "total_tokens": 1454
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5359185,
+      "total": 10,
+      "remaining": 1.4640815000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.535918499999994,
+      "total": 100,
+      "remaining": 91.4640815,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000962,
+  "fields": {
+    "source_object": "Heavy objects and juggling stones",
+    "source_properties": "Cumbersome, weighty pillars and small stones being tossed or balanced with strain.",
+    "target_situation": "Large-scale loans granted to the Bakrie Group despite previous credit analyst rejection.",
+    "mapping": "The figures struggle to manage massive financial burdens (pillars) and smaller obligations (stones), illustrating the risky balancing act of syndicating enormous debt.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Heavy objects and juggling stones\nsource_properties: Cumbersome, weighty pillars and small stones being tossed or balanced with strain.\ntarget_situation: Large-scale loans granted to the Bakrie Group despite previous credit analyst rejection.\nmapping: The figures struggle to manage massive financial burdens (pillars) and smaller obligations (stones), illustrating the risky balancing act of syndicating enormous debt.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

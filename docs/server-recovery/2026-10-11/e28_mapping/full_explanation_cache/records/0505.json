@@ -1,0 +1,87 @@
+{
+  "index": 505,
+  "sample_id": "TMP-4D2C06D9DC33",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "7ff427734e3e7edcfd991e3f46b9da11565981deda6c7324bc169b664874f90e",
+  "image_sha256": "4d2c06d9dc33bf2356052acd3e1464701a88ee4a5b6b036da190aca2b9ad81e4",
+  "transmitted_image_sha256": "ac26ec71e254df8ded4a82646cd3073577a9803cf81264e82258a2595c5d1dd5",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.725484999999999,
+      "total": 10,
+      "remaining": 1.274515000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.725485000000006,
+      "total": 100,
+      "remaining": 91.274515,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3339423178695142,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Crocodile skin\",\n  \"source_properties\": \"Tough, predatory reptile skin appearing through tears in a white jacket.\",\n  \"target_situation\": \"The Corruption Eradication Commission's (KPK) perceived transformation from a small 'gecko' (cicak) into a predatory 'crocodile' (buaya).\",\n  \"mapping\": \"The crocodile skin emerging through the KPK uniform symbolizes the institution's alleged internal shift towards corruption or protecting fugitives.\",\n  \"uncertainty\": \"None evident.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Q5rLaqHhEsXh_uMPyN6L8Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 120,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675000,
+        "output_tokens_cost_nanodollars": 360000
+      },
+      "prompt_tokens": 1350,
+      "total_backend_latency_ms": 1968,
+      "total_tokens": 1470
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.72652,
+      "total": 10,
+      "remaining": 1.2734799999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.726519999999994,
+      "total": 100,
+      "remaining": 91.27348,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.001035,
+  "fields": {
+    "source_object": "Crocodile skin",
+    "source_properties": "Tough, predatory reptile skin appearing through tears in a white jacket.",
+    "target_situation": "The Corruption Eradication Commission's (KPK) perceived transformation from a small 'gecko' (cicak) into a predatory 'crocodile' (buaya).",
+    "mapping": "The crocodile skin emerging through the KPK uniform symbolizes the institution's alleged internal shift towards corruption or protecting fugitives.",
+    "uncertainty": "None evident."
+  },
+  "explanation": "source_object: Crocodile skin\nsource_properties: Tough, predatory reptile skin appearing through tears in a white jacket.\ntarget_situation: The Corruption Eradication Commission's (KPK) perceived transformation from a small 'gecko' (cicak) into a predatory 'crocodile' (buaya).\nmapping: The crocodile skin emerging through the KPK uniform symbolizes the institution's alleged internal shift towards corruption or protecting fugitives.\nuncertainty: None evident.",
+  "finish_reason": "stop",
+  "usable": true
+}

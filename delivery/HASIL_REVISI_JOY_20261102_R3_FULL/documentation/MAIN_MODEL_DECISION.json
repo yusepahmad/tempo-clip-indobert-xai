@@ -1,0 +1,20 @@
+{
+  "model_id": "e42_tail_grid",
+  "selection": "mean Macro-F1 across three tasks, equal weights, eligible CLIP-IndoBERT shared neural MTL family",
+  "alias": "M00_e42_baseline",
+  "post_hoc": true,
+  "mean_macro_f1": 0.4414804885988839,
+  "macro_f1": {
+    "task1_issue": 0.5254826236457082,
+    "task2_domain_sumber": 0.3955604325695003,
+    "task3_primary_entity_type": 0.4033984095814433
+  },
+  "backbone": "CLIP ViT-L14 frozen full/crop + IndoBERT first10 frozen, last2 fine-tuned",
+  "head": "shared256 ReLU dropout0.3 then three heads",
+  "loss": "class-weighted CE with fixed per-task weights; six original LR/loss configurations selected inner-only",
+  "learned_uncertainty_weighting": false,
+  "web_runtime_model": "historical CLIP-B32 frozen; not E42",
+  "cv_checkpoint_available": true,
+  "deployment_refit": "not yet performed for E42",
+  "validity": "internal adaptive repeated-corpus CV; not independent external acceptance"
+}

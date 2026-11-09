@@ -1,0 +1,22 @@
+{
+  "status": "smoke_passed_full_launched",
+  "grid": 16,
+  "fixture_checks": [
+    "synthetic70float32 first/lastparams exact repeatfit/scaler/modelweights/loss/prediction",
+    "fixed epochs50/150",
+    "heldout feature perturbation leaves fit unchanged",
+    "imbalanced38training sampleweight computed from traininglabels",
+    "real E14 inputgate hashes verified",
+    "actual592/148 fixedfirstparam finite/prediction; no targettestF1 computed"
+  ],
+  "smoke_seconds": 0.8431983790360391,
+  "conservative_inner_fit_estimate_seconds": 607.1028329059482,
+  "pid": 2161689,
+  "starttime": "208126258",
+  "session": "tempo-e24-mlp",
+  "auditor": "chained after worker exit0",
+  "sources": {
+    "e24_semantic_mlp.py": "5979315a8a82577a1dd71ebf3fcbd988ff46951d3a9e7cf0a1556dab84daaef3",
+    "e24_semantic_mlp_verify.py": "5f3c3a705dc0b09b4a8d1c857d98412b85fbaba45d078bde3489667747254a28"
+  }
+}

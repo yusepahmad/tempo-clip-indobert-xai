@@ -1,0 +1,87 @@
+{
+  "index": 160,
+  "sample_id": "TMP-4D8F956B6933",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "cf7c6dfff06470cb2d350c271f316da9e4ea619390fe8daae6ec928e0494fc04",
+  "image_sha256": "4d8f956b6933012d9e8f66dcd874a1bfd8f43b95d25da93fe3924a12244fe65b",
+  "transmitted_image_sha256": "9e7096243cd3d3e21b9ca5c8ff2c0779dcbeccd4fea42fc31b5bfbd4fe242d16",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.242855,
+      "total": 10,
+      "remaining": 1.7571449999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.242855000000006,
+      "total": 100,
+      "remaining": 91.757145,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2809587861411273,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"The sun-baby from Teletubbies\",\n  \"source_properties\": \"A person's face radiating from the center of a sun, smiling over a grassy landscape.\",\n  \"target_situation\": \"Budiman Sudjatmiko's ambitious plan to build 'Bukit Algoritma,' an Indonesian Silicon Valley.\",\n  \"mapping\": \"Budiman's face replaces the sun-baby, overseeing his futuristic dream world like a whimsical, idealistic creator.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "V5HLar77J5Ca_uMPxb6ruQk",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 118,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682500,
+        "output_tokens_cost_nanodollars": 354000
+      },
+      "prompt_tokens": 1365,
+      "total_backend_latency_ms": 1681,
+      "total_tokens": 1483
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2438915,
+      "total": 10,
+      "remaining": 1.7561084999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.243891500000004,
+      "total": 100,
+      "remaining": 91.7561085,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010365,
+  "fields": {
+    "source_object": "The sun-baby from Teletubbies",
+    "source_properties": "A person's face radiating from the center of a sun, smiling over a grassy landscape.",
+    "target_situation": "Budiman Sudjatmiko's ambitious plan to build 'Bukit Algoritma,' an Indonesian Silicon Valley.",
+    "mapping": "Budiman's face replaces the sun-baby, overseeing his futuristic dream world like a whimsical, idealistic creator.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: The sun-baby from Teletubbies\nsource_properties: A person's face radiating from the center of a sun, smiling over a grassy landscape.\ntarget_situation: Budiman Sudjatmiko's ambitious plan to build 'Bukit Algoritma,' an Indonesian Silicon Valley.\nmapping: Budiman's face replaces the sun-baby, overseeing his futuristic dream world like a whimsical, idealistic creator.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

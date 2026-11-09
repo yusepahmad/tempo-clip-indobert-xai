@@ -1,0 +1,87 @@
+{
+  "index": 43,
+  "sample_id": "TMP-A7C2547C2143",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a09b9380a45299b88f3be2787a82cacb68d6ca95f9d9999a339a912311c6fe59",
+  "image_sha256": "a7c2547c2143415cbb9587933e982cd3ed2a5792ba3e7c4e8a73462484a82517",
+  "transmitted_image_sha256": "5a9a6c3543c48a4e35a3b5cfa0baa159115cf082b5b8834fb3f7f9cec68dc19e",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.073246,
+      "total": 10,
+      "remaining": 1.9267540000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.073245999999997,
+      "total": 100,
+      "remaining": 91.926754,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.309284985996783,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"excavator cabin\",\n  \"source_properties\": \"Dual-control heavy machinery capable of massive earthmoving and extraction through coordinated lever operation.\",\n  \"target_situation\": \"Minister Bahlil's revocation and reinstatement of nickel mining licenses under President Jokowi's protection.\",\n  \"mapping\": \"Controlling mining permits like powerful levers, allowing the figures to extract wealth and influence selectively.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "SY7LarPwO87E_PUPtKy7yQo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 1718,
+      "total_tokens": 1449
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0742255,
+      "total": 10,
+      "remaining": 1.9257744999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.074225499999997,
+      "total": 100,
+      "remaining": 91.9257745,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009795,
+  "fields": {
+    "source_object": "excavator cabin",
+    "source_properties": "Dual-control heavy machinery capable of massive earthmoving and extraction through coordinated lever operation.",
+    "target_situation": "Minister Bahlil's revocation and reinstatement of nickel mining licenses under President Jokowi's protection.",
+    "mapping": "Controlling mining permits like powerful levers, allowing the figures to extract wealth and influence selectively.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: excavator cabin\nsource_properties: Dual-control heavy machinery capable of massive earthmoving and extraction through coordinated lever operation.\ntarget_situation: Minister Bahlil's revocation and reinstatement of nickel mining licenses under President Jokowi's protection.\nmapping: Controlling mining permits like powerful levers, allowing the figures to extract wealth and influence selectively.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

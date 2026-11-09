@@ -1,0 +1,87 @@
+{
+  "index": 469,
+  "sample_id": "TMP-C168DF5681F7",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b6d4efcfac9264ec6455531d15ba4f3936e33c38768cd274d99da18d3132918e",
+  "image_sha256": "c168df5681f78c0ad2d5480791aaf43139262027c111059d57ebdf29e7a1308d",
+  "transmitted_image_sha256": "12d0213c59c82c9c945782e0cc7adbbea2edd357731989a10580ecf6ca1155cf",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.677351999999999,
+      "total": 10,
+      "remaining": 1.322648000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.677351999999999,
+      "total": 100,
+      "remaining": 91.322648,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0595177630893886,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A handshake\",\n  \"source_properties\": \"A formal agreement or pact between two parties, often signifying cooperation or a deal.\",\n  \"target_situation\": \"The government's inadequate response to recurring forest fires and the resulting haze in Indonesia.\",\n  \"mapping\": \"The handshake between a man and a burning orangutan suggests a complicit agreement or reconciliation with ecological destruction.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "V5nLap3OBLye_uMPo--KmQ4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679500,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1359,
+      "total_backend_latency_ms": 1725,
+      "total_tokens": 1458
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6783285,
+      "total": 10,
+      "remaining": 1.3216715000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.678328500000006,
+      "total": 100,
+      "remaining": 91.3216715,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009765,
+  "fields": {
+    "source_object": "A handshake",
+    "source_properties": "A formal agreement or pact between two parties, often signifying cooperation or a deal.",
+    "target_situation": "The government's inadequate response to recurring forest fires and the resulting haze in Indonesia.",
+    "mapping": "The handshake between a man and a burning orangutan suggests a complicit agreement or reconciliation with ecological destruction.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A handshake\nsource_properties: A formal agreement or pact between two parties, often signifying cooperation or a deal.\ntarget_situation: The government's inadequate response to recurring forest fires and the resulting haze in Indonesia.\nmapping: The handshake between a man and a burning orangutan suggests a complicit agreement or reconciliation with ecological destruction.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

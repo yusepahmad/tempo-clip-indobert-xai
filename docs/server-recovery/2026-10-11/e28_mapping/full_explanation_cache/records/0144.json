@@ -1,0 +1,87 @@
+{
+  "index": 144,
+  "sample_id": "TMP-D70B717B97E7",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "116c6081b6aa722c24df0f93a3df799351647668f89512eda3ecf6ab8871ee3d",
+  "image_sha256": "d70b717b97e72a0ded83e42f9b68af027eb44eec35ea5460313fafa1b04b2d48",
+  "transmitted_image_sha256": "5738ef83f03de9034c8cde1b89a37ab765c40f93430d266dbf57199fc2a92042",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2229625,
+      "total": 10,
+      "remaining": 1.7770375000000005,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.222962499999994,
+      "total": 100,
+      "remaining": 91.7770375,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.737118096090853,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A revolver with tiny figures emerging from the cylinder chambers\",\n  \"source_properties\": \"The cylinder chambers hold projectiles that cause sudden, lethal force when triggered.\",\n  \"target_situation\": \"A hostage crisis at a detention center caused by negligent security.\",\n  \"mapping\": \"Detention cells are equated to gun chambers, suggesting prisoners are dangerous projectiles released by institutional failure.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "6pDLate7JYTn_uMP29-q-A8",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 98,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678500,
+        "output_tokens_cost_nanodollars": 294000
+      },
+      "prompt_tokens": 1357,
+      "total_backend_latency_ms": 2254,
+      "total_tokens": 1455
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.223935,
+      "total": 10,
+      "remaining": 1.7760649999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.223934999999997,
+      "total": 100,
+      "remaining": 91.776065,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009725,
+  "fields": {
+    "source_object": "A revolver with tiny figures emerging from the cylinder chambers",
+    "source_properties": "The cylinder chambers hold projectiles that cause sudden, lethal force when triggered.",
+    "target_situation": "A hostage crisis at a detention center caused by negligent security.",
+    "mapping": "Detention cells are equated to gun chambers, suggesting prisoners are dangerous projectiles released by institutional failure.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A revolver with tiny figures emerging from the cylinder chambers\nsource_properties: The cylinder chambers hold projectiles that cause sudden, lethal force when triggered.\ntarget_situation: A hostage crisis at a detention center caused by negligent security.\nmapping: Detention cells are equated to gun chambers, suggesting prisoners are dangerous projectiles released by institutional failure.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

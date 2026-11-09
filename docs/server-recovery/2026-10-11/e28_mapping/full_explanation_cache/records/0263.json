@@ -1,0 +1,87 @@
+{
+  "index": 263,
+  "sample_id": "TMP-6EE079B382F7",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "705154116e270a7007e46e9ca2f3d0d0ef0ef6ca9349ce6474f66f72d0430aca",
+  "image_sha256": "6ee079b382f7db4a51e1ee983147ee7c60910245c4a9d2917947ceeac6d4f46e",
+  "transmitted_image_sha256": "5282be5d8d9d2d81e932102eb23987e84b59187ce45857f8c74ed90a7c69d576",
+  "image_size": [
+    606,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.40152,
+      "total": 10,
+      "remaining": 1.5984800000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.401520000000005,
+      "total": 100,
+      "remaining": 91.59848,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0951896919868886,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Red tape or gags\",\n  \"source_properties\": \"Physical bands wrapped tightly around the mouth to prevent speaking.\",\n  \"target_situation\": \"The suppression and silencing of whistleblowers who expose corruption.\",\n  \"mapping\": \"Just as a gag forcibly stops speech, threats and legal retaliation silence those revealing truths.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "CpTLasbwNOyb_uMPzeOSwQw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 88,
+      "cost": {
+        "input_tokens_cost_nanodollars": 650000,
+        "output_tokens_cost_nanodollars": 264000
+      },
+      "prompt_tokens": 1300,
+      "total_backend_latency_ms": 1481,
+      "total_tokens": 1388
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.402434,
+      "total": 10,
+      "remaining": 1.5975660000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.402434,
+      "total": 100,
+      "remaining": 91.597566,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000914,
+  "fields": {
+    "source_object": "Red tape or gags",
+    "source_properties": "Physical bands wrapped tightly around the mouth to prevent speaking.",
+    "target_situation": "The suppression and silencing of whistleblowers who expose corruption.",
+    "mapping": "Just as a gag forcibly stops speech, threats and legal retaliation silence those revealing truths.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Red tape or gags\nsource_properties: Physical bands wrapped tightly around the mouth to prevent speaking.\ntarget_situation: The suppression and silencing of whistleblowers who expose corruption.\nmapping: Just as a gag forcibly stops speech, threats and legal retaliation silence those revealing truths.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 34,
+  "sample_id": "TMP-AEDE5F5EB6F1",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "4c24088aa1615a575924f016da5919f100f3e23d7b07e84543ac314f845e35e3",
+  "image_sha256": "aede5f5eb6f19092edd72ae1998ff3499138774028cc086637f6dd68b82d3331",
+  "transmitted_image_sha256": "c2e2959208249bba26ad98edbdd10a786b7d17366f6d2e7115b2e232a1f7206f",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.057254,
+      "total": 10,
+      "remaining": 1.9427459999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.057254,
+      "total": 100,
+      "remaining": 91.942746,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.7493576761335135,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A pair of doors being burst open\",\n  \"source_properties\": \"Physical resistance failing under pressure, hinges breaking, objects flying through the opening.\",\n  \"target_situation\": \"The imminent threat of mass layoffs (PHK) in labor-intensive industries.\",\n  \"mapping\": \"The doors represent stability being shattered by economic pressure, unleashing a chaotic 'storm' of job losses.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "BY7LavX5N5_v_uMPm5vQ6AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 667500,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1335,
+      "total_backend_latency_ms": 1989,
+      "total_tokens": 1436
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0582245,
+      "total": 10,
+      "remaining": 1.9417755000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.058224499999994,
+      "total": 100,
+      "remaining": 91.9417755,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009705,
+  "fields": {
+    "source_object": "A pair of doors being burst open",
+    "source_properties": "Physical resistance failing under pressure, hinges breaking, objects flying through the opening.",
+    "target_situation": "The imminent threat of mass layoffs (PHK) in labor-intensive industries.",
+    "mapping": "The doors represent stability being shattered by economic pressure, unleashing a chaotic 'storm' of job losses.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A pair of doors being burst open\nsource_properties: Physical resistance failing under pressure, hinges breaking, objects flying through the opening.\ntarget_situation: The imminent threat of mass layoffs (PHK) in labor-intensive industries.\nmapping: The doors represent stability being shattered by economic pressure, unleashing a chaotic 'storm' of job losses.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 584,
+  "sample_id": "TMP-11DCC88BD4D8",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b779433aa88da621a61f7946c5b3f78a37959a4f49f96865472b0e48d28583be",
+  "image_sha256": "11dcc88bd4d80f4b90dcea4329440886df7c404bfee2d6fb773060e5d5e380e1",
+  "transmitted_image_sha256": "5e406f96b380dfd9e11cd721cee7444f804a10cbf876244c7da91e9ce63a1c5c",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.835465,
+      "total": 10,
+      "remaining": 1.1645350000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.835465,
+      "total": 100,
+      "remaining": 91.164535,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.553948991931975,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"size contrast between people\",\n  \"source_properties\": \"a tiny figure looking up at several looming, giant-sized figures\",\n  \"target_situation\": \"Anies Baswedan's 2024 presidential candidacy amid powerful political cartels\",\n  \"mapping\": \"The physical scale difference depicts a small individual overshadowed and intimidated by massive, powerful entities.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "YZzLarT2Bb7i_uMPwfDU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 98,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681000,
+        "output_tokens_cost_nanodollars": 294000
+      },
+      "prompt_tokens": 1362,
+      "total_backend_latency_ms": 1949,
+      "total_tokens": 1460
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.83644,
+      "total": 10,
+      "remaining": 1.1635600000000004,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.836439999999996,
+      "total": 100,
+      "remaining": 91.16356,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000975,
+  "fields": {
+    "source_object": "size contrast between people",
+    "source_properties": "a tiny figure looking up at several looming, giant-sized figures",
+    "target_situation": "Anies Baswedan's 2024 presidential candidacy amid powerful political cartels",
+    "mapping": "The physical scale difference depicts a small individual overshadowed and intimidated by massive, powerful entities.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: size contrast between people\nsource_properties: a tiny figure looking up at several looming, giant-sized figures\ntarget_situation: Anies Baswedan's 2024 presidential candidacy amid powerful political cartels\nmapping: The physical scale difference depicts a small individual overshadowed and intimidated by massive, powerful entities.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

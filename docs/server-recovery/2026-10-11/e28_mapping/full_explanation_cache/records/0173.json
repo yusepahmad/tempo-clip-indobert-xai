@@ -1,0 +1,90 @@
+{
+  "index": 173,
+  "sample_id": "TMP-84F3014D30E6",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c22482d83c7a636cf96e6967e1e9c93c8d6b9c2345798c6b490ddb18d66c907e",
+  "image_sha256": "84f3014d30e646b0313ee676bf51587f7cd90563b6181561ab983c3b7fba2071",
+  "transmitted_image_sha256": "cf7eb1d576e63bfd666249f588f170c6366cf9e32b2d81335872ee266acf4c20",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.262568,
+      "total": 10,
+      "remaining": 1.737432,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.262568000000002,
+      "total": 100,
+      "remaining": 91.737432,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.952393582090735,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A video game controller and screen\",\n  \"source_properties\": \"Remote control, digital simulation, and detachment from the real-world consequences of onscreen actions.\",\n  \"target_situation\": \"Government-led displacement and conflict in Rempang Island to facilitate corporate investments.\",\n  \"mapping\": \"Jakarta officials are depicted 'playing' the crisis like a game, manipulating events and police actions from a distance without personal risk or empathy for those affected.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "q5HLapGcJ-fU_uMPq5CXyQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 891,
+      "completion_tokens_details": {
+        "reasoning_tokens": 779
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 683500,
+        "output_tokens_cost_nanodollars": 2673000
+      },
+      "prompt_tokens": 1367,
+      "total_backend_latency_ms": 5428,
+      "total_tokens": 2258
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2659245,
+      "total": 10,
+      "remaining": 1.7340754999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.265924499999997,
+      "total": 100,
+      "remaining": 91.7340755,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0033565,
+  "fields": {
+    "source_object": "A video game controller and screen",
+    "source_properties": "Remote control, digital simulation, and detachment from the real-world consequences of onscreen actions.",
+    "target_situation": "Government-led displacement and conflict in Rempang Island to facilitate corporate investments.",
+    "mapping": "Jakarta officials are depicted 'playing' the crisis like a game, manipulating events and police actions from a distance without personal risk or empathy for those affected.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A video game controller and screen\nsource_properties: Remote control, digital simulation, and detachment from the real-world consequences of onscreen actions.\ntarget_situation: Government-led displacement and conflict in Rempang Island to facilitate corporate investments.\nmapping: Jakarta officials are depicted 'playing' the crisis like a game, manipulating events and police actions from a distance without personal risk or empathy for those affected.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

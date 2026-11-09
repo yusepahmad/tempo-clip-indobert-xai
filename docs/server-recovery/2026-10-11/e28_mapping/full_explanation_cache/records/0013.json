@@ -1,0 +1,91 @@
+{
+  "index": 13,
+  "sample_id": "TMP-3B5B498FCC90",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "cf54296f6936d252c8a010e6d4b8cc49e757e64f99aeed312db524d7aeb2813c",
+  "image_sha256": "3b5b498fcc90c3cb105def0046ab7bd5d7867614c8bc7eb1e6dbd88f2d2ecadd",
+  "transmitted_image_sha256": "d96b45d8df8353e997485068e4f2253c417face05dd0582a3ef50393b28c8790",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.030438,
+      "total": 10,
+      "remaining": 1.9695619999999998,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.030438000000004,
+      "total": 100,
+      "remaining": 91.969562,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.238831478636712,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Police car and smoking building\",\n  \"source_properties\": \"A patrol vehicle with sirens parked before a building emitting thick black smoke.\",\n  \"target_situation\": \"Legal pressure on anti-corruption supporters and investigators.\",\n  \"mapping\": \"Police actions create a crisis ('fire') intended to paralyze the institution ('KPK mati suri').\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "jorLaoedLtuA_PUP-tvEuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 663000,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1326,
+      "total_backend_latency_ms": 1670,
+      "total_tokens": 1421
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.031386,
+      "total": 10,
+      "remaining": 1.9686140000000005,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.031385999999998,
+      "total": 100,
+      "remaining": 91.968614,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000948,
+  "fields": {
+    "source_object": "Police car and smoking building",
+    "source_properties": "A patrol vehicle with sirens parked before a building emitting thick black smoke.",
+    "target_situation": "Legal pressure on anti-corruption supporters and investigators.",
+    "mapping": "Police actions create a crisis ('fire') intended to paralyze the institution ('KPK mati suri').",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: Police car and smoking building\nsource_properties: A patrol vehicle with sirens parked before a building emitting thick black smoke.\ntarget_situation: Legal pressure on anti-corruption supporters and investigators.\nmapping: Police actions create a crisis ('fire') intended to paralyze the institution ('KPK mati suri').\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true,
+  "migration_origin": {
+    "record_sha256": "e8ac5d1d1f4d4c6bb281e78b2b820889ce28ca66f64f463269e04976cc31d558",
+    "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383"
+  }
+}

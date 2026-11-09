@@ -1,0 +1,87 @@
+{
+  "index": 113,
+  "sample_id": "TMP-6C080EFC7360",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "db7451a19d9e4675aeaead234fb5f61a2c8aa775068fc09385bd90f84c07a9ac",
+  "image_sha256": "6c080efc736090b5a00f9a198c47bbe3f076d89e255fc06e50ece21839cea098",
+  "transmitted_image_sha256": "d3973f644e32f82ac9b47db2fa897103729135f5c73159cbb589ce482fd4a505",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1723115,
+      "total": 10,
+      "remaining": 1.8276885000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.172311500000006,
+      "total": 100,
+      "remaining": 91.8276885,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.8774967188946903,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"e-commerce interface\", \"source_properties\": \"website layout, shopping cart icons, item prices, 'hot items' and 'recommended' categories\", \"target_situation\": \"Indonesian military weapons procurement process\", \"mapping\": \"The layout suggests buying complex weaponry is as easy as online shopping, highlighting how brokers manipulate the procurement system like consumer goods transactions.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "FJDLaqbrJcyV_uMPl4eVaQ",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 667500,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1335,
+      "total_backend_latency_ms": 1625,
+      "total_tokens": 1421
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.173237,
+      "total": 10,
+      "remaining": 1.8267629999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.173237,
+      "total": 100,
+      "remaining": 91.826763,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009255,
+  "fields": {
+    "source_object": "e-commerce interface",
+    "source_properties": "website layout, shopping cart icons, item prices, 'hot items' and 'recommended' categories",
+    "target_situation": "Indonesian military weapons procurement process",
+    "mapping": "The layout suggests buying complex weaponry is as easy as online shopping, highlighting how brokers manipulate the procurement system like consumer goods transactions.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: e-commerce interface\nsource_properties: website layout, shopping cart icons, item prices, 'hot items' and 'recommended' categories\ntarget_situation: Indonesian military weapons procurement process\nmapping: The layout suggests buying complex weaponry is as easy as online shopping, highlighting how brokers manipulate the procurement system like consumer goods transactions.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

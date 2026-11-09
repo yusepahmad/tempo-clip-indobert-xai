@@ -1,0 +1,90 @@
+{
+  "index": 680,
+  "sample_id": "TMP-D98C9C536D78",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "32702224abd35be4c0d93c52743922336eb29aa548cb37d4f89999c399779fe2",
+  "image_sha256": "d98c9c536d78853703e98a4e5f7bc336daf2852352a399ff2a59afc67f4d8e11",
+  "transmitted_image_sha256": "5e05f2c7eb21e4e81341cefcc3da7e5303e572dab5f774ed15f0427d8b2b531c",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.97296,
+      "total": 10,
+      "remaining": 1.0270399999999995,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.97296,
+      "total": 100,
+      "remaining": 91.02704,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.168497300241143,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A cupcake-shaped dessert made from a forest stump and greenery.\",\n  \"source_properties\": \"Handheld, divisible into portions, and served as a sweet, consumable prize.\",\n  \"target_situation\": \"Business conglomerates competing for and acquiring massive sections of forest land concessions.\",\n  \"mapping\": \"Partitioning the wilderness into 'bite-sized' portions treats public land as a commodity for elite consumption.\",\n  \"uncertainty\": \"None.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "4p7LarG-IbrG_PUPqtG_4Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1394,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1289
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 681000,
+        "output_tokens_cost_nanodollars": 4182000
+      },
+      "prompt_tokens": 1362,
+      "total_backend_latency_ms": 7553,
+      "total_tokens": 2756
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.977823,
+      "total": 10,
+      "remaining": 1.0221769999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.977823,
+      "total": 100,
+      "remaining": 91.022177,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.004863,
+  "fields": {
+    "source_object": "A cupcake-shaped dessert made from a forest stump and greenery.",
+    "source_properties": "Handheld, divisible into portions, and served as a sweet, consumable prize.",
+    "target_situation": "Business conglomerates competing for and acquiring massive sections of forest land concessions.",
+    "mapping": "Partitioning the wilderness into 'bite-sized' portions treats public land as a commodity for elite consumption.",
+    "uncertainty": "None."
+  },
+  "explanation": "source_object: A cupcake-shaped dessert made from a forest stump and greenery.\nsource_properties: Handheld, divisible into portions, and served as a sweet, consumable prize.\ntarget_situation: Business conglomerates competing for and acquiring massive sections of forest land concessions.\nmapping: Partitioning the wilderness into 'bite-sized' portions treats public land as a commodity for elite consumption.\nuncertainty: None.",
+  "finish_reason": "stop",
+  "usable": true
+}

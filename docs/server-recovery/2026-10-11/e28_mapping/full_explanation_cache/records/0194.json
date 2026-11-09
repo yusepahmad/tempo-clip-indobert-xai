@@ -1,0 +1,90 @@
+{
+  "index": 194,
+  "sample_id": "TMP-E104A11EEAB8",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ac3f5c22a928ffb65d819eb6881202370604caabb2003622d24858fcd72256f8",
+  "image_sha256": "e104a11eeab861d54b459ffb2cfbe927113c7677193c218e2bd12097425e81b8",
+  "transmitted_image_sha256": "09c767b34d12f064b9ea1cb7228057d9073accc124dbde95748c9a60c468d65d",
+  "image_size": [
+    300,
+    397
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.289932,
+      "total": 10,
+      "remaining": 1.7100679999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.289931999999993,
+      "total": 100,
+      "remaining": 91.710068,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.056629640981555,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"The biblical encounter between David and Goliath.\",\n  \"source_properties\": \"A small figure with a slingshot faces a massive, three-headed giant in ancient warrior attire.\",\n  \"target_situation\": \"The Lippo Group conglomerate facing legal challenges or public scrutiny as mentioned in the headline.\",\n  \"mapping\": \"The giant's scale and multiple heads represent Lippo\u2019s immense corporate power, being challenged by a smaller adversary.\",\n  \"uncertainty\": \"The specific identities of the individuals portrayed as the giant's heads are not explicitly labeled.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "NpLLaojdF62u_PUPk7_C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 868,
+      "completion_tokens_details": {
+        "reasoning_tokens": 741
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 658000,
+        "output_tokens_cost_nanodollars": 2604000
+      },
+      "prompt_tokens": 1316,
+      "total_backend_latency_ms": 4801,
+      "total_tokens": 2184
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.293194,
+      "total": 10,
+      "remaining": 1.7068060000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.293194,
+      "total": 100,
+      "remaining": 91.706806,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.003262,
+  "fields": {
+    "source_object": "The biblical encounter between David and Goliath.",
+    "source_properties": "A small figure with a slingshot faces a massive, three-headed giant in ancient warrior attire.",
+    "target_situation": "The Lippo Group conglomerate facing legal challenges or public scrutiny as mentioned in the headline.",
+    "mapping": "The giant's scale and multiple heads represent Lippo\u2019s immense corporate power, being challenged by a smaller adversary.",
+    "uncertainty": "The specific identities of the individuals portrayed as the giant's heads are not explicitly labeled."
+  },
+  "explanation": "source_object: The biblical encounter between David and Goliath.\nsource_properties: A small figure with a slingshot faces a massive, three-headed giant in ancient warrior attire.\ntarget_situation: The Lippo Group conglomerate facing legal challenges or public scrutiny as mentioned in the headline.\nmapping: The giant's scale and multiple heads represent Lippo\u2019s immense corporate power, being challenged by a smaller adversary.\nuncertainty: The specific identities of the individuals portrayed as the giant's heads are not explicitly labeled.",
+  "finish_reason": "stop",
+  "usable": true
+}

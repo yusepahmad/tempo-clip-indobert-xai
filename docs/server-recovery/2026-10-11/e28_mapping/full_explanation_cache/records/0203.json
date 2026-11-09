@@ -1,0 +1,90 @@
+{
+  "index": 203,
+  "sample_id": "TMP-BC4FB3279D70",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8704da49a992285fd3fc395e1bb37402c053d03c5a29f28407b7d15929b2efe2",
+  "image_sha256": "bc4fb3279d70d3e6d21acf077380cd7135a7f330c668584aa189b269be52d739",
+  "transmitted_image_sha256": "146c1263b46c87ecff96b6398e8a59bf728c4dafb358d8d8cd423c41256f7676",
+  "image_size": [
+    425,
+    557
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3075525,
+      "total": 10,
+      "remaining": 1.6924475,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.3075525,
+      "total": 100,
+      "remaining": 91.6924475,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.27879286929965,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"An electric shock or electrocution\",\n  \"source_properties\": \"High-voltage current passing through a body, causing sudden distress or injury.\",\n  \"target_situation\": \"Politician Sutan Bhatoegana's legal trouble involving an electricity project tender.\",\n  \"mapping\": \"Just as electricity shocks those who mishandle it, the electricity tender project caused a legal downfall for the politician.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "c5LLasu4MrrG_PUPqtG_4Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 885,
+      "completion_tokens_details": {
+        "reasoning_tokens": 779
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 664500,
+        "output_tokens_cost_nanodollars": 2655000
+      },
+      "prompt_tokens": 1329,
+      "total_backend_latency_ms": 4999,
+      "total_tokens": 2214
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.310872,
+      "total": 10,
+      "remaining": 1.6891280000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.310872000000003,
+      "total": 100,
+      "remaining": 91.689128,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0033195,
+  "fields": {
+    "source_object": "An electric shock or electrocution",
+    "source_properties": "High-voltage current passing through a body, causing sudden distress or injury.",
+    "target_situation": "Politician Sutan Bhatoegana's legal trouble involving an electricity project tender.",
+    "mapping": "Just as electricity shocks those who mishandle it, the electricity tender project caused a legal downfall for the politician.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: An electric shock or electrocution\nsource_properties: High-voltage current passing through a body, causing sudden distress or injury.\ntarget_situation: Politician Sutan Bhatoegana's legal trouble involving an electricity project tender.\nmapping: Just as electricity shocks those who mishandle it, the electricity tender project caused a legal downfall for the politician.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

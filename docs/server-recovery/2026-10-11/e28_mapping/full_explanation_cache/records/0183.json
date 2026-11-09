@@ -1,0 +1,87 @@
+{
+  "index": 183,
+  "sample_id": "TMP-2BA7C6EE1DD1",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "4ccfb6792de70683ec2e2113fa558dcbeeb54aef868e1cd768814c5a44f3d5c8",
+  "image_sha256": "2ba7c6ee1dd146bdcc1087eaeb2884b274216352cb045debfd687a0bdd8aeaf5",
+  "transmitted_image_sha256": "969b97039210de7f1febf704193e88caf3bc02aa29148b5e1923511f88e95e4b",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.276955000000001,
+      "total": 10,
+      "remaining": 1.723044999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.276955000000001,
+      "total": 100,
+      "remaining": 91.723045,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.67362063517794,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"An asphalt road surface as a covering\",\n  \"source_properties\": \"A thin, peelable layer hiding footprints beneath it\",\n  \"target_situation\": \"The investigation of Bobby Nasution's alleged corruption\",\n  \"mapping\": \"Peeling the road surface represents investigators uncovering hidden evidence or tracks previously concealed during a political tenure.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "7ZHLavTjHr7i_uMPz_DU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 683500,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1367,
+      "total_backend_latency_ms": 2147,
+      "total_tokens": 1458
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2779115,
+      "total": 10,
+      "remaining": 1.7220885,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.277911500000002,
+      "total": 100,
+      "remaining": 91.7220885,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009565,
+  "fields": {
+    "source_object": "An asphalt road surface as a covering",
+    "source_properties": "A thin, peelable layer hiding footprints beneath it",
+    "target_situation": "The investigation of Bobby Nasution's alleged corruption",
+    "mapping": "Peeling the road surface represents investigators uncovering hidden evidence or tracks previously concealed during a political tenure.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: An asphalt road surface as a covering\nsource_properties: A thin, peelable layer hiding footprints beneath it\ntarget_situation: The investigation of Bobby Nasution's alleged corruption\nmapping: Peeling the road surface represents investigators uncovering hidden evidence or tracks previously concealed during a political tenure.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

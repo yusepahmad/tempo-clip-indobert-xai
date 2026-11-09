@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "macro_f1_manual": 0.5533678354973841,
+  "per_class_f1": {
+    "BENCANA_JERAT": 0.5073170731707317,
+    "HEWAN_TUBUH": 0.5131578947368421,
+    "KONSUMSI_TRANSAKSI": 0.5780346820809249,
+    "LAINNYA": 0.38571428571428573,
+    "MESIN_INFRASTRUKTUR": 0.6764705882352942,
+    "NON_METAFORA": 0.6352941176470588,
+    "PERMAINAN_KONTES": 0.5775862068965517
+  },
+  "verifier_sha256": "da45d08b4f7dd46a9548ab0f53413d6e165b8690adcb7985fa93ca908555d319",
+  "checks": [
+    "original data/source/frozen feature hashes and IDs",
+    "baseline outer splits and original labels",
+    "recorded full grid membership and inner argmax",
+    "chosen inner score recomputed on training only",
+    "gate/domain training counts and 740 refit predictions reproduced",
+    "manual TP/FP/FN scores and confusion matrix"
+  ],
+  "sha256": {
+    "fold_1.json": "580b3c24d86d55a20764605e4396a55f033ad3b888e4b03cb80db03fcc753a55",
+    "fold_2.json": "6ebda95eb3d71ee3dee2b5ea243615c654c2232929750fa89e02d4048ceaed99",
+    "fold_3.json": "ba50fbb485c6e81a065fbe3923cec03469aeaeba28cbf5f7197937e5b3cf3815",
+    "fold_4.json": "83a7f8b0d4f1911b934d6609efa27e51cc51304c4e3931f78c0fe6ab9e1cc771",
+    "fold_5.json": "d4a957e41ee5b114008672fb32eadb5a1b724feea7780499da71ef8f7f58d1ec",
+    "hierarchical.json": "4ccb98b5bc32327af9b93cd34a16b84da8ae9e0e7d51c901a481508cd2452165",
+    "hierarchical_oof.csv": "dce3879b32eedcc92c377910289eacde3c5a112f6e6e6a9f0ca4da616705052f",
+    "protocol.json": "69fda94ae07db868d98ea3d5da54bc19db3c35544178f83ecea4933f9372b804",
+    "runner.log": "01143653dfc55f35048b21d5a1a4d9322c2e9aff15cf22a570f1bc13667a4a80"
+  }
+}

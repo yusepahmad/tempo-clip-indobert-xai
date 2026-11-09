@@ -1,0 +1,87 @@
+{
+  "index": 223,
+  "sample_id": "TMP-FE31403E3DA1",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "dc9be267b93cdcbe3b4db95cf676c127d26eb1332d0bbdce83b5842d8f77cbbd",
+  "image_sha256": "fe31403e3da10fef1fe2a8aa8a357afcff82ffd34584320f2eca1511c7e377d3",
+  "transmitted_image_sha256": "237a5f701618ca02219b0043b2d1d9e15f97b1a8c97dff5b861ff8978fc04885",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.339274,
+      "total": 10,
+      "remaining": 1.6607260000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.339274000000003,
+      "total": 100,
+      "remaining": 91.660726,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.3719559512101114,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"bent hypodermic needle\", \"source_properties\": \"Metal needle, meant for lethal injection, is bent and rendered non-functional by a rubber band hanging a gavel.\", \"target_situation\": \"The reduction of death penalty sentences in the Indonesian judicial system.\", \"mapping\": \"The bent needle symbolizes the failure or intentional obstruction of capital punishment execution due to legal maneuvering or judicial leniency, represented by the gavel.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "-JLLao3rBd7d_uMP45e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 98,
+      "cost": {
+        "input_tokens_cost_nanodollars": 657500,
+        "output_tokens_cost_nanodollars": 294000
+      },
+      "prompt_tokens": 1315,
+      "total_backend_latency_ms": 1381,
+      "total_tokens": 1413
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3402255,
+      "total": 10,
+      "remaining": 1.6597744999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.340225500000003,
+      "total": 100,
+      "remaining": 91.6597745,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009515,
+  "fields": {
+    "source_object": "bent hypodermic needle",
+    "source_properties": "Metal needle, meant for lethal injection, is bent and rendered non-functional by a rubber band hanging a gavel.",
+    "target_situation": "The reduction of death penalty sentences in the Indonesian judicial system.",
+    "mapping": "The bent needle symbolizes the failure or intentional obstruction of capital punishment execution due to legal maneuvering or judicial leniency, represented by the gavel.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: bent hypodermic needle\nsource_properties: Metal needle, meant for lethal injection, is bent and rendered non-functional by a rubber band hanging a gavel.\ntarget_situation: The reduction of death penalty sentences in the Indonesian judicial system.\nmapping: The bent needle symbolizes the failure or intentional obstruction of capital punishment execution due to legal maneuvering or judicial leniency, represented by the gavel.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

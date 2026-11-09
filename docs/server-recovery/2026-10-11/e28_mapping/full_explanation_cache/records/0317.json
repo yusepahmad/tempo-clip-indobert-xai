@@ -1,0 +1,87 @@
+{
+  "index": 317,
+  "sample_id": "TMP-4870678640CD",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3905642c31eb608a0e5532a7e670b744e16e4ae59997d4d2813cbfa153846d9f",
+  "image_sha256": "4870678640cdbc2aa9e577f0c2995a1eb1828bf55df1ff1bb4a6601d9ed7a8a0",
+  "transmitted_image_sha256": "9e31d3185505914df8876954f609ecf3ae285878f3ca27ced2f23602644a7f02",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4759835,
+      "total": 10,
+      "remaining": 1.5240165,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.475983499999998,
+      "total": 100,
+      "remaining": 91.5240165,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.411594629753381,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"none evident\", \"source_properties\": \"literal depiction of individuals in rain\", \"target_situation\": \"the humanitarian crisis and displacement of the Rohingya people\", \"mapping\": \"The image is a literal representation of Rohingya refugees in Rakhine, Myanmar, collecting rainwater to survive, reflecting the hardship and displacement described in the text.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "dJXLapqqDLDe_uMP6urskA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 79,
+      "cost": {
+        "input_tokens_cost_nanodollars": 665500,
+        "output_tokens_cost_nanodollars": 237000
+      },
+      "prompt_tokens": 1331,
+      "total_backend_latency_ms": 1684,
+      "total_tokens": 1410
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.476886,
+      "total": 10,
+      "remaining": 1.5231139999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.476885999999993,
+      "total": 100,
+      "remaining": 91.523114,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009025,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "literal depiction of individuals in rain",
+    "target_situation": "the humanitarian crisis and displacement of the Rohingya people",
+    "mapping": "The image is a literal representation of Rohingya refugees in Rakhine, Myanmar, collecting rainwater to survive, reflecting the hardship and displacement described in the text.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: literal depiction of individuals in rain\ntarget_situation: the humanitarian crisis and displacement of the Rohingya people\nmapping: The image is a literal representation of Rohingya refugees in Rakhine, Myanmar, collecting rainwater to survive, reflecting the hardship and displacement described in the text.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

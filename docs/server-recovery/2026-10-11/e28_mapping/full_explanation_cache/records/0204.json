@@ -1,0 +1,90 @@
+{
+  "index": 204,
+  "sample_id": "TMP-91E34679C2D8",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "fa8e636563d17a3e80771554878e8384760f689942c164283dfcf30e7e921f58",
+  "image_sha256": "91e34679c2d8bf3fa4b110e92671e718d9911f9855ec0159515af8c52cfa6985",
+  "transmitted_image_sha256": "48c3af3398841ce9f1026c2b0ca67c88ec19381a887112aae9aefe913ee677b5",
+  "image_size": [
+    576,
+    748
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.310872,
+      "total": 10,
+      "remaining": 1.6891280000000002,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.310872000000003,
+      "total": 100,
+      "remaining": 91.689128,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.043837157078087,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Industrial gears or cogwheels.\",\n  \"source_properties\": \"Serrated, interlocking teeth designed to transmit mechanical power and drive a larger machine's operation.\",\n  \"target_situation\": \"The industrial and systematic structure of Chinese-led capitalism.\",\n  \"mapping\": \"The dragon\u2019s body is integrated with gear teeth, portraying China as a powerful, mechanical engine driving capitalism.\",\n  \"uncertainty\": \"None.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "fJLLavWqB9uA_PUP-tvEuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 729,
+      "completion_tokens_details": {
+        "reasoning_tokens": 629
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 656000,
+        "output_tokens_cost_nanodollars": 2187000
+      },
+      "prompt_tokens": 1312,
+      "total_backend_latency_ms": 4499,
+      "total_tokens": 2041
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.313715,
+      "total": 10,
+      "remaining": 1.6862849999999998,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.313715000000002,
+      "total": 100,
+      "remaining": 91.686285,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.002843,
+  "fields": {
+    "source_object": "Industrial gears or cogwheels.",
+    "source_properties": "Serrated, interlocking teeth designed to transmit mechanical power and drive a larger machine's operation.",
+    "target_situation": "The industrial and systematic structure of Chinese-led capitalism.",
+    "mapping": "The dragon\u2019s body is integrated with gear teeth, portraying China as a powerful, mechanical engine driving capitalism.",
+    "uncertainty": "None."
+  },
+  "explanation": "source_object: Industrial gears or cogwheels.\nsource_properties: Serrated, interlocking teeth designed to transmit mechanical power and drive a larger machine's operation.\ntarget_situation: The industrial and systematic structure of Chinese-led capitalism.\nmapping: The dragon\u2019s body is integrated with gear teeth, portraying China as a powerful, mechanical engine driving capitalism.\nuncertainty: None.",
+  "finish_reason": "stop",
+  "usable": true
+}

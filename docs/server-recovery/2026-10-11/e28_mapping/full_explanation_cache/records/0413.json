@@ -1,0 +1,87 @@
+{
+  "index": 413,
+  "sample_id": "TMP-92F172188EAB",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "4fa21f1cf7d7d344c5d8ce9d1514e8348666f9530166499cfb8969bdc442aa05",
+  "image_sha256": "92f172188eabbca13ac516cfeeb413faa53c60d2713e1543279ea38b63b0ad21",
+  "transmitted_image_sha256": "fe1a70f51fce7a315823a93f1e00c4edb3471c499719bc4d28c64fb21007bf5b",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.610092,
+      "total": 10,
+      "remaining": 1.3899080000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.610091999999995,
+      "total": 100,
+      "remaining": 91.389908,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1032896768301725,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Farmer plowing with water buffalo\",\n  \"source_properties\": \"Traditional agriculture tool churning up soil and creating a messy, dusty trail.\",\n  \"target_situation\": \"The Indonesian government's controversial decision to import rice despite conflicting data.\",\n  \"mapping\": \"The plow's churning action symbolizes the 'kisruh' (turmoil/chaos) and confusing information clouding the rice import policy.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "7pfLavKEBdPj_uMP_OKC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 105,
+      "cost": {
+        "input_tokens_cost_nanodollars": 670000,
+        "output_tokens_cost_nanodollars": 315000
+      },
+      "prompt_tokens": 1340,
+      "total_backend_latency_ms": 1780,
+      "total_tokens": 1445
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.611077,
+      "total": 10,
+      "remaining": 1.3889230000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.611076999999995,
+      "total": 100,
+      "remaining": 91.388923,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000985,
+  "fields": {
+    "source_object": "Farmer plowing with water buffalo",
+    "source_properties": "Traditional agriculture tool churning up soil and creating a messy, dusty trail.",
+    "target_situation": "The Indonesian government's controversial decision to import rice despite conflicting data.",
+    "mapping": "The plow's churning action symbolizes the 'kisruh' (turmoil/chaos) and confusing information clouding the rice import policy.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Farmer plowing with water buffalo\nsource_properties: Traditional agriculture tool churning up soil and creating a messy, dusty trail.\ntarget_situation: The Indonesian government's controversial decision to import rice despite conflicting data.\nmapping: The plow's churning action symbolizes the 'kisruh' (turmoil/chaos) and confusing information clouding the rice import policy.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

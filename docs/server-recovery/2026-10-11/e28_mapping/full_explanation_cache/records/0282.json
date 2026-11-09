@@ -1,0 +1,87 @@
+{
+  "index": 282,
+  "sample_id": "TMP-CE98DFE71744",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e54d2f4319d2ce5968bcacaf80fd663d8b3254d24f12a5ad8ba88ccb5870bcf2",
+  "image_sha256": "ce98dfe717442d44aa614033df898ce22214f921ccdd728f826d28e07641baa3",
+  "transmitted_image_sha256": "b9be4e63f1267aa6f12c93d0779959dae4f0eae0d38a396f852caf6d58cb6b9e",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.424109,
+      "total": 10,
+      "remaining": 1.5758910000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.424109000000001,
+      "total": 100,
+      "remaining": 91.575891,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.341128140222281,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A burning newspaper titled 'Obor Rakyat'\",\n  \"source_properties\": \"Inflammatory, consuming fuel to spread fire, and causing destructive chaos through its burning action.\",\n  \"target_situation\": \"The 2014 smear campaign against Jokowi involving the 'Obor Rakyat' tabloid.\",\n  \"mapping\": \"The physical fire represents the damaging misinformation and turmoil ('prahara') spreading through the publication.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "hpTLaoKXJ6iB_PUPxqbXMA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 107,
+      "cost": {
+        "input_tokens_cost_nanodollars": 666000,
+        "output_tokens_cost_nanodollars": 321000
+      },
+      "prompt_tokens": 1332,
+      "total_backend_latency_ms": 1740,
+      "total_tokens": 1439
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.425096,
+      "total": 10,
+      "remaining": 1.574904,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.425095999999996,
+      "total": 100,
+      "remaining": 91.574904,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000987,
+  "fields": {
+    "source_object": "A burning newspaper titled 'Obor Rakyat'",
+    "source_properties": "Inflammatory, consuming fuel to spread fire, and causing destructive chaos through its burning action.",
+    "target_situation": "The 2014 smear campaign against Jokowi involving the 'Obor Rakyat' tabloid.",
+    "mapping": "The physical fire represents the damaging misinformation and turmoil ('prahara') spreading through the publication.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A burning newspaper titled 'Obor Rakyat'\nsource_properties: Inflammatory, consuming fuel to spread fire, and causing destructive chaos through its burning action.\ntarget_situation: The 2014 smear campaign against Jokowi involving the 'Obor Rakyat' tabloid.\nmapping: The physical fire represents the damaging misinformation and turmoil ('prahara') spreading through the publication.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

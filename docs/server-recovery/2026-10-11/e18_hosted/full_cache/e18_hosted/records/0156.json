@@ -1,0 +1,83 @@
+{
+  "index": 156,
+  "sample_id": "TMP-9DFB6D54F9C1",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "95b0980749011545bb044b7c11a5ff209eeea3683d1609d7612bb9a2aa4337fa",
+  "image_sha256": "9dfb6d54f9c181bd7f1b9c5bfb66c8ac17f918d62ca178f18ba71edffe670c0a",
+  "transmitted_image_sha256": "83d93c2286878da4caba8f1ab1387ffb900b61a0daa3c94ac25fc8171937cc6d",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.5604680000000002,
+      "total": 10,
+      "remaining": 9.439532,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.5604680000000002,
+      "total": 100,
+      "remaining": 99.439532,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.672068808926269,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan ilustrasi dan konteks yang diberikan, terutama melihat kata kunci \"PETAKA\" pada judul serta deskripsi yang menyebutkan gambar tersebut menggambarkan \"ancaman atau bahaya\" (yang merupakan bagian dari definisi domain A), maka klasifikasinya adalah:\n\n**A**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "sdHKarbAN9Pj_uMPg-OC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1177,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1121
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 792000,
+        "output_tokens_cost_nanodollars": 3531000
+      },
+      "prompt_tokens": 1584,
+      "total_backend_latency_ms": 6351,
+      "total_tokens": 2761
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.5647909999999996,
+      "total": 10,
+      "remaining": 9.435209,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.5647909999999996,
+      "total": 100,
+      "remaining": 99.435209,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.004323
+}

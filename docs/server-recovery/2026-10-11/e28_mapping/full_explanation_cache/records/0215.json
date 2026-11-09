@@ -1,0 +1,87 @@
+{
+  "index": 215,
+  "sample_id": "TMP-0514AFE1ADC9",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0eeae0663b34fd379e59f76d92c72d9af2942a950b9f34201dfcb1ba6caa2c0e",
+  "image_sha256": "0514afe1adc9bc17aba3654a7d17a543e312f6c2bd3e05abef722e68301ef910",
+  "transmitted_image_sha256": "d4cee5055407ce33df2c467b37228afcad68fd2469ebb2119475b3079e1a5c68",
+  "image_size": [
+    614,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.325804,
+      "total": 10,
+      "remaining": 1.6741960000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.325804000000005,
+      "total": 100,
+      "remaining": 91.674196,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.8224852699786425,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Van Gogh painting style\",\n  \"source_properties\": \"Visible, rhythmic impasto brushstrokes and swirling textures in a post-impressionist technique.\",\n  \"target_situation\": \"Ernest Douwes Dekker's role as a driving force in the Indonesian Revolution.\",\n  \"mapping\": \"The dynamic, swirling strokes symbolize the restless energy and transformative movement Dekker inspired.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "w5LLapO8NN6d_uMPq6y2oA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 643500,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1287,
+      "total_backend_latency_ms": 1595,
+      "total_tokens": 1384
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3267385,
+      "total": 10,
+      "remaining": 1.6732615000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.326738500000005,
+      "total": 100,
+      "remaining": 91.6732615,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009345,
+  "fields": {
+    "source_object": "Van Gogh painting style",
+    "source_properties": "Visible, rhythmic impasto brushstrokes and swirling textures in a post-impressionist technique.",
+    "target_situation": "Ernest Douwes Dekker's role as a driving force in the Indonesian Revolution.",
+    "mapping": "The dynamic, swirling strokes symbolize the restless energy and transformative movement Dekker inspired.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: Van Gogh painting style\nsource_properties: Visible, rhythmic impasto brushstrokes and swirling textures in a post-impressionist technique.\ntarget_situation: Ernest Douwes Dekker's role as a driving force in the Indonesian Revolution.\nmapping: The dynamic, swirling strokes symbolize the restless energy and transformative movement Dekker inspired.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

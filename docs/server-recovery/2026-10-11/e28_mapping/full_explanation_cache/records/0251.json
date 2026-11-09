@@ -1,0 +1,87 @@
+{
+  "index": 251,
+  "sample_id": "TMP-12AFBEB38BFF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "37a71c059ad129d259a3fdd872b9827162dbc8ecf96c9296affb22edf0405350",
+  "image_sha256": "12afbeb38bfface2d1651da3b4213597d37fe0465d6ea11bfb4f5bc9fb134a3d",
+  "transmitted_image_sha256": "3c698fc2408ca622fd7b107636db217d91946978993c016b096a74db143b39f6",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3872365,
+      "total": 10,
+      "remaining": 1.6127634999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.3872365,
+      "total": 100,
+      "remaining": 91.6127635,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.505141697824001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"gas pipeline system\", \"source_properties\": \"Industrial network of pipes carrying pressurized gas, with one pipe appearing to enter or exit a suit pocket.\", \"target_situation\": \"Allegations of corruption and bribery involving Jero Wacik, Husky gas, and Kernel oil within the energy sector.\", \"mapping\": \"The physical pipeline entering the pocket symbolizes the direct funneling of natural gas resources or related funds into personal wealth through corruption.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "wJPLavbwOL7i_uMPwfDU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671500,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1343,
+      "total_backend_latency_ms": 1979,
+      "total_tokens": 1444
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.388211,
+      "total": 10,
+      "remaining": 1.611789,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.388210999999998,
+      "total": 100,
+      "remaining": 91.611789,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009745,
+  "fields": {
+    "source_object": "gas pipeline system",
+    "source_properties": "Industrial network of pipes carrying pressurized gas, with one pipe appearing to enter or exit a suit pocket.",
+    "target_situation": "Allegations of corruption and bribery involving Jero Wacik, Husky gas, and Kernel oil within the energy sector.",
+    "mapping": "The physical pipeline entering the pocket symbolizes the direct funneling of natural gas resources or related funds into personal wealth through corruption.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: gas pipeline system\nsource_properties: Industrial network of pipes carrying pressurized gas, with one pipe appearing to enter or exit a suit pocket.\ntarget_situation: Allegations of corruption and bribery involving Jero Wacik, Husky gas, and Kernel oil within the energy sector.\nmapping: The physical pipeline entering the pocket symbolizes the direct funneling of natural gas resources or related funds into personal wealth through corruption.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 58,
+  "sample_id": "TMP-DB4DF7D314D4",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "434c88c57ac106e2bfddb9b6f72e7eb367470b76fac7cb547bffcf530fcff837",
+  "image_sha256": "db4df7d314d46d76f88aa62a3d40c3cda2434b8dd96e358951f9a8a1412c1c1c",
+  "transmitted_image_sha256": "7abcfcc94e374c02c73d1202b7423c54b356548f741a18b1a520a6b9d8b42b29",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.093437999999999,
+      "total": 10,
+      "remaining": 1.906562000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.093438000000006,
+      "total": 100,
+      "remaining": 91.906562,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4705376280471683,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"camouflage face paint\", \"source_properties\": \"Green and black pigments applied to skin, unevenly masking the face as used by soldiers in combat.\", \"target_situation\": \"Prabowo Subianto's final political battle or election campaign in Indonesia.\", \"mapping\": \"The military paint signifies Prabowo's background and fighting spirit, portraying the political election as his final 'palagan' or battlefield.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "qI7Las3pOe2M_PUPz_vKgQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 660000,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1320,
+      "total_backend_latency_ms": 1803,
+      "total_tokens": 1417
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.094389,
+      "total": 10,
+      "remaining": 1.9056110000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.094389000000007,
+      "total": 100,
+      "remaining": 91.905611,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000951,
+  "fields": {
+    "source_object": "camouflage face paint",
+    "source_properties": "Green and black pigments applied to skin, unevenly masking the face as used by soldiers in combat.",
+    "target_situation": "Prabowo Subianto's final political battle or election campaign in Indonesia.",
+    "mapping": "The military paint signifies Prabowo's background and fighting spirit, portraying the political election as his final 'palagan' or battlefield.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: camouflage face paint\nsource_properties: Green and black pigments applied to skin, unevenly masking the face as used by soldiers in combat.\ntarget_situation: Prabowo Subianto's final political battle or election campaign in Indonesia.\nmapping: The military paint signifies Prabowo's background and fighting spirit, portraying the political election as his final 'palagan' or battlefield.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

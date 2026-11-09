@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "arm": "RII_TAIL_MTL_WEIGHTED",
+      "changes": {
+        "tail.": 2.0265579223632812e-05,
+        "head.shared.": 0.0003002285957336426,
+        "head.heads.task1_issue.": 0.0003004223108291626,
+        "head.heads.task2_domain_sumber.": 0.0003004223108291626,
+        "head.heads.task3_primary_entity_type.": 0.00030040740966796875
+      },
+      "loss": 0.035604216158390045,
+      "reload_prediction_identical": true
+    },
+    {
+      "arm": "RII_TAIL_MTL_UNWEIGHTED",
+      "changes": {
+        "tail.": 2.0265579223632812e-05,
+        "head.shared.": 0.0003002285957336426,
+        "head.heads.task1_issue.": 0.000300481915473938,
+        "head.heads.task2_domain_sumber.": 0.0003004223108291626,
+        "head.heads.task3_primary_entity_type.": 0.0003003925085067749
+      },
+      "loss": 0.03339858725667,
+      "reload_prediction_identical": true
+    },
+    {
+      "arm": "RII_TAIL_SINGLE_TASK",
+      "changes": {
+        "tail.": 2.0265579223632812e-05,
+        "head.shared.": 0.0003001503646373749,
+        "head.heads.task1_issue.": 0.0003003925085067749,
+        "head.heads.task2_domain_sumber.": 0.0,
+        "head.heads.task3_primary_entity_type.": 0.0
+      },
+      "loss": 0.013279122300446033,
+      "reload_prediction_identical": true
+    },
+    {
+      "arm": "RII_TAIL_IMAGE_ONLY",
+      "changes": {
+        "tail.": 0.0,
+        "head.shared.": 0.0003002732992172241,
+        "head.heads.task1_issue.": 0.00030046701431274414,
+        "head.heads.task2_domain_sumber.": 0.00030043721199035645,
+        "head.heads.task3_primary_entity_type.": 0.00030040740966796875
+      },
+      "loss": 0.05310457572340965,
+      "reload_prediction_identical": true
+    },
+    {
+      "arm": "RII_TAIL_TEXT_SUPPORTING",
+      "changes": {
+        "tail.": 2.0265579223632812e-05,
+        "head.shared.": 0.00030040740966796875,
+        "head.heads.task1_issue.": 0.00030052661895751953,
+        "head.heads.task2_domain_sumber.": 0.0003005415201187134,
+        "head.heads.task3_primary_entity_type.": 0.0003005713224411011
+      },
+      "loss": 0.2956039607524872,
+      "reload_prediction_identical": true
+    }
+  ],
+  "seconds": 11.141424505000003
+}

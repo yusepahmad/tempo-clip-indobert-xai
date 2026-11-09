@@ -1,0 +1,87 @@
+{
+  "index": 463,
+  "sample_id": "TMP-90F516E745B9",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "dcf127efbbcbce115e37abf467c7d78d490c04830eb5e70980cbad30243af48a",
+  "image_sha256": "90f516e745b90a59614af16bb69219f8583eb99cb7ed95cc980c85f84197cee2",
+  "transmitted_image_sha256": "5ad55d9df3ff95f08e78c32c0f3ed245fd9700cf5cba68acd48d29b0bfaa5a34",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.671482,
+      "total": 10,
+      "remaining": 1.3285180000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.671481999999997,
+      "total": 100,
+      "remaining": 91.328518,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.085873217787594,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Puppetry (specifically wayang or hand puppet manipulation)\", \"source_properties\": \"Overlapping outlines, multiple limb positions, and gestural movements controlled by an external force.\", \"target_situation\": \"The political manipulation and corruption case involving Muhammad Romahurmuziy (Romy).\", \"mapping\": \"Multiple overlapping green outlines suggest Romy is a puppet being manipulated or acting as a multi-handed 'dalang' (puppeteer) in power trading.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "MpnLauCnI5zd_uMP7MbkuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 108,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677000,
+        "output_tokens_cost_nanodollars": 324000
+      },
+      "prompt_tokens": 1354,
+      "total_backend_latency_ms": 2023,
+      "total_tokens": 1462
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.672483,
+      "total": 10,
+      "remaining": 1.3275170000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.672483,
+      "total": 100,
+      "remaining": 91.327517,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001001,
+  "fields": {
+    "source_object": "Puppetry (specifically wayang or hand puppet manipulation)",
+    "source_properties": "Overlapping outlines, multiple limb positions, and gestural movements controlled by an external force.",
+    "target_situation": "The political manipulation and corruption case involving Muhammad Romahurmuziy (Romy).",
+    "mapping": "Multiple overlapping green outlines suggest Romy is a puppet being manipulated or acting as a multi-handed 'dalang' (puppeteer) in power trading.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Puppetry (specifically wayang or hand puppet manipulation)\nsource_properties: Overlapping outlines, multiple limb positions, and gestural movements controlled by an external force.\ntarget_situation: The political manipulation and corruption case involving Muhammad Romahurmuziy (Romy).\nmapping: Multiple overlapping green outlines suggest Romy is a puppet being manipulated or acting as a multi-handed 'dalang' (puppeteer) in power trading.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

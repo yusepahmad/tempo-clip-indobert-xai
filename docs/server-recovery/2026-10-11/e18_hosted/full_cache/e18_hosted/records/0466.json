@@ -1,0 +1,83 @@
+{
+  "index": 466,
+  "sample_id": "TMP-CFE7088B76BD",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "2f59b43b2a48abab292db6d922c33c62b54454e050dc13714feac37aea0840cc",
+  "image_sha256": "cfe7088b76bd507784b5aa9fd4d02a1940a384a6d8811bc5e984d45aeef070ed",
+  "transmitted_image_sha256": "2aa80a95a1cb8b2c7d40fcaad831f589af4bc1b8d6cc5695d32af0c8d78dc080",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.7631095000000006,
+      "total": 10,
+      "remaining": 8.2368905,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.7631094999999988,
+      "total": 100,
+      "remaining": 98.2368905,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 10.751340531045571,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks (\"memetakan debat presiden sebagai **pertandingan atau kontes** dengan elemen seperti pemain, panggung, dan dinamika menang-kalah\"), maka domain sumbernya adalah:\n\n**G: PERMAINAN_KONTES**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "sN7KasPhMdPj_uMPg-OC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2026,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1967
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 755000,
+        "output_tokens_cost_nanodollars": 6078000
+      },
+      "prompt_tokens": 1510,
+      "total_backend_latency_ms": 9504,
+      "total_tokens": 3536
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.7699425000000009,
+      "total": 10,
+      "remaining": 8.2300575,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.769942499999999,
+      "total": 100,
+      "remaining": 98.2300575,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.006833
+}

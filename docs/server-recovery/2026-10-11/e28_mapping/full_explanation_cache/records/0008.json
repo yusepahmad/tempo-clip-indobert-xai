@@ -1,0 +1,94 @@
+{
+  "index": 8,
+  "sample_id": "TMP-3213E13AD7AF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "6ace1ac02def5311c6abe802ee7bd99e305aae44f1fb10d8510a338b2361ea77",
+  "image_sha256": "3213e13ad7af3c1ed46474314a9be1e19d12f8796e32b280f6609c262e90776a",
+  "transmitted_image_sha256": "79872964a05a7c9e7f536f43f9e789dc5c237d46d0f0deb60612aa53cea21c00",
+  "image_size": [
+    472,
+    618
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.023001,
+      "total": 10,
+      "remaining": 1.9769989999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.023000999999994,
+      "total": 100,
+      "remaining": 91.976999,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.228944967966527,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A makeshift cardboard license plate.\",\n  \"source_properties\": \"Handwritten characters 'K O5 O. NG' (spelling 'empty') on flimsy cardboard attached to a luxury car.\",\n  \"target_situation\": \"A corruption scandal involving a driving simulator project and officials' extravagant lifestyles.\",\n  \"mapping\": \"The 'empty' plate symbolizes 'phantom' or hollow project outcomes used to hide illicitly acquired wealth.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "bIrLaoGFD8fv_uMP5e292Qg",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1003,
+      "completion_tokens_details": {
+        "reasoning_tokens": 894
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 653500,
+        "output_tokens_cost_nanodollars": 3009000
+      },
+      "prompt_tokens": 1307,
+      "total_backend_latency_ms": 6090,
+      "total_tokens": 2310
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0266635,
+      "total": 10,
+      "remaining": 1.9733365000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.026663499999998,
+      "total": 100,
+      "remaining": 91.9733365,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0036625,
+  "fields": {
+    "source_object": "A makeshift cardboard license plate.",
+    "source_properties": "Handwritten characters 'K O5 O. NG' (spelling 'empty') on flimsy cardboard attached to a luxury car.",
+    "target_situation": "A corruption scandal involving a driving simulator project and officials' extravagant lifestyles.",
+    "mapping": "The 'empty' plate symbolizes 'phantom' or hollow project outcomes used to hide illicitly acquired wealth.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A makeshift cardboard license plate.\nsource_properties: Handwritten characters 'K O5 O. NG' (spelling 'empty') on flimsy cardboard attached to a luxury car.\ntarget_situation: A corruption scandal involving a driving simulator project and officials' extravagant lifestyles.\nmapping: The 'empty' plate symbolizes 'phantom' or hollow project outcomes used to hide illicitly acquired wealth.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true,
+  "migration_origin": {
+    "record_sha256": "4db420d62e83064198f4cefd13d69fec6c4b724d8d185c7678c9fe8ef625341d",
+    "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383"
+  }
+}

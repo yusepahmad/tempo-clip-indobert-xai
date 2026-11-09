@@ -1,0 +1,87 @@
+{
+  "index": 635,
+  "sample_id": "TMP-2D6E12C92148",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9a0cd104b13482c58cd5a323198576b20d124cad126b0dccdfcc3305e9c03436",
+  "image_sha256": "2d6e12c92148fa47018f892b5ce4bb874fb83cc4c9cd2ce8abed5b4cee52602f",
+  "transmitted_image_sha256": "f8cdc264c5e49a462f4df70bf9865f7b557e479adf3394905be25d2f1203f315",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.901728,
+      "total": 10,
+      "remaining": 1.0982719999999997,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.901728000000006,
+      "total": 100,
+      "remaining": 91.098272,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.634254443924874,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"mirror reflection\", \"source_properties\": \"Visual duplication showing a different version of reality, where one side faces another directly.\", \"target_situation\": \"A public official facing potential criminal status despite official delays in prosecution.\", \"mapping\": \"The man's reflection wearing an orange detention vest visualizes his inevitable criminal suspect status, contrasting his current free state.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "sJ3LasCFC8fv_uMP5e292Qg",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 85,
+      "cost": {
+        "input_tokens_cost_nanodollars": 686500,
+        "output_tokens_cost_nanodollars": 255000
+      },
+      "prompt_tokens": 1373,
+      "total_backend_latency_ms": 1974,
+      "total_tokens": 1458
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9026695,
+      "total": 10,
+      "remaining": 1.0973305,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.902669500000002,
+      "total": 100,
+      "remaining": 91.0973305,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009415,
+  "fields": {
+    "source_object": "mirror reflection",
+    "source_properties": "Visual duplication showing a different version of reality, where one side faces another directly.",
+    "target_situation": "A public official facing potential criminal status despite official delays in prosecution.",
+    "mapping": "The man's reflection wearing an orange detention vest visualizes his inevitable criminal suspect status, contrasting his current free state.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: mirror reflection\nsource_properties: Visual duplication showing a different version of reality, where one side faces another directly.\ntarget_situation: A public official facing potential criminal status despite official delays in prosecution.\nmapping: The man's reflection wearing an orange detention vest visualizes his inevitable criminal suspect status, contrasting his current free state.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

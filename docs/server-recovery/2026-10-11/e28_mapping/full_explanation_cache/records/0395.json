@@ -1,0 +1,87 @@
+{
+  "index": 395,
+  "sample_id": "TMP-953422FEE2D8",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "80cced3002bec8e5478a6c8dd5bc4d3c2ccb00d21efd070b9c61e7949ed311b4",
+  "image_sha256": "953422fee2d85b77afd5ed9523b5765174c0bbc730b3bfa8af95d3bc3a238778",
+  "transmitted_image_sha256": "07666ba510dbc71d542ff89fb758c859f2a068723f599081247637a19fd4dd96",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.576527,
+      "total": 10,
+      "remaining": 1.4234729999999995,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.576526999999999,
+      "total": 100,
+      "remaining": 91.423473,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.7976368302479386,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"vibrant red hand\",\n  \"source_properties\": \"Visible and distinct from the monochrome body, it covers the person's eyes and face.\",\n  \"target_situation\": \"Internal ethics violation within the KPK investigation department.\",\n  \"mapping\": \"The red hand blinds and controls the official, representing an insider's obstructive actions.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "bJfLaoGpIvKU_uMPp6OP6Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679000,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1358,
+      "total_backend_latency_ms": 1407,
+      "total_tokens": 1449
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.577479,
+      "total": 10,
+      "remaining": 1.4225209999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.577478999999997,
+      "total": 100,
+      "remaining": 91.422521,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000952,
+  "fields": {
+    "source_object": "vibrant red hand",
+    "source_properties": "Visible and distinct from the monochrome body, it covers the person's eyes and face.",
+    "target_situation": "Internal ethics violation within the KPK investigation department.",
+    "mapping": "The red hand blinds and controls the official, representing an insider's obstructive actions.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: vibrant red hand\nsource_properties: Visible and distinct from the monochrome body, it covers the person's eyes and face.\ntarget_situation: Internal ethics violation within the KPK investigation department.\nmapping: The red hand blinds and controls the official, representing an insider's obstructive actions.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

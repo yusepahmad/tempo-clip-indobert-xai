@@ -1,0 +1,87 @@
+{
+  "index": 240,
+  "sample_id": "TMP-98F1058EB198",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1f674852fa3b1cdb5d4f092d78ab6dc483f377791202a3a2a0d5fa0509614f85",
+  "image_sha256": "98f1058eb198cc3338882141e8ea4d4c3345e6b69028316067e54170ef4aa1be",
+  "transmitted_image_sha256": "49224d0da244643ded5adad6cc8232eb457f9b47633568ddedf6a57bf9e2e3a4",
+  "image_size": [
+    614,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3714515,
+      "total": 10,
+      "remaining": 1.6285485000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.371451500000006,
+      "total": 100,
+      "remaining": 91.6285485,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.417350387200713,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"none evident\", \"source_properties\": \"none evident\", \"target_situation\": \"The cover features a literal portrait of poet Wiji Thukul, who disappeared during the May 1998 tragedy.\", \"mapping\": \"The relationship is literal rather than analogical; the visual depicts the subject mentioned in the text to identify the person whose disappearance remains a mystery.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "c5PLavn4Isfh_uMPvKet6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 88,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661000,
+        "output_tokens_cost_nanodollars": 264000
+      },
+      "prompt_tokens": 1322,
+      "total_backend_latency_ms": 1773,
+      "total_tokens": 1410
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3723765,
+      "total": 10,
+      "remaining": 1.6276235000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.372376500000001,
+      "total": 100,
+      "remaining": 91.6276235,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000925,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "none evident",
+    "target_situation": "The cover features a literal portrait of poet Wiji Thukul, who disappeared during the May 1998 tragedy.",
+    "mapping": "The relationship is literal rather than analogical; the visual depicts the subject mentioned in the text to identify the person whose disappearance remains a mystery.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: none evident\ntarget_situation: The cover features a literal portrait of poet Wiji Thukul, who disappeared during the May 1998 tragedy.\nmapping: The relationship is literal rather than analogical; the visual depicts the subject mentioned in the text to identify the person whose disappearance remains a mystery.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

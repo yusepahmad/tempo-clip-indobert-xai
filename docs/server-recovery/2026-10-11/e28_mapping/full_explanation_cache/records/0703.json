@@ -1,0 +1,87 @@
+{
+  "index": 703,
+  "sample_id": "TMP-0875C1C0AF91",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e4e072d9df1c71925082e124c4ea3cc8cb5d5f8257f60e16f04feffb6f3eb013",
+  "image_sha256": "0875c1c0af9183fa375af2f3fcc1ada9596d7b19e352fbf87380635fafcbf860",
+  "transmitted_image_sha256": "e36d2875ae9baca81e9e682e10589c9307c7efebbecb26f70909ffd1f9e4a218",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.021302,
+      "total": 10,
+      "remaining": 0.9786979999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.021302000000006,
+      "total": 100,
+      "remaining": 90.978698,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.996395834721625,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"shaking hands\", \"source_properties\": \"A giant, looming hand towers over and grasps a tiny hand from a much smaller person.\", \"target_situation\": \"Trade negotiations between Donald Trump representing the USA and Prabowo representing Indonesia.\", \"mapping\": \"The massive scale difference represents the power imbalance, where the large figure's finger-handshake suggests a dominant, paternalistic, or patronizing negotiation stance over the smaller figure.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "j5_LaqX1ApOo_uMPmu77-As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679500,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1359,
+      "total_backend_latency_ms": 1682,
+      "total_tokens": 1461
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.022287500000001,
+      "total": 10,
+      "remaining": 0.9777124999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.022287500000004,
+      "total": 100,
+      "remaining": 90.9777125,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009855,
+  "fields": {
+    "source_object": "shaking hands",
+    "source_properties": "A giant, looming hand towers over and grasps a tiny hand from a much smaller person.",
+    "target_situation": "Trade negotiations between Donald Trump representing the USA and Prabowo representing Indonesia.",
+    "mapping": "The massive scale difference represents the power imbalance, where the large figure's finger-handshake suggests a dominant, paternalistic, or patronizing negotiation stance over the smaller figure.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: shaking hands\nsource_properties: A giant, looming hand towers over and grasps a tiny hand from a much smaller person.\ntarget_situation: Trade negotiations between Donald Trump representing the USA and Prabowo representing Indonesia.\nmapping: The massive scale difference represents the power imbalance, where the large figure's finger-handshake suggests a dominant, paternalistic, or patronizing negotiation stance over the smaller figure.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

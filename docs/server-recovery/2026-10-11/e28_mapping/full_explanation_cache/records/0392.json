@@ -1,0 +1,87 @@
+{
+  "index": 392,
+  "sample_id": "TMP-BBD619118477",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "93520b4e41239f0fa02ac8fd47cfd9cb6ebe717e8b2ca9e284b176ed2fd46c5b",
+  "image_sha256": "bbd619118477590ab5f8178a146db583fa251b92fe21c6864c42e35219a9c874",
+  "transmitted_image_sha256": "908de52b4a0cd9f3af09b13e5a3d22d1ef622a2a8f38856216aa0bc963a81c8e",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5735885,
+      "total": 10,
+      "remaining": 1.4264115000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.5735885,
+      "total": 100,
+      "remaining": 91.4264115,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.323368796147406,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"boxing a sack of rice\", \"source_properties\": \"A person forcefully punching a heavy, tied bag hanging from a chain, causing it to swing and spill contents.\", \"target_situation\": \"Political and business turmoil surrounding a rice company raid and agricultural policy.\", \"mapping\": \"The punch represents aggressive government intervention (raids), while the sack filled with rice grain represents the volatile rice market being disrupted by these forceful actions.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "WpfLaubyBPGb_uMPte3s2Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680500,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1361,
+      "total_backend_latency_ms": 1751,
+      "total_tokens": 1460
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.574566,
+      "total": 10,
+      "remaining": 1.4254339999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.574566000000004,
+      "total": 100,
+      "remaining": 91.425434,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009775,
+  "fields": {
+    "source_object": "boxing a sack of rice",
+    "source_properties": "A person forcefully punching a heavy, tied bag hanging from a chain, causing it to swing and spill contents.",
+    "target_situation": "Political and business turmoil surrounding a rice company raid and agricultural policy.",
+    "mapping": "The punch represents aggressive government intervention (raids), while the sack filled with rice grain represents the volatile rice market being disrupted by these forceful actions.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: boxing a sack of rice\nsource_properties: A person forcefully punching a heavy, tied bag hanging from a chain, causing it to swing and spill contents.\ntarget_situation: Political and business turmoil surrounding a rice company raid and agricultural policy.\nmapping: The punch represents aggressive government intervention (raids), while the sack filled with rice grain represents the volatile rice market being disrupted by these forceful actions.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

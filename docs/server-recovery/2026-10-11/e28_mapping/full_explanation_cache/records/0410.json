@@ -1,0 +1,90 @@
+{
+  "index": 410,
+  "sample_id": "TMP-BF701BB209AC",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a6cfa5cebd004944fd403c3173d3fa0011623f9864f0a424c4d9cc58a34b6e26",
+  "image_sha256": "bf701bb209ac866bc73191e6d78993fa9caf4fa828223f84680097a4ddcb911e",
+  "transmitted_image_sha256": "d67a2546b250869798746a5c7f1628bdb05ee72fc73abb6b545f891623faf483",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.604494,
+      "total": 10,
+      "remaining": 1.3955059999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.604494000000003,
+      "total": 100,
+      "remaining": 91.395506,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.822336161043495,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A shoulder ride\",\n  \"source_properties\": \"One person physically bearing another\u2019s weight on their shoulders to reach a height.\",\n  \"target_situation\": \"Jokowi\u2019s 2019 presidential campaign partnership with vice-presidential candidate Ma'ruf Amin.\",\n  \"mapping\": \"Jokowi carrying Ma'ruf symbolizes him bearing the political weight of a running mate who the text suggests may be hindering his electability rather than helping him reach his goal.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "25fLaorzFOfU_uMPq5CXyQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 998,
+      "completion_tokens_details": {
+        "reasoning_tokens": 877
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 676500,
+        "output_tokens_cost_nanodollars": 2994000
+      },
+      "prompt_tokens": 1353,
+      "total_backend_latency_ms": 5326,
+      "total_tokens": 2351
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6081645,
+      "total": 10,
+      "remaining": 1.3918354999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.6081645,
+      "total": 100,
+      "remaining": 91.3918355,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0036705,
+  "fields": {
+    "source_object": "A shoulder ride",
+    "source_properties": "One person physically bearing another\u2019s weight on their shoulders to reach a height.",
+    "target_situation": "Jokowi\u2019s 2019 presidential campaign partnership with vice-presidential candidate Ma'ruf Amin.",
+    "mapping": "Jokowi carrying Ma'ruf symbolizes him bearing the political weight of a running mate who the text suggests may be hindering his electability rather than helping him reach his goal.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A shoulder ride\nsource_properties: One person physically bearing another\u2019s weight on their shoulders to reach a height.\ntarget_situation: Jokowi\u2019s 2019 presidential campaign partnership with vice-presidential candidate Ma'ruf Amin.\nmapping: Jokowi carrying Ma'ruf symbolizes him bearing the political weight of a running mate who the text suggests may be hindering his electability rather than helping him reach his goal.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

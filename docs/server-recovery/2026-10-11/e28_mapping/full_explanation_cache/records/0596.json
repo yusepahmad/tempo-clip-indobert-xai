@@ -1,0 +1,87 @@
+{
+  "index": 596,
+  "sample_id": "TMP-DDEF1F5E91C5",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "efbdcda8a3ac469f39f4403b7abb98ef7898fd01f26698cc631702fd5c999854",
+  "image_sha256": "ddef1f5e91c551f60c043b1ac0ae9000c1de2b11d31db26ed55b8ab055e14858",
+  "transmitted_image_sha256": "0aa90e805fe6080ce149ca18d1f4b9fd0d0e9427c047f99cd5bea06ff24fccb7",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.847142999999999,
+      "total": 10,
+      "remaining": 1.152857000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.847143000000003,
+      "total": 100,
+      "remaining": 91.152857,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0947312428615987,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"sniper rifle scope\", \"source_properties\": \"circular crosshairs, centered target, precision sighting, magnification\", \"target_situation\": \"intense investigation into Ferdy Sambo's alleged involvement in a high-profile murder\", \"mapping\": \"The crosshairs symbolize Sambo being the primary target of focused public and legal scrutiny.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "qpzLapX1MNPj_uMPg-OC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 82,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675500,
+        "output_tokens_cost_nanodollars": 246000
+      },
+      "prompt_tokens": 1351,
+      "total_backend_latency_ms": 1877,
+      "total_tokens": 1433
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8480645,
+      "total": 10,
+      "remaining": 1.1519355000000004,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.848064500000007,
+      "total": 100,
+      "remaining": 91.1519355,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009215,
+  "fields": {
+    "source_object": "sniper rifle scope",
+    "source_properties": "circular crosshairs, centered target, precision sighting, magnification",
+    "target_situation": "intense investigation into Ferdy Sambo's alleged involvement in a high-profile murder",
+    "mapping": "The crosshairs symbolize Sambo being the primary target of focused public and legal scrutiny.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: sniper rifle scope\nsource_properties: circular crosshairs, centered target, precision sighting, magnification\ntarget_situation: intense investigation into Ferdy Sambo's alleged involvement in a high-profile murder\nmapping: The crosshairs symbolize Sambo being the primary target of focused public and legal scrutiny.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

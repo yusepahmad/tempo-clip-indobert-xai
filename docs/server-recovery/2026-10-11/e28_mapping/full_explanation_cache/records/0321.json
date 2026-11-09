@@ -1,0 +1,90 @@
+{
+  "index": 321,
+  "sample_id": "TMP-D16679E2FEFD",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "54c38f75b71cd79f8022e7ca7c9820cfdfb6fc8b53c5f918cb457b0bc15aad34",
+  "image_sha256": "d16679e2fefd63a731dae77ba2ccf3a81f70ca60e6e294ae5d8f4bb8ed7dc261",
+  "transmitted_image_sha256": "dc4779a0579cda21335033bbb84e19ebc63fd1fd7bf53074b5bb7ae848d6a3cb",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.479768,
+      "total": 10,
+      "remaining": 1.520232,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.479768000000007,
+      "total": 100,
+      "remaining": 91.520232,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.8013334409333766,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A person in a seated Islamic prayer position.\",\n  \"source_properties\": \"Meditative posture with the index finger extended in a ritualistic gesture of testimony and faith.\",\n  \"target_situation\": \"The discourse surrounding localized Islamic traditions in Indonesia versus the influence of Arabization.\",\n  \"mapping\": \"The prayer form represents the faith itself, while the internal words illustrate that Islamic identity is constructed from diverse local 'colors,' traditions, and indigenous practices.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ipXLaqyTGZCa_uMPxb6ruQk",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 747,
+      "completion_tokens_details": {
+        "reasoning_tokens": 633
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 679000,
+        "output_tokens_cost_nanodollars": 2241000
+      },
+      "prompt_tokens": 1358,
+      "total_backend_latency_ms": 4453,
+      "total_tokens": 2105
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.482688,
+      "total": 10,
+      "remaining": 1.5173120000000004,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.482687999999996,
+      "total": 100,
+      "remaining": 91.517312,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00292,
+  "fields": {
+    "source_object": "A person in a seated Islamic prayer position.",
+    "source_properties": "Meditative posture with the index finger extended in a ritualistic gesture of testimony and faith.",
+    "target_situation": "The discourse surrounding localized Islamic traditions in Indonesia versus the influence of Arabization.",
+    "mapping": "The prayer form represents the faith itself, while the internal words illustrate that Islamic identity is constructed from diverse local 'colors,' traditions, and indigenous practices.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A person in a seated Islamic prayer position.\nsource_properties: Meditative posture with the index finger extended in a ritualistic gesture of testimony and faith.\ntarget_situation: The discourse surrounding localized Islamic traditions in Indonesia versus the influence of Arabization.\nmapping: The prayer form represents the faith itself, while the internal words illustrate that Islamic identity is constructed from diverse local 'colors,' traditions, and indigenous practices.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 157,
+  "sample_id": "TMP-25131DCE35AD",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8a5c3096ebf292e8e0aaf339e331c81348a5fdcef5b2e81420a19b8395ca0065",
+  "image_sha256": "25131dce35ad0ca021aec25b52d59d0dee4e887fec2976d973195dbe3939c891",
+  "transmitted_image_sha256": "2269aa7c2bb95a2d1e4acbe9ea7d62c58bd8b6c526b828d53838bcbd54124f7a",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.239964,
+      "total": 10,
+      "remaining": 1.7600359999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.239964,
+      "total": 100,
+      "remaining": 91.760036,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.726626692805439,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"mirage or reflection\",\n  \"source_properties\": \"distorted, inverted, hazy, and shimmering appearance in heat or water\",\n  \"target_situation\": \"The government's dual approach to passing the Omnibus Law and suppressing protests.\",\n  \"mapping\": \"The building's reflection mirrors 'two faces', suggesting hidden, darker motives beneath the surface.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "RZHLatP4NJLN_uMPhvbuyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 96,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682000,
+        "output_tokens_cost_nanodollars": 288000
+      },
+      "prompt_tokens": 1364,
+      "total_backend_latency_ms": 1731,
+      "total_tokens": 1460
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.240934,
+      "total": 10,
+      "remaining": 1.7590660000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.240933999999996,
+      "total": 100,
+      "remaining": 91.759066,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00097,
+  "fields": {
+    "source_object": "mirage or reflection",
+    "source_properties": "distorted, inverted, hazy, and shimmering appearance in heat or water",
+    "target_situation": "The government's dual approach to passing the Omnibus Law and suppressing protests.",
+    "mapping": "The building's reflection mirrors 'two faces', suggesting hidden, darker motives beneath the surface.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: mirage or reflection\nsource_properties: distorted, inverted, hazy, and shimmering appearance in heat or water\ntarget_situation: The government's dual approach to passing the Omnibus Law and suppressing protests.\nmapping: The building's reflection mirrors 'two faces', suggesting hidden, darker motives beneath the surface.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

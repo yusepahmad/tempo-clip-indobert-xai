@@ -1,0 +1,87 @@
+{
+  "index": 62,
+  "sample_id": "TMP-521650E4CE72",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "30d981369279ab3648c84cc16d402c35f99ebc98463536f0d3732f454c03e8a5",
+  "image_sha256": "521650e4ce72b3ecec2198621622f0c5ecdfc0518d351fcdaeb9286c12109c4f",
+  "transmitted_image_sha256": "1962436d8f5b751ccb7b51426337c28fa5d1d1ce847f9dc7add536bd3c4ebd6f",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.097356,
+      "total": 10,
+      "remaining": 1.9026440000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.097356000000005,
+      "total": 100,
+      "remaining": 91.902644,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1298408899456263,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A telecommunications tower and a blowing white flag\",\n  \"source_properties\": \"A tower's high elevation and a flag being blown away, losing its grip.\",\n  \"target_situation\": \"Former political transition team members taking over Telkom's cellular tower business.\",\n  \"mapping\": \"The tower represents the business assets, while the blowing flag symbolizes Telkom losing control of its subsidiary.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "xI7LatPiJbDe_uMP6urskA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "cost": {
+        "input_tokens_cost_nanodollars": 668000,
+        "output_tokens_cost_nanodollars": 312000
+      },
+      "prompt_tokens": 1336,
+      "total_backend_latency_ms": 1694,
+      "total_tokens": 1440
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.098336,
+      "total": 10,
+      "remaining": 1.9016640000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.098336000000003,
+      "total": 100,
+      "remaining": 91.901664,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.00098,
+  "fields": {
+    "source_object": "A telecommunications tower and a blowing white flag",
+    "source_properties": "A tower's high elevation and a flag being blown away, losing its grip.",
+    "target_situation": "Former political transition team members taking over Telkom's cellular tower business.",
+    "mapping": "The tower represents the business assets, while the blowing flag symbolizes Telkom losing control of its subsidiary.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A telecommunications tower and a blowing white flag\nsource_properties: A tower's high elevation and a flag being blown away, losing its grip.\ntarget_situation: Former political transition team members taking over Telkom's cellular tower business.\nmapping: The tower represents the business assets, while the blowing flag symbolizes Telkom losing control of its subsidiary.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

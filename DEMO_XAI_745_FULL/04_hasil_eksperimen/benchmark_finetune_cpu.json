@@ -1,0 +1,27 @@
+{
+  "purpose": "benchmark CPU, bukan hasil evaluasi ilmiah",
+  "cpu": "AMD Ryzen 7 7730U with Radeon Graphics",
+  "torch": "2.14.0+cpu",
+  "cuda_available": false,
+  "dataset_rows": 740,
+  "images_verified": 740,
+  "threads": 4,
+  "batch_size": 1,
+  "step_seconds": [
+    8.26874625000346,
+    1.7635143129882636,
+    1.9180963550024899
+  ],
+  "loss": [
+    2.104438066482544,
+    2.0840909481048584,
+    2.1407711505889893
+  ],
+  "encoder_gradients_valid": {
+    "clip": true,
+    "bert": true
+  },
+  "peak_process_rss_gib": 4.352508544921875,
+  "estimated_train_only_hours_5fold_120epochs": 181.62612628754383,
+  "caveat": "Ekstrapolasi batch/thread ini; tidak mencakup loading data, evaluasi, saving, panas CPU atau batch GPU 16. Loss tanpa class weighting hanya untuk benchmark."
+}

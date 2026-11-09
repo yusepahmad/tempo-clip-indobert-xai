@@ -1,0 +1,87 @@
+{
+  "index": 84,
+  "sample_id": "TMP-0B75BE88FB93",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ef61444bf8ed19a736ea60f658ec15ce6cc367bed0b8ef69cbf7602092cc0b49",
+  "image_sha256": "0b75be88fb9325d5b385bc640c06308b3bdd97e6b019fa0359b9f7118a96929c",
+  "transmitted_image_sha256": "a0283301ff9b519cf9746ef9fdedd23719869b15517d9064bf4c7eaa00c5bcc0",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.125192,
+      "total": 10,
+      "remaining": 1.8748079999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.125191999999998,
+      "total": 100,
+      "remaining": 91.874808,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0110205058008432,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"vending machine or ATM\", \"source_properties\": \"a machine dispensing a card held by a hand inside, pulling back from a reaching user\", \"target_situation\": \"the Ministry of Manpower withholding workers' Old Age Security (JHT) funds\", \"mapping\": \"the machine's withdrawal of the card symbolizes the government retaining funds that laborers are trying to access for retirement\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "UY_LapLxMJjM_PUPlq7quAo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675000,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1350,
+      "total_backend_latency_ms": 1443,
+      "total_tokens": 1442
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.126142999999999,
+      "total": 10,
+      "remaining": 1.873857000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.126142999999999,
+      "total": 100,
+      "remaining": 91.873857,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000951,
+  "fields": {
+    "source_object": "vending machine or ATM",
+    "source_properties": "a machine dispensing a card held by a hand inside, pulling back from a reaching user",
+    "target_situation": "the Ministry of Manpower withholding workers' Old Age Security (JHT) funds",
+    "mapping": "the machine's withdrawal of the card symbolizes the government retaining funds that laborers are trying to access for retirement",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: vending machine or ATM\nsource_properties: a machine dispensing a card held by a hand inside, pulling back from a reaching user\ntarget_situation: the Ministry of Manpower withholding workers' Old Age Security (JHT) funds\nmapping: the machine's withdrawal of the card symbolizes the government retaining funds that laborers are trying to access for retirement\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 129,
+  "sample_id": "TMP-FE88A535C326",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5d15619d18c088b13ba26754e0551b61ae4ca4f75360d2b8c1b93444f41dff91",
+  "image_sha256": "fe88a535c3263a6053c77183a0f2471563af6eeace5bf8388eb053de94863336",
+  "transmitted_image_sha256": "6e9cdecbddbdfd5cfc099cc5834ede3e273c95c2129ce28007c3562078adae01",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.195187,
+      "total": 10,
+      "remaining": 1.8048129999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.195187000000004,
+      "total": 100,
+      "remaining": 91.804813,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.1009441441856325,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"large metal spoon\",\n  \"source_properties\": \"curved bowl for scooping, elongated handle, mechanical function of lifting material\",\n  \"target_situation\": \"illegal sand mining and land reclamation in Jakarta Bay\",\n  \"mapping\": \"The spoon's scooping action represents dredging or stealing sand to create artificial islands.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "fpDLaojtJe2M_PUPpv3KiQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 89,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 267000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 1904,
+      "total_tokens": 1436
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1961275,
+      "total": 10,
+      "remaining": 1.8038725000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.196127500000003,
+      "total": 100,
+      "remaining": 91.8038725,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009405,
+  "fields": {
+    "source_object": "large metal spoon",
+    "source_properties": "curved bowl for scooping, elongated handle, mechanical function of lifting material",
+    "target_situation": "illegal sand mining and land reclamation in Jakarta Bay",
+    "mapping": "The spoon's scooping action represents dredging or stealing sand to create artificial islands.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: large metal spoon\nsource_properties: curved bowl for scooping, elongated handle, mechanical function of lifting material\ntarget_situation: illegal sand mining and land reclamation in Jakarta Bay\nmapping: The spoon's scooping action represents dredging or stealing sand to create artificial islands.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

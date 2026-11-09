@@ -1,0 +1,87 @@
+{
+  "index": 718,
+  "sample_id": "TMP-D945F14820D4",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c383bb8414cd42161fa67df66543cc4c6c65c366ead49e5d3eb3f6e5a6db81a9",
+  "image_sha256": "d945f14820d40f0b6366a8dc3277a76757248d84e802cc68e3761cc4e23c91ef",
+  "transmitted_image_sha256": "43677f2067de9b68cbeaadc13150847db3fbc3ccff4a364de56009281c37657b",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0407275,
+      "total": 10,
+      "remaining": 0.9592725000000009,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.040727500000003,
+      "total": 100,
+      "remaining": 90.9592725,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.8568068728782237,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Donald Trump with orange skin and hair\",\n  \"source_properties\": \"Vibrant orange coloring, distinctive hair silhouette, hand raised in a waving gesture, back turned to negotiators.\",\n  \"target_situation\": \"Indonesian negotiators struggling with US trade agreements under Trump's administration.\",\n  \"mapping\": \"Trump's literal physical characteristics identify the specific geopolitical influence causing the negotiators' visible distress and confusion.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "75_LarWaJ62u_PUPtb3C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 105,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 315000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 1663,
+      "total_tokens": 1457
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0417185,
+      "total": 10,
+      "remaining": 0.9582815,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.041718500000002,
+      "total": 100,
+      "remaining": 90.9582815,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000991,
+  "fields": {
+    "source_object": "Donald Trump with orange skin and hair",
+    "source_properties": "Vibrant orange coloring, distinctive hair silhouette, hand raised in a waving gesture, back turned to negotiators.",
+    "target_situation": "Indonesian negotiators struggling with US trade agreements under Trump's administration.",
+    "mapping": "Trump's literal physical characteristics identify the specific geopolitical influence causing the negotiators' visible distress and confusion.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Donald Trump with orange skin and hair\nsource_properties: Vibrant orange coloring, distinctive hair silhouette, hand raised in a waving gesture, back turned to negotiators.\ntarget_situation: Indonesian negotiators struggling with US trade agreements under Trump's administration.\nmapping: Trump's literal physical characteristics identify the specific geopolitical influence causing the negotiators' visible distress and confusion.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

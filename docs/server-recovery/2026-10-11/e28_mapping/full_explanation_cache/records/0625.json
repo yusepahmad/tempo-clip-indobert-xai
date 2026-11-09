@@ -1,0 +1,87 @@
+{
+  "index": 625,
+  "sample_id": "TMP-7E41049588A8",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bb9a6e3798d4879d46c17be3394060b6f92fec95741bc8de30059295fd6efaec",
+  "image_sha256": "7e41049588a8e8d0334a17a62b75a19993643e84349ca51dce4d338fa548df0c",
+  "transmitted_image_sha256": "181d496bb508b5da991e1aea862ff37ff5865089b9d04b80892de58c9881022b",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.890529,
+      "total": 10,
+      "remaining": 1.1094709999999992,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.890529,
+      "total": 100,
+      "remaining": 91.109471,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4706620718352497,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"telecommunications tower\", \"source_properties\": \"A tall, skeletal steel structure with signal transmitters and multiple antennas projecting outward.\", \"target_situation\": \"Corruption involving Indonesia's Minister of Communication and Information regarding a BTS transmitter tower project.\", \"mapping\": \"The physical tower represents the actual telecommunications project, while the radiating outlines suggest the far-reaching influence and beneficiaries of the graft.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "cZ3Lao-8A5Oo_uMPmu77-As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 683000,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1366,
+      "total_backend_latency_ms": 1871,
+      "total_tokens": 1457
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.891485,
+      "total": 10,
+      "remaining": 1.1085150000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.891485000000003,
+      "total": 100,
+      "remaining": 91.108515,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000956,
+  "fields": {
+    "source_object": "telecommunications tower",
+    "source_properties": "A tall, skeletal steel structure with signal transmitters and multiple antennas projecting outward.",
+    "target_situation": "Corruption involving Indonesia's Minister of Communication and Information regarding a BTS transmitter tower project.",
+    "mapping": "The physical tower represents the actual telecommunications project, while the radiating outlines suggest the far-reaching influence and beneficiaries of the graft.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: telecommunications tower\nsource_properties: A tall, skeletal steel structure with signal transmitters and multiple antennas projecting outward.\ntarget_situation: Corruption involving Indonesia's Minister of Communication and Information regarding a BTS transmitter tower project.\nmapping: The physical tower represents the actual telecommunications project, while the radiating outlines suggest the far-reaching influence and beneficiaries of the graft.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 612,
+  "sample_id": "TMP-242C59725E07",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3353c3bb2be7b620a509ae5ffdca2ca6e3dc19e69dd16eafca13059515fc5d25",
+  "image_sha256": "242c59725e0703a0026508cae4df9580719979c2879a85d18d1c6876380e3f2d",
+  "transmitted_image_sha256": "64bea9b5cbc455981ac5bfe622ba2176a651d710459935f1cfb35e5cfa4cb852",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8755585,
+      "total": 10,
+      "remaining": 1.1244414999999996,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.875558499999997,
+      "total": 100,
+      "remaining": 91.1244415,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.6959552890621126,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"dating app interface\", \"source_properties\": \"Screen showing a profile with swipe-to-match buttons like a heart and 'X'.\", \"target_situation\": \"President Jokowi potentially pairing Ganjar Pranowo and Prabowo Subianto for the 2024 election.\", \"mapping\": \"Political matchmaking is likened to selecting a romantic partner on a dating app, emphasizing strategic pairing and selection.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "H53Lar_gJp_v_uMPm5vQ6AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677000,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1354,
+      "total_backend_latency_ms": 2123,
+      "total_tokens": 1449
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8765205,
+      "total": 10,
+      "remaining": 1.1234795000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.876520499999998,
+      "total": 100,
+      "remaining": 91.1234795,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000962,
+  "fields": {
+    "source_object": "dating app interface",
+    "source_properties": "Screen showing a profile with swipe-to-match buttons like a heart and 'X'.",
+    "target_situation": "President Jokowi potentially pairing Ganjar Pranowo and Prabowo Subianto for the 2024 election.",
+    "mapping": "Political matchmaking is likened to selecting a romantic partner on a dating app, emphasizing strategic pairing and selection.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: dating app interface\nsource_properties: Screen showing a profile with swipe-to-match buttons like a heart and 'X'.\ntarget_situation: President Jokowi potentially pairing Ganjar Pranowo and Prabowo Subianto for the 2024 election.\nmapping: Political matchmaking is likened to selecting a romantic partner on a dating app, emphasizing strategic pairing and selection.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

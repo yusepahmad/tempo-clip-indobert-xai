@@ -1,0 +1,750 @@
+{
+  "schema": "tempo-micro-e06-v1",
+  "status": "complete",
+  "model_contract": "one selected VLM text view per outer fold with three LinearSVC task heads",
+  "selection": "view maximizes minimum inner micro-F1 across three tasks; each head tuned in inner CV",
+  "excluded_inputs": [
+    "task2_domain pseudo-label",
+    "task2_source_description",
+    "task2_mapping_note",
+    "task3_primary_entity"
+  ],
+  "micro_f1": {
+    "task1_issue": 0.5351351351351351,
+    "task2_domain_sumber": 0.5121621621621621,
+    "task3_primary_entity_type": 0.4635135135135135
+  },
+  "macro_f1_diagnostic": {
+    "task1_issue": 0.479298412780954,
+    "task2_domain_sumber": 0.46015144573571326,
+    "task3_primary_entity_type": 0.23909022175567685
+  },
+  "minimum_micro_f1": 0.4635135135135135,
+  "all_tasks_at_least_0_70": false,
+  "fold_details": [
+    {
+      "fold": 1,
+      "selected_view": "all_vlm",
+      "view_inner_micro_f1": {
+        "base": {
+          "task1_issue": 0.4629116888000137,
+          "task2_domain_sumber": 0.27361602488506037,
+          "task3_primary_entity_type": 0.4475978054658258
+        },
+        "base_desc": {
+          "task1_issue": 0.4189013656018732,
+          "task2_domain_sumber": 0.41042403732759064,
+          "task3_primary_entity_type": 0.47798629270710496
+        },
+        "base_caption": {
+          "task1_issue": 0.4611854586473876,
+          "task2_domain_sumber": 0.3547146592831872,
+          "task3_primary_entity_type": 0.46959442137107116
+        },
+        "base_desc_caption": {
+          "task1_issue": 0.4458801210070246,
+          "task2_domain_sumber": 0.41385086055136816,
+          "task3_primary_entity_type": 0.484763027910236
+        },
+        "base_zero": {
+          "task1_issue": 0.48138747884940775,
+          "task2_domain_sumber": 0.4578184552803842,
+          "task3_primary_entity_type": 0.48818985113401353
+        },
+        "all_vlm": {
+          "task1_issue": 0.4780033840947546,
+          "task2_domain_sumber": 0.46112563879061347,
+          "task3_primary_entity_type": 0.4898648071236904
+        }
+      },
+      "tasks": {
+        "task1_issue": {
+          "selected_head": {
+            "name": "c05_balanced",
+            "C": 0.5,
+            "class_weight": "balanced",
+            "inner_micro_f1": 0.5084260541113332
+          },
+          "head_candidates": [
+            {
+              "name": "c025",
+              "C": 0.25,
+              "class_weight": null,
+              "inner_micro_f1": 0.46452682493291636
+            },
+            {
+              "name": "c05",
+              "C": 0.5,
+              "class_weight": null,
+              "inner_micro_f1": 0.4780033840947546
+            },
+            {
+              "name": "c1",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.49151412603189254
+            },
+            {
+              "name": "c05_balanced",
+              "C": 0.5,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.5084260541113332
+            }
+          ],
+          "outer_micro_f1": 0.5337837837837838
+        },
+        "task2_domain_sumber": {
+          "selected_head": {
+            "name": "c05_balanced",
+            "C": 0.5,
+            "class_weight": "balanced",
+            "inner_micro_f1": 0.48478866499171064
+          },
+          "head_candidates": [
+            {
+              "name": "c025",
+              "C": 0.25,
+              "class_weight": null,
+              "inner_micro_f1": 0.46622741800406775
+            },
+            {
+              "name": "c05",
+              "C": 0.5,
+              "class_weight": null,
+              "inner_micro_f1": 0.46112563879061347
+            },
+            {
+              "name": "c1",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.45606658804628347
+            },
+            {
+              "name": "c05_balanced",
+              "C": 0.5,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.48478866499171064
+            }
+          ],
+          "outer_micro_f1": 0.5675675675675675
+        },
+        "task3_primary_entity_type": {
+          "selected_head": {
+            "name": "c05_balanced",
+            "C": 0.5,
+            "class_weight": "balanced",
+            "inner_micro_f1": 0.5269787554051514
+          },
+          "head_candidates": [
+            {
+              "name": "c025",
+              "C": 0.25,
+              "class_weight": null,
+              "inner_micro_f1": 0.4696115127587209
+            },
+            {
+              "name": "c05",
+              "C": 0.5,
+              "class_weight": null,
+              "inner_micro_f1": 0.4898648071236904
+            },
+            {
+              "name": "c1",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.5017005930711514
+            },
+            {
+              "name": "c05_balanced",
+              "C": 0.5,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.5269787554051514
+            }
+          ],
+          "outer_micro_f1": 0.46621621621621623
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "selected_view": "base_zero",
+      "view_inner_micro_f1": {
+        "base": {
+          "task1_issue": 0.44589721239467434,
+          "task2_domain_sumber": 0.2854603565263463,
+          "task3_primary_entity_type": 0.4273530567946812
+        },
+        "base_desc": {
+          "task1_issue": 0.42399459912150267,
+          "task2_domain_sumber": 0.4121246303987421,
+          "task3_primary_entity_type": 0.43577911090601446
+        },
+        "base_caption": {
+          "task1_issue": 0.4324548360081355,
+          "task2_domain_sumber": 0.3851031465244663,
+          "task3_primary_entity_type": 0.4459570322514485
+        },
+        "base_desc_caption": {
+          "task1_issue": 0.42739578526380556,
+          "task2_domain_sumber": 0.40709976242971163,
+          "task3_primary_entity_type": 0.43411270061016255
+        },
+        "base_zero": {
+          "task1_issue": 0.4661761438411185,
+          "task2_domain_sumber": 0.4814045702370575,
+          "task3_primary_entity_type": 0.44593994086379873
+        },
+        "all_vlm": {
+          "task1_issue": 0.4425729374967953,
+          "task2_domain_sumber": 0.4898477157360406,
+          "task3_primary_entity_type": 0.4526995846792801
+        }
+      },
+      "tasks": {
+        "task1_issue": {
+          "selected_head": {
+            "name": "c05_balanced",
+            "C": 0.5,
+            "class_weight": "balanced",
+            "inner_micro_f1": 0.49318908202156936
+          },
+          "head_candidates": [
+            {
+              "name": "c025",
+              "C": 0.25,
+              "class_weight": null,
+              "inner_micro_f1": 0.4611170930967885
+            },
+            {
+              "name": "c05",
+              "C": 0.5,
+              "class_weight": null,
+              "inner_micro_f1": 0.4661761438411185
+            },
+            {
+              "name": "c1",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.4746278350339264
+            },
+            {
+              "name": "c05_balanced",
+              "C": 0.5,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.49318908202156936
+            }
+          ],
+          "outer_micro_f1": 0.5540540540540541
+        },
+        "task2_domain_sumber": {
+          "selected_head": {
+            "name": "c05_balanced",
+            "C": 0.5,
+            "class_weight": "balanced",
+            "inner_micro_f1": 0.5000256370814746
+          },
+          "head_candidates": [
+            {
+              "name": "c025",
+              "C": 0.25,
+              "class_weight": null,
+              "inner_micro_f1": 0.4763455194927276
+            },
+            {
+              "name": "c05",
+              "C": 0.5,
+              "class_weight": null,
+              "inner_micro_f1": 0.4814045702370575
+            },
+            {
+              "name": "c1",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.4780290211762293
+            },
+            {
+              "name": "c05_balanced",
+              "C": 0.5,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.5000256370814746
+            }
+          ],
+          "outer_micro_f1": 0.4864864864864865
+        },
+        "task3_primary_entity_type": {
+          "selected_head": {
+            "name": "c05",
+            "C": 0.5,
+            "class_weight": null,
+            "inner_micro_f1": 0.44593994086379873
+          },
+          "head_candidates": [
+            {
+              "name": "c025",
+              "C": 0.25,
+              "class_weight": null,
+              "inner_micro_f1": 0.44592284947614896
+            },
+            {
+              "name": "c05",
+              "C": 0.5,
+              "class_weight": null,
+              "inner_micro_f1": 0.44593994086379873
+            },
+            {
+              "name": "c1",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.43917175135449243
+            },
+            {
+              "name": "c05_balanced",
+              "C": 0.5,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.43913756857919295
+            }
+          ],
+          "outer_micro_f1": 0.49324324324324326
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "selected_view": "base_zero",
+      "view_inner_micro_f1": {
+        "base": {
+          "task1_issue": 0.45272522176075475,
+          "task2_domain_sumber": 0.30238083029961205,
+          "task3_primary_entity_type": 0.46792801107521925
+        },
+        "base_desc": {
+          "task1_issue": 0.4189355483771728,
+          "task2_domain_sumber": 0.4307200601616845,
+          "task3_primary_entity_type": 0.4696115127587209
+        },
+        "base_caption": {
+          "task1_issue": 0.4341896118545865,
+          "task2_domain_sumber": 0.3767198208822575,
+          "task3_primary_entity_type": 0.47802047548240445
+        },
+        "base_desc_caption": {
+          "task1_issue": 0.4375737066092396,
+          "task2_domain_sumber": 0.42397750773385295,
+          "task3_primary_entity_type": 0.4780461125638791
+        },
+        "base_zero": {
+          "task1_issue": 0.4679365567690441,
+          "task2_domain_sumber": 0.49829086123502364,
+          "task3_primary_entity_type": 0.49660735955152197
+        },
+        "all_vlm": {
+          "task1_issue": 0.4442906219555966,
+          "task2_domain_sumber": 0.5033840947546532,
+          "task3_primary_entity_type": 0.4814045702370575
+        }
+      },
+      "tasks": {
+        "task1_issue": {
+          "selected_head": {
+            "name": "c05_balanced",
+            "C": 0.5,
+            "class_weight": "balanced",
+            "inner_micro_f1": 0.4814472987061819
+          },
+          "head_candidates": [
+            {
+              "name": "c025",
+              "C": 0.25,
+              "class_weight": null,
+              "inner_micro_f1": 0.456100770821583
+            },
+            {
+              "name": "c05",
+              "C": 0.5,
+              "class_weight": null,
+              "inner_micro_f1": 0.4679365567690441
+            },
+            {
+              "name": "c1",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.47132919721752203
+            },
+            {
+              "name": "c05_balanced",
+              "C": 0.5,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.4814472987061819
+            }
+          ],
+          "outer_micro_f1": 0.5405405405405406
+        },
+        "task2_domain_sumber": {
+          "selected_head": {
+            "name": "c025",
+            "C": 0.25,
+            "class_weight": null,
+            "inner_micro_f1": 0.5033670033670034
+          },
+          "head_candidates": [
+            {
+              "name": "c025",
+              "C": 0.25,
+              "class_weight": null,
+              "inner_micro_f1": 0.5033670033670034
+            },
+            {
+              "name": "c05",
+              "C": 0.5,
+              "class_weight": null,
+              "inner_micro_f1": 0.49829086123502364
+            },
+            {
+              "name": "c1",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.49153121741954225
+            },
+            {
+              "name": "c05_balanced",
+              "C": 0.5,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.5033242748978789
+            }
+          ],
+          "outer_micro_f1": 0.5202702702702703
+        },
+        "task3_primary_entity_type": {
+          "selected_head": {
+            "name": "c1",
+            "C": 1.0,
+            "class_weight": null,
+            "inner_micro_f1": 0.49999145430617514
+          },
+          "head_candidates": [
+            {
+              "name": "c025",
+              "C": 0.25,
+              "class_weight": null,
+              "inner_micro_f1": 0.48645507528756254
+            },
+            {
+              "name": "c05",
+              "C": 0.5,
+              "class_weight": null,
+              "inner_micro_f1": 0.49660735955152197
+            },
+            {
+              "name": "c1",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.49999145430617514
+            },
+            {
+              "name": "c05_balanced",
+              "C": 0.5,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.49830795262267347
+            }
+          ],
+          "outer_micro_f1": 0.39864864864864863
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "selected_view": "all_vlm",
+      "view_inner_micro_f1": {
+        "base": {
+          "task1_issue": 0.4695431472081218,
+          "task2_domain_sumber": 0.2989625527696594,
+          "task3_primary_entity_type": 0.429019467090533
+        },
+        "base_desc": {
+          "task1_issue": 0.43074569724315914,
+          "task2_domain_sumber": 0.41382522346989353,
+          "task3_primary_entity_type": 0.459493411270061
+        },
+        "base_caption": {
+          "task1_issue": 0.425703737886479,
+          "task2_domain_sumber": 0.35813293681313985,
+          "task3_primary_entity_type": 0.4560836794339333
+        },
+        "base_desc_caption": {
+          "task1_issue": 0.432420653232836,
+          "task2_domain_sumber": 0.43074569724315914,
+          "task3_primary_entity_type": 0.4628518689432395
+        },
+        "base_zero": {
+          "task1_issue": 0.5017176844588013,
+          "task2_domain_sumber": 0.49827376984737387,
+          "task3_primary_entity_type": 0.4544087234442564
+        },
+        "all_vlm": {
+          "task1_issue": 0.4797381599412056,
+          "task2_domain_sumber": 0.49494094925567006,
+          "task3_primary_entity_type": 0.46789382829991966
+        }
+      },
+      "tasks": {
+        "task1_issue": {
+          "selected_head": {
+            "name": "c05_balanced",
+            "C": 0.5,
+            "class_weight": "balanced",
+            "inner_micro_f1": 0.4983250440103231
+          },
+          "head_candidates": [
+            {
+              "name": "c025",
+              "C": 0.25,
+              "class_weight": null,
+              "inner_micro_f1": 0.464543916320566
+            },
+            {
+              "name": "c05",
+              "C": 0.5,
+              "class_weight": null,
+              "inner_micro_f1": 0.4797381599412056
+            },
+            {
+              "name": "c1",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.48312225469585873
+            },
+            {
+              "name": "c05_balanced",
+              "C": 0.5,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.4983250440103231
+            }
+          ],
+          "outer_micro_f1": 0.5608108108108109
+        },
+        "task2_domain_sumber": {
+          "selected_head": {
+            "name": "c05_balanced",
+            "C": 0.5,
+            "class_weight": "balanced",
+            "inner_micro_f1": 0.508443145498983
+          },
+          "head_candidates": [
+            {
+              "name": "c025",
+              "C": 0.25,
+              "class_weight": null,
+              "inner_micro_f1": 0.4898818985113402
+            },
+            {
+              "name": "c05",
+              "C": 0.5,
+              "class_weight": null,
+              "inner_micro_f1": 0.49494094925567006
+            },
+            {
+              "name": "c1",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.48818985113401353
+            },
+            {
+              "name": "c05_balanced",
+              "C": 0.5,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.508443145498983
+            }
+          ],
+          "outer_micro_f1": 0.5135135135135135
+        },
+        "task3_primary_entity_type": {
+          "selected_head": {
+            "name": "c05_balanced",
+            "C": 0.5,
+            "class_weight": "balanced",
+            "inner_micro_f1": 0.4746192893401015
+          },
+          "head_candidates": [
+            {
+              "name": "c025",
+              "C": 0.25,
+              "class_weight": null,
+              "inner_micro_f1": 0.46115982156591295
+            },
+            {
+              "name": "c05",
+              "C": 0.5,
+              "class_weight": null,
+              "inner_micro_f1": 0.46789382829991966
+            },
+            {
+              "name": "c1",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.46279204908646526
+            },
+            {
+              "name": "c05_balanced",
+              "C": 0.5,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.4746192893401015
+            }
+          ],
+          "outer_micro_f1": 0.4864864864864865
+        }
+      }
+    },
+    {
+      "fold": 5,
+      "selected_view": "base_zero",
+      "view_inner_micro_f1": {
+        "base": {
+          "task1_issue": 0.48478866499171064,
+          "task2_domain_sumber": 0.28715240390367297,
+          "task3_primary_entity_type": 0.46289459741236394
+        },
+        "base_desc": {
+          "task1_issue": 0.4088601753576373,
+          "task2_domain_sumber": 0.4459313951699739,
+          "task3_primary_entity_type": 0.46791946538139434
+        },
+        "base_caption": {
+          "task1_issue": 0.46792801107521914,
+          "task2_domain_sumber": 0.3850689637491668,
+          "task3_primary_entity_type": 0.4544087234442564
+        },
+        "base_desc_caption": {
+          "task1_issue": 0.4358303850689637,
+          "task2_domain_sumber": 0.4408210702626946,
+          "task3_primary_entity_type": 0.46286041463706434
+        },
+        "base_zero": {
+          "task1_issue": 0.5421815447196158,
+          "task2_domain_sumber": 0.48815566835871405,
+          "task3_primary_entity_type": 0.49328308465364296
+        },
+        "all_vlm": {
+          "task1_issue": 0.4746192893401015,
+          "task2_domain_sumber": 0.4814045702370575,
+          "task3_primary_entity_type": 0.47469620058452544
+        }
+      },
+      "tasks": {
+        "task1_issue": {
+          "selected_head": {
+            "name": "c1",
+            "C": 1.0,
+            "class_weight": null,
+            "inner_micro_f1": 0.5506332359124237
+          },
+          "head_candidates": [
+            {
+              "name": "c025",
+              "C": 0.25,
+              "class_weight": null,
+              "inner_micro_f1": 0.5236544805072724
+            },
+            {
+              "name": "c05",
+              "C": 0.5,
+              "class_weight": null,
+              "inner_micro_f1": 0.5421815447196158
+            },
+            {
+              "name": "c1",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.5506332359124237
+            },
+            {
+              "name": "c05_balanced",
+              "C": 0.5,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.545557093780444
+            }
+          ],
+          "outer_micro_f1": 0.4864864864864865
+        },
+        "task2_domain_sumber": {
+          "selected_head": {
+            "name": "c05_balanced",
+            "C": 0.5,
+            "class_weight": "balanced",
+            "inner_micro_f1": 0.4999743629185254
+          },
+          "head_candidates": [
+            {
+              "name": "c025",
+              "C": 0.25,
+              "class_weight": null,
+              "inner_micro_f1": 0.4881471226648892
+            },
+            {
+              "name": "c05",
+              "C": 0.5,
+              "class_weight": null,
+              "inner_micro_f1": 0.48815566835871405
+            },
+            {
+              "name": "c1",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.4763369737989027
+            },
+            {
+              "name": "c05_balanced",
+              "C": 0.5,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.4999743629185254
+            }
+          ],
+          "outer_micro_f1": 0.47297297297297297
+        },
+        "task3_primary_entity_type": {
+          "selected_head": {
+            "name": "c05",
+            "C": 0.5,
+            "class_weight": null,
+            "inner_micro_f1": 0.49328308465364296
+          },
+          "head_candidates": [
+            {
+              "name": "c025",
+              "C": 0.25,
+              "class_weight": null,
+              "inner_micro_f1": 0.4848143020731854
+            },
+            {
+              "name": "c05",
+              "C": 0.5,
+              "class_weight": null,
+              "inner_micro_f1": 0.49328308465364296
+            },
+            {
+              "name": "c1",
+              "C": 1.0,
+              "class_weight": null,
+              "inner_micro_f1": 0.4797723427165051
+            },
+            {
+              "name": "c05_balanced",
+              "C": 0.5,
+              "class_weight": "balanced",
+              "inner_micro_f1": 0.4882496709907877
+            }
+          ],
+          "outer_micro_f1": 0.47297297297297297
+        }
+      }
+    }
+  ],
+  "source_sha256": {
+    "DEMO_XAI_745_FULL/03_data/DATASET_740_TASK2_DOMAIN.csv": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+    "DEMO_XAI_745_FULL/04_hasil_eksperimen/e42_tail_grid/oof.csv": "bc4c55291463106d398cf90c9f796724f7f22595d92668bda324a51e9799b642",
+    "docs/server-recovery/2026-10-10/e01-full-terbaru/e01_vlm/deskripsi.jsonl": "c75e8df3f9b71d6786462f8d0f1187ebe4234fb8dd079924f3f35707ff1b8cd2",
+    "docs/server-recovery/2026-10-10/e01-full-terbaru/e01_vlm/zeroshot.jsonl": "10c07b06b13fbbf647f2b1ed12a722d9bff8f97caa6b621430d8bc0429ab38c9"
+  },
+  "caption_records": 740,
+  "seconds": 406.55811166763306,
+  "predictions_sha256": "fecfdfecc3fe5ec170aaff86d688a4371d295fa0fce74e8cdec09e9b1d7cc7c4"
+}

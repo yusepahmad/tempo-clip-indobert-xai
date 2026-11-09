@@ -1,0 +1,87 @@
+{
+  "index": 189,
+  "sample_id": "TMP-A053EC2C2C16",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "365e4fd7db26806a78f6954584cf5ee2e6e9453aa436f2defe2178d4b9a6ecb9",
+  "image_sha256": "a053ec2c2c160b4d28ea78ba682affdfc1de06ffc1c6390f88af7884ecaae71d",
+  "transmitted_image_sha256": "07f731e7f53193e3d8006db1788596002817ef63c1f23513a4ab9948fee6cda1",
+  "image_size": [
+    300,
+    410
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.285069,
+      "total": 10,
+      "remaining": 1.714931,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.285068999999993,
+      "total": 100,
+      "remaining": 91.714931,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9862834862433374,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A beringin (banyan) tree\",\n  \"source_properties\": \"Vast, shady canopy providing shelter and protection to those beneath it.\",\n  \"target_situation\": \"The Al-Zaytun boarding school's political protection by established power structures.\",\n  \"mapping\": \"The banyan tree represents Golkar/political patronage shielding the bull-like entity representing Al-Zaytun.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "G5LLap2oCb7i_uMPwfDU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 651500,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1303,
+      "total_backend_latency_ms": 1724,
+      "total_tokens": 1409
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2860385,
+      "total": 10,
+      "remaining": 1.7139615,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.286038500000004,
+      "total": 100,
+      "remaining": 91.7139615,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009695,
+  "fields": {
+    "source_object": "A beringin (banyan) tree",
+    "source_properties": "Vast, shady canopy providing shelter and protection to those beneath it.",
+    "target_situation": "The Al-Zaytun boarding school's political protection by established power structures.",
+    "mapping": "The banyan tree represents Golkar/political patronage shielding the bull-like entity representing Al-Zaytun.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A beringin (banyan) tree\nsource_properties: Vast, shady canopy providing shelter and protection to those beneath it.\ntarget_situation: The Al-Zaytun boarding school's political protection by established power structures.\nmapping: The banyan tree represents Golkar/political patronage shielding the bull-like entity representing Al-Zaytun.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 396,
+  "sample_id": "TMP-C070724A052B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8aeb3137f8a3a6b265053ebeb86275f7294af9f28d58aab2f167968327770953",
+  "image_sha256": "c070724a052b34adef6fc05d167f58177de4df4043d80ffa6b4dfb64dc6a4f4f",
+  "transmitted_image_sha256": "787515d6ecab2c0aad682c68a7624d8fac1d864164a85a32ce9265055b0c7d6e",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.577479,
+      "total": 10,
+      "remaining": 1.4225209999999997,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.577478999999997,
+      "total": 100,
+      "remaining": 91.422521,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1195312873460352,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A round sticker or label\",\n  \"source_properties\": \"A circular adhesive surface being peeled back from its backing by a person.\",\n  \"target_situation\": \"The Indonesian government's acquisition of a majority stake in PT Freeport Indonesia.\",\n  \"mapping\": \"Peeling the sticker reveals a different colored layer, representing the government uncovering or seizing 51% control of the company.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "cZfLaqH2BdPj_uMP_OKC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675000,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1350,
+      "total_backend_latency_ms": 1777,
+      "total_tokens": 1452
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.57846,
+      "total": 10,
+      "remaining": 1.4215400000000002,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.578460000000007,
+      "total": 100,
+      "remaining": 91.42154,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000981,
+  "fields": {
+    "source_object": "A round sticker or label",
+    "source_properties": "A circular adhesive surface being peeled back from its backing by a person.",
+    "target_situation": "The Indonesian government's acquisition of a majority stake in PT Freeport Indonesia.",
+    "mapping": "Peeling the sticker reveals a different colored layer, representing the government uncovering or seizing 51% control of the company.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A round sticker or label\nsource_properties: A circular adhesive surface being peeled back from its backing by a person.\ntarget_situation: The Indonesian government's acquisition of a majority stake in PT Freeport Indonesia.\nmapping: Peeling the sticker reveals a different colored layer, representing the government uncovering or seizing 51% control of the company.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

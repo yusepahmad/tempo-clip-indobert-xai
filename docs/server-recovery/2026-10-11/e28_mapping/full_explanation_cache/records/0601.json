@@ -1,0 +1,87 @@
+{
+  "index": 601,
+  "sample_id": "TMP-538E76DDB84D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "33804f8eb40e02eba92db8eddd25cdfac5abdc397b1c5217971f8ba1842f5f74",
+  "image_sha256": "538e76ddb84d129fc51d405ac8f630f821792368d67b2c8d774419ca22f6c51c",
+  "transmitted_image_sha256": "216f768c3d8fff31058ffa69bceb019ee0e07afe1b1accd61f439e5487161375",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.858251,
+      "total": 10,
+      "remaining": 1.1417490000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.858250999999996,
+      "total": 100,
+      "remaining": 91.141749,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.8117367080412805,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"large assault rifle\",\n  \"source_properties\": \"massive scale, heavy, mechanical, designed for violence, obstructing movement\",\n  \"target_situation\": \"The stalled humanitarian pause in Papua's conflict\",\n  \"mapping\": \"The oversized weapon acts as an impassable physical barrier, weighing down and blocking the progress of the vulnerable child, representing how militarization halts humanitarian efforts.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "1JzLarmzBeXG_uMP3cfxkAY",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 100,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681000,
+        "output_tokens_cost_nanodollars": 300000
+      },
+      "prompt_tokens": 1362,
+      "total_backend_latency_ms": 1649,
+      "total_tokens": 1462
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.859232,
+      "total": 10,
+      "remaining": 1.1407679999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.859232000000006,
+      "total": 100,
+      "remaining": 91.140768,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000981,
+  "fields": {
+    "source_object": "large assault rifle",
+    "source_properties": "massive scale, heavy, mechanical, designed for violence, obstructing movement",
+    "target_situation": "The stalled humanitarian pause in Papua's conflict",
+    "mapping": "The oversized weapon acts as an impassable physical barrier, weighing down and blocking the progress of the vulnerable child, representing how militarization halts humanitarian efforts.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: large assault rifle\nsource_properties: massive scale, heavy, mechanical, designed for violence, obstructing movement\ntarget_situation: The stalled humanitarian pause in Papua's conflict\nmapping: The oversized weapon acts as an impassable physical barrier, weighing down and blocking the progress of the vulnerable child, representing how militarization halts humanitarian efforts.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

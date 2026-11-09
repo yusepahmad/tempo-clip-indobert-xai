@@ -1,0 +1,86 @@
+{
+  "index": 433,
+  "sample_id": "TMP-D7DFE8EB575E",
+  "fold": 4,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "98395d1267e9419ff9687d5193be9e2dcf6b77ebd0211256eef4f58587807852",
+  "image_sha256": "d7dfe8eb575eafe5847123a877970dd6b3714f3f77bef078911fc365bbf9c21d",
+  "transmitted_image_sha256": "79b50995130b934990e87b65e456aefae61c071b8bd44c542fde91c5079fcfb2",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.1644045,
+      "total": 10,
+      "remaining": 4.8355955,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.164404500000003,
+      "total": 100,
+      "remaining": 94.8355955,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.00638966797851,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi serta \"Sumber dan alasan\" yang diberikan dalam soal, di mana kiasan **'melempar sauh'** (jangkar) diinterpretasikan mengacu pada **permainan atau pertandingan** terkait arah dan strategi politik, maka kategori domain sumber metaforanya adalah:\n\n**G**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "g_rKaqWoD8CS_uMPqPCfqA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1444,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1379
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2090000,
+        "output_tokens_cost_nanodollars": 4332000
+      },
+      "prompt_tokens": 4180,
+      "total_backend_latency_ms": 7448,
+      "total_tokens": 5624
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.1708265,
+      "total": 10,
+      "remaining": 4.8291735,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.170826500000004,
+      "total": 100,
+      "remaining": 94.8291735,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.006422,
+  "code": "G",
+  "strict_code": "INVALID",
+  "parsing_rule": "boundary_single_code",
+  "finish_reason": "stop",
+  "prediction": "PERMAINAN_KONTES"
+}

@@ -1,0 +1,87 @@
+{
+  "index": 235,
+  "sample_id": "TMP-05BFC110D962",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "7b09a82702f1db581fc15e5c7540f11fb9dd69f989fcf9bb20b71eb179906c93",
+  "image_sha256": "05bfc110d962a516169ee41cf662ea220892cb0749ace3cea7bf86b2124d344b",
+  "transmitted_image_sha256": "ba7bdad6c04f3535f01a318d24ee1e5f4aabf6ed1d05723bd274478151fa457c",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.358045,
+      "total": 10,
+      "remaining": 1.6419549999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.358045000000004,
+      "total": 100,
+      "remaining": 91.641955,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3573294281959534,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A rifle with four tally marks\",\n  \"source_properties\": \"A weapon used for lethal force; scratches represent a count of successful kills.\",\n  \"target_situation\": \"An armed assault at Cebongan prison involving elite commandos.\",\n  \"mapping\": \"The rifle symbolizes military involvement, while the four marks represent the four prisoners killed.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "RZPLaqDEKIK5_PUPwPPqwQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 659500,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1319,
+      "total_backend_latency_ms": 1747,
+      "total_tokens": 1411
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3589805,
+      "total": 10,
+      "remaining": 1.6410195000000005,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.358980500000001,
+      "total": 100,
+      "remaining": 91.6410195,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009355,
+  "fields": {
+    "source_object": "A rifle with four tally marks",
+    "source_properties": "A weapon used for lethal force; scratches represent a count of successful kills.",
+    "target_situation": "An armed assault at Cebongan prison involving elite commandos.",
+    "mapping": "The rifle symbolizes military involvement, while the four marks represent the four prisoners killed.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A rifle with four tally marks\nsource_properties: A weapon used for lethal force; scratches represent a count of successful kills.\ntarget_situation: An armed assault at Cebongan prison involving elite commandos.\nmapping: The rifle symbolizes military involvement, while the four marks represent the four prisoners killed.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

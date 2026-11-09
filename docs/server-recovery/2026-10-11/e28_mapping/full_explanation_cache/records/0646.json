@@ -1,0 +1,87 @@
+{
+  "index": 646,
+  "sample_id": "TMP-794ABE370C2E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bc6f63afcc3562a141629ca99fd61dcbb7e5613c085d5281d014d4b41f30485f",
+  "image_sha256": "794abe370c2e037752c8004634318f428cbf6371ecc32194604e478aca1ff246",
+  "transmitted_image_sha256": "b1758c561f1c5214062d014d26b95b4affff16f26f8fe7c4f71150b74f76485c",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9155975,
+      "total": 10,
+      "remaining": 1.0844024999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.915597500000004,
+      "total": 100,
+      "remaining": 91.0844025,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3725209003314376,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"A public bus\", \"source_properties\": \"A large vehicle for group transport, moving along a fixed route, leaving individuals behind.\", \"target_situation\": \"Political coalitions and the exclusion of a specific candidate from the Jakarta gubernatorial race.\", \"mapping\": \"The bus labeled 'KIM PLUS' represents the political coalition moving forward together, leaving Anies Baswedan behind on the roadside.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "8Z3LauL5Isfh_uMPvKet6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 685500,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1371,
+      "total_backend_latency_ms": 1763,
+      "total_tokens": 1463
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.916559,
+      "total": 10,
+      "remaining": 1.0834410000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.916559000000007,
+      "total": 100,
+      "remaining": 91.083441,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009615,
+  "fields": {
+    "source_object": "A public bus",
+    "source_properties": "A large vehicle for group transport, moving along a fixed route, leaving individuals behind.",
+    "target_situation": "Political coalitions and the exclusion of a specific candidate from the Jakarta gubernatorial race.",
+    "mapping": "The bus labeled 'KIM PLUS' represents the political coalition moving forward together, leaving Anies Baswedan behind on the roadside.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A public bus\nsource_properties: A large vehicle for group transport, moving along a fixed route, leaving individuals behind.\ntarget_situation: Political coalitions and the exclusion of a specific candidate from the Jakarta gubernatorial race.\nmapping: The bus labeled 'KIM PLUS' represents the political coalition moving forward together, leaving Anies Baswedan behind on the roadside.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 433,
+  "sample_id": "TMP-D7DFE8EB575E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "4a0c326bf659ab216116fa8cf0ed88bd9026008e51e1cb28a9bc93d79ef30787",
+  "image_sha256": "d7dfe8eb575eafe5847123a877970dd6b3714f3f77bef078911fc365bbf9c21d",
+  "transmitted_image_sha256": "cf2a92bbb743071af60276776c3bd424f9aaff7e500ad75e1ef964c7b877c72c",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6325625,
+      "total": 10,
+      "remaining": 1.3674374999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.632562500000006,
+      "total": 100,
+      "remaining": 91.3674375,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.8162537119351327,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"anchor (sauh)\", \"source_properties\": \"A heavy metal device used to secure a vessel to the seabed, preventing it from drifting.\", \"target_situation\": \"The Democratic Party's shift from trying to ally with Jokowi to forming a new political alliance with Prabowo.\", \"mapping\": \"Throwing an anchor symbolizes the party establishing a firm, secure political commitment and position within a specific coalition to stabilize its future.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ZpjLaryFF-iv_PUPldGEyA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681000,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1362,
+      "total_backend_latency_ms": 1706,
+      "total_tokens": 1461
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6335405,
+      "total": 10,
+      "remaining": 1.3664594999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.633540499999995,
+      "total": 100,
+      "remaining": 91.3664595,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000978,
+  "fields": {
+    "source_object": "anchor (sauh)",
+    "source_properties": "A heavy metal device used to secure a vessel to the seabed, preventing it from drifting.",
+    "target_situation": "The Democratic Party's shift from trying to ally with Jokowi to forming a new political alliance with Prabowo.",
+    "mapping": "Throwing an anchor symbolizes the party establishing a firm, secure political commitment and position within a specific coalition to stabilize its future.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: anchor (sauh)\nsource_properties: A heavy metal device used to secure a vessel to the seabed, preventing it from drifting.\ntarget_situation: The Democratic Party's shift from trying to ally with Jokowi to forming a new political alliance with Prabowo.\nmapping: Throwing an anchor symbolizes the party establishing a firm, secure political commitment and position within a specific coalition to stabilize its future.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

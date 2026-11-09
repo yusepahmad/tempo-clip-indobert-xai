@@ -1,0 +1,83 @@
+{
+  "index": 237,
+  "sample_id": "TMP-0F2AB89F2813",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "c1d84914970a321ecc8a3cd5e1f4a793eb24cb34883ea773411850c3ea2073c4",
+  "image_sha256": "0f2ab89f281378a4a6511e7732f1552a5e949f58f4ae542ac7c5c2ba9c6b05a1",
+  "transmitted_image_sha256": "fa2d42e06f1c0d097675615d5bf07f45a159614f98eea33b8a68e15224029abf",
+  "image_size": [
+    303,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.8833300000000008,
+      "total": 10,
+      "remaining": 9.11667,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.8833300000000008,
+      "total": 100,
+      "remaining": 99.11667,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.3292308419477195,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "B berdasarkan alasan yang diberikan dalam deskripsi bahwa potret wajah tersebut \"dipotong-potong seperti bagian tubuh atau potongan anatomi\", yang sesuai dengan domain **HEWAN_TUBUH** (mencakup anatomi dan deformasi sebagai kiasan).",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ztTKaoKgK87E_PUPtKy7yQo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1078,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1025
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 768500,
+        "output_tokens_cost_nanodollars": 3234000
+      },
+      "prompt_tokens": 1537,
+      "total_backend_latency_ms": 6015,
+      "total_tokens": 2615
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.8873324999999994,
+      "total": 10,
+      "remaining": 9.1126675,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.8873324999999994,
+      "total": 100,
+      "remaining": 99.1126675,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.0040025
+}

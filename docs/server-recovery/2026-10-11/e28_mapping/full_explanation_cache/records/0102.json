@@ -1,0 +1,90 @@
+{
+  "index": 102,
+  "sample_id": "TMP-6A2B7C7F8D10",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c239cfa8493d3839ec514d479479a0598fe7f6b3ad1803bba39528897fe6b947",
+  "image_sha256": "6a2b7c7f8d101f60fa4bf5281f463a92e0a93e16c900a5c19c247be117d3f7d4",
+  "transmitted_image_sha256": "be430326c6d439c4577204b2f4026e5b79ab8df3a8672c8cbf599aa2dcc71d8b",
+  "image_size": [
+    300,
+    393
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.150827,
+      "total": 10,
+      "remaining": 1.8491730000000004,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.150827000000007,
+      "total": 100,
+      "remaining": 91.849173,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.028083317913115,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"A podium displaying the national emblem, overflowing with currency.\", \"source_properties\": \"A formal speaking platform unable to contain an excessive, disorderly influx of cash.\", \"target_situation\": \"Allegations of financial scandal regarding presidential aid funds (Banpres).\", \"mapping\": \"The overflowing podium represents how official presidential power is being overwhelmed or compromised by illicit money.\", \"uncertainty\": \"None.\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "xo_LaqDyJf-o_uMPl6-88Q4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 682,
+      "completion_tokens_details": {
+        "reasoning_tokens": 595
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 659000,
+        "output_tokens_cost_nanodollars": 2046000
+      },
+      "prompt_tokens": 1318,
+      "total_backend_latency_ms": 4093,
+      "total_tokens": 2000
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.153532,
+      "total": 10,
+      "remaining": 1.8464679999999998,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.153531999999998,
+      "total": 100,
+      "remaining": 91.846468,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.002705,
+  "fields": {
+    "source_object": "A podium displaying the national emblem, overflowing with currency.",
+    "source_properties": "A formal speaking platform unable to contain an excessive, disorderly influx of cash.",
+    "target_situation": "Allegations of financial scandal regarding presidential aid funds (Banpres).",
+    "mapping": "The overflowing podium represents how official presidential power is being overwhelmed or compromised by illicit money.",
+    "uncertainty": "None."
+  },
+  "explanation": "source_object: A podium displaying the national emblem, overflowing with currency.\nsource_properties: A formal speaking platform unable to contain an excessive, disorderly influx of cash.\ntarget_situation: Allegations of financial scandal regarding presidential aid funds (Banpres).\nmapping: The overflowing podium represents how official presidential power is being overwhelmed or compromised by illicit money.\nuncertainty: None.",
+  "finish_reason": "stop",
+  "usable": true
+}

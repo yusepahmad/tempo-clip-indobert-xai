@@ -1,0 +1,86 @@
+{
+  "index": 712,
+  "sample_id": "TMP-494603ADB43A",
+  "fold": 3,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "8d30d28ffcc834eb1f4cc133cc9869e3cae95c3c02f819de16b4b51b5cc6c77e",
+  "image_sha256": "494603adb43ab6a5113678ea136155ff8017b271f4161a8f22a045686b151f1d",
+  "transmitted_image_sha256": "55ecc6b35624b98f20cb5f282057fed037040357f2e8703a64fea66a23bebbb0",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 6.6575945,
+      "total": 10,
+      "remaining": 3.3424055,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 6.657594500000002,
+      "total": 100,
+      "remaining": 93.3424055,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 16.15982846892439,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan panduan kategori dan contoh training yang diberikan, berikut adalah analisis untuk sampul tersebut:\n\n1.  **Analisis Visual:** Ilustrasi (foto) menampilkan pemandangan literal dari krisis kemanusiaan di Gaza, yang menunjukkan anak-anak dalam kondisi menderita, ketakutan, dan kelaparan dengan membawa panci kosong. Tidak ada penggunaan objek dari ranah lain (seperti mesin, permainan, atau hewan) untuk menggantikan subjek berita.\n2.  **Analisis Konteks:** Judul \"Dua Tahun Genosida Palestina\" dan teks penjelasnya secara langsung membahas peristiwa yang digambarkan dalam foto tersebut.\n3.  **Pemetaan Metaforis:** Meskipun deskripsi \"Sumber dan alasan\" menyebutkan pemetaan mekanisme bahaya dan tekanan sebagai metafora, pola ini identik dengan contoh training pada **kode F (NON_METAFORA)**. Contoh F juga menggunakan deskripsi \"secara metaforis mewakili tekanan\" atau \"memetakan tekanan\" namun tetap diklasifikasikan sebagai NON_METAFORA karena adegan yang ditampilkan adalah adegan literal (nyata) dari peristiwa yang dilaporkan, bukan kiasan dari ranah sumber yang berbeda.\n\nOleh karena itu, sampul ini dikategorikan sebagai adegan literal tanpa pemetaan metaforis lintas domain.\n\nJawab: **F**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "YTbLap_0DK2u_PUPk7_C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 3070,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2786
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2067000,
+        "output_tokens_cost_nanodollars": 9210000
+      },
+      "prompt_tokens": 4134,
+      "total_backend_latency_ms": 14717,
+      "total_tokens": 7204
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 6.6688715,
+      "total": 10,
+      "remaining": 3.3311285,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 6.6688714999999945,
+      "total": 100,
+      "remaining": 93.3311285,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.011277,
+  "code": "F",
+  "strict_code": "INVALID",
+  "parsing_rule": "explicit_prefix_code",
+  "finish_reason": "stop",
+  "prediction": "NON_METAFORA"
+}

@@ -1,0 +1,87 @@
+{
+  "index": 250,
+  "sample_id": "TMP-274E1F097FE7",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "335f17e232416290432e0a21fad893d7fdd4b2823a5bc3689fbd348997b23fa5",
+  "image_sha256": "274e1f097fe7140eb2bdaede574eb3ac4277f1e3c288191194f57f7526bf27a2",
+  "transmitted_image_sha256": "e28da71196c9e99685c3f13c72d830767a75a8aee781eded44ed84423d5400d1",
+  "image_size": [
+    614,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3863115,
+      "total": 10,
+      "remaining": 1.6136885000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.386311500000005,
+      "total": 100,
+      "remaining": 91.6136885,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.101513104978949,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"none evident\", \"source_properties\": \"literal black and white portrait of an elderly man wearing round glasses, a songkok, and a goatee\", \"target_situation\": \"a special independence edition profiling Agus Salim as a witty diplomat and pillar of the Indonesian Republic\", \"mapping\": \"the image is a literal historical photograph of the subject, Agus Salim, directly representing the person discussed in the text\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "t5PLau7uCpic_uMP95SR0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 643000,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1286,
+      "total_backend_latency_ms": 1861,
+      "total_tokens": 1380
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3872365,
+      "total": 10,
+      "remaining": 1.6127634999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.3872365,
+      "total": 100,
+      "remaining": 91.6127635,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000925,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "literal black and white portrait of an elderly man wearing round glasses, a songkok, and a goatee",
+    "target_situation": "a special independence edition profiling Agus Salim as a witty diplomat and pillar of the Indonesian Republic",
+    "mapping": "the image is a literal historical photograph of the subject, Agus Salim, directly representing the person discussed in the text",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: literal black and white portrait of an elderly man wearing round glasses, a songkok, and a goatee\ntarget_situation: a special independence edition profiling Agus Salim as a witty diplomat and pillar of the Indonesian Republic\nmapping: the image is a literal historical photograph of the subject, Agus Salim, directly representing the person discussed in the text\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

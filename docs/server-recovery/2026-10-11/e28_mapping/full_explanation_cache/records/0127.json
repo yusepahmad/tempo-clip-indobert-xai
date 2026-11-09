@@ -1,0 +1,87 @@
+{
+  "index": 127,
+  "sample_id": "TMP-4609396B0FD6",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "fb90943f3b7345bbdee451300280800f2c4fbdf871315d10dff09102b2489635",
+  "image_sha256": "4609396b0fd6eee53e40f54503158f1e4f5925574278c5830711404c079f37ed",
+  "transmitted_image_sha256": "5421853155b2584283bb60706df33d1c0f7274456095da641040922552f6eaaf",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1932305,
+      "total": 10,
+      "remaining": 1.8067694999999997,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.193230499999999,
+      "total": 100,
+      "remaining": 91.8067695,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.234267449937761,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A group of predatory and venomous animals\",\n  \"source_properties\": \"Dangerous, aggressive, and encircling behaviors of a crocodile, snake, scorpion, and spider.\",\n  \"target_situation\": \"The KPK (Anti-Corruption Commission) facing systemic attacks after naming a high-profile suspect.\",\n  \"mapping\": \"The menacing animals surrounding the text represent 'attacks from all sides' against the agency.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "cpDLareyFrXP_uMPiOzhoQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674000,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1348,
+      "total_backend_latency_ms": 1911,
+      "total_tokens": 1454
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1942225,
+      "total": 10,
+      "remaining": 1.8057774999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.194222499999995,
+      "total": 100,
+      "remaining": 91.8057775,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000992,
+  "fields": {
+    "source_object": "A group of predatory and venomous animals",
+    "source_properties": "Dangerous, aggressive, and encircling behaviors of a crocodile, snake, scorpion, and spider.",
+    "target_situation": "The KPK (Anti-Corruption Commission) facing systemic attacks after naming a high-profile suspect.",
+    "mapping": "The menacing animals surrounding the text represent 'attacks from all sides' against the agency.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A group of predatory and venomous animals\nsource_properties: Dangerous, aggressive, and encircling behaviors of a crocodile, snake, scorpion, and spider.\ntarget_situation: The KPK (Anti-Corruption Commission) facing systemic attacks after naming a high-profile suspect.\nmapping: The menacing animals surrounding the text represent 'attacks from all sides' against the agency.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

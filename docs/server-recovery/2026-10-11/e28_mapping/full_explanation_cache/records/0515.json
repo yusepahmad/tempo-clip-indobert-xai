@@ -1,0 +1,87 @@
+{
+  "index": 515,
+  "sample_id": "TMP-E254831AA10D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "d8c3ec4f2b32e47de6cd1d7bb3e54a0a94e471584f94e44cf5f4567b11fb0803",
+  "image_sha256": "e254831aa10dbb90a6e02030f556816bad0077fb6904993c4e31832114f2a9a9",
+  "transmitted_image_sha256": "760a2ab144bd16de376e9561c973b2abb90bc6bb588b6af25d2585d407ae7bb2",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7429045,
+      "total": 10,
+      "remaining": 1.2570955000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.742904499999995,
+      "total": 100,
+      "remaining": 91.2570955,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4965594820678234,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"bulldozer and red carpet\", \"source_properties\": \"A heavy machine crushing everything in its path, following a red carpet being unrolled ahead of it.\", \"target_situation\": \"The Omnibus Law process favoring business interests over labor and environmental protections.\", \"mapping\": \"The bulldozer represents the unstoppable legislative force clearing obstacles for businesses, while the red carpet symbolizes the special, prioritized path created for them.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "iZrLauHGFZOo_uMPmu77-As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679000,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1358,
+      "total_backend_latency_ms": 2012,
+      "total_tokens": 1451
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7438625,
+      "total": 10,
+      "remaining": 1.2561374999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.743862500000006,
+      "total": 100,
+      "remaining": 91.2561375,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000958,
+  "fields": {
+    "source_object": "bulldozer and red carpet",
+    "source_properties": "A heavy machine crushing everything in its path, following a red carpet being unrolled ahead of it.",
+    "target_situation": "The Omnibus Law process favoring business interests over labor and environmental protections.",
+    "mapping": "The bulldozer represents the unstoppable legislative force clearing obstacles for businesses, while the red carpet symbolizes the special, prioritized path created for them.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: bulldozer and red carpet\nsource_properties: A heavy machine crushing everything in its path, following a red carpet being unrolled ahead of it.\ntarget_situation: The Omnibus Law process favoring business interests over labor and environmental protections.\nmapping: The bulldozer represents the unstoppable legislative force clearing obstacles for businesses, while the red carpet symbolizes the special, prioritized path created for them.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

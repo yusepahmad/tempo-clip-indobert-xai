@@ -1,0 +1,90 @@
+{
+  "index": 685,
+  "sample_id": "TMP-F32D8D2250DE",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "2dc2861e454e1f6a367a135eaf8c4e76ac57b71b377437ff75e334bfa12f559d",
+  "image_sha256": "f32d8d2250ded0ca2160d0362e9c05abdbc46659c155c5021921aab4ef960a99",
+  "transmitted_image_sha256": "3646d36c3b12e4772572b064fe8330d3a8675ac459449a8c09054f2ada68ab1c",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.984327,
+      "total": 10,
+      "remaining": 1.0156729999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.984326999999993,
+      "total": 100,
+      "remaining": 91.015673,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.197142377030104,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A roller coaster at the crest of a steep drop.\",\n  \"source_properties\": \"A high peak followed by a sharp, jagged downward trajectory.\",\n  \"target_situation\": \"The sudden decline of economic indicators under Prabowo\u2019s leadership.\",\n  \"mapping\": \"The roller coaster's plunge visualizes plummeting indicators, while the rider looking through a telescope signifies overconfidence or unawareness of the imminent crash.\",\n  \"uncertainty\": \"None.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "CJ_LaubUNoK5_PUPwPPqwQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 544,
+      "completion_tokens_details": {
+        "reasoning_tokens": 436
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 682000,
+        "output_tokens_cost_nanodollars": 1632000
+      },
+      "prompt_tokens": 1364,
+      "total_backend_latency_ms": 3680,
+      "total_tokens": 1908
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.986641,
+      "total": 10,
+      "remaining": 1.0133589999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.986641000000006,
+      "total": 100,
+      "remaining": 91.013359,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.002314,
+  "fields": {
+    "source_object": "A roller coaster at the crest of a steep drop.",
+    "source_properties": "A high peak followed by a sharp, jagged downward trajectory.",
+    "target_situation": "The sudden decline of economic indicators under Prabowo\u2019s leadership.",
+    "mapping": "The roller coaster's plunge visualizes plummeting indicators, while the rider looking through a telescope signifies overconfidence or unawareness of the imminent crash.",
+    "uncertainty": "None."
+  },
+  "explanation": "source_object: A roller coaster at the crest of a steep drop.\nsource_properties: A high peak followed by a sharp, jagged downward trajectory.\ntarget_situation: The sudden decline of economic indicators under Prabowo\u2019s leadership.\nmapping: The roller coaster's plunge visualizes plummeting indicators, while the rider looking through a telescope signifies overconfidence or unawareness of the imminent crash.\nuncertainty: None.",
+  "finish_reason": "stop",
+  "usable": true
+}

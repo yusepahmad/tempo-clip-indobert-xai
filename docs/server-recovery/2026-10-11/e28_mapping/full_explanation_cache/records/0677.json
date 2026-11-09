@@ -1,0 +1,90 @@
+{
+  "index": 677,
+  "sample_id": "TMP-71AD7DBA479A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a560b48600dcd4555def52e7a392ec7e01beb6c9c73de4118a807ab0f0677b8c",
+  "image_sha256": "71ad7dba479ae4cb76eba5917851acd2025609d39feb9ba9f9a5e19f0533dcee",
+  "transmitted_image_sha256": "d274814d340cc5496f422e67e23516173cb8faee9fc55aa05ffa7dda0404d2a5",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.967710499999999,
+      "total": 10,
+      "remaining": 1.032289500000001,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.967710499999995,
+      "total": 100,
+      "remaining": 91.0322895,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.869110119063407,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A long, trailing white garment or turban cloth.\",\n  \"source_properties\": \"A long, divisible material attached to a central figure, being grabbed and pulled by many hands from different directions.\",\n  \"target_situation\": \"The illicit sale and acquisition of the prestigious 'Habib' title.\",\n  \"mapping\": \"Pulling at the long fabric symbolizes individuals scrambling to 'grab' or purchase a piece of a prestigious lineage, risking the degradation of the identity's integrity.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "zJ7LaoTENreR_uMPm_GWuA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 853,
+      "completion_tokens_details": {
+        "reasoning_tokens": 733
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 666500,
+        "output_tokens_cost_nanodollars": 2559000
+      },
+      "prompt_tokens": 1333,
+      "total_backend_latency_ms": 5282,
+      "total_tokens": 2186
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.970936,
+      "total": 10,
+      "remaining": 1.029064,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.970935999999995,
+      "total": 100,
+      "remaining": 91.029064,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0032255,
+  "fields": {
+    "source_object": "A long, trailing white garment or turban cloth.",
+    "source_properties": "A long, divisible material attached to a central figure, being grabbed and pulled by many hands from different directions.",
+    "target_situation": "The illicit sale and acquisition of the prestigious 'Habib' title.",
+    "mapping": "Pulling at the long fabric symbolizes individuals scrambling to 'grab' or purchase a piece of a prestigious lineage, risking the degradation of the identity's integrity.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A long, trailing white garment or turban cloth.\nsource_properties: A long, divisible material attached to a central figure, being grabbed and pulled by many hands from different directions.\ntarget_situation: The illicit sale and acquisition of the prestigious 'Habib' title.\nmapping: Pulling at the long fabric symbolizes individuals scrambling to 'grab' or purchase a piece of a prestigious lineage, risking the degradation of the identity's integrity.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

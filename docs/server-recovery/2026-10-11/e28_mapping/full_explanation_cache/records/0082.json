@@ -1,0 +1,87 @@
+{
+  "index": 82,
+  "sample_id": "TMP-A2FB22BEA055",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "80e0eedac8af943e2c0a619366ed79de88277d8f3dcffcab4a6e01a2feb7ff05",
+  "image_sha256": "a2fb22bea05572ba2e45b808aef3d895b0b824a78afab211af50cc886eb1d6f7",
+  "transmitted_image_sha256": "17a794255ef6b58caaeeedb6f8e83411354f566597f54ef91549b140525a7a86",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.123237,
+      "total": 10,
+      "remaining": 1.8767630000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.123237000000003,
+      "total": 100,
+      "remaining": 91.876763,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4155237022787333,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"chariot driver with reins\", \"source_properties\": \"A dominant figure holding cords attached to others, physically controlling their movement and direction by force.\", \"target_situation\": \"Firli Bahuri's alleged coercive control over his colleagues at the KPK.\", \"mapping\": \"Firli acts as the driver, using 'reins' to metaphorically take his colleagues hostage and dictate their actions through ignoble means.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "RY_LaurVA_-o_uMP1rjw6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 98,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680000,
+        "output_tokens_cost_nanodollars": 294000
+      },
+      "prompt_tokens": 1360,
+      "total_backend_latency_ms": 1822,
+      "total_tokens": 1458
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.124211,
+      "total": 10,
+      "remaining": 1.8757889999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.124211000000003,
+      "total": 100,
+      "remaining": 91.875789,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000974,
+  "fields": {
+    "source_object": "chariot driver with reins",
+    "source_properties": "A dominant figure holding cords attached to others, physically controlling their movement and direction by force.",
+    "target_situation": "Firli Bahuri's alleged coercive control over his colleagues at the KPK.",
+    "mapping": "Firli acts as the driver, using 'reins' to metaphorically take his colleagues hostage and dictate their actions through ignoble means.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: chariot driver with reins\nsource_properties: A dominant figure holding cords attached to others, physically controlling their movement and direction by force.\ntarget_situation: Firli Bahuri's alleged coercive control over his colleagues at the KPK.\nmapping: Firli acts as the driver, using 'reins' to metaphorically take his colleagues hostage and dictate their actions through ignoble means.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

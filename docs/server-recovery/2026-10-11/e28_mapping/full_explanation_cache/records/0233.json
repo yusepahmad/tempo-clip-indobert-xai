@@ -1,0 +1,87 @@
+{
+  "index": 233,
+  "sample_id": "TMP-A13E4B35202C",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "79741961c5fd32dda33fa29d488204538ba17464e570a425c4044ddf6f44928c",
+  "image_sha256": "a13e4b35202c86293ece419892f154d576ccc9ea514fb7e796509995c9dae6bd",
+  "transmitted_image_sha256": "8c9fcb8b2a5165ee8d093a126e88e7e63cbda1a5c1b03bac1fc29a539caa7191",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.350782,
+      "total": 10,
+      "remaining": 1.6492179999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.350781999999995,
+      "total": 100,
+      "remaining": 91.649218,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2095319922082126,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"assault rifle\",\n  \"source_properties\": \"a lethal weapon designed for combat and military force\",\n  \"target_situation\": \"President Susilo Bambang Yudhoyono (SBY) facing rumors of a political coup\",\n  \"mapping\": \"holding the rifle symbolizes SBY\u2019s defensive readiness or military background against political threats\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "MZPLarLiNu2M_PUPz_vKgQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 657500,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1315,
+      "total_backend_latency_ms": 1631,
+      "total_tokens": 1408
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3517185,
+      "total": 10,
+      "remaining": 1.6482814999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.351718500000004,
+      "total": 100,
+      "remaining": 91.6482815,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009365,
+  "fields": {
+    "source_object": "assault rifle",
+    "source_properties": "a lethal weapon designed for combat and military force",
+    "target_situation": "President Susilo Bambang Yudhoyono (SBY) facing rumors of a political coup",
+    "mapping": "holding the rifle symbolizes SBY\u2019s defensive readiness or military background against political threats",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: assault rifle\nsource_properties: a lethal weapon designed for combat and military force\ntarget_situation: President Susilo Bambang Yudhoyono (SBY) facing rumors of a political coup\nmapping: holding the rifle symbolizes SBY\u2019s defensive readiness or military background against political threats\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

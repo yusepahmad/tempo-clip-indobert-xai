@@ -1,0 +1,87 @@
+{
+  "index": 724,
+  "sample_id": "TMP-3B1D255E897E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "eafd7c17021fc39319dd887bc7f3339af48e0445758f50aaf557eb51a2dc55ba",
+  "image_sha256": "3b1d255e897ec7a265f896d9aa7f6de88740d1a9bfdcdcf43ea4d867d2f8a993",
+  "transmitted_image_sha256": "52efd459f67839ccd26d6180971b03ec6049037d20b2a13233b05d141b84959d",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0489155,
+      "total": 10,
+      "remaining": 0.9510845000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.048915500000007,
+      "total": 100,
+      "remaining": 90.9510845,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.7306584189645946,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A referee raising a winner's arm\",\n  \"source_properties\": \"Central figure holding up the arm of one side to declare victory in a contest.\",\n  \"target_situation\": \"Political interests prevailing over police reform recommendations.\",\n  \"mapping\": \"The central figure acts as a referee, signaling that the police chief's interests won.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "FqDLauLXEsCS_uMPqPCfqA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677500,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1355,
+      "total_backend_latency_ms": 2179,
+      "total_tokens": 1448
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.049872,
+      "total": 10,
+      "remaining": 0.9501279999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.049871999999993,
+      "total": 100,
+      "remaining": 90.950128,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009565,
+  "fields": {
+    "source_object": "A referee raising a winner's arm",
+    "source_properties": "Central figure holding up the arm of one side to declare victory in a contest.",
+    "target_situation": "Political interests prevailing over police reform recommendations.",
+    "mapping": "The central figure acts as a referee, signaling that the police chief's interests won.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A referee raising a winner's arm\nsource_properties: Central figure holding up the arm of one side to declare victory in a contest.\ntarget_situation: Political interests prevailing over police reform recommendations.\nmapping: The central figure acts as a referee, signaling that the police chief's interests won.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

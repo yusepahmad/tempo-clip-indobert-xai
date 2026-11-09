@@ -1,0 +1,87 @@
+{
+  "index": 507,
+  "sample_id": "TMP-408E8FD8A355",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e8bd46744cce4ad643291a727ed0f9b193e5dc109879eb75962d77636436acbe",
+  "image_sha256": "408e8fd8a355734c249c0ee69a7a0106a11a006ebfa94ee73ea3ba09768af0ca",
+  "transmitted_image_sha256": "879948f5b50848a2f7b54eaf3112bdf6a4fea07266355db8dfa841b6650c4b68",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.727473,
+      "total": 10,
+      "remaining": 1.2725270000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.727473000000003,
+      "total": 100,
+      "remaining": 91.272527,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.9279339788481593,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Grid of disparate image fragments\", \"source_properties\": \"Fragmented, tiled layout, featuring money, industrial equipment, and a watchful eye emblem.\", \"target_situation\": \"The FinCEN Files global money-laundering investigation.\", \"mapping\": \"The grid structure mirrors how investigative journalists pieced together scattered, clandestine financial transactions into a single, cohesive global network map.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "UJrLavOwF5-d_uMPlqrYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 687500,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1375,
+      "total_backend_latency_ms": 2243,
+      "total_tokens": 1465
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7284305,
+      "total": 10,
+      "remaining": 1.2715695,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.728430500000002,
+      "total": 100,
+      "remaining": 91.2715695,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009575,
+  "fields": {
+    "source_object": "Grid of disparate image fragments",
+    "source_properties": "Fragmented, tiled layout, featuring money, industrial equipment, and a watchful eye emblem.",
+    "target_situation": "The FinCEN Files global money-laundering investigation.",
+    "mapping": "The grid structure mirrors how investigative journalists pieced together scattered, clandestine financial transactions into a single, cohesive global network map.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Grid of disparate image fragments\nsource_properties: Fragmented, tiled layout, featuring money, industrial equipment, and a watchful eye emblem.\ntarget_situation: The FinCEN Files global money-laundering investigation.\nmapping: The grid structure mirrors how investigative journalists pieced together scattered, clandestine financial transactions into a single, cohesive global network map.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

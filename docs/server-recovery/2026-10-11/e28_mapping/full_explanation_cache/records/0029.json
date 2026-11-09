@@ -1,0 +1,87 @@
+{
+  "index": 29,
+  "sample_id": "TMP-BB220780A305",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "acd7c14660c7c042bab589be51f9ca4d42ed035f0b60f40e5d44a28a1550ee39",
+  "image_sha256": "bb220780a305436580b6125e344244498cd82eedb65fc6a13718ce337d18c917",
+  "transmitted_image_sha256": "92f799af38c2d77326262e44a5f69653c9a71e1076cba398d1091de1658be72d",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0525865,
+      "total": 10,
+      "remaining": 1.9474134999999997,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.052586500000004,
+      "total": 100,
+      "remaining": 91.9474135,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.69426986714825,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"video conference interface\", \"source_properties\": \"A grid of rectangular video tiles displaying individual participants remotely connecting via screens.\", \"target_situation\": \"The disruption and hacking of critical online government-themed meetings and activist social media accounts.\", \"mapping\": \"The grid structure represents a collective online gathering, while flames erupting across tiles symbolize the targeted digital attacks (terror) sabotaging the group.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "5Y3LarzfBa2u_PUPk7_C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 665500,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1331,
+      "total_backend_latency_ms": 1958,
+      "total_tokens": 1423
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.053528,
+      "total": 10,
+      "remaining": 1.946472,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.053528,
+      "total": 100,
+      "remaining": 91.946472,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009415,
+  "fields": {
+    "source_object": "video conference interface",
+    "source_properties": "A grid of rectangular video tiles displaying individual participants remotely connecting via screens.",
+    "target_situation": "The disruption and hacking of critical online government-themed meetings and activist social media accounts.",
+    "mapping": "The grid structure represents a collective online gathering, while flames erupting across tiles symbolize the targeted digital attacks (terror) sabotaging the group.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: video conference interface\nsource_properties: A grid of rectangular video tiles displaying individual participants remotely connecting via screens.\ntarget_situation: The disruption and hacking of critical online government-themed meetings and activist social media accounts.\nmapping: The grid structure represents a collective online gathering, while flames erupting across tiles symbolize the targeted digital attacks (terror) sabotaging the group.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

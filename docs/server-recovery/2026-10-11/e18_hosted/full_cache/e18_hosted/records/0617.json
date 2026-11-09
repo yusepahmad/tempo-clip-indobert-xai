@@ -1,0 +1,83 @@
+{
+  "index": 617,
+  "sample_id": "TMP-47DB5FF75350",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "25918bb2b788951a71748d69c2e224904f6582c884fb8bd2428c987578d2b47f",
+  "image_sha256": "47db5ff753508ec70f88336777b7d0b6074c7289e20bc3a43315f54f9ea2651e",
+  "transmitted_image_sha256": "ea3e03f18d398ed149507805d80dbe1369421f63833f954e4e460ca3d26bc5e1",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.320118,
+      "total": 10,
+      "remaining": 7.679882,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.3201179999999937,
+      "total": 100,
+      "remaining": 97.679882,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.329017795156687,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan ilustrasi yang menampilkan seorang tokoh menggunakan **palu** (sebagai **alat**) untuk menghancurkan atau meretakkan sebuah permukaan (yang merepresentasikan struktur hukum atau fondasi negara/wilayah), domain sumber metafora ini masuk ke dalam kategori alat dan perusakan struktur fisik.\n\nJawab satu kode A sampai G: **E**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "B-TKasmYIu2M_PUPpv3KiQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1381,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1309
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 795000,
+        "output_tokens_cost_nanodollars": 4143000
+      },
+      "prompt_tokens": 1590,
+      "total_backend_latency_ms": 7339,
+      "total_tokens": 2971
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.325056,
+      "total": 10,
+      "remaining": 7.674944,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.3250560000000036,
+      "total": 100,
+      "remaining": 97.674944,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.004938
+}

@@ -1,0 +1,87 @@
+{
+  "index": 156,
+  "sample_id": "TMP-9DFB6D54F9C1",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "215d3479635278705be3251ace26cb14d2e1eedf6b7a52caa8b5a1f5a099b7e2",
+  "image_sha256": "9dfb6d54f9c181bd7f1b9c5bfb66c8ac17f918d62ca178f18ba71edffe670c0a",
+  "transmitted_image_sha256": "86674aabb5c03736c37216c9ae7f7804bf7b8382aa1ee1f49fddab21f951a20e",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2390275,
+      "total": 10,
+      "remaining": 1.7609724999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.239027500000006,
+      "total": 100,
+      "remaining": 91.7609725,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.54140399210155,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"large axe\",\n  \"source_properties\": \"sharp, heavy-bladed tool used for chopping and clearing wood\",\n  \"target_situation\": \"ministerial policy impacting restoration forests in Jambi and South Sumatra\",\n  \"mapping\": \"swinging the axe symbolizes policy decisions that aggressively cut down forest protections\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "PJHLasiiJ5-d_uMPlqrYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678500,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1357,
+      "total_backend_latency_ms": 1847,
+      "total_tokens": 1443
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.239964,
+      "total": 10,
+      "remaining": 1.7600359999999995,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.239964,
+      "total": 100,
+      "remaining": 91.760036,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009365,
+  "fields": {
+    "source_object": "large axe",
+    "source_properties": "sharp, heavy-bladed tool used for chopping and clearing wood",
+    "target_situation": "ministerial policy impacting restoration forests in Jambi and South Sumatra",
+    "mapping": "swinging the axe symbolizes policy decisions that aggressively cut down forest protections",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: large axe\nsource_properties: sharp, heavy-bladed tool used for chopping and clearing wood\ntarget_situation: ministerial policy impacting restoration forests in Jambi and South Sumatra\nmapping: swinging the axe symbolizes policy decisions that aggressively cut down forest protections\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,90 @@
+{
+  "index": 108,
+  "sample_id": "TMP-CB61DBBE8745",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "195c92ab7f69c855b81a54c971a43dfc8bb8a715a90062e71df1d11f9e62ac9b",
+  "image_sha256": "cb61dbbe8745cd09b1eb06cfc65d725fbc8f9f1a77372b4e3a2d2b820bcab657",
+  "transmitted_image_sha256": "565978ebac433b9f5813ace0c42963f52c642b72e16b3756d3d809e9ec981290",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.163814,
+      "total": 10,
+      "remaining": 1.8361859999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.163814000000002,
+      "total": 100,
+      "remaining": 91.836186,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.04711111728102,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A peeling curtain or layer\",\n  \"source_properties\": \"Flexible material that can be lifted to reveal hidden contents.\",\n  \"target_situation\": \"Investigating clandestine human smuggling syndicates operating via maritime routes.\",\n  \"mapping\": \"Lifting the wave-layer symbolizes investigative efforts uncovering the hidden human reality behind illegal sea crossings.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "8Y_LarqMGpLN_uMPhvbuyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 844,
+      "completion_tokens_details": {
+        "reasoning_tokens": 754
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 666000,
+        "output_tokens_cost_nanodollars": 2532000
+      },
+      "prompt_tokens": 1332,
+      "total_backend_latency_ms": 4552,
+      "total_tokens": 2176
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.167012,
+      "total": 10,
+      "remaining": 1.8329880000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.167012,
+      "total": 100,
+      "remaining": 91.832988,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.003198,
+  "fields": {
+    "source_object": "A peeling curtain or layer",
+    "source_properties": "Flexible material that can be lifted to reveal hidden contents.",
+    "target_situation": "Investigating clandestine human smuggling syndicates operating via maritime routes.",
+    "mapping": "Lifting the wave-layer symbolizes investigative efforts uncovering the hidden human reality behind illegal sea crossings.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A peeling curtain or layer\nsource_properties: Flexible material that can be lifted to reveal hidden contents.\ntarget_situation: Investigating clandestine human smuggling syndicates operating via maritime routes.\nmapping: Lifting the wave-layer symbolizes investigative efforts uncovering the hidden human reality behind illegal sea crossings.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

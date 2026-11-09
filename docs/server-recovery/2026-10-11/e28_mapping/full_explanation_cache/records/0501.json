@@ -1,0 +1,87 @@
+{
+  "index": 501,
+  "sample_id": "TMP-02BB4CA168D5",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "aa072112be015b447e7c0ce68dbe07a5bc53f57ce8dcb6f578ae9ad6c897ad8b",
+  "image_sha256": "02bb4ca168d577e3a8b414c8d042b25bd88a92706bdc8df58710e2441d98b48b",
+  "transmitted_image_sha256": "f2cb5d04f7f578016f9ea7cf739c630c97d322120f4c49e422146a78932526ae",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.721694,
+      "total": 10,
+      "remaining": 1.2783060000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.721694,
+      "total": 100,
+      "remaining": 91.278306,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3799005448818207,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Aladdin's magic lamp\",\n  \"source_properties\": \"Golden oil lamp, associated with summoning powerful genies and fulfilling wishes.\",\n  \"target_situation\": \"The return of Rizieq Syihab to Indonesia after four years in Saudi Arabia.\",\n  \"mapping\": \"The lamp suggests the involvement of unseen powerful forces or 'intelligence' in facilitating his return.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "K5rLatL1O4Kn_uMP9_y56As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674000,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1348,
+      "total_backend_latency_ms": 1812,
+      "total_tokens": 1447
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.722665,
+      "total": 10,
+      "remaining": 1.2773350000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.722665000000006,
+      "total": 100,
+      "remaining": 91.277335,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000971,
+  "fields": {
+    "source_object": "Aladdin's magic lamp",
+    "source_properties": "Golden oil lamp, associated with summoning powerful genies and fulfilling wishes.",
+    "target_situation": "The return of Rizieq Syihab to Indonesia after four years in Saudi Arabia.",
+    "mapping": "The lamp suggests the involvement of unseen powerful forces or 'intelligence' in facilitating his return.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: Aladdin's magic lamp\nsource_properties: Golden oil lamp, associated with summoning powerful genies and fulfilling wishes.\ntarget_situation: The return of Rizieq Syihab to Indonesia after four years in Saudi Arabia.\nmapping: The lamp suggests the involvement of unseen powerful forces or 'intelligence' in facilitating his return.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

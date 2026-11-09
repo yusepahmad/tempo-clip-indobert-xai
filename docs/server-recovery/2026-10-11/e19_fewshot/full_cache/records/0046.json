@@ -1,0 +1,86 @@
+{
+  "index": 46,
+  "sample_id": "TMP-32CD8E6A16D5",
+  "fold": 3,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "b71e7a5a777bfa4ee5f94700cd8aae1f1c90ca2053ecdd33d5f3430a5bef5dcf",
+  "image_sha256": "32cd8e6a16d556bda5e3886c98e4fb9637fe41dd61bc81a6f8202c1112d3ec37",
+  "transmitted_image_sha256": "23185ffa9d2508932de21df8a13035198292c06c3f366485225039d9a105445e",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 3.026758,
+      "total": 10,
+      "remaining": 6.973242,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 3.026758000000001,
+      "total": 100,
+      "remaining": 96.973242,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 16.379303597845137,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi ilustrasi yang menyerupai permainan \"Whac-A-Mole\" atau \"pukul tikus tanah\" (di mana seseorang muncul dari lubang dan dipukul dengan palu), kategori yang paling tepat adalah permainan.\n\nJawab satu kode A sampai G: **G**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "SuzKav_CF5Oo_uMPmu77-As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 3158,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3096
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2101000,
+        "output_tokens_cost_nanodollars": 9474000
+      },
+      "prompt_tokens": 4202,
+      "total_backend_latency_ms": 14844,
+      "total_tokens": 7360
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 3.0383329999999997,
+      "total": 10,
+      "remaining": 6.961667,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 3.0383329999999944,
+      "total": 100,
+      "remaining": 96.961667,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.011575,
+  "code": "G",
+  "strict_code": "INVALID",
+  "parsing_rule": "explicit_prefix_code",
+  "finish_reason": "stop",
+  "prediction": "PERMAINAN_KONTES"
+}

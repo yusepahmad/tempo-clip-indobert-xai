@@ -1,0 +1,33 @@
+{
+  "status": "verified",
+  "synthetic_samples": 4,
+  "source_sha256": "74ac86d0f1a49fd007d090c6215c37f153e35a1b80862a6ff49889d2117a8e46",
+  "model_snapshot": {
+    "model": "google/siglip2-base-patch16-384",
+    "revision": "f775b65a79762255128c981547af89addcfe0f88",
+    "file_sha256": {
+      "config.json": "b1b2481aa448d0cd29001bcf5244e72fa8f916dd8348bd18abf9e5533105b96c",
+      "preprocessor_config.json": "fb2817d3523ca3b666c859f15320c7138416bc38ffc515e2963f78c868c51c90",
+      "model.safetensors": "ed72c0ace85020ae610fc817c2538b9cae5a477b012a50859c60af5b3ad30857"
+    },
+    "weight_sha256": "ed72c0ace85020ae610fc817c2538b9cae5a477b012a50859c60af5b3ad30857",
+    "processor": "AutoImageProcessor use_fast=False"
+  },
+  "real_smoke_samples": 4,
+  "real_smoke_seconds": 1.4014319851994514,
+  "conservative_740_seconds": 388.8973758928478,
+  "checks": [
+    "offline official E23 snapshot3SHA",
+    "frozen pooler768 finite/unit",
+    "repeat/singlebatch",
+    "actual4image smoke/runtime <1h"
+  ],
+  "crop_fractions": [
+    0.05,
+    0.12,
+    0.95,
+    0.93
+  ],
+  "quality_score": null,
+  "inference_requests": 0
+}

@@ -1,0 +1,83 @@
+{
+  "index": 506,
+  "sample_id": "TMP-E73EF04B154C",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "84d8d7d14f6dc803f2046970d5c31f4c5ac3e615b03ee0e2befd7a519350c5ec",
+  "image_sha256": "e73ef04b154cb6a41740eb1fb33d7dba25b0ed7dc77a7bc49c5593d8beb1b0da",
+  "transmitted_image_sha256": "fbd027cbd1882cf1f2a39a317cf0ff97da9e7e71b58ed5b6b1eaecc00d9c7d89",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.9138265000000008,
+      "total": 10,
+      "remaining": 8.0861735,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.913826499999999,
+      "total": 100,
+      "remaining": 98.0861735,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.594637524103746,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "B berdasarkan deskripsi yang diberikan, ilustrasi tersebut memetakan **anatomi tubuh manusia** (wajah) sebagai sumber metafora, di mana wajah tersebut dikonstruksi dari pil dan obat-obatan. Dalam kategori yang tersedia, **B: HEWAN_TUBUH** mencakup penggunaan anatomi sebagai kiasan.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "IeDKaqXsJpzd_uMP7MbkuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1243,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1175
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 787000,
+        "output_tokens_cost_nanodollars": 3729000
+      },
+      "prompt_tokens": 1574,
+      "total_backend_latency_ms": 7001,
+      "total_tokens": 2817
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.9183424999999996,
+      "total": 10,
+      "remaining": 8.0816575,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.9183424999999943,
+      "total": 100,
+      "remaining": 98.0816575,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.004516
+}

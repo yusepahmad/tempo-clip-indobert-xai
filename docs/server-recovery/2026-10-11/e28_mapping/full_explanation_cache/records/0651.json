@@ -1,0 +1,87 @@
+{
+  "index": 651,
+  "sample_id": "TMP-F92254F0E9F1",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "6cba844ad834b5992e9bda3b69c811dc9642c8eea9fef66974aef0b8a03e52f6",
+  "image_sha256": "f92254f0e9f1a64c1275425c387ed48c0761be64560cb007a72fa7dc1f09e0c3",
+  "transmitted_image_sha256": "e65d52d1baa3208812ed05ecd67ccdb58b221004271dff8790b241ce2a8976a6",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.923401,
+      "total": 10,
+      "remaining": 1.0765989999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.923400999999998,
+      "total": 100,
+      "remaining": 91.076599,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.373489541001618,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"air pump\", \"source_properties\": \"A manual pump used to inflate objects by forcing air through a hose.\", \"target_situation\": \"Stagnant electability of the Prabowo-Gibran presidential ticket despite Jokowi's direct involvement.\", \"mapping\": \"Jokowi pumping air represents his effort to artificially inflate and boost the pair's stagnant poll numbers to achieve a one-round victory.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "EJ7LasPmOr7i_uMPyOzU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 96,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681000,
+        "output_tokens_cost_nanodollars": 288000
+      },
+      "prompt_tokens": 1362,
+      "total_backend_latency_ms": 2754,
+      "total_tokens": 1458
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.92437,
+      "total": 10,
+      "remaining": 1.0756300000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.924369999999996,
+      "total": 100,
+      "remaining": 91.07563,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000969,
+  "fields": {
+    "source_object": "air pump",
+    "source_properties": "A manual pump used to inflate objects by forcing air through a hose.",
+    "target_situation": "Stagnant electability of the Prabowo-Gibran presidential ticket despite Jokowi's direct involvement.",
+    "mapping": "Jokowi pumping air represents his effort to artificially inflate and boost the pair's stagnant poll numbers to achieve a one-round victory.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: air pump\nsource_properties: A manual pump used to inflate objects by forcing air through a hose.\ntarget_situation: Stagnant electability of the Prabowo-Gibran presidential ticket despite Jokowi's direct involvement.\nmapping: Jokowi pumping air represents his effort to artificially inflate and boost the pair's stagnant poll numbers to achieve a one-round victory.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

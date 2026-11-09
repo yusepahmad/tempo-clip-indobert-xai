@@ -1,0 +1,87 @@
+{
+  "index": 267,
+  "sample_id": "TMP-6082CFFA161F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "36e69cf0bc6354070efdadc2a0824dfc916e40d772008f53bccdb7438954522d",
+  "image_sha256": "6082cffa161f052b322164176fa344f5667bb45efe2a8705413a8f804c08744f",
+  "transmitted_image_sha256": "d69a993384389bd1f16e1f904b04e872d7fa87cc106379f4aa7ba7b1d3f90434",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.408351,
+      "total": 10,
+      "remaining": 1.5916490000000003,
+      "refill_at": "2026-10-11 23:35:15.875000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.408350999999996,
+      "total": 100,
+      "remaining": 91.591649,
+      "refill_at": "2026-11-09 23:35:15.874000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.186482961755246,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"fuel pump nozzle\",\n  \"source_properties\": \"hose inserted into pockets, blue handle, liquid dripping from the tip\",\n  \"target_situation\": \"allegations of bribery and corruption involving oil and gas funds\",\n  \"mapping\": \"pockets connected by fuel hoses symbolize the flow and redirection of state oil revenues into private hands\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "J5TLat--FcaS_uMPmu6wkA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 667500,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1335,
+      "total_backend_latency_ms": 1678,
+      "total_tokens": 1426
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4092915,
+      "total": 10,
+      "remaining": 1.5907084999999999,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.409291499999995,
+      "total": 100,
+      "remaining": 91.5907085,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009405,
+  "fields": {
+    "source_object": "fuel pump nozzle",
+    "source_properties": "hose inserted into pockets, blue handle, liquid dripping from the tip",
+    "target_situation": "allegations of bribery and corruption involving oil and gas funds",
+    "mapping": "pockets connected by fuel hoses symbolize the flow and redirection of state oil revenues into private hands",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: fuel pump nozzle\nsource_properties: hose inserted into pockets, blue handle, liquid dripping from the tip\ntarget_situation: allegations of bribery and corruption involving oil and gas funds\nmapping: pockets connected by fuel hoses symbolize the flow and redirection of state oil revenues into private hands\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

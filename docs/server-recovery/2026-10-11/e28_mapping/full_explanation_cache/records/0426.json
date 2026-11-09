@@ -1,0 +1,87 @@
+{
+  "index": 426,
+  "sample_id": "TMP-3792A036FEA4",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9b27e3e0e37a1fb7aa7201ccf95a8901796ae44387f447f82226ad2d7e9977af",
+  "image_sha256": "3792a036fea4c14708891d4c7d1da476cc52c33afa33e753f002a19eb79c1f6e",
+  "transmitted_image_sha256": "d2c11e9c9655efeb9d28098ffc2a83e0b3b7105c30f7d0fa210c5a3b7d72af58",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.625847,
+      "total": 10,
+      "remaining": 1.3741529999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.625846999999993,
+      "total": 100,
+      "remaining": 91.374153,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.122713750693947,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"toddler in a pink hijab holding a teddy bear\",\n  \"source_properties\": \"Innocent, vulnerable, and domestic appearance contrasted with a concealed explosive device.\",\n  \"target_situation\": \"Modern terrorists exploiting women and children for extremist activities and communication.\",\n  \"mapping\": \"The child\u2019s outward innocence masks a hidden, lethal threat, mirroring how terrorists use vulnerable civilians as cover.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "PZjLaribCYK5_PUPwPPqwQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 105,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674000,
+        "output_tokens_cost_nanodollars": 315000
+      },
+      "prompt_tokens": 1348,
+      "total_backend_latency_ms": 1620,
+      "total_tokens": 1453
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.626836,
+      "total": 10,
+      "remaining": 1.3731639999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.626835999999997,
+      "total": 100,
+      "remaining": 91.373164,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000989,
+  "fields": {
+    "source_object": "toddler in a pink hijab holding a teddy bear",
+    "source_properties": "Innocent, vulnerable, and domestic appearance contrasted with a concealed explosive device.",
+    "target_situation": "Modern terrorists exploiting women and children for extremist activities and communication.",
+    "mapping": "The child\u2019s outward innocence masks a hidden, lethal threat, mirroring how terrorists use vulnerable civilians as cover.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: toddler in a pink hijab holding a teddy bear\nsource_properties: Innocent, vulnerable, and domestic appearance contrasted with a concealed explosive device.\ntarget_situation: Modern terrorists exploiting women and children for extremist activities and communication.\nmapping: The child\u2019s outward innocence masks a hidden, lethal threat, mirroring how terrorists use vulnerable civilians as cover.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 45,
+  "sample_id": "TMP-2888EC45ADCA",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "77100ab93fe2d26be9411e8783c26e2dccbaa8b8856368ca9c6c497b76d404e7",
+  "image_sha256": "2888ec45adca2cbe38cb688966d386d47cf9f2475acde13436516da8b32f1d15",
+  "transmitted_image_sha256": "8b65eb425db62d9408be030a0abdfb22a74f3bd3bfa6944963871303b4834769",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.075178,
+      "total": 10,
+      "remaining": 1.9248220000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.075177999999994,
+      "total": 100,
+      "remaining": 91.924822,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1067330590449274,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"coffee service\",\n  \"source_properties\": \"pouring liquid into cups, centralizing distribution, multiple recipients\",\n  \"target_situation\": \"Sjafrie Sjamsoeddin assuming the role of political communicator for President Prabowo Subianto\",\n  \"mapping\": \"Pouring coffee symbolizes Sjafrie distributing information or influence to others, competing for central control.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Vo7LatqZOPDe_uMPnvjrqQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674500,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1349,
+      "total_backend_latency_ms": 1554,
+      "total_tokens": 1448
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0761495,
+      "total": 10,
+      "remaining": 1.9238505000000004,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.0761495,
+      "total": 100,
+      "remaining": 91.9238505,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009715,
+  "fields": {
+    "source_object": "coffee service",
+    "source_properties": "pouring liquid into cups, centralizing distribution, multiple recipients",
+    "target_situation": "Sjafrie Sjamsoeddin assuming the role of political communicator for President Prabowo Subianto",
+    "mapping": "Pouring coffee symbolizes Sjafrie distributing information or influence to others, competing for central control.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: coffee service\nsource_properties: pouring liquid into cups, centralizing distribution, multiple recipients\ntarget_situation: Sjafrie Sjamsoeddin assuming the role of political communicator for President Prabowo Subianto\nmapping: Pouring coffee symbolizes Sjafrie distributing information or influence to others, competing for central control.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

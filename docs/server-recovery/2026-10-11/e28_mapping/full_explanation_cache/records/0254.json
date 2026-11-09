@@ -1,0 +1,87 @@
+{
+  "index": 254,
+  "sample_id": "TMP-FB8F12ED0740",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "375df1ba6a841ea4945c0a906156df9317942b056a249f60ea35e79aaee5206b",
+  "image_sha256": "fb8f12ed07402d44b8e56698bff954d37be46b784f779432ff518b860fea8451",
+  "transmitted_image_sha256": "3185a4bce0f3f5856035db3e835abca09347d3c53335843d38ec5b461682b501",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3901655,
+      "total": 10,
+      "remaining": 1.6098344999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.390165499999995,
+      "total": 100,
+      "remaining": 91.6098345,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2277207816950977,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"flypaper\",\n  \"source_properties\": \"A sticky, circular yellow trap designed to capture and immobilize pests using an adhesive surface.\",\n  \"target_situation\": \"A woman's involvement in a corruption scandal within the Ministry of Agriculture.\",\n  \"mapping\": \"The Ministry logo acts as sticky flypaper, ensnaring the figure in legal or investigative entanglements.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "0pPLas_sNN7d_uMP45e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 100,
+      "cost": {
+        "input_tokens_cost_nanodollars": 670000,
+        "output_tokens_cost_nanodollars": 300000
+      },
+      "prompt_tokens": 1340,
+      "total_backend_latency_ms": 1846,
+      "total_tokens": 1440
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3911355,
+      "total": 10,
+      "remaining": 1.6088644999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.391135500000004,
+      "total": 100,
+      "remaining": 91.6088645,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00097,
+  "fields": {
+    "source_object": "flypaper",
+    "source_properties": "A sticky, circular yellow trap designed to capture and immobilize pests using an adhesive surface.",
+    "target_situation": "A woman's involvement in a corruption scandal within the Ministry of Agriculture.",
+    "mapping": "The Ministry logo acts as sticky flypaper, ensnaring the figure in legal or investigative entanglements.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: flypaper\nsource_properties: A sticky, circular yellow trap designed to capture and immobilize pests using an adhesive surface.\ntarget_situation: A woman's involvement in a corruption scandal within the Ministry of Agriculture.\nmapping: The Ministry logo acts as sticky flypaper, ensnaring the figure in legal or investigative entanglements.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

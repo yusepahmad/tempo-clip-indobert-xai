@@ -1,0 +1,87 @@
+{
+  "index": 162,
+  "sample_id": "TMP-4C2380B8031F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b82f2e000f9cbeec20e6c74140ddaf9a4c5e7510d63692f3caad07111c0eb667",
+  "image_sha256": "4c2380b8031fb142aea86fd93e3fce8fcc8acd61e873085935d793745c133a75",
+  "transmitted_image_sha256": "f72a716aea3e171f0da7937214be306f69b8909963180e6d4d8f41404acdc792",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.244852,
+      "total": 10,
+      "remaining": 1.7551480000000002,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.244851999999995,
+      "total": 100,
+      "remaining": 91.755148,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.119210974313319,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Upside-down house\",\n  \"source_properties\": \"Inverted orientation, surreal suspension in space, figures falling or clinging to surfaces, distorted reality.\",\n  \"target_situation\": \"The return of Taliban rule in Afghanistan and its destabilizing regional consequences.\",\n  \"mapping\": \"The inverted house represents a world turned upside down, symbolizing the chaotic, precarious state of security and societal order after the Taliban's victory.\",\n  \"uncertainty\": \"None evident.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Y5HLaruZBM7E_PUPtKy7yQo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 110,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675000,
+        "output_tokens_cost_nanodollars": 330000
+      },
+      "prompt_tokens": 1350,
+      "total_backend_latency_ms": 1833,
+      "total_tokens": 1460
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.245857,
+      "total": 10,
+      "remaining": 1.7541429999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.245857,
+      "total": 100,
+      "remaining": 91.754143,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001005,
+  "fields": {
+    "source_object": "Upside-down house",
+    "source_properties": "Inverted orientation, surreal suspension in space, figures falling or clinging to surfaces, distorted reality.",
+    "target_situation": "The return of Taliban rule in Afghanistan and its destabilizing regional consequences.",
+    "mapping": "The inverted house represents a world turned upside down, symbolizing the chaotic, precarious state of security and societal order after the Taliban's victory.",
+    "uncertainty": "None evident."
+  },
+  "explanation": "source_object: Upside-down house\nsource_properties: Inverted orientation, surreal suspension in space, figures falling or clinging to surfaces, distorted reality.\ntarget_situation: The return of Taliban rule in Afghanistan and its destabilizing regional consequences.\nmapping: The inverted house represents a world turned upside down, symbolizing the chaotic, precarious state of security and societal order after the Taliban's victory.\nuncertainty: None evident.",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,101 @@
+{
+  "schema": "tempo-micro-e02-v1",
+  "status": "complete",
+  "model_contract": "one nested-stacking pipeline with three task heads",
+  "base_models": [
+    "lr",
+    "sgd",
+    "extra"
+  ],
+  "micro_f1": {
+    "task1_issue": 0.5310810810810811,
+    "task2_domain_sumber": 0.504054054054054,
+    "task3_primary_entity_type": 0.5391891891891892
+  },
+  "macro_f1_diagnostic": {
+    "task1_issue": 0.42605484044605185,
+    "task2_domain_sumber": 0.43572923664841173,
+    "task3_primary_entity_type": 0.292330461524566
+  },
+  "minimum_micro_f1": 0.504054054054054,
+  "all_tasks_at_least_0_70": false,
+  "fold_details": [
+    {
+      "fold": 1,
+      "tasks": {
+        "task1_issue": {
+          "outer_micro_f1": 0.5337837837837838
+        },
+        "task2_domain_sumber": {
+          "outer_micro_f1": 0.5743243243243243
+        },
+        "task3_primary_entity_type": {
+          "outer_micro_f1": 0.5202702702702703
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "tasks": {
+        "task1_issue": {
+          "outer_micro_f1": 0.49324324324324326
+        },
+        "task2_domain_sumber": {
+          "outer_micro_f1": 0.5540540540540541
+        },
+        "task3_primary_entity_type": {
+          "outer_micro_f1": 0.6013513513513513
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "tasks": {
+        "task1_issue": {
+          "outer_micro_f1": 0.5202702702702703
+        },
+        "task2_domain_sumber": {
+          "outer_micro_f1": 0.43243243243243246
+        },
+        "task3_primary_entity_type": {
+          "outer_micro_f1": 0.44594594594594594
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "tasks": {
+        "task1_issue": {
+          "outer_micro_f1": 0.5608108108108109
+        },
+        "task2_domain_sumber": {
+          "outer_micro_f1": 0.4797297297297297
+        },
+        "task3_primary_entity_type": {
+          "outer_micro_f1": 0.5675675675675675
+        }
+      }
+    },
+    {
+      "fold": 5,
+      "tasks": {
+        "task1_issue": {
+          "outer_micro_f1": 0.5472972972972973
+        },
+        "task2_domain_sumber": {
+          "outer_micro_f1": 0.4797297297297297
+        },
+        "task3_primary_entity_type": {
+          "outer_micro_f1": 0.5608108108108109
+        }
+      }
+    }
+  ],
+  "dataset_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "feature_sha256": {
+    "clip": "312a130025a20c18f38668293534528fb82072a139c0c1ca41ad8abd23559cd4",
+    "siglip": "71cd0cfe78db5ac2392aa69749b8946da27d7ae9f6f7d0533e49e0f9c18d6fdb"
+  },
+  "seconds": 62.81146836280823,
+  "predictions_sha256": "6758889da5f5bd0b6d2c3d5b4706af07cee1c68220eefbda48123976af7921c3"
+}

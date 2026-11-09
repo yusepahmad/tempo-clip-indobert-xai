@@ -1,0 +1,87 @@
+{
+  "index": 525,
+  "sample_id": "TMP-70D8CDBCF548",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a39009d1c4391e8c36db3077b266f3a9fc99c28aa1085ff39257608f8aad7a8c",
+  "image_sha256": "70d8cdbcf548c98e6f38555503e501bb1faccb58eab24a95436d2f46466de38a",
+  "transmitted_image_sha256": "3beca64a5ad7715ec2d1c386c6cfeb1d24529f2bc2982910014fbc2fb49fddf5",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7547485,
+      "total": 10,
+      "remaining": 1.2452515000000002,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.754748500000005,
+      "total": 100,
+      "remaining": 91.2452515,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2537604672834277,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"none evident\", \"source_properties\": \"none\", \"target_situation\": \"A special report regarding Umi Sardjono and the stigma associated with Gerwani.\", \"mapping\": \"The illustration literally depicts Umi Sardjono, the leader of Gerwani, corresponding directly to the headline. There is no visible visual analogy; the portrait serves as a representational image for the historical and social subjects discussed in the magazine's special report.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "z5rLat7bL77i_uMPwfDU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 103,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661500,
+        "output_tokens_cost_nanodollars": 309000
+      },
+      "prompt_tokens": 1323,
+      "total_backend_latency_ms": 1941,
+      "total_tokens": 1426
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.755719,
+      "total": 10,
+      "remaining": 1.2442810000000009,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.755719,
+      "total": 100,
+      "remaining": 91.244281,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009705,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "none",
+    "target_situation": "A special report regarding Umi Sardjono and the stigma associated with Gerwani.",
+    "mapping": "The illustration literally depicts Umi Sardjono, the leader of Gerwani, corresponding directly to the headline. There is no visible visual analogy; the portrait serves as a representational image for the historical and social subjects discussed in the magazine's special report.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: none\ntarget_situation: A special report regarding Umi Sardjono and the stigma associated with Gerwani.\nmapping: The illustration literally depicts Umi Sardjono, the leader of Gerwani, corresponding directly to the headline. There is no visible visual analogy; the portrait serves as a representational image for the historical and social subjects discussed in the magazine's special report.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

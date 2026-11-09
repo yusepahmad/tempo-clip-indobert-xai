@@ -1,0 +1,24 @@
+{
+  "status": "verified",
+  "fold": 2,
+  "samples": 148,
+  "selected_epoch": 1,
+  "micro_f1": {
+    "task1_issue": 0.7432432432432432,
+    "task2_domain_sumber": 0.5202702702702703,
+    "task3_primary_entity_type": 0.668918918918919
+  },
+  "protocol_sha256": "7b1eb1fdaf8547e842df793726e106b1d29b222b16ef3d9b672388d9d46ec65e",
+  "source_sha256": "cb09acda21117f0acba38233fca382ec9916b08c5c73f297fa0f70c9469003ed",
+  "checks": [
+    "all 148 outer IDs",
+    "dataset labels",
+    "inner/test disjoint",
+    "inner epoch selection",
+    "exact refit epochs",
+    "probability argmax",
+    "micro equals accuracy",
+    "protocol/source/data/predictions/audit hashes"
+  ],
+  "note": "adapter hash recorded remotely; large checkpoint not downloaded by default"
+}

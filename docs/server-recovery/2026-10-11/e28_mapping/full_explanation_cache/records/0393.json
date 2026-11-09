@@ -1,0 +1,87 @@
+{
+  "index": 393,
+  "sample_id": "TMP-06CAB1B32D7C",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3d42a3d74040a69ca68caeddc3b6b49baab9928fa67346babf5e1731d6242332",
+  "image_sha256": "06cab1b32d7cd54cb374ffd4a4484d2abceffb386aab0cfc3befb49b12dd2786",
+  "transmitted_image_sha256": "dff8f52f6ef2f90daf6858426f29ebb0db7fa2a30e0fe7581ca27d3b1fe05427",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.574566,
+      "total": 10,
+      "remaining": 1.4254339999999992,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.574566000000004,
+      "total": 100,
+      "remaining": 91.425434,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1883415449410677,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"hand pump and long hose\",\n  \"source_properties\": \"strenuous physical effort, pumping air into distant structures, expansion under pressure\",\n  \"target_situation\": \"Jokowi's administration borrowing funds to expand infrastructure projects\",\n  \"mapping\": \"Pumping air represents injecting borrowed capital to inflate or build massive infrastructure like the depicted viaduct.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "X5fLas62Lb7i_uMPyOzU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 96,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 288000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 1917,
+      "total_tokens": 1443
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5755275,
+      "total": 10,
+      "remaining": 1.4244725000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.575527500000007,
+      "total": 100,
+      "remaining": 91.4244725,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009615,
+  "fields": {
+    "source_object": "hand pump and long hose",
+    "source_properties": "strenuous physical effort, pumping air into distant structures, expansion under pressure",
+    "target_situation": "Jokowi's administration borrowing funds to expand infrastructure projects",
+    "mapping": "Pumping air represents injecting borrowed capital to inflate or build massive infrastructure like the depicted viaduct.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: hand pump and long hose\nsource_properties: strenuous physical effort, pumping air into distant structures, expansion under pressure\ntarget_situation: Jokowi's administration borrowing funds to expand infrastructure projects\nmapping: Pumping air represents injecting borrowed capital to inflate or build massive infrastructure like the depicted viaduct.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,90 @@
+{
+  "index": 693,
+  "sample_id": "TMP-8F884939294E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "77f944359f8d79a40602fa06d4ed0fcffba9527b6b910e0ff20fb45e8c8b5fc4",
+  "image_sha256": "8f884939294eecac3e1c2d6b7ecd3da27e824e9c286839ac0c1dad4fa76bb026",
+  "transmitted_image_sha256": "ec9e720505a9e9e83f0addeda26c5edb1d4ea1a01a6fab51ad1cc18b01f6dc45",
+  "image_size": [
+    581,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.002407999999999,
+      "total": 10,
+      "remaining": 0.9975920000000009,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.002408000000003,
+      "total": 100,
+      "remaining": 90.997592,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.747214449103922,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n \"source_object\": \"heaped meal trays and shopping bags\",\n \"source_properties\": \"Containers for mass food distribution, forming a cluttered, overwhelming pile.\",\n \"target_situation\": \"The first 100 days of the Prabowo-Gibran administration, described as having a 'bloated' cabinet.\",\n \"mapping\": \"The pile illustrates the logistical complexity and potential inefficiency of signature welfare programs and an oversized government.\",\n \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "R5_Lauv7FOXG_uMP3cfxkAY",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1359,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1256
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 668500,
+        "output_tokens_cost_nanodollars": 4077000
+      },
+      "prompt_tokens": 1337,
+      "total_backend_latency_ms": 7395,
+      "total_tokens": 2696
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0071535,
+      "total": 10,
+      "remaining": 0.9928465000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.007153500000001,
+      "total": 100,
+      "remaining": 90.9928465,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0047455,
+  "fields": {
+    "source_object": "heaped meal trays and shopping bags",
+    "source_properties": "Containers for mass food distribution, forming a cluttered, overwhelming pile.",
+    "target_situation": "The first 100 days of the Prabowo-Gibran administration, described as having a 'bloated' cabinet.",
+    "mapping": "The pile illustrates the logistical complexity and potential inefficiency of signature welfare programs and an oversized government.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: heaped meal trays and shopping bags\nsource_properties: Containers for mass food distribution, forming a cluttered, overwhelming pile.\ntarget_situation: The first 100 days of the Prabowo-Gibran administration, described as having a 'bloated' cabinet.\nmapping: The pile illustrates the logistical complexity and potential inefficiency of signature welfare programs and an oversized government.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

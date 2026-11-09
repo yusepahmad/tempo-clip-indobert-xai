@@ -1,0 +1,23 @@
+{
+  "status": "preparation_verified",
+  "source_sha256": {
+    "e31_adapter.py": "de56f05b26be0de4b75ac3ea8161eb8874f4da7f562f03eb17ad6d068b4d63da",
+    "e31_adapter_verify.py": "45dac9e0c388b695ce2c8552ab7e523a0936cc0ed65175299677abfc0f036399",
+    "e31_adapter_checks.py": "e7faa79ff083f321c1f380387562498581fbde87084f4fc8b49eda4c8678104f",
+    "e31_adapter_root_verify.py": "cabb3801457988c2eacf94805b0b50d0f4faf0154eed9934d1cf13b4d7537f7d"
+  },
+  "preparation_sha256": "012c3d20ee87e0857e422e7b6fd7d5af14e3830305dbdce9b87c2705b84cd68b",
+  "checks": [
+    "worker/verifier/checks pins match preparation",
+    "unchanged E29 loader and E30 preparation input/features signature",
+    "previous audited E30 final prior pin",
+    "exact16 frozen grid and fixedCPU protocol",
+    "syntheticdeterminism/heldout/control/weights/serialparallel and actualsmoke server passed",
+    "runtimegate <=2h"
+  ],
+  "limitations": [
+    "root does not refit models; preparation execution verified on server",
+    "diagnosis exploratory; visual review pending",
+    "no new Task2 quality score"
+  ]
+}

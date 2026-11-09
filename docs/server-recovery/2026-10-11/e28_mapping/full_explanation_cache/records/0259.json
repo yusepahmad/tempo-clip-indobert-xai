@@ -1,0 +1,87 @@
+{
+  "index": 259,
+  "sample_id": "TMP-8A58ABC48A41",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9f5bb0e289aad66b85c73d084a4d3c1977f274dad3ab42763ce5c47c9faaf892",
+  "image_sha256": "8a58abc48a41d892f482bfa4831dc10dae8af56da09dbf741d13007c0fe245a2",
+  "transmitted_image_sha256": "ca3bf6e13e5025a44bd3b960ced11828a673c8082a54d3faf1b57370c8a1c8b3",
+  "image_size": [
+    472,
+    618
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.397677,
+      "total": 10,
+      "remaining": 1.6023230000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.397677000000002,
+      "total": 100,
+      "remaining": 91.602323,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1188870947808027,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"The Three Wise Monkeys\",\n  \"source_properties\": \"Gestures of covering ears, mouth, and eyes to ignore wrongdoing.\",\n  \"target_situation\": \"Politicians implicated in the DPR building bribery case avoiding accountability.\",\n  \"mapping\": \"The figures mimic the 'see no evil, hear no evil, speak no evil' poses, symbolizing their denial or complicity in corruption.\",\n  \"uncertainty\": \"The fourth figure adds a variation to the traditional three-monkey motif.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "9ZPLatntLZLN_uMPhvbuyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 113,
+      "cost": {
+        "input_tokens_cost_nanodollars": 658500,
+        "output_tokens_cost_nanodollars": 339000
+      },
+      "prompt_tokens": 1317,
+      "total_backend_latency_ms": 1522,
+      "total_tokens": 1430
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3986745,
+      "total": 10,
+      "remaining": 1.6013254999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.398674499999998,
+      "total": 100,
+      "remaining": 91.6013255,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009975,
+  "fields": {
+    "source_object": "The Three Wise Monkeys",
+    "source_properties": "Gestures of covering ears, mouth, and eyes to ignore wrongdoing.",
+    "target_situation": "Politicians implicated in the DPR building bribery case avoiding accountability.",
+    "mapping": "The figures mimic the 'see no evil, hear no evil, speak no evil' poses, symbolizing their denial or complicity in corruption.",
+    "uncertainty": "The fourth figure adds a variation to the traditional three-monkey motif."
+  },
+  "explanation": "source_object: The Three Wise Monkeys\nsource_properties: Gestures of covering ears, mouth, and eyes to ignore wrongdoing.\ntarget_situation: Politicians implicated in the DPR building bribery case avoiding accountability.\nmapping: The figures mimic the 'see no evil, hear no evil, speak no evil' poses, symbolizing their denial or complicity in corruption.\nuncertainty: The fourth figure adds a variation to the traditional three-monkey motif.",
+  "finish_reason": "stop",
+  "usable": true
+}

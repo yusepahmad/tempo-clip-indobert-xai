@@ -1,0 +1,87 @@
+{
+  "index": 72,
+  "sample_id": "TMP-C54DEE8E3C8C",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b20da9886c6fbe061c87b81b5f00ca683e42fc3e0ed60e4f8c9b28dd63bea458",
+  "image_sha256": "c54dee8e3c8c30762bcd69a1c33cae91ada3de25a9dab872d21d39180dde2776",
+  "transmitted_image_sha256": "491913621d44d4e2abc5441bfe9e736e731d71d0384f057a56f6f0fc99dae47f",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.110794,
+      "total": 10,
+      "remaining": 1.8892059999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.110793999999999,
+      "total": 100,
+      "remaining": 91.889206,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1854820498265326,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Soeharto and the Golkar party jacket\", \"source_properties\": \"A yellow jacket associated with the Golkar party, Soeharto's distinctive waving gesture, and his 'Smiling General' persona.\", \"target_situation\": \"The 2019 political campaign of the Berkarya Party, founded by Soeharto's son Tommy, which uses similar branding.\", \"mapping\": \"The illustration adopts Soeharto's iconic visual identity to suggest that his family's new political party is an attempt to revive his New Order era legacy.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "A4_LaoXiDcjg_uMPp72C-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 127,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674000,
+        "output_tokens_cost_nanodollars": 381000
+      },
+      "prompt_tokens": 1348,
+      "total_backend_latency_ms": 1670,
+      "total_tokens": 1475
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.111849,
+      "total": 10,
+      "remaining": 1.8881510000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.111849000000007,
+      "total": 100,
+      "remaining": 91.888151,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001055,
+  "fields": {
+    "source_object": "Soeharto and the Golkar party jacket",
+    "source_properties": "A yellow jacket associated with the Golkar party, Soeharto's distinctive waving gesture, and his 'Smiling General' persona.",
+    "target_situation": "The 2019 political campaign of the Berkarya Party, founded by Soeharto's son Tommy, which uses similar branding.",
+    "mapping": "The illustration adopts Soeharto's iconic visual identity to suggest that his family's new political party is an attempt to revive his New Order era legacy.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Soeharto and the Golkar party jacket\nsource_properties: A yellow jacket associated with the Golkar party, Soeharto's distinctive waving gesture, and his 'Smiling General' persona.\ntarget_situation: The 2019 political campaign of the Berkarya Party, founded by Soeharto's son Tommy, which uses similar branding.\nmapping: The illustration adopts Soeharto's iconic visual identity to suggest that his family's new political party is an attempt to revive his New Order era legacy.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

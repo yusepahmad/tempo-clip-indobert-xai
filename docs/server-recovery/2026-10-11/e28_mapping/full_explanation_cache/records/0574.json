@@ -1,0 +1,87 @@
+{
+  "index": 574,
+  "sample_id": "TMP-8385624E01E6",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8905ee48b21fad9ae080b2bec558e13bed2fa2e4b366b66055e69b99504a2ae4",
+  "image_sha256": "8385624e01e6e86dacd8c2bf6e21c5ad76ed45fbd24e485eff132747fc625891",
+  "transmitted_image_sha256": "4698b22688dec1ee73c588bd6fcb1e1714e6df8ca2ca101f154829086020d383",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8257755,
+      "total": 10,
+      "remaining": 1.1742244999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.825775500000006,
+      "total": 100,
+      "remaining": 91.1742245,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.8831703439354897,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A car being driven\",\n  \"source_properties\": \"Occupants inside the vehicle decide the direction; someone outside is left behind.\",\n  \"target_situation\": \"Political maneuvering within PDI Perjuangan regarding the 2024 presidential nomination.\",\n  \"mapping\": \"Megawati drives, Puan sits beside her, and Jokowi is pressured, while Ganjar is abandoned outside.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "JZzLavquHsyV_uMPl4eVaQ",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 103,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682000,
+        "output_tokens_cost_nanodollars": 309000
+      },
+      "prompt_tokens": 1364,
+      "total_backend_latency_ms": 2011,
+      "total_tokens": 1467
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8267665,
+      "total": 10,
+      "remaining": 1.1732335000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.826766500000005,
+      "total": 100,
+      "remaining": 91.1732335,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000991,
+  "fields": {
+    "source_object": "A car being driven",
+    "source_properties": "Occupants inside the vehicle decide the direction; someone outside is left behind.",
+    "target_situation": "Political maneuvering within PDI Perjuangan regarding the 2024 presidential nomination.",
+    "mapping": "Megawati drives, Puan sits beside her, and Jokowi is pressured, while Ganjar is abandoned outside.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: A car being driven\nsource_properties: Occupants inside the vehicle decide the direction; someone outside is left behind.\ntarget_situation: Political maneuvering within PDI Perjuangan regarding the 2024 presidential nomination.\nmapping: Megawati drives, Puan sits beside her, and Jokowi is pressured, while Ganjar is abandoned outside.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

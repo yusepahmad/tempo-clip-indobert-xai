@@ -1,0 +1,83 @@
+{
+  "index": 673,
+  "sample_id": "TMP-B30CC4B4D08A",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "05c4fbb83b963d1e873f52608375ad62c25e81707f8d11f0ffcb888e0d714d33",
+  "image_sha256": "b30cc4b4d08aa3558690e90b6c5050cff6b8fe5ac5ed1203ac2b0bbd5dde55d8",
+  "transmitted_image_sha256": "18617ff86509899520a63637476dfbe5dd8bcad2040cf965393da9dea16f447b",
+  "image_size": [
+    296,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.5220599999999997,
+      "total": 10,
+      "remaining": 7.47794,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.522059999999996,
+      "total": 100,
+      "remaining": 97.47794,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.121384208090603,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "A berdasarkan deskripsi dan alasan yang Anda berikan, karena tindakan menghapus atau mengikis tersebut dimaknai sebagai tekanan atau **keadaan terjepit** dalam konteks perselisihan politik, yang sesuai dengan definisi kategori A (BENCANA_JERAT).",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "_uXKar3UINPj_uMPg-OC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1241,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1188
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 790000,
+        "output_tokens_cost_nanodollars": 3723000
+      },
+      "prompt_tokens": 1580,
+      "total_backend_latency_ms": 7056,
+      "total_tokens": 2821
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.526573,
+      "total": 10,
+      "remaining": 7.473427,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.526572999999999,
+      "total": 100,
+      "remaining": 97.473427,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.004513
+}

@@ -1,0 +1,87 @@
+{
+  "index": 336,
+  "sample_id": "TMP-CDEF900A5AFF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8349ef4af523f3220368bdcc321ff407e77bf07f66c260933c51a7fba262fa48",
+  "image_sha256": "cdef900a5affa62c31c12d7cc7439d41a5dd37dc257b9f113039a8499cbdb694",
+  "transmitted_image_sha256": "6121b591e5a83fda1bab26a0388cec0aa402c0b8a892b2a268071acb9ecd0d79",
+  "image_size": [
+    472,
+    628
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4971365,
+      "total": 10,
+      "remaining": 1.5028635000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.497136499999996,
+      "total": 100,
+      "remaining": 91.5028635,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2188792121596634,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Kung fu movie poster\", \"source_properties\": \"Martial arts poses, cinematic perspective, and dynamic combat attire.\", \"target_situation\": \"Setya Novanto's defensive maneuvers during an Ethics Council trial.\", \"mapping\": \"Aggressive legal and political efforts are depicted as physical combat techniques used to defeat an opponent or case.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "6pXLavu4Fd-V_uMPmIWFyQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 82,
+      "cost": {
+        "input_tokens_cost_nanodollars": 667500,
+        "output_tokens_cost_nanodollars": 246000
+      },
+      "prompt_tokens": 1335,
+      "total_backend_latency_ms": 1711,
+      "total_tokens": 1417
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.49805,
+      "total": 10,
+      "remaining": 1.5019500000000008,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.498050000000006,
+      "total": 100,
+      "remaining": 91.50195,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009135,
+  "fields": {
+    "source_object": "Kung fu movie poster",
+    "source_properties": "Martial arts poses, cinematic perspective, and dynamic combat attire.",
+    "target_situation": "Setya Novanto's defensive maneuvers during an Ethics Council trial.",
+    "mapping": "Aggressive legal and political efforts are depicted as physical combat techniques used to defeat an opponent or case.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Kung fu movie poster\nsource_properties: Martial arts poses, cinematic perspective, and dynamic combat attire.\ntarget_situation: Setya Novanto's defensive maneuvers during an Ethics Council trial.\nmapping: Aggressive legal and political efforts are depicted as physical combat techniques used to defeat an opponent or case.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

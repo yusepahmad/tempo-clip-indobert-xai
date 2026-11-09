@@ -1,0 +1,86 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "macro_f1": 0.551761622460454,
+  "folds": [
+    {
+      "fold": 1,
+      "inner_macro_f1": 0.555696128656011,
+      "params": {
+        "C": 1,
+        "class_weight": "balanced",
+        "clip_weight": 1,
+        "e5_weight": 0.5,
+        "gamma": 0.1,
+        "lexical_weight": 0
+      }
+    },
+    {
+      "fold": 2,
+      "inner_macro_f1": 0.5461357185427724,
+      "params": {
+        "C": 1,
+        "class_weight": "balanced",
+        "clip_weight": 1,
+        "e5_weight": 0.5,
+        "gamma": 0.1,
+        "lexical_weight": 0
+      }
+    },
+    {
+      "fold": 3,
+      "inner_macro_f1": 0.5510820408202312,
+      "params": {
+        "C": 1,
+        "class_weight": "balanced",
+        "clip_weight": 1,
+        "e5_weight": 2,
+        "gamma": 0.1,
+        "lexical_weight": 0
+      }
+    },
+    {
+      "fold": 4,
+      "inner_macro_f1": 0.5489201351121474,
+      "params": {
+        "C": 1,
+        "class_weight": "balanced",
+        "clip_weight": 1,
+        "e5_weight": 0.5,
+        "gamma": 0.1,
+        "lexical_weight": 0.25
+      }
+    },
+    {
+      "fold": 5,
+      "inner_macro_f1": 0.55409916067769,
+      "params": {
+        "C": 1,
+        "class_weight": "balanced",
+        "clip_weight": 1,
+        "e5_weight": 0.5,
+        "gamma": 0.1,
+        "lexical_weight": 0.25
+      }
+    }
+  ],
+  "verifier_sha256": "afc0eb7c8496afb3292cffbe229256b33fc7ed576aa096536a4a108f15c1c5e0",
+  "checks": [
+    "pinned original sources; input-only text construction",
+    "all original740 IDs/truth/baseline folds",
+    "192 grid ordering/scores/argmax; chosen inner3 recomputed, full grid not rerun",
+    "all train-only numeric scalers and sparse vocabulary/idf metadata reproduced",
+    "all5 outer refits and740 predictions reproduced",
+    "manual7x7/per-class/macroF1"
+  ],
+  "sha256": {
+    "protocol.json": "df61e5a2f32dea3ac581ccbd31eeee2b94ba4f9d4098929787b805972a0508d7",
+    "metrics.json": "94457e9ccc5b5c33298ec98dfe0be81946937f84e5ca36b441dc09205aa9764e",
+    "oof.csv": "4c6a1f8f01a9c336030970e26b500106fa2faa21a745e6ca50928346d8c2978e",
+    "fold_1.json": "0d8e5305ae06d9d04204559ecef1e5096a8047396db4344db59ca7b677e7f000",
+    "fold_2.json": "85977d1efc841ae7ba57f0e0db69a5db757cb75046e2bbf9918ec690d3d76345",
+    "fold_3.json": "f6b5b490d76265bac5902b27552d96819da19ce909317f1cf0817e87ed61942b",
+    "fold_4.json": "0130f802d99c77cc68dd73d3268fa0780f245dedb9f808e80851265c0f07ceeb",
+    "fold_5.json": "e030c077758c0b95b0cc4aab205b0c3eeea9ddb843f8b8a62f3c12a3bcaf731c"
+  }
+}

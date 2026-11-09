@@ -1,0 +1,87 @@
+{
+  "index": 363,
+  "sample_id": "TMP-8831D7051F6E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "eeac81e2ebbb328afc75d0cba436b13e3812ce2e5746c6d6367a57dc4e9f0297",
+  "image_sha256": "8831d7051f6eff79b1c2a9ad924bd7a550953ad6b150dedae5a5cf0b9a2de536",
+  "transmitted_image_sha256": "1093e33685ff9593a44c316885ac45316e61ec0c662e49afa175fd7d14d7012e",
+  "image_size": [
+    407,
+    541
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5340355,
+      "total": 10,
+      "remaining": 1.4659645000000001,
+      "refill_at": "2026-10-11 23:35:15.875000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.534035500000002,
+      "total": 100,
+      "remaining": 91.4659645,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.995681992266327,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"gas masks\", \"source_properties\": \"protective equipment designed to filter out toxic, airborne pollutants or hazardous substances\", \"target_situation\": \"allegations that food chains Marugame Udon and Pizza Hut used expired ingredients\", \"mapping\": \"eating 'toxic' expired pizza is depicted as hazardous as breathing poisonous gas, requiring protective gear\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "m5bLaqfwJ9Pj_uMPg-OC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 82,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675000,
+        "output_tokens_cost_nanodollars": 246000
+      },
+      "prompt_tokens": 1350,
+      "total_backend_latency_ms": 1925,
+      "total_tokens": 1432
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5349565,
+      "total": 10,
+      "remaining": 1.4650435000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.534956500000007,
+      "total": 100,
+      "remaining": 91.4650435,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000921,
+  "fields": {
+    "source_object": "gas masks",
+    "source_properties": "protective equipment designed to filter out toxic, airborne pollutants or hazardous substances",
+    "target_situation": "allegations that food chains Marugame Udon and Pizza Hut used expired ingredients",
+    "mapping": "eating 'toxic' expired pizza is depicted as hazardous as breathing poisonous gas, requiring protective gear",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: gas masks\nsource_properties: protective equipment designed to filter out toxic, airborne pollutants or hazardous substances\ntarget_situation: allegations that food chains Marugame Udon and Pizza Hut used expired ingredients\nmapping: eating 'toxic' expired pizza is depicted as hazardous as breathing poisonous gas, requiring protective gear\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

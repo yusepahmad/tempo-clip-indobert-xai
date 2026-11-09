@@ -1,0 +1,94 @@
+{
+  "index": 23,
+  "sample_id": "TMP-9145AA2669BC",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "33df9de5e163e705fd2ccf96f85c0eeed92a08ca4ebd2591e69331e7a3e9995f",
+  "image_sha256": "9145aa2669bc9549c3f3f7408f15ea235862f54e497c701ac05311229aa78057",
+  "transmitted_image_sha256": "7ada51c32db1c032457f5b576b92c7a1542b4f7486312795181b9dc8daedddd1",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0433395,
+      "total": 10,
+      "remaining": 1.9566605,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.043339500000002,
+      "total": 100,
+      "remaining": 91.9566605,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.348695672117174,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"source_object\": \"a thumb war\",\n  \"source_properties\": \"two thumbs locked in a small-scale wrestling match for dominance\",\n  \"target_situation\": \"presidential rivals competing through their endorsed candidates in regional elections\",\n  \"mapping\": \"the capped thumbs symbolize the local gubernatorial candidates acting as proxies for the two larger presidential figures\",\n  \"uncertainty\": \"none\"\n}\n```",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "yYrLaozPAoqM_uMP54rS0QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1262,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1168
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 662000,
+        "output_tokens_cost_nanodollars": 3786000
+      },
+      "prompt_tokens": 1324,
+      "total_backend_latency_ms": 6542,
+      "total_tokens": 2586
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0477875,
+      "total": 10,
+      "remaining": 1.9522125,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.047787499999998,
+      "total": 100,
+      "remaining": 91.9522125,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.004448,
+  "fields": {
+    "source_object": "a thumb war",
+    "source_properties": "two thumbs locked in a small-scale wrestling match for dominance",
+    "target_situation": "presidential rivals competing through their endorsed candidates in regional elections",
+    "mapping": "the capped thumbs symbolize the local gubernatorial candidates acting as proxies for the two larger presidential figures",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: a thumb war\nsource_properties: two thumbs locked in a small-scale wrestling match for dominance\ntarget_situation: presidential rivals competing through their endorsed candidates in regional elections\nmapping: the capped thumbs symbolize the local gubernatorial candidates acting as proxies for the two larger presidential figures\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true,
+  "migration_origin": {
+    "record_sha256": "f32959dda7841d85aa4940d45f8083e3d1644a4d561018a9abe1b3bde3ae843b",
+    "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383"
+  }
+}

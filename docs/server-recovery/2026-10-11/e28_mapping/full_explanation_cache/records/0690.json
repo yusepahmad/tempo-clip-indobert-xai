@@ -1,0 +1,90 @@
+{
+  "index": 690,
+  "sample_id": "TMP-676FD383BB28",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "84c3da8320155c197dd37698f927f3c969fc645f51ea9d2922e15435b2a58861",
+  "image_sha256": "676fd383bb28cf5dab3bec0b0f835c5a17a2a61ed1cff9979bbbe1de046f83d9",
+  "transmitted_image_sha256": "93ca0652ea51dad24cd68829bc6a2c660088b1ae4e21c2b23edb05be0feefb75",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9905825,
+      "total": 10,
+      "remaining": 1.0094174999999996,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.990582500000002,
+      "total": 100,
+      "remaining": 91.0094175,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.909302675165236,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A farming hoe (cangkul)\",\n  \"source_properties\": \"Manual agricultural tool used for tilling earth, requiring physical labor and direct engagement with the land.\",\n  \"target_situation\": \"Mismanagement of national food stocks and the resulting multi-trillion rupiah loss due to damaged rice.\",\n  \"mapping\": \"The hoe represents the agricultural sector confronting bureaucrats, symbolizing the conflict between ground-level production and flawed top-down populist policies.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "KJ_LatWdKK2u_PUPk7_C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1165,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1051
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 3495000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 6451,
+      "total_tokens": 2517
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9947535,
+      "total": 10,
+      "remaining": 1.0052465000000002,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.994753500000002,
+      "total": 100,
+      "remaining": 91.0052465,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.004171,
+  "fields": {
+    "source_object": "A farming hoe (cangkul)",
+    "source_properties": "Manual agricultural tool used for tilling earth, requiring physical labor and direct engagement with the land.",
+    "target_situation": "Mismanagement of national food stocks and the resulting multi-trillion rupiah loss due to damaged rice.",
+    "mapping": "The hoe represents the agricultural sector confronting bureaucrats, symbolizing the conflict between ground-level production and flawed top-down populist policies.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A farming hoe (cangkul)\nsource_properties: Manual agricultural tool used for tilling earth, requiring physical labor and direct engagement with the land.\ntarget_situation: Mismanagement of national food stocks and the resulting multi-trillion rupiah loss due to damaged rice.\nmapping: The hoe represents the agricultural sector confronting bureaucrats, symbolizing the conflict between ground-level production and flawed top-down populist policies.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

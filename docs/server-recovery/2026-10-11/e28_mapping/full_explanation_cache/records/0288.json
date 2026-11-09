@@ -1,0 +1,87 @@
+{
+  "index": 288,
+  "sample_id": "TMP-06560F4A1A52",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ce0da9f847e650f172c437638120068f3f49795dac1e0dfc66daaa5624e76fae",
+  "image_sha256": "06560f4a1a52e67807be8fb98f3f9e14c8ad40a71a59e9a924f5d182622a7750",
+  "transmitted_image_sha256": "b924782bf96ba49fc7ae76b17161c7d149cead3db2332314923e3e9fa36eebd1",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.438356,
+      "total": 10,
+      "remaining": 1.5616439999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.438355999999999,
+      "total": 100,
+      "remaining": 91.561644,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4337848336435854,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Invisible man wearing a uniform and songkok\",\n  \"source_properties\": \"Clothing remains visible but the person's head and body are absent.\",\n  \"target_situation\": \"The conclusion of a political drama or career.\",\n  \"mapping\": \"The absence of the person within the iconic uniform symbolizes their departure or loss of identity at the end of a political era.\",\n  \"uncertainty\": \"None evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "tZTLaqD6Nv7v_uMP-q7MqQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 660500,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1321,
+      "total_backend_latency_ms": 1910,
+      "total_tokens": 1420
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4393135,
+      "total": 10,
+      "remaining": 1.5606864999999992,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.439313499999997,
+      "total": 100,
+      "remaining": 91.5606865,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009575,
+  "fields": {
+    "source_object": "Invisible man wearing a uniform and songkok",
+    "source_properties": "Clothing remains visible but the person's head and body are absent.",
+    "target_situation": "The conclusion of a political drama or career.",
+    "mapping": "The absence of the person within the iconic uniform symbolizes their departure or loss of identity at the end of a political era.",
+    "uncertainty": "None evident"
+  },
+  "explanation": "source_object: Invisible man wearing a uniform and songkok\nsource_properties: Clothing remains visible but the person's head and body are absent.\ntarget_situation: The conclusion of a political drama or career.\nmapping: The absence of the person within the iconic uniform symbolizes their departure or loss of identity at the end of a political era.\nuncertainty: None evident",
+  "finish_reason": "stop",
+  "usable": true
+}

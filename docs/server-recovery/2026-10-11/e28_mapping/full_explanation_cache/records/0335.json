@@ -1,0 +1,87 @@
+{
+  "index": 335,
+  "sample_id": "TMP-A5FE2DC09724",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "7a60beb60d60d31e5ab4fdc6454e60692528c0aa52af8d687ac33f2ea86eecba",
+  "image_sha256": "a5fe2dc09724388ca248fdf41d54ab1b53270cc3a80007eaa6c9196a9cbfdd32",
+  "transmitted_image_sha256": "a891205a38b2c700d1f9d09296bd78eae7a40f1bc1371815425ccb3cedb6328e",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.496205,
+      "total": 10,
+      "remaining": 1.5037950000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.496205000000003,
+      "total": 100,
+      "remaining": 91.503795,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.843320233281702,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"pliers or pincers\",\n  \"source_properties\": \"metal gripping tool with hinged jaws used for pinching or holding objects\",\n  \"target_situation\": \"a politician's alleged attempt to illicitly extract mining company shares\",\n  \"mapping\": \"the tool's function of forceful extraction symbolizes the greedy demand for shares\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "35XLavT5M9vJ_uMPvcyw-AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 89,
+      "cost": {
+        "input_tokens_cost_nanodollars": 664500,
+        "output_tokens_cost_nanodollars": 267000
+      },
+      "prompt_tokens": 1329,
+      "total_backend_latency_ms": 7249,
+      "total_tokens": 1418
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4971365,
+      "total": 10,
+      "remaining": 1.5028635000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.497136499999996,
+      "total": 100,
+      "remaining": 91.5028635,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009315,
+  "fields": {
+    "source_object": "pliers or pincers",
+    "source_properties": "metal gripping tool with hinged jaws used for pinching or holding objects",
+    "target_situation": "a politician's alleged attempt to illicitly extract mining company shares",
+    "mapping": "the tool's function of forceful extraction symbolizes the greedy demand for shares",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: pliers or pincers\nsource_properties: metal gripping tool with hinged jaws used for pinching or holding objects\ntarget_situation: a politician's alleged attempt to illicitly extract mining company shares\nmapping: the tool's function of forceful extraction symbolizes the greedy demand for shares\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

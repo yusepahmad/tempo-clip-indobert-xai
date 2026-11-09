@@ -1,0 +1,87 @@
+{
+  "index": 179,
+  "sample_id": "TMP-FFC1D125D58A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "15ae20578ae942ada2595567f30d9e1b42340c292f5a45bfeb9abaf7e0f59a44",
+  "image_sha256": "ffc1d125d58ade52ef23c17515b513a61dd918fc65dc03412699d9372f75b37b",
+  "transmitted_image_sha256": "c7e01bae7e938feb9485543581361b622dcacd7e22dbdaec872b9de8deab8f92",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.27295,
+      "total": 10,
+      "remaining": 1.7270500000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.272949999999994,
+      "total": 100,
+      "remaining": 91.72705,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9345395318232477,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"sliced cake\", \"source_properties\": \"A whole item divided into portions and distributed among different people.\", \"target_situation\": \"Reorganization of state-owned enterprise management between Danantara and the Ministry of SOEs.\", \"mapping\": \"Cutting and taking pieces of the cake represents stripping authority from the Ministry of SOEs (BUMN) to form the new Danantara entity.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "1JHLaruVPIKn_uMP9_y56As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 90,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681500,
+        "output_tokens_cost_nanodollars": 270000
+      },
+      "prompt_tokens": 1363,
+      "total_backend_latency_ms": 1700,
+      "total_tokens": 1453
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.273901500000001,
+      "total": 10,
+      "remaining": 1.726098499999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.273901499999994,
+      "total": 100,
+      "remaining": 91.7260985,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009515,
+  "fields": {
+    "source_object": "sliced cake",
+    "source_properties": "A whole item divided into portions and distributed among different people.",
+    "target_situation": "Reorganization of state-owned enterprise management between Danantara and the Ministry of SOEs.",
+    "mapping": "Cutting and taking pieces of the cake represents stripping authority from the Ministry of SOEs (BUMN) to form the new Danantara entity.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: sliced cake\nsource_properties: A whole item divided into portions and distributed among different people.\ntarget_situation: Reorganization of state-owned enterprise management between Danantara and the Ministry of SOEs.\nmapping: Cutting and taking pieces of the cake represents stripping authority from the Ministry of SOEs (BUMN) to form the new Danantara entity.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,90 @@
+{
+  "index": 315,
+  "sample_id": "TMP-F26804868A39",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "29b339c5f2ad94f7c1c3f9d0e0e1efe3bd1233d318dbba54fe70aa3045f4148d",
+  "image_sha256": "f26804868a39a965d996c46d5f65414b44f3603b5b9f86ac22f771b63ab9c97c",
+  "transmitted_image_sha256": "de630c1448e21ea09ea978a6a5e54e066e48b9361ea2c43eee791f79250abb78",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.471771,
+      "total": 10,
+      "remaining": 1.5282289999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.471771000000004,
+      "total": 100,
+      "remaining": 91.528229,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.893120076041669,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Dotted cut-out lines forming a bull's silhouette and scissors.\",\n  \"source_properties\": \"The lines designate a specific shape to be excised or removed from a surface.\",\n  \"target_situation\": \"A cabinet reshuffle and the political influence of the PDI-P party.\",\n  \"mapping\": \"The desks (government positions) are being \\\"cut out\\\" according to the bull's shape, indicating the party's role in determining the new cabinet structure.\",\n  \"uncertainty\": \"None.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ZJXLapCbI-2M_PUPu97KyQo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 851,
+      "completion_tokens_details": {
+        "reasoning_tokens": 730
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 659500,
+        "output_tokens_cost_nanodollars": 2553000
+      },
+      "prompt_tokens": 1319,
+      "total_backend_latency_ms": 4654,
+      "total_tokens": 2170
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4749835,
+      "total": 10,
+      "remaining": 1.5250164999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.474983499999993,
+      "total": 100,
+      "remaining": 91.5250165,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0032125,
+  "fields": {
+    "source_object": "Dotted cut-out lines forming a bull's silhouette and scissors.",
+    "source_properties": "The lines designate a specific shape to be excised or removed from a surface.",
+    "target_situation": "A cabinet reshuffle and the political influence of the PDI-P party.",
+    "mapping": "The desks (government positions) are being \"cut out\" according to the bull's shape, indicating the party's role in determining the new cabinet structure.",
+    "uncertainty": "None."
+  },
+  "explanation": "source_object: Dotted cut-out lines forming a bull's silhouette and scissors.\nsource_properties: The lines designate a specific shape to be excised or removed from a surface.\ntarget_situation: A cabinet reshuffle and the political influence of the PDI-P party.\nmapping: The desks (government positions) are being \"cut out\" according to the bull's shape, indicating the party's role in determining the new cabinet structure.\nuncertainty: None.",
+  "finish_reason": "stop",
+  "usable": true
+}

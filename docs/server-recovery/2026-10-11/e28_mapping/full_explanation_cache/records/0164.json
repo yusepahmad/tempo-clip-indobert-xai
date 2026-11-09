@@ -1,0 +1,87 @@
+{
+  "index": 164,
+  "sample_id": "TMP-AB80D08427A4",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "2c7cb61cb85d02a6739650c5f316661bb6330e3886e05b49f2c6696801b729b6",
+  "image_sha256": "ab80d08427a4e67bb9b3eb7323fac954792c94c6254b8b3093b266f3d7d377b7",
+  "transmitted_image_sha256": "e0d692f0b92c6c1850072d2aab0fa83f5abd9bdfb5911609fed313a8e4ea1333",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.250989,
+      "total": 10,
+      "remaining": 1.7490109999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.250989000000004,
+      "total": 100,
+      "remaining": 91.749011,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2145583238452673,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"juggling\", \"source_properties\": \"multiple spherical objects suspended in mid-air, requiring constant movement and coordination to manage.\", \"target_situation\": \"The government's frantic efforts to control the rapid spread of the Omicron variant.\", \"mapping\": \"The health worker's juggling posture represents the government's struggle to 'keep balls in the air' as they manage complex, shifting pandemic variables.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "dJHLapSyL8mb_uMPlY2fwA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681000,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1362,
+      "total_backend_latency_ms": 1627,
+      "total_tokens": 1457
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.251955,
+      "total": 10,
+      "remaining": 1.7480449999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.251954999999995,
+      "total": 100,
+      "remaining": 91.748045,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000966,
+  "fields": {
+    "source_object": "juggling",
+    "source_properties": "multiple spherical objects suspended in mid-air, requiring constant movement and coordination to manage.",
+    "target_situation": "The government's frantic efforts to control the rapid spread of the Omicron variant.",
+    "mapping": "The health worker's juggling posture represents the government's struggle to 'keep balls in the air' as they manage complex, shifting pandemic variables.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: juggling\nsource_properties: multiple spherical objects suspended in mid-air, requiring constant movement and coordination to manage.\ntarget_situation: The government's frantic efforts to control the rapid spread of the Omicron variant.\nmapping: The health worker's juggling posture represents the government's struggle to 'keep balls in the air' as they manage complex, shifting pandemic variables.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

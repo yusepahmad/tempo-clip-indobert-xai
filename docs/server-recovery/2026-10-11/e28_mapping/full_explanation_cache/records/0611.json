@@ -1,0 +1,87 @@
+{
+  "index": 611,
+  "sample_id": "TMP-190BD098C7BF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3641699eccce364fe018ac2b2548ec5d82c4516abb478c7a436f7207cc1c6731",
+  "image_sha256": "190bd098c7bfa1d7ed35c0c44796f3aa4568df8a77701661af53d5e3cc3b5070",
+  "transmitted_image_sha256": "9930b839618f5bfd40b6508513b4495ece5d5f8ca4b173bc4603a82492998d42",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8746305,
+      "total": 10,
+      "remaining": 1.1253694999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.874630499999995,
+      "total": 100,
+      "remaining": 91.1253695,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.218577996827662,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"bent gun barrel\", \"source_properties\": \"A gun barrel curved 180 degrees back toward the shooter.\", \"target_situation\": \"Ferdy Sambo's attempts to evade a death sentence for premeditated murder.\", \"mapping\": \"The barrel aiming at Sambo symbolizes his actions backfiring, leading to his own death sentence.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Gp3LaqL6EL7i_uMPz_DU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 83,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679000,
+        "output_tokens_cost_nanodollars": 249000
+      },
+      "prompt_tokens": 1358,
+      "total_backend_latency_ms": 1868,
+      "total_tokens": 1441
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8755585,
+      "total": 10,
+      "remaining": 1.1244414999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.875558499999997,
+      "total": 100,
+      "remaining": 91.1244415,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000928,
+  "fields": {
+    "source_object": "bent gun barrel",
+    "source_properties": "A gun barrel curved 180 degrees back toward the shooter.",
+    "target_situation": "Ferdy Sambo's attempts to evade a death sentence for premeditated murder.",
+    "mapping": "The barrel aiming at Sambo symbolizes his actions backfiring, leading to his own death sentence.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: bent gun barrel\nsource_properties: A gun barrel curved 180 degrees back toward the shooter.\ntarget_situation: Ferdy Sambo's attempts to evade a death sentence for premeditated murder.\nmapping: The barrel aiming at Sambo symbolizes his actions backfiring, leading to his own death sentence.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

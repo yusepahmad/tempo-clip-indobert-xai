@@ -1,0 +1,150 @@
+{
+  "worker_sha256": "8a15d1b4f98a18a3dcce9d26944757bdc299e70c91d54165a1adfc395bfd84d5",
+  "reference_loader_sha256": "de41e071e4dbdbad4cea998bf8ae4816866562e33e1da5f489eefa5b0881ef9c",
+  "reference": {
+    "worker_sha256": "de41e071e4dbdbad4cea998bf8ae4816866562e33e1da5f489eefa5b0881ef9c",
+    "helper_sha256": "c117f65e9460bccc4daeba0de9f3af4ee737e7ef65f57d39cca5a0910f8a3ece",
+    "reference": {
+      "worker_sha256": "02588b6fcd4bdbe21be4b17e9d60dcfcdebfbf0b97246056a88b4804febfb6e5",
+      "data_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+      "e5_sha256": "1f0d2b2f346071fa673701847af39e8a22faf9e6a98195734982cd71e99af374",
+      "bge_sha256": "c0d7d1fc9ac42988b0d107a694d7d3b355105f8640f776ace2617eed936495c4",
+      "clip_sha256": "d27cd5dbecfffba3a8bbb96037f3181da20f1c95eb246a7d38a4627a90599e5c",
+      "reference_verification_sha256": "0d91fcf3cc6f365b08547161657679f88ef7df18fe19176bc0a1f61499cd547a",
+      "grid": {
+        "fusion__e5_weight": [
+          0,
+          0.5,
+          1,
+          2
+        ],
+        "fusion__clip_weight": [
+          0,
+          0.5,
+          1,
+          2
+        ],
+        "clf__C": [
+          1,
+          10,
+          100
+        ],
+        "clf__gamma": [
+          "scale",
+          0.1,
+          1
+        ],
+        "clf__class_weight": [
+          null,
+          "balanced"
+        ]
+      },
+      "normalization": "StandardScaler fit per block, L2 per block, then weights",
+      "outer": "Task1 baseline stratified5 seed42",
+      "inner": "Task2 stratified3 seed42",
+      "selection_order": [
+        "description",
+        "source_reason",
+        "combined",
+        "description_reason",
+        "semantic_visual",
+        "weighted"
+      ],
+      "n_jobs": 1
+    },
+    "embedding_verification_sha256": "ec69508ef61c5aeb74351d838576fc968e969204898b24b6a0132b517339dc10",
+    "embedding_meta_sha256": "e9fe15f1eec1604f945d542ab5b97b7555bc294c7860a123aed0605549ce0289",
+    "features_sha256": "a5843bc3056645ed9fa1902639edc5a1345923c79371e8113c93d37cbe6d6e26",
+    "grid": [
+      {
+        "fusion__mode": [
+          "image_only"
+        ],
+        "clf__C": [
+          1,
+          10,
+          100
+        ],
+        "clf__gamma": [
+          "scale",
+          0.1,
+          1
+        ],
+        "clf__class_weight": [
+          null,
+          "balanced"
+        ]
+      },
+      {
+        "fusion__mode": [
+          "fusion"
+        ],
+        "fusion__visual_weight": [
+          0,
+          0.5,
+          1,
+          2,
+          4
+        ],
+        "fusion__e5_weight": [
+          0.5,
+          2
+        ],
+        "fusion__clip_weight": [
+          0,
+          1
+        ],
+        "clf__C": [
+          1,
+          10,
+          100
+        ],
+        "clf__gamma": [
+          "scale",
+          0.1,
+          1
+        ],
+        "clf__class_weight": [
+          null,
+          "balanced"
+        ]
+      }
+    ],
+    "outer": "Task1 baseline5 seed42",
+    "inner": "Task2 stratified3 seed42",
+    "normalization": "training-only per-block StandardScaler/L2 then weights",
+    "n_jobs": 1
+  },
+  "embedding_verification_sha256": "233d12d9174c3cec4e8d4fff81b0387a3fd41a52b1324b8005acac4a80e99fd1",
+  "embedding_meta_sha256": "3a56beaed2c48446d3d0c89bb69c6dd4aabab95ca7f7698a77d9805e302a52c7",
+  "features_sha256": "644c952239cf365ab21db84c355adc49d291e4c3b1f17e1d044572215e36cf18",
+  "grid": {
+    "fusion__e5_weight": [
+      0.5,
+      2
+    ],
+    "fusion__full_weight": [
+      0,
+      1
+    ],
+    "fusion__crop_weight": [
+      0,
+      1
+    ],
+    "clf__C": [
+      1,
+      10
+    ],
+    "clf__gamma": [
+      0.1,
+      "scale"
+    ],
+    "clf__class_weight": [
+      null,
+      "balanced"
+    ]
+  },
+  "outer": "Task1 baseline5 seed42",
+  "inner": "Task2 stratified3 seed42",
+  "n_jobs": 1
+}

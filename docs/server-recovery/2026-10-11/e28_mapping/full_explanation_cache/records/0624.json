@@ -1,0 +1,87 @@
+{
+  "index": 624,
+  "sample_id": "TMP-FB1C85CA8763",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f3f35d30df5aa6c37051d2482169eea3a1a67dd880780e4e7bbb046876a22179",
+  "image_sha256": "fb1c85ca87638ad497278a7b74c0b0d17728c6540b3b7c4c86df257c0beee189",
+  "transmitted_image_sha256": "1a863b4c8936bdce6318830cd2056b2ac3325b6bd9c5026ca3a401fef4571c95",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.889562,
+      "total": 10,
+      "remaining": 1.1104380000000003,
+      "refill_at": "2026-10-11 23:35:15.881000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.889561999999998,
+      "total": 100,
+      "remaining": 91.110438,
+      "refill_at": "2026-11-09 23:35:15.879000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.046986650675535,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"pointing hands made of smoke\",\n  \"source_properties\": \"formless, billow from exhaust and factory chimneys, accuse by pointing\",\n  \"target_situation\": \"Jakarta's air pollution blame-shifting\",\n  \"mapping\": \"Smoke clouds transform into fingers pointing at different sources (cars, industry), mimicking how various sectors blame each other for the unbreathable air.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "a53LaoufC96d_uMPq6y2oA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 664000,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1328,
+      "total_backend_latency_ms": 2431,
+      "total_tokens": 1429
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.890529,
+      "total": 10,
+      "remaining": 1.1094709999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.890529,
+      "total": 100,
+      "remaining": 91.109471,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000967,
+  "fields": {
+    "source_object": "pointing hands made of smoke",
+    "source_properties": "formless, billow from exhaust and factory chimneys, accuse by pointing",
+    "target_situation": "Jakarta's air pollution blame-shifting",
+    "mapping": "Smoke clouds transform into fingers pointing at different sources (cars, industry), mimicking how various sectors blame each other for the unbreathable air.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: pointing hands made of smoke\nsource_properties: formless, billow from exhaust and factory chimneys, accuse by pointing\ntarget_situation: Jakarta's air pollution blame-shifting\nmapping: Smoke clouds transform into fingers pointing at different sources (cars, industry), mimicking how various sectors blame each other for the unbreathable air.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 214,
+  "sample_id": "TMP-6FE403AD2921",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1727633718db90f8e121f50f95cd83de1505a0063a734105de8e9f013c8cd77e",
+  "image_sha256": "6fe403ad2921b6923c2702b40c8688dd88d45b19e603f844f7efa617873491db",
+  "transmitted_image_sha256": "81113d8eee903be39853a4e7331059b94e9a409d0962e3386b044af7a0ebec8b",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.324842,
+      "total": 10,
+      "remaining": 1.6751579999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.324842000000004,
+      "total": 100,
+      "remaining": 91.675158,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.324941175058484,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Oil palm tree\",\n  \"source_properties\": \"Tall, textured trunk, bearing clusters of fruit, typically found in large plantations.\",\n  \"target_situation\": \"Corruption allegations involving 'Madam Hartati' and palm oil industry bribery.\",\n  \"mapping\": \"The tree's fruits are replaced with bundles of cash, suggesting the industry 'yields' illicit money.\",\n  \"uncertainty\": \"None evident.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "u5LLav3vELuc_uMP2cbk2A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 665000,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1330,
+      "total_backend_latency_ms": 1707,
+      "total_tokens": 1429
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.325804,
+      "total": 10,
+      "remaining": 1.6741960000000002,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.325804000000005,
+      "total": 100,
+      "remaining": 91.674196,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000962,
+  "fields": {
+    "source_object": "Oil palm tree",
+    "source_properties": "Tall, textured trunk, bearing clusters of fruit, typically found in large plantations.",
+    "target_situation": "Corruption allegations involving 'Madam Hartati' and palm oil industry bribery.",
+    "mapping": "The tree's fruits are replaced with bundles of cash, suggesting the industry 'yields' illicit money.",
+    "uncertainty": "None evident."
+  },
+  "explanation": "source_object: Oil palm tree\nsource_properties: Tall, textured trunk, bearing clusters of fruit, typically found in large plantations.\ntarget_situation: Corruption allegations involving 'Madam Hartati' and palm oil industry bribery.\nmapping: The tree's fruits are replaced with bundles of cash, suggesting the industry 'yields' illicit money.\nuncertainty: None evident.",
+  "finish_reason": "stop",
+  "usable": true
+}

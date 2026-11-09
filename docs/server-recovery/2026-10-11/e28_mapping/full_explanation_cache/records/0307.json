@@ -1,0 +1,87 @@
+{
+  "index": 307,
+  "sample_id": "TMP-810B83E62115",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "049d9dc44309d3daa04335c09275bfa5964e8c6abe561596bc68ebbc08f0f2ff",
+  "image_sha256": "810b83e62115ef29520eb2d725015845d679a1c62bcf85f970ea09455df95c78",
+  "transmitted_image_sha256": "9fd4a2670212d21008ae6453a94da308dab7d193aab3ffe984de42646c61fab8",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4609645,
+      "total": 10,
+      "remaining": 1.5390355000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.460964500000003,
+      "total": 100,
+      "remaining": 91.5390355,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.511630145367235,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Ghost Rider\",\n  \"source_properties\": \"Flaming skull, black leather jacket, motorcycle, and brandished weapon.\",\n  \"target_situation\": \"Violent street robberies (begal) in Indonesia.\",\n  \"mapping\": \"The fearsome supernatural vigilante on a scooter represents the terrifying and lethal nature of muggers who haunt the streets.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "MZXLapXeCLqi_uMPou_3-Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 661000,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1322,
+      "total_backend_latency_ms": 1635,
+      "total_tokens": 1416
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4619075,
+      "total": 10,
+      "remaining": 1.5380924999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.461907499999995,
+      "total": 100,
+      "remaining": 91.5380925,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000943,
+  "fields": {
+    "source_object": "Ghost Rider",
+    "source_properties": "Flaming skull, black leather jacket, motorcycle, and brandished weapon.",
+    "target_situation": "Violent street robberies (begal) in Indonesia.",
+    "mapping": "The fearsome supernatural vigilante on a scooter represents the terrifying and lethal nature of muggers who haunt the streets.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Ghost Rider\nsource_properties: Flaming skull, black leather jacket, motorcycle, and brandished weapon.\ntarget_situation: Violent street robberies (begal) in Indonesia.\nmapping: The fearsome supernatural vigilante on a scooter represents the terrifying and lethal nature of muggers who haunt the streets.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

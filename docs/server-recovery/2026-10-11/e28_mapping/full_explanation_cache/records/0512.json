@@ -1,0 +1,87 @@
+{
+  "index": 512,
+  "sample_id": "TMP-F78055C69822",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e4408f6685f38ac5ac2774091465c274d523e382b2711d1d202d0a2be190a385",
+  "image_sha256": "f78055c69822c7c7e8bb48eb981a14b1a1236cac70a78124a173df4419aa4eb5",
+  "transmitted_image_sha256": "e2ae924539f0a13f06b94f823c8a35f607681646a9da4828dca12eef641b6d9e",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.74004,
+      "total": 10,
+      "remaining": 1.2599599999999995,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.740039999999993,
+      "total": 100,
+      "remaining": 91.25996,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.173031350132078,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"ice cream swirl\",\n  \"source_properties\": \"soft, melting, unstable, twisting, and fluid texture\",\n  \"target_situation\": \"Formula E race planning in the Monas area\",\n  \"mapping\": \"The melting ice cream atop the National Monument represents the messy, unstable, and 'zigzag' planning process causing chaos in the area.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "d5rLauvkKcCS_uMPqPCfqA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 1613,
+      "total_tokens": 1441
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7409955,
+      "total": 10,
+      "remaining": 1.2590044999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.740995499999997,
+      "total": 100,
+      "remaining": 91.2590045,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009555,
+  "fields": {
+    "source_object": "ice cream swirl",
+    "source_properties": "soft, melting, unstable, twisting, and fluid texture",
+    "target_situation": "Formula E race planning in the Monas area",
+    "mapping": "The melting ice cream atop the National Monument represents the messy, unstable, and 'zigzag' planning process causing chaos in the area.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: ice cream swirl\nsource_properties: soft, melting, unstable, twisting, and fluid texture\ntarget_situation: Formula E race planning in the Monas area\nmapping: The melting ice cream atop the National Monument represents the messy, unstable, and 'zigzag' planning process causing chaos in the area.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

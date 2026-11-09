@@ -1,0 +1,87 @@
+{
+  "index": 514,
+  "sample_id": "TMP-CBF1F6D94754",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9ed42484010c43c00e8a121749355bf2f4d39877ab53e424fcd0926771b1e4ce",
+  "image_sha256": "cbf1f6d9475496b82768801141f562049af30ad26c227e64fd24040fe0eee033",
+  "transmitted_image_sha256": "8161ea63f08b50cb33bd8e29eb616ce264b1f3a438ec7cacd7494f0ebdaedf4d",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.741968,
+      "total": 10,
+      "remaining": 1.258032,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.741968,
+      "total": 100,
+      "remaining": 91.258032,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.6814443599432707,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Full moon and silhouette\", \"source_properties\": \"High, bright, serene, illuminating a dark landscape, enduring through time.\", \"target_situation\": \"Historical Islamic scholars in the Indonesian archipelago.\", \"mapping\": \"The moon symbolizes the enduring, guiding light of the scholars' teachings on tolerance and openness, which continue to illuminate society long after their era.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "hJrLaqOjCJ-d_uMPsajYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 85,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681500,
+        "output_tokens_cost_nanodollars": 255000
+      },
+      "prompt_tokens": 1363,
+      "total_backend_latency_ms": 1761,
+      "total_tokens": 1448
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7429045,
+      "total": 10,
+      "remaining": 1.2570955000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.742904499999995,
+      "total": 100,
+      "remaining": 91.2570955,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009365,
+  "fields": {
+    "source_object": "Full moon and silhouette",
+    "source_properties": "High, bright, serene, illuminating a dark landscape, enduring through time.",
+    "target_situation": "Historical Islamic scholars in the Indonesian archipelago.",
+    "mapping": "The moon symbolizes the enduring, guiding light of the scholars' teachings on tolerance and openness, which continue to illuminate society long after their era.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Full moon and silhouette\nsource_properties: High, bright, serene, illuminating a dark landscape, enduring through time.\ntarget_situation: Historical Islamic scholars in the Indonesian archipelago.\nmapping: The moon symbolizes the enduring, guiding light of the scholars' teachings on tolerance and openness, which continue to illuminate society long after their era.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

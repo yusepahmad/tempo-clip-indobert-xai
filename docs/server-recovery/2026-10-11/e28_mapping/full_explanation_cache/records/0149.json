@@ -1,0 +1,87 @@
+{
+  "index": 149,
+  "sample_id": "TMP-23B4A7048E82",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f5b142730a3ead1f771924d6d04cdb496b93d938e03954808e1238495e51d4e9",
+  "image_sha256": "23b4a7048e82e9e257a723e0ed211d71d80c9da8165af434549d8b574c28f5db",
+  "transmitted_image_sha256": "d7176c767402c27a483ec5a7d4353460b0724bca1648504ac16737e878c642ab",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2277835,
+      "total": 10,
+      "remaining": 1.7722165000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.227783500000001,
+      "total": 100,
+      "remaining": 91.7722165,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.7375155831687152,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Canvas and painting tools\",\n  \"source_properties\": \"Blank wall, scribbles, paintbrushes, and paint cans used to depict a map.\",\n  \"target_situation\": \"Jokowi's electoral performance and the secrets behind his victory despite stagnant poll numbers.\",\n  \"mapping\": \"Drawing and painting the Indonesian map symbolizes the active construction of political outcomes.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "CpHLasKbNqCm_uMPsO6HgA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675500,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1351,
+      "total_backend_latency_ms": 1393,
+      "total_tokens": 1448
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.22875,
+      "total": 10,
+      "remaining": 1.7712500000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.228750000000005,
+      "total": 100,
+      "remaining": 91.77125,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009665,
+  "fields": {
+    "source_object": "Canvas and painting tools",
+    "source_properties": "Blank wall, scribbles, paintbrushes, and paint cans used to depict a map.",
+    "target_situation": "Jokowi's electoral performance and the secrets behind his victory despite stagnant poll numbers.",
+    "mapping": "Drawing and painting the Indonesian map symbolizes the active construction of political outcomes.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Canvas and painting tools\nsource_properties: Blank wall, scribbles, paintbrushes, and paint cans used to depict a map.\ntarget_situation: Jokowi's electoral performance and the secrets behind his victory despite stagnant poll numbers.\nmapping: Drawing and painting the Indonesian map symbolizes the active construction of political outcomes.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

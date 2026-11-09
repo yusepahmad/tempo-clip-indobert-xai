@@ -1,0 +1,86 @@
+{
+  "index": 552,
+  "sample_id": "TMP-D42AC600C320",
+  "fold": 4,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "9facf7f0109b71a4b5a9a46714cd16ff6607c817bc47b74b8bdda351896944fd",
+  "image_sha256": "d42ac600c3202d5af6bf21030db192b5e0d2ed4877533001569de8defcc03c8b",
+  "transmitted_image_sha256": "5adcc9c449bd27343b3b6cc820a688df5b1d1f8a6aeacfc85177ce1cef2ad722",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.8479015,
+      "total": 10,
+      "remaining": 4.1520985,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.847901500000006,
+      "total": 100,
+      "remaining": 94.1520985,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 10.759877340169623,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks soal, ilustrasi tersebut menampilkan para tentara yang mendorong seorang pria ke depan dalam posisi yang menyerupai tekanan atau paksaan. Alasan yang disertakan secara eksplisit menggunakan kata kunci \"**jeratan**\" dan \"**tekanan**\" untuk menggambarkan situasi tersebut.\n\nSesuai dengan kategori yang disediakan:\n**A: BENCANA_JERAT** mencakup ancaman, bencana, perangkap, **jerat** atau keadaan terjepit sebagai kiasan.\n\nJawab satu kode A sampai G: **A**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Ev_KasOkMbye_uMPo--KmQ4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1898,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1778
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2091000,
+        "output_tokens_cost_nanodollars": 5694000
+      },
+      "prompt_tokens": 4182,
+      "total_backend_latency_ms": 9516,
+      "total_tokens": 6080
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.8556865,
+      "total": 10,
+      "remaining": 4.1443135,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.8556865000000045,
+      "total": 100,
+      "remaining": 94.1443135,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.007785,
+  "code": "A",
+  "strict_code": "INVALID",
+  "parsing_rule": "explicit_prefix_code",
+  "finish_reason": "stop",
+  "prediction": "BENCANA_JERAT"
+}

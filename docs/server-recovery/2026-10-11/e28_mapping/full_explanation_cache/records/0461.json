@@ -1,0 +1,87 @@
+{
+  "index": 461,
+  "sample_id": "TMP-89F581CCE604",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bec5b71ade957994e21476a1dd6b4643a892dcf342ae6da8ac424a0cd13a7ac7",
+  "image_sha256": "89f581cce604f1261714ecf5ec953b17238907c1ee522b787386c810f27b8ea2",
+  "transmitted_image_sha256": "2564564bf38ad4879f24acd1fed20f9c469486b3687e7b25b8eb425781172610",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6695365,
+      "total": 10,
+      "remaining": 1.3304635000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.669536500000007,
+      "total": 100,
+      "remaining": 91.3304635,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.118192269001156,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"tangled utility wires\", \"source_properties\": \"Chaotic, complex, dangerously interconnected, and prone to electrical shock.\", \"target_situation\": \"The administrative and structural reorganization of Indonesia's state electricity company (PLN) by the Ministry of SOEs.\", \"mapping\": \"The mess of wires symbolizes the complicated 'tug-of-war' in appointing a new CEO and the hazardous complexities of separating power generation from PLN's business.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "JpnLaqSNKbXP_uMPiOzhoQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674000,
+        "output_tokens_cost_nanodollars": 312000
+      },
+      "prompt_tokens": 1348,
+      "total_backend_latency_ms": 1821,
+      "total_tokens": 1452
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6705225,
+      "total": 10,
+      "remaining": 1.3294774999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.670522500000004,
+      "total": 100,
+      "remaining": 91.3294775,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000986,
+  "fields": {
+    "source_object": "tangled utility wires",
+    "source_properties": "Chaotic, complex, dangerously interconnected, and prone to electrical shock.",
+    "target_situation": "The administrative and structural reorganization of Indonesia's state electricity company (PLN) by the Ministry of SOEs.",
+    "mapping": "The mess of wires symbolizes the complicated 'tug-of-war' in appointing a new CEO and the hazardous complexities of separating power generation from PLN's business.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: tangled utility wires\nsource_properties: Chaotic, complex, dangerously interconnected, and prone to electrical shock.\ntarget_situation: The administrative and structural reorganization of Indonesia's state electricity company (PLN) by the Ministry of SOEs.\nmapping: The mess of wires symbolizes the complicated 'tug-of-war' in appointing a new CEO and the hazardous complexities of separating power generation from PLN's business.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

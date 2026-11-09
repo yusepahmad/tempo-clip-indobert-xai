@@ -1,0 +1,87 @@
+{
+  "index": 74,
+  "sample_id": "TMP-F199123D9958",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3b0328c9d86a7c79b53fdb89da48b1a30572ee95a437319516ebeff2750f478e",
+  "image_sha256": "f199123d9958a728b45bd7d098a8dec69c141a63d92224ed1e5775d0b8d3cdd0",
+  "transmitted_image_sha256": "b9800f8a96d06410b4f25da63f8baf45e1554f821b046f8c18b075f96cfc2c71",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1128195,
+      "total": 10,
+      "remaining": 1.8871804999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.1128195,
+      "total": 100,
+      "remaining": 91.8871805,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.324200159870088,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Kuda lumping performance\", \"source_properties\": \"Flat horse-shaped props carried by performers whose own legs are visible and active beneath the inanimate facade.\", \"target_situation\": \"The 2019 presidential candidates and their covert campaign teams.\", \"mapping\": \"The presidential figures appear to ride horses, but shadow figures (underground teams) actually carry them and perform the real work, rendering the visible leaders as mere facades.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Do_LapO3NMfR_uMPxMva8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673000,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1346,
+      "total_backend_latency_ms": 1760,
+      "total_tokens": 1448
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1137985,
+      "total": 10,
+      "remaining": 1.8862015000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.113798500000001,
+      "total": 100,
+      "remaining": 91.8862015,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000979,
+  "fields": {
+    "source_object": "Kuda lumping performance",
+    "source_properties": "Flat horse-shaped props carried by performers whose own legs are visible and active beneath the inanimate facade.",
+    "target_situation": "The 2019 presidential candidates and their covert campaign teams.",
+    "mapping": "The presidential figures appear to ride horses, but shadow figures (underground teams) actually carry them and perform the real work, rendering the visible leaders as mere facades.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Kuda lumping performance\nsource_properties: Flat horse-shaped props carried by performers whose own legs are visible and active beneath the inanimate facade.\ntarget_situation: The 2019 presidential candidates and their covert campaign teams.\nmapping: The presidential figures appear to ride horses, but shadow figures (underground teams) actually carry them and perform the real work, rendering the visible leaders as mere facades.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

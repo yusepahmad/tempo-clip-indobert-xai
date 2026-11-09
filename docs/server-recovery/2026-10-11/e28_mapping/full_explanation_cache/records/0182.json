@@ -1,0 +1,87 @@
+{
+  "index": 182,
+  "sample_id": "TMP-A2FA1DDA9803",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "50dfa766c5191609bac39d3802ffde2df5890b337213c9d8098e8dfa635ff16a",
+  "image_sha256": "a2fa1dda9803e01c5cfeea0b4aed22822b56875eb5831d76d36000991698eea8",
+  "transmitted_image_sha256": "40ee3b31b1cd5272126bba27c732fdc64954b2c56eb89af01851f3c4491bf9fb",
+  "image_size": [
+    576,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2759555,
+      "total": 10,
+      "remaining": 1.7240444999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.275955499999995,
+      "total": 100,
+      "remaining": 91.7240445,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.5759502919390798,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Leonardo da Vinci's 'The Last Supper' painting\",\n  \"source_properties\": \"A long table with central figure and twelve disciples in distinct poses and groupings.\",\n  \"target_situation\": \"President Prabowo's family and associates managing a free nutritious meal program.\",\n  \"mapping\": \"The illustration mimics the painting's composition, replacing disciples with political figures to suggest a significant, potentially conspiratorial gathering around a central leader.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "5pHLar_tMZ_v_uMPm5vQ6AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 112,
+      "cost": {
+        "input_tokens_cost_nanodollars": 663500,
+        "output_tokens_cost_nanodollars": 336000
+      },
+      "prompt_tokens": 1327,
+      "total_backend_latency_ms": 1864,
+      "total_tokens": 1439
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.276955000000001,
+      "total": 10,
+      "remaining": 1.723044999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.276955000000001,
+      "total": 100,
+      "remaining": 91.723045,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009995,
+  "fields": {
+    "source_object": "Leonardo da Vinci's 'The Last Supper' painting",
+    "source_properties": "A long table with central figure and twelve disciples in distinct poses and groupings.",
+    "target_situation": "President Prabowo's family and associates managing a free nutritious meal program.",
+    "mapping": "The illustration mimics the painting's composition, replacing disciples with political figures to suggest a significant, potentially conspiratorial gathering around a central leader.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Leonardo da Vinci's 'The Last Supper' painting\nsource_properties: A long table with central figure and twelve disciples in distinct poses and groupings.\ntarget_situation: President Prabowo's family and associates managing a free nutritious meal program.\nmapping: The illustration mimics the painting's composition, replacing disciples with political figures to suggest a significant, potentially conspiratorial gathering around a central leader.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

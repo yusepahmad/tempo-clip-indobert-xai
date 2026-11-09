@@ -1,0 +1,87 @@
+{
+  "index": 276,
+  "sample_id": "TMP-42B91B62119A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "29ae0efca4d9298965af9717d4a9b82c8337c9a8a70a345f1f95fac67ed49526",
+  "image_sha256": "42b91b62119a4f9313adda765325f2a030caee99a7e40c7a3f5cfbbf459d6d40",
+  "transmitted_image_sha256": "4b80e96183147c0afc5828abcb10feac1b79b5ff87e722e0ab551b051ce4042b",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.418273,
+      "total": 10,
+      "remaining": 1.5817270000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.418273,
+      "total": 100,
+      "remaining": 91.581727,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1357896281406283,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A runner crossing a finish line\",\n  \"source_properties\": \"Running through a yellow ribbon at the end of a race, looking upwards in triumph.\",\n  \"target_situation\": \"The legal downfall and investigation of Hadi Poernomo by the KPK.\",\n  \"mapping\": \"Crossing the finish line represents the 'end of the journey' for Poernomo's career, leading directly into a waiting KPK detainee van.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "X5TLaseVHJKp_uMPhrH00QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 110,
+      "cost": {
+        "input_tokens_cost_nanodollars": 670000,
+        "output_tokens_cost_nanodollars": 330000
+      },
+      "prompt_tokens": 1340,
+      "total_backend_latency_ms": 1774,
+      "total_tokens": 1450
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.419273,
+      "total": 10,
+      "remaining": 1.5807269999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.419273000000004,
+      "total": 100,
+      "remaining": 91.580727,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001,
+  "fields": {
+    "source_object": "A runner crossing a finish line",
+    "source_properties": "Running through a yellow ribbon at the end of a race, looking upwards in triumph.",
+    "target_situation": "The legal downfall and investigation of Hadi Poernomo by the KPK.",
+    "mapping": "Crossing the finish line represents the 'end of the journey' for Poernomo's career, leading directly into a waiting KPK detainee van.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A runner crossing a finish line\nsource_properties: Running through a yellow ribbon at the end of a race, looking upwards in triumph.\ntarget_situation: The legal downfall and investigation of Hadi Poernomo by the KPK.\nmapping: Crossing the finish line represents the 'end of the journey' for Poernomo's career, leading directly into a waiting KPK detainee van.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

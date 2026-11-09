@@ -1,0 +1,87 @@
+{
+  "index": 520,
+  "sample_id": "TMP-B843E49F6F2F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "d818075d2fbabb863fc617a99742f21342d061e4abfdfc1b2d3534f79253db6b",
+  "image_sha256": "b843e49f6f2f5a42304f0b85bfbf46e285358532932e882f5078053e8f68f98f",
+  "transmitted_image_sha256": "f21ca6982cd001a4bcca94d0ec199276276d3569edeb72adec87dacc4d0c46f3",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.750009,
+      "total": 10,
+      "remaining": 1.2499909999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.750009000000006,
+      "total": 100,
+      "remaining": 91.249991,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.123220179695636,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"iceberg\",\n  \"source_properties\": \"Submerged mass, vast hidden bulk below the water line, small visible tip.\",\n  \"target_situation\": \"Agus Suparmanto's alleged financial dealings and nickel mining business involvement.\",\n  \"mapping\": \"The minister's public persona is the visible tip, while deep, hidden financial gains are underwater.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "rZrLaseRNrqi_uMPou_3-Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676500,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1353,
+      "total_backend_latency_ms": 2921,
+      "total_tokens": 1450
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7509765,
+      "total": 10,
+      "remaining": 1.2490234999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.750976499999993,
+      "total": 100,
+      "remaining": 91.2490235,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009675,
+  "fields": {
+    "source_object": "iceberg",
+    "source_properties": "Submerged mass, vast hidden bulk below the water line, small visible tip.",
+    "target_situation": "Agus Suparmanto's alleged financial dealings and nickel mining business involvement.",
+    "mapping": "The minister's public persona is the visible tip, while deep, hidden financial gains are underwater.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: iceberg\nsource_properties: Submerged mass, vast hidden bulk below the water line, small visible tip.\ntarget_situation: Agus Suparmanto's alleged financial dealings and nickel mining business involvement.\nmapping: The minister's public persona is the visible tip, while deep, hidden financial gains are underwater.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

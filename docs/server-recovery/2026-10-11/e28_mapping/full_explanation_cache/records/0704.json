@@ -1,0 +1,87 @@
+{
+  "index": 704,
+  "sample_id": "TMP-67E518E74CE7",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "4fe98c9eb1f6076eddd9bab84881dff655962134ebc8cc9a9978d53d230ffbf0",
+  "image_sha256": "67e518e74ce7466e5804bfad780a6b45de411bab21081521a5b564924804317c",
+  "transmitted_image_sha256": "4ebd5d212384d80f447e54fd44030d4311becf71a63e052da9e984fb0a7d0fff",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.022287500000001,
+      "total": 10,
+      "remaining": 0.9777124999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.022287500000004,
+      "total": 100,
+      "remaining": 90.9777125,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9532241602428257,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Computer cursor hand\",\n  \"source_properties\": \"A pixelated white hand icon pointing a single index finger.\",\n  \"target_situation\": \"Digital activism resisting armed or military force.\",\n  \"mapping\": \"The cursor points back at rifle barrels, representing a single digital click or online action opposing multiple weapons.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "k5_LaoPYOvKU_uMPp6OP6Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 662000,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1324,
+      "total_backend_latency_ms": 1488,
+      "total_tokens": 1410
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0232075,
+      "total": 10,
+      "remaining": 0.9767925000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.023207499999998,
+      "total": 100,
+      "remaining": 90.9767925,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.00092,
+  "fields": {
+    "source_object": "Computer cursor hand",
+    "source_properties": "A pixelated white hand icon pointing a single index finger.",
+    "target_situation": "Digital activism resisting armed or military force.",
+    "mapping": "The cursor points back at rifle barrels, representing a single digital click or online action opposing multiple weapons.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Computer cursor hand\nsource_properties: A pixelated white hand icon pointing a single index finger.\ntarget_situation: Digital activism resisting armed or military force.\nmapping: The cursor points back at rifle barrels, representing a single digital click or online action opposing multiple weapons.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

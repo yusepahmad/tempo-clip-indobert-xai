@@ -1,0 +1,90 @@
+{
+  "index": 132,
+  "sample_id": "TMP-01279CEA7FCE",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "80dfe4157ac16a9fe1929097ce1bfddeac8478e737f596387d75c0f6f228c6e5",
+  "image_sha256": "01279cea7fcee8c6525be516d0277ebcb83d0cd68acef6a37587ea10cf67562c",
+  "transmitted_image_sha256": "37b2de27c57541a4dad9f25af1c497917c76f277a2eddbf2591bf61454815f3b",
+  "image_size": [
+    472,
+    628
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1981375,
+      "total": 10,
+      "remaining": 1.8018625000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.198137500000001,
+      "total": 100,
+      "remaining": 91.8018625,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.546409728936851,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A water dispenser topped with an oil drum.\",\n  \"source_properties\": \"A device designed to easily tap and draw liquid from a large central reservoir.\",\n  \"target_situation\": \"Alleged illicit manipulation of Pertamina's oil procurement by Riza Chalid's business group.\",\n  \"mapping\": \"Tapping the dispenser symbolizes the controlled siphoning of resources or profits from the state oil company.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "jpDLarLRLrXP_uMPiOzhoQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 842,
+      "completion_tokens_details": {
+        "reasoning_tokens": 735
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 663000,
+        "output_tokens_cost_nanodollars": 2526000
+      },
+      "prompt_tokens": 1326,
+      "total_backend_latency_ms": 4434,
+      "total_tokens": 2168
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2013265,
+      "total": 10,
+      "remaining": 1.7986734999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.201326499999993,
+      "total": 100,
+      "remaining": 91.7986735,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.003189,
+  "fields": {
+    "source_object": "A water dispenser topped with an oil drum.",
+    "source_properties": "A device designed to easily tap and draw liquid from a large central reservoir.",
+    "target_situation": "Alleged illicit manipulation of Pertamina's oil procurement by Riza Chalid's business group.",
+    "mapping": "Tapping the dispenser symbolizes the controlled siphoning of resources or profits from the state oil company.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A water dispenser topped with an oil drum.\nsource_properties: A device designed to easily tap and draw liquid from a large central reservoir.\ntarget_situation: Alleged illicit manipulation of Pertamina's oil procurement by Riza Chalid's business group.\nmapping: Tapping the dispenser symbolizes the controlled siphoning of resources or profits from the state oil company.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

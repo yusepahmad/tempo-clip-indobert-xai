@@ -1,0 +1,90 @@
+{
+  "index": 269,
+  "sample_id": "TMP-D8E58B4A45EE",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "12b3611b098651945fd53c99e4ca4ccf401710d72ef1c6621805f66fcf79feda",
+  "image_sha256": "d8e58b4a45eedde2bbe5273d9179378d7e01b6036de78e1bf346256dd05ab595",
+  "transmitted_image_sha256": "d50bcceeeb480e3cd35648f7bfc67303d29bfa681253d517e0f45d0f4ee50e18",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4102735,
+      "total": 10,
+      "remaining": 1.5897264999999994,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.410273500000002,
+      "total": 100,
+      "remaining": 91.5897265,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.340020006988198,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"A dismantled, rusty bus chassis.\", \"source_properties\": \"Incomplete, broken down, revealing tangled wires and mechanical parts without an outer shell.\", \"target_situation\": \"Alleged corruption in the procurement of rusty Transjakarta buses involving Jokowi's associates.\", \"mapping\": \"Driving a skeletonized bus represents leading a project or administration undermined by decay and internal mismanagement.\", \"uncertainty\": \"None.\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "NJTLauemI-2M_PUPpv3KiQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 536,
+      "completion_tokens_details": {
+        "reasoning_tokens": 447
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 668000,
+        "output_tokens_cost_nanodollars": 1608000
+      },
+      "prompt_tokens": 1336,
+      "total_backend_latency_ms": 3964,
+      "total_tokens": 1872
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4125495,
+      "total": 10,
+      "remaining": 1.5874504999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.412549499999997,
+      "total": 100,
+      "remaining": 91.5874505,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.002276,
+  "fields": {
+    "source_object": "A dismantled, rusty bus chassis.",
+    "source_properties": "Incomplete, broken down, revealing tangled wires and mechanical parts without an outer shell.",
+    "target_situation": "Alleged corruption in the procurement of rusty Transjakarta buses involving Jokowi's associates.",
+    "mapping": "Driving a skeletonized bus represents leading a project or administration undermined by decay and internal mismanagement.",
+    "uncertainty": "None."
+  },
+  "explanation": "source_object: A dismantled, rusty bus chassis.\nsource_properties: Incomplete, broken down, revealing tangled wires and mechanical parts without an outer shell.\ntarget_situation: Alleged corruption in the procurement of rusty Transjakarta buses involving Jokowi's associates.\nmapping: Driving a skeletonized bus represents leading a project or administration undermined by decay and internal mismanagement.\nuncertainty: None.",
+  "finish_reason": "stop",
+  "usable": true
+}

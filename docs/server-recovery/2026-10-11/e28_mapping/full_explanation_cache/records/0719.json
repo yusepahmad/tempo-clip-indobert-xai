@@ -1,0 +1,87 @@
+{
+  "index": 719,
+  "sample_id": "TMP-EDC96202A038",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "7fdf10cee0f6757a70831d9fd88359b9819fe0ec295fa0568059656f4aee65b8",
+  "image_sha256": "edc96202a038368a6b5232b4b455eb4ee9ccf02377887b92b9ed051eca6b928e",
+  "transmitted_image_sha256": "31bd5432c97f71d1ef094f21926381a181a92a4279d6e1198f7735b9d758553f",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0417185,
+      "total": 10,
+      "remaining": 0.9582815,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.041718500000002,
+      "total": 100,
+      "remaining": 90.9582815,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.8260370227508247,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"a speeding motorcycle\",\n  \"source_properties\": \"rapid movement, instability, and a sense of urgent escape through flames\",\n  \"target_situation\": \"the Indonesian economy's struggle with the rupiah's depreciating value\",\n  \"mapping\": \"the precarious ride symbolizes the government's panicked, frantic attempts to stabilize the currency\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "9Z_Lao7TDufU_uMPq5CXyQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675000,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1350,
+      "total_backend_latency_ms": 1762,
+      "total_tokens": 1442
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0426695,
+      "total": 10,
+      "remaining": 0.9573304999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.042669500000002,
+      "total": 100,
+      "remaining": 90.9573305,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000951,
+  "fields": {
+    "source_object": "a speeding motorcycle",
+    "source_properties": "rapid movement, instability, and a sense of urgent escape through flames",
+    "target_situation": "the Indonesian economy's struggle with the rupiah's depreciating value",
+    "mapping": "the precarious ride symbolizes the government's panicked, frantic attempts to stabilize the currency",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: a speeding motorcycle\nsource_properties: rapid movement, instability, and a sense of urgent escape through flames\ntarget_situation: the Indonesian economy's struggle with the rupiah's depreciating value\nmapping: the precarious ride symbolizes the government's panicked, frantic attempts to stabilize the currency\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 686,
+  "sample_id": "TMP-6DD8C16C06B0",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "93f52736d916c31f0c74adb62ec93aadd6f5527f111d33fef33203fad161a1b1",
+  "image_sha256": "6dd8c16c06b09a5d88cab0c95d0deab1db0cfacbc6d05c751330dada7d82a7a4",
+  "transmitted_image_sha256": "406b1651b35eb2417bb5871376b9221ffb154a8f30b79c8ba1ba088b4e26c3ea",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.986641,
+      "total": 10,
+      "remaining": 1.0133589999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.986641000000006,
+      "total": 100,
+      "remaining": 91.013359,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.248938283883035,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"treadmill\",\n  \"source_properties\": \"constant motion on a stationary machine, powered by an external source, requiring continuous physical effort to stay in place\",\n  \"target_situation\": \"the 2026 economic outlook based on leisure and entertainment spending\",\n  \"mapping\": \"People running represent citizens whose pursuit of pleasure drives an economic engine, symbolized by the machine powered by a dollar-sign lightbulb.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "D5_Lau7YNLrG_PUPqtG_4Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 109,
+      "cost": {
+        "input_tokens_cost_nanodollars": 667500,
+        "output_tokens_cost_nanodollars": 327000
+      },
+      "prompt_tokens": 1335,
+      "total_backend_latency_ms": 1748,
+      "total_tokens": 1444
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9876355,
+      "total": 10,
+      "remaining": 1.0123645000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.987635499999996,
+      "total": 100,
+      "remaining": 91.0123645,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009945,
+  "fields": {
+    "source_object": "treadmill",
+    "source_properties": "constant motion on a stationary machine, powered by an external source, requiring continuous physical effort to stay in place",
+    "target_situation": "the 2026 economic outlook based on leisure and entertainment spending",
+    "mapping": "People running represent citizens whose pursuit of pleasure drives an economic engine, symbolized by the machine powered by a dollar-sign lightbulb.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: treadmill\nsource_properties: constant motion on a stationary machine, powered by an external source, requiring continuous physical effort to stay in place\ntarget_situation: the 2026 economic outlook based on leisure and entertainment spending\nmapping: People running represent citizens whose pursuit of pleasure drives an economic engine, symbolized by the machine powered by a dollar-sign lightbulb.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

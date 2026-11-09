@@ -1,0 +1,87 @@
+{
+  "index": 618,
+  "sample_id": "TMP-D8230316C21B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9416ec1bf5a1037ec9838ff57b42f3c69c1f6d05c97aeb84730d6584b5675e3b",
+  "image_sha256": "d8230316c21bb7980f416ebde6e403df8e6a78f7daa6dbdc8a2ad46e4536b2a7",
+  "transmitted_image_sha256": "eadf58bb99d309abc69700cacef383ab0ed5c1ba58a646cb02266ee2ba190649",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.881515,
+      "total": 10,
+      "remaining": 1.1184849999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.881514999999993,
+      "total": 100,
+      "remaining": 91.118485,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.214425126090646,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"ocean wave\", \"source_properties\": \"large, powerful, overwhelming, and crashing forward\", \"target_situation\": \"mass influx of Russian and Eastern European tourists in Bali\", \"mapping\": \"The wave's overwhelming scale and force represent the uncontrolled surge of tourists creating social problems due to weak law enforcement.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "RZ3LavKsBsaS_uMPmu6wkA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 76,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676500,
+        "output_tokens_cost_nanodollars": 228000
+      },
+      "prompt_tokens": 1353,
+      "total_backend_latency_ms": 1566,
+      "total_tokens": 1429
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8824195,
+      "total": 10,
+      "remaining": 1.1175805000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.882419499999997,
+      "total": 100,
+      "remaining": 91.1175805,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009045,
+  "fields": {
+    "source_object": "ocean wave",
+    "source_properties": "large, powerful, overwhelming, and crashing forward",
+    "target_situation": "mass influx of Russian and Eastern European tourists in Bali",
+    "mapping": "The wave's overwhelming scale and force represent the uncontrolled surge of tourists creating social problems due to weak law enforcement.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: ocean wave\nsource_properties: large, powerful, overwhelming, and crashing forward\ntarget_situation: mass influx of Russian and Eastern European tourists in Bali\nmapping: The wave's overwhelming scale and force represent the uncontrolled surge of tourists creating social problems due to weak law enforcement.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

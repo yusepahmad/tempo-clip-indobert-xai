@@ -1,0 +1,14 @@
+{
+  "status": "prepared_inputs_verified_locally",
+  "samples": 740,
+  "examples_each": 14,
+  "checks": [
+    "copy/source hashes match",
+    "740 target IDs/folds match audited E14 baseline",
+    "10360 example memberships/labels/codebook match original training folds",
+    "no truth/target_label field in request manifest",
+    "all740 prompt hashes match"
+  ],
+  "inputs_sha256": "66ef704a01a1f47a2f93cf30caa7a269f61e223c2a9cba2beb56bdf8394ad9bb",
+  "limitation": "nearest ranking/prompt reconstruction checked by server prepare; this local pass independently checks memberships/labels/hashes, not cosine values"
+}

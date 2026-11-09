@@ -1,0 +1,90 @@
+{
+  "index": 544,
+  "sample_id": "TMP-0F6191AD00E9",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "844d73df8c6f773a4ccf133c19e935d878ed48df71e49519b386c234cc6eac5d",
+  "image_sha256": "0f6191ad00e910de9f7b3ec2d80c84c03438d309e84aba8e9a1c35198a73c956",
+  "transmitted_image_sha256": "9bcfae7923d34ba1928da85c49b328ed53154d9451da1e724ea7e8f8f2bb5c88",
+  "image_size": [
+    582,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7838765,
+      "total": 10,
+      "remaining": 1.2161235000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.783876500000005,
+      "total": 100,
+      "remaining": 91.2161235,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.203864383045584,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"a staircase\",\n  \"source_properties\": \"a series of ascending horizontal steps that must be climbed sequentially to reach a destination\",\n  \"target_situation\": \"the multi-stage and obstructed distribution of COVID-19 vaccines in Indonesia\",\n  \"mapping\": \"the queue of people moving up the steps represents the public's progression through the tiers of the vaccination rollout, where reaching the top signifies immunization despite logistical stalls or state-enforced control\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "UZvLavGvO_7v_uMP-q7MqQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1298,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1183
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 3894000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 8165,
+      "total_tokens": 2645
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.788444,
+      "total": 10,
+      "remaining": 1.2115559999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.788443999999998,
+      "total": 100,
+      "remaining": 91.211556,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0045675,
+  "fields": {
+    "source_object": "a staircase",
+    "source_properties": "a series of ascending horizontal steps that must be climbed sequentially to reach a destination",
+    "target_situation": "the multi-stage and obstructed distribution of COVID-19 vaccines in Indonesia",
+    "mapping": "the queue of people moving up the steps represents the public's progression through the tiers of the vaccination rollout, where reaching the top signifies immunization despite logistical stalls or state-enforced control",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: a staircase\nsource_properties: a series of ascending horizontal steps that must be climbed sequentially to reach a destination\ntarget_situation: the multi-stage and obstructed distribution of COVID-19 vaccines in Indonesia\nmapping: the queue of people moving up the steps represents the public's progression through the tiers of the vaccination rollout, where reaching the top signifies immunization despite logistical stalls or state-enforced control\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

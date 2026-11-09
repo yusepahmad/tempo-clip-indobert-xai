@@ -1,0 +1,86 @@
+{
+  "index": 217,
+  "sample_id": "TMP-B772B4711410",
+  "fold": 4,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "650d96a51c2a3e9fdcfdac84dc685b70db8b3ea72fec332789f99b8b26c9500a",
+  "image_sha256": "b772b4711410bf8d5ce8f659d449a36f809b39ae8a1c71d9897ffdbd1f6ffd36",
+  "transmitted_image_sha256": "9e4020b32c05af561f270d2e2042a2839adab5792954848f065cbfdeff602c61",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 3.9764730000000004,
+      "total": 10,
+      "remaining": 6.023527,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 3.9764729999999986,
+      "total": 100,
+      "remaining": 96.023527,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 17.380599668016657,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan analisis terhadap ilustrasi dan informasi yang diberikan:\n\n1.  **Analisis Visual:** Ilustrasi pada sampul menunjukkan siluet kepala manusia yang dibentuk oleh susunan teks, angka, dan data finansial (seperti \"PT Bakrie & Brothers Tbk\", \"BUMI Resources\", nilai uang, dsb.).\n2.  **Konteks Judul:** Judul utamanya adalah **\"Tsunami Utang Bakrie\"**. Kata \"Tsunami\" merujuk pada metafora **Bencana**.\n3.  **Sumber dan Alasan (Metafora):** Deskripsi alasan yang disediakan menyatakan bahwa siluet tersebut tampak seperti **\"terjebak atau tertekan\"** dan memetakan konsep utang sebagai **\"jeratan fisik dan mental\"**. \n4.  **Kategorisasi:** Sesuai dengan definisi kategori **A (BENCANA_JERAT)**, kategori ini mencakup \"ancaman, bencana, perangkap, jerat atau keadaan terjepit sebagai kiasan.\" Meskipun gaya visualnya (kepala dari teks) mirip dengan contoh kode D, namun pemetaan maknanya di sini secara spesifik diarahkan pada kondisi **terjebak/terjerat** dan penggunaan kata kunci bencana (**Tsunami**), yang menjadi kriteria utama kategori A.\n\nJawab satu kode A sampai G: **A**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "pPLKatTsAd6d_uMPq6y2oA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 3763,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3477
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2085000,
+        "output_tokens_cost_nanodollars": 11289000
+      },
+      "prompt_tokens": 4170,
+      "total_backend_latency_ms": 16393,
+      "total_tokens": 7933
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 3.989847,
+      "total": 10,
+      "remaining": 6.010153,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 3.9898469999999975,
+      "total": 100,
+      "remaining": 96.010153,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.013374,
+  "code": "A",
+  "strict_code": "INVALID",
+  "parsing_rule": "explicit_prefix_code",
+  "finish_reason": "stop",
+  "prediction": "BENCANA_JERAT"
+}

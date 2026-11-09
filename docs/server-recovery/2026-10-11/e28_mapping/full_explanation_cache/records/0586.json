@@ -1,0 +1,87 @@
+{
+  "index": 586,
+  "sample_id": "TMP-43440E36CACE",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "927e5ed6ede921b5ef90d86665e90ba72e94705f698b9deaff7802e75c3adc8d",
+  "image_sha256": "43440e36cace3747429dc25f564aa674c179b8fd37543124ea9c0c0fa07750c4",
+  "transmitted_image_sha256": "c6eb22eb12678f064927e8a8d5dad14d96b853491c8cc7d92042ad232bc2e7a0",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.837432,
+      "total": 10,
+      "remaining": 1.1625680000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.837432000000007,
+      "total": 100,
+      "remaining": 91.162568,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.064760081935674,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"gas pump nozzle\", \"source_properties\": \"tool for dispensing fuel, held by a handle, attached to a hose\", \"target_situation\": \"government struggle with fuel subsidies and rising prices\", \"mapping\": \"the nozzle dispenses fuel while its hose forms a rising line graph, representing surging costs and the difficulty of controlling fuel distribution\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "bpzLavdWzJX-4w-Xh5Vp",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 82,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682500,
+        "output_tokens_cost_nanodollars": 246000
+      },
+      "prompt_tokens": 1365,
+      "total_backend_latency_ms": 1611,
+      "total_tokens": 1447
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8383605,
+      "total": 10,
+      "remaining": 1.1616394999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.838360499999993,
+      "total": 100,
+      "remaining": 91.1616395,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009285,
+  "fields": {
+    "source_object": "gas pump nozzle",
+    "source_properties": "tool for dispensing fuel, held by a handle, attached to a hose",
+    "target_situation": "government struggle with fuel subsidies and rising prices",
+    "mapping": "the nozzle dispenses fuel while its hose forms a rising line graph, representing surging costs and the difficulty of controlling fuel distribution",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: gas pump nozzle\nsource_properties: tool for dispensing fuel, held by a handle, attached to a hose\ntarget_situation: government struggle with fuel subsidies and rising prices\nmapping: the nozzle dispenses fuel while its hose forms a rising line graph, representing surging costs and the difficulty of controlling fuel distribution\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

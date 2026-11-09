@@ -1,0 +1,87 @@
+{
+  "index": 71,
+  "sample_id": "TMP-CAC7437FBF5C",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f46cb40044e7ad4ae0a2aaf5afe10b49eade9673c9d5f929ff96151e11ce8a4a",
+  "image_sha256": "cac7437fbf5cb58f227bf7ad93f4bc7835142e45e7830446c57914f33c6dc99d",
+  "transmitted_image_sha256": "3ddc30d688c08cd63dd1b1bbb343309685ad46e24ac3510b9cdb299ebb2ebd1d",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.109847,
+      "total": 10,
+      "remaining": 1.8901529999999998,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.109847000000002,
+      "total": 100,
+      "remaining": 91.890153,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2799980961717665,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"starting block\",\n  \"source_properties\": \"angled posture on a platform, readiness to sprint, physical strain\",\n  \"target_situation\": \"President Jokowi's aggressive push for national infrastructure development\",\n  \"mapping\": \"The construction-clad figure's athletic pose symbolizes the government's hurried, strained effort to accelerate physical projects.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "_Y7Las6mJ_Gb_uMPte3s2Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671000,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1342,
+      "total_backend_latency_ms": 1634,
+      "total_tokens": 1434
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.110794,
+      "total": 10,
+      "remaining": 1.8892059999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.110793999999999,
+      "total": 100,
+      "remaining": 91.889206,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000947,
+  "fields": {
+    "source_object": "starting block",
+    "source_properties": "angled posture on a platform, readiness to sprint, physical strain",
+    "target_situation": "President Jokowi's aggressive push for national infrastructure development",
+    "mapping": "The construction-clad figure's athletic pose symbolizes the government's hurried, strained effort to accelerate physical projects.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: starting block\nsource_properties: angled posture on a platform, readiness to sprint, physical strain\ntarget_situation: President Jokowi's aggressive push for national infrastructure development\nmapping: The construction-clad figure's athletic pose symbolizes the government's hurried, strained effort to accelerate physical projects.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

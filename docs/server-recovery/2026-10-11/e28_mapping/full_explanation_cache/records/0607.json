@@ -1,0 +1,90 @@
+{
+  "index": 607,
+  "sample_id": "TMP-923E396BC5AF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1a57231b2f679ae5aecb138a57787b26fc07e332a8a785c7df810706886726d1",
+  "image_sha256": "923e396bc5af5d7900dc2b2fc0cb03e42125373be2fbf125139b678efd32a6ac",
+  "transmitted_image_sha256": "fc12bc8866fc53eda73005c8d7733c4f55c61483c5d5931a1eabac54bbd7c9f6",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8679615,
+      "total": 10,
+      "remaining": 1.1320385000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.867961500000007,
+      "total": 100,
+      "remaining": 91.1320385,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.380877543706447,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"hospital gurney carrying a thick book\",\n  \"source_properties\": \"mobile medical equipment designed for rapid transport and emergency speed\",\n  \"target_situation\": \"the government's expedited legislative process for the comprehensive Health Omnibus Law\",\n  \"mapping\": \"The gurney symbolizes a 'shortcut', portraying the legislative passage as a rushed emergency procedure.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "_JzLapP8BL7i_uMPyOzU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1026,
+      "completion_tokens_details": {
+        "reasoning_tokens": 933
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 673000,
+        "output_tokens_cost_nanodollars": 3078000
+      },
+      "prompt_tokens": 1346,
+      "total_backend_latency_ms": 6001,
+      "total_tokens": 2372
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8717125,
+      "total": 10,
+      "remaining": 1.1282875000000008,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.871712500000001,
+      "total": 100,
+      "remaining": 91.1282875,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.003751,
+  "fields": {
+    "source_object": "hospital gurney carrying a thick book",
+    "source_properties": "mobile medical equipment designed for rapid transport and emergency speed",
+    "target_situation": "the government's expedited legislative process for the comprehensive Health Omnibus Law",
+    "mapping": "The gurney symbolizes a 'shortcut', portraying the legislative passage as a rushed emergency procedure.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: hospital gurney carrying a thick book\nsource_properties: mobile medical equipment designed for rapid transport and emergency speed\ntarget_situation: the government's expedited legislative process for the comprehensive Health Omnibus Law\nmapping: The gurney symbolizes a 'shortcut', portraying the legislative passage as a rushed emergency procedure.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

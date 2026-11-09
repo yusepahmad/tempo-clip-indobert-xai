@@ -1,0 +1,87 @@
+{
+  "index": 88,
+  "sample_id": "TMP-A30F18AA34DC",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "da74455b596826866f56091544cff3afd585dff3aa6104a639a2b8c6876289ca",
+  "image_sha256": "a30f18aa34dcf504fd5ea6309b449bf8d66e65c8079bce2fe4478c9223548d5c",
+  "transmitted_image_sha256": "e1b0b827ae1cc17e72a71a86a3ad8eae2ddd910e729afbb8c260cf2988767994",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1291385,
+      "total": 10,
+      "remaining": 1.8708615000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.129138499999996,
+      "total": 100,
+      "remaining": 91.8708615,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.200916453730315,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Radio transmission tower and waves\", \"source_properties\": \"A tower radiating electromagnetic signals in concentric circles across vast distances.\", \"target_situation\": \"Corruption surrounding the construction of internet towers (BTS) involving multiple high-ranking officials.\", \"mapping\": \"The corruption's reach is likened to a signal; it radiates outward from the tower, 'transmitting' legal consequences to far-reaching political figures.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "aY_LatfNLfW6_uMPjdDjYA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 685500,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1371,
+      "total_backend_latency_ms": 1707,
+      "total_tokens": 1466
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.130109000000001,
+      "total": 10,
+      "remaining": 1.869890999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.130109000000004,
+      "total": 100,
+      "remaining": 91.869891,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009705,
+  "fields": {
+    "source_object": "Radio transmission tower and waves",
+    "source_properties": "A tower radiating electromagnetic signals in concentric circles across vast distances.",
+    "target_situation": "Corruption surrounding the construction of internet towers (BTS) involving multiple high-ranking officials.",
+    "mapping": "The corruption's reach is likened to a signal; it radiates outward from the tower, 'transmitting' legal consequences to far-reaching political figures.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Radio transmission tower and waves\nsource_properties: A tower radiating electromagnetic signals in concentric circles across vast distances.\ntarget_situation: Corruption surrounding the construction of internet towers (BTS) involving multiple high-ranking officials.\nmapping: The corruption's reach is likened to a signal; it radiates outward from the tower, 'transmitting' legal consequences to far-reaching political figures.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

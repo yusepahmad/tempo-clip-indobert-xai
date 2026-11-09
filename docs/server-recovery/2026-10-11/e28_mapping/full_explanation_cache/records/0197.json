@@ -1,0 +1,90 @@
+{
+  "index": 197,
+  "sample_id": "TMP-35DCAD4312E7",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "71cf90beb9f9062a8ef28ca8648f7f8acd2bf28189bb0a2ce2d9717dd4459aef",
+  "image_sha256": "35dcad4312e7a8dc82061ef3fe79f3436e582b996ea2757bb35815ae4fb8ae32",
+  "transmitted_image_sha256": "723fb14b219bc07b5c3e0553200b036801f905b5c10bc708d97887471edc3b00",
+  "image_size": [
+    300,
+    393
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.295036,
+      "total": 10,
+      "remaining": 1.7049640000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.295035999999996,
+      "total": 100,
+      "remaining": 91.704964,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.004201028961688,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n\"source_object\": \"skateboard\",\n\"source_properties\": \"A tool for performing risky, high-speed stunts and maneuvers requiring extreme daring and balance.\",\n\"target_situation\": \"Governor Sutiyoso's 'bonek' (reckless) implementation of the Jakarta Busway public transit project.\",\n\"mapping\": \"Using the bus like a skateboard equates the infrastructure project to a dangerous political stunt.\",\n\"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "SZLLauadLNvJ_uMPvcyw-AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1408,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1311
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 657500,
+        "output_tokens_cost_nanodollars": 4224000
+      },
+      "prompt_tokens": 1315,
+      "total_backend_latency_ms": 6779,
+      "total_tokens": 2723
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2999175,
+      "total": 10,
+      "remaining": 1.7000825000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.299917500000006,
+      "total": 100,
+      "remaining": 91.7000825,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0048815,
+  "fields": {
+    "source_object": "skateboard",
+    "source_properties": "A tool for performing risky, high-speed stunts and maneuvers requiring extreme daring and balance.",
+    "target_situation": "Governor Sutiyoso's 'bonek' (reckless) implementation of the Jakarta Busway public transit project.",
+    "mapping": "Using the bus like a skateboard equates the infrastructure project to a dangerous political stunt.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: skateboard\nsource_properties: A tool for performing risky, high-speed stunts and maneuvers requiring extreme daring and balance.\ntarget_situation: Governor Sutiyoso's 'bonek' (reckless) implementation of the Jakarta Busway public transit project.\nmapping: Using the bus like a skateboard equates the infrastructure project to a dangerous political stunt.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

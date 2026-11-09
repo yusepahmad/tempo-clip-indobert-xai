@@ -1,0 +1,83 @@
+{
+  "index": 327,
+  "sample_id": "TMP-E5A049C2CC9F",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "d66a15f60491178320002d96ae99f822bb2e70fb5141fbf72b09aea2b3ea3e40",
+  "image_sha256": "e5a049c2cc9f69922e03e7ce0ec9cc4cfe574b31193f914b01521ff97e1930e7",
+  "transmitted_image_sha256": "76545f63190df28c4bb9ff6ab74e2cf019f2e20a0a6b2608c37c18037ab84f31",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.226032,
+      "total": 10,
+      "remaining": 8.773968,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.2260320000000036,
+      "total": 100,
+      "remaining": 98.773968,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 11.038644475862384,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan analisis ilustrasi dan teks pada sampul Tempo tersebut:\n\n1.  **Metafora Utama**: Judul \"**Waseso, Wasalam...**\" dipadukan dengan latar belakang subjek yang berupa **tirai** (kain putih vertikal). Dalam konteks ini, tirai berfungsi sebagai metafora untuk **pertunjukan** atau panggung sandiwara yang telah berakhir (pemberhentian Budi Waseso dari jabatannya dianalogikan seperti selesainya sebuah lakon).\n2.  **Metafora Pendukung**: Teks \"**Teten Masduki si Kuda Hitam**\" secara eksplisit menggunakan istilah \"*Kuda Hitam*\" (*dark horse*), yang merupakan metafora dari domain **permainan atau kontes** (awalnya dari balap kuda) untuk menggambarkan pemenang atau pesaing yang tidak diperhitungkan sebelumnya.\n\nKedua elemen tersebut (pertunjukan/tirai dan kuda hitam/kontes) masuk ke dalam domain sumber:\n\n**G: PERMAINAN_KONTES** (permainan, pertandingan, kompetisi atau **pertunjukan** sebagai kiasan).\n\nJawab satu kode A sampai G: **G**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "otnKau2rG62u_PUPk7_C4A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1767,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1519
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 734500,
+        "output_tokens_cost_nanodollars": 5301000
+      },
+      "prompt_tokens": 1469,
+      "total_backend_latency_ms": 9788,
+      "total_tokens": 3236
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.2320674999999994,
+      "total": 10,
+      "remaining": 8.7679325,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.2320674999999994,
+      "total": 100,
+      "remaining": 98.7679325,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.0060355
+}

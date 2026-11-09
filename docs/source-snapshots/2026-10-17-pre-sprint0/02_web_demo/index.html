@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Demo XAI — Dekoding Metafora Sampul Tempo</title>
+<style>
+:root{--navy:#18273f;--merah:#c52d38;--abu:#627086;--bg:#f3f5f8;--kartu:#fff;--garis:#e3e8ef;--hijau:#167755;--kuning:#a56b14;--accent:#305ed1}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:#263349;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:14px;line-height:1.6}button,input,select,textarea{font:inherit}button,a,input,select,textarea,summary{-webkit-tap-highlight-color:transparent}a{color:var(--accent)}:focus-visible{outline:3px solid #9bb8ff;outline-offset:3px}header{background:#fff;border-bottom:1px solid var(--garis);position:sticky;top:0;z-index:20}.topbar{max-width:1440px;margin:auto;padding:14px 32px;display:flex;align-items:center;gap:28px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--navy)}.brand-mark{height:36px;width:36px;border-radius:9px;display:grid;place-items:center;background:var(--merah);color:white;font-weight:800;font-size:22px}.brand-name{font-size:15px;font-weight:750;letter-spacing:-.3px}.brand-sub{font-size:10px;color:var(--abu);letter-spacing:1.2px;text-transform:uppercase}.topnav{display:flex;gap:5px;margin-left:30px}.topnav a{color:var(--abu);text-decoration:none;padding:8px 13px;border-radius:7px;font-size:12px;font-weight:650}.topnav a:hover,.topnav a:first-child{background:#eef3fe;color:var(--accent)}.header-status{margin-left:auto;display:flex;align-items:center;gap:7px;font-size:11px;color:var(--abu)}.status-dot{width:7px;height:7px;border-radius:50%;background:#d49a38}.wrap{max-width:1440px;margin:auto;padding:30px 32px 50px}.page-intro{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:25px}.eyebrow{font-size:10px;font-weight:750;letter-spacing:1.4px;text-transform:uppercase;color:var(--abu)}h1{font-size:28px;letter-spacing:-1px;color:var(--navy);line-height:1.25;margin:7px 0 8px}.page-intro p{margin:0;color:var(--abu);font-size:13px;max-width:640px}.intro-link{white-space:nowrap;font-size:12px;text-decoration:none;font-weight:650}.dashboard{display:grid;grid-template-columns:360px minmax(0,1fr);gap:24px;align-items:start}.kartu{background:var(--kartu);border:1px solid var(--garis);border-radius:13px;padding:23px;margin-bottom:20px;box-shadow:0 2px 5px #142a4a03}.kartu h2{font-size:16px;font-weight:700;letter-spacing:-.3px;color:var(--navy);margin:0 0 15px;line-height:1.4}.input-panel{position:sticky;top:88px;margin:0}.panel-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.panel-heading h2{margin:0}.step-number{width:26px;height:26px;background:#eef3fe;color:var(--accent);border-radius:8px;display:inline-grid;place-items:center;font-size:11px;font-weight:750;margin-right:8px}.section-caption{margin:0 0 18px;font-size:12px;color:var(--abu)}.tab{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:#f1f4f8;border:1px solid #e9edf3;border-radius:9px;padding:4px;margin-bottom:19px}.tab button{margin:0;padding:8px 6px;background:transparent;color:var(--abu);font-size:12px;border-radius:6px;font-weight:600;box-shadow:none}.tab button.aktif{background:white;color:var(--navy);box-shadow:0 1px 4px #1d355218}label{display:block;font-size:11px;font-weight:650;color:#48566b;margin:16px 0 6px}select,input[type=text],input[type=file],textarea{width:100%;border:1px solid #dce3ed;border-radius:8px;padding:10px 11px;background:#fff;color:#263349;font-size:12px;min-height:40px}input::placeholder,textarea::placeholder{color:#929dab}textarea{resize:vertical}select{padding-right:22px}input[type=file]{background:#f8fafd;border:1px dashed #c1ccdc;padding:14px 10px;font-size:11px}input[type=file]::file-selector-button{border:0;background:#e8edf5;color:var(--navy);border-radius:5px;padding:6px 9px;font:inherit;cursor:pointer;margin-right:7px}button{border:1px solid transparent;border-radius:8px;background:var(--accent);color:white;padding:10px 16px;font-size:12px;font-weight:650;cursor:pointer;margin-top:14px;transition:background .15s}button:hover{background:#244aad}button:disabled{background:#c2ccdb;color:#fff;cursor:wait}.primary-action{display:flex;align-items:center;justify-content:space-between;width:100%;margin-top:20px;padding:12px 15px;font-size:13px}.action-arrow{font-size:18px;font-weight:400}.gambar{display:block;width:100%;border-radius:9px;border:1px solid var(--garis);background:#f5f7fa}.preview-frame{background:#f6f8fb;border:1px solid var(--garis);padding:12px;border-radius:10px;margin:16px 0 2px}.preview-frame .gambar{border:0;border-radius:4px;max-height:210px!important;object-fit:contain}.preview-frame img:not([src]),.preview-frame img[src=""]{display:none}.preview-caption{display:flex;justify-content:space-between;font-size:10px;color:var(--abu);margin:0 0 9px}.cap{font-size:11px;color:var(--abu);margin-top:9px;text-align:center}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.grid .gambar{max-height:520px;object-fit:contain;padding:10px}.workspace{min-width:0}.workspace-header{display:flex;align-items:center;justify-content:space-between;margin:0 0 13px}.workspace-header h2{font-size:12px;color:#64738b;margin:0;font-weight:650}.workspace-label{font-size:10px;color:var(--abu)}.empty-state{min-height:650px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#fff;border:1px solid var(--garis);border-radius:13px;padding:50px 32px}.empty-art{width:150px;height:164px;position:relative;margin-bottom:28px}.empty-art svg{width:100%;height:100%}.empty-state h2{font-size:21px;color:var(--navy);letter-spacing:-.5px;margin:0 0 9px}.empty-state>p{font-size:13px;color:var(--abu);max-width:390px;margin:0;line-height:1.8}.empty-tag{border:1px solid #dce6fa;color:var(--accent);background:#f5f8fe;border-radius:20px;padding:4px 10px;font-size:10px;font-weight:600;margin-bottom:14px}.outcome-list{display:grid;grid-template-columns:repeat(3,1fr);width:100%;max-width:500px;margin-top:36px;gap:12px}.outcome{border:1px solid var(--garis);border-radius:9px;padding:15px 10px;background:#fbfcfe;text-align:left}.outcome-index{color:#8a9ab1;font-size:10px;font-weight:650}.outcome b{display:block;font-size:12px;color:var(--navy);margin:5px 0 3px}.outcome p{font-size:10px;line-height:1.6;color:var(--abu);margin:0}.workspace[data-state=results] .empty-state{display:none}.workspace[data-state=loading] .empty-art{animation:breathe 1.8s ease-in-out infinite}.workspace[data-state=loading] .empty-tag{background:#eef3fe}.workspace[data-state=loading] .outcome-list{opacity:.5}@keyframes breathe{50%{opacity:.4;transform:translateY(-4px)}}#hasil{display:none}#hasil>.kartu:last-child{margin-bottom:0}.spin{display:none;font-size:11px;color:var(--abu);margin-top:12px}.spin.on{display:block}.info,.warn{font-size:12px;line-height:1.75;padding:12px 14px;border-radius:8px;margin:12px 0;border:1px solid #dee8f8;background:#f3f7fe;color:#465e83}.warn{background:#fffbf1;border-color:#f3e5c5;color:#846225}.input-panel .info{font-size:11px;padding:11px 12px}details{margin:12px 0}summary{font-size:12px;color:#52637b;cursor:pointer;font-weight:600;padding:8px 0}summary:hover{color:var(--accent)}.protocol-note{margin:12px 0 0}.protocol-note summary{font-size:10px;font-weight:500}.protocol-note .info{margin-top:5px}.kecil{font-size:11px;color:var(--abu)}.mono{font-family:ui-monospace,Consolas,monospace;font-size:11px}.pill{display:inline-block;border-radius:5px;padding:4px 7px;font-size:10px;font-weight:600;background:#edf2f9;color:#506786;margin:2px 3px 2px 0}#ringkas{background:#f7f9fc;border:1px solid #eaf0f7;padding:12px 14px;border-radius:8px;font-size:12px;margin-bottom:16px}table{width:100%;border-collapse:collapse;font-size:12px;margin-top:8px}th{text-align:left;background:#f4f6fa;color:#67768c;font-size:10px;font-weight:650;padding:12px 10px;border-bottom:1px solid var(--garis)}td{padding:14px 10px;border-bottom:1px solid #eef1f6;vertical-align:top}.table-scroll{overflow-x:auto}.bar{height:5px;background:#e9eef6;border-radius:4px;overflow:hidden;margin-top:6px}.bar i{display:block;height:100%;background:var(--accent)}.cocok{color:var(--hijau);font-weight:650}.tdkcocok{color:var(--merah);font-weight:650}.kata{display:inline-block;padding:5px 8px;margin:3px;border-radius:5px;font-size:12px;font-weight:650}.asal{display:inline-block;padding:3px 7px;border-radius:5px;font-size:9px;font-weight:750;text-transform:uppercase;letter-spacing:.5px;margin-right:6px}.asal.model{background:#edf3ff;color:#335bb1}.asal.anotator{background:#e9f6ef;color:#246448}.asal.codebook{background:#fff5df;color:#956816}.asal.gabungan{background:#f0edfa;color:#716099}.blok{border:1px solid var(--garis);border-left:3px solid #cbd5e1;border-radius:7px;padding:14px;margin-bottom:11px;background:#fff}.blok.model{border-left-color:#507bca}.blok.anotator{border-left-color:#4f9b76}.blok.codebook{border-left-color:#c39947}.blok.gabungan{border-left-color:#9e8bc8}.blok b.judul{display:block;font-size:12px;margin-bottom:7px;color:var(--navy)}.blok p{margin:0;font-size:12px;line-height:1.85}.kartu.simpul{background:#f4f8ff;border-color:#d7e3f8}.simpul p.isi{font-size:14px;line-height:1.9;margin:0}.simpul .tanda{display:inline-block;padding:4px 8px;border-radius:5px;font-size:10px;font-weight:650;margin-bottom:12px}.simpul .tanda.kuat{background:#e4f2e9;color:#286445}.simpul .tanda.lemah{background:#fff2d6;color:#8b6928}.secondary-area{margin-top:28px}.section-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px}.section-heading p{margin:0;color:var(--abu);font-size:12px}.batch-tools{display:grid;grid-template-columns:1fr 1fr;gap:22px}.batch-actions{display:flex;gap:10px;flex-wrap:wrap}#batchAddCurrent,#batchResume{background:#fff;border:1px solid #d8e1ed;color:#526782}#batchAddCurrent:hover,#batchResume:hover{background:#f1f5fa}#batchResults{overflow-x:auto}#batchResults input{min-width:190px}#batchResults img{max-width:120px;border-radius:6px}.guide-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:26px}.guide-layout>div>p{color:var(--abu);font-size:12px}.guide-layout #catalog{overflow-x:auto}.guide-layout details details{border-top:1px solid var(--garis)}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:10px;background:#f6f8fb;padding:14px;border-radius:8px;max-height:350px;overflow:auto}.footer{display:flex;justify-content:space-between;border-top:1px solid var(--garis);padding:22px 2px 0;color:#8794a7;font-size:10px;gap:20px}
+@media(min-width:1600px){.wrap,.topbar{max-width:1480px}}@media(max-width:1100px){.dashboard{grid-template-columns:320px minmax(0,1fr);gap:18px}.wrap{padding:24px}.topbar{padding:13px 24px}.kartu{padding:19px}.outcome-list{grid-template-columns:1fr}.outcome{display:none}.outcome:first-child{display:block}.empty-state{min-height:660px;padding:40px 20px}.topnav{margin-left:0}.grid{gap:12px}}@media(max-width:800px){.dashboard{grid-template-columns:1fr}.input-panel{position:static}.empty-state{min-height:360px;padding:30px 20px}.empty-art{width:90px;height:100px;margin-bottom:18px}.outcome-list{grid-template-columns:repeat(3,1fr);margin-top:22px}.outcome{display:block}.guide-layout,.batch-tools{grid-template-columns:1fr;gap:10px}.page-intro{align-items:start}.page-intro h1{font-size:25px}.header-status{display:none}.topbar{gap:18px}.topnav{margin-left:auto}.wrap{padding:24px 18px}.topbar{padding:12px 18px}.preview-frame .gambar{max-height:260px!important}}@media(max-width:480px){.topnav{gap:0}.topnav a{font-size:10px;padding:7px 8px}.brand-sub{display:none}.brand-name{font-size:12px}.brand-mark{width:29px;height:29px;font-size:18px}.brand{gap:7px}.topbar{gap:8px}.page-intro{display:block}.intro-link{display:inline-block;margin-top:13px}.grid{grid-template-columns:1fr}.kartu{padding:17px;border-radius:10px}.outcome-list{gap:7px}.outcome{padding:11px 8px}.outcome b{font-size:10px}.outcome p{font-size:9px}.section-heading{display:block}.footer{display:block}.footer span{display:block;margin-bottom:6px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+
+/* Focus workspace: views and result tabs replace the long page. */
+[hidden]{display:none!important}.topnav a:first-child{background:transparent;color:var(--abu)}.topnav a[aria-current=page],.topnav a:hover{background:#eef3fe;color:var(--accent)}.result-tabs{display:flex;gap:5px;flex-shrink:0;border-bottom:1px solid var(--garis);padding:0 0 10px;margin-bottom:12px}.result-tabs button{margin:0;padding:8px 12px;background:transparent;color:var(--abu);font-size:11px;font-weight:650;border-radius:6px}.result-tabs button[aria-selected=true]{background:#eaf0fd;color:var(--accent)}.result-tabs button:hover{background:#f0f4fa}.result-panel{min-height:0}.result-panel>.kartu{margin-bottom:12px;padding:16px 18px}.result-panel>.kartu:last-child{margin-bottom:0}.workspace-header{margin-bottom:10px}.input-panel .section-caption{margin-bottom:10px}.input-panel .panel-heading{margin-bottom:10px}.input-panel .tab{margin-bottom:10px}.input-panel label{margin:10px 0 4px}.input-panel select,.input-panel input{min-height:35px;padding:8px 10px}.input-panel .preview-frame{margin:10px 0;padding:8px}.input-panel .preview-caption{margin-bottom:5px;font-size:9px}.input-panel .preview-frame .gambar{max-height:120px!important}.input-panel .primary-action{margin-top:13px;padding:10px 13px;position:sticky;bottom:0;z-index:2}.input-panel .protocol-note{margin-top:6px}.input-panel .protocol-note summary{padding:3px 0}.empty-state{min-height:0}.empty-art{width:100px;height:112px;margin-bottom:18px}.empty-state h2{font-size:19px}.outcome-list{margin-top:23px}.outcome{padding:11px 10px}.secondary-area{margin:0}#batch>details{margin-top:15px}.result-panel .grid .gambar{max-height:clamp(180px,calc(100dvh - 300px),440px)}.result-panel .kartu h2{font-size:14px;margin-bottom:12px}.result-panel td{padding:10px 8px;font-size:11px}.result-panel th{padding:9px 8px}.result-panel .simpul p.isi{font-size:12px;line-height:1.75}
+@media(min-width:801px){html,body{height:100%;overflow:hidden}header{position:relative}.wrap{height:calc(100dvh - 65px);padding:16px 24px;overflow:hidden}.app-view{height:100%;min-height:0}.analysis-view{display:flex;flex-direction:column}.page-intro{flex-shrink:0;margin-bottom:14px;gap:15px}.page-intro h1{font-size:23px;margin:3px 0 4px}.page-intro p{font-size:12px}.page-intro .eyebrow{font-size:9px}.dashboard{flex:1;min-height:0;align-items:stretch;grid-template-columns:330px minmax(0,1fr);gap:18px}.input-panel{position:relative;top:auto;overflow:auto;min-height:0;padding:16px;margin:0;scrollbar-width:thin}.workspace{display:flex;flex-direction:column;min-height:0;height:100%;overflow:hidden}.workspace-header{flex-shrink:0}.empty-state{flex:1;padding:24px}.workspace[data-state=results] #hasil{display:flex!important;flex-direction:column;min-height:0;flex:1;overflow:hidden}.result-panel{overflow:auto;flex:1;scrollbar-width:thin;overscroll-behavior:contain}.secondary-area.app-view{overflow:auto;scrollbar-width:thin;overscroll-behavior:contain}.outcome-list{grid-template-columns:repeat(3,1fr)}.outcome{display:block}.input-panel,.result-panel{overscroll-behavior:contain}}
+@media(min-width:801px) and (max-height:720px){.page-intro .eyebrow,.page-intro p,.input-panel .section-caption{display:none}.page-intro h1{font-size:20px}.page-intro{margin-bottom:10px}.input-panel .preview-frame .gambar{max-height:85px!important}.input-panel .preview-caption{display:none}.empty-art{width:80px;height:90px}.empty-state .outcome-list{margin-top:15px}.input-panel label{margin-top:8px}}
+@media(max-width:800px){.result-tabs{overflow-x:auto;position:sticky;top:60px;z-index:4;background:var(--bg);padding-top:8px}.result-tabs button{white-space:nowrap;flex-shrink:0}.app-view{min-width:0}.result-panel .grid .gambar{max-height:360px}.secondary-area{margin-top:0}.input-panel .preview-frame .gambar{max-height:160px!important}.result-panel{scroll-margin-top:110px}}
+
+/* Guided interface: readable contrast, meaningful colors, useful preview. */
+:root{--navy:#12243d;--abu:#45566e;--bg:#e9eff6;--garis:#bdcbdc;--accent:#204fc5}body{color:#172c46;font-size:15px}header{background:#132b4b;border-bottom-color:#132b4b}.brand,.brand-name{color:white}.brand-sub,.header-status{color:#d0dcef}.topnav a,.topnav a:first-child{color:#d5e0f2;background:transparent}.topnav a[aria-current=page],.topnav a:hover{background:#fff;color:#173758}.page-intro h1{font-weight:800;color:#142d4d}.page-intro p{color:#344d6c;font-size:14px}.eyebrow{color:#37547b}.intro-link{color:#1c49b1;text-decoration:underline}.input-panel{border:1px solid #a7bbd5;border-top:5px solid #275dcc;background:#fff;box-shadow:0 3px 10px #1937550c}.panel-heading h2{font-size:19px;color:#173a70}.panel-heading .pill{background:#e4edff;color:#153d8b}.section-caption{font-size:13px;color:#3d536d;line-height:1.55}.input-panel label{font-size:13px;color:#143459;font-weight:750}.input-panel select,.input-panel input{font-size:13px;border-color:#a8bbd3;color:#102b4f;min-height:38px;background:#fbfdff}.tab{background:#e7edf7;border-color:#c5d1e2}.tab button{font-size:13px;color:#314e75}.tab button.aktif{background:#214fc2;color:#fff;box-shadow:none}.field-help{font-size:12px;color:#455a76;margin:5px 0 8px;line-height:1.5}.input-panel .primary-action{font-size:15px;background:#194ebe;box-shadow:0 3px 7px #164bb62b;padding:12px 14px}.input-panel .primary-action:hover{background:#123c98}.input-panel .protocol-note summary{font-size:12px;color:#405b7e}.workspace-header h2{font-size:14px;color:#153c6b;font-weight:750}.workspace-label{font-size:12px;color:#3d5576}.empty-state{display:grid;grid-template-columns:minmax(180px,.8fr) minmax(260px,1fr);align-items:stretch;text-align:left;padding:0;overflow:auto;border-color:#acbfd7;background:#fff;gap:0}.guided-cover{padding:18px;background:#dfe8f5;border-right:1px solid #bdcde3;display:flex;flex-direction:column;min-height:0}.cover-heading{display:flex;align-items:center;justify-content:space-between;font-size:11px;font-weight:800;letter-spacing:.6px;color:#243f66;margin-bottom:12px;gap:6px}.preview-badge{font-size:10px;font-weight:650;letter-spacing:0;padding:3px 6px;border-radius:4px;background:#f5f8fd;color:#35557f}.cover-stage{min-height:160px;flex:1;display:flex;align-items:center;justify-content:center;border-radius:8px;background:#c6d4e8;padding:12px}.cover-stage img{display:block;max-width:100%;width:auto;max-height:100%;object-fit:contain;border-radius:3px;box-shadow:0 5px 12px #172c4630}.cover-hint{font-size:12px;color:#304c70;margin:12px 0 0;line-height:1.55}#guidedPlaceholder{text-align:center;font-size:13px;color:#314f75;padding:18px}.guided-instructions{padding:22px;display:flex;flex-direction:column;justify-content:center}.empty-tag{align-self:flex-start;background:#fff2cf;border-color:#d7b668;color:#765209;font-size:12px;padding:4px 9px;margin-bottom:12px}.empty-state h2{font-size:23px;line-height:1.35;color:#132f51;margin-bottom:10px;letter-spacing:-.5px}.guided-instructions>p{font-size:13px;line-height:1.6;color:#405673;margin:0}.usage-steps{list-style:none;margin:20px 0 18px;padding:0;display:grid;gap:14px}.usage-steps li{display:flex;gap:11px;align-items:start}.guide-number{background:#e5edff;color:#163e92;width:29px;height:29px;border-radius:6px;flex-shrink:0;display:grid;place-items:center;font-size:14px;font-weight:800}.usage-steps b{font-size:14px;color:#18385f}.usage-steps p{font-size:12px;color:#435b79;margin:3px 0 0;line-height:1.55}.outcome-list{margin-top:0;gap:7px;width:100%;max-width:none}.outcome{padding:10px;border-color:#b7c8e4;background:#edf3ff;border-top:3px solid #285bca}.outcome:nth-child(2){background:#e6f5f1;border-color:#a6ccc3;border-top-color:#087763}.outcome:nth-child(3){background:#fff3e5;border-color:#dfc09a;border-top-color:#a56211}.outcome b{font-size:12px;color:#163764;margin:0 0 3px}.outcome p{font-size:11px;color:#354f70}.guided-instructions .guide-footnote{font-size:11px;color:#49627f;margin-top:14px}.result-tabs{border-color:#acbed6;gap:6px;padding-bottom:10px}.result-tabs button{border:1px solid #b4c4dc;background:#f8faff;color:#254a7a;font-size:12px;padding:9px 11px}.result-tabs button[aria-selected=true]{background:#204fc5;color:#fff;border-color:#204fc5}.result-tabs button[data-result-tab=visual][aria-selected=true]{background:#086e5c;border-color:#086e5c}.result-tabs button[data-result-tab=teks][aria-selected=true]{background:#98570b;border-color:#98570b}.panel-guide{margin:0 0 11px;padding:10px 12px;background:#e6edfb;border-left:4px solid #245bc8;border-radius:5px;font-size:13px;color:#244367;line-height:1.55}#result-panel-visual .panel-guide{background:#e3f2ed;border-color:#087763;color:#1d5448}#result-panel-teks .panel-guide{background:#fff0dd;border-color:#98570b;color:#714812}.result-panel>.kartu{border-color:#b8c9df}.result-panel .kartu h2{font-size:17px;color:#153b69}.result-panel td{font-size:13px;color:#1b3555;padding:12px 9px}.result-panel th{font-size:12px;background:#dfe8f7;color:#243f64;border-bottom-color:#a9bdd9}.result-panel .kecil{font-size:12px;color:#445a77}#ringkas{font-size:13px;background:#edf3fc;border-color:#bdcfe7}.pill{font-size:11px;color:#234571;background:#e3ebfa}.result-panel .simpul p.isi{font-size:14px;line-height:1.75}.blok p{font-size:14px;color:#263d59;line-height:1.75}.blok b.judul{font-size:14px}.cap{font-size:12px;color:#334f72}.info,.warn{font-size:13px}.asal{font-size:11px}.workspace[data-state=loading] .guided-cover{opacity:.55}.workspace[data-state=loading] .empty-tag{background:#e6efff;color:#194aa9;border-color:#9eb8ea}
+@media(min-width:801px){.dashboard{grid-template-columns:350px minmax(0,1fr)}.guided-cover .cover-stage{max-height:calc(100dvh - 265px)}.cover-stage img{max-height:calc(100dvh - 290px)}.empty-state{min-height:0;height:100%}.input-panel{padding:16px}.input-panel label{margin-top:13px}.page-intro{margin-bottom:12px}}
+@media(min-width:801px) and (max-height:720px){.guided-instructions{padding:16px}.empty-state h2{font-size:20px}.usage-steps{gap:10px;margin:14px 0}.guided-instructions .guide-footnote{display:none}.input-panel label{margin-top:10px}}
+@media(max-width:1100px) and (min-width:801px){.dashboard{grid-template-columns:320px minmax(0,1fr)}.empty-state{grid-template-columns:minmax(140px,.7fr) minmax(210px,1fr)}.guided-instructions{padding:16px}.guided-cover{padding:12px}.outcome-list{grid-template-columns:1fr}.outcome{display:none}.outcome:first-child{display:block}.result-tabs{gap:4px;overflow:auto}.result-tabs button{white-space:nowrap;padding:8px}}
+@media(max-width:800px){.empty-state{grid-template-columns:1fr 1fr;padding:0;min-height:0}.guided-cover{padding:15px}.cover-stage img{max-height:330px}.guided-instructions{padding:18px}.empty-state h2{font-size:21px}.outcome-list{grid-template-columns:1fr}.outcome{display:none}.outcome:first-child{display:block}}
+@media(max-width:550px){.empty-state{grid-template-columns:1fr}.guided-cover{border-right:0;border-bottom:1px solid #bdcde3}.cover-stage img{max-height:270px}.outcome-list{grid-template-columns:repeat(3,1fr)}.outcome{display:block}.guided-instructions{padding:18px}.result-tabs button{font-size:12px}.page-intro h1{font-size:23px}}
+
+.workspace{position:relative}.processing-overlay{position:absolute;inset:28px 0 0;background:rgba(242,247,255,.97);border:1px solid #9db7de;border-radius:12px;z-index:8;display:grid;place-items:center;padding:24px}.processing-card{text-align:center;max-width:450px}.processing-card h2{font-size:23px;color:#173b72;margin:20px 0 12px}.processing-card p{font-size:15px;line-height:1.7;color:#355478;margin:0 0 15px}.processing-note{font-size:13px;color:#415e80}.loading-wheel{display:inline-block;width:48px;height:48px;border:5px solid #ccd9f1;border-top-color:#204fc5;border-radius:50%;animation:loading-turn .8s linear infinite}.loading-inline{display:flex;gap:10px;align-items:center;padding:12px;background:#e8f0ff;border:1px solid #a7bfe8;border-radius:8px;color:#1b458b;font-size:13px}.loading-inline .loading-wheel{width:21px;height:21px;border-width:3px;flex-shrink:0}.indeterminate-track{margin:23px auto 0;width:240px;max-width:100%;height:5px;border-radius:6px;background:#cfdbef;overflow:hidden}.indeterminate-track span{display:block;width:38%;height:100%;background:#204fc5;animation:loading-travel 1.5s ease-in-out infinite;border-radius:6px}@keyframes loading-turn{to{transform:rotate(360deg)}}@keyframes loading-travel{from{transform:translateX(-100%)}to{transform:translateX(365%)}}@media(prefers-reduced-motion:reduce){.loading-wheel{animation:none}.indeterminate-track span{animation:none;margin:auto}}@media(max-width:800px){.workspace:has(.processing-overlay:not([hidden])){min-height:370px}.processing-overlay{inset:28px 0 0}.processing-card h2{font-size:20px}}
+
+.input-panel .primary-action:disabled{background:#375d9a;box-shadow:none;cursor:wait}
+
+/* Long supporting text stays readable; vertical page scrolling is allowed. */
+.supporting-text{min-height:125px;resize:vertical;font-size:14px;line-height:1.7;padding:12px;color:#172c46;border:1px solid #a8bbd3;background:#fbfdff;border-radius:8px;white-space:pre-wrap;overflow-wrap:anywhere}.input-panel .supporting-text{width:100%;min-height:125px}
+@media(min-width:801px){html{height:auto;min-height:100%;overflow-y:auto}body{height:auto;min-height:100dvh;overflow:visible}.wrap{height:auto;min-height:calc(100dvh - 65px);overflow:visible}.analysis-view{height:auto}.dashboard{flex:none;align-items:start;min-height:calc(100dvh - 170px)}.input-panel{overflow:visible;height:auto;max-height:none}.workspace{height:auto;min-height:calc(100dvh - 170px);overflow:visible}.workspace[data-state=results] #hasil{overflow:visible}.result-panel{overflow:visible;flex:none}.secondary-area.app-view{height:auto;min-height:calc(100dvh - 110px);overflow:visible}.empty-state{height:auto;min-height:calc(100dvh - 205px)}header{position:sticky;top:0}.processing-overlay{min-height:320px}.processing-card{position:sticky;top:105px;align-self:start;margin-top:55px}}
+</style>
+</head>
+<body>
+<header><div class="topbar"><a class="brand" href="#analisis"><span aria-hidden="true" class="brand-mark">T</span><span><span class="brand-name">Tempo XAI</span><span class="brand-sub" style="display:block">Studi metafora sampul</span></span></a><nav aria-label="Navigasi utama" class="topnav"><a aria-current="page" data-view-link="analisis" href="#analisis">Analisis</a><a data-view-link="batch" href="#batch">Batch</a><a data-view-link="panduan" href="#panduan">Panduan</a></nav><div class="header-status"><span class="status-dot"></span>Prototipe penelitian</div></div></header>
+<div class="wrap"><section aria-label="Analisis sampul" class="app-view analysis-view" id="analisis"><section class="page-intro"><div><div class="eyebrow">DEMO ANALISIS SAMPUL TEMPO</div><h1>Analisis sampul dalam 3 langkah</h1><p>Pilih gambar → periksa judul → lihat prediksi dan bukti.</p></div><a class="intro-link" href="#panduan">Pelajari task &amp; kelas <span aria-hidden="true">↗</span></a></section><div class="dashboard"><div aria-labelledby="inputTitle" class="kartu input-panel"><div class="panel-heading"><h2 id="inputTitle">Mulai di sini</h2><span class="pill">INPUT</span></div><p class="section-caption">Isi dari atas ke bawah. Gambar yang dipilih tampil di sebelah kanan.</p>
+<div class="tab">
+<button class="aktif" id="tabData" onclick="pilihTab('data')">Dataset</button>
+<button id="tabUnggah" onclick="pilihTab('unggah')">Unggah gambar</button>
+</div>
+<div id="modeData">
+<label for="sample">1. Pilih sampul dari dataset</label>
+<select id="sample"></select>
+<label for="dataHeadline">2. Periksa judul utama</label><input id="dataHeadline" type="text"/><p class="field-help">Samakan dengan judul besar pada sampul. Klik kolom untuk memperbaiki.</p>
+<label for="dataSupporting">Teks pendukung (boleh kosong)</label><textarea class="supporting-text" id="dataSupporting" placeholder="Teks penjelas pada sampul. Boleh beberapa kalimat dan beberapa baris." rows="5"></textarea>
+<details class="protocol-note"><summary>Cara input ini dianalisis</summary><div class="info">
+      Sampul yang dipilih <b>dikeluarkan dari data latih</b> (leave-one-out),
+      jadi model belum pernah melihatnya. Prediksinya dibandingkan dengan label anotator.
+    </div></details></div>
+<div id="modeUnggah" style="display:none">
+<label for="gambar">1. Pilih gambar dari laptop</label>
+<input accept="image/*" id="gambar" onchange="bacaOtomatis()" type="file"/>
+<label for="ocrCandidates">Pilihan judul hasil pembacaan otomatis</label><select id="ocrCandidates"><option value="">Pilih kandidat</option></select>
+<div aria-live="polite" class="kecil" id="statusOcr" role="status" style="margin-top:6px"></div>
+<label for="headline">2. Periksa judul utama (wajib)</label>
+<input id="headline" placeholder="contoh: SKANDAL BNI, SIAPA MENIKMATI?" type="text"/><p class="field-help">Samakan dengan judul besar pada sampul. Klik kolom untuk memperbaiki.</p>
+<label for="supporting">Teks pendukung (boleh kosong)</label>
+<textarea class="supporting-text" id="supporting" placeholder="Teks penjelas pada sampul. Boleh beberapa kalimat dan beberapa baris." rows="5"></textarea>
+<details class="protocol-note"><summary>Cara input ini dianalisis</summary><div class="info">
+      Teks pada gambar dibaca otomatis dan mengisi kedua kolom di atas.
+      <b>Periksa dan perbaiki bila ada yang salah</b> — pembacaan otomatis pada
+      sampul majalah tidak pernah sempurna, dan teks inilah yang dipakai model.
+      <br/><br/>
+      Tidak ada label pembanding untuk gambar unggahan, jadi tidak ada kolom verifikasi.
+      Model dilatih pada seluruh 740 sampul.
+    </div></details></div>
+<label for="task">3. Pilih penjelasan yang ingin dilihat</label>
+<select id="task">
+<option selected="" value="task2_domain_sumber">Ranah metafora (Task 2)</option>
+<option value="task1_issue">Topik utama (Task 1)</option>
+<option value="task3_primary_entity_type">Pihak yang disorot (Task 3)</option>
+</select>
+<button class="primary-action" id="jalan" onclick="analisis()">Analisis sampul<span aria-hidden="true" class="action-arrow">→</span></button>
+<div class="spin" id="spin" role="status">Analisis sedang berjalan. Hasil akan muncul otomatis.</div>
+<img alt="Preview sampul dataset" class="gambar" hidden="" id="previewData" style="max-height:240px;object-fit:contain"/><img alt="Preview unggahan" class="gambar" hidden="" id="previewUpload" style="max-height:240px;object-fit:contain"/></div><section aria-label="Hasil analisis" class="workspace" data-state="ready" id="workspace"><div class="workspace-header"><h2>Sampul &amp; hasil analisis</h2><span class="workspace-label">Mulai dari panel kiri</span></div><div class="empty-state" id="emptyState"><div class="guided-cover"><div class="cover-heading"><span>SAMPUL PILIHAN</span><span class="preview-badge">Pratinjau</span></div><div class="cover-stage"><img alt="Sampul yang sedang diperiksa" hidden="" id="guidedPreview"/><div id="guidedPlaceholder"><b>Belum ada gambar</b><p>Pilih dataset atau unggah sampul melalui panel kiri.</p></div></div><p class="cover-hint">Cocokkan tulisan di gambar dengan kolom <b>judul utama</b>.</p></div><div class="guided-instructions"><span class="empty-tag" id="workspaceTag">Belum dianalisis</span><h2 id="workspaceTitle">Gambar sudah dipilih?<br/>Periksa judul, lalu analisis.</h2><p id="workspaceDescription">Ikuti tiga langkah di panel kiri. Hasil akan menggantikan panduan ini setelah analisis selesai.</p><ol class="usage-steps"><li><span class="guide-number">1</span><div><b>Pilih satu sampul</b><p>Gunakan dataset yang tersedia atau unggah gambar sendiri.</p></div></li><li><span class="guide-number">2</span><div><b>Periksa judul utama</b><p>Pembacaan otomatis bisa salah. Perbaiki teks sesuai gambar.</p></div></li><li><span class="guide-number">3</span><div><b>Klik “Analisis sampul”</b><p>Pilih ranah metafora, topik utama, atau pihak yang disorot.</p></div></li></ol><div class="outcome-list"><div class="outcome"><b>Prediksi</b><p>Kelas yang dipilih model</p></div><div class="outcome"><b>Visual</b><p>Area gambar berpengaruh</p></div><div class="outcome"><b>Teks</b><p>Kontribusi kata pada hasil</p></div></div><p class="guide-footnote">Hasil model membantu pemeriksaan; bukan keputusan akhir.</p></div></div><div id="hasil">
+<div aria-label="Bagian hasil analisis" class="result-tabs" role="tablist"><button aria-controls="result-panel-ringkasan" aria-selected="true" data-result-tab="ringkasan" id="result-tab-ringkasan" role="tab" tabindex="0" type="button">Prediksi</button><button aria-controls="result-panel-visual" aria-selected="false" data-result-tab="visual" id="result-tab-visual" role="tab" tabindex="-1" type="button">Bukti gambar</button><button aria-controls="result-panel-teks" aria-selected="false" data-result-tab="teks" id="result-tab-teks" role="tab" tabindex="-1" type="button">Bukti kata</button><button aria-controls="result-panel-sumber" aria-selected="false" data-result-tab="sumber" id="result-tab-sumber" role="tab" tabindex="-1" type="button">Penjelasan</button><button aria-controls="result-panel-verifikasi" aria-selected="false" data-result-tab="verifikasi" id="result-tab-verifikasi" role="tab" tabindex="-1" type="button">Bandingkan label</button></div><section aria-labelledby="result-tab-ringkasan" class="result-panel" id="result-panel-ringkasan" role="tabpanel" tabindex="0"><p class="panel-guide">Baca kelas hasil prediksi, kemudian ringkasan interpretasinya.</p><div class="kartu">
+<h2>Prediksi tiga task</h2>
+<div id="ringkas"></div>
+<div class="table-scroll" id="tabelPred"></div>
+</div><div class="kartu simpul" id="kartuSimpul" style="display:none">
+<h2>Ringkasan interpretasi</h2>
+<div id="simpulTanda"></div>
+<p class="isi" id="simpulTeks"></p>
+<div class="kecil" style="margin-top:12px">
+      Paragraf ini <b>dirangkai</b> dari hasil model, referensi definisi demo, dan
+      catatan anotator — bukan dihasilkan model bahasa, sehingga setiap
+      pernyataannya dapat ditelusuri ke bagian teknis di bawah.
+    </div>
+</div></section><section aria-labelledby="result-tab-visual" class="result-panel" hidden="" id="result-panel-visual" role="tabpanel" tabindex="0"><p class="panel-guide">Bandingkan gambar asli dan peta panas. Area merah lebih berpengaruh pada prediksi; bukan deteksi objek.</p><div class="kartu">
+<h2>Bukti visual</h2>
+<div class="grid">
+<div>
+<img alt="sampul asli" class="gambar" id="imgAsli"/>
+<div class="cap">Sampul asli</div>
+</div>
+<div>
+<img alt="peta panas" class="gambar" id="imgHeat"/>
+<div class="cap" id="capHeat">Peta panas — merah = paling memengaruhi keputusan</div>
+</div>
+</div>
+<details id="bandingHeat" style="margin-top:12px">
+<summary style="cursor:pointer;font-size:12.5px;color:#475569;font-weight:600">
+        Lihat peta panas per task (tampilan teknis)
+      </summary>
+<div class="kecil" id="capBanding" style="margin:8px 0"></div>
+<div class="grid" id="heatPerTask"></div>
+</details>
+<div id="verifVisual"></div>
+</div></section><section aria-labelledby="result-tab-teks" class="result-panel" hidden="" id="result-panel-teks" role="tabpanel" tabindex="0"><p class="panel-guide">Lihat kata yang mendukung atau melemahkan prediksi untuk penjelasan pilihanmu.</p><div class="kartu">
+<h2>Kontribusi teks</h2>
+<div id="kataBox"></div>
+<div class="kecil" id="metodeAtribusi" style="margin-top:10px">
+</div>
+</div></section><section aria-labelledby="result-tab-sumber" class="result-panel" hidden="" id="result-panel-sumber" role="tabpanel" tabindex="0"><p class="panel-guide">Periksa asal setiap penjelasan: model, definisi kelas, atau catatan anotator.</p><div class="kartu">
+<h2>Penjelasan &amp; sumber</h2>
+<div class="info" style="margin-top:0">
+      Setiap bagian di bawah diberi <b>penanda asal</b>. Tidak ada paragraf yang
+      dihasilkan model bahasa — teks hanya <i>dirangkai</i> dari komponen yang
+      sumbernya dapat dilacak.
+      <div style="margin-top:8px">
+<span class="asal model">model</span> dihitung dari prediksi dan atribusi saat ini  
+        <span class="asal anotator">anotator</span> catatan manusia dari dataset  
+        <span class="asal codebook">codebook</span> definisi operasional proyek, disusun atas instruksi pengguna  
+        <span class="asal gabungan">gabungan</span> perbandingan keduanya
+      </div>
+</div>
+<div id="narasi"></div><details><summary>Asal bukti analisis</summary><pre id="evidenceDetails" style="white-space:pre-wrap"></pre></details>
+</div></section><section aria-labelledby="result-tab-verifikasi" class="result-panel" hidden="" id="result-panel-verifikasi" role="tabpanel" tabindex="0"><p class="panel-guide">Untuk sampul dataset, bandingkan prediksi dengan label anotator. Unggahan sendiri tidak memiliki label pembanding.</p><div class="kartu">
+<h2>Perbandingan dengan anotator</h2>
+<div class="table-scroll" id="verif"></div>
+</div></section></div><div aria-live="polite" class="processing-overlay" hidden="" id="processingOverlay" role="status"><div class="processing-card"><span aria-hidden="true" class="loading-wheel"></span><h2 id="processingTitle">Sedang menganalisis sampul</h2><p id="processingDescription">Prediksi dan bukti sedang dihitung.</p><span class="processing-note">Tunggu sebentar. Hasil akan tampil otomatis.</span><div aria-hidden="true" class="indeterminate-track"><span></span></div></div></div></section></div></section><div class="kartu secondary-area app-view" hidden="" id="batch" tabindex="0">
+<h2>Analisis banyak sampul</h2>
+<p>Batch dataset memakai model tetap yang dilatih seluruh korpus: hasil eksplorasi in-sample, bukan leave-one-out atau metrik uji. Unggahan dibaca OCR lalu menunggu koreksi/konfirmasi headline.</p>
+<details open=""><summary>Buka pengaturan batch</summary><label for="batchIds">ID dataset, dipisahkan koma (opsional)</label><textarea id="batchIds" placeholder="sample_id1, sample_id2" rows="2"></textarea><button id="batchAddCurrent" type="button">Tambahkan sampul pilihan</button><label for="batchFiles">Gambar unggahan (opsional)</label><input accept="image/*" id="batchFiles" multiple="" type="file"/><label for="batchMethod">Metode atribusi batch</label><select id="batchMethod"><option value="occlusion">Occlusion (lebih cepat)</option><option value="lime">LIME (lebih lambat)</option></select><button id="batchStart" type="button">Mulai batch</button><button id="batchResume" type="button">Lanjutkan job terakhir / ulang item gagal</button></details><div id="batchStatus"></div><div id="batchResults"></div></div><div class="kartu secondary-area app-view" hidden="" id="panduan" tabindex="0">
+<h2>Panduan analisis</h2>
+<p>Demo membantu menelaah topik, ranah metafora, dan jenis pihak yang disorot. Prediksi dan bukti XAI membantu pemeriksaan; periksa headline sebelum analisis.</p>
+<details><summary>Arti tiga task dan katalog kelas</summary><div id="catalog">Memuat katalog…</div></details>
+<p class="kecil">Definisi operasional disusun untuk proyek ini atas instruksi pengguna; label berasal dari dataset. Definisi baru tidak membuktikan label historis atau prediksi benar.</p>
+<details><summary>Tentang model baseline dan hasil evaluasinya</summary><div class="warn">
+<b>Status: prototipe untuk verifikasi, bukan hasil final.</b>
+    Model dilatih pada 740 sampul (dari 745 yang memenuhi syarat). Macro-F1
+    Task 2 domain 0,320 — sudah jauh di atas baseline 0,064, tetapi belum
+    layak dipakai sebagai alat putus. Tujuan demo ini adalah memeriksa apakah
+    <i>alur XAI berjalan dan dapat diverifikasi</i>, bukan menunjukkan performa.
+  </div></details></div></div>
+<script>
+let daftar = [];
+
+fetch('/api/samples').then(r=>r.json()).then(d=>{
+  daftar = d;
+  const s = document.getElementById('sample');
+  d.forEach(x=>{
+    const o = document.createElement('option');
+    o.value = x.sample_id;
+    o.textContent = `${x.headline}  —  [${x.domain_tampil || x.domain}]`;
+    s.appendChild(o);
+  });
+  syncDataset();
+});
+
+// Teks hasil OCR terakhir. Dipakai untuk membedakan isi kolom yang berasal
+// dari pembacaan otomatis (boleh ditimpa saat gambar diganti) dengan yang
+// diketik atau disunting pengguna (tidak boleh hilang begitu saja).
+let _ocrTerakhir = {headline:'', pendukung:''};
+
+// Nomor permintaan OCR. Bila pengguna mengganti gambar sebelum pembacaan
+// sebelumnya selesai, hanya jawaban permintaan TERAKHIR yang dipakai —
+// tanpa ini, jawaban lama yang datang belakangan bisa menimpa yang baru.
+let _ocrKe = 0;
+let textEditRev={headline:0,supporting:0};
+
+function pilihTab(m){
+  if(m==='data'){_ocrKe++;ocrBusy=false;}
+  invalidateAnalysis();
+  const d = m==='data';
+  document.getElementById('modeData').style.display = d?'block':'none';
+  document.getElementById('modeUnggah').style.display = d?'none':'block';
+  document.getElementById('tabData').className = d?'aktif':'';
+  document.getElementById('tabUnggah').className = d?'':'aktif';
+
+  // Berpindah ke mode dataset: bersihkan sisa unggahan sebelumnya, supaya
+  // saat kembali ke mode unggah tidak ada berkas dan teks lama yang
+  // tertinggal dan tampak seolah milik gambar yang baru dipilih.
+  if (d){
+    const g = document.getElementById('gambar');
+    if (g) g.value = '';
+    document.getElementById('headline').value = '';
+    document.getElementById('supporting').value = '';
+    document.getElementById('statusOcr').textContent = '';
+    _ocrTerakhir = {headline:'', pendukung:''};
+    _ocrKe++;   // batalkan pembacaan OCR yang mungkin masih berjalan
+  }
+}
+
+function warnaKata(v, maks){
+  if (maks <= 0) return '#f1f5f9';
+  const r = Math.max(-1, Math.min(1, v/maks));
+  if (r >= 0){
+    const a = 0.12 + 0.72*r;
+    return `rgba(185,28,28,${a.toFixed(2)})`;
+  }
+  const a = 0.10 + 0.5*(-r);
+  return `rgba(37,99,235,${a.toFixed(2)})`;
+}
+
+// ---- Pembacaan teks otomatis (revisi R1) ----
+// Dijalankan begitu berkas dipilih, supaya pengguna tidak perlu mengetik ulang
+// teks sampul. Hasilnya hanya MENGISI kolom — tetap dapat disunting, dan
+// kegagalan OCR tidak menghalangi analisis.
+function _disuntingPengguna(kolom, nilaiOcr){
+  return kolom.value.trim() !== '' && kolom.value.trim() !== (nilaiOcr || '').trim();
+}
+
+async function bacaOtomatis(){
+  invalidateAnalysis();
+  document.getElementById('ocrCandidates').replaceChildren(new Option('Pilih kandidat',''));
+  const picked=document.getElementById('gambar').files[0];
+  const preview=document.getElementById('previewUpload');
+  if(preview.dataset.objectUrl) URL.revokeObjectURL(preview.dataset.objectUrl);
+  if(picked){ preview.dataset.objectUrl=URL.createObjectURL(picked);preview.src=preview.dataset.objectUrl; }
+  else preview.removeAttribute('src');
+  const berkas = document.getElementById('gambar').files[0];
+  const status = document.getElementById('statusOcr');
+  const hl = document.getElementById('headline');
+  const sp = document.getElementById('supporting');
+
+  const ke = ++_ocrKe;
+  const initialEdits={...textEditRev};
+
+  if (!berkas){ocrBusy=false;status.textContent='';setWorkspaceState('ready');return;}
+
+  // Gambar berganti, jadi teks dari gambar sebelumnya tidak berlaku lagi.
+  // Kolom yang isinya masih persis hasil OCR lama dikosongkan; kolom yang
+  // sudah disunting pengguna dibiarkan, dan pengguna diberi tahu.
+  const adaSuntingan = _disuntingPengguna(hl, _ocrTerakhir.headline)
+                    || _disuntingPengguna(sp, _ocrTerakhir.pendukung);
+  if (!_disuntingPengguna(hl, _ocrTerakhir.headline)) hl.value = '';
+  if (!_disuntingPengguna(sp, _ocrTerakhir.pendukung)) sp.value = '';
+
+  ocrBusy=true;setWorkspaceState('ocr');
+  status.innerHTML='<div class="loading-inline"><span class="loading-wheel" aria-hidden="true"></span><span>Membaca judul dan teks pada gambar…</span></div>';
+
+  const fd = new FormData();
+  fd.append('gambar', berkas);
+  try{
+    const res = await fetch('/api/ocr', {method:'POST', body: fd});
+    const d = await res.json();
+    if (ke !== _ocrKe) return;   // sudah ada gambar yang lebih baru
+
+    if (d.error || d.tersedia === false){
+      _ocrTerakhir = {headline:'', pendukung:''};
+      status.innerHTML = '<span style="color:#b45309">Pembacaan otomatis tidak tersedia'
+        + (d.catatan || d.error ? ': ' + (d.catatan || d.error) : '')
+        + '. Isi teks secara manual.</span>';
+      return;
+    }
+    if (!d.headline){
+      _ocrTerakhir = {headline:'', pendukung: d.pendukung || ''};
+      if (initialEdits.supporting===textEditRev.supporting && d.pendukung && !_disuntingPengguna(sp, '')) sp.value = d.pendukung;
+      status.innerHTML = '<span style="color:#b45309">'
+        + (d.catatan || 'Tidak ada teks yang menyerupai headline.')
+        + ' Isi judul secara manual.</span>';
+      return;
+    }
+
+    // Isi kolom, kecuali yang sudah disunting pengguna.
+    if (initialEdits.headline===textEditRev.headline && !_disuntingPengguna(hl, _ocrTerakhir.headline)) hl.value = d.headline;
+    if (initialEdits.supporting===textEditRev.supporting && d.pendukung && !_disuntingPengguna(sp, _ocrTerakhir.pendukung)) sp.value = d.pendukung;
+    _ocrTerakhir = {headline: d.headline, pendukung: d.pendukung || ''};
+
+    const candidates=document.getElementById('ocrCandidates');
+    (d.kandidat_headline || [d.headline]).forEach(v=>candidates.add(new Option(v,v)));
+    invalidateAnalysis();
+    let pesan = 'Teks terbaca otomatis';
+    if (d.keyakinan != null) pesan += ' (skor pembacaan OCR ' + (d.keyakinan*100).toFixed(0) + '%)';
+    pesan += '. Skor pembacaan bukan peluang headline benar. Periksa dan perbaiki teks.';
+    if (d.catatan) pesan += ' ' + d.catatan;
+    if (adaSuntingan) pesan += ' Teks yang sebelumnya Anda sunting sendiri tidak diubah.';
+    status.innerHTML = '<span style="color:#15803d">' + pesan + '</span>';
+  } catch(e){
+    if (ke !== _ocrKe) return;
+    _ocrTerakhir = {headline:'', pendukung:''};
+    status.innerHTML = '<span style="color:#b45309">Pembacaan otomatis gagal: '
+      + e.message + '. Isi teks secara manual.</span>';
+  } finally {
+    if(ke===_ocrKe){ocrBusy=false;setWorkspaceState('ready');}
+  }
+}
+
+let analysisSeq=0, analysisController=null, ocrBusy=false;
+function setWorkspaceState(state){
+  const panel=document.getElementById('workspace');
+  if(!panel) return;
+  panel.dataset.state=state;
+  const loading=state==='loading';
+  const reading=state==='ocr';
+  const overlay=document.getElementById('processingOverlay');
+  if(overlay){
+    overlay.hidden=!(loading||reading);
+    panel.setAttribute('aria-busy',String(loading||reading));
+    document.getElementById('processingTitle').textContent=reading?'Sedang membaca teks gambar':'Sedang menganalisis sampul';
+    document.getElementById('processingDescription').textContent=reading?'Gambar sedang dikirim dan dibaca otomatis untuk mengisi judul serta teks pendukung. Setelah selesai, periksa teks yang terbaca.':'Model sedang menghitung prediksi, peta panas, dan kontribusi kata. Proses ini dapat memerlukan beberapa saat.';
+    const button=document.getElementById('jalan');
+    button.innerHTML=reading?'Membaca gambar…':loading?'Menganalisis…':'Analisis sampul <span class="action-arrow" aria-hidden="true">→</span>';
+    button.disabled=loading||reading;
+  }
+  document.getElementById('workspaceTag').textContent=loading?'Analisis berlangsung':'Belum dianalisis';
+  document.getElementById('workspaceTitle').textContent=loading?'Sedang menghitung prediksi…':'Periksa judul, lalu klik Analisis sampul';
+  document.getElementById('workspaceDescription').textContent=loading?'Model sedang menghitung prediksi dan bukti visual serta teks. Tunggu hingga analisis selesai.':'Ikuti tiga langkah di panel kiri. Hasil akan tampil di sini setelah analisis selesai.';
+}
+function invalidateAnalysis(){
+  analysisSeq++;
+  if(analysisController) analysisController.abort();
+  document.getElementById('hasil').style.display='none';
+  setWorkspaceState(ocrBusy?'ocr':'ready');
+  document.getElementById('jalan').disabled=ocrBusy;
+  document.getElementById('spin').classList.remove('on');
+}
+async function analisis(){
+  if(ocrBusy)return;
+  const seq=++analysisSeq;
+  analysisController=new AbortController();
+  const btn = document.getElementById('jalan');
+  const spin = document.getElementById('spin');
+  btn.disabled = true; spin.classList.add('on');
+  document.getElementById('hasil').style.display='none';
+  setWorkspaceState('ready');
+
+  const fd = new FormData();
+  fd.append('task', document.getElementById('task').value);
+  const modeData = document.getElementById('modeData').style.display !== 'none';
+
+  if (modeData){
+    fd.append('sample_id', document.getElementById('sample').value);
+    fd.append('headline', document.getElementById('dataHeadline').value);
+    fd.append('supporting', document.getElementById('dataSupporting').value);
+  } else {
+    const f = document.getElementById('gambar').files[0];
+    if (!f){ alert('Pilih gambar dulu'); btn.disabled=false; spin.classList.remove('on'); return; }
+    const hl = document.getElementById('headline').value.trim();
+    if (!hl){ alert('Headline wajib diisi'); btn.disabled=false; spin.classList.remove('on'); return; }
+    fd.append('gambar', f);
+    fd.append('headline', hl);
+    fd.append('supporting', document.getElementById('supporting').value);
+  }
+
+  try{
+    setWorkspaceState('loading');
+    const res = await fetch('/api/analisis', {method:'POST', body: fd, signal:analysisController.signal});
+    const d = await res.json();
+    if(seq!==analysisSeq) return;
+    if (d.error){ alert('Gagal: '+d.error); return; }
+    tampil(d, modeData);
+  } catch(e){
+    if(seq===analysisSeq && e.name!=='AbortError') alert('Terjadi kesalahan: '+e.message);
+  } finally {
+    if(seq===analysisSeq){btn.disabled = false; spin.classList.remove('on');if(document.getElementById('hasil').style.display==='none')setWorkspaceState('ready');}
+  }
+}
+
+function tampil(d, modeData){
+  // Existing renderer uses HTML templates; escape all response text before rendering.
+  function escapeValue(v){
+    if(typeof v==='string') return v.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    if(Array.isArray(v))return v.map(escapeValue);
+    if(v && typeof v==='object')return Object.fromEntries(Object.entries(v).map(([k,x])=>[k,escapeValue(x)]));
+    return v;
+  }
+  const plain=d;
+  d=escapeValue(d);
+  if(document.getElementById('evidenceDetails')) document.getElementById('evidenceDetails').textContent=JSON.stringify(plain.evidence,null,2);
+  document.getElementById('hasil').style.display='block';
+  setWorkspaceState('results');
+
+  document.getElementById('ringkas').innerHTML =
+    `<span class="pill">${d.mode}</span>
+     <span class="pill">XAI: ${d.task_xai}</span>
+     <span class="pill">${d.durasi_detik}s</span>
+     <div style="margin-top:8px"><b>Headline:</b> ${d.headline}</div><div><b>Teks pendukung:</b> ${d.supporting || '—'}</div><div class="kecil">Analisis ${d.analysis_id}; ${d.snapshot.model}</div>`;
+
+  // tabel prediksi
+  let t = '<p class="kecil">Skor model belum dikalibrasi sebagai peluang jawaban benar.</p><table><tr><th>Task</th><th>Prediksi model</th><th>Skor model</th>';
+  // Label pembanding tersedia pada tab Verifikasi.
+  t += '</tr>';
+  for (const k of Object.keys(d.prediksi)){
+    const p = d.prediksi[k];
+    const pct = (p.probabilitas*100).toFixed(1);
+    const namaTask = p.nama_task_mudah || p.nama_task;
+    const predTampil = p.prediksi_tampil || p.prediksi;
+    const ke2 = p.semua[1];
+    const ke2Tampil = ke2 ? (ke2.kelas_tampil || ke2.kelas) : null;
+    t += `<tr><td>${namaTask}</td>
+          <td><b>${predTampil}</b><div class="kecil mono">${p.prediksi}</div></td>
+          <td style="min-width:120px">${pct}%
+            <div class="bar"><i style="width:${pct}%"></i></div>
+            <div class="kecil">urutan kedua: ${ke2 ? ke2Tampil+' '+(ke2.prob*100).toFixed(0)+'%' : '-'}</div>
+          </td>`;
+    t += '</tr>';
+  }
+  t += '</table>';
+  document.getElementById('tabelPred').innerHTML = t;
+
+  // gambar
+  const asli = document.getElementById('imgAsli');
+  if (d.gambar_url){ asli.src = d.gambar_url; asli.style.display='block'; }
+  else { asli.style.display='none'; }
+  // Peta panas: yang ditampilkan besar adalah peta TERPADU (rata-rata tiga
+  // task). Peta per task disembunyikan di balik panel "tampilan teknis".
+  const heat = document.getElementById('imgHeat');
+  const cap  = document.getElementById('capHeat');
+  const utama = d.heatmap_url;
+  if (utama){
+    heat.src = utama; heat.style.display='block';
+    cap.textContent = 'Peta panas task pilihan — atribusi untuk kelas yang dijelaskan; bukan deteksi objek';
+  } else {
+    heat.style.display='none';
+    cap.textContent = 'Peta panas tidak dapat dihitung untuk sampul ini.';
+  }
+
+  // panel pembanding per task
+  const perTask = d.heatmap_per_task || {};
+  const kunci = Object.keys(perTask);
+  const panel = document.getElementById('bandingHeat');
+  if (kunci.length){
+    document.getElementById('capBanding').textContent =
+      'Setiap task menghasilkan peta panas sendiri karena keputusannya diambil '
+      + 'dari kepala model yang berbeda. Peta utama memakai task pilihan; peta berikut untuk perbandingan.';
+    document.getElementById('heatPerTask').innerHTML = kunci.map(t=>`
+      <div>
+        <img src="${perTask[t].url}" class="gambar" alt="peta panas ${perTask[t].nama_task}">
+        <div class="cap">${perTask[t].nama_task}</div>
+      </div>`).join('');
+    panel.style.display='block';
+  } else {
+    panel.style.display='none';
+  }
+
+  // verifikasi visual
+  let vv = '';
+  if (d.catatan_anotator && d.catatan_anotator.sumber_metafora){
+    vv = `<div class="info"><b>Cara memverifikasi peta panas ini.</b>
+      Anotator mencatat sumber metaforanya adalah:
+      <i>"${d.catatan_anotator.sumber_metafora}"</i>.
+      Periksa apakah area merah berada pada elemen visual tersebut.
+      Kesamaan lokasi tidak membuktikan alasan model benar. Bila area merah
+      justru di logo, barcode, atau latar kosong, model bisa benar jawabannya
+      tetapi salah alasannya — dan itu temuan yang perlu dilaporkan.</div>`;
+  } else {
+    vv = `<div class="info">Tidak ada catatan anotator untuk gambar unggahan,
+      jadi peta panas ini tidak dapat diverifikasi otomatis.</div>`;
+  }
+  document.getElementById('verifVisual').innerHTML = vv;
+
+  // atribusi kata
+  const maks = Math.max(...d.atribusi_kata.map(x=>Math.abs(x.kontribusi)), 0.0001);
+  let kb = `<div class="kecil" style="margin-bottom:8px">
+    Kelas yang dijelaskan: <b>${d.kelas_untuk_atribusi_tampil || d.kelas_untuk_atribusi}</b>
+    (probabilitas ${(d.prob_kelas_atribusi*100).toFixed(1)}%).
+    Merah = kata itu <b>menopang</b> keputusan; biru = kata itu <b>melemahkan</b>.</div>`;
+  d.atribusi_kata.forEach(x=>{
+    kb += `<span class="kata" style="background:${warnaKata(x.kontribusi, maks)}">
+      ${x.kata} <span class="kecil">${x.kontribusi>=0?'+':''}${x.kontribusi.toFixed(3)}</span></span>`;
+  });
+  document.getElementById('kataBox').innerHTML = kb;
+
+  // Sebutkan metode atribusi yang benar-benar dipakai, supaya pembaca tidak
+  // perlu menduga dan hasilnya dapat dicocokkan dengan uji banding.
+  const met = d.metode_atribusi || 'occlusion';
+  document.getElementById('metodeAtribusi').innerHTML = met === 'lime'
+    ? 'Metode: <b>LIME</b> — dibangkitkan ratusan varian judul (sebagian kata '
+      + 'dihilangkan), lalu dicocokkan regresi linear berbobot jarak. Bobot tiap '
+      + 'kata diambil dari koefisien regresi itu, sehingga pengaruh gabungan '
+      + 'antar-kata ikut terhitung.'
+    : 'Metode: <i>occlusion</i> — setiap kata dihapus satu per satu, lalu diukur '
+      + 'perubahan probabilitas kelas terpilih. Lebih cepat daripada LIME, tetapi '
+      + 'pengaruh gabungan antar-kata tidak terukur.';
+
+  // penjelasan naratif
+  let nb = '';
+  (d.penjelasan || []).forEach(x=>{
+    nb += `<div class="blok ${x.asal}">
+      <b class="judul"><span class="asal ${x.asal}">${x.asal}</span>${x.label}</b>
+      <p>${x.teks}</p></div>`;
+  });
+  if (!nb) nb = '<div class="kecil">Tidak ada penjelasan yang dapat dirangkai.</div>';
+  document.getElementById('narasi').innerHTML = nb;
+
+  // Kesimpulan berbahasa awam (R3)
+  const kartuSimpul = document.getElementById('kartuSimpul');
+  if (d.kesimpulan && d.kesimpulan.paragraf){
+    const k = d.kesimpulan;
+    document.getElementById('simpulTeks').textContent = plain.kesimpulan.paragraf;
+    document.getElementById('simpulTanda').innerHTML = k.dapat_dipercaya
+      ? '<span class="tanda kuat">dasar pembacaan konsisten</span>'
+      : '<span class="tanda lemah">perlu diperiksa ulang</span>';
+    kartuSimpul.style.display = 'block';
+  } else {
+    kartuSimpul.style.display = 'none';
+  }
+
+  // verifikasi catatan
+  let v = '';
+  if (d.catatan_anotator){
+    const c = d.catatan_anotator;
+    const cocokJml = Object.values(d.verifikasi).filter(x=>x.cocok).length;
+    v = `<table>
+      <tr><th>Aspek</th><th>Catatan anotator</th></tr>
+      <tr><td>Sumber metafora</td><td>${c.sumber_metafora || '-'}</td></tr>
+      <tr><td>Pemetaan makna kritik</td><td>${c.pemetaan_makna || '-'}</td></tr>
+      <tr><td>Entitas sasaran</td><td>${c.entitas || '-'}</td></tr>
+      </table>
+      <div class="${cocokJml>=2?'info':'warn'}" style="margin-top:10px">
+      <b>Skor kecocokan: ${cocokJml} dari 3 task.</b>
+      ${cocokJml>=2 ? 'Mayoritas prediksi sejalan dengan anotator pada sampul ini.'
+                    : 'Mayoritas prediksi berbeda dari anotator. Macro-F1 Task 2 domain 0,320 — model masih sering meleset, dan ketidakcocokan seperti ini memang diharapkan muncul.'}
+      </div>`;
+  } else {
+    v = `<div class="info">Gambar unggahan tidak punya label anotator,
+      sehingga tidak ada yang bisa diverifikasi. Untuk menguji ketepatan model,
+      gunakan mode "Pilih dari dataset".</div>`;
+  }
+  document.getElementById('verif').innerHTML = v;
+
+  selectResultTab('ringkasan');
+}
+
+function syncDataset(){
+ const x=daftar.find(v=>v.sample_id===document.getElementById('sample').value);
+ if(!x)return;
+ document.getElementById('dataHeadline').value=x.headline;
+ document.getElementById('dataSupporting').value=x.supporting || '';
+ document.getElementById('previewData').src='/api/image/'+encodeURIComponent(x.sample_id);
+ invalidateAnalysis();
+}
+document.getElementById('sample').addEventListener('change',syncDataset);
+for(const id of ['task','dataHeadline','dataSupporting','headline','supporting']){
+ document.getElementById(id).addEventListener('input',()=>{if(id in textEditRev)textEditRev[id]++;invalidateAnalysis();});
+ document.getElementById(id).addEventListener('change',invalidateAnalysis);
+}
+document.getElementById('ocrCandidates').addEventListener('change',e=>{
+ if(e.target.value){textEditRev.headline++;document.getElementById('headline').value=e.target.value;invalidateAnalysis();}
+});
+fetch('/api/catalog').then(r=>r.json()).then(tasks=>{
+ const node=document.getElementById('catalog');node.replaceChildren();
+ for(const task of tasks){
+  const h=document.createElement('h3');h.textContent=task.name+' — '+task.question;node.append(h);
+  for(const cls of task.classes){
+   const d=document.createElement('details'),title=document.createElement('summary'),body=document.createElement('p');
+   title.textContent=cls.name+' ('+cls.id+')';
+   body.textContent=(typeof cls.definition==='string'?cls.definition:JSON.stringify(cls.definition))+' '+cls.verification+'; '+cls.source;
+   d.append(title,body);
+   for(const [label,value] of [['Kriteria masuk',cls.criteria],['Batas pembeda',cls.boundary]]){const p=document.createElement('p');p.textContent=label+': '+value;d.append(p);}
+   for(const x of cls.examples){const a=document.createElement('a');a.href='/api/image/'+encodeURIComponent(x.sample_id);a.textContent=x.headline+' ['+x.sample_id+']';a.target='_blank';const p=document.createElement('p');p.textContent=(x.reason||'')+' — '+(x.status||'contoh anotasi dataset');d.append(a,p);}
+   node.append(d);
+  }
+ }
+}).catch(()=>document.getElementById('catalog').textContent='Katalog belum tersedia.');
+let batchId=localStorage.getItem('tempoBatchId') || '', batchTimer=null;
+document.getElementById('batchAddCurrent').onclick=()=>{
+ const e=document.getElementById('batchIds');e.value=[e.value,document.getElementById('sample').value].filter(Boolean).join(',');
+};
+document.getElementById('batchStart').onclick=async()=>{
+ const fd=new FormData();fd.append('task',document.getElementById('task').value);fd.append('metode_atribusi',document.getElementById('batchMethod').value);
+ fd.append('sample_ids',JSON.stringify(document.getElementById('batchIds').value.split(',').map(x=>x.trim()).filter(Boolean)));
+ for(const f of document.getElementById('batchFiles').files)fd.append('gambar',f);
+ try{const r=await fetch('/api/batch',{method:'POST',body:fd}),j=await r.json();if(!r.ok)throw Error(j.error);batchId=j.id;localStorage.setItem('tempoBatchId',batchId);pollBatch();}
+ catch(e){document.getElementById('batchStatus').textContent=e.message;}
+};
+document.getElementById('batchResume').onclick=async()=>{
+ if(!batchId)return;
+ try{const response=await fetch('/api/batch/'+batchId+'/resume',{method:'POST'});const value=await response.json();if(!response.ok)throw Error(value.error||'Gagal melanjutkan batch');pollBatch();}catch(e){document.getElementById('batchStatus').textContent=e.message;}
+};
+async function pollBatch(){
+ clearTimeout(batchTimer);if(!batchId)return;
+ try{
+ const r=await fetch('/api/batch/'+batchId),j=await r.json();if(!r.ok)throw Error(j.error);
+ const status=document.getElementById('batchStatus');status.textContent='Job '+j.id+' — '+j.status+' — '+JSON.stringify(j.progress);
+ for(const format of ['csv','json']){const a=document.createElement('a');a.href='/api/batch/'+batchId+'/export/'+format;a.textContent=' Unduh '+format.toUpperCase()+' ';status.append(a);}
+ const list=document.getElementById('batchResults');list.replaceChildren();
+ j.items.forEach((item,index)=>{
+  const d=document.createElement('details'),title=document.createElement('summary');title.textContent=item.name+' — '+item.status;d.append(title);
+  if(item.error){const p=document.createElement('p');p.textContent=item.error;d.append(p);}
+  if(item.result){const p=document.createElement('p');p.textContent=item.result.kesimpulan.paragraf;d.append(p);if(item.result.heatmap_padu_url){const a=document.createElement('a');a.href=item.result.heatmap_padu_url;a.textContent='Buka heatmap';a.target='_blank';d.append(a);}}
+  if(item.status==='needs_review'){
+   const preview=document.createElement('img');preview.src='/api/batch/'+batchId+'/input/'+index;preview.alt='Sampul untuk pemeriksaan '+item.name;preview.className='gambar';preview.style.maxHeight='250px';preview.style.objectFit='contain';d.append(preview);
+   const hl=document.createElement('input'),sp=document.createElement('input'),b=document.createElement('button');hl.type='text';sp.type='text';hl.value=item.headline||'';sp.value=item.supporting||'';b.textContent='Konfirmasi teks dan analisis';b.disabled=j.status==='running';
+   hl.disabled=sp.disabled=j.status==='running';hl.setAttribute('aria-label','Headline final '+item.name);sp.setAttribute('aria-label','Teks pendukung final '+item.name);
+   const lh=document.createElement('label'),ls=document.createElement('label');lh.textContent='Headline final';ls.textContent='Teks pendukung final';lh.append(hl);ls.append(sp);
+   const candidates=document.createElement('select');candidates.setAttribute('aria-label','Kandidat headline '+item.name);candidates.disabled=j.status==='running';const first=document.createElement('option');first.value='';first.textContent='Pilih kandidat OCR (opsional)';candidates.append(first);for(const value of (item.ocr?.kandidat_headline||[])){const option=document.createElement('option');option.value=value;option.textContent=value;candidates.append(option);}candidates.onchange=()=>{if(candidates.value)hl.value=candidates.value;};d.append(candidates);
+   b.onclick=async()=>{const fd=new FormData();fd.append('headline',hl.value);fd.append('supporting',sp.value);const response=await fetch('/api/batch/'+batchId+'/review/'+index,{method:'POST',body:fd});const v=await response.json();if(v.error)alert(v.error);pollBatch();};d.append(lh,ls,b);
+  }
+  list.append(d);
+ });
+ if(j.status==='running'||j.status==='queued')batchTimer=setTimeout(pollBatch,3000);
+ }catch(e){document.getElementById('batchStatus').textContent=e.message;}
+}
+if(batchId)pollBatch();
+
+
+// Workspace tabs and views.
+function selectAppView(name){
+  const valid=['analisis','batch','panduan'];
+  if(!valid.includes(name))name='analisis';
+  document.querySelectorAll('.app-view').forEach(panel=>{panel.hidden=panel.id!==name;});
+  document.querySelectorAll('[data-view-link]').forEach(link=>{
+    if(link.dataset.viewLink===name)link.setAttribute('aria-current','page');
+    else link.removeAttribute('aria-current');
+  });
+}
+function selectResultTab(name,focus=false){
+  const tabs=Array.from(document.querySelectorAll('[data-result-tab]'));
+  if(!tabs.some(tab=>tab.dataset.resultTab===name))return;
+  tabs.forEach(tab=>{
+    const active=tab.dataset.resultTab===name;
+    tab.setAttribute('aria-selected',String(active));tab.tabIndex=active?0:-1;
+    document.getElementById(tab.getAttribute('aria-controls')).hidden=!active;
+    if(active&&focus)tab.focus();
+  });
+}
+// End workspace functions.
+document.querySelectorAll('[data-result-tab]').forEach((tab,index,tabs)=>{
+  tab.addEventListener('click',()=>selectResultTab(tab.dataset.resultTab));
+  tab.addEventListener('keydown',event=>{
+    let next=index;
+    if(event.key==='ArrowRight')next=(index+1)%tabs.length;
+    else if(event.key==='ArrowLeft')next=(index-1+tabs.length)%tabs.length;
+    else if(event.key==='Home')next=0;
+    else if(event.key==='End')next=tabs.length-1;
+    else return;
+    event.preventDefault();selectResultTab(tabs[next].dataset.resultTab,true);
+  });
+});
+window.addEventListener('hashchange',()=>selectAppView(location.hash.slice(1)));
+selectAppView(location.hash.slice(1));
+
+// Keep the guided preview aligned with the active input, including asynchronous OCR updates.
+function updateGuidedPreview(){
+  const target=document.getElementById('guidedPreview');
+  if(!target)return;
+  const dataMode=document.getElementById('modeData').style.display!=='none';
+  const source=document.getElementById(dataMode?'previewData':'previewUpload');
+  const file=document.getElementById('gambar');
+  const url=(dataMode || (file.files && file.files.length)) ? source.getAttribute('src') : null;
+  target.hidden=!url;document.getElementById('guidedPlaceholder').hidden=!!url;
+  if(url)target.setAttribute('src',url);else target.removeAttribute('src');
+}
+if(typeof MutationObserver!=='undefined'){
+  const previewObserver=new MutationObserver(updateGuidedPreview);
+  ['previewData','previewUpload','modeData'].forEach(id=>previewObserver.observe(document.getElementById(id),{attributes:true,attributeFilter:['src','style']}));
+  document.getElementById('gambar').addEventListener('change',updateGuidedPreview);
+  updateGuidedPreview();
+}
+</script>
+</body>
+</html>

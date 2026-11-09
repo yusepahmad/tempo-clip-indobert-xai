@@ -1,0 +1,87 @@
+{
+  "index": 666,
+  "sample_id": "TMP-C6F070C953D9",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5e553a9ad71ea015918a897d4e1343107ae8d3ac8816b1f9e6a3024703ba4f38",
+  "image_sha256": "c6f070c953d90db5f51d6a12da262c6bd3ec31a6631ecf49c4b5a1475e9488f9",
+  "transmitted_image_sha256": "be63537d0b02e07bd9aae68b8e03d6a6fb9c57efb7ccf63f53f6674601c07592",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.951302,
+      "total": 10,
+      "remaining": 1.048698,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.951301999999998,
+      "total": 100,
+      "remaining": 91.048698,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.734473272226751,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Jack playing card\", \"source_properties\": \"Rotational symmetry, dual-headed design, suit symbols, ornate royal attire, and holding a weapon.\", \"target_situation\": \"The political 'upside down' or reversal of power involving a figure nicknamed the 'King of Java'.\", \"mapping\": \"The card's reversible nature mirrors a political flip, where a powerful figure is depicted as a 'Jack' in a precarious, inverted state.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "g57LapeQOt6d_uMPq6y2oA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 105,
+      "cost": {
+        "input_tokens_cost_nanodollars": 659500,
+        "output_tokens_cost_nanodollars": 315000
+      },
+      "prompt_tokens": 1319,
+      "total_backend_latency_ms": 2104,
+      "total_tokens": 1424
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9522765,
+      "total": 10,
+      "remaining": 1.0477235,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.952276499999996,
+      "total": 100,
+      "remaining": 91.0477235,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009745,
+  "fields": {
+    "source_object": "Jack playing card",
+    "source_properties": "Rotational symmetry, dual-headed design, suit symbols, ornate royal attire, and holding a weapon.",
+    "target_situation": "The political 'upside down' or reversal of power involving a figure nicknamed the 'King of Java'.",
+    "mapping": "The card's reversible nature mirrors a political flip, where a powerful figure is depicted as a 'Jack' in a precarious, inverted state.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Jack playing card\nsource_properties: Rotational symmetry, dual-headed design, suit symbols, ornate royal attire, and holding a weapon.\ntarget_situation: The political 'upside down' or reversal of power involving a figure nicknamed the 'King of Java'.\nmapping: The card's reversible nature mirrors a political flip, where a powerful figure is depicted as a 'Jack' in a precarious, inverted state.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

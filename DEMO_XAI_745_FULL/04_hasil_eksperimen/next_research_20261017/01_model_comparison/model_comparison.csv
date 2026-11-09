@@ -1,0 +1,6 @@
+model_id,visual_encoder,text_encoder,classifier,task1_macro_f1,task2_macro_f1,task3_macro_f1,minimum_macro_f1,mean_macro_f1,decision
+M00,CLIP-L14,IndoBERT,E42 joint,0.5254826236,0.3955604326,0.4033984096,0.3955604326,0.4414804886,promote_to_augmentation_control
+M01,CLIP-L14,IndoBERT,shared MLP,0.4425713305,0.3591851808,0.3581196153,0.3581196153,0.3866253755,stop
+M02,SigLIP2-base,IndoBERT,shared MLP,0.4903934494,0.4213420150,0.3749392735,0.3749392735,0.4288915793,promote_to_augmentation
+M03,DINOv2-base,IndoBERT,shared MLP,0.4162884278,0.3928339323,0.2858855672,0.2858855672,0.3650026424,stop
+M04,SigLIP2-base,IndoBERT,task-specific adapters,0.5037502388,0.4222062780,0.3805106026,0.3805106026,0.4354890398,stop

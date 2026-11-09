@@ -1,0 +1,91 @@
+{
+  "index": 9,
+  "sample_id": "TMP-BB454CBBB59B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a4876b41dd9be840c18bb5a7c646dfde0b4daa9181e2293d9877e80149407190",
+  "image_sha256": "bb454cbbb59b6e8670984ff0bd2181dab5851d318aab24ca97e0ceb954eeb0be",
+  "transmitted_image_sha256": "f9762baa810a6eaa6ecce02d7591b6805d529acd80aa628c7929fc1072a2ff19",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0266635,
+      "total": 10,
+      "remaining": 1.9733365000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.026663499999998,
+      "total": 100,
+      "remaining": 91.9733365,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.060117040295154,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"puppet on a thumb\",\n  \"source_properties\": \"A small head is mounted on a finger inserted through an oversized collar.\",\n  \"target_situation\": \"The appointment of Sutarman as the Indonesian National Police Chief (Kapolri).\",\n  \"mapping\": \"The illustration depicts Sutarman as a puppet-like figure controlled by an unseen hand, implying he is a puppet of political interests.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "dorLasP-A9Pj_uMPg-OC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 651000,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1302,
+      "total_backend_latency_ms": 1762,
+      "total_tokens": 1408
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0276325,
+      "total": 10,
+      "remaining": 1.9723675000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.027632499999996,
+      "total": 100,
+      "remaining": 91.9723675,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000969,
+  "fields": {
+    "source_object": "puppet on a thumb",
+    "source_properties": "A small head is mounted on a finger inserted through an oversized collar.",
+    "target_situation": "The appointment of Sutarman as the Indonesian National Police Chief (Kapolri).",
+    "mapping": "The illustration depicts Sutarman as a puppet-like figure controlled by an unseen hand, implying he is a puppet of political interests.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: puppet on a thumb\nsource_properties: A small head is mounted on a finger inserted through an oversized collar.\ntarget_situation: The appointment of Sutarman as the Indonesian National Police Chief (Kapolri).\nmapping: The illustration depicts Sutarman as a puppet-like figure controlled by an unseen hand, implying he is a puppet of political interests.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true,
+  "migration_origin": {
+    "record_sha256": "a201f9436f3e8ed0e613eaf55f78b5bc055652de1207b833cd600c57ea934671",
+    "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383"
+  }
+}

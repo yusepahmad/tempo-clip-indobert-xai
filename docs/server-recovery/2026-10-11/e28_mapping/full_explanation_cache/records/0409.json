@@ -1,0 +1,87 @@
+{
+  "index": 409,
+  "sample_id": "TMP-5FB9D89E7E99",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "2872618721b52614f8edb37bbf461c24b37198a748354836d567e4160db58068",
+  "image_sha256": "5fb9d89e7e997d6bf8f6d50cae07938cb66f3562269126b4982eee5dca557e51",
+  "transmitted_image_sha256": "e3e711253834901b1271db879ebedc46145157d3235c33de9b6355fc453a90a8",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6034795,
+      "total": 10,
+      "remaining": 1.3965204999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.603479500000006,
+      "total": 100,
+      "remaining": 91.3965205,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.191380875185132,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"The Creation of Adam\", \"source_properties\": \"Michelangelo's iconic composition of a human hand and a divine finger almost touching, symbolizing life's spark.\", \"target_situation\": \"Indonesia's 2019 economic outlook centered on the Fourth Industrial Revolution (Industry 4.0).\", \"mapping\": \"The human hand reaching for a robotic finger mirrors the original divine spark, symbolizing technology bestowing new life and competitive power onto the national economy.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "1pfLavCGH8mb_uMPlY2fwA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 109,
+      "cost": {
+        "input_tokens_cost_nanodollars": 687500,
+        "output_tokens_cost_nanodollars": 327000
+      },
+      "prompt_tokens": 1375,
+      "total_backend_latency_ms": 1605,
+      "total_tokens": 1484
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.604494,
+      "total": 10,
+      "remaining": 1.3955059999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.604494000000003,
+      "total": 100,
+      "remaining": 91.395506,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010145,
+  "fields": {
+    "source_object": "The Creation of Adam",
+    "source_properties": "Michelangelo's iconic composition of a human hand and a divine finger almost touching, symbolizing life's spark.",
+    "target_situation": "Indonesia's 2019 economic outlook centered on the Fourth Industrial Revolution (Industry 4.0).",
+    "mapping": "The human hand reaching for a robotic finger mirrors the original divine spark, symbolizing technology bestowing new life and competitive power onto the national economy.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: The Creation of Adam\nsource_properties: Michelangelo's iconic composition of a human hand and a divine finger almost touching, symbolizing life's spark.\ntarget_situation: Indonesia's 2019 economic outlook centered on the Fourth Industrial Revolution (Industry 4.0).\nmapping: The human hand reaching for a robotic finger mirrors the original divine spark, symbolizing technology bestowing new life and competitive power onto the national economy.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

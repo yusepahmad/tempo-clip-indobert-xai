@@ -1,0 +1,173 @@
+{
+  "configs": [
+    {
+      "attention": false,
+      "hidden": 256,
+      "text": "mean",
+      "loss_weights": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "epochs": 120,
+      "lr": 0.001,
+      "dropout": 0.4,
+      "weight_decay": 0.001
+    },
+    {
+      "attention": true,
+      "hidden": 128,
+      "text": "mean",
+      "loss_weights": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "epochs": 120,
+      "lr": 0.001,
+      "dropout": 0.4,
+      "weight_decay": 0.001
+    },
+    {
+      "attention": true,
+      "hidden": 128,
+      "text": "mean",
+      "loss_weights": [
+        1.0,
+        2.0,
+        2.0
+      ],
+      "epochs": 120,
+      "lr": 0.001,
+      "dropout": 0.4,
+      "weight_decay": 0.001
+    },
+    {
+      "attention": true,
+      "hidden": 128,
+      "text": "cls",
+      "loss_weights": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "epochs": 120,
+      "lr": 0.001,
+      "dropout": 0.4,
+      "weight_decay": 0.001
+    },
+    {
+      "attention": true,
+      "hidden": 128,
+      "text": "cls",
+      "loss_weights": [
+        1.0,
+        2.0,
+        2.0
+      ],
+      "epochs": 120,
+      "lr": 0.001,
+      "dropout": 0.4,
+      "weight_decay": 0.001
+    },
+    {
+      "attention": true,
+      "hidden": 256,
+      "text": "mean",
+      "loss_weights": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "epochs": 120,
+      "lr": 0.001,
+      "dropout": 0.4,
+      "weight_decay": 0.001
+    },
+    {
+      "attention": true,
+      "hidden": 256,
+      "text": "mean",
+      "loss_weights": [
+        1.0,
+        2.0,
+        2.0
+      ],
+      "epochs": 120,
+      "lr": 0.001,
+      "dropout": 0.4,
+      "weight_decay": 0.001
+    },
+    {
+      "attention": true,
+      "hidden": 256,
+      "text": "cls",
+      "loss_weights": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "epochs": 120,
+      "lr": 0.001,
+      "dropout": 0.4,
+      "weight_decay": 0.001
+    },
+    {
+      "attention": true,
+      "hidden": 256,
+      "text": "cls",
+      "loss_weights": [
+        1.0,
+        2.0,
+        2.0
+      ],
+      "epochs": 120,
+      "lr": 0.001,
+      "dropout": 0.4,
+      "weight_decay": 0.001
+    }
+  ],
+  "classes": {
+    "task1_issue": [
+      "corruption_and_bribery",
+      "economy_business_and_state_enterprise",
+      "election_and_political_competition",
+      "environment_and_natural_resources",
+      "human_rights_and_social_conflict",
+      "law_and_justice",
+      "other_issue",
+      "power_and_governance",
+      "public_policy_health_and_disaster",
+      "security_defense_and_terrorism"
+    ],
+    "task2_domain_sumber": [
+      "BENCANA_JERAT",
+      "HEWAN_TUBUH",
+      "KONSUMSI_TRANSAKSI",
+      "LAINNYA",
+      "MESIN_INFRASTRUKTUR",
+      "NON_METAFORA",
+      "PERMAINAN_KONTES"
+    ],
+    "task3_primary_entity_type": [
+      "business",
+      "civil_society_or_media",
+      "government",
+      "individual",
+      "judiciary_or_law_enforcement",
+      "legislature",
+      "multiple_or_other",
+      "political_party"
+    ]
+  },
+  "package_sha256": "6a00f09f416b75ba36891aaa0d3edbc5455a38690ad72e11a1a1112caa85dfc7",
+  "source_sha256": "abba4435a549dda329971253dd1092755dec5715b77ffb4bcb13b5102ce45cc1",
+  "model_sha256": "a4cbac9655f4f33efe8c84ef3b6300a6221d4bc1bd732dd47979aedb7efddf5f",
+  "smoke": false,
+  "allocated_gpu_count": 2,
+  "gpu": "Tesla T4",
+  "gpu_seconds_limit": 3600,
+  "precision": "GPU FP32 TF32off; CPU FP32 canonical all740 checkpoint OOF",
+  "outer": "baseline5foldTask1rare<5poolseed42",
+  "inner": "Task2strat2foldseed123; maxminimummeaninnerF1all3;tiesfirstconfig"
+}

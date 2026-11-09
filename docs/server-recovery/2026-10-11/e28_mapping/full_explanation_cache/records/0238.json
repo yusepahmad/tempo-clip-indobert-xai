@@ -1,0 +1,87 @@
+{
+  "index": 238,
+  "sample_id": "TMP-5CE53A16FD83",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f7f71d0a42baf497fcdf28de6029fa17623d1c3269c8e7348dbbc301e41c408d",
+  "image_sha256": "5ce53a16fd83d19a41fb87702fda22e39a105636d31d2c6a1b014efcb3f2d6f0",
+  "transmitted_image_sha256": "d9fdf000f4bc50c575bf148f09bfb33d66c1af32ca988c3d87b8dd14528a2578",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.365111,
+      "total": 10,
+      "remaining": 1.6348889999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.365110999999999,
+      "total": 100,
+      "remaining": 91.634889,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.403143999632448,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"pencil eraser\", \"source_properties\": \"friction, erasing, leaving residue\", \"target_situation\": \"National Exam failure under the Minister of Education\", \"mapping\": \"The giant eraser physically rubs out the Minister's image, symbolizing how the poor national exam scores ('Nilai Jeblok') undermine his leadership and threaten to erase his reputation or political standing.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "X5PLavCvKt-V_uMPmIWFyQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 667000,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1334,
+      "total_backend_latency_ms": 1823,
+      "total_tokens": 1420
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.366036,
+      "total": 10,
+      "remaining": 1.6339640000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.366035999999994,
+      "total": 100,
+      "remaining": 91.633964,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000925,
+  "fields": {
+    "source_object": "pencil eraser",
+    "source_properties": "friction, erasing, leaving residue",
+    "target_situation": "National Exam failure under the Minister of Education",
+    "mapping": "The giant eraser physically rubs out the Minister's image, symbolizing how the poor national exam scores ('Nilai Jeblok') undermine his leadership and threaten to erase his reputation or political standing.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: pencil eraser\nsource_properties: friction, erasing, leaving residue\ntarget_situation: National Exam failure under the Minister of Education\nmapping: The giant eraser physically rubs out the Minister's image, symbolizing how the poor national exam scores ('Nilai Jeblok') undermine his leadership and threaten to erase his reputation or political standing.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

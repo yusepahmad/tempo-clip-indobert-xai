@@ -1,0 +1,87 @@
+{
+  "index": 473,
+  "sample_id": "TMP-85C208276747",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "39e629cf743cf302952567c0485ca083b7d7a22f9e7f932841f96d40d006e51f",
+  "image_sha256": "85c20827674796bd89aee90fe90ca82c3c0869d3ba2440021455fcf5a8925496",
+  "transmitted_image_sha256": "fc7db6647218253c793a7d72c3b9e25b192a0e359dcef213668634effc4b6188",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6812545,
+      "total": 10,
+      "remaining": 1.3187455000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.681254499999994,
+      "total": 100,
+      "remaining": 91.3187455,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.7610258371569216,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"none evident\", \"source_properties\": \"none evident\", \"target_situation\": \"Indonesian ISIS fighters and families stranded in Syrian camps.\", \"mapping\": \"The image literally depicts people in niqabs at a displacement camp, representing the individuals discussed in the headline.\", \"uncertainty\": \"No visual analogy is evident; the photograph is a literal representation of the subjects.\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "b5nLaqKrCPbb_uMPure6uAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 83,
+      "cost": {
+        "input_tokens_cost_nanodollars": 689000,
+        "output_tokens_cost_nanodollars": 249000
+      },
+      "prompt_tokens": 1378,
+      "total_backend_latency_ms": 1623,
+      "total_tokens": 1461
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6821925,
+      "total": 10,
+      "remaining": 1.3178075000000007,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.6821925,
+      "total": 100,
+      "remaining": 91.3178075,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000938,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "none evident",
+    "target_situation": "Indonesian ISIS fighters and families stranded in Syrian camps.",
+    "mapping": "The image literally depicts people in niqabs at a displacement camp, representing the individuals discussed in the headline.",
+    "uncertainty": "No visual analogy is evident; the photograph is a literal representation of the subjects."
+  },
+  "explanation": "source_object: none evident\nsource_properties: none evident\ntarget_situation: Indonesian ISIS fighters and families stranded in Syrian camps.\nmapping: The image literally depicts people in niqabs at a displacement camp, representing the individuals discussed in the headline.\nuncertainty: No visual analogy is evident; the photograph is a literal representation of the subjects.",
+  "finish_reason": "stop",
+  "usable": true
+}

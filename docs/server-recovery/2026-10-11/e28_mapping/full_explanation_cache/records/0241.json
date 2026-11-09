@@ -1,0 +1,87 @@
+{
+  "index": 241,
+  "sample_id": "TMP-7FAEDA65E2F1",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "607c8b86b2bd1e32aeb85dc6862647b87579f29d770359881525ff41fd533e79",
+  "image_sha256": "7faeda65e2f1fb676cde0e88423c2af55d03e12166b002b235853b6fd8d89bf5",
+  "transmitted_image_sha256": "f24e52967227d03e45d38dd32bc8010f9a4d5bb130470a246ca76592abd3b33d",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3723765,
+      "total": 10,
+      "remaining": 1.6276235000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.372376500000001,
+      "total": 100,
+      "remaining": 91.6276235,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1424269727431238,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"ballot box\",\n  \"source_properties\": \"locked, weathered, slot for inserting papers, handle for transport\",\n  \"target_situation\": \"corruption scandal involving political parties and illegitimate money\",\n  \"mapping\": \"The ballot box symbolizes democratic integrity, now tarnished and containing illicit cash.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "eZPLatz8LIKn_uMP9_y56As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 83,
+      "cost": {
+        "input_tokens_cost_nanodollars": 664500,
+        "output_tokens_cost_nanodollars": 249000
+      },
+      "prompt_tokens": 1329,
+      "total_backend_latency_ms": 1669,
+      "total_tokens": 1412
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.37329,
+      "total": 10,
+      "remaining": 1.6267099999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.373289999999997,
+      "total": 100,
+      "remaining": 91.62671,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009135,
+  "fields": {
+    "source_object": "ballot box",
+    "source_properties": "locked, weathered, slot for inserting papers, handle for transport",
+    "target_situation": "corruption scandal involving political parties and illegitimate money",
+    "mapping": "The ballot box symbolizes democratic integrity, now tarnished and containing illicit cash.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: ballot box\nsource_properties: locked, weathered, slot for inserting papers, handle for transport\ntarget_situation: corruption scandal involving political parties and illegitimate money\nmapping: The ballot box symbolizes democratic integrity, now tarnished and containing illicit cash.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

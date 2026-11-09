@@ -1,0 +1,87 @@
+{
+  "index": 357,
+  "sample_id": "TMP-E85FDA2EB5BA",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "beea329d363f418c039acdfce619f901ec70bfeaea63be86df836e8b7dfa0c48",
+  "image_sha256": "e85fda2eb5ba5b52a74f7b24038893d5dd402af54f430b2d20009c57fd362389",
+  "transmitted_image_sha256": "811cbe6bf7273c0873df25748bc991b9d41b35d6e2566e6d00731adac4c58abf",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5260035,
+      "total": 10,
+      "remaining": 1.4739965000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.526003500000002,
+      "total": 100,
+      "remaining": 91.4739965,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.317768711131066,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Stained glass window\", \"source_properties\": \"Fragmented colored glass panes held together by lead cames to form a unified image.\", \"target_situation\": \"Diverse religious groups and perspectives within Indonesian Islam and society.\", \"mapping\": \"The distinct individuals are depicted like glass pieces, suggesting that diverse, potentially conflicting groups together form a coherent, peaceful social fabric.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "d5bLasT0Lbye_uMPo--KmQ4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 87,
+      "cost": {
+        "input_tokens_cost_nanodollars": 662500,
+        "output_tokens_cost_nanodollars": 261000
+      },
+      "prompt_tokens": 1325,
+      "total_backend_latency_ms": 2264,
+      "total_tokens": 1412
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.526927,
+      "total": 10,
+      "remaining": 1.4730729999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.526927,
+      "total": 100,
+      "remaining": 91.473073,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009235,
+  "fields": {
+    "source_object": "Stained glass window",
+    "source_properties": "Fragmented colored glass panes held together by lead cames to form a unified image.",
+    "target_situation": "Diverse religious groups and perspectives within Indonesian Islam and society.",
+    "mapping": "The distinct individuals are depicted like glass pieces, suggesting that diverse, potentially conflicting groups together form a coherent, peaceful social fabric.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Stained glass window\nsource_properties: Fragmented colored glass panes held together by lead cames to form a unified image.\ntarget_situation: Diverse religious groups and perspectives within Indonesian Islam and society.\nmapping: The distinct individuals are depicted like glass pieces, suggesting that diverse, potentially conflicting groups together form a coherent, peaceful social fabric.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

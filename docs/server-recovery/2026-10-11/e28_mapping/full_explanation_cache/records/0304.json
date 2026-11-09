@@ -1,0 +1,87 @@
+{
+  "index": 304,
+  "sample_id": "TMP-72B2587012CA",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "be885f4d76ae490acae16a27c3716d838ac0cbdbbc41aa1b4f18d21e4b43c146",
+  "image_sha256": "72b2587012cac054ca1e5b141ccf36144a756d35ee5b79e97a406b2a48009a72",
+  "transmitted_image_sha256": "9eab31ca64f0bb59fcfd330c3f8a934c1e2671e00f87beb06cc2043fc0c68042",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.455223,
+      "total": 10,
+      "remaining": 1.5447769999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.455223000000004,
+      "total": 100,
+      "remaining": 91.544777,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.922335735987872,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"sniper laser sights\", \"source_properties\": \"red beams and aiming dots pinpointing targets for an attack\", \"target_situation\": \"legal and political maneuvers targeting leaders of the Corruption Eradication Commission (KPK)\", \"mapping\": \"the red lasers and dots visually represent the 'scenario to aim' (skenario membidik) at specific individuals, symbolizing they are marked for removal or prosecution\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "G5XLauu8MsCS_uMPqPCfqA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 668000,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1336,
+      "total_backend_latency_ms": 1841,
+      "total_tokens": 1431
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.456176,
+      "total": 10,
+      "remaining": 1.5438240000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.456176,
+      "total": 100,
+      "remaining": 91.543824,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000953,
+  "fields": {
+    "source_object": "sniper laser sights",
+    "source_properties": "red beams and aiming dots pinpointing targets for an attack",
+    "target_situation": "legal and political maneuvers targeting leaders of the Corruption Eradication Commission (KPK)",
+    "mapping": "the red lasers and dots visually represent the 'scenario to aim' (skenario membidik) at specific individuals, symbolizing they are marked for removal or prosecution",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: sniper laser sights\nsource_properties: red beams and aiming dots pinpointing targets for an attack\ntarget_situation: legal and political maneuvers targeting leaders of the Corruption Eradication Commission (KPK)\nmapping: the red lasers and dots visually represent the 'scenario to aim' (skenario membidik) at specific individuals, symbolizing they are marked for removal or prosecution\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 31,
+  "sample_id": "TMP-EF68E29B88C5",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5343562a0b44d957d365afa09e880d9e250e6a5aef0e7aa8422972213a2e567f",
+  "image_sha256": "ef68e29b88c53561307a5bcf5c00d987a8359397599c2a0875264f29fd092de1",
+  "transmitted_image_sha256": "c82ac6504c10a6c0d673cb9b4205e86c8285869f880e9b156b5c36f2d8ae3c10",
+  "image_size": [
+    599,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.054452,
+      "total": 10,
+      "remaining": 1.9455480000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.054451999999998,
+      "total": 100,
+      "remaining": 91.945548,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2799853389151394,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Michelangelo's 'The Creation of Adam'\",\n  \"source_properties\": \"A divine figure reaches across a void to touch a mortal's fingertip.\",\n  \"target_situation\": \"Businessmen and officials pushing Ivermectin as a Covid-19 cure.\",\n  \"mapping\": \"Public figures replace God, offering a drug box instead of life's spark.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "8Y3Lap_RBf-o_uMP1rjw6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 100,
+      "cost": {
+        "input_tokens_cost_nanodollars": 657000,
+        "output_tokens_cost_nanodollars": 300000
+      },
+      "prompt_tokens": 1314,
+      "total_backend_latency_ms": 1981,
+      "total_tokens": 1414
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.055409000000001,
+      "total": 10,
+      "remaining": 1.944590999999999,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.055408999999997,
+      "total": 100,
+      "remaining": 91.944591,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000957,
+  "fields": {
+    "source_object": "Michelangelo's 'The Creation of Adam'",
+    "source_properties": "A divine figure reaches across a void to touch a mortal's fingertip.",
+    "target_situation": "Businessmen and officials pushing Ivermectin as a Covid-19 cure.",
+    "mapping": "Public figures replace God, offering a drug box instead of life's spark.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Michelangelo's 'The Creation of Adam'\nsource_properties: A divine figure reaches across a void to touch a mortal's fingertip.\ntarget_situation: Businessmen and officials pushing Ivermectin as a Covid-19 cure.\nmapping: Public figures replace God, offering a drug box instead of life's spark.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

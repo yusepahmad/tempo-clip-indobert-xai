@@ -1,0 +1,86 @@
+{
+  "index": 470,
+  "sample_id": "TMP-579182AE35FE",
+  "fold": 1,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "13993ebd2fc12379a14908e2ea1ae9c99fcc92da5aeb9d99599fcbb53e211554",
+  "image_sha256": "579182ae35fe5c861d6e62c65237b3b29c496a861295ea1f83040e174e38c78a",
+  "transmitted_image_sha256": "0fb020d2aba71e522bff688ee26e5e4c4ce6959ee284e417eb11f1798b15cf02",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.3891045,
+      "total": 10,
+      "remaining": 4.6108955,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.389104500000002,
+      "total": 100,
+      "remaining": 94.6108955,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.187372009968385,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "B berdasarkan deskripsi dan alasan yang diberikan, ilustrasi tersebut menggunakan **hewan** (buaya) dan **anatomi** (mulut/rahang yang terbuka lebar dan terhimpit) sebagai sumber metafora utamanya. Hal ini sesuai dengan kriteria kategori **B (HEWAN_TUBUH)** yang mencakup penggunaan hewan, anatomi, atau perilaku biologis sebagai kiasan.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "-vvKatWcKbua_uMPhJumwQI",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1692,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1609
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2089500,
+        "output_tokens_cost_nanodollars": 5076000
+      },
+      "prompt_tokens": 4179,
+      "total_backend_latency_ms": 7976,
+      "total_tokens": 5871
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 5.39627,
+      "total": 10,
+      "remaining": 4.60373,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 5.396270000000001,
+      "total": 100,
+      "remaining": 94.60373,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0071655,
+  "code": "INVALID",
+  "strict_code": "INVALID",
+  "parsing_rule": "unrecognized_no_explicit_answer",
+  "finish_reason": "stop",
+  "prediction": "INVALID"
+}

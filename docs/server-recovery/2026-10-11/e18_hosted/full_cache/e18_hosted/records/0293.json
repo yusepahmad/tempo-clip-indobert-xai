@@ -1,0 +1,83 @@
+{
+  "index": 293,
+  "sample_id": "TMP-AD48B1596452",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "d210edcab9679712f6a403744096eca91406c54d5cf850a4cdf4a9d3ca4d944b",
+  "image_sha256": "ad48b159645245380d39b53f7826a24b3d26e62a09f9a027aad9ed184413f98d",
+  "transmitted_image_sha256": "d855cb0ca3698d4bd5d0642f2d3860f9f83e48e8990927665392449beec1d4f7",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.0985429999999994,
+      "total": 10,
+      "remaining": 8.901457,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.0985430000000065,
+      "total": 100,
+      "remaining": 98.901457,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 10.308913900982589,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks tersebut, klasifikasi domain sumber metaforanya adalah:\n\n**A: BENCANA_JERAT**\n\n**Alasan:** Meskipun ilustrasi utamanya adalah foto dokumenter (literal), analisis yang disediakan menyatakan bahwa ekspresi serius, latar belakang yang gelap (bayangan/misteri), serta teks \"yang belum terungkap\" digunakan untuk memetakan atau mengiaskan \"keadaan terjepit atau terancam\" (ancaman). Dalam skema klasifikasi ini, kiasan yang berkaitan dengan ancaman atau keadaan terjepit dimasukkan ke dalam domain Bencana/Jerat.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "1NbKapenDMfh_uMPvKet6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1791,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1659
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 757000,
+        "output_tokens_cost_nanodollars": 5373000
+      },
+      "prompt_tokens": 1514,
+      "total_backend_latency_ms": 9346,
+      "total_tokens": 3305
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.104673,
+      "total": 10,
+      "remaining": 8.895327,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.1046730000000053,
+      "total": 100,
+      "remaining": 98.895327,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.00613
+}

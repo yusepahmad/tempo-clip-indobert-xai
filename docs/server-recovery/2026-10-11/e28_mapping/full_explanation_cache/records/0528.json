@@ -1,0 +1,87 @@
+{
+  "index": 528,
+  "sample_id": "TMP-CA21E8D8E71C",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ad4d1287d8a1ea2ff630bc9b1bc5fd1e360b6c0e6585920543513691e6c99f6d",
+  "image_sha256": "ca21e8d8e71c4033c3ba9f1e1a0fe29e62f7f022f79d11cb60a2fa79655fd444",
+  "transmitted_image_sha256": "33bd792daed4a27e369c59ac6f32d03b93bf7f623a548878a0bc4962e58d9f15",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.757665,
+      "total": 10,
+      "remaining": 1.2423350000000006,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.757665000000003,
+      "total": 100,
+      "remaining": 91.242335,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2394563388079405,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"crocodile\", \"source_properties\": \"predatory, powerful reptile with armored skin, being ridden and steered with reins\", \"target_situation\": \"alleged manipulation of the KPK leadership and internal processes to remove independent investigators\", \"mapping\": \"The crocodile represents a powerful, potentially dangerous force or institution being controlled by a figurehead to pursue specific targets.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "4prLapX7B-GM_uMP0-qD8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 84,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680500,
+        "output_tokens_cost_nanodollars": 252000
+      },
+      "prompt_tokens": 1361,
+      "total_backend_latency_ms": 1589,
+      "total_tokens": 1445
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7585975,
+      "total": 10,
+      "remaining": 1.2414024999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.758597499999993,
+      "total": 100,
+      "remaining": 91.2414025,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009325,
+  "fields": {
+    "source_object": "crocodile",
+    "source_properties": "predatory, powerful reptile with armored skin, being ridden and steered with reins",
+    "target_situation": "alleged manipulation of the KPK leadership and internal processes to remove independent investigators",
+    "mapping": "The crocodile represents a powerful, potentially dangerous force or institution being controlled by a figurehead to pursue specific targets.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: crocodile\nsource_properties: predatory, powerful reptile with armored skin, being ridden and steered with reins\ntarget_situation: alleged manipulation of the KPK leadership and internal processes to remove independent investigators\nmapping: The crocodile represents a powerful, potentially dangerous force or institution being controlled by a figurehead to pursue specific targets.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

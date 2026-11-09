@@ -1,0 +1,189 @@
+{
+  "status": "verified",
+  "grid_size": 612,
+  "worker_sha256": "87cf599e084bd39f171ad7ac393531e2e5938c1e26e3c47607b7b72549de3654",
+  "reference_sha256": "cdb88a85e1ceb42f5f8e1f15c5e6c86dd3b82e2a06860a1212df56fc9cc6dc29",
+  "verifier_sha256": "8877b968d6aafdbb21cae87b7e7e294287733d4bdf6b95acf5adcd2634b237f1",
+  "embed_sha256": "db6322b69bdcd3ade82e7160c8204c74c013813f193b644cf709a0e1cff6dbd2",
+  "embedding_verifier_sha256": "c5dcc231a58bbff6154b2159d8d9ccf866b1992bdb517215541157b2de59d869",
+  "numerical_logic_fingerprints": {
+    "evaluate.py:MappingFusion": "3ba675f5ffab3fc2f1bb364389ecfb33c727fec9e1d8ed13ebadc2003751da32",
+    "evaluate.py:pipeline": "0104434464071e48d390403d684376be28ef7f560a2b4c5625f505356788d17a",
+    "evaluate.py:selected_inner": "597d98843a5a02225ecbf137e9f4c641540bc7633fafe19b20efc6697900f2ff",
+    "evaluate.py:load_inputs": "5c434bf9f5ca7d057200f4c1d6a91050502daa83fac94229866ce48fbdfb7217",
+    "evaluate_cached.py:prepare": "9494ddc4691eae6e6fc3265c49ed11fff0896ee9b5288e83feec29244a674a01",
+    "evaluate_cached.py:selected_blocks": "96d232705bedc7a16560918c34640addb7c08cb810ad0acbf7f33954da621b49",
+    "evaluate_cached.py:projection": "dc0e303bea1ed4aa070d045520240fe1e6323b86965a8e3c890ae816d9f0ae52",
+    "evaluate_cached.py:metadata": "fed016e393742c4061fc16c160bd1cd3f05c8943979a37b9a0afefefc397a245",
+    "evaluate_cached.py:kernels": "8e3e901caca063b39f5f0d001919afd3a1be49a2927b4d60c0160c53d022450e",
+    "evaluate_cached.py:predict": "c430c249406dd7d8611ccbe66bf1c9836820187150c3507ae63a3bd0c18cd50e",
+    "evaluate_cached.py:load_inputs": "b270d94853d84099a37ea1a46f3777100646acf6c9df9767afff8c4784f8e1df",
+    "embed.py:text_views": "15dc4d4415410a9919208017599517dde40abbd996c706e6cad1fd5d432541df",
+    "embed.py:load_model": "9b7c239191ea2cfdd489f42b5ab90b5620bdbb23c1d9c7bc57d087e9e28cae72",
+    "embed.py:encode": "eef9c08300b5c8331b46576e4b597d6ee32c0369753b1edb2e1ed4d40a786469",
+    "embed.py:main": "485c09bf631c6729680da623cfffefa6c08e58678e7746b6c9ecc85768d42c79"
+  },
+  "synthetic": [
+    {
+      "index": 0,
+      "params": {
+        "clf__C": 1,
+        "clf__class_weight": null,
+        "clf__gamma": "scale",
+        "fusion__mode": "interpretation_only"
+      }
+    },
+    {
+      "index": 1,
+      "params": {
+        "clf__C": 1,
+        "clf__class_weight": null,
+        "clf__gamma": "scale",
+        "fusion__mode": "interpretation_context_only"
+      }
+    },
+    {
+      "index": 4,
+      "params": {
+        "clf__C": 1,
+        "clf__class_weight": null,
+        "clf__gamma": 1,
+        "fusion__mode": "interpretation_only"
+      }
+    },
+    {
+      "index": 5,
+      "params": {
+        "clf__C": 1,
+        "clf__class_weight": null,
+        "clf__gamma": 1,
+        "fusion__mode": "interpretation_context_only"
+      }
+    },
+    {
+      "index": 36,
+      "params": {
+        "clf__C": 1,
+        "clf__class_weight": null,
+        "clf__gamma": "scale",
+        "fusion__clip_weight": 0.5,
+        "fusion__e5_weight": 0.5,
+        "fusion__interpretation_weight": 0,
+        "fusion__mode": "fusion_interpretation"
+      }
+    },
+    {
+      "index": 37,
+      "params": {
+        "clf__C": 1,
+        "clf__class_weight": null,
+        "clf__gamma": "scale",
+        "fusion__clip_weight": 0.5,
+        "fusion__e5_weight": 0.5,
+        "fusion__interpretation_weight": 0,
+        "fusion__mode": "fusion_context"
+      }
+    },
+    {
+      "index": 610,
+      "params": {
+        "clf__C": 100,
+        "clf__class_weight": "balanced",
+        "clf__gamma": 1,
+        "fusion__clip_weight": 1,
+        "fusion__e5_weight": 2,
+        "fusion__interpretation_weight": 2,
+        "fusion__mode": "fusion_interpretation"
+      }
+    },
+    {
+      "index": 611,
+      "params": {
+        "clf__C": 100,
+        "clf__class_weight": "balanced",
+        "clf__gamma": 1,
+        "fusion__clip_weight": 1,
+        "fusion__e5_weight": 2,
+        "fusion__interpretation_weight": 2,
+        "fusion__mode": "fusion_context"
+      }
+    }
+  ],
+  "actual_base_synthetic_explanation": [
+    {
+      "index": 0,
+      "params": {
+        "clf__C": 1,
+        "clf__class_weight": null,
+        "clf__gamma": "scale",
+        "fusion__mode": "interpretation_only"
+      }
+    },
+    {
+      "index": 35,
+      "params": {
+        "clf__C": 100,
+        "clf__class_weight": "balanced",
+        "clf__gamma": 1,
+        "fusion__mode": "interpretation_context_only"
+      }
+    },
+    {
+      "index": 36,
+      "params": {
+        "clf__C": 1,
+        "clf__class_weight": null,
+        "clf__gamma": "scale",
+        "fusion__clip_weight": 0.5,
+        "fusion__e5_weight": 0.5,
+        "fusion__interpretation_weight": 0,
+        "fusion__mode": "fusion_interpretation"
+      }
+    },
+    {
+      "index": 69,
+      "params": {
+        "clf__C": 1,
+        "clf__class_weight": null,
+        "clf__gamma": 0.1,
+        "fusion__clip_weight": 0.5,
+        "fusion__e5_weight": 0.5,
+        "fusion__interpretation_weight": 0,
+        "fusion__mode": "fusion_context"
+      }
+    },
+    {
+      "index": 610,
+      "params": {
+        "clf__C": 100,
+        "clf__class_weight": "balanced",
+        "clf__gamma": 1,
+        "fusion__clip_weight": 1,
+        "fusion__e5_weight": 2,
+        "fusion__interpretation_weight": 2,
+        "fusion__mode": "fusion_interpretation"
+      }
+    },
+    {
+      "index": 611,
+      "params": {
+        "clf__C": 100,
+        "clf__class_weight": "balanced",
+        "clf__gamma": 1,
+        "fusion__clip_weight": 1,
+        "fusion__e5_weight": 2,
+        "fusion__interpretation_weight": 2,
+        "fusion__mode": "fusion_context"
+      }
+    }
+  ],
+  "checks": [
+    "numerical encoder/view/raw/cached helper AST exactly matches tested originalE28",
+    "fixed8synthetic/6actual projection/scaler/gamma/rawcachedpred/heldouttrainingkernel parity",
+    "missingfullfeatures gate refuses before output"
+  ],
+  "limitations": [
+    "not exhaustive612grid; originalE28 two24fixed fixtures supply additional same-numerical-logic evidence",
+    "actual explanation features not yet complete; no targettestscore selection"
+  ]
+}

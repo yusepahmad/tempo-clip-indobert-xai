@@ -1,0 +1,86 @@
+{
+  "index": 207,
+  "sample_id": "TMP-5DEE5FC13BB8",
+  "fold": 5,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "b1894dc44185dcbce8bd52bf4695b4399a6e3aa71d01f26d8452c5f83db713b4",
+  "image_sha256": "5dee5fc13bb87401de5a12791647c1d3df3abe702bf7aff4c5c4dc47814e4ae4",
+  "transmitted_image_sha256": "28947e64ce709a28f1b929c56f32a4657d7ec7e2c73435fc990592f0c48b4226",
+  "image_size": [
+    294,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 3.9110145000000003,
+      "total": 10,
+      "remaining": 6.0889855,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 3.911014499999993,
+      "total": 100,
+      "remaining": 96.0889855,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 20.413723029196262,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": " ancaman fisik.\nBut the target \"Source and reason\" says \"motor Motor dipetakan sebagai alat yang menghasilkan kekerasan...\".\nIf a vehicle is the source, it fits E.\nLet's double check E description: \"mesin, alat, kendaraan, bangunan atau mekanisme buatan sebagai kiasan.\"\nYes, \"motor\" is a \"kendaraan\".\nSo if it is a metaphor, it's E.\nIs it a metaphor? The prompt says \"Klasifikasikan domain SUMBER metafora...\". This phrasing implies there IS a metaphor.\nIf there's a metaphor and the source is a \"motor\", the answer is E.\n\nLet me think if it could be something else.\nF (NON_METAFORA)? Usually, if the",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "NPLKavevN77i_uMPz_DU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 4092,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3928
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2046500,
+        "output_tokens_cost_nanodollars": 12276000
+      },
+      "prompt_tokens": 4093,
+      "total_backend_latency_ms": 19416,
+      "total_tokens": 8185
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 3.925337,
+      "total": 10,
+      "remaining": 6.074663,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 3.925336999999999,
+      "total": 100,
+      "remaining": 96.074663,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0143225,
+  "code": "INVALID",
+  "strict_code": "INVALID",
+  "parsing_rule": "unrecognized_no_explicit_answer",
+  "finish_reason": "length",
+  "prediction": "INVALID"
+}

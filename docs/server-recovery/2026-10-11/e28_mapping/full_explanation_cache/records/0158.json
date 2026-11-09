@@ -1,0 +1,87 @@
+{
+  "index": 158,
+  "sample_id": "TMP-F45926301B64",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "34274791ad77a797aafe76383e0fe7bb5bee1cee3f00536e0288a9d5c0bae6d2",
+  "image_sha256": "f45926301b64c1227817d74c1c68e9c9d4720a52b00176a55c3e57ecfe38b8f1",
+  "transmitted_image_sha256": "bfb9abf285e36dae663a3bda97cb54c50825333be6130aa8ab70ce33a8ac488f",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.240934,
+      "total": 10,
+      "remaining": 1.7590660000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.240933999999996,
+      "total": 100,
+      "remaining": 91.759066,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.6588851870037615,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Biological evolution of man\",\n  \"source_properties\": \"A linear progression of increasing complexity, posture, and environmental adaptation over time.\",\n  \"target_situation\": \"Shifting the economy towards environmental sustainability post-pandemic.\",\n  \"mapping\": \"Humanity's historical progression from apes to industrial workers culminates in a modern, sustainable 'green' stage.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "S5HLaqrHHJ_v_uMPm5vQ6AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 1481,
+      "total_tokens": 1447
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.241895,
+      "total": 10,
+      "remaining": 1.7581050000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.241895,
+      "total": 100,
+      "remaining": 91.758105,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000961,
+  "fields": {
+    "source_object": "Biological evolution of man",
+    "source_properties": "A linear progression of increasing complexity, posture, and environmental adaptation over time.",
+    "target_situation": "Shifting the economy towards environmental sustainability post-pandemic.",
+    "mapping": "Humanity's historical progression from apes to industrial workers culminates in a modern, sustainable 'green' stage.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Biological evolution of man\nsource_properties: A linear progression of increasing complexity, posture, and environmental adaptation over time.\ntarget_situation: Shifting the economy towards environmental sustainability post-pandemic.\nmapping: Humanity's historical progression from apes to industrial workers culminates in a modern, sustainable 'green' stage.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

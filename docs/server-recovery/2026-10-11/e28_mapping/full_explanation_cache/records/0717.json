@@ -1,0 +1,87 @@
+{
+  "index": 717,
+  "sample_id": "TMP-4CA1A55C4B83",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b1ed0ae61285833e1250aa76cdc0253fe04d967c0689b596358b993d85227ed2",
+  "image_sha256": "4ca1a55c4b83418c844291ce8a83743a5543c19b2b3dbee658f74afbd4100577",
+  "transmitted_image_sha256": "05c6e15670303b1e4a25dae1b8a846f2b36af29227c888122f7bc59aaa36613b",
+  "image_size": [
+    581,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0397675,
+      "total": 10,
+      "remaining": 0.9602325,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.039767499999996,
+      "total": 100,
+      "remaining": 90.9602325,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1340293968096375,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"gas pump nozzle\", \"source_properties\": \"tool for refueling; held like a gun pointed at someone's back\", \"target_situation\": \"investigation into a massive corruption scandal involving Pertamina's oil imports and businessman Riza Chalid\", \"mapping\": \"Refueling represents the oil industry context; pointing the nozzle like a weapon symbolizes the legal threat and investigative pressure on the suspect.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "6p_Lap3HO7yb_uMP77KhsAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678000,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1356,
+      "total_backend_latency_ms": 1631,
+      "total_tokens": 1450
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.0407275,
+      "total": 10,
+      "remaining": 0.9592725000000009,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.040727500000003,
+      "total": 100,
+      "remaining": 90.9592725,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00096,
+  "fields": {
+    "source_object": "gas pump nozzle",
+    "source_properties": "tool for refueling; held like a gun pointed at someone's back",
+    "target_situation": "investigation into a massive corruption scandal involving Pertamina's oil imports and businessman Riza Chalid",
+    "mapping": "Refueling represents the oil industry context; pointing the nozzle like a weapon symbolizes the legal threat and investigative pressure on the suspect.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: gas pump nozzle\nsource_properties: tool for refueling; held like a gun pointed at someone's back\ntarget_situation: investigation into a massive corruption scandal involving Pertamina's oil imports and businessman Riza Chalid\nmapping: Refueling represents the oil industry context; pointing the nozzle like a weapon symbolizes the legal threat and investigative pressure on the suspect.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

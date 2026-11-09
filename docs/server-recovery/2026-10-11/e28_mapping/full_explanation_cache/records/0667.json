@@ -1,0 +1,87 @@
+{
+  "index": 667,
+  "sample_id": "TMP-3209E9C2F2E7",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0bd9f5893378a83a9f0aacc47cdcbc555d116c916a8345f1ce4f358a725b49d2",
+  "image_sha256": "3209e9c2f2e7d228f5326bebad58fa72c9fff1434373dc41a54aa5429d4c15db",
+  "transmitted_image_sha256": "28efb4ff44b994fbbae7a926dd2dc07fbae985a28e9c94d30c93149fea5f7a0e",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9522765,
+      "total": 10,
+      "remaining": 1.0477235,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.952276499999996,
+      "total": 100,
+      "remaining": 91.0477235,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1955710356123745,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"flag-raising ceremony\", \"source_properties\": \"a person hoists a banknote up a flagpole instead of a national flag.\", \"target_situation\": \"increasing commercialization and high, non-transparent tuition fees in Indonesian higher education under Minister Nadiem Makarim.\", \"mapping\": \"Hoisting money like a flag symbolizes prioritizing financial gain over patriotic educational ideals, suggesting that campus independence (merdeka) is currently tied to cost.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "iZ7Lau_dNsfv_uMP5e292Qg",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678500,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1357,
+      "total_backend_latency_ms": 1791,
+      "total_tokens": 1458
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.953258,
+      "total": 10,
+      "remaining": 1.046742,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.953258000000005,
+      "total": 100,
+      "remaining": 91.046742,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009815,
+  "fields": {
+    "source_object": "flag-raising ceremony",
+    "source_properties": "a person hoists a banknote up a flagpole instead of a national flag.",
+    "target_situation": "increasing commercialization and high, non-transparent tuition fees in Indonesian higher education under Minister Nadiem Makarim.",
+    "mapping": "Hoisting money like a flag symbolizes prioritizing financial gain over patriotic educational ideals, suggesting that campus independence (merdeka) is currently tied to cost.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: flag-raising ceremony\nsource_properties: a person hoists a banknote up a flagpole instead of a national flag.\ntarget_situation: increasing commercialization and high, non-transparent tuition fees in Indonesian higher education under Minister Nadiem Makarim.\nmapping: Hoisting money like a flag symbolizes prioritizing financial gain over patriotic educational ideals, suggesting that campus independence (merdeka) is currently tied to cost.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

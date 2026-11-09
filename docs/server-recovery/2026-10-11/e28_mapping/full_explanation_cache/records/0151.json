@@ -1,0 +1,87 @@
+{
+  "index": 151,
+  "sample_id": "TMP-6BF67703C16F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1182b9289c8b58fc6accfe9babdf1d86de671d9a15775e6c84fab3a3e176c5f7",
+  "image_sha256": "6bf67703c16fc26f75f3db8e037cf73b7a0c8ef9cd63680a0f274f5afc021232",
+  "transmitted_image_sha256": "8ccc402e1de10bc4d5141ebb6d0482578c5e76caf1ce4a9de2ddd745ea89fa6e",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.229661,
+      "total": 10,
+      "remaining": 1.7703389999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.229660999999993,
+      "total": 100,
+      "remaining": 91.770339,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.5775813329964876,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"step ladder\", \"source_properties\": \"A folding support device with horizontal rungs for reaching heights.\", \"target_situation\": \"The President's restructuring and renaming of government cabinet ministries.\", \"mapping\": \"Climbing the ladder symbolizes the effort to organize and rearrange higher-level administrative 'nomenclatures', just as one physically positions signs.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "FpHLas2CILyb_uMP77KhsAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 84,
+      "cost": {
+        "input_tokens_cost_nanodollars": 675500,
+        "output_tokens_cost_nanodollars": 252000
+      },
+      "prompt_tokens": 1351,
+      "total_backend_latency_ms": 1810,
+      "total_tokens": 1435
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2305885,
+      "total": 10,
+      "remaining": 1.7694115000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.230588499999996,
+      "total": 100,
+      "remaining": 91.7694115,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009275,
+  "fields": {
+    "source_object": "step ladder",
+    "source_properties": "A folding support device with horizontal rungs for reaching heights.",
+    "target_situation": "The President's restructuring and renaming of government cabinet ministries.",
+    "mapping": "Climbing the ladder symbolizes the effort to organize and rearrange higher-level administrative 'nomenclatures', just as one physically positions signs.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: step ladder\nsource_properties: A folding support device with horizontal rungs for reaching heights.\ntarget_situation: The President's restructuring and renaming of government cabinet ministries.\nmapping: Climbing the ladder symbolizes the effort to organize and rearrange higher-level administrative 'nomenclatures', just as one physically positions signs.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

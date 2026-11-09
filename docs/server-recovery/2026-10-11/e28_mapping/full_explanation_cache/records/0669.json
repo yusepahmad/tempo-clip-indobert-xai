@@ -1,0 +1,87 @@
+{
+  "index": 669,
+  "sample_id": "TMP-8E0654B0E204",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5c049a4f5c4277ecf88a042f997735461aa0d98fc9b5a9dd482042c43819b15f",
+  "image_sha256": "8e0654b0e204ae1b5d7066fbc2e1ef19ab8578588ab9e6d7345a74a1903d2a1b",
+  "transmitted_image_sha256": "ad28bd7f01c60743a4a0b975c0a89eafeb471e6c0f58fae086687a3c48e5aea3",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9541885,
+      "total": 10,
+      "remaining": 1.0458114999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.9541885,
+      "total": 100,
+      "remaining": 91.0458115,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.557505843229592,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"ruined Greek temple\", \"source_properties\": \"cracked, toppled pillars, crumbling architecture, unstable roof ledge\", \"target_situation\": \"The Constitutional Court's integrity following its split ruling on election fraud allegations.\", \"mapping\": \"The crumbling pillars represent the structural collapse of judicial impartiality and legal stability within the court system.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "lJ7LauWqNZCa_uMPxb6ruQk",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 81,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676500,
+        "output_tokens_cost_nanodollars": 243000
+      },
+      "prompt_tokens": 1353,
+      "total_backend_latency_ms": 1934,
+      "total_tokens": 1434
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.955108,
+      "total": 10,
+      "remaining": 1.0448920000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.955107999999996,
+      "total": 100,
+      "remaining": 91.044892,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009195,
+  "fields": {
+    "source_object": "ruined Greek temple",
+    "source_properties": "cracked, toppled pillars, crumbling architecture, unstable roof ledge",
+    "target_situation": "The Constitutional Court's integrity following its split ruling on election fraud allegations.",
+    "mapping": "The crumbling pillars represent the structural collapse of judicial impartiality and legal stability within the court system.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: ruined Greek temple\nsource_properties: cracked, toppled pillars, crumbling architecture, unstable roof ledge\ntarget_situation: The Constitutional Court's integrity following its split ruling on election fraud allegations.\nmapping: The crumbling pillars represent the structural collapse of judicial impartiality and legal stability within the court system.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

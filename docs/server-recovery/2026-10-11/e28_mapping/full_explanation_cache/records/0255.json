@@ -1,0 +1,87 @@
+{
+  "index": 255,
+  "sample_id": "TMP-F52DDE3E6F28",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bdccefe84578f7c563ee556508c3be6dd126516162939c009427a9e7a08df718",
+  "image_sha256": "f52dde3e6f286cef025db256ac9e48495d32163c9654981b983d5fc3b259a065",
+  "transmitted_image_sha256": "8e0d55f99c30be4b48ab0383ed62c6c9a00390c9a72ed7d5dee37cd2e307d17c",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3911355,
+      "total": 10,
+      "remaining": 1.6088644999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.391135500000004,
+      "total": 100,
+      "remaining": 91.6088645,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.429869650863111,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"US dollar bill\", \"source_properties\": \"Official currency engraving, circular portrait frame, distinctive green-tinted paper texture, and currency denominations.\", \"target_situation\": \"A police officer, Labora Sitorus, possessing illicit funds totaling 1.5 trillion rupiah and naming superiors he bribed.\", \"mapping\": \"The subject's face replaces a historical figure on the banknote, equating his identity and testimony with the corrupting power of money.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "2JPLarS6NtPj_uMPg-OC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674500,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1349,
+      "total_backend_latency_ms": 1744,
+      "total_tokens": 1455
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.392128,
+      "total": 10,
+      "remaining": 1.6078720000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.392128,
+      "total": 100,
+      "remaining": 91.607872,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009925,
+  "fields": {
+    "source_object": "US dollar bill",
+    "source_properties": "Official currency engraving, circular portrait frame, distinctive green-tinted paper texture, and currency denominations.",
+    "target_situation": "A police officer, Labora Sitorus, possessing illicit funds totaling 1.5 trillion rupiah and naming superiors he bribed.",
+    "mapping": "The subject's face replaces a historical figure on the banknote, equating his identity and testimony with the corrupting power of money.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: US dollar bill\nsource_properties: Official currency engraving, circular portrait frame, distinctive green-tinted paper texture, and currency denominations.\ntarget_situation: A police officer, Labora Sitorus, possessing illicit funds totaling 1.5 trillion rupiah and naming superiors he bribed.\nmapping: The subject's face replaces a historical figure on the banknote, equating his identity and testimony with the corrupting power of money.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

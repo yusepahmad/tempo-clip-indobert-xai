@@ -1,0 +1,86 @@
+{
+  "index": 78,
+  "sample_id": "TMP-0EF0312521B3",
+  "fold": 4,
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "06e92eeffeeacc4fbc1fe521acc353713e1ef08bc020c193ba8f06a0c495611f",
+  "prompt_sha256": "bdf0fac8fb9f8fcc0f63c7d4f3e5f8945521e9632e3befd3dad202eaebaf464b",
+  "image_sha256": "0ef0312521b3ad8547a1abc782e200af3319295fbf4f37189af9d214c7e203e1",
+  "transmitted_image_sha256": "c592b4906c6e7b32fdfcd8ad7ea2b27cd9e0dbf6f07c280784363dc4dcff3d78",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 3.2098234999999997,
+      "total": 10,
+      "remaining": 6.7901765,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 3.209823499999999,
+      "total": 100,
+      "remaining": 96.7901765,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 16.862598096951842,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "**Sumber dan alasan:** seorang pria (Anies Baswedan) yang mengenakan pelampung dan masker selam di tengah genangan air banjir. Gambar ini menampilkan adegan banjir secara literal sesuai dengan topik utama berita yang dibahas, yaitu \"Rapor Banjir Anies\" atau kegagalan program pengendalian banjir. Karena ilustrasi tersebut menggambarkan subjek masalahnya secara langsung (banjir) tanpa memetakan ke domain sumber kiasan yang berbeda (seperti hewan atau mesin), maka adegan ini bersifat literal/non-metaforis. Hal ini sesuai dengan logika pada contoh training kode F (seperti ilustrasi banjir Pluit).\n\nJawab satu kode A sampai G: **F**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "e-3Kat-YKoKn_uMP9_y56As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 3347,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3205
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 2039500,
+        "output_tokens_cost_nanodollars": 10041000
+      },
+      "prompt_tokens": 4079,
+      "total_backend_latency_ms": 15632,
+      "total_tokens": 7426
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 3.2219040000000003,
+      "total": 10,
+      "remaining": 6.778096,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 3.221903999999995,
+      "total": 100,
+      "remaining": 96.778096,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0120805,
+  "code": "F",
+  "strict_code": "INVALID",
+  "parsing_rule": "explicit_prefix_code",
+  "finish_reason": "stop",
+  "prediction": "NON_METAFORA"
+}

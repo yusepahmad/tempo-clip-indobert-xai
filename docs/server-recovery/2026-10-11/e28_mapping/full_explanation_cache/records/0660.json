@@ -1,0 +1,87 @@
+{
+  "index": 660,
+  "sample_id": "TMP-4781A007EA87",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "44694d027d79476282687849ad58a79687938fc550fae1c622ca7d8946af1cf6",
+  "image_sha256": "4781a007ea875fbd2258eca854cf25ed0e835e8fc06f64eafc387f5003b1ab9c",
+  "transmitted_image_sha256": "d70c6ab98c330a462b05c5d9d909d7d8ebd03ce6f01b613e6a68f2bf0de3b5dc",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9421305,
+      "total": 10,
+      "remaining": 1.0578695000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.942130500000005,
+      "total": 100,
+      "remaining": 91.0578695,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.075012369081378,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"stack of chairs\",\n  \"source_properties\": \"excessive, heavy, multi-colored, stacked haphazardly on one's back\",\n  \"target_situation\": \"Prabowo Subianto's oversized cabinet composition\",\n  \"mapping\": \"The heavy stack symbolizes the bloated cabinet burdening the leader, while varied chairs represent diverse political recruits.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "V57Lap2qNL7i_uMPz_DU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 96,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679500,
+        "output_tokens_cost_nanodollars": 288000
+      },
+      "prompt_tokens": 1359,
+      "total_backend_latency_ms": 1508,
+      "total_tokens": 1455
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.943097999999999,
+      "total": 10,
+      "remaining": 1.056902000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.943098000000006,
+      "total": 100,
+      "remaining": 91.056902,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009675,
+  "fields": {
+    "source_object": "stack of chairs",
+    "source_properties": "excessive, heavy, multi-colored, stacked haphazardly on one's back",
+    "target_situation": "Prabowo Subianto's oversized cabinet composition",
+    "mapping": "The heavy stack symbolizes the bloated cabinet burdening the leader, while varied chairs represent diverse political recruits.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: stack of chairs\nsource_properties: excessive, heavy, multi-colored, stacked haphazardly on one's back\ntarget_situation: Prabowo Subianto's oversized cabinet composition\nmapping: The heavy stack symbolizes the bloated cabinet burdening the leader, while varied chairs represent diverse political recruits.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

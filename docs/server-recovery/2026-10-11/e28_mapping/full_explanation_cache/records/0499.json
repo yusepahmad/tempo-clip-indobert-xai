@@ -1,0 +1,90 @@
+{
+  "index": 499,
+  "sample_id": "TMP-8727D13AACEE",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "cdec3f918fd17a5609cf67a1bcea2591c75664aeb4d173e1672397b8e144ead0",
+  "image_sha256": "8727d13aacee06a518ff6253c7634ad77a08482912491839f1c1c78b09b4807f",
+  "transmitted_image_sha256": "35b4b0d63a29346257ffbbea964ea6aaa7d9407af62e19be28f13a4170b7e8f6",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7150535,
+      "total": 10,
+      "remaining": 1.2849465000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.715053499999996,
+      "total": 100,
+      "remaining": 91.2849465,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.643449707888067,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Traditional royal monarchs on horseback.\",\n  \"source_properties\": \"Elaborate ceremonial attire and elevated physical position while riding.\",\n  \"target_situation\": \"The participation of Jokowi\u2019s son and son-in-law in regional elections.\",\n  \"mapping\": \"Just as royalty signifies hereditary succession, the monarchical imagery suggests the creation of a family political dynasty.\",\n  \"uncertainty\": \"None.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "GZrLaqbfKd7d_uMP3pe24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 849,
+      "completion_tokens_details": {
+        "reasoning_tokens": 752
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 672500,
+        "output_tokens_cost_nanodollars": 2547000
+      },
+      "prompt_tokens": 1345,
+      "total_backend_latency_ms": 5480,
+      "total_tokens": 2194
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.718273,
+      "total": 10,
+      "remaining": 1.281727,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.718272999999996,
+      "total": 100,
+      "remaining": 91.281727,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0032195,
+  "fields": {
+    "source_object": "Traditional royal monarchs on horseback.",
+    "source_properties": "Elaborate ceremonial attire and elevated physical position while riding.",
+    "target_situation": "The participation of Jokowi\u2019s son and son-in-law in regional elections.",
+    "mapping": "Just as royalty signifies hereditary succession, the monarchical imagery suggests the creation of a family political dynasty.",
+    "uncertainty": "None."
+  },
+  "explanation": "source_object: Traditional royal monarchs on horseback.\nsource_properties: Elaborate ceremonial attire and elevated physical position while riding.\ntarget_situation: The participation of Jokowi\u2019s son and son-in-law in regional elections.\nmapping: Just as royalty signifies hereditary succession, the monarchical imagery suggests the creation of a family political dynasty.\nuncertainty: None.",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,90 @@
+{
+  "index": 402,
+  "sample_id": "TMP-DEBB680C574E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "29c0acf9ad2a64fcbdf1078aed46107607f870599a3873f7221c50c69cb867c9",
+  "image_sha256": "debb680c574e025f15a87757a908181486fb030c7e59f439a09b736f9103543b",
+  "transmitted_image_sha256": "2ce85b1e387ca61f0c80724f1718e73d3c03f6fdead7e1f756dcd712a74a7f51",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5832795,
+      "total": 10,
+      "remaining": 1.4167205000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.583279500000003,
+      "total": 100,
+      "remaining": 91.4167205,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.56531650107354,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"traffic cones\",\n  \"source_properties\": \"physical barriers used to block access or halt movement\",\n  \"target_situation\": \"the Jakarta Governor\u2019s political decision to stop or allow the city\u2019s reclamation projects\",\n  \"mapping\": \"Just as cones act as a roadblock to stop traffic, they symbolize the Governor\u2019s power to block the progress of reclamation.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "lpfLasf-Dp-d_uMPsajYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1342,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1244
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 677000,
+        "output_tokens_cost_nanodollars": 4026000
+      },
+      "prompt_tokens": 1354,
+      "total_backend_latency_ms": 7846,
+      "total_tokens": 2696
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5879825,
+      "total": 10,
+      "remaining": 1.4120174999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.587982499999995,
+      "total": 100,
+      "remaining": 91.4120175,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.004703,
+  "fields": {
+    "source_object": "traffic cones",
+    "source_properties": "physical barriers used to block access or halt movement",
+    "target_situation": "the Jakarta Governor\u2019s political decision to stop or allow the city\u2019s reclamation projects",
+    "mapping": "Just as cones act as a roadblock to stop traffic, they symbolize the Governor\u2019s power to block the progress of reclamation.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: traffic cones\nsource_properties: physical barriers used to block access or halt movement\ntarget_situation: the Jakarta Governor\u2019s political decision to stop or allow the city\u2019s reclamation projects\nmapping: Just as cones act as a roadblock to stop traffic, they symbolize the Governor\u2019s power to block the progress of reclamation.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

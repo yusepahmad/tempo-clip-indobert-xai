@@ -1,0 +1,83 @@
+{
+  "index": 720,
+  "sample_id": "TMP-8CA8618FE0B9",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "9b51bc031ee0b40d2f28f77d945cd51854c7d9cdb5f7f0e7946443666bd75257",
+  "image_sha256": "8ca8618fe0b9b4ecc3d588903db42e6068d482509baf5072cdfdb958ab3d99af",
+  "transmitted_image_sha256": "fe473080eb06227e1600d983f983576882fd2881d900a551778eea50f07ca4d2",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.6937315,
+      "total": 10,
+      "remaining": 7.3062685,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.6937314999999984,
+      "total": 100,
+      "remaining": 97.3062685,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 12.352616406045854,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan ilustrasi dan teks pada sampul Tempo tersebut, klasifikasi domain sumber metaphoranya adalah **A: BENCANA_JERAT**.\n\n**Alasan:**\nSimbol utama dalam ilustrasi tersebut adalah tindakan menyulut api pada sumbu yang mengarah ke kotak suara (KPU). Api dan sumbu yang terbakar merupakan representasi dari **ancaman** atau",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "wujKapOkK-2M_PUPpv3KiQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2044,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1966
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 768000,
+        "output_tokens_cost_nanodollars": 6132000
+      },
+      "prompt_tokens": 1536,
+      "total_backend_latency_ms": 11272,
+      "total_tokens": 3580
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.7006315,
+      "total": 10,
+      "remaining": 7.2993685,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.7006315,
+      "total": 100,
+      "remaining": 97.2993685,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "length",
+  "cost_usd": 0.0069
+}

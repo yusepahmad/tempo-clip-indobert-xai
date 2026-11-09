@@ -1,0 +1,90 @@
+{
+  "index": 198,
+  "sample_id": "TMP-2C60DDA77DAF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "7e72b71cb120da016a554ab8118b46821d5568477a258d743c32ba49089c2851",
+  "image_sha256": "2c60dda77daf8ac23b14389dfd6dd3d559fbdd4445b7cdc5c7e930fb4ab8968f",
+  "transmitted_image_sha256": "2212911d77ce7491e990b8043a9c95b2050a26f63238f4f546f2e8ac63048400",
+  "image_size": [
+    300,
+    404
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2999175,
+      "total": 10,
+      "remaining": 1.7000825000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.299917500000006,
+      "total": 100,
+      "remaining": 91.7000825,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.473735264036804,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n \"source_object\": \"A flute-playing piper\",\n \"source_properties\": \"Playing music to enchant and lead a following of creatures toward a specific destination.\",\n \"target_situation\": \"Sutiyoso\u2019s political maneuvers for his re-election as Governor of Jakarta.\",\n \"mapping\": \"Like the folklore piper, Sutiyoso uses his flute and money to charm and lead a line of ducks, representing political actors or the public, ensuring his return to office.\",\n \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "VJLLauemEvKU_uMPp6OP6Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1086,
+      "completion_tokens_details": {
+        "reasoning_tokens": 975
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 636500,
+        "output_tokens_cost_nanodollars": 3258000
+      },
+      "prompt_tokens": 1273,
+      "total_backend_latency_ms": 6131,
+      "total_tokens": 2359
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.303812,
+      "total": 10,
+      "remaining": 1.6961879999999994,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.303811999999994,
+      "total": 100,
+      "remaining": 91.696188,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0038945,
+  "fields": {
+    "source_object": "A flute-playing piper",
+    "source_properties": "Playing music to enchant and lead a following of creatures toward a specific destination.",
+    "target_situation": "Sutiyoso\u2019s political maneuvers for his re-election as Governor of Jakarta.",
+    "mapping": "Like the folklore piper, Sutiyoso uses his flute and money to charm and lead a line of ducks, representing political actors or the public, ensuring his return to office.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A flute-playing piper\nsource_properties: Playing music to enchant and lead a following of creatures toward a specific destination.\ntarget_situation: Sutiyoso\u2019s political maneuvers for his re-election as Governor of Jakarta.\nmapping: Like the folklore piper, Sutiyoso uses his flute and money to charm and lead a line of ducks, representing political actors or the public, ensuring his return to office.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

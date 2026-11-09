@@ -1,0 +1,48 @@
+{
+  "version": "clip-indobert-mtl-v1",
+  "backend": "clip-indobert-mtl",
+  "architecture": {
+    "image_encoder": "ViT-B-32",
+    "image_pretrained": "laion2b_s34b_b79k",
+    "text_encoder": "indobenchmark/indobert-base-p1",
+    "encoder_training": "frozen; train shared layer and all three heads jointly",
+    "fusion": "L2-normalized image512 + text CLS768; concat1280",
+    "shared": "Linear1280->256, ReLU, Dropout0.4",
+    "heads": {
+      "task1_issue": 10,
+      "task2_domain_sumber": 7,
+      "task3_primary_entity_type": 8
+    },
+    "loss": "mean of three training-only class-weighted cross entropy losses",
+    "optimizer": "AdamW lr0.001 weight_decay0.0001;120 epochs;seed42"
+  },
+  "evaluation": {
+    "protocol": "historical five-fold stratified CV, Task1 stratification, rare classes pooled; seed42",
+    "samples": 740,
+    "source": "04_hasil_eksperimen/hasil_mtl_740_task2domain.json",
+    "macro_f1": {
+      "task1_issue": 0.4380318985439888,
+      "task2_domain_sumber": 0.3197261392590282,
+      "task3_primary_entity_type": 0.2763519249500637
+    },
+    "target_reached": false
+  },
+  "runtime_protocols": {
+    "dataset": "leave-one-out head refit, not the historical five-fold CV",
+    "batch": "all740 head refit, in-sample exploration",
+    "upload": "all740 head refit, new input without reference labels"
+  },
+  "data_sha256": {
+    "03_data/DATASET_740_TASK2_DOMAIN.csv": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+    "03_data/fitur_clip_indobert_740.npz": "d27cd5dbecfffba3a8bbb96037f3181da20f1c95eb246a7d38a4627a90599e5c",
+    "04_hasil_eksperimen/hasil_mtl_740_task2domain.json": "d55ef1dc8ef9ca2b889983add64ed304863a5b4dadaaaeaba9eec701cb2c3105"
+  },
+  "comparator": {
+    "E14": {
+      "role": "separate historical comparator, not this model",
+      "task2_macro_f1": 0.5662691391334344,
+      "architecture": "Qwen + E5/BGE + CLIP -> SVC",
+      "enabled": false
+    }
+  }
+}

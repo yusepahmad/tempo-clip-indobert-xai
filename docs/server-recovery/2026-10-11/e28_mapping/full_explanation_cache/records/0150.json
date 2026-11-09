@@ -1,0 +1,87 @@
+{
+  "index": 150,
+  "sample_id": "TMP-11BDDA53FD58",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5b66fdaba86627318057e782e5fd871fb617d5c177153ad9aef0ff4ee27ac0b8",
+  "image_sha256": "11bdda53fd58d98de4c4e53fe6f751f2e0a6b89f3425f3b5180c611a99eb2f2b",
+  "transmitted_image_sha256": "00f82c92258dab031fc39e7ee0a3e39a08e08ddff16a489fd5477d3c40eabe63",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.22875,
+      "total": 10,
+      "remaining": 1.7712500000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.228750000000005,
+      "total": 100,
+      "remaining": 91.77125,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.03884652396664,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"fireworks\", \"source_properties\": \"explosive, bright, chaotic, and volatile\", \"target_situation\": \"civil unrest and mass riots\", \"mapping\": \"The visual chaos of fireworks exploding at ground level mirrors the violent, unpredictable nature of the May 22 riots, where explosive tensions erupted into public disorder.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "EJHLatqNHeGM_uMP0-qD8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 79,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674000,
+        "output_tokens_cost_nanodollars": 237000
+      },
+      "prompt_tokens": 1348,
+      "total_backend_latency_ms": 1698,
+      "total_tokens": 1427
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.229661,
+      "total": 10,
+      "remaining": 1.7703389999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.229660999999993,
+      "total": 100,
+      "remaining": 91.770339,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000911,
+  "fields": {
+    "source_object": "fireworks",
+    "source_properties": "explosive, bright, chaotic, and volatile",
+    "target_situation": "civil unrest and mass riots",
+    "mapping": "The visual chaos of fireworks exploding at ground level mirrors the violent, unpredictable nature of the May 22 riots, where explosive tensions erupted into public disorder.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: fireworks\nsource_properties: explosive, bright, chaotic, and volatile\ntarget_situation: civil unrest and mass riots\nmapping: The visual chaos of fireworks exploding at ground level mirrors the violent, unpredictable nature of the May 22 riots, where explosive tensions erupted into public disorder.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 65,
+  "sample_id": "TMP-F25BAAA6CF79",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "92c10b84bfe823b17789ad9e427e98ac7862e5cc888dd71eb5bc135ce095a60b",
+  "image_sha256": "f25baaa6cf799bb53eda78f96424c24ab3bad4491c47c5c5aa281f6a181ead69",
+  "transmitted_image_sha256": "955c5fb021e3f73522882ac7a6e2f87f5ca29507a23c3b8d020e1776420e59ae",
+  "image_size": [
+    394,
+    516
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1002805,
+      "total": 10,
+      "remaining": 1.8997194999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.100280499999997,
+      "total": 100,
+      "remaining": 91.8997195,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.968104628380388,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"prison bars\",\n  \"source_properties\": \"vertical, rigid metal rods that physically confine a person within a cell\",\n  \"target_situation\": \"allegations of corruption and the resulting legal confinement or judicial scrutiny\",\n  \"mapping\": \"The bars blocking Gatot Pujo Nugroho represent legal imprisonment, symbolizing his status as a suspect.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "1I7LatanBv-o_uMPl6-88Q4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 662000,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1324,
+      "total_backend_latency_ms": 1592,
+      "total_tokens": 1418
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1012245,
+      "total": 10,
+      "remaining": 1.8987754999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.1012245,
+      "total": 100,
+      "remaining": 91.8987755,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000944,
+  "fields": {
+    "source_object": "prison bars",
+    "source_properties": "vertical, rigid metal rods that physically confine a person within a cell",
+    "target_situation": "allegations of corruption and the resulting legal confinement or judicial scrutiny",
+    "mapping": "The bars blocking Gatot Pujo Nugroho represent legal imprisonment, symbolizing his status as a suspect.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: prison bars\nsource_properties: vertical, rigid metal rods that physically confine a person within a cell\ntarget_situation: allegations of corruption and the resulting legal confinement or judicial scrutiny\nmapping: The bars blocking Gatot Pujo Nugroho represent legal imprisonment, symbolizing his status as a suspect.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 577,
+  "sample_id": "TMP-DCDA4B4577DE",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ccb5a1b96bbbc933bef4b60d3e1a1b6915c3f7426425968763f3bcff69913817",
+  "image_sha256": "dcda4b4577deb9730ec3a267e0cf1763ad81821788c2724a8239cbb75408f303",
+  "transmitted_image_sha256": "f414510b0cd88492b118714f7dc19cfb359f30980fda1b3582541befa96ddcaa",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8286765,
+      "total": 10,
+      "remaining": 1.1713234999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.8286765,
+      "total": 100,
+      "remaining": 91.1713235,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.313647285569459,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"A framed portrait and a handgun\", \"source_properties\": \"The gun casts a long, dark shadow over a formal, smiling couple's portrait; the gun is a lethal weapon.\", \"target_situation\": \"The murder of Brigadier Yosua involving Ferdy Sambo and Putri Candrawathi.\", \"mapping\": \"The gun's shadow symbolizes the dark, lethal criminal reality looming over the couple's respectable public image, linking them directly to the act of killing.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "OJzLaoW8IfW6_uMPjdDjYA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 110,
+      "cost": {
+        "input_tokens_cost_nanodollars": 683500,
+        "output_tokens_cost_nanodollars": 330000
+      },
+      "prompt_tokens": 1367,
+      "total_backend_latency_ms": 1722,
+      "total_tokens": 1477
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.82969,
+      "total": 10,
+      "remaining": 1.1703100000000006,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.82969,
+      "total": 100,
+      "remaining": 91.17031,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010135,
+  "fields": {
+    "source_object": "A framed portrait and a handgun",
+    "source_properties": "The gun casts a long, dark shadow over a formal, smiling couple's portrait; the gun is a lethal weapon.",
+    "target_situation": "The murder of Brigadier Yosua involving Ferdy Sambo and Putri Candrawathi.",
+    "mapping": "The gun's shadow symbolizes the dark, lethal criminal reality looming over the couple's respectable public image, linking them directly to the act of killing.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A framed portrait and a handgun\nsource_properties: The gun casts a long, dark shadow over a formal, smiling couple's portrait; the gun is a lethal weapon.\ntarget_situation: The murder of Brigadier Yosua involving Ferdy Sambo and Putri Candrawathi.\nmapping: The gun's shadow symbolizes the dark, lethal criminal reality looming over the couple's respectable public image, linking them directly to the act of killing.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

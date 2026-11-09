@@ -1,0 +1,87 @@
+{
+  "index": 537,
+  "sample_id": "TMP-4DBFA76C7B5B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "fc1e10a15dc81dcca5591b5afc9f084988788a7349603f43238df01cfa60291e",
+  "image_sha256": "4dbfa76c7b5b3b142d8d544a95c071aac8a80e33f839add32becc341f5ae427d",
+  "transmitted_image_sha256": "350eecd54bc9b6ba541a599b7af65af816b28734c4bc5fedaee0879e36ff8b86",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.772518999999999,
+      "total": 10,
+      "remaining": 1.227481000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.772519000000003,
+      "total": 100,
+      "remaining": 91.227481,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.969878253992647,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"factory and government building hybrid\", \"source_properties\": \"industrial sawtooth roof and chimney combined with classical Greek columns\", \"target_situation\": \"election for the Indonesian Chamber of Commerce and Industry leadership\", \"mapping\": \"The architectural fusion represents the intersection of private industry and state power, suggesting government intervention in business leadership and the consolidation of cronyism between rulers and entrepreneurs.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "IpvLas6aEP-o_uMP1rjw6A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 88,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681500,
+        "output_tokens_cost_nanodollars": 264000
+      },
+      "prompt_tokens": 1363,
+      "total_backend_latency_ms": 1664,
+      "total_tokens": 1451
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7734645,
+      "total": 10,
+      "remaining": 1.2265355000000007,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.773464500000003,
+      "total": 100,
+      "remaining": 91.2265355,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009455,
+  "fields": {
+    "source_object": "factory and government building hybrid",
+    "source_properties": "industrial sawtooth roof and chimney combined with classical Greek columns",
+    "target_situation": "election for the Indonesian Chamber of Commerce and Industry leadership",
+    "mapping": "The architectural fusion represents the intersection of private industry and state power, suggesting government intervention in business leadership and the consolidation of cronyism between rulers and entrepreneurs.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: factory and government building hybrid\nsource_properties: industrial sawtooth roof and chimney combined with classical Greek columns\ntarget_situation: election for the Indonesian Chamber of Commerce and Industry leadership\nmapping: The architectural fusion represents the intersection of private industry and state power, suggesting government intervention in business leadership and the consolidation of cronyism between rulers and entrepreneurs.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

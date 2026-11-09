@@ -1,0 +1,87 @@
+{
+  "index": 564,
+  "sample_id": "TMP-4492052F8677",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "fb9a2b1d1d636fa6fa8c20876c4aa8059b04075e2c39aea6032335cab2e7b166",
+  "image_sha256": "4492052f867716675c3ebbf00b50eb2adb528591bac795758210b7bae6afa998",
+  "transmitted_image_sha256": "d732ff11749b1eda62ee08f9d87b077418064c7ddd48e288f573f4166a023caf",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8143405,
+      "total": 10,
+      "remaining": 1.1856594999999999,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.8143405,
+      "total": 100,
+      "remaining": 91.1856595,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1635307762771845,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A large hardcover book\",\n  \"source_properties\": \"Green cover, thick pages, red bookmark, carried by multiple pairs of legs.\",\n  \"target_situation\": \"The government and DPR rapidly enacting a new criminal code (KUHP).\",\n  \"mapping\": \"The walking book represents the legal code being driven forward by unseen lobbyists.\",\n  \"uncertainty\": \"None evident.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "5JvLaueFG9-V_uMPmIWFyQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 1723,
+      "total_tokens": 1445
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8152955,
+      "total": 10,
+      "remaining": 1.1847045000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.815295500000005,
+      "total": 100,
+      "remaining": 91.1847045,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000955,
+  "fields": {
+    "source_object": "A large hardcover book",
+    "source_properties": "Green cover, thick pages, red bookmark, carried by multiple pairs of legs.",
+    "target_situation": "The government and DPR rapidly enacting a new criminal code (KUHP).",
+    "mapping": "The walking book represents the legal code being driven forward by unseen lobbyists.",
+    "uncertainty": "None evident."
+  },
+  "explanation": "source_object: A large hardcover book\nsource_properties: Green cover, thick pages, red bookmark, carried by multiple pairs of legs.\ntarget_situation: The government and DPR rapidly enacting a new criminal code (KUHP).\nmapping: The walking book represents the legal code being driven forward by unseen lobbyists.\nuncertainty: None evident.",
+  "finish_reason": "stop",
+  "usable": true
+}

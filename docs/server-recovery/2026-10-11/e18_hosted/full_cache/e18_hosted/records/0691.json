@@ -1,0 +1,83 @@
+{
+  "index": 691,
+  "sample_id": "TMP-4745D7160C69",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "ea8eb73e45a62d7815969343e47f113a359de6477ddd1c626de696a4a4efd217",
+  "image_sha256": "4745d7160c69063a4815cd82f3777d2256bd6e526c64d386b219782c5a41c3c0",
+  "transmitted_image_sha256": "67488dd66e8bc22bf1885f72a3b96d5fde3c4939e8027c6479da1a75d0c580b1",
+  "image_size": [
+    291,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.5842660000000004,
+      "total": 10,
+      "remaining": 7.415734,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.5842659999999995,
+      "total": 100,
+      "remaining": 97.415734,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 11.409268561983481,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi dan alasan yang diberikan dalam teks, ilustrasi tersebut menggambarkan keadaan yang penuh **ancaman atau terjepit**, yang memetakan makna **bencana atau jerat** terhadap isu proyek yang mengancam ekosistem. Hal ini sesuai dengan kriteria domain metafora A.\n\nJawab: **A**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "tufKauq3DYqM_uMP54rS0QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2030,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1963
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 797500,
+        "output_tokens_cost_nanodollars": 6090000
+      },
+      "prompt_tokens": 1595,
+      "total_backend_latency_ms": 10304,
+      "total_tokens": 3625
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.5911535,
+      "total": 10,
+      "remaining": 7.4088465,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.5911535000000043,
+      "total": 100,
+      "remaining": 97.4088465,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.0068875
+}

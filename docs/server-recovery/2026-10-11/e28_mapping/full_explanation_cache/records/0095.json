@@ -1,0 +1,90 @@
+{
+  "index": 95,
+  "sample_id": "TMP-05D189ECE0C8",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ab8d0a073db815ed43a6411f737c424f46a4d66f326b586134ec369ea14d780e",
+  "image_sha256": "05d189ece0c88dcd3d5c397ba8d78112acc752aa61b010d15e7300cbc205ee12",
+  "transmitted_image_sha256": "353ad43ca87c22ca53190bbd99aa01173e7b1deb0d691b0262c29c1bfb9f2afa",
+  "image_size": [
+    576,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.135925499999999,
+      "total": 10,
+      "remaining": 1.864074500000001,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.135925499999999,
+      "total": 100,
+      "remaining": 91.8640745,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 12.677195894066244,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"A paper collage\",\n  \"source_properties\": \"Composed of disparate, torn fragments and letters that create a fractured, multi-layered portrait.\",\n  \"target_situation\": \"The complex, dual military-political role of General Abdul Haris Nasution.\",\n  \"mapping\": \"The fragmented assemblage visualizes a multi-faceted identity, representing the subject's 'two-faced' or multi-dimensional legacy.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "lo_LaoynKv-o_uMPl6-88Q4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1258,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1150
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 641500,
+        "output_tokens_cost_nanodollars": 3774000
+      },
+      "prompt_tokens": 1283,
+      "total_backend_latency_ms": 6618,
+      "total_tokens": 2541
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.140341,
+      "total": 10,
+      "remaining": 1.8596590000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.140341000000006,
+      "total": 100,
+      "remaining": 91.859659,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0044155,
+  "fields": {
+    "source_object": "A paper collage",
+    "source_properties": "Composed of disparate, torn fragments and letters that create a fractured, multi-layered portrait.",
+    "target_situation": "The complex, dual military-political role of General Abdul Haris Nasution.",
+    "mapping": "The fragmented assemblage visualizes a multi-faceted identity, representing the subject's 'two-faced' or multi-dimensional legacy.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A paper collage\nsource_properties: Composed of disparate, torn fragments and letters that create a fractured, multi-layered portrait.\ntarget_situation: The complex, dual military-political role of General Abdul Haris Nasution.\nmapping: The fragmented assemblage visualizes a multi-faceted identity, representing the subject's 'two-faced' or multi-dimensional legacy.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

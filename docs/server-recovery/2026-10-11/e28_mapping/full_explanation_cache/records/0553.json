@@ -1,0 +1,90 @@
+{
+  "index": 553,
+  "sample_id": "TMP-9F0127F0678F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a04f50af9ef30d59844a17d436bf42acc82ce7fd52bcf1c19d254cbf4756eb22",
+  "image_sha256": "9f0127f0678f87a6ddff78021ee0c625f75b15d50178f5ca444026ccdef900f3",
+  "transmitted_image_sha256": "8a27e12e11e2c780e1ff7cb0204a57b8854bbd03e2b68bb6cf5d9a727f2dc7b7",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7979765,
+      "total": 10,
+      "remaining": 1.2020234999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.797976500000004,
+      "total": 100,
+      "remaining": 91.2020235,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.664057439658791,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n\"source_object\": \"A stage magic performance\",\n\"source_properties\": \"Magicians use sleight of hand, top hats, and wands to manipulate objects and create illusions.\",\n\"target_situation\": \"Regional leaders misreporting Covid-19 patient data for political gain.\",\n\"mapping\": \"Just as magicians conjure illusions, leaders use 'abrakadabra' tactics to manipulate statistics, making unfavorable data disappear or change.\",\n\"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "j5vLarwu3t3-4w-rl7bhCg",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 646,
+      "completion_tokens_details": {
+        "reasoning_tokens": 543
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 670500,
+        "output_tokens_cost_nanodollars": 1938000
+      },
+      "prompt_tokens": 1341,
+      "total_backend_latency_ms": 4133,
+      "total_tokens": 1987
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.800585,
+      "total": 10,
+      "remaining": 1.1994150000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.800584999999998,
+      "total": 100,
+      "remaining": 91.199415,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0026085,
+  "fields": {
+    "source_object": "A stage magic performance",
+    "source_properties": "Magicians use sleight of hand, top hats, and wands to manipulate objects and create illusions.",
+    "target_situation": "Regional leaders misreporting Covid-19 patient data for political gain.",
+    "mapping": "Just as magicians conjure illusions, leaders use 'abrakadabra' tactics to manipulate statistics, making unfavorable data disappear or change.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: A stage magic performance\nsource_properties: Magicians use sleight of hand, top hats, and wands to manipulate objects and create illusions.\ntarget_situation: Regional leaders misreporting Covid-19 patient data for political gain.\nmapping: Just as magicians conjure illusions, leaders use 'abrakadabra' tactics to manipulate statistics, making unfavorable data disappear or change.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 568,
+  "sample_id": "TMP-73BA47897468",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "af6177496151e563c20dd38a609ec6756d89d75b611d7a8a81f0effc3aad20fb",
+  "image_sha256": "73ba47897468304b73f491244d11a5a39927f1644f8c68e6f889da88431dbc42",
+  "transmitted_image_sha256": "313c029d3dcb60d79b70f19cdd30844da183369a8e999722be669e7c16c8df95",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.818132,
+      "total": 10,
+      "remaining": 1.1818679999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.818132000000006,
+      "total": 100,
+      "remaining": 91.181868,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.8417306700721383,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Gavel\",\n  \"source_properties\": \"A judge's tool used to deliver a final, forceful, and legally binding decision.\",\n  \"target_situation\": \"Supreme Court's mandate requiring the government to use only halal-certified Covid-19 vaccines.\",\n  \"mapping\": \"The vaccine vial shaped as a gavel head represents the legal force mandating specific vaccines.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "-5vLaoH5NYK5_PUPwPPqwQs",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 100,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676500,
+        "output_tokens_cost_nanodollars": 300000
+      },
+      "prompt_tokens": 1353,
+      "total_backend_latency_ms": 2403,
+      "total_tokens": 1453
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8191085,
+      "total": 10,
+      "remaining": 1.1808914999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.819108499999999,
+      "total": 100,
+      "remaining": 91.1808915,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009765,
+  "fields": {
+    "source_object": "Gavel",
+    "source_properties": "A judge's tool used to deliver a final, forceful, and legally binding decision.",
+    "target_situation": "Supreme Court's mandate requiring the government to use only halal-certified Covid-19 vaccines.",
+    "mapping": "The vaccine vial shaped as a gavel head represents the legal force mandating specific vaccines.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Gavel\nsource_properties: A judge's tool used to deliver a final, forceful, and legally binding decision.\ntarget_situation: Supreme Court's mandate requiring the government to use only halal-certified Covid-19 vaccines.\nmapping: The vaccine vial shaped as a gavel head represents the legal force mandating specific vaccines.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

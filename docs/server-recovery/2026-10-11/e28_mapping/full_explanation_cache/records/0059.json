@@ -1,0 +1,87 @@
+{
+  "index": 59,
+  "sample_id": "TMP-DCCAA3222C5B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ff5cc5c2c5a46c4d4593575e494cf653214ab501b10120dba9d58438c43e7ecc",
+  "image_sha256": "dccaa3222c5b27a78e040a788951b0155c838788c4cc498d671447b2d6f2d7b1",
+  "transmitted_image_sha256": "ebd715c13629b03a72e74e9ace59ea5232d4b1258877e190483ccdae7aaf93cb",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.094389,
+      "total": 10,
+      "remaining": 1.9056110000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.094389000000007,
+      "total": 100,
+      "remaining": 91.905611,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.387818006798625,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Bullfight\", \"source_properties\": \"A powerful, charging bull faces a smaller human figure holding tools of labor and governance.\", \"target_situation\": \"Surabaya Mayor Tri Rismaharini facing political pressure from her own party, PDI-P.\", \"mapping\": \"The bull represents the PDI-P party (symbolized by a bull) attacking Risma, who defends her position with humble public service (the broom) despite political obstacles.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "sI7Lar2KKLqi_uMPou_3-Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "cost": {
+        "input_tokens_cost_nanodollars": 663000,
+        "output_tokens_cost_nanodollars": 318000
+      },
+      "prompt_tokens": 1326,
+      "total_backend_latency_ms": 2156,
+      "total_tokens": 1432
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.095369999999999,
+      "total": 10,
+      "remaining": 1.904630000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.095370000000003,
+      "total": 100,
+      "remaining": 91.90463,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000981,
+  "fields": {
+    "source_object": "Bullfight",
+    "source_properties": "A powerful, charging bull faces a smaller human figure holding tools of labor and governance.",
+    "target_situation": "Surabaya Mayor Tri Rismaharini facing political pressure from her own party, PDI-P.",
+    "mapping": "The bull represents the PDI-P party (symbolized by a bull) attacking Risma, who defends her position with humble public service (the broom) despite political obstacles.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Bullfight\nsource_properties: A powerful, charging bull faces a smaller human figure holding tools of labor and governance.\ntarget_situation: Surabaya Mayor Tri Rismaharini facing political pressure from her own party, PDI-P.\nmapping: The bull represents the PDI-P party (symbolized by a bull) attacking Risma, who defends her position with humble public service (the broom) despite political obstacles.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

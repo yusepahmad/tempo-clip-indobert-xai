@@ -1,0 +1,83 @@
+{
+  "index": 610,
+  "sample_id": "TMP-7E88C4D88155",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "0fc03c2bca5396e82579c87880fa8219487972619c15a852777185e4851f8001",
+  "image_sha256": "7e88c4d881556d3d5c2b43b9237c5f274042ead9cb5c4beda0a45232fa69214e",
+  "transmitted_image_sha256": "459d2e01b74a2ecc95bcfcd4c9f7c2ecbc543556b625377af2af583a0d7f580b",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.2960065,
+      "total": 10,
+      "remaining": 7.7039935,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.2960065000000043,
+      "total": 100,
+      "remaining": 97.7039935,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.688444677973166,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "B berdasarkan deskripsi yang diberikan dalam teks (\"mekanisme dominan berupa **deformasi tubuh**\") yang sesuai dengan kategori **B: HEWAN_TUBUH** (yang mencakup anatomi dan deformasi sebagai kiasan).",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "yePKauSPFuGM_uMP0-qD8A0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1076,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1026
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 785500,
+        "output_tokens_cost_nanodollars": 3228000
+      },
+      "prompt_tokens": 1571,
+      "total_backend_latency_ms": 5625,
+      "total_tokens": 2647
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.30002,
+      "total": 10,
+      "remaining": 7.69998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.3000200000000035,
+      "total": 100,
+      "remaining": 97.69998,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.0040135
+}

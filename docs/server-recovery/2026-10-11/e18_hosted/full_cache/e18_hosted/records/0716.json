@@ -1,0 +1,83 @@
+{
+  "index": 716,
+  "sample_id": "TMP-E5B9C5F25BDD",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "1d369836eba526d5bbb9ba4793284576f37e734043ca36877a23738b009cd41d",
+  "image_sha256": "e5b9c5f25bddd6c49b320648dd9170195c3353ff0991f07034a08b1ff2637854",
+  "transmitted_image_sha256": "18c0332c8cac555161bbe0bb3fd11c2ea5bbe66b7016415c9ec799e8055102a6",
+  "image_size": [
+    293,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.6778245,
+      "total": 10,
+      "remaining": 7.3221755,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.6778245,
+      "total": 100,
+      "remaining": 97.3221755,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.106869113864377,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "B",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "nOjKasDEEryb_uMP77KhsAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 656,
+      "completion_tokens_details": {
+        "reasoning_tokens": 655
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 759000,
+        "output_tokens_cost_nanodollars": 1968000
+      },
+      "prompt_tokens": 1518,
+      "total_backend_latency_ms": 4018,
+      "total_tokens": 2174
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 2.6805515,
+      "total": 10,
+      "remaining": 7.3194485,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 2.680551500000007,
+      "total": 100,
+      "remaining": 97.3194485,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "B",
+  "prediction": "HEWAN_TUBUH",
+  "finish_reason": "stop",
+  "cost_usd": 0.002727
+}

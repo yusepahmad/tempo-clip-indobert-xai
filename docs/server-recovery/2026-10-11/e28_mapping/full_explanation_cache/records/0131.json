@@ -1,0 +1,87 @@
+{
+  "index": 131,
+  "sample_id": "TMP-6283304E73A2",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9283059010c2da5ef54c7063228f40bd8d4126ca71150b8f76515ce61d40d876",
+  "image_sha256": "6283304e73a2ed9e287cb2e9b43275ffeb1182fa53db633e13915319e7b11fac",
+  "transmitted_image_sha256": "790fa1f9769f76de8969e2319fd54419e417884b887b871ebdc9fb549cefb4e4",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.19712,
+      "total": 10,
+      "remaining": 1.80288,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.197119999999998,
+      "total": 100,
+      "remaining": 91.80288,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.567286388017237,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"none evident\", \"source_properties\": \"historical black-and-white photograph, military honor guard, diplomat in foreground\", \"target_situation\": \"Investigative report on CIA involvement in the 1965 tragedy in Indonesia\", \"mapping\": \"The image literally depicts U.S. Ambassador Marshall Green in 1965, representing the historical American presence linked to the tragedy discussed in the headline.\", \"uncertainty\": \"The red text 'JEJAK CIA' functions as a graphical overlay rather than a visual analogy.\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "iZDLav20HPGc_uMPhrzdkQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 116,
+      "cost": {
+        "input_tokens_cost_nanodollars": 669500,
+        "output_tokens_cost_nanodollars": 348000
+      },
+      "prompt_tokens": 1339,
+      "total_backend_latency_ms": 1730,
+      "total_tokens": 1455
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1981375,
+      "total": 10,
+      "remaining": 1.8018625000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.198137500000001,
+      "total": 100,
+      "remaining": 91.8018625,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0010175,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "historical black-and-white photograph, military honor guard, diplomat in foreground",
+    "target_situation": "Investigative report on CIA involvement in the 1965 tragedy in Indonesia",
+    "mapping": "The image literally depicts U.S. Ambassador Marshall Green in 1965, representing the historical American presence linked to the tragedy discussed in the headline.",
+    "uncertainty": "The red text 'JEJAK CIA' functions as a graphical overlay rather than a visual analogy."
+  },
+  "explanation": "source_object: none evident\nsource_properties: historical black-and-white photograph, military honor guard, diplomat in foreground\ntarget_situation: Investigative report on CIA involvement in the 1965 tragedy in Indonesia\nmapping: The image literally depicts U.S. Ambassador Marshall Green in 1965, representing the historical American presence linked to the tragedy discussed in the headline.\nuncertainty: The red text 'JEJAK CIA' functions as a graphical overlay rather than a visual analogy.",
+  "finish_reason": "stop",
+  "usable": true
+}

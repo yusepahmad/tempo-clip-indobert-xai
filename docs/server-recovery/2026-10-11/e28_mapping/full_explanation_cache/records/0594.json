@@ -1,0 +1,87 @@
+{
+  "index": 594,
+  "sample_id": "TMP-C51478576498",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9a8d888fbdfe5194ea417fd2593f90c49c903d4bb782568cfd2d02dad835a551",
+  "image_sha256": "c514785764982dafbeb84b987db0e243e5dd1a474818e1b8ce42fb111f56fdcf",
+  "transmitted_image_sha256": "2f380aca57574b7038f9e4621043044ed1ea54a49bfbd10772729a650c2db7b9",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.845244000000001,
+      "total": 10,
+      "remaining": 1.154755999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.845243999999994,
+      "total": 100,
+      "remaining": 91.154756,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0171421132981777,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"magician's hat trick\", \"source_properties\": \"sleight of hand, appearing objects, illusion of control, and a magic wand\", \"target_situation\": \"The Indonesian government's struggling attempts to manage cooking oil price surges\", \"mapping\": \"The magician's attempt to manifest oil mirrors the government's desperate, artificial interventions that fail to solve structural issues.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "npzLav7PMrqi_uMPjvD3-Ak",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 91,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674000,
+        "output_tokens_cost_nanodollars": 273000
+      },
+      "prompt_tokens": 1348,
+      "total_backend_latency_ms": 1796,
+      "total_tokens": 1439
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.846191,
+      "total": 10,
+      "remaining": 1.1538090000000008,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.846191000000005,
+      "total": 100,
+      "remaining": 91.153809,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000947,
+  "fields": {
+    "source_object": "magician's hat trick",
+    "source_properties": "sleight of hand, appearing objects, illusion of control, and a magic wand",
+    "target_situation": "The Indonesian government's struggling attempts to manage cooking oil price surges",
+    "mapping": "The magician's attempt to manifest oil mirrors the government's desperate, artificial interventions that fail to solve structural issues.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: magician's hat trick\nsource_properties: sleight of hand, appearing objects, illusion of control, and a magic wand\ntarget_situation: The Indonesian government's struggling attempts to manage cooking oil price surges\nmapping: The magician's attempt to manifest oil mirrors the government's desperate, artificial interventions that fail to solve structural issues.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

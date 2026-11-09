@@ -1,0 +1,31 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "cost_usd": 2.7690535,
+  "final_routes": {
+    "strict": {
+      "macro_f1_manual": 0.25213090184940357,
+      "raw_invalid_predictions": 453
+    },
+    "v1": {
+      "macro_f1_manual": 0.3646079161269622,
+      "raw_invalid_predictions": 194
+    },
+    "v2": {
+      "macro_f1_manual": 0.37948014866221313,
+      "raw_invalid_predictions": 78
+    }
+  },
+  "strict_manifest_files": 743,
+  "valid_manifest_files": 6,
+  "archive_sha256": "aec40e587ebb418f6f4aefb6950cacd6129644f1e9e59b4d8f5565f8765080aa",
+  "checks": [
+    "740 response copies and manifest hashes; source pins",
+    "all original IDs/truth/folds matched E14 baseline",
+    "strict/v1/v2 decoding independently rerun from raw responses",
+    "training-only majority fallback independently recomputed from592 per fold",
+    "all seven-class final predictions and manual7x7/F1 reproduced",
+    "per-request usage/quota and cumulative cost reconciled"
+  ],
+  "limitation": "Hosted inference not reproduced; repeated experiment selection bias remains."
+}

@@ -1,0 +1,87 @@
+{
+  "index": 424,
+  "sample_id": "TMP-1F28BA974D60",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "81294694b869d6a191853b86acfd7e3f6b2fee75e3be723f88a2fc0ec7ce9b5c",
+  "image_sha256": "1f28ba974d609d74a16627cfa8c3448ecf6fcac6520f012d4f658dfa887f9003",
+  "transmitted_image_sha256": "967ebac1b609bea0ee9da8931a09f9887de7ad31fea982bf69679adeb592d542",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.623941,
+      "total": 10,
+      "remaining": 1.3760589999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.623941000000002,
+      "total": 100,
+      "remaining": 91.376059,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.569247863255441,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"An iron and ironing board\",\n  \"source_properties\": \"Smoothing out wrinkles and creases in fabric using heat and pressure.\",\n  \"target_situation\": \"Jokowi's political maneuvering to consolidate power and reconcile opposing factions.\",\n  \"mapping\": \"Just as an iron flattens rough fabric, Jokowi smooths political tensions by embracing rivals.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "MpjLas-BBe2M_PUPu97KyQo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678000,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1356,
+      "total_backend_latency_ms": 1949,
+      "total_tokens": 1450
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.624901,
+      "total": 10,
+      "remaining": 1.3750990000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.624900999999994,
+      "total": 100,
+      "remaining": 91.375099,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00096,
+  "fields": {
+    "source_object": "An iron and ironing board",
+    "source_properties": "Smoothing out wrinkles and creases in fabric using heat and pressure.",
+    "target_situation": "Jokowi's political maneuvering to consolidate power and reconcile opposing factions.",
+    "mapping": "Just as an iron flattens rough fabric, Jokowi smooths political tensions by embracing rivals.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: An iron and ironing board\nsource_properties: Smoothing out wrinkles and creases in fabric using heat and pressure.\ntarget_situation: Jokowi's political maneuvering to consolidate power and reconcile opposing factions.\nmapping: Just as an iron flattens rough fabric, Jokowi smooths political tensions by embracing rivals.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

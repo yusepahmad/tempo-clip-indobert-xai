@@ -1,0 +1,87 @@
+{
+  "index": 440,
+  "sample_id": "TMP-C48F2514340E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "21d0dbb36b71b71d5dcc333b2a4670c8cd0c03e3fce69741a8b7181a398a7be7",
+  "image_sha256": "c48f2514340ed2e74737d940100291895098dd9904cf97f521a0d7af1ccc8aad",
+  "transmitted_image_sha256": "914fa6cd45ef8a9ea341952f0ba6dc31307dec0ad4031d4cbfd3e0c9f40317a8",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6392485,
+      "total": 10,
+      "remaining": 1.3607514999999992,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.639248499999994,
+      "total": 100,
+      "remaining": 91.3607515,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.515503777191043,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Eraser\",\n  \"source_properties\": \"Removes pencil marks to create a clean, white path on a messy background.\",\n  \"target_situation\": \"Image branding and public relations strategies for vice-presidential candidates.\",\n  \"mapping\": \"Erasing chaotic scribbles represents 'polishing' a candidate's image to create a clear, favorable narrative.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "lJjLauqpI-fU_uMPq5CXyQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 665000,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1330,
+      "total_backend_latency_ms": 1694,
+      "total_tokens": 1427
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6402045,
+      "total": 10,
+      "remaining": 1.3597955000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.640204499999996,
+      "total": 100,
+      "remaining": 91.3597955,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000956,
+  "fields": {
+    "source_object": "Eraser",
+    "source_properties": "Removes pencil marks to create a clean, white path on a messy background.",
+    "target_situation": "Image branding and public relations strategies for vice-presidential candidates.",
+    "mapping": "Erasing chaotic scribbles represents 'polishing' a candidate's image to create a clear, favorable narrative.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Eraser\nsource_properties: Removes pencil marks to create a clean, white path on a messy background.\ntarget_situation: Image branding and public relations strategies for vice-presidential candidates.\nmapping: Erasing chaotic scribbles represents 'polishing' a candidate's image to create a clear, favorable narrative.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

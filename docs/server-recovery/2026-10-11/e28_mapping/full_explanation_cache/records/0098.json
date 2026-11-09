@@ -1,0 +1,90 @@
+{
+  "index": 98,
+  "sample_id": "TMP-A96E1B736585",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c44cb3c551b2fb7d52fe5f647318acfaeb2c145f04c1953deffdace985476a90",
+  "image_sha256": "a96e1b7365856238d02c2eafdc98a163db56ae43ade66309330b0f054f26aa5c",
+  "transmitted_image_sha256": "943d14401929bfc0e304a73e2f7c76395032ab256f56fcdec74cc90aeef6cd7e",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.144411999999999,
+      "total": 10,
+      "remaining": 1.855588000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.144412000000003,
+      "total": 100,
+      "remaining": 91.855588,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.71381972078234,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"An orchestra conductor\",\n  \"source_properties\": \"Gesturing with a baton to direct and control a complex performance.\",\n  \"target_situation\": \"Mismanagement of extensive forest and land fires.\",\n  \"mapping\": \"The figure's pose and flaming baton suggest they are orchestrating the wildfires like a musical performance, linking human agency to the disaster.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "rY_LarrHNp-d_uMPlqrYqA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 967,
+      "completion_tokens_details": {
+        "reasoning_tokens": 872
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 677500,
+        "output_tokens_cost_nanodollars": 2901000
+      },
+      "prompt_tokens": 1355,
+      "total_backend_latency_ms": 5412,
+      "total_tokens": 2322
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1479905,
+      "total": 10,
+      "remaining": 1.8520094999999994,
+      "refill_at": "2026-10-11 23:35:15.875000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.147990500000006,
+      "total": 100,
+      "remaining": 91.8520095,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0035785,
+  "fields": {
+    "source_object": "An orchestra conductor",
+    "source_properties": "Gesturing with a baton to direct and control a complex performance.",
+    "target_situation": "Mismanagement of extensive forest and land fires.",
+    "mapping": "The figure's pose and flaming baton suggest they are orchestrating the wildfires like a musical performance, linking human agency to the disaster.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: An orchestra conductor\nsource_properties: Gesturing with a baton to direct and control a complex performance.\ntarget_situation: Mismanagement of extensive forest and land fires.\nmapping: The figure's pose and flaming baton suggest they are orchestrating the wildfires like a musical performance, linking human agency to the disaster.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

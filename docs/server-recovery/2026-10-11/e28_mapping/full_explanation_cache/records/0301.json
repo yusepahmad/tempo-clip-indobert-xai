@@ -1,0 +1,87 @@
+{
+  "index": 301,
+  "sample_id": "TMP-26BC9D42C6E9",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "6f161fc432eaea0814486f059a27fa2755967aa982e29702ae7e0a38db1ba789",
+  "image_sha256": "26bc9d42c6e9c7a4ee3a1ac1da07cf94817707c5a70a1e22ee5155eaaa7c21a9",
+  "transmitted_image_sha256": "bb9cd633fb7b4bf428ef252268274027a5987c401d005f0754b31db0bfb17d12",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.452392,
+      "total": 10,
+      "remaining": 1.5476080000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.452392000000003,
+      "total": 100,
+      "remaining": 91.547608,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.8516308809630573,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"storm clouds\", \"source_properties\": \"dark, overwhelming, turbulent, and engulfing\", \"target_situation\": \"the AirAsia flight crash in the Karimata Strait\", \"mapping\": \"The massive, dark clouds represent the life-threatening weather conditions and the horror of the tragedy that consumed the small aircraft.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "DJXLat3ENtvJ_uMPvcyw-AM",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 77,
+      "cost": {
+        "input_tokens_cost_nanodollars": 662500,
+        "output_tokens_cost_nanodollars": 231000
+      },
+      "prompt_tokens": 1325,
+      "total_backend_latency_ms": 1587,
+      "total_tokens": 1402
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4532855,
+      "total": 10,
+      "remaining": 1.5467145000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.453285500000007,
+      "total": 100,
+      "remaining": 91.5467145,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0008935,
+  "fields": {
+    "source_object": "storm clouds",
+    "source_properties": "dark, overwhelming, turbulent, and engulfing",
+    "target_situation": "the AirAsia flight crash in the Karimata Strait",
+    "mapping": "The massive, dark clouds represent the life-threatening weather conditions and the horror of the tragedy that consumed the small aircraft.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: storm clouds\nsource_properties: dark, overwhelming, turbulent, and engulfing\ntarget_situation: the AirAsia flight crash in the Karimata Strait\nmapping: The massive, dark clouds represent the life-threatening weather conditions and the horror of the tragedy that consumed the small aircraft.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

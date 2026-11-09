@@ -1,0 +1,87 @@
+{
+  "index": 650,
+  "sample_id": "TMP-E0C9AA340CA0",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "eb7f83a111e959aac8d48259689b1c16568c5fc7863ef08e9994f6a7ff20d225",
+  "image_sha256": "e0c9aa340ca0312896523cb18c4179761f2a5f9c2e703bb9e55bd442b8615246",
+  "transmitted_image_sha256": "3c269bf75ac74ad07f2d3552fc5cc82275a32556d19c24fd679326756e579ffe",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.92241,
+      "total": 10,
+      "remaining": 1.0775900000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.92241,
+      "total": 100,
+      "remaining": 91.07759,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.5959911439567804,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"miner's helmet\",\n  \"source_properties\": \"A protective hard hat featuring a mounted, focused lamp used to illuminate deep, dark underground extraction sites.\",\n  \"target_situation\": \"Granting mining licenses to mass organizations as a method of settling electoral debts.\",\n  \"mapping\": \"The helmet identifies the figures as miners, symbolizing their control over the extractive mining industry to pay political debts.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Cp7LaryxJIKn_uMP9_y56As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 103,
+      "cost": {
+        "input_tokens_cost_nanodollars": 682000,
+        "output_tokens_cost_nanodollars": 309000
+      },
+      "prompt_tokens": 1364,
+      "total_backend_latency_ms": 2044,
+      "total_tokens": 1467
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.923401,
+      "total": 10,
+      "remaining": 1.0765989999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.923400999999998,
+      "total": 100,
+      "remaining": 91.076599,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000991,
+  "fields": {
+    "source_object": "miner's helmet",
+    "source_properties": "A protective hard hat featuring a mounted, focused lamp used to illuminate deep, dark underground extraction sites.",
+    "target_situation": "Granting mining licenses to mass organizations as a method of settling electoral debts.",
+    "mapping": "The helmet identifies the figures as miners, symbolizing their control over the extractive mining industry to pay political debts.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: miner's helmet\nsource_properties: A protective hard hat featuring a mounted, focused lamp used to illuminate deep, dark underground extraction sites.\ntarget_situation: Granting mining licenses to mass organizations as a method of settling electoral debts.\nmapping: The helmet identifies the figures as miners, symbolizing their control over the extractive mining industry to pay political debts.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

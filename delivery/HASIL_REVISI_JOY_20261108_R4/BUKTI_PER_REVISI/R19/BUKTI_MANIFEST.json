@@ -1,0 +1,47 @@
+{
+  "revision_id": "R19",
+  "title": "Pemeringkatan Macro-F1",
+  "status": "Selesai teknis sesuai tracker; menunggu penilaian pembimbing",
+  "pdf_page": 6,
+  "requested_evidence": "Bukti yang diserahkan. Tabel peringkat ganda 36 baris, dan satu paragraf analisis pembalikan peringkat.",
+  "notebook": {
+    "notebook": "03_final_comparison.ipynb",
+    "heading": "R19 — Pemeringkatan Macro-F1",
+    "html": "../REFERENSI_NOTEBOOK/03_final_comparison.html#full-r19"
+  },
+  "notes": [],
+  "files": [
+    {
+      "file": "R19_peringkat_ganda_36_kandidat.csv",
+      "purpose": "Peringkat akurasi minimum, Macro-F1 minimum dan mean Macro-F1 untuk 36 nama",
+      "sha256": "0cc767efa0ff4d22060c304088b7b23c2f49c5b9baf0449bb0b8e521878d40f2",
+      "kind": "table_subset",
+      "source": "analysis/ranking_36_legacy.csv",
+      "source_sha256": "f104e6f268466594b6f1276c8a76b8a0fba519bf99a1cf6634d752d362432ee9",
+      "selector": {},
+      "rows": 36
+    },
+    {
+      "file": "R19_peringkat_seluruh_sumber.csv",
+      "purpose": "Seluruh comparator/kontrol dengan samples dan phase tetap terlihat",
+      "sha256": "155f816fb34008b7f3ad2b60e2141a5ff57f55f60408fd3a4466941a9b198cdb",
+      "kind": "copy",
+      "source": "analysis/ranking_all.csv",
+      "source_sha256": "155f816fb34008b7f3ad2b60e2141a5ff57f55f60408fd3a4466941a9b198cdb"
+    },
+    {
+      "file": "R19_korelasi_peringkat.json",
+      "purpose": "Pearson dan Spearman yang dihitung ulang dengan ties",
+      "sha256": "47324106e437ec58f1a9e004103f52d3374d917e3ff7a4b0982f8fda310788a3",
+      "kind": "copy",
+      "source": "analysis/rank_correlation.json",
+      "source_sha256": "47324106e437ec58f1a9e004103f52d3374d917e3ff7a4b0982f8fda310788a3"
+    },
+    {
+      "file": "R19_analisis_pembalikan_peringkat.md",
+      "purpose": "Paragraf interpretasi pembalikan peringkat berdasarkan CSV aktual",
+      "sha256": "1eb9331b41da744b45bff8f8c659bd3bc4bfa17c46c2e5edf71cd565ed80595e",
+      "kind": "explanatory_note"
+    }
+  ]
+}

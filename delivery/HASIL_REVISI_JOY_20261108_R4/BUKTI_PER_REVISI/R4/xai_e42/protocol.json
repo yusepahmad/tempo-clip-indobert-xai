@@ -1,0 +1,28 @@
+{
+  "schema": "revisi-ii-e42-xai-v1",
+  "seed": 20261101,
+  "samples": 8,
+  "selection": "uniform random from sorted IDs, before explanation",
+  "sample_ids": [
+    "TMP-0514AFE1ADC9",
+    "TMP-B4159E66B480",
+    "TMP-E8E65B336C7E",
+    "TMP-5802D0009C82",
+    "TMP-AE16180EE0D6",
+    "TMP-20D70DD55DE3",
+    "TMP-E9A5F94EF9F7",
+    "TMP-3950DA9B1729"
+  ],
+  "model": "E42 actual held-out fold checkpoint",
+  "visual_method": "attention rollout, mean heads + residual identity, layer matrix product",
+  "class_specific_visual": false,
+  "visual_view_composition": "normalize full and crop inverse center maps, equal mean then normalize",
+  "text_method": "LIME conditional on fixed actual CLIP features; 256 local samples, positional whitespace tokens",
+  "deletion_fraction": 0.2,
+  "random_controls_per_sample": 3,
+  "scope": "exploratory eight samples; not full-corpus or human acceptance",
+  "source_sha256": "506b95d17f8b697fa2d91398a8d6d6650cff5a3f7e47fd1965543bf6b5261814",
+  "clip_weight_sha256": "7d129ed747e0ed53e82dfcc140382b51be66b56e6a9bdc3258afd2846e3bb019",
+  "bert_revision": "c2cd0b51ddce6580eb35263b39b0a1e5fb0a39e2",
+  "reference": "https://aclanthology.org/2020.acl-main.385/"
+}

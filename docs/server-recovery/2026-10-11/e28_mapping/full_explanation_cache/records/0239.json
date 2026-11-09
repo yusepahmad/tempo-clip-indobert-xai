@@ -1,0 +1,90 @@
+{
+  "index": 239,
+  "sample_id": "TMP-D5C161FFF1BF",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "da159f4110f5f4a66d75f681b862b8425a17bd3c2400a6e33be86e25a57a7f14",
+  "image_sha256": "d5c161fff1bf80c6972cb9f557e10ffdecc7e2402f4354718709a10ae1c5065e",
+  "transmitted_image_sha256": "f1c80a77e95f864dad5839bdd61ed825c3a22541f5a8c7ed8196647e1e3ddba7",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.366036,
+      "total": 10,
+      "remaining": 1.6339640000000006,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.366035999999994,
+      "total": 100,
+      "remaining": 91.633964,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.739021240267903,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"a physical screen or barrier\",\n  \"source_properties\": \"an opaque surface held in front of the face to conceal oneself while peeking over the top\",\n  \"target_situation\": \"President Yudhoyono\u2019s perceived indecisiveness and evasiveness regarding national fuel subsidies and the Susno Duadji legal case\",\n  \"mapping\": \"the magazine cover functions as a hiding screen, suggesting the politician is cautiously peeking out while avoiding direct accountability\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ZpPLaoLUMPDe_uMPnvjrqQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1587,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1470
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 654500,
+        "output_tokens_cost_nanodollars": 4761000
+      },
+      "prompt_tokens": 1309,
+      "total_backend_latency_ms": 8407,
+      "total_tokens": 2896
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3714515,
+      "total": 10,
+      "remaining": 1.6285485000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.371451500000006,
+      "total": 100,
+      "remaining": 91.6285485,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0054155,
+  "fields": {
+    "source_object": "a physical screen or barrier",
+    "source_properties": "an opaque surface held in front of the face to conceal oneself while peeking over the top",
+    "target_situation": "President Yudhoyono\u2019s perceived indecisiveness and evasiveness regarding national fuel subsidies and the Susno Duadji legal case",
+    "mapping": "the magazine cover functions as a hiding screen, suggesting the politician is cautiously peeking out while avoiding direct accountability",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: a physical screen or barrier\nsource_properties: an opaque surface held in front of the face to conceal oneself while peeking over the top\ntarget_situation: President Yudhoyono\u2019s perceived indecisiveness and evasiveness regarding national fuel subsidies and the Susno Duadji legal case\nmapping: the magazine cover functions as a hiding screen, suggesting the politician is cautiously peeking out while avoiding direct accountability\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 436,
+  "sample_id": "TMP-EFC406A9CF90",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "4ecefb9641fdb86c1e59df7891de8d090e234d77311045b38019c9c62cecf72d",
+  "image_sha256": "efc406a9cf90cb8544bf937ce5870bd47871edafdb67b0b4ec837aad39470614",
+  "transmitted_image_sha256": "1122c22d8ab5744cfe03e0bfeb5e7f0416ca21b104248b64b0f2498cecc6f56a",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6354565,
+      "total": 10,
+      "remaining": 1.3645435,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.635456500000004,
+      "total": 100,
+      "remaining": 91.3645435,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.278611045796424,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"prison cell\", \"source_properties\": \"vertical bars, small window, isolation, cramped space\", \"target_situation\": \"hundreds of Indonesian teenagers imprisoned in Australian adult facilities\", \"mapping\": \"The physical confinement of the cell mirrors the literal incarceration and restricted freedom of minors accused of human smuggling.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "eJjLatntFP2b_uMPj8_lqAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 74,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678500,
+        "output_tokens_cost_nanodollars": 222000
+      },
+      "prompt_tokens": 1357,
+      "total_backend_latency_ms": 1493,
+      "total_tokens": 1431
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.636357,
+      "total": 10,
+      "remaining": 1.3636429999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.636357000000004,
+      "total": 100,
+      "remaining": 91.363643,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009005,
+  "fields": {
+    "source_object": "prison cell",
+    "source_properties": "vertical bars, small window, isolation, cramped space",
+    "target_situation": "hundreds of Indonesian teenagers imprisoned in Australian adult facilities",
+    "mapping": "The physical confinement of the cell mirrors the literal incarceration and restricted freedom of minors accused of human smuggling.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: prison cell\nsource_properties: vertical bars, small window, isolation, cramped space\ntarget_situation: hundreds of Indonesian teenagers imprisoned in Australian adult facilities\nmapping: The physical confinement of the cell mirrors the literal incarceration and restricted freedom of minors accused of human smuggling.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

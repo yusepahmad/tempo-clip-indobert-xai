@@ -1,0 +1,87 @@
+{
+  "index": 266,
+  "sample_id": "TMP-5AB276D5CF8A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "6c1a783d8903786ea852b816fbe1020572f5d444e0430c82a9799837dbc4e552",
+  "image_sha256": "5ab276d5cf8ae6b72a8fb3517e15e325862e47cf81e96c4dff9af60e8152914f",
+  "transmitted_image_sha256": "d7cfd742a6eb7db83bf728072765d58afbff100bdf34c38b89a330eb9793569c",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.407383,
+      "total": 10,
+      "remaining": 1.5926170000000006,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.407382999999996,
+      "total": 100,
+      "remaining": 91.592617,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.997316549066454,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Matryoshka nesting dolls\",\n  \"source_properties\": \"Graduated wooden dolls of decreasing size placed one inside another.\",\n  \"target_situation\": \"Three individuals embedded within each other's legal robes and political scandals.\",\n  \"mapping\": \"The physical nesting represents hierarchical layers of involvement or concealment in bribery.\",\n  \"uncertainty\": \"The specific identity of the lower two individuals is inferred from context.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "IJTLaqDMMcmb_uMPlY2fwA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 99,
+      "cost": {
+        "input_tokens_cost_nanodollars": 671000,
+        "output_tokens_cost_nanodollars": 297000
+      },
+      "prompt_tokens": 1342,
+      "total_backend_latency_ms": 1803,
+      "total_tokens": 1441
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.408351,
+      "total": 10,
+      "remaining": 1.5916490000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.408350999999996,
+      "total": 100,
+      "remaining": 91.591649,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000968,
+  "fields": {
+    "source_object": "Matryoshka nesting dolls",
+    "source_properties": "Graduated wooden dolls of decreasing size placed one inside another.",
+    "target_situation": "Three individuals embedded within each other's legal robes and political scandals.",
+    "mapping": "The physical nesting represents hierarchical layers of involvement or concealment in bribery.",
+    "uncertainty": "The specific identity of the lower two individuals is inferred from context."
+  },
+  "explanation": "source_object: Matryoshka nesting dolls\nsource_properties: Graduated wooden dolls of decreasing size placed one inside another.\ntarget_situation: Three individuals embedded within each other's legal robes and political scandals.\nmapping: The physical nesting represents hierarchical layers of involvement or concealment in bribery.\nuncertainty: The specific identity of the lower two individuals is inferred from context.",
+  "finish_reason": "stop",
+  "usable": true
+}

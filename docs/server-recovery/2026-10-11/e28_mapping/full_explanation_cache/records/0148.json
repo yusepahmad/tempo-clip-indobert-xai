@@ -1,0 +1,87 @@
+{
+  "index": 148,
+  "sample_id": "TMP-1EF49983B649",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b021924ed265f70c2d9c662c7bf68cb718846a980f4d13172c673e3d2a321f66",
+  "image_sha256": "1ef49983b64970d7d71ac8fb9596c4a1b04016aded251a58945c2785314eeab9",
+  "transmitted_image_sha256": "9efce8df024e17e447bab67fe4babf44d3f42638a330264a4e94ded804d0ecf2",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.226821,
+      "total": 10,
+      "remaining": 1.7731790000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.226821000000001,
+      "total": 100,
+      "remaining": 91.773179,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.037986089941114,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"PUBG video game characters\", \"source_properties\": \"Battle royale gear including level 3 helmets, tactical backpacks, rifles, and white button-down shirts.\", \"target_situation\": \"Intense competition or 'battle' between business figures or political entities in Java.\", \"mapping\": \"Modern digital combat gear symbolizes a high-stakes, elimination-style struggle for dominance, modernizing the historical 'Perang Bubat' conflict.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "BJHLatSpArua_uMPhJumwQI",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 659500,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1319,
+      "total_backend_latency_ms": 1956,
+      "total_tokens": 1420
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2277835,
+      "total": 10,
+      "remaining": 1.7722165000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.227783500000001,
+      "total": 100,
+      "remaining": 91.7722165,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009625,
+  "fields": {
+    "source_object": "PUBG video game characters",
+    "source_properties": "Battle royale gear including level 3 helmets, tactical backpacks, rifles, and white button-down shirts.",
+    "target_situation": "Intense competition or 'battle' between business figures or political entities in Java.",
+    "mapping": "Modern digital combat gear symbolizes a high-stakes, elimination-style struggle for dominance, modernizing the historical 'Perang Bubat' conflict.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: PUBG video game characters\nsource_properties: Battle royale gear including level 3 helmets, tactical backpacks, rifles, and white button-down shirts.\ntarget_situation: Intense competition or 'battle' between business figures or political entities in Java.\nmapping: Modern digital combat gear symbolizes a high-stakes, elimination-style struggle for dominance, modernizing the historical 'Perang Bubat' conflict.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

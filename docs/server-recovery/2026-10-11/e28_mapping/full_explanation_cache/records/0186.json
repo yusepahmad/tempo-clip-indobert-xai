@@ -1,0 +1,90 @@
+{
+  "index": 186,
+  "sample_id": "TMP-139014771B68",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "3a8dbe30001f62c53dfe6f6ce24f55a6f9ef86355ffc55ffc0a8edbfca35e5b7",
+  "image_sha256": "139014771b681f602847de3995097e01f6fe824f8fddf4eecbac7b566ae6b731",
+  "transmitted_image_sha256": "33dcab4f5588f1b45fad4fe87ee6f0dd987f30038d8eb79898305a0a79631a74",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.279804500000001,
+      "total": 10,
+      "remaining": 1.720195499999999,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.279804499999997,
+      "total": 100,
+      "remaining": 91.7201955,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 9.68174690194428,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Characters Giant and Suneo from the anime Doraemon.\",\n  \"source_properties\": \"Giant is a loud, dominant bully; Suneo is his subservient sidekick who facilitates Giant's tone-deaf singing.\",\n  \"target_situation\": \"President Prabowo\u2019s centralized \\\"command diplomacy\\\" and Foreign Minister Sugiono\u2019s secondary role.\",\n  \"mapping\": \"Prabowo is cast as Giant, dominating the stage, while Sugiono acts as the microphone-holding Suneo, suggesting a power imbalance where the minister merely facilitates the president's performance.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "A5LLapeoJOiv_PUPldGEyA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 899,
+      "completion_tokens_details": {
+        "reasoning_tokens": 757
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 677000,
+        "output_tokens_cost_nanodollars": 2697000
+      },
+      "prompt_tokens": 1354,
+      "total_backend_latency_ms": 7195,
+      "total_tokens": 2253
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2831785,
+      "total": 10,
+      "remaining": 1.7168215,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.283178500000005,
+      "total": 100,
+      "remaining": 91.7168215,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.003374,
+  "fields": {
+    "source_object": "Characters Giant and Suneo from the anime Doraemon.",
+    "source_properties": "Giant is a loud, dominant bully; Suneo is his subservient sidekick who facilitates Giant's tone-deaf singing.",
+    "target_situation": "President Prabowo\u2019s centralized \"command diplomacy\" and Foreign Minister Sugiono\u2019s secondary role.",
+    "mapping": "Prabowo is cast as Giant, dominating the stage, while Sugiono acts as the microphone-holding Suneo, suggesting a power imbalance where the minister merely facilitates the president's performance.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Characters Giant and Suneo from the anime Doraemon.\nsource_properties: Giant is a loud, dominant bully; Suneo is his subservient sidekick who facilitates Giant's tone-deaf singing.\ntarget_situation: President Prabowo\u2019s centralized \"command diplomacy\" and Foreign Minister Sugiono\u2019s secondary role.\nmapping: Prabowo is cast as Giant, dominating the stage, while Sugiono acts as the microphone-holding Suneo, suggesting a power imbalance where the minister merely facilitates the president's performance.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

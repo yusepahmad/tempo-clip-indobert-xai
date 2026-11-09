@@ -1,0 +1,87 @@
+{
+  "index": 355,
+  "sample_id": "TMP-6F6ACED8472C",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "298c32d922bd816f9cbe1f9ff36cd29c02218b59981139314a7c347813e48d34",
+  "image_sha256": "6f6aced8472c4926b2975ff0649c763e0e81feebc194f761e427d7c6719e85f8",
+  "transmitted_image_sha256": "d4768135f67034d6fa99c5757ddd72d6c558a5cff3f5fe5f4309db16089a374d",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.524045000000001,
+      "total": 10,
+      "remaining": 1.475954999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.524045000000001,
+      "total": 100,
+      "remaining": 91.475955,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.780358477961272,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"ocean wave composed of reaching hands\",\n  \"source_properties\": \"A massive, overpowering surge of orange hands grabbing money, forming a breaking wave over a solitary figure.\",\n  \"target_situation\": \"Allegations of reclamation project funds flowing to political volunteers (Teman Ahok) and being investigated by the KPK.\",\n  \"mapping\": \"The wave of grabbing hands represents the overwhelming and potentially corrupt demand for funds, threatening to engulf the individual.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "apbLar-sMqiB_PUPxqbXMA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 113,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674500,
+        "output_tokens_cost_nanodollars": 339000
+      },
+      "prompt_tokens": 1349,
+      "total_backend_latency_ms": 2106,
+      "total_tokens": 1462
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5250585,
+      "total": 10,
+      "remaining": 1.4749415,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.5250585,
+      "total": 100,
+      "remaining": 91.4749415,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010135,
+  "fields": {
+    "source_object": "ocean wave composed of reaching hands",
+    "source_properties": "A massive, overpowering surge of orange hands grabbing money, forming a breaking wave over a solitary figure.",
+    "target_situation": "Allegations of reclamation project funds flowing to political volunteers (Teman Ahok) and being investigated by the KPK.",
+    "mapping": "The wave of grabbing hands represents the overwhelming and potentially corrupt demand for funds, threatening to engulf the individual.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: ocean wave composed of reaching hands\nsource_properties: A massive, overpowering surge of orange hands grabbing money, forming a breaking wave over a solitary figure.\ntarget_situation: Allegations of reclamation project funds flowing to political volunteers (Teman Ahok) and being investigated by the KPK.\nmapping: The wave of grabbing hands represents the overwhelming and potentially corrupt demand for funds, threatening to engulf the individual.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

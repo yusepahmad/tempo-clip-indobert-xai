@@ -1,0 +1,90 @@
+{
+  "index": 222,
+  "sample_id": "TMP-22A18BB1F761",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5e18440d79c15811757956fe78c4b4a19cb5a2108ab505d965a2897b401fcd30",
+  "image_sha256": "22a18bb1f761dd53b51dfbecf837e6596323e79788cdfa7c50b5821d56d40ba8",
+  "transmitted_image_sha256": "42c779ff445bf431de2921e1565093b30c63f77eadd3d62d2cf36e07538aef13",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3365395,
+      "total": 10,
+      "remaining": 1.6634604999999993,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.3365395,
+      "total": 100,
+      "remaining": 91.6634605,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 5.517334653995931,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Empty pockets and an empty wallet\",\n  \"source_properties\": \"Pockets turned inside out and an upside-down wallet, indicating a complete lack of funds.\",\n  \"target_situation\": \"The alleged financial exhaustion or extortion of Indonesian State-Owned Enterprises (BUMN).\",\n  \"mapping\": \"The physical state of being penniless reflects the drained financial resources of BUMN due to external pressures.\",\n  \"uncertainty\": \"None\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "75LLau7IMLfc_uMPiPP3wAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 693,
+      "completion_tokens_details": {
+        "reasoning_tokens": 588
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 655500,
+        "output_tokens_cost_nanodollars": 2079000
+      },
+      "prompt_tokens": 1311,
+      "total_backend_latency_ms": 4021,
+      "total_tokens": 2004
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.339274,
+      "total": 10,
+      "remaining": 1.6607260000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.339274000000003,
+      "total": 100,
+      "remaining": 91.660726,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0027345,
+  "fields": {
+    "source_object": "Empty pockets and an empty wallet",
+    "source_properties": "Pockets turned inside out and an upside-down wallet, indicating a complete lack of funds.",
+    "target_situation": "The alleged financial exhaustion or extortion of Indonesian State-Owned Enterprises (BUMN).",
+    "mapping": "The physical state of being penniless reflects the drained financial resources of BUMN due to external pressures.",
+    "uncertainty": "None"
+  },
+  "explanation": "source_object: Empty pockets and an empty wallet\nsource_properties: Pockets turned inside out and an upside-down wallet, indicating a complete lack of funds.\ntarget_situation: The alleged financial exhaustion or extortion of Indonesian State-Owned Enterprises (BUMN).\nmapping: The physical state of being penniless reflects the drained financial resources of BUMN due to external pressures.\nuncertainty: None",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,74 @@
+{
+  "schema": "tempo-micro-e11-v1",
+  "status": "complete",
+  "model_contract": "E10 nested multimodal stack with a nested hierarchical Task-3 head",
+  "task1_task2_source": "DEMO_XAI_745_FULL/04_hasil_eksperimen/next_research_20261017/06_micro_f1/MICRO_E10_nested_vlm_stacking/predictions.csv",
+  "task3_leakage_control": "binary/non-individual models and threshold selected using outer-training cross-fit only",
+  "micro_f1": {
+    "task1_issue": 0.581081081081081,
+    "task2_domain_sumber": 0.5594594594594594,
+    "task3_primary_entity_type": 0.5324324324324324
+  },
+  "macro_f1_diagnostic": {
+    "task1_issue": 0.5102572963699972,
+    "task2_domain_sumber": 0.5025275194635942,
+    "task3_primary_entity_type": 0.28252931197637976
+  },
+  "minimum_micro_f1": 0.5324324324324324,
+  "all_tasks_at_least_0_70": false,
+  "fold_details": [
+    {
+      "fold": 1,
+      "selected": {
+        "binary": "lr0.1",
+        "non_individual": "extra",
+        "threshold": 0.4,
+        "inner_micro_f1": 0.5304054054054054
+      },
+      "outer_micro_f1": 0.5135135135135135
+    },
+    {
+      "fold": 2,
+      "selected": {
+        "binary": "extra",
+        "non_individual": "lr1.0",
+        "threshold": 0.35,
+        "inner_micro_f1": 0.5202702702702703
+      },
+      "outer_micro_f1": 0.5608108108108109
+    },
+    {
+      "fold": 3,
+      "selected": {
+        "binary": "extra",
+        "non_individual": "extra",
+        "threshold": 0.4,
+        "inner_micro_f1": 0.5405405405405406
+      },
+      "outer_micro_f1": 0.5135135135135135
+    },
+    {
+      "fold": 4,
+      "selected": {
+        "binary": "extra",
+        "non_individual": "extra",
+        "threshold": 0.35,
+        "inner_micro_f1": 0.5236486486486487
+      },
+      "outer_micro_f1": 0.527027027027027
+    },
+    {
+      "fold": 5,
+      "selected": {
+        "binary": "extra",
+        "non_individual": "extra",
+        "threshold": 0.3,
+        "inner_micro_f1": 0.5152027027027027
+      },
+      "outer_micro_f1": 0.5472972972972973
+    }
+  ],
+  "e10_predictions_sha256": "deceb803d35180efe4b5254cd59202dc2976816d6f20a87a788c5b4c80194ed2",
+  "seconds": 254.25385427474976,
+  "predictions_sha256": "fa1de66de68dff8ba6996fc45fa4939d141032168cb2d5e2ccaa95ad86ca7b24"
+}

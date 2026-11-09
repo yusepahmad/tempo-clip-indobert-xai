@@ -1,0 +1,87 @@
+{
+  "index": 696,
+  "sample_id": "TMP-1C0F11383181",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "1810c01c8337ca3e242b25d99d1254125eccd45d1d98173a94ece6a8ed5d9b55",
+  "image_sha256": "1c0f113831813a775132d9d1340309e1c275ef89e89bb3cdbc00de057d11fb9b",
+  "transmitted_image_sha256": "8db0d605a5e9f44fa920070bb61aa973d6c995d0b3f18c687130b691d032db81",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.014387,
+      "total": 10,
+      "remaining": 0.9856130000000007,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.014387,
+      "total": 100,
+      "remaining": 90.985613,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3299496229737997,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Torn paper strip\",\n  \"source_properties\": \"Horizontal rip with jagged edges, physically obscuring and segmenting a larger underlying image.\",\n  \"target_situation\": \"The obstruction of the investigation into Munir's murder by politicians.\",\n  \"mapping\": \"The rip segments the activist's face with the legislative building, symbolizing how political interference physically blocks the path to justice.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Zp_LavyKIr7i_uMPyOzU0Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 102,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674000,
+        "output_tokens_cost_nanodollars": 306000
+      },
+      "prompt_tokens": 1348,
+      "total_backend_latency_ms": 1709,
+      "total_tokens": 1450
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 9.015367,
+      "total": 10,
+      "remaining": 0.9846330000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 9.015366999999998,
+      "total": 100,
+      "remaining": 90.984633,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00098,
+  "fields": {
+    "source_object": "Torn paper strip",
+    "source_properties": "Horizontal rip with jagged edges, physically obscuring and segmenting a larger underlying image.",
+    "target_situation": "The obstruction of the investigation into Munir's murder by politicians.",
+    "mapping": "The rip segments the activist's face with the legislative building, symbolizing how political interference physically blocks the path to justice.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Torn paper strip\nsource_properties: Horizontal rip with jagged edges, physically obscuring and segmenting a larger underlying image.\ntarget_situation: The obstruction of the investigation into Munir's murder by politicians.\nmapping: The rip segments the activist's face with the legislative building, symbolizing how political interference physically blocks the path to justice.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

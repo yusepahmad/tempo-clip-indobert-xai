@@ -1,0 +1,83 @@
+{
+  "index": 68,
+  "sample_id": "TMP-5C3CDFE23963",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "09c8e82c8227ae14a22412716b6efae3ddc251083d6460eaa035bb4f06b6aae9",
+  "image_sha256": "5c3cdfe23963ec652408e961c85031d6ae3353097ab5e49ca935392df530d58f",
+  "transmitted_image_sha256": "9ecc1c84a0b020d40f3920b84ef55a838c9ea6a2fee7a9bc1767cb488085bac1",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.24425450000000026,
+      "total": 10,
+      "remaining": 9.7557455,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.2442544999999967,
+      "total": 100,
+      "remaining": 99.7557455,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 11.602177229011431,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan analisis visual pada sampul majalah TEMPO tersebut:\n\n1.  **Identifikasi Elemen Visual**: Gambar menampilkan sebuah **mesin penghancur kertas** (*paper shredder*) yang sedang menghancurkan kertas berisi wajah Munir. Di sisi kanan, terdapat sebuah tangan yang menggunakan **garpu** untuk mengambil potongan-potongan kertas hasil hancuran tersebut.\n2.",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "mM7KasvUK97d_uMP45e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2044,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1963
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 777000,
+        "output_tokens_cost_nanodollars": 6132000
+      },
+      "prompt_tokens": 1554,
+      "total_backend_latency_ms": 10582,
+      "total_tokens": 3598
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 0.25116350000000054,
+      "total": 10,
+      "remaining": 9.7488365,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 0.2511635000000041,
+      "total": 100,
+      "remaining": 99.7488365,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "length",
+  "cost_usd": 0.006909
+}

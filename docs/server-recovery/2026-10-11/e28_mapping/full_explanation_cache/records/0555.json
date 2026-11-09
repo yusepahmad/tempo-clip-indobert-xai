@@ -1,0 +1,87 @@
+{
+  "index": 555,
+  "sample_id": "TMP-67D344FE05F8",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ce4bcdfc6135c8f2dc3c501a2b694d5552092a4df61461c211bb0a258d7b98ee",
+  "image_sha256": "67d344fe05f849271350f0bdbd13d73e55ac82b60c575c52cd524c0d06ed110e",
+  "transmitted_image_sha256": "c7637b15aa13d90cc4a574896329dc00e3cf0b6f6b6848aa3e725c108d388ae6",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.801511,
+      "total": 10,
+      "remaining": 1.1984890000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.801511000000005,
+      "total": 100,
+      "remaining": 91.198489,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2198709761723876,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Snellen eye chart\",\n  \"source_properties\": \"Visual clarity decreases for lower rows, typically used to test and diagnose eyesight accuracy.\",\n  \"target_situation\": \"The government's hesitant and unclear management of COVID-19 vaccine side effects (KIPI) amid misinformation.\",\n  \"mapping\": \"The blurred letters 'KIPI' on the chart represent the government's lack of clarity and transparency in addressing post-immunization events.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "nZvLaviHE82i_uMP67qv2Qc",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 114,
+      "cost": {
+        "input_tokens_cost_nanodollars": 680000,
+        "output_tokens_cost_nanodollars": 342000
+      },
+      "prompt_tokens": 1360,
+      "total_backend_latency_ms": 1753,
+      "total_tokens": 1474
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.802533,
+      "total": 10,
+      "remaining": 1.1974669999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.802532999999997,
+      "total": 100,
+      "remaining": 91.197467,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.001022,
+  "fields": {
+    "source_object": "Snellen eye chart",
+    "source_properties": "Visual clarity decreases for lower rows, typically used to test and diagnose eyesight accuracy.",
+    "target_situation": "The government's hesitant and unclear management of COVID-19 vaccine side effects (KIPI) amid misinformation.",
+    "mapping": "The blurred letters 'KIPI' on the chart represent the government's lack of clarity and transparency in addressing post-immunization events.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Snellen eye chart\nsource_properties: Visual clarity decreases for lower rows, typically used to test and diagnose eyesight accuracy.\ntarget_situation: The government's hesitant and unclear management of COVID-19 vaccine side effects (KIPI) amid misinformation.\nmapping: The blurred letters 'KIPI' on the chart represent the government's lack of clarity and transparency in addressing post-immunization events.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

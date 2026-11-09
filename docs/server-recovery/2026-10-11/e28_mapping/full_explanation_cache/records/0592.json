@@ -1,0 +1,87 @@
+{
+  "index": 592,
+  "sample_id": "TMP-D1378D123DD5",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "c1b6db87015206fc078eb645c3b5724a96ac30b4c8df3db190b06c5749beff03",
+  "image_sha256": "d1378d123dd5d66525416b5fddc18b7f09c72d13e05995ab90645b396d8de004",
+  "transmitted_image_sha256": "05205689fe27af794371619f6bc5bee2a3b3cbb471b6c905f4a9830cca9e1d4c",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8432225,
+      "total": 10,
+      "remaining": 1.1567775000000005,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.843222499999996,
+      "total": 100,
+      "remaining": 91.1567775,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1001622658222914,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"football cleats\",\n  \"source_properties\": \"Footwear designed for traction, stability, and competition on a grassy field, tied before starting a match.\",\n  \"target_situation\": \"Erick Thohir's political maneuver to become the Chairperson of PSSI following the Kanjuruhan tragedy.\",\n  \"mapping\": \"Tying cleats on grass symbolizes preparing for a competitive role or 'entering the field' of football governance.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "k5zLaoGvG_bb_uMPure6uAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 110,
+      "cost": {
+        "input_tokens_cost_nanodollars": 677000,
+        "output_tokens_cost_nanodollars": 330000
+      },
+      "prompt_tokens": 1354,
+      "total_backend_latency_ms": 1649,
+      "total_tokens": 1464
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8442295,
+      "total": 10,
+      "remaining": 1.1557704999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.844229499999997,
+      "total": 100,
+      "remaining": 91.1557705,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.001007,
+  "fields": {
+    "source_object": "football cleats",
+    "source_properties": "Footwear designed for traction, stability, and competition on a grassy field, tied before starting a match.",
+    "target_situation": "Erick Thohir's political maneuver to become the Chairperson of PSSI following the Kanjuruhan tragedy.",
+    "mapping": "Tying cleats on grass symbolizes preparing for a competitive role or 'entering the field' of football governance.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: football cleats\nsource_properties: Footwear designed for traction, stability, and competition on a grassy field, tied before starting a match.\ntarget_situation: Erick Thohir's political maneuver to become the Chairperson of PSSI following the Kanjuruhan tragedy.\nmapping: Tying cleats on grass symbolizes preparing for a competitive role or 'entering the field' of football governance.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

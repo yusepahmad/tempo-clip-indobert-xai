@@ -1,0 +1,87 @@
+{
+  "index": 444,
+  "sample_id": "TMP-1A087BF55BA1",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "8cca700d459b100b0418c2e1eb0d175a25f7866b31c6c05ca03e1cbd3fb0b8d0",
+  "image_sha256": "1a087bf55ba1a3b23467f4353429595fb79bc30cae411dce004c5f2d56d74fee",
+  "transmitted_image_sha256": "fb31964579c9c7e3c2ec273499ae77ff1af6c2b59997c97d0e52c766e86f2d4b",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.643101,
+      "total": 10,
+      "remaining": 1.3568990000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.643101000000001,
+      "total": 100,
+      "remaining": 91.356899,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.813595501240343,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"none evident\", \"source_properties\": \"literal depiction of disaster aftermath\", \"target_situation\": \"ordinary people performing heroic acts during a catastrophe\", \"mapping\": \"The illustration literally depicts the aftermath of a disaster, showing individuals helping others, mourning, and carrying the injured. This directly illustrates the headline about 'big stories of small people' without using a symbolic visual analogy.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "rJjLau6HIt7d_uMP45e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 89,
+      "cost": {
+        "input_tokens_cost_nanodollars": 669000,
+        "output_tokens_cost_nanodollars": 267000
+      },
+      "prompt_tokens": 1338,
+      "total_backend_latency_ms": 2116,
+      "total_tokens": 1427
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.644037,
+      "total": 10,
+      "remaining": 1.3559629999999991,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.644036999999997,
+      "total": 100,
+      "remaining": 91.355963,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000936,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "literal depiction of disaster aftermath",
+    "target_situation": "ordinary people performing heroic acts during a catastrophe",
+    "mapping": "The illustration literally depicts the aftermath of a disaster, showing individuals helping others, mourning, and carrying the injured. This directly illustrates the headline about 'big stories of small people' without using a symbolic visual analogy.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: none evident\nsource_properties: literal depiction of disaster aftermath\ntarget_situation: ordinary people performing heroic acts during a catastrophe\nmapping: The illustration literally depicts the aftermath of a disaster, showing individuals helping others, mourning, and carrying the injured. This directly illustrates the headline about 'big stories of small people' without using a symbolic visual analogy.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

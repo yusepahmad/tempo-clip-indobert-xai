@@ -1,0 +1,38 @@
+{
+  "mode": "optimized",
+  "purpose": "one epoch fold 1 benchmark, not final CV evaluation",
+  "dataset_rows": 740,
+  "images_verified": 740,
+  "train_samples": 592,
+  "test_samples": 148,
+  "gpu": "Tesla T4",
+  "gpu_count": 2,
+  "gpus_used": 2,
+  "local_rank": 0,
+  "local_batch_size": 8,
+  "torch": "2.11.0+cu128",
+  "vram_gib": 14.56219482421875,
+  "batch_size": 16,
+  "amp": "float16",
+  "gradient_checkpointing": false,
+  "trainable_parameters": 212624921,
+  "setup_seconds": 14.202070068000012,
+  "encoder_weights_updated": {
+    "clip": true,
+    "bert": true
+  },
+  "status": "success",
+  "unused_parameters": [
+    "bert.pooler.dense.weight",
+    "bert.pooler.dense.bias"
+  ],
+  "epoch_train_seconds": 15.599051875999976,
+  "mean_training_loss": 2.1800732483734957,
+  "fold_evaluation_seconds": 1.7670984268188477,
+  "evaluated_samples": 148,
+  "estimated_train_hours_5fold_120epochs": 2.599841979333329,
+  "peak_allocated_gib": 4.250833034515381,
+  "peak_reserved_gib": 4.638671875,
+  "total_job_seconds": 31.574868433999995,
+  "caveat": "First epoch extrapolation excludes later setup, checkpoints, dataset upload, quota accounting and runtime variation. Two GPUs DDP; global weighted CE denominator; first epoch only."
+}

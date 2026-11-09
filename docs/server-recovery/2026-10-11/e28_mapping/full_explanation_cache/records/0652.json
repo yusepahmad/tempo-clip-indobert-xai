@@ -1,0 +1,90 @@
+{
+  "index": 652,
+  "sample_id": "TMP-06D6F49C8A91",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "fec1040e8950406bc46304357cc18837bdb5354175083d388c78ce2c6563ef64",
+  "image_sha256": "06d6f49c8a917cca3ba9b5334b18c47a6316c9d5f0d497d34e33ff95da6051ac",
+  "transmitted_image_sha256": "cde1675c747ed7492a264e02dfbf40b923e5a20bb87d0bfc73fefdbd05f2f130",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.92437,
+      "total": 10,
+      "remaining": 1.0756300000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.924369999999996,
+      "total": 100,
+      "remaining": 91.07563,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 15.089989210944623,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"source_object\": \"Airplane boarding process\",\n  \"source_properties\": \"Passengers queuing and passing a checkpoint to access a restricted flight.\",\n  \"target_situation\": \"Illegal distribution and bribery for special Hajj quotas involving government officials.\",\n  \"mapping\": \"Boarding the plane represents securing a Hajj spot. Handing out red envelopes at the gate symbolizes the 'plus-plus' (corrupt) payment needed to bypass regulations and join the journey.\",\n  \"uncertainty\": \"none\"\n}\n```",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Fp7LaoveMYqM_uMP54rS0QE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2310,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2194
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 682000,
+        "output_tokens_cost_nanodollars": 6930000
+      },
+      "prompt_tokens": 1364,
+      "total_backend_latency_ms": 13820,
+      "total_tokens": 3674
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.931982,
+      "total": 10,
+      "remaining": 1.0680180000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.931982000000005,
+      "total": 100,
+      "remaining": 91.068018,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.007612,
+  "fields": {
+    "source_object": "Airplane boarding process",
+    "source_properties": "Passengers queuing and passing a checkpoint to access a restricted flight.",
+    "target_situation": "Illegal distribution and bribery for special Hajj quotas involving government officials.",
+    "mapping": "Boarding the plane represents securing a Hajj spot. Handing out red envelopes at the gate symbolizes the 'plus-plus' (corrupt) payment needed to bypass regulations and join the journey.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Airplane boarding process\nsource_properties: Passengers queuing and passing a checkpoint to access a restricted flight.\ntarget_situation: Illegal distribution and bribery for special Hajj quotas involving government officials.\nmapping: Boarding the plane represents securing a Hajj spot. Handing out red envelopes at the gate symbolizes the 'plus-plus' (corrupt) payment needed to bypass regulations and join the journey.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

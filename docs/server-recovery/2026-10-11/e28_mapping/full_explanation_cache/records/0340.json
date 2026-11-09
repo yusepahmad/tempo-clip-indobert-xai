@@ -1,0 +1,90 @@
+{
+  "index": 340,
+  "sample_id": "TMP-923DB4E3CCE1",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ba76c91e4a51d94cf6646371098c8ca504477551b568f0965f5a6919a7909cff",
+  "image_sha256": "923db4e3cce1a9d3625a25c0a920d82c0e1a964a7c46cc0ffe9a6a59172d4785",
+  "transmitted_image_sha256": "9333186164d58bff3e4cda679862dc8843992415d5a87470c8b8f4a88975b107",
+  "image_size": [
+    472,
+    627
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.500984,
+      "total": 10,
+      "remaining": 1.4990159999999992,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.500984000000003,
+      "total": 100,
+      "remaining": 91.499016,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.970536469016224,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"electrical plug and sockets\",\n  \"source_properties\": \"physical incompatibility between a star-pronged plug and a standard circular socket\",\n  \"target_situation\": \"alleged lack of transparency and favoritism toward Chinese investors in electricity procurement\",\n  \"mapping\": \"the plug's shape fits only the Chinese-flagged socket, symbolizing a deal specifically tailored for foreign interests rather than standard regulatory procedures\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "ApbLapCzHcfv_uMP5e292Qg",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 590,
+      "completion_tokens_details": {
+        "reasoning_tokens": 486
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 680000,
+        "output_tokens_cost_nanodollars": 1770000
+      },
+      "prompt_tokens": 1360,
+      "total_backend_latency_ms": 3487,
+      "total_tokens": 1950
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.503434,
+      "total": 10,
+      "remaining": 1.4965659999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.503433999999999,
+      "total": 100,
+      "remaining": 91.496566,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.00245,
+  "fields": {
+    "source_object": "electrical plug and sockets",
+    "source_properties": "physical incompatibility between a star-pronged plug and a standard circular socket",
+    "target_situation": "alleged lack of transparency and favoritism toward Chinese investors in electricity procurement",
+    "mapping": "the plug's shape fits only the Chinese-flagged socket, symbolizing a deal specifically tailored for foreign interests rather than standard regulatory procedures",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: electrical plug and sockets\nsource_properties: physical incompatibility between a star-pronged plug and a standard circular socket\ntarget_situation: alleged lack of transparency and favoritism toward Chinese investors in electricity procurement\nmapping: the plug's shape fits only the Chinese-flagged socket, symbolizing a deal specifically tailored for foreign interests rather than standard regulatory procedures\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

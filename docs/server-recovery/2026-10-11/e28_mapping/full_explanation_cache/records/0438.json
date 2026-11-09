@@ -1,0 +1,87 @@
+{
+  "index": 438,
+  "sample_id": "TMP-B78F69A48B45",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "0fa0981eb62c212483ed884ab6a6657001480d6e21ebd694378989bd4d292a8a",
+  "image_sha256": "b78f69a48b4548e4c3a797086f3ce6c0766053e61e9ae375e7f1c5542c214e9e",
+  "transmitted_image_sha256": "6c51d82a41cd2dd1fe03239d0881d825d2e71e1e8547476c1c771fe369b48172",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6373195,
+      "total": 10,
+      "remaining": 1.3626804999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.637319500000004,
+      "total": 100,
+      "remaining": 91.3626805,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4096892001107335,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"bent syringe\", \"source_properties\": \"curved, distorted, and rubbery appearance instead of being straight and functional\", \"target_situation\": \"The sluggish progress and obstacles facing Indonesia's national immunization program.\", \"mapping\": \"The syringe's inability to inject medicine due to its limp, bent shape represents the national immunization campaign's loss of momentum and efficacy.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "hpjLapL9AvW6_uMPjdDjYA",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 89,
+      "cost": {
+        "input_tokens_cost_nanodollars": 674000,
+        "output_tokens_cost_nanodollars": 267000
+      },
+      "prompt_tokens": 1348,
+      "total_backend_latency_ms": 1728,
+      "total_tokens": 1437
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6382605,
+      "total": 10,
+      "remaining": 1.3617395000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.638260500000001,
+      "total": 100,
+      "remaining": 91.3617395,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000941,
+  "fields": {
+    "source_object": "bent syringe",
+    "source_properties": "curved, distorted, and rubbery appearance instead of being straight and functional",
+    "target_situation": "The sluggish progress and obstacles facing Indonesia's national immunization program.",
+    "mapping": "The syringe's inability to inject medicine due to its limp, bent shape represents the national immunization campaign's loss of momentum and efficacy.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: bent syringe\nsource_properties: curved, distorted, and rubbery appearance instead of being straight and functional\ntarget_situation: The sluggish progress and obstacles facing Indonesia's national immunization program.\nmapping: The syringe's inability to inject medicine due to its limp, bent shape represents the national immunization campaign's loss of momentum and efficacy.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

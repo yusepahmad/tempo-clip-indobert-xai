@@ -1,0 +1,65 @@
+{
+  "model": "Qwen/Qwen3-VL-8B-Instruct",
+  "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+  "smoke": false,
+  "fold": 1,
+  "classes": [
+    "BENCANA_JERAT",
+    "HEWAN_TUBUH",
+    "KONSUMSI_TRANSAKSI",
+    "LAINNYA",
+    "MESIN_INFRASTRUKTUR",
+    "NON_METAFORA",
+    "PERMAINAN_KONTES"
+  ],
+  "data_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "worker_sha256": "64f6a1bd2a3701c303335677e02920f1c6fcc35652e7b1c4f7e6e41950dc76d1",
+  "e01_hashes": {
+    "deskripsi.jsonl": "c75e8df3f9b71d6786462f8d0f1187ebe4234fb8dd079924f3f35707ff1b8cd2",
+    "zeroshot.jsonl": "10c07b06b13fbbf647f2b1ed12a722d9bff8f97caa6b621430d8bc0429ab38c9"
+  },
+  "input_audit_sha256": "bc2d8c067db3a8ba0f5260cfe9039fe03b278f22255e7cb1a960591111402909",
+  "initial_adapter_sha256": "9f5864d6205769abecd38462f08ed27b1776e412fcd4ff042cfde820c7c0c2e3",
+  "letter_token_ids": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "quantization": "NF4 doublequant float16",
+  "device": "cuda0 single T4",
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "targets": [
+      "k_proj",
+      "o_proj",
+      "q_proj",
+      "v_proj"
+    ]
+  },
+  "trainable_parameters": 15335424,
+  "frozen_probe": "base_model.model.model.visual.patch_embed.proj.weight",
+  "microbatch": 1,
+  "accumulation": 8,
+  "lr": 0.0001,
+  "weighted_loss": "sum per microbatch, average accumulation group",
+  "max_epochs": 6,
+  "patience": 2,
+  "max_image_side": 384,
+  "max_input_tokens": 2048,
+  "epoch_selection": "inner20percent Task2 stratification seed42+fold; reset adapter and optimizer for refit",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.17.0",
+    "peft": "0.21.2",
+    "bitsandbytes": "0.50.2",
+    "accelerate": "1.15.0"
+  },
+  "gpu": "Tesla T4",
+  "seed": 42
+}

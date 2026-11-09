@@ -1,0 +1,90 @@
+{
+  "index": 491,
+  "sample_id": "TMP-575A3BEA2F6A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "86eb8e00b0094f32298041a16fed256570e5f5692066858b82d2f5ed4edc53e5",
+  "image_sha256": "575a3bea2f6a669ea8e09753771cb4a017f0ff3d3f1ba7afdc8e9f7d09a1c710",
+  "transmitted_image_sha256": "b5f0a5b3790f6e774005268485a1aff827d12078b8a1fa60e805a0b03328726e",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7058135,
+      "total": 10,
+      "remaining": 1.2941865000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.705813500000005,
+      "total": 100,
+      "remaining": 91.2941865,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 6.202683198265731,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"source_object\": \"A tattered, holey umbrella\",\n  \"source_properties\": \"A tool intended to provide overhead protection that fails its function when punctured, allowing elements to leak through.\",\n  \"target_situation\": \"The corruption scandal involving PT Asabri, a social security fund for Indonesian military and police personnel.\",\n  \"mapping\": \"Just as a damaged umbrella fails to shield a soldier from rain, the corrupted fund fails to provide promised financial protection and security.\",\n  \"uncertainty\": \"none\"\n}\n```",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "55nLaq3QG9uA_PUP-tvEuQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 644,
+      "completion_tokens_details": {
+        "reasoning_tokens": 525
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 668000,
+        "output_tokens_cost_nanodollars": 1932000
+      },
+      "prompt_tokens": 1336,
+      "total_backend_latency_ms": 4425,
+      "total_tokens": 1980
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7084135,
+      "total": 10,
+      "remaining": 1.2915864999999993,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.708413500000006,
+      "total": 100,
+      "remaining": 91.2915865,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0026,
+  "fields": {
+    "source_object": "A tattered, holey umbrella",
+    "source_properties": "A tool intended to provide overhead protection that fails its function when punctured, allowing elements to leak through.",
+    "target_situation": "The corruption scandal involving PT Asabri, a social security fund for Indonesian military and police personnel.",
+    "mapping": "Just as a damaged umbrella fails to shield a soldier from rain, the corrupted fund fails to provide promised financial protection and security.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: A tattered, holey umbrella\nsource_properties: A tool intended to provide overhead protection that fails its function when punctured, allowing elements to leak through.\ntarget_situation: The corruption scandal involving PT Asabri, a social security fund for Indonesian military and police personnel.\nmapping: Just as a damaged umbrella fails to shield a soldier from rain, the corrupted fund fails to provide promised financial protection and security.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 70,
+  "sample_id": "TMP-2662CCC7F18B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "dc35772a15777e2f11ef7ce6591613dfb03839fb722b6d45df7b2c221e7e4510",
+  "image_sha256": "2662ccc7f18bf1a7103cfa61249b6b9e6b47a2918cbffcc5df98ad6578477071",
+  "transmitted_image_sha256": "7cf6a3f63cfb9fda2c22699e3d6ceefddf99690643a6c3ac130d753343ceeb5e",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.108835,
+      "total": 10,
+      "remaining": 1.8911650000000009,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.108835,
+      "total": 100,
+      "remaining": 91.891165,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1483442140743136,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Balaclava with crying eyes\",\n  \"source_properties\": \"A face-obscuring mask associated with militant activity, modified with streaks of dripping fluid resembling tears from the eye slits.\",\n  \"target_situation\": \"Six former terrorists who have repented and turned away from extremism.\",\n  \"mapping\": \"The mask represents their former identity as terrorists, while the 'tears' symbolize their remorse and empathy for the suffering of their victims.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "-I7Lap78DJCa_uMPxb6ruQk",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 113,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673000,
+        "output_tokens_cost_nanodollars": 339000
+      },
+      "prompt_tokens": 1346,
+      "total_backend_latency_ms": 1861,
+      "total_tokens": 1459
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.109847,
+      "total": 10,
+      "remaining": 1.8901529999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.109847000000002,
+      "total": 100,
+      "remaining": 91.890153,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.001012,
+  "fields": {
+    "source_object": "Balaclava with crying eyes",
+    "source_properties": "A face-obscuring mask associated with militant activity, modified with streaks of dripping fluid resembling tears from the eye slits.",
+    "target_situation": "Six former terrorists who have repented and turned away from extremism.",
+    "mapping": "The mask represents their former identity as terrorists, while the 'tears' symbolize their remorse and empathy for the suffering of their victims.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Balaclava with crying eyes\nsource_properties: A face-obscuring mask associated with militant activity, modified with streaks of dripping fluid resembling tears from the eye slits.\ntarget_situation: Six former terrorists who have repented and turned away from extremism.\nmapping: The mask represents their former identity as terrorists, while the 'tears' symbolize their remorse and empathy for the suffering of their victims.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

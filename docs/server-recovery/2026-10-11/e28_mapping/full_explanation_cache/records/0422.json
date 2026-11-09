@@ -1,0 +1,87 @@
+{
+  "index": 422,
+  "sample_id": "TMP-F30E09E49F6A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "41ab6a2b2124ae7c06d10fe161763c866792812fb89ce4f72fbb0997f43c61da",
+  "image_sha256": "f30e09e49f6a5a103aeb5239fb6f0acd9f9cca91a6c153d82b45bab07c4f21c1",
+  "transmitted_image_sha256": "cb3488b989bf7210c97bed3311097128dc39728334a98ce59f35edf224c48a6d",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.622073,
+      "total": 10,
+      "remaining": 1.3779269999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.622073,
+      "total": 100,
+      "remaining": 91.377927,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.28162878472358,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"broom and carpet\", \"source_properties\": \"sweeping mess under a rug to hide it\", \"target_situation\": \"alleged cover-up of a Pertamina undersea pipe oil spill\", \"mapping\": \"Cleaning the oil with a broom onto a carpet symbolizes an attempt to hide mismanagement and unregistered pipes instead of fixing the disaster.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "JZjLasfmGsfv_uMP5e292Qg",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 81,
+      "cost": {
+        "input_tokens_cost_nanodollars": 685000,
+        "output_tokens_cost_nanodollars": 243000
+      },
+      "prompt_tokens": 1370,
+      "total_backend_latency_ms": 1723,
+      "total_tokens": 1451
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.623001,
+      "total": 10,
+      "remaining": 1.3769989999999996,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.623001000000002,
+      "total": 100,
+      "remaining": 91.376999,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000928,
+  "fields": {
+    "source_object": "broom and carpet",
+    "source_properties": "sweeping mess under a rug to hide it",
+    "target_situation": "alleged cover-up of a Pertamina undersea pipe oil spill",
+    "mapping": "Cleaning the oil with a broom onto a carpet symbolizes an attempt to hide mismanagement and unregistered pipes instead of fixing the disaster.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: broom and carpet\nsource_properties: sweeping mess under a rug to hide it\ntarget_situation: alleged cover-up of a Pertamina undersea pipe oil spill\nmapping: Cleaning the oil with a broom onto a carpet symbolizes an attempt to hide mismanagement and unregistered pipes instead of fixing the disaster.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

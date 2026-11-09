@@ -1,0 +1,87 @@
+{
+  "index": 100,
+  "sample_id": "TMP-07121E49BA87",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "042c6500431192e6629b19f019375786afb15d9be86767760ef3b0c6e668244b",
+  "image_sha256": "07121e49ba87e442c174654b9361d880eda60841666144bf9283eb814f5070ce",
+  "transmitted_image_sha256": "884735f4ba7ccd3a1ab21b1f82531b6b2503384b9e4826a29b5e7b106a1167ea",
+  "image_size": [
+    300,
+    393
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1489485,
+      "total": 10,
+      "remaining": 1.8510515000000005,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.148948500000003,
+      "total": 100,
+      "remaining": 91.8510515,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.7427777047269046,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"puppet\", \"source_properties\": \"A person hidden behind a headless suit, manipulating it from within or behind while reaching into its pocket.\", \"target_situation\": \"Questions regarding whether business tycoon Salim is secretly controlling or manipulating new conglomerates for financial gain.\", \"mapping\": \"The headless suit represents a 'front' or new conglomerate, while Salim is the hidden operator controlling the entity's actions and accessing its wealth.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "vI_LatX1EPGb_uMPte3s2Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "cost": {
+        "input_tokens_cost_nanodollars": 663000,
+        "output_tokens_cost_nanodollars": 291000
+      },
+      "prompt_tokens": 1326,
+      "total_backend_latency_ms": 1515,
+      "total_tokens": 1423
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.1499025,
+      "total": 10,
+      "remaining": 1.8500975000000004,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.149902499999996,
+      "total": 100,
+      "remaining": 91.8500975,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000954,
+  "fields": {
+    "source_object": "puppet",
+    "source_properties": "A person hidden behind a headless suit, manipulating it from within or behind while reaching into its pocket.",
+    "target_situation": "Questions regarding whether business tycoon Salim is secretly controlling or manipulating new conglomerates for financial gain.",
+    "mapping": "The headless suit represents a 'front' or new conglomerate, while Salim is the hidden operator controlling the entity's actions and accessing its wealth.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: puppet\nsource_properties: A person hidden behind a headless suit, manipulating it from within or behind while reaching into its pocket.\ntarget_situation: Questions regarding whether business tycoon Salim is secretly controlling or manipulating new conglomerates for financial gain.\nmapping: The headless suit represents a 'front' or new conglomerate, while Salim is the hidden operator controlling the entity's actions and accessing its wealth.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

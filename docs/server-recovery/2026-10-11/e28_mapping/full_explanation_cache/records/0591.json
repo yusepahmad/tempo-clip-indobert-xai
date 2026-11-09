@@ -1,0 +1,87 @@
+{
+  "index": 591,
+  "sample_id": "TMP-14F7201BCC8D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "9f8cdbfa5a75a853e3b5d00582f21f86081d12bb82cbdc84b7f9192c433b716c",
+  "image_sha256": "14f7201bcc8d796cf7c224b3f093c8b259f2b41b3fc79d9282466ee37bbf0919",
+  "transmitted_image_sha256": "bca614776aab7edc83ae29c2ab4daf96b2d14abe12e8c214fb73aef2d29dcb9f",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8423135,
+      "total": 10,
+      "remaining": 1.1576865000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.842313500000003,
+      "total": 100,
+      "remaining": 91.1576865,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.6886604358442128,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"wind turbines and solar panels\", \"source_properties\": \"Modern technology generating clean energy and sustainability.\", \"target_situation\": \"Progressive Islamic boarding schools (pesantren) adopting social and environmental reforms.\", \"mapping\": \"Renewable energy equipment symbolizes the 'progressive' shift toward modern values like environmentalism and social justice within traditional institutions.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "jZzLao6xHcjg_uMPp72C-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 81,
+      "cost": {
+        "input_tokens_cost_nanodollars": 666000,
+        "output_tokens_cost_nanodollars": 243000
+      },
+      "prompt_tokens": 1332,
+      "total_backend_latency_ms": 1933,
+      "total_tokens": 1413
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.8432225,
+      "total": 10,
+      "remaining": 1.1567775000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.843222499999996,
+      "total": 100,
+      "remaining": 91.1567775,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.000909,
+  "fields": {
+    "source_object": "wind turbines and solar panels",
+    "source_properties": "Modern technology generating clean energy and sustainability.",
+    "target_situation": "Progressive Islamic boarding schools (pesantren) adopting social and environmental reforms.",
+    "mapping": "Renewable energy equipment symbolizes the 'progressive' shift toward modern values like environmentalism and social justice within traditional institutions.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: wind turbines and solar panels\nsource_properties: Modern technology generating clean energy and sustainability.\ntarget_situation: Progressive Islamic boarding schools (pesantren) adopting social and environmental reforms.\nmapping: Renewable energy equipment symbolizes the 'progressive' shift toward modern values like environmentalism and social justice within traditional institutions.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 580,
+  "sample_id": "TMP-E5ACA50E7EA2",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "48abcc201fd639c0bd3eade2faef7766c151da150d7f2be4adc6375d39d51567",
+  "image_sha256": "e5aca50e7ea2171d01087804c5b8997fc08d5e31ea0709b9c4628ca77466aee6",
+  "transmitted_image_sha256": "2e66baaa38a631b7f399ee8a7a55892217aa0c6df2f336a65f7dcb949efcfd06",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.831567,
+      "total": 10,
+      "remaining": 1.1684330000000003,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.831567000000007,
+      "total": 100,
+      "remaining": 91.168433,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.311157540883869,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"building blocks\",\n  \"source_properties\": \"interlocking toy pieces used for miniature construction and arrangement.\",\n  \"target_situation\": \"partnership in a green industrial zone project and power plant concessions.\",\n  \"mapping\": \"Figures assemble blocks to symbolize planning and controlling large-scale industrial development projects.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "SZzLasOHL_Gb_uMPte3s2Q0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 84,
+      "cost": {
+        "input_tokens_cost_nanodollars": 673000,
+        "output_tokens_cost_nanodollars": 252000
+      },
+      "prompt_tokens": 1346,
+      "total_backend_latency_ms": 1564,
+      "total_tokens": 1430
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.832492,
+      "total": 10,
+      "remaining": 1.1675079999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.832492000000002,
+      "total": 100,
+      "remaining": 91.167508,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000925,
+  "fields": {
+    "source_object": "building blocks",
+    "source_properties": "interlocking toy pieces used for miniature construction and arrangement.",
+    "target_situation": "partnership in a green industrial zone project and power plant concessions.",
+    "mapping": "Figures assemble blocks to symbolize planning and controlling large-scale industrial development projects.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: building blocks\nsource_properties: interlocking toy pieces used for miniature construction and arrangement.\ntarget_situation: partnership in a green industrial zone project and power plant concessions.\nmapping: Figures assemble blocks to symbolize planning and controlling large-scale industrial development projects.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

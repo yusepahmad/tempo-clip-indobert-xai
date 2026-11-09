@@ -1,0 +1,87 @@
+{
+  "index": 551,
+  "sample_id": "TMP-584A4C8A015A",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f54ce88985a3bc3e806bd83ca08c57184fd1795a494beda74ec2e06f13a8e3c0",
+  "image_sha256": "584a4c8a015a832484aea86ad61c25f23ff1b3024d216968e99a1d2f31067c94",
+  "transmitted_image_sha256": "39ce5f334ea8cf82c1fe01f05ff279f23b922918acf89fb87a714cb99df2ac60",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.7960745,
+      "total": 10,
+      "remaining": 1.2039255000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.796074500000003,
+      "total": 100,
+      "remaining": 91.2039255,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.7353127039968967,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Bull-headed figure atop cardboard boxes\", \"source_properties\": \"A bull, representing power or a party symbol, standing over numerous stacked social aid packages.\", \"target_situation\": \"Corruption allegations involving social aid funds and political figures from the 'Banteng' (bull) party.\", \"mapping\": \"The bull figure dominates the aid boxes, symbolizing political influence and control over the distribution of welfare resources.\", \"uncertainty\": \"None evident.\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "g5vLateJIPKU_uMPp6OP6Ao",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 98,
+      "cost": {
+        "input_tokens_cost_nanodollars": 667500,
+        "output_tokens_cost_nanodollars": 294000
+      },
+      "prompt_tokens": 1335,
+      "total_backend_latency_ms": 2102,
+      "total_tokens": 1433
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.797036,
+      "total": 10,
+      "remaining": 1.2029639999999997,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.797036000000006,
+      "total": 100,
+      "remaining": 91.202964,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009615,
+  "fields": {
+    "source_object": "Bull-headed figure atop cardboard boxes",
+    "source_properties": "A bull, representing power or a party symbol, standing over numerous stacked social aid packages.",
+    "target_situation": "Corruption allegations involving social aid funds and political figures from the 'Banteng' (bull) party.",
+    "mapping": "The bull figure dominates the aid boxes, symbolizing political influence and control over the distribution of welfare resources.",
+    "uncertainty": "None evident."
+  },
+  "explanation": "source_object: Bull-headed figure atop cardboard boxes\nsource_properties: A bull, representing power or a party symbol, standing over numerous stacked social aid packages.\ntarget_situation: Corruption allegations involving social aid funds and political figures from the 'Banteng' (bull) party.\nmapping: The bull figure dominates the aid boxes, symbolizing political influence and control over the distribution of welfare resources.\nuncertainty: None evident.",
+  "finish_reason": "stop",
+  "usable": true
+}

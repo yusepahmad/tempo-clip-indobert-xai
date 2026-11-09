@@ -1,0 +1,87 @@
+{
+  "index": 313,
+  "sample_id": "TMP-7F8C3D75CC6F",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "90de7be47a8298d1bc6682fe8ed223f1f4e62d03cf5faa8c7a8b88c0521a9d9b",
+  "image_sha256": "7f8c3d75cc6f3f1a8261697afc558620d628a35553dcf7f4c566256cbbfd7439",
+  "transmitted_image_sha256": "ed9a138523329c8456e9c0890ae03dd67c86ad2efff7ba462f922c68d08435a7",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.46988,
+      "total": 10,
+      "remaining": 1.5301200000000001,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.469880000000003,
+      "total": 100,
+      "remaining": 91.53012,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.60455554490909,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"a speeding bullet\", \"source_properties\": \"horizontal projectile, high velocity, lethal impact, aimed at a head\", \"target_situation\": \"Mary Jane Veloso's impending execution and the legal threat she faces\", \"mapping\": \"The bullet's trajectory towards her profile represents the immediate, life-threatening danger and the finality of the death penalty for her alleged drug crimes.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "WJXLapXtOufU_uMPq5CXyQE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 663000,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1326,
+      "total_backend_latency_ms": 1510,
+      "total_tokens": 1418
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.470819,
+      "total": 10,
+      "remaining": 1.5291809999999995,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.470819000000006,
+      "total": 100,
+      "remaining": 91.529181,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000939,
+  "fields": {
+    "source_object": "a speeding bullet",
+    "source_properties": "horizontal projectile, high velocity, lethal impact, aimed at a head",
+    "target_situation": "Mary Jane Veloso's impending execution and the legal threat she faces",
+    "mapping": "The bullet's trajectory towards her profile represents the immediate, life-threatening danger and the finality of the death penalty for her alleged drug crimes.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: a speeding bullet\nsource_properties: horizontal projectile, high velocity, lethal impact, aimed at a head\ntarget_situation: Mary Jane Veloso's impending execution and the legal threat she faces\nmapping: The bullet's trajectory towards her profile represents the immediate, life-threatening danger and the finality of the death penalty for her alleged drug crimes.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

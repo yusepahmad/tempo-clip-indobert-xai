@@ -1,0 +1,37 @@
+{
+  "hashes": {
+    "03_data/DATASET_740_TASK2_DOMAIN.csv": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+    "04_hasil_eksperimen/e06_semantic/e06_semantic/embeddings.npz": "1f0d2b2f346071fa673701847af39e8a22faf9e6a98195734982cd71e99af374",
+    "01_notebook/e09_semantic_lexical.py": "f17b751b0204db028b54e1ebcd24171ba7ed18c71745b1a306fdd4bb312f6eb5",
+    "04_hasil_eksperimen/e01_vlm/kaggle_full/e01_vlm/deskripsi.jsonl": "c75e8df3f9b71d6786462f8d0f1187ebe4234fb8dd079924f3f35707ff1b8cd2",
+    "04_hasil_eksperimen/e01_vlm/kaggle_full/e01_vlm/zeroshot.jsonl": "10c07b06b13fbbf647f2b1ed12a722d9bff8f97caa6b621430d8bc0429ab38c9"
+  },
+  "grid": {
+    "weight__lexical_weight": [
+      0,
+      0.5,
+      2,
+      8
+    ],
+    "clf__C": [
+      1,
+      10,
+      100
+    ],
+    "clf__gamma": [
+      "scale",
+      1
+    ],
+    "clf__class_weight": [
+      null,
+      "balanced"
+    ]
+  },
+  "sklearn": "1.7.2",
+  "jobs": 1,
+  "outer": "baseline integer Task1 stratification5fold seed42",
+  "inner": "Task2 stratification3fold seed42; learned transforms fit inside Pipeline",
+  "svd_components": 128,
+  "semantic": "E5 description + source_reason frozen",
+  "text": "E01 description/source/reason/domain + original headline/support"
+}

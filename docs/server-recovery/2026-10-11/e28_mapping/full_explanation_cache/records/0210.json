@@ -1,0 +1,87 @@
+{
+  "index": 210,
+  "sample_id": "TMP-35D822D07459",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e25449e2d50be4fb18238cec604ee447d132afc03718088c32e7d2c5d4e268e4",
+  "image_sha256": "35d822d07459e2a2adbcd2d8fb60c7e419efea2bd5c22cab959844b1b6a93ec0",
+  "transmitted_image_sha256": "de123a7ba0dbb412d4b84bb6c2d6d3e08e6486549e11819e400d4d4df2b9b91b",
+  "image_size": [
+    354,
+    464
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.318424,
+      "total": 10,
+      "remaining": 1.6815759999999997,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.318423999999993,
+      "total": 100,
+      "remaining": 91.681576,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.8395342268049717,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"radar screen\",\n  \"source_properties\": \"green circular interface, sweeping scanning beam, and tracking icons for multiple aircraft\",\n  \"target_situation\": \"investigating the causes of the Sukhoi Superjet 100 crash\",\n  \"mapping\": \"The radar's function of tracking flight paths reflects the systematic investigation to pinpoint the aircraft's final moments.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "opLLaszDJP-o_uMPl6-88Q4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 98,
+      "cost": {
+        "input_tokens_cost_nanodollars": 667500,
+        "output_tokens_cost_nanodollars": 294000
+      },
+      "prompt_tokens": 1335,
+      "total_backend_latency_ms": 1537,
+      "total_tokens": 1433
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.3193855,
+      "total": 10,
+      "remaining": 1.6806145000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.319385499999996,
+      "total": 100,
+      "remaining": 91.6806145,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009615,
+  "fields": {
+    "source_object": "radar screen",
+    "source_properties": "green circular interface, sweeping scanning beam, and tracking icons for multiple aircraft",
+    "target_situation": "investigating the causes of the Sukhoi Superjet 100 crash",
+    "mapping": "The radar's function of tracking flight paths reflects the systematic investigation to pinpoint the aircraft's final moments.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: radar screen\nsource_properties: green circular interface, sweeping scanning beam, and tracking icons for multiple aircraft\ntarget_situation: investigating the causes of the Sukhoi Superjet 100 crash\nmapping: The radar's function of tracking flight paths reflects the systematic investigation to pinpoint the aircraft's final moments.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

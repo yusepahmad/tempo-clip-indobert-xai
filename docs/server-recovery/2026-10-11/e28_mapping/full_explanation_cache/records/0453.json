@@ -1,0 +1,87 @@
+{
+  "index": 453,
+  "sample_id": "TMP-758796F60BC6",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "7cdf969a35803c175a07e4bb76be8f67a5804d0ac41febc755220a1a898b8d0c",
+  "image_sha256": "758796f60bc61c64c89b7678bc1265eb6736abfdef28fa56149adcb0365ab825",
+  "transmitted_image_sha256": "e3094eb56e62753919d3dfe749f858f085e3e54dcf3e38b45e8296579b8f3cc5",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6605905,
+      "total": 10,
+      "remaining": 1.3394095000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.660590499999998,
+      "total": 100,
+      "remaining": 91.3394095,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.5609685606323183,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"barbed wire\", \"source_properties\": \"Sharp, metallic, densely tangled, and obstructive physical barrier designed to entrap or injure.\", \"target_situation\": \"The 2019 Sarinah riots involving alleged 1998 activist kidnappers.\", \"mapping\": \"The chaotic, painful entanglement of the wire mirrors the complex, violent political unrest and unresolved historical grievances involving Tim Mawar.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "85jLap6bHNPj_uMPg-OC-Aw",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 94,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679000,
+        "output_tokens_cost_nanodollars": 282000
+      },
+      "prompt_tokens": 1358,
+      "total_backend_latency_ms": 1950,
+      "total_tokens": 1452
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6615515,
+      "total": 10,
+      "remaining": 1.3384485000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.661551500000002,
+      "total": 100,
+      "remaining": 91.3384485,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000961,
+  "fields": {
+    "source_object": "barbed wire",
+    "source_properties": "Sharp, metallic, densely tangled, and obstructive physical barrier designed to entrap or injure.",
+    "target_situation": "The 2019 Sarinah riots involving alleged 1998 activist kidnappers.",
+    "mapping": "The chaotic, painful entanglement of the wire mirrors the complex, violent political unrest and unresolved historical grievances involving Tim Mawar.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: barbed wire\nsource_properties: Sharp, metallic, densely tangled, and obstructive physical barrier designed to entrap or injure.\ntarget_situation: The 2019 Sarinah riots involving alleged 1998 activist kidnappers.\nmapping: The chaotic, painful entanglement of the wire mirrors the complex, violent political unrest and unresolved historical grievances involving Tim Mawar.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

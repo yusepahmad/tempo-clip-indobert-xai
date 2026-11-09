@@ -1,0 +1,87 @@
+{
+  "index": 387,
+  "sample_id": "TMP-C77D73EB386E",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "250350815fa0ef87e39cdb64f3d4a09b2a983393bbe68f4cbccb91cb63d76c2b",
+  "image_sha256": "c77d73eb386e1e35bd6f2b72236765ac6ec838cac948362809e4618bd0788cb2",
+  "transmitted_image_sha256": "ecb8d067d3c0eabb02677a2ca88b78feb5afd95b0808d81e6919f829cdf9f587",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.568802,
+      "total": 10,
+      "remaining": 1.4311980000000002,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.568802000000005,
+      "total": 100,
+      "remaining": 91.431198,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 4.592858983203769,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"none evident\", \"source_properties\": \"n/a\", \"target_situation\": \"The urban warfare and invasion by ISIS in Marawi, Philippines, involving Indonesian combatants.\", \"mapping\": \"The image is a literal photograph of a war-torn street in Marawi, showing debris, damaged buildings, and a military-style vehicle.\", \"uncertainty\": \"No visual analogy is evident; the cover uses direct photojournalism to depict the conflict area.\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "OZfLasuvNO2M_PUPpv3KiQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 101,
+      "cost": {
+        "input_tokens_cost_nanodollars": 670000,
+        "output_tokens_cost_nanodollars": 303000
+      },
+      "prompt_tokens": 1340,
+      "total_backend_latency_ms": 2152,
+      "total_tokens": 1441
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.569775,
+      "total": 10,
+      "remaining": 1.430225,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.569775000000007,
+      "total": 100,
+      "remaining": 91.430225,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000973,
+  "fields": {
+    "source_object": "none evident",
+    "source_properties": "n/a",
+    "target_situation": "The urban warfare and invasion by ISIS in Marawi, Philippines, involving Indonesian combatants.",
+    "mapping": "The image is a literal photograph of a war-torn street in Marawi, showing debris, damaged buildings, and a military-style vehicle.",
+    "uncertainty": "No visual analogy is evident; the cover uses direct photojournalism to depict the conflict area."
+  },
+  "explanation": "source_object: none evident\nsource_properties: n/a\ntarget_situation: The urban warfare and invasion by ISIS in Marawi, Philippines, involving Indonesian combatants.\nmapping: The image is a literal photograph of a war-torn street in Marawi, showing debris, damaged buildings, and a military-style vehicle.\nuncertainty: No visual analogy is evident; the cover uses direct photojournalism to depict the conflict area.",
+  "finish_reason": "stop",
+  "usable": true
+}

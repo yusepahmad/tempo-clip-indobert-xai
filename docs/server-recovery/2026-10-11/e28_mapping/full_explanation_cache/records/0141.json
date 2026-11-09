@@ -1,0 +1,87 @@
+{
+  "index": 141,
+  "sample_id": "TMP-C8943BBFB064",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "5bc8710373a499ebcf2f379804e9db5dd6880763a31849be7e47c29a5213ee95",
+  "image_sha256": "c8943bbfb064c46ea412e1278b82e47059562f436be1be3dfba6ba525908d65c",
+  "transmitted_image_sha256": "5aaf5647e65a0226156440491cabc74e027cdd14ac7cece0f0607a2cef43726c",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2200855,
+      "total": 10,
+      "remaining": 1.7799145000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.220085499999996,
+      "total": 100,
+      "remaining": 91.7799145,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.6645700712688267,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Target practice\",\n  \"source_properties\": \"Arrows shot by archers missing their intended target and hitting the wall or chair.\",\n  \"target_situation\": \"The legal conflict between KPK leaders and Setya Novanto.\",\n  \"mapping\": \"The arrows represent legal charges or 'attacks' that have missed Novanto, who sits unharmed, instead hitting the environment around him.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "2ZDLas_cKsyY_uMP2cziyAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 100,
+      "cost": {
+        "input_tokens_cost_nanodollars": 672000,
+        "output_tokens_cost_nanodollars": 300000
+      },
+      "prompt_tokens": 1344,
+      "total_backend_latency_ms": 1440,
+      "total_tokens": 1444
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2210575,
+      "total": 10,
+      "remaining": 1.7789424999999994,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.2210575,
+      "total": 100,
+      "remaining": 91.7789425,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000972,
+  "fields": {
+    "source_object": "Target practice",
+    "source_properties": "Arrows shot by archers missing their intended target and hitting the wall or chair.",
+    "target_situation": "The legal conflict between KPK leaders and Setya Novanto.",
+    "mapping": "The arrows represent legal charges or 'attacks' that have missed Novanto, who sits unharmed, instead hitting the environment around him.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Target practice\nsource_properties: Arrows shot by archers missing their intended target and hitting the wall or chair.\ntarget_situation: The legal conflict between KPK leaders and Setya Novanto.\nmapping: The arrows represent legal charges or 'attacks' that have missed Novanto, who sits unharmed, instead hitting the environment around him.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

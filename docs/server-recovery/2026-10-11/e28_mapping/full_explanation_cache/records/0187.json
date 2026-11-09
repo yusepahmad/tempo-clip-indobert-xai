@@ -1,0 +1,87 @@
+{
+  "index": 187,
+  "sample_id": "TMP-70CF6BDC6E3D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "b1383001770ef5cc0134ac8daaf166a7c4d1369fb09baf590aa7d2e13e1e2e0d",
+  "image_sha256": "70cf6bdc6e3da52fbbc5e67a36bbdd19262f4fa20676b0e304a5c8eacd9a117f",
+  "transmitted_image_sha256": "9e4cf456543e92f31eb8509ea196abbd36fac3f364d90d2c29ec24f19490d86c",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2831785,
+      "total": 10,
+      "remaining": 1.7168215,
+      "refill_at": "2026-10-11 23:35:15.874000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.283178500000005,
+      "total": 100,
+      "remaining": 91.7168215,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.523234014865011,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"sweets or candy\", \"source_properties\": \"sweet, tempting, used as a reward or to pacify\", \"target_situation\": \"The appointment of a labor leader to a ministerial position\", \"mapping\": \"The political appointment acts as a 'sweetener' to appease labor unions and prevent May Day protests, much like giving candy to quiet someone.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "D5LLatWCGt7d_uMPq5e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 678500,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1357,
+      "total_backend_latency_ms": 1498,
+      "total_tokens": 1443
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.284115,
+      "total": 10,
+      "remaining": 1.715885,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.284115,
+      "total": 100,
+      "remaining": 91.715885,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009365,
+  "fields": {
+    "source_object": "sweets or candy",
+    "source_properties": "sweet, tempting, used as a reward or to pacify",
+    "target_situation": "The appointment of a labor leader to a ministerial position",
+    "mapping": "The political appointment acts as a 'sweetener' to appease labor unions and prevent May Day protests, much like giving candy to quiet someone.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: sweets or candy\nsource_properties: sweet, tempting, used as a reward or to pacify\ntarget_situation: The appointment of a labor leader to a ministerial position\nmapping: The political appointment acts as a 'sweetener' to appease labor unions and prevent May Day protests, much like giving candy to quiet someone.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

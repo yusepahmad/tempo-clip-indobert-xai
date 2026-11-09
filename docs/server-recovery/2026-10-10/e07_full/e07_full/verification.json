@@ -1,0 +1,28 @@
+{
+  "status": "verified",
+  "samples": 740,
+  "macro_f1_manual": 0.4304874283588617,
+  "per_class_f1": {
+    "BENCANA_JERAT": 0.46886446886446886,
+    "HEWAN_TUBUH": 0.43137254901960786,
+    "KONSUMSI_TRANSAKSI": 0.5252525252525253,
+    "LAINNYA": 0.14285714285714285,
+    "MESIN_INFRASTRUKTUR": 0.6409638554216868,
+    "NON_METAFORA": 0.23529411764705882,
+    "PERMAINAN_KONTES": 0.5688073394495413
+  },
+  "checks": [
+    "source/data/description/revision hashes",
+    "all baseline folds and original IDs",
+    "all 740 retrievals exactly reconstructed",
+    "14 training exemplars, two per class",
+    "all 740 prompt hashes reconstructed",
+    "valid parsed labels",
+    "manual TP/FP/FN score"
+  ],
+  "sha256": {
+    "config.json": "f5a79bc6fdb06783324b157371a5b3e82e74924c1cf268bf7edd44d9e5703e01",
+    "metrics.json": "2f9ada3e5b9b3f69e9e823eb34a3b59a26517a000bcd05ecc1dcea4fa3fad1a9",
+    "predictions.jsonl": "b47f1897793e8ec63a8256d764a04cb66267b7a462499ded889e224faa0d1aba"
+  }
+}

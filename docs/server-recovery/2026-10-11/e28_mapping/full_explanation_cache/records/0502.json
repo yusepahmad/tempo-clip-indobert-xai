@@ -1,0 +1,87 @@
+{
+  "index": 502,
+  "sample_id": "TMP-A6C6B271AF6D",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "bd0e53a20c5892124735c80418880c94571d0936ac1ecfbfe0a1258b39a51497",
+  "image_sha256": "a6c6b271af6d9e865ebb3d44473f6171b48ee4d32464c5515769d65d6a815961",
+  "transmitted_image_sha256": "da32e9b59f7b6bc41f489c20a9ef94e98a3189269eb066987ecdc335fe40183c",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.722665,
+      "total": 10,
+      "remaining": 1.2773350000000008,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.722665000000006,
+      "total": 100,
+      "remaining": 91.277335,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.4351644362322986,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"red and white flag on a bamboo pole\", \"source_properties\": \"Symbol of national sovereignty, held high by figures in medical attire.\", \"target_situation\": \"The historical and modern role of doctors in national struggle and defense.\", \"mapping\": \"Holding the flag represents doctors leading the nation's fight, both during independence struggles and current health crises.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "MZrLauqmEcCS_uMPqPCfqA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 85,
+      "cost": {
+        "input_tokens_cost_nanodollars": 665000,
+        "output_tokens_cost_nanodollars": 255000
+      },
+      "prompt_tokens": 1330,
+      "total_backend_latency_ms": 1759,
+      "total_tokens": 1415
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.723585,
+      "total": 10,
+      "remaining": 1.276415,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.723585,
+      "total": 100,
+      "remaining": 91.276415,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.00092,
+  "fields": {
+    "source_object": "red and white flag on a bamboo pole",
+    "source_properties": "Symbol of national sovereignty, held high by figures in medical attire.",
+    "target_situation": "The historical and modern role of doctors in national struggle and defense.",
+    "mapping": "Holding the flag represents doctors leading the nation's fight, both during independence struggles and current health crises.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: red and white flag on a bamboo pole\nsource_properties: Symbol of national sovereignty, held high by figures in medical attire.\ntarget_situation: The historical and modern role of doctors in national struggle and defense.\nmapping: Holding the flag represents doctors leading the nation's fight, both during independence struggles and current health crises.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

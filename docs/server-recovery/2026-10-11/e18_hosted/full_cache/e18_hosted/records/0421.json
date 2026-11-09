@@ -1,0 +1,83 @@
+{
+  "index": 421,
+  "sample_id": "TMP-2E95453C1AEB",
+  "model": "google/gemini-3-flash-preview",
+  "config_sha256": "939d97c53a7243590a3e771d83ad53bb9872a6dddc7162ce1794962d4289f95a",
+  "prompt_sha256": "6f7b6b81ab6519d485c7bbc93b4d111760f691ea5837aae066bad6640954a0fd",
+  "image_sha256": "2e95453c1aebee3799f91b7694709a86a1cf9bcd740f02a6d7dc90d87f163f98",
+  "transmitted_image_sha256": "c02c80b0146c1c2e667d121b29075112245411b4ecb1b9d603c5a74b10ff083b",
+  "image_size": [
+    289,
+    384
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.5809785000000005,
+      "total": 10,
+      "remaining": 8.4190215,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.5809785000000005,
+      "total": 100,
+      "remaining": 98.4190215,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 8.37327156192623,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Berdasarkan deskripsi \"Sumber dan alasan\" yang diberikan, yaitu \"Bintang sebagai simbol **kehancuran** dan **terperangkapnya** wilayah serta pihak-pihak terlibat... menggambarkan **tekanan** dan **bahaya**\", metafora ini menggunakan domain sumber yang berkaitan dengan ancaman atau situasi terjepit. Ilustrasi lubang tambang yang dalam dan terjal yang berbentuk bintang memvisualisasikan konflik tersebut sebagai sebuah \"lubang\" atau \"perangkap\" (jerat) yang membawa bencana.\n\nOleh karena itu, domain sumber metaforanya adalah:\n**A: BENCANA_JERAT**",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Ct3Kar6ANt7d_uMP3pe24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1440,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1310
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 796000,
+        "output_tokens_cost_nanodollars": 4320000
+      },
+      "prompt_tokens": 1592,
+      "total_backend_latency_ms": 7535,
+      "total_tokens": 3032
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 1.5860944999999997,
+      "total": 10,
+      "remaining": 8.4139055,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 1.5860945000000015,
+      "total": 100,
+      "remaining": 98.4139055,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "code": "INVALID",
+  "prediction": "INVALID",
+  "finish_reason": "stop",
+  "cost_usd": 0.005116
+}

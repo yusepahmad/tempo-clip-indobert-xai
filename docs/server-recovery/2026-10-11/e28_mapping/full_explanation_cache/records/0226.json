@@ -1,0 +1,87 @@
+{
+  "index": 226,
+  "sample_id": "TMP-FF18775D38E3",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "e40b4845e1dd7aac1e9a4eebf4d623f9b089726f84ff0b2a0640a9e4ecf6fefe",
+  "image_sha256": "ff18775d38e3c831db05ea0cdeb6f91f7cb8bae810a080e40288f8f1c6e62ae4",
+  "transmitted_image_sha256": "cd1a13e38c3b499cfc6b8a2df3a2abcd5c8a7560a9b9e1700add31e961dff93a",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.342089,
+      "total": 10,
+      "remaining": 1.6579110000000004,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.342089000000001,
+      "total": 100,
+      "remaining": 91.657911,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 2.9778909999877214,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"blindfolded pilot at the controls\", \"source_properties\": \"unable to see his path, hands on flight yokes, and steering blindly\", \"target_situation\": \"the investigation and reporting of the Sukhoi Superjet crash tragedy\", \"mapping\": \"the pilot's blindness represents a 'dark veil' or lack of transparency and clarity surrounding the investigation\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "CJPLau_pPPbb_uMPure6uAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 86,
+      "cost": {
+        "input_tokens_cost_nanodollars": 655000,
+        "output_tokens_cost_nanodollars": 258000
+      },
+      "prompt_tokens": 1310,
+      "total_backend_latency_ms": 1581,
+      "total_tokens": 1396
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.343002,
+      "total": 10,
+      "remaining": 1.6569979999999997,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.343001999999998,
+      "total": 100,
+      "remaining": 91.656998,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000913,
+  "fields": {
+    "source_object": "blindfolded pilot at the controls",
+    "source_properties": "unable to see his path, hands on flight yokes, and steering blindly",
+    "target_situation": "the investigation and reporting of the Sukhoi Superjet crash tragedy",
+    "mapping": "the pilot's blindness represents a 'dark veil' or lack of transparency and clarity surrounding the investigation",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: blindfolded pilot at the controls\nsource_properties: unable to see his path, hands on flight yokes, and steering blindly\ntarget_situation: the investigation and reporting of the Sukhoi Superjet crash tragedy\nmapping: the pilot's blindness represents a 'dark veil' or lack of transparency and clarity surrounding the investigation\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

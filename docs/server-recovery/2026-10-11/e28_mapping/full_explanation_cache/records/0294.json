@@ -1,0 +1,87 @@
+{
+  "index": 294,
+  "sample_id": "TMP-515377D1A845",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "aab3c5553d92e1502a5e1bf4c1073948b8796ac6beba007d5713faedb6064c90",
+  "image_sha256": "515377d1a84571427540e909f3e4da888f3f6e2e6efc92a462c5af70640d0b39",
+  "transmitted_image_sha256": "ff1195e5d82c3fac6b4f26e50a79ffdc0866c0fac4d9cb7f9e7d2044d98fb6d2",
+  "image_size": [
+    586,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.445764,
+      "total": 10,
+      "remaining": 1.5542359999999995,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.445763999999997,
+      "total": 100,
+      "remaining": 91.554236,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0722007555887103,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"red umbrella\", \"source_properties\": \"a folded handheld device designed to shield a person from falling rain or environmental elements\", \"target_situation\": \"Jokowi's political strategy to withstand pressure from Prabowo's opposition coalition shortly before his inauguration\", \"mapping\": \"Holding the closed umbrella while looking at dark clouds signifies his readiness to deflect political 'storms' or opposition pressure\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "25TLasC5HN7d_uMPq5e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 669000,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1338,
+      "total_backend_latency_ms": 1741,
+      "total_tokens": 1430
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.446709,
+      "total": 10,
+      "remaining": 1.5532909999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.446708999999998,
+      "total": 100,
+      "remaining": 91.553291,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000945,
+  "fields": {
+    "source_object": "red umbrella",
+    "source_properties": "a folded handheld device designed to shield a person from falling rain or environmental elements",
+    "target_situation": "Jokowi's political strategy to withstand pressure from Prabowo's opposition coalition shortly before his inauguration",
+    "mapping": "Holding the closed umbrella while looking at dark clouds signifies his readiness to deflect political 'storms' or opposition pressure",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: red umbrella\nsource_properties: a folded handheld device designed to shield a person from falling rain or environmental elements\ntarget_situation: Jokowi's political strategy to withstand pressure from Prabowo's opposition coalition shortly before his inauguration\nmapping: Holding the closed umbrella while looking at dark clouds signifies his readiness to deflect political 'storms' or opposition pressure\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

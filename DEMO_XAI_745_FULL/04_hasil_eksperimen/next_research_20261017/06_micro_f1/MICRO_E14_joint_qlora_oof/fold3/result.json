@@ -1,0 +1,117 @@
+{
+  "status": "complete",
+  "smoke": false,
+  "fold": 3,
+  "schema": "tempo-e14-fold-v1",
+  "protocol_sha256": "7b1eb1fdaf8547e842df793726e106b1d29b222b16ef3d9b672388d9d46ec65e",
+  "source_sha256": "cb09acda21117f0acba38233fca382ec9916b08c5c73f297fa0f70c9469003ed",
+  "split_sha256": "06360f575cac8bcee62efcba86ceb3a13dde880195d6badc7bc0387e8cf33239",
+  "initial_adapter_sha256": "cf90f9cc91563720f1be6f29f8a6d54c07334d7733b182f990935458705f66bb",
+  "adapter_sha256": "ccad2fc0c3c45dff03b2f812be02fce10b913648e31f363a6f275bc857ca8916",
+  "outer_train_samples": 592,
+  "reused_pilot_inner_history": false,
+  "seconds": 11521.685997441,
+  "model_contract": "one shared Qwen3-VL LoRA adapter with three prompted objectives",
+  "selected_epoch": 3,
+  "micro_f1": {
+    "task1_issue": 0.7297297297297297,
+    "task2_domain_sumber": 0.5540540540540541,
+    "task3_primary_entity_type": 0.6283783783783784
+  },
+  "minimum_micro_f1": 0.5540540540540541,
+  "all_tasks_at_least_0_70": false,
+  "samples": 148,
+  "train_samples": 473,
+  "validation_samples": 119,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 1.51637312306492,
+      "validation_micro_f1": {
+        "task1_issue": 0.680672268907563,
+        "task2_domain_sumber": 0.5294117647058824,
+        "task3_primary_entity_type": 0.6974789915966386
+      },
+      "minimum": 0.5294117647058824,
+      "mean": 0.6358543417366948,
+      "seconds": 1827.4943891789999
+    },
+    {
+      "epoch": 2,
+      "loss": 1.0574388181806462,
+      "validation_micro_f1": {
+        "task1_issue": 0.6470588235294118,
+        "task2_domain_sumber": 0.5966386554621849,
+        "task3_primary_entity_type": 0.7226890756302521
+      },
+      "minimum": 0.5966386554621849,
+      "mean": 0.6554621848739496,
+      "seconds": 1820.1953750339999
+    },
+    {
+      "epoch": 3,
+      "loss": 0.9405119275525566,
+      "validation_micro_f1": {
+        "task1_issue": 0.7394957983193278,
+        "task2_domain_sumber": 0.6470588235294118,
+        "task3_primary_entity_type": 0.7394957983193278
+      },
+      "minimum": 0.6470588235294118,
+      "mean": 0.7086834733893558,
+      "seconds": 1817.3025638609997
+    }
+  ],
+  "refit_history": [
+    {
+      "epoch": 1,
+      "loss": 1.4293189555409689,
+      "seconds": 1795.2506031680005
+    },
+    {
+      "epoch": 2,
+      "loss": 0.9700099868264137,
+      "seconds": 1791.3095537039999
+    },
+    {
+      "epoch": 3,
+      "loss": 0.838491240727701,
+      "seconds": 1790.5532200599991
+    }
+  ],
+  "classes": {
+    "task1_issue": [
+      "corruption_and_bribery",
+      "economy_business_and_state_enterprise",
+      "election_and_political_competition",
+      "environment_and_natural_resources",
+      "human_rights_and_social_conflict",
+      "law_and_justice",
+      "other_issue",
+      "power_and_governance",
+      "public_policy_health_and_disaster",
+      "security_defense_and_terrorism"
+    ],
+    "task2_domain_sumber": [
+      "BENCANA_JERAT",
+      "HEWAN_TUBUH",
+      "KONSUMSI_TRANSAKSI",
+      "LAINNYA",
+      "MESIN_INFRASTRUKTUR",
+      "NON_METAFORA",
+      "PERMAINAN_KONTES"
+    ],
+    "task3_primary_entity_type": [
+      "business",
+      "civil_society_or_media",
+      "government",
+      "individual",
+      "judiciary_or_law_enforcement",
+      "legislature",
+      "multiple_or_other",
+      "political_party"
+    ]
+  },
+  "data_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+  "input_audit_sha256": "d96380c10a04dde9b0372f8e1602fa3cb97e51daffc4b88fda7781052659db93",
+  "predictions_sha256": "30ff0213df18b74bccf0076b802d62133b7e0e5b5401298fe2b28f583a8e7bcc"
+}

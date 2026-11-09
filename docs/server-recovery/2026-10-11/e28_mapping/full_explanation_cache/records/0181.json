@@ -1,0 +1,87 @@
+{
+  "index": 181,
+  "sample_id": "TMP-5E5FB2B2E5A2",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "a9ae61d38c7934c6c2206188189d1aa0250dc4e8c430d018231860c52a09f1ec",
+  "image_sha256": "5e5fb2b2e5a2cd3ab31b479a505769bd0a6826c6f6249ae3a2574b229851eb1e",
+  "transmitted_image_sha256": "3e4a49057631692dfd1fa0f80d591879dfa4b2b5c916ae5ffb97cdfde9346bb1",
+  "image_size": [
+    581,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2749705,
+      "total": 10,
+      "remaining": 1.7250294999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.274970499999995,
+      "total": 100,
+      "remaining": 91.7250295,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0276216422207654,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"Solar eclipse\",\n  \"source_properties\": \"A dark celestial body obscuring a bright light source, creating a silhouette and a fleeting corona.\",\n  \"target_situation\": \"The transition of Indonesian political leadership from Jokowi to Prabowo.\",\n  \"mapping\": \"Just as an eclipse replaces light with shadow, the new presidency is depicted as a continuation of political 'darkness' or turmoil.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "4JHLavfPLPbb_uMPure6uAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 103,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676000,
+        "output_tokens_cost_nanodollars": 309000
+      },
+      "prompt_tokens": 1352,
+      "total_backend_latency_ms": 1743,
+      "total_tokens": 1455
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2759555,
+      "total": 10,
+      "remaining": 1.7240444999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.275955499999995,
+      "total": 100,
+      "remaining": 91.7240445,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000985,
+  "fields": {
+    "source_object": "Solar eclipse",
+    "source_properties": "A dark celestial body obscuring a bright light source, creating a silhouette and a fleeting corona.",
+    "target_situation": "The transition of Indonesian political leadership from Jokowi to Prabowo.",
+    "mapping": "Just as an eclipse replaces light with shadow, the new presidency is depicted as a continuation of political 'darkness' or turmoil.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: Solar eclipse\nsource_properties: A dark celestial body obscuring a bright light source, creating a silhouette and a fleeting corona.\ntarget_situation: The transition of Indonesian political leadership from Jokowi to Prabowo.\nmapping: Just as an eclipse replaces light with shadow, the new presidency is depicted as a continuation of political 'darkness' or turmoil.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

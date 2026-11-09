@@ -1,0 +1,87 @@
+{
+  "index": 180,
+  "sample_id": "TMP-0A2D6056CCA0",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "90bfca10bb945313ab871414d5adc1d3cdc66fa6d9bdfd6539553f3fb9a4409b",
+  "image_sha256": "0a2d6056cca019b6f9080b4ac02b1822f8482e3d8ab5ddf2a341ea35a4d54263",
+  "transmitted_image_sha256": "e00af4883a60f8bedb2acfc6240e9291fd7685d71242a9d37f6386703be9876b",
+  "image_size": [
+    581,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.273901500000001,
+      "total": 10,
+      "remaining": 1.726098499999999,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.273901499999994,
+      "total": 100,
+      "remaining": 91.7260985,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.2688996070064604,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"red L-plate sticker\",\n  \"source_properties\": \"A red 'L' on a white background, symbolizing a learner or beginner status.\",\n  \"target_situation\": \"The collective resistance of civil society against perceived abuses of power in 2024.\",\n  \"mapping\": \"The 'L' plate suggests a movement that is still learning, evolving, or in a 'learner' phase of political struggle.\",\n  \"uncertainty\": \"The 'L' plate's specific context within Indonesian activism might imply a more precise local meaning not immediately obvious.\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "25HLap24CLXP_uMPiOzhoQ0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 130,
+      "cost": {
+        "input_tokens_cost_nanodollars": 679000,
+        "output_tokens_cost_nanodollars": 390000
+      },
+      "prompt_tokens": 1358,
+      "total_backend_latency_ms": 1812,
+      "total_tokens": 1488
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2749705,
+      "total": 10,
+      "remaining": 1.7250294999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.274970499999995,
+      "total": 100,
+      "remaining": 91.7250295,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.001069,
+  "fields": {
+    "source_object": "red L-plate sticker",
+    "source_properties": "A red 'L' on a white background, symbolizing a learner or beginner status.",
+    "target_situation": "The collective resistance of civil society against perceived abuses of power in 2024.",
+    "mapping": "The 'L' plate suggests a movement that is still learning, evolving, or in a 'learner' phase of political struggle.",
+    "uncertainty": "The 'L' plate's specific context within Indonesian activism might imply a more precise local meaning not immediately obvious."
+  },
+  "explanation": "source_object: red L-plate sticker\nsource_properties: A red 'L' on a white background, symbolizing a learner or beginner status.\ntarget_situation: The collective resistance of civil society against perceived abuses of power in 2024.\nmapping: The 'L' plate suggests a movement that is still learning, evolving, or in a 'learner' phase of political struggle.\nuncertainty: The 'L' plate's specific context within Indonesian activism might imply a more precise local meaning not immediately obvious.",
+  "finish_reason": "stop",
+  "usable": true
+}

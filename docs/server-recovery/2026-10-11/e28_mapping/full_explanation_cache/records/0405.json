@@ -1,0 +1,90 @@
+{
+  "index": 405,
+  "sample_id": "TMP-0E53EE9B0A9B",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "ededbaa66a99575486ba138b18ce87e571d545fdb2e89f569aa96019d97ebdf0",
+  "image_sha256": "0e53ee9b0a9b250d29ac14e0cb78ed265a840cd941d959e52e5c9a64fc106e5b",
+  "transmitted_image_sha256": "009d3ae2f4bd1582ad8c88f35e91f3e445225f1fc583f8d1fab04335444f5919",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.5898925,
+      "total": 10,
+      "remaining": 1.4101075000000005,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.589892500000005,
+      "total": 100,
+      "remaining": 91.4101075,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 7.057030154392123,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"a picture frame containing individuals pressing their hands against the glass\", \"source_properties\": \"confinement, a transparent barrier, and physical exertion to be noticed from within\", \"target_situation\": \"potential vice-presidential candidates competing for the 2019 election nomination\", \"mapping\": \"the frame represents the candidate pool; pressing hands symbolize candidates' struggle to stand out and reach Jokowi\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "rpfLav6mOt7d_uMP3pe24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 885,
+      "completion_tokens_details": {
+        "reasoning_tokens": 791
+      },
+      "cost": {
+        "input_tokens_cost_nanodollars": 673500,
+        "output_tokens_cost_nanodollars": 2655000
+      },
+      "prompt_tokens": 1347,
+      "total_backend_latency_ms": 5567,
+      "total_tokens": 2232
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.593221,
+      "total": 10,
+      "remaining": 1.4067790000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.593221,
+      "total": 100,
+      "remaining": 91.406779,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0033285,
+  "fields": {
+    "source_object": "a picture frame containing individuals pressing their hands against the glass",
+    "source_properties": "confinement, a transparent barrier, and physical exertion to be noticed from within",
+    "target_situation": "potential vice-presidential candidates competing for the 2019 election nomination",
+    "mapping": "the frame represents the candidate pool; pressing hands symbolize candidates' struggle to stand out and reach Jokowi",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: a picture frame containing individuals pressing their hands against the glass\nsource_properties: confinement, a transparent barrier, and physical exertion to be noticed from within\ntarget_situation: potential vice-presidential candidates competing for the 2019 election nomination\nmapping: the frame represents the candidate pool; pressing hands symbolize candidates' struggle to stand out and reach Jokowi\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

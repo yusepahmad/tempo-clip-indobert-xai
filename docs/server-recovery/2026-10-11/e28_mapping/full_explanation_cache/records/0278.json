@@ -1,0 +1,87 @@
+{
+  "index": 278,
+  "sample_id": "TMP-182841319783",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "876da328124d51d0f528c1fa1689642df32b486012b1dfe4a3daf256c0b9da86",
+  "image_sha256": "18284131978315574215a18e679825beddfe982f98ab9e8bebb27b499abd5a08",
+  "transmitted_image_sha256": "565905252bca8e763dbc10081771fb02ca4aa71fe68fbb268776275dff05380d",
+  "image_size": [
+    587,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4202175,
+      "total": 10,
+      "remaining": 1.5797825000000003,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.420217500000007,
+      "total": 100,
+      "remaining": 91.5797825,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.3757606321014464,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"construction site with scaffolding\",\n  \"source_properties\": \"incomplete structures under assembly, cranes, scaffolds, and workers shaping massive features\",\n  \"target_situation\": \"political coalition formation between two leaders\",\n  \"mapping\": \"The construction process represents the deliberate, transactional building of a political alliance, with workers 'shaping' the public figures' heads.\",\n  \"uncertainty\": \"none\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "a5TLapLYKrfc_uMPiPP3wAE",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 95,
+      "cost": {
+        "input_tokens_cost_nanodollars": 664000,
+        "output_tokens_cost_nanodollars": 285000
+      },
+      "prompt_tokens": 1328,
+      "total_backend_latency_ms": 1803,
+      "total_tokens": 1423
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.4211665,
+      "total": 10,
+      "remaining": 1.5788335,
+      "refill_at": "2026-10-11 23:35:15.872000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.421166499999998,
+      "total": 100,
+      "remaining": 91.5788335,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.000949,
+  "fields": {
+    "source_object": "construction site with scaffolding",
+    "source_properties": "incomplete structures under assembly, cranes, scaffolds, and workers shaping massive features",
+    "target_situation": "political coalition formation between two leaders",
+    "mapping": "The construction process represents the deliberate, transactional building of a political alliance, with workers 'shaping' the public figures' heads.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: construction site with scaffolding\nsource_properties: incomplete structures under assembly, cranes, scaffolds, and workers shaping massive features\ntarget_situation: political coalition formation between two leaders\nmapping: The construction process represents the deliberate, transactional building of a political alliance, with workers 'shaping' the public figures' heads.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

@@ -1,0 +1,87 @@
+{
+  "index": 442,
+  "sample_id": "TMP-9BEED4D21BB9",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "10620351920401014057f78aafd3fbd61ada9159cf78b0931e9612a7af3e7a82",
+  "image_sha256": "9beed4d21bb9fdc2c26ae975fcea5fcf03e60168f5134e14137b56318e57d040",
+  "transmitted_image_sha256": "42a7ad8d4d0dff93fbae71b6497c6543a4686651215eb73fb9c7ea5bab44ad56",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.6411845,
+      "total": 10,
+      "remaining": 1.3588155000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.641184499999994,
+      "total": 100,
+      "remaining": 91.3588155,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.458493663929403,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"source_object\": \"pete-pete (stink beans)\",\n  \"source_properties\": \"Green pods resembling hair or a wig, dangling from the head.\",\n  \"target_situation\": \"Sandiaga Uno's political campaigning to boost Prabowo's stagnant electability.\",\n  \"mapping\": \"Wearing pete-pete like hair symbolizes Sandiaga's performative 'selling' of himself to voters.\",\n  \"uncertainty\": \"none evident\"\n}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "n5jLap_fO97d_uMP45e24Qo",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 108,
+      "cost": {
+        "input_tokens_cost_nanodollars": 676500,
+        "output_tokens_cost_nanodollars": 324000
+      },
+      "prompt_tokens": 1353,
+      "total_backend_latency_ms": 1927,
+      "total_tokens": 1461
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.642185,
+      "total": 10,
+      "remaining": 1.3578150000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.642184999999998,
+      "total": 100,
+      "remaining": 91.357815,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0010005,
+  "fields": {
+    "source_object": "pete-pete (stink beans)",
+    "source_properties": "Green pods resembling hair or a wig, dangling from the head.",
+    "target_situation": "Sandiaga Uno's political campaigning to boost Prabowo's stagnant electability.",
+    "mapping": "Wearing pete-pete like hair symbolizes Sandiaga's performative 'selling' of himself to voters.",
+    "uncertainty": "none evident"
+  },
+  "explanation": "source_object: pete-pete (stink beans)\nsource_properties: Green pods resembling hair or a wig, dangling from the head.\ntarget_situation: Sandiaga Uno's political campaigning to boost Prabowo's stagnant electability.\nmapping: Wearing pete-pete like hair symbolizes Sandiaga's performative 'selling' of himself to voters.\nuncertainty: none evident",
+  "finish_reason": "stop",
+  "usable": true
+}

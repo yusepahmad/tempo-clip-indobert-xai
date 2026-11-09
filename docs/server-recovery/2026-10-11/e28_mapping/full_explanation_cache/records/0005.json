@@ -1,0 +1,91 @@
+{
+  "index": 5,
+  "sample_id": "TMP-5586AF81A4A2",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "f1c1309e5feb4fd2f5432015d4bc2edc70d0247bba354ee629a76cbd70e85429",
+  "image_sha256": "5586af81a4a229a256c16d3b9c5b378ea7094d1310a1a94f8b7cb0791da73f1d",
+  "transmitted_image_sha256": "1cfa59992de1c5aadb5ceb5460685ebd666edc159d6a9dbc0076a55063e687bf",
+  "image_size": [
+    472,
+    619
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.0201815,
+      "total": 10,
+      "remaining": 1.9798185000000004,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.020181500000007,
+      "total": 100,
+      "remaining": 91.9798185,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.0053928927518427,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"driving simulator\", \"source_properties\": \"a motorcycle on a platform facing a monitor displaying a road simulation\", \"target_situation\": \"corruption allegations against Inspector General Djoko Susilo regarding a driving simulator procurement project\", \"mapping\": \"the machine represents the physical evidence of the scandal, while the 'KPK' road signs on the screen suggest his legal pursuit by anti-corruption investigators\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "WYrLao6bLbeR_uMPm_GWuA0",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "cost": {
+        "input_tokens_cost_nanodollars": 650500,
+        "output_tokens_cost_nanodollars": 276000
+      },
+      "prompt_tokens": 1301,
+      "total_backend_latency_ms": 1599,
+      "total_tokens": 1393
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.021108,
+      "total": 10,
+      "remaining": 1.978892,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.021107999999998,
+      "total": 100,
+      "remaining": 91.978892,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "cost_usd": 0.0009265,
+  "fields": {
+    "source_object": "driving simulator",
+    "source_properties": "a motorcycle on a platform facing a monitor displaying a road simulation",
+    "target_situation": "corruption allegations against Inspector General Djoko Susilo regarding a driving simulator procurement project",
+    "mapping": "the machine represents the physical evidence of the scandal, while the 'KPK' road signs on the screen suggest his legal pursuit by anti-corruption investigators",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: driving simulator\nsource_properties: a motorcycle on a platform facing a monitor displaying a road simulation\ntarget_situation: corruption allegations against Inspector General Djoko Susilo regarding a driving simulator procurement project\nmapping: the machine represents the physical evidence of the scandal, while the 'KPK' road signs on the screen suggest his legal pursuit by anti-corruption investigators\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true,
+  "migration_origin": {
+    "record_sha256": "09e8c4fba6366a3dc111e4f1cca51ff868b06af885cb96317d471d21cfbf96c6",
+    "run_config_sha256": "96946247c22745519ead2106cac80c20ff3362ae761dea0ee9768bd77be68383"
+  }
+}

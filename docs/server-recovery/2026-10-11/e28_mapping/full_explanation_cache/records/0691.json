@@ -1,0 +1,87 @@
+{
+  "index": 691,
+  "sample_id": "TMP-4745D7160C69",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "42a1e2d962dcd122089945d40f2331946a021c99ba59ad3cd3665c9518fb2c6b",
+  "image_sha256": "4745d7160c69063a4815cd82f3777d2256bd6e526c64d386b219782c5a41c3c0",
+  "transmitted_image_sha256": "73c4928e09594bb763ca6ccfcd9d63c99f3909c198c73eef5785e654d45c261e",
+  "image_size": [
+    581,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.9947535,
+      "total": 10,
+      "remaining": 1.0052465000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.994753500000002,
+      "total": 100,
+      "remaining": 91.0052465,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.640003925655037,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Kung fu balance on a fence\", \"source_properties\": \"Precise, precarious movement atop thin wooden stakes over water.\", \"target_situation\": \"Large-scale private property development over public ocean territory.\", \"mapping\": \"The figure's nimble martial arts pose reflects a tycoon's strategic maneuvering to secure building rights over the sea, navigating regulatory or physical boundaries.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "Mp_Lat-WIZOo_uMPmu77-As",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 88,
+      "cost": {
+        "input_tokens_cost_nanodollars": 688500,
+        "output_tokens_cost_nanodollars": 264000
+      },
+      "prompt_tokens": 1377,
+      "total_backend_latency_ms": 1959,
+      "total_tokens": 1465
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.995706,
+      "total": 10,
+      "remaining": 1.0042939999999998,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.995705999999998,
+      "total": 100,
+      "remaining": 91.004294,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009525,
+  "fields": {
+    "source_object": "Kung fu balance on a fence",
+    "source_properties": "Precise, precarious movement atop thin wooden stakes over water.",
+    "target_situation": "Large-scale private property development over public ocean territory.",
+    "mapping": "The figure's nimble martial arts pose reflects a tycoon's strategic maneuvering to secure building rights over the sea, navigating regulatory or physical boundaries.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Kung fu balance on a fence\nsource_properties: Precise, precarious movement atop thin wooden stakes over water.\ntarget_situation: Large-scale private property development over public ocean territory.\nmapping: The figure's nimble martial arts pose reflects a tycoon's strategic maneuvering to secure building rights over the sea, navigating regulatory or physical boundaries.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}

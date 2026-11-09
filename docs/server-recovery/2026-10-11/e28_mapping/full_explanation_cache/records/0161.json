@@ -1,0 +1,87 @@
+{
+  "index": 161,
+  "sample_id": "TMP-5B5A60BB6742",
+  "model": "google/gemini-3-flash-preview",
+  "run_config_sha256": "5ecc1f549af1105f9bab77b82fc42ed8af342ab865c762d92fe750dc72549095",
+  "prompt_sha256": "491cfb8ce70185cf178e818c2ff4b024f95b067fdc466019a06c9301c2bf8bf7",
+  "image_sha256": "5b5a60bb6742931960a238467671eb29c311e6571a8f61baa3fd3e56535dc19e",
+  "transmitted_image_sha256": "2064234661382411e317ade1bc19c7310f05f467cc2ebbe5ec80a9bc3c6718c1",
+  "image_size": [
+    578,
+    768
+  ],
+  "status": "complete",
+  "quota_before": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.2438915,
+      "total": 10,
+      "remaining": 1.7561084999999999,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.243891500000004,
+      "total": 100,
+      "remaining": 91.7561085,
+      "refill_at": "2026-11-09 23:35:15.873000"
+    }
+  ],
+  "http_status": 200,
+  "elapsed_seconds": 3.1319766431115568,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"source_object\": \"Atlas or Sisyphus figure\", \"source_properties\": \"Enormous weight, physical strain, crushing pressure, crouching posture\", \"target_situation\": \"Health systems and government overwhelmed by a surge in Covid-19 cases and oxygen shortages.\", \"mapping\": \"A personified figure struggles to support a massive, virus-shaped sphere, representing the crushing burden the pandemic places on national infrastructure.\", \"uncertainty\": \"none\"}",
+          "refusal": "",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 0,
+    "id": "XZHLaozKEsCS_uMPqPCfqA4",
+    "model": "google/gemini-3-flash-preview",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 93,
+      "cost": {
+        "input_tokens_cost_nanodollars": 681500,
+        "output_tokens_cost_nanodollars": 279000
+      },
+      "prompt_tokens": 1363,
+      "total_backend_latency_ms": 1651,
+      "total_tokens": 1456
+    }
+  },
+  "quota_after": [
+    {
+      "period": "ModelProxyQuotaRefillPeriod.DAILY",
+      "used": 8.244852,
+      "total": 10,
+      "remaining": 1.7551480000000002,
+      "refill_at": "2026-10-11 23:35:15.873000"
+    },
+    {
+      "period": "ModelProxyQuotaRefillPeriod.MONTHLY",
+      "used": 8.244851999999995,
+      "total": 100,
+      "remaining": 91.755148,
+      "refill_at": "2026-11-09 23:35:15.872000"
+    }
+  ],
+  "cost_usd": 0.0009605,
+  "fields": {
+    "source_object": "Atlas or Sisyphus figure",
+    "source_properties": "Enormous weight, physical strain, crushing pressure, crouching posture",
+    "target_situation": "Health systems and government overwhelmed by a surge in Covid-19 cases and oxygen shortages.",
+    "mapping": "A personified figure struggles to support a massive, virus-shaped sphere, representing the crushing burden the pandemic places on national infrastructure.",
+    "uncertainty": "none"
+  },
+  "explanation": "source_object: Atlas or Sisyphus figure\nsource_properties: Enormous weight, physical strain, crushing pressure, crouching posture\ntarget_situation: Health systems and government overwhelmed by a surge in Covid-19 cases and oxygen shortages.\nmapping: A personified figure struggles to support a massive, virus-shaped sphere, representing the crushing burden the pandemic places on national infrastructure.\nuncertainty: none",
+  "finish_reason": "stop",
+  "usable": true
+}
