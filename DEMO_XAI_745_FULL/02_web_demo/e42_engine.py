@@ -136,7 +136,7 @@ class E42Engine(TailRichEngine):
             }
         self._context = dict(
             image_path=Path(image_path), headline=headline, supporting=supporting,
-            visual=visual, vectors=vectors, protocol=protocol, sample_id=sample_id,
+            fields={}, visual=visual, vectors=vectors, protocol=protocol, sample_id=sample_id,
         )
         self.model = self._models[self._active[0]].head
         if cancel:
