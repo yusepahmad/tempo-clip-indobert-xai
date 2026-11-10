@@ -71,19 +71,18 @@ py -3.10 -m venv venv
 **2. Pasang pustaka**
 
 ```bat
-venv\Scripts\pip install --extra-index-url https://download.pytorch.org/whl/cpu torch torchvision
-venv\Scripts\pip install -r requirements.txt
+venv\Scripts\python -m pip install -r 02_web_demo\requirements-web-lock.txt
 ```
 
 **3. Jalankan**
 
 ```bat
-cd 02_web_demo
-..\venv\Scripts\python app.py
+jalankan_windows.bat
 ```
 
-Buka http://127.0.0.1:7860 di browser. Model dilatih otomatis saat server
-menyala (sekitar 5–10 detik untuk 740 sampul), lalu siap dipakai.
+Buka http://127.0.0.1:7860 di browser. Launcher memeriksa lima checkpoint dan
+mereplay 740 prediksi E42 sebelum server dimulai. Cara termudah adalah menjalankan
+`setup_windows.bat` sekali, lalu klik dua kali `jalankan_windows.bat`.
 
 **4. Mematikan**
 
@@ -103,8 +102,8 @@ Tekan Ctrl+C di jendela terminal.
 
 ## Bagian B — Memakai aplikasi
 
-Aplikasi ini adalah prototipe penelitian dengan model **baseline** (CLIP
-ViT-B/32 + IndoBERT beku + head multi-task). Hasilnya membantu pemeriksaan,
+Aplikasi ini adalah prototipe penelitian dengan model **E42** (CLIP-L14 +
+IndoBERT + tail multi-task lima outer-fold). Hasilnya membantu pemeriksaan,
 bukan keputusan akhir.
 
 ### B.1 Navigasi

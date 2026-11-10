@@ -1,6 +1,6 @@
 # Delivery Week 3/4 — CLIP–IndoBERT Multi-Task Learning + XAI
 
-Model utama seluruh task adalah **satu model joint MTL**, sesuai judul penelitian. E14 disimpan sebagai pembanding historis terpisah dan tidak diaktifkan oleh aplikasi ini.
+Backend serving default adalah **E42 tail-grid lima outer-fold**. Model joint MTL lama tetap tersedia sebagai pembanding historis, tetapi tidak menjadi default aplikasi.
 
 ## Arsitektur
 - Gambar: CLIP ViT-B-32, pretrained `laion2b_s34b_b79k`, embedding 512 dimensi.
@@ -26,6 +26,9 @@ Peta gambar mengambil |gradient×activation| token patch blok CLIP kedua dari be
 
 OCR EasyOCR mengisi headline/supporting untuk dikoreksi pengguna. Analisis menggunakan teks final yang dikonfirmasi. Narasi memakai templat bukti dengan asal MODEL/CODEBOOK/ANOTATOR. Batch unggahan menunggu review teks; CSV/JSON memuat versi model/protokol.
 
+## Menjalankan Windows
+Jalankan `setup_windows.bat` satu kali, lalu `jalankan_windows.bat`. Setup memakai `02_web_demo/requirements-web-lock.txt`; launcher menetapkan `TEMPO_BACKEND=e42-tail-grid` bila belum diatur dan mereplay 740 prediksi OOF sebelum server dimulai.
+
 ## Menjalankan Linux CPU
 Python3.10.12 adalah lingkungan server yang diuji. Buat virtualenv, lalu:
 ```bash
@@ -34,7 +37,7 @@ venv/bin/python -m pip install torch==2.14.1+cpu torchvision==0.29.1+cpu --index
 venv/bin/python -m pip install -r requirements-delivery.txt
 bash jalankan_linux.sh
 ```
-Launcher default `127.0.0.1:7860`; gunakan `TEMPO_HOST`/`TEMPO_PORT` bila perlu. Environment `TEMPO_PYTHON` dapat menunjuk interpreter lain. Bobot publik CLIP/IndoBERT/EasyOCR diunduh saat pertama dibutuhkan; paket ZIP tidak menyertakan bobot encoder atau cache. Tidak memerlukan Qwen, E5, BGE, Kaggle, maupun API AI berbayar. Windows launcher tersedia tetapi belum diverifikasi dengan instalasi bersih.
+Launcher default `127.0.0.1:7860`; gunakan `TEMPO_HOST`/`TEMPO_PORT` bila perlu. Environment `TEMPO_PYTHON` dapat menunjuk interpreter lain. Bobot publik CLIP/IndoBERT/EasyOCR diunduh saat pertama dibutuhkan. Tidak memerlukan Qwen, E5, BGE, Kaggle, maupun API AI berbayar. Kontrak launcher Windows dan komponen Python-nya telah diperiksa; eksekusi `.bat` native tetap perlu dibuktikan pada mesin Windows bersih.
 
 ## Pemeriksaan
-`01_notebook/check_delivery.py` memeriksa data/metadata/inferensi head. Regresi Python/JS dan bukti inferensi/browser baru ada di `07_delivery_evidence`. Evaluasi fusion dapat direproduksi dengan `01_notebook/verify_mtl_cv.py`, hasil baru tidak menimpa metrik historis. Upgrade berikutnya harus mempertahankan CLIP–IndoBERT, joint loss tiga task dan XAI; versi dan skor harus diperbarui dari evaluasi yang sah, bukan substitusi model di luar judul.
+`01_notebook/check_delivery.py` memeriksa checksum aset, cakupan lima fold, dan kecocokan 740 prediksi OOF E42. Regresi Python/JS dan bukti inferensi/browser ada di `07_delivery_evidence`. Hasil baru tidak menimpa metrik historis; versi dan skor harus diperbarui dari evaluasi yang sah.

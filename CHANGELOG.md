@@ -11,6 +11,8 @@ Format mengikuti [Keep a Changelog](https://keepachangelog.com/).
 
 ### Fixed
 
+- Launcher Windows kini memakai backend `e42-tail-grid` secara default, memeriksa environment dan aset sebelum server dimulai, sedangkan setup memakai dependency lock serving serta menjalankan replay 740 prediksi OOF E42. Preflight lima checkpoint dan dua tes serving lulus; dokumentasi Windows diselaraskan (plan: [perbaikan launcher Windows E42](docs/plans/2026-11-10-perbaikan-launcher-windows-e42.md)).
+
 - URL kompatibilitas paket R3 kini membuka indeks bukti R4 sehingga R18–R36 dapat diakses. Web demo memakai checkpoint E42 asli sebagai backend default; lima fold, cache, manifest, dan tes replay 740 sampel disertakan dalam clone (plan: [sanitasi identitas delivery](docs/plans/2026-11-10-sanitasi-identitas-delivery.md)).
 
 - Perbaikan indeks revisi dan aset E42 dipublikasikan pada commit `7f08c605f6e6116f6db6477283d3e29962941523`; remote memuat lima checkpoint dan cache E42 yang diverifikasi (plan: [sanitasi identitas delivery](docs/plans/2026-11-10-sanitasi-identitas-delivery.md)).
