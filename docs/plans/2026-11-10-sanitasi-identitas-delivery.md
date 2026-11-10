@@ -1,7 +1,7 @@
 # Sanitasi Identitas Project dan Delivery
 
 **Tanggal:** 2026-11-10
-**Status:** in-progress
+**Status:** done
 
 ## Tujuan
 Menghasilkan branch utama dan paket delivery yang dapat di-clone atau diunduh client tanpa nama pribadi, username akun, alamat home, identitas server, metadata author, atau tautan akun pribadi.
@@ -40,4 +40,10 @@ Menghasilkan branch utama dan paket delivery yang dapat di-clone atau diunduh cl
 - Arsip delivery diekstrak dan dipindai; manifest/checksum cocok setelah regenerasi.
 - Tes utama dan validator delivery lulus pada staging bersih.
 - URL R3 lama membuka indeks revisi yang valid dan backend web melaporkan status E42 secara benar.
+
+## Hasil
+- Branch utama diganti dengan riwayat bersih ber-author netral; root sanitasi `b540058d0b575951396ecff12e9564435fd56955`.
+- Perbaikan akses indeks revisi dan pemasangan model E42 dipush pada commit `7f08c605f6e6116f6db6477283d3e29962941523`.
+- Pemindaian identitas menghasilkan nol temuan; validator 2.405 hash dan 26 source test lulus.
+- E42 memuat lima fold dan replay prediksi 740/740 cocok untuk ketiga task; indeks R4 memiliki 28 tautan lokal tanpa target hilang.
 - Clone baru dari branch utama hanya berisi riwayat dan author netral.
