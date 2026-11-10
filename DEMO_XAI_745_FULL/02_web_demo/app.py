@@ -173,23 +173,27 @@ app = Flask(__name__, static_folder=None)
 app.config["MAX_CONTENT_LENGTH"] = BATAS_UNGGAH_BATCH
 MODEL_LOCK = threading.RLock()
 OCR_LOCK = threading.RLock()
-BACKEND_NAME=os.environ.get('TEMPO_BACKEND','clip-indobert-tail-rich256')
-TAIL_BACKEND = BACKEND_NAME == 'clip-indobert-tail-rich256'
+BACKEND_NAME=os.environ.get('TEMPO_BACKEND','e42-tail-grid')
+RICH_BACKEND = BACKEND_NAME == 'clip-indobert-tail-rich256'
+CHECKPOINT_BACKEND = BACKEND_NAME in ('e42-tail-grid','clip-indobert-tail-rich256')
 from micro_e14_engine import MicroE14Engine, E14Unavailable
 if BACKEND_NAME == 'micro-e14-qlora':
     ENG = MicroE14Engine()
-elif TAIL_BACKEND:
+elif BACKEND_NAME == 'e42-tail-grid':
+    from e42_engine import E42Engine
+    ENG = E42Engine()
+elif RICH_BACKEND:
     from tail_rich_engine import TailRichEngine
     ENG = TailRichEngine()
 elif BACKEND_NAME in ('clip-indobert-mtl','baseline'):
     from mtl_engine import MTLDeliveryEngine
     ENG = MTLDeliveryEngine()
 else:
-    raise ValueError('TEMPO_BACKEND tidak dikenal; pilih clip-indobert-tail-rich256, clip-indobert-mtl, atau micro-e14-qlora')
+    raise ValueError('TEMPO_BACKEND tidak dikenal; pilih e42-tail-grid, clip-indobert-tail-rich256, clip-indobert-mtl, atau micro-e14-qlora')
 SAMPLE_IDS = frozenset(str(x) for x in ENG.df["sample_id"])
 if BACKEND_NAME == 'micro-e14-qlora':
     print(f"[init] MICRO-E14 ready={ENG.ready}; {ENG.reason}", flush=True)
-elif TAIL_BACKEND:
+elif CHECKPOINT_BACKEND:
     print(f'[init] {ENG.manifest["version"]}; {len(ENG.df)} sampul; 5 checkpoint asli terverifikasi; CPU', flush=True)
 else:
     print(f"[init] dataset {len(ENG.df)} sampul, dimensi fitur {ENG.X.shape[1]}")
@@ -261,7 +265,7 @@ def samples():
             "sample_id": r["sample_id"],
             "headline": _teks(r["headline_verified"]),
             "supporting": _teks(r.get("supporting_text_verified")),
-            "rich": {k:ENG.rich_inputs[str(r["sample_id"])][k] for k in ("description","source_visual","reason")} if TAIL_BACKEND else {},
+            "rich": {k:ENG.rich_inputs[str(r["sample_id"])][k] for k in ("description","source_visual","reason")} if RICH_BACKEND else {},
             "domain": str(r["task2_domain_sumber"]),
             # Istilah awam untuk daftar pilihan (revisi 15 Sep, R2).
             "domain_tampil": tampil(str(r["task2_domain_sumber"])),
@@ -418,7 +422,7 @@ def siapkan_masukan(form: dict, gambar_bytes: bytes | None, batch: bool = False)
         m.update(mode="unggahan", gambar=baca_gambar(gambar_bytes), headline=headline, supporting=supporting)
     else:
         raise InputTidakSah("pilih sampul dataset atau unggah gambar")
-    if TAIL_BACKEND:
+    if RICH_BACKEND:
         defaults = ENG.rich_inputs[m["sample_id"]] if m["mode"] == "dataset" else {}
         fields = {k:str(form[k] if k in form else defaults.get(k, "")).strip()
                   for k in ("description", "source_visual", "reason")}
@@ -500,9 +504,9 @@ def analyse_core(m: dict) -> dict:
     if m["mode"] == "dataset":
         sample_id, i, r, img_path = m["sample_id"], m["i"], m["row"], m["img_path"]
         # leave-one-out: sampul uji tidak ikut dilatih
-        if TAIL_BACKEND:
+        if CHECKPOINT_BACKEND:
             img_feat, txt_feat, vec = ENG.prepare_analysis(img_path, headline, supporting, sample_id,
-                m["rich_fields"], cancel=lambda: _cek_batal(m.get('req_id')))
+                m.get("rich_fields"), cancel=lambda: _cek_batal(m.get('req_id')))
         else:
             train_context(None if batch else i)
             img_feat = ENG.X[i, :ENG.dim_img]
@@ -516,7 +520,7 @@ def analyse_core(m: dict) -> dict:
             "entitas": _teks(r.get("task3_primary_entity")),
         }
         mode = "dataset batch (eksplorasi, in-sample)" if batch else "dataset (leave-one-out)"
-        if m["teks_berubah"] and not TAIL_BACKEND:
+        if m["teks_berubah"] and not CHECKPOINT_BACKEND:
             img_feat, txt_feat = ENG.features_for(img_path, headline, supporting)
             vec = np.concatenate([img_feat, txt_feat])
         gambar_url = f"/api/image/{sample_id}"
@@ -528,8 +532,8 @@ def analyse_core(m: dict) -> dict:
         img_path = CACHE / f"{up_token}_src.png"
         m["gambar"].save(img_path)
 
-        if TAIL_BACKEND:
-            img_feat, txt_feat, vec = ENG.prepare_analysis(img_path, headline, supporting, fields=m["rich_fields"],
+        if CHECKPOINT_BACKEND:
+            img_feat, txt_feat, vec = ENG.prepare_analysis(img_path, headline, supporting, fields=m.get("rich_fields"),
                 cancel=lambda: _cek_batal(m.get('req_id')))
         else:
             train_context()  # pakai seluruh 740 sampul sebagai data latih
@@ -540,7 +544,7 @@ def analyse_core(m: dict) -> dict:
         mode = "unggahan (tanpa label pembanding)"
         gambar_url = f"/api/unggahan/{up_token}"
 
-    if TAIL_BACKEND:
+    if CHECKPOINT_BACKEND:
         mode = ENG._context['protocol']
     if hasattr(ENG, 'set_context'):
         ENG.set_context(img_path, headline, supporting, img_feat, sample_id or None, batch,
@@ -629,7 +633,7 @@ def analyse_core(m: dict) -> dict:
     penjelasan = [{"label":x["label"], "asal":x["asal"].lower(), "teks":x["teks"]} for x in kesimpulan["blok"]]
     # Tab Prediksi: ringkasan awam ketiga task, terpisah dari penjelasan.
     ringkasan = ringkas(pred, headline, label=label_asli, catatan=catatan)
-    if batch and label_asli and not TAIL_BACKEND:
+    if batch and label_asli and not CHECKPOINT_BACKEND:
         # Batch dataset memakai model in-sample (audit B14): kecocokan dengan
         # anotator di sini tidak boleh dibaca sebagai akurasi.
         batch_note = _CATATAN_IN_SAMPLE
@@ -808,7 +812,7 @@ def batch_create():
     if not isinstance(ids,list) or not all(isinstance(x,str) for x in ids):return _galat("sample_ids harus list string")
     ids=[x.strip() for x in ids]
     files=request.files.getlist("gambar")
-    if TAIL_BACKEND and files:
+    if RICH_BACKEND and files:
         return _galat("Model rich memerlukan keterangan visual per gambar. Gunakan unggah satu gambar; batch dataset tetap tersedia.",422)
     if not 0<len(ids)+len(files)<=740:return _galat("Pilih 1–740 sampul")
     tak_dikenal=[x for x in dict.fromkeys(ids) if x not in SAMPLE_IDS]

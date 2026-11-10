@@ -170,6 +170,15 @@ fetch('/api/models').then(r=>r.json()).then(d=>{
    document.getElementById('modelMethodDetails').textContent=e.textContent+' '+(d.limitation||'');
    return;
  }
+ if(d.backend==='e42-tail-grid'){
+   const fmt=x=>['task1_issue','task2_domain_sumber','task3_primary_entity_type'].map(t=>Number(x[t]).toFixed(4).replace('.',',')).join(' / ');
+   e.textContent='Model aktif: E42 — CLIP-L14 + IndoBERT, tail terlatih dan tiga head joint MTL. Macro-F1 OOF Task 1/2/3: '+fmt(scores)+'. Skor prediksi belum dikalibrasi.';
+   document.getElementById('modelMethodDetails').textContent=e.textContent+' Dataset memakai checkpoint outer-fold yang tidak melatih ID tersebut. Unggahan memakai rerata probabilitas lima fold E42 dan belum dievaluasi terpisah. XAI melewati checkpoint E42 yang sama.';
+   document.getElementById('datasetProtocol').textContent='E42: checkpoint outer-fold held-out untuk setiap sampul dataset. Teks yang diedit bukan benchmark baru.';
+   document.getElementById('batchProtocol').textContent='E42: setiap sampul dataset memakai checkpoint outer-fold held-out masing-masing; unggahan memakai ensemble lima fold.';
+   window.tailRichActive=false;
+   return;
+ }
  if(d.backend==='clip-indobert-tail-rich256'){
    const micro=d.evaluation.micro_f1;
    const fmt=x=>['task1_issue','task2_domain_sumber','task3_primary_entity_type'].map(t=>Number(x[t]).toFixed(4).replace('.',',')).join(' / ');

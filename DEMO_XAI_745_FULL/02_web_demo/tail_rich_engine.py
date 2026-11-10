@@ -115,7 +115,8 @@ class TailRichEngine(XAIEngine):
         from transformers import AutoModel, AutoTokenizer
         from huggingface_hub import snapshot_download
         revision = self.manifest['indobert']['revision']
-        snap = Path(snapshot_download(self.manifest['indobert']['repo'], revision=revision, local_files_only=True))
+        offline = os.environ.get('TEMPO_OFFLINE','0') == '1'
+        snap = Path(snapshot_download(self.manifest['indobert']['repo'], revision=revision, local_files_only=offline))
         for name,digest in self.manifest['indobert']['files'].items():
             if sha(snap/name) != digest:
                 raise ValueError('Backbone IndoBERT berbeda: '+name)
@@ -131,10 +132,11 @@ class TailRichEngine(XAIEngine):
         import open_clip
         from huggingface_hub import hf_hub_download
         pin = self.manifest['clip']
-        weights = Path(hf_hub_download(pin['repo'],pin['file'],revision=pin['revision'],local_files_only=True))
+        offline = os.environ.get('TEMPO_OFFLINE','0') == '1'
+        weights = Path(hf_hub_download(pin['repo'],pin['file'],revision=pin['revision'],local_files_only=offline))
         if sha(weights) != pin['sha256']:
             raise ValueError('Backbone CLIP berbeda')
-        cfg = json.loads(Path(hf_hub_download(pin['repo'],'open_clip_config.json',revision=pin['revision'],local_files_only=True)).read_text())
+        cfg = json.loads(Path(hf_hub_download(pin['repo'],'open_clip_config.json',revision=pin['revision'],local_files_only=offline)).read_text())
         pre = cfg.get('preprocess_cfg',{})
         model, _, self._preprocess = open_clip.create_model_and_transforms('ViT-L-14',pretrained=str(weights),precision='fp32',image_mean=pre.get('mean'),image_std=pre.get('std'))
         self._visual = model.visual.eval()

@@ -11,6 +11,8 @@ Format mengikuti [Keep a Changelog](https://keepachangelog.com/).
 
 ### Fixed
 
+- URL kompatibilitas paket R3 kini membuka indeks bukti R4 sehingga R18–R36 dapat diakses. Web demo memakai checkpoint E42 asli sebagai backend default; lima fold, cache, manifest, dan tes replay 740 sampel disertakan dalam clone (plan: [sanitasi identitas delivery](docs/plans/2026-11-10-sanitasi-identitas-delivery.md)).
+
 - Delivery `delivery/HASIL_REVISI_JOY_20261102_R3_FULL/` melengkapi output
   tiga notebook: confusion matrix baseline yang terlewat, pembanding E14,
   seluruh gambar XAI, tabel distribusi/weighting/statistik dan lampiran

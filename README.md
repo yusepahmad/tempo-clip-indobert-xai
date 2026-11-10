@@ -19,6 +19,7 @@ MICRO-E14 mempunyai Micro-F1 Task 1/2/3 sebesar 0.720270/0.566216/0.667568. Basi
 ## Struktur paket
 
 - `DEMO_XAI_745_FULL/`: source notebook, eksperimen, web demo, data, dan protokol.
+- `DEMO_XAI_745_FULL/06_models/e42-tail-grid-v1/`: lima checkpoint E42, cache front, konfigurasi, dan manifest checksum yang langsung ikut dalam clone.
 - `delivery/HASIL_REVISI_JOY_20261108_R4/`: paket analisis utama dengan notebook, tabel, bukti revisi, dan manifest.
 - `delivery/ADDENDUM_R21_LITERAL_20261110/`: hasil kontrol R21 literal.
 - `delivery/ADDENDUM_HASIL_MANUSIA_20261110/`: hasil R22, R23/R6, R31, serta audit R34/R9.
@@ -47,6 +48,8 @@ python -m unittest -v \
 ```
 
 Notebook analisis tersedia pada `delivery/HASIL_REVISI_JOY_20261108_R4/notebooks/`. Run all analisis memakai CPU tanpa API atau credential. Training dan XAI ulang memerlukan model/cache serta environment ML yang dirujuk oleh protokol.
+
+Web demo memakai E42 secara default. Jalankan `DEMO_XAI_745_FULL/02_web_demo/app.py`; startup memverifikasi checksum lima checkpoint. Backbone CLIP-L14 dan IndoBERT diunduh pada pemakaian pertama berdasarkan revision/hash yang dipin. Set `TEMPO_OFFLINE=1` bila cache backbone sudah tersedia dan jaringan harus dinonaktifkan.
 
 ## Status revisi
 
