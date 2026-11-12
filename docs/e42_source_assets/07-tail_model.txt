@@ -1,0 +1,11 @@
+TASKS=('task1_issue','task2_domain_sumber','task3_primary_entity_type');TARGET=TASKS[1]
+CFG=dict(hidden=256,dropout=.3,visual_weight=2.,loss_weights=[1.,2.,2.],encoder_lr=2e-5,head_lr=3e-4,weight_decay=.01,batch=32,epoch_candidates=[0,2,4,8,12,24],seed=42)
+def seed():random.seed(42);np.random.seed(42);torch.manual_seed(42)
+def class_weights(y,n):
+    c=np.bincount(y,minlength=n).astype(np.float32)
+    return torch.tensor(np.where(c>0,len(y)/(np.maximum(c,1)*(c>0).sum()),0.),dtype=torch.float32)
+class Head(nn.Module):
+    def __init__(self,nc):
+        super().__init__();self.shared=nn.Sequential(nn.Linear(2304,CFG['hidden']),nn.ReLU(),nn.Dropout(CFG['dropout']));self.heads=nn.ModuleDict({t:nn.Linear(CFG['hidden'],nc[t]) for t in TASKS})
+    def forward(self,x):
+        h=self.shared(x);return {t:layer(h) for t,layer in self.heads.items()}

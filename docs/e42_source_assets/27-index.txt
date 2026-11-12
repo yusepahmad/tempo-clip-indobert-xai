@@ -1,0 +1,20 @@
+  const maks = Math.max(...d.atribusi_kata.map(x=>Math.abs(Number(x.kontribusi))||0), 0.0001);
+  let kb = `<div class="kecil" style="margin-bottom:8px">
+    Kelas yang dijelaskan: <b>${d.kelas_untuk_atribusi_tampil || d.kelas_untuk_atribusi}</b>
+    (skor ${(Number(d.prob_kelas_atribusi)*100).toFixed(1)}%; belum dikalibrasi).
+    Merah = kata itu <b>menopang</b> keputusan; biru = kata itu <b>melemahkan</b>.</div>`;
+  d.atribusi_kata.forEach(x=>{
+    const k = Number(x.kontribusi) || 0;
+    kb += `<span class="kata" style="background:${warnaKata(k, maks)}">
+      ${x.kata} <span class="kecil">${k>=0?'+':''}${k.toFixed(3)}</span></span>`;
+  });
+  document.getElementById('kataBox').innerHTML = kb;
+
+  // Sebutkan metode atribusi yang benar-benar dipakai, supaya pembaca tidak
+  // perlu menduga dan hasilnya dapat dicocokkan dengan uji banding.
+  const met = d.metode_atribusi || 'occlusion';
+  document.getElementById('metodeAtribusi').innerHTML = met === 'lime'
+    ? 'Metode: <b>LIME</b> — dibangkitkan 120 varian judul (sebagian kata '
+      + 'dihilangkan; teks pendukung tetap), lalu dicocokkan regresi linear berbobot jarak. Bobot tiap '
+      + 'kata diambil dari koefisien regresi itu, sehingga pengaruh gabungan '
+      + 'antar-kata ikut terhitung.'

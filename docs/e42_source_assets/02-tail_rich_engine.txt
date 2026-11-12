@@ -1,0 +1,6 @@
+    def _images(self, image_path):
+        self._ensure_visual()
+        with Image.open(image_path) as image:
+            image=image.convert('RGB');w,h=image.size
+            crop=image.crop((0,int(.20*h),w,int(.94*h)))
+            return torch.stack([self._preprocess(image),self._preprocess(crop)])

@@ -1,0 +1,16 @@
+    def gradcam_terpadu(self,image_path,txt_feat):
+        images=self._images(image_path).requires_grad_(True)
+        saved={}
+        handle=self._visual.transformer.resblocks[-2].register_forward_hook(lambda _m,_i,out:saved.update(activation=out))
+        try:
+            visual=torch.nn.functional.normalize(self._visual(images).float(),p=2,dim=1).reshape(1,-1)*2
+            outputs={t:[] for t in self.tasks}
+            for fold in self._active:
+                text=torch.tensor(self._context['vectors'][fold][1536:]).reshape(1,-1)
+                logits=self._models[fold].head(torch.cat([visual,text],dim=1))
+                for t in self.tasks:outputs[t].append(torch.softmax(logits[t],dim=1))
+            act=saved['activation'];per={}
+            for task in self.tasks:
+                probabilities=torch.stack(outputs[task]).mean(0)
+                target=probabilities[0,int(probabilities.argmax(1)[0])]
+                gradient=torch.autograd.grad(target,act,retain_graph=True)[0]

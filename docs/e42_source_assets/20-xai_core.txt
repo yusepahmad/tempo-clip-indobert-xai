@@ -1,0 +1,36 @@
+
+        kata = headline.split()
+        if not kata:
+            return [], self.maps[task][0], 0.0
+
+        dasar = self._prob_banyak_teks(img_feat, [headline], supporting, task)[0]
+        k = int(dasar.argmax())
+
+        # LIME memakai random_state agar hasilnya dapat diulang. Tanpa itu,
+        # dua analisis pada sampul yang sama bisa memberi angka berbeda —
+        # menyulitkan verifikasi dan pelaporan.
+        explainer = LimeTextExplainer(
+            class_names=self.maps[task],
+            bow=False,            # posisi kata dipertahankan, kata kembar dibedakan
+            split_expression=r"\s+",
+            random_state=SEED,
+        )
+
+        def klasifikasi(daftar_teks):
+            return self._prob_banyak_teks(img_feat, daftar_teks, supporting, task)
+
+        penjelasan = explainer.explain_instance(
+            headline,
+            klasifikasi,
+            labels=(k,),
+            num_features=len(kata),
+            num_samples=n_sampel,
+        )
+
+        # LIME mengembalikan (posisi_kata, bobot) karena bow=False.
+        bobot = dict(penjelasan.as_map()[k])
+        skor = [
+            {"kata": w, "kontribusi": float(bobot.get(i, 0.0))}
+            for i, w in enumerate(kata)
+        ]
+        return skor, self.maps[task][k], float(dasar[k])

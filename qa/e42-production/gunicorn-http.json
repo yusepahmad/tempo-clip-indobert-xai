@@ -1,0 +1,1132 @@
+{
+  "url": "http://127.0.0.1:17862",
+  "date": "2026-11-13",
+  "deployment": "local Linux; no VPS deployment",
+  "frontend": 200,
+  "model": {
+    "architecture": "CLIP-L14 full/crop + IndoBERT frozen first 10 layers/trained last 2 + shared 256 + three jointly trained heads",
+    "asset_sha256": {
+      "bert_config.json": "08d2da81e48323154b5ff9d15af54e8faacc8dd711c6ec08b538c2d8fdf72084",
+      "fold1.pt": "479217b2f18c1e0b48111eaedfa3341f9d9ddac06dbbf270b2841a7365ff7ed1",
+      "fold2.pt": "a17e8a2c5ceca4a97b5909799501e3e5d6cef76f4ce70c5923136de46934c3c6",
+      "fold3.pt": "9a4e8b1ebdcb4a226153ba869710e65efe18e12dd6dd6193540f0105512b81d6",
+      "fold4.pt": "39a160a3288c7c1a1c9b04f36d6e25b472fa5959b3a16137e1ce441faa31ae48",
+      "fold5.pt": "0c6e5b8c7b12d1c03682733c477372dde48aeb76ed95926371f8bf47423fb69f",
+      "front_cache.npz": "312a130025a20c18f38668293534528fb82072a139c0c1ca41ad8abd23559cd4",
+      "protocol.json": "b6a8c7d2cc4b58c5b8eb0fb5f09f8a7ded983011c9b2871e29c07949f63dc73a",
+      "tail_initial.pt": "cfeadc75ea8336eab297eaf831ada3a5c792f83dea1b9b580144b4160a8f812c"
+    },
+    "backend": "e42-tail-grid",
+    "batch_upload_supported": true,
+    "cache_manifest_sha256": "9773684278f995f2d2da4f4c12158568077372270157ca85a0a99a2427829040",
+    "candidate": "E42",
+    "clip": {
+      "bytes": 1710517748,
+      "file": "open_clip_pytorch_model.safetensors",
+      "repo": "laion/CLIP-ViT-L-14-laion2B-s32B-b82K",
+      "revision": "1627032197142fbe2a7cfec626f4ced3ae60d07a",
+      "sha256": "7d129ed747e0ed53e82dfcc140382b51be66b56e6a9bdc3258afd2846e3bb019"
+    },
+    "dataset_protocol": "checkpoint outer-fold E42 yang tidak melatih ID dataset tersebut",
+    "dataset_sha256": "cba20f8250bcb59481ed2d3d7d5d42fb8242c96a7ba2d11a2cd02ad80862961a",
+    "device": "cpu",
+    "evaluation": {
+      "macro_f1": {
+        "task1_issue": 0.5254826236457082,
+        "task2_domain_sumber": 0.3955604325695003,
+        "task3_primary_entity_type": 0.4033984095814434
+      },
+      "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+      "samples": 740
+    },
+    "indobert": {
+      "files": {
+        "config.json": "c40b372acbdfbde38aa225c6ffdd09d1076904f2445532e2bb7eb92f95fc5954",
+        "pytorch_model.bin": "725fead20c01d47e0192426ac1474eff19e993b52b971c05bca5e96054be41f8",
+        "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+        "tokenizer_config.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "vocab.txt": "35cfc7be6dc3ec71102248722f352830a8fd89b5a5dadb83d70c2f7794ddbc11"
+      },
+      "repo": "indobenchmark/indobert-base-p1",
+      "revision": "c2cd0b51ddce6580eb35263b39b0a1e5fb0a39e2"
+    },
+    "limitation": "Dataset uses its held-out outer-fold checkpoint. New uploads average five E42 checkpoints and are not a separate benchmark; scores are uncalibrated.",
+    "ready": true,
+    "tasks": [
+      "task1_issue",
+      "task2_domain_sumber",
+      "task3_primary_entity_type"
+    ],
+    "text_xai": "perturbasi headline; supporting text tetap",
+    "upload_protocol": "rerata probabilitas lima checkpoint E42; belum dievaluasi terpisah",
+    "upload_requires": [],
+    "version": "e42-tail-grid-v1"
+  },
+  "dataset_analysis": {
+    "analysis_id": "fc4ed238ff6e423e8f2e5fb4c6eb807d",
+    "atribusi_kata": [
+      {
+        "kata": "AKBAR",
+        "kontribusi": -0.0998193621635437
+      },
+      {
+        "kata": "TERPOJOK",
+        "kontribusi": -0.07712441682815552
+      },
+      {
+        "kata": "SIAPA",
+        "kontribusi": 0.29935237765312195
+      },
+      {
+        "kata": "SENANG",
+        "kontribusi": 0.025144875049591064
+      }
+    ],
+    "catatan_anotator": {
+      "entitas": "Akbar Tanjung",
+      "pemetaan_makna": "Posisi di sudut menggambarkan tekanan politik dan hukum yang menyudutkan Akbar.",
+      "sumber_metafora": "Sudut ruang dan posisi fisik terjepit"
+    },
+    "durasi_detik": 12.1,
+    "evidence": [
+      {
+        "class_id": "HEWAN_TUBUH",
+        "id": "prediction",
+        "model_version": "e42-tail-grid-v1",
+        "score": 0.7969818115234375,
+        "score_kind": "softmax_uncalibrated",
+        "source": "MODEL",
+        "task_id": "task2_domain_sumber"
+      },
+      {
+        "class_id": "HEWAN_TUBUH",
+        "id": "words",
+        "source": "MODEL",
+        "task_id": "task2_domain_sumber",
+        "values": [
+          {
+            "kata": "AKBAR",
+            "kontribusi": -0.0998193621635437
+          },
+          {
+            "kata": "TERPOJOK",
+            "kontribusi": -0.07712441682815552
+          },
+          {
+            "kata": "SIAPA",
+            "kontribusi": 0.29935237765312195
+          },
+          {
+            "kata": "SENANG",
+            "kontribusi": 0.025144875049591064
+          }
+        ]
+      },
+      {
+        "class_id": "HEWAN_TUBUH",
+        "id": "visual",
+        "source": "MODEL",
+        "task_id": "task2_domain_sumber",
+        "zone": "kepala sampul"
+      },
+      {
+        "class_id": "HEWAN_TUBUH",
+        "id": "definition",
+        "reference": "Codebook operasional proyek; definisi disusun atas instruksi user, bukan sumber resmi dosen",
+        "source": "CODEBOOK",
+        "task_id": "task2_domain_sumber",
+        "value": "Domain sumber berupa hewan, bagian tubuh, atau bentuk dan perilaku biologis."
+      },
+      {
+        "id": "annotation",
+        "source": "ANOTATOR",
+        "task_id": "task2_domain_sumber",
+        "value": {
+          "pemetaan_makna": "Posisi di sudut menggambarkan tekanan politik dan hukum yang menyudutkan Akbar.",
+          "sumber_metafora": "Sudut ruang dan posisi fisik terjepit"
+        }
+      }
+    ],
+    "gambar_url": "/api/image/TMP-8D0A20A6A066",
+    "headline": "AKBAR TERPOJOK SIAPA SENANG",
+    "heatmap_padu_url": "/api/heatmap/cam_fc4ed238ff6e423e8f2e5fb4c6eb807d_padu",
+    "heatmap_per_task": {
+      "task1_issue": {
+        "nama_task": "Isu Utama",
+        "url": "/api/heatmap/cam_fc4ed238ff6e423e8f2e5fb4c6eb807d_task1_issue"
+      },
+      "task2_domain_sumber": {
+        "nama_task": "Domain Sumber Metafora",
+        "url": "/api/heatmap/cam_fc4ed238ff6e423e8f2e5fb4c6eb807d_task2_domain_sumber"
+      },
+      "task3_primary_entity_type": {
+        "nama_task": "Sasaran Kritik",
+        "url": "/api/heatmap/cam_fc4ed238ff6e423e8f2e5fb4c6eb807d_task3_primary_entity_type"
+      }
+    },
+    "heatmap_url": "/api/heatmap/cam_fc4ed238ff6e423e8f2e5fb4c6eb807d",
+    "kelas_untuk_atribusi": "HEWAN_TUBUH",
+    "kelas_untuk_atribusi_tampil": "Hewan & Tubuh",
+    "kesimpulan": {
+      "alasan_ragu": [
+        "Model paling banyak melihat di luar bagian tengah sampul, jadi alasannya belum tentu berasal dari ilustrasi; posisi saja tidak menunjukkan objek apa yang dilihat.",
+        "Label anotator berbeda (Bencana & Jerat)."
+      ],
+      "asal": "GABUNGAN",
+      "blok": [
+        {
+          "asal": "MODEL",
+          "label": "Mengapa Hewan & Tubuh?",
+          "teks": "Untuk domain sumber metafora, model memilih Hewan & Tubuh (skor 79,7%). Dari judul, kata ‘SIAPA’ dan ‘SENANG’ paling mendorong pilihan ini, sedangkan ‘AKBAR’ justru menariknya ke arah lain. Di gambar, area yang paling berpengaruh ada di bagian atas sampul (area logo dan judul kecil), bukan di bagian tengah tempat ilustrasi biasanya berada."
+        },
+        {
+          "asal": "CODEBOOK",
+          "label": "Arti kelas ini",
+          "teks": "Dalam referensi demo, Hewan & Tubuh berarti: domain sumber berupa hewan, bagian tubuh, atau bentuk dan perilaku biologis."
+        },
+        {
+          "asal": "ANOTATOR",
+          "label": "Catatan anotator",
+          "teks": "Anotator mencatat sumber kiasannya “Sudut ruang dan posisi fisik terjepit” dan maknanya “Posisi di sudut menggambarkan tekanan politik dan hukum yang menyudutkan Akbar”. Label anotator untuk aspek ini berbeda: Bencana & Jerat."
+        }
+      ],
+      "bukti": [
+        {
+          "class_id": "HEWAN_TUBUH",
+          "id": "prediction",
+          "model_version": "e42-tail-grid-v1",
+          "score": 0.7969818115234375,
+          "score_kind": "softmax_uncalibrated",
+          "source": "MODEL",
+          "task_id": "task2_domain_sumber"
+        },
+        {
+          "class_id": "HEWAN_TUBUH",
+          "id": "words",
+          "source": "MODEL",
+          "task_id": "task2_domain_sumber",
+          "values": [
+            {
+              "kata": "AKBAR",
+              "kontribusi": -0.0998193621635437
+            },
+            {
+              "kata": "TERPOJOK",
+              "kontribusi": -0.07712441682815552
+            },
+            {
+              "kata": "SIAPA",
+              "kontribusi": 0.29935237765312195
+            },
+            {
+              "kata": "SENANG",
+              "kontribusi": 0.025144875049591064
+            }
+          ]
+        },
+        {
+          "class_id": "HEWAN_TUBUH",
+          "id": "visual",
+          "source": "MODEL",
+          "task_id": "task2_domain_sumber",
+          "zone": "kepala sampul"
+        },
+        {
+          "class_id": "HEWAN_TUBUH",
+          "id": "definition",
+          "reference": "Codebook operasional proyek; definisi disusun atas instruksi user, bukan sumber resmi dosen",
+          "source": "CODEBOOK",
+          "task_id": "task2_domain_sumber",
+          "value": "Domain sumber berupa hewan, bagian tubuh, atau bentuk dan perilaku biologis."
+        },
+        {
+          "id": "annotation",
+          "source": "ANOTATOR",
+          "task_id": "task2_domain_sumber",
+          "value": {
+            "pemetaan_makna": "Posisi di sudut menggambarkan tekanan politik dan hukum yang menyudutkan Akbar.",
+            "sumber_metafora": "Sudut ruang dan posisi fisik terjepit"
+          }
+        }
+      ],
+      "cek": [
+        "Model paling banyak melihat di luar bagian tengah sampul, jadi alasannya belum tentu berasal dari ilustrasi; posisi saja tidak menunjukkan objek apa yang dilihat.",
+        "Label anotator berbeda (Bencana & Jerat)."
+      ],
+      "class_id": "HEWAN_TUBUH",
+      "dapat_dipercaya": false,
+      "paragraf": "Untuk domain sumber metafora, model memilih Hewan & Tubuh (skor 79,7%). Dari judul, kata ‘SIAPA’ dan ‘SENANG’ paling mendorong pilihan ini, sedangkan ‘AKBAR’ justru menariknya ke arah lain. Di gambar, area yang paling berpengaruh ada di bagian atas sampul (area logo dan judul kecil), bukan di bagian tengah tempat ilustrasi biasanya berada. Dalam referensi demo, Hewan & Tubuh berarti: domain sumber berupa hewan, bagian tubuh, atau bentuk dan perilaku biologis. Anotator mencatat sumber kiasannya “Sudut ruang dan posisi fisik terjepit” dan maknanya “Posisi di sudut menggambarkan tekanan politik dan hukum yang menyudutkan Akbar”. Label anotator untuk aspek ini berbeda: Bencana & Jerat. Yang perlu dicek: Model paling banyak melihat di luar bagian tengah sampul, jadi alasannya belum tentu berasal dari ilustrasi; posisi saja tidak menunjukkan objek apa yang dilihat. Label anotator berbeda (Bencana & Jerat).",
+      "strategi": "bukti_gabungan_terbatas",
+      "task_id": "task2_domain_sumber"
+    },
+    "label_anotator": {
+      "task1_issue": "law_and_justice",
+      "task2_domain_sumber": "BENCANA_JERAT",
+      "task3_primary_entity_type": "individual"
+    },
+    "metode_atribusi": "occlusion",
+    "mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+    "models": {
+      "task1_issue": {
+        "backend": "e42-tail-grid",
+        "evaluation": {
+          "macro_f1": 0.5254826236457082,
+          "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+          "samples": 740
+        },
+        "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+        "model_version": "e42-tail-grid-v1",
+        "score_kind": "softmax_uncalibrated",
+        "score_label": "Skor E42 (belum dikalibrasi)"
+      },
+      "task2_domain_sumber": {
+        "backend": "e42-tail-grid",
+        "evaluation": {
+          "macro_f1": 0.3955604325695003,
+          "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+          "samples": 740
+        },
+        "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+        "model_version": "e42-tail-grid-v1",
+        "score_kind": "softmax_uncalibrated",
+        "score_label": "Skor E42 (belum dikalibrasi)"
+      },
+      "task3_primary_entity_type": {
+        "backend": "e42-tail-grid",
+        "evaluation": {
+          "macro_f1": 0.4033984095814434,
+          "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+          "samples": 740
+        },
+        "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+        "model_version": "e42-tail-grid-v1",
+        "score_kind": "softmax_uncalibrated",
+        "score_label": "Skor E42 (belum dikalibrasi)"
+      }
+    },
+    "penjelasan": [
+      {
+        "asal": "model",
+        "label": "Mengapa Hewan & Tubuh?",
+        "teks": "Untuk domain sumber metafora, model memilih Hewan & Tubuh (skor 79,7%). Dari judul, kata ‘SIAPA’ dan ‘SENANG’ paling mendorong pilihan ini, sedangkan ‘AKBAR’ justru menariknya ke arah lain. Di gambar, area yang paling berpengaruh ada di bagian atas sampul (area logo dan judul kecil), bukan di bagian tengah tempat ilustrasi biasanya berada."
+      },
+      {
+        "asal": "codebook",
+        "label": "Arti kelas ini",
+        "teks": "Dalam referensi demo, Hewan & Tubuh berarti: domain sumber berupa hewan, bagian tubuh, atau bentuk dan perilaku biologis."
+      },
+      {
+        "asal": "anotator",
+        "label": "Catatan anotator",
+        "teks": "Anotator mencatat sumber kiasannya “Sudut ruang dan posisi fisik terjepit” dan maknanya “Posisi di sudut menggambarkan tekanan politik dan hukum yang menyudutkan Akbar”. Label anotator untuk aspek ini berbeda: Bencana & Jerat."
+      }
+    ],
+    "prediksi": {
+      "task1_issue": {
+        "backend": "e42-tail-grid",
+        "evaluation": {
+          "macro_f1": 0.5254826236457082,
+          "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+          "samples": 740
+        },
+        "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+        "model_version": "e42-tail-grid-v1",
+        "nama_task": "Task 1 — Isu Utama",
+        "nama_task_mudah": "Isu Utama",
+        "prediksi": "election_and_political_competition",
+        "prediksi_tampil": "Pemilu & Persaingan Politik",
+        "probabilitas": 0.2608403265476227,
+        "score_kind": "softmax_uncalibrated",
+        "score_label": "Skor E42 (belum dikalibrasi)",
+        "semua": [
+          {
+            "kelas": "election_and_political_competition",
+            "kelas_tampil": "Pemilu & Persaingan Politik",
+            "prob": 0.2608403265476227
+          },
+          {
+            "kelas": "corruption_and_bribery",
+            "kelas_tampil": "Korupsi & Suap",
+            "prob": 0.25432685017585754
+          },
+          {
+            "kelas": "law_and_justice",
+            "kelas_tampil": "Hukum & Peradilan",
+            "prob": 0.2139638215303421
+          },
+          {
+            "kelas": "power_and_governance",
+            "kelas_tampil": "Kekuasaan & Tata Kelola",
+            "prob": 0.20351432263851166
+          },
+          {
+            "kelas": "human_rights_and_social_conflict",
+            "kelas_tampil": "Hak Asasi & Konflik Sosial",
+            "prob": 0.040422677993774414
+          },
+          {
+            "kelas": "economy_business_and_state_enterprise",
+            "kelas_tampil": "Ekonomi, Bisnis & BUMN",
+            "prob": 0.009424051269888878
+          },
+          {
+            "kelas": "security_defense_and_terrorism",
+            "kelas_tampil": "Keamanan, Pertahanan & Terorisme",
+            "prob": 0.008987722918391228
+          },
+          {
+            "kelas": "public_policy_health_and_disaster",
+            "kelas_tampil": "Kebijakan Publik, Kesehatan & Bencana",
+            "prob": 0.005800078622996807
+          },
+          {
+            "kelas": "other_issue",
+            "kelas_tampil": "Isu Lainnya",
+            "prob": 0.0016859250608831644
+          },
+          {
+            "kelas": "environment_and_natural_resources",
+            "kelas_tampil": "Lingkungan & Sumber Daya Alam",
+            "prob": 0.001034241053275764
+          }
+        ]
+      },
+      "task2_domain_sumber": {
+        "backend": "e42-tail-grid",
+        "evaluation": {
+          "macro_f1": 0.3955604325695003,
+          "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+          "samples": 740
+        },
+        "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+        "model_version": "e42-tail-grid-v1",
+        "nama_task": "Task 2 — Domain Sumber Metafora",
+        "nama_task_mudah": "Domain Sumber Metafora",
+        "prediksi": "HEWAN_TUBUH",
+        "prediksi_tampil": "Hewan & Tubuh",
+        "probabilitas": 0.7969818115234375,
+        "score_kind": "softmax_uncalibrated",
+        "score_label": "Skor E42 (belum dikalibrasi)",
+        "semua": [
+          {
+            "kelas": "HEWAN_TUBUH",
+            "kelas_tampil": "Hewan & Tubuh",
+            "prob": 0.7969818115234375
+          },
+          {
+            "kelas": "LAINNYA",
+            "kelas_tampil": "Lainnya",
+            "prob": 0.11115188896656036
+          },
+          {
+            "kelas": "PERMAINAN_KONTES",
+            "kelas_tampil": "Permainan & Kontes",
+            "prob": 0.05934935063123703
+          },
+          {
+            "kelas": "BENCANA_JERAT",
+            "kelas_tampil": "Bencana & Jerat",
+            "prob": 0.01425211876630783
+          },
+          {
+            "kelas": "NON_METAFORA",
+            "kelas_tampil": "Tanpa Metafora",
+            "prob": 0.011588542722165585
+          },
+          {
+            "kelas": "MESIN_INFRASTRUKTUR",
+            "kelas_tampil": "Mesin & Infrastruktur",
+            "prob": 0.006021240260452032
+          },
+          {
+            "kelas": "KONSUMSI_TRANSAKSI",
+            "kelas_tampil": "Konsumsi & Transaksi",
+            "prob": 0.0006551046390086412
+          }
+        ]
+      },
+      "task3_primary_entity_type": {
+        "backend": "e42-tail-grid",
+        "evaluation": {
+          "macro_f1": 0.4033984095814434,
+          "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+          "samples": 740
+        },
+        "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+        "model_version": "e42-tail-grid-v1",
+        "nama_task": "Task 3 — Tipe Entitas Sasaran",
+        "nama_task_mudah": "Sasaran Kritik",
+        "prediksi": "individual",
+        "prediksi_tampil": "Perorangan",
+        "probabilitas": 0.9400942921638489,
+        "score_kind": "softmax_uncalibrated",
+        "score_label": "Skor E42 (belum dikalibrasi)",
+        "semua": [
+          {
+            "kelas": "individual",
+            "kelas_tampil": "Perorangan",
+            "prob": 0.9400942921638489
+          },
+          {
+            "kelas": "multiple_or_other",
+            "kelas_tampil": "Beberapa Pihak / Lainnya",
+            "prob": 0.03354582190513611
+          },
+          {
+            "kelas": "legislature",
+            "kelas_tampil": "Lembaga Legislatif",
+            "prob": 0.020751411095261574
+          },
+          {
+            "kelas": "political_party",
+            "kelas_tampil": "Partai Politik",
+            "prob": 0.0018762387335300446
+          },
+          {
+            "kelas": "government",
+            "kelas_tampil": "Pemerintah",
+            "prob": 0.00166490173432976
+          },
+          {
+            "kelas": "judiciary_or_law_enforcement",
+            "kelas_tampil": "Peradilan & Penegak Hukum",
+            "prob": 0.0013819457963109016
+          },
+          {
+            "kelas": "civil_society_or_media",
+            "kelas_tampil": "Masyarakat Sipil & Media",
+            "prob": 0.000608626171015203
+          },
+          {
+            "kelas": "business",
+            "kelas_tampil": "Pelaku Usaha",
+            "prob": 7.673088111914694e-05
+          }
+        ]
+      }
+    },
+    "prob_kelas_atribusi": 0.7969818115234375,
+    "ringkasan": {
+      "bagian": [
+        {
+          "asal": "MODEL",
+          "teks": "Menurut model, sampul “AKBAR TERPOJOK SIAPA SENANG” kemungkinan membahas pemilu dan persaingan politik, dengan sorotan pada seorang tokoh. Kiasannya dibaca sebagai perumpamaan hewan atau bagian tubuh — kiasan semacam ini biasanya menyoroti sifat rakus, licik, atau memperlakukan pihak tertentu sebagai kurang manusiawi. Skor ketiga task belum dikalibrasi sebagai peluang benar. Besar skor antar-task tidak dapat dibandingkan sebagai keyakinan."
+        },
+        {
+          "asal": "ANOTATOR",
+          "teks": "Anotator membacanya lain untuk isu utama (Hukum & Peradilan) dan domain sumber metafora (Bencana & Jerat). Catatan anotator: “Posisi di sudut menggambarkan tekanan politik dan hukum yang menyudutkan Akbar.”"
+        }
+      ],
+      "keyakinan": "belum_dikalibrasi",
+      "paragraf": "Menurut model, sampul “AKBAR TERPOJOK SIAPA SENANG” kemungkinan membahas pemilu dan persaingan politik, dengan sorotan pada seorang tokoh. Kiasannya dibaca sebagai perumpamaan hewan atau bagian tubuh — kiasan semacam ini biasanya menyoroti sifat rakus, licik, atau memperlakukan pihak tertentu sebagai kurang manusiawi. Skor ketiga task belum dikalibrasi sebagai peluang benar. Besar skor antar-task tidak dapat dibandingkan sebagai keyakinan. Anotator membacanya lain untuk isu utama (Hukum & Peradilan) dan domain sumber metafora (Bencana & Jerat). Catatan anotator: “Posisi di sudut menggambarkan tekanan politik dan hukum yang menyudutkan Akbar.”",
+      "tanda": "Prediksi model — periksa bukti dan label pembanding"
+    },
+    "snapshot": {
+      "analysis_id": "fc4ed238ff6e423e8f2e5fb4c6eb807d",
+      "class_id": "HEWAN_TUBUH",
+      "headline": "AKBAR TERPOJOK SIAPA SENANG",
+      "image_sha256": "8d0a20a6a0662531d23fc2eaa0f848db11f71ccaae2b2264cb708cdcb0081d3e",
+      "input_source": "dataset",
+      "model": "e42-tail-grid-v1",
+      "models": {
+        "task1_issue": {
+          "backend": "e42-tail-grid",
+          "evaluation": {
+            "macro_f1": 0.5254826236457082,
+            "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+            "samples": 740
+          },
+          "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+          "model_version": "e42-tail-grid-v1",
+          "score_kind": "softmax_uncalibrated",
+          "score_label": "Skor E42 (belum dikalibrasi)"
+        },
+        "task2_domain_sumber": {
+          "backend": "e42-tail-grid",
+          "evaluation": {
+            "macro_f1": 0.3955604325695003,
+            "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+            "samples": 740
+          },
+          "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+          "model_version": "e42-tail-grid-v1",
+          "score_kind": "softmax_uncalibrated",
+          "score_label": "Skor E42 (belum dikalibrasi)"
+        },
+        "task3_primary_entity_type": {
+          "backend": "e42-tail-grid",
+          "evaluation": {
+            "macro_f1": 0.4033984095814434,
+            "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+            "samples": 740
+          },
+          "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+          "model_version": "e42-tail-grid-v1",
+          "score_kind": "softmax_uncalibrated",
+          "score_label": "Skor E42 (belum dikalibrasi)"
+        }
+      },
+      "protocol": "dataset outer-fold E42 2; held-out ID; input canonical",
+      "rich_fields": {},
+      "sample_id": "TMP-8D0A20A6A066",
+      "supporting": "Wawancara Agus Budiman, Korban Kepanikan AS?",
+      "task_id": "task2_domain_sumber",
+      "xai": {
+        "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+        "folds": [
+          2
+        ],
+        "limitation": "Sensitivitas model, bukan bukti kausal; ensemble unggahan belum menjadi benchmark baru.",
+        "model_version": "e42-tail-grid-v1",
+        "score_kind": "softmax_uncalibrated",
+        "task": "task2_domain_sumber",
+        "text_method": "occlusion headline melalui IndoBERT dan trained tail E42; supporting text tetap",
+        "visual_method": "CLIP-L14 full/crop gradient × activation melalui checkpoint E42 aktif"
+      }
+    },
+    "supporting": "Wawancara Agus Budiman, Korban Kepanikan AS?",
+    "task_id": "task2_domain_sumber",
+    "task_xai": "Domain Sumber Metafora",
+    "task_xai_teknis": "Task 2 — Domain Sumber Metafora",
+    "verifikasi": {
+      "task1_issue": {
+        "anotator": "law_and_justice",
+        "anotator_tampil": "Hukum & Peradilan",
+        "cocok": false,
+        "prediksi": "election_and_political_competition",
+        "prediksi_tampil": "Pemilu & Persaingan Politik"
+      },
+      "task2_domain_sumber": {
+        "anotator": "BENCANA_JERAT",
+        "anotator_tampil": "Bencana & Jerat",
+        "cocok": false,
+        "prediksi": "HEWAN_TUBUH",
+        "prediksi_tampil": "Hewan & Tubuh"
+      },
+      "task3_primary_entity_type": {
+        "anotator": "individual",
+        "anotator_tampil": "Perorangan",
+        "cocok": true,
+        "prediksi": "individual",
+        "prediksi_tampil": "Perorangan"
+      }
+    },
+    "xai": {
+      "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+      "folds": [
+        2
+      ],
+      "limitation": "Sensitivitas model, bukan bukti kausal; ensemble unggahan belum menjadi benchmark baru.",
+      "model_version": "e42-tail-grid-v1",
+      "score_kind": "softmax_uncalibrated",
+      "task": "task2_domain_sumber",
+      "text_method": "occlusion headline melalui IndoBERT dan trained tail E42; supporting text tetap",
+      "visual_method": "CLIP-L14 full/crop gradient × activation melalui checkpoint E42 aktif"
+    }
+  },
+  "upload_analysis": {
+    "analysis_id": "e44f653fb4f945b2a22eb4642db328c5",
+    "atribusi_kata": [
+      {
+        "kata": "AKBAR",
+        "kontribusi": 0.03162527084350586
+      },
+      {
+        "kata": "TERPOJOK",
+        "kontribusi": 0.14450019598007202
+      },
+      {
+        "kata": "SIAPA",
+        "kontribusi": 0.0171319842338562
+      },
+      {
+        "kata": "SENANG",
+        "kontribusi": 0.023002922534942627
+      }
+    ],
+    "catatan_anotator": null,
+    "durasi_detik": 5.7,
+    "evidence": [
+      {
+        "class_id": "BENCANA_JERAT",
+        "id": "prediction",
+        "model_version": "e42-tail-grid-v1",
+        "score": 0.721113920211792,
+        "score_kind": "softmax_uncalibrated",
+        "source": "MODEL",
+        "task_id": "task2_domain_sumber"
+      },
+      {
+        "class_id": "BENCANA_JERAT",
+        "id": "words",
+        "source": "MODEL",
+        "task_id": "task2_domain_sumber",
+        "values": [
+          {
+            "kata": "AKBAR",
+            "kontribusi": 0.03162527084350586
+          },
+          {
+            "kata": "TERPOJOK",
+            "kontribusi": 0.14450019598007202
+          },
+          {
+            "kata": "SIAPA",
+            "kontribusi": 0.0171319842338562
+          },
+          {
+            "kata": "SENANG",
+            "kontribusi": 0.023002922534942627
+          }
+        ]
+      },
+      {
+        "class_id": "BENCANA_JERAT",
+        "id": "visual",
+        "source": "MODEL",
+        "task_id": "task2_domain_sumber",
+        "zone": "kepala sampul"
+      },
+      {
+        "class_id": "BENCANA_JERAT",
+        "id": "definition",
+        "reference": "Codebook operasional proyek; definisi disusun atas instruksi user, bukan sumber resmi dosen",
+        "source": "CODEBOOK",
+        "task_id": "task2_domain_sumber",
+        "value": "Domain sumber berupa bencana, ancaman, jerat, perangkap, atau keadaan fisik terjepit."
+      }
+    ],
+    "gambar_url": "/api/unggahan/upload_e44f653fb4f945b2a22eb4642db328c5",
+    "headline": "AKBAR TERPOJOK SIAPA SENANG",
+    "heatmap_padu_url": "/api/heatmap/cam_e44f653fb4f945b2a22eb4642db328c5_padu",
+    "heatmap_per_task": {
+      "task1_issue": {
+        "nama_task": "Isu Utama",
+        "url": "/api/heatmap/cam_e44f653fb4f945b2a22eb4642db328c5_task1_issue"
+      },
+      "task2_domain_sumber": {
+        "nama_task": "Domain Sumber Metafora",
+        "url": "/api/heatmap/cam_e44f653fb4f945b2a22eb4642db328c5_task2_domain_sumber"
+      },
+      "task3_primary_entity_type": {
+        "nama_task": "Sasaran Kritik",
+        "url": "/api/heatmap/cam_e44f653fb4f945b2a22eb4642db328c5_task3_primary_entity_type"
+      }
+    },
+    "heatmap_url": "/api/heatmap/cam_e44f653fb4f945b2a22eb4642db328c5",
+    "kelas_untuk_atribusi": "BENCANA_JERAT",
+    "kelas_untuk_atribusi_tampil": "Bencana & Jerat",
+    "kesimpulan": {
+      "alasan_ragu": [
+        "Model paling banyak melihat di luar bagian tengah sampul, jadi alasannya belum tentu berasal dari ilustrasi; posisi saja tidak menunjukkan objek apa yang dilihat."
+      ],
+      "asal": "GABUNGAN",
+      "blok": [
+        {
+          "asal": "MODEL",
+          "label": "Mengapa Bencana & Jerat?",
+          "teks": "Untuk domain sumber metafora, model memilih Bencana & Jerat (skor 72,1%). Dari judul, kata ‘TERPOJOK’ dan ‘AKBAR’ paling mendorong pilihan ini. Di gambar, area yang paling berpengaruh ada di bagian atas sampul (area logo dan judul kecil), bukan di bagian tengah tempat ilustrasi biasanya berada."
+        },
+        {
+          "asal": "CODEBOOK",
+          "label": "Arti kelas ini",
+          "teks": "Dalam referensi demo, Bencana & Jerat berarti: domain sumber berupa bencana, ancaman, jerat, perangkap, atau keadaan fisik terjepit."
+        }
+      ],
+      "bukti": [
+        {
+          "class_id": "BENCANA_JERAT",
+          "id": "prediction",
+          "model_version": "e42-tail-grid-v1",
+          "score": 0.721113920211792,
+          "score_kind": "softmax_uncalibrated",
+          "source": "MODEL",
+          "task_id": "task2_domain_sumber"
+        },
+        {
+          "class_id": "BENCANA_JERAT",
+          "id": "words",
+          "source": "MODEL",
+          "task_id": "task2_domain_sumber",
+          "values": [
+            {
+              "kata": "AKBAR",
+              "kontribusi": 0.03162527084350586
+            },
+            {
+              "kata": "TERPOJOK",
+              "kontribusi": 0.14450019598007202
+            },
+            {
+              "kata": "SIAPA",
+              "kontribusi": 0.0171319842338562
+            },
+            {
+              "kata": "SENANG",
+              "kontribusi": 0.023002922534942627
+            }
+          ]
+        },
+        {
+          "class_id": "BENCANA_JERAT",
+          "id": "visual",
+          "source": "MODEL",
+          "task_id": "task2_domain_sumber",
+          "zone": "kepala sampul"
+        },
+        {
+          "class_id": "BENCANA_JERAT",
+          "id": "definition",
+          "reference": "Codebook operasional proyek; definisi disusun atas instruksi user, bukan sumber resmi dosen",
+          "source": "CODEBOOK",
+          "task_id": "task2_domain_sumber",
+          "value": "Domain sumber berupa bencana, ancaman, jerat, perangkap, atau keadaan fisik terjepit."
+        }
+      ],
+      "cek": [
+        "Model paling banyak melihat di luar bagian tengah sampul, jadi alasannya belum tentu berasal dari ilustrasi; posisi saja tidak menunjukkan objek apa yang dilihat."
+      ],
+      "class_id": "BENCANA_JERAT",
+      "dapat_dipercaya": false,
+      "paragraf": "Untuk domain sumber metafora, model memilih Bencana & Jerat (skor 72,1%). Dari judul, kata ‘TERPOJOK’ dan ‘AKBAR’ paling mendorong pilihan ini. Di gambar, area yang paling berpengaruh ada di bagian atas sampul (area logo dan judul kecil), bukan di bagian tengah tempat ilustrasi biasanya berada. Dalam referensi demo, Bencana & Jerat berarti: domain sumber berupa bencana, ancaman, jerat, perangkap, atau keadaan fisik terjepit. Yang perlu dicek: Model paling banyak melihat di luar bagian tengah sampul, jadi alasannya belum tentu berasal dari ilustrasi; posisi saja tidak menunjukkan objek apa yang dilihat.",
+      "strategi": "bukti_gabungan_terbatas",
+      "task_id": "task2_domain_sumber"
+    },
+    "label_anotator": null,
+    "metode_atribusi": "occlusion",
+    "mode": "unggahan baru; ensemble probabilitas lima fold E42; belum dievaluasi terpisah",
+    "models": {
+      "task1_issue": {
+        "backend": "e42-tail-grid",
+        "evaluation": {
+          "macro_f1": 0.5254826236457082,
+          "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+          "samples": 740
+        },
+        "evaluation_mode": "unggahan baru; ensemble probabilitas lima fold E42; belum dievaluasi terpisah",
+        "model_version": "e42-tail-grid-v1",
+        "score_kind": "softmax_uncalibrated",
+        "score_label": "Skor E42 (belum dikalibrasi)"
+      },
+      "task2_domain_sumber": {
+        "backend": "e42-tail-grid",
+        "evaluation": {
+          "macro_f1": 0.3955604325695003,
+          "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+          "samples": 740
+        },
+        "evaluation_mode": "unggahan baru; ensemble probabilitas lima fold E42; belum dievaluasi terpisah",
+        "model_version": "e42-tail-grid-v1",
+        "score_kind": "softmax_uncalibrated",
+        "score_label": "Skor E42 (belum dikalibrasi)"
+      },
+      "task3_primary_entity_type": {
+        "backend": "e42-tail-grid",
+        "evaluation": {
+          "macro_f1": 0.4033984095814434,
+          "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+          "samples": 740
+        },
+        "evaluation_mode": "unggahan baru; ensemble probabilitas lima fold E42; belum dievaluasi terpisah",
+        "model_version": "e42-tail-grid-v1",
+        "score_kind": "softmax_uncalibrated",
+        "score_label": "Skor E42 (belum dikalibrasi)"
+      }
+    },
+    "penjelasan": [
+      {
+        "asal": "model",
+        "label": "Mengapa Bencana & Jerat?",
+        "teks": "Untuk domain sumber metafora, model memilih Bencana & Jerat (skor 72,1%). Dari judul, kata ‘TERPOJOK’ dan ‘AKBAR’ paling mendorong pilihan ini. Di gambar, area yang paling berpengaruh ada di bagian atas sampul (area logo dan judul kecil), bukan di bagian tengah tempat ilustrasi biasanya berada."
+      },
+      {
+        "asal": "codebook",
+        "label": "Arti kelas ini",
+        "teks": "Dalam referensi demo, Bencana & Jerat berarti: domain sumber berupa bencana, ancaman, jerat, perangkap, atau keadaan fisik terjepit."
+      }
+    ],
+    "prediksi": {
+      "task1_issue": {
+        "backend": "e42-tail-grid",
+        "evaluation": {
+          "macro_f1": 0.5254826236457082,
+          "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+          "samples": 740
+        },
+        "evaluation_mode": "unggahan baru; ensemble probabilitas lima fold E42; belum dievaluasi terpisah",
+        "model_version": "e42-tail-grid-v1",
+        "nama_task": "Task 1 — Isu Utama",
+        "nama_task_mudah": "Isu Utama",
+        "prediksi": "law_and_justice",
+        "prediksi_tampil": "Hukum & Peradilan",
+        "probabilitas": 0.6721762418746948,
+        "score_kind": "softmax_uncalibrated",
+        "score_label": "Skor E42 (belum dikalibrasi)",
+        "semua": [
+          {
+            "kelas": "law_and_justice",
+            "kelas_tampil": "Hukum & Peradilan",
+            "prob": 0.6721762418746948
+          },
+          {
+            "kelas": "corruption_and_bribery",
+            "kelas_tampil": "Korupsi & Suap",
+            "prob": 0.1462351381778717
+          },
+          {
+            "kelas": "election_and_political_competition",
+            "kelas_tampil": "Pemilu & Persaingan Politik",
+            "prob": 0.07240276783704758
+          },
+          {
+            "kelas": "power_and_governance",
+            "kelas_tampil": "Kekuasaan & Tata Kelola",
+            "prob": 0.0634446069598198
+          },
+          {
+            "kelas": "security_defense_and_terrorism",
+            "kelas_tampil": "Keamanan, Pertahanan & Terorisme",
+            "prob": 0.01983119174838066
+          },
+          {
+            "kelas": "human_rights_and_social_conflict",
+            "kelas_tampil": "Hak Asasi & Konflik Sosial",
+            "prob": 0.014574678614735603
+          },
+          {
+            "kelas": "economy_business_and_state_enterprise",
+            "kelas_tampil": "Ekonomi, Bisnis & BUMN",
+            "prob": 0.006459004245698452
+          },
+          {
+            "kelas": "public_policy_health_and_disaster",
+            "kelas_tampil": "Kebijakan Publik, Kesehatan & Bencana",
+            "prob": 0.0035111152101308107
+          },
+          {
+            "kelas": "environment_and_natural_resources",
+            "kelas_tampil": "Lingkungan & Sumber Daya Alam",
+            "prob": 0.0008015722269192338
+          },
+          {
+            "kelas": "other_issue",
+            "kelas_tampil": "Isu Lainnya",
+            "prob": 0.0005636375863105059
+          }
+        ]
+      },
+      "task2_domain_sumber": {
+        "backend": "e42-tail-grid",
+        "evaluation": {
+          "macro_f1": 0.3955604325695003,
+          "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+          "samples": 740
+        },
+        "evaluation_mode": "unggahan baru; ensemble probabilitas lima fold E42; belum dievaluasi terpisah",
+        "model_version": "e42-tail-grid-v1",
+        "nama_task": "Task 2 — Domain Sumber Metafora",
+        "nama_task_mudah": "Domain Sumber Metafora",
+        "prediksi": "BENCANA_JERAT",
+        "prediksi_tampil": "Bencana & Jerat",
+        "probabilitas": 0.721113920211792,
+        "score_kind": "softmax_uncalibrated",
+        "score_label": "Skor E42 (belum dikalibrasi)",
+        "semua": [
+          {
+            "kelas": "BENCANA_JERAT",
+            "kelas_tampil": "Bencana & Jerat",
+            "prob": 0.721113920211792
+          },
+          {
+            "kelas": "HEWAN_TUBUH",
+            "kelas_tampil": "Hewan & Tubuh",
+            "prob": 0.19944389164447784
+          },
+          {
+            "kelas": "PERMAINAN_KONTES",
+            "kelas_tampil": "Permainan & Kontes",
+            "prob": 0.03082052432000637
+          },
+          {
+            "kelas": "LAINNYA",
+            "kelas_tampil": "Lainnya",
+            "prob": 0.029024142771959305
+          },
+          {
+            "kelas": "MESIN_INFRASTRUKTUR",
+            "kelas_tampil": "Mesin & Infrastruktur",
+            "prob": 0.009117965586483479
+          },
+          {
+            "kelas": "NON_METAFORA",
+            "kelas_tampil": "Tanpa Metafora",
+            "prob": 0.008779889903962612
+          },
+          {
+            "kelas": "KONSUMSI_TRANSAKSI",
+            "kelas_tampil": "Konsumsi & Transaksi",
+            "prob": 0.0016996895428746939
+          }
+        ]
+      },
+      "task3_primary_entity_type": {
+        "backend": "e42-tail-grid",
+        "evaluation": {
+          "macro_f1": 0.4033984095814434,
+          "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+          "samples": 740
+        },
+        "evaluation_mode": "unggahan baru; ensemble probabilitas lima fold E42; belum dievaluasi terpisah",
+        "model_version": "e42-tail-grid-v1",
+        "nama_task": "Task 3 — Tipe Entitas Sasaran",
+        "nama_task_mudah": "Sasaran Kritik",
+        "prediksi": "individual",
+        "prediksi_tampil": "Perorangan",
+        "probabilitas": 0.9175233840942383,
+        "score_kind": "softmax_uncalibrated",
+        "score_label": "Skor E42 (belum dikalibrasi)",
+        "semua": [
+          {
+            "kelas": "individual",
+            "kelas_tampil": "Perorangan",
+            "prob": 0.9175233840942383
+          },
+          {
+            "kelas": "judiciary_or_law_enforcement",
+            "kelas_tampil": "Peradilan & Penegak Hukum",
+            "prob": 0.023283589631319046
+          },
+          {
+            "kelas": "multiple_or_other",
+            "kelas_tampil": "Beberapa Pihak / Lainnya",
+            "prob": 0.020763084292411804
+          },
+          {
+            "kelas": "legislature",
+            "kelas_tampil": "Lembaga Legislatif",
+            "prob": 0.019658969715237617
+          },
+          {
+            "kelas": "political_party",
+            "kelas_tampil": "Partai Politik",
+            "prob": 0.011634953320026398
+          },
+          {
+            "kelas": "government",
+            "kelas_tampil": "Pemerintah",
+            "prob": 0.006059307139366865
+          },
+          {
+            "kelas": "business",
+            "kelas_tampil": "Pelaku Usaha",
+            "prob": 0.0006400640704669058
+          },
+          {
+            "kelas": "civil_society_or_media",
+            "kelas_tampil": "Masyarakat Sipil & Media",
+            "prob": 0.00043659942457452416
+          }
+        ]
+      }
+    },
+    "prob_kelas_atribusi": 0.7211138606071472,
+    "ringkasan": {
+      "bagian": [
+        {
+          "asal": "MODEL",
+          "teks": "Menurut model, sampul “AKBAR TERPOJOK SIAPA SENANG” kemungkinan membahas hukum dan peradilan, dengan sorotan pada seorang tokoh. Kiasannya dibaca sebagai perumpamaan bencana atau jerat — kiasan semacam ini biasanya menggambarkan ancaman yang datang, kekacauan, atau keterkungkungan. Skor ketiga task belum dikalibrasi sebagai peluang benar. Besar skor antar-task tidak dapat dibandingkan sebagai keyakinan."
+        }
+      ],
+      "keyakinan": "belum_dikalibrasi",
+      "paragraf": "Menurut model, sampul “AKBAR TERPOJOK SIAPA SENANG” kemungkinan membahas hukum dan peradilan, dengan sorotan pada seorang tokoh. Kiasannya dibaca sebagai perumpamaan bencana atau jerat — kiasan semacam ini biasanya menggambarkan ancaman yang datang, kekacauan, atau keterkungkungan. Skor ketiga task belum dikalibrasi sebagai peluang benar. Besar skor antar-task tidak dapat dibandingkan sebagai keyakinan.",
+      "tanda": "Prediksi model — periksa bukti dan label pembanding"
+    },
+    "snapshot": {
+      "analysis_id": "e44f653fb4f945b2a22eb4642db328c5",
+      "class_id": "BENCANA_JERAT",
+      "headline": "AKBAR TERPOJOK SIAPA SENANG",
+      "image_sha256": "3c54714cb801a3fa1be27e5a1e60a11e02c70421dafd958d8bd6a5a88e6beb15",
+      "input_source": "upload",
+      "model": "e42-tail-grid-v1",
+      "models": {
+        "task1_issue": {
+          "backend": "e42-tail-grid",
+          "evaluation": {
+            "macro_f1": 0.5254826236457082,
+            "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+            "samples": 740
+          },
+          "evaluation_mode": "unggahan baru; ensemble probabilitas lima fold E42; belum dievaluasi terpisah",
+          "model_version": "e42-tail-grid-v1",
+          "score_kind": "softmax_uncalibrated",
+          "score_label": "Skor E42 (belum dikalibrasi)"
+        },
+        "task2_domain_sumber": {
+          "backend": "e42-tail-grid",
+          "evaluation": {
+            "macro_f1": 0.3955604325695003,
+            "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+            "samples": 740
+          },
+          "evaluation_mode": "unggahan baru; ensemble probabilitas lima fold E42; belum dievaluasi terpisah",
+          "model_version": "e42-tail-grid-v1",
+          "score_kind": "softmax_uncalibrated",
+          "score_label": "Skor E42 (belum dikalibrasi)"
+        },
+        "task3_primary_entity_type": {
+          "backend": "e42-tail-grid",
+          "evaluation": {
+            "macro_f1": 0.4033984095814434,
+            "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+            "samples": 740
+          },
+          "evaluation_mode": "unggahan baru; ensemble probabilitas lima fold E42; belum dievaluasi terpisah",
+          "model_version": "e42-tail-grid-v1",
+          "score_kind": "softmax_uncalibrated",
+          "score_label": "Skor E42 (belum dikalibrasi)"
+        }
+      },
+      "protocol": "unggahan baru; ensemble probabilitas lima fold E42; belum dievaluasi terpisah",
+      "rich_fields": {},
+      "sample_id": null,
+      "supporting": "Wawancara Agus Budiman, Korban Kepanikan AS?",
+      "task_id": "task2_domain_sumber",
+      "xai": {
+        "evaluation_mode": "unggahan baru; ensemble probabilitas lima fold E42; belum dievaluasi terpisah",
+        "folds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limitation": "Sensitivitas model, bukan bukti kausal; ensemble unggahan belum menjadi benchmark baru.",
+        "model_version": "e42-tail-grid-v1",
+        "score_kind": "softmax_uncalibrated",
+        "task": "task2_domain_sumber",
+        "text_method": "occlusion headline melalui IndoBERT dan trained tail E42; supporting text tetap",
+        "visual_method": "CLIP-L14 full/crop gradient × activation melalui checkpoint E42 aktif"
+      }
+    },
+    "supporting": "Wawancara Agus Budiman, Korban Kepanikan AS?",
+    "task_id": "task2_domain_sumber",
+    "task_xai": "Domain Sumber Metafora",
+    "task_xai_teknis": "Task 2 — Domain Sumber Metafora",
+    "xai": {
+      "evaluation_mode": "unggahan baru; ensemble probabilitas lima fold E42; belum dievaluasi terpisah",
+      "folds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "limitation": "Sensitivitas model, bukan bukti kausal; ensemble unggahan belum menjadi benchmark baru.",
+      "model_version": "e42-tail-grid-v1",
+      "score_kind": "softmax_uncalibrated",
+      "task": "task2_domain_sumber",
+      "text_method": "occlusion headline melalui IndoBERT dan trained tail E42; supporting text tetap",
+      "visual_method": "CLIP-L14 full/crop gradient × activation melalui checkpoint E42 aktif"
+    }
+  }
+}

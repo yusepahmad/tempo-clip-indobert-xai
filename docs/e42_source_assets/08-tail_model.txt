@@ -1,0 +1,13 @@
+class TailMTL(nn.Module):
+    def __init__(self,nc,cache):
+        super().__init__();config=BertConfig.from_dict(json.loads((Path(cache)/'bert_config.json').read_text()));config._attn_implementation='sdpa'
+        self.tail=nn.ModuleList([BertLayer(config),BertLayer(config)]);self.tail.load_state_dict(torch.load(Path(cache)/'tail_initial.pt',map_location='cpu',weights_only=True));self.head=Head(nc)
+    def features(self,h,attention,pool_mask,visual):
+        am=(~attention.bool()[:,None,None,:]).to(h.dtype)*torch.finfo(h.dtype).min
+        for layer in self.tail:
+            h=layer(h,attention_mask=am)
+            if isinstance(h,tuple):h=h[0]
+        pm=pool_mask.to(h.dtype);text=(h*pm.unsqueeze(-1)).sum(dim=1)/pm.sum(dim=1,keepdim=True)
+        text=nn.functional.normalize(text.float(),p=2,dim=1)
+        return torch.cat([visual.float()*CFG['visual_weight'],text],dim=1)
+    def forward(self,h,attention,pool_mask,visual):return self.head(self.features(h,attention,pool_mask,visual))

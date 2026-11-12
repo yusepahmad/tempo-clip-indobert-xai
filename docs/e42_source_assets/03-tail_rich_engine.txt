@@ -1,0 +1,17 @@
+        self._ensure_visual()
+
+    def _ensure_front(self):
+        if self._front is not None:
+            return
+        from transformers import AutoModel, AutoTokenizer
+        from huggingface_hub import snapshot_download
+        revision = self.manifest['indobert']['revision']
+        offline = os.environ.get('TEMPO_OFFLINE','0') == '1'
+        snap = Path(snapshot_download(self.manifest['indobert']['repo'], revision=revision, local_files_only=offline))
+        for name,digest in self.manifest['indobert']['files'].items():
+            if sha(snap/name) != digest:
+                raise ValueError('Backbone IndoBERT berbeda: '+name)
+        self._tok = AutoTokenizer.from_pretrained(snap, local_files_only=True)
+        self._front = AutoModel.from_pretrained(snap, local_files_only=True).eval()
+        self._front.encoder.layer = torch.nn.ModuleList(list(self._front.encoder.layer[:10]))
+        for p in self._front.parameters():

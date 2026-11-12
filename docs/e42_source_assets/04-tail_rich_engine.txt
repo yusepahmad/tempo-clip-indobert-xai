@@ -1,0 +1,12 @@
+    def _front_inputs(self, texts):
+        self._ensure_front()
+        enc=self._tok(texts,return_tensors='pt',truncation=True,max_length=256,padding=True)
+        attention=enc['attention_mask'].bool()
+        pool=attention.clone()
+        for sid in self._tok.all_special_ids:
+            pool &= enc['input_ids'] != sid
+        if not pool.any(dim=1).all():
+            raise ValueError('Teks tidak memuat token yang bisa dianalisis')
+        with torch.no_grad():
+            hidden=self._front(**enc).last_hidden_state
+        return hidden, attention, pool

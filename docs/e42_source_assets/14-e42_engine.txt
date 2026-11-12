@@ -1,0 +1,24 @@
+
+    def prepare_analysis(self, image_path, headline, supporting, sample_id=None, fields=None, cancel=None):
+        if cancel:
+            cancel()
+        if sample_id:
+            if sample_id not in self._fold_for_id:
+                raise ValueError("ID dataset tidak dikenal")
+            index = int(self.df.index[self.df.sample_id == sample_id][0])
+            if sha(image_path) != self.df.iloc[index].image_sha256:
+                raise ValueError("Gambar dataset berbeda dari sumber evaluasi")
+            self._active = [self._fold_for_id[sample_id]]
+            row = self.df.iloc[index]
+            visual = self.cache["visual"][index].copy()
+            canonical = headline == str(row.headline_verified) and supporting == str(row.supporting_text_verified)
+            if canonical:
+                ix = np.array([index])
+                hidden, attention, pool, _ = self._tm.batch_tensors(self.cache, ix, "cpu")
+            else:
+                hidden, attention, pool = self._front_inputs([self.rich_text(headline, supporting)])
+            protocol = f"dataset outer-fold E42 {self._active[0]}; held-out ID; " + (
+                "input canonical" if canonical else "teks diedit; bukan benchmark baru"
+            )
+        else:
+            self._active = list(range(1, 6))

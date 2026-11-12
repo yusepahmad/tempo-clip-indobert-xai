@@ -1,0 +1,21 @@
+    # sehingga batch memakai occlusion secara baku (lihat siapkan_masukan).
+    metode = m["metode"]
+    # Titik periksa sebelum atribusi kata (tahap terlama, terutama LIME).
+    _cek_batal(m.get("req_id"))
+
+    if metode == "lime":
+        try:
+            kata, kelas_kata, prob_kata = ENG.atribusi_kata_lime(
+                img_feat, headline, supporting, task_xai)
+        except Dibatalkan:
+            raise
+        except Exception as e:
+            # Kegagalan LIME (mis. pustaka tidak terpasang) tidak boleh
+            # menggagalkan analisis — jatuh kembali ke occlusion.
+            print(f"[peringatan] LIME gagal ({type(e).__name__}: {e}), "
+                  f"memakai occlusion.", flush=True)
+            metode = "occlusion"
+
+    if metode == "occlusion":
+        kata, kelas_kata, prob_kata = ENG.atribusi_kata(
+            img_feat, headline, supporting, task_xai)

@@ -1,0 +1,7 @@
+def warm_head(z,y,nc,tr):
+    seed();head=Head(nc);opt=torch.optim.AdamW(head.parameters(),lr=.001,weight_decay=.0001)
+    x=torch.tensor(np.hstack([z['visual'][tr]*CFG['visual_weight'],z['base_mean'][tr]]));truth={t:torch.tensor(y[t][tr]) for t in TASKS};loss={t:nn.CrossEntropyLoss(weight=class_weights(y[t][tr],nc[t])) for t in TASKS}
+    head.train()
+    for _ in range(120):
+        opt.zero_grad();pred=head(x);l=sum(w*loss[t](pred[t],truth[t]) for t,w in zip(TASKS,CFG['loss_weights']))/sum(CFG['loss_weights']);l.backward();opt.step()
+    return {k:v.detach().clone() for k,v in head.state_dict().items()}

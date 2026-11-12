@@ -1,0 +1,8 @@
+    def xai_contract(self, task):
+        return dict(
+            model_version=VERSION, task=task, folds=self._active, evaluation_mode=self._context["protocol"],
+            visual_method="CLIP-L14 full/crop gradient × activation melalui checkpoint E42 aktif",
+            text_method="occlusion headline melalui IndoBERT dan trained tail E42; supporting text tetap",
+            score_kind="softmax_uncalibrated",
+            limitation="Sensitivitas model, bukan bukti kausal; ensemble unggahan belum menjadi benchmark baru.",
+        )

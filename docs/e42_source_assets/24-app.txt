@@ -1,0 +1,34 @@
+
+    model_info = {t: {k:p.get(k) for k in ('backend','model_version','score_kind','score_label','evaluation_mode','evaluation')}
+                  for t,p in pred.items()}
+    xai_info = ENG.xai_contract(task_xai) if hasattr(ENG, 'xai_contract') else {'model_version':'baseline-mtl-v1'}
+    snapshot = {"analysis_id":analysis_id,"sample_id":sample_id or None,
+                "image_sha256":hashlib.sha256(img_path.read_bytes()).hexdigest(),
+                "headline":headline,"supporting":supporting,"task_id":task_xai,
+                "class_id":kelas_kata,"model":pred[task_xai].get("model_version","baseline-mtl-v1"),"models":model_info,"xai":xai_info,
+                "protocol":mode,"input_source":"dataset" if sample_id else "upload",
+                "rich_fields":m.get("rich_fields", {})}
+    hasil = {
+        "analysis_id":analysis_id,"snapshot":snapshot,"task_id":task_xai,"models":model_info,"xai":xai_info,
+        "evidence":kesimpulan["bukti"],"supporting":supporting,
+        "mode": mode,
+        "task_xai": nama_task(task_xai),
+        "task_xai_teknis": TASKS[task_xai],
+        "headline": headline,
+        "prediksi": pred,
+        "label_anotator": label_asli,
+        "catatan_anotator": catatan,
+        "heatmap_url": heat_url,
+        # Peta terpadu ketiga task — inilah yang ditampilkan ke pembaca (R5).
+        "heatmap_padu_url": heat_padu_url,
+        "heatmap_per_task": heat_task_url,
+        "atribusi_kata": kata,
+        "kelas_untuk_atribusi": kelas_kata,
+        "metode_atribusi": metode,
+        "kelas_untuk_atribusi_tampil": tampil(kelas_kata),
+        "prob_kelas_atribusi": prob_kata,
+        "gambar_url": gambar_url,
+        "penjelasan": penjelasan,
+        "kesimpulan": kesimpulan,
+        "ringkasan": ringkasan,
+        "durasi_detik": round(time.time() - t0, 1),

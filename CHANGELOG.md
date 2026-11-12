@@ -5,6 +5,19 @@ Format mengikuti [Keep a Changelog](https://keepachangelog.com/).
 
 ## [Unreleased]
 
+### Fixed
+
+- Default Linux/Gunicorn/Windows E42 di `DEMO_XAI_745_FULL/{jalankan_linux.sh,jalankan_windows.bat,02_web_demo/serve_tail.py}` konsisten `e42-tail-grid`, menjaga override dan konfigurasi thread/offline; preflight E42 tidak memblokir override eksplisit. `e42_engine.py` memvalidasi identitas manifest/aset wajib; `app.py` mencetak backend/version saat startup (plan: [E42 launcher dan dokumentasi](docs/plans/2026-11-13-e42-launcher-documentation.md)).
+
+### Added
+
+- Source/aset E42 yang hilang dari snapshot lokal disinkronkan byte-identik dari commit `e0a977ece2f77ae95325fd164ca0d58a148ec5d8`: engine/base class, Gunicorn config, lock, checker, source `01_notebook/e42_tail_grid/` dan `06_models/e42-tail-grid-v1/`; checkpoint tidak dilatih/diganti. Sebelas regresi launcher/engine dan smoke HTTP nyata ditambahkan; replay 740/740 serta Linux/Gunicorn dataset/unggahan/XAI lulus offline, bukti di `qa/e42-production/` (plan: [E42 launcher dan dokumentasi](docs/plans/2026-11-13-e42-launcher-documentation.md)).
+- Referensi `docs/e42_source_code_documentation.html` dengan 28 screenshot source aktual di `docs/e42_source_assets/`, link commit tetap, nomor baris lokal/commit dan generator `scripts/build_e42_source_documentation.py`; mencakup CLIP-L/14, trainable tail IndoBERT, Joint Loss, XAI web dan perbedaannya dari baseline/rollout historis (plan: [E42 launcher dan dokumentasi](docs/plans/2026-11-13-e42-launcher-documentation.md)).
+
+### Changed
+
+- Panduan `DEMO_XAI_745_FULL/{DELIVERY.md,MULAI_DARI_SINI.md}`, frontend `02_web_demo/index.html`, serta `docs/e42_production_{deployment,verification}.md` menjelaskan default E42, cache backbone offline, batas input128/256, hasil tes aktual dan batas verifikasi; native Windows, clean install lock, OCR dan VPS deployment belum diklaim lulus (plan: [E42 launcher dan dokumentasi](docs/plans/2026-11-13-e42-launcher-documentation.md)).
+
 ### Removed
 
 - Nama pribadi, username akun eksternal, alamat home personal asli, URL akun pribadi, dan metadata author lama dikeluarkan dari seluruh artefak client. Riwayat Git diganti dengan snapshot bersih ber-author netral; nilai penelitian tidak diubah (plan: [sanitasi identitas delivery](docs/plans/2026-11-10-sanitasi-identitas-delivery.md)).

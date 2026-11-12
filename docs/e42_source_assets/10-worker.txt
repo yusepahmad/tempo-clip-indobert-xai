@@ -1,0 +1,14 @@
+    def reset(tr):
+        seed();m=TailMTL(nc,cache);m.head.load_state_dict(warm_head(z,y,nc,tr));m.to('cuda')
+        opt=torch.optim.AdamW([{'params':m.tail.parameters(),'lr':CFG['encoder_lr']},{'params':m.head.parameters(),'lr':CFG['head_lr']}],weight_decay=CFG['weight_decay'])
+        losses={t:nn.CrossEntropyLoss(weight=class_weights(y[t][tr],nc[t]).to('cuda')) for t in TASKS}
+        return m,opt,losses,torch.amp.GradScaler('cuda')
+    def epoch(m,opt,losses,scaler,tr,e,max_steps=None):
+        order=np.array(tr).copy();np.random.default_rng(42+e).shuffle(order);m.train();steps=0
+        for off in range(0,len(order),CFG['batch']):
+            ix=order[off:off+CFG['batch']];opt.zero_grad(set_to_none=True)
+            with torch.autocast('cuda',dtype=torch.float16):
+                p=m(*batch_tensors(z,ix,'cuda'));l=sum(w*losses[t](p[t],torch.tensor(y[t][ix],device='cuda')) for t,w in zip(TASKS,CFG['loss_weights']))/sum(CFG['loss_weights'])
+            assert torch.isfinite(l);scaler.scale(l).backward();scaler.unscale_(opt);nn.utils.clip_grad_norm_(m.parameters(),1.);scaler.step(opt);scaler.update();steps+=1;guard()
+            if max_steps and steps>=max_steps:break
+        return float(l.detach().cpu())

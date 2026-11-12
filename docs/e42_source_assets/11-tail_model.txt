@@ -1,0 +1,7 @@
+    length=int(z['attention'][ix].sum(axis=1).max())
+    return tuple(torch.tensor(z[k][ix,:length] if k in ['h10','attention','pool_mask'] else z[k][ix],device=device) for k in ['h10','attention','pool_mask','visual'])
+
+CONFIGS=[dict(CFG,encoder_lr=lr,loss_weights=weights) for lr in [2e-6,2e-5,1e-4] for weights in [[1.,1.,1.],[1.,2.,2.]]]
+
+def select_candidate(candidates):
+    return max([(ci,e) for ci in range(len(CONFIGS)) for e in CONFIGS[ci]['epoch_candidates']],key=lambda pair:candidates[pair[0]]['epoch_scores'][pair[1]])

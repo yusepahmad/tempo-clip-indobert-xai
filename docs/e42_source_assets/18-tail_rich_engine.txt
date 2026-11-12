@@ -1,0 +1,13 @@
+                a,g=act,gradient
+                if a.shape[0]!=2 and a.shape[1]==2:a,g=a.transpose(0,1),g.transpose(0,1)
+                if a.shape[0]!=2:raise RuntimeError('Bentuk aktivasi CLIP tidak sesuai')
+                maps=(a[:,1:]*g[:,1:]).sum(-1).abs().detach().numpy()
+                side=int(round(maps.shape[1]**.5))
+                if side*side!=maps.shape[1] or not np.isfinite(maps).all() or not maps.any():
+                    raise RuntimeError('Peta gradient CLIP tidak sah')
+                full=np.asarray(Image.fromarray(maps[0].reshape(side,side)).resize((224,224),Image.Resampling.BILINEAR)).copy()
+                crop=np.asarray(Image.fromarray(maps[1].reshape(side,side)).resize((224,166),Image.Resampling.BILINEAR))
+                overlay=np.zeros((224,224),np.float32);overlay[44:210]=crop
+                per[task]=self._normalize(full+overlay)
+        finally:handle.remove()
+        return self._normalize(np.mean(list(per.values()),axis=0)),per

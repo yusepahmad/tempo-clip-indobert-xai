@@ -1,0 +1,25 @@
+            self._ensure_visual()
+            with torch.no_grad():
+                encoded = self._visual(self._images(image_path))
+                encoded = torch.nn.functional.normalize(encoded.float(), p=2, dim=1)
+                visual = encoded.reshape(-1).numpy()
+            hidden, attention, pool = self._front_inputs([self.rich_text(headline, supporting)])
+            protocol = "unggahan baru; ensemble probabilitas lima fold E42; belum dievaluasi terpisah"
+        with torch.no_grad():
+            vectors = {
+                fold: self._models[fold].features(
+                    hidden, attention, pool, torch.tensor(visual).reshape(1, -1)
+                )[0].numpy()
+                for fold in self._active
+            }
+        self._context = dict(
+            image_path=Path(image_path), headline=headline, supporting=supporting,
+            fields={}, visual=visual, vectors=vectors, protocol=protocol, sample_id=sample_id,
+        )
+        self.model = self._models[self._active[0]].head
+        if cancel:
+            cancel()
+        vector = vectors[self._active[0]]
+        return visual, vector[1536:], vector
+
+    def _result(self, probabilities):

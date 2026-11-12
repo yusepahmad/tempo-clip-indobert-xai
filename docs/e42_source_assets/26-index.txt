@@ -1,0 +1,14 @@
+  const perTask = d.heatmap_per_task || {};
+  const kunci = Object.keys(perTask);
+  const panel = document.getElementById('bandingHeat');
+  if (kunci.length){
+    document.getElementById('capBanding').textContent =
+      'Setiap task menghasilkan peta panas sendiri karena keputusannya diambil '
+      + 'dari tiga head model MTL CLIP–IndoBERT yang sama. Semua peta menggunakan gradient × activation patch CLIP. Peta utama merata-ratakan peta tiga task yang dinormalisasi.';
+    document.getElementById('heatPerTask').innerHTML = kunci.map(t=>`
+      <div>
+        <img src="${perTask[t].url}" class="gambar" alt="peta panas ${perTask[t].nama_task}">
+        <div class="cap">${perTask[t].nama_task}</div>
+      </div>`).join('');
+    panel.style.display='block';
+  } else {

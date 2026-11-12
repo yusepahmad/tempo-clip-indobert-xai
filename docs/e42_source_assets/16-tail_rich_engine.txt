@@ -1,0 +1,22 @@
+    def predict_vector(self, x):
+        if self._context is None:
+            raise RuntimeError('Konteks model belum dipilih')
+        values={t:[] for t in self.tasks}
+        with torch.no_grad():
+            for fold in self._active:
+                outputs=self._models[fold].head(torch.tensor(self._context['vectors'][fold]).reshape(1,-1))
+                for t in self.tasks:
+                    values[t].append(torch.softmax(outputs[t][0],dim=0).numpy())
+        return self._result({t:np.mean(values[t],axis=0) for t in self.tasks})
+
+    def _prob_banyak_teks(self, img_feat, daftar_teks, supporting, task, ukuran_kelompok=8):
+        result=[]
+        for start in range(0,len(daftar_teks),ukuran_kelompok):
+            headlines=list(daftar_teks[start:start+ukuran_kelompok])
+            texts=[self.rich_text(t,supporting,self._context['fields']) for t in headlines]
+            hidden,attention,pool=self._front_inputs(texts)
+            visual=torch.tensor(np.repeat(self._context['visual'].reshape(1,-1),len(texts),axis=0))
+            with torch.no_grad():
+                probs=[torch.softmax(self._models[f](hidden,attention,pool,visual)[task],dim=1).numpy() for f in self._active]
+            result.append(np.mean(probs,axis=0))
+        return np.vstack(result)

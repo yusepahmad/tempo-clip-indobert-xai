@@ -1,0 +1,546 @@
+{
+  "analysis_id": "61863ea1f947457c93f228ffd9f44599",
+  "atribusi_kata": [
+    {
+      "kata": "AKBAR",
+      "kontribusi": -0.02783637488630639
+    },
+    {
+      "kata": "TERPOJOK",
+      "kontribusi": -0.07003377799384165
+    },
+    {
+      "kata": "SIAPA",
+      "kontribusi": 0.0739061126893519
+    },
+    {
+      "kata": "SENANG",
+      "kontribusi": 0.08177845277737023
+    }
+  ],
+  "catatan_anotator": {
+    "entitas": "Akbar Tanjung",
+    "pemetaan_makna": "Posisi di sudut menggambarkan tekanan politik dan hukum yang menyudutkan Akbar.",
+    "sumber_metafora": "Sudut ruang dan posisi fisik terjepit"
+  },
+  "durasi_detik": 8.1,
+  "evidence": [
+    {
+      "class_id": "election_and_political_competition",
+      "id": "prediction",
+      "model_version": "e42-tail-grid-v1",
+      "score": 0.2608403265476227,
+      "score_kind": "softmax_uncalibrated",
+      "source": "MODEL",
+      "task_id": "task1_issue"
+    },
+    {
+      "class_id": "election_and_political_competition",
+      "id": "words",
+      "source": "MODEL",
+      "task_id": "task1_issue",
+      "values": [
+        {
+          "kata": "AKBAR",
+          "kontribusi": -0.02783637488630639
+        },
+        {
+          "kata": "TERPOJOK",
+          "kontribusi": -0.07003377799384165
+        },
+        {
+          "kata": "SIAPA",
+          "kontribusi": 0.0739061126893519
+        },
+        {
+          "kata": "SENANG",
+          "kontribusi": 0.08177845277737023
+        }
+      ]
+    },
+    {
+      "class_id": "election_and_political_competition",
+      "id": "visual",
+      "source": "MODEL",
+      "task_id": "task1_issue",
+      "zone": "kepala sampul"
+    },
+    {
+      "class_id": "election_and_political_competition",
+      "id": "definition",
+      "reference": "Codebook operasional proyek; definisi disusun atas instruksi user, bukan sumber resmi dosen",
+      "source": "CODEBOOK",
+      "task_id": "task1_issue",
+      "value": "Pemilihan pejabat dan persaingan aktor politik untuk memperoleh dukungan atau kekuasaan."
+    }
+  ],
+  "gambar_url": "/api/image/TMP-8D0A20A6A066",
+  "headline": "AKBAR TERPOJOK SIAPA SENANG",
+  "heatmap_padu_url": "/api/heatmap/cam_61863ea1f947457c93f228ffd9f44599_padu",
+  "heatmap_per_task": {
+    "task1_issue": {
+      "nama_task": "Isu Utama",
+      "url": "/api/heatmap/cam_61863ea1f947457c93f228ffd9f44599_task1_issue"
+    },
+    "task2_domain_sumber": {
+      "nama_task": "Domain Sumber Metafora",
+      "url": "/api/heatmap/cam_61863ea1f947457c93f228ffd9f44599_task2_domain_sumber"
+    },
+    "task3_primary_entity_type": {
+      "nama_task": "Sasaran Kritik",
+      "url": "/api/heatmap/cam_61863ea1f947457c93f228ffd9f44599_task3_primary_entity_type"
+    }
+  },
+  "heatmap_url": "/api/heatmap/cam_61863ea1f947457c93f228ffd9f44599",
+  "kelas_untuk_atribusi": "election_and_political_competition",
+  "kelas_untuk_atribusi_tampil": "Pemilu & Persaingan Politik",
+  "kesimpulan": {
+    "alasan_ragu": [
+      "Model paling banyak melihat di luar bagian tengah sampul, jadi alasannya belum tentu berasal dari ilustrasi; posisi saja tidak menunjukkan objek apa yang dilihat.",
+      "Skor 26,1% tergolong rendah, dan skor model belum dikalibrasi sebagai peluang benar.",
+      "Label anotator berbeda (Hukum & Peradilan)."
+    ],
+    "asal": "GABUNGAN",
+    "blok": [
+      {
+        "asal": "MODEL",
+        "label": "Mengapa Pemilu & Persaingan Politik?",
+        "teks": "Untuk isu utama, model memilih Pemilu & Persaingan Politik (skor 26,1%). Dari judul, kata ‘SENANG’ dan ‘SIAPA’ paling mendorong pilihan ini, sedangkan ‘TERPOJOK’ justru menariknya ke arah lain. Di gambar, area yang paling berpengaruh ada di bagian atas sampul (area logo dan judul kecil), bukan di bagian tengah tempat ilustrasi biasanya berada."
+      },
+      {
+        "asal": "CODEBOOK",
+        "label": "Arti kelas ini",
+        "teks": "Dalam referensi demo, Pemilu & Persaingan Politik berarti: pemilihan pejabat dan persaingan aktor politik untuk memperoleh dukungan atau kekuasaan."
+      },
+      {
+        "asal": "ANOTATOR",
+        "label": "Catatan anotator",
+        "teks": "Label anotator untuk aspek ini berbeda: Hukum & Peradilan."
+      }
+    ],
+    "bukti": [
+      {
+        "class_id": "election_and_political_competition",
+        "id": "prediction",
+        "model_version": "e42-tail-grid-v1",
+        "score": 0.2608403265476227,
+        "score_kind": "softmax_uncalibrated",
+        "source": "MODEL",
+        "task_id": "task1_issue"
+      },
+      {
+        "class_id": "election_and_political_competition",
+        "id": "words",
+        "source": "MODEL",
+        "task_id": "task1_issue",
+        "values": [
+          {
+            "kata": "AKBAR",
+            "kontribusi": -0.02783637488630639
+          },
+          {
+            "kata": "TERPOJOK",
+            "kontribusi": -0.07003377799384165
+          },
+          {
+            "kata": "SIAPA",
+            "kontribusi": 0.0739061126893519
+          },
+          {
+            "kata": "SENANG",
+            "kontribusi": 0.08177845277737023
+          }
+        ]
+      },
+      {
+        "class_id": "election_and_political_competition",
+        "id": "visual",
+        "source": "MODEL",
+        "task_id": "task1_issue",
+        "zone": "kepala sampul"
+      },
+      {
+        "class_id": "election_and_political_competition",
+        "id": "definition",
+        "reference": "Codebook operasional proyek; definisi disusun atas instruksi user, bukan sumber resmi dosen",
+        "source": "CODEBOOK",
+        "task_id": "task1_issue",
+        "value": "Pemilihan pejabat dan persaingan aktor politik untuk memperoleh dukungan atau kekuasaan."
+      }
+    ],
+    "cek": [
+      "Model paling banyak melihat di luar bagian tengah sampul, jadi alasannya belum tentu berasal dari ilustrasi; posisi saja tidak menunjukkan objek apa yang dilihat.",
+      "Skor 26,1% tergolong rendah, dan skor model belum dikalibrasi sebagai peluang benar.",
+      "Label anotator berbeda (Hukum & Peradilan)."
+    ],
+    "class_id": "election_and_political_competition",
+    "dapat_dipercaya": false,
+    "paragraf": "Untuk isu utama, model memilih Pemilu & Persaingan Politik (skor 26,1%). Dari judul, kata ‘SENANG’ dan ‘SIAPA’ paling mendorong pilihan ini, sedangkan ‘TERPOJOK’ justru menariknya ke arah lain. Di gambar, area yang paling berpengaruh ada di bagian atas sampul (area logo dan judul kecil), bukan di bagian tengah tempat ilustrasi biasanya berada. Dalam referensi demo, Pemilu & Persaingan Politik berarti: pemilihan pejabat dan persaingan aktor politik untuk memperoleh dukungan atau kekuasaan. Label anotator untuk aspek ini berbeda: Hukum & Peradilan. Yang perlu dicek: Model paling banyak melihat di luar bagian tengah sampul, jadi alasannya belum tentu berasal dari ilustrasi; posisi saja tidak menunjukkan objek apa yang dilihat. Skor 26,1% tergolong rendah, dan skor model belum dikalibrasi sebagai peluang benar. Label anotator berbeda (Hukum & Peradilan).",
+    "strategi": "bukti_gabungan_terbatas",
+    "task_id": "task1_issue"
+  },
+  "label_anotator": {
+    "task1_issue": "law_and_justice",
+    "task2_domain_sumber": "BENCANA_JERAT",
+    "task3_primary_entity_type": "individual"
+  },
+  "metode_atribusi": "lime",
+  "mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+  "models": {
+    "task1_issue": {
+      "backend": "e42-tail-grid",
+      "evaluation": {
+        "macro_f1": 0.5254826236457082,
+        "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+        "samples": 740
+      },
+      "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+      "model_version": "e42-tail-grid-v1",
+      "score_kind": "softmax_uncalibrated",
+      "score_label": "Skor E42 (belum dikalibrasi)"
+    },
+    "task2_domain_sumber": {
+      "backend": "e42-tail-grid",
+      "evaluation": {
+        "macro_f1": 0.3955604325695003,
+        "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+        "samples": 740
+      },
+      "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+      "model_version": "e42-tail-grid-v1",
+      "score_kind": "softmax_uncalibrated",
+      "score_label": "Skor E42 (belum dikalibrasi)"
+    },
+    "task3_primary_entity_type": {
+      "backend": "e42-tail-grid",
+      "evaluation": {
+        "macro_f1": 0.4033984095814434,
+        "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+        "samples": 740
+      },
+      "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+      "model_version": "e42-tail-grid-v1",
+      "score_kind": "softmax_uncalibrated",
+      "score_label": "Skor E42 (belum dikalibrasi)"
+    }
+  },
+  "penjelasan": [
+    {
+      "asal": "model",
+      "label": "Mengapa Pemilu & Persaingan Politik?",
+      "teks": "Untuk isu utama, model memilih Pemilu & Persaingan Politik (skor 26,1%). Dari judul, kata ‘SENANG’ dan ‘SIAPA’ paling mendorong pilihan ini, sedangkan ‘TERPOJOK’ justru menariknya ke arah lain. Di gambar, area yang paling berpengaruh ada di bagian atas sampul (area logo dan judul kecil), bukan di bagian tengah tempat ilustrasi biasanya berada."
+    },
+    {
+      "asal": "codebook",
+      "label": "Arti kelas ini",
+      "teks": "Dalam referensi demo, Pemilu & Persaingan Politik berarti: pemilihan pejabat dan persaingan aktor politik untuk memperoleh dukungan atau kekuasaan."
+    },
+    {
+      "asal": "anotator",
+      "label": "Catatan anotator",
+      "teks": "Label anotator untuk aspek ini berbeda: Hukum & Peradilan."
+    }
+  ],
+  "prediksi": {
+    "task1_issue": {
+      "backend": "e42-tail-grid",
+      "evaluation": {
+        "macro_f1": 0.5254826236457082,
+        "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+        "samples": 740
+      },
+      "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+      "model_version": "e42-tail-grid-v1",
+      "nama_task": "Task 1 — Isu Utama",
+      "nama_task_mudah": "Isu Utama",
+      "prediksi": "election_and_political_competition",
+      "prediksi_tampil": "Pemilu & Persaingan Politik",
+      "probabilitas": 0.2608403265476227,
+      "score_kind": "softmax_uncalibrated",
+      "score_label": "Skor E42 (belum dikalibrasi)",
+      "semua": [
+        {
+          "kelas": "election_and_political_competition",
+          "kelas_tampil": "Pemilu & Persaingan Politik",
+          "prob": 0.2608403265476227
+        },
+        {
+          "kelas": "corruption_and_bribery",
+          "kelas_tampil": "Korupsi & Suap",
+          "prob": 0.25432685017585754
+        },
+        {
+          "kelas": "law_and_justice",
+          "kelas_tampil": "Hukum & Peradilan",
+          "prob": 0.2139638215303421
+        },
+        {
+          "kelas": "power_and_governance",
+          "kelas_tampil": "Kekuasaan & Tata Kelola",
+          "prob": 0.20351432263851166
+        },
+        {
+          "kelas": "human_rights_and_social_conflict",
+          "kelas_tampil": "Hak Asasi & Konflik Sosial",
+          "prob": 0.040422677993774414
+        },
+        {
+          "kelas": "economy_business_and_state_enterprise",
+          "kelas_tampil": "Ekonomi, Bisnis & BUMN",
+          "prob": 0.009424051269888878
+        },
+        {
+          "kelas": "security_defense_and_terrorism",
+          "kelas_tampil": "Keamanan, Pertahanan & Terorisme",
+          "prob": 0.008987722918391228
+        },
+        {
+          "kelas": "public_policy_health_and_disaster",
+          "kelas_tampil": "Kebijakan Publik, Kesehatan & Bencana",
+          "prob": 0.005800078622996807
+        },
+        {
+          "kelas": "other_issue",
+          "kelas_tampil": "Isu Lainnya",
+          "prob": 0.0016859250608831644
+        },
+        {
+          "kelas": "environment_and_natural_resources",
+          "kelas_tampil": "Lingkungan & Sumber Daya Alam",
+          "prob": 0.001034241053275764
+        }
+      ]
+    },
+    "task2_domain_sumber": {
+      "backend": "e42-tail-grid",
+      "evaluation": {
+        "macro_f1": 0.3955604325695003,
+        "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+        "samples": 740
+      },
+      "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+      "model_version": "e42-tail-grid-v1",
+      "nama_task": "Task 2 — Domain Sumber Metafora",
+      "nama_task_mudah": "Domain Sumber Metafora",
+      "prediksi": "HEWAN_TUBUH",
+      "prediksi_tampil": "Hewan & Tubuh",
+      "probabilitas": 0.7969818115234375,
+      "score_kind": "softmax_uncalibrated",
+      "score_label": "Skor E42 (belum dikalibrasi)",
+      "semua": [
+        {
+          "kelas": "HEWAN_TUBUH",
+          "kelas_tampil": "Hewan & Tubuh",
+          "prob": 0.7969818115234375
+        },
+        {
+          "kelas": "LAINNYA",
+          "kelas_tampil": "Lainnya",
+          "prob": 0.11115188896656036
+        },
+        {
+          "kelas": "PERMAINAN_KONTES",
+          "kelas_tampil": "Permainan & Kontes",
+          "prob": 0.05934935063123703
+        },
+        {
+          "kelas": "BENCANA_JERAT",
+          "kelas_tampil": "Bencana & Jerat",
+          "prob": 0.01425211876630783
+        },
+        {
+          "kelas": "NON_METAFORA",
+          "kelas_tampil": "Tanpa Metafora",
+          "prob": 0.011588542722165585
+        },
+        {
+          "kelas": "MESIN_INFRASTRUKTUR",
+          "kelas_tampil": "Mesin & Infrastruktur",
+          "prob": 0.006021240260452032
+        },
+        {
+          "kelas": "KONSUMSI_TRANSAKSI",
+          "kelas_tampil": "Konsumsi & Transaksi",
+          "prob": 0.0006551046390086412
+        }
+      ]
+    },
+    "task3_primary_entity_type": {
+      "backend": "e42-tail-grid",
+      "evaluation": {
+        "macro_f1": 0.4033984095814434,
+        "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+        "samples": 740
+      },
+      "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+      "model_version": "e42-tail-grid-v1",
+      "nama_task": "Task 3 — Tipe Entitas Sasaran",
+      "nama_task_mudah": "Sasaran Kritik",
+      "prediksi": "individual",
+      "prediksi_tampil": "Perorangan",
+      "probabilitas": 0.9400942921638489,
+      "score_kind": "softmax_uncalibrated",
+      "score_label": "Skor E42 (belum dikalibrasi)",
+      "semua": [
+        {
+          "kelas": "individual",
+          "kelas_tampil": "Perorangan",
+          "prob": 0.9400942921638489
+        },
+        {
+          "kelas": "multiple_or_other",
+          "kelas_tampil": "Beberapa Pihak / Lainnya",
+          "prob": 0.03354582190513611
+        },
+        {
+          "kelas": "legislature",
+          "kelas_tampil": "Lembaga Legislatif",
+          "prob": 0.020751411095261574
+        },
+        {
+          "kelas": "political_party",
+          "kelas_tampil": "Partai Politik",
+          "prob": 0.0018762387335300446
+        },
+        {
+          "kelas": "government",
+          "kelas_tampil": "Pemerintah",
+          "prob": 0.00166490173432976
+        },
+        {
+          "kelas": "judiciary_or_law_enforcement",
+          "kelas_tampil": "Peradilan & Penegak Hukum",
+          "prob": 0.0013819457963109016
+        },
+        {
+          "kelas": "civil_society_or_media",
+          "kelas_tampil": "Masyarakat Sipil & Media",
+          "prob": 0.000608626171015203
+        },
+        {
+          "kelas": "business",
+          "kelas_tampil": "Pelaku Usaha",
+          "prob": 7.673088111914694e-05
+        }
+      ]
+    }
+  },
+  "prob_kelas_atribusi": 0.26084038615226746,
+  "ringkasan": {
+    "bagian": [
+      {
+        "asal": "MODEL",
+        "teks": "Menurut model, sampul “AKBAR TERPOJOK SIAPA SENANG” kemungkinan membahas pemilu dan persaingan politik, dengan sorotan pada seorang tokoh. Kiasannya dibaca sebagai perumpamaan hewan atau bagian tubuh — kiasan semacam ini biasanya menyoroti sifat rakus, licik, atau memperlakukan pihak tertentu sebagai kurang manusiawi. Skor ketiga task belum dikalibrasi sebagai peluang benar. Besar skor antar-task tidak dapat dibandingkan sebagai keyakinan."
+      },
+      {
+        "asal": "ANOTATOR",
+        "teks": "Anotator membacanya lain untuk isu utama (Hukum & Peradilan) dan domain sumber metafora (Bencana & Jerat). Catatan anotator: “Posisi di sudut menggambarkan tekanan politik dan hukum yang menyudutkan Akbar.”"
+      }
+    ],
+    "keyakinan": "belum_dikalibrasi",
+    "paragraf": "Menurut model, sampul “AKBAR TERPOJOK SIAPA SENANG” kemungkinan membahas pemilu dan persaingan politik, dengan sorotan pada seorang tokoh. Kiasannya dibaca sebagai perumpamaan hewan atau bagian tubuh — kiasan semacam ini biasanya menyoroti sifat rakus, licik, atau memperlakukan pihak tertentu sebagai kurang manusiawi. Skor ketiga task belum dikalibrasi sebagai peluang benar. Besar skor antar-task tidak dapat dibandingkan sebagai keyakinan. Anotator membacanya lain untuk isu utama (Hukum & Peradilan) dan domain sumber metafora (Bencana & Jerat). Catatan anotator: “Posisi di sudut menggambarkan tekanan politik dan hukum yang menyudutkan Akbar.”",
+    "tanda": "Prediksi model — periksa bukti dan label pembanding"
+  },
+  "snapshot": {
+    "analysis_id": "61863ea1f947457c93f228ffd9f44599",
+    "class_id": "election_and_political_competition",
+    "headline": "AKBAR TERPOJOK SIAPA SENANG",
+    "image_sha256": "8d0a20a6a0662531d23fc2eaa0f848db11f71ccaae2b2264cb708cdcb0081d3e",
+    "input_source": "dataset",
+    "model": "e42-tail-grid-v1",
+    "models": {
+      "task1_issue": {
+        "backend": "e42-tail-grid",
+        "evaluation": {
+          "macro_f1": 0.5254826236457082,
+          "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+          "samples": 740
+        },
+        "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+        "model_version": "e42-tail-grid-v1",
+        "score_kind": "softmax_uncalibrated",
+        "score_label": "Skor E42 (belum dikalibrasi)"
+      },
+      "task2_domain_sumber": {
+        "backend": "e42-tail-grid",
+        "evaluation": {
+          "macro_f1": 0.3955604325695003,
+          "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+          "samples": 740
+        },
+        "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+        "model_version": "e42-tail-grid-v1",
+        "score_kind": "softmax_uncalibrated",
+        "score_label": "Skor E42 (belum dikalibrasi)"
+      },
+      "task3_primary_entity_type": {
+        "backend": "e42-tail-grid",
+        "evaluation": {
+          "macro_f1": 0.4033984095814434,
+          "protocol": "five outer folds; held-out checkpoint per dataset ID; CPU FP32 canonical verification",
+          "samples": 740
+        },
+        "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+        "model_version": "e42-tail-grid-v1",
+        "score_kind": "softmax_uncalibrated",
+        "score_label": "Skor E42 (belum dikalibrasi)"
+      }
+    },
+    "protocol": "dataset outer-fold E42 2; held-out ID; input canonical",
+    "rich_fields": {},
+    "sample_id": "TMP-8D0A20A6A066",
+    "supporting": "Wawancara Agus Budiman, Korban Kepanikan AS?",
+    "task_id": "task1_issue",
+    "xai": {
+      "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+      "folds": [
+        2
+      ],
+      "limitation": "Sensitivitas model, bukan bukti kausal; ensemble unggahan belum menjadi benchmark baru.",
+      "model_version": "e42-tail-grid-v1",
+      "score_kind": "softmax_uncalibrated",
+      "task": "task1_issue",
+      "text_method": "occlusion headline melalui IndoBERT dan trained tail E42; supporting text tetap",
+      "visual_method": "CLIP-L14 full/crop gradient × activation melalui checkpoint E42 aktif"
+    }
+  },
+  "supporting": "Wawancara Agus Budiman, Korban Kepanikan AS?",
+  "task_id": "task1_issue",
+  "task_xai": "Isu Utama",
+  "task_xai_teknis": "Task 1 — Isu Utama",
+  "verifikasi": {
+    "task1_issue": {
+      "anotator": "law_and_justice",
+      "anotator_tampil": "Hukum & Peradilan",
+      "cocok": false,
+      "prediksi": "election_and_political_competition",
+      "prediksi_tampil": "Pemilu & Persaingan Politik"
+    },
+    "task2_domain_sumber": {
+      "anotator": "BENCANA_JERAT",
+      "anotator_tampil": "Bencana & Jerat",
+      "cocok": false,
+      "prediksi": "HEWAN_TUBUH",
+      "prediksi_tampil": "Hewan & Tubuh"
+    },
+    "task3_primary_entity_type": {
+      "anotator": "individual",
+      "anotator_tampil": "Perorangan",
+      "cocok": true,
+      "prediksi": "individual",
+      "prediksi_tampil": "Perorangan"
+    }
+  },
+  "xai": {
+    "evaluation_mode": "dataset outer-fold E42 2; held-out ID; input canonical",
+    "folds": [
+      2
+    ],
+    "limitation": "Sensitivitas model, bukan bukti kausal; ensemble unggahan belum menjadi benchmark baru.",
+    "model_version": "e42-tail-grid-v1",
+    "score_kind": "softmax_uncalibrated",
+    "task": "task1_issue",
+    "text_method": "occlusion headline melalui IndoBERT dan trained tail E42; supporting text tetap",
+    "visual_method": "CLIP-L14 full/crop gradient × activation melalui checkpoint E42 aktif"
+  }
+}

@@ -1,0 +1,23 @@
+    count=Counter(y[TASKS[0]]);strata=[c if count[c]>=5 else -1 for c in y[TASKS[0]]];folds=list(StratifiedKFold(5,shuffle=True,random_state=42).split(np.arange(740),strata));predictions={t:np.full(740,-1,dtype=int) for t in TASKS};foldids=np.zeros(740,int);selected=[];selected_configs=[]
+    for k,(tr,te) in enumerate(folds,1):
+        inner=[(tr[a],tr[b]) for a,b in StratifiedKFold(2,shuffle=True,random_state=123).split(tr,y[TARGET][tr])];candidates=[]
+        for ci,cfg in enumerate(CONFIGS):
+            CFG.clear();CFG.update(cfg);traces=[]
+            for j,(a,b) in enumerate(inner):
+                assert not set(a)&set(b) and not (set(a)|set(b))&set(te)
+                m,opt,losses,scaler=reset(a);trace={0:metric(b,infer(m,b))}
+                for e in range(1,max(CFG['epoch_candidates'])+1):
+                    epoch(m,opt,losses,scaler,a,e)
+                    if e in CFG['epoch_candidates']:trace[e]=metric(b,infer(m,b))
+                traces.append(dict(train_indices=a.tolist(),valid_indices=b.tolist(),epochs=trace));del m,opt,losses,scaler;gc.collect();torch.cuda.empty_cache()
+            scores={e:min(float(np.mean([trace['epochs'][e][t] for trace in traces])) for t in TASKS) for e in CFG['epoch_candidates']}
+            candidates.append(dict(config_index=ci,inner=traces,epoch_scores=scores))
+        ci,chosen=select_candidate(candidates)
+        CFG.clear();CFG.update(CONFIGS[ci]);selected.append(chosen);selected_configs.append(ci)
+        m,opt,losses,scaler=reset(tr)
+        for e in range(1,chosen+1):epoch(m,opt,losses,scaler,tr,e)
+        p=infer(m,te);foldids[te]=k
+        for t in TASKS:predictions[t][te]=p[t]
+        cp=dict(state_dict={n:v.detach().cpu() for n,v in m.state_dict().items()},classes=classes,config=CFG.copy(),config_index=ci,train_indices=tr.tolist(),test_indices=te.tolist(),selected_epoch=chosen,cache_manifest_sha256=protocol['cache_manifest_sha256']);torch.save(cp,out/f'fold{k}.pt')
+        info=dict(fold=k,train_indices=tr.tolist(),test_indices=te.tolist(),candidates=candidates,selected_config=ci,selected_epoch=chosen,gpu_metrics=metric(te,p),checkpoint_sha256=sha(out/f'fold{k}.pt'))
+        (out/f'fold{k}.json').write_text(json.dumps(info,indent=2)+'\n');print('FOLD',k,'epoch',chosen,'alltasks',info['gpu_metrics'],flush=True);del m,opt,losses,scaler;gc.collect();torch.cuda.empty_cache();guard()

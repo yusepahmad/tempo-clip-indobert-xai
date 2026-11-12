@@ -1,0 +1,22 @@
+    def _prob_banyak_teks(self, img_feat, daftar_teks, supporting, task, ukuran_kelompok=8):
+        result=[]
+        for start in range(0,len(daftar_teks),ukuran_kelompok):
+            headlines=list(daftar_teks[start:start+ukuran_kelompok])
+            texts=[self.rich_text(t,supporting,self._context['fields']) for t in headlines]
+            hidden,attention,pool=self._front_inputs(texts)
+            visual=torch.tensor(np.repeat(self._context['visual'].reshape(1,-1),len(texts),axis=0))
+            with torch.no_grad():
+                probs=[torch.softmax(self._models[f](hidden,attention,pool,visual)[task],dim=1).numpy() for f in self._active]
+            result.append(np.mean(probs,axis=0))
+        return np.vstack(result)
+
+    def atribusi_kata(self,img_feat,headline,supporting,task):
+        words=headline.split();variants=[headline]+[' '.join(words[:i]+words[i+1:]) for i in range(len(words))]
+        probabilities=self._prob_banyak_teks(img_feat,variants,supporting,task)
+        k=int(probabilities[0].argmax())
+        return [dict(kata=w,kontribusi=float(probabilities[0,k]-probabilities[i+1,k])) for i,w in enumerate(words)],self.maps[task][k],float(probabilities[0,k])
+
+    @staticmethod
+    def _normalize(cam):
+        span=float(cam.max()-cam.min())
+        return (cam-cam.min())/span if span>1e-12 else np.zeros_like(cam)

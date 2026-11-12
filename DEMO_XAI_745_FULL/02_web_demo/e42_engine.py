@@ -25,6 +25,13 @@ class E42Engine(TailRichEngine):
         torch.set_num_threads(max(1, min(8, int(os.environ.get("TEMPO_CPU_THREADS", "4")))))
         self.assets = Path(os.environ.get("TEMPO_E42_ASSET_DIR") or ROOT / "06_models" / VERSION)
         self.manifest = __import__("json").loads((ROOT / "06_models" / VERSION / "manifest.json").read_text())
+        if self.manifest.get("backend") != BACKEND or self.manifest.get("version") != VERSION:
+            raise ValueError("Identitas manifest E42 tidak sesuai backend/version yang diminta")
+        required = {f"fold{fold}.pt" for fold in range(1, 6)} | {
+            "front_cache.npz", "tail_initial.pt", "bert_config.json", "protocol.json"
+        }
+        if not required.issubset(self.manifest.get("asset_sha256", {})):
+            raise ValueError("Manifest E42 tidak memuat seluruh aset wajib")
         for name, digest in self.manifest["asset_sha256"].items():
             path = self.assets / name
             if not path.is_file() or sha(path) != digest:

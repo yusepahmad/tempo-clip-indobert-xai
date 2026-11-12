@@ -4,7 +4,7 @@ import os
 from pathlib import Path
 HERE = Path(__file__).resolve().parent
 os.chdir(HERE)
-os.environ['TEMPO_BACKEND'] = 'clip-indobert-tail-rich256'
+os.environ.setdefault('TEMPO_BACKEND', 'e42-tail-grid')
 os.environ.setdefault('HF_HUB_OFFLINE', '1')
 os.environ.setdefault('TOKENIZERS_PARALLELISM', 'false')
 for key in ['OMP_NUM_THREADS','MKL_NUM_THREADS','OPENBLAS_NUM_THREADS']:

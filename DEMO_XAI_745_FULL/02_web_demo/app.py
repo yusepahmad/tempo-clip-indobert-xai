@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-"""Delivery Week3/4: one joint CLIP–IndoBERT MTL model for all three tasks.
-Frozen image/text encoders; shared representation and three heads trained jointly.
-Visual/text XAI explains the selected head of the same model.
+"""Serve E42 checkpoints by default; explicit legacy backends remain available.
+Inference and XAI share the active E42 fold(s); production never trains E42.
 """
 
 from __future__ import annotations
@@ -194,7 +193,7 @@ SAMPLE_IDS = frozenset(str(x) for x in ENG.df["sample_id"])
 if BACKEND_NAME == 'micro-e14-qlora':
     print(f"[init] MICRO-E14 ready={ENG.ready}; {ENG.reason}", flush=True)
 elif CHECKPOINT_BACKEND:
-    print(f'[init] {ENG.manifest["version"]}; {len(ENG.df)} sampul; 5 checkpoint asli terverifikasi; CPU', flush=True)
+    print(f'[init] backend={BACKEND_NAME}; version={ENG.manifest["version"]}; {len(ENG.df)} sampul; 5 checkpoint asli terverifikasi; CPU', flush=True)
 else:
     print(f"[init] dataset {len(ENG.df)} sampul, dimensi fitur {ENG.X.shape[1]}")
     print("[init] melatih head MTL awal ...")

@@ -1,8 +1,14 @@
 # Delivery Week 3/4 — CLIP–IndoBERT Multi-Task Learning + XAI
 
-Backend serving default adalah **E42 tail-grid lima outer-fold**. Model joint MTL lama tetap tersedia sebagai pembanding historis, tetapi tidak menjadi default aplikasi.
+Model utama seluruh task adalah **satu model joint MTL**, sesuai judul penelitian. E14 disimpan sebagai pembanding historis terpisah dan tidak diaktifkan oleh aplikasi ini.
 
-## Arsitektur
+## Default produksi E42
+
+Backend `e42-tail-grid`, versi `e42-tail-grid-v1`: CLIP ViT-L/14 full/crop (2 × 768), IndoBERT front 10 blok frozen dan tail 2 blok terlatih, fusi 2304 → shared 256/ReLU/Dropout 0,3 → head 10/7/8 kelas. Lima checkpoint asli diverifikasi SHA-256; startup tidak melatih head. Dataset memakai fold held-out; unggahan merata-ratakan probabilitas lima fold. XAI memakai fold yang sama. Detail source dan deployment: [referensi HTML](../docs/e42_source_code_documentation.html) dan [Linux/Gunicorn E42](../docs/e42_production_deployment.md).
+
+Bagian historis berikut khusus backend eksplisit `clip-indobert-mtl`; bukan perilaku default E42.
+
+## Arsitektur baseline historis
 - Gambar: CLIP ViT-B-32, pretrained `laion2b_s34b_b79k`, embedding 512 dimensi.
 - Teks: `indobenchmark/indobert-base-p1`, CLS 768 dimensi dari headline [SEP] supporting, maksimum128token.
 - Kedua embedding dinormalisasi L2 dan digabungkan (1280dimensi).
@@ -10,7 +16,7 @@ Backend serving default adalah **E42 tail-grid lima outer-fold**. Model joint MT
 - **Encoder beku saat pelatihan; shared layer dan tiga head dilatih bersama**, bukan tiga classifier terpisah. AdamW lr0.001/weight_decay0.0001,120epoch,seed42. Loss rata-rata tiga cross-entropy dengan bobot kelas dihitung dari data latih.
 - Identitas rilis `clip-indobert-mtl-v1`; metadata di `06_models/clip-indobert-mtl-v1/manifest.json`. Head dilatih ulang secara deterministik saat runtime; tidak mengklaim checkpoint fine-tuning encoder telah diintegrasikan.
 
-## Hasil dan protokol
+## Hasil dan protokol baseline historis
 | Task | Macro-F1 CV historis5fold |
 |---|---:|
 | Isu utama |0,4380|
@@ -26,10 +32,11 @@ Peta gambar mengambil |gradient×activation| token patch blok CLIP kedua dari be
 
 OCR EasyOCR mengisi headline/supporting untuk dikoreksi pengguna. Analisis menggunakan teks final yang dikonfirmasi. Narasi memakai templat bukti dengan asal MODEL/CODEBOOK/ANOTATOR. Batch unggahan menunggu review teks; CSV/JSON memuat versi model/protokol.
 
-## Menjalankan Windows
-Jalankan `setup_windows.bat` satu kali, lalu `jalankan_windows.bat`. Setup memakai `02_web_demo/requirements-web-lock.txt`; launcher menetapkan `TEMPO_BACKEND=e42-tail-grid` bila belum diatur dan mereplay 740 prediksi OOF sebelum server dimulai.
-
 ## Menjalankan Linux CPU
+
+Untuk produksi E42/Gunicorn ikuti [panduan E42](../docs/e42_production_deployment.md). Launcher Linux memakai E42 bila `TEMPO_BACKEND` belum diatur; preflight OOF berjalan hanya untuk backend E42. `serve_tail.py` memilih E42 secara default, menjaga override dan mode Hugging Face offline. Satu worker menjaga satu pemilik model.
+
+Instruksi instalasi berikut berasal dari lingkungan delivery historis; lihat versi aktual yang diverifikasi di panduan E42.
 Python3.10.12 adalah lingkungan server yang diuji. Buat virtualenv, lalu:
 ```bash
 python -m venv venv
@@ -37,7 +44,7 @@ venv/bin/python -m pip install torch==2.14.1+cpu torchvision==0.29.1+cpu --index
 venv/bin/python -m pip install -r requirements-delivery.txt
 bash jalankan_linux.sh
 ```
-Launcher default `127.0.0.1:7860`; gunakan `TEMPO_HOST`/`TEMPO_PORT` bila perlu. Environment `TEMPO_PYTHON` dapat menunjuk interpreter lain. Bobot publik CLIP/IndoBERT/EasyOCR diunduh saat pertama dibutuhkan. Tidak memerlukan Qwen, E5, BGE, Kaggle, maupun API AI berbayar. Kontrak launcher Windows dan komponen Python-nya telah diperiksa; eksekusi `.bat` native tetap perlu dibuktikan pada mesin Windows bersih.
+Launcher default `127.0.0.1:7860`; gunakan `TEMPO_HOST`/`TEMPO_PORT` bila perlu. Environment `TEMPO_PYTHON` dapat menunjuk interpreter lain. Bobot publik CLIP/IndoBERT/EasyOCR diunduh saat pertama dibutuhkan; paket ZIP tidak menyertakan bobot encoder atau cache. Tidak memerlukan Qwen, E5, BGE, Kaggle, maupun API AI berbayar. Windows launcher tersedia tetapi belum diverifikasi dengan instalasi bersih.
 
 ## Pemeriksaan
-`01_notebook/check_delivery.py` memeriksa checksum aset, cakupan lima fold, dan kecocokan 740 prediksi OOF E42. Regresi Python/JS dan bukti inferensi/browser ada di `07_delivery_evidence`. Hasil baru tidak menimpa metrik historis; versi dan skor harus diperbarui dari evaluasi yang sah.
+`01_notebook/check_delivery.py` memeriksa data/metadata/inferensi head. Regresi Python/JS dan bukti inferensi/browser baru ada di `07_delivery_evidence`. Evaluasi fusion dapat direproduksi dengan `01_notebook/verify_mtl_cv.py`, hasil baru tidak menimpa metrik historis. Upgrade berikutnya harus mempertahankan CLIP–IndoBERT, joint loss tiga task dan XAI; versi dan skor harus diperbarui dari evaluasi yang sah, bukan substitusi model di luar judul.

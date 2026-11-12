@@ -16,6 +16,8 @@ if not exist "%PYTHON_EXE%" (
     exit /b 1
 )
 
+if /I not "%TEMPO_BACKEND%"=="e42-tail-grid" goto start_app
+
 echo Memeriksa aset model E42 ...
 "%PYTHON_EXE%" "01_notebook\check_delivery.py"
 if errorlevel 1 (
@@ -27,6 +29,7 @@ if errorlevel 1 (
     exit /b 1
 )
 
+:start_app
 echo Menjalankan aplikasi dengan backend %TEMPO_BACKEND% ...
 "%PYTHON_EXE%" -u "02_web_demo\app.py"
 if errorlevel 1 (

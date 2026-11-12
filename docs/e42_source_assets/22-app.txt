@@ -1,0 +1,35 @@
+        mode = ENG._context['protocol']
+    if hasattr(ENG, 'set_context'):
+        ENG.set_context(img_path, headline, supporting, img_feat, sample_id or None, batch,
+                        cancel=lambda: _cek_batal(m.get('req_id')))
+    pred = ENG.predict_vector(vec)
+    # Grad-CAM
+    #
+    # Revisi 15 Sep (R5): peta panas per task tetap dihitung untuk tampilan
+    # teknis, tetapi yang ditonjolkan ke pembaca adalah satu peta terpadu yang
+    # mencakup ketiga task (peta utama tab Bukti gambar). Peta task pilihan
+    # (`heatmap_url`) tampil terpisah dan menjadi dasar narasi/zona task itu.
+    token = f"cam_{analysis_id}"
+    _cek_batal(m.get("req_id"))
+    cam_padu, cam_per_task = ENG.gradcam_terpadu(img_path, txt_feat)
+    cam = cam_per_task.get(task_xai)
+
+    heat_url = None
+    if cam is not None:
+        heatmap_overlay(img_path, cam, CACHE / f"{token}.png")
+        heat_url = f"/api/heatmap/{token}"
+
+    # peta terpadu (yang ditampilkan ke pembaca)
+    heat_padu_url = None
+    if cam_padu is not None:
+        heatmap_overlay(img_path, cam_padu, CACHE / f"{token}_padu.png")
+        heat_padu_url = f"/api/heatmap/{token}_padu"
+
+    # peta per task, untuk ditelusuri bila pembaca ingin membandingkan
+    heat_task_url = {}
+    for t, c in cam_per_task.items():
+        heatmap_overlay(img_path, c, CACHE / f"{token}_{t}.png")
+        heat_task_url[t] = {
+            "url": f"/api/heatmap/{token}_{t}",
+            "nama_task": nama_task(t),
+        }
