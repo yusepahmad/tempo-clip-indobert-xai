@@ -69,3 +69,7 @@ A mirrored review checkout under `work/e42-production/` contains the same final 
 - No runtime training, checkpoint replacement, historical metric rewrite or silent baseline fallback occurred. Temporary verification servers were stopped after checks.
 
 Plan: [E42 launcher and documentation](plans/2026-11-13-e42-launcher-documentation.md). Completed changes are recorded under root `CHANGELOG.md` → `[Unreleased]` → `Fixed` / `Added` / `Changed`.
+
+## Publication requested after local verification
+
+Implementation commit [528b9ee](https://github.com/yusepahmad/tempo-clip-indobert-xai/commit/528b9ee413cb62350ecae8c16c883fc84aec0c90) was pushed fast-forward to `origin/main`; `git ls-remote` matched local HEAD. All 11 launcher/engine tests were executed again in the publication checkout and passed in 16.742 seconds. The publication plan and changelog record this action; it does not establish a VPS deployment.

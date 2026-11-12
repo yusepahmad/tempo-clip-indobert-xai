@@ -5,6 +5,10 @@ Format mengikuti [Keep a Changelog](https://keepachangelog.com/).
 
 ## [Unreleased]
 
+### Changed
+
+- Perbaikan launcher E42, dokumentasi HTML/source screenshot dan bukti verifikasi dipublikasikan fast-forward ke `main` repository `yusepahmad/tempo-clip-indobert-xai` pada commit `528b9ee413cb62350ecae8c16c883fc84aec0c90`; 11 regresi lulus ulang di checkout publikasi dan SHA remote terverifikasi (plan: [push E42 launcher dan dokumentasi](docs/plans/2026-11-13-push-e42-launcher-documentation.md)).
+
 ### Fixed
 
 - Default Linux/Gunicorn/Windows E42 di `DEMO_XAI_745_FULL/{jalankan_linux.sh,jalankan_windows.bat,02_web_demo/serve_tail.py}` konsisten `e42-tail-grid`, menjaga override dan konfigurasi thread/offline; preflight E42 tidak memblokir override eksplisit. `e42_engine.py` memvalidasi identitas manifest/aset wajib; `app.py` mencetak backend/version saat startup (plan: [E42 launcher dan dokumentasi](docs/plans/2026-11-13-e42-launcher-documentation.md)).
